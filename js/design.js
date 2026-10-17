@@ -32,13 +32,14 @@
       ["test.html", "check", "Wissen testen", "اختبر معرفتك"],
       ["review.html", "repeat", "Wiederholen", "المراجعة"],
       ["stats.html", "chart", "Mein Fortschritt", "تقدّمي"],
+      ["verbs.html", "book", "Verben lernen", "تصريف الأفعال"],
     ];
     const sidebar = document.createElement("aside");
     sidebar.className = "app-sidebar";
     sidebar.id = "app-sidebar";
     sidebar.innerHTML = `<a href="index.html" class="brand" aria-label="Jisr"><span class="brand-mark" lang="ar">جـ</span><span class="brand-type">jisr<span>جسر · ${label("Arabisch lernen", "تعلّم العربية")}</span></span></a>
       <div class="sidebar-label">${label("DEIN LERNRAUM", "مساحة التعلّم")}</div>
-      <nav aria-label="${document.documentElement.lang === "de" ? "Hauptnavigation" : "القائمة الرئيسية"}">${nav.map(([href, name, de, ar]) => `<a href="${href}" class="nav-link ${href === page || (isHome && href === "index.html") || (page.startsWith("test") && href === "test.html") || (page === "lernseite.html" && name === "book") ? "is-active" : ""}" ${href === page ? 'aria-current="page"' : ""}>${icon(name)}${label(de, ar)}${name === "book" ? '<span class="nav-badge">20</span>' : ""}</a>`).join("")}</nav>
+      <nav aria-label="${document.documentElement.lang === "de" ? "Hauptnavigation" : "القائمة الرئيسية"}">${nav.map(([href, name, de, ar]) => `<a href="${href}" class="nav-link ${href === page || (isHome && href === "index.html") || (page.startsWith("test") && href === "test.html") || (page === "lernseite.html" && name === "book") ? "is-active" : ""}" ${href === page ? 'aria-current="page"' : ""}>${icon(name)}${label(de, ar)}${href === "index.html#ready-lists-panel" ? '<span class="nav-badge">20</span>' : ""}</a>`).join("")}</nav>
       <div class="sidebar-bottom"><div class="sidebar-note"><span class="note-spark">✳</span><strong>${label("Ein Wort kann eine Brücke sein.", "قد تكون الكلمة جسراً.")}</strong><p>${label("Bleib neugierig. Der Rest kommt Wort für Wort.", "ابقَ فضولياً. والباقي يأتي كلمة بعد كلمة.")}</p></div><a class="teacher-profile" href="index.html"><span class="teacher-avatar">MB</span><span><strong>Mahmoud Barakat</strong><small>${label("Dein Arabischlehrer", "معلّم اللغة العربية")}</small></span><span class="profile-dot"></span></a></div>`;
     document.body.prepend(sidebar);
     const topbar = document.createElement("header");
@@ -141,18 +142,14 @@
     }
     window.addEventListener("app-language-change", syncLanguage);
     syncLanguage();
-    document
-      .getElementById("hero-start")
-      ?.addEventListener("click", () =>
-        document
-          .getElementById("ready-lists-panel")
-          .scrollIntoView({
-            behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
-              ? "instant"
-              : "smooth",
-            block: "start",
-          }),
-      );
+    document.getElementById("hero-start")?.addEventListener("click", () =>
+      document.getElementById("ready-lists-panel").scrollIntoView({
+        behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "instant"
+          : "smooth",
+        block: "start",
+      }),
+    );
     document
       .querySelector(".file-upload-label")
       ?.addEventListener("keydown", (e) => {

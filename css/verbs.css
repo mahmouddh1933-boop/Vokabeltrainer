@@ -1,0 +1,533 @@
+body .container.verbs-page {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.verbs-page .page-heading {
+  margin-bottom: 25px;
+}
+.verbs-page .page-heading h1 {
+  font-size: clamp(25px, 3vw, 36px);
+}
+.verbs-page .page-heading p:last-child {
+  font-size: 13px;
+}
+.verb-intro {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 35px;
+  align-items: center;
+  padding: 32px;
+  background: #edf0dd;
+  border: 1px solid #e0e6cf;
+  border-radius: 18px;
+}
+.lesson-label {
+  font-size: 10px;
+  color: #7b8d65;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+.verb-intro h2 {
+  margin: 13px 0 10px;
+  font-size: 24px;
+}
+.verb-intro p {
+  font-size: 14px;
+  margin: 0;
+}
+.verb-intro-example {
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+  padding: 22px;
+  background: #fffdf4;
+  border: 1px solid #e0e5d0;
+  border-radius: 13px;
+  transform: rotate(-3deg);
+}
+.verb-intro-example > span {
+  font-size: 30px;
+  line-height: 1.8;
+  color: #3e6846;
+}
+.verb-intro-example .verb-example-arrow {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #9cad7d;
+}
+.verb-rules {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0 32px;
+}
+.verb-rules article {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 25px;
+}
+.lesson-number {
+  color: #9dad83;
+  font-size: 11px;
+  font-weight: 700;
+}
+.verb-rules h2 {
+  font-size: 18px;
+  margin: 12px 0 10px;
+}
+.verb-rules p {
+  font-size: 13px;
+  margin: 0;
+}
+.verb-rules .rule-example {
+  font-size: 23px;
+  color: #4d7045;
+  background: #f3f6eb;
+  padding: 12px;
+  margin-top: 17px;
+  border-radius: 9px;
+  text-align: center;
+}
+.verb-explorer {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  padding: 28px;
+}
+.verb-explorer .section-heading,
+.verb-practice .section-heading {
+  margin: 0 0 24px;
+}
+.verb-explorer h2,
+.verb-practice h2 {
+  margin-top: 7px;
+  font-size: 22px;
+}
+.verb-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: end;
+  margin: 20px 0;
+}
+.verb-select-field {
+  flex: 1;
+  max-width: 350px;
+}
+.verb-select-field label {
+  display: block;
+  font-size: 12px;
+  font-weight: 650;
+  color: #667b55;
+  margin-bottom: 9px;
+}
+#verb-select {
+  width: 100%;
+  min-height: 48px;
+  font-size: 16px;
+  color: var(--ink);
+  background: #fafbf7;
+  border: 1px solid #dce4d2;
+  border-radius: 9px;
+  padding: 8px 13px;
+}
+.tense-options {
+  display: flex;
+  gap: 4px;
+  border: 1px solid var(--line);
+  background: #f8faf4;
+  border-radius: 10px;
+  padding: 4px;
+}
+.tense-options button {
+  margin: 0;
+  padding: 9px 20px;
+  min-height: 38px;
+  background: transparent;
+  color: #7c8d6a;
+  border: 0;
+  border-radius: 7px;
+  font-size: 12px;
+}
+.tense-options button[aria-pressed="true"] {
+  background: #245e47;
+  color: white;
+}
+.tense-options button:hover {
+  transform: none;
+  box-shadow: none;
+  background: #e8eedc;
+  color: #3e6541;
+}
+.tense-options button[aria-pressed="true"]:hover {
+  background: #194a37;
+  color: white;
+}
+.verb-feature {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  align-items: center;
+  gap: 25px;
+  background: #f3f6eb;
+  border: 1px solid #e8eddd;
+  border-radius: 12px;
+  padding: 25px;
+}
+.verb-feature > div:first-child {
+  text-align: center;
+}
+.verb-meaning {
+  color: #7e8e6d;
+  font-size: 12px;
+}
+.verb-feature .verb-arabic {
+  font-size: 48px;
+  line-height: 1.8;
+  color: #335d3e;
+  margin: 4px 0;
+}
+.verb-pattern {
+  font-size: 11px;
+  color: #899778;
+}
+.verb-sentence {
+  border-inline-start: 1px solid #dce4ce;
+  padding-inline-start: 25px;
+}
+.verb-sentence p[lang="ar"] {
+  font-size: 26px;
+  color: #416745;
+  margin: 12px 0 6px;
+}
+.verb-sentence p[lang="de"] {
+  font-size: 12px;
+  margin: 0;
+  text-align: start;
+  direction: ltr;
+}
+.verb-table-note {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #829075;
+  margin: 18px 0;
+}
+.verb-table-wrap {
+  border: 1px solid #e4e9dc;
+  border-radius: 11px;
+  overflow: hidden;
+}
+.conjugation-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.conjugation-table th,
+.conjugation-table td {
+  border-bottom: 1px solid #edf0e7;
+  padding: 11px 18px;
+  text-align: start;
+  vertical-align: middle;
+}
+.conjugation-table thead th {
+  background: #f6f8f0;
+  color: #7b8d64;
+  font-size: 11px;
+  font-weight: 650;
+}
+.conjugation-table thead th:first-child {
+  width: 20%;
+}
+.conjugation-table thead th:nth-child(2) {
+  width: 45%;
+}
+.conjugation-table thead th:last-child {
+  width: 35%;
+}
+.conjugation-table tbody th {
+  font-size: 23px;
+  font-weight: 500;
+  color: #496b45;
+}
+.conjugation-table td {
+  color: #8a967d;
+  font-size: 12px;
+}
+.conjugation-table .verb-form {
+  color: #36563e;
+  font-size: 27px;
+  line-height: 1.8;
+  white-space: nowrap;
+}
+.conjugation-table mark {
+  color: #a06c35;
+  background: #faf0dd;
+  border-radius: 3px;
+  font: inherit;
+}
+.conjugation-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+.conjugation-table tbody tr:hover {
+  background: #fafbf7;
+}
+.conjugation-table .person-group-start > * {
+  border-top: 2px solid #e4e9db;
+}
+.verb-practice {
+  margin-top: 24px;
+  padding: 28px;
+  background: #f7f3e9;
+  border: 1px solid #ece4d5;
+  border-radius: 16px;
+}
+.verb-practice > p {
+  font-size: 13px;
+}
+.practice-score {
+  font-size: 11px;
+  white-space: nowrap;
+  color: #9a855e;
+  padding: 7px 11px;
+  background: #eee6d4;
+  border-radius: 7px;
+}
+.practice-prompt {
+  text-align: center;
+  padding: 22px 0 12px;
+}
+.practice-prompt > span,
+.practice-prompt > small {
+  display: block;
+  font-size: 12px;
+  color: #8e886f;
+}
+.practice-prompt > strong {
+  display: block;
+  font-weight: 500;
+  color: #405e3d;
+  font-size: 44px;
+  line-height: 1.7;
+  margin: 8px 0;
+}
+.verb-answers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 11px;
+}
+.verb-answers .verb-answer {
+  width: 100%;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 500;
+  border: 1px solid #e5decb;
+  border-radius: 11px;
+  padding: 14px;
+  background: #fffdf6;
+  color: #5d7050;
+  min-height: 65px;
+}
+.verb-answers .verb-answer:hover:not(:disabled) {
+  background: #f0ecd9;
+  border-color: #b8be90;
+}
+.verb-answers .verb-answer:disabled {
+  opacity: 1;
+}
+.verb-answers .verb-answer.is-correct {
+  background: #e1efda;
+  border-color: #90ae72;
+  color: #325a31;
+}
+.verb-answers .verb-answer.is-wrong {
+  background: #f6e2d8;
+  border-color: #d6a693;
+  color: #92533b;
+}
+.verb-feedback {
+  min-height: 24px;
+  padding: 0;
+  font-size: 13px;
+}
+.verb-feedback.is-correct,
+.verb-feedback.is-wrong {
+  padding: 14px;
+  background: #fffdf7;
+  border-radius: 9px;
+  color: #73845f;
+}
+.verb-feedback.is-wrong {
+  color: #9c7050;
+}
+.verb-feedback bdi {
+  font-size: 22px;
+  color: #355d3c;
+}
+#verb-next {
+  margin: 8px 0 0;
+}
+.grammar-home-card {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 25px;
+  border: 1px solid #dedfce;
+  border-radius: 13px;
+  background: #edf0e0;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.grammar-home-card:hover {
+  background: #e5ead4;
+  transform: translateY(-2px);
+}
+.grammar-home-glyph {
+  color: #6e8750;
+  font-size: 31px;
+  white-space: nowrap;
+}
+.grammar-home-card h2 {
+  font-size: 17px;
+  margin: 7px 0;
+}
+.grammar-home-card p {
+  font-size: 12px;
+  margin: 0;
+}
+.grammar-home-card .tool-link {
+  font-size: 11px;
+  color: #67814b;
+  margin-inline-start: auto;
+  white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .verb-intro {
+    grid-template-columns: 1fr;
+    padding: 23px;
+    gap: 22px;
+  }
+  .verb-intro h2 {
+    font-size: 21px;
+  }
+  .verb-intro p {
+    font-size: 13px;
+  }
+  .verb-intro-example {
+    max-width: 230px;
+    width: 100%;
+    justify-self: center;
+  }
+  .verb-rules {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 23px;
+  }
+  .verb-rules article {
+    padding: 21px;
+  }
+  .verb-explorer,
+  .verb-practice {
+    padding: 20px 14px;
+  }
+  .verb-explorer h2,
+  .verb-practice h2 {
+    font-size: 18px;
+  }
+  .verb-explorer .section-heading,
+  .verb-practice .section-heading {
+    gap: 8px;
+  }
+  .verb-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  .verb-select-field {
+    max-width: none;
+  }
+  .tense-options button {
+    flex: 1;
+  }
+  .verb-feature {
+    grid-template-columns: 1fr;
+    padding: 20px 15px;
+    gap: 18px;
+  }
+  .verb-sentence {
+    border-inline-start: 0;
+    border-top: 1px solid #dce4ce;
+    padding-inline-start: 0;
+    padding-top: 18px;
+  }
+  .verb-sentence p[lang="ar"] {
+    font-size: 24px;
+  }
+  .verb-table-note {
+    font-size: 11px;
+  }
+  .conjugation-table th,
+  .conjugation-table td {
+    padding: 9px 5px;
+  }
+  .conjugation-table thead th {
+    font-size: 10px;
+  }
+  .conjugation-table thead th:first-child {
+    width: 23%;
+  }
+  .conjugation-table thead th:nth-child(2) {
+    width: 37%;
+  }
+  .conjugation-table thead th:last-child {
+    width: 40%;
+  }
+  .conjugation-table tbody th {
+    font-size: 19px;
+  }
+  .conjugation-table td {
+    font-size: 10px;
+    overflow-wrap: break-word;
+  }
+  .conjugation-table .verb-form {
+    font-size: 22px;
+  }
+  .verb-answers {
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+  }
+  .verb-answers .verb-answer {
+    font-size: 24px;
+    min-height: 60px;
+    padding: 10px;
+  }
+  .verb-practice > p {
+    font-size: 12px;
+  }
+  .practice-score {
+    font-size: 9px;
+    padding: 6px 8px;
+  }
+  .grammar-home-card {
+    padding: 21px;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .grammar-home-glyph {
+    font-size: 27px;
+  }
+  .grammar-home-card > div {
+    flex: 1;
+  }
+  .grammar-home-card h2 {
+    font-size: 15px;
+  }
+  .grammar-home-card p {
+    font-size: 11px;
+  }
+  .grammar-home-card .tool-link {
+    margin-inline-start: 0;
+  }
+}
