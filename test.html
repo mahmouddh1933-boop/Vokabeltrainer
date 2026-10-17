@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>اختر الاختبار</title><link rel="stylesheet" href="styles.css"><script src="js/app.js" defer></script><script src="js/pages/test-menu.js" defer></script><link rel="stylesheet" href="css/interface-languages.css"><script src="js/interface-languages.js" defer></script><script src="js/tanwin-display.js" defer></script><link rel="stylesheet" href="css/modern.css"><script src="js/design.js" defer></script></head>
+<body><main class="container">
+    <h1>اختر الاختبار</h1>
+    <p class="page-subtitle">لإتقان القائمة: احصل على 80٪ أو أكثر مرتين في كل اختبار. كل اختبار يختار حتى 5 مفردات عشوائياً.</p>
+    <p id="test-mastery-overall" class="mastery-overall-note"></p>
+    <section class="test-duration-panel" aria-labelledby="test-duration-title">
+        <h2 id="test-duration-title">⏱️ اختر مدة الاختبار</h2>
+        <p>حدد الوقت الذي تريده لكل اختبار:</p>
+        <div class="test-duration-options" role="group" aria-label="مدة الاختبار">
+            <button type="button" class="test-duration-option" data-duration="60" aria-pressed="true">60 ثانية</button>
+            <button type="button" class="test-duration-option" data-duration="90" aria-pressed="false">90 ثانية</button>
+            <button type="button" class="test-duration-option" data-duration="120" aria-pressed="false">120 ثانية</button>
+        </div>
+    </section>
+    <div class="test-button-group four-tests">
+        <button id="test1-button" type="button"><span>✍️ اكتب الكلمة العربية</span><small id="writing-status" class="test-pass-status">0/2</small></button>
+        <button id="test2-button" type="button"><span>✅ اختيار من متعدد</span><small id="choice-status" class="test-pass-status">0/2</small></button>
+        <button id="test3-button" type="button"><span>🔤 إكمال الحروف الناقصة</span><small id="letters-status" class="test-pass-status">0/2</small></button>
+        <button id="test4-button" type="button"><span>🔊 اختبار الاستماع</span><small id="listening-status" class="test-pass-status">0/2</small></button>
+        <button id="test5-button" type="button"><span>🧩 ترتيب الحروف المبعثرة</span><small id="scramble-status" class="test-pass-status">0/2</small></button>
+        <button id="test6-button" type="button"><span>🔗 إكمال الحروف المتصلة</span><small id="connected-status" class="test-pass-status">0/2</small></button>
+    </div>
+    <div class="learning-actions"><button id="review-button" class="secondary-button" type="button">مراجعة الأخطاء</button><button id="stats-button" class="secondary-button" type="button">التقدّم والإحصائيات</button><button id="back-to-learn" class="secondary-button" type="button">العودة إلى بطاقات التعلّم</button></div>
+</main><footer class="teacher-credit" id="teacher-credit">إعداد المعلم: <b>محمود بركات</b></footer>
+</body></html>

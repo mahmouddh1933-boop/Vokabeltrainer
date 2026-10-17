@@ -1,0 +1,1835 @@
+{
+  "version": 11,
+  "sourceLanguage": "ar",
+  "translationLanguage": "de",
+  "maxWordsPerBuiltInList": 25,
+  "excelUploadWordLimit": null,
+  "levels": [
+    {
+      "id": "A1",
+      "cefr": "A1",
+      "title": "المستوى A1",
+      "subtitle": "المبتدئ",
+      "description": "أساسيات التواصل والمفردات اليومية الضرورية للبدء باللغة العربية.",
+      "recommended": true,
+      "listIds": [
+        "list_01",
+        "list_03",
+        "list_04",
+        "list_05",
+        "list_02",
+        "list_06",
+        "list_07",
+        "list_09",
+        "list_12",
+        "list_13"
+      ]
+    },
+    {
+      "id": "A2",
+      "cefr": "A2",
+      "title": "المستوى A2",
+      "subtitle": "المبتدئ المتقدم",
+      "description": "توسيع المفردات للحياة اليومية والدراسة والصحة والأنشطة واستخدام الأفعال والصفات.",
+      "recommended": false,
+      "listIds": [
+        "list_08",
+        "list_10",
+        "list_11",
+        "list_14",
+        "list_15",
+        "list_16",
+        "list_17",
+        "list_18",
+        "list_19",
+        "list_20"
+      ]
+    }
+  ],
+  "lists": [
+    {
+      "id": "list_01",
+      "title": "التحيات والتعارف",
+      "count": 20,
+      "words": [
+        {
+          "ar": "مَرْحَباً",
+          "de": "Hallo"
+        },
+        {
+          "ar": "أَهْلاً وَسَهْلاً",
+          "de": "Herzlich willkommen"
+        },
+        {
+          "ar": "صَبَاحُ الخَيْر",
+          "de": "Guten Morgen"
+        },
+        {
+          "ar": "مَسَاءُ الخَيْر",
+          "de": "Guten Abend"
+        },
+        {
+          "ar": "مَعَ السَّلَامَة",
+          "de": "Auf Wiedersehen"
+        },
+        {
+          "ar": "شُكْراً",
+          "de": "Danke"
+        },
+        {
+          "ar": "عَفْواً",
+          "de": "Bitte / Gern geschehen"
+        },
+        {
+          "ar": "مِنْ فَضْلِكَ",
+          "de": "Bitte"
+        },
+        {
+          "ar": "نَعَم",
+          "de": "Ja"
+        },
+        {
+          "ar": "لَا",
+          "de": "Nein"
+        },
+        {
+          "ar": "مَا اسْمُكَ؟",
+          "de": "Wie heißt du?"
+        },
+        {
+          "ar": "اسْمِي...",
+          "de": "Ich heiße ..."
+        },
+        {
+          "ar": "كَيْفَ حَالُكَ؟",
+          "de": "Wie geht es dir?"
+        },
+        {
+          "ar": "بِخَيْر",
+          "de": "Gut"
+        },
+        {
+          "ar": "مِنْ أَيْنَ أَنْتَ؟",
+          "de": "Woher kommst du?"
+        },
+        {
+          "ar": "أَنَا مِنْ...",
+          "de": "Ich komme aus ..."
+        },
+        {
+          "ar": "أَيْنَ تَسْكُنُ؟",
+          "de": "Wo wohnst du?"
+        },
+        {
+          "ar": "أَسْكُنُ فِي...",
+          "de": "Ich wohne in ..."
+        },
+        {
+          "ar": "مَعْذِرَةً",
+          "de": "Entschuldigung"
+        },
+        {
+          "ar": "لَا أَفْهَم",
+          "de": "Ich verstehe nicht"
+        }
+      ],
+      "level": "A1",
+      "levelOrder": 1
+    },
+    {
+      "id": "list_02",
+      "title": "الأسرة",
+      "count": 20,
+      "words": [
+        {
+          "ar": "أُسْرَة",
+          "de": "Familie"
+        },
+        {
+          "ar": "أَب",
+          "de": "Vater"
+        },
+        {
+          "ar": "أُمّ",
+          "de": "Mutter"
+        },
+        {
+          "ar": "اِبْن",
+          "de": "Sohn"
+        },
+        {
+          "ar": "اِبْنَة",
+          "de": "Tochter"
+        },
+        {
+          "ar": "أَخ",
+          "de": "Bruder"
+        },
+        {
+          "ar": "أُخْت",
+          "de": "Schwester"
+        },
+        {
+          "ar": "جَدّ",
+          "de": "Großvater"
+        },
+        {
+          "ar": "جَدَّة",
+          "de": "Großmutter"
+        },
+        {
+          "ar": "عَمّ",
+          "de": "Onkel väterlicherseits"
+        },
+        {
+          "ar": "عَمَّة",
+          "de": "Tante väterlicherseits"
+        },
+        {
+          "ar": "خَال",
+          "de": "Onkel mütterlicherseits"
+        },
+        {
+          "ar": "خَالَة",
+          "de": "Tante mütterlicherseits"
+        },
+        {
+          "ar": "زَوْج",
+          "de": "Ehemann"
+        },
+        {
+          "ar": "زَوْجَة",
+          "de": "Ehefrau"
+        },
+        {
+          "ar": "طِفْل",
+          "de": "Kind"
+        },
+        {
+          "ar": "أَطْفَال",
+          "de": "Kinder"
+        },
+        {
+          "ar": "حَفِيد",
+          "de": "Enkel"
+        },
+        {
+          "ar": "حَفِيدَة",
+          "de": "Enkelin"
+        },
+        {
+          "ar": "أَقَارِب",
+          "de": "Verwandte"
+        }
+      ],
+      "level": "A1",
+      "levelOrder": 5
+    },
+    {
+      "id": "list_03",
+      "title": "الأرقام",
+      "count": 20,
+      "words": [
+        {
+          "ar": "وَاحِد",
+          "de": "eins"
+        },
+        {
+          "ar": "اِثْنَان",
+          "de": "zwei"
+        },
+        {
+          "ar": "ثَلَاثَة",
+          "de": "drei"
+        },
+        {
+          "ar": "أَرْبَعَة",
+          "de": "vier"
+        },
+        {
+          "ar": "خَمْسَة",
+          "de": "fünf"
+        },
+        {
+          "ar": "سِتَّة",
+          "de": "sechs"
+        },
+        {
+          "ar": "سَبْعَة",
+          "de": "sieben"
+        },
+        {
+          "ar": "ثَمَانِيَة",
+          "de": "acht"
+        },
+        {
+          "ar": "تِسْعَة",
+          "de": "neun"
+        },
+        {
+          "ar": "عَشَرَة",
+          "de": "zehn"
+        },
+        {
+          "ar": "أَحَدَ عَشَر",
+          "de": "elf"
+        },
+        {
+          "ar": "اِثْنَا عَشَر",
+          "de": "zwölf"
+        },
+        {
+          "ar": "ثَلَاثَةَ عَشَر",
+          "de": "dreizehn"
+        },
+        {
+          "ar": "أَرْبَعَةَ عَشَر",
+          "de": "vierzehn"
+        },
+        {
+          "ar": "خَمْسَةَ عَشَر",
+          "de": "fünfzehn"
+        },
+        {
+          "ar": "عِشْرُون",
+          "de": "zwanzig"
+        },
+        {
+          "ar": "ثَلَاثُون",
+          "de": "dreißig"
+        },
+        {
+          "ar": "خَمْسُون",
+          "de": "fünfzig"
+        },
+        {
+          "ar": "مِائَة",
+          "de": "hundert"
+        },
+        {
+          "ar": "أَلْف",
+          "de": "tausend"
+        }
+      ],
+      "level": "A1",
+      "levelOrder": 2
+    },
+    {
+      "id": "list_04",
+      "title": "الوقت والأيام",
+      "count": 20,
+      "words": [
+        {
+          "ar": "وَقْت",
+          "de": "Zeit"
+        },
+        {
+          "ar": "سَاعَة",
+          "de": "Stunde / Uhr"
+        },
+        {
+          "ar": "دَقِيقَة",
+          "de": "Minute"
+        },
+        {
+          "ar": "يَوْم",
+          "de": "Tag"
+        },
+        {
+          "ar": "أُسْبُوع",
+          "de": "Woche"
+        },
+        {
+          "ar": "شَهْر",
+          "de": "Monat"
+        },
+        {
+          "ar": "سَنَة",
+          "de": "Jahr"
+        },
+        {
+          "ar": "اليَوْم",
+          "de": "heute"
+        },
+        {
+          "ar": "أَمْس",
+          "de": "gestern"
+        },
+        {
+          "ar": "غَداً",
+          "de": "morgen"
+        },
+        {
+          "ar": "الآن",
+          "de": "jetzt"
+        },
+        {
+          "ar": "صَبَاح",
+          "de": "Morgen"
+        },
+        {
+          "ar": "مَسَاء",
+          "de": "Abend"
+        },
+        {
+          "ar": "لَيْل",
+          "de": "Nacht"
+        },
+        {
+          "ar": "الأَحَد",
+          "de": "Sonntag"
+        },
+        {
+          "ar": "الاِثْنَيْن",
+          "de": "Montag"
+        },
+        {
+          "ar": "الثُّلَاثَاء",
+          "de": "Dienstag"
+        },
+        {
+          "ar": "الأَرْبِعَاء",
+          "de": "Mittwoch"
+        },
+        {
+          "ar": "الخَمِيس",
+          "de": "Donnerstag"
+        },
+        {
+          "ar": "الجُمُعَة",
+          "de": "Freitag"
+        }
+      ],
+      "level": "A1",
+      "levelOrder": 3
+    },
+    {
+      "id": "list_05",
+      "title": "الألوان والأشكال",
+      "count": 20,
+      "words": [
+        {
+          "ar": "أَحْمَر",
+          "de": "rot"
+        },
+        {
+          "ar": "أَزْرَق",
+          "de": "blau"
+        },
+        {
+          "ar": "أَصْفَر",
+          "de": "gelb"
+        },
+        {
+          "ar": "أَخْضَر",
+          "de": "grün"
+        },
+        {
+          "ar": "أَسْوَد",
+          "de": "schwarz"
+        },
+        {
+          "ar": "أَبْيَض",
+          "de": "weiß"
+        },
+        {
+          "ar": "رَمَادِيّ",
+          "de": "grau"
+        },
+        {
+          "ar": "بُنِّيّ",
+          "de": "braun"
+        },
+        {
+          "ar": "بُرْتُقَالِيّ",
+          "de": "orange"
+        },
+        {
+          "ar": "وَرْدِيّ",
+          "de": "rosa"
+        },
+        {
+          "ar": "بَنَفْسَجِيّ",
+          "de": "lila"
+        },
+        {
+          "ar": "ذَهَبِيّ",
+          "de": "goldfarben"
+        },
+        {
+          "ar": "فِضِّيّ",
+          "de": "silberfarben"
+        },
+        {
+          "ar": "دَائِرَة",
+          "de": "Kreis"
+        },
+        {
+          "ar": "مُرَبَّع",
+          "de": "Quadrat"
+        },
+        {
+          "ar": "مُثَلَّث",
+          "de": "Dreieck"
+        },
+        {
+          "ar": "مُسْتَطِيل",
+          "de": "Rechteck"
+        },
+        {
+          "ar": "خَطّ",
+          "de": "Linie"
+        },
+        {
+          "ar": "نُقْطَة",
+          "de": "Punkt"
+        },
+        {
+          "ar": "شَكْل",
+          "de": "Form"
+        }
+      ],
+      "level": "A1",
+      "levelOrder": 4
+    },
+    {
+      "id": "list_06",
+      "title": "البيت",
+      "count": 20,
+      "words": [
+        {
+          "ar": "بَيْت",
+          "de": "Haus"
+        },
+        {
+          "ar": "شَقَّة",
+          "de": "Wohnung"
+        },
+        {
+          "ar": "غُرْفَة",
+          "de": "Zimmer"
+        },
+        {
+          "ar": "غُرْفَةُ النَّوْم",
+          "de": "Schlafzimmer"
+        },
+        {
+          "ar": "غُرْفَةُ الجُلُوس",
+          "de": "Wohnzimmer"
+        },
+        {
+          "ar": "مَطْبَخ",
+          "de": "Küche"
+        },
+        {
+          "ar": "حَمَّام",
+          "de": "Badezimmer"
+        },
+        {
+          "ar": "بَاب",
+          "de": "Tür"
+        },
+        {
+          "ar": "نَافِذَة",
+          "de": "Fenster"
+        },
+        {
+          "ar": "جِدَار",
+          "de": "Wand"
+        },
+        {
+          "ar": "سَرِير",
+          "de": "Bett"
+        },
+        {
+          "ar": "كُرْسِيّ",
+          "de": "Stuhl"
+        },
+        {
+          "ar": "طَاوِلَة",
+          "de": "Tisch"
+        },
+        {
+          "ar": "خِزَانَة",
+          "de": "Schrank"
+        },
+        {
+          "ar": "مِصْبَاح",
+          "de": "Lampe"
+        },
+        {
+          "ar": "مِرْآة",
+          "de": "Spiegel"
+        },
+        {
+          "ar": "ثَلَّاجَة",
+          "de": "Kühlschrank"
+        },
+        {
+          "ar": "فُرْن",
+          "de": "Ofen"
+        },
+        {
+          "ar": "مِفْتَاح",
+          "de": "Schlüssel"
+        },
+        {
+          "ar": "شُرْفَة",
+          "de": "Balkon"
+        }
+      ],
+      "level": "A1",
+      "levelOrder": 6
+    },
+    {
+      "id": "list_07",
+      "title": "الطعام 1",
+      "count": 20,
+      "words": [
+        {
+          "ar": "خُبْز",
+          "de": "Brot"
+        },
+        {
+          "ar": "أَرُزّ",
+          "de": "Reis"
+        },
+        {
+          "ar": "مَعْكَرُونَة",
+          "de": "Nudeln"
+        },
+        {
+          "ar": "لَحْم",
+          "de": "Fleisch"
+        },
+        {
+          "ar": "دَجَاج",
+          "de": "Hähnchen"
+        },
+        {
+          "ar": "سَمَك",
+          "de": "Fisch"
+        },
+        {
+          "ar": "بَيْض",
+          "de": "Eier"
+        },
+        {
+          "ar": "جُبْن",
+          "de": "Käse"
+        },
+        {
+          "ar": "حَلِيب",
+          "de": "Milch"
+        },
+        {
+          "ar": "زُبْدَة",
+          "de": "Butter"
+        },
+        {
+          "ar": "زَيْت",
+          "de": "Öl"
+        },
+        {
+          "ar": "مِلْح",
+          "de": "Salz"
+        },
+        {
+          "ar": "سُكَّر",
+          "de": "Zucker"
+        },
+        {
+          "ar": "بَطَاطِس",
+          "de": "Kartoffeln"
+        },
+        {
+          "ar": "طَمَاطِم",
+          "de": "Tomaten"
+        },
+        {
+          "ar": "خِيَار",
+          "de": "Gurke"
+        },
+        {
+          "ar": "جَزَر",
+          "de": "Karotte"
+        },
+        {
+          "ar": "بَصَل",
+          "de": "Zwiebel"
+        },
+        {
+          "ar": "ثَوْم",
+          "de": "Knoblauch"
+        },
+        {
+          "ar": "عَدَس",
+          "de": "Linsen"
+        }
+      ],
+      "level": "A1",
+      "levelOrder": 7
+    },
+    {
+      "id": "list_08",
+      "title": "الطعام 2",
+      "count": 20,
+      "words": [
+        {
+          "ar": "تُفَّاح",
+          "de": "Apfel"
+        },
+        {
+          "ar": "مَوْز",
+          "de": "Banane"
+        },
+        {
+          "ar": "بُرْتُقَال",
+          "de": "Orange"
+        },
+        {
+          "ar": "عِنَب",
+          "de": "Trauben"
+        },
+        {
+          "ar": "فَرَاوِلَة",
+          "de": "Erdbeere"
+        },
+        {
+          "ar": "بِطِّيخ",
+          "de": "Wassermelone"
+        },
+        {
+          "ar": "لَيْمُون",
+          "de": "Zitrone"
+        },
+        {
+          "ar": "تَمْر",
+          "de": "Datteln"
+        },
+        {
+          "ar": "خَوْخ",
+          "de": "Pfirsich"
+        },
+        {
+          "ar": "كُمَّثْرَى",
+          "de": "Birne"
+        },
+        {
+          "ar": "حَلْوَى",
+          "de": "Süßigkeit"
+        },
+        {
+          "ar": "شُوكُولَاتَة",
+          "de": "Schokolade"
+        },
+        {
+          "ar": "كَعْك",
+          "de": "Kuchen"
+        },
+        {
+          "ar": "عَسَل",
+          "de": "Honig"
+        },
+        {
+          "ar": "شُورْبَة",
+          "de": "Suppe"
+        },
+        {
+          "ar": "سَلَطَة",
+          "de": "Salatgericht"
+        },
+        {
+          "ar": "شَطِيرَة",
+          "de": "Sandwich"
+        },
+        {
+          "ar": "وَجْبَة",
+          "de": "Mahlzeit"
+        },
+        {
+          "ar": "فُطُور",
+          "de": "Frühstück"
+        },
+        {
+          "ar": "عَشَاء",
+          "de": "Abendessen"
+        }
+      ],
+      "level": "A2",
+      "levelOrder": 1
+    },
+    {
+      "id": "list_09",
+      "title": "المشروبات والمطعم",
+      "count": 20,
+      "words": [
+        {
+          "ar": "مَاء",
+          "de": "Wasser"
+        },
+        {
+          "ar": "شَاي",
+          "de": "Tee"
+        },
+        {
+          "ar": "قَهْوَة",
+          "de": "Kaffee"
+        },
+        {
+          "ar": "عَصِير",
+          "de": "Saft"
+        },
+        {
+          "ar": "مَشْرُوب",
+          "de": "Getränk"
+        },
+        {
+          "ar": "كَأْس",
+          "de": "Glas"
+        },
+        {
+          "ar": "فِنْجَان",
+          "de": "Tasse"
+        },
+        {
+          "ar": "زُجَاجَة",
+          "de": "Flasche"
+        },
+        {
+          "ar": "مَطْعَم",
+          "de": "Restaurant"
+        },
+        {
+          "ar": "نَادِل",
+          "de": "Kellner"
+        },
+        {
+          "ar": "قَائِمَةُ الطَّعَام",
+          "de": "Speisekarte"
+        },
+        {
+          "ar": "طَلَب",
+          "de": "Bestellung"
+        },
+        {
+          "ar": "حِسَاب",
+          "de": "Rechnung"
+        },
+        {
+          "ar": "مِلْعَقَة",
+          "de": "Löffel"
+        },
+        {
+          "ar": "شَوْكَة",
+          "de": "Gabel"
+        },
+        {
+          "ar": "سِكِّين",
+          "de": "Messer"
+        },
+        {
+          "ar": "صَحْن",
+          "de": "Teller"
+        },
+        {
+          "ar": "لَذِيذ",
+          "de": "lecker"
+        },
+        {
+          "ar": "جَائِع",
+          "de": "hungrig"
+        },
+        {
+          "ar": "عَطْشَان",
+          "de": "durstig"
+        }
+      ],
+      "level": "A1",
+      "levelOrder": 8
+    },
+    {
+      "id": "list_10",
+      "title": "الجسم والصحة",
+      "count": 20,
+      "words": [
+        {
+          "ar": "جِسْم",
+          "de": "Körper"
+        },
+        {
+          "ar": "رَأْس",
+          "de": "Kopf"
+        },
+        {
+          "ar": "وَجْه",
+          "de": "Gesicht"
+        },
+        {
+          "ar": "عَيْن",
+          "de": "Auge"
+        },
+        {
+          "ar": "أُذُن",
+          "de": "Ohr"
+        },
+        {
+          "ar": "أَنْف",
+          "de": "Nase"
+        },
+        {
+          "ar": "فَم",
+          "de": "Mund"
+        },
+        {
+          "ar": "سِنّ",
+          "de": "Zahn"
+        },
+        {
+          "ar": "شَعْر",
+          "de": "Haar"
+        },
+        {
+          "ar": "يَد",
+          "de": "Hand"
+        },
+        {
+          "ar": "ذِرَاع",
+          "de": "Arm"
+        },
+        {
+          "ar": "رِجْل",
+          "de": "Bein"
+        },
+        {
+          "ar": "قَدَم",
+          "de": "Fuß"
+        },
+        {
+          "ar": "ظَهْر",
+          "de": "Rücken"
+        },
+        {
+          "ar": "بَطْن",
+          "de": "Bauch"
+        },
+        {
+          "ar": "قَلْب",
+          "de": "Herz"
+        },
+        {
+          "ar": "صِحَّة",
+          "de": "Gesundheit"
+        },
+        {
+          "ar": "مَرِيض",
+          "de": "krank"
+        },
+        {
+          "ar": "طَبِيب",
+          "de": "Arzt"
+        },
+        {
+          "ar": "دَوَاء",
+          "de": "Medikament"
+        }
+      ],
+      "level": "A2",
+      "levelOrder": 2
+    },
+    {
+      "id": "list_11",
+      "title": "المدرسة والتعلّم",
+      "count": 20,
+      "words": [
+        {
+          "ar": "مَدْرَسَة",
+          "de": "Schule"
+        },
+        {
+          "ar": "صَفّ",
+          "de": "Klasse"
+        },
+        {
+          "ar": "طَالِب",
+          "de": "Schüler / Student"
+        },
+        {
+          "ar": "طَالِبَة",
+          "de": "Schülerin / Studentin"
+        },
+        {
+          "ar": "مُعَلِّم",
+          "de": "Lehrer"
+        },
+        {
+          "ar": "كِتَاب",
+          "de": "Buch"
+        },
+        {
+          "ar": "دَفْتَر",
+          "de": "Heft"
+        },
+        {
+          "ar": "قَلَم",
+          "de": "Stift"
+        },
+        {
+          "ar": "مِمْحَاة",
+          "de": "Radiergummi"
+        },
+        {
+          "ar": "سَبُّورَة",
+          "de": "Tafel"
+        },
+        {
+          "ar": "دَرْس",
+          "de": "Unterricht / Lektion"
+        },
+        {
+          "ar": "وَاجِب",
+          "de": "Hausaufgabe"
+        },
+        {
+          "ar": "اِخْتِبَار",
+          "de": "Test / Prüfung"
+        },
+        {
+          "ar": "سُؤَال",
+          "de": "Frage"
+        },
+        {
+          "ar": "جَوَاب",
+          "de": "Antwort"
+        },
+        {
+          "ar": "كَلِمَة",
+          "de": "Wort"
+        },
+        {
+          "ar": "جُمْلَة",
+          "de": "Satz"
+        },
+        {
+          "ar": "لُغَة",
+          "de": "Sprache"
+        },
+        {
+          "ar": "قِرَاءَة",
+          "de": "Lesen"
+        },
+        {
+          "ar": "كِتَابَة",
+          "de": "Schreiben"
+        }
+      ],
+      "level": "A2",
+      "levelOrder": 3
+    },
+    {
+      "id": "list_12",
+      "title": "المدينة والأماكن",
+      "count": 20,
+      "words": [
+        {
+          "ar": "مَدِينَة",
+          "de": "Stadt"
+        },
+        {
+          "ar": "قَرْيَة",
+          "de": "Dorf"
+        },
+        {
+          "ar": "شَارِع",
+          "de": "Straße"
+        },
+        {
+          "ar": "طَرِيق",
+          "de": "Weg / Straße"
+        },
+        {
+          "ar": "مَيْدَان",
+          "de": "Platz"
+        },
+        {
+          "ar": "مَتْجَر",
+          "de": "Geschäft"
+        },
+        {
+          "ar": "سُوق",
+          "de": "Markt"
+        },
+        {
+          "ar": "بَنْك",
+          "de": "Bank"
+        },
+        {
+          "ar": "صَيْدَلِيَّة",
+          "de": "Apotheke"
+        },
+        {
+          "ar": "مُسْتَشْفَى",
+          "de": "Krankenhaus"
+        },
+        {
+          "ar": "مَطْعَم",
+          "de": "Restaurant"
+        },
+        {
+          "ar": "مَقْهًى",
+          "de": "Café"
+        },
+        {
+          "ar": "فُنْدُق",
+          "de": "Hotel"
+        },
+        {
+          "ar": "جَامِعَة",
+          "de": "Universität"
+        },
+        {
+          "ar": "مَكْتَبَة",
+          "de": "Bibliothek"
+        },
+        {
+          "ar": "مَسْجِد",
+          "de": "Moschee"
+        },
+        {
+          "ar": "حَدِيقَة",
+          "de": "Park"
+        },
+        {
+          "ar": "مَحَطَّة",
+          "de": "Station"
+        },
+        {
+          "ar": "مَطَار",
+          "de": "Flughafen"
+        },
+        {
+          "ar": "مَتْحَف",
+          "de": "Museum"
+        }
+      ],
+      "level": "A1",
+      "levelOrder": 9
+    },
+    {
+      "id": "list_13",
+      "title": "المواصلات",
+      "count": 20,
+      "words": [
+        {
+          "ar": "سَيَّارَة",
+          "de": "Auto"
+        },
+        {
+          "ar": "حَافِلَة",
+          "de": "Bus"
+        },
+        {
+          "ar": "قِطَار",
+          "de": "Zug"
+        },
+        {
+          "ar": "طَائِرَة",
+          "de": "Flugzeug"
+        },
+        {
+          "ar": "سَفِينَة",
+          "de": "Schiff"
+        },
+        {
+          "ar": "دَرَّاجَة",
+          "de": "Fahrrad"
+        },
+        {
+          "ar": "سَيَّارَةُ أُجْرَة",
+          "de": "Taxi"
+        },
+        {
+          "ar": "مِتْرُو",
+          "de": "U-Bahn"
+        },
+        {
+          "ar": "مَحَطَّة",
+          "de": "Haltestelle / Bahnhof"
+        },
+        {
+          "ar": "تَذْكِرَة",
+          "de": "Fahrkarte"
+        },
+        {
+          "ar": "مَطَار",
+          "de": "Flughafen"
+        },
+        {
+          "ar": "رِحْلَة",
+          "de": "Reise / Fahrt"
+        },
+        {
+          "ar": "سَفَر",
+          "de": "Reisen"
+        },
+        {
+          "ar": "سَائِق",
+          "de": "Fahrer"
+        },
+        {
+          "ar": "رَاكِب",
+          "de": "Fahrgast"
+        },
+        {
+          "ar": "وُصُول",
+          "de": "Ankunft"
+        },
+        {
+          "ar": "سَرِيع",
+          "de": "schnell"
+        },
+        {
+          "ar": "بَطِيء",
+          "de": "langsam"
+        },
+        {
+          "ar": "يَمِين",
+          "de": "rechts"
+        },
+        {
+          "ar": "يَسَار",
+          "de": "links"
+        }
+      ],
+      "level": "A1",
+      "levelOrder": 10
+    },
+    {
+      "id": "list_14",
+      "title": "التسوّق والمال",
+      "count": 20,
+      "words": [
+        {
+          "ar": "تَسَوُّق",
+          "de": "Einkaufen"
+        },
+        {
+          "ar": "مَتْجَر",
+          "de": "Geschäft"
+        },
+        {
+          "ar": "سُوق",
+          "de": "Markt"
+        },
+        {
+          "ar": "سِعْر",
+          "de": "Preis"
+        },
+        {
+          "ar": "مَال",
+          "de": "Geld"
+        },
+        {
+          "ar": "نَقْد",
+          "de": "Bargeld"
+        },
+        {
+          "ar": "بِطَاقَة",
+          "de": "Karte"
+        },
+        {
+          "ar": "فَاتُورَة",
+          "de": "Rechnung"
+        },
+        {
+          "ar": "خَصْم",
+          "de": "Rabatt"
+        },
+        {
+          "ar": "غَالٍ",
+          "de": "teuer"
+        },
+        {
+          "ar": "رَخِيص",
+          "de": "billig"
+        },
+        {
+          "ar": "كَمْ؟",
+          "de": "Wie viel?"
+        },
+        {
+          "ar": "كَمْ السِّعْر؟",
+          "de": "Wie viel kostet es?"
+        },
+        {
+          "ar": "أُرِيدُ هَذَا",
+          "de": "Ich möchte das"
+        },
+        {
+          "ar": "مَقَاس",
+          "de": "Größe"
+        },
+        {
+          "ar": "لَوْن",
+          "de": "Farbe"
+        },
+        {
+          "ar": "يَشْتَرِي",
+          "de": "kaufen"
+        },
+        {
+          "ar": "يَبِيع",
+          "de": "verkaufen"
+        },
+        {
+          "ar": "يَدْفَع",
+          "de": "bezahlen"
+        },
+        {
+          "ar": "يُورُو",
+          "de": "Euro"
+        }
+      ],
+      "level": "A2",
+      "levelOrder": 4
+    },
+    {
+      "id": "list_15",
+      "title": "الطقس والطبيعة",
+      "count": 20,
+      "words": [
+        {
+          "ar": "طَقْس",
+          "de": "Wetter"
+        },
+        {
+          "ar": "شَمْس",
+          "de": "Sonne"
+        },
+        {
+          "ar": "مَطَر",
+          "de": "Regen"
+        },
+        {
+          "ar": "ثَلْج",
+          "de": "Schnee"
+        },
+        {
+          "ar": "رِيح",
+          "de": "Wind"
+        },
+        {
+          "ar": "سَحَاب",
+          "de": "Wolken"
+        },
+        {
+          "ar": "سَمَاء",
+          "de": "Himmel"
+        },
+        {
+          "ar": "حَارّ",
+          "de": "heiß"
+        },
+        {
+          "ar": "بَارِد",
+          "de": "kalt"
+        },
+        {
+          "ar": "دَافِئ",
+          "de": "warm"
+        },
+        {
+          "ar": "مُشْمِس",
+          "de": "sonnig"
+        },
+        {
+          "ar": "غَائِم",
+          "de": "bewölkt"
+        },
+        {
+          "ar": "بَحْر",
+          "de": "Meer"
+        },
+        {
+          "ar": "نَهْر",
+          "de": "Fluss"
+        },
+        {
+          "ar": "جَبَل",
+          "de": "Berg"
+        },
+        {
+          "ar": "شَجَرَة",
+          "de": "Baum"
+        },
+        {
+          "ar": "زَهْرَة",
+          "de": "Blume"
+        },
+        {
+          "ar": "غَابَة",
+          "de": "Wald"
+        },
+        {
+          "ar": "صَحْرَاء",
+          "de": "Wüste"
+        },
+        {
+          "ar": "طَبِيعَة",
+          "de": "Natur"
+        }
+      ],
+      "level": "A2",
+      "levelOrder": 5
+    },
+    {
+      "id": "list_16",
+      "title": "الهوايات والأنشطة",
+      "count": 20,
+      "words": [
+        {
+          "ar": "هَوَايَة",
+          "de": "Hobby"
+        },
+        {
+          "ar": "قِرَاءَة",
+          "de": "Lesen"
+        },
+        {
+          "ar": "كِتَابَة",
+          "de": "Schreiben"
+        },
+        {
+          "ar": "رَسْم",
+          "de": "Zeichnen"
+        },
+        {
+          "ar": "تَصْوِير",
+          "de": "Fotografieren"
+        },
+        {
+          "ar": "مُوسِيقَى",
+          "de": "Musik"
+        },
+        {
+          "ar": "غِنَاء",
+          "de": "Singen"
+        },
+        {
+          "ar": "رَقْص",
+          "de": "Tanzen"
+        },
+        {
+          "ar": "سِبَاحَة",
+          "de": "Schwimmen"
+        },
+        {
+          "ar": "جَرْي",
+          "de": "Laufen"
+        },
+        {
+          "ar": "مَشْي",
+          "de": "Spazieren"
+        },
+        {
+          "ar": "كُرَةُ القَدَم",
+          "de": "Fußball"
+        },
+        {
+          "ar": "كُرَةُ السَّلَّة",
+          "de": "Basketball"
+        },
+        {
+          "ar": "رِيَاضَة",
+          "de": "Sport"
+        },
+        {
+          "ar": "طَبْخ",
+          "de": "Kochen"
+        },
+        {
+          "ar": "سَفَر",
+          "de": "Reisen"
+        },
+        {
+          "ar": "تَخْيِيم",
+          "de": "Camping"
+        },
+        {
+          "ar": "أَلْعَاب",
+          "de": "Spiele"
+        },
+        {
+          "ar": "شَطْرَنْج",
+          "de": "Schach"
+        },
+        {
+          "ar": "فِيلْم",
+          "de": "Film"
+        }
+      ],
+      "level": "A2",
+      "levelOrder": 6
+    },
+    {
+      "id": "list_17",
+      "title": "الأفعال الأساسية 1",
+      "count": 20,
+      "words": [
+        {
+          "ar": "يَكُون",
+          "de": "sein"
+        },
+        {
+          "ar": "يَمْلِك",
+          "de": "haben / besitzen"
+        },
+        {
+          "ar": "يَذْهَب",
+          "de": "gehen"
+        },
+        {
+          "ar": "يَأْتِي",
+          "de": "kommen"
+        },
+        {
+          "ar": "يَأْكُل",
+          "de": "essen"
+        },
+        {
+          "ar": "يَشْرَب",
+          "de": "trinken"
+        },
+        {
+          "ar": "يَنَام",
+          "de": "schlafen"
+        },
+        {
+          "ar": "يَسْتَيْقِظ",
+          "de": "aufwachen"
+        },
+        {
+          "ar": "يَعْمَل",
+          "de": "arbeiten"
+        },
+        {
+          "ar": "يَدْرُس",
+          "de": "lernen / studieren"
+        },
+        {
+          "ar": "يَقْرَأ",
+          "de": "lesen"
+        },
+        {
+          "ar": "يَكْتُب",
+          "de": "schreiben"
+        },
+        {
+          "ar": "يَتَكَلَّم",
+          "de": "sprechen"
+        },
+        {
+          "ar": "يَسْمَع",
+          "de": "hören"
+        },
+        {
+          "ar": "يَرَى",
+          "de": "sehen"
+        },
+        {
+          "ar": "يَفْهَم",
+          "de": "verstehen"
+        },
+        {
+          "ar": "يَعْرِف",
+          "de": "wissen / kennen"
+        },
+        {
+          "ar": "يُرِيد",
+          "de": "wollen"
+        },
+        {
+          "ar": "يُحِبّ",
+          "de": "lieben / mögen"
+        },
+        {
+          "ar": "يَحْتَاج",
+          "de": "brauchen"
+        }
+      ],
+      "level": "A2",
+      "levelOrder": 7
+    },
+    {
+      "id": "list_18",
+      "title": "الأفعال الأساسية 2",
+      "count": 20,
+      "words": [
+        {
+          "ar": "يَأْخُذ",
+          "de": "nehmen"
+        },
+        {
+          "ar": "يُعْطِي",
+          "de": "geben"
+        },
+        {
+          "ar": "يَجْلِس",
+          "de": "sitzen"
+        },
+        {
+          "ar": "يَقِف",
+          "de": "stehen"
+        },
+        {
+          "ar": "يَمْشِي",
+          "de": "gehen / laufen"
+        },
+        {
+          "ar": "يَجْرِي",
+          "de": "rennen"
+        },
+        {
+          "ar": "يَسْكُن",
+          "de": "wohnen"
+        },
+        {
+          "ar": "يَلْبَس",
+          "de": "anziehen / tragen"
+        },
+        {
+          "ar": "يَشْتَرِي",
+          "de": "kaufen"
+        },
+        {
+          "ar": "يَبِيع",
+          "de": "verkaufen"
+        },
+        {
+          "ar": "يَدْفَع",
+          "de": "bezahlen"
+        },
+        {
+          "ar": "يَسْأَل",
+          "de": "fragen"
+        },
+        {
+          "ar": "يُجِيب",
+          "de": "antworten"
+        },
+        {
+          "ar": "يَبْدَأ",
+          "de": "beginnen"
+        },
+        {
+          "ar": "يَنْتَهِي",
+          "de": "enden"
+        },
+        {
+          "ar": "يَلْعَب",
+          "de": "spielen"
+        },
+        {
+          "ar": "يُسَاعِد",
+          "de": "helfen"
+        },
+        {
+          "ar": "يَبْحَث",
+          "de": "suchen"
+        },
+        {
+          "ar": "يَجِد",
+          "de": "finden"
+        },
+        {
+          "ar": "يَنْتَظِر",
+          "de": "warten"
+        }
+      ],
+      "level": "A2",
+      "levelOrder": 8
+    },
+    {
+      "id": "list_19",
+      "title": "الصفات الأساسية",
+      "count": 20,
+      "words": [
+        {
+          "ar": "كَبِير",
+          "de": "groß"
+        },
+        {
+          "ar": "صَغِير",
+          "de": "klein"
+        },
+        {
+          "ar": "طَوِيل",
+          "de": "lang / groß"
+        },
+        {
+          "ar": "قَصِير",
+          "de": "kurz / klein"
+        },
+        {
+          "ar": "جَدِيد",
+          "de": "neu"
+        },
+        {
+          "ar": "قَدِيم",
+          "de": "alt"
+        },
+        {
+          "ar": "جَمِيل",
+          "de": "schön"
+        },
+        {
+          "ar": "قَبِيح",
+          "de": "hässlich"
+        },
+        {
+          "ar": "سَهْل",
+          "de": "einfach"
+        },
+        {
+          "ar": "صَعْب",
+          "de": "schwierig"
+        },
+        {
+          "ar": "سَرِيع",
+          "de": "schnell"
+        },
+        {
+          "ar": "بَطِيء",
+          "de": "langsam"
+        },
+        {
+          "ar": "قَوِيّ",
+          "de": "stark"
+        },
+        {
+          "ar": "ضَعِيف",
+          "de": "schwach"
+        },
+        {
+          "ar": "سَعِيد",
+          "de": "glücklich"
+        },
+        {
+          "ar": "حَزِين",
+          "de": "traurig"
+        },
+        {
+          "ar": "مُتْعَب",
+          "de": "müde"
+        },
+        {
+          "ar": "نَشِيط",
+          "de": "aktiv"
+        },
+        {
+          "ar": "نَظِيف",
+          "de": "sauber"
+        },
+        {
+          "ar": "مُهِمّ",
+          "de": "wichtig"
+        }
+      ],
+      "level": "A2",
+      "levelOrder": 9
+    },
+    {
+      "id": "list_20",
+      "title": "عبارات يومية مهمة",
+      "count": 20,
+      "words": [
+        {
+          "ar": "مَاذَا تُرِيد؟",
+          "de": "Was möchtest du?"
+        },
+        {
+          "ar": "أُرِيدُ هَذَا",
+          "de": "Ich möchte das"
+        },
+        {
+          "ar": "أَيْنَ الحَمَّام؟",
+          "de": "Wo ist die Toilette?"
+        },
+        {
+          "ar": "أَيْنَ المَحَطَّة؟",
+          "de": "Wo ist die Haltestelle?"
+        },
+        {
+          "ar": "كَمْ السِّعْر؟",
+          "de": "Wie viel kostet es?"
+        },
+        {
+          "ar": "هَلْ تَتَكَلَّمُ الأَلْمَانِيَّة؟",
+          "de": "Sprichst du Deutsch?"
+        },
+        {
+          "ar": "أَتَكَلَّمُ قَلِيلاً",
+          "de": "Ich spreche ein wenig"
+        },
+        {
+          "ar": "تَكَلَّمْ بِبُطْءٍ",
+          "de": "Sprich langsam"
+        },
+        {
+          "ar": "كَرِّرْ مِنْ فَضْلِكَ",
+          "de": "Bitte wiederholen"
+        },
+        {
+          "ar": "مَاذَا يَعْنِي هَذَا؟",
+          "de": "Was bedeutet das?"
+        },
+        {
+          "ar": "لَا أَعْرِف",
+          "de": "Ich weiß nicht"
+        },
+        {
+          "ar": "لَا بَأْس",
+          "de": "Kein Problem"
+        },
+        {
+          "ar": "حَسَناً",
+          "de": "Okay"
+        },
+        {
+          "ar": "اِنْتَظِرْ قَلِيلاً",
+          "de": "Warte kurz"
+        },
+        {
+          "ar": "سَاعِدْنِي مِنْ فَضْلِكَ",
+          "de": "Hilf mir bitte"
+        },
+        {
+          "ar": "أَنَا جَائِع",
+          "de": "Ich habe Hunger"
+        },
+        {
+          "ar": "أَنَا عَطْشَان",
+          "de": "Ich habe Durst"
+        },
+        {
+          "ar": "أَنَا مُتْعَب",
+          "de": "Ich bin müde"
+        },
+        {
+          "ar": "أَنَا بِخَيْر",
+          "de": "Mir geht es gut"
+        },
+        {
+          "ar": "لِمَاذَا؟",
+          "de": "Warum?"
+        }
+      ],
+      "level": "A2",
+      "levelOrder": 10
+    }
+  ],
+  "cefrLevels": [
+    "A1",
+    "A2"
+  ]
+}

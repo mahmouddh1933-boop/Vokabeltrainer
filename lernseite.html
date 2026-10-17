@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>بطاقات التعلّم</title><link rel="stylesheet" href="styles.css"><script src="js/app.js" defer></script><script src="js/pages/learn.js" defer></script><link rel="stylesheet" href="css/interface-languages.css"><script src="js/interface-languages.js" defer></script><script src="js/tanwin-display.js" defer></script><link rel="stylesheet" href="css/modern.css"><script src="js/design.js" defer></script></head>
+<body class="learn-wide"><main class="container">
+    <h1>بطاقات التعلّم</h1><div id="source-meta" class="current-source-meta"></div>
+    <div class="learning-progress-row"><span id="word-position">0 / 0</span><div class="progress-track"><div id="learn-progress-fill" class="progress-fill"></div></div><span id="mastery-text">0٪ إتقان</span></div>
+    <div class="flashcard-wrapper"><div class="flashcard" id="flashcard" tabindex="0" role="button" aria-label="اقلب البطاقة"><div class="front" id="front">—</div><div class="back" id="back">—</div></div></div>
+    <div class="flashcard-toolbar"><button id="pronounce-button" class="pronounce-button" type="button"><span class="speaker-icon">🔊</span> استمع إلى النطق</button></div>
+    <p id="speech-status"></p><p class="speech-online-note">إذا لم يتوفر صوت عربي على الجهاز، يحاول التطبيق استخدام النطق عبر الإنترنت.</p>
+    <div class="buttons"><button id="prev-button" type="button">السابق</button><button id="next-button" type="button">التالي</button></div>
+    <div class="learning-actions"><button id="test-button" type="button">ابدأ اختباراً</button><button id="review-button" class="secondary-button" type="button">مراجعة الأخطاء</button><button id="stats-button" class="secondary-button" type="button">الإحصائيات</button><button id="home-button" class="secondary-button" type="button">الصفحة الرئيسية</button></div>
+    <section class="mastery-rule-panel">
+        <h3>شرط إتقان هذه القائمة</h3>
+        <p>احصل على <strong>80٪ أو أكثر مرتين</strong> في كل اختبار من الاختبارات الستة. لا توجد تقييمات «صعب/جيد/سهل» ولا مواعيد مراجعة.</p>
+        <div id="test-mastery-status" class="test-mastery-status-grid"></div><p id="mastery-summary-note" class="mini-note"></p>
+    </section>
+</main><footer class="teacher-credit" id="teacher-credit">إعداد المعلم: <b>محمود بركات</b></footer>
+</body></html>

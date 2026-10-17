@@ -1,0 +1,99 @@
+/* Breitbild-Layout: Originalfarben und Funktionen bleiben unverändert. */
+@media (min-width: 1100px) {
+  body { padding: 12px 18px 18px; }
+  body .container, body .container.home-container,
+  body.exam-two-columns .container, body.results-two-columns .container {
+    width: calc(100% - 12px); max-width: 1880px;
+    margin: 8px auto 14px; padding: 22px clamp(20px, 2.4vw, 44px);
+  }
+  .container h1 { font-size: clamp(1.65rem, 2.2vw, 2.2rem); margin-bottom: 6px; }
+  .container h2 { margin-bottom: 8px; }
+  .container p { line-height: 1.55; }
+  .main-choice-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; margin: 14px 0; }
+  .main-choice-button { min-height: 94px; padding: 14px; }
+  .main-choice-button .choice-icon { width: 44px; height: 44px; flex-basis:44px; }
+  .home-status-grid { margin: 10px 0; }
+  .home-intro { margin-bottom: 10px; }
+  .cefr-level-card { padding: 15px; }
+  .ready-lists-grid, .topic-grid { gap: 10px; }
+  .stats-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; margin: 14px 0; }
+  .stat-card { padding: 12px; }
+  .mastery-tests-grid, .test-mastery-status-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 9px; margin: 10px 0; }
+  .mastery-rule-panel { padding: 15px; margin: 10px 0; }
+  /* Lernseite: Karte und Fortschritt links, Prüfungsübersicht rechts. */
+  body.learn-wide .container {
+    display: grid; grid-template-columns: minmax(340px, 0.9fr) minmax(540px, 1.1fr);
+    column-gap: 24px; align-content: start; align-items: start;
+  }
+  body.learn-wide .container > h1,
+  body.learn-wide .container > #source-meta,
+  body.learn-wide .container > .learning-actions { grid-column: 1 / -1; }
+  body.learn-wide .learning-progress-row,
+  body.learn-wide .flashcard-wrapper,
+  body.learn-wide .flashcard-toolbar,
+  body.learn-wide #speech-status,
+  body.learn-wide .speech-online-note,
+  body.learn-wide .buttons { grid-column: 1; width: 100%; }
+  body.learn-wide .mastery-rule-panel { grid-column: 2; grid-row: 3 / span 6; margin: 0; }
+  body.learn-wide .learning-progress-row { max-width: 100%; margin: 6px 0; }
+  body.learn-wide .flashcard-wrapper { max-width: 100%; margin: 8px 0 5px; }
+  body.learn-wide .flashcard { height: 185px; }
+  body.learn-wide .flashcard .front, body.learn-wide .flashcard .back {
+    padding: 16px; font-size: clamp(1.5rem, 2.7vw, 2.05rem);
+  }
+  body.learn-wide .flashcard-toolbar { margin-top: 5px; }
+  body.learn-wide .speech-online-note { margin: 2px 0; max-width: none; }
+  body.learn-wide .buttons { margin: 4px 0; }
+  body.learn-wide .learning-actions { margin-top: 10px; }
+  /* Fehlerwiederholung: Lernkarte in voller nutzbarer Breite mit kompakten Bedienelementen */
+  body.review-wide .review-card-wrapper { max-width: 620px; margin: 12px auto; }
+  body.review-wide .review-card { min-height: 190px; }
+  body.review-wide .review-actions { display:flex; flex-wrap:wrap; justify-content:center; }
+  body.review-wide .page-subtitle { max-width: none; }
+  /* Ergebnis- und Testfragen bleiben genau zweispaltig. */
+  body.exam-two-columns #test-area, body.results-two-columns #results { gap: 12px; }
+  body.exam-two-columns #test-area > .question,
+  body.results-two-columns #results > .result-question { padding: 14px; }
+}
+@media (min-width: 1100px) and (max-width: 1300px) {
+  body.learn-wide .container { grid-template-columns: minmax(300px, .9fr) minmax(440px, 1.1fr); gap: 14px; }
+}
+@media (max-width: 1099px) {
+  body.learn-wide .container { display:block; }
+}
+/* In jeder Bildschirmgröße müssen alle Eingaben lesbar bleiben. */
+input:not([type=checkbox]):not([type=radio]), textarea, select { color:#12382d; -webkit-text-fill-color:#12382d; }
+input:not([type=checkbox]):not([type=radio]):not(:disabled), textarea:not(:disabled) { background-color:#fff; opacity:1; }
+
+/* Lernseite: zentralisierte Aktionsleiste; Bedingungen folgen darunter. */
+body.learn-wide .container { display: block !important; }
+body.learn-wide .container > .learning-progress-row,
+body.learn-wide .container > .flashcard-wrapper,
+body.learn-wide .container > .flashcard-toolbar,
+body.learn-wide .container > #speech-status,
+body.learn-wide .container > .speech-online-note { max-width: 920px; margin-left: auto; margin-right: auto; }
+body.learn-wide .buttons,
+body.learn-wide .learning-actions { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:12px; margin:12px auto; width:100%; }
+body.learn-wide .buttons button,
+body.learn-wide .learning-actions button {
+ background: linear-gradient(135deg,#11784c,#1ca565) !important;
+ color:#fff !important;
+ border:1px solid #0d7046 !important;
+ border-radius:15px !important;
+ box-shadow:0 6px 16px rgba(12,97,61,.17) !important;
+ margin:0 !important;
+ padding:12px 21px;
+ min-width:155px;
+ transition: background .18s ease, transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+body.learn-wide .buttons button:hover:not(:disabled),
+body.learn-wide .learning-actions button:hover:not(:disabled) {
+ background:linear-gradient(135deg,#0d5e3a,#148454) !important;
+ border-color:#09492e !important;
+ transform:translateY(-3px);
+ box-shadow:0 12px 24px rgba(12,97,61,.28) !important;
+}
+body.learn-wide .buttons button:focus-visible,
+body.learn-wide .learning-actions button:focus-visible {outline:3px solid #f3b83a;outline-offset:3px}
+body.learn-wide .mastery-rule-panel {grid-column:auto !important;grid-row:auto !important; width:100%; max-width:100%; margin:22px auto 12px !important;}
+@media (max-width:680px){body.learn-wide .buttons button,body.learn-wide .learning-actions button{min-width:0;flex:1 1 135px;}}

@@ -1,0 +1,16 @@
+.connected-word{direction:rtl;unicode-bidi:isolate;font-family:"Noto Naskh Arabic","Traditional Arabic",serif;font-size:clamp(2.2rem,7vw,3.4rem);line-height:1.9;word-break:normal;text-align:center;background:#f1f7fb;border-radius:15px;padding:12px;margin:14px 0;color:#182e43}.connected-choices{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;direction:rtl}.connected-choices button{font-size:1.7rem;min-width:60px;padding:8px 14px}.connected-choices button[aria-pressed=true]{background:#087c83;color:white}.connected-help{font-size:.9rem;color:#475569}.connected-word .missing{color:#bc5a0c}
+.connected-input-list{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;direction:rtl}.connected-input-label{display:flex;align-items:center;flex-direction:column;gap:5px;font-size:.9rem}.connected-input-label input{width:58px;min-height:56px;font-size:1.7rem;text-align:center}.connected-word{white-space:pre-wrap;overflow-wrap:anywhere;}
+
+/* Missing-letter boxes appear at their actual positions in the RTL word. */
+.connected-word{direction:rtl;white-space:pre-wrap;line-height:2.3;overflow-wrap:normal;}
+.connected-inline-label{display:inline-flex;vertical-align:middle;align-items:center;justify-content:center;direction:rtl;margin:0 2px;}
+.connected-word .connected-inline-label input{box-sizing:border-box;display:inline-block;width:1.35em;height:1.35em;padding:0 .08em;border:2px solid #087c83;border-radius:8px;background:#fff;font-family:inherit;font-size:.8em;text-align:center;direction:rtl;color:#132d3b;min-width:0;max-width:none;vertical-align:middle;}
+.connected-word .connected-inline-label input::placeholder{color:#78929c;opacity:1;}
+.connected-word .connected-inline-label input:focus{outline:3px solid #a0ded8;outline-offset:1px;}
+.connected-word .connected-inline-label input.has-value{background:#e6f8f0;}
+
+/* Filled gaps become native Arabic text nodes and shape with their neighbors. */
+.connected-word{white-space:pre-wrap;word-break:normal;overflow-wrap:normal;unicode-bidi:isolate;}
+.connected-word .connected-inline-label{margin:0 .04em;}
+.connected-undo{margin:5px 0 12px;min-width:180px;}
+.connected-undo:disabled{opacity:.5;cursor:not-allowed;}

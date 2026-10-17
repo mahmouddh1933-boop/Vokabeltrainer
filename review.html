@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>مراجعة الكلمات الخاطئة</title><link rel="stylesheet" href="styles.css"><script src="js/app.js" defer></script><script src="js/pages/review.js" defer></script><link rel="stylesheet" href="css/interface-languages.css"><script src="js/interface-languages.js" defer></script><script src="js/tanwin-display.js" defer></script><link rel="stylesheet" href="css/modern.css"><script src="js/design.js" defer></script></head>
+<body class="review-wide"><main class="container">
+    <h1>مراجعة الكلمات الخاطئة</h1><p class="page-subtitle">تظهر هنا الكلمات التي أخطأت فيها في الاختبارات. لا توجد مواعيد أو تكرار متباعد.</p>
+    <div id="review-content">
+        <div class="review-meta"><span id="review-position" class="review-badge">0 / 0</span><span id="review-mistakes" class="review-badge">0 أخطاء</span><span id="review-test" class="review-badge">كلمة للمراجعة</span></div>
+        <div class="review-card-wrapper"><div class="review-card" id="review-card" tabindex="0" role="button" aria-label="اقلب البطاقة"><div class="review-front"><span id="review-arabic" class="review-word">—</span><small>اضغط لإظهار المعنى</small></div><div class="review-back"><span id="review-german" class="review-translation">—</span><small>راجع الكلمة ثم أزلها من قائمة الأخطاء إذا أردت</small></div></div></div>
+        <button id="pronounce-button" class="pronounce-button" type="button">🔊 استمع إلى النطق</button><p id="speech-status"></p>
+        <div class="review-actions"><button id="reviewed-button" type="button">✓ تمت مراجعة هذه الكلمة</button><button id="prev-review" class="secondary-button" type="button">السابق</button><button id="next-review" class="secondary-button" type="button">التالي</button></div>
+    </div>
+    <div id="empty-review" class="empty-state" hidden><span class="empty-state-icon">🎉</span><h2>لا توجد كلمات في قائمة الأخطاء</h2><p>أي كلمة تخطئ فيها أثناء الاختبارات ستظهر هنا للمراجعة.</p></div>
+    <div class="learning-actions"><button id="learn-button" class="secondary-button" type="button">بطاقات التعلّم</button><button id="stats-button" class="secondary-button" type="button">الإحصائيات</button><button id="home-button" class="secondary-button" type="button">الصفحة الرئيسية</button></div>
+</main><footer class="teacher-credit" id="teacher-credit">إعداد المعلم: <b>محمود بركات</b></footer>
+</body></html>

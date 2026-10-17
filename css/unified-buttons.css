@@ -1,0 +1,74 @@
+/* Unified light-green controls across the whole app. */
+:root { --action-green: #2fac75; --action-hover: #218759; }
+button:not(.letters-card):not(.correct):not(.wrong):not(:disabled),
+.file-upload-label,
+.letters-page .letters-grid button:not(:disabled),
+.letters-page .harakat-row button:not(:disabled),
+.letters-page .quiz-options button:not(.letters-card):not(.correct):not(.wrong):not(:disabled),
+.secondary-button:not(:disabled),
+.listen-button:not(:disabled),
+.letters-page .letter-word-audio {
+  background: var(--action-green) !important;
+  background-image: none !important;
+  color: #fff !important;
+  border-color: var(--action-green) !important;
+  text-decoration: none !important;
+  transition: background-color .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease !important;
+}
+button:not(.letters-card):not(.correct):not(.wrong):not(:disabled):hover,
+.file-upload-label:hover,
+.letters-page .letter-word-audio:hover {
+  background: var(--action-hover) !important;
+  border-color: var(--action-hover) !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 9px 19px rgba(16,102,65,.22) !important;
+}
+button:focus-visible, .file-upload-label:focus-visible {
+  outline: 3px solid #ffce64 !important; outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) { button, .file-upload-label { transition: none !important; transform: none !important; } }
+/* Keep diacritic space available on every Arabic label and learning word. */
+:lang(ar) { font-family: "Noto Naskh Arabic", "Amiri", "Traditional Arabic", Tahoma, sans-serif; }
+.letters-intro, .letters-footnote, .letters-hint, .letters-form-label,
+.flashcard-ar, .arabic-word, .word-ar, .question-ar, .letters-front-name {
+ line-height: 1.85;
+}
+
+/* Restore light readable teaching cards and their four Arabic letter forms. */
+.letters-page button.letters-card, .letters-page button.letters-card:not(:disabled),
+.letters-page button.letters-card:hover:not(:disabled) {
+  background:linear-gradient(145deg,#ffffff 0%,#f3faff 100%) !important;
+  background-image:linear-gradient(145deg,#ffffff 0%,#f3faff 100%) !important;
+  color:#16364a !important;
+  border:2px solid #a6c8d6 !important;
+  text-shadow:none !important;
+  transform:none !important;
+  box-shadow:0 9px 24px rgba(20,60,72,.10) !important;
+}
+.letters-page .letters-card .letters-back-heading,
+.letters-page .letters-card .letters-form-label,
+.letters-page .letters-card .letters-form-glyph,
+.letters-page .letters-card .letters-front-name,
+.letters-page .letters-card .letters-big,
+.letters-page .letters-card .card-example strong {color:#173248 !important;opacity:1 !important;visibility:visible !important;}
+.letters-page .letters-card .letters-form{background:#fff !important;border:1px solid #b7cfdb !important;}
+.letters-page .letters-card .letters-form-glyph{font-size:clamp(39px,4.5vw,56px) !important;line-height:1.55 !important;}
+.letters-page .letters-card .letters-form-label{font-size:1.05rem !important;line-height:1.6 !important;}
+.letters-page .letters-card .letters-back-heading{font-size:1.55rem !important;}
+.letters-page .letters-card .letters-front-name{font-size:1.45rem !important;}
+.letters-page .letters-card .card-example strong{font-size:1.65rem !important;}
+.letters-page .letters-card .card-example span{font-size:1.12rem !important;color:#34566b !important;}
+.letters-page .letters-card .letters-flip,.letters-page .letters-card .letters-hint{font-size:1rem !important;color:#3b6475 !important;}
+.letters-page .letters-card .letters-note{font-size:1rem !important;color:#55482f !important;}
+.letters-page .letters-controls button{font-size:1rem !important;}
+/* Readable minimum text size in labels, progress, instructions, test answers. */
+.page-subtitle,.learning-progress-row,.speech-online-note,.mastery-rule-panel,
+.question .question-text,.result-question,.quiz-panel,.letters-intro,
+.letters-footnote,.letters-hint,.letters-speech-status,.connected-help,
+.card-subtitle,.topic-description,.list-progress,.stats-meta,
+small {font-size:max(1rem, 14px);line-height:1.65;}
+@media(max-width:520px){
+ .letters-page .letters-card .letters-form-glyph{font-size:36px !important;}
+ .letters-page .letters-card .letters-form-label{font-size:1rem !important;}
+}

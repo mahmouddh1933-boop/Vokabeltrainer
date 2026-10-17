@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#123f37" />
+    <meta
+      name="description"
+      content="Dein persönlicher Lernraum für Arabisch. Entdecke das Alphabet, lerne neue Wörter und mache deinen Fortschritt sichtbar."
+    />
+    <title>Jisr · Arabisch lernen</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/interface-languages.css" />
+    <link rel="stylesheet" href="css/modern.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"
+      defer
+    ></script>
+    <script src="js/app.js" defer></script>
+    <script src="data/vocab_catalog_fallback.js" defer></script>
+    <script src="js/pages/home.js" defer></script>
+    <script src="js/interface-languages.js" defer></script>
+    <script src="js/tanwin-display.js" defer></script>
+    <script src="js/design.js" defer></script>
+  </head>
+  <body class="dashboard">
+    <main class="container home-container" id="main-content">
+      <header class="page-heading">
+        <div>
+          <p
+            class="eyebrow"
+            data-de="DEIN PERSÖNLICHER LERNRAUM"
+            data-ar="مساحتك الخاصة للتعلّم"
+          >
+            مساحتك الخاصة للتعلّم
+          </p>
+          <h1
+            data-de="Schön, dass du da bist."
+            data-ar="أهلاً، جميل أن نراك هنا."
+          >
+            أهلاً، جميل أن نراك هنا.
+          </h1>
+          <p
+            data-de="Ein kleines Stück Arabisch. Jeden Tag ein Stück weiter."
+            data-ar="قليل من العربية كل يوم. وخطوة جديدة إلى الأمام."
+          >
+            قليل من العربية كل يوم. وخطوة جديدة إلى الأمام.
+          </p>
+        </div>
+        <span class="welcome-symbol" aria-hidden="true">✺</span>
+      </header>
+      <section class="hero-card" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <span class="hero-tag"
+            ><span></span
+            ><span data-de="DEINE REISE BEGINNT HIER" data-ar="رحلتك تبدأ هنا"
+              >رحلتك تبدأ هنا</span
+            ></span
+          >
+          <h2
+            id="hero-title"
+            data-de="Eine neue Sprache.\nEine neue Welt."
+            data-ar="لغة جديدة.\nعالم جديد."
+          >
+            لغة جديدة.<br />عالم جديد.
+          </h2>
+          <p
+            data-de="Entdecke die Schönheit der arabischen Sprache – in deinem Tempo, Wort für Wort."
+            data-ar="اكتشف جمال اللغة العربية. على مهل، وكلمة بعد كلمة."
+          >
+            اكتشف جمال اللغة العربية. على مهل، وكلمة بعد كلمة.
+          </p>
+          <button class="hero-cta" id="hero-start" type="button">
+            <span data-de="Jetzt loslernen" data-ar="ابدأ التعلّم الآن"
+              >ابدأ التعلّم الآن</span
+            ><span aria-hidden="true">↗</span>
+          </button>
+          <div class="hero-meta">
+            <span data-de="20 Themen" data-ar="٢٠ موضوعاً">٢٠ موضوعاً</span
+            ><i></i
+            ><span data-de="2 Sprachniveaus" data-ar="مستويان لغويان"
+              >مستويان لغويان</span
+            ><i></i
+            ><span data-de="Dein Tempo" data-ar="على مهلك">على مهلك</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <span class="art-spark">✳</span>
+          <div class="word-paper">
+            <span class="paper-caption">DEIN ERSTES WORT</span
+            ><span class="paper-arabic" lang="ar">مرحباً</span
+            ><span class="paper-phonetic">marḥaban</span
+            ><span class="paper-translation">Hallo</span
+            ><span class="paper-dot"></span>
+          </div>
+          <span class="floating-word" lang="ar">أهلاً وسهلاً</span
+          ><span
+            class="art-caption"
+            data-de="Kleine Schritte. Große Verbindungen."
+            data-ar="خطوات صغيرة. آفاق واسعة."
+            >خطوات صغيرة. آفاق واسعة.</span
+          >
+        </div>
+      </section>
+      <div class="section-heading">
+        <h2 data-de="Dein Fortschritt auf einen Blick" data-ar="تقدّمك في لمحة">
+          تقدّمك في لمحة
+        </h2>
+        <span
+          class="section-note"
+          data-de="Jeder Schritt zählt"
+          data-ar="كل خطوة لها قيمة"
+          >كل خطوة لها قيمة</span
+        >
+      </div>
+      <div class="home-status-grid">
+        <a class="status-card" href="stats.html"
+          ><span class="stat-icon" data-icon="check"></span>
+          <div>
+            <strong id="mastered-lists-total">0</strong
+            ><span data-de="Gemeisterte Listen" data-ar="قوائم أتقنتها"
+              >قوائم أتقنتها</span
+            >
+          </div>
+          <span class="stat-arrow">↗</span></a
+        >
+        <a class="status-card" href="stats.html"
+          ><span class="stat-icon peach" data-icon="chart"></span>
+          <div>
+            <strong id="tests-total">0</strong
+            ><span data-de="Abgeschlossene Tests" data-ar="اختبارات أكملتها"
+              >اختبارات أكملتها</span
+            >
+          </div>
+          <span class="stat-arrow">↗</span></a
+        >
+        <a class="status-card" href="review.html"
+          ><span class="stat-icon lavender" data-icon="repeat"></span>
+          <div>
+            <strong id="wrong-total">0</strong
+            ><span data-de="Wörter zum Wiederholen" data-ar="كلمات للمراجعة"
+              >كلمات للمراجعة</span
+            >
+          </div>
+          <span class="stat-arrow">↗</span></a
+        >
+      </div>
+      <section id="ready-lists-panel" class="home-panel learning-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-de="WORT FÜR WORT" data-ar="كلمة بعد كلمة">
+              كلمة بعد كلمة
+            </p>
+            <h2 data-de="Dein Lernpfad" data-ar="مسار تعلّمك">مسار تعلّمك</h2>
+          </div>
+          <span class="path-label" data-de="A1 → A2" data-ar="A1 ← A2"
+            >A1 ← A2</span
+          >
+        </div>
+        <p
+          class="section-description"
+          data-de="Wähle dein Niveau und entdecke Wörter, die dich im Alltag begleiten."
+          data-ar="اختر مستواك واكتشف كلمات ترافقك في حياتك اليومية."
+        >
+          اختر مستواك واكتشف كلمات ترافقك في حياتك اليومية.
+        </p>
+        <div id="learning-path"></div>
+      </section>
+      <div class="section-heading tools-heading">
+        <h2 data-de="Mach das Lernen zu deinem" data-ar="تعلّم بطريقتك">
+          تعلّم بطريقتك
+        </h2>
+      </div>
+      <div class="main-choice-grid">
+        <a href="huruf.html" class="main-choice-button letters-home-link"
+          ><span class="tool-glyph" lang="ar">أ ب</span
+          ><span
+            ><strong
+              data-de="Alles beginnt mit Alif"
+              data-ar="كل شيء يبدأ بالألف"
+              >كل شيء يبدأ بالألف</strong
+            ><small
+              data-de="28 Buchstaben. Unendlich viele Möglichkeiten."
+              data-ar="٢٨ حرفاً. وإمكانيات لا تنتهي."
+              >٢٨ حرفاً. وإمكانيات لا تنتهي.</small
+            ><span
+              class="tool-link"
+              data-de="Alphabet entdecken ↗"
+              data-ar="اكتشف الحروف ↖"
+              >اكتشف الحروف ↖</span
+            ></span
+          ></a
+        >
+        <button
+          id="show-excel-button"
+          class="main-choice-button import-card"
+          type="button"
+        >
+          <span class="tool-file" data-icon="upload"></span
+          ><span
+            ><strong
+              data-de="Deine Wörter. Dein Lernplan."
+              data-ar="كلماتك. وخطتك الخاصة."
+              >كلماتك. وخطتك الخاصة.</strong
+            ><small
+              data-de="Lade deine eigene Vokabelliste als Excel-Datei hoch."
+              data-ar="ارفع قائمة مفرداتك الخاصة من ملف Excel."
+              >ارفع قائمة مفرداتك الخاصة من ملف Excel.</small
+            ><span
+              class="tool-link"
+              data-de="Liste importieren ↗"
+              data-ar="استيراد قائمة ↖"
+              >استيراد قائمة ↖</span
+            ></span
+          >
+        </button>
+      </div>
+
+      <section id="excel-panel" class="home-panel upload-panel" hidden>
+        <div class="panel-heading">
+          <span class="stat-icon" data-icon="upload"></span>
+          <h2
+            data-de="Platz für deine eigenen Wörter"
+            data-ar="مساحة لكلماتك الخاصة"
+          >
+            مساحة لكلماتك الخاصة
+          </h2>
+          <p
+            data-de="Arabisch und Deutsch in den ersten beiden Spalten. Als .xlsx oder .xls – die Reihenfolge ist egal."
+            data-ar="ضع العربية والألمانية في أول عمودين بأي ترتيب، بصيغة .xlsx أو .xls."
+          >
+            ضع العربية والألمانية في أول عمودين بأي ترتيب، بصيغة .xlsx أو .xls.
+          </p>
+        </div>
+        <label
+          for="file-upload"
+          class="file-upload-label"
+          tabindex="0"
+          data-de="Excel-Datei auswählen"
+          data-ar="اختر ملف Excel"
+          >اختر ملف Excel</label
+        ><input type="file" id="file-upload" accept=".xlsx,.xls" />
+        <div class="home-actions">
+          <button id="learn-button" type="button" hidden>
+            ابدأ التعلّم من ملف Excel
+          </button>
+        </div>
+        <p id="success-message" role="status" hidden></p>
+        <p id="error-message" role="alert" hidden></p>
+      </section>
+      <div class="home-secondary-actions">
+        <button id="review-button" class="secondary-button" type="button">
+          مراجعة الأخطاء</button
+        ><button id="stats-button" class="secondary-button" type="button">
+          التقدّم والإحصائيات
+        </button>
+      </div>
+      <p
+        class="mastery-footnote"
+        data-de="So meisterst du eine Liste: Erreiche in jedem der sechs Tests zweimal mindestens 80 %."
+        data-ar="لإتقان القائمة: احصل على ٨٠٪ على الأقل مرتين في كل اختبار من الاختبارات الستة."
+      >
+        لإتقان القائمة: احصل على ٨٠٪ على الأقل مرتين في كل اختبار من الاختبارات
+        الستة.
+      </p>
+    </main>
+    <footer class="teacher-credit" id="teacher-credit">
+      إعداد المعلم: <b>محمود بركات</b>
+    </footer>
+  </body>
+</html>
