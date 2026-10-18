@@ -15,13 +15,62 @@
         sessions.set(current.id, { index: 0, answers: [] });
       return sessions.get(current.id);
     }
+    const normalize = (value) =>
+      value
+        .normalize("NFD")
+        .replace(/\p{M}/gu, "")
+        .replace(/[أإآ]/g, "ا")
+        .toLocaleLowerCase()
+        .trim();
+    const searchIndex = new Map(
+      lessons.map((lesson) => [
+        lesson.id,
+        normalize(
+          [
+            lesson.title.ar,
+            lesson.title.de,
+            lesson.summary.ar,
+            lesson.summary.de,
+            lesson.intro.ar,
+            lesson.intro.de,
+          ].join(" "),
+        ),
+      ]),
+    );
+    function matches() {
+      const query = normalize($("grammar-search").value);
+      const category = $("grammar-category").value;
+      return lessons.filter(
+        (lesson) =>
+          (category === "all" || lesson.category === category) &&
+          searchIndex.get(lesson.id).includes(query),
+      );
+    }
     function renderTopics() {
-      $("grammar-topics").innerHTML = lessons
+      const filtered = matches();
+      $("grammar-topics").innerHTML = filtered
         .map(
-          (lesson, index) =>
-            `<a href="#${lesson.id}" class="grammar-topic ${lesson.id === current.id ? "is-active" : ""}" ${lesson.id === current.id ? 'aria-current="true"' : ""}><span class="grammar-topic-number">0${index + 1}</span><span class="grammar-topic-glyph" lang="ar" aria-hidden="true">${escape(lesson.glyph)}</span><strong>${escape(localized(lesson.title))}</strong><small>${escape(localized(lesson.summary))}</small></a>`,
+          (lesson) =>
+            `<a href="#${lesson.id}" class="grammar-topic ${lesson.id === current.id ? "is-active" : ""}" ${lesson.id === current.id ? 'aria-current="true"' : ""}><span class="grammar-topic-number">${String(lessons.indexOf(lesson) + 1).padStart(2, "0")}</span><span class="grammar-topic-glyph" lang="ar" aria-hidden="true">${escape(lesson.glyph)}</span><strong>${escape(localized(lesson.title))}</strong><small>${escape(localized(lesson.summary))}</small></a>`,
         )
         .join("");
+      $("grammar-lesson-select").replaceChildren(
+        ...filtered.map((lesson) => {
+          const option = document.createElement("option");
+          option.value = lesson.id;
+          option.textContent = `${String(lessons.indexOf(lesson) + 1).padStart(2, "0")} · ${localized(lesson.title)}`;
+          return option;
+        }),
+      );
+      $("grammar-lesson-select").value = current.id;
+      $("grammar-lesson-select").disabled = !filtered.length;
+      $("grammar-catalog-count").textContent = text(
+        `${filtered.length} من ${lessons.length} درسًا · 12 سؤالًا لكل درس`,
+        `${filtered.length} von ${lessons.length} Lektionen · 12 Fragen pro Lektion`,
+      );
+      $("grammar-catalog-empty").hidden = !!filtered.length;
+      $("grammar-lesson").hidden = !filtered.length;
+      $("grammar-index").hidden = !filtered.length;
     }
     function exampleHTML(example) {
       const index = example.focus ? example.ar.indexOf(example.focus) : -1;
@@ -60,12 +109,22 @@
         question = current.questions[state.index];
       const selected = state.answers[state.index];
       const answered = selected !== undefined;
+      const answeredCount = state.answers.filter(
+        (answer) => answer !== undefined,
+      ).length;
+      $("grammar-progress").max = current.questions.length;
+      $("grammar-progress").value = answeredCount;
+      $("grammar-progress-label").textContent = text(
+        `أجبت عن ${answeredCount} من ${current.questions.length} سؤالًا`,
+        `${answeredCount} von ${current.questions.length} Fragen beantwortet`,
+      );
+      $("grammar-previous").disabled = state.index === 0;
       const correctCount = state.answers.filter(
         (answer, index) => answer === current.questions[index].correct,
       ).length;
       $("grammar-score").textContent = text(
-        `${correctCount} من ${state.answers.length} إجابات صحيحة`,
-        `${correctCount} von ${state.answers.length} richtig`,
+        `${correctCount} من ${answeredCount} إجابات صحيحة`,
+        `${correctCount} von ${answeredCount} richtig`,
       );
       $("grammar-question-number").textContent = text(
         `السؤال ${state.index + 1} من ${current.questions.length}`,
@@ -133,9 +192,41 @@
       $("grammar-question").tabIndex = -1;
       $("grammar-question").focus({ preventScroll: true });
     });
+    $("grammar-previous").addEventListener("click", () => {
+      const state = session();
+      if (state.index === 0) return;
+      state.index--;
+      renderPractice();
+      $("grammar-question").tabIndex = -1;
+      $("grammar-question").focus({ preventScroll: true });
+    });
+    function resetFilters() {
+      $("grammar-search").value = "";
+      $("grammar-category").value = "all";
+    }
+    function filterCatalog() {
+      const filtered = matches();
+      if (filtered.length && !filtered.includes(current)) {
+        current = filtered[0];
+        history.replaceState(null, "", `#${current.id}`);
+      }
+      renderLesson();
+    }
+    $("grammar-search").addEventListener("input", filterCatalog);
+    $("grammar-category").addEventListener("change", filterCatalog);
+    $("grammar-clear-search").addEventListener("click", () => {
+      resetFilters();
+      filterCatalog();
+      $("grammar-search").focus();
+    });
+    $("grammar-lesson-select").addEventListener("change", (event) => {
+      location.hash = event.target.value;
+      $("grammar-index").open = false;
+    });
     function selectTopic() {
       const slug = location.hash.slice(1);
       current = lessons.find((lesson) => lesson.id === slug) || lessons[0];
+      if (!matches().includes(current)) resetFilters();
       renderLesson();
     }
     window.addEventListener("hashchange", selectTopic);

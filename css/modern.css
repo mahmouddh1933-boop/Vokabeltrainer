@@ -2355,3 +2355,22 @@ html[dir="rtl"] .tool-link::after {
     font-size: 10px;
   }
 }
+
+/* Long page names can wrap while the mobile menu and language picker stay usable. */
+@media (max-width: 640px) {
+  .topbar-left {
+    min-width: 0;
+    flex-shrink: 1;
+  }
+  .topbar-left > span[data-de] {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .menu-toggle {
+    width: 32px;
+    flex: 0 0 32px;
+  }
+  .topbar-right {
+    flex-shrink: 0;
+  }
+}

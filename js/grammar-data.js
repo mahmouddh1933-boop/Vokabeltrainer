@@ -652,6 +652,15 @@
       ],
     },
   ];
+  const expansion =
+    typeof module !== "undefined" && module.exports
+      ? require("./grammar-expanded.js")
+      : window.ArabicGrammarExpansion;
+  lessons.forEach((lesson) => {
+    lesson.category = "basics";
+    lesson.questions.push(...expansion.extraQuestions[lesson.id]);
+  });
+  lessons.push(...expansion.lessons);
   const api = { lessons, sunLetters, moonLetters, basicVerbs };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else window.ArabicGrammarData = api;

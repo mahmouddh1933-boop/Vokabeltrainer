@@ -33,7 +33,12 @@
       ["review.html", "repeat", "Wiederholen", "المراجعة"],
       ["stats.html", "chart", "Mein Fortschritt", "تقدّمي"],
       ["verbs.html", "book", "Verben lernen", "تصريف الأفعال"],
-      ["grammar.html", "letters", "Arabisch-Grundlagen", "أساسيات العربية"],
+      [
+        "grammar.html",
+        "letters",
+        "Grammatik & Rechtschreibung",
+        "قواعد العربية",
+      ],
     ];
     const sidebar = document.createElement("aside");
     sidebar.className = "app-sidebar";

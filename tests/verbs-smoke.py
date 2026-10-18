@@ -10,7 +10,7 @@ with sync_playwright() as p:
     errors=[]
     page.on('pageerror',lambda e:errors.append(str(e)))
     assert page.goto(base+'/verbs.html').status==200
-    assert page.locator('#verb-select option').count()==30
+    assert page.locator('#verb-select option').count()==48
     assert page.locator('#verb-select optgroup').count()==3
     assert page.locator('#conjugation-body tr').count()==14
     assert page.locator('#conjugation-body tr').first.locator('.verb-form').text_content()=='كَتَبْتُ'
@@ -60,11 +60,40 @@ with sync_playwright() as p:
             assert set(options)<=set(expected),(verb_id,tense,options)
             assert correct_option() in options
     assert page.locator('#verb-specific-note').inner_text()
+    # Three/four/five/six-letter filters combine with search and preserve the language switch.
+    for length,count in [('3',30),('4',6),('5',6),('6',6)]:
+        page.locator('#verb-length').select_option(length)
+        assert page.locator('#verb-select option').count()==count
+        selected=page.locator('#verb-select').input_value()
+        assert page.evaluate('id=>VerbLessonData.verbs.find(v=>v.id===id).formLength',selected)==int(length)
+    page.locator('#verb-search').fill('استخدم')
+    assert page.locator('#verb-select').input_value()=='use'
+    assert page.locator('#verb-select option').count()==1
+    page.locator('#app-language-select').select_option('de')
+    assert page.locator('#verb-length').input_value()=='6'
+    assert page.locator('#verb-select').input_value()=='use'
+    page.locator('#verb-length').select_option('4')
+    assert page.locator('#verb-empty').is_visible()
+    page.locator('#verb-clear-search').click()
+    assert page.locator('#verb-length').input_value()=='all'
+    page.locator('#app-language-select').select_option('ar')
+    page.locator('#verb-select').select_option('teach')
+    page.locator('[data-tense="present"]').click()
+    assert page.locator('.verb-form').first.inner_text()=='أُعَلِّمُ'
+    page.locator('[data-tense="imperative"]').click()
+    assert page.locator('.verb-form').first.inner_text()=='عَلِّمْ'
+    assert page.locator('.verb-form').first.locator('mark').all_text_contents()==['ْ']
+    assert 'ثلاثي مزيد' in page.locator('#verb-specific-note').inner_text()
+    page.locator('#verb-select').select_option('roll')
+    assert 'رباعي مجرد' in page.locator('#verb-specific-note').inner_text()
+    page.locator('#verb-select').select_option('use')
+    page.evaluate('window.scrollTo(0,0)');page.wait_for_timeout(250)
+    page.screenshot(path='/tmp/jisr-derived-verbs.png')
     # Arabic search ignores vowels and alif/hamza differences; German search also works.
-    for query,expected_id in [('كَتَبَ','write'),('اِقْرَئِي','read'),('schlafen','sleep'),('nehmen','take')]:
+    for query,expected_id,count in [('كَتَبَ','write',1),('اِقْرَئِي','read',1),('schlafen','sleep',1),('nehmen','take',2)]:
         page.locator('#verb-search').fill(query)
         assert page.locator('#verb-select').input_value()==expected_id
-        assert page.locator('#verb-select option').count()==1
+        assert page.locator('#verb-select option').count()==count
     page.locator('#app-language-select').select_option('de')
     assert page.locator('#verb-select').input_value()=='take'
     assert page.locator('#verb-search').input_value()=='nehmen'
@@ -78,7 +107,7 @@ with sync_playwright() as p:
     # Changing tense while the results are empty must not restore a stale quiz.
     page.locator('[data-tense="past"]').click()
     page.locator('#verb-clear-search').click()
-    assert page.locator('#verb-select option').count()==30
+    assert page.locator('#verb-select option').count()==48
     assert page.locator('#conjugation-body tr').count()==14
     assert page.locator('#verb-content').is_visible()
     assert correct_option() in page.locator('#verb-answers button').all_text_contents()
@@ -106,5 +135,5 @@ with sync_playwright() as p:
     page.goto(base+'/index.html')
     page.locator('.grammar-home-card').click();page.wait_for_url('**/verbs.html')
     assert not errors,errors
-    print('PASS: 30 verbs / 90 tables, imperative-only addressees, Arabic/German search, empty-result recovery, quiz feedback, DE/AR state preservation and responsive layouts; no JavaScript errors')
+    print('PASS: 48 verbs / 144 tables, imperative-only addressees, Arabic/German search, empty-result recovery, quiz feedback, DE/AR state preservation and responsive layouts; no JavaScript errors')
     browser.close()

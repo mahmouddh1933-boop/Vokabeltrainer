@@ -55,10 +55,31 @@ test("Sun and moon lists partition the Arabic alphabet correctly", () => {
   assert.deepEqual(sunLetters, Array.from("تثدذرزسشصضطظلن"));
   assert.deepEqual(moonLetters, Array.from("أبجحخعغفقكمهوي"));
 });
-test("Five complete bilingual lessons, valid highlighted examples, and 20 complete quiz questions", () => {
+test("20 bilingual lessons, valid highlights, and 240 distinct questions", () => {
   assert.deepEqual(
     lessons.map((l) => l.id),
-    ["sun-moon", "pronouns", "gender", "number", "basic-verbs"],
+    [
+      "sun-moon",
+      "pronouns",
+      "gender",
+      "number",
+      "basic-verbs",
+      "hamza-initial",
+      "hamza-medial",
+      "hamza-final",
+      "five-verbs",
+      "five-nouns",
+      "active-participle",
+      "passive-participle",
+      "instrument-noun",
+      "intensive-participle",
+      "word-classes",
+      "sentence-types",
+      "relative-pronouns",
+      "prepositions",
+      "defective-verbs",
+      "inna-particles",
+    ],
   );
   let questionCount = 0;
   for (const lesson of lessons) {
@@ -66,7 +87,11 @@ test("Five complete bilingual lessons, valid highlighted examples, and 20 comple
       assert.ok(lesson[field].ar.length > 0, `${lesson.id} ${field} ar`);
       assert.ok(lesson[field].de.length > 0, `${lesson.id} ${field} de`);
     }
-    assert.equal(lesson.questions.length, 4);
+    assert.equal(lesson.questions.length, 12);
+    assert.equal(new Set(lesson.questions.map((q) => q.prompt.ar)).size, 12);
+    assert.ok(
+      ["basics", "spelling", "morphology", "syntax"].includes(lesson.category),
+    );
     for (const section of lesson.sections) {
       assert.ok(
         section.title.ar &&
@@ -97,14 +122,20 @@ test("Five complete bilingual lessons, valid highlighted examples, and 20 comple
           question.explanation.ar &&
           question.explanation.de,
       );
-      assert.equal(
-        new Set(question.options.map((o) => (typeof o === "string" ? o : o.ar)))
-          .size,
-        4,
-      );
+      for (const lang of ["ar", "de"]) {
+        const options = question.options.map((o) =>
+          typeof o === "string" ? o : o[lang],
+        );
+        assert.ok(options.every((o) => typeof o === "string" && o.trim()));
+        assert.equal(
+          new Set(options).size,
+          4,
+          `${lesson.id} ${question.prompt.ar} ${lang}`,
+        );
+      }
     }
   }
-  assert.equal(questionCount, 20);
+  assert.equal(questionCount, 240);
 });
 test("Key grammar answers and irregular basic verbs are accurate", () => {
   const correct = (lesson, index) =>
@@ -120,4 +151,124 @@ test("Key grammar answers and irregular basic verbs are accurate", () => {
   assert.equal(basicVerbs.length, 12);
   assert.equal(basicVerbs.find((v) => v.past === "وَقَفَ").present, "يَقِفُ");
   assert.equal(basicVerbs.find((v) => v.past === "نَامَ").present, "يَنَامُ");
+});
+
+test("Independent spelling keys cover all seats and the long-vowel exceptions", () => {
+  const answers = (id) =>
+    lessons.find((l) => l.id === id).questions.map((q) => q.options[q.correct]);
+  assert.deepEqual(answers("hamza-medial"), [
+    "سُئِلَ",
+    "رَئِيسٌ",
+    "بِئْرٌ",
+    "فِئَةٌ",
+    "مُؤْمِنٌ",
+    "سُؤَالٌ",
+    "تَأْكُلُ",
+    "سَأَلَ",
+    "قِرَاءَةٌ",
+    "مُرُوءَةٌ",
+    "هَيْئَةٌ",
+    "بِيئَةٌ",
+  ]);
+  assert.deepEqual(answers("hamza-final"), [
+    "مَلْجَأ",
+    "نَبَأ",
+    "بَدَأ",
+    "شَاطِئ",
+    "قَارِئ",
+    "دَافِئ",
+    "تَبَاطُؤ",
+    "تَكَافُؤ",
+    "لُؤْلُؤ",
+    "جُزْء",
+    "سَمَاء",
+    "هُدُوء",
+  ]);
+  assert.deepEqual(
+    answers("hamza-initial").map((a) => a.ar),
+    [...Array(6).fill("همزة وصل"), ...Array(6).fill("همزة قطع")],
+  );
+});
+test("New morphology and syntax keys preserve case, voice, and pronoun distinctions", () => {
+  const answer = (id, index) => {
+    const q = lessons.find((l) => l.id === id).questions[index];
+    const a = q.options[q.correct];
+    return typeof a === "string" ? a : a.ar;
+  };
+  const keys = {
+    "five-verbs": [
+      [1, "يَكْتُبْنَ"],
+      [3, "يَكْتُبُوا"],
+      [4, "تَكْتُبِي"],
+      [5, "يَكْتُبَا"],
+      [8, "واو الجماعة: ضمير فاعل"],
+    ],
+    "five-nouns": [
+      [0, "أَبُوكَ"],
+      [1, "أَبَاكَ"],
+      [2, "أَبِيكَ"],
+      [5, "فِيكَ"],
+      [8, "ذِي"],
+    ],
+    "active-participle": [
+      [5, "سَامِعٌ"],
+      [6, "مُعَلِّمٌ"],
+      [9, "مُسْتَخْرِجٌ"],
+      [11, "مُدَحْرِجٌ"],
+    ],
+    "passive-participle": [
+      [6, "مُعَلَّمٌ"],
+      [9, "مُسْتَخْرَجٌ"],
+      [11, "مُدَحْرَجٌ"],
+    ],
+    "instrument-noun": [
+      [0, "مِفْتَاحٌ"],
+      [4, "مِقَصٌّ"],
+      [10, "غَسَّالَةٌ"],
+      [11, "حَاسُوبٌ"],
+    ],
+    "intensive-participle": [
+      [0, "صَبُورٌ"],
+      [6, "فَعِلٌ"],
+      [8, "كَاتِبٌ"],
+    ],
+    "word-classes": [
+      [2, "اسم"],
+      [4, "اسم"],
+      [7, "فعل"],
+      [10, "حرف"],
+    ],
+    "sentence-types": [
+      [2, "اسمية"],
+      [4, "اسمية"],
+      [8, "فعلية"],
+    ],
+    "relative-pronouns": [
+      [2, "اللَّذَانِ"],
+      [3, "اللَّذَيْنِ"],
+      [5, "اللَّتَيْنِ"],
+      [7, "اللَّاتِي"],
+    ],
+    prepositions: [
+      [0, "إِلَى"],
+      [1, "مِنَ"],
+      [9, "الياء"],
+      [11, "ضمير متصل في محل جرّ بالباء"],
+    ],
+    "defective-verbs": [
+      [0, "جَمِيلًا"],
+      [1, "الطَّالِبُ"],
+      [8, "مصدرية ظرفية"],
+      [9, "جملة يدرس في محل نصب"],
+    ],
+    "inna-particles": [
+      [0, "الطَّالِبَ"],
+      [1, "مُجْتَهِدٌ"],
+      [9, "جملة يدرس في محل رفع"],
+      [10, "الطَّالِبُ"],
+    ],
+  };
+  for (const [id, items] of Object.entries(keys))
+    for (const [index, expected] of items)
+      assert.equal(answer(id, index), expected, `${id} ${index}`);
 });

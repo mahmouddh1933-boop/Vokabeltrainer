@@ -708,6 +708,412 @@
       },
     },
   ];
+  verbs.push(
+    ...[
+      {
+        id: "teach",
+        pastStem: "عَلَّم",
+        presentStem: "عَلِّم",
+        imperativeStem: "عَلِّم",
+        presentVowel: "ُ",
+        meaning: {
+          ar: "التعليم",
+          de: "unterrichten",
+        },
+        kind: "sound",
+        formLength: 4,
+        pattern: "فَعَّلَ",
+        root: "ع ل م",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["عَلَّمَ طِفْلًا.", "Er unterrichtete ein Kind."],
+          present: ["يُعَلِّمُ طِفْلًا.", "Er unterrichtet ein Kind."],
+          imperative: ["عَلِّمْ طِفْلًا.", "Unterrichte ein Kind."],
+        },
+      },
+      {
+        id: "help",
+        pastStem: "سَاعَد",
+        presentStem: "سَاعِد",
+        imperativeStem: "سَاعِد",
+        presentVowel: "ُ",
+        meaning: {
+          ar: "المساعدة",
+          de: "helfen",
+        },
+        kind: "sound",
+        formLength: 4,
+        pattern: "فَاعَلَ",
+        root: "س ع د",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["سَاعَدَ صَدِيقًا.", "Er half einem Freund."],
+          present: ["يُسَاعِدُ صَدِيقًا.", "Er hilft einem Freund."],
+          imperative: ["سَاعِدْ صَدِيقًا.", "Hilf einem Freund."],
+        },
+      },
+      {
+        id: "honor",
+        pastStem: "أَكْرَم",
+        presentStem: "كْرِم",
+        imperativeStem: "أَكْرِم",
+        presentVowel: "ُ",
+        meaning: {
+          ar: "الإكرام",
+          de: "ehren",
+        },
+        kind: "sound",
+        formLength: 4,
+        pattern: "أَفْعَلَ",
+        root: "ك ر م",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["أَكْرَمَ ضَيْفًا.", "Er ehrte einen Gast."],
+          present: ["يُكْرِمُ ضَيْفًا.", "Er ehrt einen Gast."],
+          imperative: ["أَكْرِمْ ضَيْفًا.", "Ehre einen Gast."],
+        },
+      },
+      {
+        id: "send",
+        pastStem: "أَرْسَل",
+        presentStem: "رْسِل",
+        imperativeStem: "أَرْسِل",
+        presentVowel: "ُ",
+        meaning: {
+          ar: "الإرسال",
+          de: "senden",
+        },
+        kind: "sound",
+        formLength: 4,
+        pattern: "أَفْعَلَ",
+        root: "ر س ل",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["أَرْسَلَ رِسَالَةً.", "Er sandte einen Brief."],
+          present: ["يُرْسِلُ رِسَالَةً.", "Er sendet einen Brief."],
+          imperative: ["أَرْسِلْ رِسَالَةً.", "Sende einen Brief."],
+        },
+      },
+      {
+        id: "travel",
+        pastStem: "سَافَر",
+        presentStem: "سَافِر",
+        imperativeStem: "سَافِر",
+        presentVowel: "ُ",
+        meaning: {
+          ar: "السفر",
+          de: "reisen",
+        },
+        kind: "sound",
+        formLength: 4,
+        pattern: "فَاعَلَ",
+        root: "س ف ر",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["سَافَرَ إِلَى مَدِينَةٍ.", "Er reiste in eine Stadt."],
+          present: ["يُسَافِرُ إِلَى مَدِينَةٍ.", "Er reist in eine Stadt."],
+          imperative: ["سَافِرْ إِلَى مَدِينَةٍ.", "Reise in eine Stadt."],
+        },
+      },
+      {
+        id: "roll",
+        pastStem: "دَحْرَج",
+        presentStem: "دَحْرِج",
+        imperativeStem: "دَحْرِج",
+        presentVowel: "ُ",
+        meaning: {
+          ar: "الدحرجة",
+          de: "rollen",
+        },
+        kind: "sound",
+        formLength: 4,
+        pattern: "فَعْلَلَ",
+        root: "د ح ر ج",
+        structure: "رباعي مجرد",
+        example: {
+          past: ["دَحْرَجَ كُرَةً.", "Er rollte einen Ball."],
+          present: ["يُدَحْرِجُ كُرَةً.", "Er rollt einen Ball."],
+          imperative: ["دَحْرِجْ كُرَةً.", "Rolle einen Ball."],
+        },
+      },
+      {
+        id: "learn",
+        pastStem: "تَعَلَّم",
+        presentStem: "تَعَلَّم",
+        imperativeStem: "تَعَلَّم",
+        presentVowel: "َ",
+        meaning: {
+          ar: "التعلّم",
+          de: "lernen",
+        },
+        kind: "sound",
+        formLength: 5,
+        pattern: "تَفَعَّلَ",
+        root: "ع ل م",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["تَعَلَّمَ لُغَةً.", "Er lernte eine Sprache."],
+          present: ["يَتَعَلَّمُ لُغَةً.", "Er lernt eine Sprache."],
+          imperative: ["تَعَلَّمْ لُغَةً.", "Lerne eine Sprache."],
+        },
+      },
+      {
+        id: "share",
+        pastStem: "تَشَارَك",
+        presentStem: "تَشَارَك",
+        imperativeStem: "تَشَارَك",
+        presentVowel: "َ",
+        meaning: {
+          ar: "التشارك",
+          de: "teilen / gemeinsam nutzen",
+        },
+        kind: "sound",
+        formLength: 5,
+        pattern: "تَفَاعَلَ",
+        root: "ش ر ك",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["تَشَارَكَ مَعَ صَدِيقٍ.", "Er teilte mit einem Freund."],
+          present: ["يَتَشَارَكُ مَعَ صَدِيقٍ.", "Er teilt mit einem Freund."],
+          imperative: ["تَشَارَكْ مَعَ صَدِيقٍ.", "Teile mit einem Freund."],
+        },
+      },
+      {
+        id: "depart",
+        pastStem: "اِنْطَلَق",
+        presentStem: "نْطَلِق",
+        imperativeStem: "اِنْطَلِق",
+        presentVowel: "َ",
+        meaning: {
+          ar: "الانطلاق",
+          de: "aufbrechen",
+        },
+        kind: "sound",
+        formLength: 5,
+        pattern: "اِنْفَعَلَ",
+        root: "ط ل ق",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["اِنْطَلَقَ بِسُرْعَةٍ.", "Er brach schnell auf."],
+          present: ["يَنْطَلِقُ بِسُرْعَةٍ.", "Er bricht schnell auf."],
+          imperative: ["اِنْطَلِقْ بِسُرْعَةٍ.", "Brich schnell auf."],
+        },
+      },
+      {
+        id: "meet",
+        pastStem: "اِجْتَمَع",
+        presentStem: "جْتَمِع",
+        imperativeStem: "اِجْتَمِع",
+        presentVowel: "َ",
+        meaning: {
+          ar: "الاجتماع",
+          de: "sich treffen",
+        },
+        kind: "sound",
+        formLength: 5,
+        pattern: "اِفْتَعَلَ",
+        root: "ج م ع",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["اِجْتَمَعَ مَعَ صَدِيقٍ.", "Er traf sich mit einem Freund."],
+          present: [
+            "يَجْتَمِعُ مَعَ صَدِيقٍ.",
+            "Er trifft sich mit einem Freund.",
+          ],
+          imperative: [
+            "اِجْتَمِعْ مَعَ صَدِيقٍ.",
+            "Triff dich mit einem Freund.",
+          ],
+        },
+      },
+      {
+        id: "approach",
+        pastStem: "اِقْتَرَب",
+        presentStem: "قْتَرِب",
+        imperativeStem: "اِقْتَرِب",
+        presentVowel: "َ",
+        meaning: {
+          ar: "الاقتراب",
+          de: "sich nähern",
+        },
+        kind: "sound",
+        formLength: 5,
+        pattern: "اِفْتَعَلَ",
+        root: "ق ر ب",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["اِقْتَرَبَ مِنَ الْبَابِ.", "Er näherte sich der Tür."],
+          present: ["يَقْتَرِبُ مِنَ الْبَابِ.", "Er nähert sich der Tür."],
+          imperative: ["اِقْتَرِبْ مِنَ الْبَابِ.", "Nähere dich der Tür."],
+        },
+      },
+      {
+        id: "roll-self",
+        pastStem: "تَدَحْرَج",
+        presentStem: "تَدَحْرَج",
+        imperativeStem: "تَدَحْرَج",
+        presentVowel: "َ",
+        meaning: {
+          ar: "التدحرج",
+          de: "sich rollen",
+        },
+        kind: "sound",
+        formLength: 5,
+        pattern: "تَفَعْلَلَ",
+        root: "د ح ر ج",
+        structure: "رباعي مزيد",
+        example: {
+          past: ["تَدَحْرَجَ بِبُطْءٍ.", "Er rollte sich langsam."],
+          present: ["يَتَدَحْرَجُ بِبُطْءٍ.", "Er rollt sich langsam."],
+          imperative: ["تَدَحْرَجْ بِبُطْءٍ.", "Rolle dich langsam."],
+        },
+      },
+      {
+        id: "use",
+        pastStem: "اِسْتَخْدَم",
+        presentStem: "سْتَخْدِم",
+        imperativeStem: "اِسْتَخْدِم",
+        presentVowel: "َ",
+        meaning: {
+          ar: "الاستخدام",
+          de: "benutzen",
+        },
+        kind: "sound",
+        formLength: 6,
+        pattern: "اِسْتَفْعَلَ",
+        root: "خ د م",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["اِسْتَخْدَمَ قَلَمًا.", "Er benutzte einen Stift."],
+          present: ["يَسْتَخْدِمُ قَلَمًا.", "Er benutzt einen Stift."],
+          imperative: ["اِسْتَخْدِمْ قَلَمًا.", "Benutze einen Stift."],
+        },
+      },
+      {
+        id: "receive",
+        pastStem: "اِسْتَقْبَل",
+        presentStem: "سْتَقْبِل",
+        imperativeStem: "اِسْتَقْبِل",
+        presentVowel: "َ",
+        meaning: {
+          ar: "الاستقبال",
+          de: "empfangen",
+        },
+        kind: "sound",
+        formLength: 6,
+        pattern: "اِسْتَفْعَلَ",
+        root: "ق ب ل",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["اِسْتَقْبَلَ ضَيْفًا.", "Er empfing einen Gast."],
+          present: ["يَسْتَقْبِلُ ضَيْفًا.", "Er empfängt einen Gast."],
+          imperative: ["اِسْتَقْبِلْ ضَيْفًا.", "Empfange einen Gast."],
+        },
+      },
+      {
+        id: "extract",
+        pastStem: "اِسْتَخْرَج",
+        presentStem: "سْتَخْرِج",
+        imperativeStem: "اِسْتَخْرِج",
+        presentVowel: "َ",
+        meaning: {
+          ar: "الاستخراج",
+          de: "entnehmen / extrahieren",
+        },
+        kind: "sound",
+        formLength: 6,
+        pattern: "اِسْتَفْعَلَ",
+        root: "خ ر ج",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["اِسْتَخْرَجَ مَعْلُومَةً.", "Er entnahm eine Information."],
+          present: [
+            "يَسْتَخْرِجُ مَعْلُومَةً.",
+            "Er entnimmt eine Information.",
+          ],
+          imperative: [
+            "اِسْتَخْرِجْ مَعْلُومَةً.",
+            "Entnimm eine Information.",
+          ],
+        },
+      },
+      {
+        id: "seek-forgiveness",
+        pastStem: "اِسْتَغْفَر",
+        presentStem: "سْتَغْفِر",
+        imperativeStem: "اِسْتَغْفِر",
+        presentVowel: "َ",
+        meaning: {
+          ar: "الاستغفار",
+          de: "um Vergebung bitten",
+        },
+        kind: "sound",
+        formLength: 6,
+        pattern: "اِسْتَفْعَلَ",
+        root: "غ ف ر",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["اِسْتَغْفَرَ رَبَّهُ.", "Er bat seinen Herrn um Vergebung."],
+          present: [
+            "يَسْتَغْفِرُ رَبَّهُ.",
+            "Er bittet seinen Herrn um Vergebung.",
+          ],
+          imperative: [
+            "اِسْتَغْفِرْ رَبَّكَ.",
+            "Bitte deinen Herrn um Vergebung.",
+          ],
+        },
+      },
+      {
+        id: "enjoy",
+        pastStem: "اِسْتَمْتَع",
+        presentStem: "سْتَمْتِع",
+        imperativeStem: "اِسْتَمْتِع",
+        presentVowel: "َ",
+        meaning: {
+          ar: "الاستمتاع",
+          de: "genießen",
+        },
+        kind: "sound",
+        formLength: 6,
+        pattern: "اِسْتَفْعَلَ",
+        root: "م ت ع",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["اِسْتَمْتَعَ بِالْوَقْتِ.", "Er genoss die Zeit."],
+          present: ["يَسْتَمْتِعُ بِالْوَقْتِ.", "Er genießt die Zeit."],
+          imperative: ["اِسْتَمْتِعْ بِالْوَقْتِ.", "Genieße die Zeit."],
+        },
+      },
+      {
+        id: "utilize",
+        pastStem: "اِسْتَعْمَل",
+        presentStem: "سْتَعْمِل",
+        imperativeStem: "اِسْتَعْمِل",
+        presentVowel: "َ",
+        meaning: {
+          ar: "الاستعمال",
+          de: "verwenden",
+        },
+        kind: "sound",
+        formLength: 6,
+        pattern: "اِسْتَفْعَلَ",
+        root: "ع م ل",
+        structure: "ثلاثي مزيد",
+        example: {
+          past: ["اِسْتَعْمَلَ مِفْتَاحًا.", "Er verwendete einen Schlüssel."],
+          present: [
+            "يَسْتَعْمِلُ مِفْتَاحًا.",
+            "Er verwendet einen Schlüssel.",
+          ],
+          imperative: ["اِسْتَعْمِلْ مِفْتَاحًا.", "Verwende einen Schlüssel."],
+        },
+      },
+    ],
+  );
+  verbs.forEach((verb) => {
+    verb.formLength ??= 3;
+  });
   const pronouns = [
     {
       ar: "أَنَا",
@@ -853,14 +1259,25 @@
         suffix,
       ];
     }
-    if (tense === "past") return ["", verb.pastStem, person.past];
+    const combine = (prefix, stem, suffix) =>
+      stem.endsWith("ن") && suffix === "ْنَ"
+        ? [prefix, stem.slice(0, -1) + "نَّ", ""]
+        : [prefix, stem, suffix];
+    if (tense === "past") return combine("", verb.pastStem, person.past);
     if (tense === "present")
-      return [person.present[0], verb.presentStem, person.present[1]];
-    return [
-      verb.imperativeStem.slice(0, 2),
-      verb.imperativeStem.slice(2),
+      return combine(
+        person.present[0][0] + (verb.presentVowel || "َ"),
+        verb.presentStem,
+        person.present[1],
+      );
+    const prefix = /^[اأإ]/u.test(verb.imperativeStem)
+      ? verb.imperativeStem.slice(0, 2)
+      : "";
+    return combine(
+      prefix,
+      verb.imperativeStem.slice(prefix.length),
       commandEndings[commandIndex],
-    ];
+    );
   }
   function conjugate(verb, tense, person) {
     const segments = parts(verb, tense, person);

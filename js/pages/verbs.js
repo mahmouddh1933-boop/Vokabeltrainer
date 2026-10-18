@@ -94,6 +94,17 @@
               ? "Dieses Verb enthält Hamza. Achte beim Lesen auf ihre Position."
               : "Dieses Verb hat einen regelmäßigen Stamm. Achte auf Vokale, Vorsilben und Endungen.",
           );
+      if (verb.pattern) {
+        const structureDe = {
+          "ثلاثي مزيد": "erweitertes dreiradikaliges Verb",
+          "رباعي مجرد": "vierwurzeliges Grundverb",
+          "رباعي مزيد": "erweitertes vierwurzeliges Verb",
+        };
+        $("verb-specific-note").textContent = text(
+          `صيغة الماضي من ${verb.formLength} أحرف · ${verb.structure} · الوزن ${verb.pattern} · الجذر: ${verb.root}.`,
+          `${verb.formLength} Formbuchstaben · ${structureDe[verb.structure]} · Muster ${verb.pattern} · Wurzel: ${verb.root}.`,
+        );
+      }
       $("conjugation-caption").textContent = text(
         `تصريف ${conjugate(verb, "past", pronouns[8])} في صيغة ${tenseName}`,
         `${verb.meaning.de} · ${tenseName}`,
@@ -188,8 +199,11 @@
     }
     function renderCatalog() {
       const query = normalize($("verb-search").value);
-      const matches = verbs.filter((item) =>
-        searchIndex.get(item.id).includes(query),
+      const length = $("verb-length").value;
+      const matches = verbs.filter(
+        (item) =>
+          searchIndex.get(item.id).includes(query) &&
+          (length === "all" || item.formLength === Number(length)),
       );
       if (matches.length && !matches.some((item) => item.id === verb.id))
         verb = matches[0];
@@ -234,8 +248,10 @@
       }
     }
     $("verb-search").addEventListener("input", renderCatalog);
+    $("verb-length").addEventListener("change", renderCatalog);
     $("verb-clear-search").addEventListener("click", () => {
       $("verb-search").value = "";
+      $("verb-length").value = "all";
       renderCatalog();
       $("verb-search").focus();
     });

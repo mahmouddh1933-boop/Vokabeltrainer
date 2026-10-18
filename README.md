@@ -24,11 +24,11 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Die Original-ZIP-Datei bleibt als unveränderte Ausgangsversion erhalten. Die aktuelle, bearbeitbare Anwendung besteht aus den direkt im Repository liegenden Quelldateien. Hinweise der ursprünglichen Version stehen in `docs/ORIGINAL.md`.
 
-## الحروف وأساسيات العربية · Alphabet und Grundlagen
+## الحروف والقواعد · Alphabet und Grammatik
 
 Die Rückseite jeder Buchstabenkarte enthält vier echte Beispielwörter für Anfang, Mitte, getrenntes und verbundenes Wortende. Insgesamt gibt es 112 Beispiele. Der Zielbuchstabe ist innerhalb des unveränderten Wortes farbig markiert; dasselbe gilt für das Wort auf der Vorderseite. Vor jedem getrennten Endbuchstaben steht ein Buchstabe aus ا، د، ذ، ر، ز، و (einschließlich Alif mit Hamza). Bei den sechs Buchstaben, die sich nicht nach links verbinden, erklärt die Karte die tatsächliche mittlere Schreibform.
 
-`grammar.html` bietet fünf Lektionen mit deutsch-arabischem Sprachwechsel und insgesamt 20 Übungsfragen:
+`grammar.html` bietet 20 Lektionen mit deutsch-arabischem Sprachwechsel und insgesamt 240 Übungsfragen (12 pro Lektion). Die fünf bisherigen Lektionen haben jeweils acht zusätzliche Fragen erhalten:
 
 - `#sun-moon`: Sonnen- und Mondbuchstaben, vollständige Buchstabenlisten und Aussprachebeispiele.
 - `#pronouns`: selbstständige Personalpronomen, Dualformen und angehängte Possessivpronomen.
@@ -36,17 +36,27 @@ Die Rückseite jeder Buchstabenkarte enthält vier echte Beispielwörter für An
 - `#number`: Singular, Dual, regelmäßige und gebrochene Plurale sowie nichtmenschliche Plurale.
 - `#basic-verbs`: zwölf Alltagsverben mit Perfekt, Präsens, Bedeutung und Beispielsätzen.
 
-Richtige und falsche Antworten erhalten eine Erklärung. Der Fortschritt jeder Übung bleibt beim Wechsel zwischen Themen und Sprachen innerhalb derselben geöffneten Seite erhalten. Nach dem letzten der vier Fragen kann die jeweilige Übung neu begonnen werden. Die Vokabeltest-Statistik bleibt davon unabhängig.
+Neu hinzugekommen sind 15 Themen:
 
-Inhalte: `js/letter-examples.js`, `js/grammar-data.js`. Oberflächen: `js/pages/letters-learning.js`, `js/pages/grammar.js`, `css/grammar.css`.
+- Rechtschreibung: `#hamza-initial` (Qaṭʿ und Waṣl), `#hamza-medial` und `#hamza-final`.
+- Wortbildung: `#active-participle`, `#passive-participle`, `#instrument-noun` und `#intensive-participle`.
+- Grundlagen und Satzbau: `#word-classes`, `#sentence-types`, `#five-verbs`, `#five-nouns`, `#relative-pronouns`, `#prepositions`, `#defective-verbs` (Kāna) und `#inna-particles`.
+
+Die Lektionen erklären Regeln, Bedingungen und wichtige Ausnahmen mit farbig markierten Beispielen. Eine Suche auf Arabisch oder Deutsch und die Bereiche Grundlagen, Rechtschreibung, Wortbildung und Satzbau filtern den Katalog. Über die Lektionsauswahl oder den aufklappbaren Index sind alle Themen erreichbar; direkte Links mit Themen-ID bleiben möglich.
+
+Richtige und falsche Antworten erhalten eine Erklärung. Ein Fortschrittsbalken zeigt die beantworteten Fragen; die vorherige Frage kann zur Wiederholung aufgerufen werden. Antworten und Ergebnis bleiben beim Wechsel zwischen Themen und Sprachen innerhalb derselben geöffneten Seite erhalten. Nach der zwölften Frage kann die jeweilige Übung neu begonnen werden. Die Vokabeltest-Statistik bleibt davon unabhängig.
+
+Inhalte: `js/letter-examples.js`, `js/grammar-data.js` und `js/grammar-expanded.js`. Oberflächen: `js/pages/letters-learning.js`, `js/pages/grammar.js`, `css/grammar.css`. In der Grammatikseite muss `grammar-expanded.js` vor `grammar-data.js` geladen werden.
 
 ## تصريف الأفعال · Verben lernen
 
-`verbs.html` ist über das Dashboard und die Navigation erreichbar. Der Kurs enthält 30 Verben mit Perfekt, Präsens (Indikativ) und Imperativ, Beispielsätzen, deutschen Übersetzungen und Quiz. Im Perfekt und Präsens werden jeweils 14 Personen-/Geschlechtsformen gezeigt. Der Imperativ hat fünf unterschiedliche Formen für die angesprochenen Personen: أنتَ، أنتِ، أنتما، أنتم، أنتنّ. Es werden keine Imperativformen für „ich“ oder „er/sie“ erzeugt.
+`verbs.html` ist über das Dashboard und die Navigation erreichbar. Der Kurs enthält 48 Verben mit Perfekt, Präsens (Indikativ) und Imperativ, Beispielsätzen, deutschen Übersetzungen und Quiz. Im Perfekt und Präsens werden jeweils 14 Personen-/Geschlechtsformen gezeigt. Der Imperativ hat fünf unterschiedliche Formen für die angesprochenen Personen: أنتَ، أنتِ، أنتما، أنتم، أنتنّ. Es werden keine Imperativformen für „ich“ oder „er/sie“ erzeugt.
 
-Eine Suche auf Arabisch oder Deutsch ignoriert Vokalzeichen sowie Alif-/Hamza-Varianten. Die Auswahl gruppiert regelmäßige Verben, Verben mit Hamza und schwache Verben. Ohne Treffer werden eine Meldung und eine Schaltfläche zum Zurücksetzen angezeigt. Sprachwechsel erhält Auswahl, Suchbegriff und Übungsstand.
+Eine Suche auf Arabisch oder Deutsch ignoriert Vokalzeichen sowie Alif-/Hamza-Varianten. Die Auswahl gruppiert regelmäßige Verben, Verben mit Hamza und schwache Verben. Zusätzlich lässt sich nach drei, vier, fünf oder sechs Buchstaben der Perfektform filtern. Suche und Längenfilter sind kombinierbar. Ohne Treffer werden eine Meldung und eine Schaltfläche zum Zurücksetzen angezeigt. Sprachwechsel erhält Auswahl, Suchbegriff und Übungsstand.
 
 Der Katalog enthält neben regelmäßigen Verben unter anderem أكل، أخذ، قال، نام، قرأ und وقف. Diese sechs Verben haben ausdrücklich hinterlegte vollständige Paradigmen, einschließlich Änderungen des Stamms und der Hamza-Schreibung. Beispiele: آكل، قلتُ، نمتُ، يقرؤون، كُلْ، خُذْ، قُلْ، نَمْ، قِفْ. Farbige Vorsilben und Endungen werden nur getrennt, wenn das Schriftbild dies zulässt. Die fünf Imperativformen werden auch bei der Erzeugung der Quizantworten berücksichtigt. Der Übungszähler gilt für die aktuelle Sitzung und bleibt unabhängig von den Vokabeltests.
+
+Die 18 neuen Verben umfassen je sechs vier-, fünf- und sechsbuchstabige Perfektformen, etwa علّم، أكرم، دحرج، تعلّم، اجتمع، تدحرج، استخدم und استخرج. Die Einordnung zählt Schadda als zwei Konsonanten und unterscheidet ausdrücklich Formlänge und Wurzellänge: علّم ist ein erweitertes dreiradikaliges Verb, دحرج ein vierwurzeliges Grundverb. Muster und Wurzel werden bei diesen Verben angezeigt. Präsensvorsilben erhalten je nach Stamm Fatḥa oder Ḍamma; alle drei Zeit-/Befehlsformen besitzen die passenden Personenendungen.
 
 Daten und Konjugationsregeln: `js/verb-data.js`. Oberfläche: `js/pages/verbs.js`, `css/verbs.css`.
 
@@ -61,7 +71,7 @@ python3 tests/verbs-smoke.py
 python3 tests/foundations-smoke.py
 ```
 
-Die Tests prüfen alle 90 Konjugationstabellen der 30 Verben, Suche und Imperativübungen sowie Sprachwahl, Wortlisten, Lernkarten, einen vollständig beantworteten Multiple-Choice-Test, persistierte Ergebnisse, Statistiken, Excel-Import, den Sprachwechsel in beide Richtungen, mobile Navigation und die Lernseiten bei unterschiedlichen Bildschirmbreiten.
+Die Tests prüfen alle 144 Konjugationstabellen der 48 Verben, Suche, Längenfilter und Imperativübungen sowie alle 240 Grammatikfragen, Themenfilter, Antworterklärungen, Rücknavigation, Zurücksetzen und Sprachwahl, Wortlisten, Lernkarten, einen vollständig beantworteten Multiple-Choice-Test, persistierte Ergebnisse, Statistiken, Excel-Import, den Sprachwechsel in beide Richtungen, mobile Navigation und die Lernseiten bei unterschiedlichen Bildschirmbreiten.
 
 Excel-Import lädt XLSX 0.18.5 über `cdn.jsdelivr.net`. Wenn der Testbrowser den Cloud-HTTPS-Proxy nicht kennt, kann ausschließlich für den Funktionstest dieselbe Bibliothek mit aktiver TLS-Prüfung heruntergeladen und lokal bereitgestellt werden:
 

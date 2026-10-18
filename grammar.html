@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="theme-color" content="#123f37" />
-    <title>Jisr · أساسيات العربية / Arabisch-Grundlagen</title>
+    <title>Jisr · قواعد العربية / Arabische Grammatik</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="css/interface-languages.css" />
     <link rel="stylesheet" href="css/modern.css" />
@@ -13,6 +13,7 @@
     <script src="js/interface-languages.js" defer></script>
     <script src="js/design.js" defer></script>
     <script src="js/verb-data.js" defer></script>
+    <script src="js/grammar-expanded.js" defer></script>
     <script src="js/grammar-data.js" defer></script>
     <script src="js/pages/grammar.js" defer></script>
   </head>
@@ -27,23 +28,101 @@
           >
             افهم القاعدة. وابنِ جملتك.
           </p>
-          <h1 data-ar="أساسيات العربية" data-de="Dein Fundament für Arabisch.">
-            أساسيات العربية
+          <h1
+            data-ar="قواعد العربية"
+            data-de="Arabisch verstehen. Satz für Satz."
+          >
+            قواعد العربية
           </h1>
           <p
-            data-ar="خمسة دروس قصيرة، بأمثلة واضحة وتدريب خطوة بخطوة."
-            data-de="Fünf kurze Lektionen. Klare Beispiele und kleine Übungen."
+            data-ar="20 درسًا في القواعد والإملاء · 240 سؤالًا مع شرح الإجابات."
+            data-de="20 Lektionen zu Grammatik und Rechtschreibung · 240 Fragen mit Erklärungen."
           >
-            خمسة دروس قصيرة، بأمثلة واضحة وتدريب خطوة بخطوة.
+            20 درسًا في القواعد والإملاء · 240 سؤالًا مع شرح الإجابات.
           </p>
         </div>
         <span class="welcome-symbol" aria-hidden="true">✳</span>
       </header>
-      <nav
-        class="grammar-topic-nav"
-        id="grammar-topics"
-        aria-label="الدروس / Lektionen"
-      ></nav>
+      <section
+        class="grammar-catalog"
+        aria-label="اختيار الدرس / Lektion wählen"
+      >
+        <div class="grammar-catalog-filters">
+          <label
+            ><span data-ar="ابحث عن قاعدة" data-de="Regel suchen"
+              >ابحث عن قاعدة</span
+            >
+            <input
+              id="grammar-search"
+              type="search"
+              placeholder="همزة / Hamza · ضمائر / Pronomen"
+            />
+          </label>
+          <label
+            ><span data-ar="المجال" data-de="Bereich">المجال</span>
+            <select id="grammar-category">
+              <option
+                value="all"
+                data-ar="جميع المجالات"
+                data-de="Alle Bereiche"
+              >
+                جميع المجالات
+              </option>
+              <option value="basics" data-ar="الأساسيات" data-de="Grundlagen">
+                الأساسيات
+              </option>
+              <option
+                value="spelling"
+                data-ar="الإملاء"
+                data-de="Rechtschreibung"
+              >
+                الإملاء
+              </option>
+              <option
+                value="morphology"
+                data-ar="الصرف والمشتقات"
+                data-de="Wortbildung"
+              >
+                الصرف والمشتقات
+              </option>
+              <option value="syntax" data-ar="النحو" data-de="Satzbau">
+                النحو
+              </option>
+            </select>
+          </label>
+        </div>
+        <label class="grammar-lesson-picker"
+          ><span data-ar="اختر الدرس" data-de="Lektion wählen">اختر الدرس</span
+          ><select id="grammar-lesson-select"></select
+        ></label>
+        <p id="grammar-catalog-count" role="status"></p>
+        <details class="grammar-index" id="grammar-index">
+          <summary data-ar="عرض فهرس الدروس" data-de="Lektionsübersicht öffnen">
+            عرض فهرس الدروس
+          </summary>
+          <nav
+            class="grammar-topic-nav"
+            id="grammar-topics"
+            aria-label="الدروس / Lektionen"
+          ></nav>
+        </details>
+        <div id="grammar-catalog-empty" class="grammar-catalog-empty" hidden>
+          <p
+            data-ar="لم نجد درسًا يطابق بحثك."
+            data-de="Keine passende Lektion gefunden."
+          >
+            لم نجد درسًا يطابق بحثك.
+          </p>
+          <button
+            id="grammar-clear-search"
+            type="button"
+            data-ar="عرض جميع الدروس"
+            data-de="Alle Lektionen anzeigen"
+          >
+            عرض جميع الدروس
+          </button>
+        </div>
+      </section>
       <article id="grammar-lesson" aria-labelledby="lesson-title">
         <header class="grammar-lesson-header">
           <div>
@@ -104,6 +183,12 @@
               aria-live="polite"
             ></span>
           </div>
+          <label
+            class="grammar-progress-label"
+            for="grammar-progress"
+            id="grammar-progress-label"
+          ></label>
+          <progress id="grammar-progress" value="0" max="12"></progress>
           <p class="grammar-question-number" id="grammar-question-number"></p>
           <h3 id="grammar-question"></h3>
           <div class="grammar-answers" id="grammar-answers"></div>
@@ -113,7 +198,18 @@
             role="status"
             aria-live="polite"
           ></div>
-          <button id="grammar-next" type="button" disabled></button>
+          <div class="grammar-practice-actions">
+            <button
+              id="grammar-previous"
+              type="button"
+              data-ar="السؤال السابق"
+              data-de="Vorherige Frage"
+              disabled
+            >
+              السؤال السابق
+            </button>
+            <button id="grammar-next" type="button" disabled></button>
+          </div>
           <p
             class="grammar-session-note"
             data-ar="هذا التمرين مستقلّ عن اختبارات المفردات. تبقى نتيجته أثناء فتح هذه الصفحة."

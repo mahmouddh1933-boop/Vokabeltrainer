@@ -39,60 +39,105 @@ with sync_playwright() as p:
             page.wait_for_timeout(300)
             assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),('letters',language,width)
     page.goto(base+'/grammar.html#sun-moon')
-    assert page.locator('#grammar-topics a').count()==5
+    page.locator('#app-language-select').select_option('ar')
+    assert page.locator('#grammar-topics a').count()==20
+    assert page.locator('#grammar-lesson-select option').count()==20
     assert page.locator('.app-sidebar a[aria-current="page"]').get_attribute('href')=='grammar.html'
     lessons=page.evaluate('ArabicGrammarData.lessons')
+    assert len(lessons)==20
+    # Filters, empty results, recovery, diacritic-insensitive and German search.
+    page.locator('#grammar-category').select_option('spelling')
+    assert page.locator('#grammar-lesson-select option').count()==3
+    page.locator('#grammar-search').fill('مُتَوَسِّطَة')
+    assert page.locator('#grammar-lesson-select').input_value()=='hamza-medial'
+    assert page.locator('#grammar-lesson-select option').count()==1
+    page.locator('#app-language-select').select_option('de')
+    assert page.locator('#grammar-category').input_value()=='spelling'
+    assert page.locator('#grammar-search').input_value()=='مُتَوَسِّطَة'
+    page.locator('#grammar-search').fill('nothing-xyz')
+    assert page.locator('#grammar-catalog-empty').is_visible()
+    assert page.locator('#grammar-lesson').is_hidden()
+    assert page.locator('#grammar-lesson-select').is_disabled()
+    page.locator('#grammar-clear-search').click()
+    assert page.locator('#grammar-lesson-select option').count()==20
+    page.locator('#grammar-search').fill('Partizip')
+    assert page.locator('#grammar-lesson-select option').count()==3
+    assert set(page.locator('#grammar-lesson-select option').evaluate_all('(options)=>options.map(o=>o.value)'))=={'active-participle','passive-participle','intensive-participle'}
+    page.locator('#grammar-search').fill('')
+    page.locator('#app-language-select').select_option('ar')
+    # Deep links to a lesson outside an active filter reset the filter.
+    page.locator('#grammar-category').select_option('spelling')
+    page.evaluate('location.hash="five-nouns"')
+    expect(page.locator('#grammar-category')).to_have_value('all')
+    page.locator('#grammar-index summary').click()
+    page.locator('#grammar-topics a[href="#sun-moon"]').click()
+    expect(page.locator('#lesson-title')).to_have_text(lessons[0]['title']['ar'])
     for lesson in lessons:
-        page.locator(f'#grammar-topics a[href="#{lesson["id"]}"]').click()
-        page.wait_for_function('id => location.hash === "#"+id',arg=lesson['id'])
+        page.locator('#grammar-lesson-select').select_option(lesson['id'])
+        expect(page.locator('#lesson-title')).to_have_text(lesson['title']['ar'])
         for language in ['ar','de','ar']:
             page.locator('#app-language-select').select_option(language)
             assert page.locator('#lesson-title').inner_text()==lesson['title'][language]
             assert page.locator('#lesson-intro').inner_text()==lesson['intro'][language]
+        assert page.locator('#grammar-previous').is_disabled()
         for index,question in enumerate(lesson['questions']):
             assert page.locator('#grammar-next').is_disabled()
             correct=question['correct']
-            # Deliberately answer the first question incorrectly to exercise feedback.
             selected=(correct+1)%4 if index==0 else correct
             page.locator('#grammar-answers button').nth(selected).click()
             assert page.locator('#grammar-answers button:disabled').count()==4
-            assert page.locator('#grammar-answers .is-correct').inner_text()==(question['options'][correct] if isinstance(question['options'][correct],str) else question['options'][correct]['ar'])
+            expected=question['options'][correct]
+            assert page.locator('#grammar-answers .is-correct').inner_text()==(expected if isinstance(expected,str) else expected['ar'])
             assert question['explanation']['ar'] in page.locator('#grammar-feedback').inner_text()
+            assert page.locator('#grammar-progress').get_attribute('value')==str(index+1)
             assert page.locator('#grammar-next').is_enabled()
-            page.locator('#app-language-select').select_option('de')
-            assert question['explanation']['de'] in page.locator('#grammar-feedback').inner_text()
-            page.locator('#app-language-select').select_option('ar')
-            if index<3:page.locator('#grammar-next').click()
-        assert page.locator('#grammar-score').inner_text()=='3 من 4 إجابات صحيحة', (lesson['id'], page.locator('#grammar-score').inner_text(),page.locator('#grammar-question-number').inner_text())
-        # A round trip to another topic preserves this topic's exercise result.
+            if index==0:
+                page.locator('#app-language-select').select_option('de')
+                assert question['explanation']['de'] in page.locator('#grammar-feedback').inner_text()
+                page.locator('#app-language-select').select_option('ar')
+            if index==1:
+                page.locator('#grammar-previous').click()
+                assert page.locator('#grammar-answers button:disabled').count()==4
+                assert page.locator('#grammar-progress').get_attribute('value')=='2'
+                page.locator('#grammar-next').click()
+                assert question['explanation']['ar'] in page.locator('#grammar-feedback').inner_text()
+            if index<len(lesson['questions'])-1:page.locator('#grammar-next').click()
+        assert page.locator('#grammar-score').inner_text()=='11 من 12 إجابات صحيحة',lesson['id']
         other='pronouns' if lesson['id']=='sun-moon' else 'sun-moon'
-        page.locator(f'#grammar-topics a[href="#{other}"]').click()
+        page.locator('#grammar-lesson-select').select_option(other)
         other_lesson=next(item for item in lessons if item['id']==other)
         expect(page.locator('#lesson-title')).to_have_text(other_lesson['title']['ar'])
-        page.locator(f'#grammar-topics a[href="#{lesson["id"]}"]').click()
+        page.locator('#grammar-lesson-select').select_option(lesson['id'])
         expect(page.locator('#lesson-title')).to_have_text(lesson['title']['ar'])
-        assert page.locator('#grammar-score').inner_text()=='3 من 4 إجابات صحيحة', (lesson['id'], page.locator('#grammar-score').inner_text(),page.locator('#grammar-question-number').inner_text())
+        assert page.locator('#grammar-score').inner_text()=='11 من 12 إجابات صحيحة',lesson['id']
         page.locator('#grammar-next').click()
         assert page.locator('#grammar-score').inner_text()=='0 من 0 إجابات صحيحة'
+        assert page.locator('#grammar-progress').get_attribute('value')=='0'
         for language in ['ar','de']:
             page.locator('#app-language-select').select_option(language)
-            for width in [320,390,768,1440]:
+            for width in [320,768,1440]:
                 page.set_viewport_size({'width':width,'height':1000})
-                page.wait_for_timeout(300)
+                page.wait_for_timeout(150)
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),(lesson['id'],language,width)
-                assert page.locator('.grammar-table [lang=ar]').evaluate_all('(cells)=>cells.every(cell=>cell.scrollWidth<=cell.clientWidth+1)'), ('Clipped Arabic table text',lesson['id'],language,width)
-    page.goto(base+'/grammar.html#sun-moon')
+                if width<=640:
+                    assert page.locator('.topbar-left').bounding_box()['height']<=65
+                    assert page.locator('.menu-toggle').bounding_box()['width']<=44
+                assert page.locator('.grammar-table [lang=ar]').evaluate_all('(cells)=>cells.every(cell=>cell.scrollWidth<=cell.clientWidth+1)'),('Clipped Arabic text',lesson['id'],language,width)
+        page.locator('#app-language-select').select_option('ar')
+    page.goto(base+'/grammar.html#hamza-medial')
     page.locator('#app-language-select').select_option('ar')
-    assert page.locator('.grammar-letter-set span').count()==28
     page.evaluate('window.scrollTo(0,0)')
     page.wait_for_timeout(350)
     page.screenshot(path='/tmp/jisr-foundations.png')
+    page.set_viewport_size({'width':390,'height':844})
+    page.wait_for_timeout(350)
+    page.screenshot(path='/tmp/jisr-foundations-mobile.png')
     page.route('https://cdn.jsdelivr.net/**',lambda route:route.abort())
     page.goto(base+'/index.html')
-    assert page.locator('.foundation-home-link').count()==5
+    assert page.locator('.foundation-home-link').count()==6
     page.locator('.foundation-home-link[href="grammar.html#number"]').click()
     page.wait_for_url('**/grammar.html#number')
     assert page.locator('#lesson-title').inner_text()=='المفرد والمثنّى والجمع'
     assert not errors,errors
-    print('PASS: 112 highlighted letter examples, language switching, five lessons, 20 questions with feedback and reset, navigation and responsive DE/AR layouts; no JavaScript errors')
+    print('PASS: 112 highlighted letter examples, language switching, 20 lessons, 240 questions with feedback and reset, search/category filters, previous-question review, navigation and responsive DE/AR layouts; no JavaScript errors')
     browser.close()

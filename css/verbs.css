@@ -668,3 +668,56 @@ body .container.verbs-page {
     min-width: 0;
   }
 }
+.verb-length-field {
+  margin: 20px 0 0;
+  max-width: 350px;
+}
+.verb-length-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 650;
+  color: #667b55;
+}
+#verb-length {
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 1px solid #dce4d2;
+  border-radius: 9px;
+  background: #fafbf7;
+  font-size: 13px;
+  color: var(--ink);
+}
+.verb-derivation-guide {
+  padding: 25px;
+  margin-bottom: 25px;
+  border: 1px solid #e0e6d1;
+  border-radius: 14px;
+  background: #f4f6ed;
+}
+.verb-derivation-guide h2 {
+  font-size: 21px;
+}
+.verb-derivation-guide p {
+  font-size: 14px;
+  line-height: 2;
+}
+.verb-derivation-guide p[lang="ar"] {
+  font-size: 23px;
+  color: #527541;
+}
+@media (max-width: 640px) {
+  .verb-derivation-guide {
+    padding: 20px;
+  }
+  .verb-derivation-guide h2 {
+    font-size: 18px;
+  }
+  .verb-derivation-guide p {
+    font-size: 13px;
+  }
+  .verb-derivation-guide p[lang="ar"] {
+    font-size: 21px;
+  }
+}
