@@ -10,11 +10,15 @@
   const sunLetters = Array.from("تثدذرزسشصضطظلن");
   const moonLetters = Array.from("أبجحخعغفقكمهوي");
   const basicVerbs = [
-    ...verbData.verbs.map((v) => ({
-      past: verbData.conjugate(v, "past", verbData.pronouns[8]),
-      present: verbData.conjugate(v, "present", verbData.pronouns[8]),
-      meaning: v.meaning,
-    })),
+    ...verbData.verbs
+      .filter((v) =>
+        ["write", "study", "open", "drink", "play", "hear"].includes(v.id),
+      )
+      .map((v) => ({
+        past: verbData.conjugate(v, "past", verbData.pronouns[8]),
+        present: verbData.conjugate(v, "present", verbData.pronouns[8]),
+        meaning: v.meaning,
+      })),
     { past: "ذَهَبَ", present: "يَذْهَبُ", meaning: bi("الذهاب", "gehen") },
     { past: "قَرَأَ", present: "يَقْرَأُ", meaning: bi("القراءة", "lesen") },
     { past: "أَكَلَ", present: "يَأْكُلُ", meaning: bi("الأكل", "essen") },

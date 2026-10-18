@@ -531,3 +531,140 @@ body .container.verbs-page {
     margin-inline-start: 0;
   }
 }
+/* A larger catalog, with a separate search field and all three verb forms. */
+.verb-rules {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.verb-rules article {
+  min-width: 0;
+}
+.verb-search-row {
+  display: flex;
+  align-items: end;
+  gap: 22px;
+  margin-top: 22px;
+}
+.verb-search-field {
+  flex: 1;
+  min-width: 0;
+}
+.verb-search-field label {
+  display: block;
+  font-size: 12px;
+  font-weight: 650;
+  color: #667b55;
+  margin-bottom: 9px;
+}
+#verb-search {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #dce4d2;
+  border-radius: 9px;
+  background: #fafbf7;
+  padding: 10px 14px;
+  font-size: 15px;
+  color: var(--ink);
+  text-align: start;
+  direction: inherit;
+}
+#verb-search:focus {
+  outline: 3px solid #d7b64a;
+  outline-offset: 3px;
+}
+.verb-result-count {
+  flex-shrink: 0;
+  color: #899875;
+  background: #edf2e3;
+  padding: 10px 13px;
+  border-radius: 8px;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+.verb-select-field {
+  min-width: 0;
+  max-width: 100%;
+}
+.verb-controls {
+  align-items: end;
+}
+.verb-controls .tense-options {
+  flex-shrink: 0;
+}
+.verb-imperative-note {
+  padding: 17px 20px;
+  background: #f9f1df;
+  border: 1px solid #eee1c3;
+  border-radius: 11px;
+  color: #9a7a44;
+  font-size: 13px;
+  line-height: 1.9;
+  margin: 10px 0 20px;
+}
+.verb-specific-note {
+  padding: 15px 18px;
+  background: #f6f8ef;
+  border-inline-start: 3px solid #afbe8f;
+  color: #7a8b65;
+  font-size: 13px;
+  line-height: 1.9;
+  border-radius: 5px;
+  margin: 14px 0 22px;
+}
+.verb-empty {
+  text-align: center;
+  padding: 35px 20px;
+  background: #f7f9f1;
+  border: 1px dashed #c5d1b2;
+  border-radius: 13px;
+}
+.verb-empty h3 {
+  font-size: 21px;
+}
+.verb-empty p {
+  font-size: 13px;
+}
+.verb-table-wrap {
+  overflow-x: auto;
+  max-width: 100%;
+}
+#verb-content {
+  min-width: 0;
+}
+@media (max-width: 1100px) {
+  .verb-rules {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .verb-search-row {
+    gap: 12px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .verb-search-field label {
+    font-size: 11px;
+  }
+  .verb-result-count {
+    align-self: start;
+    font-size: 10px;
+  }
+  .verb-controls .tense-options {
+    width: 100%;
+  }
+  .tense-options button {
+    padding: 9px 8px;
+    font-size: 11px;
+    min-width: 0;
+  }
+  .verb-imperative-note,
+  .verb-specific-note {
+    font-size: 12px;
+    padding: 14px;
+  }
+  .conjugation-table {
+    min-width: 280px;
+  }
+  .verb-answers {
+    min-width: 0;
+  }
+}

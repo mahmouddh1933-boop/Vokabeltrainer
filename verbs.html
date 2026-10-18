@@ -21,22 +21,22 @@
         <div>
           <p
             class="eyebrow"
-            data-de="DEINE ERSTEN SÄTZE"
-            data-ar="خطوتك نحو الجملة"
+            data-de="DEIN VERB-LERNRAUM"
+            data-ar="أفعال أكثر. جمل أكثر."
           >
-            خطوتك نحو الجملة
+            أفعال أكثر. جمل أكثر.
           </p>
           <h1
-            data-de="Aus Wörtern werden Sätze."
-            data-ar="من الكلمات إلى الجمل."
+            data-de="Verben verstehen. Mehr sagen."
+            data-ar="تصريف الأفعال، خطوة بخطوة."
           >
-            من الكلمات إلى الجمل.
+            تصريف الأفعال، خطوة بخطوة.
           </h1>
           <p
-            data-de="Arabische Verben verstehen und mit allen Pronomen üben."
-            data-ar="تعلّم كيف يتغيّر الفعل مع الضمائر، ثم جرّب بنفسك."
+            data-de="30 Verben · Perfekt, Präsens und Imperativ · Beispiele und Übungen."
+            data-ar="٣٠ فعلاً · الماضي والمضارع والأمر · أمثلة وتمارين تفاعلية."
           >
-            تعلّم كيف يتغيّر الفعل مع الضمائر، ثم جرّب بنفسك.
+            ٣٠ فعلاً · الماضي والمضارع والأمر · أمثلة وتمارين تفاعلية.
           </p>
         </div>
         <span class="welcome-symbol" aria-hidden="true">✳</span>
@@ -57,12 +57,11 @@
             ماذا يعني تصريف الفعل؟
           </h2>
           <p
-            data-de="Die Form eines Verbs zeigt, wer etwas tut und wann es geschieht. Im Arabischen ändern sich dafür Vorsilben und Endungen. Hier lernst du sechs regelmäßige dreiradikalige Verben im Aktiv kennen."
-            data-ar="يتغيّر شكل الفعل ليدلّ على من قام بالعمل ومتى حدث. نضيف حروفاً في أول الفعل أو آخره بحسب الضمير والزمن. في هذا الدرس نتدرّب على ستة أفعال ثلاثية صحيحة في صيغة المعلوم."
+            data-de="Lerne 30 Verben im Perfekt, Präsens und Imperativ. Entdecke regelmäßige, hamzierte und schwache Verben – mit passenden Formen für jede Person."
+            data-ar="تعلّم تصريف ٣٠ فعلاً في الماضي والمضارع والأمر. ستجد أفعالاً صحيحة ومهموزة ومعتلّة، مع الصيغة المناسبة لكل ضمير."
           >
-            يتغيّر شكل الفعل ليدلّ على من قام بالعمل ومتى حدث. نضيف حروفاً في
-            أول الفعل أو آخره بحسب الضمير والزمن. في هذا الدرس نتدرّب على ستة
-            أفعال ثلاثية صحيحة في صيغة المعلوم.
+            تعلّم تصريف ٣٠ فعلاً في الماضي والمضارع والأمر. ستجد أفعالاً صحيحة
+            ومهموزة ومعتلّة، مع الصيغة المناسبة لكل ضمير.
           </p>
         </div>
         <div class="verb-intro-example" lang="ar">
@@ -105,6 +104,26 @@
           </p>
           <p class="rule-example" lang="ar">يَكْتُبُ ← أَكْتُبُ · نَكْتُبُ</p>
         </article>
+        <article>
+          <span class="lesson-number">03</span>
+          <h2
+            data-de="Imperativ · eine Aufforderung"
+            data-ar="الأمر: طلب القيام بعمل"
+          >
+            الأمر: طلب القيام بعمل
+          </h2>
+          <p
+            data-de="Der Imperativ richtet sich nur an angesprochene Personen: du, ihr zwei und ihr. Er hat fünf unterschiedliche Formen. Manche Verben verändern ihren Stamm: qāla → qul, akala → kul."
+            data-ar="نستخدم الأمر لطلب القيام بعمل، ويكون مع ضمائر المخاطب فقط: أنتَ، أنتِ، أنتما، أنتم، أنتنّ. له خمس صيغ، وقد يتغيّر بناؤه: قال ← قُلْ، أكل ← كُلْ."
+          >
+            نستخدم الأمر لطلب القيام بعمل، ويكون مع ضمائر المخاطب فقط: أنتَ،
+            أنتِ، أنتما، أنتم، أنتنّ. له خمس صيغ، وقد يتغيّر بناؤه: قال ← قُلْ،
+            أكل ← كُلْ.
+          </p>
+          <p class="rule-example" lang="ar">
+            اُكْتُبْ · اُكْتُبِي · اُكْتُبُوا
+          </p>
+        </article>
       </div>
       <section class="verb-explorer" aria-labelledby="verb-explorer-title">
         <div class="section-heading">
@@ -124,9 +143,28 @@
               فعل واحد، مع جميع الضمائر.
             </h2>
           </div>
-          <span class="path-label" data-de="14 Formen" data-ar="١٤ صيغة"
-            >١٤ صيغة</span
-          >
+          <span class="path-label" id="verb-form-count">١٤ صيغة</span>
+        </div>
+        <div class="verb-search-row">
+          <div class="verb-search-field">
+            <label
+              for="verb-search"
+              data-ar="ابحث عن فعل بالعربية أو الألمانية"
+              data-de="Ein Verb auf Arabisch oder Deutsch suchen"
+              >ابحث عن فعل بالعربية أو الألمانية</label
+            ><input
+              id="verb-search"
+              type="search"
+              autocomplete="off"
+              placeholder="كتب / schreiben"
+            />
+          </div>
+          <span
+            id="verb-result-count"
+            class="verb-result-count"
+            role="status"
+            aria-live="polite"
+          ></span>
         </div>
         <div class="verb-controls">
           <div class="verb-select-field">
@@ -137,7 +175,11 @@
               >اختر الفعل</label
             ><select id="verb-select"></select>
           </div>
-          <div class="tense-options" role="group" aria-label="الزمن / Zeitform">
+          <div
+            class="tense-options"
+            role="group"
+            aria-label="الصيغة / Verbform"
+          >
             <button
               type="button"
               data-tense="past"
@@ -153,61 +195,110 @@
               data-de="Gegenwart"
               data-ar="المضارع"
             >
-              المضارع
+              المضارع</button
+            ><button
+              type="button"
+              data-tense="imperative"
+              aria-pressed="false"
+              data-de="Imperativ"
+              data-ar="الأمر"
+            >
+              الأمر
             </button>
           </div>
         </div>
-        <div class="verb-feature">
-          <div>
-            <span class="verb-meaning" id="verb-meaning"></span>
-            <p id="verb-feature-form" class="verb-arabic" lang="ar"></p>
-            <span id="verb-pattern" class="verb-pattern"></span>
-          </div>
-          <div class="verb-sentence">
-            <span class="lesson-label" data-de="IN EINEM SATZ" data-ar="في جملة"
-              >في جملة</span
-            >
-            <p id="verb-example" lang="ar"></p>
-            <p id="verb-example-translation" lang="de"></p>
-          </div>
+        <div class="verb-empty" id="verb-empty" hidden>
+          <h3
+            data-ar="لا توجد أفعال مطابقة."
+            data-de="Kein passendes Verb gefunden."
+          >
+            لا توجد أفعال مطابقة.
+          </h3>
+          <p
+            data-ar="جرّب كلمة أقصر أو امسح البحث لعرض جميع الأفعال."
+            data-de="Versuche einen kürzeren Begriff oder zeige alle Verben an."
+          >
+            جرّب كلمة أقصر أو امسح البحث لعرض جميع الأفعال.
+          </p>
+          <button
+            id="verb-clear-search"
+            type="button"
+            data-ar="عرض جميع الأفعال"
+            data-de="Alle Verben anzeigen"
+          >
+            عرض جميع الأفعال
+          </button>
         </div>
-        <p
-          class="verb-table-note"
-          data-de="Die farbigen Teile zeigen Vorsilben und Endungen. Die Stammvokale können sich zwischen Perfekt und Präsens ändern – lerne beide Grundformen zusammen."
-          data-ar="الأجزاء الملوّنة توضّح حروف الزيادة والنهايات. قد تتغيّر حركة عين الفعل بين الماضي والمضارع؛ لذلك احفظ الصيغتين معاً."
-        >
-          الأجزاء الملوّنة توضّح حروف الزيادة والنهايات. قد تتغيّر حركة عين
-          الفعل بين الماضي والمضارع؛ لذلك احفظ الصيغتين معاً.
-        </p>
-        <div class="verb-table-wrap">
-          <table class="conjugation-table">
-            <caption class="sr-only" id="conjugation-caption">
-              جدول تصريف الفعل
-            </caption>
-            <thead>
-              <tr>
-                <th scope="col" data-de="Pronomen" data-ar="الضمير">الضمير</th>
-                <th scope="col" data-de="Person" data-ar="من يقوم بالعمل؟">
-                  من يقوم بالعمل؟
-                </th>
-                <th scope="col" data-de="Verbform" data-ar="تصريف الفعل">
-                  تصريف الفعل
-                </th>
-              </tr>
-            </thead>
-            <tbody id="conjugation-body"></tbody>
-          </table>
+        <div id="verb-content">
+          <p class="verb-imperative-note" id="verb-imperative-note" hidden></p>
+          <div class="verb-feature">
+            <div>
+              <span class="verb-meaning" id="verb-meaning"></span>
+              <p id="verb-feature-form" class="verb-arabic" lang="ar"></p>
+              <span id="verb-pattern" class="verb-pattern"></span>
+            </div>
+            <div class="verb-sentence">
+              <span
+                class="lesson-label"
+                data-de="IN EINEM SATZ"
+                data-ar="في جملة"
+                >في جملة</span
+              >
+              <p id="verb-example" lang="ar"></p>
+              <p id="verb-example-translation" lang="de"></p>
+            </div>
+          </div>
+          <p
+            class="verb-table-note"
+            data-ar="الأجزاء الملوّنة توضّح حروف الزيادة والنهايات حيث يمكن فصلها كتابياً. بعض الأفعال يتغيّر بناؤها أو رسم همزتها؛ لذلك اقرأ الصيغة كاملة، واحفظ الماضي والمضارع والأمر معاً."
+            data-de="Farbige Teile zeigen Vorsilben und Endungen, soweit sie sich im Schriftbild trennen lassen. Bei manchen Verben verändert sich der Stamm oder die Hamza-Schreibung. Lies deshalb die ganze Form und lerne alle drei Grundformen zusammen."
+          >
+            الأجزاء الملوّنة توضّح حروف الزيادة والنهايات حيث يمكن فصلها
+            كتابياً. بعض الأفعال يتغيّر بناؤها أو رسم همزتها؛ لذلك اقرأ الصيغة
+            كاملة، واحفظ الماضي والمضارع والأمر معاً.
+          </p>
+          <p class="verb-specific-note" id="verb-specific-note"></p>
+          <div
+            class="verb-table-wrap"
+            tabindex="0"
+            role="region"
+            aria-label="جدول التصريف / Konjugationstabelle"
+          >
+            <table class="conjugation-table">
+              <caption class="sr-only" id="conjugation-caption">
+                جدول تصريف الفعل
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col" data-de="Pronomen" data-ar="الضمير">
+                    الضمير
+                  </th>
+                  <th scope="col" data-de="Person" data-ar="من يقوم بالعمل؟">
+                    من يقوم بالعمل؟
+                  </th>
+                  <th scope="col" data-de="Verbform" data-ar="تصريف الفعل">
+                    تصريف الفعل
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="conjugation-body"></tbody>
+            </table>
+          </div>
+          <p
+            class="verb-table-note"
+            data-de="أنتما und هما sind Dualformen für genau zwei Personen. Bei أنتما ist die Verbform für beide Geschlechter gleich; bei هما unterscheidet sie sich."
+            data-ar="نستخدم «أنتما» و«هما» للمثنّى، أي لشخصين. صيغة الفعل مع «أنتما» واحدة للمذكّر والمؤنّث، وتختلف مع «هما»."
+          >
+            نستخدم «أنتما» و«هما» للمثنّى، أي لشخصين. صيغة الفعل مع «أنتما»
+            واحدة للمذكّر والمؤنّث، وتختلف مع «هما».
+          </p>
         </div>
-        <p
-          class="verb-table-note"
-          data-de="أنتما und هما sind Dualformen für genau zwei Personen. Bei أنتما ist die Verbform für beide Geschlechter gleich; bei هما unterscheidet sie sich."
-          data-ar="نستخدم «أنتما» و«هما» للمثنّى، أي لشخصين. صيغة الفعل مع «أنتما» واحدة للمذكّر والمؤنّث، وتختلف مع «هما»."
-        >
-          نستخدم «أنتما» و«هما» للمثنّى، أي لشخصين. صيغة الفعل مع «أنتما» واحدة
-          للمذكّر والمؤنّث، وتختلف مع «هما».
-        </p>
       </section>
-      <section class="verb-practice" aria-labelledby="verb-practice-title">
+      <section
+        class="verb-practice"
+        id="verb-practice"
+        aria-labelledby="verb-practice-title"
+      >
         <div class="section-heading">
           <div>
             <p class="eyebrow" data-de="JETZT BIST DU DRAN" data-ar="الآن دورك">
@@ -228,10 +319,10 @@
           ></span>
         </div>
         <p
-          data-de="Übe mit dem gewählten Verb und der gewählten Zeitform. Du bekommst direkt eine Erklärung."
-          data-ar="تدرّب على الفعل والزمن اللذين اخترتهما، واقرأ التوضيح بعد الإجابة."
+          data-de="Übe mit dem gewählten Verb und der gewählten Verbform. Du bekommst direkt eine Erklärung."
+          data-ar="تدرّب على الفعل والصيغة اللذين اخترتهما، واقرأ التوضيح بعد الإجابة."
         >
-          تدرّب على الفعل والزمن اللذين اخترتهما، واقرأ التوضيح بعد الإجابة.
+          تدرّب على الفعل والصيغة اللذين اخترتهما، واقرأ التوضيح بعد الإجابة.
         </p>
         <p class="practice-prompt" id="verb-question"></p>
         <div class="verb-answers" id="verb-answers"></div>

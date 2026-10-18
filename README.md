@@ -42,7 +42,11 @@ Inhalte: `js/letter-examples.js`, `js/grammar-data.js`. Oberflächen: `js/pages/
 
 ## تصريف الأفعال · Verben lernen
 
-`verbs.html` ist über das Dashboard und die Navigation erreichbar. Die Lektion erklärt Vergangenheit und Gegenwart (Indikativ) anhand von sechs regelmäßigen dreiradikaligen Verben: كتب، درس، فتح، شرب، لعب، سمع. Ein interaktiver Konjugationstisch zeigt alle 14 Personen-/Geschlechtsformen mit markierten Vorsilben und Endungen, Beispielsätzen und deutschen Übersetzungen. Ein Quiz zum gewählten Verb und Tempus liefert sofortige Rückmeldung. Der Übungszähler gilt für die aktuelle Sitzung und ist unabhängig von den Vokabeltests.
+`verbs.html` ist über das Dashboard und die Navigation erreichbar. Der Kurs enthält 30 Verben mit Perfekt, Präsens (Indikativ) und Imperativ, Beispielsätzen, deutschen Übersetzungen und Quiz. Im Perfekt und Präsens werden jeweils 14 Personen-/Geschlechtsformen gezeigt. Der Imperativ hat fünf unterschiedliche Formen für die angesprochenen Personen: أنتَ، أنتِ، أنتما، أنتم، أنتنّ. Es werden keine Imperativformen für „ich“ oder „er/sie“ erzeugt.
+
+Eine Suche auf Arabisch oder Deutsch ignoriert Vokalzeichen sowie Alif-/Hamza-Varianten. Die Auswahl gruppiert regelmäßige Verben, Verben mit Hamza und schwache Verben. Ohne Treffer werden eine Meldung und eine Schaltfläche zum Zurücksetzen angezeigt. Sprachwechsel erhält Auswahl, Suchbegriff und Übungsstand.
+
+Der Katalog enthält neben regelmäßigen Verben unter anderem أكل، أخذ، قال، نام، قرأ und وقف. Diese sechs Verben haben ausdrücklich hinterlegte vollständige Paradigmen, einschließlich Änderungen des Stamms und der Hamza-Schreibung. Beispiele: آكل، قلتُ، نمتُ، يقرؤون، كُلْ، خُذْ، قُلْ، نَمْ، قِفْ. Farbige Vorsilben und Endungen werden nur getrennt, wenn das Schriftbild dies zulässt. Die fünf Imperativformen werden auch bei der Erzeugung der Quizantworten berücksichtigt. Der Übungszähler gilt für die aktuelle Sitzung und bleibt unabhängig von den Vokabeltests.
 
 Daten und Konjugationsregeln: `js/verb-data.js`. Oberfläche: `js/pages/verbs.js`, `css/verbs.css`.
 
@@ -57,7 +61,7 @@ python3 tests/verbs-smoke.py
 python3 tests/foundations-smoke.py
 ```
 
-Der Test prüft Sprachwahl, Wortlisten, Lernkarten, einen vollständig beantworteten Multiple-Choice-Test, persistierte Ergebnisse, Statistiken, Excel-Import, den Sprachwechsel in beide Richtungen, mobile Navigation und die Lernseiten bei unterschiedlichen Bildschirmbreiten.
+Die Tests prüfen alle 90 Konjugationstabellen der 30 Verben, Suche und Imperativübungen sowie Sprachwahl, Wortlisten, Lernkarten, einen vollständig beantworteten Multiple-Choice-Test, persistierte Ergebnisse, Statistiken, Excel-Import, den Sprachwechsel in beide Richtungen, mobile Navigation und die Lernseiten bei unterschiedlichen Bildschirmbreiten.
 
 Excel-Import lädt XLSX 0.18.5 über `cdn.jsdelivr.net`. Wenn der Testbrowser den Cloud-HTTPS-Proxy nicht kennt, kann ausschließlich für den Funktionstest dieselbe Bibliothek mit aktiver TLS-Prüfung heruntergeladen und lokal bereitgestellt werden:
 
