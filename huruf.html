@@ -10,12 +10,15 @@
     <script src="js/letter-data.js" defer></script>
     <script src="js/pages/letters-audio.js" defer></script>
     <script src="js/letter-examples.js" defer></script>
+    <script src="js/letter-focused-data.js" defer></script>
     <script src="js/pages/letters-learning.js" defer></script>
     <script src="js/pages/letters-enhanced.js" defer></script>
+    <script src="js/pages/letters-focused.js" defer></script>
     <link rel="stylesheet" href="css/interface-languages.css" />
     <script src="js/interface-languages.js" defer></script>
     <script src="js/tanwin-display.js" defer></script>
     <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/letters-focused.css" />
     <script src="js/design.js" defer></script>
   </head>
   <body>
@@ -101,48 +104,174 @@
             إظهار / إخفاء الدليل
           </button>
         </div>
-        <aside
-          class="letter-training-callout"
-          aria-labelledby="letter-training-heading"
+        <section
+          id="letter-focused-practice"
+          class="letter-focused-practice"
+          aria-labelledby="focused-heading"
         >
+          <header class="focused-heading-row">
+            <div>
+              <p
+                class="eyebrow"
+                data-ar="من البطاقة إلى التطبيق"
+                data-de="VON DER KARTE ZUR ÜBUNG"
+              >
+                من البطاقة إلى التطبيق
+              </p>
+              <h2 id="focused-heading"></h2>
+              <p id="focused-intro"></p>
+            </div>
+            <span
+              id="focused-badge"
+              class="focused-badge"
+              lang="ar"
+              aria-hidden="true"
+            ></span>
+          </header>
+          <div
+            class="focused-mode-grid"
+            role="group"
+            aria-label="التدريبات / Übungen"
+          >
+            <button type="button" data-focused-mode="forms" aria-pressed="true">
+              <strong data-ar="أشكال الحرف" data-de="Formen erkennen"
+                >أشكال الحرف</strong
+              ><small data-ar="24 سؤالًا" data-de="24 Fragen">24 سؤالًا</small>
+            </button>
+            <button
+              type="button"
+              data-focused-mode="missing"
+              aria-pressed="false"
+            >
+              <strong data-ar="الحرف الناقص" data-de="Fehlender Buchstabe"
+                >الحرف الناقص</strong
+              ><small data-ar="12 سؤالًا" data-de="12 Fragen">12 سؤالًا</small>
+            </button>
+            <button
+              type="button"
+              data-focused-mode="circle"
+              aria-pressed="false"
+            >
+              <strong
+                data-ar="ضع دائرة حول الحرف"
+                data-de="Buchstaben einkreisen"
+                >ضع دائرة حول الحرف</strong
+              ><small data-ar="12 لوحة" data-de="12 Felder">12 لوحة</small>
+            </button>
+          </div>
+          <section
+            id="focused-run"
+            class="focused-run"
+            aria-labelledby="focused-mode-title"
+          >
+            <header class="focused-run-heading">
+              <h3 id="focused-mode-title"></h3>
+              <span id="focused-score" role="status"></span>
+            </header>
+            <label
+              for="focused-progress"
+              id="focused-progress-label"
+              class="sr-only"
+            ></label
+            ><progress id="focused-progress" value="0" max="24"></progress>
+            <p id="focused-counter" class="focused-counter"></p>
+            <h4 id="focused-prompt" tabindex="-1"></h4>
+            <div id="focused-stimulus" class="focused-stimulus"></div>
+            <div id="focused-options" class="focused-options"></div>
+            <button
+              type="button"
+              id="focused-check"
+              hidden
+              disabled
+              data-ar="تحقّق من الدوائر"
+              data-de="Kreise prüfen"
+            >
+              تحقّق من الدوائر
+            </button>
+            <div
+              id="focused-feedback"
+              class="focused-feedback"
+              role="status"
+            ></div>
+            <div class="focused-actions">
+              <button
+                type="button"
+                id="focused-previous"
+                disabled
+                data-ar="السؤال السابق"
+                data-de="Vorherige Frage"
+              >
+                السؤال السابق</button
+              ><button type="button" id="focused-next" disabled></button>
+            </div>
+          </section>
+          <section
+            id="focused-result"
+            class="focused-result"
+            aria-labelledby="focused-result-title"
+            hidden
+          >
+            <span aria-hidden="true">✳</span>
+            <h3 id="focused-result-title"></h3>
+            <p id="focused-result-score"></p>
+            <p
+              data-ar="راجع إجاباتك، أو جرّب جولة جديدة من تدريب هذا الحرف."
+              data-de="Sieh dir deine Antworten an oder starte eine neue Runde für diesen Buchstaben."
+            >
+              راجع إجاباتك، أو جرّب جولة جديدة من تدريب هذا الحرف.
+            </p>
+            <div class="focused-actions">
+              <button
+                type="button"
+                id="focused-review"
+                data-ar="راجع إجاباتك"
+                data-de="Antworten ansehen"
+              >
+                راجع إجاباتك</button
+              ><button
+                type="button"
+                id="focused-restart"
+                data-ar="جولة جديدة"
+                data-de="Neue Runde"
+              >
+                جولة جديدة
+              </button>
+            </div>
+          </section>
+          <p
+            class="focused-session-note"
+            data-ar="كل تدريب خاص بالحرف في البطاقة أعلاه. يبقى تقدّم كل حرف عند التنقّل بين الحروف والتدريبات واللغتين ما دامت هذه الصفحة مفتوحة."
+            data-de="Jede Übung gehört zum Buchstaben auf der Karte oben. Der Stand jedes Buchstabens bleibt beim Wechsel von Buchstaben, Übungen und Sprache erhalten, solange die Seite geöffnet ist."
+          >
+            كل تدريب خاص بالحرف في البطاقة أعلاه. يبقى تقدّم كل حرف عند التنقّل
+            بين الحروف والتدريبات واللغتين ما دامت هذه الصفحة مفتوحة.
+          </p>
+        </section>
+        <aside class="letter-training-callout">
           <div>
             <h2
-              id="letter-training-heading"
-              data-ar="تدرّب على شكل الحرف"
-              data-de="Buchstabenformen üben"
+              data-ar="تدريبات عامة لجميع الحروف"
+              data-de="Gemischte Übungen für alle Buchstaben"
             >
-              تدرّب على شكل الحرف
+              تدريبات عامة لجميع الحروف
             </h2>
             <p
-              data-ar="أربعة تدريبات: الحرف واسمه، الأشكال، الحرف الناقص، والاستماع. 28 سؤالًا في كل تدريب."
-              data-de="Vier Übungen: Namen, Formen, fehlende Buchstaben und Hören. Je 28 Fragen."
+              data-ar="هل تريد مزج الحروف؟ جرّب تدريبات الأسماء والأشكال والكلمات والاستماع."
+              data-de="Möchtest du alle Buchstaben mischen? Übe Namen, Formen, Wörter und Hören."
             >
-              أربعة تدريبات: الحرف واسمه، الأشكال، الحرف الناقص، والاستماع. 28
-              سؤالًا في كل تدريب.
+              هل تريد مزج الحروف؟ جرّب تدريبات الأسماء والأشكال والكلمات
+              والاستماع.
             </p>
           </div>
           <a
             id="letter-tests-link"
             class="letter-tests-link"
             href="letter-tests.html"
-            data-ar="انتقل إلى اختبارات الحروف ←"
-            data-de="Zu den Buchstabenübungen →"
-            >انتقل إلى اختبارات الحروف ←</a
+            data-ar="إلى التدريبات العامة ←"
+            data-de="Zu den gemischten Übungen →"
+            >إلى التدريبات العامة ←</a
           >
         </aside>
-        <h2 data-i18n="quiz">اختبار الحروف</h2>
-        <p data-i18n="quizHelp">
-          اختر اسم الحرف الصحيح. الاختبار مستقل عن اختبارات المفردات.
-        </p>
-        <div class="quiz-panel">
-          <div id="quiz-question"></div>
-          <div id="quiz-options" class="quiz-options"></div>
-          <p id="quiz-feedback" aria-live="polite"></p>
-          <p id="quiz-score"></p>
-          <button id="quiz-next" type="button" data-i18n="newQuestion">
-            سؤال جديد
-          </button>
-        </div>
       </section>
       <h2 data-i18n="choose">اختر حرفاً</h2>
       <div

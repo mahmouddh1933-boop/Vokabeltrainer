@@ -30,7 +30,17 @@ Die Rückseite jeder Buchstabenkarte enthält vier echte Beispielwörter für An
 
 ### تدريبات الحروف والصوت · Buchstabenübungen und Audio
 
-Unter „Buchstaben schreiben üben / تدرّب على شكل الحرف“ führt die Schaltfläche in `huruf.html` zu `letter-tests.html`. Die Seite ist außerdem über die Navigation erreichbar. Vier Übungsarten decken jeweils alle 28 Buchstaben ab:
+`huruf.html` zeigt zuerst die Lernkarte, direkt darunter die vier Schaltflächen (zurück, Buchstaben anhören, Wort anhören, weiter), danach Vokalzeichen und Aussprache sowie die Schreibfläche. Anschließend folgen drei Übungen für genau den Buchstaben auf der Karte:
+
+- **Formen und Positionen:** 24 Fragen zu 12 echten Wörtern. Die Form wird nach der Verbindung mit den Nachbarbuchstaben bestimmt; die Position (Anfang, Mitte, Ende) wird separat geübt. Nicht verbindende Buchstaben haben nur zwei mögliche Verbindungsformen.
+- **Fehlender Buchstabe:** 12 Wörter mit einer Lücke an der Stelle des ausgewählten Buchstabens.
+- **Buchstaben einkreisen:** 12 Suchfelder mit je 16 Zeichen. Alle Vorkommen des Zielbuchstabens werden durch Antippen eingekreist; erneutes Antippen entfernt den Kreis. Eine eigene Prüftaste wertet die Auswahl aus. Grüne Kreise markieren die richtigen Zeichen, gestrichelte Kreise übersehene Treffer und rote Kreise falsch ausgewählte Zeichen.
+
+Damit stehen 48 Fragen/Suchfelder pro Buchstabe und insgesamt 1.344 Aufgaben für die 28 Karten bereit. Ein Buchstabenwechsel aktualisiert Überschrift, Beispiele und Aufgaben. Für jede Kombination aus Buchstabe und Übungsart bleiben Antworten, noch nicht geprüfte Kreise und Fortschritt innerhalb derselben geöffneten Seite erhalten, auch beim Sprachwechsel. Ergebnis, Antwortdurchsicht und neue Runden sind verfügbar.
+
+Wörter und Aufgaben: `js/letter-focused-data.js`. Oberfläche: `js/pages/letters-focused.js`, `css/letters-focused.css`. Die 12 Wortbeispiele pro Buchstabe enthalten die vier bisherigen Kartenbeispiele und acht zusätzliche Wörter.
+
+Der Link **„تدريبات عامة لجميع الحروف / Gemischte Übungen für alle Buchstaben“** darunter führt weiterhin zu `letter-tests.html`. Diese Seite ist außerdem über die Navigation erreichbar. Vier gemischte Übungsarten decken jeweils alle 28 Buchstaben ab:
 
 1. `#names`: den Buchstaben zu seinem Namen auswählen.
 2. `#forms`: Anfangs-, Mittel- und Endformen erkennen, einschließlich nicht verbindender Buchstaben.
@@ -87,6 +97,7 @@ node --test tests/*.test.js
 python3 tests/verbs-smoke.py
 python3 tests/foundations-smoke.py
 python3 tests/letter-training-smoke.py
+python3 tests/letters-focused-smoke.py
 ```
 
 Die Tests prüfen alle 144 Konjugationstabellen der 48 Verben, Suche, Längenfilter und Imperativübungen sowie alle 240 Grammatikfragen, Themenfilter, Antworterklärungen, Rücknavigation, Zurücksetzen und Sprachwahl, Wortlisten, Lernkarten, einen vollständig beantworteten Multiple-Choice-Test, persistierte Ergebnisse, Statistiken, Excel-Import, den Sprachwechsel in beide Richtungen, mobile Navigation und die Lernseiten bei unterschiedlichen Bildschirmbreiten.
@@ -98,6 +109,8 @@ curl --fail --location --show-error https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dis
 python3 tests/smoke.py --xlsx-js /tmp/jisr-xlsx.js
 ```
 
-Die Option ersetzt im Test nur den Abruf der angegebenen Bibliothek und ändert keine Zertifikatsprüfung oder Anwendungseinstellungen. Der zusätzliche Buchstabentest prüft alle 112 Fragen, Korrekturen, Sprachwechsel, Ergebnis, Durchsicht und Neustart in einer mobilen Chrome-Emulation. Er prüft außerdem die tatsächliche MP3-Wiedergabe durch Touch-Eingaben bei blockierten externen Anfragen. Die Unit-Tests prüfen unter anderem den direkten Gerätestimmen-Aufruf, verzögert verfügbare Stimmen, gesperrte Wiedergabe, Fallbacks und den Abbruch veralteter Anfragen. Ein Test auf einem physischen Android-Gerät wurde in der Cloud nicht durchgeführt.
+Die Option ersetzt im Test nur den Abruf der angegebenen Bibliothek und ändert keine Zertifikatsprüfung oder Anwendungseinstellungen. Der Test `letters-focused-smoke.py` prüft die Bindung aller 28 Karten an ihre drei Übungen, die Seitenreihenfolge, vollständige Runden für Bā und Dāl, Auswahl und Korrektur der Kreise, Ergebnisse, Wiederholung, pro Buchstabe getrennte Lernstände, Sprachwechsel und Bildschirmgrößen. Die Unit-Tests validieren alle 1.344 Aufgaben sowie die Verbindungen und Wortpositionen.
+
+Der zusätzliche gemischte Buchstabentest prüft alle 112 Fragen, Korrekturen, Sprachwechsel, Ergebnis, Durchsicht und Neustart in einer mobilen Chrome-Emulation. Er prüft außerdem die tatsächliche MP3-Wiedergabe durch Touch-Eingaben bei blockierten externen Anfragen. Die Unit-Tests prüfen unter anderem den direkten Gerätestimmen-Aufruf, verzögert verfügbare Stimmen, gesperrte Wiedergabe, Fallbacks und den Abbruch veralteter Anfragen. Ein Test auf einem physischen Android-Gerät wurde in der Cloud nicht durchgeführt.
 
 Online-Aussprache für sonstigen Text benötigt Zugriff auf `translate.google.com` bzw. `translate.googleapis.com`; ihre Verfügbarkeit hängt vom externen Dienst ab.

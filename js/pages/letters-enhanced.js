@@ -58,11 +58,7 @@
   let lang =
       localStorage.getItem("vocabInterfaceLanguage") === "de" ? "de" : "ar",
     index = 0,
-    guide = true,
-    correct = 0,
-    total = 0,
-    question = 0,
-    answered = false;
+    guide = true;
   function tr(k) {
     return langs[lang][k];
   }
@@ -104,7 +100,6 @@
     $("letter-front-name").textContent =
       l === "ar" ? data[index].name : data[index].de;
     sync();
-    renderQuestion();
     window.renderLetterFormsForLanguage?.();
   }
   window.addEventListener("app-language-change", (e) => {
@@ -178,54 +173,6 @@
     guide = !guide;
     drawGuide();
   };
-  function renderQuestion() {
-    answered = false;
-    question = Math.floor(Math.random() * data.length);
-    $("quiz-question").textContent = data[question].char;
-    $("quiz-feedback").textContent = "";
-    let options = [question];
-    while (options.length < 4) {
-      const x = Math.floor(Math.random() * data.length);
-      if (!options.includes(x)) options.push(x);
-    }
-    options.sort(() => Math.random() - 0.5);
-    $("quiz-options").replaceChildren();
-    options.forEach((x) => {
-      const b = document.createElement("button");
-      b.type = "button";
-      b.textContent = lang === "ar" ? data[x].name : data[x].de;
-      b.onclick = () => {
-        if (answered) return;
-        answered = true;
-        total++;
-        if (x === question) {
-          correct++;
-          b.classList.add("correct");
-          $("quiz-feedback").textContent = tr("correct");
-        } else {
-          b.classList.add("wrong");
-          $("quiz-feedback").textContent =
-            tr("wrong") +
-            " — " +
-            (lang === "ar" ? data[question].name : data[question].de);
-          [...$("quiz-options").children]
-            .find(
-              (el) =>
-                el.textContent ===
-                (lang === "ar" ? data[question].name : data[question].de),
-            )
-            ?.classList.add("correct");
-        }
-        updateScore();
-      };
-      $("quiz-options").append(b);
-    });
-    updateScore();
-  }
-  function updateScore() {
-    $("quiz-score").textContent = tr("score") + ": " + correct + " / " + total;
-  }
-  $("quiz-next").onclick = renderQuestion;
   // Keep the original vocabulary tests and timers untouched.
   const saved = Number(sessionStorage.getItem("lettersLastIndex"));
   index =
