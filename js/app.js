@@ -439,209 +439,242 @@
     let cachedVoices = [];
     let activeUtterance = null;
     let activeOnlineAudio = null;
+    let reusableAudio = null;
+    let speechTimer = null;
     let speechInitialized = false;
     let speechRequestId = 0;
+    const speechText = (ar, de) =>
+      localStorage.getItem("vocabInterfaceLanguage") === "de" ? de : ar;
 
     function refreshVoices() {
-        if (!("speechSynthesis" in window)) return [];
+      if (!("speechSynthesis" in window)) return [];
+      try {
         const voices = window.speechSynthesis.getVoices() || [];
         if (voices.length) cachedVoices = voices;
-        return cachedVoices;
+      } catch (_) {}
+      return cachedVoices;
     }
-
     function getArabicVoices() {
-        return refreshVoices().filter(voice => {
-            const lang = String(voice.lang || "").toLowerCase();
-            const name = String(voice.name || "").toLowerCase();
-            return lang === "ar" || lang.startsWith("ar-") || lang.startsWith("ar_") || name.includes("arabic") || name.includes("عربي");
-        });
+      return refreshVoices().filter(
+        (voice) =>
+          /^ar(?:[-_]|$)/i.test(voice.lang || "") ||
+          /arabic|عربي/i.test(voice.name || ""),
+      );
     }
-
     function chooseArabicVoice() {
-        const voices = getArabicVoices();
-        if (!voices.length) return null;
-        const preferred = ["ar-sa", "ar-eg", "ar-ae", "ar-jo", "ar-lb", "ar-iq", "ar-kw", "ar-qa", "ar-ma"];
-        for (const locale of preferred) {
-            const found = voices.find(v => String(v.lang || "").toLowerCase().replace("_", "-") === locale);
-            if (found) return found;
-        }
-        return voices.find(v => v.default) || voices[0];
+      const voices = getArabicVoices();
+      return (
+        voices.find((v) => /^ar[-_]SA$/i.test(v.lang)) ||
+        voices.find((v) => v.default) ||
+        voices[0] ||
+        null
+      );
     }
-
     function getSpeechSupport() {
-        const localSupported = ("speechSynthesis" in window) && typeof SpeechSynthesisUtterance !== "undefined";
-        return {
-            supported: localSupported || typeof Audio !== "undefined",
-            localSupported,
-            onlineFallback: typeof Audio !== "undefined",
-            arabicVoice: localSupported ? chooseArabicVoice() : null,
-            arabicVoices: localSupported ? getArabicVoices() : []
-        };
+      const localSupported =
+        "speechSynthesis" in window &&
+        typeof SpeechSynthesisUtterance !== "undefined";
+      return {
+        supported: localSupported || typeof Audio !== "undefined",
+        localSupported,
+        onlineFallback: typeof Audio !== "undefined",
+        arabicVoice: localSupported ? chooseArabicVoice() : null,
+        arabicVoices: localSupported ? getArabicVoices() : [],
+      };
     }
-
     function initSpeech(onReady) {
-        const localSupported = ("speechSynthesis" in window) && typeof SpeechSynthesisUtterance !== "undefined";
-        if (!localSupported) {
-            if (typeof onReady === "function") onReady(getSpeechSupport());
-            return;
-        }
-        refreshVoices();
-        if (!speechInitialized) {
-            speechInitialized = true;
-            const synth = window.speechSynthesis;
-            const changed = () => {
-                refreshVoices();
-                if (typeof onReady === "function") onReady(getSpeechSupport());
-            };
-            if (typeof synth.addEventListener === "function") synth.addEventListener("voiceschanged", changed);
-            else if ("onvoiceschanged" in synth) synth.onvoiceschanged = changed;
-            [150, 500, 1200].forEach(delay => setTimeout(changed, delay));
-        }
+      if (!("speechSynthesis" in window)) {
         if (typeof onReady === "function") onReady(getSpeechSupport());
+        return;
+      }
+      refreshVoices();
+      if (!speechInitialized) {
+        speechInitialized = true;
+        window.speechSynthesis.addEventListener?.("voiceschanged", refreshVoices);
+      }
+      if (typeof onReady === "function") onReady(getSpeechSupport());
     }
-
     function stopSpeech() {
-        speechRequestId += 1;
+      speechRequestId++;
+      clearTimeout(speechTimer);
+      speechTimer = null;
+      // Detach stale handlers before cancel/pause: mobile engines may emit a late end/error.
+      if (activeUtterance)
+        activeUtterance.onstart =
+          activeUtterance.onend =
+          activeUtterance.onerror =
+            null;
+      activeUtterance = null;
+      try {
+        window.speechSynthesis?.cancel();
+      } catch (_) {}
+      if (activeOnlineAudio) {
+        activeOnlineAudio.onplaying =
+          activeOnlineAudio.onended =
+          activeOnlineAudio.onerror =
+            null;
         try {
-            if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+          activeOnlineAudio.pause();
+          activeOnlineAudio.currentTime = 0;
         } catch (_) {}
-        activeUtterance = null;
-        if (activeOnlineAudio) {
-            try {
-                activeOnlineAudio.pause();
-                activeOnlineAudio.currentTime = 0;
-            } catch (_) {}
-            activeOnlineAudio = null;
-        }
+        activeOnlineAudio = null;
+      }
     }
-
     function getOnlineTTSUrls(text) {
-        const encoded = encodeURIComponent(text);
-        return [
-            `https://translate.google.com/translate_tts?ie=UTF-8&client=gtx&tl=ar&q=${encoded}`,
-            `https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=ar&q=${encoded}`,
-            `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=ar&q=${encoded}`
-        ];
+      const encoded = encodeURIComponent(text);
+      return [
+        `https://translate.google.com/translate_tts?ie=UTF-8&client=gtx&tl=ar&q=${encoded}`,
+        `https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=ar&q=${encoded}`,
+      ];
     }
-
-    function playOnlineArabic(text, onStatus, requestId, urlIndex) {
-        const index = Number(urlIndex || 0);
-        const urls = getOnlineTTSUrls(text);
-        if (index >= urls.length) {
-            if (typeof onStatus === "function") onStatus("تعذّر تشغيل النطق. تحقق من الإنترنت أو إعدادات الصوت.", true);
-            return false;
+    function speakArabic(text, onStatus) {
+      const value = String(text || "")
+        .trim()
+        .normalize("NFC");
+      if (!value) return false;
+      stopSpeech();
+      const requestId = speechRequestId;
+      const current = () => requestId === speechRequestId;
+      const status = (ar, de, error = false) => {
+        if (current() && typeof onStatus === "function")
+          onStatus(speechText(ar, de), error);
+      };
+      const blocked = () =>
+        status(
+          "اضغط زر الاستماع مرة أخرى للسماح بالصوت، وتحقق من مستوى الصوت.",
+          "Tippe erneut auf Anhören, um Audio zu erlauben, und prüfe die Lautstärke.",
+          true,
+        );
+      const unavailable = () =>
+        status(
+          "تعذّر تشغيل الصوت. تحقق من الاتصال أو فعّل صوتًا عربيًا في إعدادات النطق بالجهاز.",
+          "Audio nicht verfügbar. Prüfe die Verbindung oder aktiviere eine arabische Stimme in den Spracheinstellungen des Geräts.",
+          true,
+        );
+      function playMedia(url, fallback, recorded) {
+        if (!current()) return;
+        if (typeof Audio === "undefined") {
+          fallback();
+          return;
         }
-        if (typeof Audio === "undefined" || requestId !== speechRequestId) return false;
-
-        if (activeOnlineAudio) {
-            try { activeOnlineAudio.pause(); } catch (_) {}
-        }
-
-        const audio = new Audio();
+        const audio = reusableAudio || (reusableAudio = new Audio());
         activeOnlineAudio = audio;
-        audio.preload = "auto";
-        audio.src = urls[index];
+        let settled = false;
         let started = false;
-        let failed = false;
-
-        const fail = () => {
-            if (failed || requestId !== speechRequestId) return;
-            failed = true;
-            try { audio.pause(); } catch (_) {}
-            if (activeOnlineAudio === audio) activeOnlineAudio = null;
-            playOnlineArabic(text, onStatus, requestId, index + 1);
+        const fail = (error) => {
+          if (settled || !current()) return;
+          settled = true;
+          clearTimeout(speechTimer);
+          audio.onplaying = audio.onended = audio.onerror = null;
+          try {
+            audio.pause();
+          } catch (_) {}
+          activeOnlineAudio = null;
+          if (error?.name === "NotAllowedError") blocked();
+          else fallback();
         };
-
+        audio.preload = "auto";
         audio.onplaying = () => {
-            started = true;
-            if (typeof onStatus === "function") onStatus("🔊 يتم تشغيل النطق عبر الإنترنت…", false);
+          if (!current() || settled) return;
+          started = true;
+          clearTimeout(speechTimer);
+          status("🔊 يتم تشغيل النطق…", "🔊 Aussprache wird abgespielt…");
         };
         audio.onended = () => {
-            if (activeOnlineAudio === audio) activeOnlineAudio = null;
-            if (typeof onStatus === "function") onStatus("تم تشغيل النطق.", false);
+          if (!current() || settled) return;
+          settled = true;
+          clearTimeout(speechTimer);
+          activeOnlineAudio = null;
+          status("تم تشغيل النطق.", "Aussprache abgespielt.");
         };
         audio.onerror = fail;
-        audio.onstalled = () => { if (!started) fail(); };
-
-        if (typeof onStatus === "function") onStatus("جارٍ استخدام النطق عبر الإنترنت…", false);
+        audio.src = url;
+        status(
+          recorded ? "جارٍ تشغيل الصوت…" : "جارٍ تحميل النطق عبر الإنترنت…",
+          recorded ? "Audio wird gestartet…" : "Online-Aussprache wird geladen…",
+        );
+        // play() stays in the click handler. Reuse this element on iOS/Android.
         try {
-            const promise = audio.play();
-            if (promise && typeof promise.catch === "function") promise.catch(fail);
-        } catch (_) {
-            fail();
+          audio.play()?.catch(fail);
+        } catch (error) {
+          fail(error);
         }
-        setTimeout(() => {
-            if (!started && !failed && requestId === speechRequestId) fail();
-        }, 4500);
-        return true;
-    }
-
-    function speakArabic(text, onStatus) {
-        const value = String(text || "").trim();
-        if (!value) return false;
-        stopSpeech();
-        const requestId = speechRequestId;
+        if (!started && !settled && current())
+          speechTimer = setTimeout(() => fail(), 8000);
+      }
+      function online(index = 0) {
+        if (!current()) return;
+        const urls = getOnlineTTSUrls(value);
+        if (index >= urls.length) {
+          unavailable();
+          return;
+        }
+        playMedia(urls[index], () => online(index + 1), false);
+      }
+      function local() {
+        if (!current()) return;
+        const supported =
+          "speechSynthesis" in window &&
+          typeof SpeechSynthesisUtterance !== "undefined";
+        if (!supported) {
+          online();
+          return;
+        }
         initSpeech();
-
-        // Online-first: no Arabic voice needs to be installed on the computer.
-        return playOnlineArabic(value, onStatus, requestId, 0);
-
-        const localSupported = ("speechSynthesis" in window) && typeof SpeechSynthesisUtterance !== "undefined";
-        const voice = localSupported ? chooseArabicVoice() : null;
-        if (!localSupported || !voice) return playOnlineArabic(value, onStatus, requestId, 0);
-
         const synth = window.speechSynthesis;
-        let started = false;
-        let resolved = false;
-        let timer = null;
-
-        const fallback = (message) => {
-            if (resolved || requestId !== speechRequestId) return;
-            resolved = true;
-            if (timer) clearTimeout(timer);
-            try { synth.cancel(); } catch (_) {}
-            activeUtterance = null;
-            if (typeof onStatus === "function") onStatus(message, false);
-            setTimeout(() => {
-                if (requestId === speechRequestId) playOnlineArabic(value, onStatus, requestId, 0);
-            }, 80);
-        };
-
         const utterance = new SpeechSynthesisUtterance(value);
         activeUtterance = utterance;
-        utterance.voice = voice;
-        utterance.lang = voice.lang || "ar-SA";
-        utterance.rate = 0.78;
+        const voice = chooseArabicVoice();
+        if (voice) utterance.voice = voice;
+        // Empty voice lists are normal on mobile before the first spoken request.
+        utterance.lang = voice?.lang || "ar-SA";
+        utterance.rate = 0.8;
         utterance.pitch = 1;
         utterance.volume = 1;
+        let resolved = false;
+        let started = false;
+        const fallback = (event) => {
+          if (resolved || !current()) return;
+          resolved = true;
+          clearTimeout(speechTimer);
+          utterance.onstart = utterance.onend = utterance.onerror = null;
+          activeUtterance = null;
+          try {
+            synth.cancel();
+          } catch (_) {}
+          if (event?.error === "not-allowed") blocked();
+          else online();
+        };
         utterance.onstart = () => {
-            started = true;
-            if (timer) clearTimeout(timer);
-            if (typeof onStatus === "function") onStatus("🔊 يتم تشغيل الصوت العربي…", false);
+          if (!current() || resolved) return;
+          started = true;
+          clearTimeout(speechTimer);
+          status("🔊 يتم تشغيل صوت الجهاز…", "🔊 Gerätestimme wird abgespielt…");
         };
         utterance.onend = () => {
-            resolved = true;
-            if (timer) clearTimeout(timer);
-            activeUtterance = null;
-            if (typeof onStatus === "function") onStatus("تم تشغيل النطق.", false);
+          if (!current() || resolved) return;
+          resolved = true;
+          clearTimeout(speechTimer);
+          activeUtterance = null;
+          status("تم تشغيل النطق.", "Aussprache abgespielt.");
         };
-        utterance.onerror = () => fallback("تعذّر الصوت المحلي. جارٍ استخدام النطق عبر الإنترنت…");
-
-        if (typeof onStatus === "function") onStatus("جارٍ تجهيز النطق العربي…", false);
+        utterance.onerror = fallback;
+        status("جارٍ تشغيل صوت الجهاز…", "Gerätestimme wird gestartet…");
         try {
-            if (synth.paused) synth.resume();
-            synth.speak(utterance);
-            timer = setTimeout(() => {
-                if (!started && !resolved && requestId === speechRequestId) {
-                    fallback("لم يبدأ الصوت المحلي. جارٍ استخدام النطق عبر الإنترنت…");
-                }
-            }, 1800);
+          if (synth.paused) synth.resume();
+          // No await, timer, or network request before speak(): preserve the tap gesture.
+          synth.speak(utterance);
+          if (!started && !resolved && current())
+            speechTimer = setTimeout(() => fallback(), 2500);
         } catch (_) {
-            fallback("تعذّر الصوت المحلي. جارٍ استخدام النطق عبر الإنترنت…");
+          fallback();
         }
-        return true;
+      }
+      const recording = window.ArabicLetterData?.audio[value];
+      if (recording) playMedia(recording, local, true);
+      else local();
+      return true;
     }
-
 
     window.VocabApp = {
         KEYS,

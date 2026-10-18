@@ -28,6 +28,23 @@ Die Original-ZIP-Datei bleibt als unveränderte Ausgangsversion erhalten. Die ak
 
 Die Rückseite jeder Buchstabenkarte enthält vier echte Beispielwörter für Anfang, Mitte, getrenntes und verbundenes Wortende. Insgesamt gibt es 112 Beispiele. Der Zielbuchstabe ist innerhalb des unveränderten Wortes farbig markiert; dasselbe gilt für das Wort auf der Vorderseite. Vor jedem getrennten Endbuchstaben steht ein Buchstabe aus ا، د، ذ، ر، ز، و (einschließlich Alif mit Hamza). Bei den sechs Buchstaben, die sich nicht nach links verbinden, erklärt die Karte die tatsächliche mittlere Schreibform.
 
+### تدريبات الحروف والصوت · Buchstabenübungen und Audio
+
+Unter „Buchstaben schreiben üben / تدرّب على شكل الحرف“ führt die Schaltfläche in `huruf.html` zu `letter-tests.html`. Die Seite ist außerdem über die Navigation erreichbar. Vier Übungsarten decken jeweils alle 28 Buchstaben ab:
+
+1. `#names`: den Buchstaben zu seinem Namen auswählen.
+2. `#forms`: Anfangs-, Mittel- und Endformen erkennen, einschließlich nicht verbindender Buchstaben.
+3. `#missing`: den fehlenden Buchstaben in einem echten Wort ergänzen; die Bedeutung hilft bei der Zuordnung.
+4. `#listening`: den arabischen Buchstabennamen anhören und das Zeichen auswählen.
+
+Jede Runde hat 28 Fragen mit vier Antworten, sofortiger Erklärung und einem farbig markierten Wortbeispiel. Fortschrittsbalken, Rücknavigation, Ergebnis, Antwortdurchsicht und neue Runden sind verfügbar. Der Übungsstand bleibt beim Wechsel der Sprache oder Übungsart innerhalb derselben geöffneten Seite erhalten. Alle vier Übungen funktionieren unabhängig von den Vokabellisten und deren Statistik.
+
+Die App enthält 168 synthetisierte MP3-Dateien in `audio/letters/`: Buchstabennamen, Beispielwörter und vier Vokal-/Sukunformen pro Buchstabe. Diese Audiodateien funktionieren ohne Internet oder installierte arabische Stimme und werden direkt durch Antippen abgespielt. Deshalb immer die **gesamte ZIP-Datei entpacken**, einschließlich des Audioordners. Bei anderem Text versucht die App zuerst die arabische Gerätestimme und danach Online-TTS. Eine Wiedergabesicherung des Browsers wird mit einer Aufforderung zum erneuten Antippen angezeigt. Details zur Herkunft stehen in `audio/README.md`.
+
+Gemeinsame Buchstabendaten und Audiodateizuordnung: `js/letter-data.js`. Aufgaben: `js/letter-training-data.js`. Oberfläche: `js/pages/letter-training.js`, `css/letter-training.css`. Die Wortbeispiele bleiben in `js/letter-examples.js`.
+
+### قواعد العربية · Grammatik
+
 `grammar.html` bietet 20 Lektionen mit deutsch-arabischem Sprachwechsel und insgesamt 240 Übungsfragen (12 pro Lektion). Die fünf bisherigen Lektionen haben jeweils acht zusätzliche Fragen erhalten:
 
 - `#sun-moon`: Sonnen- und Mondbuchstaben, vollständige Buchstabenlisten und Aussprachebeispiele.
@@ -69,6 +86,7 @@ python3 tests/smoke.py
 node --test tests/*.test.js
 python3 tests/verbs-smoke.py
 python3 tests/foundations-smoke.py
+python3 tests/letter-training-smoke.py
 ```
 
 Die Tests prüfen alle 144 Konjugationstabellen der 48 Verben, Suche, Längenfilter und Imperativübungen sowie alle 240 Grammatikfragen, Themenfilter, Antworterklärungen, Rücknavigation, Zurücksetzen und Sprachwahl, Wortlisten, Lernkarten, einen vollständig beantworteten Multiple-Choice-Test, persistierte Ergebnisse, Statistiken, Excel-Import, den Sprachwechsel in beide Richtungen, mobile Navigation und die Lernseiten bei unterschiedlichen Bildschirmbreiten.
@@ -80,4 +98,6 @@ curl --fail --location --show-error https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dis
 python3 tests/smoke.py --xlsx-js /tmp/jisr-xlsx.js
 ```
 
-Die Option ersetzt im Test nur den Abruf der angegebenen Bibliothek und ändert keine Zertifikatsprüfung oder Anwendungseinstellungen. Online-Aussprache benötigt Zugriff auf `translate.google.com` bzw. `translate.googleapis.com`; ihre Verfügbarkeit hängt vom externen Dienst ab.
+Die Option ersetzt im Test nur den Abruf der angegebenen Bibliothek und ändert keine Zertifikatsprüfung oder Anwendungseinstellungen. Der zusätzliche Buchstabentest prüft alle 112 Fragen, Korrekturen, Sprachwechsel, Ergebnis, Durchsicht und Neustart in einer mobilen Chrome-Emulation. Er prüft außerdem die tatsächliche MP3-Wiedergabe durch Touch-Eingaben bei blockierten externen Anfragen. Die Unit-Tests prüfen unter anderem den direkten Gerätestimmen-Aufruf, verzögert verfügbare Stimmen, gesperrte Wiedergabe, Fallbacks und den Abbruch veralteter Anfragen. Ein Test auf einem physischen Android-Gerät wurde in der Cloud nicht durchgeführt.
+
+Online-Aussprache für sonstigen Text benötigt Zugriff auf `translate.google.com` bzw. `translate.googleapis.com`; ihre Verfügbarkeit hängt vom externen Dienst ab.

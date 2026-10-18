@@ -29,6 +29,7 @@
       ["index.html", "home", "Übersicht", "نظرة عامة"],
       ["index.html#ready-lists-panel", "book", "Mein Lernpfad", "مسار تعلّمي"],
       ["huruf.html", "letters", "Das Alphabet", "الحروف العربية"],
+      ["letter-tests.html", "check", "Buchstaben üben", "تدريبات الحروف"],
       ["test.html", "check", "Wissen testen", "اختبر معرفتك"],
       ["review.html", "repeat", "Wiederholen", "المراجعة"],
       ["stats.html", "chart", "Mein Fortschritt", "تقدّمي"],
@@ -55,7 +56,7 @@
         ? nav[1]
         : nav.find((item) => item[0] === page) ||
           (page.startsWith("test")
-            ? nav[3]
+            ? nav.find((item) => item[0] === "test.html")
             : ["", "book", "Lernraum", "مساحة التعلّم"]);
     topbar.innerHTML = `<div class="topbar-left"><button type="button" class="menu-toggle" aria-controls="app-sidebar" aria-expanded="false" aria-label="Menü / القائمة">${icon("menu")}</button><span class="breadcrumb-brand">jisr</span><span class="breadcrumb-separator">/</span>${label(current[2], current[3])}</div><div class="topbar-right"><span class="learning-indicator"><span></span>${label("Zeit für etwas Neues", "وقت لاكتشاف شيء جديد")}</span><div class="language-slot"></div><span class="topbar-avatar" aria-hidden="true">${icon("spark")}</span></div>`;
     sidebar.after(topbar);

@@ -2374,3 +2374,53 @@ html[dir="rtl"] .tool-link::after {
     flex-shrink: 0;
   }
 }
+
+.letter-training-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 28px 0;
+  padding: 24px;
+  background: #edf2df;
+  border: 1px solid #dce5ca;
+  border-radius: 14px;
+}
+.letters-page .letter-training-callout h2 {
+  margin: 0 0 10px;
+  font-size: 21px;
+}
+.letter-training-callout p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #70835a;
+}
+.letter-tests-link {
+  display: inline-flex;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 14px 20px;
+  border-radius: 10px;
+  background: #295b44;
+  color: white;
+  font-size: 13px;
+}
+.letter-tests-link:hover {
+  background: #174532;
+  color: white;
+}
+.speech-error {
+  color: #a74e38 !important;
+}
+@media (max-width: 640px) {
+  .letter-training-callout {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 21px 17px;
+    gap: 18px;
+  }
+  .letter-tests-link {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,319 @@
+body .container.letter-training-page {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.letter-training-page {
+  min-width: 0;
+}
+.training-back-link {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: #537441;
+  font-size: 13px;
+}
+#training-modes {
+  scroll-margin-top: 85px;
+}
+#training-modes-heading {
+  font-size: 20px;
+}
+.training-mode-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.training-mode-grid button {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  gap: 12px;
+  margin: 0;
+  padding: 24px 20px;
+  min-width: 0;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  color: #47663e;
+  white-space: normal;
+}
+.training-mode-grid button:hover,
+.training-mode-grid button[aria-pressed="true"] {
+  border-color: #92a970;
+  background: #eef3e1;
+  color: #385b32;
+}
+.training-mode-icon {
+  font-size: 32px;
+  min-height: 50px;
+  line-height: 1.5;
+  color: #809953;
+}
+.training-mode-grid strong {
+  font-size: 17px;
+}
+.training-mode-grid button > span:not(.training-mode-icon) {
+  font-size: 12px;
+  line-height: 1.9;
+}
+.training-mode-grid small {
+  margin-top: auto;
+  padding-top: 8px;
+  font-size: 10px;
+  color: #7a8a67;
+}
+.training-run,
+.training-result {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 30px;
+  margin-top: 25px;
+  scroll-margin-top: 85px;
+}
+.training-run-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.training-run-heading h2 {
+  margin: 8px 0;
+  font-size: 25px;
+}
+#training-score {
+  padding: 8px 13px;
+  background: #edf2df;
+  border-radius: 8px;
+  color: #69834e;
+  font-size: 12px;
+}
+#training-progress {
+  display: block;
+  width: 100%;
+  height: 7px;
+  accent-color: #7c9556;
+  margin: 20px 0 25px;
+  border: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #edf0e5;
+}
+#training-progress::-webkit-progress-bar {
+  background: #edf0e5;
+}
+#training-progress::-webkit-progress-value {
+  background: #7c9556;
+}
+#training-progress::-moz-progress-bar {
+  background: #7c9556;
+}
+#training-prompt {
+  font-size: 19px;
+  line-height: 1.8;
+}
+.training-stimulus {
+  text-align: center;
+  margin: 20px auto;
+}
+.training-stimulus:empty {
+  display: none;
+}
+.training-letter-name {
+  font-size: 35px;
+  line-height: 1.8;
+  color: #42643a;
+  margin: 20px 0;
+}
+.training-arabic {
+  font-size: clamp(48px, 9vw, 88px);
+  line-height: 1.8;
+  color: #42643a;
+  margin: 12px 0;
+  direction: rtl;
+}
+.training-word-meaning {
+  font-size: 14px;
+  color: #879476;
+  direction: ltr;
+}
+.training-options {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+.training-option {
+  font-size: 43px;
+  line-height: 1.8;
+  min-height: 85px;
+  margin: 0;
+  border: 1px solid #dce5cd;
+  border-radius: 12px;
+  background: #f7f9f1;
+  color: #45643d;
+  padding: 10px;
+}
+.training-option:hover:not(:disabled) {
+  color: #34552d;
+  background: #eaf0db;
+  border-color: #91a96a;
+}
+.training-option:disabled {
+  opacity: 1;
+  cursor: default;
+}
+.training-option.is-correct {
+  background: #e4efd7;
+  border-color: #80a25a;
+  color: #3f692d;
+}
+.training-option.is-wrong {
+  background: #fae9e1;
+  border-color: #cc927b;
+  color: #994f38;
+}
+.training-feedback {
+  margin-top: 18px;
+  padding: 0;
+  line-height: 1.9;
+  font-size: 14px;
+}
+.training-feedback:not(:empty) {
+  padding: 20px;
+  border-radius: 12px;
+  background: #f3f6eb;
+  border: 1px solid #e1e8d4;
+}
+.training-feedback.is-wrong {
+  background: #faf2e8;
+  border-color: #eadbc2;
+}
+.training-feedback p {
+  margin: 10px 0 0;
+}
+.training-example {
+  font-size: 35px;
+  text-align: center;
+  line-height: 1.9;
+}
+.training-feedback p[lang="de"] {
+  text-align: center;
+  font-size: 12px;
+  color: #7c8c6c;
+}
+.training-listen {
+  display: block;
+  margin: 20px auto;
+  min-height: 56px;
+  background: #295b44;
+  border-radius: 12px;
+  padding: 16px 24px;
+  color: white;
+  font-size: 17px;
+}
+.training-audio-status {
+  font-size: 12px;
+  min-height: 22px;
+  text-align: center;
+  color: #6e8157;
+}
+.training-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 24px;
+}
+.training-actions button,
+.training-actions a {
+  margin: 0;
+  padding: 12px 20px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+#training-previous,
+#training-review {
+  background: #f4f7ed;
+  color: #54733e;
+  border: 1px solid #dce5cc;
+}
+.training-session-note {
+  font-size: 11px;
+  color: #869675;
+  margin: 22px 0 0;
+  line-height: 1.9;
+}
+.training-result {
+  text-align: center;
+  background: #f0f4e5;
+}
+.training-result-icon {
+  font-size: 50px;
+  color: #91aa4e;
+}
+#training-result-score {
+  font-size: 25px;
+  color: #446638;
+}
+#training-result-message {
+  font-size: 14px;
+  line-height: 1.9;
+}
+.training-result .training-actions {
+  justify-content: center;
+}
+.speech-error {
+  color: #a74e38 !important;
+}
+@media (max-width: 1100px) {
+  .training-mode-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .training-mode-grid {
+    gap: 10px;
+  }
+  .training-mode-grid button {
+    padding: 18px 13px;
+  }
+  .training-mode-grid strong {
+    font-size: 15px;
+  }
+  .training-mode-grid button > span:not(.training-mode-icon) {
+    font-size: 11px;
+  }
+  .training-mode-grid small {
+    font-size: 9px;
+  }
+  .training-run,
+  .training-result {
+    padding: 22px 16px;
+  }
+  #training-prompt {
+    font-size: 17px;
+  }
+  .training-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .training-option {
+    font-size: 38px;
+    min-height: 70px;
+  }
+  .training-actions button {
+    flex: 1;
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+  .training-listen {
+    width: 100%;
+    font-size: 15px;
+    padding: 15px 10px;
+  }
+  .training-feedback {
+    font-size: 13px;
+  }
+}

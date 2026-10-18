@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#123f37" />
+    <title>Jisr · تدريبات الحروف / Buchstaben üben</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/interface-languages.css" />
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/letter-training.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/letter-data.js" defer></script>
+    <script src="js/letter-examples.js" defer></script>
+    <script src="js/letter-training-data.js" defer></script>
+    <script src="js/interface-languages.js" defer></script>
+    <script src="js/design.js" defer></script>
+    <script src="js/pages/letter-training.js" defer></script>
+  </head>
+  <body>
+    <main class="container letter-training-page">
+      <header class="page-heading">
+        <div>
+          <p
+            class="eyebrow"
+            data-ar="خطوة أخرى نحو القراءة"
+            data-de="SCHRITT FÜR SCHRITT LESEN"
+          >
+            خطوة أخرى نحو القراءة
+          </p>
+          <h1
+            data-ar="تدرّب على الحروف."
+            data-de="Mach dich mit den Buchstaben vertraut."
+          >
+            تدرّب على الحروف.
+          </h1>
+          <p
+            data-ar="أربعة تدريبات، 28 سؤالًا في كل تدريب. تعلّم من كل إجابة، وبالسرعة التي تناسبك."
+            data-de="Vier Übungen mit je 28 Fragen. Lerne aus jeder Antwort in deinem Tempo."
+          >
+            أربعة تدريبات، 28 سؤالًا في كل تدريب. تعلّم من كل إجابة، وبالسرعة
+            التي تناسبك.
+          </p>
+        </div>
+        <span class="welcome-symbol" aria-hidden="true">✳</span>
+      </header>
+      <a
+        class="training-back-link"
+        href="huruf.html"
+        data-ar="العودة إلى بطاقات الحروف والكتابة"
+        data-de="Zurück zu Buchstabenkarten und Schreibübungen"
+        >العودة إلى بطاقات الحروف والكتابة</a
+      >
+      <section aria-labelledby="training-modes-heading" id="training-modes">
+        <h2
+          id="training-modes-heading"
+          data-ar="اختر طريقة التدريب"
+          data-de="Wähle deine Übung"
+        >
+          اختر طريقة التدريب
+        </h2>
+        <div class="training-mode-grid">
+          <button type="button" data-training-mode="names" aria-pressed="false">
+            <span class="training-mode-icon" aria-hidden="true">أ ب</span
+            ><strong data-ar="الحرف واسمه" data-de="Buchstabe und Name"
+              >الحرف واسمه</strong
+            ><span
+              data-ar="اقرأ اسم الحرف، ثم اختر الحرف الصحيح."
+              data-de="Lies den Namen und wähle den passenden Buchstaben."
+              >اقرأ اسم الحرف، ثم اختر الحرف الصحيح.</span
+            ><small
+              data-ar="28 سؤالًا · معرفة الحروف"
+              data-de="28 Fragen · Wiedererkennen"
+              >28 سؤالًا · معرفة الحروف</small
+            >
+          </button>
+          <button type="button" data-training-mode="forms" aria-pressed="false">
+            <span class="training-mode-icon" aria-hidden="true">بـ ـبـ</span
+            ><strong data-ar="أشكال الحرف" data-de="Schreibformen erkennen"
+              >أشكال الحرف</strong
+            ><span
+              data-ar="تعرّف على الحرف من شكله في أول الكلمة أو وسطها أو آخرها."
+              data-de="Erkenne Formen am Wortanfang, in der Mitte und am Ende."
+              >تعرّف على الحرف من شكله في أول الكلمة أو وسطها أو آخرها.</span
+            ><small
+              data-ar="28 سؤالًا · تمييز الأشكال"
+              data-de="28 Fragen · Formen unterscheiden"
+              >28 سؤالًا · تمييز الأشكال</small
+            >
+          </button>
+          <button
+            type="button"
+            data-training-mode="missing"
+            aria-pressed="false"
+          >
+            <span class="training-mode-icon" aria-hidden="true">ك□اب</span
+            ><strong data-ar="الحرف الناقص" data-de="Fehlender Buchstabe"
+              >الحرف الناقص</strong
+            ><span
+              data-ar="أكمل كلمة حقيقية باختيار الحرف الناقص."
+              data-de="Ergänze den fehlenden Buchstaben in einem echten Wort."
+              >أكمل كلمة حقيقية باختيار الحرف الناقص.</span
+            ><small
+              data-ar="28 سؤالًا · قراءة الكلمات"
+              data-de="28 Fragen · Wörter lesen"
+              >28 سؤالًا · قراءة الكلمات</small
+            >
+          </button>
+          <button
+            type="button"
+            data-training-mode="listening"
+            aria-pressed="false"
+          >
+            <span class="training-mode-icon" aria-hidden="true">◖♪</span
+            ><strong data-ar="اسمع واختر" data-de="Hören und zuordnen"
+              >اسمع واختر</strong
+            ><span
+              data-ar="اضغط للاستماع إلى اسم الحرف، ثم اختره."
+              data-de="Höre dir den Buchstabennamen an und wähle das Zeichen."
+              >اضغط للاستماع إلى اسم الحرف، ثم اختره.</span
+            ><small
+              data-ar="28 سؤالًا · تدريب السمع"
+              data-de="28 Fragen · Hörverständnis"
+              >28 سؤالًا · تدريب السمع</small
+            >
+          </button>
+        </div>
+      </section>
+      <section
+        id="training-run"
+        class="training-run"
+        aria-labelledby="training-title"
+        hidden
+      >
+        <header class="training-run-heading">
+          <div>
+            <p class="eyebrow" id="training-counter"></p>
+            <h2 id="training-title"></h2>
+          </div>
+          <span id="training-score" role="status"></span>
+        </header>
+        <label
+          for="training-progress"
+          id="training-progress-label"
+          class="sr-only"
+        ></label
+        ><progress id="training-progress" value="0" max="28"></progress>
+        <h3 id="training-prompt" tabindex="-1"></h3>
+        <div id="training-stimulus" class="training-stimulus"></div>
+        <button
+          type="button"
+          id="training-listen"
+          class="training-listen"
+          hidden
+          data-ar="🔊 استمع للحرف / أعد الاستماع"
+          data-de="🔊 Anhören / erneut anhören"
+        >
+          🔊 استمع للحرف / أعد الاستماع
+        </button>
+        <p
+          id="training-audio-status"
+          class="training-audio-status"
+          role="status"
+        ></p>
+        <div id="training-options" class="training-options"></div>
+        <div
+          id="training-feedback"
+          class="training-feedback"
+          role="status"
+        ></div>
+        <div class="training-actions">
+          <button
+            type="button"
+            id="training-previous"
+            data-ar="السؤال السابق"
+            data-de="Vorherige Frage"
+            disabled
+          >
+            السؤال السابق</button
+          ><button type="button" id="training-next" disabled></button>
+        </div>
+        <p
+          class="training-session-note"
+          data-ar="يبقى تقدّمك عند تبديل التدريب أو اللغة ما دامت هذه الصفحة مفتوحة. هذه التدريبات مستقلة عن اختبارات المفردات."
+          data-de="Dein Stand bleibt beim Übungs- oder Sprachwechsel erhalten, solange die Seite geöffnet ist. Die Vokabeltests werden unabhängig gewertet."
+        >
+          يبقى تقدّمك عند تبديل التدريب أو اللغة ما دامت هذه الصفحة مفتوحة. هذه
+          التدريبات مستقلة عن اختبارات المفردات.
+        </p>
+      </section>
+      <section
+        id="training-result"
+        class="training-result"
+        aria-labelledby="training-result-title"
+        hidden
+      >
+        <span class="training-result-icon" aria-hidden="true">✳</span>
+        <h2
+          id="training-result-title"
+          data-ar="أكملت التدريب!"
+          data-de="Übung abgeschlossen!"
+        >
+          أكملت التدريب!
+        </h2>
+        <p id="training-result-score"></p>
+        <p id="training-result-message"></p>
+        <div class="training-actions">
+          <button
+            type="button"
+            id="training-review"
+            data-ar="راجع إجاباتك"
+            data-de="Antworten ansehen"
+          >
+            راجع إجاباتك</button
+          ><button
+            type="button"
+            id="training-restart"
+            data-ar="جولة جديدة"
+            data-de="Neue Runde"
+          >
+            جولة جديدة</button
+          ><a
+            href="#training-modes"
+            id="training-other"
+            data-ar="اختر تدريبًا آخر"
+            data-de="Andere Übung wählen"
+            >اختر تدريبًا آخر</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="teacher-credit" id="teacher-credit"></footer>
+  </body>
+</html>

@@ -1,35 +1,10 @@
 (function () {
   "use strict";
-  const letters = [
-    ["أ", "الألف", 1],
-    ["ب", "الباء", 0],
-    ["ت", "التاء", 0],
-    ["ث", "الثاء", 0],
-    ["ج", "الجيم", 0],
-    ["ح", "الحاء", 0],
-    ["خ", "الخاء", 0],
-    ["د", "الدال", 1],
-    ["ذ", "الذال", 1],
-    ["ر", "الراء", 1],
-    ["ز", "الزاي", 1],
-    ["س", "السين", 0],
-    ["ش", "الشين", 0],
-    ["ص", "الصاد", 0],
-    ["ض", "الضاد", 0],
-    ["ط", "الطاء", 0],
-    ["ظ", "الظاء", 0],
-    ["ع", "العين", 0],
-    ["غ", "الغين", 0],
-    ["ف", "الفاء", 0],
-    ["ق", "القاف", 0],
-    ["ك", "الكاف", 0],
-    ["ل", "اللام", 0],
-    ["م", "الميم", 0],
-    ["ن", "النون", 0],
-    ["ه", "الهاء", 0],
-    ["و", "الواو", 1],
-    ["ي", "الياء", 0],
-  ];
+  const letters = window.ArabicLetterData.letters.map((d) => [
+    d.char,
+    d.name,
+    Number(d.nonjoining),
+  ]);
   // Arabic shaping is performed by the browser; non-joining letters never connect to a subsequent letter.
   let current = 0;
   const $ = (id) => document.getElementById(id);
@@ -92,36 +67,9 @@
     const forms = $("letter-forms");
     forms.replaceChildren();
     // Explicit presentation forms preserve the intended standalone/initial/medial/final glyph even without neighboring Arabic letters.
-    const formsData = {
-      أ: ["ﺃ", "ﺃ", "ﺄ", "ﺃ", "ﺄ"],
-      ب: ["ﺏ", "ﺑ", "ﺒ", "ﺏ", "ﺐ"],
-      ت: ["ﺕ", "ﺗ", "ﺘ", "ﺕ", "ﺖ"],
-      ث: ["ﺙ", "ﺛ", "ﺜ", "ﺙ", "ﺚ"],
-      ج: ["ﺝ", "ﺟ", "ﺠ", "ﺝ", "ﺞ"],
-      ح: ["ﺡ", "ﺣ", "ﺤ", "ﺡ", "ﺢ"],
-      خ: ["ﺥ", "ﺧ", "ﺨ", "ﺥ", "ﺦ"],
-      د: ["ﺩ", "ﺩ", "ﺪ", "ﺩ", "ﺪ"],
-      ذ: ["ﺫ", "ﺫ", "ﺬ", "ﺫ", "ﺬ"],
-      ر: ["ﺭ", "ﺭ", "ﺮ", "ﺭ", "ﺮ"],
-      ز: ["ﺯ", "ﺯ", "ﺰ", "ﺯ", "ﺰ"],
-      س: ["ﺱ", "ﺳ", "ﺴ", "ﺱ", "ﺲ"],
-      ش: ["ﺵ", "ﺷ", "ﺸ", "ﺵ", "ﺶ"],
-      ص: ["ﺹ", "ﺻ", "ﺼ", "ﺹ", "ﺺ"],
-      ض: ["ﺽ", "ﺿ", "ﻀ", "ﺽ", "ﺾ"],
-      ط: ["ﻁ", "ﻃ", "ﻄ", "ﻁ", "ﻂ"],
-      ظ: ["ﻅ", "ﻇ", "ﻈ", "ﻅ", "ﻆ"],
-      ع: ["ﻉ", "ﻋ", "ﻌ", "ﻉ", "ﻊ"],
-      غ: ["ﻍ", "ﻏ", "ﻐ", "ﻍ", "ﻎ"],
-      ف: ["ﻑ", "ﻓ", "ﻔ", "ﻑ", "ﻒ"],
-      ق: ["ﻕ", "ﻗ", "ﻘ", "ﻕ", "ﻖ"],
-      ك: ["ﻙ", "ﻛ", "ﻜ", "ﻙ", "ﻚ"],
-      ل: ["ﻝ", "ﻟ", "ﻠ", "ﻝ", "ﻞ"],
-      م: ["ﻡ", "ﻣ", "ﻤ", "ﻡ", "ﻢ"],
-      ن: ["ﻥ", "ﻧ", "ﻨ", "ﻥ", "ﻦ"],
-      ه: ["ﻩ", "ﻫ", "ﻬ", "ﻩ", "ﻪ"],
-      و: ["ﻭ", "ﻭ", "ﻮ", "ﻭ", "ﻮ"],
-      ي: ["ﻱ", "ﻳ", "ﻴ", "ﻱ", "ﻲ"],
-    };
+    const formsData = Object.fromEntries(
+      window.ArabicLetterData.letters.map((d) => [d.char, d.forms]),
+    );
     const de = localStorage.getItem("vocabInterfaceLanguage") === "de";
     card.setAttribute(
       "aria-label",
@@ -141,19 +89,17 @@
           "في آخر الكلمة متصل",
         ];
     // Four positional forms; keep Arabic glyph in a shaping-safe wrapper.
-    formsData[char]
-      .slice(1)
-      .forEach((value, i) =>
-        forms.appendChild(
-          makeForm(
-            labels[i],
-            value,
-            window.ArabicLetterExamples.examples[char][i],
-            i,
-            de,
-          ),
+    formsData[char].forEach((value, i) =>
+      forms.appendChild(
+        makeForm(
+          labels[i],
+          value,
+          window.ArabicLetterExamples.examples[char][i],
+          i,
+          de,
         ),
-      );
+      ),
+    );
     $("letter-note").textContent = de
       ? nonjoining
         ? "Dieser Buchstabe verbindet sich nicht mit dem folgenden Buchstaben."
