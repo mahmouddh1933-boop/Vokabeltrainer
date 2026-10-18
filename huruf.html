@@ -1,34 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تعلّم الحروف العربية - جسر الترحيب</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="css/letters.css">
-<script src="js/app.js" defer></script>
-<script src="js/pages/letters-audio.js" defer></script>
-<script src="js/pages/letters-learning.js" defer></script>
-<script src="js/pages/letters-enhanced.js" defer></script>
-<link rel="stylesheet" href="css/interface-languages.css"><script src="js/interface-languages.js" defer></script><script src="js/tanwin-display.js" defer></script><link rel="stylesheet" href="css/modern.css"><script src="js/design.js" defer></script></head>
-<body>
-<main class="container letters-page">
-<a href="./index.html" class="letters-back" data-i18n="home">→ الصفحة الرئيسية</a>
-<h1 data-i18n="heading">المستوى التمهيدي: تعلّم الحروف</h1>
-<p class="letters-intro" data-i18n="intro">اختر حرفاً من القائمة ثم اضغط على البطاقة لتشاهد جميع أشكاله. اضغط مرة أخرى للعودة إلى وجه الحرف.</p>
-<div class="letters-progress"><span id="letter-counter">1 / 28</span><span id="letter-name">الألف</span></div>
-<div class="letters-card-wrap"><button id="letter-card" class="letters-card" type="button" aria-label="اقلب بطاقة الحرف" aria-pressed="false">
-<div class="letters-face letters-front"><span class="letters-hint">اضغط لتتعرف على أشكال الحرف</span><span id="letter-big" class="letters-big">أ</span><span id="letter-front-name" class="letters-front-name">الألف</span><img id="letter-card-image" class="letter-card-image" src="images/letters/01.svg" alt="أسد" width="280" height="190"><span class="card-example"><strong id="letter-card-word" lang="ar">أسد</strong> <span id="letter-card-translation" lang="de">Löwe</span></span><span class="letters-flip">↻ اقلب البطاقة</span></div>
-<div class="letters-face letters-backface"><span id="letter-back-heading" class="letters-back-heading">أشكال حرف الألف</span><div id="letter-forms" class="letters-forms"></div><p id="letter-note" class="letters-note"></p><span class="letters-flip">↻ العودة إلى الحرف</span></div>
-</button></div>
-<div class="letters-controls"><button id="letter-previous" type="button" data-i18n="prev">السابق</button><button id="letter-speak" type="button" data-i18n="listen">🔊 استمع للحرف</button><button id="card-say-word" type="button" data-i18n="sayWord">🔊 استمع للكلمة</button><button id="letter-next" type="button" data-i18n="next">التالي</button></div>
-<p id="letters-speech-status" class="letters-speech-status" aria-live="polite"></p>
-<section class="letter-extras" aria-label="Letter learning activities">
-<h2 data-i18n="harakat">الحركات والنطق</h2><div id="harakat-row" class="harakat-row"></div><p id="enhanced-speech" aria-live="polite"></p>
-<h2 data-i18n="write">تدرّب على كتابة الحرف</h2><p data-i18n="writeHelp">تتبّع الحرف على اللوحة بإصبعك أو بالفأرة.</p><div class="canvas-holder"><canvas id="writing-canvas" width="620" height="290" aria-label="لوحة الكتابة"></canvas></div><div class="letters-controls"><button type="button" id="clear-canvas" data-i18n="clear">امسح اللوحة</button><button type="button" id="show-guide" data-i18n="guide">إظهار / إخفاء الدليل</button></div>
-<h2 data-i18n="quiz">اختبار الحروف</h2><p data-i18n="quizHelp">اختر اسم الحرف الصحيح. الاختبار مستقل عن اختبارات المفردات.</p><div class="quiz-panel"><div id="quiz-question"></div><div id="quiz-options" class="quiz-options"></div><p id="quiz-feedback" aria-live="polite"></p><p id="quiz-score"></p><button id="quiz-next" type="button" data-i18n="newQuestion">سؤال جديد</button></div>
-</section>
-<h2 data-i18n="choose">اختر حرفاً</h2><div id="letters-grid" class="letters-grid" aria-label="الحروف العربية"></div>
-<p class="letters-footnote">ملاحظة: الألف والدال والذال والراء والزاي والواو لا تتصل بالحرف التالي، لذلك لا تمتلك شكلاً وسطياً متصلاً من الجهتين. تُعرض الصيغة الصحيحة التي يمكن أن تأتي في وسط الكلمة.</p>
-</main>
-<footer class="teacher-credit" id="teacher-credit">إعداد المعلم: <b>محمود بركات</b></footer>
-</body></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تعلّم الحروف العربية - جسر الترحيب</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/letters.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/pages/letters-audio.js" defer></script>
+    <script src="js/letter-examples.js" defer></script>
+    <script src="js/pages/letters-learning.js" defer></script>
+    <script src="js/pages/letters-enhanced.js" defer></script>
+    <link rel="stylesheet" href="css/interface-languages.css" />
+    <script src="js/interface-languages.js" defer></script>
+    <script src="js/tanwin-display.js" defer></script>
+    <link rel="stylesheet" href="css/modern.css" />
+    <script src="js/design.js" defer></script>
+  </head>
+  <body>
+    <main class="container letters-page">
+      <a href="./index.html" class="letters-back" data-i18n="home"
+        >→ الصفحة الرئيسية</a
+      >
+      <h1 data-i18n="heading">المستوى التمهيدي: تعلّم الحروف</h1>
+      <p class="letters-intro" data-i18n="intro">
+        اختر حرفاً من القائمة ثم اضغط على البطاقة لتشاهد جميع أشكاله. اضغط مرة
+        أخرى للعودة إلى وجه الحرف.
+      </p>
+      <div class="letters-progress">
+        <span id="letter-counter">1 / 28</span
+        ><span id="letter-name">الألف</span>
+      </div>
+      <div class="letters-card-wrap">
+        <button
+          id="letter-card"
+          class="letters-card"
+          type="button"
+          aria-label="اقلب بطاقة الحرف"
+          aria-pressed="false"
+        >
+          <div class="letters-face letters-front">
+            <span class="letters-hint">اضغط لتتعرف على أشكال الحرف</span
+            ><span id="letter-big" class="letters-big">أ</span
+            ><span id="letter-front-name" class="letters-front-name">الألف</span
+            ><img
+              id="letter-card-image"
+              class="letter-card-image"
+              src="images/letters/01.svg"
+              alt="أسد"
+              width="280"
+              height="190"
+            /><span class="card-example"
+              ><strong id="letter-card-word" lang="ar">أسد</strong>
+              <span id="letter-card-translation" lang="de">Löwe</span></span
+            ><span class="letters-flip">↻ اقلب البطاقة</span>
+          </div>
+          <div class="letters-face letters-backface">
+            <span id="letter-back-heading" class="letters-back-heading"
+              >أشكال حرف الألف</span
+            >
+            <div id="letter-forms" class="letters-forms"></div>
+            <p id="letter-note" class="letters-note"></p>
+            <span class="letters-flip">↻ العودة إلى الحرف</span>
+          </div>
+        </button>
+      </div>
+      <div class="letters-controls">
+        <button id="letter-previous" type="button" data-i18n="prev">
+          السابق</button
+        ><button id="letter-speak" type="button" data-i18n="listen">
+          🔊 استمع للحرف</button
+        ><button id="card-say-word" type="button" data-i18n="sayWord">
+          🔊 استمع للكلمة</button
+        ><button id="letter-next" type="button" data-i18n="next">التالي</button>
+      </div>
+      <p
+        id="letters-speech-status"
+        class="letters-speech-status"
+        aria-live="polite"
+      ></p>
+      <section class="letter-extras" aria-label="Letter learning activities">
+        <h2 data-i18n="harakat">الحركات والنطق</h2>
+        <div id="harakat-row" class="harakat-row"></div>
+        <p id="enhanced-speech" aria-live="polite"></p>
+        <h2 data-i18n="write">تدرّب على كتابة الحرف</h2>
+        <p data-i18n="writeHelp">تتبّع الحرف على اللوحة بإصبعك أو بالفأرة.</p>
+        <div class="canvas-holder">
+          <canvas
+            id="writing-canvas"
+            width="620"
+            height="290"
+            aria-label="لوحة الكتابة"
+          ></canvas>
+        </div>
+        <div class="letters-controls">
+          <button type="button" id="clear-canvas" data-i18n="clear">
+            امسح اللوحة</button
+          ><button type="button" id="show-guide" data-i18n="guide">
+            إظهار / إخفاء الدليل
+          </button>
+        </div>
+        <h2 data-i18n="quiz">اختبار الحروف</h2>
+        <p data-i18n="quizHelp">
+          اختر اسم الحرف الصحيح. الاختبار مستقل عن اختبارات المفردات.
+        </p>
+        <div class="quiz-panel">
+          <div id="quiz-question"></div>
+          <div id="quiz-options" class="quiz-options"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <p id="quiz-score"></p>
+          <button id="quiz-next" type="button" data-i18n="newQuestion">
+            سؤال جديد
+          </button>
+        </div>
+      </section>
+      <h2 data-i18n="choose">اختر حرفاً</h2>
+      <div
+        id="letters-grid"
+        class="letters-grid"
+        aria-label="الحروف العربية"
+      ></div>
+      <p class="letters-footnote">
+        ملاحظة: الألف والدال والذال والراء والزاي والواو لا تتصل بالحرف التالي،
+        لذلك لا تمتلك شكلاً وسطياً متصلاً من الجهتين. تُعرض الصيغة الصحيحة التي
+        يمكن أن تأتي في وسط الكلمة.
+      </p>
+    </main>
+    <footer class="teacher-credit" id="teacher-credit">
+      إعداد المعلم: <b>محمود بركات</b>
+    </footer>
+  </body>
+</html>

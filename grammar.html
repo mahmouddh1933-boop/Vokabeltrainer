@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#123f37" />
+    <title>Jisr · أساسيات العربية / Arabisch-Grundlagen</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/interface-languages.css" />
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/grammar.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/interface-languages.js" defer></script>
+    <script src="js/design.js" defer></script>
+    <script src="js/verb-data.js" defer></script>
+    <script src="js/grammar-data.js" defer></script>
+    <script src="js/pages/grammar.js" defer></script>
+  </head>
+  <body>
+    <main class="container grammar-page">
+      <header class="page-heading">
+        <div>
+          <p
+            class="eyebrow"
+            data-ar="افهم القاعدة. وابنِ جملتك."
+            data-de="VERSTEHEN. VERBINDEN. SPRECHEN."
+          >
+            افهم القاعدة. وابنِ جملتك.
+          </p>
+          <h1 data-ar="أساسيات العربية" data-de="Dein Fundament für Arabisch.">
+            أساسيات العربية
+          </h1>
+          <p
+            data-ar="خمسة دروس قصيرة، بأمثلة واضحة وتدريب خطوة بخطوة."
+            data-de="Fünf kurze Lektionen. Klare Beispiele und kleine Übungen."
+          >
+            خمسة دروس قصيرة، بأمثلة واضحة وتدريب خطوة بخطوة.
+          </p>
+        </div>
+        <span class="welcome-symbol" aria-hidden="true">✳</span>
+      </header>
+      <nav
+        class="grammar-topic-nav"
+        id="grammar-topics"
+        aria-label="الدروس / Lektionen"
+      ></nav>
+      <article id="grammar-lesson" aria-labelledby="lesson-title">
+        <header class="grammar-lesson-header">
+          <div>
+            <p class="eyebrow" id="lesson-counter"></p>
+            <h2 id="lesson-title"></h2>
+            <p id="lesson-intro"></p>
+          </div>
+          <span
+            class="grammar-lesson-glyph"
+            id="lesson-glyph"
+            lang="ar"
+            aria-hidden="true"
+          ></span>
+        </header>
+        <div id="lesson-sections" class="lesson-sections"></div>
+        <aside class="lesson-takeaway">
+          <span aria-hidden="true">✳</span>
+          <div>
+            <h3 data-ar="تذكّر" data-de="Das nimmst du mit">تذكّر</h3>
+            <p id="lesson-takeaway"></p>
+          </div>
+        </aside>
+        <a
+          href="verbs.html"
+          class="lesson-verb-link"
+          id="lesson-verb-link"
+          hidden
+          ><span
+            data-ar="تدرّب على تصريف الأفعال مع جميع الضمائر"
+            data-de="Verbformen mit allen Pronomen üben"
+            >تدرّب على تصريف الأفعال مع جميع الضمائر</span
+          ><span aria-hidden="true">←</span></a
+        >
+        <section
+          class="grammar-practice"
+          aria-labelledby="grammar-practice-title"
+        >
+          <div class="section-heading">
+            <div>
+              <p
+                class="eyebrow"
+                data-ar="اختبر فهمك"
+                data-de="JETZT BIST DU DRAN"
+              >
+                اختبر فهمك
+              </p>
+              <h2
+                id="grammar-practice-title"
+                data-ar="لنطبّق ما تعلّمناه."
+                data-de="Mach die Regel zu deiner."
+              >
+                لنطبّق ما تعلّمناه.
+              </h2>
+            </div>
+            <span
+              class="grammar-score"
+              id="grammar-score"
+              aria-live="polite"
+            ></span>
+          </div>
+          <p class="grammar-question-number" id="grammar-question-number"></p>
+          <h3 id="grammar-question"></h3>
+          <div class="grammar-answers" id="grammar-answers"></div>
+          <div
+            class="grammar-feedback"
+            id="grammar-feedback"
+            role="status"
+            aria-live="polite"
+          ></div>
+          <button id="grammar-next" type="button" disabled></button>
+          <p
+            class="grammar-session-note"
+            data-ar="هذا التمرين مستقلّ عن اختبارات المفردات. تبقى نتيجته أثناء فتح هذه الصفحة."
+            data-de="Diese Übung ist unabhängig von den Vokabeltests. Ihr Ergebnis bleibt erhalten, solange diese Seite geöffnet ist."
+          >
+            هذا التمرين مستقلّ عن اختبارات المفردات. تبقى نتيجته أثناء فتح هذه
+            الصفحة.
+          </p>
+        </section>
+      </article>
+    </main>
+    <footer class="teacher-credit" id="teacher-credit"></footer>
+  </body>
+</html>

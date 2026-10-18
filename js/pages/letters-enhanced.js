@@ -1,24 +1,459 @@
-(()=>{'use strict';
-const data=[{"char": "أ", "name": "الألف", "de": "Alif", "word": "أسد", "meaning": "Löwe", "img": "images/letters/01.svg"}, {"char": "ب", "name": "الباء", "de": "Ba", "word": "بطة", "meaning": "Ente", "img": "images/letters/02.svg"}, {"char": "ت", "name": "التاء", "de": "Ta", "word": "تفاحة", "meaning": "Apfel", "img": "images/letters/03.svg"}, {"char": "ث", "name": "الثاء", "de": "Tha", "word": "ثعلب", "meaning": "Fuchs", "img": "images/letters/04.svg"}, {"char": "ج", "name": "الجيم", "de": "Dschim", "word": "جمل", "meaning": "Kamel", "img": "images/letters/05.svg"}, {"char": "ح", "name": "الحاء", "de": "Ha (tief)", "word": "حصان", "meaning": "Pferd", "img": "images/letters/06.svg"}, {"char": "خ", "name": "الخاء", "de": "Cha", "word": "خبز", "meaning": "Brot", "img": "images/letters/07.svg"}, {"char": "د", "name": "الدال", "de": "Dal", "word": "دب", "meaning": "Bär", "img": "images/letters/08.svg"}, {"char": "ذ", "name": "الذال", "de": "Dhal", "word": "ذرة", "meaning": "Mais", "img": "images/letters/09.svg"}, {"char": "ر", "name": "الراء", "de": "Ra", "word": "رمان", "meaning": "Granatapfel", "img": "images/letters/10.svg"}, {"char": "ز", "name": "الزاي", "de": "Zay", "word": "زهرة", "meaning": "Blume", "img": "images/letters/11.svg"}, {"char": "س", "name": "السين", "de": "Sin", "word": "سمكة", "meaning": "Fisch", "img": "images/letters/12.svg"}, {"char": "ش", "name": "الشين", "de": "Schin", "word": "شمس", "meaning": "Sonne", "img": "images/letters/13.svg"}, {"char": "ص", "name": "الصاد", "de": "Sad", "word": "صقر", "meaning": "Falke", "img": "images/letters/14.svg"}, {"char": "ض", "name": "الضاد", "de": "Dad", "word": "ضفدع", "meaning": "Frosch", "img": "images/letters/15.svg"}, {"char": "ط", "name": "الطاء", "de": "Ta (emphatisch)", "word": "طائرة", "meaning": "Flugzeug", "img": "images/letters/16.svg"}, {"char": "ظ", "name": "الظاء", "de": "Za (emphatisch)", "word": "ظرف", "meaning": "Briefumschlag", "img": "images/letters/17.svg"}, {"char": "ع", "name": "العين", "de": "Ain", "word": "عنب", "meaning": "Trauben", "img": "images/letters/18.svg"}, {"char": "غ", "name": "الغين", "de": "Ghain", "word": "غزال", "meaning": "Gazelle", "img": "images/letters/19.svg"}, {"char": "ف", "name": "الفاء", "de": "Fa", "word": "فيل", "meaning": "Elefant", "img": "images/letters/20.svg"}, {"char": "ق", "name": "القاف", "de": "Qaf", "word": "قمر", "meaning": "Mond", "img": "images/letters/21.svg"}, {"char": "ك", "name": "الكاف", "de": "Kaf", "word": "كتاب", "meaning": "Buch", "img": "images/letters/22.svg"}, {"char": "ل", "name": "اللام", "de": "Lam", "word": "ليمون", "meaning": "Zitrone", "img": "images/letters/23.svg"}, {"char": "م", "name": "الميم", "de": "Mim", "word": "موز", "meaning": "Banane", "img": "images/letters/24.svg"}, {"char": "ن", "name": "النون", "de": "Nun", "word": "نجم", "meaning": "Stern", "img": "images/letters/25.svg"}, {"char": "ه", "name": "الهاء", "de": "Ha", "word": "هلال", "meaning": "Mondsichel", "img": "images/letters/26.svg"}, {"char": "و", "name": "الواو", "de": "Waw", "word": "وردة", "meaning": "Rose", "img": "images/letters/27.svg"}, {"char": "ي", "name": "الياء", "de": "Ya", "word": "يد", "meaning": "Hand", "img": "images/letters/28.svg"}];
-const $=id=>document.getElementById(id);
-const langs={ar:{home:'→ الصفحة الرئيسية',heading:'المستوى التمهيدي: تعلّم الحروف',intro:'اختر حرفاً واضغط على البطاقة لمشاهدة أشكاله المختلفة.',choose:'اختر حرفاً',prev:'السابق',next:'التالي',listen:'🔊 استمع للحرف',example:'مثال مصوّر لكل حرف',sayWord:'🔊 استمع للكلمة',harakat:'الحركات والنطق',write:'تدرّب على كتابة الحرف',writeHelp:'تتبّع الحرف على اللوحة بإصبعك أو بالفأرة.',clear:'امسح اللوحة',guide:'إظهار / إخفاء الدليل',quiz:'اختبار الحروف',quizHelp:'اختر اسم الحرف الصحيح. الاختبار مستقل عن اختبارات المفردات.',newQuestion:'سؤال جديد',correct:'أحسنت! إجابة صحيحة',wrong:'حاول مرة أخرى في السؤال التالي',score:'النتيجة',speech:'الصوت غير متوفر في هذا المتصفح أو الجهاز',names:['فتحة','كسرة','ضمة','سكون']},de:{home:'← Zur Startseite',heading:'Einstieg: Arabische Buchstaben',intro:'Wähle einen Buchstaben und drehe die Karte um, um die Schreibformen zu sehen.',choose:'Buchstaben auswählen',prev:'Zurück',next:'Weiter',listen:'🔊 Buchstaben anhören',example:'Bild und Beispielwort',sayWord:'🔊 Wort anhören',harakat:'Vokalzeichen und Aussprache',write:'Buchstaben schreiben üben',writeHelp:'Fahre den Buchstaben mit Finger oder Maus nach.',clear:'Zeichenfläche leeren',guide:'Vorlage ein-/ausblenden',quiz:'Buchstaben-Quiz',quizHelp:'Wähle den richtigen Buchstabennamen. Unabhängig von den Vokabeltests.',newQuestion:'Neue Frage',correct:'Richtig! Sehr gut!',wrong:'Leider falsch. Versuche die nächste Frage.',score:'Punkte',speech:'Sprachausgabe auf diesem Gerät nicht verfügbar',names:['Fatha','Kasra','Damma','Sukun']}};
-let lang=localStorage.getItem('vocabInterfaceLanguage')==='de'?'de':'ar',index=0,guide=true,correct=0,total=0,question=0,answered=false;
-function tr(k){return langs[lang][k]}
-function speak(s){window.lettersSpeak(s)}
-function sync(){const d=data[index];$('letter-card-image').src=d.img;$('letter-card-image').alt=d.word+' / '+d.meaning;$('letter-card-word').textContent=d.word;$('letter-card-translation').textContent=d.meaning;const signs=['َ','ِ','ُ','ْ'];$('harakat-row').replaceChildren();signs.forEach((mark,i)=>{let b=document.createElement('button');b.type='button';const shown=d.char+mark;b.innerHTML='<span class="marked" lang="ar">'+shown+'</span><span>'+tr('names')[i]+'</span>';b.onclick=()=>speak(shown);$('harakat-row').append(b)});drawGuide();}
-function setLanguage(l){lang=l;localStorage.setItem('lettersLanguage',l);localStorage.setItem('vocabInterfaceLanguage',l);document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=tr(el.dataset.i18n)});$('letter-name').textContent=l==='ar'?data[index].name:data[index].de;$('letter-front-name').textContent=l==='ar'?data[index].name:data[index].de;sync();renderQuestion();window.renderLetterFormsForLanguage?.();}
-window.addEventListener('app-language-change',e=>{setLanguage(e.detail.lang);requestAnimationFrame(()=>window.AppLanguage?.translate());});$('card-say-word').addEventListener('click',e=>{e.stopPropagation();speak(data[index].word)});$('card-say-word').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.stopPropagation();speak(data[index].word)}});
-window.addEventListener('letterchange',e=>{index=e.detail.index;sync();$('letter-name').textContent=lang==='ar'?data[index].name:data[index].de;$('letter-front-name').textContent=lang==='ar'?data[index].name:data[index].de;});
-const canvas=$('writing-canvas'),ctx=canvas.getContext('2d');let drawing=false;
-function drawGuide(){ctx.clearRect(0,0,620,290);if(guide){ctx.save();ctx.fillStyle='rgba(31,93,125,.14)';ctx.textAlign='center';ctx.textBaseline='middle';ctx.font='210px Tahoma,Arial';ctx.fillText(data[index].char,310,145);ctx.restore();}}
-function pos(e){const r=canvas.getBoundingClientRect();return{x:(e.clientX-r.left)*canvas.width/r.width,y:(e.clientY-r.top)*canvas.height/r.height}}
-canvas.addEventListener('pointerdown',e=>{drawing=true;canvas.setPointerCapture(e.pointerId);let p=pos(e);ctx.beginPath();ctx.moveTo(p.x,p.y)});
-canvas.addEventListener('pointermove',e=>{if(!drawing)return;let p=pos(e);ctx.strokeStyle='#125c86';ctx.lineWidth=9;ctx.lineCap='round';ctx.lineJoin='round';ctx.lineTo(p.x,p.y);ctx.stroke();ctx.beginPath();ctx.moveTo(p.x,p.y)});
-for(let name of ['pointerup','pointercancel','lostpointercapture'])canvas.addEventListener(name,()=>drawing=false);
-$('clear-canvas').onclick=drawGuide;$('show-guide').onclick=()=>{guide=!guide;drawGuide()};
-function renderQuestion(){answered=false;question=Math.floor(Math.random()*data.length);$('quiz-question').textContent=data[question].char;$('quiz-feedback').textContent='';let options=[question];while(options.length<4){const x=Math.floor(Math.random()*data.length);if(!options.includes(x))options.push(x)}options.sort(()=>Math.random()-.5);$('quiz-options').replaceChildren();options.forEach(x=>{const b=document.createElement('button');b.type='button';b.textContent=lang==='ar'?data[x].name:data[x].de;b.onclick=()=>{if(answered)return;answered=true;total++;if(x===question){correct++;b.classList.add('correct');$('quiz-feedback').textContent=tr('correct')}else{b.classList.add('wrong');$('quiz-feedback').textContent=tr('wrong')+' — '+(lang==='ar'?data[question].name:data[question].de);[...$('quiz-options').children].find(el=>el.textContent===(lang==='ar'?data[question].name:data[question].de))?.classList.add('correct')}updateScore()};$('quiz-options').append(b)});updateScore();}
-function updateScore(){$('quiz-score').textContent=tr('score')+': '+correct+' / '+total}
-$('quiz-next').onclick=renderQuestion;
-// Keep the original vocabulary tests and timers untouched.
-const saved=Number(sessionStorage.getItem('lettersLastIndex'));index=Number.isInteger(saved)&&saved>=0&&saved<data.length?saved:0;setLanguage(lang);
+(() => {
+  "use strict";
+  const data = [
+    {
+      char: "أ",
+      name: "الألف",
+      de: "Alif",
+      word: "أسد",
+      meaning: "Löwe",
+      img: "images/letters/01.svg",
+    },
+    {
+      char: "ب",
+      name: "الباء",
+      de: "Ba",
+      word: "بطة",
+      meaning: "Ente",
+      img: "images/letters/02.svg",
+    },
+    {
+      char: "ت",
+      name: "التاء",
+      de: "Ta",
+      word: "تفاحة",
+      meaning: "Apfel",
+      img: "images/letters/03.svg",
+    },
+    {
+      char: "ث",
+      name: "الثاء",
+      de: "Tha",
+      word: "ثعلب",
+      meaning: "Fuchs",
+      img: "images/letters/04.svg",
+    },
+    {
+      char: "ج",
+      name: "الجيم",
+      de: "Dschim",
+      word: "جمل",
+      meaning: "Kamel",
+      img: "images/letters/05.svg",
+    },
+    {
+      char: "ح",
+      name: "الحاء",
+      de: "Ha (tief)",
+      word: "حصان",
+      meaning: "Pferd",
+      img: "images/letters/06.svg",
+    },
+    {
+      char: "خ",
+      name: "الخاء",
+      de: "Cha",
+      word: "خبز",
+      meaning: "Brot",
+      img: "images/letters/07.svg",
+    },
+    {
+      char: "د",
+      name: "الدال",
+      de: "Dal",
+      word: "دب",
+      meaning: "Bär",
+      img: "images/letters/08.svg",
+    },
+    {
+      char: "ذ",
+      name: "الذال",
+      de: "Dhal",
+      word: "ذرة",
+      meaning: "Mais",
+      img: "images/letters/09.svg",
+    },
+    {
+      char: "ر",
+      name: "الراء",
+      de: "Ra",
+      word: "رمان",
+      meaning: "Granatapfel",
+      img: "images/letters/10.svg",
+    },
+    {
+      char: "ز",
+      name: "الزاي",
+      de: "Zay",
+      word: "زهرة",
+      meaning: "Blume",
+      img: "images/letters/11.svg",
+    },
+    {
+      char: "س",
+      name: "السين",
+      de: "Sin",
+      word: "سمكة",
+      meaning: "Fisch",
+      img: "images/letters/12.svg",
+    },
+    {
+      char: "ش",
+      name: "الشين",
+      de: "Schin",
+      word: "شمس",
+      meaning: "Sonne",
+      img: "images/letters/13.svg",
+    },
+    {
+      char: "ص",
+      name: "الصاد",
+      de: "Sad",
+      word: "صقر",
+      meaning: "Falke",
+      img: "images/letters/14.svg",
+    },
+    {
+      char: "ض",
+      name: "الضاد",
+      de: "Dad",
+      word: "ضفدع",
+      meaning: "Frosch",
+      img: "images/letters/15.svg",
+    },
+    {
+      char: "ط",
+      name: "الطاء",
+      de: "Ta (emphatisch)",
+      word: "طائرة",
+      meaning: "Flugzeug",
+      img: "images/letters/16.svg",
+    },
+    {
+      char: "ظ",
+      name: "الظاء",
+      de: "Za (emphatisch)",
+      word: "ظرف",
+      meaning: "Briefumschlag",
+      img: "images/letters/17.svg",
+    },
+    {
+      char: "ع",
+      name: "العين",
+      de: "Ain",
+      word: "عنب",
+      meaning: "Trauben",
+      img: "images/letters/18.svg",
+    },
+    {
+      char: "غ",
+      name: "الغين",
+      de: "Ghain",
+      word: "غزال",
+      meaning: "Gazelle",
+      img: "images/letters/19.svg",
+    },
+    {
+      char: "ف",
+      name: "الفاء",
+      de: "Fa",
+      word: "فيل",
+      meaning: "Elefant",
+      img: "images/letters/20.svg",
+    },
+    {
+      char: "ق",
+      name: "القاف",
+      de: "Qaf",
+      word: "قمر",
+      meaning: "Mond",
+      img: "images/letters/21.svg",
+    },
+    {
+      char: "ك",
+      name: "الكاف",
+      de: "Kaf",
+      word: "كتاب",
+      meaning: "Buch",
+      img: "images/letters/22.svg",
+    },
+    {
+      char: "ل",
+      name: "اللام",
+      de: "Lam",
+      word: "ليمون",
+      meaning: "Zitrone",
+      img: "images/letters/23.svg",
+    },
+    {
+      char: "م",
+      name: "الميم",
+      de: "Mim",
+      word: "موز",
+      meaning: "Banane",
+      img: "images/letters/24.svg",
+    },
+    {
+      char: "ن",
+      name: "النون",
+      de: "Nun",
+      word: "نجم",
+      meaning: "Stern",
+      img: "images/letters/25.svg",
+    },
+    {
+      char: "ه",
+      name: "الهاء",
+      de: "Ha",
+      word: "هلال",
+      meaning: "Mondsichel",
+      img: "images/letters/26.svg",
+    },
+    {
+      char: "و",
+      name: "الواو",
+      de: "Waw",
+      word: "وردة",
+      meaning: "Rose",
+      img: "images/letters/27.svg",
+    },
+    {
+      char: "ي",
+      name: "الياء",
+      de: "Ya",
+      word: "يد",
+      meaning: "Hand",
+      img: "images/letters/28.svg",
+    },
+  ];
+  const $ = (id) => document.getElementById(id);
+  const langs = {
+    ar: {
+      home: "→ الصفحة الرئيسية",
+      heading: "المستوى التمهيدي: تعلّم الحروف",
+      intro:
+        "اختر حرفاً واقلب البطاقة لرؤية أشكاله الأربعة داخل كلمات حقيقية. الحرف الملوّن هو الحرف الذي تتعلّمه.",
+      choose: "اختر حرفاً",
+      prev: "السابق",
+      next: "التالي",
+      listen: "🔊 استمع للحرف",
+      example: "مثال مصوّر لكل حرف",
+      sayWord: "🔊 استمع للكلمة",
+      harakat: "الحركات والنطق",
+      write: "تدرّب على كتابة الحرف",
+      writeHelp: "تتبّع الحرف على اللوحة بإصبعك أو بالفأرة.",
+      clear: "امسح اللوحة",
+      guide: "إظهار / إخفاء الدليل",
+      quiz: "اختبار الحروف",
+      quizHelp: "اختر اسم الحرف الصحيح. الاختبار مستقل عن اختبارات المفردات.",
+      newQuestion: "سؤال جديد",
+      correct: "أحسنت! إجابة صحيحة",
+      wrong: "حاول مرة أخرى في السؤال التالي",
+      score: "النتيجة",
+      speech: "الصوت غير متوفر في هذا المتصفح أو الجهاز",
+      names: ["فتحة", "كسرة", "ضمة", "سكون"],
+    },
+    de: {
+      home: "← Zur Startseite",
+      heading: "Einstieg: Arabische Buchstaben",
+      intro:
+        "Wähle einen Buchstaben und drehe die Karte um: Vier echte Wörter zeigen seine Schreibformen. Der Zielbuchstabe ist farbig markiert.",
+      choose: "Buchstaben auswählen",
+      prev: "Zurück",
+      next: "Weiter",
+      listen: "🔊 Buchstaben anhören",
+      example: "Bild und Beispielwort",
+      sayWord: "🔊 Wort anhören",
+      harakat: "Vokalzeichen und Aussprache",
+      write: "Buchstaben schreiben üben",
+      writeHelp: "Fahre den Buchstaben mit Finger oder Maus nach.",
+      clear: "Zeichenfläche leeren",
+      guide: "Vorlage ein-/ausblenden",
+      quiz: "Buchstaben-Quiz",
+      quizHelp:
+        "Wähle den richtigen Buchstabennamen. Unabhängig von den Vokabeltests.",
+      newQuestion: "Neue Frage",
+      correct: "Richtig! Sehr gut!",
+      wrong: "Leider falsch. Versuche die nächste Frage.",
+      score: "Punkte",
+      speech: "Sprachausgabe auf diesem Gerät nicht verfügbar",
+      names: ["Fatha", "Kasra", "Damma", "Sukun"],
+    },
+  };
+  let lang =
+      localStorage.getItem("vocabInterfaceLanguage") === "de" ? "de" : "ar",
+    index = 0,
+    guide = true,
+    correct = 0,
+    total = 0,
+    question = 0,
+    answered = false;
+  function tr(k) {
+    return langs[lang][k];
+  }
+  function speak(s) {
+    window.lettersSpeak(s);
+  }
+  function sync() {
+    const d = data[index];
+    $("letter-card-image").src = d.img;
+    $("letter-card-image").alt = d.word + " / " + d.meaning;
+    window.ArabicLetterExamples.highlight($("letter-card-word"), d.word, 0);
+    $("letter-card-translation").textContent = d.meaning;
+    const signs = ["َ", "ِ", "ُ", "ْ"];
+    $("harakat-row").replaceChildren();
+    signs.forEach((mark, i) => {
+      let b = document.createElement("button");
+      b.type = "button";
+      const shown = d.char + mark;
+      b.innerHTML =
+        '<span class="marked" lang="ar">' +
+        shown +
+        "</span><span>" +
+        tr("names")[i] +
+        "</span>";
+      b.onclick = () => speak(shown);
+      $("harakat-row").append(b);
+    });
+    drawGuide();
+  }
+  function setLanguage(l) {
+    lang = l;
+    localStorage.setItem("lettersLanguage", l);
+    localStorage.setItem("vocabInterfaceLanguage", l);
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      el.textContent = tr(el.dataset.i18n);
+    });
+    $("letter-name").textContent =
+      l === "ar" ? data[index].name : data[index].de;
+    $("letter-front-name").textContent =
+      l === "ar" ? data[index].name : data[index].de;
+    sync();
+    renderQuestion();
+    window.renderLetterFormsForLanguage?.();
+  }
+  window.addEventListener("app-language-change", (e) => {
+    setLanguage(e.detail.lang);
+    requestAnimationFrame(() => window.AppLanguage?.translate());
+  });
+  $("card-say-word").addEventListener("click", (e) => {
+    e.stopPropagation();
+    speak(data[index].word);
+  });
+  $("card-say-word").addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      e.stopPropagation();
+      speak(data[index].word);
+    }
+  });
+  window.addEventListener("letterchange", (e) => {
+    index = e.detail.index;
+    sync();
+    $("letter-name").textContent =
+      lang === "ar" ? data[index].name : data[index].de;
+    $("letter-front-name").textContent =
+      lang === "ar" ? data[index].name : data[index].de;
+  });
+  const canvas = $("writing-canvas"),
+    ctx = canvas.getContext("2d");
+  let drawing = false;
+  function drawGuide() {
+    ctx.clearRect(0, 0, 620, 290);
+    if (guide) {
+      ctx.save();
+      ctx.fillStyle = "rgba(31,93,125,.14)";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.font = "210px Tahoma,Arial";
+      ctx.fillText(data[index].char, 310, 145);
+      ctx.restore();
+    }
+  }
+  function pos(e) {
+    const r = canvas.getBoundingClientRect();
+    return {
+      x: ((e.clientX - r.left) * canvas.width) / r.width,
+      y: ((e.clientY - r.top) * canvas.height) / r.height,
+    };
+  }
+  canvas.addEventListener("pointerdown", (e) => {
+    drawing = true;
+    canvas.setPointerCapture(e.pointerId);
+    let p = pos(e);
+    ctx.beginPath();
+    ctx.moveTo(p.x, p.y);
+  });
+  canvas.addEventListener("pointermove", (e) => {
+    if (!drawing) return;
+    let p = pos(e);
+    ctx.strokeStyle = "#125c86";
+    ctx.lineWidth = 9;
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    ctx.lineTo(p.x, p.y);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(p.x, p.y);
+  });
+  for (let name of ["pointerup", "pointercancel", "lostpointercapture"])
+    canvas.addEventListener(name, () => (drawing = false));
+  $("clear-canvas").onclick = drawGuide;
+  $("show-guide").onclick = () => {
+    guide = !guide;
+    drawGuide();
+  };
+  function renderQuestion() {
+    answered = false;
+    question = Math.floor(Math.random() * data.length);
+    $("quiz-question").textContent = data[question].char;
+    $("quiz-feedback").textContent = "";
+    let options = [question];
+    while (options.length < 4) {
+      const x = Math.floor(Math.random() * data.length);
+      if (!options.includes(x)) options.push(x);
+    }
+    options.sort(() => Math.random() - 0.5);
+    $("quiz-options").replaceChildren();
+    options.forEach((x) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.textContent = lang === "ar" ? data[x].name : data[x].de;
+      b.onclick = () => {
+        if (answered) return;
+        answered = true;
+        total++;
+        if (x === question) {
+          correct++;
+          b.classList.add("correct");
+          $("quiz-feedback").textContent = tr("correct");
+        } else {
+          b.classList.add("wrong");
+          $("quiz-feedback").textContent =
+            tr("wrong") +
+            " — " +
+            (lang === "ar" ? data[question].name : data[question].de);
+          [...$("quiz-options").children]
+            .find(
+              (el) =>
+                el.textContent ===
+                (lang === "ar" ? data[question].name : data[question].de),
+            )
+            ?.classList.add("correct");
+        }
+        updateScore();
+      };
+      $("quiz-options").append(b);
+    });
+    updateScore();
+  }
+  function updateScore() {
+    $("quiz-score").textContent = tr("score") + ": " + correct + " / " + total;
+  }
+  $("quiz-next").onclick = renderQuestion;
+  // Keep the original vocabulary tests and timers untouched.
+  const saved = Number(sessionStorage.getItem("lettersLastIndex"));
+  index =
+    Number.isInteger(saved) && saved >= 0 && saved < data.length ? saved : 0;
+  setLanguage(lang);
 })();

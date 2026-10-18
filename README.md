@@ -24,6 +24,22 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Die Original-ZIP-Datei bleibt als unveränderte Ausgangsversion erhalten. Die aktuelle, bearbeitbare Anwendung besteht aus den direkt im Repository liegenden Quelldateien. Hinweise der ursprünglichen Version stehen in `docs/ORIGINAL.md`.
 
+## الحروف وأساسيات العربية · Alphabet und Grundlagen
+
+Die Rückseite jeder Buchstabenkarte enthält vier echte Beispielwörter für Anfang, Mitte, getrenntes und verbundenes Wortende. Insgesamt gibt es 112 Beispiele. Der Zielbuchstabe ist innerhalb des unveränderten Wortes farbig markiert; dasselbe gilt für das Wort auf der Vorderseite. Vor jedem getrennten Endbuchstaben steht ein Buchstabe aus ا، د، ذ، ر، ز، و (einschließlich Alif mit Hamza). Bei den sechs Buchstaben, die sich nicht nach links verbinden, erklärt die Karte die tatsächliche mittlere Schreibform.
+
+`grammar.html` bietet fünf Lektionen mit deutsch-arabischem Sprachwechsel und insgesamt 20 Übungsfragen:
+
+- `#sun-moon`: Sonnen- und Mondbuchstaben, vollständige Buchstabenlisten und Aussprachebeispiele.
+- `#pronouns`: selbstständige Personalpronomen, Dualformen und angehängte Possessivpronomen.
+- `#gender`: maskuline/feminine Nomen, Adjektive, Demonstrativpronomen und wichtige Ausnahmen.
+- `#number`: Singular, Dual, regelmäßige und gebrochene Plurale sowie nichtmenschliche Plurale.
+- `#basic-verbs`: zwölf Alltagsverben mit Perfekt, Präsens, Bedeutung und Beispielsätzen.
+
+Richtige und falsche Antworten erhalten eine Erklärung. Der Fortschritt jeder Übung bleibt beim Wechsel zwischen Themen und Sprachen innerhalb derselben geöffneten Seite erhalten. Nach dem letzten der vier Fragen kann die jeweilige Übung neu begonnen werden. Die Vokabeltest-Statistik bleibt davon unabhängig.
+
+Inhalte: `js/letter-examples.js`, `js/grammar-data.js`. Oberflächen: `js/pages/letters-learning.js`, `js/pages/grammar.js`, `css/grammar.css`.
+
 ## تصريف الأفعال · Verben lernen
 
 `verbs.html` ist über das Dashboard und die Navigation erreichbar. Die Lektion erklärt Vergangenheit und Gegenwart (Indikativ) anhand von sechs regelmäßigen dreiradikaligen Verben: كتب، درس، فتح، شرب، لعب، سمع. Ein interaktiver Konjugationstisch zeigt alle 14 Personen-/Geschlechtsformen mit markierten Vorsilben und Endungen, Beispielsätzen und deutschen Übersetzungen. Ein Quiz zum gewählten Verb und Tempus liefert sofortige Rückmeldung. Der Übungszähler gilt für die aktuelle Sitzung und ist unabhängig von den Vokabeltests.
@@ -36,8 +52,9 @@ Voraussetzungen: Python, Playwright für Python und Chromium unter `/usr/bin/chr
 
 ```sh
 python3 tests/smoke.py
-node --test tests/verbs.test.js
+node --test tests/*.test.js
 python3 tests/verbs-smoke.py
+python3 tests/foundations-smoke.py
 ```
 
 Der Test prüft Sprachwahl, Wortlisten, Lernkarten, einen vollständig beantworteten Multiple-Choice-Test, persistierte Ergebnisse, Statistiken, Excel-Import, den Sprachwechsel in beide Richtungen, mobile Navigation und die Lernseiten bei unterschiedlichen Bildschirmbreiten.

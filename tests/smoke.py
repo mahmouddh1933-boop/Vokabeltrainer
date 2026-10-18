@@ -85,7 +85,7 @@ with sync_playwright() as p:
     assert page.locator('.menu-toggle').get_attribute('aria-expanded') == 'true'
     page.keyboard.press('Escape')
     assert page.locator('.menu-toggle').get_attribute('aria-expanded') == 'false'
-    for target in ['lernseite.html','test.html','test1.html','test2.html','test3.html','test4.html','test5.html','test6.html','review.html','stats.html','huruf.html','verbs.html','ergebnis.html']:
+    for target in ['lernseite.html','test.html','test1.html','test2.html','test3.html','test4.html','test5.html','test6.html','review.html','stats.html','huruf.html','verbs.html','grammar.html','ergebnis.html']:
         page.goto(base_url + '/' + target)
         assert page.locator('.app-sidebar').count() == 1
         assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), target

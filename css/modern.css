@@ -2280,7 +2280,78 @@ html[dir="rtl"] .ready-list-button::after,
 html[dir="rtl"] .tool-link::after {
   transform: scaleX(-1);
 }
-.topbar-left { flex-shrink: 0; }
-.topbar-left > span[data-de] { white-space: nowrap; }
+.topbar-left {
+  flex-shrink: 0;
+}
+.topbar-left > span[data-de] {
+  white-space: nowrap;
+}
 
-.app-sidebar { overflow-y: auto; }
+.app-sidebar {
+  overflow-y: auto;
+}
+/* Examples stay in one shaping run: no added spaces or join controls. */
+.letters-page .letters-card-wrap {
+  max-width: 800px !important;
+}
+.letters-page .letters-forms {
+  gap: 12px !important;
+}
+.letters-page .letters-form {
+  display: flex;
+  padding: 15px 10px !important;
+  min-height: 185px;
+  gap: 7px;
+}
+.letters-page .letters-form-glyph {
+  font-size: 37px !important;
+  color: #7c8d67;
+}
+.letters-page .letter-example-word {
+  display: block;
+  font-family: "Traditional Arabic", Tahoma, serif;
+  font-size: 34px;
+  line-height: 1.8;
+  color: #33583c;
+  white-space: nowrap;
+  direction: rtl;
+  unicode-bidi: isolate;
+}
+.letters-page .letter-example-meaning {
+  font-size: 12px;
+  color: #8b947b;
+  line-height: 1.6;
+}
+.letters-page .letter-connection-note {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #9a7e52;
+}
+.letter-target {
+  color: #b56227;
+  background: #fff0d7;
+  border-radius: 3px;
+  font: inherit;
+  padding: 0;
+}
+.letters-page .card-example .letter-target {
+  color: #b56227;
+}
+@media (max-width: 640px) {
+  .letters-page .letters-form {
+    padding: 12px 6px !important;
+    min-height: 170px;
+  }
+  .letters-page .letters-form-label {
+    font-size: 11px;
+  }
+  .letters-page .letter-example-word {
+    font-size: 29px;
+  }
+  .letters-page .letter-example-meaning {
+    font-size: 11px;
+  }
+  .letters-page .letter-connection-note {
+    font-size: 10px;
+  }
+}
