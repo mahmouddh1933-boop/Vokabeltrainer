@@ -9,7 +9,8 @@ with sync_playwright() as p:
     page.route('**/*',lambda route:route.continue_() if route.request.url.startswith(base) else route.abort())
     assert page.goto(base+'/huruf.html').status==200
     page.locator('#app-language-select').select_option('ar')
-    assert page.locator('.letters-controls').first.locator('button').evaluate_all('(buttons)=>buttons.map(b=>b.id)')==['letter-previous','letter-speak','card-say-word','letter-next']
+    assert page.locator('.card-navigation').first.locator('button').evaluate_all('(buttons)=>buttons.map(b=>b.id)')==['letter-previous','letter-next']
+    assert page.locator('.letters-controls').first.locator('button').evaluate_all('(buttons)=>buttons.map(b=>b.id)')==['letter-speak','card-say-word']
     assert page.locator('[data-focused-mode]').count()==3
     assert page.locator('.quiz-panel').count()==0
     assert page.evaluate('''()=>{const ids=['letter-card','letter-speak','harakat-row','writing-canvas','letter-focused-practice'];return ids.slice(1).every((id,i)=>document.getElementById(ids[i]).compareDocumentPosition(document.getElementById(id))&Node.DOCUMENT_POSITION_FOLLOWING);}''')

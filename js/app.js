@@ -670,7 +670,9 @@
           fallback();
         }
       }
-      const recording = window.ArabicLetterData?.audio[value];
+      const recording =
+        window.ArabicLetterData?.audio[value] ||
+        window.ArabicPracticeData?.audio[value];
       if (recording) playMedia(recording, local, true);
       else local();
       return true;

@@ -4,8 +4,11 @@ import re
 import subprocess
 
 root = Path(__file__).resolve().parents[1]
-clips = sorted((root/'audio/letters').glob('*.mp3'))
-assert len(clips) == 168, len(clips)
+letter_clips = sorted((root/'audio/letters').glob('*.mp3'))
+practice_clips = sorted((root/'audio/practice').glob('*.mp3'))
+assert len(letter_clips) == 168, len(letter_clips)
+assert len(practice_clips) == 120, len(practice_clips)
+clips = letter_clips + practice_clips
 for clip in clips:
     duration = float(subprocess.check_output([
         'ffprobe', '-v', 'error', '-show_entries', 'format=duration',

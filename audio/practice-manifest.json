@@ -1,0 +1,486 @@
+{
+  "date": "2026-10-19",
+  "provider": "Google Translate TTS (ar)",
+  "clips": [
+    {
+      "text": "تِين",
+      "path": "audio/practice/001.mp3"
+    },
+    {
+      "text": "طِين",
+      "path": "audio/practice/002.mp3"
+    },
+    {
+      "text": "تَابَ",
+      "path": "audio/practice/003.mp3"
+    },
+    {
+      "text": "طَابَ",
+      "path": "audio/practice/004.mp3"
+    },
+    {
+      "text": "تَاج",
+      "path": "audio/practice/005.mp3"
+    },
+    {
+      "text": "طَائِر",
+      "path": "audio/practice/006.mp3"
+    },
+    {
+      "text": "سَيْف",
+      "path": "audio/practice/007.mp3"
+    },
+    {
+      "text": "صَيْف",
+      "path": "audio/practice/008.mp3"
+    },
+    {
+      "text": "سَارَ",
+      "path": "audio/practice/009.mp3"
+    },
+    {
+      "text": "صَارَ",
+      "path": "audio/practice/010.mp3"
+    },
+    {
+      "text": "سَمَك",
+      "path": "audio/practice/011.mp3"
+    },
+    {
+      "text": "صَبْر",
+      "path": "audio/practice/012.mp3"
+    },
+    {
+      "text": "دَرْب",
+      "path": "audio/practice/013.mp3"
+    },
+    {
+      "text": "ضَرْب",
+      "path": "audio/practice/014.mp3"
+    },
+    {
+      "text": "دَلَّ",
+      "path": "audio/practice/015.mp3"
+    },
+    {
+      "text": "ضَلَّ",
+      "path": "audio/practice/016.mp3"
+    },
+    {
+      "text": "دُبّ",
+      "path": "audio/practice/017.mp3"
+    },
+    {
+      "text": "ضَوْء",
+      "path": "audio/practice/018.mp3"
+    },
+    {
+      "text": "ذَهَب",
+      "path": "audio/practice/019.mp3"
+    },
+    {
+      "text": "ظَهْر",
+      "path": "audio/practice/020.mp3"
+    },
+    {
+      "text": "ذُرَة",
+      "path": "audio/practice/021.mp3"
+    },
+    {
+      "text": "ظَرْف",
+      "path": "audio/practice/022.mp3"
+    },
+    {
+      "text": "ذَكِيّ",
+      "path": "audio/practice/023.mp3"
+    },
+    {
+      "text": "ظِلّ",
+      "path": "audio/practice/024.mp3"
+    },
+    {
+      "text": "حَرَم",
+      "path": "audio/practice/025.mp3"
+    },
+    {
+      "text": "هَرَم",
+      "path": "audio/practice/026.mp3"
+    },
+    {
+      "text": "حَال",
+      "path": "audio/practice/027.mp3"
+    },
+    {
+      "text": "هَال",
+      "path": "audio/practice/028.mp3"
+    },
+    {
+      "text": "حَبْل",
+      "path": "audio/practice/029.mp3"
+    },
+    {
+      "text": "هِلَال",
+      "path": "audio/practice/030.mp3"
+    },
+    {
+      "text": "قَلْب",
+      "path": "audio/practice/031.mp3"
+    },
+    {
+      "text": "كَلْب",
+      "path": "audio/practice/032.mp3"
+    },
+    {
+      "text": "قَالَ",
+      "path": "audio/practice/033.mp3"
+    },
+    {
+      "text": "كَالَ",
+      "path": "audio/practice/034.mp3"
+    },
+    {
+      "text": "قَمَر",
+      "path": "audio/practice/035.mp3"
+    },
+    {
+      "text": "كِتَاب",
+      "path": "audio/practice/036.mp3"
+    },
+    {
+      "text": "أَنَا طَالِبٌ",
+      "path": "audio/practice/037.mp3"
+    },
+    {
+      "text": "هِيَ طَبِيبَةٌ",
+      "path": "audio/practice/038.mp3"
+    },
+    {
+      "text": "الْبَيْتُ كَبِيرٌ",
+      "path": "audio/practice/039.mp3"
+    },
+    {
+      "text": "الْبِنْتُ صَغِيرَةٌ",
+      "path": "audio/practice/040.mp3"
+    },
+    {
+      "text": "يَقْرَأُ الْوَلَدُ كِتَابًا",
+      "path": "audio/practice/041.mp3"
+    },
+    {
+      "text": "تَشْرَبُ الْبِنْتُ حَلِيبًا",
+      "path": "audio/practice/042.mp3"
+    },
+    {
+      "text": "يَأْكُلُ الطِّفْلُ تُفَّاحَةً",
+      "path": "audio/practice/043.mp3"
+    },
+    {
+      "text": "الْكِتَابُ عَلَى الطَّاوِلَةِ",
+      "path": "audio/practice/044.mp3"
+    },
+    {
+      "text": "الْقَلَمُ فِي الْحَقِيبَةِ",
+      "path": "audio/practice/045.mp3"
+    },
+    {
+      "text": "هَذِهِ سَيَّارَةٌ جَدِيدَةٌ",
+      "path": "audio/practice/046.mp3"
+    },
+    {
+      "text": "هَذَا قَلَمٌ أَزْرَقُ",
+      "path": "audio/practice/047.mp3"
+    },
+    {
+      "text": "أَذْهَبُ إِلَى الْمَدْرَسَةِ",
+      "path": "audio/practice/048.mp3"
+    },
+    {
+      "text": "كَتَبَتْ مَرْيَمُ رِسَالَةً قَصِيرَةً",
+      "path": "audio/practice/049.mp3"
+    },
+    {
+      "text": "اشْتَرَى أَحْمَدُ خُبْزًا طَازَجًا",
+      "path": "audio/practice/050.mp3"
+    },
+    {
+      "text": "هَؤُلَاءِ طُلَّابٌ مُجْتَهِدُونَ",
+      "path": "audio/practice/051.mp3"
+    },
+    {
+      "text": "الْكُتُبُ الْجَدِيدَةُ مُفِيدَةٌ",
+      "path": "audio/practice/052.mp3"
+    },
+    {
+      "text": "كَانَ الْجَوُّ بَارِدًا",
+      "path": "audio/practice/053.mp3"
+    },
+    {
+      "text": "إِنَّ الْعِلْمَ نَافِعٌ",
+      "path": "audio/practice/054.mp3"
+    },
+    {
+      "text": "لَنْ أَتَأَخَّرَ عَنِ الدَّرْسِ",
+      "path": "audio/practice/055.mp3"
+    },
+    {
+      "text": "لَمْ يَذْهَبْ خَالِدٌ إِلَى السُّوقِ",
+      "path": "audio/practice/056.mp3"
+    },
+    {
+      "text": "جَلَسَ الطِّفْلُ بِجَانِبِ أُمِّهِ",
+      "path": "audio/practice/057.mp3"
+    },
+    {
+      "text": "وَضَعْتُ الْمِفْتَاحَ تَحْتَ الْكِتَابِ",
+      "path": "audio/practice/058.mp3"
+    },
+    {
+      "text": "نَقْرَأُ الْقِصَصَ لِنَتَعَلَّمَ الْعَرَبِيَّةَ",
+      "path": "audio/practice/059.mp3"
+    },
+    {
+      "text": "فِي الْحَدِيقَةِ شَجَرَتَانِ كَبِيرَتَانِ",
+      "path": "audio/practice/060.mp3"
+    },
+    {
+      "text": "أَنَا لَيْلَى.",
+      "path": "audio/practice/061.mp3"
+    },
+    {
+      "text": "أَجْلِسُ مَعَ أُسْرَتِي فِي الْمَطْبَخِ.",
+      "path": "audio/practice/062.mp3"
+    },
+    {
+      "text": "عَلَى الطَّاوِلَةِ خُبْزٌ وَجُبْنٌ.",
+      "path": "audio/practice/063.mp3"
+    },
+    {
+      "text": "أَشْرَبُ الْحَلِيبَ، وَيَشْرَبُ أَبِي الشَّايَ.",
+      "path": "audio/practice/064.mp3"
+    },
+    {
+      "text": "تَأْكُلُ أُخْتِي تُفَّاحَةً.",
+      "path": "audio/practice/065.mp3"
+    },
+    {
+      "text": "بَعْدَ الْفَطُورِ أَذْهَبُ إِلَى الْمَدْرَسَةِ.",
+      "path": "audio/practice/066.mp3"
+    },
+    {
+      "text": "أُسْرَة",
+      "path": "audio/practice/067.mp3"
+    },
+    {
+      "text": "مَطْبَخ",
+      "path": "audio/practice/068.mp3"
+    },
+    {
+      "text": "خُبْز",
+      "path": "audio/practice/069.mp3"
+    },
+    {
+      "text": "حَلِيب",
+      "path": "audio/practice/070.mp3"
+    },
+    {
+      "text": "هَذَا صَفِّي.",
+      "path": "audio/practice/071.mp3"
+    },
+    {
+      "text": "أَجْلِسُ بِجَانِبِ صَدِيقِي سَامِي.",
+      "path": "audio/practice/072.mp3"
+    },
+    {
+      "text": "تَكْتُبُ الْمُعَلِّمَةُ حَرْفَ الْبَاءِ عَلَى السَّبُّورَةِ.",
+      "path": "audio/practice/073.mp3"
+    },
+    {
+      "text": "يَقْرَأُ سَامِي كَلِمَةَ بَيْتٍ.",
+      "path": "audio/practice/074.mp3"
+    },
+    {
+      "text": "أَكْتُبُ الْكَلِمَةَ فِي دَفْتَرِي.",
+      "path": "audio/practice/075.mp3"
+    },
+    {
+      "text": "تَقُولُ الْمُعَلِّمَةُ: أَحْسَنْتُمْ!",
+      "path": "audio/practice/076.mp3"
+    },
+    {
+      "text": "صَفّ",
+      "path": "audio/practice/077.mp3"
+    },
+    {
+      "text": "مُعَلِّمَة",
+      "path": "audio/practice/078.mp3"
+    },
+    {
+      "text": "سَبُّورَة",
+      "path": "audio/practice/079.mp3"
+    },
+    {
+      "text": "دَفْتَر",
+      "path": "audio/practice/080.mp3"
+    },
+    {
+      "text": "أَذْهَبُ مَعَ أُمِّي إِلَى السُّوقِ.",
+      "path": "audio/practice/081.mp3"
+    },
+    {
+      "text": "نَرَى تُفَّاحًا وَعِنَبًا وَمَوْزًا.",
+      "path": "audio/practice/082.mp3"
+    },
+    {
+      "text": "تَخْتَارُ أُمِّي عِنَبًا.",
+      "path": "audio/practice/083.mp3"
+    },
+    {
+      "text": "أَخْتَارُ أَنَا تُفَّاحَةً حَمْرَاءَ.",
+      "path": "audio/practice/084.mp3"
+    },
+    {
+      "text": "نَدْفَعُ الثَّمَنَ وَنَشْكُرُ الْبَائِعَ.",
+      "path": "audio/practice/085.mp3"
+    },
+    {
+      "text": "نَعُودُ إِلَى الْبَيْتِ مَعَ الْفَاكِهَةِ.",
+      "path": "audio/practice/086.mp3"
+    },
+    {
+      "text": "سُوق",
+      "path": "audio/practice/087.mp3"
+    },
+    {
+      "text": "عِنَب",
+      "path": "audio/practice/088.mp3"
+    },
+    {
+      "text": "بَائِع",
+      "path": "audio/practice/089.mp3"
+    },
+    {
+      "text": "فَاكِهَة",
+      "path": "audio/practice/090.mp3"
+    },
+    {
+      "text": "ذَهَبَ عُمَرُ وَأُخْتُهُ إِلَى الْحَدِيقَةِ صَبَاحًا.",
+      "path": "audio/practice/091.mp3"
+    },
+    {
+      "text": "حَمَلَ عُمَرُ كُرَةً.",
+      "path": "audio/practice/092.mp3"
+    },
+    {
+      "text": "لَعِبَا قُرْبَ شَجَرَةٍ كَبِيرَةٍ.",
+      "path": "audio/practice/093.mp3"
+    },
+    {
+      "text": "ثُمَّ جَلَسَا لِيَشْرَبَا الْمَاءَ.",
+      "path": "audio/practice/094.mp3"
+    },
+    {
+      "text": "رَأَيَا عُصْفُورًا صَغِيرًا عَلَى غُصْنٍ.",
+      "path": "audio/practice/095.mp3"
+    },
+    {
+      "text": "عَادَا سَعِيدَيْنِ قَبْلَ الظُّهْرِ.",
+      "path": "audio/practice/096.mp3"
+    },
+    {
+      "text": "حَدِيقَة",
+      "path": "audio/practice/097.mp3"
+    },
+    {
+      "text": "كُرَة",
+      "path": "audio/practice/098.mp3"
+    },
+    {
+      "text": "عُصْفُور",
+      "path": "audio/practice/099.mp3"
+    },
+    {
+      "text": "غُصْن",
+      "path": "audio/practice/100.mp3"
+    },
+    {
+      "text": "زَارَتْ نُورُ الْمَكْتَبَةَ بَعْدَ الْمَدْرَسَةِ.",
+      "path": "audio/practice/101.mp3"
+    },
+    {
+      "text": "أَرَادَتْ كِتَابًا عَنِ الْحَيَوَانَاتِ.",
+      "path": "audio/practice/102.mp3"
+    },
+    {
+      "text": "سَاعَدَتْهَا أَمِينَةُ الْمَكْتَبَةِ فِي الْبَحْثِ.",
+      "path": "audio/practice/103.mp3"
+    },
+    {
+      "text": "اخْتَارَتْ نُورُ كِتَابًا فِيهِ صُوَرٌ كَثِيرَةٌ.",
+      "path": "audio/practice/104.mp3"
+    },
+    {
+      "text": "اسْتَعَارَتِ الْكِتَابَ لِأُسْبُوعٍ.",
+      "path": "audio/practice/105.mp3"
+    },
+    {
+      "text": "وَعَدَتْ أَنْ تُعِيدَهُ فِي الْمَوْعِدِ.",
+      "path": "audio/practice/106.mp3"
+    },
+    {
+      "text": "مَكْتَبَة",
+      "path": "audio/practice/107.mp3"
+    },
+    {
+      "text": "حَيَوَانَات",
+      "path": "audio/practice/108.mp3"
+    },
+    {
+      "text": "أُسْبُوع",
+      "path": "audio/practice/109.mp3"
+    },
+    {
+      "text": "مَوْعِد",
+      "path": "audio/practice/110.mp3"
+    },
+    {
+      "text": "خَرَجَ سَامِي مُبَكِّرًا لِيَزُورَ جَدَّهُ.",
+      "path": "audio/practice/111.mp3"
+    },
+    {
+      "text": "وَقَفَ عِنْدَ مَحَطَّةِ الْحَافِلَاتِ وَمَعَهُ حَقِيبَةٌ زَرْقَاءُ.",
+      "path": "audio/practice/112.mp3"
+    },
+    {
+      "text": "وَصَلَتِ الْحَافِلَةُ بَعْدَ عَشْرِ دَقَائِقَ.",
+      "path": "audio/practice/113.mp3"
+    },
+    {
+      "text": "اشْتَرَى تَذْكِرَةً وَجَلَسَ بِجَانِبِ النَّافِذَةِ.",
+      "path": "audio/practice/114.mp3"
+    },
+    {
+      "text": "رَأَى مِنَ النَّافِذَةِ حَدِيقَةً وَمَدْرَسَةً.",
+      "path": "audio/practice/115.mp3"
+    },
+    {
+      "text": "عِنْدَمَا وَصَلَ، اسْتَقْبَلَهُ جَدُّهُ بِابْتِسَامَةٍ.",
+      "path": "audio/practice/116.mp3"
+    },
+    {
+      "text": "حَافِلَة",
+      "path": "audio/practice/117.mp3"
+    },
+    {
+      "text": "مَحَطَّة",
+      "path": "audio/practice/118.mp3"
+    },
+    {
+      "text": "تَذْكِرَة",
+      "path": "audio/practice/119.mp3"
+    },
+    {
+      "text": "نَافِذَة",
+      "path": "audio/practice/120.mp3"
+    }
+  ]
+}

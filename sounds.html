@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#194e40" />
+    <title>Jisr · ميّز الأصوات المتشابهة / Ähnliche Laute unterscheiden</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/interface-languages.css" />
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/practice.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/practice-data.js" defer></script>
+    <script src="js/interface-languages.js" defer></script>
+    <script src="js/design.js" defer></script>
+    <script src="js/practice-core.js" defer></script>
+    <script src="js/pages/sounds.js" defer></script>
+  </head>
+  <body>
+    <main class="container practice-page">
+      <header class="page-heading">
+        <div>
+          <p
+            data-ar="من المعرفة إلى الاستخدام"
+            data-de="VOM WISSEN ZUM ANWENDEN"
+            class="eyebrow"
+          >
+            من المعرفة إلى الاستخدام
+          </p>
+          <h1
+            data-ar="ميّز الأصوات المتشابهة"
+            data-de="Ähnliche Laute unterscheiden"
+          >
+            ميّز الأصوات المتشابهة
+          </h1>
+          <p
+            data-ar="استمع إلى الكلمات، ثم ميّز بين ست مجموعات من الأصوات. ٣٦ سؤالًا، مع أمثلة وتفسير لكل إجابة."
+            data-de="Höre die Wörter und unterscheide sechs Lautpaare. 36 Fragen mit Beispielen und Rückmeldungen."
+            class="practice-intro"
+          >
+            استمع إلى الكلمات، ثم ميّز بين ست مجموعات من الأصوات. ٣٦ سؤالًا، مع
+            أمثلة وتفسير لكل إجابة.
+          </p>
+        </div>
+        <span class="welcome-symbol" aria-hidden="true">✳</span>
+      </header>
+      <nav class="practice-links" aria-label="التدريبات / Übungen">
+        <a
+          data-ar="الأصوات المتشابهة"
+          data-de="Ähnliche Laute"
+          href="sounds.html"
+          aria-current="page"
+          >الأصوات المتشابهة</a
+        ><a data-ar="تكوين الجمل" data-de="Sätze bilden" href="sentences.html"
+          >تكوين الجمل</a
+        ><a data-ar="قصص قصيرة" data-de="Kurzgeschichten" href="stories.html"
+          >قصص قصيرة</a
+        >
+      </nav>
+      <p
+        id="practice-audio-status"
+        class="practice-audio-status"
+        role="status"
+        aria-live="polite"
+      ></p>
+
+      <section class="practice-panel" aria-labelledby="sound-groups-title">
+        <h2
+          data-ar="اختر الأصوات"
+          data-de="Wähle die Laute"
+          id="sound-groups-title"
+        >
+          اختر الأصوات
+        </h2>
+        <div id="sound-groups" class="filter-row"></div>
+      </section>
+      <section class="practice-panel" aria-labelledby="sound-question">
+        <div class="practice-topline">
+          <span id="sound-score" class="practice-score" role="status"></span
+          ><span id="sound-counter" dir="ltr"></span>
+        </div>
+        <progress
+          id="sound-progress"
+          value="0"
+          max="1"
+          aria-label="التقدم / Fortschritt"
+        ></progress>
+        <h2 id="sound-question" tabindex="-1"></h2>
+        <button id="sound-listen" type="button" class="sound-play"></button>
+        <div id="sound-options" class="sound-options"></div>
+        <div
+          id="sound-feedback"
+          class="practice-feedback"
+          aria-live="polite"
+        ></div>
+        <p
+          data-ar="أكملت التدريب! راجع الإجابات أو ابدأ جولة جديدة."
+          data-de="Geschafft! Sieh dir deine Antworten an oder starte eine neue Runde."
+          id="sound-summary"
+          class="practice-summary"
+          hidden
+        >
+          أكملت التدريب! راجع الإجابات أو ابدأ جولة جديدة.
+        </p>
+        <nav class="card-navigation" aria-label="التنقل / Navigation">
+          <button
+            data-ar="السابق"
+            data-de="Zurück"
+            id="sound-previous"
+            type="button"
+            class="practice-button"
+          >
+            السابق</button
+          ><button
+            data-ar="التالي"
+            data-de="Weiter"
+            id="sound-next"
+            type="button"
+            class="practice-button"
+          >
+            التالي
+          </button>
+        </nav>
+        <div class="practice-actions">
+          <button
+            data-ar="إعادة التدريب المحدد"
+            data-de="Ausgewählte Übung neu starten"
+            id="sound-restart"
+            type="button"
+            class="practice-button"
+          >
+            إعادة التدريب المحدد
+          </button>
+        </div>
+      </section>
+      <details class="practice-panel sound-details">
+        <summary>
+          <span
+            data-ar="استكشف الأمثلة وقارن النطق"
+            data-de="Beispiele entdecken und Aussprache vergleichen"
+            >استكشف الأمثلة وقارن النطق</span
+          >
+        </summary>
+        <div id="sound-examples"></div>
+      </details>
+    </main>
+    <footer class="teacher-credit">إعداد المعلم: <b>محمود بركات</b></footer>
+  </body>
+</html>

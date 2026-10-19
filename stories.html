@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#194e40" />
+    <title>Jisr · اقرأ قصة قصيرة / Lies eine kurze Geschichte</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/interface-languages.css" />
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/practice.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/practice-data.js" defer></script>
+    <script src="js/interface-languages.js" defer></script>
+    <script src="js/design.js" defer></script>
+    <script src="js/practice-core.js" defer></script>
+    <script src="js/pages/stories.js" defer></script>
+  </head>
+  <body>
+    <main class="container practice-page">
+      <header class="page-heading">
+        <div>
+          <p
+            data-ar="من المعرفة إلى الاستخدام"
+            data-de="VOM WISSEN ZUM ANWENDEN"
+            class="eyebrow"
+          >
+            من المعرفة إلى الاستخدام
+          </p>
+          <h1 data-ar="اقرأ قصة قصيرة" data-de="Lies eine kurze Geschichte">
+            اقرأ قصة قصيرة
+          </h1>
+          <p
+            data-ar="ست قصص مصوّرة للحياة اليومية. استمع لكل جملة، واكتشف الكلمات، ثم اختبر فهمك. الترجمة الألمانية تظهر عند الطلب."
+            data-de="Sechs illustrierte Alltagsgeschichten. Höre jeden Satz, entdecke Wörter und teste dein Verständnis. Die deutsche Übersetzung kannst du einblenden."
+            class="practice-intro"
+          >
+            ست قصص مصوّرة للحياة اليومية. استمع لكل جملة، واكتشف الكلمات، ثم
+            اختبر فهمك. الترجمة الألمانية تظهر عند الطلب.
+          </p>
+        </div>
+        <span class="welcome-symbol" aria-hidden="true">✳</span>
+      </header>
+      <nav class="practice-links" aria-label="التدريبات / Übungen">
+        <a
+          data-ar="الأصوات المتشابهة"
+          data-de="Ähnliche Laute"
+          href="sounds.html"
+          >الأصوات المتشابهة</a
+        ><a data-ar="تكوين الجمل" data-de="Sätze bilden" href="sentences.html"
+          >تكوين الجمل</a
+        ><a
+          data-ar="قصص قصيرة"
+          data-de="Kurzgeschichten"
+          href="stories.html"
+          aria-current="page"
+          >قصص قصيرة</a
+        >
+      </nav>
+      <p
+        id="practice-audio-status"
+        class="practice-audio-status"
+        role="status"
+        aria-live="polite"
+      ></p>
+
+      <section aria-label="القصص / Geschichten">
+        <div>
+          <label data-ar="المستوى" data-de="Niveau" for="story-level"
+            >المستوى</label
+          ><select id="story-level">
+            <option value="all" data-ar="كل المستويات" data-de="Alle Niveaus">
+              كل المستويات
+            </option>
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+          </select>
+        </div>
+        <div id="story-library" class="story-library"></div>
+      </section>
+      <article class="practice-panel" aria-labelledby="story-title">
+        <div class="practice-topline">
+          <div>
+            <p id="story-badge" class="eyebrow"></p>
+            <h2 id="story-title" tabindex="-1"></h2>
+          </div>
+          <button
+            data-ar="إظهار الترجمة الألمانية"
+            data-de="Deutsche Übersetzung anzeigen"
+            id="story-translation"
+            type="button"
+            class="practice-button"
+          >
+            إظهار الترجمة الألمانية
+          </button>
+        </div>
+        <div class="story-reader">
+          <div id="story-lines"></div>
+          <div id="story-art" class="story-art" role="img"></div>
+        </div>
+        <h3
+          data-ar="كلمات القصة · اضغط للاستماع"
+          data-de="Wörter der Geschichte · zum Anhören antippen"
+        >
+          كلمات القصة · اضغط للاستماع
+        </h3>
+        <div id="story-vocabulary" class="story-vocabulary"></div>
+        <nav class="card-navigation" aria-label="التنقل / Navigation">
+          <button
+            data-ar="السابق"
+            data-de="Zurück"
+            id="story-previous"
+            type="button"
+            class="practice-button"
+          >
+            السابق</button
+          ><span
+            class="card-position"
+            id="story-counter"
+            aria-live="polite"
+          ></span
+          ><button
+            data-ar="التالي"
+            data-de="Weiter"
+            id="story-next"
+            type="button"
+            class="practice-button"
+          >
+            التالي
+          </button>
+        </nav>
+      </article>
+      <section class="practice-panel" aria-labelledby="story-quiz-title">
+        <div class="practice-topline">
+          <h2
+            data-ar="هل فهمت القصة؟"
+            data-de="Hast du die Geschichte verstanden?"
+            id="story-quiz-title"
+          >
+            هل فهمت القصة؟
+          </h2>
+          <span id="story-question-counter" dir="ltr"></span>
+        </div>
+        <p id="story-score" class="practice-score" role="status"></p>
+        <progress
+          id="story-progress"
+          value="0"
+          max="1"
+          aria-label="التقدم / Fortschritt"
+        ></progress>
+        <h3 id="story-question" lang="ar" dir="rtl"></h3>
+        <p id="story-question-de" lang="de" dir="ltr" hidden></p>
+        <div id="story-options" class="story-options"></div>
+        <div
+          id="story-feedback"
+          class="practice-feedback"
+          aria-live="polite"
+        ></div>
+        <p
+          data-ar="أكملت أسئلة القصة! اختر قصة أخرى أو راجع إجاباتك."
+          data-de="Alle Fragen geschafft! Wähle eine weitere Geschichte oder sieh dir deine Antworten an."
+          id="story-summary"
+          class="practice-summary"
+          hidden
+        >
+          أكملت أسئلة القصة! اختر قصة أخرى أو راجع إجاباتك.
+        </p>
+        <nav class="card-navigation" aria-label="التنقل / Navigation">
+          <button
+            data-ar="السابق"
+            data-de="Zurück"
+            id="story-question-previous"
+            type="button"
+            class="practice-button"
+          >
+            السابق</button
+          ><button
+            data-ar="التالي"
+            data-de="Weiter"
+            id="story-question-next"
+            type="button"
+            class="practice-button"
+          >
+            التالي
+          </button>
+        </nav>
+        <div class="practice-actions">
+          <button
+            data-ar="إعادة أسئلة هذه القصة"
+            data-de="Fragen zu dieser Geschichte neu starten"
+            id="story-restart"
+            type="button"
+            class="practice-button"
+          >
+            إعادة أسئلة هذه القصة
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="teacher-credit">إعداد المعلم: <b>محمود بركات</b></footer>
+  </body>
+</html>

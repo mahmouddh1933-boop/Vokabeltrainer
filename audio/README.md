@@ -11,3 +11,9 @@ A consonant carrying sukun cannot start a syllable. All 28 sukun buttons therefo
 All clips were fully decoded with FFmpeg and checked with FFprobe; the audio check also measures non-silent duration. Mobile Chrome emulation verifies real playback of all 28 sukun clips, the six corrected words and Ta's name/vowels with external requests blocked. These checks verify file integrity and playback; they do not replace a native speaker's listening review on a physical phone.
 
 Other words use an Arabic device voice first, with online TTS as a fallback. Playback always starts from a user tap. If the browser denies playback, the interface asks the user to tap again rather than looping through providers.
+
+## Listening practice, sentences and stories
+
+An additional **120 MP3 clips** in `audio/practice/` cover the 36 sound-contrast words, 24 sentence solutions, 36 story sentences and 24 story vocabulary items. `practice-manifest.json` records each exact vocalized synthesis input and relative file path. The shared playback API uses `ArabicPracticeData.audio`, with NFC-normalized text keys, before attempting any device voice or online fallback.
+
+These clips were synthesized with the same Arabic Google Translate TTS endpoint, requested with `ttsslow=1`, and downloaded over verified HTTPS on 2026-10-19. Every clip was decoded and checked for audible signal. They are synthetic voices and have not received a human phonetic review. The application now contains **288 clips in total**. Keep both audio directories when extracting the download.

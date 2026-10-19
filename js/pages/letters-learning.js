@@ -57,6 +57,7 @@
   function render() {
     const [char, name, nonjoining] = letters[current];
     $("letter-counter").textContent = `${current + 1} / ${letters.length}`;
+    $("letter-nav-position").textContent = `${current + 1} / ${letters.length}`;
     $("letter-name").textContent = name;
     $("letter-front-name").textContent = name;
     $("letter-big").textContent = char;

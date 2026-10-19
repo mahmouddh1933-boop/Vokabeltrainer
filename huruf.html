@@ -19,6 +19,7 @@
     <script src="js/tanwin-display.js" defer></script>
     <link rel="stylesheet" href="css/modern.css" />
     <link rel="stylesheet" href="css/letters-focused.css" />
+    <link rel="stylesheet" href="css/practice.css" />
     <script src="js/design.js" defer></script>
   </head>
   <body>
@@ -69,14 +70,28 @@
           </div>
         </button>
       </div>
+      <nav
+        class="card-navigation"
+        aria-label="التنقل بين الحروف / Buchstaben wechseln"
+      >
+        <button id="letter-previous" type="button">
+          <span class="nav-arrow" aria-hidden="true"></span
+          ><span data-i18n="prev">السابق</span>
+        </button>
+        <span id="letter-nav-position" class="card-position" aria-live="polite"
+          >1 / 28</span
+        >
+        <button id="letter-next" type="button">
+          <span data-i18n="next">التالي</span
+          ><span class="nav-arrow" aria-hidden="true"></span>
+        </button>
+      </nav>
       <div class="letters-controls">
-        <button id="letter-previous" type="button" data-i18n="prev">
-          السابق</button
-        ><button id="letter-speak" type="button" data-i18n="listen">
+        <button id="letter-speak" type="button" data-i18n="listen">
           🔊 استمع للحرف</button
         ><button id="card-say-word" type="button" data-i18n="sayWord">
-          🔊 استمع للكلمة</button
-        ><button id="letter-next" type="button" data-i18n="next">التالي</button>
+          🔊 استمع للكلمة
+        </button>
       </div>
       <p
         id="letters-speech-status"

@@ -53,6 +53,20 @@ Die App enthält 168 synthetisierte MP3-Dateien in `audio/letters/`: Buchstabenn
 
 Mehrdeutige Bildwörter besitzen ausdrücklich vokalisierte Aussprachen, etwa **جَمَل** (Kamel) und **ذُرَة** (Mais). Sukun wird mit einem vorausgehenden Laut vorgespielt, beispielsweise **أَبْ**; das jeweilige Hörbeispiel steht unter den Vokalzeichen. Die Rumman-Karte zeigt einen Granatapfel mit sichtbaren Kernen.
 
+## Hören, Sätze bilden und Kurzgeschichten
+
+Die Startseite und die Seitenleiste führen zu drei zusätzlichen Lernbereichen mit arabischer und deutscher Oberfläche:
+
+- `sounds.html`: sechs Lautkontraste (ت/ط، س/ص، د/ض، ذ/ظ، ح/ه، ق/ك), 36 Hörfragen, einzeln auswählbare Lautpaare und Vergleichsbeispiele. Antworten werden nach dem Antippen von „Anhören“ freigegeben; anschließend erscheinen richtige Antwort, Bedeutung und Aussprachehinweis.
+- `sentences.html`: 24 Satzbauaufgaben, jeweils zwölf auf A1 und A2. Wörter werden durch Antippen eingesetzt und wieder entfernt. Erste Wortvorgabe, Korrektur, Grammatikhinweise und Hörlösung helfen beim Lernen. Drei Aufgaben formen Singularsätze in Plural beziehungsweise Dual um. Häufige korrekte Varianten mit vorangestelltem Objekt werden ebenfalls akzeptiert. Tipps zählen nicht als Erfolg beim ersten Versuch.
+- `stories.html`: sechs illustrierte Alltagsgeschichten mit je sechs gesprochenen Sätzen, vier Worterklärungen und vier Verständnisfragen. Deutsche Übersetzungen sind einblendbar. Die Rückmeldung markiert den passenden Beleg im Text. Geschichten lassen sich nach A1/A2 filtern.
+
+Die 120 zusätzlichen MP3-Dateien in `audio/practice/` funktionieren ohne externe Sprachdienste. Zusammen mit den Buchstabenclips sind 288 MP3-Dateien enthalten. Alle Stimmen sind synthetisch; eine menschliche phonetische Abnahme ist nicht erfolgt. Herkunft und verwendete Texte stehen in `audio/practice-manifest.json`. Die sechs Illustrationen werden als Bildraster in `images/stories/scenes.png` mitgeliefert.
+
+Antworten, aktuelle Aufgaben und Einstellungen dieser Bereiche werden lokal im Browser unter `jisrPracticeV1:*` gespeichert. Ein Neustart setzt nur die ausgewählte Übung beziehungsweise Geschichte zurück. Die vorhandenen Vokabeltestergebnisse bleiben unabhängig davon. Daten: `js/practice-data.js`; gemeinsames Verhalten: `js/practice-core.js`; Oberfläche: `css/practice.css` und `js/pages/{sounds,sentences,stories}.js`.
+
+Vokabel- und Buchstabenkarten besitzen direkt unter der Karte eine eigene Navigation mit großen Vor-/Zurück-Schaltflächen, Richtungszeichen und aktuellem Kartenstand. Die vorhandenen Bedienelemente behalten ihre IDs und funktionieren mit Tastatur und Touch.
+
 Gemeinsame Buchstabendaten und Audiodateizuordnung: `js/letter-data.js`. Aufgaben: `js/letter-training-data.js`. Oberfläche: `js/pages/letter-training.js`, `css/letter-training.css`. Die Wortbeispiele bleiben in `js/letter-examples.js`.
 
 ### قواعد العربية · Grammatik
@@ -116,6 +130,7 @@ python3 tests/grammar-syntax-smoke.py
 python3 tests/letter-training-smoke.py
 python3 tests/letters-focused-smoke.py
 python3 tests/letter-pronunciation-smoke.py
+python3 tests/practice-smoke.py
 python3 tests/letter-audio-check.py
 ```
 
@@ -132,6 +147,6 @@ Die Option ersetzt im Test nur den Abruf der angegebenen Bibliothek und ändert 
 
 Der zusätzliche gemischte Buchstabentest prüft alle 112 Fragen, Korrekturen, Sprachwechsel, Ergebnis, Durchsicht und Neustart in einer mobilen Chrome-Emulation. Er prüft außerdem die tatsächliche MP3-Wiedergabe durch Touch-Eingaben bei blockierten externen Anfragen. Die Unit-Tests prüfen unter anderem den direkten Gerätestimmen-Aufruf, verzögert verfügbare Stimmen, gesperrte Wiedergabe, Fallbacks und den Abbruch veralteter Anfragen. Ein Test auf einem physischen Android-Gerät wurde in der Cloud nicht durchgeführt.
 
-`letter-pronunciation-smoke.py` prüft die 28 Sukun-Hörbeispiele, die korrigierten Bildwörter, Tā, das Granatapfelbild und beide Oberflächensprachen mit gesperrtem externem Netzwerk. `letter-audio-check.py` benötigt zusätzlich FFmpeg/FFprobe und prüft alle 168 MP3-Dateien auf Dekodierfehler und Stille.
+`letter-pronunciation-smoke.py` prüft die 28 Sukun-Hörbeispiele, die korrigierten Bildwörter, Tā, das Granatapfelbild und beide Oberflächensprachen mit gesperrtem externem Netzwerk. `practice-smoke.py` beantwortet alle 36 Hörfragen, 24 Satzbauaufgaben und 24 Verständnisfragen, prüft Wiedergabe der 120 neuen Clips, Korrekturen, Tipps, Persistenz, Filter und Tastatur-/Touch-Navigation. `letter-audio-check.py` benötigt zusätzlich FFmpeg/FFprobe und prüft alle 288 MP3-Dateien auf Dekodierfehler und Stille.
 
 Online-Aussprache für sonstigen Text benötigt Zugriff auf `translate.google.com` bzw. `translate.googleapis.com`; ihre Verfügbarkeit hängt vom externen Dienst ab.

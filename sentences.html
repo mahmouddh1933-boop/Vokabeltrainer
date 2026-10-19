@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#194e40" />
+    <title>Jisr · كوّن جملة صحيحة / Bilde einen richtigen Satz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/interface-languages.css" />
+    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/practice.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/practice-data.js" defer></script>
+    <script src="js/interface-languages.js" defer></script>
+    <script src="js/design.js" defer></script>
+    <script src="js/practice-core.js" defer></script>
+    <script src="js/pages/sentences.js" defer></script>
+  </head>
+  <body>
+    <main class="container practice-page">
+      <header class="page-heading">
+        <div>
+          <p
+            data-ar="من المعرفة إلى الاستخدام"
+            data-de="VOM WISSEN ZUM ANWENDEN"
+            class="eyebrow"
+          >
+            من المعرفة إلى الاستخدام
+          </p>
+          <h1 data-ar="كوّن جملة صحيحة" data-de="Bilde einen richtigen Satz">
+            كوّن جملة صحيحة
+          </h1>
+          <p
+            data-ar="اختر الكلمات بالترتيب لتكوين الجملة. ابدأ بالكلمة المحددة، واضغط على كلمة في إجابتك لإزالتها. ٢٤ تدريبًا في مستويين."
+            data-de="Tippe die Wörter in der richtigen Reihenfolge an. Beginne mit dem angegebenen Wort. Tippe ein Wort in deiner Antwort an, um es zu entfernen. 24 Übungen in zwei Niveaus."
+            class="practice-intro"
+          >
+            اختر الكلمات بالترتيب لتكوين الجملة. ابدأ بالكلمة المحددة، واضغط على
+            كلمة في إجابتك لإزالتها. ٢٤ تدريبًا في مستويين.
+          </p>
+        </div>
+        <span class="welcome-symbol" aria-hidden="true">✳</span>
+      </header>
+      <nav class="practice-links" aria-label="التدريبات / Übungen">
+        <a
+          data-ar="الأصوات المتشابهة"
+          data-de="Ähnliche Laute"
+          href="sounds.html"
+          >الأصوات المتشابهة</a
+        ><a
+          data-ar="تكوين الجمل"
+          data-de="Sätze bilden"
+          href="sentences.html"
+          aria-current="page"
+          >تكوين الجمل</a
+        ><a data-ar="قصص قصيرة" data-de="Kurzgeschichten" href="stories.html"
+          >قصص قصيرة</a
+        >
+      </nav>
+      <p
+        id="practice-audio-status"
+        class="practice-audio-status"
+        role="status"
+        aria-live="polite"
+      ></p>
+
+      <section class="practice-panel" aria-labelledby="sentence-heading">
+        <div class="practice-topline">
+          <div>
+            <label data-ar="المستوى" data-de="Niveau" for="sentence-level"
+              >المستوى</label
+            ><select id="sentence-level">
+              <option value="all" data-ar="كل المستويات" data-de="Alle Niveaus">
+                كل المستويات
+              </option>
+              <option value="A1">A1</option>
+              <option value="A2">A2</option>
+            </select>
+          </div>
+          <span id="sentence-counter" dir="ltr"></span>
+        </div>
+        <p id="sentence-score" class="practice-score" role="status"></p>
+        <progress
+          id="sentence-progress"
+          value="0"
+          max="1"
+          aria-label="التقدم / Fortschritt"
+        ></progress>
+        <h2
+          data-ar="رتّب الكلمات"
+          data-de="Ordne die Wörter"
+          id="sentence-heading"
+          tabindex="-1"
+        >
+          رتّب الكلمات
+        </h2>
+        <div
+          id="sentence-transformation"
+          class="practice-feedback"
+          hidden
+        ></div>
+        <p
+          id="sentence-meaning"
+          class="sentence-meaning"
+          lang="de"
+          dir="ltr"
+        ></p>
+        <p class="sentence-start">
+          <span id="sentence-start-label"></span
+          ><strong id="sentence-start" lang="ar" dir="rtl"></strong>
+        </p>
+        <div
+          id="sentence-answer"
+          class="sentence-answer"
+          role="group"
+          aria-label="الجملة / Satz"
+        ></div>
+        <div
+          id="sentence-bank"
+          class="sentence-bank"
+          role="group"
+          aria-label="الكلمات / Wörter"
+        ></div>
+        <div class="practice-actions">
+          <button
+            data-ar="تحقق من الجملة"
+            data-de="Satz überprüfen"
+            id="sentence-check"
+            type="button"
+            class="practice-button primary-action"
+          >
+            تحقق من الجملة</button
+          ><button
+            data-ar="مسح الترتيب"
+            data-de="Anordnung löschen"
+            id="sentence-clear"
+            type="button"
+            class="practice-button"
+          >
+            مسح الترتيب</button
+          ><button
+            data-ar="تلميح: الكلمة التالية"
+            data-de="Tipp: nächstes Wort"
+            id="sentence-hint"
+            type="button"
+            class="practice-button"
+          >
+            تلميح: الكلمة التالية</button
+          ><button
+            data-ar="◖ استمع للجملة"
+            data-de="◖ Satz anhören"
+            id="sentence-listen"
+            type="button"
+            class="practice-button"
+          >
+            ◖ استمع للجملة
+          </button>
+        </div>
+        <div
+          id="sentence-feedback"
+          class="practice-feedback"
+          aria-live="polite"
+        ></div>
+        <p
+          data-ar="أكملت الجمل! يمكنك مراجعة الحلول أو إعادة التدريب."
+          data-de="Alle Sätze geschafft! Du kannst die Lösungen ansehen oder neu beginnen."
+          id="sentence-summary"
+          class="practice-summary"
+          hidden
+        >
+          أكملت الجمل! يمكنك مراجعة الحلول أو إعادة التدريب.
+        </p>
+        <nav class="card-navigation" aria-label="التنقل / Navigation">
+          <button
+            data-ar="السابق"
+            data-de="Zurück"
+            id="sentence-previous"
+            type="button"
+            class="practice-button"
+          >
+            السابق</button
+          ><button
+            data-ar="التالي"
+            data-de="Weiter"
+            id="sentence-next"
+            type="button"
+            class="practice-button"
+          >
+            التالي
+          </button>
+        </nav>
+        <div class="practice-actions">
+          <button
+            data-ar="إعادة تدريبات هذا المستوى"
+            data-de="Dieses Niveau neu üben"
+            id="sentence-restart"
+            type="button"
+            class="practice-button"
+          >
+            إعادة تدريبات هذا المستوى
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="teacher-credit">إعداد المعلم: <b>محمود بركات</b></footer>
+  </body>
+</html>

@@ -32,6 +32,7 @@
         function updateProgress() {
             const progress = VocabApp.getCurrentVocabProgress();
             document.getElementById("word-position").textContent = `${currentIndex + 1} / ${vocabList.length}`;
+            document.getElementById("card-nav-position").textContent = `${currentIndex + 1} / ${vocabList.length}`;
             document.getElementById("learn-progress-fill").style.width = `${((currentIndex + 1) / Math.max(vocabList.length, 1)) * 100}%`;
             document.getElementById("mastery-text").textContent = `${progress.masteryPercentage}٪ إتقان`;
             renderMasteryStatus(progress.mastery);

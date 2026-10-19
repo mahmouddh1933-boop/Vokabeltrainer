@@ -6,6 +6,7 @@ function setup({
   voices = [{ lang: "ar-SA", name: "Arabic" }],
   native = true,
   recording = false,
+  practiceRecording = false,
   language = "ar",
   behavior = "normal",
 } = {}) {
@@ -68,6 +69,10 @@ function setup({
     context.window.ArabicLetterData = {
       audio: { الباء: "audio/letters/02-name.mp3" },
     };
+  if (practiceRecording)
+    context.window.ArabicPracticeData = {
+      audio: { تِين: "audio/practice/001.mp3" },
+    };
   vm.runInNewContext(
     fs.readFileSync(require.resolve("../js/app.js"), "utf8"),
     context,
@@ -91,6 +96,12 @@ test("Native Arabic speak is invoked synchronously and does not contact online T
   assert.equal(calls.timers.size, 0);
   utterance.onend();
   assert.equal(calls.statuses.at(-1)[1], false);
+});
+test("New listening and story recordings use local files without a native voice", () => {
+  const { app, calls } = setup({ native: false, practiceRecording: true });
+  app.speakArabic("تِين");
+  assert.deepEqual(calls.play, ["audio/practice/001.mp3"]);
+  assert.equal(calls.speak.length, 0);
 });
 test("An initially empty mobile voice list still starts speech immediately in Arabic", () => {
   const { app, calls } = setup({ voices: [] });
