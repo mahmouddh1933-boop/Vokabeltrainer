@@ -55,7 +55,7 @@ Gemeinsame Buchstabendaten und Audiodateizuordnung: `js/letter-data.js`. Aufgabe
 
 ### قواعد العربية · Grammatik
 
-`grammar.html` bietet 20 Lektionen mit deutsch-arabischem Sprachwechsel und insgesamt 240 Übungsfragen (12 pro Lektion). Die fünf bisherigen Lektionen haben jeweils acht zusätzliche Fragen erhalten:
+`grammar.html` bietet 30 Lektionen mit deutsch-arabischem Sprachwechsel und insgesamt 380 Übungsfragen. Die bisherigen 20 Lektionen enthalten je 12 Fragen; die neuen Themen haben je 12, das Präsens 24 sowie Perfekt und Imperativ je 16 Fragen. Fünf Grundlagenthemen sind:
 
 - `#sun-moon`: Sonnen- und Mondbuchstaben, vollständige Buchstabenlisten und Aussprachebeispiele.
 - `#pronouns`: selbstständige Personalpronomen, Dualformen und angehängte Possessivpronomen.
@@ -63,17 +63,31 @@ Gemeinsame Buchstabendaten und Audiodateizuordnung: `js/letter-data.js`. Aufgabe
 - `#number`: Singular, Dual, regelmäßige und gebrochene Plurale sowie nichtmenschliche Plurale.
 - `#basic-verbs`: zwölf Alltagsverben mit Perfekt, Präsens, Bedeutung und Beispielsätzen.
 
-Neu hinzugekommen sind 15 Themen:
+Weitere 15 Themen:
 
 - Rechtschreibung: `#hamza-initial` (Qaṭʿ und Waṣl), `#hamza-medial` und `#hamza-final`.
 - Wortbildung: `#active-participle`, `#passive-participle`, `#instrument-noun` und `#intensive-participle`.
 - Grundlagen und Satzbau: `#word-classes`, `#sentence-types`, `#five-verbs`, `#five-nouns`, `#relative-pronouns`, `#prepositions`, `#defective-verbs` (Kāna) und `#inna-particles`.
 
+Zehn weitere Lektionen behandeln:
+
+- `#numerals`: Genusübereinstimmung und Gegenpolung, elf bis neunzehn, Zehner, zusammengesetzte Zahlen, hundert/tausend, Tamyīz und Zahlenflexion.
+- `#present-inflection`: Indikativ, Subjunktiv, Jussiv, sichtbare und geschätzte Endungen, schwache Verben, die fünf Formen, verborgenes an, feminine und bekräftigende Nūn-Endungen sowie der Modusplatz gebauter Formen (24 Fragen).
+- `#past-construction`: Bau des Perfekts auf Fatḥa, Sukūn oder Ḍamma; Subjektpronomen und Femininmarker, schwache Endungen und syntaktischer Modusplatz (16 Fragen).
+- `#imperative-construction`: Bau auf Sukūn, Wegfall des schwachen Endradikals oder Nūn sowie Fatḥa; Abgrenzung zu Befehls-lām und verbietendem lā (16 Fragen).
+- `#adjectival-attribute`: echte und indirekte Attribute, Kongruenz, Attributsätze und Abgrenzung zum Prädikat.
+- `#idafa`: Kasus beider Glieder, Bestimmtheit, Wegfall von Tanwīn und Nūn, Pronomen und nachgestellte Attribute.
+- `#purpose-object` und `#absolute-object`: Grund-Akkusativ und seine Bedingungen gegenüber Bekräftigung, Art, Häufigkeit und Stellvertretern des Verbalnomens.
+- `#apposition`: identischer Badal, Teil-Ganzes, zugehörige Eigenschaft und korrigierende Apposition mit Kasus und Rückverweis.
+- `#demonstratives`: Nähe/Ferne, Singular/Dual/Plural, nichtmenschliche Plurale, Kasus und Ortsdemonstrativa.
+
+Der letzte Abschnitt von `#relative-pronouns` erklärt die Ṣila und den Rückverweis nun ausdrücklich. Drei Beispiele zeigen allaḏī, man und mā mit vollständiger Erläuterung: Ṣila **qaraʾtuhu**, angehängtes Objektpronomen **-hu** oder implizites Subjekt als Rückverweis. Zwei Übungsfragen prüfen die Unterscheidung zwischen Relativpronomen, ganzem Relativsatz und rückverweisendem Pronomen.
+
 Die Lektionen erklären Regeln, Bedingungen und wichtige Ausnahmen mit farbig markierten Beispielen. Eine Suche auf Arabisch oder Deutsch und die Bereiche Grundlagen, Rechtschreibung, Wortbildung und Satzbau filtern den Katalog. Über die Lektionsauswahl oder den aufklappbaren Index sind alle Themen erreichbar; direkte Links mit Themen-ID bleiben möglich.
 
-Richtige und falsche Antworten erhalten eine Erklärung. Ein Fortschrittsbalken zeigt die beantworteten Fragen; die vorherige Frage kann zur Wiederholung aufgerufen werden. Antworten und Ergebnis bleiben beim Wechsel zwischen Themen und Sprachen innerhalb derselben geöffneten Seite erhalten. Nach der zwölften Frage kann die jeweilige Übung neu begonnen werden. Die Vokabeltest-Statistik bleibt davon unabhängig.
+Richtige und falsche Antworten erhalten eine Erklärung. Ein Fortschrittsbalken zeigt die beantworteten Fragen; die vorherige Frage kann zur Wiederholung aufgerufen werden. Antworten und Ergebnis bleiben beim Wechsel zwischen Themen und Sprachen innerhalb derselben geöffneten Seite erhalten. Nach der letzten Frage kann die jeweilige Übung neu begonnen werden. Die Vokabeltest-Statistik bleibt davon unabhängig.
 
-Inhalte: `js/letter-examples.js`, `js/grammar-data.js` und `js/grammar-expanded.js`. Oberflächen: `js/pages/letters-learning.js`, `js/pages/grammar.js`, `css/grammar.css`. In der Grammatikseite muss `grammar-expanded.js` vor `grammar-data.js` geladen werden.
+Inhalte: `js/letter-examples.js`, `js/grammar-data.js`, `js/grammar-expanded.js` und `js/grammar-syntax.js`. Oberflächen: `js/pages/letters-learning.js`, `js/pages/grammar.js`, `css/grammar.css`. In der Grammatikseite müssen `grammar-expanded.js` und `grammar-syntax.js` vor `grammar-data.js` geladen werden.
 
 ## تصريف الأفعال · Verben lernen
 
@@ -96,11 +110,12 @@ python3 tests/smoke.py
 node --test tests/*.test.js
 python3 tests/verbs-smoke.py
 python3 tests/foundations-smoke.py
+python3 tests/grammar-syntax-smoke.py
 python3 tests/letter-training-smoke.py
 python3 tests/letters-focused-smoke.py
 ```
 
-Die Tests prüfen alle 144 Konjugationstabellen der 48 Verben, Suche, Längenfilter und Imperativübungen sowie alle 240 Grammatikfragen, Themenfilter, Antworterklärungen, Rücknavigation, Zurücksetzen und Sprachwahl, Wortlisten, Lernkarten, einen vollständig beantworteten Multiple-Choice-Test, persistierte Ergebnisse, Statistiken, Excel-Import, den Sprachwechsel in beide Richtungen, mobile Navigation und die Lernseiten bei unterschiedlichen Bildschirmbreiten.
+Die Tests prüfen alle 144 Konjugationstabellen der 48 Verben, Suche, Längenfilter und Imperativübungen sowie alle 380 Grammatikfragen, Themenfilter, Antworterklärungen, Rücknavigation, Zurücksetzen und Sprachwahl, Wortlisten, Lernkarten, einen vollständig beantworteten Multiple-Choice-Test, persistierte Ergebnisse, Statistiken, Excel-Import, den Sprachwechsel in beide Richtungen, mobile Navigation und die Lernseiten bei unterschiedlichen Bildschirmbreiten.
 
 Excel-Import lädt XLSX 0.18.5 über `cdn.jsdelivr.net`. Wenn der Testbrowser den Cloud-HTTPS-Proxy nicht kennt, kann ausschließlich für den Funktionstest dieselbe Bibliothek mit aktiver TLS-Prüfung heruntergeladen und lokal bereitgestellt werden:
 

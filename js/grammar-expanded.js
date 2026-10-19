@@ -3195,14 +3195,36 @@
               de: "Relativsatz und Rückverweis",
             },
             body: {
-              ar: "تكون الصلة جملة أو شبه جملة، ولا محلّ لها من الإعراب. من وما موصولان مشتركان؛ من للعاقل وما لغير العاقل غالباً.",
-              de: "Die Ṣila ist ein Satz oder eine entsprechende adverbiale Ergänzung und hat selbst keinen Kasusplatz. Man bezeichnet meist Personen, mā meist Dinge.",
+              ar: "صلة الموصول جملة أو شبه جملة توضّح معناه ولا محلّ لها من الإعراب. والعائد ضمير ظاهر أو مستتر داخل الصلة يعود على الاسم الموصول. في «هذا الكتاب الذي قرأته» الصلة «قرأته»، والعائد الهاء، وليست الصلة كلمة «الذي». ومن وما موصولان مشتركان؛ من للعاقل وما لغير العاقل غالبًا.",
+              de: "Die Ṣila erläutert das Relativpronomen und hat selbst keinen Kasusplatz. Ein ausdrückliches oder implizites Pronomen innerhalb der Ṣila verweist auf das Relativpronomen zurück. In „Dieses Buch, das ich las“ ist qaraʾtuhu die Ṣila und -hu der Rückverweis; allaḏī selbst gehört nicht zur Ṣila. Man bezieht sich meist auf Personen, mā meist auf Dinge.",
             },
             examples: [
               {
-                ar: "جَاءَ الَّذِي أَكْرَمْتُهُ.",
-                de: "Derjenige, den ich ehrte, kam.",
+                ar: "هَذَا الْكِتَابُ الَّذِي قَرَأْتُهُ.",
+                de: "Dies ist das Buch, das ich gelesen habe.",
+                focus: "قَرَأْتُهُ",
+                note: {
+                  ar: "الاسم الموصول: الذي. الصلة: جملة قرأتُهُ. العائد: الهاء في قرأتُهُ، ضمير مفعول به يعود على الذي، ومرجعه الكتاب.",
+                  de: "Relativpronomen: allaḏī. Ṣila: qaraʾtuhu. Rückverweis: -hu als Objektpronomen mit Bezug auf das Buch.",
+                },
+              },
+              {
+                ar: "أَحْتَرِمُ مَنْ يُسَاعِدُ النَّاسَ.",
+                de: "Ich respektiere, wer den Menschen hilft.",
+                focus: "مَنْ",
+                note: {
+                  ar: "من موصول للعاقل. الصلة: يساعد الناس. العائد: الضمير المستتر هو، فاعل يساعد، يعود على من.",
+                  de: "Man bezieht sich hier auf eine Person. Ṣila: yusāʿidu an-nāsa. Rückverweis: das implizite Subjekt „er“ im Verb.",
+                },
+              },
+              {
+                ar: "قَرَأْتُ مَا كَتَبْتَهُ.",
+                de: "Ich las, was du geschrieben hast.",
                 focus: "هُ",
+                note: {
+                  ar: "ما موصول لغير العاقل هنا. الصلة: كتبتَه. العائد: الهاء المتصلة بالفعل، في محل نصب مفعول به.",
+                  de: "Mā bezieht sich hier auf Geschriebenes. Ṣila: katabtahu. Rückverweis: das angehängte Objektpronomen -hu.",
+                },
               },
             ],
           },
@@ -3310,60 +3332,60 @@
           },
           {
             prompt: {
-              ar: "ما العائد في «جاء الذي أكرمتُهُ»؟",
-              de: "Was ist der Rückverweis in ǧāʾa allaḏī akramtuhu?",
+              ar: "ما العائد في «هذا الكتاب الذي قرأتُهُ»؟",
+              de: "Was ist der Rückverweis in „Dieses Buch, das ich gelesen habe“?",
             },
             options: [
               {
-                ar: "الهاء في أكرمتُه",
-                de: "das -hu an akramtu",
+                ar: "الهاء في قرأتُهُ",
+                de: "das Objektpronomen -hu in qaraʾtuhu",
               },
               {
-                ar: "تاء الفاعل",
-                de: "das Subjekt-Tā",
+                ar: "اسم الإشارة هذا",
+                de: "das Demonstrativum hāḏā",
               },
               {
-                ar: "جاء",
-                de: "ǧāʾa",
+                ar: "كلمة الكتاب",
+                de: "das Wort al-kitāb",
               },
               {
-                ar: "لا يوجد عائد",
-                de: "kein Rückverweis",
+                ar: "الاسم الموصول الذي نفسه",
+                de: "das Relativpronomen allaḏī selbst",
               },
             ],
             correct: 0,
             explanation: {
-              ar: "الهاء تعود على الذي.",
-              de: "Das -hu verweist auf allaḏī zurück.",
+              ar: "الهاء ضمير مفعول به داخل الصلة، يعود على الذي، ومرجعه الكتاب.",
+              de: "-Hu ist das Objektpronomen innerhalb der Ṣila und verweist über allaḏī auf das Buch zurück.",
             },
           },
           {
             prompt: {
-              ar: "ما صلة الموصول في «جاء الذي نجح»؟",
-              de: "Was ist der Relativsatz in ǧāʾa allaḏī naǧaḥa?",
+              ar: "ما صلة الموصول في «هذا الكتاب الذي قرأتُهُ»؟",
+              de: "Welche Wörter bilden die Ṣila in diesem Satz?",
             },
             options: [
               {
-                ar: "جاء وحدها",
-                de: "nur ǧāʾa",
+                ar: "الاسم الموصول الذي",
+                de: "das Relativpronomen allaḏī",
               },
               {
-                ar: "الذي وحدها",
-                de: "nur allaḏī",
+                ar: "جملة قرأتُهُ",
+                de: "der Satz qaraʾtuhu",
               },
               {
-                ar: "حرف جرّ",
-                de: "eine Präposition",
+                ar: "هذا الكتاب",
+                de: "hāḏā al-kitāb",
               },
               {
-                ar: "جملة نجح مع فاعلها المستتر",
-                de: "naǧaḥa mit implizitem Subjekt",
+                ar: "الهاء وحدها",
+                de: "nur das Pronomen -hu",
               },
             ],
-            correct: 3,
+            correct: 1,
             explanation: {
-              ar: "نجح جملة الصلة، وفاعلها المستتر عائد على الذي.",
-              de: "Der Verbalsatz naǧaḥa ist die Ṣila; sein implizites Subjekt verweist zurück.",
+              ar: "الصلة جملة قرأتُهُ، ولا محل لها من الإعراب. الهاء داخلها هي العائد، والاسم الموصول نفسه خارج الصلة.",
+              de: "Die Ṣila ist qaraʾtuhu und hat keinen eigenen Kasusplatz. -Hu ist darin der Rückverweis; das Relativpronomen selbst gehört nicht zur Ṣila.",
             },
           },
           {

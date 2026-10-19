@@ -661,6 +661,11 @@
     lesson.questions.push(...expansion.extraQuestions[lesson.id]);
   });
   lessons.push(...expansion.lessons);
+  const syntax =
+    typeof module !== "undefined" && module.exports
+      ? require("./grammar-syntax.js")
+      : window.ArabicGrammarSyntax;
+  lessons.push(...syntax.lessons);
   const api = { lessons, sunLetters, moonLetters, basicVerbs };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else window.ArabicGrammarData = api;

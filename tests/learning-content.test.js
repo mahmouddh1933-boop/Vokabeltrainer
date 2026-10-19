@@ -55,7 +55,7 @@ test("Sun and moon lists partition the Arabic alphabet correctly", () => {
   assert.deepEqual(sunLetters, Array.from("تثدذرزسشصضطظلن"));
   assert.deepEqual(moonLetters, Array.from("أبجحخعغفقكمهوي"));
 });
-test("20 bilingual lessons, valid highlights, and 240 distinct questions", () => {
+test("30 bilingual lessons, valid highlights, and 380 distinct questions", () => {
   assert.deepEqual(
     lessons.map((l) => l.id),
     [
@@ -79,6 +79,16 @@ test("20 bilingual lessons, valid highlights, and 240 distinct questions", () =>
       "prepositions",
       "defective-verbs",
       "inna-particles",
+      "numerals",
+      "present-inflection",
+      "past-construction",
+      "imperative-construction",
+      "adjectival-attribute",
+      "idafa",
+      "purpose-object",
+      "absolute-object",
+      "apposition",
+      "demonstratives",
     ],
   );
   let questionCount = 0;
@@ -87,8 +97,14 @@ test("20 bilingual lessons, valid highlights, and 240 distinct questions", () =>
       assert.ok(lesson[field].ar.length > 0, `${lesson.id} ${field} ar`);
       assert.ok(lesson[field].de.length > 0, `${lesson.id} ${field} de`);
     }
-    assert.equal(lesson.questions.length, 12);
-    assert.equal(new Set(lesson.questions.map((q) => q.prompt.ar)).size, 12);
+    const count =
+      {
+        "present-inflection": 24,
+        "past-construction": 16,
+        "imperative-construction": 16,
+      }[lesson.id] || 12;
+    assert.equal(lesson.questions.length, count);
+    assert.equal(new Set(lesson.questions.map((q) => q.prompt.ar)).size, count);
     assert.ok(
       ["basics", "spelling", "morphology", "syntax"].includes(lesson.category),
     );
@@ -135,7 +151,7 @@ test("20 bilingual lessons, valid highlights, and 240 distinct questions", () =>
       }
     }
   }
-  assert.equal(questionCount, 240);
+  assert.equal(questionCount, 380);
 });
 test("Key grammar answers and irregular basic verbs are accurate", () => {
   const correct = (lesson, index) =>

@@ -58,15 +58,15 @@
         ...filtered.map((lesson) => {
           const option = document.createElement("option");
           option.value = lesson.id;
-          option.textContent = `${String(lessons.indexOf(lesson) + 1).padStart(2, "0")} · ${localized(lesson.title)}`;
+          option.textContent = `${String(lessons.indexOf(lesson) + 1).padStart(2, "0")} · ${localized(lesson.title)} · ${lesson.questions.length} ${text("سؤالًا", "Fragen")}`;
           return option;
         }),
       );
       $("grammar-lesson-select").value = current.id;
       $("grammar-lesson-select").disabled = !filtered.length;
       $("grammar-catalog-count").textContent = text(
-        `${filtered.length} من ${lessons.length} درسًا · 12 سؤالًا لكل درس`,
-        `${filtered.length} von ${lessons.length} Lektionen · 12 Fragen pro Lektion`,
+        `${filtered.length} من ${lessons.length} درسًا · ${filtered.reduce((sum, l) => sum + l.questions.length, 0)} سؤالًا في النتائج`,
+        `${filtered.length} von ${lessons.length} Lektionen · ${filtered.reduce((sum, l) => sum + l.questions.length, 0)} Fragen in der Auswahl`,
       );
       $("grammar-catalog-empty").hidden = !!filtered.length;
       $("grammar-lesson").hidden = !filtered.length;
