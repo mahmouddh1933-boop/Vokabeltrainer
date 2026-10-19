@@ -32,7 +32,8 @@
         function updateProgress() {
             const progress = VocabApp.getCurrentVocabProgress();
             document.getElementById("word-position").textContent = `${currentIndex + 1} / ${vocabList.length}`;
-            document.getElementById("card-nav-position").textContent = `${currentIndex + 1} / ${vocabList.length}`;
+            const position = document.getElementById("card-nav-position");
+            if (position) position.textContent = `${currentIndex + 1} / ${vocabList.length}`;
             document.getElementById("learn-progress-fill").style.width = `${((currentIndex + 1) / Math.max(vocabList.length, 1)) * 100}%`;
             document.getElementById("mastery-text").textContent = `${progress.masteryPercentage}٪ إتقان`;
             renderMasteryStatus(progress.mastery);
@@ -70,6 +71,7 @@
         document.getElementById("stats-button").addEventListener("click", () => { window.location.href = "./stats.html"; });
         document.getElementById("home-button").addEventListener("click", () => { window.location.href = "./index.html"; });
         showWord();
+        document.getElementById("lesson-loading")?.remove();
     });
 
     function renderSource(source, count) {

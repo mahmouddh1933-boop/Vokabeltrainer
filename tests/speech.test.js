@@ -74,6 +74,10 @@ function setup({
       audio: { تِين: "audio/practice/001.mp3" },
     };
   vm.runInNewContext(
+    fs.readFileSync(require.resolve("../js/storage.js"), "utf8"),
+    context,
+  );
+  vm.runInNewContext(
     fs.readFileSync(require.resolve("../js/app.js"), "utf8"),
     context,
   );

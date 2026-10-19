@@ -1,5 +1,7 @@
 (function () {
     "use strict";
+  const localStorage = window.JisrStorage.local;
+  const sessionStorage = window.JisrStorage.session;
 
     const KEYS = {
         stats: "learningStats",

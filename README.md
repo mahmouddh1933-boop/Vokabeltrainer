@@ -119,6 +119,12 @@ Daten und Konjugationsregeln: `js/verb-data.js`. Oberfläche: `js/pages/verbs.js
 
 ## Funktionstest
 
+Die Download-ZIP enthält JavaScript und CSS direkt in den HTML-Seiten. Dadurch benötigen die Übungen beim lokalen Öffnen keine separat geladenen Skripte oder Stylesheets. Bilder, Schrift und Audio bleiben als Dateien im Ordner; deshalb die ZIP weiterhin vollständig in einen neuen Ordner entpacken und dort `index.html` in Chrome öffnen.
+
+`js/storage.js` fängt verweigerten Speicherzugriff und fehlgeschlagene Schreibvorgänge ab. Die Übungen laufen in diesem Fall mit vorübergehendem Zustand weiter; die Oberfläche weist auf fehlende Speicherung hin. Die Navigation hängt nicht vom zusätzlichen Karten-Zähler ab. Geänderte JS-/CSS-Dateien der Website erhalten Inhaltsversionen in ihren URLs, um gemischte Cache-Versionen zu vermeiden.
+
+Der Download lässt sich mit `python3 tools/build-download.py` neu bauen. Das Skript aktualisiert die Asset-Versionen in den Quell-HTML-Dateien und prüft anschließend die ZIP-Dateien sowie die eingebetteten Skripte. `tests/local-download-smoke.py --base-url http://127.0.0.1:8001` prüft eine separat entpackte und auf Port 8001 bereitgestellte ZIP: alle drei Lernbereiche, Audio, Kartenklick, Navigation und Sprachwechsel bei blockierten separaten Skript-/Stylesheet-Anfragen, verweigertem Speicher und fehlenden neueren DOM-Methoden. Dies ist ein Browsertest der entpackten Dateien; ein physisches Android-Gerät wurde nicht getestet.
+
 Voraussetzungen: Python, Playwright für Python und Chromium unter `/usr/bin/chromium`. Bei laufendem Server:
 
 ```sh

@@ -1,5 +1,6 @@
 (() => {
   "use strict";
+  const localStorage = window.JisrStorage.local;
   const paths = {
     home: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
     book: '<path d="M12 5c-3-2-6-2-10-1v15c4-1 7-1 10 1 3-2 6-2 10-1V4c-4-1-7-1-10 1Zm0 0v15"/>',
@@ -140,7 +141,7 @@
         localStorage.getItem("vocabInterfaceLanguage") ||
         "ar";
       document.querySelectorAll("[data-de][data-ar]").forEach((el) => {
-        const value = el.dataset[lang].replaceAll("\\n", "\n");
+        const value = el.dataset[lang].split("\\n").join("\n");
         if (el.textContent !== value) el.textContent = value;
       });
       sidebar

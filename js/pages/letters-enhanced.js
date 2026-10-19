@@ -1,5 +1,7 @@
 (() => {
   "use strict";
+  const localStorage = window.JisrStorage.local;
+  const sessionStorage = window.JisrStorage.session;
   const data = window.ArabicLetterData.letters;
   const $ = (id) => document.getElementById(id);
   const langs = {

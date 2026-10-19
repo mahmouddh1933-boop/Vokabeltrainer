@@ -1,5 +1,6 @@
 (() => {
   "use strict";
+  const localStorage = window.JisrStorage.local;
   const KEY = "vocabInterfaceLanguage";
   const oldTranslations = {
     "اختر الاختبار": {
@@ -664,6 +665,15 @@
     select.addEventListener("change", (e) => setLang(e.target.value));
     bar.append(label, select);
     document.body.prepend(bar);
+    if (!localStorage.persistent) {
+      const notice = document.createElement("p");
+      notice.className = "storage-notice";
+      notice.setAttribute("role", "status");
+      notice.dataset.ar = "يمكنك متابعة التدرّب، لكن التقدّم مؤقت لأن المتصفح لا يسمح بحفظه. افتح التطبيق مباشرة في Chrome للسماح بالحفظ.";
+      notice.dataset.de = "Du kannst weiterüben. Dein Fortschritt ist vorübergehend, weil der Browser das Speichern blockiert. Öffne die App direkt in Chrome, um das Speichern zu erlauben.";
+      notice.textContent = notice.dataset[lang];
+      document.querySelector("main")?.prepend(notice);
+    }
     if (
       ["", "index.html"].includes(location.pathname.split("/").pop()) &&
       !localStorage.getItem(KEY)

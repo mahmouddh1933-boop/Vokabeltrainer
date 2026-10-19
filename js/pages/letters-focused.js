@@ -1,5 +1,6 @@
 (() => {
   "use strict";
+  const sessionStorage = window.JisrStorage.session;
   document.addEventListener("DOMContentLoaded", () => {
     const $ = (id) => document.getElementById(id);
     const { letters } = window.ArabicLetterData;

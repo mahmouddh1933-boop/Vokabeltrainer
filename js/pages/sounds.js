@@ -9,8 +9,8 @@
     answers: {},
     orders: {},
   });
-  state.answers ||= {};
-  state.orders ||= {};
+  state.answers = state.answers || {};
+  state.orders = state.orders || {};
   if (!D.sounds.some((g) => g.id === state.group)) state.group = "all";
   let heard = new Set();
   const persist = () => P.save("sounds", state);
@@ -135,7 +135,8 @@
       state.index,
       items.length,
     );
-    $("sound-next").disabled ||= !Number.isInteger(answer);
+    $("sound-next").disabled =
+      $("sound-next").disabled || !Number.isInteger(answer);
     $("sound-examples").replaceChildren();
     for (const group of D.sounds.filter(
       (g) => state.group === "all" || g.id === state.group,

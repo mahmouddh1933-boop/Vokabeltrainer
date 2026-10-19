@@ -1,5 +1,7 @@
 (function () {
   "use strict";
+  const localStorage = window.JisrStorage.local;
+  const sessionStorage = window.JisrStorage.session;
   const letters = window.ArabicLetterData.letters.map((d) => [
     d.char,
     d.name,
@@ -57,7 +59,8 @@
   function render() {
     const [char, name, nonjoining] = letters[current];
     $("letter-counter").textContent = `${current + 1} / ${letters.length}`;
-    $("letter-nav-position").textContent = `${current + 1} / ${letters.length}`;
+    if ($("letter-nav-position"))
+      $("letter-nav-position").textContent = `${current + 1} / ${letters.length}`;
     $("letter-name").textContent = name;
     $("letter-front-name").textContent = name;
     $("letter-big").textContent = char;
@@ -114,6 +117,7 @@
     });
     card.classList.remove("flipped");
     card.setAttribute("aria-pressed", "false");
+    $("lesson-loading")?.remove();
     sessionStorage.setItem("lettersLastIndex", String(current));
     window.dispatchEvent(
       new CustomEvent("letterchange", { detail: { index: current } }),

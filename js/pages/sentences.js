@@ -4,7 +4,7 @@
     D = window.ArabicPracticeData;
   const { $, choose: t, el, button, arabic } = P;
   const state = P.load("sentences", { level: "all", index: 0, answers: {} });
-  state.answers ||= {};
+  state.answers = state.answers || {};
   if (!["all", "A1", "A2"].includes(state.level)) state.level = "all";
   const items = () =>
     D.sentences.filter((q) => state.level === "all" || q.level === state.level);

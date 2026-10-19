@@ -1,5 +1,6 @@
 (() => {
   "use strict";
+  const localStorage = window.JisrStorage.local;
   const $ = (id) => document.getElementById(id);
   let lang =
     localStorage.getItem("vocabInterfaceLanguage") === "de" ? "de" : "ar";
@@ -63,6 +64,7 @@
     });
     window.addEventListener("pagehide", stop);
     render();
+    $("lesson-loading")?.remove();
   }
   function navigation(previous, next, index, total) {
     previous.disabled = index <= 0;

@@ -10,8 +10,8 @@
     translations: {},
     answers: {},
   });
-  state.answers ||= {};
-  state.translations ||= {};
+  state.answers = state.answers || {};
+  state.translations = state.translations || {};
   if (!["all", "A1", "A2"].includes(state.level)) state.level = "all";
   const items = () =>
     D.stories.filter((s) => state.level === "all" || s.level === state.level);
@@ -32,7 +32,7 @@
       0,
       Math.min(Number(state.question) || 0, story.questions.length - 1),
     );
-    const answers = (state.answers[story.id] ||= {});
+    const answers = (state.answers[story.id] = state.answers[story.id] || {});
     const translated = !!state.translations[story.id];
     $("story-level").value = state.level;
     $("story-library").replaceChildren();
@@ -145,7 +145,8 @@
       state.question,
       story.questions.length,
     );
-    $("story-question-next").disabled ||= !Number.isInteger(answer);
+    $("story-question-next").disabled =
+      $("story-question-next").disabled || !Number.isInteger(answer);
     P.navigation(
       $("story-previous"),
       $("story-next"),
