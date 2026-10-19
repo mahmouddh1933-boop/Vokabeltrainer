@@ -8,7 +8,7 @@ const { examples, graphemes } = require("../js/letter-examples.js");
 test("Every letter has four presentation forms and six real, nonempty audio files", () => {
   assert.equal(letters.length, 28);
   assert.equal(new Set(letters.map((l) => l.char)).size, 28);
-  assert.equal(Object.keys(audio).length, 168);
+  assert.equal(new Set(Object.values(audio)).size, 168);
   for (const l of letters) {
     assert.equal(l.forms.length, 4);
     for (const form of l.forms) assert.equal(form.normalize("NFKC"), l.char);

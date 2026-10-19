@@ -51,6 +51,8 @@ Jede Runde hat 28 Fragen mit vier Antworten, sofortiger Erklärung und einem far
 
 Die App enthält 168 synthetisierte MP3-Dateien in `audio/letters/`: Buchstabennamen, Beispielwörter und vier Vokal-/Sukunformen pro Buchstabe. Diese Audiodateien funktionieren ohne Internet oder installierte arabische Stimme und werden direkt durch Antippen abgespielt. Deshalb immer die **gesamte ZIP-Datei entpacken**, einschließlich des Audioordners. Bei anderem Text versucht die App zuerst die arabische Gerätestimme und danach Online-TTS. Eine Wiedergabesicherung des Browsers wird mit einer Aufforderung zum erneuten Antippen angezeigt. Details zur Herkunft stehen in `audio/README.md`.
 
+Mehrdeutige Bildwörter besitzen ausdrücklich vokalisierte Aussprachen, etwa **جَمَل** (Kamel) und **ذُرَة** (Mais). Sukun wird mit einem vorausgehenden Laut vorgespielt, beispielsweise **أَبْ**; das jeweilige Hörbeispiel steht unter den Vokalzeichen. Die Rumman-Karte zeigt einen Granatapfel mit sichtbaren Kernen.
+
 Gemeinsame Buchstabendaten und Audiodateizuordnung: `js/letter-data.js`. Aufgaben: `js/letter-training-data.js`. Oberfläche: `js/pages/letter-training.js`, `css/letter-training.css`. Die Wortbeispiele bleiben in `js/letter-examples.js`.
 
 ### قواعد العربية · Grammatik
@@ -113,6 +115,8 @@ python3 tests/foundations-smoke.py
 python3 tests/grammar-syntax-smoke.py
 python3 tests/letter-training-smoke.py
 python3 tests/letters-focused-smoke.py
+python3 tests/letter-pronunciation-smoke.py
+python3 tests/letter-audio-check.py
 ```
 
 Die Tests prüfen alle 144 Konjugationstabellen der 48 Verben, Suche, Längenfilter und Imperativübungen sowie alle 380 Grammatikfragen, Themenfilter, Antworterklärungen, Rücknavigation, Zurücksetzen und Sprachwahl, Wortlisten, Lernkarten, einen vollständig beantworteten Multiple-Choice-Test, persistierte Ergebnisse, Statistiken, Excel-Import, den Sprachwechsel in beide Richtungen, mobile Navigation und die Lernseiten bei unterschiedlichen Bildschirmbreiten.
@@ -127,5 +131,7 @@ python3 tests/smoke.py --xlsx-js /tmp/jisr-xlsx.js
 Die Option ersetzt im Test nur den Abruf der angegebenen Bibliothek und ändert keine Zertifikatsprüfung oder Anwendungseinstellungen. Der Test `letters-focused-smoke.py` prüft die Bindung aller 28 Karten an ihre drei Übungen, die Seitenreihenfolge, vollständige Runden für Bā und Dāl, Auswahl und Korrektur der Kreise, Ergebnisse, Wiederholung, pro Buchstabe getrennte Lernstände, Sprachwechsel und Bildschirmgrößen. Die Unit-Tests validieren alle 1.344 Aufgaben sowie die Verbindungen und Wortpositionen.
 
 Der zusätzliche gemischte Buchstabentest prüft alle 112 Fragen, Korrekturen, Sprachwechsel, Ergebnis, Durchsicht und Neustart in einer mobilen Chrome-Emulation. Er prüft außerdem die tatsächliche MP3-Wiedergabe durch Touch-Eingaben bei blockierten externen Anfragen. Die Unit-Tests prüfen unter anderem den direkten Gerätestimmen-Aufruf, verzögert verfügbare Stimmen, gesperrte Wiedergabe, Fallbacks und den Abbruch veralteter Anfragen. Ein Test auf einem physischen Android-Gerät wurde in der Cloud nicht durchgeführt.
+
+`letter-pronunciation-smoke.py` prüft die 28 Sukun-Hörbeispiele, die korrigierten Bildwörter, Tā, das Granatapfelbild und beide Oberflächensprachen mit gesperrtem externem Netzwerk. `letter-audio-check.py` benötigt zusätzlich FFmpeg/FFprobe und prüft alle 168 MP3-Dateien auf Dekodierfehler und Stille.
 
 Online-Aussprache für sonstigen Text benötigt Zugriff auf `translate.google.com` bzw. `translate.googleapis.com`; ihre Verfügbarkeit hängt vom externen Dienst ab.

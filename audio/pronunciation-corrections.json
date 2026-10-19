@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-19",
+  "provider": "Google Translate TTS (ar)",
+  "slow": true,
+  "clips": [
+    {
+      "text": "اِقْرَأْ",
+      "path": "audio/letters/01-vowel-3.mp3"
+    },
+    {
+      "text": "أَبْ",
+      "path": "audio/letters/02-vowel-3.mp3"
+    },
+    {
+      "text": "أَتْ",
+      "path": "audio/letters/03-vowel-3.mp3"
+    },
+    {
+      "text": "أَثْ",
+      "path": "audio/letters/04-vowel-3.mp3"
+    },
+    {
+      "text": "أَجْ",
+      "path": "audio/letters/05-vowel-3.mp3"
+    },
+    {
+      "text": "جَمَل",
+      "path": "audio/letters/05-word.mp3"
+    },
+    {
+      "text": "أَحْ",
+      "path": "audio/letters/06-vowel-3.mp3"
+    },
+    {
+      "text": "أَخْ",
+      "path": "audio/letters/07-vowel-3.mp3"
+    },
+    {
+      "text": "أَدْ",
+      "path": "audio/letters/08-vowel-3.mp3"
+    },
+    {
+      "text": "أَذْ",
+      "path": "audio/letters/09-vowel-3.mp3"
+    },
+    {
+      "text": "ذُرَة",
+      "path": "audio/letters/09-word.mp3"
+    },
+    {
+      "text": "أَرْ",
+      "path": "audio/letters/10-vowel-3.mp3"
+    },
+    {
+      "text": "رُمَّان",
+      "path": "audio/letters/10-word.mp3"
+    },
+    {
+      "text": "أَزْ",
+      "path": "audio/letters/11-vowel-3.mp3"
+    },
+    {
+      "text": "أَسْ",
+      "path": "audio/letters/12-vowel-3.mp3"
+    },
+    {
+      "text": "أَشْ",
+      "path": "audio/letters/13-vowel-3.mp3"
+    },
+    {
+      "text": "أَصْ",
+      "path": "audio/letters/14-vowel-3.mp3"
+    },
+    {
+      "text": "أَضْ",
+      "path": "audio/letters/15-vowel-3.mp3"
+    },
+    {
+      "text": "ضِفْدَع",
+      "path": "audio/letters/15-word.mp3"
+    },
+    {
+      "text": "أَطْ",
+      "path": "audio/letters/16-vowel-3.mp3"
+    },
+    {
+      "text": "أَظْ",
+      "path": "audio/letters/17-vowel-3.mp3"
+    },
+    {
+      "text": "ظَرْف",
+      "path": "audio/letters/17-word.mp3"
+    },
+    {
+      "text": "أَعْ",
+      "path": "audio/letters/18-vowel-3.mp3"
+    },
+    {
+      "text": "عِنَب",
+      "path": "audio/letters/18-word.mp3"
+    },
+    {
+      "text": "أَغْ",
+      "path": "audio/letters/19-vowel-3.mp3"
+    },
+    {
+      "text": "أَفْ",
+      "path": "audio/letters/20-vowel-3.mp3"
+    },
+    {
+      "text": "أَقْ",
+      "path": "audio/letters/21-vowel-3.mp3"
+    },
+    {
+      "text": "أَكْ",
+      "path": "audio/letters/22-vowel-3.mp3"
+    },
+    {
+      "text": "أَلْ",
+      "path": "audio/letters/23-vowel-3.mp3"
+    },
+    {
+      "text": "أَمْ",
+      "path": "audio/letters/24-vowel-3.mp3"
+    },
+    {
+      "text": "أَنْ",
+      "path": "audio/letters/25-vowel-3.mp3"
+    },
+    {
+      "text": "أَهْ",
+      "path": "audio/letters/26-vowel-3.mp3"
+    },
+    {
+      "text": "أَوْ",
+      "path": "audio/letters/27-vowel-3.mp3"
+    },
+    {
+      "text": "أَيْ",
+      "path": "audio/letters/28-vowel-3.mp3"
+    },
+    {
+      "text": "تَاء",
+      "path": "audio/letters/03-name.mp3"
+    },
+    {
+      "text": "تَ",
+      "path": "audio/letters/03-vowel-0.mp3"
+    },
+    {
+      "text": "تِ",
+      "path": "audio/letters/03-vowel-1.mp3"
+    },
+    {
+      "text": "تُ",
+      "path": "audio/letters/03-vowel-2.mp3"
+    }
+  ]
+}

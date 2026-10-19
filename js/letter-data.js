@@ -47,6 +47,7 @@
         name: "الجيم",
         de: "Dschim",
         word: "جمل",
+        spokenWord: "جَمَل",
         meaning: "Kamel",
         img: "images/letters/05.svg",
         forms: ["ﺟ", "ﺠ", "ﺝ", "ﺞ"],
@@ -87,6 +88,7 @@
         name: "الذال",
         de: "Dhal",
         word: "ذرة",
+        spokenWord: "ذُرَة",
         meaning: "Mais",
         img: "images/letters/09.svg",
         forms: ["ﺫ", "ﺬ", "ﺫ", "ﺬ"],
@@ -97,8 +99,9 @@
         name: "الراء",
         de: "Ra",
         word: "رمان",
+        spokenWord: "رُمَّان",
         meaning: "Granatapfel",
-        img: "images/letters/10.svg",
+        img: "images/letters/10.png",
         forms: ["ﺭ", "ﺮ", "ﺭ", "ﺮ"],
         nonjoining: true,
       },
@@ -147,6 +150,7 @@
         name: "الضاد",
         de: "Dad",
         word: "ضفدع",
+        spokenWord: "ضِفْدَع",
         meaning: "Frosch",
         img: "images/letters/15.svg",
         forms: ["ﺿ", "ﻀ", "ﺽ", "ﺾ"],
@@ -167,6 +171,7 @@
         name: "الظاء",
         de: "Za (emphatisch)",
         word: "ظرف",
+        spokenWord: "ظَرْف",
         meaning: "Briefumschlag",
         img: "images/letters/17.svg",
         forms: ["ﻇ", "ﻈ", "ﻅ", "ﻆ"],
@@ -177,6 +182,7 @@
         name: "العين",
         de: "Ain",
         word: "عنب",
+        spokenWord: "عِنَب",
         meaning: "Trauben",
         img: "images/letters/18.svg",
         forms: ["ﻋ", "ﻌ", "ﻉ", "ﻊ"],
@@ -454,6 +460,16 @@
       يْ: "audio/letters/28-vowel-3.mp3",
     },
   };
+  // A consonant with sukun needs a preceding sound to be heard.
+  // Keep the isolated-form aliases for existing callers of the audio API.
+  for (const letter of data.letters) {
+    letter.sukunSample =
+      letter.char === "أ" ? "اِقْرَأْ" : "أَ" + letter.char + "ْ";
+    data.audio[letter.sukunSample.normalize("NFC")] =
+      data.audio[(letter.char + "ْ").normalize("NFC")];
+    if (letter.spokenWord)
+      data.audio[letter.spokenWord.normalize("NFC")] = data.audio[letter.word];
+  }
   if (typeof module !== "undefined" && module.exports) module.exports = data;
   else window.ArabicLetterData = data;
 })();

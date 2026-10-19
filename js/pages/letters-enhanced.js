@@ -27,6 +27,7 @@
       score: "النتيجة",
       speech: "الصوت غير متوفر في هذا المتصفح أو الجهاز",
       names: ["فتحة", "كسرة", "ضمة", "سكون"],
+      sukunHelp: "الحرف الساكن لا يُنطق وحده؛ استمع إليه مع صوت قبله:",
     },
     de: {
       home: "← Zur Startseite",
@@ -53,6 +54,7 @@
       score: "Punkte",
       speech: "Sprachausgabe auf diesem Gerät nicht verfügbar",
       names: ["Fatha", "Kasra", "Damma", "Sukun"],
+      sukunHelp: "Ein Buchstabe mit Sukun braucht einen vorausgehenden Laut. Hörbeispiel:",
     },
   };
   let lang =
@@ -69,7 +71,11 @@
     const d = data[index];
     $("letter-card-image").src = d.img;
     $("letter-card-image").alt = d.word + " / " + d.meaning;
-    window.ArabicLetterExamples.highlight($("letter-card-word"), d.word, 0);
+    window.ArabicLetterExamples.highlight(
+      $("letter-card-word"),
+      d.spokenWord || d.word,
+      0,
+    );
     $("letter-card-translation").textContent = d.meaning;
     const signs = ["َ", "ِ", "ُ", "ْ"];
     $("harakat-row").replaceChildren();
@@ -83,9 +89,11 @@
         "</span><span>" +
         tr("names")[i] +
         "</span>";
-      b.onclick = () => speak(shown);
+      b.onclick = () => speak(i === 3 ? d.sukunSample : shown);
       $("harakat-row").append(b);
     });
+    $("sukun-help-text").textContent = tr("sukunHelp");
+    $("sukun-sample").textContent = d.sukunSample;
     drawGuide();
   }
   function setLanguage(l) {
@@ -108,13 +116,13 @@
   });
   $("card-say-word").addEventListener("click", (e) => {
     e.stopPropagation();
-    speak(data[index].word);
+    speak(data[index].spokenWord || data[index].word);
   });
   $("card-say-word").addEventListener("keydown", (e) => {
     if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
       e.stopPropagation();
-      speak(data[index].word);
+      speak(data[index].spokenWord || data[index].word);
     }
   });
   window.addEventListener("letterchange", (e) => {
