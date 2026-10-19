@@ -76,9 +76,9 @@ with ZipFile(args.output, 'w', ZIP_DEFLATED) as archive:
 with ZipFile(args.output) as archive:
     assert archive.testzip() is None
     for name, payload in files.items(): assert archive.read(name) == payload, name
-    assert len([name for name in files if name.endswith('.mp3')]) == 288
-    for name in ['huruf','lernseite','sounds','sentences','stories']:
+    assert len([name for name in files if name.endswith('.mp3')]) == 439
+    for name in ['huruf','lernseite','sounds','sentences','stories','book-level-two']:
         html = archive.read('Vokabeltrainer/'+name+'.html').decode()
         assert '<script data-source="js/storage.js">' in html
         assert not re.search(r'<script\b[^>]*\bsrc=["\'](?:js/|\./js/)', html)
-print(f'ZIP verified: {len(files)} files, self-contained HTML scripts/styles, 288 MP3 clips; {args.output.stat().st_size} bytes.')
+print(f'ZIP verified: {len(files)} files, self-contained HTML scripts/styles, 439 MP3 clips; {args.output.stat().st_size} bytes.')

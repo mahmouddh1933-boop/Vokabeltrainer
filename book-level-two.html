@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#194e40" />
+    <title>الكتاب المستوى الثاني · Jisr</title>
+    <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
+    <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
+    <link rel="stylesheet" href="css/modern.css?v=8ba921c3f4f7" />
+    <link rel="stylesheet" href="css/practice.css?v=e55c73e03b36" />
+    <link rel="stylesheet" href="css/book-two.css?v=37f92365d556" />
+    <script src="js/storage.js?v=eafa6563f526" defer></script>
+    <script src="js/app.js?v=c13d41c385d7" defer></script>
+    <script src="js/letter-data.js?v=66a5c99a69b3" defer></script>
+    <script src="js/letter-examples.js?v=13e985f53de1" defer></script>
+    <script src="js/book-two-data.js?v=2baa8a249032" defer></script>
+    <script src="js/interface-languages.js?v=f84e2acf2cd4" defer></script>
+    <script src="js/design.js?v=be22c4ce2842" defer></script>
+    <script src="js/practice-core.js?v=81b88bc2a7c0" defer></script>
+    <script src="js/pages/book-two.js?v=ae9e496d4e0f" defer></script>
+  </head>
+  <body>
+    <main class="container practice-page book-page">
+      <p id="lesson-loading" role="status">
+        جارٍ تحميل الكتاب… استخرج ملف ZIP كاملًا وافتح index.html في Chrome إذا
+        استمرت هذه الرسالة.
+      </p>
+      <header class="page-heading">
+        <div>
+          <p
+            class="eyebrow"
+            data-ar="أقرأ · أتدرّب · أكتب"
+            data-de="LESEN · ÜBEN · SCHREIBEN"
+          >
+            أقرأ · أتدرّب · أكتب
+          </p>
+          <h1 data-ar="الكتاب المستوى الثاني" data-de="Das Buch · Stufe zwei">
+            الكتاب المستوى الثاني
+          </h1>
+          <p
+            class="practice-intro"
+            data-ar="٢٨ درسًا للحروف العربية. تعلّم بالكلمات والصور والنصوص القصيرة، ثم طبّق واكتب. يمكنك طباعة ورقة عمل لكل حرف."
+            data-de="28 Buchstabenlektionen mit Bildwörtern, kurzen Texten, Sprachübungen und Schreibtraining. Für jeden Buchstaben kannst du ein Arbeitsblatt drucken."
+          >
+            ٢٨ درسًا للحروف العربية. تعلّم بالكلمات والصور والنصوص القصيرة، ثم
+            طبّق واكتب. يمكنك طباعة ورقة عمل لكل حرف.
+          </p>
+          <p id="book-total" class="practice-score"></p>
+        </div>
+        <span class="welcome-symbol" aria-hidden="true">▤</span>
+      </header>
+      <details class="book-index">
+        <summary
+          data-ar="فهرس الكتاب · اختر حرفًا"
+          data-de="Inhaltsverzeichnis · Buchstaben wählen"
+        >
+          فهرس الكتاب · اختر حرفًا
+        </summary>
+        <div id="book-index-grid" class="book-index-grid"></div>
+      </details>
+      <section class="book-lesson-header" aria-labelledby="book-lesson-title">
+        <div class="book-lesson-copy">
+          <p class="eyebrow" data-ar="درس الحرف" data-de="BUCHSTABENLEKTION">
+            درس الحرف
+          </p>
+          <h2 id="book-lesson-title" tabindex="-1"></h2>
+          <p id="book-topic"></p>
+        </div>
+        <span
+          id="book-letter"
+          class="book-letter"
+          lang="ar"
+          aria-hidden="true"
+        ></span>
+      </section>
+      <nav
+        class="card-navigation book-navigation"
+        aria-label="التنقل بين الدروس / Lektionen wechseln"
+      >
+        <button id="book-previous" type="button">
+          <span class="nav-arrow" aria-hidden="true"></span
+          ><span data-ar="السابق" data-de="Zurück">السابق</span>
+        </button>
+        <span
+          id="book-position"
+          class="card-position"
+          aria-live="polite"
+        ></span>
+        <button id="book-next" type="button">
+          <span data-ar="التالي" data-de="Weiter">التالي</span
+          ><span class="nav-arrow" aria-hidden="true"></span>
+        </button>
+      </nav>
+      <div class="book-toolbar">
+        <div
+          class="filter-row"
+          role="group"
+          aria-label="أقسام الدرس / Lektionsbereiche"
+        >
+          <button
+            class="filter-chip"
+            type="button"
+            data-book-tab="learn"
+            aria-pressed="true"
+            data-ar="١ · أقرأ وأتعلّم"
+            data-de="1 · Lesen und lernen"
+          >
+            ١ · أقرأ وأتعلّم
+          </button>
+          <button
+            class="filter-chip"
+            type="button"
+            data-book-tab="practice"
+            aria-pressed="false"
+            data-ar="٢ · أتدرّب"
+            data-de="2 · Üben"
+          >
+            ٢ · أتدرّب
+          </button>
+          <button
+            class="filter-chip"
+            type="button"
+            data-book-tab="write"
+            aria-pressed="false"
+            data-ar="٣ · أكتب"
+            data-de="3 · Schreiben"
+          >
+            ٣ · أكتب
+          </button>
+        </div>
+        <button
+          id="book-print-button"
+          class="practice-button"
+          type="button"
+          data-ar="طباعة درس الحرف"
+          data-de="Arbeitsblatt drucken"
+        >
+          طباعة درس الحرف
+        </button>
+      </div>
+      <p
+        id="practice-audio-status"
+        class="practice-audio-status"
+        role="status"
+        aria-live="polite"
+      ></p>
+      <div class="book-progress-row">
+        <span id="book-score" class="practice-score" role="status"></span
+        ><progress
+          id="book-progress"
+          value="0"
+          max="18"
+          aria-label="تقدم الدرس / Lektionsfortschritt"
+        ></progress>
+      </div>
+      <section id="book-learn">
+        <section class="practice-panel">
+          <h3
+            data-ar="كلمات الحرف · ألاحظ وأقرأ"
+            data-de="Bildwörter · beobachten und lesen"
+          >
+            كلمات الحرف · ألاحظ وأقرأ
+          </h3>
+          <div id="book-vocabulary" class="book-vocabulary"></div>
+        </section>
+        <section class="practice-panel">
+          <h3 data-ar="أشكال الحرف في الكلمات" data-de="Schreibformen im Wort">
+            أشكال الحرف في الكلمات
+          </h3>
+          <div id="book-forms" class="book-forms"></div>
+        </section>
+        <section class="practice-panel">
+          <div class="practice-topline">
+            <h3 data-ar="أقرأ النص وأستمع" data-de="Text lesen und hören">
+              أقرأ النص وأستمع
+            </h3>
+            <button
+              id="book-translate"
+              class="practice-button"
+              type="button"
+            ></button>
+          </div>
+          <div id="book-reading"></div>
+        </section>
+        <section class="practice-panel book-language">
+          <p class="eyebrow" data-ar="فقرة لغوية" data-de="SPRACHBAUSTEIN">
+            فقرة لغوية
+          </p>
+          <h3 id="book-grammar-title"></h3>
+          <p id="book-grammar-rule"></p>
+          <div id="book-grammar-examples"></div>
+        </section>
+      </section>
+      <section id="book-practice" hidden>
+        <div id="book-exercises"></div>
+        <p
+          id="book-complete"
+          class="practice-summary"
+          hidden
+          data-ar="أكملت تمارين هذا الحرف! راجع الإجابات وتدرّب على الكتابة، ثم انتقل للدرس التالي."
+          data-de="Alle Aufgaben dieser Lektion sind bearbeitet! Sieh dir die Antworten an, übe das Schreiben und gehe zur nächsten Lektion."
+        >
+          أكملت تمارين هذا الحرف! راجع الإجابات وتدرّب على الكتابة، ثم انتقل
+          للدرس التالي.
+        </p>
+        <button
+          id="book-reset"
+          class="practice-button"
+          type="button"
+          data-ar="إعادة تمارين هذا الحرف"
+          data-de="Aufgaben dieses Buchstabens neu beginnen"
+        >
+          إعادة تمارين هذا الحرف
+        </button>
+      </section>
+      <section id="book-write" class="practice-panel" hidden>
+        <h3 data-ar="أقرأ وأنسخ" data-de="Lesen und nachschreiben">
+          أقرأ وأنسخ
+        </h3>
+        <p
+          data-ar="اختر الحرف أو الكلمة. تتبّع الدليل بإصبعك أو بالفأرة، ثم أخفه وحاول الكتابة وحدك. تُحفظ اللوحة لكل كلمة على حدة."
+          data-de="Wähle den Buchstaben oder ein Wort. Zeichne mit Finger oder Maus nach, blende die Vorlage aus und schreibe selbst. Jede Vorlage hat eine eigene gespeicherte Zeichenfläche."
+        >
+          اختر الحرف أو الكلمة. تتبّع الدليل بإصبعك أو بالفأرة، ثم أخفه وحاول
+          الكتابة وحدك. تُحفظ اللوحة لكل كلمة على حدة.
+        </p>
+        <div id="book-write-choices" class="filter-row"></div>
+        <div class="book-canvas-frame">
+          <canvas
+            id="book-canvas"
+            width="900"
+            height="320"
+            aria-label="لوحة كتابة الحرف والكلمة / Zeichenfläche für Buchstaben und Wörter"
+          ></canvas>
+        </div>
+        <div class="practice-actions">
+          <button id="book-guide" class="practice-button" type="button"></button
+          ><button
+            id="book-undo"
+            class="practice-button"
+            type="button"
+            data-ar="تراجع عن الخط الأخير"
+            data-de="Letzten Strich zurücknehmen"
+          >
+            تراجع عن الخط الأخير</button
+          ><button
+            id="book-clear"
+            class="practice-button"
+            type="button"
+            data-ar="مسح هذه اللوحة"
+            data-de="Diese Zeichenfläche leeren"
+          >
+            مسح هذه اللوحة
+          </button>
+        </div>
+      </section>
+      <p class="book-credits">
+        <a
+          href="images/book-two/CREDITS.md"
+          data-ar="مصادر الرسوم"
+          data-de="Bildnachweise"
+          >مصادر الرسوم</a
+        >
+        · Twemoji / CC BY 4.0
+      </p>
+      <section id="book-print" hidden></section>
+    </main>
+    <footer class="teacher-credit">إعداد المعلم: <b>محمود بركات</b></footer>
+  </body>
+</html>

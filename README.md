@@ -67,6 +67,16 @@ Antworten, aktuelle Aufgaben und Einstellungen dieser Bereiche werden lokal im B
 
 Vokabel- und Buchstabenkarten besitzen direkt unter der Karte eine eigene Navigation mit großen Vor-/Zurück-Schaltflächen, Richtungszeichen und aktuellem Kartenstand. Die vorhandenen Bedienelemente behalten ihre IDs und funktionieren mit Tastatur und Touch.
 
+## Das Buch · Stufe zwei / الكتاب المستوى الثاني
+
+`book-level-two.html` ist ein eigener Bereich neben den bisherigen Lernseiten. Startseite und Seitenleiste verlinken alle 28 Buchstabenlektionen. Die Bezeichnung „Stufe zwei“ gehört zu diesem Arbeitsbuch und bezeichnet keine CEFR-Einstufung.
+
+Jede Lektion enthält drei vokalisierte Bildwörter, die vier Buchstabenformen mit realen Beispielen, drei kurze Lesesätze und einen eigenen Sprachbaustein. Darauf folgen 18 überprüfbare Aufgaben: drei Bild-Wort-Zuordnungen, drei fehlende Buchstaben, sechs Sortieraufgaben nach dem **Anfangsbuchstaben**, zwei Textfragen und vier schreibbare Sprachaufgaben. Das sind insgesamt **504 Aufgaben**. Die Lām-Lektion übt unter anderem Antworten in der ersten Person mit **لا النافية**, im Unterschied zum verbietenden **لا الناهية**.
+
+Vorlesen, optionale deutsche Textübersetzung, direkte Antworten mit Rückmeldung, ein alphabetisches Inhaltsverzeichnis und Vor-/Zurück-Navigation unterstützen das Lernen. Die Übungen speichern ihre Antworten unabhängig von anderen Bereichen. Zum Schreiben besitzt jeder Buchstabe und jedes Bildwort eine eigene linierte Zeichenfläche mit Vorlage, Rückgängig- und Löschfunktion. Handschrift wird gespeichert, aber nicht automatisch bewertet. „Arbeitsblatt drucken“ erstellt zwei A4-Seiten für den aktuellen Buchstaben mit freien Antwortzeilen und Schreibrastern. Die Printansicht zeigt die Aufgaben ohne gespeicherte Lösungen.
+
+Die 168 Wort-/Textausschnitte verwenden 17 bereits vorhandene und **151 zusätzliche synthetische MP3s** in `audio/book-two/`. Insgesamt enthält der Download nun **439 MP3-Dateien**. Syntheseeingaben: `audio/book-two-manifest.json`; Daten: `js/book-two-data.js`; Oberfläche: `js/pages/book-two.js`, `css/book-two.css`. Die 76 Twemoji-SVGs stehen unter CC BY 4.0; Quellen und die sechs neu erstellten Sonderillustrationen sind in `images/book-two/CREDITS.md` dokumentiert. Bilder und Audiodateien werden mitgeliefert und benötigen zur Wiedergabe kein Internet.
+
 Gemeinsame Buchstabendaten und Audiodateizuordnung: `js/letter-data.js`. Aufgaben: `js/letter-training-data.js`. Oberfläche: `js/pages/letter-training.js`, `css/letter-training.css`. Die Wortbeispiele bleiben in `js/letter-examples.js`.
 
 ### قواعد العربية · Grammatik
@@ -137,6 +147,8 @@ python3 tests/letter-training-smoke.py
 python3 tests/letters-focused-smoke.py
 python3 tests/letter-pronunciation-smoke.py
 python3 tests/practice-smoke.py
+python3 tests/book-two-smoke.py
+python3 tests/book-print-smoke.py
 python3 tests/letter-audio-check.py
 ```
 
@@ -153,6 +165,6 @@ Die Option ersetzt im Test nur den Abruf der angegebenen Bibliothek und ändert 
 
 Der zusätzliche gemischte Buchstabentest prüft alle 112 Fragen, Korrekturen, Sprachwechsel, Ergebnis, Durchsicht und Neustart in einer mobilen Chrome-Emulation. Er prüft außerdem die tatsächliche MP3-Wiedergabe durch Touch-Eingaben bei blockierten externen Anfragen. Die Unit-Tests prüfen unter anderem den direkten Gerätestimmen-Aufruf, verzögert verfügbare Stimmen, gesperrte Wiedergabe, Fallbacks und den Abbruch veralteter Anfragen. Ein Test auf einem physischen Android-Gerät wurde in der Cloud nicht durchgeführt.
 
-`letter-pronunciation-smoke.py` prüft die 28 Sukun-Hörbeispiele, die korrigierten Bildwörter, Tā, das Granatapfelbild und beide Oberflächensprachen mit gesperrtem externem Netzwerk. `practice-smoke.py` beantwortet alle 36 Hörfragen, 24 Satzbauaufgaben und 24 Verständnisfragen, prüft Wiedergabe der 120 neuen Clips, Korrekturen, Tipps, Persistenz, Filter und Tastatur-/Touch-Navigation. `letter-audio-check.py` benötigt zusätzlich FFmpeg/FFprobe und prüft alle 288 MP3-Dateien auf Dekodierfehler und Stille.
+`letter-pronunciation-smoke.py` prüft die 28 Sukun-Hörbeispiele, die korrigierten Bildwörter, Tā, das Granatapfelbild und beide Oberflächensprachen mit gesperrtem externem Netzwerk. `practice-smoke.py` beantwortet alle 36 Hörfragen, 24 Satzbauaufgaben und 24 Verständnisfragen, prüft Wiedergabe der 120 neuen Clips, Korrekturen, Tipps, Persistenz, Filter und Tastatur-/Touch-Navigation. `book-two-smoke.py` prüft alle 28 Lektionen mit 504 beantworteten Aufgaben, 168 Audioausgaben, Bildzuordnungen, Handschrift, Speicherung, Sprache und Druckansicht. `letter-audio-check.py` benötigt zusätzlich FFmpeg/FFprobe und prüft alle 439 MP3-Dateien auf Dekodierfehler und Stille.
 
 Online-Aussprache für sonstigen Text benötigt Zugriff auf `translate.google.com` bzw. `translate.googleapis.com`; ihre Verfügbarkeit hängt vom externen Dienst ab.

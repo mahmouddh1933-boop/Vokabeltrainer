@@ -15,6 +15,7 @@ with sync_playwright() as p:
         if denied:
             page.add_init_script('''for(const key of ['localStorage','sessionStorage'])
                 Object.defineProperty(window,key,{configurable:true,get(){throw new DOMException('Denied','SecurityError')}});''')
+            page.add_init_script('History.prototype.replaceState=function(){throw new DOMException("Denied","SecurityError")};')
         if mode == 'older-dom':
             page.add_init_script('delete Element.prototype.replaceChildren; String.prototype.replaceAll=undefined;')
         page.add_init_script('''window.__plays=0;const play=HTMLMediaElement.prototype.play;
@@ -50,6 +51,23 @@ with sync_playwright() as p:
         assert page.locator('#story-options .is-correct').count() == 1
         page.locator('#story-question-next').tap()
         page.locator('#story-next').tap(); assert page.locator('#story-counter').inner_text() == '2 / 6'
+        open_page('book-level-two')
+        assert page.locator('#book-vocabulary .book-word-card').count() == 3
+        assert page.locator('#book-exercises .book-task').count() == 18
+        page.locator('#book-next').tap(); assert page.locator('#book-letter').inner_text() == 'ب'
+        page.locator('#book-previous').tap(); assert page.locator('#book-letter').inner_text() == 'أ'
+        page.evaluate('location.hash="letter-23"')
+        page.wait_for_function('document.getElementById("book-letter").textContent==="ل"')
+        page.locator('[data-book-tab="practice"]').tap()
+        page.locator('#book-q-g0 input').fill('لا أشرب القهوة')
+        page.locator('#book-q-g0 input').press('Enter')
+        assert 'أحسنت' in page.locator('#book-q-g0 .book-task-feedback').inner_text()
+        page.locator('[data-book-tab="write"]').tap()
+        assert page.locator('#book-canvas').is_visible()
+        page.emulate_media(media='print')
+        assert page.locator('#book-print').is_visible()
+        assert page.locator('#book-print .book-print-page').count() == 2
+        page.emulate_media(media='screen')
         open_page('huruf')
         page.locator('#letter-card').tap(); assert 'flipped' in page.locator('#letter-card').get_attribute('class')
         page.locator('#letter-card').tap(); assert 'flipped' not in page.locator('#letter-card').get_attribute('class')
@@ -61,5 +79,5 @@ with sync_playwright() as p:
         assert not errors, errors
         assert not separate_assets, separate_assets
         context.close()
-        print(f'PASS extracted ZIP: all three activities, real audio, card flip/navigation, language; mode={mode}; no separate scripts or styles required',flush=True)
+        print(f'PASS extracted ZIP: three activities + second-level book, real audio, card flip/navigation, language; mode={mode}; no separate scripts or styles required',flush=True)
     browser.close()

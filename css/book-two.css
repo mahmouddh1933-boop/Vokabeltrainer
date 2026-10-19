@@ -1,0 +1,569 @@
+.book-page {
+  max-width: 1120px !important;
+}
+.book-index {
+  background: #fff;
+  border: 1px solid #dce5d5;
+  border-radius: 16px;
+  padding: 14px 18px;
+  margin: 20px 0;
+}
+.book-index summary {
+  font-weight: 700;
+  cursor: pointer;
+}
+.book-index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(42px, 1fr));
+  gap: 6px;
+  margin-top: 16px;
+}
+.book-index-letter {
+  border: 1px solid #dbe4d1;
+  border-radius: 10px;
+  background: #f5f8ee;
+  color: #2d5940;
+  font-size: 1.5rem;
+  min-width: 0;
+  padding: 4px !important;
+}
+.book-index-letter[aria-current="true"] {
+  background: #194e40;
+  color: #fff;
+}
+.book-lesson-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px 26px;
+  background: #f4f1e5;
+  border: 1px solid #e8e2ce;
+  border-radius: 23px;
+  margin-top: 22px;
+}
+.book-lesson-header h2 {
+  margin: 5px 0;
+  font-size: 1.65rem;
+  scroll-margin-top: 100px;
+}
+.book-lesson-header p {
+  margin: 3px 0;
+}
+.book-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 90px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #e9dfbc;
+  color: #69501e;
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.book-page .book-navigation {
+  margin-top: 9px;
+  max-width: none;
+}
+.book-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.book-toolbar button {
+  font-size: 0.9rem;
+}
+.book-progress-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.book-progress-row progress {
+  flex: 1;
+  min-width: 140px;
+}
+.book-vocabulary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+.book-word-card {
+  text-align: center;
+  background: #fafbf5;
+  border: 1px solid #e1e7d8;
+  border-radius: 18px;
+  padding: 16px;
+}
+.book-picture {
+  display: block;
+  object-fit: contain;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 13px;
+  max-width: 100%;
+  border-radius: 12px;
+}
+.book-special {
+  position: relative;
+  overflow: hidden;
+}
+.book-special > img {
+  position: absolute;
+  width: 300%;
+  height: 200%;
+  max-width: none;
+  max-height: none;
+  object-fit: fill;
+}
+.book-word-card h3 {
+  font-size: 2rem;
+  line-height: 1.7;
+  margin: 4px 0;
+}
+.book-target {
+  background: #fff1c9;
+  color: #a54d20;
+  border-radius: 3px;
+  padding: 0;
+}
+.book-translation {
+  overflow-wrap: anywhere;
+  color: #617569;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.book-word-card .book-translation {
+  margin: 3px 0 12px;
+}
+.book-forms {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+.book-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 15px 10px;
+  background: #f7f9f2;
+  border-radius: 14px;
+  text-align: center;
+}
+.book-form strong {
+  font-size: 1.55rem;
+}
+.book-form-glyph {
+  font-size: 2.8rem;
+  line-height: 1.4;
+}
+.book-form small {
+  font-size: 0.8rem;
+  color: #697d6a;
+}
+.book-reading-row {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+.book-reading-ar {
+  font-size: 1.8rem;
+  line-height: 2;
+  margin: 0;
+}
+.book-reading-row .line-listen {
+  margin-top: 8px;
+}
+.book-language {
+  background: #f9f8ef;
+}
+.book-language-example {
+  padding: 12px 16px;
+  background: #fff;
+  border: 1px solid #e5e8d8;
+  border-radius: 13px;
+  margin: 10px 0;
+}
+.book-language-example strong {
+  font-size: 1.4rem;
+}
+.book-exercise-section {
+  padding: 22px;
+  border: 1px solid #dce4d5;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+.book-exercise-section h3 {
+  margin-top: 0;
+  line-height: 1.9;
+}
+.book-task-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+}
+.book-task-grid-classify,
+.book-task-grid-reading,
+.book-task-grid-grammar {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.book-task {
+  border: 1px solid #e1e7d9;
+  border-radius: 16px;
+  padding: 17px;
+  background: #fafbf7;
+  min-width: 0;
+}
+.book-task .book-picture {
+  width: 110px;
+  height: 110px;
+}
+.book-task-options {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.book-task-options button {
+  font-size: 1.25rem;
+  min-width: 48px;
+  padding: 8px 13px;
+}
+.book-task-word {
+  text-align: center;
+  font-size: 2.1rem;
+  line-height: 1.8;
+  margin: 4px 0 13px;
+}
+.book-task-prompt {
+  font-size: 1.25rem;
+  line-height: 2;
+  margin: 0 0 14px;
+}
+.book-task-feedback {
+  padding-top: 12px;
+  margin-top: 12px;
+  border-top: 1px solid #dce4d5;
+  line-height: 1.8;
+}
+.book-task-feedback > strong {
+  display: block;
+}
+.book-task-feedback > span {
+  font-size: 1.4rem;
+  display: inline-block;
+}
+.book-task-feedback p {
+  font-size: 0.95rem;
+}
+.book-answer-field {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.book-answer-field input {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #cddbc4;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.1rem;
+  color: #244d38;
+  min-height: 48px;
+}
+.book-answer-field button {
+  flex-shrink: 0;
+  padding: 10px 15px;
+}
+.book-answer-help summary {
+  cursor: pointer;
+  color: #536d4c;
+  padding: 12px 0 7px;
+  font-size: 0.85rem;
+}
+.book-answer-help .book-task-options {
+  justify-content: flex-start;
+}
+.book-answer-help button {
+  font-size: 0.95rem;
+  text-align: start;
+}
+.book-canvas-frame {
+  border: 2px solid #cbdac3;
+  border-radius: 17px;
+  overflow: hidden;
+  background: white;
+  margin: 20px 0;
+  touch-action: none;
+}
+.book-canvas-frame canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+  touch-action: none;
+}
+.book-credits {
+  font-size: 0.78rem;
+  color: #7b867a;
+  margin-top: 35px;
+}
+.book-credits a {
+  color: inherit;
+}
+.book-page [lang="ar"] {
+  font-family: "Noto Naskh Arabic", "Amiri", "Traditional Arabic", serif;
+}
+.book-task input:disabled {
+  opacity: 1;
+  color: #35583e;
+}
+.book-task .is-correct:disabled {
+  opacity: 1;
+}
+.book-print-pictures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  text-align: center;
+}
+.book-print-pictures .book-picture {
+  width: 95px;
+  height: 95px;
+  margin-bottom: 5px;
+}
+.book-print-reading {
+  font-size: 19pt;
+  line-height: 1.8;
+  margin: 7px 0;
+}
+.book-print-bank {
+  font-size: 16pt;
+  line-height: 1.9;
+}
+.book-print-forms {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #cbd6c4;
+  padding: 8px;
+  font-size: 19pt;
+}
+.book-print-question {
+  white-space: pre-line;
+  line-height: 1.85;
+  margin: 10px 0;
+}
+.book-print-sort {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 8px 0;
+}
+.book-print-sort td,
+.book-print-sort th {
+  width: 50%;
+  border: 1px solid #99a98f;
+  height: 32px;
+  text-align: center;
+}
+.book-copy-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 50px;
+  border-bottom: 1px solid #b9c9af;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 12px,
+    #e1e5dc 13px,
+    transparent 14px
+  );
+}
+.book-copy-row strong {
+  font-size: 19pt;
+  min-width: 110px;
+  background: white;
+  padding: 5px 0;
+}
+.book-copy-row span {
+  flex: 1;
+}
+.book-print-page h1 {
+  font-size: 24pt;
+}
+.book-print-page h2 {
+  font-size: 16pt;
+  margin: 14px 0 6px;
+}
+.book-print-page p {
+  color: #183a29;
+}
+.book-print-page small {
+  display: block;
+  font-size: 8pt;
+  margin-top: 16px;
+}
+@media (max-width: 700px) {
+  .book-vocabulary {
+    gap: 8px;
+  }
+  .book-word-card {
+    padding: 10px 6px;
+  }
+  .book-word-card h3 {
+    font-size: 1.5rem;
+  }
+  .book-picture {
+    width: 88px;
+    height: 88px;
+  }
+  .book-word-card .book-translation {
+    font-size: 0.78rem;
+  }
+  .book-word-card .book-word-speak {
+    padding: 8px !important;
+    font-size: 0.8rem;
+  }
+  .book-forms {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .book-task-grid,
+  .book-task-grid-classify,
+  .book-task-grid-reading,
+  .book-task-grid-grammar {
+    grid-template-columns: 1fr;
+  }
+  .book-task-grid-picture {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .book-task-grid-picture .book-task {
+    padding: 9px 4px;
+  }
+  .book-task-grid-picture .book-picture {
+    width: 72px;
+    height: 72px;
+  }
+  .book-task-grid-picture .book-task-options {
+    flex-direction: column;
+  }
+  .book-task-grid-picture .book-task-options button {
+    font-size: 1.05rem;
+    padding: 5px 7px;
+  }
+  .book-task-grid-picture .book-task-feedback > span {
+    font-size: 1.1rem;
+  }
+  .book-lesson-header {
+    padding: 18px;
+    gap: 10px;
+  }
+  .book-letter {
+    flex-basis: 70px;
+    width: 70px;
+    height: 70px;
+    font-size: 3.6rem;
+  }
+  .book-lesson-header h2 {
+    font-size: 1.35rem;
+  }
+  .book-reading-ar {
+    font-size: 1.55rem;
+  }
+  .book-exercise-section {
+    padding: 15px;
+  }
+  .book-toolbar .filter-row {
+    gap: 6px;
+  }
+  .book-toolbar .filter-chip {
+    padding: 8px 12px;
+    font-size: 0.83rem;
+  }
+  .book-answer-field {
+    flex-wrap: wrap;
+  }
+  .book-answer-field input {
+    flex: 1 1 160px;
+  }
+  .book-answer-field button {
+    flex: 1;
+  }
+  .book-credits {
+    font-size: 0.72rem;
+  }
+  .book-task-options button {
+    font-size: 1.2rem;
+  }
+}
+@media print {
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #172d20 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    direction: rtl !important;
+  }
+  body > *:not(main) {
+    display: none !important;
+  }
+  main.container.book-page {
+    display: block !important;
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: white !important;
+  }
+  .book-page > :not(#book-print) {
+    display: none !important;
+  }
+  #book-print {
+    display: block !important;
+    direction: rtl;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .book-print-page {
+    break-after: page;
+    font-family: "Noto Naskh Arabic", "Traditional Arabic", serif;
+    font-size: 12pt;
+  }
+  .book-print-page:last-child {
+    break-after: auto;
+  }
+  .book-print-pictures,
+  .book-print-sort,
+  .book-copy-row {
+    break-inside: avoid;
+  }
+  .book-print-page .book-target {
+    color: #ac3425 !important;
+    background: transparent !important;
+  }
+  .book-print-page mark {
+    color: #ac3425 !important;
+    background: transparent !important;
+  }
+  .book-print-page .book-print-forms {
+    margin-top: 14px;
+  }
+  .book-print-page h1,
+  .book-print-page h2 {
+    font-family: inherit;
+  }
+}

@@ -7,6 +7,7 @@ function setup({
   native = true,
   recording = false,
   practiceRecording = false,
+  bookRecording = false,
   language = "ar",
   behavior = "normal",
 } = {}) {
@@ -73,6 +74,10 @@ function setup({
     context.window.ArabicPracticeData = {
       audio: { تِين: "audio/practice/001.mp3" },
     };
+  if (bookRecording)
+    context.window.ArabicBookData = {
+      audio: { أَسَد: "audio/book-two/001.mp3" },
+    };
   vm.runInNewContext(
     fs.readFileSync(require.resolve("../js/storage.js"), "utf8"),
     context,
@@ -105,6 +110,12 @@ test("New listening and story recordings use local files without a native voice"
   const { app, calls } = setup({ native: false, practiceRecording: true });
   app.speakArabic("تِين");
   assert.deepEqual(calls.play, ["audio/practice/001.mp3"]);
+  assert.equal(calls.speak.length, 0);
+});
+test("Second-level book recordings play locally without a native voice", () => {
+  const { app, calls } = setup({ native: false, bookRecording: true });
+  app.speakArabic("أَسَد");
+  assert.deepEqual(calls.play, ["audio/book-two/001.mp3"]);
   assert.equal(calls.speak.length, 0);
 });
 test("An initially empty mobile voice list still starts speech immediately in Arabic", () => {

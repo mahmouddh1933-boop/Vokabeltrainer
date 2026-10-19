@@ -16,4 +16,8 @@ Other words use an Arabic device voice first, with online TTS as a fallback. Pla
 
 An additional **120 MP3 clips** in `audio/practice/` cover the 36 sound-contrast words, 24 sentence solutions, 36 story sentences and 24 story vocabulary items. `practice-manifest.json` records each exact vocalized synthesis input and relative file path. The shared playback API uses `ArabicPracticeData.audio`, with NFC-normalized text keys, before attempting any device voice or online fallback.
 
-These clips were synthesized with the same Arabic Google Translate TTS endpoint, requested with `ttsslow=1`, and downloaded over verified HTTPS on 2026-10-19. Every clip was decoded and checked for audible signal. They are synthetic voices and have not received a human phonetic review. The application now contains **288 clips in total**. Keep both audio directories when extracting the download.
+These clips were synthesized with the same Arabic Google Translate TTS endpoint, requested with `ttsslow=1`, and downloaded over verified HTTPS on 2026-10-19. Every clip was decoded and checked for audible signal. They are synthetic voices and have not received a human phonetic review. Keep all audio directories when extracting the download.
+
+## Second-level workbook
+
+`audio/book-two/` adds **151 synthetic MP3s** for the independent 28-letter workbook. Its 84 vocabulary words and 84 reading sentences use these plus 17 already bundled clips. `book-two-manifest.json` records the new vocalized synthesis inputs, generated with the same Arabic TTS endpoint and downloaded over verified HTTPS on 2026-10-19. `ArabicBookData.audio` resolves all 168 playback texts to local files. Audio remains synthetic and has not had human phonetic review. The complete application contains **439 MP3s**.

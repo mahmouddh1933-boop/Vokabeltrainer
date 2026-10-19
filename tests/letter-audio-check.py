@@ -8,7 +8,9 @@ letter_clips = sorted((root/'audio/letters').glob('*.mp3'))
 practice_clips = sorted((root/'audio/practice').glob('*.mp3'))
 assert len(letter_clips) == 168, len(letter_clips)
 assert len(practice_clips) == 120, len(practice_clips)
-clips = letter_clips + practice_clips
+book_clips = sorted((root/'audio/book-two').glob('*.mp3'))
+assert len(book_clips) == 151, len(book_clips)
+clips = letter_clips + practice_clips + book_clips
 for clip in clips:
     duration = float(subprocess.check_output([
         'ffprobe', '-v', 'error', '-show_entries', 'format=duration',

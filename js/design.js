@@ -34,6 +34,12 @@
       ["sounds.html", "letters", "Ähnliche Laute", "الأصوات المتشابهة"],
       ["sentences.html", "check", "Sätze bilden", "تكوين الجمل"],
       ["stories.html", "book", "Kurzgeschichten", "قصص قصيرة"],
+      [
+        "book-level-two.html",
+        "book",
+        "Das Buch · Stufe zwei",
+        "الكتاب المستوى الثاني",
+      ],
       ["test.html", "check", "Wissen testen", "اختبر معرفتك"],
       ["review.html", "repeat", "Wiederholen", "المراجعة"],
       ["stats.html", "chart", "Mein Fortschritt", "تقدّمي"],

@@ -1,0 +1,610 @@
+{
+  "date": "2026-10-19",
+  "provider": "Google Translate TTS (ar)",
+  "clips": [
+    {
+      "text": "أَسَد",
+      "path": "audio/book-two/001.mp3"
+    },
+    {
+      "text": "أَرْنَب",
+      "path": "audio/book-two/002.mp3"
+    },
+    {
+      "text": "أَنَانَاس",
+      "path": "audio/book-two/003.mp3"
+    },
+    {
+      "text": "هَذَا أَسَدٌ.",
+      "path": "audio/book-two/004.mp3"
+    },
+    {
+      "text": "وَهَذَا أَرْنَبٌ صَغِيرٌ.",
+      "path": "audio/book-two/005.mp3"
+    },
+    {
+      "text": "يَأْكُلُ الْأَرْنَبُ الْعُشْبَ.",
+      "path": "audio/book-two/006.mp3"
+    },
+    {
+      "text": "بَيْت",
+      "path": "audio/book-two/007.mp3"
+    },
+    {
+      "text": "بَطَّة",
+      "path": "audio/book-two/008.mp3"
+    },
+    {
+      "text": "بَصَل",
+      "path": "audio/book-two/009.mp3"
+    },
+    {
+      "text": "قُرْبَ الْبَيْتِ بَطَّةٌ.",
+      "path": "audio/book-two/010.mp3"
+    },
+    {
+      "text": "تَسْبَحُ الْبَطَّةُ فِي الْمَاءِ.",
+      "path": "audio/book-two/011.mp3"
+    },
+    {
+      "text": "وَفِي الْمَطْبَخِ بَصَلٌ.",
+      "path": "audio/book-two/012.mp3"
+    },
+    {
+      "text": "تُفَّاح",
+      "path": "audio/book-two/013.mp3"
+    },
+    {
+      "text": "تِمْسَاح",
+      "path": "audio/book-two/014.mp3"
+    },
+    {
+      "text": "تَحْمِلُ تَمَارَا تُفَّاحَةً.",
+      "path": "audio/book-two/015.mp3"
+    },
+    {
+      "text": "وَتَرْسُمُ تَاجًا فِي الدَّفْتَرِ.",
+      "path": "audio/book-two/016.mp3"
+    },
+    {
+      "text": "ثُمَّ تَرْسُمُ تِمْسَاحًا.",
+      "path": "audio/book-two/017.mp3"
+    },
+    {
+      "text": "ثَعْلَب",
+      "path": "audio/book-two/018.mp3"
+    },
+    {
+      "text": "ثَلْج",
+      "path": "audio/book-two/019.mp3"
+    },
+    {
+      "text": "ثُوم",
+      "path": "audio/book-two/020.mp3"
+    },
+    {
+      "text": "يَعِيشُ الثَّعْلَبُ فِي الْغَابَةِ.",
+      "path": "audio/book-two/021.mp3"
+    },
+    {
+      "text": "يَنْزِلُ الثَّلْجُ فِي الشِّتَاءِ.",
+      "path": "audio/book-two/022.mp3"
+    },
+    {
+      "text": "نَضَعُ الثُّومَ فِي الطَّعَامِ.",
+      "path": "audio/book-two/023.mp3"
+    },
+    {
+      "text": "جَزَر",
+      "path": "audio/book-two/024.mp3"
+    },
+    {
+      "text": "جَبَل",
+      "path": "audio/book-two/025.mp3"
+    },
+    {
+      "text": "جَمَالٌ يَرْسُمُ جَمَلًا.",
+      "path": "audio/book-two/026.mp3"
+    },
+    {
+      "text": "يَرْسُمُ جَبَلًا خَلْفَ الْجَمَلِ.",
+      "path": "audio/book-two/027.mp3"
+    },
+    {
+      "text": "ثُمَّ يَأْكُلُ جَزَرَةً.",
+      "path": "audio/book-two/028.mp3"
+    },
+    {
+      "text": "حُوت",
+      "path": "audio/book-two/029.mp3"
+    },
+    {
+      "text": "حِصَان",
+      "path": "audio/book-two/030.mp3"
+    },
+    {
+      "text": "حَقِيبَة",
+      "path": "audio/book-two/031.mp3"
+    },
+    {
+      "text": "تَحْمِلُ حَنَانُ حَقِيبَةً.",
+      "path": "audio/book-two/032.mp3"
+    },
+    {
+      "text": "فِي الْحَقِيبَةِ صُورَةُ حُوتٍ.",
+      "path": "audio/book-two/033.mp3"
+    },
+    {
+      "text": "وَصُورَةُ حِصَانٍ.",
+      "path": "audio/book-two/034.mp3"
+    },
+    {
+      "text": "خِيَار",
+      "path": "audio/book-two/035.mp3"
+    },
+    {
+      "text": "خَرُوف",
+      "path": "audio/book-two/036.mp3"
+    },
+    {
+      "text": "يَأْكُلُ خَالِدٌ خُبْزًا وَخِيَارًا.",
+      "path": "audio/book-two/037.mp3"
+    },
+    {
+      "text": "يَخْرُجُ خَالِدٌ إِلَى الْحَقْلِ.",
+      "path": "audio/book-two/038.mp3"
+    },
+    {
+      "text": "يَرَى خَرُوفًا صَغِيرًا.",
+      "path": "audio/book-two/039.mp3"
+    },
+    {
+      "text": "دَجَاجَة",
+      "path": "audio/book-two/040.mp3"
+    },
+    {
+      "text": "دَرَّاجَة",
+      "path": "audio/book-two/041.mp3"
+    },
+    {
+      "text": "يَرْكَبُ دَاوُدُ دَرَّاجَةً.",
+      "path": "audio/book-two/042.mp3"
+    },
+    {
+      "text": "يَرَى دَجَاجَةً قُرْبَ الدَّارِ.",
+      "path": "audio/book-two/043.mp3"
+    },
+    {
+      "text": "وَيَقْرَأُ قِصَّةً عَنْ دُبٍّ.",
+      "path": "audio/book-two/044.mp3"
+    },
+    {
+      "text": "ذِئْب",
+      "path": "audio/book-two/045.mp3"
+    },
+    {
+      "text": "ذُبَابَة",
+      "path": "audio/book-two/046.mp3"
+    },
+    {
+      "text": "يَحْمِلُ ذِيَابٌ ذُرَةً.",
+      "path": "audio/book-two/047.mp3"
+    },
+    {
+      "text": "يَرَى ذُبَابَةً عَلَى النَّافِذَةِ.",
+      "path": "audio/book-two/048.mp3"
+    },
+    {
+      "text": "ثُمَّ يَرْسُمُ ذِئْبًا.",
+      "path": "audio/book-two/049.mp3"
+    },
+    {
+      "text": "رِيشَة",
+      "path": "audio/book-two/050.mp3"
+    },
+    {
+      "text": "رُوبُوت",
+      "path": "audio/book-two/051.mp3"
+    },
+    {
+      "text": "رَامِي يَأْكُلُ رُمَّانًا.",
+      "path": "audio/book-two/052.mp3"
+    },
+    {
+      "text": "يَجِدُ رِيشَةً عَلَى الْأَرْضِ.",
+      "path": "audio/book-two/053.mp3"
+    },
+    {
+      "text": "ثُمَّ يَلْعَبُ بِرُوبُوتٍ صَغِيرٍ.",
+      "path": "audio/book-two/054.mp3"
+    },
+    {
+      "text": "زَرَافَة",
+      "path": "audio/book-two/055.mp3"
+    },
+    {
+      "text": "زَهْرَة",
+      "path": "audio/book-two/056.mp3"
+    },
+    {
+      "text": "زَيْتُون",
+      "path": "audio/book-two/057.mp3"
+    },
+    {
+      "text": "تَرْسُمُ زَيْنَبُ زَرَافَةً.",
+      "path": "audio/book-two/058.mp3"
+    },
+    {
+      "text": "تَضَعُ زَهْرَةً قُرْبَ الرَّسْمِ.",
+      "path": "audio/book-two/059.mp3"
+    },
+    {
+      "text": "وَتَأْكُلُ خُبْزًا وَزَيْتُونًا.",
+      "path": "audio/book-two/060.mp3"
+    },
+    {
+      "text": "سَمَكَة",
+      "path": "audio/book-two/061.mp3"
+    },
+    {
+      "text": "سَيَّارَة",
+      "path": "audio/book-two/062.mp3"
+    },
+    {
+      "text": "سَاعَة",
+      "path": "audio/book-two/063.mp3"
+    },
+    {
+      "text": "يَنْظُرُ سَامِي إِلَى السَّاعَةِ.",
+      "path": "audio/book-two/064.mp3"
+    },
+    {
+      "text": "يَرْكَبُ السَّيَّارَةَ مَعَ أَبِيهِ.",
+      "path": "audio/book-two/065.mp3"
+    },
+    {
+      "text": "يَرَيَانِ سَمَكَةً فِي حَوْضٍ.",
+      "path": "audio/book-two/066.mp3"
+    },
+    {
+      "text": "شَمْس",
+      "path": "audio/book-two/067.mp3"
+    },
+    {
+      "text": "شَجَرَة",
+      "path": "audio/book-two/068.mp3"
+    },
+    {
+      "text": "شَمْعَة",
+      "path": "audio/book-two/069.mp3"
+    },
+    {
+      "text": "تُشْرِقُ الشَّمْسُ صَبَاحًا.",
+      "path": "audio/book-two/070.mp3"
+    },
+    {
+      "text": "تَجْلِسُ شَذَى تَحْتَ شَجَرَةٍ.",
+      "path": "audio/book-two/071.mp3"
+    },
+    {
+      "text": "وَفِي الْبَيْتِ شَمْعَةٌ جَمِيلَةٌ.",
+      "path": "audio/book-two/072.mp3"
+    },
+    {
+      "text": "صَابُون",
+      "path": "audio/book-two/073.mp3"
+    },
+    {
+      "text": "صَارُوخ",
+      "path": "audio/book-two/074.mp3"
+    },
+    {
+      "text": "صَحْن",
+      "path": "audio/book-two/075.mp3"
+    },
+    {
+      "text": "يَغْسِلُ صَالِحٌ يَدَيْهِ بِالصَّابُونِ.",
+      "path": "audio/book-two/076.mp3"
+    },
+    {
+      "text": "يَضَعُ الطَّعَامَ فِي الصَّحْنِ.",
+      "path": "audio/book-two/077.mp3"
+    },
+    {
+      "text": "ثُمَّ يَرْسُمُ صَارُوخًا.",
+      "path": "audio/book-two/078.mp3"
+    },
+    {
+      "text": "ضِرْس",
+      "path": "audio/book-two/079.mp3"
+    },
+    {
+      "text": "ضَبَاب",
+      "path": "audio/book-two/080.mp3"
+    },
+    {
+      "text": "يَقْفِزُ الضِّفْدَعُ قُرْبَ الْبِرْكَةِ.",
+      "path": "audio/book-two/081.mp3"
+    },
+    {
+      "text": "يَظْهَرُ الضَّبَابُ صَبَاحًا.",
+      "path": "audio/book-two/082.mp3"
+    },
+    {
+      "text": "تُنَظِّفُ ضُحَى أَضْرَاسَهَا.",
+      "path": "audio/book-two/083.mp3"
+    },
+    {
+      "text": "طَائِرَة",
+      "path": "audio/book-two/084.mp3"
+    },
+    {
+      "text": "طَبْل",
+      "path": "audio/book-two/085.mp3"
+    },
+    {
+      "text": "يَطِيرُ طَائِرٌ فَوْقَ الشَّجَرَةِ.",
+      "path": "audio/book-two/086.mp3"
+    },
+    {
+      "text": "تَمُرُّ طَائِرَةٌ فِي السَّمَاءِ.",
+      "path": "audio/book-two/087.mp3"
+    },
+    {
+      "text": "يَقْرَعُ طَارِقٌ الطَّبْلَ.",
+      "path": "audio/book-two/088.mp3"
+    },
+    {
+      "text": "ظُفْر",
+      "path": "audio/book-two/089.mp3"
+    },
+    {
+      "text": "تَضَعُ ظَبْيَةُ رِسَالَةً فِي ظَرْفٍ.",
+      "path": "audio/book-two/090.mp3"
+    },
+    {
+      "text": "ثُمَّ تَجْلِسُ فِي ظِلِّ شَجَرَةٍ.",
+      "path": "audio/book-two/091.mp3"
+    },
+    {
+      "text": "وَتَنْظُرُ إِلَى ظُفْرِهَا النَّظِيفِ.",
+      "path": "audio/book-two/092.mp3"
+    },
+    {
+      "text": "عَسَل",
+      "path": "audio/book-two/093.mp3"
+    },
+    {
+      "text": "عَيْن",
+      "path": "audio/book-two/094.mp3"
+    },
+    {
+      "text": "يَأْكُلُ عُمَرُ عِنَبًا.",
+      "path": "audio/book-two/095.mp3"
+    },
+    {
+      "text": "وَيَضَعُ الْعَسَلَ عَلَى الْخُبْزِ.",
+      "path": "audio/book-two/096.mp3"
+    },
+    {
+      "text": "يَغْسِلُ وَجْهَهُ وَيَحْمِي عَيْنَيْهِ.",
+      "path": "audio/book-two/097.mp3"
+    },
+    {
+      "text": "غُرَاب",
+      "path": "audio/book-two/098.mp3"
+    },
+    {
+      "text": "غِيتَار",
+      "path": "audio/book-two/099.mp3"
+    },
+    {
+      "text": "يَقِفُ غُرَابٌ عَلَى غُصْنٍ.",
+      "path": "audio/book-two/100.mp3"
+    },
+    {
+      "text": "تَرَاهُ غَادَةُ مِنَ النَّافِذَةِ.",
+      "path": "audio/book-two/101.mp3"
+    },
+    {
+      "text": "ثُمَّ تَعْزِفُ عَلَى الْغِيتَارِ.",
+      "path": "audio/book-two/102.mp3"
+    },
+    {
+      "text": "فِيل",
+      "path": "audio/book-two/103.mp3"
+    },
+    {
+      "text": "فَرَاشَة",
+      "path": "audio/book-two/104.mp3"
+    },
+    {
+      "text": "فُرْشَاة",
+      "path": "audio/book-two/105.mp3"
+    },
+    {
+      "text": "يَرْسُمُ فَادِي فِيلًا كَبِيرًا.",
+      "path": "audio/book-two/106.mp3"
+    },
+    {
+      "text": "وَيَرْسُمُ فَرَاشَةً صَغِيرَةً.",
+      "path": "audio/book-two/107.mp3"
+    },
+    {
+      "text": "يُلَوِّنُ الرَّسْمَ بِفُرْشَاةٍ.",
+      "path": "audio/book-two/108.mp3"
+    },
+    {
+      "text": "قَلَم",
+      "path": "audio/book-two/109.mp3"
+    },
+    {
+      "text": "قِطّ",
+      "path": "audio/book-two/110.mp3"
+    },
+    {
+      "text": "يَظْهَرُ الْقَمَرُ فِي اللَّيْلِ.",
+      "path": "audio/book-two/111.mp3"
+    },
+    {
+      "text": "يَجْلِسُ قَاسِمٌ وَمَعَهُ قَلَمٌ.",
+      "path": "audio/book-two/112.mp3"
+    },
+    {
+      "text": "يَرْسُمُ قِطًّا أَبْيَضَ.",
+      "path": "audio/book-two/113.mp3"
+    },
+    {
+      "text": "يَقْرَأُ كَمَالٌ كِتَابًا.",
+      "path": "audio/book-two/114.mp3"
+    },
+    {
+      "text": "بَعْدَ الْقِرَاءَةِ يَلْعَبُ بِالْكُرَةِ.",
+      "path": "audio/book-two/115.mp3"
+    },
+    {
+      "text": "وَيَجْرِي كَلْبُهُ فِي الْحَدِيقَةِ.",
+      "path": "audio/book-two/116.mp3"
+    },
+    {
+      "text": "لَيْمُون",
+      "path": "audio/book-two/117.mp3"
+    },
+    {
+      "text": "لِسَان",
+      "path": "audio/book-two/118.mp3"
+    },
+    {
+      "text": "لَوْز",
+      "path": "audio/book-two/119.mp3"
+    },
+    {
+      "text": "عِنْدَ لَيْلَى لَيْمُونٌ وَلَوْزٌ.",
+      "path": "audio/book-two/120.mp3"
+    },
+    {
+      "text": "تَأْكُلُ لَيْلَى اللَّوْزَ.",
+      "path": "audio/book-two/121.mp3"
+    },
+    {
+      "text": "تَقُولُ لَيْلَى: لَا أُكْثِرُ مِنَ الْحَلْوَى.",
+      "path": "audio/book-two/122.mp3"
+    },
+    {
+      "text": "مَوْز",
+      "path": "audio/book-two/123.mp3"
+    },
+    {
+      "text": "مِفْتَاح",
+      "path": "audio/book-two/124.mp3"
+    },
+    {
+      "text": "مِظَلَّة",
+      "path": "audio/book-two/125.mp3"
+    },
+    {
+      "text": "تَحْمِلُ مَرْيَمُ مِظَلَّةً.",
+      "path": "audio/book-two/126.mp3"
+    },
+    {
+      "text": "تَفْتَحُ الْبَابَ بِالْمِفْتَاحِ.",
+      "path": "audio/book-two/127.mp3"
+    },
+    {
+      "text": "ثُمَّ تَأْكُلُ مَوْزَةً.",
+      "path": "audio/book-two/128.mp3"
+    },
+    {
+      "text": "نَجْمَة",
+      "path": "audio/book-two/129.mp3"
+    },
+    {
+      "text": "نَحْلَة",
+      "path": "audio/book-two/130.mp3"
+    },
+    {
+      "text": "نَمْلَة",
+      "path": "audio/book-two/131.mp3"
+    },
+    {
+      "text": "تَرَى نُورُ نَحْلَةً عَلَى زَهْرَةٍ.",
+      "path": "audio/book-two/132.mp3"
+    },
+    {
+      "text": "وَتَرَى نَمْلَةً عَلَى الْأَرْضِ.",
+      "path": "audio/book-two/133.mp3"
+    },
+    {
+      "text": "وَفِي اللَّيْلِ تَرْسُمُ نَجْمَةً.",
+      "path": "audio/book-two/134.mp3"
+    },
+    {
+      "text": "هَدِيَّة",
+      "path": "audio/book-two/135.mp3"
+    },
+    {
+      "text": "هَاتِف",
+      "path": "audio/book-two/136.mp3"
+    },
+    {
+      "text": "تَحْمِلُ هُدَى هَدِيَّةً.",
+      "path": "audio/book-two/137.mp3"
+    },
+    {
+      "text": "تَتَّصِلُ بِجَدَّتِهَا بِالْهَاتِفِ.",
+      "path": "audio/book-two/138.mp3"
+    },
+    {
+      "text": "وَتَرَى الْهِلَالَ فِي السَّمَاءِ.",
+      "path": "audio/book-two/139.mp3"
+    },
+    {
+      "text": "وَرْدَة",
+      "path": "audio/book-two/140.mp3"
+    },
+    {
+      "text": "وَجْه",
+      "path": "audio/book-two/141.mp3"
+    },
+    {
+      "text": "وَرَقَة",
+      "path": "audio/book-two/142.mp3"
+    },
+    {
+      "text": "يَغْسِلُ وَائِلٌ وَجْهَهُ.",
+      "path": "audio/book-two/143.mp3"
+    },
+    {
+      "text": "ثُمَّ يَسْقِي وَرْدَةً.",
+      "path": "audio/book-two/144.mp3"
+    },
+    {
+      "text": "وَيَرَى وَرَقَةَ شَجَرٍ عَلَى الْأَرْضِ.",
+      "path": "audio/book-two/145.mp3"
+    },
+    {
+      "text": "يَد",
+      "path": "audio/book-two/146.mp3"
+    },
+    {
+      "text": "يَمَامَة",
+      "path": "audio/book-two/147.mp3"
+    },
+    {
+      "text": "يَقْطِين",
+      "path": "audio/book-two/148.mp3"
+    },
+    {
+      "text": "يَغْسِلُ يَاسِرٌ يَدَيْهِ.",
+      "path": "audio/book-two/149.mp3"
+    },
+    {
+      "text": "يَأْكُلُ حَسَاءَ الْيَقْطِينِ.",
+      "path": "audio/book-two/150.mp3"
+    },
+    {
+      "text": "ثُمَّ يَرَى يَمَامَةً بَيْضَاءَ.",
+      "path": "audio/book-two/151.mp3"
+    }
+  ]
+}

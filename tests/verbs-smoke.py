@@ -133,7 +133,7 @@ with sync_playwright() as p:
     page.screenshot(path='/tmp/jisr-expanded-verbs-mobile.png')
     page.route('https://cdn.jsdelivr.net/**',lambda route:route.abort())
     page.goto(base+'/index.html')
-    page.locator('.grammar-home-card').click();page.wait_for_url('**/verbs.html')
+    page.locator('.grammar-home-card[href="verbs.html"]').click();page.wait_for_url('**/verbs.html')
     assert not errors,errors
     print('PASS: 48 verbs / 144 tables, imperative-only addressees, Arabic/German search, empty-result recovery, quiz feedback, DE/AR state preservation and responsive layouts; no JavaScript errors')
     browser.close()
