@@ -20,4 +20,10 @@ These clips were synthesized with the same Arabic Google Translate TTS endpoint,
 
 ## Second-level workbook
 
-`audio/book-two/` adds **151 synthetic MP3s** for the independent 28-letter workbook. Its 84 vocabulary words and 84 reading sentences use these plus 17 already bundled clips. `book-two-manifest.json` records the new vocalized synthesis inputs, generated with the same Arabic TTS endpoint and downloaded over verified HTTPS on 2026-10-19. `ArabicBookData.audio` resolves all 168 playback texts to local files. Audio remains synthetic and has not had human phonetic review. The complete application contains **439 MP3s**.
+`audio/book-two/` adds **151 synthetic MP3s** for the independent 28-letter workbook. Its 84 vocabulary words and 84 reading sentences use these plus 17 already bundled clips. `book-two-manifest.json` records the new vocalized synthesis inputs, generated with the same Arabic TTS endpoint and downloaded over verified HTTPS on 2026-10-19. `ArabicBookData.audio` resolves all 168 playback texts to local files. Audio remains synthetic and has not had human phonetic review. These three audio directories together contain **439 MP3s**.
+
+## العربية للشباب · Youth book
+
+`audio/youth/` adds **221 synthetic MP3s** for eight independent youth units: dialogue turns, eight picture words per unit and both four-paragraph reading texts. Repeated vocabulary shares a file. `youth-manifest.json` records all exact vocalized inputs and file paths; NFC text keys in `ArabicYouthData.audio` select them before any device or online voice. Clips were generated using the same Arabic Google Translate TTS endpoint with `ttsslow=1`, downloaded over verified HTTPS on 2026-10-20. All files were fully decoded and checked for audible output, and playback was exercised by touch in mobile Chromium with external requests blocked. This is synthetic speech, without human phonetic acceptance or testing on a physical Android device.
+
+The complete download now includes **660 MP3 files**. All audio folders must remain beside the extracted HTML files.

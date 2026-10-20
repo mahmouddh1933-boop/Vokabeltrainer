@@ -68,6 +68,26 @@ with sync_playwright() as p:
         assert page.locator('#book-print').is_visible()
         assert page.locator('#book-print .book-print-page').count() == 2
         page.emulate_media(media='screen')
+        open_page('arabic-youth')
+        assert page.locator('#youth-library button').count() == 8
+        assert page.locator('.youth-turn').count() == 12
+        before = page.evaluate('__plays'); page.locator('#youth-content [data-audio]').first.tap()
+        page.wait_for_function('n=>__plays>n', arg=before)
+        page.locator('#youth-next').tap(); assert page.locator('#youth-title').inner_text() == 'كيف أستخدم القاموس العربي'
+        page.locator('#youth-previous').tap(); assert page.locator('#youth-title').inner_text() == 'في القطار'
+        page.locator('[data-youth-tab="reading"]').tap()
+        page.locator('#youth-q-reading1 .youth-option').filter(has_text=re.compile('^الناس والبضائع$')).tap()
+        assert 'أحسنت' in page.locator('#youth-q-reading1 .youth-task-feedback').inner_text()
+        page.locator('[data-youth-tab="vocabulary"]').tap()
+        page.locator('#youth-draft-s0').fill('أفضل القطار لأنه مريح.')
+        page.locator('#app-language-select').select_option('de')
+        assert page.locator('#youth-title').inner_text() == 'في القطار'
+        page.locator('#app-language-select').select_option('ar')
+        assert page.locator('#youth-draft-s0').input_value() == 'أفضل القطار لأنه مريح.'
+        page.emulate_media(media='print')
+        assert page.locator('#youth-print').is_visible()
+        assert page.locator('#youth-print .youth-print-task').count() == 32
+        page.emulate_media(media='screen')
         open_page('huruf')
         page.locator('#letter-card').tap(); assert 'flipped' in page.locator('#letter-card').get_attribute('class')
         page.locator('#letter-card').tap(); assert 'flipped' not in page.locator('#letter-card').get_attribute('class')
@@ -79,5 +99,5 @@ with sync_playwright() as p:
         assert not errors, errors
         assert not separate_assets, separate_assets
         context.close()
-        print(f'PASS extracted ZIP: three activities + second-level book, real audio, card flip/navigation, language; mode={mode}; no separate scripts or styles required',flush=True)
+        print(f'PASS extracted ZIP: three activities + both independent books, real audio, card flip/navigation, language; mode={mode}; no separate scripts or styles required',flush=True)
     browser.close()

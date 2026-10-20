@@ -1,0 +1,500 @@
+.youth-page {
+  --youth-ink: #214e43;
+  --youth-rust: #94543d;
+}
+.youth-page [lang="ar"] {
+  font-family: "Noto Naskh Arabic", "Traditional Arabic", Tahoma, serif;
+}
+.youth-page h1 {
+  color: var(--youth-ink);
+}
+.youth-index {
+  background: #fffdf7;
+  border: 1px solid #dce4d9;
+  padding: 20px;
+  border-radius: 24px;
+  margin: 24px 0;
+}
+.youth-index summary,
+.youth-reset summary {
+  cursor: pointer;
+  padding: 8px;
+  font-weight: 700;
+  color: var(--youth-ink);
+}
+.youth-library {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+.youth-unit-card {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #dbe2d7;
+  border-radius: 16px;
+  background: #fff;
+  color: #254a3f;
+  text-align: start;
+  box-shadow: none;
+}
+.youth-unit-card[aria-pressed="true"] {
+  border: 2px solid #426a51;
+  background: #eff4e7;
+}
+.youth-unit-copy {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+.youth-unit-copy strong {
+  font-size: 1.22rem;
+  line-height: 1.6;
+}
+.youth-unit-copy > span {
+  font-size: 0.93rem;
+  line-height: 1.5;
+  color: #526157;
+}
+.youth-unit-copy .eyebrow {
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+}
+.youth-unit-progress {
+  direction: ltr;
+  unicode-bidi: isolate;
+  justify-self: start;
+  color: #526a5e;
+  font-family: sans-serif;
+}
+.youth-scene {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #eee8d9;
+}
+.youth-scene img {
+  position: absolute;
+  width: 400%;
+  height: 200%;
+  max-width: none;
+  object-fit: fill;
+}
+.youth-scene-mini {
+  width: 90px;
+  flex: 0 0 90px;
+  border-radius: 12px;
+}
+.youth-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 28px;
+  align-items: center;
+  padding: 26px;
+  background: #e9efde;
+  border: 1px solid #d5dfc8;
+  border-radius: 28px;
+  margin-top: 24px;
+}
+.youth-hero h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: #1c4d40;
+  margin: 8px 0;
+  line-height: 1.6;
+  scroll-margin-top: 90px;
+}
+.youth-hero p {
+  line-height: 1.9;
+  margin-bottom: 10px;
+}
+.youth-select-label {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 14px;
+  color: #496152;
+}
+.youth-page #youth-select {
+  width: min(100%, 420px);
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  min-height: 48px;
+  border-radius: 12px;
+  border: 1px solid #b6c7ac;
+  background: #fffdf7;
+  font-size: 1.1rem;
+}
+.youth-navigation {
+  margin: 14px 0 24px;
+}
+.youth-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+.youth-toolbar .filter-row {
+  flex: 1 1 100%;
+  margin: 0;
+  gap: 7px;
+}
+#youth-tabs {
+  scroll-margin-top: 90px;
+}
+.youth-page .filter-chip {
+  font-size: 0.9rem;
+  padding: 10px 15px;
+  white-space: normal;
+  line-height: 1.6;
+}
+.youth-progress {
+  margin-top: 18px;
+}
+.youth-progress progress {
+  margin: 8px 0;
+}
+.youth-context {
+  padding: 14px 18px;
+  background: #f2f5e9;
+  border-radius: 12px;
+  line-height: 2;
+}
+.youth-dialogue {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+.youth-turn {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: #f5f6ed;
+  border-radius: 18px 5px 18px 18px;
+  border-inline-start: 3px solid #adc094;
+}
+.youth-turn-alt {
+  background: #fbf4ed;
+  border-color: #c49876;
+  border-radius: 5px 18px 18px 18px;
+}
+.youth-speaker {
+  color: #8b5237;
+  font-size: 0.95rem;
+}
+.youth-turn p {
+  font-size: 1.3rem;
+  line-height: 2;
+  margin: 2px 0;
+}
+.youth-page .youth-sound {
+  font-size: 0.8rem;
+  padding: 8px 12px;
+  background: #fffdf7;
+  min-height: 44px;
+  white-space: nowrap;
+}
+.youth-word-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.youth-word-card {
+  padding: 18px 14px;
+  text-align: center;
+  background: #faf9f2;
+  border: 1px solid #e5e6d8;
+  border-radius: 18px;
+}
+.youth-word-card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+.youth-word-card h4 {
+  font-size: 1.65rem;
+  color: #285442;
+  margin: 8px 0 0;
+}
+.youth-word-card p {
+  line-height: 1.8;
+  margin: 4px 0;
+}
+.youth-gloss {
+  color: #80694b;
+  font-size: 0.85rem;
+}
+.youth-word-example {
+  font-size: 1.07rem;
+}
+.youth-response {
+  padding: 22px 0;
+  border-bottom: 1px solid #e3e6da;
+}
+.youth-response label {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  margin-bottom: 8px;
+}
+.youth-response textarea {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid #cbd7c4;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  resize: vertical;
+  background: #fffef9;
+  box-sizing: border-box;
+}
+.youth-response textarea:focus-visible {
+  outline: 3px solid #ae8c3e;
+  outline-offset: 2px;
+}
+.youth-note {
+  font-size: 0.85rem;
+  line-height: 1.9;
+  color: #586956;
+}
+.youth-model {
+  margin-top: 10px;
+  background: #f3f5eb;
+  border-radius: 12px;
+  padding: 12px;
+}
+.youth-model summary {
+  cursor: pointer;
+  color: #355b42;
+}
+.youth-model p {
+  line-height: 2;
+  white-space: pre-line;
+}
+.practice-panel > .youth-scene {
+  max-width: 330px;
+  margin: 18px auto;
+}
+.youth-text-title {
+  font-size: 1.9rem;
+  color: #8d4e34;
+  border-bottom: 1px solid #e1ddc7;
+  padding-bottom: 14px;
+}
+.youth-reading {
+  counter-reset: paragraph;
+}
+.youth-reading-row {
+  position: relative;
+  padding: 8px 0 20px;
+  border-bottom: 1px solid #ebeee3;
+}
+.youth-reading-row p {
+  font-size: 1.4rem;
+  line-height: 2.3;
+  margin: 12px 0;
+}
+.youth-task {
+  padding: 22px 0;
+  border-bottom: 1px solid #dce4d9;
+  break-inside: avoid;
+}
+.youth-task h4 {
+  margin: 0 0 14px;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.youth-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+.youth-option {
+  text-align: start;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  flex: 1 1 160px;
+}
+.youth-task-feedback {
+  border-radius: 10px;
+  padding: 12px;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+.youth-task-feedback:empty {
+  padding: 0;
+}
+.youth-task .practice-actions:empty {
+  display: none;
+}
+.youth-rule {
+  background: #f3f5e9;
+  padding: 20px;
+  border-inline-start: 3px solid #a1b37d;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  line-height: 2.2;
+}
+.youth-examples {
+  line-height: 2.2;
+  font-size: 1.25rem;
+}
+.youth-selected {
+  flex-basis: 100%;
+  min-height: 64px;
+  border: 1px dashed #acbe9c;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  background: #fafbf4;
+  font-size: 1.2rem;
+  align-items: center;
+}
+.youth-word-bank {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.youth-page .youth-token,
+.youth-selected button {
+  font-size: 1.15rem;
+  padding: 8px 14px;
+}
+.youth-reset {
+  margin: 28px 0 12px;
+  padding: 14px 18px;
+  border: 1px solid #d6dfcf;
+  border-radius: 18px;
+}
+.youth-reset p {
+  line-height: 1.9;
+}
+@media (max-width: 700px) {
+  .youth-index {
+    padding: 14px;
+  }
+  .youth-library {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .youth-hero {
+    grid-template-columns: minmax(0, 1fr) 135px;
+    padding: 18px;
+    gap: 14px;
+  }
+  .youth-hero .eyebrow {
+    font-size: 0.7rem;
+  }
+  .youth-hero h2 {
+    font-size: 1.75rem;
+  }
+  .youth-word-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .youth-turn {
+    padding: 14px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+  }
+  .youth-turn .youth-sound {
+    justify-self: start;
+  }
+  .youth-option {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 440px) {
+  .youth-hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  #youth-art {
+    order: -1;
+  }
+  #youth-art .youth-scene {
+    max-height: 205px;
+    aspect-ratio: 1;
+    width: 205px;
+    margin: auto;
+  }
+  .youth-word-card {
+    padding: 14px 10px;
+  }
+  .youth-page .filter-chip {
+    padding: 8px 10px;
+  }
+  .youth-word-grid {
+    gap: 8px;
+  }
+}
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm;
+  }
+  body,
+  body.app-layout {
+    background: #fff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  body > :not(main),
+  .youth-page > :not(#youth-print) {
+    display: none !important;
+  }
+  main.container.youth-page {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+  #youth-print {
+    display: block !important;
+    font-family: "Noto Naskh Arabic", "Traditional Arabic", serif;
+    color: #111;
+    font-size: 12pt;
+    line-height: 1.8;
+  }
+  #youth-print h1 {
+    font-size: 21pt;
+    color: #111;
+  }
+  #youth-print h2 {
+    font-size: 17pt;
+    break-after: avoid;
+    color: #111;
+    margin: 16pt 0 8pt;
+  }
+  #youth-print p {
+    margin: 6pt 0;
+    orphans: 3;
+    widows: 3;
+  }
+  #youth-print .youth-print-task {
+    break-inside: avoid;
+    margin: 12pt 0;
+  }
+  #youth-print .youth-print-words img {
+    width: 24pt;
+    height: 24pt;
+    vertical-align: middle;
+    margin-inline-end: 10pt;
+  }
+  #youth-print .youth-scene {
+    width: 70mm;
+    height: 70mm;
+    margin: 10pt auto;
+    break-inside: avoid;
+  }
+  #youth-print .youth-print-speaking {
+    break-before: page;
+  }
+}

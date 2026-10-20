@@ -40,6 +40,12 @@
         "Das Buch · Stufe zwei",
         "الكتاب المستوى الثاني",
       ],
+      [
+        "arabic-youth.html",
+        "book",
+        "Arabisch für Jugendliche",
+        "العربية للشباب",
+      ],
       ["test.html", "check", "Wissen testen", "اختبر معرفتك"],
       ["review.html", "repeat", "Wiederholen", "المراجعة"],
       ["stats.html", "chart", "Mein Fortschritt", "تقدّمي"],

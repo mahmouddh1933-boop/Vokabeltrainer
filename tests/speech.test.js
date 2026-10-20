@@ -8,6 +8,7 @@ function setup({
   recording = false,
   practiceRecording = false,
   bookRecording = false,
+  youthRecording = false,
   language = "ar",
   behavior = "normal",
 } = {}) {
@@ -77,6 +78,10 @@ function setup({
   if (bookRecording)
     context.window.ArabicBookData = {
       audio: { أَسَد: "audio/book-two/001.mp3" },
+    };
+  if (youthRecording)
+    context.window.ArabicYouthData = {
+      audio: { قِطَارٌ: "audio/youth/013.mp3" },
     };
   vm.runInNewContext(
     fs.readFileSync(require.resolve("../js/storage.js"), "utf8"),
@@ -180,4 +185,11 @@ test("Online failure exhausts finite endpoints and reports an actionable error",
   assert.equal(calls.statuses.at(-1)[1], true);
   assert.match(calls.statuses.at(-1)[0], /صوتًا عربيًا/);
   assert.equal(calls.timers.size, 0);
+});
+
+test("Youth book recordings start synchronously without native voices or online TTS", () => {
+  const { app, calls } = setup({ native: false, youthRecording: true });
+  app.speakArabic("قِطَارٌ");
+  assert.deepEqual(calls.play, ["audio/youth/013.mp3"]);
+  assert.equal(calls.speak.length, 0);
 });

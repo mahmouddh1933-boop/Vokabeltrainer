@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#194e40" />
+    <title>العربية للشباب · Jisr</title>
+    <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
+    <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
+    <link rel="stylesheet" href="css/modern.css?v=8ba921c3f4f7" />
+    <link rel="stylesheet" href="css/practice.css?v=e55c73e03b36" />
+    <link rel="stylesheet" href="css/youth.css?v=e96e7c45f29f" />
+    <script src="js/storage.js?v=eafa6563f526" defer></script>
+    <script src="js/app.js?v=72b6887daab8" defer></script>
+    <script src="js/youth-data.js?v=251e42aa3bce" defer></script>
+    <script src="js/interface-languages.js?v=f84e2acf2cd4" defer></script>
+    <script src="js/design.js?v=55e49cda9890" defer></script>
+    <script src="js/practice-core.js?v=81b88bc2a7c0" defer></script>
+    <script src="js/pages/youth.js?v=74ba8515fd97" defer></script>
+  </head>
+  <body>
+    <main class="container practice-page youth-page">
+      <p id="lesson-loading" role="status">
+        جارٍ تحميل العربية للشباب… استخرج ملف ZIP كاملًا وافتح index.html في
+        Chrome إذا استمرت هذه الرسالة.
+      </p>
+      <header class="page-heading">
+        <div>
+          <p
+            class="eyebrow"
+            data-ar="حياة يومية · لغة · اكتشاف"
+            data-de="ALLTAG · SPRACHE · ENTDECKEN"
+          >
+            حياة يومية · لغة · اكتشاف
+          </p>
+          <h1 data-ar="العربية للشباب" data-de="Arabisch für Jugendliche">
+            العربية للشباب
+          </h1>
+          <p
+            class="practice-intro"
+            data-ar="٨ وحدات للتعلّم بالحوار والصورة والقراءة. عناوين الفهرس كما في الكتاب، والنصوص والتدريبات مكتوبة للتطبيق وفق تنظيم الوحدة الأولى."
+            data-de="8 Einheiten mit Dialogen, Bildern und Lesetexten. Die Titel folgen dem Buchverzeichnis; Texte und Aufgaben wurden für diese App nach dem Aufbau der ersten Einheit neu verfasst."
+          >
+            ٨ وحدات للتعلّم بالحوار والصورة والقراءة. عناوين الفهرس كما في
+            الكتاب، والنصوص والتدريبات مكتوبة للتطبيق وفق تنظيم الوحدة الأولى.
+          </p>
+          <p id="youth-total" class="practice-score"></p>
+        </div>
+        <span class="welcome-symbol" aria-hidden="true">▤</span>
+      </header>
+      <details class="youth-index">
+        <summary
+          data-ar="فهرس الكتاب · الوحدات الثماني"
+          data-de="Inhaltsverzeichnis · 8 Einheiten"
+        >
+          فهرس الكتاب · الوحدات الثماني
+        </summary>
+        <div id="youth-library" class="youth-library"></div>
+      </details>
+      <section class="youth-hero" aria-labelledby="youth-title">
+        <div>
+          <p id="youth-unit-label" class="eyebrow"></p>
+          <h2 id="youth-title" lang="ar" dir="rtl" tabindex="-1"></h2>
+          <p id="youth-goal" lang="ar" dir="rtl"></p>
+          <label
+            class="youth-select-label"
+            for="youth-select"
+            data-ar="الانتقال إلى وحدة"
+            data-de="Einheit auswählen"
+            >الانتقال إلى وحدة</label
+          >
+          <select id="youth-select" lang="ar" dir="rtl"></select>
+        </div>
+        <div id="youth-art"></div>
+      </section>
+      <nav
+        class="card-navigation youth-navigation"
+        aria-label="التنقل بين الوحدات / Einheiten wechseln"
+      >
+        <button id="youth-previous" type="button">
+          <span class="nav-arrow" aria-hidden="true"></span
+          ><span data-ar="السابق" data-de="Zurück">السابق</span>
+        </button>
+        <span
+          id="youth-position"
+          class="card-position"
+          aria-live="polite"
+        ></span>
+        <button id="youth-next" type="button">
+          <span data-ar="التالي" data-de="Weiter">التالي</span
+          ><span class="nav-arrow" aria-hidden="true"></span>
+        </button>
+      </nav>
+      <div class="youth-toolbar">
+        <div
+          id="youth-tabs"
+          class="filter-row"
+          role="group"
+          aria-label="أقسام الوحدة / Bereiche der Einheit"
+        ></div>
+        <button
+          id="youth-print-button"
+          class="practice-button"
+          type="button"
+          data-ar="طباعة الوحدة"
+          data-de="Einheit drucken"
+        >
+          طباعة الوحدة
+        </button>
+      </div>
+      <p
+        id="practice-audio-status"
+        class="practice-audio-status"
+        role="status"
+        aria-live="polite"
+      ></p>
+      <div class="youth-progress">
+        <span id="youth-score" class="practice-score" role="status"></span
+        ><progress
+          id="youth-progress"
+          value="0"
+          max="32"
+          aria-label="تقدم الوحدة / Lernfortschritt"
+        ></progress>
+      </div>
+      <p
+        id="youth-complete"
+        class="practice-summary"
+        hidden
+        data-ar="أكملت إجابة تمارين الوحدة. راجع التصحيحات وجرّب المحادثة والكتابة أيضًا."
+        data-de="Alle Aufgaben beantwortet. Wiederhole die Korrekturen und übe auch Sprechen und Schreiben."
+      >
+        أكملت إجابة تمارين الوحدة. راجع التصحيحات وجرّب المحادثة والكتابة أيضًا.
+      </p>
+      <section
+        id="youth-content"
+        aria-label="محتوى الوحدة / Lerninhalt"
+      ></section>
+      <details class="youth-reset">
+        <summary
+          data-ar="إعادة تمارين هذه الوحدة"
+          data-de="Aufgaben dieser Einheit zurücksetzen"
+        >
+          إعادة تمارين هذه الوحدة
+        </summary>
+        <p
+          data-ar="يمسح إجابات التمارين المصححة في هذه الوحدة فقط. تبقى مسودات المحادثة والكتابة."
+          data-de="Löscht nur bewertete Antworten dieser Einheit. Gesprächs- und Schreibentwürfe bleiben erhalten."
+        >
+          يمسح إجابات التمارين المصححة في هذه الوحدة فقط. تبقى مسودات المحادثة
+          والكتابة.
+        </p>
+        <button
+          id="youth-reset"
+          class="practice-button"
+          type="button"
+          data-ar="مسح إجابات الوحدة الحالية"
+          data-de="Antworten der aktuellen Einheit löschen"
+        >
+          مسح إجابات الوحدة الحالية
+        </button>
+      </details>
+      <p
+        class="youth-note"
+        data-ar="أسئلة المحادثة والكتابة مفتوحة؛ النماذج للمقارنة ولا تُصحّح آليًا. الرسوم توضيحية، وبعض صور المفردات رمزية. الأصوات مركّبة آليًا."
+        data-de="Sprechen und freies Schreiben sind offen und werden nicht automatisch bewertet. Muster dienen zum Vergleich. Bilder sind Illustrationen, einige Wortbilder sind symbolisch. Die Stimmen sind synthetisch."
+      >
+        أسئلة المحادثة والكتابة مفتوحة؛ النماذج للمقارنة ولا تُصحّح آليًا.
+        الرسوم توضيحية، وبعض صور المفردات رمزية. الأصوات مركّبة آليًا.
+      </p>
+      <p class="youth-note">
+        <a
+          href="images/youth/CREDITS.md"
+          data-ar="مصادر الرسوم"
+          data-de="Bildnachweise"
+          >مصادر الرسوم</a
+        >
+        · Twemoji / CC BY 4.0
+      </p>
+      <section id="youth-print" hidden></section>
+    </main>
+    <footer class="teacher-credit">إعداد المعلم: <b>محمود بركات</b></footer>
+  </body>
+</html>

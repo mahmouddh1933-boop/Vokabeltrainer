@@ -67,6 +67,31 @@ Antworten, aktuelle Aufgaben und Einstellungen dieser Bereiche werden lokal im B
 
 Vokabel- und Buchstabenkarten besitzen direkt unter der Karte eine eigene Navigation mit großen Vor-/Zurück-Schaltflächen, Richtungszeichen und aktuellem Kartenstand. Die vorhandenen Bedienelemente behalten ihre IDs und funktionieren mit Tastatur und Touch.
 
+## العربية للشباب / Arabisch für Jugendliche
+
+`arabic-youth.html` ist ein unabhängiger Bereich in Startseite und Navigation mit **acht vollständigen Einheiten**. Die folgenden Dialog-, Lese- und Freilesetitel entsprechen dem vom Nutzer gelieferten Inhaltsverzeichnis. Alle Texte und Aufgaben sind neu für die App geschrieben und folgen dem Aufbau der gezeigten ersten Einheit; sie sind keine Abschrift nicht vorliegender Buchseiten.
+
+| Einheit / Dialog | Lesetext | Freies Lesen |
+| --- | --- | --- |
+| في القطار | النقل والمواصلات | وصلت الطائرة |
+| كيف أستخدم القاموس العربي | أستخدم القاموس العربي | kein Titel im gelieferten Verzeichnis |
+| في الفندق | الفنادق | بناء البيت |
+| ماذا نفعل اليوم؟ | يوم في حياة فاطمة | تنظيم الوقت |
+| كيف نذهب إلى السوق؟ | شرطي المرور | الإشارات المرورية |
+| في سوق الصناعات التقليدية | سعاد تتسوق | في المتجر العام |
+| الأصدقاء في المطعم | العم الأكول | طعام الإفطار |
+| أفكر في السفر | المرشد السياحي | أسبوع في بكين |
+
+Einheit 2 erhält zusätzlich den ausdrücklich als App-Zusatz markierten Lesetext **كلمة فتحت بابًا**. Jede Einheit bietet zwölf Dialogbeiträge, acht Bildwörter mit deutscher Bedeutung, arabischer Erklärung und Beispielsatz, sechs offene Gesprächsfragen mit Musterantworten, vier Absätze Hauptlektüre, eigene Sprachstrukturen mit Beispielen und vier Absätze freier Lektüre.
+
+Pro Einheit gibt es **32 bewertete Aufgaben**: acht Wort-Definition-Zuordnungen, sechs Fragen zum Haupttext, acht Struktur-/Ergänzungsfragen, vier Satzbauaufgaben durch Antippen und sechs Freilesefragen. Insgesamt sind es **256 Aufgaben**, mit Korrektur, Erklärung und einzelnem Wiederholen. 24 häufige alternative Satzstellungen werden ebenfalls akzeptiert. Die Wortstellung orientiert sich am angegebenen Modell. Gespräch, Rollenspiel und freie Zusammenfassung bleiben offen und werden nicht automatisch benotet; persönliche Entwürfe werden separat gespeichert.
+
+Einheitenindex, Auswahlfeld, Navigation direkt unter der Einheit und fünf Inhaltsbereiche ermöglichen direkten Zugriff. `#unit-1` bis `#unit-8` sind als Links verwendbar. Antworten und Entwürfe liegen unter `jisrPracticeV1:arabic-youth`; Zurücksetzen löscht nur bewertete Antworten der aktuellen Einheit. Bei verweigertem Browserspeicher läuft die Übung vorübergehend weiter, mit entsprechendem Hinweis. Ein Sprachwechsel übersetzt die Bedienung, während die arabischen Lerntexte erhalten bleiben.
+
+**221 neue synthetische MP3s** in `audio/youth/` decken alle Dialogbeiträge, Bildwörter und Leseabsätze ab und funktionieren ohne Internet oder installierte arabische Stimme. Insgesamt enthält die ZIP **660 MP3-Dateien**. Es gibt acht neue Themenillustrationen, eine gesonderte Teppichillustration und 59 Twemoji-SVGs (CC BY 4.0); Quellen stehen in `images/youth/CREDITS.md`, Sprachinputs in `audio/youth-manifest.json`. Eine menschliche phonetische Abnahme der synthetischen Stimme ist nicht erfolgt.
+
+„Einheit drucken“ erzeugt ein Arbeitsblatt mit beiden Lesetexten, Dialog, Wortbildern, allen 32 Aufgaben und offenen Schreibzeilen. Gespeicherte Lösungen werden nicht gedruckt; die Illustrationen funktionieren auch ohne gedruckte Hintergrundfarben. Daten: `js/youth-data.js`; Oberfläche: `js/pages/youth.js`, `css/youth.css`. Ein lokaler Server ist zum Entwickeln ausreichend; die Downloadversion enthält alle Skripte und Stile inline.
+
 ## Das Buch · Stufe zwei / الكتاب المستوى الثاني
 
 `book-level-two.html` ist ein eigener Bereich neben den bisherigen Lernseiten. Startseite und Seitenleiste verlinken alle 28 Buchstabenlektionen. Die Bezeichnung „Stufe zwei“ gehört zu diesem Arbeitsbuch und bezeichnet keine CEFR-Einstufung.
@@ -75,7 +100,7 @@ Jede Lektion enthält drei vokalisierte Bildwörter, die vier Buchstabenformen m
 
 Vorlesen, optionale deutsche Textübersetzung, direkte Antworten mit Rückmeldung, ein alphabetisches Inhaltsverzeichnis und Vor-/Zurück-Navigation unterstützen das Lernen. Die Übungen speichern ihre Antworten unabhängig von anderen Bereichen. Zum Schreiben besitzt jeder Buchstabe und jedes Bildwort eine eigene linierte Zeichenfläche mit Vorlage, Rückgängig- und Löschfunktion. Handschrift wird gespeichert, aber nicht automatisch bewertet. „Arbeitsblatt drucken“ erstellt zwei A4-Seiten für den aktuellen Buchstaben mit freien Antwortzeilen und Schreibrastern. Die Printansicht zeigt die Aufgaben ohne gespeicherte Lösungen.
 
-Die 168 Wort-/Textausschnitte verwenden 17 bereits vorhandene und **151 zusätzliche synthetische MP3s** in `audio/book-two/`. Insgesamt enthält der Download nun **439 MP3-Dateien**. Syntheseeingaben: `audio/book-two-manifest.json`; Daten: `js/book-two-data.js`; Oberfläche: `js/pages/book-two.js`, `css/book-two.css`. Die 76 Twemoji-SVGs stehen unter CC BY 4.0; Quellen und die sechs neu erstellten Sonderillustrationen sind in `images/book-two/CREDITS.md` dokumentiert. Bilder und Audiodateien werden mitgeliefert und benötigen zur Wiedergabe kein Internet.
+Die 168 Wort-/Textausschnitte verwenden 17 bereits vorhandene und **151 zusätzliche synthetische MP3s** in `audio/book-two/`. Die übrigen Lernbereiche kommen damit auf **439 MP3-Dateien**, ohne die zusätzlichen 221 Clips des Jugendbuchs. Syntheseeingaben: `audio/book-two-manifest.json`; Daten: `js/book-two-data.js`; Oberfläche: `js/pages/book-two.js`, `css/book-two.css`. Die 76 Twemoji-SVGs stehen unter CC BY 4.0; Quellen und die sechs neu erstellten Sonderillustrationen sind in `images/book-two/CREDITS.md` dokumentiert. Bilder und Audiodateien werden mitgeliefert und benötigen zur Wiedergabe kein Internet.
 
 Gemeinsame Buchstabendaten und Audiodateizuordnung: `js/letter-data.js`. Aufgaben: `js/letter-training-data.js`. Oberfläche: `js/pages/letter-training.js`, `css/letter-training.css`. Die Wortbeispiele bleiben in `js/letter-examples.js`.
 
@@ -133,7 +158,7 @@ Die Download-ZIP enthält JavaScript und CSS direkt in den HTML-Seiten. Dadurch 
 
 `js/storage.js` fängt verweigerten Speicherzugriff und fehlgeschlagene Schreibvorgänge ab. Die Übungen laufen in diesem Fall mit vorübergehendem Zustand weiter; die Oberfläche weist auf fehlende Speicherung hin. Die Navigation hängt nicht vom zusätzlichen Karten-Zähler ab. Geänderte JS-/CSS-Dateien der Website erhalten Inhaltsversionen in ihren URLs, um gemischte Cache-Versionen zu vermeiden.
 
-Der Download lässt sich mit `python3 tools/build-download.py` neu bauen. Das Skript aktualisiert die Asset-Versionen in den Quell-HTML-Dateien und prüft anschließend die ZIP-Dateien sowie die eingebetteten Skripte. `tests/local-download-smoke.py --base-url http://127.0.0.1:8001` prüft eine separat entpackte und auf Port 8001 bereitgestellte ZIP: alle drei Lernbereiche, Audio, Kartenklick, Navigation und Sprachwechsel bei blockierten separaten Skript-/Stylesheet-Anfragen, verweigertem Speicher und fehlenden neueren DOM-Methoden. Dies ist ein Browsertest der entpackten Dateien; ein physisches Android-Gerät wurde nicht getestet.
+Der Download lässt sich mit `python3 tools/build-download.py` neu bauen. Das Skript aktualisiert die Asset-Versionen in den Quell-HTML-Dateien und prüft anschließend die ZIP-Dateien sowie die eingebetteten Skripte. `tests/local-download-smoke.py --base-url http://127.0.0.1:8001` prüft eine separat entpackte und auf Port 8001 bereitgestellte ZIP: die drei Lernbereiche, das zweite Buch, das Jugendbuch, Audio, Kartenklick, Navigation und Sprachwechsel bei blockierten separaten Skript-/Stylesheet-Anfragen, verweigertem Speicher und fehlenden neueren DOM-Methoden. Dies ist ein Browsertest der entpackten Dateien; ein physisches Android-Gerät wurde nicht getestet.
 
 Voraussetzungen: Python, Playwright für Python und Chromium unter `/usr/bin/chromium`. Bei laufendem Server:
 
@@ -148,6 +173,7 @@ python3 tests/letters-focused-smoke.py
 python3 tests/letter-pronunciation-smoke.py
 python3 tests/practice-smoke.py
 python3 tests/book-two-smoke.py
+python3 tests/youth-smoke.py
 python3 tests/book-print-smoke.py
 python3 tests/letter-audio-check.py
 ```
@@ -165,6 +191,8 @@ Die Option ersetzt im Test nur den Abruf der angegebenen Bibliothek und ändert 
 
 Der zusätzliche gemischte Buchstabentest prüft alle 112 Fragen, Korrekturen, Sprachwechsel, Ergebnis, Durchsicht und Neustart in einer mobilen Chrome-Emulation. Er prüft außerdem die tatsächliche MP3-Wiedergabe durch Touch-Eingaben bei blockierten externen Anfragen. Die Unit-Tests prüfen unter anderem den direkten Gerätestimmen-Aufruf, verzögert verfügbare Stimmen, gesperrte Wiedergabe, Fallbacks und den Abbruch veralteter Anfragen. Ein Test auf einem physischen Android-Gerät wurde in der Cloud nicht durchgeführt.
 
-`letter-pronunciation-smoke.py` prüft die 28 Sukun-Hörbeispiele, die korrigierten Bildwörter, Tā, das Granatapfelbild und beide Oberflächensprachen mit gesperrtem externem Netzwerk. `practice-smoke.py` beantwortet alle 36 Hörfragen, 24 Satzbauaufgaben und 24 Verständnisfragen, prüft Wiedergabe der 120 neuen Clips, Korrekturen, Tipps, Persistenz, Filter und Tastatur-/Touch-Navigation. `book-two-smoke.py` prüft alle 28 Lektionen mit 504 beantworteten Aufgaben, 168 Audioausgaben, Bildzuordnungen, Handschrift, Speicherung, Sprache und Druckansicht. `letter-audio-check.py` benötigt zusätzlich FFmpeg/FFprobe und prüft alle 439 MP3-Dateien auf Dekodierfehler und Stille.
+`letter-pronunciation-smoke.py` prüft die 28 Sukun-Hörbeispiele, die korrigierten Bildwörter, Tā, das Granatapfelbild und beide Oberflächensprachen mit gesperrtem externem Netzwerk. `practice-smoke.py` beantwortet alle 36 Hörfragen, 24 Satzbauaufgaben und 24 Verständnisfragen, prüft Wiedergabe der 120 neuen Clips, Korrekturen, Tipps, Persistenz, Filter und Tastatur-/Touch-Navigation. `book-two-smoke.py` prüft alle 28 Lektionen mit 504 beantworteten Aufgaben, 168 Audioausgaben, Bildzuordnungen, Handschrift, Speicherung, Sprache und Druckansicht. `letter-audio-check.py` benötigt zusätzlich FFmpeg/FFprobe und prüft alle 660 MP3-Dateien auf Dekodierfehler und Stille.
 
 Online-Aussprache für sonstigen Text benötigt Zugriff auf `translate.google.com` bzw. `translate.googleapis.com`; ihre Verfügbarkeit hängt vom externen Dienst ab.
+
+`youth-smoke.py` prüft alle 256 Aufgaben in acht Einheiten, 221 unterschiedliche lokal abgespielte Aufnahmen, Bilder, offene Entwürfe, Speicherung, isoliertes Zurücksetzen, 24 alternative Satzstellungen (Datenprüfung), Sprachwechsel, Bildschirmbreiten von 320 bis 1440 Pixeln und die Druckfassung ohne gespeicherte Antworten. Externe Anfragen sind dabei blockiert. Die entpackte ZIP wird zusätzlich mit verweigertem Speicher, verweigerter History-API, fehlender `replaceChildren`-Methode und blockierten separaten JS-/CSS-Dateien geprüft.

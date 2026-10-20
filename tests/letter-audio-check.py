@@ -1,6 +1,7 @@
 """Decode the bundled speech and reject silent or broken MP3 clips (requires FFmpeg)."""
 from pathlib import Path
 import re
+import json
 import subprocess
 
 root = Path(__file__).resolve().parents[1]
@@ -10,7 +11,9 @@ assert len(letter_clips) == 168, len(letter_clips)
 assert len(practice_clips) == 120, len(practice_clips)
 book_clips = sorted((root/'audio/book-two').glob('*.mp3'))
 assert len(book_clips) == 151, len(book_clips)
-clips = letter_clips + practice_clips + book_clips
+youth_clips = sorted((root/'audio/youth').glob('*.mp3'))
+assert len(youth_clips) == len(json.loads((root/'audio/youth-manifest.json').read_text())['clips'])
+clips = letter_clips + practice_clips + book_clips + youth_clips
 for clip in clips:
     duration = float(subprocess.check_output([
         'ffprobe', '-v', 'error', '-show_entries', 'format=duration',
