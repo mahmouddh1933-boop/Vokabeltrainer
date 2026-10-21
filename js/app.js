@@ -677,7 +677,8 @@
         window.ArabicPracticeData?.audio[value] ||
         window.ArabicBookData?.audio[value] ||
         window.ArabicYouthData?.audio[value] ||
-        window.ArabicYouthTwoData?.audio[value];
+        window.ArabicYouthTwoData?.audio[value] ||
+        window.ArabicYouthBookTwoPartOneData?.audio[value];
       if (recording) playMedia(recording, local, true);
       else local();
       return true;

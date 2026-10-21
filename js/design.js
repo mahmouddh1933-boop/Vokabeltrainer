@@ -52,6 +52,12 @@
         "Jugendübungen 2",
         "تدريبات الشباب 2",
       ],
+      [
+        "youth-book-two-part-one.html",
+        "book",
+        "Jugendbuch 2 · Teil 1",
+        "كتاب الشباب2 ج1",
+      ],
       ["test.html", "check", "Wissen testen", "اختبر معرفتك"],
       ["review.html", "repeat", "Wiederholen", "المراجعة"],
       ["stats.html", "chart", "Mein Fortschritt", "تقدّمي"],

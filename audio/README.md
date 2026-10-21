@@ -27,3 +27,11 @@ These clips were synthesized with the same Arabic Google Translate TTS endpoint,
 `audio/youth/` adds **221 synthetic MP3s** for eight independent youth units: dialogue turns, eight picture words per unit and both four-paragraph reading texts. Repeated vocabulary shares a file. `youth-manifest.json` records all exact vocalized inputs and file paths; NFC text keys in `ArabicYouthData.audio` select them before any device or online voice. Clips were generated using the same Arabic Google Translate TTS endpoint with `ttsslow=1`, downloaded over verified HTTPS on 2026-10-20. All files were fully decoded and checked for audible output, and playback was exercised by touch in mobile Chromium with external requests blocked. This is synthetic speech, without human phonetic acceptance or testing on a physical Android device.
 
 The complete download now includes **660 MP3 files**. All audio folders must remain beside the extracted HTML files.
+
+## كتاب الشباب2 ج1 · Six-unit book
+
+`audio/book-youth-two-part-one/` adds **134 synthetic Arabic MP3s** for the six-unit book: original dialogue turns, vocabulary and short reading segments. `book-youth-two-part-one-manifest.json` records every exact synthesis text and content-derived filename. These were generated with the Arabic Google Translate TTS endpoint (`ttsslow=1`) over verified HTTPS on 2026-10-21. Existing identical texts and all six sound-contrast pairs reuse already bundled clips. `ArabicYouthBookTwoPartOneData.audio` selects local files directly from a user tap before considering device voices or online speech.
+
+All added clips were fully decoded with FFmpeg and checked for audible signal. Browser tests exercise playback with external requests blocked; they do not replace a native speaker's pronunciation review or a test on a physical Android phone. These are synthetic voices.
+
+The complete download now includes **794 MP3 files**. Extract all audio folders together with the HTML files.

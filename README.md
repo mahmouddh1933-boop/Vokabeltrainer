@@ -67,6 +67,29 @@ Antworten, aktuelle Aufgaben und Einstellungen dieser Bereiche werden lokal im B
 
 Vokabel- und Buchstabenkarten besitzen direkt unter der Karte eine eigene Navigation mit großen Vor-/Zurück-Schaltflächen, Richtungszeichen und aktuellem Kartenstand. Die vorhandenen Bedienelemente behalten ihre IDs und funktionieren mit Tastatur und Touch.
 
+## كتاب الشباب2 ج1 / Jugendbuch 2 · Teil 1
+
+Der unabhängige Bereich `youth-book-two-part-one.html` ist über Startseite und Seitenleiste erreichbar. **Alle 37 Fotos** des zweiten ZIP-Pakets sind im Bildverzeichnis zugeordnet: 36 Unterrichtsseiten (6–41) und das Inhaltsverzeichnis. Sechs Einheiten folgen dessen Titeln, Grammatikthemen und Lautpaaren:
+
+| Einheit | Titel | Grammatik | Lautpaar |
+| --- | --- | --- | --- |
+| 1 | من أين أنت؟ | حروف الجر | ع / أ |
+| 2 | أين تسكن؟ | أدوات الاستفهام | س / ث |
+| 3 | كم الساعة الآن؟ | أقسام الكلمة | س / ش |
+| 4 | ماذا تفعل في الصباح؟ | الفعل | د / ض |
+| 5 | ماذا ستعمل بعد الدراسة؟ | الفاعل | ض / ظ |
+| 6 | إلى السوق | المفعول به | ذ / ظ |
+
+**49 neue Aufgabenblöcke mit 418 Teilaufgaben** decken Dialogverständnis, Wortschatz, ergänzte Gesprächswechsel, Lautunterscheidung, Grammatik und angewandte Strukturen, Wort-/Satzbau, freies Schreiben und Lesen ab. Einheit 3 enthält zusätzlich sechs bedienbare Analoguhren. Pro Einheit führen sechs Bereichsfilter zu Dialog, Wortschatz, Lauten, Grammatik/Strukturen, Schreiben und Lesen; passende Sprechaufgaben stehen im Dialogbereich. Inhalte und Aufgaben sind neu verfasst und orientieren sich an den Vorlagen, ohne die Originalfotos im Download zu verteilen.
+
+Geschlossene Aufgaben erhalten Korrektur und Erklärung. Freie Gespräche und Texte haben ausformulierte Vergleichsmodelle und eine getrennte Selbstkontrolle. Antworten, Schreibentwürfe, die ausgewählte Einheit und der Fortschritt bleiben unter dem eigenen Speicherschlüssel `jisrPracticeV1:youth-book-two-part-one` erhalten. Bei gesperrtem Speicher funktioniert die Oberfläche vorübergehend ohne dauerhafte Speicherung. Verknüpfungen wie `#unit-3` und `#u6-grammar` öffnen direkt die gewünschte Einheit beziehungsweise Aufgabe.
+
+Dialogzeilen, Wörter, Leseabschnitte und Lautaufgaben besitzen lokal mitgeliefertes Audio. 134 neue synthetische MP3s ergänzen vorhandene Aufnahmen; siehe `audio/book-youth-two-part-one-manifest.json` und `audio/README.md`. Lerntexte und leere Aufgaben lassen sich als Einzelaktivität, nach Bildvorlage oder als vollständige Einheit drucken. Gespeicherte Antworten und Entwürfe werden dabei nicht ausgedruckt.
+
+Bearbeitbare Inhalte: `data/book-youth-two-part-one/unit-{1..6}.json`; Zuordnung: [37 Bilder und Unterrichtsthemen](docs/YOUTH-BOOK-TWO-PART-ONE-COVERAGE.md). `node tools/build-youth-book-two-part-one.js` erzeugt deterministisch Daten, Audioeingaben und Zuordnungsdokumentation aus diesen Quelldateien; die hochgeladenen Fotos sind dafür nicht erforderlich. Der gemeinsame Aufgabenrenderer bleibt mit „تدريبات الشباب 2“ kompatibel, verwendet jedoch getrennte Inhaltsdaten und Speicherstände.
+
+Prüfen: `node --test tests/*.test.js`, `python tests/youth-book-two-part-one-smoke.py` und `python tests/letter-audio-check.py`. Der Browsertest bearbeitet jede Teilaufgabe über die Oberfläche und prüft Audio, Einheitenwechsel, gespeicherte Antworten, deutsche/arabische Oberfläche und die Druckansichten. Der Test der entpackten ZIP enthält auch diesen Bereich.
+
 ## تدريبات الشباب 2 / Jugendübungen 2
 
 `youth-training-two.html` ist ein eigener Bereich auf der Startseite und in der Navigation. **Alle 31 hochgeladenen Buchfotos wurden einzeln geprüft**. Daraus entstanden **53 neue Aufgabenblöcke mit 402 Teilaufgaben**, jeweils nach den erkennbaren Übungsformen. [Die vollständige Zuordnung](docs/YOUTH-TWO-COVERAGE.md) verbindet jeden Originaldateinamen und jede sichtbare Buchseite mit den passenden Aktivitäten. Nicht erkennbare Seitenzahlen sind nicht geraten; abgeschnittene Randstreifen wiederholen andere Seiten oder zeigen keinen vollständigen zusätzlichen Auftrag. Die Originalfotos werden nicht mitverteilt.

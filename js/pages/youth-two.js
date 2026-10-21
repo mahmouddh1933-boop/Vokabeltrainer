@@ -1,17 +1,30 @@
 (() => {
   "use strict";
+  const C = window.JisrWorkbookConfig || {};
   const P = window.Practice,
-    D = window.ArabicYouthTwoData;
+    D = C.data || window.ArabicYouthTwoData;
+  const storageKey = C.storageKey || "youth-two";
   const { $, el, button, arabic, choose: t } = P;
-  const categories = [
-    ["all", "جميع الأنشطة", "Alle Aufgaben"],
-    ["vocabulary", "المفردات", "Wortschatz"],
-    ["grammar", "القواعد والتراكيب", "Grammatik"],
-    ["reading", "القراءة", "Lesen"],
-    ["writing", "الكتابة", "Schreiben"],
-    ["speaking", "الكلام", "Sprechen"],
-  ];
-  const state = P.load("youth-two", {
+  const categories = D.units
+    ? [
+        ["all", "كل أقسام الوحدة", "Alle Bereiche"],
+        ["dialogue", "الحوار", "Dialog"],
+        ["vocabulary", "المفردات", "Wörter"],
+        ["sounds", "الأصوات", "Laute"],
+        ["grammar", "القواعد والتراكيب", "Grammatik"],
+        ["writing", "الكتابة", "Schreiben"],
+        ["reading", "القراءة", "Lesen"],
+      ]
+    : [
+        ["all", "جميع الأنشطة", "Alle Aufgaben"],
+        ["vocabulary", "المفردات", "Wortschatz"],
+        ["grammar", "القواعد والتراكيب", "Grammatik"],
+        ["reading", "القراءة", "Lesen"],
+        ["writing", "الكتابة", "Schreiben"],
+        ["speaking", "الكلام", "Sprechen"],
+      ];
+  const state = P.load(storageKey, {
+    unit: D.units ? 1 : null,
     active: D.activities[0].id,
     category: "all",
     search: "",
@@ -35,12 +48,70 @@
     D.activities.find((a) => a.id === state.active) || D.activities[0];
   const map = (key) =>
     state[key][activity().id] || (state[key][activity().id] = {});
-  const persist = () => P.save("youth-two", state);
+  if (D.units) {
+    if (!D.units.some((u) => u.number === state.unit))
+      state.unit = activity().unit;
+    if (activity().unit !== state.unit)
+      state.active = D.activities.find((a) => a.unit === state.unit).id;
+  }
+  const persist = () => P.save(storageKey, state);
+  function renderUnits() {
+    if (!D.units) return;
+    const unit = D.units.find((u) => u.number === state.unit);
+    $("book-unit-title").textContent = unit.title;
+    $("book-unit-goal").textContent = unit.goal;
+    $("book-unit-details").textContent = t(
+      `الوحدة ${unit.number} · ص ${unit.pages.join("–")} · ${unit.grammar} · ${unit.sounds.join(" / ")}`,
+      `Einheit ${unit.number} · S. ${unit.pages.join("–")} · ${unit.grammar} · ${unit.sounds.join(" / ")}`,
+    );
+    $("book-unit-position").textContent = `${unit.number} / ${D.units.length}`;
+    $("book-unit-previous").disabled = unit.number === 1;
+    $("book-unit-next").disabled = unit.number === D.units.length;
+    $("book-unit-library").replaceChildren();
+    D.units.forEach((u) => {
+      const b = button("", () => chooseUnit(u.number, true), "book-unit-card");
+      b.dataset.unit = u.number;
+      b.setAttribute("aria-pressed", String(u.number === state.unit));
+      let done = 0,
+        total = 0;
+      for (const a of D.activities.filter((a) => a.unit === u.number))
+        for (const q of a.tasks) {
+          total++;
+          if (
+            q.kind === "open"
+              ? state.reviewed[a.id]?.[q.id]
+              : state.answers[a.id]?.[q.id]
+          )
+            done++;
+        }
+      b.append(
+        el("small", t("الوحدة ", "Einheit ") + u.number),
+        arabic(el("strong", u.title)),
+        arabic(el("span", u.grammar)),
+        el(
+          "small",
+          t(`${done} من ${total} مهمة منجزة`, `${done} / ${total} bearbeitet`),
+        ),
+      );
+      $("book-unit-library").append(b);
+    });
+  }
+  function chooseUnit(number, focus = false) {
+    if (!D.units.some((u) => u.number === number)) return;
+    state.unit = number;
+    state.category = "all";
+    state.search = "";
+    $("yt-search").value = "";
+    $("yt-review").checked = false;
+    navigate(D.activities.find((a) => a.unit === number).id, focus);
+  }
   function filtered() {
     const needle = searchKey(state.search);
     return D.activities.filter(
       (a) =>
-        (state.category === "all" || a.category === state.category) &&
+        (!D.units || a.unit === state.unit) &&
+        (state.category === "all" ||
+          (D.units ? a.section : a.category) === state.category) &&
         (!needle ||
           searchKey(
             [
@@ -86,9 +157,10 @@
           if (state.reviewed[item.id]?.[q.id]) allReviewed++;
         } else if (state.answers[item.id]?.[q.id]) allDone++;
       }
+    renderUnits();
     const total = D.activities.reduce((n, item) => n + item.tasks.length, 0);
     $("yt-total").textContent = t(
-      `${D.sources.length} صورة · ${D.activities.length} نشاطًا · ${total} سؤالًا ومهمة · أنجزت ${allDone} إجابة مصحّحة وراجعت ${allReviewed} مهمة مفتوحة`,
+      `${D.units ? D.units.length + " وحدات · " : ""}${D.sources.length} صورة · ${D.activities.length} نشاطًا · ${total} سؤالًا ومهمة · أنجزت ${allDone} إجابة مصحّحة وراجعت ${allReviewed} مهمة مفتوحة`,
       `${D.sources.length} Vorlagen · ${D.activities.length} Aufgabenblöcke · ${total} Teilaufgaben · ${allDone} beantwortet und ${allReviewed} selbst geprüft`,
     );
   }
@@ -131,7 +203,14 @@
     );
     $("yt-categories").replaceChildren();
     for (const [id, ar, de] of categories) {
-      if (id !== "all" && !D.activities.some((a) => a.category === id))
+      if (
+        id !== "all" &&
+        !D.activities.some(
+          (a) =>
+            (!D.units || a.unit === state.unit) &&
+            (D.units ? a.section : a.category) === id,
+        )
+      )
         continue;
       const b = button(
         t(ar, de),
@@ -200,10 +279,45 @@
     }
     return wrap;
   }
+  function voiceButton(text) {
+    const b = button(
+      t("◖ استمع", "◖ Anhören"),
+      () => P.speak(text),
+      "practice-button book-listen",
+    );
+    b.dataset.audio = text;
+    return b;
+  }
   function context() {
     const a = activity(),
       block = $("yt-context");
     block.replaceChildren();
+    if (a.dialogue) {
+      const list = el("div", undefined, "book-dialogue");
+      a.dialogue.forEach((turn) => {
+        const row = el("article", undefined, "book-turn"),
+          copy = arabic(el("div"));
+        copy.append(el("strong", turn.speaker), el("p", turn.text));
+        row.append(copy, voiceButton(turn.text));
+        list.append(row);
+      });
+      block.append(list);
+    }
+    if (a.vocabulary) {
+      const grid = el("div", undefined, "book-word-grid");
+      a.vocabulary.forEach((word) => {
+        const card = el("article", undefined, "book-word-card");
+        if (word.image) card.append(asset(word.image, word.meaning));
+        card.append(
+          arabic(el("h3", word.ar)),
+          el("p", word.de),
+          arabic(el("p", word.meaning)),
+          voiceButton(word.ar),
+        );
+        grid.append(card);
+      });
+      block.append(grid);
+    }
     if (a.rule) {
       const rule = arabic(el("aside", a.rule, "yt-rule"));
       block.append(rule);
@@ -216,10 +330,14 @@
     }
     if (a.passage) {
       const passage = arabic(el("div", undefined, "yt-passage"));
-      passage.append(
-        el("h3", t("أقرأ أولًا", "Zuerst lesen")),
-        el("p", a.passage),
-      );
+      passage.append(el("h3", t("أقرأ أولًا", "Zuerst lesen")));
+      if (a.passageLines) {
+        for (const text of a.passageLines) {
+          const row = el("div", undefined, "book-reading-line");
+          row.append(arabic(el("p", text)), voiceButton(text));
+          passage.append(row);
+        }
+      } else passage.append(el("p", a.passage));
       block.append(passage);
     }
     if (a.diagram)
@@ -780,7 +898,7 @@
     $("yt-title").textContent = a.title;
     $("yt-directions").textContent = a.instructions;
     $("yt-meta").textContent =
-      categoryName(a.category) +
+      categoryName(D.units ? a.section : a.category) +
       (a.sourcePage ? t(" · ص ", " · S. ") + a.sourcePage : "") +
       t(" · الصورة ", " · Vorlage ") +
       (D.sources.findIndex((s) => s.photo === a.source) + 1);
@@ -795,7 +913,7 @@
     const doc = arabic($("yt-print"));
     doc.replaceChildren();
     doc.append(
-      el("h1", "تدريبات الشباب 2"),
+      el("h1", C.title || "تدريبات الشباب 2"),
       el(
         "p",
         "الاسم: .................................... التاريخ: ..............................",
@@ -804,6 +922,25 @@
     for (const a of items) {
       const section = el("section", undefined, "yt-print-activity");
       section.append(el("h2", a.title), el("p", a.instructions));
+      if (a.unit && D.units)
+        section.append(
+          el(
+            "p",
+            `الوحدة ${a.unit}: ${D.units.find((u) => u.number === a.unit).title}`,
+          ),
+        );
+      if (a.dialogue)
+        a.dialogue.forEach((turn) =>
+          section.append(el("p", turn.speaker + ": " + turn.text)),
+        );
+      if (a.vocabulary)
+        for (const word of a.vocabulary) {
+          const row = el("p");
+          if (word.image)
+            row.append(asset(word.image, "", "book-print-word-image"));
+          row.append(el("strong", word.ar + " — "), el("span", word.meaning));
+          section.append(row);
+        }
       if (a.rule) section.append(el("p", a.rule));
       if (a.passage) section.append(el("p", a.passage));
       if (a.diagram) section.append(diagram(a, true));
@@ -866,6 +1003,12 @@
   function navigate(id, focus = false) {
     if (!D.activities.some((a) => a.id === id)) return;
     P.stop();
+    if (D.units && D.activities.find((a) => a.id === id).unit !== state.unit) {
+      state.unit = D.activities.find((a) => a.id === id).unit;
+      state.category = "all";
+      state.search = "";
+      $("yt-search").value = "";
+    }
     state.active = id;
     persist();
     try {
@@ -880,14 +1023,35 @@
   }
   function fromHash() {
     const id = location.hash.slice(1);
+    if (D.units?.some((u) => u.id === id)) {
+      state.unit = D.units.find((u) => u.id === id).number;
+      state.active = D.activities.find((a) => a.unit === state.unit).id;
+      state.category = "all";
+      state.search = "";
+      return;
+    }
     if (D.activities.some((a) => a.id === id)) {
       const changed = state.active !== id;
       state.active = id;
+      if (D.units) state.unit = D.activities.find((a) => a.id === id).unit;
       if (changed && !filtered().some((a) => a.id === id)) {
         state.category = "all";
         state.search = "";
       }
     }
+  }
+  if (D.units) {
+    $("book-unit-previous").addEventListener("click", () =>
+      chooseUnit(state.unit - 1, true),
+    );
+    $("book-unit-next").addEventListener("click", () =>
+      chooseUnit(state.unit + 1, true),
+    );
+    $("book-print-unit").addEventListener("click", () => {
+      P.stop();
+      buildPrint(D.activities.filter((a) => a.unit === state.unit));
+      window.print();
+    });
   }
   fromHash();
   $("yt-search").value = state.search;
@@ -929,7 +1093,12 @@
   });
   $("yt-print-source").addEventListener("click", () => {
     P.stop();
-    buildPrint(D.activities.filter((a) => a.source === activity().source));
+    buildPrint(
+      D.activities.filter(
+        (a) =>
+          a.source === activity().source && (!D.units || a.unit === state.unit),
+      ),
+    );
     window.print();
   });
   window.addEventListener("hashchange", () => {

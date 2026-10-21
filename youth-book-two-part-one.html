@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#194e40" />
+    <title>كتاب الشباب2 ج1 · Jisr</title>
+    <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
+    <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
+    <link rel="stylesheet" href="css/modern.css?v=8ba921c3f4f7" />
+    <link rel="stylesheet" href="css/practice.css?v=e55c73e03b36" />
+    <link rel="stylesheet" href="css/youth-two.css?v=41e8110b3a5d" />
+    <link rel="stylesheet" href="css/book-youth-two-part-one.css?v=553084acf479" />
+    <script src="js/storage.js?v=eafa6563f526" defer></script>
+    <script src="js/app.js?v=6472f6c0097b" defer></script>
+    <script src="js/youth-two-data.js?v=efa359d7c88a" defer></script>
+    <script src="js/youth-book-two-part-one-data.js?v=7e2934b87784" defer></script>
+    <script src="js/pages/book-youth-two-part-one.js?v=9d641d2b23b9" defer></script>
+    <script src="js/interface-languages.js?v=f84e2acf2cd4" defer></script>
+    <script src="js/design.js?v=12b2221b4e16" defer></script>
+    <script src="js/practice-core.js?v=81b88bc2a7c0" defer></script>
+    <script src="js/pages/youth-two.js?v=91d05c86cb64" defer></script>
+  </head>
+  <body>
+    <main class="container practice-page youth-two-page book-part-one-page">
+      <p id="lesson-loading" role="status">
+        جارٍ تحميل التدريبات… استخرج ملف ZIP كاملًا وافتح index.html في Chrome
+        إذا استمرت هذه الرسالة.
+      </p>
+      <header class="page-heading">
+        <div>
+          <p
+            class="eyebrow"
+            data-ar="أفهم · أطبّق · أكتب"
+            data-de="VERSTEHEN · ANWENDEN · SCHREIBEN"
+          >
+            أفهم · أطبّق · أكتب
+          </p>
+          <h1 data-ar="كتاب الشباب2 ج1" data-de="Jugendbuch 2 · Teil 1">
+            كتاب الشباب2 ج1
+          </h1>
+          <p
+            class="practice-intro"
+            data-ar="ست وحدات وفق الفهرس والصور الـ٣٧: حوار ومفردات وأصوات وقواعد وكتابة وقراءة. نصوص وتمارين جديدة تراعي موضوع كل وحدة."
+            data-de="Sechs Einheiten nach Inhaltsverzeichnis und 37 Vorlagen: Dialog, Wortschatz, Laute, Grammatik, Schreiben und Lesen. Neue Texte und Übungen zu jedem Thema."
+          >
+            ست وحدات وفق الفهرس والصور الـ٣٧: حوار ومفردات وأصوات وقواعد وكتابة
+            وقراءة. نصوص وتمارين جديدة تراعي موضوع كل وحدة.
+          </p>
+          <p id="yt-total" class="practice-score"></p>
+        </div>
+        <span class="welcome-symbol" aria-hidden="true">٢</span>
+      </header>
+      <section
+        class="book-unit-picker"
+        aria-label="وحدات الكتاب / Bucheinheiten"
+      >
+        <h2 data-ar="اختر وحدتك" data-de="Einheit wählen">اختر وحدتك</h2>
+        <div id="book-unit-library"></div>
+      </section>
+      <section class="book-unit-hero" aria-labelledby="book-unit-title">
+        <p id="book-unit-details" class="eyebrow" lang="ar" dir="rtl"></p>
+        <h2 id="book-unit-title" lang="ar" dir="rtl"></h2>
+        <p id="book-unit-goal" lang="ar" dir="rtl"></p>
+        <nav
+          class="card-navigation"
+          aria-label="التنقل بين الوحدات / Einheiten wechseln"
+        >
+          <button
+            id="book-unit-previous"
+            type="button"
+            data-ar="الوحدة السابقة"
+            data-de="Vorige Einheit"
+          >
+            الوحدة السابقة
+          </button>
+          <span
+            id="book-unit-position"
+            class="card-position"
+            aria-live="polite"
+          ></span>
+          <button
+            id="book-unit-next"
+            type="button"
+            data-ar="الوحدة التالية"
+            data-de="Nächste Einheit"
+          >
+            الوحدة التالية
+          </button>
+        </nav>
+        <button
+          id="book-print-unit"
+          class="practice-button"
+          type="button"
+          data-ar="طباعة الوحدة كاملة"
+          data-de="Ganze Einheit drucken"
+        >
+          طباعة الوحدة كاملة
+        </button>
+      </section>
+      <section
+        class="yt-catalog"
+        aria-label="اختيار النشاط / Aufgabe auswählen"
+      >
+        <label
+          for="yt-search"
+          data-ar="ابحث عن تدريب أو قاعدة"
+          data-de="Übung oder Regel suchen"
+          >ابحث عن تدريب أو قاعدة</label
+        >
+        <input
+          id="yt-search"
+          type="search"
+          placeholder="السكن، الساعة، المهن…"
+          autocomplete="off"
+        />
+        <div
+          id="yt-categories"
+          class="filter-row"
+          role="group"
+          aria-label="أنواع الأنشطة / Kategorien"
+        ></div>
+        <label for="yt-select" data-ar="اختر النشاط" data-de="Aufgabe auswählen"
+          >اختر النشاط</label
+        >
+        <select id="yt-select" lang="ar" dir="rtl"></select>
+        <p id="yt-results" class="practice-score" role="status"></p>
+        <p
+          id="yt-empty"
+          hidden
+          data-ar="لا توجد نتائج. جرّب كلمة أخرى أو أظهر جميع الأنشطة."
+          data-de="Keine Treffer. Suche anders oder zeige alle Aufgaben."
+        >
+          لا توجد نتائج. جرّب كلمة أخرى أو أظهر جميع الأنشطة.
+        </p>
+        <button
+          id="yt-clear-filters"
+          type="button"
+          class="practice-button"
+          data-ar="إظهار جميع الأنشطة"
+          data-de="Alle Aufgaben anzeigen"
+        >
+          إظهار جميع الأنشطة
+        </button>
+        <details class="yt-source-index">
+          <summary
+            data-ar="فهرس الصور المرسلة · ٣٧ صورة"
+            data-de="Verzeichnis der 37 Bildvorlagen"
+          >
+            فهرس الصور المرسلة · ٣٧ صورة
+          </summary>
+          <div id="yt-sources"></div>
+        </details>
+      </section>
+      <div id="yt-workspace">
+        <header class="yt-activity-heading">
+          <p id="yt-meta" class="eyebrow"></p>
+          <h2 id="yt-title" lang="ar" dir="rtl" tabindex="-1"></h2>
+          <p id="yt-directions" lang="ar" dir="rtl"></p>
+        </header>
+        <nav
+          class="card-navigation yt-navigation"
+          aria-label="التنقل بين الأنشطة / Übungen wechseln"
+        >
+          <button id="yt-previous" type="button">
+            <span class="nav-arrow" aria-hidden="true"></span
+            ><span data-ar="السابق" data-de="Zurück">السابق</span>
+          </button>
+          <span
+            id="yt-position"
+            class="card-position"
+            aria-live="polite"
+          ></span>
+          <button id="yt-next" type="button">
+            <span data-ar="التالي" data-de="Weiter">التالي</span
+            ><span class="nav-arrow" aria-hidden="true"></span>
+          </button>
+        </nav>
+        <div class="yt-toolbar">
+          <div>
+            <button
+              id="yt-print-activity"
+              class="practice-button"
+              type="button"
+              data-ar="طباعة النشاط"
+              data-de="Aufgabe drucken"
+            >
+              طباعة النشاط</button
+            ><button
+              id="yt-print-source"
+              class="practice-button"
+              type="button"
+              data-ar="طباعة تدريبات هذه الصورة"
+              data-de="Aufgaben dieser Vorlage drucken"
+            >
+              طباعة تدريبات هذه الصورة
+            </button>
+          </div>
+          <label class="yt-review-label"
+            ><input id="yt-review" type="checkbox" /><span
+              data-ar="مراجعة ما يحتاج محاولة أخرى"
+              data-de="Noch nicht richtige Antworten wiederholen"
+              >مراجعة ما يحتاج محاولة أخرى</span
+            ></label
+          >
+        </div>
+        <p
+          id="practice-audio-status"
+          class="practice-audio-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+        <p id="yt-score" class="practice-score" role="status"></p>
+        <p id="yt-open-score" class="practice-score" role="status"></p>
+        <progress
+          id="yt-progress"
+          value="0"
+          max="1"
+          aria-label="تقدم النشاط / Fortschritt"
+        ></progress>
+        <div id="yt-context"></div>
+        <section id="yt-tasks" aria-label="تدريبات النشاط / Aufgaben"></section>
+        <p
+          id="yt-review-empty"
+          class="practice-summary"
+          hidden
+          data-ar="لا توجد إجابات تحتاج محاولة أخرى في هذا النشاط."
+          data-de="In dieser Aufgabe gibt es keine falschen Antworten zu wiederholen."
+        >
+          لا توجد إجابات تحتاج محاولة أخرى في هذا النشاط.
+        </p>
+        <details class="yt-reset">
+          <summary
+            data-ar="إعادة إجابات النشاط الحالي"
+            data-de="Diese Aufgabe zurücksetzen"
+          >
+            إعادة إجابات النشاط الحالي
+          </summary>
+          <p
+            data-ar="يمسح الإجابات المصححة في هذا النشاط فقط. تبقى مسودات الكتابة."
+            data-de="Löscht nur bewertete Antworten dieser Aufgabe. Schreibentwürfe bleiben erhalten."
+          >
+            يمسح الإجابات المصححة في هذا النشاط فقط. تبقى مسودات الكتابة.
+          </p>
+          <button
+            id="yt-reset"
+            class="practice-button"
+            type="button"
+            data-ar="مسح إجابات هذا النشاط"
+            data-de="Antworten dieser Aufgabe löschen"
+          >
+            مسح إجابات هذا النشاط
+          </button>
+        </details>
+      </div>
+      <p
+        class="yt-note"
+        data-ar="المحادثة والكتابة المفتوحة لها نماذج للمقارنة وتقييم ذاتي. تُحفظ الإجابات والمسودات في هذا المتصفح عند توفر التخزين."
+        data-de="Offene Sprech- und Schreibaufgaben bieten Muster zum Vergleichen und Selbstprüfen. Antworten und Entwürfe bleiben bei verfügbarem Speicher in diesem Browser erhalten."
+      >
+        المحادثة والكتابة المفتوحة لها نماذج للمقارنة وتقييم ذاتي. تُحفظ
+        الإجابات والمسودات في هذا المتصفح عند توفر التخزين.
+      </p>
+      <p class="yt-note">
+        <a
+          href="docs/YOUTH-BOOK-TWO-PART-ONE-COVERAGE.md"
+          data-ar="دليل تغطية الصور والتدريبات"
+          data-de="Zuordnung aller Vorlagen und Übungen"
+          >دليل تغطية الصور والتدريبات</a
+        >
+        ·
+        <a
+          href="images/youth/CREDITS.md"
+          data-ar="مصادر الرسوم"
+          data-de="Bildnachweise"
+          >مصادر الرسوم</a
+        >
+      </p>
+      <section id="yt-print" hidden></section>
+    </main>
+    <footer class="teacher-credit">إعداد المعلم: <b>محمود بركات</b></footer>
+  </body>
+</html>

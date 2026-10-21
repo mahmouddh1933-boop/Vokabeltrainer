@@ -120,6 +120,46 @@ with sync_playwright() as p:
         assert page.locator('#yt-print').is_visible()
         assert page.locator('#yt-print .yt-print-task').count() == 8
         page.emulate_media(media='screen')
+        open_page('youth-book-two-part-one')
+        assert page.locator('#book-unit-library [data-unit]').count()==6
+        assert page.locator('#yt-sources [data-photo]').count()==37
+        assert page.locator('#book-unit-title').inner_text()=='من أين أنت؟'
+        assert page.locator('.book-turn').count()==12
+        before=page.evaluate('__plays');page.locator('#yt-context [data-audio]').first.tap()
+        page.wait_for_function('n=>__plays>n',arg=before)
+        page.locator('#book-unit-next').tap();assert page.locator('#book-unit-title').inner_text()=='أين تسكن؟'
+        page.locator('#book-unit-library [data-unit="3"]').tap()
+        page.locator('#yt-select').select_option('u3-clock')
+        card=page.locator('#yt-q-2')
+        card.locator('.yt-clock-hour').select_option('8');card.locator('.yt-clock-minute').select_option('15')
+        card.locator('.yt-check').tap();assert 'أحسنت' in card.locator('.yt-feedback').inner_text()
+        page.locator('#book-unit-library [data-unit="6"]').tap()
+        page.locator('#yt-select').select_option('u6-grammar')
+        page.locator('#yt-q-7 .yt-input').fill('الماء');page.locator('#yt-q-7 .yt-check').tap()
+        assert 'أحسنت' in page.locator('#yt-q-7 .yt-feedback').inner_text()
+        page.evaluate('window.print=()=>{}')
+        page.locator('#yt-print-source').tap()
+        assert page.locator('#yt-print .yt-print-activity').count()==1
+        assert page.locator('#yt-print .yt-print-task').count()==12
+        assert 'حروف الجر' not in page.locator('#yt-print').inner_text()
+        page.locator('#yt-select').select_option('u6-writing')
+        page.locator('.yt-draft').first.fill('أسير إلى المكتبة ثم أنعطف يمينا.')
+        page.locator('#app-language-select').select_option('de')
+        assert page.locator('.yt-draft').first.input_value()=='أسير إلى المكتبة ثم أنعطف يمينا.'
+        page.locator('#app-language-select').select_option('ar')
+        page.evaluate('window.print=()=>{}')
+        page.locator('#book-print-unit').tap()
+        page.emulate_media(media='print')
+        assert page.locator('#yt-print').is_visible()
+        assert page.locator('#yt-print .yt-print-activity').count()==8
+        assert page.locator('#yt-print .yt-print-task').count()==68
+        assert 'أسير إلى المكتبة ثم أنعطف يمينا.' not in page.locator('#yt-print').inner_text()
+        page.emulate_media(media='screen')
+        if not denied:
+            page.reload();assert page.locator('#book-unit-title').inner_text()=='إلى السوق'
+        if mode=='normal':
+            page.evaluate('location.hash="unit-2"')
+            page.wait_for_function('document.getElementById("book-unit-title").textContent==="أين تسكن؟"')
         open_page('huruf')
         page.locator('#letter-card').tap(); assert 'flipped' in page.locator('#letter-card').get_attribute('class')
         page.locator('#letter-card').tap(); assert 'flipped' not in page.locator('#letter-card').get_attribute('class')
@@ -131,5 +171,5 @@ with sync_playwright() as p:
         assert not errors, errors
         assert not separate_assets, separate_assets
         context.close()
-        print(f'PASS extracted ZIP: three activities + both books + Youth 2, real audio, card flip/navigation, language; mode={mode}; no separate scripts or styles required',flush=True)
+        print(f'PASS extracted ZIP: three activities + both books + Youth 2 + six-unit book, real audio, card flip/navigation, language; mode={mode}; no separate scripts or styles required',flush=True)
     browser.close()
