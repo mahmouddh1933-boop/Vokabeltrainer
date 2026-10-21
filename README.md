@@ -67,6 +67,22 @@ Antworten, aktuelle Aufgaben und Einstellungen dieser Bereiche werden lokal im B
 
 Vokabel- und Buchstabenkarten besitzen direkt unter der Karte eine eigene Navigation mit großen Vor-/Zurück-Schaltflächen, Richtungszeichen und aktuellem Kartenstand. Die vorhandenen Bedienelemente behalten ihre IDs und funktionieren mit Tastatur und Touch.
 
+## تدريبات الشباب 2 / Jugendübungen 2
+
+`youth-training-two.html` ist ein eigener Bereich auf der Startseite und in der Navigation. **Alle 31 hochgeladenen Buchfotos wurden einzeln geprüft**. Daraus entstanden **53 neue Aufgabenblöcke mit 402 Teilaufgaben**, jeweils nach den erkennbaren Übungsformen. [Die vollständige Zuordnung](docs/YOUTH-TWO-COVERAGE.md) verbindet jeden Originaldateinamen und jede sichtbare Buchseite mit den passenden Aktivitäten. Nicht erkennbare Seitenzahlen sind nicht geraten; abgeschnittene Randstreifen wiederholen andere Seiten oder zeigen keinen vollständigen zusätzlichen Auftrag. Die Originalfotos werden nicht mitverteilt.
+
+Die Inhalte decken Jahreszeiten, Singular/Dual/Plural, Pronomen und Besitzendungen, Nominal-/Verbalsätze, Subjekt und Objekt, Körperorgane, Sport-/Reiseausdrücke, Berufe, Genusumformungen, Vergangenheit/Gegenwart/Zukunft, Gegensätze, Uhrzeiten, Wochentage, Wortarten, Fragewörter, Präpositionen und Ländernisba ab. Bildgestützte Aufgaben verwenden passende lokale Illustrationen; Produkt-/Werkzeugsymbole sind ausdrücklich als symbolische Schreibhilfen bezeichnet. Ein neuer nummerierter Körperriss ermöglicht die Benennung der acht inneren Organe mit korrekter Patientenorientierung.
+
+Die **378 automatisch prüfbaren Teilaufgaben** bestehen aus 190 Auswahl-/Zuordnungs-/Klassifizierungsfragen, 120 schreibbaren Ergänzungen und Umformungen, 42 Buchstaben-/Satzbauaufgaben, 18 Wortmarkierungen und acht interaktiven Uhren. Die Uhren lassen sich durch Bewegen des ausgewählten Zeigers oder über zugängliche Stunden-/Minutenfelder bedienen. Buchstabenaufgaben verbinden Zeichen ohne Leerzeichen; Satzaufgaben akzeptieren zusätzlich die ausgewiesenen gültigen Alternativen. Sechs س/ش-Höraufgaben nutzen bereits vorhandene lokale MP3-Dateien ohne externe Dienste.
+
+Die weiteren **24 freien Schreib-/Ausdrucksaufgaben** bieten persönliche Entwürfe, einblendbare Musterantworten und getrennte Selbstprüfung. Sie erhalten keine automatisch richtige/falsche Wertung. Der Fortschritt für geschlossene Antworten und die Anzahl selbst geprüfter offener Aufgaben werden separat dargestellt. Beim Schreiben bleiben Hamza, Tāʾ marbūṭa und andere bedeutungstragende Buchstaben erhalten. كَ/كِ verlangen die ausdrücklich geforderte unterscheidende Endvokalisation, während übrige optionale Vokalzeichen entfallen dürfen; ausdrücklich falsche Vokale bei أنتَ/أنتِ oder den markierten Akkusativaufgaben werden nicht übergangen.
+
+Suche, Kategorien und ein Fotoindex erschließen alle Aktivitäten. Antworten, unfertige Eingaben, zusammengesetzte Wörter, Markierungen, Uhrwerte und offene Entwürfe werden separat unter `jisrPracticeV1:youth-two` gespeichert. Die Wiederholung eines Builder-Tasks beginnt frisch; ein Aktivitätsreset entfernt nur die geschlossenen Antworten/Entwürfe dieser Aktivität und erhält die freie Schreibarbeit. Eingeschränkter Browserspeicher führt weiterhin zu einem nutzbaren vorübergehenden Zustand. Filter sowie gültige direkte Aktivitätslinks bleiben handhabbar, auch wenn die History-API verweigert wird.
+
+„Aufgabe drucken“ und „Aufgaben dieser Vorlage drucken“ erzeugen unausgefüllte Arbeitsblätter für einen Block oder sämtliche Blöcke derselben Vorlage. Gespeicherte Antworten, Musterlösungen und persönliche Entwürfe erscheinen nicht darin. Uhren werden als leere Zifferblätter und die Organdiagramme mit unbenannten Nummern gedruckt; Bilder benötigen keine gedruckten Hintergrundfarben.
+
+Quellinhalte: `data/youth-two/part-{a,b,c,d}.json`; deterministischer Katalog und Fotodeckung: `node tools/build-youth-two.js`; Laufzeitkatalog: `js/youth-two-data.js`; Oberfläche: `js/pages/youth-two.js`, `css/youth-two.css`. Die HTML-Datei benötigt weder `fetch` noch andere Datenanfragen. Der portable Download bettet alle benötigten Skripte und Styles ein; Bilder, Schrift und die bereits vorhandenen 660 MP3s bleiben beigefügt. Neue Bildquelle: `images/youth-two/CREDITS.md`.
+
 ## العربية للشباب / Arabisch für Jugendliche
 
 `arabic-youth.html` ist ein unabhängiger Bereich in Startseite und Navigation mit **acht vollständigen Einheiten**. Die folgenden Dialog-, Lese- und Freilesetitel entsprechen dem vom Nutzer gelieferten Inhaltsverzeichnis. Alle Texte und Aufgaben sind neu für die App geschrieben und folgen dem Aufbau der gezeigten ersten Einheit; sie sind keine Abschrift nicht vorliegender Buchseiten.
@@ -158,7 +174,7 @@ Die Download-ZIP enthält JavaScript und CSS direkt in den HTML-Seiten. Dadurch 
 
 `js/storage.js` fängt verweigerten Speicherzugriff und fehlgeschlagene Schreibvorgänge ab. Die Übungen laufen in diesem Fall mit vorübergehendem Zustand weiter; die Oberfläche weist auf fehlende Speicherung hin. Die Navigation hängt nicht vom zusätzlichen Karten-Zähler ab. Geänderte JS-/CSS-Dateien der Website erhalten Inhaltsversionen in ihren URLs, um gemischte Cache-Versionen zu vermeiden.
 
-Der Download lässt sich mit `python3 tools/build-download.py` neu bauen. Das Skript aktualisiert die Asset-Versionen in den Quell-HTML-Dateien und prüft anschließend die ZIP-Dateien sowie die eingebetteten Skripte. `tests/local-download-smoke.py --base-url http://127.0.0.1:8001` prüft eine separat entpackte und auf Port 8001 bereitgestellte ZIP: die drei Lernbereiche, das zweite Buch, das Jugendbuch, Audio, Kartenklick, Navigation und Sprachwechsel bei blockierten separaten Skript-/Stylesheet-Anfragen, verweigertem Speicher und fehlenden neueren DOM-Methoden. Dies ist ein Browsertest der entpackten Dateien; ein physisches Android-Gerät wurde nicht getestet.
+Der Download lässt sich mit `python3 tools/build-download.py` neu bauen. Das Skript aktualisiert die Asset-Versionen in den Quell-HTML-Dateien und prüft anschließend die ZIP-Dateien sowie die eingebetteten Skripte. `tests/local-download-smoke.py --base-url http://127.0.0.1:8001` prüft eine separat entpackte und auf Port 8001 bereitgestellte ZIP: die drei Lernbereiche, das zweite Buch, das Jugendbuch, Jugendübungen 2, Audio, Kartenklick, Navigation und Sprachwechsel bei blockierten separaten Skript-/Stylesheet-Anfragen, verweigertem Speicher und fehlenden neueren DOM-Methoden. Dies ist ein Browsertest der entpackten Dateien; ein physisches Android-Gerät wurde nicht getestet.
 
 Voraussetzungen: Python, Playwright für Python und Chromium unter `/usr/bin/chromium`. Bei laufendem Server:
 
@@ -174,6 +190,7 @@ python3 tests/letter-pronunciation-smoke.py
 python3 tests/practice-smoke.py
 python3 tests/book-two-smoke.py
 python3 tests/youth-smoke.py
+python3 tests/youth-two-smoke.py
 python3 tests/book-print-smoke.py
 python3 tests/letter-audio-check.py
 ```
@@ -196,3 +213,5 @@ Der zusätzliche gemischte Buchstabentest prüft alle 112 Fragen, Korrekturen, S
 Online-Aussprache für sonstigen Text benötigt Zugriff auf `translate.google.com` bzw. `translate.googleapis.com`; ihre Verfügbarkeit hängt vom externen Dienst ab.
 
 `youth-smoke.py` prüft alle 256 Aufgaben in acht Einheiten, 221 unterschiedliche lokal abgespielte Aufnahmen, Bilder, offene Entwürfe, Speicherung, isoliertes Zurücksetzen, 24 alternative Satzstellungen (Datenprüfung), Sprachwechsel, Bildschirmbreiten von 320 bis 1440 Pixeln und die Druckfassung ohne gespeicherte Antworten. Externe Anfragen sind dabei blockiert. Die entpackte ZIP wird zusätzlich mit verweigertem Speicher, verweigerter History-API, fehlender `replaceChildren`-Methode und blockierten separaten JS-/CSS-Dateien geprüft.
+
+`youth-two-smoke.py` prüft alle 402 Teilaufgaben der 53 Aktivitäten: 378 geprüfte Antworten und 24 offene Entwürfe/Selbstprüfungen. Es deckt die 31 Vorlagen, falsche Antworten und Wiederholung jeder Aufgabenart, Speicherung, getrennte Bewertung, Kategorien/Suche, Navigation, echtes lokales Hörspiel, Zeigerbedienung per Touch, arabische/deutsche Bedienung von 320 bis 1440 Pixeln, beide leeren Druckvarianten und isoliertes Zurücksetzen ab. Der Downloadtest prüft diesen neuen Bereich zusätzlich bei verweigertem Speicher/History, ohne `replaceChildren`/`replaceAll` sowie mit blockierten separaten JS-/CSS-Anfragen. Ein physisches Android-Gerät wurde in der Cloud nicht getestet.

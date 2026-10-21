@@ -46,6 +46,12 @@
         "Arabisch für Jugendliche",
         "العربية للشباب",
       ],
+      [
+        "youth-training-two.html",
+        "check",
+        "Jugendübungen 2",
+        "تدريبات الشباب 2",
+      ],
       ["test.html", "check", "Wissen testen", "اختبر معرفتك"],
       ["review.html", "repeat", "Wiederholen", "المراجعة"],
       ["stats.html", "chart", "Mein Fortschritt", "تقدّمي"],

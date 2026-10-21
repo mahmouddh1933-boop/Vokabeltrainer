@@ -1,0 +1,485 @@
+.youth-two-page {
+  --yt-green: #1c5142;
+  --yt-gold: #9b7138;
+}
+.youth-two-page [lang="ar"] {
+  font-family: "Noto Naskh Arabic", "Traditional Arabic", Tahoma, serif;
+}
+.yt-catalog {
+  padding: 24px;
+  border: 1px solid #dce2d3;
+  border-radius: 24px;
+  background: #fffdf6;
+  margin: 24px 0;
+}
+.yt-catalog > label {
+  display: block;
+  font-size: 0.9rem;
+  color: #496249;
+  margin: 14px 0 8px;
+}
+.youth-two-page #yt-search,
+.youth-two-page #yt-select {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 52px;
+  padding: 12px 15px;
+  border: 1px solid #c7d4bb;
+  border-radius: 12px;
+  background: #fff;
+  color: #264e39;
+  font-size: 1.1rem;
+  margin: 0 0 14px;
+}
+#yt-categories {
+  gap: 8px;
+}
+.youth-two-page .filter-chip {
+  white-space: normal;
+  line-height: 1.65;
+  font-size: 0.9rem;
+  padding: 9px 17px;
+}
+.yt-source-index {
+  margin-top: 20px;
+  border-top: 1px solid #e1e7d9;
+  padding-top: 14px;
+}
+.yt-source-index > summary,
+.yt-reset > summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #31583e;
+  padding: 10px 0;
+}
+#yt-sources {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+.yt-source {
+  padding: 12px 14px;
+  border: 1px solid #dce3d4;
+  background: #fff;
+  border-radius: 14px;
+}
+.yt-source summary {
+  cursor: pointer;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+.youth-two-page .yt-source-link {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  text-align: start;
+  line-height: 1.8;
+  padding: 10px 12px;
+}
+.yt-activity-heading {
+  padding: 25px 28px;
+  border-radius: 24px;
+  background: #ecf1e3;
+  border: 1px solid #d9e1cf;
+}
+.yt-activity-heading h2 {
+  color: var(--yt-green);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  line-height: 1.7;
+  margin: 10px 0;
+  scroll-margin-top: 90px;
+}
+.yt-activity-heading p[lang="ar"] {
+  font-size: 1.16rem;
+  line-height: 2;
+  margin-bottom: 0;
+}
+.yt-navigation {
+  margin: 14px 0 24px;
+}
+.yt-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.yt-toolbar > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+.yt-review-label,
+.yt-self-label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  line-height: 1.8;
+  cursor: pointer;
+}
+.youth-two-page input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  accent-color: #28583c;
+  margin: 0;
+}
+.yt-rule {
+  padding: 20px 24px;
+  border-inline-start: 4px solid #a3b583;
+  border-radius: 14px;
+  background: #f0f3e7;
+  font-size: 1.2rem;
+  line-height: 2.15;
+}
+.yt-examples,
+.yt-hint,
+.yt-model {
+  border: 1px solid #e0e5d7;
+  background: #fbfcf5;
+  border-radius: 14px;
+  padding: 13px 17px;
+  margin: 14px 0;
+}
+.yt-examples summary,
+.yt-hint summary,
+.yt-model summary {
+  cursor: pointer;
+  color: #365d40;
+  font-weight: 600;
+  line-height: 1.8;
+}
+.yt-examples p,
+.yt-hint p,
+.yt-model p {
+  font-size: 1.18rem;
+  line-height: 2;
+  white-space: pre-line;
+}
+.yt-passage {
+  background: #fff9ec;
+  border: 1px solid #e9dec4;
+  padding: 24px;
+  border-radius: 18px;
+  margin: 18px 0;
+}
+.yt-passage p {
+  white-space: pre-line;
+  font-size: 1.4rem;
+  line-height: 2.25;
+}
+.yt-task {
+  scroll-margin-top: 90px;
+}
+.yt-task h3 {
+  font-size: 1.25rem;
+  line-height: 2;
+  margin: 0 0 18px;
+  color: #2c503b;
+}
+.yt-image {
+  display: block;
+  width: 145px;
+  height: 145px;
+  object-fit: contain;
+  margin: 16px auto;
+}
+.yt-answer-area {
+  margin-top: 16px;
+}
+.yt-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.youth-two-page .yt-option {
+  flex: 1 1 160px;
+  padding: 13px 18px;
+  text-align: start;
+  line-height: 1.85;
+  font-size: 1.14rem;
+}
+.youth-two-page .yt-input,
+.youth-two-page .yt-draft {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #bdcdb4;
+  border-radius: 13px;
+  padding: 13px 16px;
+  font-size: 1.3rem;
+  line-height: 2;
+  background: #fffef9;
+  color: #213f2e;
+  min-height: 56px;
+}
+.youth-two-page .yt-draft {
+  min-height: 160px;
+  resize: vertical;
+}
+.youth-two-page .yt-input:focus-visible,
+.youth-two-page .yt-draft:focus-visible,
+.youth-two-page select:focus-visible {
+  outline: 3px solid #b18a42;
+  outline-offset: 3px;
+}
+.yt-feedback {
+  border-radius: 14px;
+  padding: 16px 19px;
+  font-size: 1.15rem;
+  line-height: 2;
+  margin-top: 14px;
+}
+.yt-feedback:empty {
+  padding: 0;
+  margin: 0;
+}
+.yt-feedback p {
+  margin: 5px 0 0;
+}
+.yt-feedback strong {
+  font-weight: 700;
+}
+.yt-note {
+  font-size: 0.88rem;
+  line-height: 1.9;
+  color: #5d705c;
+}
+.yt-selected {
+  min-height: 62px;
+  border: 1px dashed #b3c5a2;
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  background: #f9fbf1;
+  font-size: 1.25rem;
+}
+.yt-token-bank,
+.yt-mark-words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.youth-two-page .yt-token,
+.youth-two-page .yt-selected-token,
+.youth-two-page .yt-mark {
+  font-size: 1.25rem;
+  padding: 10px 15px;
+  min-width: 48px;
+}
+.yt-order-preview {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #1f5138;
+  min-height: 35px;
+  margin: 10px 0;
+}
+.youth-two-page .yt-mark[aria-pressed="true"] {
+  outline: 2px solid #63844a;
+  background: #e5eedb;
+}
+.yt-self-label {
+  margin: 20px 0 10px;
+  color: #355c3d;
+}
+.yt-clock-holder {
+  width: 220px;
+  height: 220px;
+  margin: 15px auto;
+  touch-action: none;
+  cursor: crosshair;
+}
+.yt-clock-face {
+  display: block;
+  width: 220px;
+  height: 220px;
+  max-width: 100%;
+}
+.yt-clock-modes {
+  justify-content: center;
+}
+.yt-clock-fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.yt-clock-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 100px;
+}
+.youth-two-page .yt-clock-fields select {
+  min-height: 48px;
+  min-width: 100px;
+  padding: 8px 14px;
+  margin: 0;
+  border-radius: 12px;
+  border: 1px solid #b6c7aa;
+  background: #fffef8;
+  color: #244a32;
+  direction: ltr;
+}
+.yt-diagram {
+  position: relative;
+  width: 360px;
+  max-width: 100%;
+  margin: 20px auto;
+  border: 1px solid #e5e5d7;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.yt-diagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.youth-two-page .yt-pin {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  min-height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  background: #fffef3;
+  border: 2px solid #194e40;
+  color: #153e30;
+  transform: translate(-50%, -50%);
+  font: 700 15px sans-serif;
+  box-shadow: 0 1px 4px #0002;
+}
+.yt-reset {
+  border: 1px solid #dce3d1;
+  border-radius: 17px;
+  padding: 15px 20px;
+  margin: 25px 0;
+}
+.yt-reset p {
+  line-height: 1.9;
+}
+@media (max-width: 650px) {
+  .yt-catalog {
+    padding: 17px;
+  }
+  #yt-sources {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .yt-activity-heading {
+    padding: 20px;
+  }
+  .yt-activity-heading h2 {
+    font-size: 1.8rem;
+  }
+  .youth-two-page .yt-option {
+    flex-basis: 100%;
+  }
+  .yt-toolbar {
+    align-items: flex-start;
+  }
+  .yt-task {
+    padding: 20px 17px;
+  }
+  .yt-rule {
+    padding: 17px;
+  }
+  .yt-passage {
+    padding: 18px;
+  }
+}
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm;
+  }
+  body,
+  body.app-layout {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #fff !important;
+  }
+  body > :not(main),
+  .youth-two-page > :not(#yt-print) {
+    display: none !important;
+  }
+  main.container.youth-two-page {
+    display: block !important;
+    width: auto !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  #yt-print {
+    display: block !important;
+    font:
+      12pt/1.9 "Noto Naskh Arabic",
+      "Traditional Arabic",
+      serif;
+    color: #111;
+  }
+  #yt-print h1 {
+    font-size: 23pt;
+    color: #111;
+  }
+  #yt-print h2 {
+    font-size: 19pt;
+    color: #111;
+    break-after: avoid;
+  }
+  #yt-print h3 {
+    font-size: 13pt;
+    line-height: 1.9;
+    margin: 8pt 0;
+  }
+  #yt-print p {
+    margin: 8pt 0;
+    orphans: 3;
+    widows: 3;
+  }
+  .yt-print-activity + .yt-print-activity {
+    break-before: page;
+  }
+  .yt-print-task {
+    break-inside: avoid;
+    margin: 15pt 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10pt;
+  }
+  .yt-print-image {
+    width: 27mm;
+    height: 27mm;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+  }
+  #yt-print .yt-clock-face {
+    width: 40mm;
+    height: 40mm;
+  }
+  #yt-print .yt-diagram {
+    width: 70mm;
+    break-inside: avoid;
+  }
+  #yt-print .yt-pin {
+    width: 16pt;
+    height: 16pt;
+    min-height: 16pt;
+    font: 700 10pt sans-serif;
+    border: 1pt solid #111;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+  }
+}

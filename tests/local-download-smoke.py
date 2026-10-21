@@ -88,6 +88,38 @@ with sync_playwright() as p:
         assert page.locator('#youth-print').is_visible()
         assert page.locator('#youth-print .youth-print-task').count() == 32
         page.emulate_media(media='screen')
+        open_page('youth-training-two')
+        assert page.locator('#yt-select option').count() == 53
+        assert page.locator('#yt-sources [data-photo]').count() == 31
+        page.locator('#yt-select').select_option('a-p03-b2')
+        page.locator('#yt-q-1 .yt-input').fill('أنا')
+        page.locator('#yt-q-1 .yt-input').press('Enter')
+        assert 'أحسنت' in page.locator('#yt-q-1 .yt-feedback').inner_text()
+        listening = page.evaluate('ArabicYouthTwoData.activities.find(a=>a.tasks.some(q=>q.audioText)).id')
+        page.locator('#yt-select').select_option(listening)
+        before = page.evaluate('__plays'); page.locator('#yt-tasks [data-audio]').first.tap()
+        page.wait_for_function('n=>__plays>n', arg=before)
+        clock = page.evaluate('''()=>{const a=ArabicYouthTwoData.activities.find(a=>a.tasks.some(q=>q.kind==='clock'));const q=a.tasks.find(q=>q.kind==='clock');return {id:a.id,q:q.id,hour:q.hour,minute:q.minute}}''')
+        page.locator('#yt-select').select_option(clock['id'])
+        card = page.locator('#yt-q-'+clock['q'])
+        card.locator('.yt-clock-hour').select_option(str(clock['hour']))
+        card.locator('.yt-clock-minute').select_option(str(clock['minute']))
+        card.locator('.yt-check').tap()
+        assert 'أحسنت' in card.locator('.yt-feedback').inner_text()
+        writing = page.evaluate('ArabicYouthTwoData.activities.find(a=>a.tasks.some(q=>q.kind==="open")).id')
+        page.locator('#yt-select').select_option(writing)
+        page.locator('.yt-draft').first.fill('مسودة محفوظة داخل التدريبات.')
+        page.locator('.yt-self-review').first.check()
+        page.locator('#app-language-select').select_option('de')
+        assert page.locator('.yt-draft').first.input_value() == 'مسودة محفوظة داخل التدريبات.'
+        page.locator('#app-language-select').select_option('ar')
+        page.locator('#yt-select').select_option('a-p06-b1')
+        page.wait_for_function('document.querySelector(".yt-diagram img").naturalWidth>0')
+        assert page.locator('.yt-diagram .yt-pin').count() == 16
+        page.emulate_media(media='print')
+        assert page.locator('#yt-print').is_visible()
+        assert page.locator('#yt-print .yt-print-task').count() == 8
+        page.emulate_media(media='screen')
         open_page('huruf')
         page.locator('#letter-card').tap(); assert 'flipped' in page.locator('#letter-card').get_attribute('class')
         page.locator('#letter-card').tap(); assert 'flipped' not in page.locator('#letter-card').get_attribute('class')
@@ -99,5 +131,5 @@ with sync_playwright() as p:
         assert not errors, errors
         assert not separate_assets, separate_assets
         context.close()
-        print(f'PASS extracted ZIP: three activities + both independent books, real audio, card flip/navigation, language; mode={mode}; no separate scripts or styles required',flush=True)
+        print(f'PASS extracted ZIP: three activities + both books + Youth 2, real audio, card flip/navigation, language; mode={mode}; no separate scripts or styles required',flush=True)
     browser.close()

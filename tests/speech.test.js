@@ -9,6 +9,7 @@ function setup({
   practiceRecording = false,
   bookRecording = false,
   youthRecording = false,
+  youthTwoRecording = false,
   language = "ar",
   behavior = "normal",
 } = {}) {
@@ -82,6 +83,10 @@ function setup({
   if (youthRecording)
     context.window.ArabicYouthData = {
       audio: { قِطَارٌ: "audio/youth/013.mp3" },
+    };
+  if (youthTwoRecording)
+    context.window.ArabicYouthTwoData = {
+      audio: { سَمَك: "audio/letters/12-word.mp3" },
     };
   vm.runInNewContext(
     fs.readFileSync(require.resolve("../js/storage.js"), "utf8"),
@@ -191,5 +196,12 @@ test("Youth book recordings start synchronously without native voices or online 
   const { app, calls } = setup({ native: false, youthRecording: true });
   app.speakArabic("قِطَارٌ");
   assert.deepEqual(calls.play, ["audio/youth/013.mp3"]);
+  assert.equal(calls.speak.length, 0);
+});
+
+test("Youth 2 listening starts synchronously from a bundled clip without a device voice", () => {
+  const { app, calls } = setup({ native: false, youthTwoRecording: true });
+  app.speakArabic("سَمَك");
+  assert.deepEqual(calls.play, ["audio/letters/12-word.mp3"]);
   assert.equal(calls.speak.length, 0);
 });
