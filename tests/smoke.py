@@ -19,7 +19,7 @@ with sync_playwright() as p:
     page.wait_for_function('typeof XLSX !== "undefined"')
     page.locator('#hero-start').click()
     page.wait_for_selector('.ready-list-button')
-    assert page.locator('.cefr-level-card').count()==2
+    assert page.locator('.cefr-level-card').count()==4
     catalog=page.evaluate('VocabApp.loadCatalog()')
     print('Catalog:', len(catalog['lists']), 'lists')
     page.locator('.ready-list-button').first.click()

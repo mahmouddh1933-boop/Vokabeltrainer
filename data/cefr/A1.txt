@@ -1,0 +1,630 @@
+@التحيات والتعارف|Begrüßung und Kennenlernen|أحيي الآخرين وأبدأ تعارفاً قصيراً.
+مَرْحَباً|Hallo
+أَهْلاً وَسَهْلاً|Herzlich willkommen
+صَبَاحُ الْخَيْرِ|Guten Morgen
+مَسَاءُ الْخَيْرِ|Guten Abend
+مَعَ السَّلَامَةِ|Auf Wiedersehen
+إِلَى اللِّقَاءِ|Bis bald
+شُكْراً|Danke
+عَفْواً|Gern geschehen
+مِنْ فَضْلِكَ|Bitte (zu einem Mann)
+مِنْ فَضْلِكِ|Bitte (zu einer Frau)
+آسِفٌ|Entschuldigung (von einem Mann)
+آسِفَةٌ|Entschuldigung (von einer Frau)
+نَعَمْ|Ja
+لَا|Nein
+تَفَضَّلْ|Bitte sehr (zu einem Mann)
+تَفَضَّلِي|Bitte sehr (zu einer Frau)
+أَنَا بِخَيْرٍ|Mir geht es gut
+كَيْفَ حَالُكَ؟|Wie geht es dir? (männlich)
+مَا اسْمُكِ؟|Wie heißt du? (weiblich)
+تَشَرَّفْنَا|Angenehm, dich kennenzulernen
+@الضمائر وكلمات السؤال|Pronomen und Fragewörter|أفهم من يتحدث وأسأل عن معلومات بسيطة.
+أَنَا|ich
+أَنْتَ|du (männlich)
+أَنْتِ|du (weiblich)
+هُوَ|er
+هِيَ|sie (Einzahl)
+نَحْنُ|wir
+أَنْتُمْ|ihr (männlich oder gemischt)
+هُمْ|sie (männlich oder gemischt, Mehrzahl)
+هَذَا|dieser / dieses (männlich)
+هَذِهِ|diese (weiblich)
+ذَلِكَ|jener / jenes (männlich)
+تِلْكَ|jene (weiblich)
+مَنْ؟|wer?
+مَا؟|was?
+أَيْنَ؟|wo?
+مَتَى؟|wann?
+كَيْفَ؟|wie?
+كَمْ؟|wie viel / wie viele?
+هَلْ؟|Fragepartikel für Ja-Nein-Fragen
+لِمَاذَا؟|warum?
+@البيانات الشخصية|Persönliche Angaben|أعطي اسمي وعمري وبيانات الاتصال الأساسية.
+اِسْمٌ|der Name
+لَقَبٌ|der Nachname
+عُمْرٌ|das Alter
+عُنْوَانٌ|die Adresse
+رَقْمٌ|die Nummer
+هَاتِفٌ|das Telefon
+بَرِيدٌ إِلِكْتُرُونِيٌّ|die E-Mail
+جِنْسِيَّةٌ|die Staatsangehörigkeit
+بَلَدٌ|das Land
+مَدِينَةٌ|die Stadt
+لُغَةٌ|die Sprache
+مِهْنَةٌ|der Beruf
+طَالِبٌ|der Schüler / Student
+طَالِبَةٌ|die Schülerin / Studentin
+مُعَلِّمٌ|der Lehrer
+مُعَلِّمَةٌ|die Lehrerin
+صَدِيقٌ|der Freund
+صَدِيقَةٌ|die Freundin
+رَجُلٌ|der Mann
+اِمْرَأَةٌ|die Frau
+@الأسرة والأقارب|Familie und Verwandte|أعرّف بأفراد أسرتي وأقاربي.
+أُسْرَةٌ|die Familie
+أَبٌ|der Vater
+أُمٌّ|die Mutter
+اِبْنٌ|der Sohn
+اِبْنَةٌ|die Tochter
+أَخٌ|der Bruder
+أُخْتٌ|die Schwester
+جَدٌّ|der Großvater
+جَدَّةٌ|die Großmutter
+عَمٌّ|der Onkel väterlicherseits
+عَمَّةٌ|die Tante väterlicherseits
+خَالٌ|der Onkel mütterlicherseits
+خَالَةٌ|die Tante mütterlicherseits
+زَوْجٌ|der Ehemann
+زَوْجَةٌ|die Ehefrau
+طِفْلٌ|das Kind
+حَفِيدٌ|der Enkel
+حَفِيدَةٌ|die Enkelin
+وَالِدَانِ|die Eltern
+أَقَارِبُ|die Verwandten
+@الأعداد الأساسية|Grundzahlen|أعدّ الأشياء وأفهم أعداداً وأسعاراً بسيطة.
+صِفْرٌ|null
+وَاحِدٌ|eins
+اِثْنَانِ|zwei
+ثَلَاثَةٌ|drei
+أَرْبَعَةٌ|vier
+خَمْسَةٌ|fünf
+سِتَّةٌ|sechs
+سَبْعَةٌ|sieben
+ثَمَانِيَةٌ|acht
+تِسْعَةٌ|neun
+عَشَرَةٌ|zehn
+أَحَدَ عَشَرَ|elf
+اِثْنَا عَشَرَ|zwölf
+ثَلَاثَةَ عَشَرَ|dreizehn
+عِشْرُونَ|zwanzig
+ثَلَاثُونَ|dreißig
+أَرْبَعُونَ|vierzig
+خَمْسُونَ|fünfzig
+مِئَةٌ|hundert
+أَلْفٌ|tausend
+@الساعة وأوقات اليوم|Uhrzeit und Tageszeiten|أسأل عن الساعة وأذكر أوقات يومي.
+وَقْتٌ|die Zeit
+سَاعَةٌ|die Stunde / die Uhr
+دَقِيقَةٌ|die Minute
+ثَانِيَةٌ|die Sekunde
+نِصْفٌ|die Hälfte
+رُبْعٌ|das Viertel
+صَبَاحٌ|der Morgen
+ظُهْرٌ|der Mittag
+مَسَاءٌ|der Abend
+لَيْلٌ|die Nacht
+الْآنَ|jetzt
+الْيَوْمَ|heute
+أَمْسِ|gestern
+غَداً|morgen
+يَوْمٌ|der Tag
+أُسْبُوعٌ|die Woche
+شَهْرٌ|der Monat
+سَنَةٌ|das Jahr
+قَبْلَ|vor (zeitlich)
+بَعْدَ|nach
+@أيام الأسبوع وشهور السنة|Wochentage und Monate|أحدد يومًا وشهرًا عند ترتيب تاريخ بسيط.
+السَّبْتُ|Samstag
+الْأَحَدُ|Sonntag
+يَوْمُ الِاثْنَيْنِ|Montag
+الثُّلَاثَاءُ|Dienstag
+الْأَرْبِعَاءُ|Mittwoch
+الْخَمِيسُ|Donnerstag
+الْجُمُعَةُ|Freitag
+يَنَايِرُ|Januar
+فِبْرَايِرُ|Februar
+مَارِسُ|März
+أَبْرِيلُ|April
+مَايُو|Mai
+يُونْيُو|Juni
+يُولْيُو|Juli
+أَغُسْطُسُ|August
+سِبْتَمْبَرُ|September
+أُكْتُوبَرُ|Oktober
+نُوفَمْبَرُ|November
+دِيسَمْبَرُ|Dezember
+نِهَايَةُ الْأُسْبُوعِ|das Wochenende
+@الألوان والأشكال|Farben und Formen|أصف لون الأشياء وشكلها البسيط.
+أَحْمَرُ|rot
+أَزْرَقُ|blau
+أَخْضَرُ|grün
+أَصْفَرُ|gelb
+أَبْيَضُ|weiß
+أَسْوَدُ|schwarz
+بُنِّيٌّ|braun
+رَمَادِيٌّ|grau
+بُرْتُقَالِيٌّ|orange
+وَرْدِيٌّ|rosa
+بَنَفْسَجِيٌّ|lila
+فَاتِحٌ|hell (Farbton)
+دَاكِنٌ|dunkel (Farbton)
+دَائِرَةٌ|der Kreis
+مُرَبَّعٌ|das Quadrat
+مُثَلَّثٌ|das Dreieck
+مُسْتَطِيلٌ|das Rechteck
+خَطٌّ|die Linie
+نُقْطَةٌ|der Punkt
+شَكْلٌ|die Form
+@المسكن والغرف|Wohnung und Räume|أصف نوع مسكني وغرفه الأساسية.
+بَيْتٌ|das Haus
+شَقَّةٌ|die Wohnung
+غُرْفَةٌ|das Zimmer
+غُرْفَةُ النَّوْمِ|das Schlafzimmer
+غُرْفَةُ الْجُلُوسِ|das Wohnzimmer
+مَطْبَخٌ|die Küche
+حَمَّامٌ|das Badezimmer
+مَدْخَلٌ|der Eingang
+طَابِقٌ|das Stockwerk
+سُلَّمٌ|die Treppe
+مِصْعَدٌ|der Aufzug
+شُرْفَةٌ|der Balkon
+سَقْفٌ|die Decke
+أَرْضِيَّةٌ|der Fußboden
+جِدَارٌ|die Wand
+بَابٌ|die Tür
+نَافِذَةٌ|das Fenster
+مِفْتَاحٌ|der Schlüssel
+جَرَسٌ|die Klingel
+سَطْحٌ|die Dachterrasse
+@الأثاث وأغراض البيت|Möbel und Haushaltsgegenstände|أسمي أثاث البيت وأغراضي المألوفة.
+سَرِيرٌ|das Bett
+كُرْسِيٌّ|der Stuhl
+طَاوِلَةٌ|der Tisch
+مَكْتَبٌ|der Schreibtisch
+خِزَانَةٌ|der Schrank
+أَرِيكَةٌ|das Sofa
+رَفٌّ|das Regalbrett
+مِرْآةٌ|der Spiegel
+مِصْبَاحٌ|die Lampe
+سَجَّادَةٌ|der Teppich
+وِسَادَةٌ|das Kissen
+بِطَّانِيَّةٌ|die Decke zum Zudecken
+سِتَارَةٌ|der Vorhang
+تِلْفَازٌ|der Fernseher
+ثَلَّاجَةٌ|der Kühlschrank
+غَسَّالَةٌ|die Waschmaschine
+فُرْنٌ|der Backofen
+مِكْنَسَةٌ|der Besen
+مِنْشَفَةٌ|das Handtuch
+صَابُونٌ|die Seife
+@الطعام والمطبخ|Essen und Küche|أسمي أطعمة وأدوات أحتاجها في وجبة بسيطة.
+خُبْزٌ|das Brot
+أَرُزٌّ|der Reis
+مَعْكَرُونَةٌ|die Nudeln
+لَحْمٌ|das Fleisch
+دَجَاجٌ|das Hähnchenfleisch
+سَمَكٌ|der Fisch als Lebensmittel
+بَيْضٌ|die Eier
+جُبْنٌ|der Käse
+زُبْدَةٌ|die Butter
+زَيْتٌ|das Öl
+مِلْحٌ|das Salz
+سُكَّرٌ|der Zucker
+حَسَاءٌ|die Suppe
+سَلَطَةٌ|der Salat als Gericht
+طَبَقٌ|der Teller
+مِلْعَقَةٌ|der Löffel
+شَوْكَةٌ|die Gabel
+سِكِّينٌ|das Messer
+قِدْرٌ|der Kochtopf
+مِقْلَاةٌ|die Bratpfanne
+@الفواكه والخضروات|Obst und Gemüse|أختار فواكه وخضروات شائعة عند الشراء.
+تُفَّاحٌ|die Äpfel
+مَوْزٌ|die Bananen
+بُرْتُقَالٌ|die Orangen
+لَيْمُونٌ|die Zitronen
+عِنَبٌ|die Weintrauben
+فَرَاوِلَةٌ|die Erdbeeren
+بِطِّيخٌ|die Wassermelone
+رُمَّانٌ|der Granatapfel
+تَمْرٌ|die Datteln
+خَوْخٌ|die Pfirsiche
+بَطَاطِسُ|die Kartoffeln
+طَمَاطِمُ|die Tomaten
+خِيَارٌ|die Gurken
+جَزَرٌ|die Karotten
+بَصَلٌ|die Zwiebeln
+ثُومٌ|der Knoblauch
+خَسٌّ|der Kopfsalat
+فُلْفُلٌ|die Paprika
+بَازِلَّاءُ|die Erbsen
+ذُرَةٌ|der Mais
+@المشروبات وطلب الطعام|Getränke und Essen bestellen|أطلب شراباً أو وجبة وأفهم قائمة بسيطة.
+مَاءٌ|das Wasser
+حَلِيبٌ|die Milch
+شَايٌ|der Tee
+قَهْوَةٌ|der Kaffee
+عَصِيرٌ|der Saft
+شُوكُولَاتَةٌ|die Schokolade
+كَعْكَةٌ|der Kuchen
+مُثَلَّجَاتٌ|das Speiseeis
+كَأْسٌ|das Trinkglas
+فِنْجَانٌ|die Tasse
+زُجَاجَةٌ|die Flasche
+وَجْبَةٌ|die Mahlzeit
+فُطُورٌ|das Frühstück
+غَدَاءٌ|das Mittagessen
+عَشَاءٌ|das Abendessen
+قَائِمَةُ الطَّعَامِ|die Speisekarte
+حِسَابٌ|die Rechnung im Restaurant
+نَادِلٌ|der Kellner
+مَطْعَمٌ|das Restaurant
+مَقْهًى|das Café
+@الملابس والأغراض الشخصية|Kleidung und persönliche Dinge|أصف ما ألبسه وأتعرف إلى أغراضي.
+قَمِيصٌ|das Hemd
+سِرْوَالٌ|die Hose
+فُسْتَانٌ|das Kleid
+تَنُّورَةٌ|der Rock
+مِعْطَفٌ|der Mantel
+سُتْرَةٌ|die Jacke
+حِذَاءٌ|der Schuh
+جَوْرَبٌ|die Socke
+قُبَّعَةٌ|der Hut
+وِشَاحٌ|der Schal
+حِزَامٌ|der Gürtel
+نَظَّارَةٌ|die Brille
+حَقِيبَةٌ|die Tasche
+مِظَلَّةٌ|der Regenschirm
+خَاتَمٌ|der Ring
+سَاعَةُ يَدٍ|die Armbanduhr
+مِحْفَظَةٌ|die Geldbörse
+قُفَّازٌ|der Handschuh
+مَلَابِسُ|die Kleidung
+بَدْلَةٌ|der Anzug
+@أجزاء الجسم|Körperteile|أسمي أجزاء جسمي الأساسية.
+جِسْمٌ|der Körper
+رَأْسٌ|der Kopf
+وَجْهٌ|das Gesicht
+عَيْنٌ|das Auge
+أُذُنٌ|das Ohr
+أَنْفٌ|die Nase
+فَمٌ|der Mund
+سِنٌّ|der Zahn
+لِسَانٌ|die Zunge
+شَعْرٌ|die Haare
+رَقَبَةٌ|der Hals
+كَتِفٌ|die Schulter
+ذِرَاعٌ|der Arm
+يَدٌ|die Hand
+إِصْبَعٌ|der Finger
+ظَهْرٌ|der Rücken
+بَطْنٌ|der Bauch
+سَاقٌ|das Bein
+رُكْبَةٌ|das Knie
+قَدَمٌ|der Fuß
+@المدرسة وأدوات التعلم|Schule und Lernmaterial|أفهم أسماء أدوات الصف وتعليماته البسيطة.
+مَدْرَسَةٌ|die Schule
+صَفٌّ|die Schulklasse
+دَرْسٌ|die Unterrichtsstunde
+كِتَابٌ|das Buch
+دَفْتَرٌ|das Heft
+قَلَمٌ|der Stift
+قَلَمُ رَصَاصٍ|der Bleistift
+مِمْحَاةٌ|der Radiergummi
+مِسْطَرَةٌ|das Lineal
+سَبُّورَةٌ|die Tafel
+وَرَقَةٌ|das Blatt Papier
+حَقِيبَةٌ مَدْرَسِيَّةٌ|die Schultasche
+وَاجِبٌ مَنْزِلِيٌّ|die Hausaufgabe
+سُؤَالٌ|die Frage
+جَوَابٌ|die Antwort
+كَلِمَةٌ|das Wort
+جُمْلَةٌ|der Satz
+حَرْفٌ|der Buchstabe
+صَفْحَةٌ|die Seite
+زَمِيلٌ|der Mitschüler / Kollege
+@أماكن في المدينة|Orte in der Stadt|أتعرف إلى الأماكن الضرورية في الحي.
+شَارِعٌ|die Straße
+حَيٌّ|das Stadtviertel
+سُوقٌ|der Markt
+مَتْجَرٌ|das Geschäft
+مَخْبَزٌ|die Bäckerei
+صَيْدَلِيَّةٌ|die Apotheke
+مُسْتَشْفًى|das Krankenhaus
+عِيَادَةٌ|die Arztpraxis
+مَكْتَبَةٌ|die Bibliothek
+حَدِيقَةٌ|der Park
+مَلْعَبٌ|der Sportplatz
+مَسْجِدٌ|die Moschee
+كَنِيسَةٌ|die Kirche
+بَنْكٌ|die Bank
+مَكْتَبُ الْبَرِيدِ|die Postfiliale
+مَحَطَّةٌ|der Bahnhof / die Station
+مَطَارٌ|der Flughafen
+فُنْدُقٌ|das Hotel
+سِينَمَا|das Kino
+مُتْحَفٌ|das Museum
+@المواصلات والتنقل|Verkehr und Fortbewegung|أختار وسيلة نقل وأفهم رحلة قصيرة.
+سَيَّارَةٌ|das Auto
+حَافِلَةٌ|der Bus
+قِطَارٌ|der Zug
+دَرَّاجَةٌ|das Fahrrad
+دَرَّاجَةٌ نَارِيَّةٌ|das Motorrad
+طَائِرَةٌ|das Flugzeug
+سَفِينَةٌ|das Schiff
+سَيَّارَةُ أُجْرَةٍ|das Taxi
+تَذْكِرَةٌ|die Fahrkarte
+رِحْلَةٌ|die Reise / Fahrt
+سَائِقٌ|der Fahrer
+رَاكِبٌ|der Fahrgast
+طَرِيقٌ|der Weg
+جِسْرٌ|die Brücke
+إِشَارَةُ مُرُورٍ|die Ampel
+مَوْقِفُ الْحَافِلَاتِ|die Bushaltestelle
+مَقْعَدٌ|der Sitzplatz
+مَحَطَّةُ الْوُصُولِ|die Ankunftsstation
+مَحَطَّةُ الْمُغَادَرَةِ|die Abfahrtsstation
+سَيْراً عَلَى الْأَقْدَامِ|zu Fuß
+@التسوق والأسعار|Einkaufen und Preise|أشتري غرضاً وأسأل عن ثمنه ومقاسه.
+سِعْرٌ|der Preis
+ثَمَنٌ|der zu zahlende Betrag
+نُقُودٌ|das Geld
+يُورُو|der Euro
+قِرْشٌ|der Piaster
+كِيلُوغْرَامٌ|das Kilogramm
+غِرَامٌ|das Gramm
+لِتْرٌ|der Liter
+نِصْفُ كِيلُوغْرَامٍ|ein halbes Kilogramm
+قِطْعَةٌ|das Stück
+كِيسٌ|die Tüte
+صُنْدُوقٌ|die Kiste
+بَائِعٌ|der Verkäufer
+زَبُونٌ|der Kunde
+مَقَاسٌ|die Größe bei Kleidung
+رَخِيصٌ|billig
+غَالٍ|teuer
+مَفْتُوحٌ|geöffnet
+مُغْلَقٌ|geschlossen
+كَمْ هَذَا؟|Wie viel kostet das?
+@الطقس والطبيعة القريبة|Wetter und Natur im Alltag|أصف الطقس وأشياء أراها في الطبيعة.
+طَقْسٌ|das Wetter
+شَمْسٌ|die Sonne
+الرَّبِيعُ|der Frühling
+الصَّيْفُ|der Sommer
+الْخَرِيفُ|der Herbst
+الشِّتَاءُ|der Winter
+مَطَرٌ|der Regen
+ثَلْجٌ|der Schnee
+رِيَاحٌ|der Wind
+حَارٌّ|heiß
+بَارِدٌ|kalt
+دَافِئٌ|warm
+مُشْمِسٌ|sonnig
+مُمْطِرٌ|regnerisch
+شَجَرَةٌ|der Baum
+زَهْرَةٌ|die Blume
+نَهْرٌ|der Fluss
+بَحْرٌ|das Meer
+جَبَلٌ|der Berg
+شَاطِئٌ|der Strand
+@الحيوانات المألوفة|Vertraute Tiere|أسمي حيوانات مألوفة في البيت والمزرعة.
+قِطَّةٌ|die Katze
+كَلْبٌ|der Hund
+عُصْفُورٌ|der kleine Vogel
+سَمَكَةٌ|der Fisch als Tier
+حِصَانٌ|das Pferd
+بَقَرَةٌ|die Kuh
+خَرُوفٌ|das Schaf
+مَاعِزٌ|die Ziege
+دَجَاجَةٌ|das Huhn
+بَطَّةٌ|die Ente
+أَرْنَبٌ|das Kaninchen
+فَأْرٌ|die Maus
+جَمَلٌ|das Kamel
+حِمَارٌ|der Esel
+أَسَدٌ|der Löwe
+فِيلٌ|der Elefant
+قِرْدٌ|der Affe
+نَحْلَةٌ|die Biene
+فَرَاشَةٌ|der Schmetterling
+سُلَحْفَاةٌ|die Schildkröte
+@الهوايات ووقت الفراغ|Hobbys und Freizeit|أتحدث بكلمات بسيطة عن أنشطتي المفضلة.
+هِوَايَةٌ|das Hobby
+لُعْبَةٌ|das Spiel
+كُرَةُ الْقَدَمِ|der Fußball als Sport
+كُرَةُ السَّلَّةِ|der Basketball als Sport
+سِبَاحَةٌ|das Schwimmen
+جَرْيٌ|das Laufen als Sport
+مَشْيٌ|das Spazierengehen
+قِرَاءَةٌ|das Lesen
+رَسْمٌ|das Zeichnen
+مُوسِيقَى|die Musik
+غِنَاءٌ|das Singen
+رَقْصٌ|das Tanzen
+تَصْوِيرٌ|das Fotografieren
+طَبْخٌ|das Kochen
+سَفَرٌ|das Reisen
+نُزْهَةٌ|der Ausflug
+حَفْلَةٌ|die Feier
+فِيلْمٌ|der Film
+قِصَّةٌ|die Geschichte
+عُطْلَةٌ|die Ferien / der Urlaub
+@أفعال الحركة والأفعال الشائعة|Bewegung und häufige Verben|أفهم أفعالاً قصيرة وأصف حركة بسيطة.
+يَذْهَبُ|gehen
+يَأْتِي|kommen
+يَرْجِعُ|zurückkommen
+يَدْخُلُ|hineingehen
+يَخْرُجُ|hinausgehen
+يَصْعَدُ|hinaufgehen
+يَنْزِلُ|hinuntergehen
+يَمْشِي|zu Fuß gehen
+يَجْرِي|rennen
+يَقِفُ|stehen
+يَجْلِسُ|sitzen
+يَرْكَبُ|einsteigen / fahren
+يَفْتَحُ|öffnen
+يُغْلِقُ|schließen
+يَحْمِلُ|tragen
+يَضَعُ|legen / stellen
+يَأْخُذُ|nehmen
+يُعْطِي|geben
+يَشْتَرِي|kaufen
+يَدْفَعُ|bezahlen
+@أفعال الروتين اليومي|Verben der täglichen Routine|أصف روتيناً يومياً بأفعال مألوفة.
+يَسْتَيْقِظُ|aufwachen
+يَنَامُ|schlafen
+يَغْسِلُ|waschen
+يَسْتَحِمُّ|duschen / baden
+يُنَظِّفُ|sauber machen
+يَلْبَسُ|anziehen / tragen
+يَأْكُلُ|essen
+يَشْرَبُ|trinken
+يَطْبُخُ|kochen
+يَعْمَلُ|arbeiten
+يَسْكُنُ|wohnen
+يَدْرُسُ|lernen / studieren
+يَلْعَبُ|spielen
+يَسْبَحُ|schwimmen
+يُشَاهِدُ|anschauen
+يَسْتَمِعُ|zuhören
+يَتَكَلَّمُ|sprechen
+يَزُورُ|besuchen
+يَرْتَاحُ|sich ausruhen
+يُحِبُّ|mögen / lieben
+@أفعال التعلم والتواصل|Verben des Lernens und Sprechens|أطلب توضيحاً وأتواصل داخل الصف.
+يَقْرَأُ|lesen
+يَكْتُبُ|schreiben
+يَسْمَعُ|hören
+يَفْهَمُ|verstehen
+يَعْرِفُ|wissen / kennen
+يَسْأَلُ|fragen
+يُجِيبُ|antworten
+يُكَرِّرُ|wiederholen
+يَحْفَظُ|auswendig lernen
+يَتَعَلَّمُ|erlernen
+يُعَلِّمُ|unterrichten
+يَبْدَأُ|beginnen
+يَنْتَهِي|enden
+يَنْظُرُ|schauen
+يَبْحَثُ|suchen
+يَجِدُ|finden
+يَنْتَظِرُ|warten
+يُسَاعِدُ|helfen
+يُرِيدُ|wollen
+يَسْتَطِيعُ|können
+@الصفات الأساسية|Grundlegende Eigenschaften|أصف أشياء وأشخاصاً بصفات بسيطة.
+كَبِيرٌ|groß
+صَغِيرٌ|klein
+طَوِيلٌ|lang / groß gewachsen
+قَصِيرٌ|kurz / klein gewachsen
+جَدِيدٌ|neu
+قَدِيمٌ|alt (Sache)
+جَمِيلٌ|schön
+قَبِيحٌ|hässlich
+سَهْلٌ|einfach
+صَعْبٌ|schwierig
+سَرِيعٌ|schnell
+بَطِيءٌ|langsam
+قَرِيبٌ|nah
+بَعِيدٌ|weit entfernt
+نَظِيفٌ|sauber
+مُتَّسِخٌ|schmutzig
+جَيِّدٌ|gut
+سَيِّئٌ|schlecht
+قَوِيٌّ|stark
+ضَعِيفٌ|schwach
+@المشاعر والحالة البسيطة|Gefühle und Befinden|أقول كيف أشعر وما أحتاج إليه.
+سَعِيدٌ|glücklich
+حَزِينٌ|traurig
+مُتْعَبٌ|müde
+نَشِيطٌ|aktiv
+جَائِعٌ|hungrig
+عَطْشَانُ|durstig
+مَرِيضٌ|krank
+بِصِحَّةٍ جَيِّدَةٍ|gesund
+خَائِفٌ|ängstlich
+غَاضِبٌ|wütend
+هَادِئٌ|ruhig
+مَشْغُولٌ|beschäftigt
+وَحِيدٌ|allein
+أَلَمٌ|der Schmerz
+صُدَاعٌ|die Kopfschmerzen
+حُمَّى|das Fieber
+دَوَاءٌ|das Medikament
+رَاحَةٌ|die Ruhe
+مُسَاعَدَةٌ|die Hilfe
+أَحْتَاجُ إِلَى|ich brauche
+@المكان والاتجاهات والروابط|Ort, Richtung und Verbindungen|أحدد مكاناً وأربط كلمات وجملاً قصيرة.
+هُنَا|hier
+هُنَاكَ|dort
+يَمِينٌ|rechts / die rechte Seite
+يَسَارٌ|links / die linke Seite
+أَمَامَ|vor (örtlich)
+خَلْفَ|hinter
+فَوْقَ|über
+تَحْتَ|unter
+بَيْنَ|zwischen
+بِجَانِبِ|neben
+فِي|in
+عَلَى|auf
+مِنْ|aus / von
+إِلَى|nach / zu
+مَعَ|mit
+عِنْدَ|bei
+وَ|und
+أَوْ|oder
+ثُمَّ|dann
+لَكِنْ|aber
+@بلدان ولغات وجنسيات|Länder, Sprachen und Nationalitäten|أذكر بلدي ولغتي وأتعرف إلى جنسيات شائعة.
+أَلْمَانِيَا|Deutschland
+فَرَنْسَا|Frankreich
+إِسْبَانْيَا|Spanien
+إِيطَالِيَا|Italien
+تُرْكِيَا|die Türkei
+سُورِيَا|Syrien
+مِصْرُ|Ägypten
+الْمَغْرِبُ|Marokko
+تُونِسُ|Tunesien
+الْعِرَاقُ|der Irak
+الْأُرْدُنُّ|Jordanien
+لُبْنَانُ|der Libanon
+الْعَرَبِيَّةُ|Arabisch
+الْأَلْمَانِيَّةُ|Deutsch
+الْإِنْجِلِيزِيَّةُ|Englisch
+الْفَرَنْسِيَّةُ|Französisch
+عَرَبِيٌّ|arabisch (Nationalitätsadjektiv)
+أَلْمَانِيٌّ|deutsch (Nationalitätsadjektiv)
+سُورِيٌّ|syrisch
+تُرْكِيٌّ|türkisch
+@عبارات للمواقف اليومية|Sätze für den Alltag|أطلب المساعدة وأعبر عن حاجات مباشرة.
+لَا أَفْهَمُ|Ich verstehe nicht
+لَا أَعْرِفُ|Ich weiß nicht
+لَا بَأْسَ|Kein Problem
+لَحْظَةً وَاحِدَةً|Einen Moment
+تَكَلَّمْ بِبُطْءٍ|Sprich langsam
+كَرِّرْ مِنْ فَضْلِكَ|Wiederhole bitte
+مَا مَعْنَى هَذَا؟|Was bedeutet das?
+أَيْنَ الْحَمَّامُ؟|Wo ist die Toilette?
+أُرِيدُ هَذَا|Ich möchte das
+أَنَا جَاهِزٌ|Ich bin bereit
+أَنَا ضَائِعٌ|Ich habe mich verlaufen
+سَاعِدْنِي|Hilf mir
+اِتَّصِلْ بِي|Ruf mich an
+بِكَمْ هَذَا؟|Was kostet das?
+كَمِ السَّاعَةُ؟|Wie spät ist es?
+هَذَا لَكَ|Das ist für dich (männlich)
+لَيْسَ عِنْدِي|Ich habe es nicht
+أُحِبُّ هَذَا|Das gefällt mir
+إِلَى غَدٍ|Bis morgen
+عُطْلَةٌ سَعِيدَةٌ|Schöne Ferien

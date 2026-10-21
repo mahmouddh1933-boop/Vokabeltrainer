@@ -494,6 +494,7 @@
   function translated(text) {
     if (lang === "ar") return text;
     const exact =
+      window.VOCAB_CATALOG_LABELS?.[text] ||
       catalogAndScreenTranslations[text] ||
       extra[text] ||
       (oldTranslations[text] && oldTranslations[text].de);
@@ -669,8 +670,10 @@
       const notice = document.createElement("p");
       notice.className = "storage-notice";
       notice.setAttribute("role", "status");
-      notice.dataset.ar = "يمكنك متابعة التدرّب، لكن التقدّم مؤقت لأن المتصفح لا يسمح بحفظه. افتح التطبيق مباشرة في Chrome للسماح بالحفظ.";
-      notice.dataset.de = "Du kannst weiterüben. Dein Fortschritt ist vorübergehend, weil der Browser das Speichern blockiert. Öffne die App direkt in Chrome, um das Speichern zu erlauben.";
+      notice.dataset.ar =
+        "يمكنك متابعة التدرّب، لكن التقدّم مؤقت لأن المتصفح لا يسمح بحفظه. افتح التطبيق مباشرة في Chrome للسماح بالحفظ.";
+      notice.dataset.de =
+        "Du kannst weiterüben. Dein Fortschritt ist vorübergehend, weil der Browser das Speichern blockiert. Öffne die App direkt in Chrome, um das Speichern zu erlauben.";
       notice.textContent = notice.dataset[lang];
       document.querySelector("main")?.prepend(notice);
     }

@@ -1,0 +1,630 @@
+@التفكير النقدي والمفاهيم|Kritisches Denken und Begriffe|أحلل فكرة وأميز الافتراض من الاستنتاج.
+تَفْكِيرٌ نَقْدِيٌّ|das kritische Denken
+اِفْتِرَاضٌ|die Annahme
+مُسَلَّمَةٌ|die als gegeben angesehene Voraussetzung
+مَفْهُومٌ|der Begriff
+تَصَوُّرٌ|die Vorstellung / Konzeption
+تَعْرِيفٌ دَقِيقٌ|die präzise Definition
+تَنَاقُضٌ|der Widerspruch
+اِتِّسَاقٌ|die Stimmigkeit
+اِنْحِيَازٌ|die Voreingenommenheit
+مَوْضُوعِيَّةٌ|die Objektivität
+ذَاتِيَّةٌ|die Subjektivität
+تَعْمِيمٌ|die Verallgemeinerung
+مُغَالَطَةٌ|der Denkfehler
+اِسْتِدْلَالٌ|die Schlussführung
+تَجْرِيدٌ|die Abstraktion
+يُفَنِّدُ|widerlegen
+يَفْتَرِضُ|annehmen
+يَسْتَنْبِطُ|deduktiv ableiten
+يُشَكِّكُ فِي|infrage stellen
+يُعِيدُ النَّظَرَ فِي|überdenken
+@مناهج البحث|Forschungsmethoden|أصف منهج دراسة وحدوده بصورة واضحة.
+مَنْهَجِيَّةٌ|die Methodik
+فَرَضِيَّةٌ|die Hypothese
+إِشْكَالِيَّةٌ|die Forschungsproblematik
+مُرَاجَعَةٌ مَرْجِعِيَّةٌ|die Literaturübersicht
+عَيِّنَةٌ بَحْثِيَّةٌ|die Forschungsstichprobe
+اِسْتِبْيَانٌ|der Fragebogen
+مُقَابَلَةٌ مُتَعَمِّقَةٌ|das vertiefende Interview
+بَحْثٌ مَيْدَانِيٌّ|die Feldforschung
+دِرَاسَةُ حَالَةٍ|die Fallstudie
+مُتَغَيِّرٌ|die Variable
+مُقَارَبَةٌ كَمِّيَّةٌ|der quantitative Ansatz
+مُقَارَبَةٌ نَوْعِيَّةٌ|der qualitative Ansatz
+مِصْدَاقِيَّةٌ|die Glaubwürdigkeit
+قَابِلِيَّةُ التَّكْرَارِ|die Reproduzierbarkeit
+حُدُودُ الدِّرَاسَةِ|die Grenzen der Untersuchung
+يَصُوغُ فَرَضِيَّةً|eine Hypothese formulieren
+يَجْمَعُ الْمُعْطَيَاتِ|Daten erheben
+يُحَلِّلُ الْمُقَابَلَاتِ|Interviews auswerten
+يَتَحَقَّقُ مِنَ الْفَرَضِيَّةِ|die Hypothese überprüfen
+يَنْشُرُ نَتَائِجَهُ|seine Ergebnisse veröffentlichen
+@البيانات والأدلة|Daten und Belege|أفسر إحصاءً وأقيم قوة دليل وحدوده.
+إِحْصَاءٌ|die Statistik
+مُؤَشِّرٌ|der Indikator
+نِسْبَةٌ مِئَوِيَّةٌ|der Prozentsatz
+مُتَوَسِّطٌ حِسَابِيٌّ|der arithmetische Mittelwert
+مُعَدَّلٌ|die Rate
+هَامِشُ الْخَطَأِ|die Fehlermarge
+اِرْتِبَاطٌ|die Korrelation
+عَلَاقَةٌ سَبَبِيَّةٌ|der kausale Zusammenhang
+دَلِيلٌ تَجْرِيبِيٌّ|der empirische Beleg
+بُرْهَانٌ|der Beweis
+مُعْطَيَاتٌ|die gegebenen Daten
+عَيِّنَةٌ مُمَثِّلَةٌ|die repräsentative Stichprobe
+تَفَاوُتٌ|die Ungleichheit / Abweichung
+اِتِّجَاهٌ عَامٌّ|der allgemeine Trend
+تَمْثِيلٌ بَيَانِيٌّ|die grafische Darstellung
+يَسْتَنِدُ إِلَى|sich stützen auf
+يَدْعَمُ الِاسْتِنْتَاجَ|die Schlussfolgerung stützen
+يَكْشِفُ عَنْ نَمَطٍ|ein Muster aufzeigen
+يُفَرِّقُ بَيْنَ|unterscheiden zwischen
+لَا يَكْفِي لِإِثْبَاتِ|reicht nicht aus zum Nachweis von
+@الحجاج والمناظرة|Argumentation und Debatte|أبني حجة وأرد على اعتراض بتفصيل مناسب.
+أُطْرُوحَةٌ|die These
+حُجَّةٌ مُضَادَّةٌ|das Gegenargument
+اِعْتِرَاضٌ|der Einwand
+دَحْضٌ|die Widerlegung
+تَنَازُلٌ جُزْئِيٌّ|das begrenzte Zugeständnis
+حُجَّةٌ مَنْطِقِيَّةٌ|das logische Argument
+اِسْتِشْهَادٌ|das Anführen eines Belegs
+مُنَاظَرَةٌ|die Debatte
+مَوْقِفٌ مُبَرَّرٌ|die begründete Position
+اِقْتِبَاسٌ|das Zitat
+وَجَاهَةُ الْحُجَّةِ|die Stichhaltigkeit des Arguments
+عِبْءُ الْإِثْبَاتِ|die Beweislast
+وُضُوحُ الْمَوْقِفِ|die Klarheit der Position
+اِحْتِمَالٌ بَدِيلٌ|die alternative Erklärungsmöglichkeit
+نُقْطَةٌ جَوْهَرِيَّةٌ|der wesentliche Punkt
+يُبَرْهِنُ|beweisen
+يَدْحَضُ|entkräften
+يُقِرُّ بِـ|einräumen
+يُفْحِمُ خَصْمَهُ|seinen Gegner argumentativ zum Schweigen bringen
+يَدْعَمُ مَوْقِفَهُ بِـ|seinen Standpunkt untermauern mit
+@تحليل الإعلام والخطاب|Medien und Diskurse analysieren|أحلل طريقة عرض خبر وأميز التضليل من الرأي.
+خِطَابٌ إِعْلَامِيٌّ|der Mediendiskurs
+تَحَيُّزٌ إِعْلَامِيٌّ|die mediale Parteilichkeit
+تَضْلِيلٌ|die Irreführung
+مَعْلُومَةٌ مُضَلِّلَةٌ|die irreführende Information
+خَبَرٌ مُخْتَلَقٌ|die erfundene Meldung
+تَحْرِيرٌ صَحَفِيٌّ|die journalistische Redaktionstätigkeit
+حُرِّيَّةُ الصَّحَافَةِ|die Pressefreiheit
+رَقَابَةٌ|die Zensur
+مَصْدَرٌ مُسْتَقِلٌّ|die unabhängige Quelle
+تَدْقِيقُ الْحَقَائِقِ|der Faktencheck
+تَأْطِيرٌ|die Rahmung / das Framing
+عُنْوَانٌ مُثِيرٌ|die reißerische Schlagzeile
+رَأْيٌ عَامٌّ|die öffentliche Meinung
+حَمْلَةٌ إِعْلَامِيَّةٌ|die Medienkampagne
+مَسْؤُولِيَّةٌ تَحْرِيرِيَّةٌ|die redaktionelle Verantwortung
+يَتَلَاعَبُ بِالْمَعْلُومَاتِ|Informationen manipulieren
+يُبْرِزُ جَانِباً|einen Aspekt hervorheben
+يَتَجَاهَلُ السِّيَاقَ|den Kontext ausblenden
+يَتَحَرَّى الدِّقَّةَ|auf Genauigkeit achten
+يُشَكِّلُ الرَّأْيَ الْعَامَّ|die öffentliche Meinung prägen
+@الذكاء الاصطناعي وأخلاقيات التقنية|KI und Technikethik|أناقش منافع التقنية ومخاطرها ومسؤولية استخدامها.
+ذَكَاءٌ اِصْطِنَاعِيٌّ|die künstliche Intelligenz
+خَوَارِزْمِيَّةٌ|der Algorithmus
+تَعَلُّمٌ آلِيٌّ|das maschinelle Lernen
+أَتْمَتَةٌ|die Automatisierung
+نَمُوذَجٌ لُغَوِيٌّ|das Sprachmodell
+بَيَانَاتُ التَّدْرِيبِ|die Trainingsdaten
+تَحَيُّزٌ خَوَارِزْمِيٌّ|die algorithmische Verzerrung
+شَفَافِيَّةٌ تِقْنِيَّةٌ|die technische Transparenz
+مُسَاءَلَةٌ|die Rechenschaftspflicht
+إِشْرَافٌ بَشَرِيٌّ|die menschliche Aufsicht
+مِلْكِيَّةٌ فِكْرِيَّةٌ|das geistige Eigentum
+اِبْتِكَارٌ|die Innovation
+تَقْنِيَةٌ نَاشِئَةٌ|die aufkommende Technologie
+تَأْثِيرٌ مُجْتَمَعِيٌّ|die gesellschaftliche Auswirkung
+اِسْتِخْدَامٌ مَسْؤُولٌ|der verantwortungsvolle Einsatz
+يُؤَتْمِتُ|automatisieren
+يُوَلِّدُ نَصًّا|einen Text generieren
+يَخْضَعُ لِلرَّقَابَةِ|einer Kontrolle unterliegen
+يَسْتَبْدِلُ الْعَمَلَ الْيَدَوِيَّ|manuelle Arbeit ersetzen
+يُعَزِّزُ الْقُدُرَاتِ|Fähigkeiten erweitern
+@الأمن الرقمي وحوكمة البيانات|IT-Sicherheit und Datenregeln|أشرح خطراً رقمياً وأناقش حماية البيانات.
+أَمْنٌ سَيْبَرَانِيٌّ|die Cybersicherheit
+خَرْقٌ أَمْنِيٌّ|die Sicherheitsverletzung
+تَسْرِيبُ الْبَيَانَاتِ|das Datenleck
+تَشْفِيرٌ|die Verschlüsselung
+مُصَادَقَةٌ ثُنَائِيَّةٌ|die Zwei-Faktor-Authentifizierung
+تَصَيُّدٌ اِحْتِيَالِيٌّ|das Phishing
+بَرْمَجِيَّةٌ خَبِيثَةٌ|die Schadsoftware
+فِدْيَةٌ رَقْمِيَّةٌ|das digitale Lösegeld
+نَفَاذٌ غَيْرُ مُصَرَّحٍ بِهِ|der unbefugte Zugriff
+مُوَافَقَةٌ مُسْبَقَةٌ|die vorherige Einwilligung
+سِيَاسَةُ الْخُصُوصِيَّةِ|die Datenschutzerklärung
+حَوْكَمَةُ الْبَيَانَاتِ|die Daten-Governance
+حَقُّ الْمَحْوِ|das Recht auf Löschung
+بَيَانَاتٌ حَسَّاسَةٌ|die sensiblen Daten
+اِنْتِهَاكُ الْخُصُوصِيَّةِ|die Verletzung der Privatsphäre
+يُشَفِّرُ|verschlüsseln
+يَخْتَرِقُ نِظَاماً|in ein System eindringen
+يَكْشِفُ ثَغْرَةً|eine Sicherheitslücke entdecken
+يُقَيِّدُ الْوُصُولَ|den Zugriff beschränken
+يَسْحَبُ الْمُوَافَقَةَ|die Einwilligung widerrufen
+@الاقتصاد والمؤشرات|Wirtschaft und Kennzahlen|أفسر خبراً اقتصادياً وأشرح سبباً ونتيجة.
+تَضَخُّمٌ|die Inflation
+رُكُودٌ|die Rezession
+نُمُوٌّ اِقْتِصَادِيٌّ|das Wirtschaftswachstum
+نَاتِجٌ مَحَلِّيٌّ إِجْمَالِيٌّ|das Bruttoinlandsprodukt
+سُوقُ الْعَمَلِ|der Arbeitsmarkt
+عَرْضٌ وَطَلَبٌ|Angebot und Nachfrage
+اِسْتِثْمَارٌ|die Investition
+عَائِدٌ|die Rendite
+مُدَّخَرَاتٌ|die Ersparnisse
+عَجْزٌ|das Defizit
+فَائِضٌ|der Überschuss
+مَدْيُونِيَّةٌ|die Verschuldung
+إِيرَادَاتٌ|die Einnahmen
+قُوَّةٌ شِرَائِيَّةٌ|die Kaufkraft der Währung
+مُؤَشِّرُ الْأَسْعَارِ|der Preisindex
+سِيَاسَةٌ نَقْدِيَّةٌ|die Geldpolitik
+يَسْتَثْمِرُ|investieren
+يَتَرَاجَعُ|zurückgehen
+يَتَسَارَعُ|sich beschleunigen
+يُحَفِّزُ النُّمُوَّ|das Wachstum ankurbeln
+@ريادة الأعمال والمؤسسات|Unternehmertum und Unternehmen|أعرض فكرة مشروع وأناقش جدواه ومنافسيه.
+رِيَادَةُ الْأَعْمَالِ|das Unternehmertum
+رَائِدُ أَعْمَالٍ|der Unternehmer
+شَرِكَةٌ نَاشِئَةٌ|das Start-up
+نَمُوذَجُ أَعْمَالٍ|das Geschäftsmodell
+دِرَاسَةُ جَدْوَى|die Machbarkeitsstudie
+رَأْسُ مَالٍ|das Kapital
+تَمْوِيلٌ|die Finanzierung
+تَدَفُّقٌ نَقْدِيٌّ|der Cashflow
+حِصَّةٌ سُوقِيَّةٌ|der Marktanteil
+مِيزَةٌ تَنَافُسِيَّةٌ|der Wettbewerbsvorteil
+اِسْتِرَاتِيجِيَّةُ تَسْوِيقٍ|die Marketingstrategie
+فِئَةٌ مُسْتَهْدَفَةٌ|die Zielgruppe
+شَرَاكَةٌ|die Partnerschaft
+رِبْحِيَّةٌ|die Rentabilität
+اِسْتِدَامَةٌ مَالِيَّةٌ|die finanzielle Tragfähigkeit
+يُؤَسِّسُ شَرِكَةً|ein Unternehmen gründen
+يُوَسِّعُ نِطَاقَ عَمَلِهِ|sein Geschäft ausweiten
+يَجْذِبُ مُسْتَثْمِرِينَ|Investoren gewinnen
+يَغْزُو سُوقاً جَدِيدَةً|einen neuen Markt erschließen
+يُحَقِّقُ أَرْبَاحاً|Gewinne erzielen
+@تحولات العمل والمهارات|Arbeitswelt im Wandel|أقارن أنماط العمل وأناقش أثرها في العاملين.
+تَحَوُّلٌ رَقْمِيٌّ|die digitale Transformation
+عَمَلٌ عَنْ بُعْدٍ|die Fernarbeit
+عَمَلٌ هَجِينٌ|die hybride Arbeit
+اِقْتِصَادُ الْمِنَصَّاتِ|die Plattformökonomie
+أَمَانٌ وَظِيفِيٌّ|die Arbeitsplatzsicherheit
+تَفَاوُضٌ جَمَاعِيٌّ|die Tarifverhandlung
+نِقَابَةٌ عُمَّالِيَّةٌ|die Gewerkschaft
+تَكْوِينٌ مُسْتَمِرٌ|die berufliche Weiterbildung
+إِعَادَةُ تَأْهِيلٍ مِهْنِيٍّ|die berufliche Umschulung
+فَجْوَةُ الْمَهَارَاتِ|die Qualifikationslücke
+إِنْتَاجِيَّةٌ|die Produktivität
+تَوَازُنُ الْعَمَلِ وَالْحَيَاةِ|die Work-Life-Balance
+عَقْدٌ مُحَدَّدُ الْمُدَّةِ|der befristete Vertrag
+عَمَلٌ مُسْتَقِلٌّ|die freiberufliche Arbeit
+تَكَافُؤُ الْفُرَصِ|die Chancengleichheit
+يُعِيدُ تَأْهِيلَ|umschulen
+يُفَاوِضُ جَمَاعِيًّا|Tarifverhandlungen führen
+يَتَكَيَّفُ مَعَ التَّغَيُّرِ|sich an Veränderungen anpassen
+يَسُدُّ فَجْوَةً|eine Lücke schließen
+يَرْفَعُ الْإِنْتَاجِيَّةَ|die Produktivität steigern
+@السياسات العامة والحكم|Öffentliche Politik und Regierung|أناقش إجراءً عاماً من حيث أهدافه وآثاره.
+سِيَاسَةٌ عَامَّةٌ|die öffentliche Politik
+حَوْكَمَةٌ|die gute Unternehmens- oder Staatsführung
+شَفَافِيَّةٌ|die Transparenz
+رَقَابَةٌ بَرْلَمَانِيَّةٌ|die parlamentarische Kontrolle
+مُشَارَكَةٌ مَدَنِيَّةٌ|die Bürgerbeteiligung
+اِنْتِخَابَاتٌ|die Wahlen
+تَمْثِيلٌ سِيَاسِيٌّ|die politische Vertretung
+مُؤَسَّسَةٌ عَامَّةٌ|die öffentliche Einrichtung
+مِيزَانِيَّةٌ عَامَّةٌ|der öffentliche Haushalt
+إِصْلَاحٌ إِدَارِيٌّ|die Verwaltungsreform
+لَامَرْكَزِيَّةٌ|die Dezentralisierung
+حُكْمُ الْقَانُونِ|die Rechtsstaatlichkeit
+مَصْلَحَةٌ عَامَّةٌ|das Gemeinwohl
+مَسْؤُولٌ مُنْتَخَبٌ|der gewählte Amtsträger
+تَنْفِيذُ السِّيَاسَاتِ|die Umsetzung politischer Maßnahmen
+يَسُنُّ قَانُوناً|ein Gesetz erlassen
+يُحَاسِبُ|zur Rechenschaft ziehen
+يَضَعُ سِيَاسَةً|eine politische Maßnahme entwickeln
+يُشَارِكُ فِي الِانْتِخَابَاتِ|an Wahlen teilnehmen
+يُقَيِّمُ الْأَثَرَ|die Auswirkungen bewerten
+@القانون والعدالة|Recht und Justiz|أفهم نقاشاً قانونياً عاماً وأميز المبدأ من الإجراء.
+تَشْرِيعٌ|die Gesetzgebung
+سُلْطَةٌ قَضَائِيَّةٌ|die rechtsprechende Gewalt
+اِسْتِقْلَالُ الْقَضَاءِ|die Unabhängigkeit der Justiz
+قَرِينَةُ الْبَرَاءَةِ|die Unschuldsvermutung
+مُحَاكَمَةٌ عَادِلَةٌ|das faire Gerichtsverfahren
+اِسْتِئْنَافٌ|die Berufung
+طَعْنٌ قَانُونِيٌّ|der Rechtsbehelf
+نَصٌّ قَانُونِيٌّ|die Rechtsvorschrift
+مَسْؤُولِيَّةٌ مَدَنِيَّةٌ|die zivilrechtliche Haftung
+اِنْتِهَاكٌ|der Verstoß / die Verletzung eines Rechts
+إِنْصَافٌ|die gerechte Wiedergutmachung
+عُقُوبَةٌ|die Strafe
+تَنَاسُبٌ|die Verhältnismäßigkeit
+تَضَارُبُ الْمَصَالِحِ|der Interessenkonflikt
+تَسْوِيَةٌ قَضَائِيَّةٌ|der gerichtliche Vergleich
+يُقَاضِي|verklagen
+يَطْعَنُ فِي حُكْمٍ|ein Urteil anfechten
+يَكْفُلُ حَقًّا|ein Recht gewährleisten
+يَفْرِضُ عُقُوبَةً|eine Strafe verhängen
+يَحْتَكِمُ إِلَى الْقَانُونِ|sich auf das Recht berufen
+@الحقوق والمساواة|Grundrechte und Gleichstellung|أحلل تفاوتاً وأدافع عن مبدأ مساواة بأمثلة.
+حُقُوقُ الْإِنْسَانِ|die Menschenrechte
+كَرَامَةٌ إِنْسَانِيَّةٌ|die Menschenwürde
+عَدَمُ التَّمْيِيزِ|die Nichtdiskriminierung
+مُسَاوَاةٌ أَمَامَ الْقَانُونِ|die Gleichheit vor dem Gesetz
+حُرِّيَّةُ التَّعْبِيرِ|die Meinungsfreiheit
+حُرِّيَّةُ الِاعْتِقَادِ|die Glaubensfreiheit
+حَقُّ الْمُشَارَكَةِ|das Recht auf Teilhabe
+إِدْمَاجٌ|die Inklusion
+إِتَاحَةٌ|die Zugänglichkeit
+تَمْكِينٌ|die Befähigung zur Selbstbestimmung
+فَجْوَةٌ اِجْتِمَاعِيَّةٌ|die soziale Kluft
+فُرَصٌ مُتَكَافِئَةٌ|die gleichen Chancen
+تَمْيِيزٌ مُبَاشِرٌ|die unmittelbare Diskriminierung
+تَمْثِيلٌ مُتَوَازِنٌ|die ausgewogene Repräsentation
+حِمَايَةُ الْأَقَلِّيَّاتِ|der Minderheitenschutz
+يُرَسِّخُ الْمُسَاوَاةَ|Gleichstellung verankern
+يَضْمَنُ الْإِتَاحَةَ|Zugänglichkeit sicherstellen
+يُزِيلُ الْحَوَاجِزَ|Barrieren abbauen
+يُمَكِّنُ الْأَفْرَادَ|Menschen zur Selbstbestimmung befähigen
+يَحُدُّ مِنَ التَّمْيِيزِ|Diskriminierung verringern
+@الهجرة والتماسك الاجتماعي|Migration und sozialer Zusammenhalt|أناقش الاندماج والانتماء دون تعميم أو اختزال.
+هِجْرَةٌ|die Migration
+لُجُوءٌ|die Flucht / das Asylsuchen
+تَمَاسُكٌ اِجْتِمَاعِيٌّ|der soziale Zusammenhalt
+اِنْدِمَاجٌ|die Integration
+تَعَدُّدِيَّةٌ ثَقَافِيَّةٌ|der kulturelle Pluralismus
+تَعَايُشٌ|das Zusammenleben
+صُورَةٌ نَمَطِيَّةٌ|das Stereotyp
+حُكْمٌ مُسْبَقٌ|das Vorurteil
+تَهْمِيشٌ|die Marginalisierung
+إِقْصَاءٌ|die Ausgrenzung
+حِرَاكٌ اِجْتِمَاعِيٌّ|die soziale Mobilität
+شَبَكَةُ دَعْمٍ|das Unterstützungsnetzwerk
+اِنْتِمَاءٌ مُتَعَدِّدٌ|die mehrfache Zugehörigkeit
+حَاجِزٌ لُغَوِيٌّ|die Sprachbarriere
+دَمْجٌ فِي سُوقِ الْعَمَلِ|die Eingliederung in den Arbeitsmarkt
+يَتَعَايَشُ|zusammenleben
+يُهَمِّشُ|an den Rand drängen
+يَتَجَاوَزُ الْأَحْكَامَ الْمُسْبَقَةَ|Vorurteile überwinden
+يَبْنِي جُسُورَ الثِّقَةِ|Vertrauen zwischen Gruppen aufbauen
+يُعَزِّزُ التَّمَاسُكَ|den Zusammenhalt stärken
+@السكن وتخطيط المدن|Wohnen und Stadtentwicklung|أقارن حلول أزمة سكن وأناقش أثر التخطيط.
+أَزْمَةُ السَّكَنِ|die Wohnungskrise
+إِسْكَانٌ مُيَسَّرٌ|der bezahlbare Wohnraum
+كَثَافَةٌ سُكَّانِيَّةٌ|die Bevölkerungsdichte
+تَوَسُّعٌ عُمْرَانِيٌّ|die städtische Ausdehnung
+تَجْدِيدٌ حَضَرِيٌّ|die Stadterneuerung
+اِرْتِفَاعُ الْإِيجَارَاتِ|der Mietanstieg
+حَيٌّ مُسْتَدَامٌ|das nachhaltige Stadtviertel
+تَوْزِيعٌ مَكَانِيٌّ|die räumliche Verteilung
+مَسَاحَاتٌ عَامَّةٌ|die öffentlichen Räume
+نَقْلٌ مُسْتَدَامٌ|die nachhaltige Mobilität
+إِزَاحَةُ السُّكَّانِ|die Verdrängung der Bewohner
+اِسْتِثْمَارٌ عَقَارِيٌّ|die Immobilieninvestition
+تَنَوُّعٌ وَظِيفِيٌّ|die Nutzungsmischung
+بِنْيَةٌ تَحْتِيَّةٌ خَضْرَاءُ|die grüne Infrastruktur
+نَوْعِيَّةُ الْحَيَاةِ|die Lebensqualität
+يُعِيدُ تَأْهِيلَ الْأَحْيَاءِ|Stadtviertel sanieren
+يَضْبِطُ الْإِيجَارَاتِ|Mieten regulieren
+يُوَفِّرُ سَكَناً مُيَسَّراً|bezahlbaren Wohnraum schaffen
+يُرَاعِي اِحْتِيَاجَاتِ السُّكَّانِ|Bedürfnisse der Bewohner berücksichtigen
+يُشْرِكُ الْمُجْتَمَعَ الْمَحَلِّيَّ|die örtliche Gemeinschaft beteiligen
+@الاستدامة وإدارة الموارد|Nachhaltigkeit und Ressourcenmanagement|أقارن نماذج استهلاك وأناقش كلفتها البيئية.
+اِسْتِدَامَةٌ|die Nachhaltigkeit
+اِقْتِصَادٌ دَائِرِيٌّ|die Kreislaufwirtschaft
+بَصْمَةٌ بِيئِيَّةٌ|der ökologische Fußabdruck
+نُدْرَةٌ|die Knappheit
+اِسْتِنْزَافٌ|die Erschöpfung von Ressourcen
+حِفْظُ الْمَوَارِدِ|die Ressourcenschonung
+تَنَوُّعٌ بِيُولُوجِيٌّ|die biologische Vielfalt
+نِظَامٌ بِيئِيٌّ|das Ökosystem
+تَدَهْوُرٌ بِيئِيٌّ|die Umweltzerstörung
+اِسْتِهْلَاكٌ مَسْؤُولٌ|der verantwortungsvolle Konsum
+دَوْرَةُ حَيَاةِ الْمُنْتَجِ|der Produktlebenszyklus
+إِصْلَاحٌ بَدَلَ الِاسْتِبْدَالِ|Reparatur statt Austausch
+تَصْمِيمٌ مُسْتَدَامٌ|das nachhaltige Design
+أَثَرٌ تَرَاكُمِيٌّ|die kumulative Wirkung
+مُوَازَنَةٌ بِيئِيَّةٌ|die Ökobilanz
+يَسْتَنْزِفُ|aufbrauchen
+يُحَافِظُ عَلَى التَّنَوُّعِ|die Vielfalt bewahren
+يُطِيلُ عُمْرَ الْمُنْتَجِ|die Produktlebensdauer verlängern
+يَتَبَنَّى نَمَطاً مُسْتَدَاماً|eine nachhaltige Lebensweise übernehmen
+يُقَلِّصُ الْبَصْمَةَ الْبِيئِيَّةَ|den ökologischen Fußabdruck verringern
+@التكيف المناخي والآثار|Klimaanpassung und Folgen|أناقش خيارات التعامل مع تغير المناخ وحدودها.
+تَكَيُّفٌ مُنَاخِيٌّ|die Klimaanpassung
+تَخْفِيفُ الِانْبِعَاثَاتِ|die Emissionsminderung
+حِيَادٌ كَرْبُونِيٌّ|die Klimaneutralität
+اِنْبِعَاثَاتٌ كَرْبُونِيَّةٌ|die Kohlenstoffemissionen
+غَازَاتٌ دَفِيئَةٌ|die Treibhausgase
+عَتَبَةٌ حَرَارِيَّةٌ|die Temperaturschwelle
+سِينَارْيُو مُنَاخِيٌّ|das Klimaszenario
+هِشَاشَةٌ|die Verletzlichkeit
+قُدْرَةٌ عَلَى الصُّمُودِ|die Widerstandsfähigkeit
+عَدَالَةٌ مُنَاخِيَّةٌ|die Klimagerechtigkeit
+خَسَائِرُ وَأَضْرَارٌ|Verluste und Schäden
+اِرْتِفَاعُ مُسْتَوَى الْبَحْرِ|der Meeresspiegelanstieg
+ظَوَاهِرُ مُتَطَرِّفَةٌ|die Extremereignisse
+اِحْتِيَاطَاتٌ وَقَائِيَّةٌ|die Vorsorgemaßnahmen
+خُطَّةُ تَكَيُّفٍ|der Anpassungsplan
+يُخَفِّفُ الِانْبِعَاثَاتِ|Emissionen senken
+يَتَكَيَّفُ مَعَ الْمُنَاخِ|sich an das Klima anpassen
+يُعَزِّزُ الْقُدْرَةَ عَلَى الصُّمُودِ|die Widerstandsfähigkeit stärken
+يَتَحَمَّلُ كُلْفَةَ التَّكَيُّفِ|die Anpassungskosten tragen
+يَحُدُّ مِنَ الِاحْتِرَارِ|die Erwärmung begrenzen
+@تحول الطاقة|Energiewende|أقيم خيارات إنتاج الطاقة وتخزينها وكفاءتها.
+تَحَوُّلٌ طَاقِيٌّ|die Energiewende
+مَزِيجُ الطَّاقَةِ|der Energiemix
+كَفَاءَةُ الطَّاقَةِ|die Energieeffizienz
+أَمْنُ الْإِمْدَادَاتِ|die Versorgungssicherheit
+شَبَكَةٌ كَهْرَبَائِيَّةٌ|das Stromnetz
+تَخْزِينُ الطَّاقَةِ|die Energiespeicherung
+تَوْلِيدٌ لَامَرْكَزِيٌّ|die dezentrale Energieerzeugung
+مَصْدَرٌ بَدِيلٌ|die alternative Energiequelle
+اِعْتِمَادٌ عَلَى الِاسْتِيرَادِ|die Importabhängigkeit
+طَلَبٌ مُتَزَايِدٌ|die steigende Nachfrage
+تَكْلِفَةٌ تَشْغِيلِيَّةٌ|die Betriebskosten
+اِسْتِثْمَارٌ طَوِيلُ الْأَجَلِ|die langfristige Investition
+مُحَطَّةُ تَوْلِيدٍ|das Kraftwerk
+رَبْطُ الشَّبَكَاتِ|die Netzverknüpfung
+تَمْوِيلٌ أَخْضَرُ|die grüne Finanzierung
+يُوَلِّدُ الْكَهْرَبَاءَ|Strom erzeugen
+يَسْتَغْنِي عَنِ الْوَقُودِ الْأُحْفُورِيِّ|auf fossile Brennstoffe verzichten
+يَرْفَعُ الْكَفَاءَةَ|die Effizienz steigern
+يَضْمَنُ الِاسْتِقْرَارَ|Stabilität gewährleisten
+يُوَازِنُ بَيْنَ الْعَرْضِ وَالطَّلَبِ|Angebot und Nachfrage ausgleichen
+@الصحة العامة والسياسات الصحية|Öffentliche Gesundheit und Gesundheitspolitik|أناقش إجراءً صحياً عاماً من حيث الإنصاف والفعالية.
+صِحَّةٌ عَامَّةٌ|die öffentliche Gesundheit
+وَبَاءٌ|die Epidemie
+وَقَايَةٌ مُجْتَمَعِيَّةٌ|die bevölkerungsbezogene Prävention
+حَمْلَةُ تَوْعِيَةٍ|die Aufklärungskampagne
+مَحْوُ الْأُمِّيَّةِ الصِّحِّيَّةِ|die Förderung der Gesundheitskompetenz
+تَغْطِيَةٌ صِحِّيَّةٌ|die Gesundheitsversorgung als Absicherung
+فَجْوَةٌ صِحِّيَّةٌ|die gesundheitliche Ungleichheit
+عَامِلُ خَطَرٍ|der Risikofaktor
+اِنْتِشَارٌ|die Verbreitung
+حَصَانَةٌ|die Immunität
+مُعَدَّلُ الْإِصَابَةِ|die Erkrankungsrate
+عَوَامِلُ اِجْتِمَاعِيَّةٌ لِلصِّحَّةِ|die sozialen Gesundheitsfaktoren
+عِلَاجٌ قَائِمٌ عَلَى الدَّلِيلِ|die evidenzbasierte Behandlung
+تَوْزِيعٌ عَادِلٌ|die gerechte Verteilung
+مَرْفِقٌ صِحِّيٌّ|die Gesundheitseinrichtung
+يَرْصُدُ الِانْتِشَارَ|die Ausbreitung überwachen
+يَحُدُّ مِنَ الْمَخَاطِرِ|Risiken begrenzen
+يَضْمَنُ التَّغْطِيَةَ|die Versorgung sicherstellen
+يَرْفَعُ الْوَعْيَ|das Bewusstsein schärfen
+يُقَيِّمُ فَعَالِيَّةَ الْعِلَاجِ|die Wirksamkeit der Behandlung bewerten
+@التعليم وتكافؤ الفرص|Bildung und Chancengerechtigkeit|أناقش جودة التعليم وطرق تقليل التفاوت.
+إِنْصَافٌ تَعْلِيمِيٌّ|die Bildungsgerechtigkeit
+فَجْوَةٌ تَعْلِيمِيَّةٌ|die Bildungslücke
+تَسَرُّبٌ مَدْرَسِيٌّ|der Schulabbruch
+تَعَلُّمٌ مَدَى الْحَيَاةِ|das lebenslange Lernen
+تَقْيِيمٌ تَكْوِينِيٌّ|die formative Leistungsbewertung
+كِفَايَةٌ لُغَوِيَّةٌ|die Sprachkompetenz
+مَهَارَاتٌ قَابِلَةٌ لِلنَّقْلِ|die übertragbaren Kompetenzen
+مُخْرَجَاتُ التَّعَلُّمِ|die Lernergebnisse
+تَعْلِيمٌ مُتَمَايِزٌ|der differenzierte Unterricht
+تَعَلُّمٌ ذَاتِيٌّ|das selbstgesteuerte Lernen
+إِدْمَاجٌ تَرْبَوِيٌّ|die schulische Inklusion
+دَعْمٌ فَرْدِيٌّ|die individuelle Förderung
+تَحْوُّلٌ تَرْبَوِيٌّ|der Bildungswandel
+مَنْهَجٌ مَرْنٌ|der flexible Lehrplan
+إِتَاحَةُ التَّعْلِيمِ|der Bildungszugang
+يُرَاعِي الْفُرُوقَ الْفَرْدِيَّةَ|individuelle Unterschiede berücksichtigen
+يُعَزِّزُ التَّعَلُّمَ الذَّاتِيَّ|selbstgesteuertes Lernen fördern
+يَسُدُّ الْفَجْوَةَ التَّعْلِيمِيَّةَ|die Bildungslücke schließen
+يُكَافِحُ التَّسَرُّبَ|Schulabbrüche bekämpfen
+يَقِيسُ مُخْرَجَاتِ التَّعَلُّمِ|Lernergebnisse messen
+@السلوك والدوافع|Verhalten und Motivation|أفسر سلوكاً وأميز الدافع والانفعال والتحيز.
+دَافِعٌ|das Motiv
+حَافِزٌ|der Anreiz
+إِدْرَاكٌ|die Wahrnehmung
+وَعْيٌ|das Bewusstsein
+اِنْفِعَالٌ|die emotionale Reaktion
+تَحَكُّمٌ ذَاتِيٌّ|die Selbstkontrolle
+اِتِّجَاهٌ نَفْسِيٌّ|die psychologische Einstellung
+تَحَيُّزٌ مَعْرِفِيٌّ|die kognitive Verzerrung
+مُرُونَةٌ نَفْسِيَّةٌ|die psychische Resilienz
+دَافِعِيَّةٌ دَاخِلِيَّةٌ|die intrinsische Motivation
+تَعْزِيزٌ إِيجَابِيٌّ|die positive Verstärkung
+تَأْثِيرُ الْجَمَاعَةِ|der Gruppeneinfluss
+اِتِّخَاذُ الْقَرَارِ|die Entscheidungsfindung
+اِسْتِجَابَةٌ اِنْفِعَالِيَّةٌ|die emotionale Reaktion auf einen Reiz
+نَمَطٌ سُلُوكِيٌّ|das Verhaltensmuster
+يُفَسِّرُ السُّلُوكَ|Verhalten erklären
+يُنَظِّمُ اِنْفِعَالَاتِهِ|seine Emotionen regulieren
+يَتَأَثَّرُ بِالْجَمَاعَةِ|sich von der Gruppe beeinflussen lassen
+يُعِيدُ تَقْيِيمَ مَوْقِفٍ|eine Situation neu bewerten
+يُوَازِنُ بَيْنَ الدَّوَافِعِ|Motive gegeneinander abwägen
+@الهوية والذاكرة الثقافية|Identität und kulturelles Gedächtnis|أناقش الهوية بوصفها متغيرة ومتعددة الجوانب.
+هُوِيَّةٌ ثَقَافِيَّةٌ|die kulturelle Identität
+ذَاكِرَةٌ جَمَاعِيَّةٌ|das kollektive Gedächtnis
+تُرَاثٌ غَيْرُ مَادِّيٍّ|das immaterielle Kulturerbe
+سَرْدِيَّةٌ|das Narrativ
+تَمْثِيلٌ ثَقَافِيٌّ|die kulturelle Darstellung
+تَفَاعُلٌ ثَقَافِيٌّ|die kulturelle Wechselwirkung
+تَوَاصُلٌ عَابِرٌ لِلثَّقَافَاتِ|die interkulturelle Kommunikation
+اِسْتِمْرَارِيَّةٌ|die Kontinuität
+قَطِيعَةٌ|der Bruch mit einer Tradition
+أَصَالَةٌ|die Authentizität
+تَحَوُّلٌ ثَقَافِيٌّ|der kulturelle Wandel
+تَنَوُّعٌ لُغَوِيٌّ|die Sprachenvielfalt
+اِنْتِمَاءٌ وَطَنِيٌّ|die nationale Zugehörigkeit
+اِنْفِتَاحٌ ثَقَافِيٌّ|die kulturelle Offenheit
+إِعَادَةُ تَفْسِيرٍ|die Neuinterpretation
+يُعِيدُ صِيَاغَةَ الْهُوِيَّةِ|Identität neu gestalten
+يَحْفَظُ الذَّاكِرَةَ|Erinnerung bewahren
+يَتَفَاعَلُ مَعَ ثَقَافَةٍ|mit einer Kultur in Austausch treten
+يَتَجَاوَزُ الصُّوَرَ النَّمَطِيَّةَ|Stereotype überwinden
+يُجَسِّدُ قِيماً|Werte verkörpern
+@تحليل النص الأدبي|Literarische Texte analysieren|أحلل صوت الراوي والرمز وأثر الأسلوب في النص.
+رَاوٍ|der Erzähler
+مَنْظُورٌ سَرْدِيٌّ|die Erzählperspektive
+بِنْيَةٌ سَرْدِيَّةٌ|die Erzählstruktur
+حَبْكَةٌ مُرَكَّبَةٌ|die komplexe Handlung
+اِسْتِرْجَاعٌ زَمَنِيٌّ|die Rückblende
+اِسْتِبَاقٌ|die Vorausdeutung
+رَمْزٌ|das Symbol
+اِسْتِعَارَةٌ|die Metapher
+تَشْبِيهٌ|der Vergleich als Stilmittel
+مُفَارَقَةٌ|die Ironie / das Paradox
+دَلَالَةٌ|die Bedeutungsebene
+تَأْوِيلٌ|die Interpretation
+إِيقَاعٌ|der Rhythmus
+مَوْضُوعٌ مَحْوَرِيٌّ|das zentrale Thema
+سِيَاقٌ تَارِيخِيٌّ|der historische Kontext
+يُؤَوِّلُ|interpretieren
+يَرْمُزُ إِلَى|symbolisieren / stehen für
+يُوَظِّفُ الصُّورَةَ|Bildsprache einsetzen
+يَسْتَحْضِرُ ذِكْرَى|eine Erinnerung wachrufen
+يَنْسُجُ حَبْكَةً|eine Handlung entwickeln
+@النقد الفني والجمالي|Kunstkritik und Ästhetik|أقيّم عملاً فنياً وأشرح أحكاماً جمالية بمفردات دقيقة.
+جَمَالِيَّاتٌ|die Ästhetik
+تَكْوِينٌ بَصَرِيٌّ|die Bildkomposition
+تَبَايُنٌ|der Kontrast
+تَنَاغُمٌ|die Harmonie
+مَدْرَسَةٌ فَنِّيَّةٌ|die Kunstrichtung
+وَاقِعِيَّةٌ|der Realismus
+تَجْرِيدِيَّةٌ|die abstrakte Kunst als Richtung
+تَعْبِيرِيَّةٌ|der Expressionismus
+رُؤْيَةٌ إِخْرَاجِيَّةٌ|die Regievision
+مُعَالَجَةٌ فَنِّيَّةٌ|die künstlerische Bearbeitung
+تَأْثِيرُ الْعَمَلِ|die Wirkung des Werks
+نَقْدٌ بَنَّاءٌ|die konstruktive Kritik
+حُكْمٌ جَمَالِيٌّ|das ästhetische Urteil
+أَثَرٌ وِجْدَانِيٌّ|die emotionale Wirkung
+اِبْتِكَارٌ أُسْلُوبِيٌّ|die stilistische Innovation
+يُقَيِّمُ التَّكْوِينَ|die Komposition beurteilen
+يُبْرِزُ التَّبَايُنَ|den Kontrast betonen
+يَسْتَجِيبُ جَمَالِيًّا|ästhetisch reagieren
+يَنْقُدُ بِمَوْضُوعِيَّةٍ|sachlich kritisieren
+يُجَدِّدُ الْقَوَالِبَ|bestehende Formen erneuern
+@الأخلاق واتخاذ القرار|Ethik und Entscheidungen|أوازن بين قيم متعارضة وأبرر اختياراً أخلاقياً.
+مُعْضِلَةٌ أَخْلَاقِيَّةٌ|das ethische Dilemma
+مَبْدَأٌ|das Prinzip
+مَسْؤُولِيَّةٌ أَخْلَاقِيَّةٌ|die moralische Verantwortung
+عَاقِبَةٌ|die Folge einer Handlung
+نِيَّةٌ أَخْلَاقِيَّةٌ|die moralische Absicht
+مَصْلَحَةٌ مُشْتَرَكَةٌ|das gemeinsame Interesse
+تَعَارُضُ الْقِيَمِ|der Wertekonflikt
+نَزَاهَةٌ|die Integrität
+أَمَانَةٌ عِلْمِيَّةٌ|die wissenschaftliche Redlichkeit
+سِرِّيَّةٌ|die Vertraulichkeit
+مُوَافَقَةٌ مُسْتَنِيرَةٌ|die informierte Einwilligung
+وَاجِبٌ أَخْلَاقِيٌّ|die moralische Pflicht
+ضَرَرٌ مُحْتَمَلٌ|der mögliche Schaden
+مُوَازَنَةُ الْمَصَالِحِ|die Interessenabwägung
+مَوْقِفٌ أَخْلَاقِيٌّ|die ethische Position
+يُرَجِّحُ مَصْلَحَةً|einem Interesse den Vorrang geben
+يَحْتَرِمُ السِّرِّيَّةَ|Vertraulichkeit wahren
+يَتَحَمَّلُ عَوَاقِبَ قَرَارِهِ|die Folgen seiner Entscheidung tragen
+يَتَصَرَّفُ بِنَزَاهَةٍ|integer handeln
+يَضَعُ حُدُوداً أَخْلَاقِيَّةً|ethische Grenzen setzen
+@العلاقات الدولية والتعاون|Internationale Beziehungen und Zusammenarbeit|أشرح موقفاً دولياً وأناقش مصالح مشتركة.
+دِبْلُومَاسِيَّةٌ|die Diplomatie
+سِيَادَةٌ|die Souveränität
+مُعَاهَدَةٌ|der Vertrag zwischen Staaten
+اِتِّفَاقِيَّةٌ|das Abkommen
+تَحَالُفٌ|das Bündnis
+مُفَاوَضَاتٌ|die Verhandlungen
+وَسَاطَةٌ|die Vermittlung
+عُقُوبَاتٌ اِقْتِصَادِيَّةٌ|die Wirtschaftssanktionen
+تَعَاوُنٌ مُتَعَدِّدُ الْأَطْرَافِ|die multilaterale Zusammenarbeit
+مَصَالِحُ مُشْتَرَكَةٌ|die gemeinsamen Interessen
+مُنَظَّمَةٌ دَوْلِيَّةٌ|die internationale Organisation
+مُسَاعَدَاتٌ إِنْمَائِيَّةٌ|die Entwicklungshilfe
+نِزَاعٌ|der Konflikt
+تَسْوِيَةٌ سِلْمِيَّةٌ|die friedliche Beilegung
+اِسْتِقْرَارٌ إِقْلِيمِيٌّ|die regionale Stabilität
+يُبْرِمُ اِتِّفَاقاً|ein Abkommen schließen
+يُوَسِّطُ طَرَفاً ثَالِثاً|einen Dritten als Vermittler einschalten
+يُعَزِّزُ التَّعَاوُنَ الدَّوْلِيَّ|die internationale Zusammenarbeit stärken
+يَفْرِضُ عُقُوبَاتٍ|Sanktionen verhängen
+يَحْتَرِمُ سِيَادَةَ الدُّوَلِ|die Souveränität der Staaten achten
+@الأزمات وتقدير المخاطر|Krisen und Risikobewertung|أشرح خطراً وأقارن إجراءات الاستعداد والتعافي.
+إِدَارَةُ الْأَزَمَاتِ|das Krisenmanagement
+تَقْدِيرُ الْمَخَاطِرِ|die Risikobewertung
+اِحْتِمَالِيَّةٌ|die Wahrscheinlichkeit
+حَجْمُ الضَّرَرِ|das Schadensausmaß
+خُطَّةُ طَوَارِئَ|der Notfallplan
+اِسْتِجَابَةٌ عَاجِلَةٌ|die Sofortreaktion
+إِنْذَارٌ مُبَكِّرٌ|die Frühwarnung
+اِسْتِمْرَارِيَّةُ الْأَعْمَالِ|die Aufrechterhaltung des Geschäftsbetriebs
+نُقْطَةُ ضَعْفٍ|die Schwachstelle
+هَامِشُ أَمَانٍ|der Sicherheitsspielraum
+تَعَافٍ|die Erholung nach einer Krise
+قُدْرَةٌ مُؤَسَّسِيَّةٌ|die institutionelle Leistungsfähigkeit
+تَدَاعِيَاتٌ|die Folgewirkungen
+سِينَارْيُو أَسْوَأُ|das ungünstigere Szenario
+خُطَّةُ تَعَافٍ|der Wiederherstellungsplan
+يَسْتَبِقُ الْأَزْمَةَ|einer Krise vorbeugen
+يَحْتَوِي الْأَزْمَةَ|die Krise eindämmen
+يُقَدِّرُ الِاحْتِمَالَاتِ|Wahrscheinlichkeiten abschätzen
+يُقَلِّلُ حَجْمَ الضَّرَرِ|das Schadensausmaß begrenzen
+يَسْتَعِيدُ الِاسْتِقْرَارَ|Stabilität wiederherstellen
+@التفاوض وحل النزاعات|Verhandeln und Konflikte lösen|أدير تفاوضاً وأميز الموقف المعلن من الحاجة الأساسية.
+مَصْلَحَةٌ أَسَاسِيَّةٌ|das grundlegende Interesse
+مَوْقِفٌ تَفَاوُضِيٌّ|die Verhandlungsposition
+هَامِشُ تَفَاوُضٍ|der Verhandlungsspielraum
+تَنَازُلٌ مُتَبَادَلٌ|das gegenseitige Zugeständnis
+تَوَافُقٌ تَدْرِيجِيٌّ|die schrittweise Annäherung
+طَرَفٌ مُحَايِدٌ|die neutrale Partei
+حَلٌّ تَوَافُقِيٌّ|die konsensfähige Lösung
+مَكْسَبٌ مُشْتَرَكٌ|der gemeinsame Gewinn
+نُقْطَةُ خِلَافٍ|der Streitpunkt
+سُوءُ فَهْمٍ|das Missverständnis
+إِصْغَاءٌ نَشِطٌ|das aktive Zuhören
+تَهْدِئَةٌ|die Deeskalation
+تَصْعِيدٌ|die Eskalation
+اِتِّفَاقٌ مَبْدَئِيٌّ|die Grundsatzeinigung
+تَعَهُّدٌ|die Zusage
+يُقَرِّبُ وِجْهَاتِ النَّظَرِ|Standpunkte einander annähern
+يَتَوَسَّطُ بَيْنَ طَرَفَيْنِ|zwischen zwei Parteien vermitteln
+يُهَدِّئُ التَّوَتُّرَ|Spannungen abbauen
+يُقَدِّمُ تَنَازُلاً|ein Zugeständnis machen
+يَتَوَصَّلُ إِلَى تَسْوِيَةٍ|eine Einigung erzielen
+@المراسلات والعروض الرسمية|Formelle Korrespondenz und Präsentationen|أصوغ طلباً رسمياً وأعرض توصية واضحة ومعللة.
+مُرَاسَلَةٌ رَسْمِيَّةٌ|die offizielle Korrespondenz
+إِحَاطَةٌ|die Unterrichtung
+مُذَكِّرَةٌ|der Vermerk
+بَيَانٌ|die Stellungnahme
+مُرْفَقٌ|die Anlage
+تَوْصِيَةٌ عَمَلِيَّةٌ|die Handlungsempfehlung
+مُقْتَرَحٌ|der Vorschlag in ausgearbeiteter Form
+مُسَوَّدَةٌ|der Entwurf
+صِيَاغَةٌ|die Formulierung
+اِسْتِجَابَةٌ رَسْمِيَّةٌ|die förmliche Antwort
+مُسْتَنَدٌ دَاعِمٌ|der unterstützende Nachweis
+مُهْلَةُ الرَّدِّ|die Antwortfrist
+غَرَضُ الْمُرَاسَلَةِ|der Anlass des Schreibens
+خُطْوَةٌ لَاحِقَةٌ|der nächste Schritt
+إِجْرَاءٌ مَقْتَرَحٌ|die vorgeschlagene Maßnahme
+أُحِيطُكُمْ عِلْماً بِأَنَّ|Ich setze Sie davon in Kenntnis, dass
+أَرْفِقُ الْمُسْتَنَدَاتِ الْمَطْلُوبَةَ|Ich füge die angeforderten Unterlagen bei
+أَرْجُو التَّكَرُّمَ بِـ|Ich bitte höflich um
+أَسْتَنِدُ فِي طَلَبِي إِلَى|Ich stütze meinen Antrag auf
+أَتَطَلَّعُ إِلَى رَدِّكُمْ|Ich freue mich auf Ihre Antwort
+@روابط دقيقة والتحفظ في الرأي|Präzise Verknüpfung und differenzierte Aussagen|أصوغ رأياً متحفظاً وأوضح شرطاً أو استثناءً بدقة.
+مَعَ أَنَّ|obwohl
+بَيْدَ أَنَّ|jedoch
+فَضْلاً عَنْ|abgesehen von / zusätzlich zu
+لَيْسَ فَقَطْ بَلْ أَيْضاً|nicht nur, sondern auch
+مِنْ جِهَةٍ أُولَى|auf der einen Seite
+مِنْ جِهَةٍ ثَانِيَةٍ|auf der anderen Seite
+فِي حِينِ أَنَّ|wohingegen
+مَا لَمْ|sofern nicht
+شَرِيطَةَ أَنْ|unter der Bedingung, dass
+إِلَّا إِذَا|es sei denn
+حَتَّى وَإِنْ|selbst wenn
+بِقَدْرِ مَا|in dem Maße, wie
+إِلَى حَدٍّ مَا|bis zu einem gewissen Grad
+عَلَى الْأَرْجَحِ|höchstwahrscheinlich
+مِنَ الْمُرَجَّحِ أَنْ|es ist wahrscheinlich, dass
+لَا يُسْتَبْعَدُ أَنْ|es ist nicht auszuschließen, dass
+رَهْناً بِـ|abhängig von
+فِي ضَوْءِ|im Lichte von
+مَعَ مُرَاعَاةِ|unter Berücksichtigung von
+وَخُلَاصَةُ الْقَوْلِ|zusammenfassend gesagt

@@ -204,6 +204,7 @@
       button.type = "button";
       button.className = "cefr-level-card";
       button.dataset.levelId = level.id;
+      button.setAttribute("aria-pressed", String(levelIndex === 0));
       button.innerHTML = `
                 <span class="cefr-level-code">${VocabApp.escapeHTML(level.cefr || level.id)}</span>
                 <span class="cefr-level-copy">
@@ -215,10 +216,12 @@
                     <span class="cefr-progress-label">${levelStats.percent}٪ تقدّم نحو الإتقان</span>
                 </span>`;
       button.addEventListener("click", () => {
-        levelGrid
-          .querySelectorAll(".cefr-level-card")
-          .forEach((item) => item.classList.remove("active"));
+        levelGrid.querySelectorAll(".cefr-level-card").forEach((item) => {
+          item.classList.remove("active");
+          item.setAttribute("aria-pressed", "false");
+        });
         button.classList.add("active");
+        button.setAttribute("aria-pressed", "true");
         renderLevelDetails(level, levelLists, detailsHost);
         setTimeout(
           () =>
@@ -276,6 +279,7 @@
       const progress = VocabApp.getListProgress(list.words, source);
       const button = document.createElement("button");
       button.type = "button";
+      button.dataset.listId = list.id;
       button.className = `ready-list-button${progress.listMastered ? " mastered-list" : ""}`;
       button.innerHTML = `
                 <span class="list-number">${progress.listMastered ? "✓" : index + 1}</span>

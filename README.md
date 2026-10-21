@@ -1,6 +1,6 @@
 # Jisr · Arabisch lernen
 
-Ein deutsch-arabischer Vokabeltrainer mit einem neuen responsiven Design: Lern-Dashboard, A1/A2-Lernpfad, Lernkarten, Alphabet, sechs Testarten, einen interaktiven Kurs zur Verbkonjugation, Fehlerwiederholung und persönlicher Fortschritt. Die Oberfläche unterstützt Deutsch und Arabisch einschließlich Rechts-nach-links-Darstellung.
+Ein deutsch-arabischer Vokabeltrainer mit einem neuen responsiven Design: Lern-Dashboard, A1–B2-Lernpfad, Lernkarten, Alphabet, sechs Testarten, einen interaktiven Kurs zur Verbkonjugation, Fehlerwiederholung und persönlicher Fortschritt. Die Oberfläche unterstützt Deutsch und Arabisch einschließlich Rechts-nach-links-Darstellung.
 
 ## Fertige Version herunterladen
 
@@ -19,10 +19,22 @@ python3 -m http.server 8000 --bind 127.0.0.1
 - `css/modern.css`: Farben, Typografie, Seitenlayouts und responsive Darstellung.
 - `js/design.js`: gemeinsame Navigation, mobiles Menü und neue zweisprachige Oberfläche.
 - `js/pages/`: Lern- und Testfunktionen.
-- `data/`: 20 vorgefertigte Wortlisten.
+- `data/`: 120 Wortlisten mit 2.400 vokalisierten Einträgen für A1, A2, B1 und B2.
 - `fonts/`: lokal eingebundene Manrope-Schrift unter der SIL Open Font License.
 
 Die Original-ZIP-Datei bleibt als unveränderte Ausgangsversion erhalten. Die aktuelle, bearbeitbare Anwendung besteht aus den direkt im Repository liegenden Quelldateien. Hinweise der ursprünglichen Version stehen in `docs/ORIGINAL.md`.
+
+## مفردات A1–B2 · Vier Wortschatzstufen
+
+Der überarbeitete Lernpfad bietet **30 Listen mit je 20 Einträgen pro Niveau**: A1, A2, B1 und B2, insgesamt **120 Themenlisten und 2.400 arabisch-deutsche Wörter und Wendungen**. Jede Liste hat ein Lernziel und ein eigenes Thema. Grundverben, Körperteile und einfache Eigenschaften wurden aus dem früheren A2-Angebot in den A1-Bereich eingeordnet.
+
+A1 behandelt unmittelbare Bedürfnisse und einfache Kommunikation. A2 erweitert vertraute Situationen wie Buchungen, Wohnen, Gesundheit und Arbeit. B1 übt zusammenhängendes Berichten, Problembeschreibung und begründete Meinungen. B2 ergänzt präzise Begriffe, Kollokationen und Wendungen zum Analysieren, Abwägen und Argumentieren in allgemeinverständlichen gesellschaftlichen und beruflichen Themen. Es handelt sich um eine redaktionelle Orientierung an CEFR-Kommunikationszielen, nicht um eine amtliche arabische CEFR-Wortliste.
+
+Alle arabischen Einträge sind vokalisiert; Nomen stehen grundsätzlich als isolierte Nennform mit passender Endung, Verben meist im Präsens der dritten Person Singular. In Kontexten und festen Wendungen gelten deren Kasus und Personenformen. Die bewusst in der Vergangenheit angegebenen Formen der biografischen Liste bleiben als solche gekennzeichnet. Arabische Wörter mit unterschiedlicher Vokalisierung (etwa ظُهْرٌ/ظَهْرٌ) und wenige kontextabhängige Bedeutungen (خِيَارٌ: Gurke/Wahlmöglichkeit) bleiben unterscheidbar. Deutsche Nomen haben nach Möglichkeit einen Artikel.
+
+[Alle 120 Themen mit Lernzielen und Überarbeitungsnotizen](docs/CEFR-VOCABULARY.md). Bearbeitbare Quellen: `data/cefr/{A1,A2,B1,B2}.txt`. Eine Zeile mit `@` enthält arabischen Titel, deutschen Titel und Lernziel; die folgenden 20 Zeilen enthalten jeweils `Arabisch|Deutsch`. `python tools/build-vocab-catalog.py` erzeugt JSON, den gleichwertigen Offline-Katalog und gemeinsame deutsche Oberflächenbezeichnungen. Die sechs vorhandenen Vokabeltests und die Lernkarten verwenden alle vier Niveaus. Alte Lern- und Testergebnisse werden nicht gelöscht; die neu zusammengestellten Listen haben eigene IDs, damit die frühere Listenbeherrschung nicht auf andere Inhalte übertragen wird.
+
+Validierung: `node --test tests/vocab-catalog.test.js` und `python tests/vocab-catalog-smoke.py`. Beide Katalogwege sowie Stufenauswahl, alle 120 Listen, Karten, Testintegration, deutsche/arabische Oberfläche und die entpackte Downloadversion werden geprüft.
 
 ## الحروف والقواعد · Alphabet und Grammatik
 

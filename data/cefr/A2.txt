@@ -1,0 +1,630 @@
+@المواعيد وتنظيم الخطط|Termine und Planung|أرتب موعداً وأغيره وأشرح سبب التأخير.
+حَجْزٌ|die Reservierung
+تَأْكِيدٌ|die Bestätigung
+تَأْجِيلٌ|die Verschiebung
+إِلْغَاءٌ|die Absage
+تَذْكِيرٌ|die Erinnerung an einen Termin
+تَأَخُّرٌ|die Verspätung
+اِنْتِظَارٌ|das Warten
+جَدْوَلٌ|der Zeitplan
+تَقْوِيمٌ|der Kalender
+مَوْعِدٌ|der Termin
+مُتَاحٌ|verfügbar
+مُنَاسِبٌ|passend
+يَحْجِزُ|reservieren
+يُؤَكِّدُ|bestätigen
+يُؤَجِّلُ|verschieben
+يُلْغِي|absagen
+يَتَأَخَّرُ|sich verspäten
+فِي الْمَوْعِدِ|pünktlich zum Termin
+بَعْدَ قَلِيلٍ|in Kürze
+فِي الْأُسْبُوعِ الْقَادِمِ|nächste Woche
+@الزيارات والمناسبات|Besuche und Feste|أدعو شخصاً وأتحدث عن مناسبة عائلية.
+دَعْوَةٌ|die Einladung
+ضَيْفٌ|der Gast
+مُضِيفٌ|der Gastgeber
+زِيَارَةٌ|der Besuch
+عِيدُ مِيلَادٍ|der Geburtstag
+زِفَافٌ|die Hochzeit
+خُطُوبَةٌ|die Verlobung
+تَخَرُّجٌ|der Abschluss einer Ausbildung
+هَدِيَّةٌ|das Geschenk
+بَاقَةُ زُهُورٍ|der Blumenstrauß
+بِطَاقَةُ تَهْنِئَةٍ|die Glückwunschkarte
+تَهْنِئَةٌ|der Glückwunsch
+اِحْتِفَالٌ|das Fest
+مُنَاسَبَةٌ|der Anlass
+مُفَاجَأَةٌ|die Überraschung
+يَدْعُو|einladen
+يَهْدِي|schenken
+يَحْتَفِلُ|feiern
+مُبَارَكٌ|Herzlichen Glückwunsch
+كُلُّ عَامٍ وَأَنْتَ بِخَيْرٍ|Alles Gute zum Fest / Geburtstag
+@العلاقات والتواصل الشخصي|Beziehungen und Kontakte|أحافظ على الاتصال وأصف علاقات مألوفة.
+جَارٌ|der Nachbar
+جَارَةٌ|die Nachbarin
+زَمِيلَةٌ|die Kollegin
+صَدَاقَةٌ|die Freundschaft
+تَعَارُفٌ|das Kennenlernen
+لِقَاءٌ|das Treffen
+مُكَالَمَةٌ|das Telefongespräch
+رِسَالَةٌ|die Nachricht
+اِتِّصَالٌ|der Kontakt
+اِعْتِذَارٌ|die Entschuldigung
+نَصِيحَةٌ|der Rat
+مُشْكِلَةٌ|das Problem
+يَتَّصِلُ|anrufen
+يُرْسِلُ|senden
+يَسْتَقْبِلُ|empfangen
+يَعْتَذِرُ|sich entschuldigen
+يَتَّفِقُ|sich einigen
+يَتَحَدَّثُ مَعَ|sich unterhalten mit
+يَسْأَلُ عَنْ|sich erkundigen nach
+مُنْذُ زَمَنٍ|seit Langem
+@استئجار مسكن والانتقال|Wohnung mieten und umziehen|أفهم إعلان سكن وأسأل عن الإيجار والتجهيز.
+إِيجَارٌ|die Miete
+مُؤَجِّرٌ|der Vermieter
+مُسْتَأْجِرٌ|der Mieter
+عَقْدُ إِيجَارٍ|der Mietvertrag
+تَأْمِينٌ مَالِيٌّ|die Mietkaution
+مَسَاحَةٌ|die Fläche
+مِتْرٌ مُرَبَّعٌ|der Quadratmeter
+تَدْفِئَةٌ|die Heizung
+كَهْرَبَاءُ|der Strom
+غَازٌ|das Gas
+أَثَاثٌ|die Möbel
+مُفْرَشٌ|möbliert
+فَارِغٌ|leer
+وَاسِعٌ|geräumig
+ضَيِّقٌ|eng
+اِنْتِقَالٌ|der Umzug
+إِعْلَانُ سَكَنٍ|die Wohnungsanzeige
+يَسْتَأْجِرُ|mieten
+يَنْتَقِلُ|umziehen
+قَابِلٌ لِلسَّكَنِ|bewohnbar
+@أعمال المنزل والإصلاحات|Hausarbeit und Reparaturen|أصف عطلاً منزلياً وأطلب إصلاحه.
+تَنْظِيفٌ|das Saubermachen
+غَسِيلٌ|die Wäsche
+كَيٌّ|das Bügeln
+تَرْتِيبٌ|das Aufräumen
+قُمَامَةٌ|der Müll
+سَلَّةُ الْمُهْمَلَاتِ|der Abfalleimer
+مِكْنَسَةٌ كَهْرَبَائِيَّةٌ|der Staubsauger
+إِسْفَنْجَةٌ|der Schwamm
+مَسْحُوقُ غَسِيلٍ|das Waschpulver
+صُنْبُورٌ|der Wasserhahn
+أُنْبُوبٌ|das Rohr
+عُطْلٌ|die Störung
+إِصْلَاحٌ|die Reparatur
+سَبَّاكٌ|der Klempner
+كَهْرَبَائِيٌّ|der Elektriker
+يُصْلِحُ|reparieren
+يَكْنُسُ|fegen
+يَمْسَحُ|wischen
+يَرْمِي|wegwerfen
+لَا يَعْمَلُ|es funktioniert nicht
+@الطبخ والوصفات البسيطة|Kochen und einfache Rezepte|أتابع خطوات وصفة وأصف طريقة إعداد الطعام.
+وَصْفَةٌ|das Kochrezept
+مُكَوِّنٌ|die Zutat
+كَمِّيَّةٌ|die Menge
+دَقِيقٌ|das Mehl
+عَجِينٌ|der Teig
+خَمِيرَةٌ|die Hefe
+فُلْفُلٌ أَسْوَدُ|der schwarze Pfeffer
+بَهَارَاتٌ|die Gewürze
+مِبْشَرَةٌ|die Küchenreibe
+شَرِيحَةٌ|die Scheibe
+مَغْلِيٌّ|gekocht / aufgekocht
+مَشْوِيٌّ|gegrillt
+مَقْلِيٌّ|gebraten / frittiert
+يُقَطِّعُ|klein schneiden
+يَخْلِطُ|mischen
+يُضِيفُ|hinzufügen
+يُسَخِّنُ|erwärmen
+يَغْلِي|sieden / kochen
+يَخْبِزُ|backen
+عَلَى نَارٍ هَادِئَةٍ|bei kleiner Hitze
+@تفضيلات الطعام والتغذية|Essenswünsche und Ernährung|أوضح ما أفضل أكله وما يجب أن أتجنبه.
+شَهِيٌّ|lecker
+مَالِحٌ|salzig
+حُلْوٌ|süß
+حَامِضٌ|sauer
+حَارُّ الْمَذَاقِ|scharf im Geschmack
+طَازَجٌ|frisch
+نَاضِجٌ|reif
+نَيِّئٌ|roh
+نَبَاتِيٌّ|vegetarisch
+خَالٍ مِنَ السُّكَّرِ|zuckerfrei
+حَسَاسِيَّةٌ|die Allergie
+شَهِيَّةٌ|der Appetit
+غِذَاءٌ|die Nahrung
+فَاكِهَةٌ|das Obst
+خُضْرَوَاتٌ|das Gemüse
+بُقُولٌ|die Hülsenfrüchte
+عَسَلٌ|der Honig
+زَبَادِي|der Joghurt
+يُفَضِّلُ|bevorzugen
+بِدُونِ مِلْحٍ|ohne Salz
+@التسوق والاستبدال|Einkauf und Umtausch|أشرح مشكلة في سلعة وأسأل عن الاستبدال.
+إِيصَالٌ|der Kassenbon
+فَاتُورَةٌ|die Rechnung
+تَخْفِيضٌ|der Preisnachlass
+عَرْضٌ خَاصٌّ|das Sonderangebot
+خَصْمٌ|der Rabatt
+جَوْدَةٌ|die Qualität
+مَارْكَةٌ|die Marke
+مُقَاسٌ صَغِيرٌ|die kleine Kleidergröße
+غُرْفَةُ قِيَاسٍ|die Umkleidekabine
+رَفُّ الْعَرْضِ|das Verkaufsregal
+عَرَبَةُ تَسَوُّقٍ|der Einkaufswagen
+صُنْدُوقُ الدَّفْعِ|die Kasse
+اِسْتِبْدَالٌ|der Umtausch
+اِسْتِرْجَاعٌ|die Rückgabe
+مَعِيبٌ|fehlerhaft
+تَالِفٌ|beschädigt
+يُجَرِّبُ|anprobieren / ausprobieren
+يَسْتَبْدِلُ|umtauschen
+يُعِيدُ السِّلْعَةَ|die Ware zurückgeben
+يَحْتَفِظُ بِالْإِيصَالِ|den Kassenbon aufbewahren
+@المال والخدمات المصرفية اليومية|Geld und alltägliche Bankgeschäfte|أسحب مالاً وأفهم وسيلة دفع وكشف حساب بسيطاً.
+حِسَابٌ مَصْرِفِيٌّ|das Bankkonto
+بِطَاقَةٌ مَصْرِفِيَّةٌ|die Bankkarte
+صَرَّافٌ آلِيٌّ|der Geldautomat
+رَقْمٌ سِرِّيٌّ|die Geheimzahl
+رَصِيدٌ|das Guthaben
+تَحْوِيلٌ|die Überweisung
+سَحْبٌ|die Abhebung
+إِيدَاعٌ|die Einzahlung
+رَاتِبٌ|das Gehalt
+رَسْمٌ مَصْرِفِيٌّ|die Bankgebühr
+عُمْلَةٌ|die Währung
+نَقْداً|bar
+بِالْبِطَاقَةِ|mit Karte
+مَبْلَغٌ|der Geldbetrag
+تَوْقِيعٌ|die Unterschrift
+يَسْحَبُ|abheben
+يُودِعُ|einzahlen
+يُحَوِّلُ|überweisen
+يُوَفِّرُ|sparen
+كَشْفُ حِسَابٍ|der Kontoauszug
+@عند الطبيب والصيدلية|Beim Arzt und in der Apotheke|أصف أعراضاً بسيطة وأفهم تعليمات علاج مألوفة.
+طَبِيبٌ|der Arzt
+مُمَرِّضٌ|der Krankenpfleger
+مُمَرِّضَةٌ|die Krankenpflegerin
+فَحْصٌ|die Untersuchung
+وَصْفَةٌ طِبِّيَّةٌ|das ärztliche Rezept
+حُبُوبٌ|die Tabletten
+مَرْهَمٌ|die Salbe
+قَطْرَةٌ|der Tropfen
+ضِمَادَةٌ|der Verband
+سُعَالٌ|der Husten
+زُكَامٌ|der Schnupfen
+اِلْتِهَابٌ|die Entzündung
+جُرْحٌ|die Wunde
+دُوَارٌ|der Schwindel
+غَثَيَانٌ|die Übelkeit
+دَرَجَةُ الْحَرَارَةِ|die Körpertemperatur
+يَفْحَصُ|untersuchen
+يَتَأَلَّمُ|Schmerzen haben
+يَتَنَاوَلُ الدَّوَاءَ|das Medikament einnehmen
+مَرَّتَيْنِ فِي الْيَوْمِ|zweimal täglich
+@العادات والصحة اليومية|Gewohnheiten und Gesundheit|أتحدث عن عاداتي وأفهم نصيحة صحية بسيطة.
+سُلُوكٌ|das Verhalten
+رُوتِينٌ|die Routine
+نَظَافَةٌ|die Hygiene
+تَغْذِيَةٌ|die Ernährung
+تَمْرِينٌ بَدَنِيٌّ|die körperliche Übung
+لِيَاقَةٌ|die Fitness
+نَوْمٌ كَافٍ|ausreichender Schlaf
+قِلَّةُ النَّوْمِ|der Schlafmangel
+تَدْخِينٌ|das Rauchen
+سُهْرٌ|das lange Aufbleiben
+تَعَبٌ|die Müdigkeit
+تَوَتُّرٌ|die Anspannung
+يَسْتَرِيحُ|sich erholen
+يَتَمَرَّنُ|trainieren
+يَتَجَنَّبُ|vermeiden
+يُقَلِّلُ|verringern
+عَادَةً|gewöhnlich
+غَالِباً|meistens
+أَحْيَاناً|manchmal
+أَبَداً|jemals / nie bei Verneinung
+@المهن وأماكن العمل|Berufe und Arbeitsorte|أصف مهنة ومكان العمل والأدوات المألوفة.
+مُهَنْدِسٌ|der Ingenieur
+مُهَنْدِسَةٌ|die Ingenieurin
+صَيْدَلَانِيٌّ|der Apotheker
+مُحَاسِبٌ|der Buchhalter
+خَبَّازٌ|der Bäcker
+طَبَّاخٌ|der Koch
+حَلَّاقٌ|der Friseur
+نَجَّارٌ|der Tischler
+مِيكَانِيكِيٌّ|der Mechaniker
+فَلَّاحٌ|der Landwirt
+شُرْطِيٌّ|der Polizist
+مُوَظَّفٌ|der Angestellte
+سِكْرِتِيرٌ|der Sekretär
+مُدِيرٌ|der Leiter
+عَامِلٌ|der Arbeiter
+مَصْنَعٌ|die Fabrik
+وَرْشَةٌ|die Werkstatt
+مُسْتَوْصَفٌ|das Gesundheitszentrum
+مَزْرَعَةٌ|der Bauernhof
+مَقَرُّ الْعَمَلِ|der Arbeitsort
+@يوم العمل|Der Arbeitstag|أتحدث عن دوام ومهمة واستراحة في العمل.
+دَوَامٌ|die Arbeitszeit
+دَوَامٌ كَامِلٌ|die Vollzeit
+دَوَامٌ جُزْئِيٌّ|die Teilzeit
+وَرْدِيَّةٌ|die Arbeitsschicht
+اِسْتِرَاحَةٌ|die Pause
+مَهَمَّةٌ|die Aufgabe
+اِجْتِمَاعٌ|die Besprechung
+فَرِيقٌ|das Team
+مَشْرُوعٌ|das Projekt
+مَكْتَبُ اِسْتِقْبَالٍ|der Empfangsschalter
+مِلَفٌّ|die Akte
+مُسْتَنَدٌ|das Dokument
+نُسْخَةٌ|die Kopie
+طَابِعَةٌ|der Drucker
+حَاسُوبٌ|der Computer
+يُوَقِّعُ|unterschreiben
+يَطْبَعُ|ausdrucken
+يُنَظِّمُ|organisieren
+يُسَلِّمُ|abgeben / übergeben
+إِجَازَةٌ سَنَوِيَّةٌ|der Jahresurlaub
+@الدورات وتعلم اللغات|Kurse und Sprachenlernen|أسأل عن دورة وأصف طريقة تعلمي.
+دَوْرَةٌ|der Kurs
+مَعْهَدٌ|das Institut
+مُسْتَوًى|das Niveau
+مُبْتَدِئٌ|der Anfänger
+مُتَقَدِّمٌ|fortgeschritten
+مُحَادَثَةٌ|das Gespräch
+نُطْقٌ|die Aussprache
+قَاعِدَةٌ لُغَوِيَّةٌ|die Grammatikregel
+مُفْرَدَاتٌ|der Wortschatz
+قَامُوسٌ|das Wörterbuch
+تَرْجَمَةٌ|die Übersetzung
+تَسْجِيلٌ صَوْتِيٌّ|die Tonaufnahme
+شَرْحٌ|die Erklärung
+مِثَالٌ|das Beispiel
+مُرَاجَعَةٌ|die Wiederholung des Lernstoffs
+خَطَأٌ|der Fehler
+تَصْحِيحٌ|die Korrektur
+يُتَرْجِمُ|übersetzen
+يَنْطِقُ|aussprechen
+يُسَجِّلُ صَوْتَهُ|seine Stimme aufnehmen
+@الدراسة والاختبارات|Lernen und Prüfungen|أستعد لاختبار وأتحدث عن نتيجته.
+اِمْتِحَانٌ|die Prüfung
+نَتِيجَةٌ|das Ergebnis
+عَلَامَةٌ|die Note
+نَجَاحٌ|der Erfolg / das Bestehen
+رُسُوبٌ|das Nichtbestehen
+اِسْتِعْدَادٌ|die Vorbereitung
+تَمْرِينٌ|die Übung
+مُذَاكَرَةٌ|das Lernen für die Schule
+وَقْتٌ مُحَدَّدٌ|die festgelegte Zeit
+إِجَابَةٌ صَحِيحَةٌ|die richtige Antwort
+إِجَابَةٌ خَاطِئَةٌ|die falsche Antwort
+شَهَادَةٌ|das Zeugnis
+مَادَّةٌ دِرَاسِيَّةٌ|das Schulfach
+رِيَاضِيَّاتٌ|die Mathematik
+تَارِيخٌ|die Geschichte als Fach
+جُغْرَافِيَا|die Geografie
+يَنْجَحُ|bestehen / erfolgreich sein
+يَرْسُبُ|durchfallen
+يُرَاجِعُ|wiederholen / durchsehen
+يَسْتَعِدُّ|sich vorbereiten
+@السفر والحجز|Reisen und Buchen|أحجز رحلة وأفهم معلومات السفر الشائعة.
+جَوَازُ سَفَرٍ|der Reisepass
+تَأْشِيرَةٌ|das Visum
+بِطَاقَةُ هُوِيَّةٍ|der Personalausweis
+أَمْتِعَةٌ|das Gepäck
+حَقِيبَةُ سَفَرٍ|der Koffer
+تَذْكِرَةُ ذَهَابٍ|die Hinfahrkarte
+تَذْكِرَةُ عَوْدَةٍ|die Rückfahrkarte
+مَكْتَبُ سَفَرٍ|das Reisebüro
+مَغَادَرَةٌ|die Abreise
+وُصُولٌ|die Ankunft
+بَوَّابَةٌ|das Flugsteig-Tor
+رِحْلَةٌ مُبَاشِرَةٌ|der Direktflug
+دَرَجَةٌ سِيَاحِيَّةٌ|die Economyklasse
+حَجْزٌ مُسْبَقٌ|die Vorausbuchung
+تَسْجِيلُ الْوُصُولِ|der Check-in
+جَمَارِكُ|der Zoll
+مُسَافِرٌ|der Reisende
+يُسَافِرُ|verreisen
+يَحْزِمُ حَقِيبَتَهُ|seinen Koffer packen
+يُبْرِزُ جَوَازَهُ|seinen Pass vorzeigen
+@الإقامة في الفندق|Im Hotel|أطلب غرفة وخدمة وأشرح مشكلة بسيطة في الإقامة.
+غُرْفَةٌ مُفْرَدَةٌ|das Einzelzimmer
+غُرْفَةٌ مُزْدَوَجَةٌ|das Doppelzimmer
+غُرْفَةٌ عَائِلِيَّةٌ|das Familienzimmer
+اِسْتِقْبَالٌ|die Rezeption
+لَيْلَةٌ|die Übernachtung / Nacht
+نَزِيلٌ|der Hotelgast
+خِدْمَةُ الْغُرَفِ|der Zimmerservice
+إِطْلَالَةٌ|die Aussicht
+تَكْيِيفٌ|die Klimaanlage
+شَبَكَةٌ لَاسِلْكِيَّةٌ|das WLAN
+كَلِمَةُ الْمُرُورِ|das Passwort
+مِنْشَفَةٌ نَظِيفَةٌ|das frische Handtuch
+سَرِيرٌ إِضَافِيٌّ|das Zustellbett
+شَامِلٌ لِلْفُطُورِ|inklusive Frühstück
+بِدُونِ فُطُورٍ|ohne Frühstück
+مَوْعِدُ الْمُغَادَرَةِ|die Check-out-Zeit
+يُقِيمُ|sich aufhalten / übernachten
+يُغَادِرُ|abreisen
+غَيْرُ مُتَاحٍ|nicht verfügbar
+أُرِيدُ تَغْيِيرَ الْغُرْفَةِ|Ich möchte das Zimmer wechseln
+@المواصلات العامة بالتفصيل|Öffentliche Verkehrsmittel|أفهم جدول الرحلات والتبديل والتأخير.
+رَصِيفُ الْقِطَارِ|der Bahnsteig
+خَطٌّ|die Verkehrslinie
+مَسَارٌ|die Route
+جَدْوَلُ الْمَوَاعِيدِ|der Fahrplan
+تَبْدِيلٌ|das Umsteigen
+تَأَخُّرُ الْقِطَارِ|die Zugverspätung
+اِشْتِرَاكٌ شَهْرِيٌّ|die Monatskarte
+تَذْكِرَةٌ يَوْمِيَّةٌ|die Tageskarte
+تَذْكِرَةٌ مُخَفَّضَةٌ|die ermäßigte Fahrkarte
+مُفَتِّشٌ|der Fahrkartenkontrolleur
+قِطَارُ الْأَنْفَاقِ|die U-Bahn
+تِرَامٌ|die Straßenbahn
+عَرَبَةُ قِطَارٍ|der Zugwagen
+مَقْعَدٌ مَحْجُوزٌ|der reservierte Sitzplatz
+اِتِّجَاهٌ|die Fahrtrichtung
+مَحَطَّةٌ أَخِيرَةٌ|die Endhaltestelle
+يُبَدِّلُ الْقِطَارَ|umsteigen
+يَلْحَقُ بِالْحَافِلَةِ|den Bus noch erreichen
+يَفُوتُهُ الْقِطَارُ|den Zug verpassen
+عَلَى أَيِّ رَصِيفٍ؟|An welchem Bahnsteig?
+@القيادة ووصف الطريق|Autofahren und Wegbeschreibung|أفهم إرشاد طريق وأصف رحلة بالسيارة.
+رُخْصَةُ قِيَادَةٍ|der Führerschein
+وَقُودٌ|der Kraftstoff
+مَحَطَّةُ وَقُودٍ|die Tankstelle
+مَوْقِفُ سَيَّارَاتٍ|der Parkplatz
+مَمَرُّ الْمُشَاةِ|der Fußgängerüberweg
+تَقَاطُعٌ|die Kreuzung
+دَوَّارٌ|der Kreisverkehr
+رَصِيفٌ|der Gehweg
+طَرِيقٌ سَرِيعٌ|die Autobahn / Schnellstraße
+سُرْعَةٌ|die Geschwindigkeit
+حَادِثٌ|der Unfall
+اِزْدِحَامٌ|der Stau
+خَرِيطَةُ الطُّرُقِ|die Straßenkarte
+يَقُودُ|Auto fahren
+يَنْعَطِفُ|abbiegen
+يَعْبُرُ|überqueren
+يَتَوَقَّفُ|anhalten
+مُسْتَقِيماً|geradeaus
+عِنْدَ التَّقَاطُعِ|an der Kreuzung
+عَلَى الْيَمِينِ|auf der rechten Seite
+@البريد والخدمات اليومية|Post und alltägliche Dienste|أرسل طرداً وأطلب خدمة بسيطة.
+طَرْدٌ|das Paket
+ظَرْفٌ|der Briefumschlag
+طَابَعٌ بَرِيدِيٌّ|die Briefmarke
+رِسَالَةٌ بَرِيدِيَّةٌ|der Brief
+عُنْوَانُ الْمُرْسَلِ إِلَيْهِ|die Empfängeradresse
+مُرْسِلٌ|der Absender
+مُسْتَلِمٌ|der Empfänger
+تَوْصِيلٌ|die Zustellung
+وَزْنٌ|das Gewicht
+بَرِيدٌ مُسَجَّلٌ|das Einschreiben
+تَغْلِيفٌ|die Verpackung
+مَوْعِدُ التَّسْلِيمِ|der Liefertermin
+مَغْسَلَةٌ|die Wäscherei
+صَالُونُ حِلَاقَةٍ|der Friseursalon
+مَحَلُّ إِصْلَاحٍ|der Reparaturladen
+يَسْتَلِمُ|entgegennehmen
+يُغَلِّفُ|verpacken
+يَزِنُ|wiegen
+يَقُصُّ|schneiden
+أُرِيدُ إِرْسَالَ طَرْدٍ|Ich möchte ein Paket schicken
+@الهاتف والإنترنت|Handy und Internet|أستخدم الهاتف وأفهم إعدادات واتصالاً بسيطاً.
+هَاتِفٌ مَحْمُولٌ|das Mobiltelefon
+شَاحِنٌ|das Ladegerät
+بَطَّارِيَّةٌ|der Akku
+شَاشَةٌ|der Bildschirm
+سَمَّاعَةٌ|der Kopfhörer
+تَطْبِيقٌ|die App
+مَوْقِعٌ إِلِكْتُرُونِيٌّ|die Website
+رَابِطٌ|der Link
+صُورَةٌ|das Bild
+مَقْطَعُ فِيدْيُو|der Videoclip
+بَيَانَاتٌ|die Daten
+اِتِّصَالٌ بِالْإِنْتَرْنِتِ|die Internetverbindung
+تَنْزِيلٌ|der Download
+إِعْدَادَاتٌ|die Einstellungen
+يَشْحَنُ|aufladen
+يَضْغَطُ|drücken / anklicken
+يَحْذِفُ|löschen
+يَحْفَظُ الْمِلَفَّ|die Datei speichern
+يَتَصَفَّحُ|im Internet surfen
+اِنْقَطَعَ الِاتِّصَالُ|Die Verbindung ist abgebrochen
+@الترفيه والبرامج|Unterhaltung und Programme|أختار برنامجاً أو عرضاً وأصف ما يعجبني.
+بَرْنَامَجٌ|die Sendung
+مُسَلْسَلٌ|die Serie
+فِيلْمٌ وَثَائِقِيٌّ|der Dokumentarfilm
+رُسُومٌ مُتَحَرِّكَةٌ|der Zeichentrickfilm
+أَخْبَارٌ|die Nachrichten
+قَنَاةٌ|der Fernsehkanal
+إِذَاعَةٌ|das Radio als Sender
+جَرِيدَةٌ|die Zeitung
+مَجَلَّةٌ|die Zeitschrift
+مُمَثِّلٌ|der Schauspieler
+مُغَنٍّ|der Sänger
+جُمْهُورٌ|das Publikum
+مَسْرَحٌ|das Theater
+مَعْرِضٌ|die Ausstellung
+تَذْكِرَةُ دُخُولٍ|die Eintrittskarte
+مُمْتِعٌ|unterhaltsam
+مُمِلٌّ|langweilig
+مُضْحِكٌ|lustig
+يَسْتَمْتِعُ|genießen
+أُعْجِبْتُ بِهِ|Es hat mir gefallen
+@الرياضة والنشاط|Sport und Bewegung|أصف نشاطاً رياضياً وقاعدة بسيطة للعب.
+رِيَاضَةٌ|der Sport
+لَاعِبٌ|der Spieler
+مُدَرِّبٌ|der Trainer
+مُبَارَاةٌ|das Spiel als Wettkampf
+مُنَافَسَةٌ|der Wettbewerb
+تَدْرِيبٌ|das Training
+هَدَفٌ|das Tor im Spiel
+نَتِيجَةُ الْمُبَارَاةِ|der Spielstand
+فَوْزٌ|der Sieg
+خَسَارَةٌ|die Niederlage
+تَعَادُلٌ|das Unentschieden
+حَكَمٌ|der Schiedsrichter
+نَادٍ رِيَاضِيٌّ|der Sportverein
+صَالَةٌ رِيَاضِيَّةٌ|die Sporthalle
+تَنِسٌ|das Tennis
+رُكُوبُ الدَّرَّاجَاتِ|das Radfahren
+يَفُوزُ|gewinnen
+يَخْسَرُ|verlieren
+يَرْكُلُ|mit dem Fuß treten
+يُسَدِّدُ|auf das Tor schießen
+@الريف والرحلات الطبيعية|Land und Naturausflüge|أصف رحلة إلى الريف ومعالم طبيعية.
+رِيفٌ|das Land außerhalb der Stadt
+قَرْيَةٌ|das Dorf
+غَابَةٌ|der Wald
+حَقْلٌ|das Feld
+بُحَيْرَةٌ|der See
+جَزِيرَةٌ|die Insel
+وَادٍ|das Tal
+صَحْرَاءُ|die Wüste
+رَمْلٌ|der Sand
+صَخْرَةٌ|der Felsen
+شَلَّالٌ|der Wasserfall
+نَبَاتٌ|die Pflanze
+عُشْبٌ|das Gras
+مَحْصُولٌ|die Ernte als Ertrag
+حَيَوَانٌ|das Tier
+خَيْمَةٌ|das Zelt
+مَخَيَّمٌ|der Campingplatz
+مَمَرٌّ جَبَلِيٌّ|der Bergpfad
+يَتَجَوَّلُ|umhergehen
+يُخَيِّمُ|zelten
+@توقعات الطقس|Wettervorhersage|أفهم نشرة قصيرة وأصف تغيراً في الطقس.
+نَشْرَةٌ جَوِّيَّةٌ|der Wetterbericht
+تَوَقُّعٌ|die Vorhersage
+دَرَجَةٌ مِئَوِيَّةٌ|das Grad Celsius
+حَرَارَةٌ|die Hitze / Temperatur
+بُرُودَةٌ|die Kälte
+رُطُوبَةٌ|die Luftfeuchtigkeit
+ضَبَابٌ|der Nebel
+عَاصِفَةٌ|der Sturm
+بَرْقٌ|der Blitz
+رَعْدٌ|der Donner
+مَوْجَةُ حَرٍّ|die Hitzewelle
+غَائِمٌ|bewölkt
+عَاصِفٌ|stürmisch
+رَطْبٌ|feucht
+جَافٌّ|trocken
+يُمْطِرُ|regnen
+تَتَسَاقَطُ الثُّلُوجُ|es schneit
+تَرْتَفِعُ الْحَرَارَةُ|die Temperatur steigt
+تَنْخَفِضُ الْحَرَارَةُ|die Temperatur sinkt
+طَوَالَ الْيَوْمِ|den ganzen Tag über
+@الشخصية والمظهر|Charakter und Aussehen|أصف شخصاً وصفاً مألوفاً ومهذباً.
+لَطِيفٌ|nett
+كَرِيمٌ|großzügig
+بَخِيلٌ|geizig
+صَبُورٌ|geduldig
+عَصَبِيٌّ|nervös / reizbar
+خَجُولٌ|schüchtern
+اِجْتِمَاعِيٌّ|gesellig
+مُهَذَّبٌ|höflich
+أَمِينٌ|ehrlich / zuverlässig
+كَسُولٌ|faul
+مُجْتَهِدٌ|fleißig
+مَرِحٌ|fröhlich
+أَنِيقٌ|elegant
+نَحِيفٌ|schlank
+سَمِينٌ|dick
+أَشْقَرُ|blond
+أَصْلَعُ|kahlköpfig
+لِحْيَةٌ|der Bart
+شَارِبٌ|der Schnurrbart
+مُجَعَّدٌ|lockig
+@المشاعر وردود الفعل|Gefühle und Reaktionen|أصف شعوراً وأشرح سببه في موقف مألوف.
+قَلَقٌ|besorgt
+مُتَفَائِلٌ|optimistisch
+مُتَشَائِمٌ|pessimistisch
+مُتَحَمِّسٌ|begeistert
+مُرْتَبِكٌ|verlegen / durcheinander
+مُنْدَهِشٌ|erstaunt
+فَخُورٌ|stolz
+مُرْتَاحٌ|entspannt
+مُنْزَعِجٌ|verärgert
+مَسْرُورٌ|erfreut
+خَائِبُ الْأَمَلِ|enttäuscht
+وَاثِقٌ|zuversichtlich
+يَضْحَكُ|lachen
+يَبْكِي|weinen
+يَبْتَسِمُ|lächeln
+يَغْضَبُ|wütend werden
+يَخَافُ|Angst haben
+يَقْلَقُ|sich Sorgen machen
+يَفْرَحُ|sich freuen
+يَشْعُرُ بِـ|sich fühlen / empfinden
+@السيرة والأحداث الماضية|Lebenslauf und vergangene Ereignisse|أروي مراحل بسيطة من حياتي.
+طُفُولَةٌ|die Kindheit
+شَبَابٌ|die Jugend
+ذِكْرَى|die Erinnerung
+مَسْقَطُ الرَّأْسِ|der Geburtsort
+تَارِيخُ الْمِيلَادِ|das Geburtsdatum
+مَدْرَسَةٌ اِبْتِدَائِيَّةٌ|die Grundschule
+مَدْرَسَةٌ ثَانَوِيَّةٌ|die weiterführende Schule
+جَامِعَةٌ|die Universität
+زَمَنٌ|die Zeitspanne
+مَرْحَلَةٌ|die Phase
+وُلِدَ|geboren werden
+كَانَ|war / sein in der Vergangenheit
+كَانَ يَعْمَلُ|er arbeitete damals
+اِنْتَقَلَ|zog um
+تَخَرَّجَ|schloss seine Ausbildung ab
+تَزَوَّجَ|heiratete
+قَابَلَ|traf / begegnete
+مُنْذُ سَنَتَيْنِ|vor zwei Jahren
+فِي الْعَامِ الْمَاضِي|im vergangenen Jahr
+لِأَوَّلِ مَرَّةٍ|zum ersten Mal
+@الخطط والطموحات القريبة|Nahe Zukunft und Wünsche|أعبر عن خطة ورغبة وهدف قريب.
+خُطَّةٌ|der Plan
+نِيَّةٌ|die Absicht
+أُمْنِيَةٌ|der Wunsch
+حُلْمٌ|der Traum
+مُسْتَقْبَلٌ|die Zukunft
+فُرْصَةٌ|die Gelegenheit
+قَرَارٌ|die Entscheidung
+خِيَارٌ|die Wahlmöglichkeit
+اِقْتِرَاحٌ|der Vorschlag
+رَغْبَةٌ|der Wunsch nach etwas
+يُخَطِّطُ|planen
+يَنْوِي|beabsichtigen
+يَتَمَنَّى|sich wünschen
+يُقَرِّرُ|entscheiden
+يَخْتَارُ|auswählen
+يَقْتَرِحُ|vorschlagen
+سَوْفَ أَفْعَلُ|ich werde tun
+أُفَكِّرُ فِي|ich denke über etwas nach
+أُرِيدُ أَنْ أَتَعَلَّمَ|ich möchte lernen
+فِي الصَّيْفِ الْقَادِمِ|im nächsten Sommer
+@الربط والمقارنة وسرد الأحداث|Verbinden, Vergleichen und Erzählen|أربط جملاً بسيطة وأرتب أحداثاً وأعطي سبباً.
+أَوَّلاً|zuerst
+ثَانِياً|zweitens
+أَخِيراً|schließlich
+بَعْدَ ذَلِكَ|danach
+قَبْلَ ذَلِكَ|davor
+لِأَنَّ|weil
+لِذَلِكَ|deshalb
+عِنْدَمَا|wenn / als
+بَيْنَمَا|während
+إِذَا|wenn / falls
+حَتَّى|bis / damit
+أَيْضاً|auch
+فَقَطْ|nur
+تَقْرِيباً|ungefähr
+أَكْثَرُ مِنْ|mehr als
+أَقَلُّ مِنْ|weniger als
+أَفْضَلُ مِنْ|besser als
+مِثْلَ|wie / ähnlich wie
+نَفْسُ الشَّيْءِ|dasselbe
+بِرَأْيِي|meiner Meinung nach

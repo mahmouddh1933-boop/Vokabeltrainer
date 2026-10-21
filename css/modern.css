@@ -2424,3 +2424,20 @@ html[dir="rtl"] .tool-link::after {
     font-size: 12px;
   }
 }
+/* Four vocabulary stages share a layout, with distinct level accents. */
+.cefr-level-card[data-level-id="B1"] .cefr-level-code {
+  background: #e6eef8;
+  color: #416583;
+}
+.cefr-level-card[data-level-id="B1"]:is(:hover, .active) {
+  background: #f1f6fc;
+  border-color: #7595b7;
+}
+.cefr-level-card[data-level-id="B2"] .cefr-level-code {
+  background: #eee7f6;
+  color: #725489;
+}
+.cefr-level-card[data-level-id="B2"]:is(:hover, .active) {
+  background: #f7f3fb;
+  border-color: #9d81b3;
+}
