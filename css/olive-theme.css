@@ -45,6 +45,52 @@ body.olive-app .container.home-container {
   border: 0;
   box-shadow: none;
 }
+/* Decorate the learning surfaces themselves, including dynamically added tasks.
+   Background images do not cover controls, intercept touches or change layout. */
+@media screen {
+  .olive-app
+    :is(
+      .practice-panel,
+      .focused-run,
+      .lesson-section,
+      .grammar-practice,
+      .book-exercise-section,
+      .book-task,
+      .yt-passage
+    ) {
+    background-color: #fffdf5;
+    background-image:
+      url("../images/brand/olive-card-branch.svg"),
+      url("../images/brand/olive-card-branch.svg");
+    background-position: left top, right bottom;
+    background-size: 170px 306px, 125px 225px;
+    background-repeat: no-repeat;
+  }
+  .olive-app .youth-reading-row + .youth-reading-row {
+    background-image: url("../images/brand/olive-card-branch.svg");
+    background-position: left bottom;
+    background-size: 90px 162px;
+    background-repeat: no-repeat;
+  }
+  /* Keep narrow screens airy while retaining olive details inside every card. */
+  @media (max-width: 600px) {
+    .olive-app
+      :is(
+        .practice-panel,
+        .focused-run,
+        .lesson-section,
+        .grammar-practice,
+        .book-exercise-section,
+        .book-task,
+        .yt-passage
+      ) {
+      background-size: 100px 180px, 80px 144px;
+    }
+    .olive-app .youth-reading-row + .youth-reading-row {
+      background-size: 65px 117px;
+    }
+  }
+}
 .olive-app .app-topbar {
   background: rgba(249, 247, 237, 0.97);
   border-bottom-color: #dfdfcd;
