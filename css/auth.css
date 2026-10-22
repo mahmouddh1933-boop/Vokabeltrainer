@@ -248,6 +248,31 @@
   background: #245b43;
   color: white;
 }
+.olive-account-panel #auth-sync-now {
+  background: #eef3e2;
+  color: #284e3c;
+  border: 1px solid #c8d3b6;
+  margin-bottom: 10px;
+}
+.olive-account summary {
+  position: relative;
+}
+.olive-account summary::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #b59046;
+}
+.olive-account summary[data-sync="saved"]::after {
+  background: #4d865a;
+}
+.olive-account summary[data-sync="new"]::after {
+  background: #3b7e98;
+}
 @media (max-width: 600px) {
   .auth-card {
     border-radius: 20px;

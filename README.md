@@ -258,7 +258,7 @@ vorbereitet. Die deutsche Schritt-für-Schritt-Anleitung steht in
 [FIREBASE-START-DE.md](FIREBASE-START-DE.md). `downloads/Huroof-Firebase.zip`
 enthält den bereits gebauten, getrennten Hosting-Ordner und die Deploy-Konfiguration.
 Das Offline-ZIP funktioniert weiterhin ohne Konto. Konten verwenden Firebase Auth;
-Lernstände bleiben in dieser Version pro Konto lokal im jeweiligen Browser.
+Gespeicherte Lernstände und Einstellungen werden pro Konto über Cloud Firestore synchronisiert; unterbrochene Übertragungen bleiben lokal in einer Warteschlange. Die privaten Regeln stehen in `firestore.rules`.
 `python3 tests/firebase-auth-smoke.py` prüft das echte SDK mit den lokalen Firebase-Emulatoren.
 
 Die sichtbare App heißt **حروف من الزيتون** (Buchstaben vom Olivenbaum). Name, Begrüßung, Navigation, Seiten-Titel und Fußzeile tragen die neue Identität. `images/brand/olive-symbol.svg` ist ein vorläufiges Olivenzweig-Symbol; das vom Nutzer angekündigte Logo wurde noch nicht übermittelt. Der Austausch erfolgt später an dieser zentralen Bildreferenz.

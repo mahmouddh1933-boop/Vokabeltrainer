@@ -19,7 +19,7 @@ with sync_playwright() as p:
     context.on('page', lambda page: page.on('pageerror', lambda error: errors.append(str(error))))
     def route(request):
         url = request.request.url
-        if url.startswith(BASE + '/') or url.startswith(EMULATOR + '/'):
+        if url.startswith(BASE + '/') or url.startswith(EMULATOR + '/') or url.startswith('http://127.0.0.1:8080/'):
             request.continue_()
         elif url.startswith('https://cdn.jsdelivr.net/npm/xlsx@'):
             request.abort()

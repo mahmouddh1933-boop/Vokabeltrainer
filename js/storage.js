@@ -17,6 +17,15 @@
     const pending = new Set();
     let persistent = true;
     let scope = "";
+    const listeners = new Set();
+    const notify = (key, oldValue, value, silent) => {
+      if (silent || oldValue === value) return;
+      for (const listener of listeners) {
+        try {
+          listener({ key, oldValue, value, scope });
+        } catch (_) {}
+      }
+    };
     // UI preferences stay shared; learning records are separated by Firebase UID.
     const sharedKeys = new Set([
       "vocabInterfaceLanguage",
@@ -30,6 +39,28 @@
     return {
       setScope(value) {
         scope = typeof value === "string" ? value : "";
+      },
+      get scope() {
+        return scope;
+      },
+      subscribe(listener) {
+        listeners.add(listener);
+        return () => listeners.delete(listener);
+      },
+      keys() {
+        const found = new Set(memory.keys());
+        try {
+          for (let i = 0; i < root[name].length; i++)
+            found.add(root[name].key(i));
+        } catch (_) {
+          persistent = false;
+        }
+        const prefix = scope
+          ? "oliveAccountV1:" + encodeURIComponent(scope) + ":"
+          : "";
+        return Array.from(found)
+          .filter((key) => typeof key === "string" && key.startsWith(prefix))
+          .map((key) => key.slice(prefix.length));
       },
       get persistent() {
         return persistent;
@@ -47,8 +78,10 @@
           return memory.get(key) ?? null;
         }
       },
-      setItem(key, value) {
-        key = storageKey(String(key));
+      setItem(key, value, options = {}) {
+        const logicalKey = String(key),
+          oldValue = this.getItem(logicalKey);
+        key = storageKey(logicalKey);
         value = String(value);
         memory.set(key, value);
         try {
@@ -58,9 +91,12 @@
           persistent = false;
           pending.add(key);
         }
+        notify(logicalKey, oldValue, value, options.silent);
       },
-      removeItem(key) {
-        key = storageKey(String(key));
+      removeItem(key, options = {}) {
+        const logicalKey = String(key),
+          oldValue = this.getItem(logicalKey);
+        key = storageKey(logicalKey);
         memory.delete(key);
         try {
           root[name].removeItem(key);
@@ -69,6 +105,7 @@
           persistent = false;
           pending.add(key);
         }
+        notify(logicalKey, oldValue, null, options.silent);
       },
     };
   }

@@ -165,6 +165,35 @@
     if (!scripts.length) throw new Error("Hosting build required");
     storage.local.setScope(user.uid);
     storage.session.setScope(user.uid);
+    try {
+      await loadScript("js/cloud-sync-core.js");
+      await loadScript("js/cloud-sync.js");
+      await window.OliveSync.start({ user, loadScript });
+    } catch (_) {
+      // Learning remains available locally if the sync SDK cannot be loaded.
+      if (!window.OliveSync)
+        storage.local.subscribe(({ key, oldValue, value }) => {
+          if (key.startsWith("__")) return;
+          let pending;
+          try {
+            pending =
+              JSON.parse(storage.local.getItem("__oliveSyncFallbackV1")) || {};
+          } catch (_) {
+            pending = {};
+          }
+          pending[key] = {
+            base: Object.prototype.hasOwnProperty.call(pending, key)
+              ? pending[key].base
+              : oldValue,
+            value,
+          };
+          storage.local.setItem(
+            "__oliveSyncFallbackV1",
+            JSON.stringify(pending),
+            { silent: true },
+          );
+        });
+    }
     storage.deferReady();
     for (const script of scripts) {
       try {
@@ -198,23 +227,89 @@
     email.textContent = user.email || "";
     const note = document.createElement("p");
     note.className = "olive-account-note";
+    note.id = "auth-sync-status";
+    note.setAttribute("role", "status");
+    note.setAttribute("aria-live", "polite");
+    const syncButton = document.createElement("button");
+    syncButton.id = "auth-sync-now";
+    syncButton.type = "button";
+    let syncing = false;
     const logout = document.createElement("button");
     logout.id = "auth-signout";
     logout.type = "button";
     function translate() {
       summary.setAttribute("aria-label", t("حسابي", "Mein Konto"));
       summary.title = t("حسابي", "Mein Konto");
-      note.textContent = t(
-        "تقدّمك محفوظ لهذا الحساب في هذا المتصفح.",
-        "Dein Lernstand wird für dieses Konto in diesem Browser gespeichert.",
-      );
+      const state = window.OliveSync?.state() || { status: "offline" };
+      const newStand = state.remoteChanged && state.status === "saved";
+      const statuses = {
+        connecting: [
+          "جارٍ الاتصال بحفظ التقدّم…",
+          "Cloud-Verbindung wird hergestellt …",
+        ],
+        pending: [
+          "محفوظ محليًا، بانتظار المزامنة…",
+          "Lokal gespeichert. Synchronisierung ausstehend …",
+        ],
+        saving: [
+          "جارٍ مزامنة التقدّم…",
+          "Dein Lernstand wird synchronisiert …",
+        ],
+        saved: [
+          "تمت مزامنة التقدّم مع حسابك.",
+          "Dein Lernstand ist synchronisiert.",
+        ],
+        offline: [
+          "المزامنة غير متاحة حاليًا. نحتفظ بالتغييرات محليًا ونحاول مجددًا عند الاتصال.",
+          "Cloud gerade nicht erreichbar. Änderungen bleiben lokal gespeichert und werden erneut übertragen.",
+        ],
+        setup: [
+          "الحفظ السحابي غير مفعّل بعد. التقدّم محفوظ محليًا.",
+          "Cloud-Speicherung noch nicht freigeschaltet. Dein Lernstand bleibt lokal gespeichert.",
+        ],
+        "too-large": [
+          "البيانات أكبر من حد المزامنة. التقدّم محفوظ محليًا.",
+          "Ein Datensatz ist zu groß für die Synchronisierung. Dein Lernstand bleibt lokal gespeichert.",
+        ],
+      };
+      note.textContent = newStand
+        ? t(
+            "يوجد تقدّم جديد من جهاز آخر. اضغط لتحديث الصفحة بعد حفظ تغييراتك.",
+            "Neue Lernstände sind verfügbar. Beim Übernehmen wird diese Seite nach dem Speichern neu geladen.",
+          )
+        : t(...(statuses[state.status] || statuses.offline));
+      syncButton.textContent = syncing
+        ? t("لحظة من فضلك…", "Einen Moment …")
+        : newStand
+          ? t("حفظ وتحديث التقدّم", "Speichern und übernehmen")
+          : t("المزامنة الآن", "Jetzt synchronisieren");
+      syncButton.disabled = syncing;
+      summary.dataset.sync = newStand ? "new" : state.status;
       logout.textContent = t("تسجيل الخروج", "Abmelden");
     }
+    syncButton.addEventListener("click", async () => {
+      syncing = true;
+      translate();
+      try {
+        if (window.OliveSync) await window.OliveSync.refresh();
+        else location.reload();
+      } finally {
+        syncing = false;
+        translate();
+      }
+    });
     logout.addEventListener("click", async () => {
       logout.disabled = true;
       try {
         root.classList.add("auth-pending");
         blocker();
+        if (window.OliveSync) {
+          await Promise.race([
+            window.OliveSync.flush(),
+            new Promise((resolve) => setTimeout(resolve, 1800)),
+          ]);
+          window.OliveSync.stop();
+        }
         await auth.signOut();
       } catch (_) {
         root.classList.remove("auth-pending");
@@ -226,10 +321,11 @@
         );
       }
     });
-    panel.append(email, note, logout);
+    panel.append(email, note, syncButton, logout);
     menu.append(summary, panel);
     document.querySelector(".topbar-right")?.prepend(menu);
     translate();
+    window.OliveSync?.subscribe(translate);
     window.addEventListener("app-language-change", translate);
     document.addEventListener("click", (event) => {
       if (!menu.contains(event.target)) menu.open = false;
@@ -416,12 +512,14 @@
             return;
           }
           if (!user) {
+            window.OliveSync?.stop();
             root.classList.add("auth-pending");
             goToLogin();
             return;
           }
           if (starting || startedUid) {
             if (startedUid && startedUid !== user.uid) {
+              window.OliveSync?.stop();
               root.classList.add("auth-pending");
               location.reload();
             }

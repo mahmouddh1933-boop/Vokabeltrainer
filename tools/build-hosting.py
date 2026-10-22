@@ -49,6 +49,7 @@ if args.archive:
     with ZipFile(target, 'w', ZIP_DEFLATED) as archive:
         archive.writestr(prefix + 'firebase.json', json.dumps(config, indent=2) + '\n')
         archive.write(ROOT / '.firebaserc', prefix + '.firebaserc')
+        archive.write(ROOT / 'firestore.rules', prefix + 'firestore.rules')
         archive.write(ROOT / 'FIREBASE-START-DE.md', prefix + 'FIREBASE-START-DE.md')
         for path in sorted(OUTPUT.rglob('*')):
             if path.is_file(): archive.write(path, prefix + 'firebase-public/' + path.relative_to(OUTPUT).as_posix())
