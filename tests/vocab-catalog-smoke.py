@@ -14,6 +14,7 @@ with sync_playwright() as p:
  browser=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox'])
  context=browser.new_context(viewport={'width':390,'height':950},is_mobile=True,has_touch=True)
  page=context.new_page();errors=[];blocked=[]
+ page.add_init_script('localStorage.setItem("oliveLearnerThemeV1","neutral")')
  page.on('pageerror',lambda error:errors.append(str(error)))
  if args.older_dom:page.add_init_script('delete Element.prototype.replaceChildren;String.prototype.replaceAll=undefined;')
  def route(r):

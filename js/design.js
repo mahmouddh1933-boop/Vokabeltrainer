@@ -72,10 +72,10 @@
     const sidebar = document.createElement("aside");
     sidebar.className = "app-sidebar";
     sidebar.id = "app-sidebar";
-    sidebar.innerHTML = `<a href="index.html" class="brand" aria-label="Jisr"><span class="brand-mark" lang="ar">جـ</span><span class="brand-type">jisr<span>جسر · ${label("Arabisch lernen", "تعلّم العربية")}</span></span></a>
+    sidebar.innerHTML = `<a href="index.html" class="brand" aria-label="حروف من الزيتون"><span class="brand-mark"><img src="images/brand/olive-symbol.svg" alt="" /></span><span class="brand-type" lang="ar" dir="rtl">حروف من الزيتون<span>${label("Mit festen Wurzeln wachsen", "نتعلّم وننمو، بجذور راسخة")}</span></span></a>
       <div class="sidebar-label">${label("DEIN LERNRAUM", "مساحة التعلّم")}</div>
       <nav aria-label="${document.documentElement.lang === "de" ? "Hauptnavigation" : "القائمة الرئيسية"}">${nav.map(([href, name, de, ar]) => `<a href="${href}" class="nav-link ${href === page || (isHome && href === "index.html") || (page.startsWith("test") && href === "test.html") || (page === "lernseite.html" && href === "index.html#ready-lists-panel") ? "is-active" : ""}" ${href === page ? 'aria-current="page"' : ""}>${icon(name)}${label(de, ar)}${href === "index.html#ready-lists-panel" ? `<span class="nav-badge">${window.VOCAB_CATALOG_META?.lists || 120}</span>` : ""}</a>`).join("")}</nav>
-      <div class="sidebar-bottom"><div class="sidebar-note"><span class="note-spark">✳</span><strong>${label("Ein Wort kann eine Brücke sein.", "قد تكون الكلمة جسراً.")}</strong><p>${label("Bleib neugierig. Der Rest kommt Wort für Wort.", "ابقَ فضولياً. والباقي يأتي كلمة بعد كلمة.")}</p></div><a class="teacher-profile" href="index.html"><span class="teacher-avatar">MB</span><span><strong>Mahmoud Barakat</strong><small>${label("Dein Arabischlehrer", "معلّم اللغة العربية")}</small></span><span class="profile-dot"></span></a></div>`;
+      <div class="sidebar-bottom"><div class="sidebar-note"><span class="note-spark">✳</span><strong>${label("Ein Buchstabe. Eine wachsende Wurzel.", "حرفٌ ينمو، وجذرٌ يثبت.")}</strong><p>${label("Bleib neugierig. Der Rest kommt Wort für Wort.", "ابقَ فضولياً. والباقي يأتي كلمة بعد كلمة.")}</p></div><a class="teacher-profile" href="index.html"><span class="teacher-avatar">MB</span><span><strong>Mahmoud Barakat</strong><small>${label("Dein Arabischlehrer", "معلّم اللغة العربية")}</small></span><span class="profile-dot"></span></a></div>`;
     document.body.prepend(sidebar);
     const topbar = document.createElement("header");
     topbar.className = "app-topbar";
@@ -86,7 +86,7 @@
           (page.startsWith("test")
             ? nav.find((item) => item[0] === "test.html")
             : ["", "book", "Lernraum", "مساحة التعلّم"]);
-    topbar.innerHTML = `<div class="topbar-left"><button type="button" class="menu-toggle" aria-controls="app-sidebar" aria-expanded="false" aria-label="Menü / القائمة">${icon("menu")}</button><span class="breadcrumb-brand">jisr</span><span class="breadcrumb-separator">/</span>${label(current[2], current[3])}</div><div class="topbar-right"><span class="learning-indicator"><span></span>${label("Zeit für etwas Neues", "وقت لاكتشاف شيء جديد")}</span><div class="language-slot"></div><span class="topbar-avatar" aria-hidden="true">${icon("spark")}</span></div>`;
+    topbar.innerHTML = `<div class="topbar-left"><button type="button" class="menu-toggle" aria-controls="app-sidebar" aria-expanded="false" aria-label="Menü / القائمة">${icon("menu")}</button><span class="breadcrumb-brand" lang="ar" dir="rtl">حروف من الزيتون</span><span class="breadcrumb-separator">/</span>${label(current[2], current[3])}</div><div class="topbar-right"><span class="learning-indicator"><span></span>${label("Zeit für etwas Neues", "وقت لاكتشاف شيء جديد")}</span><div class="language-slot"></div><span class="topbar-avatar" aria-hidden="true">${icon("spark")}</span></div>`;
     sidebar.after(topbar);
     const picker = document.querySelector(".app-language-bar");
     if (picker) topbar.querySelector(".language-slot").append(picker);
@@ -98,7 +98,8 @@
     const mobile = matchMedia("(max-width: 960px)");
     function syncNavigation() {
       sidebar.inert =
-        mobile.matches && !document.body.classList.contains("nav-open");
+        document.body.classList.contains("olive-chooser-open") ||
+        (mobile.matches && !document.body.classList.contains("nav-open"));
     }
     function setMenu(open) {
       document.body.classList.toggle("nav-open", open);
@@ -113,6 +114,7 @@
       syncNavigation();
     });
     syncNavigation();
+    window.addEventListener("olive-picker-visibility-change", syncNavigation);
     toggle.addEventListener("click", () =>
       setMenu(!document.body.classList.contains("nav-open")),
     );
@@ -158,7 +160,7 @@
     });
     const footer = document.getElementById("teacher-credit");
     if (footer)
-      footer.innerHTML = `<span>© jisr · ${label("Mit Neugier wächst Verbindung.", "بالفضول تنمو الروابط.")}</span><span>${label("Mit Sorgfalt erstellt von", "أُعدّ بعناية على يد")} <b>Mahmoud Barakat</b></span>`;
+      footer.innerHTML = `<span>© حروف من الزيتون · ${label("Mit Neugier wächst Verbindung.", "بالفضول تنمو الروابط.")}</span><span>${label("Mit Sorgfalt erstellt von", "أُعدّ بعناية على يد")} <b>Mahmoud Barakat</b></span>`;
     function syncLanguage() {
       const lang =
         window.AppLanguage?.get() ||

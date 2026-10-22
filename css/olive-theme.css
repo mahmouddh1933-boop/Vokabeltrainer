@@ -1,0 +1,364 @@
+/* Warm paper, olive roots and soft storybook details around legible lesson surfaces. */
+:root {
+  --olive-paper: #f6f2e6;
+  --olive-scene-position: 0%;
+}
+:root[data-learner-theme="girl"] {
+  --olive-scene-position: 100%;
+}
+body.olive-app {
+  background: var(--olive-paper);
+  isolation: isolate;
+}
+.olive-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  background: url("../images/brand/olive-pattern.svg") repeat;
+  background-size: 520px 460px;
+  opacity: 0.65;
+}
+.olive-drawing-field {
+  position: absolute;
+  inset-inline-end: -3vw;
+  bottom: -8vh;
+  width: min(58vw, 720px);
+  height: min(92vh, 900px);
+  background-image: url("../images/brand/learner-scenes.png");
+  background-size: 200% 100%;
+  background-position: var(--olive-scene-position) bottom;
+  background-repeat: no-repeat;
+  opacity: 0.32;
+}
+:root[data-learner-theme="neutral"] .olive-drawing-field {
+  display: none;
+}
+body.olive-app .container {
+  background: rgba(255, 253, 246, 0.96);
+  border-color: #dddcc8;
+  box-shadow: 0 12px 50px #354c2b08;
+}
+body.olive-app .container.home-container {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.olive-app .app-topbar {
+  background: rgba(249, 247, 237, 0.97);
+  border-bottom-color: #dfdfcd;
+}
+.olive-app .brand {
+  margin: 0 3px 30px;
+  gap: 10px;
+}
+.olive-app .brand-mark {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  flex-shrink: 0;
+}
+.olive-app .brand-mark img {
+  width: 100%;
+  height: 100%;
+}
+.olive-app .brand-type {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.75;
+  letter-spacing: 0;
+}
+.olive-app .brand-type > span {
+  font-size: 9px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  margin-top: 2px;
+}
+.olive-app .breadcrumb-brand {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+.olive-app .sidebar-note strong {
+  line-height: 1.8;
+}
+.olive-app
+  :is(
+    .ready-list-button,
+    .stat-card,
+    .grammar-home-card,
+    .main-choice-button,
+    .cefr-level-card
+  ) {
+  background-color: #fffdf6;
+}
+.olive-app .hero-card {
+  background: linear-gradient(110deg, #ebeccc, #f8f0dc);
+  border: 1px solid #dfdfbd;
+}
+.olive-app .hero-card p {
+  color: #53644d;
+}
+.olive-hero-art {
+  position: relative;
+  overflow: hidden;
+  min-height: 330px;
+}
+.olive-hero-illustration {
+  position: absolute;
+  inset: 0 6% 18px;
+  background-image: url("../images/brand/learner-scenes.png");
+  background-size: 200% 100%;
+  background-position: var(--olive-scene-position) bottom;
+  border-radius: 45% 45% 15% 15%;
+  mix-blend-mode: multiply;
+}
+:root[data-learner-theme="neutral"] .olive-hero-illustration {
+  background-image: url("../images/brand/olive-symbol.svg");
+  background-size: 180px 180px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.85;
+}
+.olive-hero-caption {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 8px;
+  text-align: center;
+  color: #607049;
+  font-size: 12px;
+}
+.olive-app .olive-theme-open {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 9px 11px;
+  margin: 0;
+  border: 1px solid #c9d1ad;
+  background: #ecf0dd;
+  color: #425e36;
+  white-space: nowrap;
+  font-size: 11px;
+}
+.olive-theme-open svg {
+  width: 21px;
+  height: 21px;
+}
+.olive-app .olive-theme-open:hover {
+  background: #e0e8c9;
+  transform: none;
+}
+.olive-chooser-open {
+  overflow: hidden;
+}
+.olive-chooser {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  overflow: auto;
+  background: #203d32aa;
+  backdrop-filter: blur(5px);
+}
+.olive-chooser-panel {
+  width: min(100%, 580px);
+  max-height: calc(100dvh - 40px);
+  overflow: auto;
+  padding: 25px;
+  border-radius: 28px;
+  background: #fffdf5;
+  box-shadow: 0 25px 80px #142c2b40;
+  text-align: center;
+  border: 1px solid #e1ddc6;
+}
+.olive-chooser-mark {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 8px;
+}
+.olive-chooser-panel h2 {
+  font-size: 27px;
+  margin: 8px 0;
+  letter-spacing: 0;
+}
+.olive-chooser-panel p {
+  color: #61705b;
+  margin: 6px auto 18px;
+  max-width: 420px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+.olive-chooser-panel p.olive-eyebrow {
+  color: #627447;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.olive-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+.olive-app .olive-profile-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 16px;
+  overflow: hidden;
+  gap: 5px;
+  margin: 0;
+  border: 2px solid #dedfca;
+  background: #f6f3e7;
+  color: #294d39;
+  border-radius: 18px;
+  width: 100%;
+}
+.olive-profile-choice strong {
+  font-size: 19px;
+  color: inherit;
+}
+.olive-profile-choice small {
+  font-size: 11px;
+  font-weight: 400;
+  color: #64725f;
+}
+.olive-app .olive-profile-choice:hover,
+.olive-app .olive-profile-choice[aria-pressed="true"] {
+  border-color: #70874f;
+  background: #edf0db;
+  transform: none;
+}
+.olive-character-preview {
+  display: block;
+  width: 100%;
+  height: 175px;
+  background-image: url("../images/brand/learner-scenes.png");
+  background-size: 200% auto;
+  background-position: 0% 100%;
+}
+.olive-character-preview[data-character="girl"] {
+  background-position: 100% 100%;
+}
+.olive-app .olive-neutral-choice {
+  background: transparent;
+  border: 1px solid #c9d1ad;
+  color: #405e38;
+  width: 100%;
+  margin: 16px 0 0;
+  min-height: 46px;
+}
+.olive-app .olive-neutral-choice:hover {
+  background: #f0f3e3;
+  transform: none;
+}
+.olive-app .olive-profile-choice:focus-visible,
+.olive-app .olive-neutral-choice:focus-visible {
+  outline: 3px solid #b88734;
+  outline-offset: 3px;
+}
+@media (max-width: 960px) {
+  .olive-drawing-field {
+    width: 72vw;
+    height: 75vh;
+    bottom: -7vh;
+    opacity: 0.27;
+  }
+}
+@media (max-width: 600px) {
+  .olive-app .olive-theme-open span {
+    display: none;
+  }
+  .olive-app .topbar-right {
+    gap: 7px;
+  }
+  .olive-chooser {
+    padding: 12px;
+  }
+  .olive-chooser-panel {
+    padding: 20px 15px;
+    max-height: calc(100dvh - 24px);
+  }
+  .olive-character-preview {
+    height: 145px;
+  }
+  .olive-chooser-panel h2 {
+    font-size: 24px;
+  }
+  .olive-choice-grid {
+    gap: 10px;
+  }
+  .olive-profile-choice strong {
+    font-size: 17px;
+  }
+  .olive-profile-choice small {
+    font-size: 10px;
+  }
+  .olive-hero-art {
+    min-height: 260px;
+  }
+  .olive-drawing-field {
+    width: 92vw;
+    height: 66vh;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .olive-chooser,
+  .olive-profile-choice {
+    scroll-behavior: auto;
+    transition: none;
+  }
+}
+@media print {
+  .olive-backdrop,
+  .olive-theme-open,
+  .olive-chooser {
+    display: none !important;
+  }
+  body.olive-app {
+    background: white !important;
+  }
+  body.olive-app .container {
+    background: white !important;
+    box-shadow: none;
+  }
+}
+.olive-language-brand img {
+  width: 65px;
+  height: 65px;
+}
+.olive-language-brand p {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2f553d;
+  margin: 8px 0 18px;
+}
+.olive-app .language-welcome-panel {
+  background: #fffdf5;
+  border: 1px solid #e1ddc6;
+}
+.olive-app .olive-hero-art::before {
+  display: none;
+}
+.olive-app .page-heading h1[data-ar="حروف من الزيتون"] {
+  letter-spacing: 0;
+}
+@media print {
+  body.olive-chooser-open {
+    overflow: visible !important;
+  }
+}
+@media print {
+  .olive-hero-art,
+  .olive-language-brand {
+    display: none !important;
+  }
+}

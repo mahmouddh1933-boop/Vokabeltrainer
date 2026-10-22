@@ -16,6 +16,7 @@ with sync_playwright() as p:
     assert response.status == 200
     page.locator('#language-welcome button').filter(has_text='Deutsch').click()
     assert page.locator('html').get_attribute('lang')=='de'
+    page.locator('[data-learner-choice="neutral"]').click()
     page.wait_for_function('typeof XLSX !== "undefined"')
     page.locator('#hero-start').click()
     page.wait_for_selector('.ready-list-button')

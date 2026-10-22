@@ -1,4 +1,4 @@
-# Jisr · Arabisch lernen
+# حروف من الزيتون · Arabisch lernen
 
 Ein deutsch-arabischer Vokabeltrainer mit einem neuen responsiven Design: Lern-Dashboard, A1–B2-Lernpfad, Lernkarten, Alphabet, sechs Testarten, einen interaktiven Kurs zur Verbkonjugation, Fehlerwiederholung und persönlicher Fortschritt. Die Oberfläche unterstützt Deutsch und Arabisch einschließlich Rechts-nach-links-Darstellung.
 
@@ -250,3 +250,13 @@ Online-Aussprache für sonstigen Text benötigt Zugriff auf `translate.google.co
 `youth-smoke.py` prüft alle 256 Aufgaben in acht Einheiten, 221 unterschiedliche lokal abgespielte Aufnahmen, Bilder, offene Entwürfe, Speicherung, isoliertes Zurücksetzen, 24 alternative Satzstellungen (Datenprüfung), Sprachwechsel, Bildschirmbreiten von 320 bis 1440 Pixeln und die Druckfassung ohne gespeicherte Antworten. Externe Anfragen sind dabei blockiert. Die entpackte ZIP wird zusätzlich mit verweigertem Speicher, verweigerter History-API, fehlender `replaceChildren`-Methode und blockierten separaten JS-/CSS-Dateien geprüft.
 
 `youth-two-smoke.py` prüft alle 402 Teilaufgaben der 53 Aktivitäten: 378 geprüfte Antworten und 24 offene Entwürfe/Selbstprüfungen. Es deckt die 31 Vorlagen, falsche Antworten und Wiederholung jeder Aufgabenart, Speicherung, getrennte Bewertung, Kategorien/Suche, Navigation, echtes lokales Hörspiel, Zeigerbedienung per Touch, arabische/deutsche Bedienung von 320 bis 1440 Pixeln, beide leeren Druckvarianten und isoliertes Zurücksetzen ab. Der Downloadtest prüft diesen neuen Bereich zusätzlich bei verweigertem Speicher/History, ohne `replaceChildren`/`replaceAll` sowie mit blockierten separaten JS-/CSS-Anfragen. Ein physisches Android-Gerät wurde in der Cloud nicht getestet.
+
+## الهوية ورسومات الخلفية · Name und Hintergrund
+
+Die sichtbare App heißt **حروف من الزيتون** (Buchstaben vom Olivenbaum). Name, Begrüßung, Navigation, Seiten-Titel und Fußzeile tragen die neue Identität. `images/brand/olive-symbol.svg` ist ein vorläufiges Olivenzweig-Symbol; das vom Nutzer angekündigte Logo wurde noch nicht übermittelt. Der Austausch erfolgt später an dieser zentralen Bildreferenz.
+
+Nach der Sprachauswahl auf der Startseite bietet die App zwei Lernfiguren: Junge und Mädchen. Beide lesen unter einem Olivenbaum; die Auswahl verändert ausschließlich die Dekoration. „Nur Olivenzweige“ bietet einen Hintergrund ohne Figur. Die Auswahl kann auf jeder Seite über die Blatt-Schaltfläche neben der Sprache geändert werden und bleibt lokal unter `oliveLearnerThemeV1` gespeichert. Bestehende Lernstände und Tests behalten ihre Schlüssel. Bei gesperrtem Speicher gilt die Auswahl nur auf der geöffneten Seite.
+
+Die Hintergrundillustration ist stark abgeblendet, nicht anklickbar und vom Lesebereich getrennt. Lernflächen haben einen nahezu deckenden warmen Papierfarbton. Beim Drucken verschwinden Dekoration und Auswahlfenster. Die zwei Ansichten verwenden die linke und rechte Hälfte einer gemeinsamen Illustration per CSS; Quellen stehen in `images/brand/CREDITS.md`. `js/olive-theme.js` und `css/olive-theme.css` werden mit dem ZIP wie die übrigen Skripte und Styles eingebettet.
+
+`python tests/olive-theme-smoke.py` prüft die neue Identität, die erste Auswahl nach der Sprache, alle drei Hintergründe, Fokusführung, Speicherung, verweigerten Speicher, ältere DOM-Methoden, Sprachwechsel, unveränderte Lernkarten und Einheiten sowie die Druckansicht. `--base-url http://127.0.0.1:8001 --portable` prüft dieselben Abläufe aus der entpackten ZIP bei blockierten separaten JS-/CSS-Dateien. Die Vorschau wurde für 320 bis 1440 Pixel und Touch-Bedienung geprüft; ein physisches Android-Gerät wurde nicht verwendet.

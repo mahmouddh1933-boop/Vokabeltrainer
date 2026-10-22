@@ -456,6 +456,8 @@
       "Keine Einstufungen „schwer/gut/leicht“ und keine festen Wiederholungstermine.",
   };
   Object.assign(extra, {
+    "تعلّم الحروف العربية - حروف من الزيتون":
+      "Arabische Buchstaben · حروف من الزيتون",
     "بطاقات التعلّم": "Deine Lernkarten",
     "ابدأ اختباراً": "Wissen testen",
     الإحصائيات: "Mein Fortschritt",
@@ -700,7 +702,17 @@
         button.addEventListener("click", () => setLang(code));
         actions.append(button);
       });
-      panel.append(title, help, actions);
+      const brand = document.createElement("div");
+      brand.className = "olive-language-brand";
+      const mark = document.createElement("img");
+      mark.src = "images/brand/olive-symbol.svg";
+      mark.alt = "";
+      const brandName = document.createElement("p");
+      brandName.lang = "ar";
+      brandName.dir = "rtl";
+      brandName.textContent = "حروف من الزيتون";
+      brand.append(mark, brandName);
+      panel.append(brand, title, help, actions);
       cover.append(panel);
       document.body.append(cover);
     }
