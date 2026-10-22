@@ -1,6 +1,6 @@
 (function () {
     "use strict";
-    document.addEventListener("DOMContentLoaded", () => {
+    window.JisrStorage.ready(() => {
         const stats = VocabApp.getStats();
         const progress = VocabApp.getCurrentVocabProgress();
         const mastery = progress.mastery;

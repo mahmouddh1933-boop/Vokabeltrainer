@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  document.addEventListener("DOMContentLoaded", () => {
+  window.JisrStorage.ready(() => {
     const { lessons } = window.ArabicGrammarData;
     const $ = (id) => document.getElementById(id);
     const escape = window.VocabApp.escapeHTML;

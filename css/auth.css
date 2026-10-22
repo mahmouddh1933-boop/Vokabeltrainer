@@ -1,0 +1,279 @@
+/* Account controls and a quiet, olive-themed entry to the learning app. */
+.auth-pending body > :not(.auth-blocker) {
+  visibility: hidden !important;
+}
+.auth-blocker {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  color: #254d3d;
+  background: #fffdf5;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.auth-blocker h1 {
+  font-size: 28px;
+}
+.auth-blocker p {
+  max-width: 500px;
+  line-height: 1.9;
+}
+.auth-blocker button {
+  width: auto;
+}
+.auth-page {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  padding: 28px 16px;
+  color: #254d3d;
+  font:
+    16px/1.7 Tahoma,
+    Arial,
+    sans-serif;
+  background: #f6f2e6 url("../images/brand/olive-pattern.svg") repeat;
+  background-size: 520px 460px;
+}
+.auth-page * {
+  box-sizing: border-box;
+}
+.auth-card {
+  width: min(100%, 490px);
+  padding: clamp(22px, 5vw, 42px);
+  border-radius: 28px;
+  border: 1px solid #d8ddc6;
+  box-shadow: 0 20px 80px #324a2810;
+  background: #fffdf5 url("../images/brand/olive-card-branch.svg") no-repeat
+    left bottom / 135px 243px;
+}
+.auth-languages {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+.auth-page button,
+.auth-page input {
+  font: inherit;
+}
+.auth-page button,
+.auth-page a {
+  touch-action: manipulation;
+}
+.auth-page button {
+  cursor: pointer;
+  min-height: 44px;
+  border: 1px solid #cad4b7;
+  border-radius: 11px;
+  background: #f0f3e5;
+  color: #254d3d;
+  padding: 9px 14px;
+}
+.auth-page button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+.auth-page button:hover:not(:disabled) {
+  background-color: #e5ebd6;
+}
+.auth-page :is(button, input, a):focus-visible,
+.olive-account :is(summary, button):focus-visible {
+  outline: 3px solid #af8739;
+  outline-offset: 3px;
+}
+.auth-languages button {
+  font-size: 13px;
+}
+.auth-languages button[aria-pressed="true"] {
+  background: #dfe7cc;
+  border-color: #819a62;
+}
+.auth-brand-mark {
+  display: block;
+  margin: 0 auto 10px;
+}
+.auth-brand {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+.auth-card h1 {
+  margin: 17px 0 4px;
+  font-size: 27px;
+  line-height: 1.5;
+  text-align: center;
+}
+.auth-intro {
+  text-align: center;
+  color: #667653;
+  font-size: 14px;
+  margin: 0 0 24px;
+}
+.auth-card form > label:not(.auth-check),
+.auth-card form > div > label {
+  display: block;
+  margin-top: 14px;
+  font-weight: 600;
+}
+.auth-card input:not([type="checkbox"]) {
+  display: block;
+  width: 100%;
+  min-height: 49px;
+  padding: 10px 13px;
+  border: 1px solid #bbcba9;
+  border-radius: 10px;
+  background: #fffefa;
+  color: #203e33;
+  margin: 6px 0;
+}
+.auth-card .auth-check {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin: 13px 0;
+  font-size: 13px;
+}
+.auth-check input {
+  width: 19px;
+  height: 19px;
+  accent-color: #245b43;
+  margin: 0;
+  flex-shrink: 0;
+}
+.auth-card .auth-primary {
+  width: 100%;
+  margin-top: 10px;
+  background: #245b43;
+  color: white;
+  border-color: #245b43;
+  font-weight: 600;
+}
+.auth-card .auth-primary:hover:not(:disabled) {
+  background: #194b36;
+}
+.auth-help {
+  color: #607154;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.auth-message {
+  padding: 13px;
+  border-radius: 10px;
+  background: #edf3e1;
+  border: 1px solid #c5d4ad;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.auth-message.is-error {
+  color: #843e2d;
+  background: #fff2e8;
+  border-color: #dfb9a1;
+}
+.auth-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 12px;
+}
+.auth-links button {
+  background: #fffdf5;
+  border-color: transparent;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.auth-page a {
+  color: #245b43;
+}
+.auth-page [hidden],
+.auth-page .auth-check:has(> input[hidden]) {
+  display: none !important;
+}
+.olive-account {
+  position: relative;
+  flex-shrink: 0;
+}
+.olive-account summary {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #cad4b7;
+  border-radius: 11px;
+  background: #edf1e0;
+  color: #34593f;
+  cursor: pointer;
+  list-style: none;
+}
+.olive-account summary::-webkit-details-marker {
+  display: none;
+}
+.olive-account summary svg {
+  width: 21px;
+  height: 21px;
+}
+.olive-account-panel {
+  position: absolute;
+  inset-inline-end: 0;
+  top: 53px;
+  z-index: 210;
+  width: min(280px, calc(100vw - 32px));
+  padding: 18px;
+  border: 1px solid #c8d3b6;
+  border-radius: 15px;
+  background: #fffdf5;
+  box-shadow: 0 10px 35px #203e3320;
+  font-size: 13px;
+}
+.olive-account-panel p {
+  margin: 0 0 12px;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+.olive-account-note {
+  color: #617253;
+}
+.olive-account-panel button {
+  margin: 0;
+  width: 100%;
+  min-height: 44px;
+  background: #245b43;
+  color: white;
+}
+@media (max-width: 600px) {
+  .auth-card {
+    border-radius: 20px;
+  }
+  .auth-card h1 {
+    font-size: 24px;
+  }
+  .auth-page {
+    padding: 16px;
+  }
+  .olive-app:has(.olive-account) .topbar-left > span {
+    display: none;
+  }
+  .olive-app:has(.olive-account) .topbar-right {
+    gap: 8px;
+  }
+  .olive-account-panel {
+    position: fixed;
+    inset-inline: 16px;
+    top: 72px;
+    width: auto;
+  }
+}
+@media print {
+  .olive-account,
+  .auth-blocker {
+    display: none !important;
+  }
+}

@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    document.addEventListener("DOMContentLoaded", () => {
+    window.JisrStorage.ready(() => {
         const vocabList = VocabApp.getCurrentVocabList();
         const source = VocabApp.getCurrentSource();
         const flashcard = document.getElementById("flashcard");

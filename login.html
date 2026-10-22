@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#123f37" />
+    <title>Anmelden · حروف من الزيتون</title>
+    <link
+      rel="icon"
+      href="images/brand/olive-symbol.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/auth.css?v=8a8bd1deeb08" />
+    <script src="js/storage.js?v=8300953ad473" defer></script>
+    <script src="js/firebase-config.js?v=bcb6b5390ad9" defer></script>
+    <script src="js/auth-session.js?v=bb27a008bde1" defer></script>
+  </head>
+  <body class="auth-page">
+    <main class="auth-card">
+      <div class="auth-languages" aria-label="Sprache / اللغة">
+        <button type="button" data-auth-language="de">Deutsch</button>
+        <button type="button" data-auth-language="ar">العربية</button>
+      </div>
+      <img
+        class="auth-brand-mark"
+        src="images/brand/olive-symbol.svg"
+        alt=""
+        width="64"
+        height="64"
+      />
+      <p class="auth-brand" lang="ar" dir="rtl">حروف من الزيتون</p>
+      <h1 id="auth-title">Willkommen zurück</h1>
+      <p
+        class="auth-intro"
+        data-auth-de="Buchstaben lernen. Mit Wurzeln wachsen."
+        data-auth-ar="حروفٌ نتعلّمها، وجذورٌ نعتزّ بها."
+      >
+        Buchstaben lernen. Mit Wurzeln wachsen.
+      </p>
+      <form id="auth-form">
+        <label
+          for="auth-email"
+          data-auth-de="E-Mail-Adresse"
+          data-auth-ar="البريد الإلكتروني"
+          >E-Mail-Adresse</label
+        >
+        <input
+          id="auth-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          inputmode="email"
+          autocapitalize="none"
+          spellcheck="false"
+          dir="ltr"
+          maxlength="254"
+          required
+        />
+        <div id="auth-password-field">
+          <label
+            for="auth-password"
+            data-auth-de="Passwort"
+            data-auth-ar="كلمة السر"
+            >Passwort</label
+          >
+          <input
+            id="auth-password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            dir="ltr"
+            required
+          />
+          <p
+            id="auth-password-help"
+            class="auth-help"
+            hidden
+            data-auth-de="Mindestens 6 Zeichen. Verwende ein langes, eigenes Passwort."
+            data-auth-ar="٦ أحرف على الأقل. اختر كلمة سر طويلة وخاصة بك."
+          >
+            Mindestens 6 Zeichen. Verwende ein langes, eigenes Passwort.
+          </p>
+        </div>
+        <div id="auth-confirm-field" hidden>
+          <label
+            for="auth-confirm"
+            data-auth-de="Passwort wiederholen"
+            data-auth-ar="تأكيد كلمة السر"
+            >Passwort wiederholen</label
+          >
+          <input
+            id="auth-confirm"
+            name="confirm-password"
+            type="password"
+            autocomplete="new-password"
+            dir="ltr"
+          />
+        </div>
+        <label class="auth-check"
+          ><input id="auth-show-password" type="checkbox" /><span
+            data-auth-de="Passwort anzeigen"
+            data-auth-ar="إظهار كلمة السر"
+            >Passwort anzeigen</span
+          ></label
+        >
+        <label class="auth-check" id="auth-remember-field"
+          ><input id="auth-remember" type="checkbox" /><span
+            data-auth-de="Auf diesem Gerät angemeldet bleiben"
+            data-auth-ar="البقاء مسجّلًا على هذا الجهاز"
+            >Auf diesem Gerät angemeldet bleiben</span
+          ></label
+        >
+        <button type="submit" class="auth-primary" id="auth-submit" disabled>
+          Anmelden
+        </button>
+      </form>
+      <p
+        id="auth-message"
+        class="auth-message"
+        role="status"
+        aria-live="polite"
+        hidden
+      ></p>
+      <button
+        id="auth-retry"
+        type="button"
+        hidden
+        data-auth-de="Seite neu laden"
+        data-auth-ar="إعادة تحميل الصفحة"
+      >
+        Seite neu laden
+      </button>
+      <nav class="auth-links" id="auth-links" aria-label="Konto / الحساب">
+        <button
+          type="button"
+          data-auth-mode="register"
+          data-auth-de="Neues Konto erstellen"
+          data-auth-ar="إنشاء حساب جديد"
+        >
+          Neues Konto erstellen
+        </button>
+        <button
+          type="button"
+          data-auth-mode="reset"
+          data-auth-de="Passwort vergessen?"
+          data-auth-ar="نسيت كلمة السر؟"
+        >
+          Passwort vergessen?
+        </button>
+        <button
+          type="button"
+          data-auth-mode="login"
+          hidden
+          data-auth-de="Zurück zur Anmeldung"
+          data-auth-ar="العودة إلى تسجيل الدخول"
+        >
+          Zurück zur Anmeldung
+        </button>
+      </nav>
+      <p
+        class="auth-help"
+        data-auth-de="Dein Lernstand bleibt in diesem Browser gespeichert. Eine Synchronisierung zwischen Geräten ist noch nicht eingerichtet."
+        data-auth-ar="يُحفظ تقدّمك في هذا المتصفح. مزامنة التقدّم بين الأجهزة غير مفعّلة بعد."
+      >
+        Dein Lernstand bleibt in diesem Browser gespeichert. Eine
+        Synchronisierung zwischen Geräten ist noch nicht eingerichtet.
+      </p>
+      <p id="auth-offline" hidden>
+        <span
+          data-auth-de="Die Anmeldung steht in der veröffentlichten Firebase-App zur Verfügung."
+          data-auth-ar="تسجيل الدخول متاح في نسخة Firebase المنشورة."
+          >Die Anmeldung steht in der veröffentlichten Firebase-App zur
+          Verfügung.</span
+        >
+        <a
+          href="index.html"
+          data-auth-de="Zur Offline-App"
+          data-auth-ar="فتح التطبيق المحلي"
+          >Zur Offline-App</a
+        >
+      </p>
+    </main>
+    <noscript>Bitte aktiviere JavaScript. / يرجى تفعيل JavaScript.</noscript>
+  </body>
+</html>

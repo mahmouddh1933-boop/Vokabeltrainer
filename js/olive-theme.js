@@ -212,7 +212,7 @@
       true,
     );
   }
-  document.addEventListener("DOMContentLoaded", () => {
+  window.JisrStorage.ready(() => {
     document.body.classList.add("olive-app");
     const backdrop = node("div", "olive-backdrop");
     backdrop.id = "olive-backdrop";

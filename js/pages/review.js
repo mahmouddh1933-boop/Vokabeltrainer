@@ -1,6 +1,6 @@
 (function () {
     "use strict";
-    document.addEventListener("DOMContentLoaded", () => {
+    window.JisrStorage.ready(() => {
         let queue = VocabApp.getWrongWords();
         let index = 0;
         const content = document.getElementById("review-content");

@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  document.addEventListener("DOMContentLoaded", async () => {
+  window.JisrStorage.ready(async () => {
     const excelPanel = document.getElementById("excel-panel");
     const listsPanel = document.getElementById("ready-lists-panel");
     const learningPath = document.getElementById("learning-path");

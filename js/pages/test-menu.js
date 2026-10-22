@@ -1,6 +1,6 @@
 (function () {
     "use strict";
-    document.addEventListener("DOMContentLoaded", () => {
+    window.JisrStorage.ready(() => {
         const routes = { "test1-button": "./test1.html", "test2-button": "./test2.html", "test3-button": "./test3.html", "test4-button": "./test4.html", "test5-button": "./test5.html", "test6-button": "./test6.html", "review-button": "./review.html", "stats-button": "./stats.html", "back-to-learn": "./lernseite.html" };
         Object.entries(routes).forEach(([id, route]) => document.getElementById(id)?.addEventListener("click", () => { window.location.href = route; }));
         const durationButtons = [...document.querySelectorAll("[data-duration]")];

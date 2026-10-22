@@ -1,7 +1,7 @@
 (function(){
 "use strict";
   const localStorage = window.JisrStorage.local;
-document.addEventListener('DOMContentLoaded',()=>{
+window.JisrStorage.ready(()=>{
  const area=document.getElementById('test-area'), timerEl=document.getElementById('timer');
  const selected=VocabApp.selectFreshTestWords(VocabApp.getCurrentVocabList(),'connected'), entries=[];
  let timeLeft=VocabApp.getTestDuration(), timer=null, submitted=false;

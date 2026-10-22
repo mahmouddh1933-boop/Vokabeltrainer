@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  document.addEventListener("DOMContentLoaded", () => {
+  window.JisrStorage.ready(() => {
     const {
       verbs,
       pronouns,

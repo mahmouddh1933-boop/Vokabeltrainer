@@ -1,6 +1,6 @@
 (function () {
     "use strict";
-    document.addEventListener("DOMContentLoaded", () => {
+    window.JisrStorage.ready(() => {
         const results = VocabApp.getJSON("testResults", []);
         const outcome = VocabApp.getLastTestOutcome();
         const container = document.getElementById("results");

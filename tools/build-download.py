@@ -68,7 +68,7 @@ def portable_html(page):
 files = {}
 for path in sorted(ROOT.rglob('*')):
     rel = path.relative_to(ROOT)
-    if not path.is_file() or any(part.startswith('.') or part in {'downloads','__pycache__'} for part in rel.parts) or path.suffix in {'.zip','.pyc'}:
+    if not path.is_file() or any(part.startswith('.') or part in {'downloads','__pycache__','firebase-public','node_modules'} for part in rel.parts) or path.suffix in {'.zip','.pyc','.log'}:
         continue
     files['Vokabeltrainer/'+rel.as_posix()] = portable_html(path) if path.suffix == '.html' else path.read_bytes()
 args.output.parent.mkdir(parents=True, exist_ok=True)

@@ -253,6 +253,14 @@ Online-Aussprache für sonstigen Text benötigt Zugriff auf `translate.google.co
 
 ## الهوية ورسومات الخلفية · Name und Hintergrund
 
+Firebase Hosting mit E-Mail/Passwort ist für das Projekt `letters-from-olive`
+vorbereitet. Die deutsche Schritt-für-Schritt-Anleitung steht in
+[FIREBASE-START-DE.md](FIREBASE-START-DE.md). `downloads/Huroof-Firebase.zip`
+enthält den bereits gebauten, getrennten Hosting-Ordner und die Deploy-Konfiguration.
+Das Offline-ZIP funktioniert weiterhin ohne Konto. Konten verwenden Firebase Auth;
+Lernstände bleiben in dieser Version pro Konto lokal im jeweiligen Browser.
+`python3 tests/firebase-auth-smoke.py` prüft das echte SDK mit den lokalen Firebase-Emulatoren.
+
 Die sichtbare App heißt **حروف من الزيتون** (Buchstaben vom Olivenbaum). Name, Begrüßung, Navigation, Seiten-Titel und Fußzeile tragen die neue Identität. `images/brand/olive-symbol.svg` ist ein vorläufiges Olivenzweig-Symbol; das vom Nutzer angekündigte Logo wurde noch nicht übermittelt. Der Austausch erfolgt später an dieser zentralen Bildreferenz.
 
 Nach der Sprachauswahl auf der Startseite bietet die App zwei Lernfiguren: Junge und Mädchen. Beide lesen unter einem Olivenbaum; die Auswahl verändert ausschließlich die Dekoration. „Nur Olivenzweige“ bietet einen Hintergrund ohne Figur. Die Auswahl kann auf jeder Seite über die Blatt-Schaltfläche neben der Sprache geändert werden und bleibt lokal unter `oliveLearnerThemeV1` gespeichert. Bestehende Lernstände und Tests behalten ihre Schlüssel. Bei gesperrtem Speicher gilt die Auswahl nur auf der geöffneten Seite.

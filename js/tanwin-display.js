@@ -12,7 +12,7 @@
    }
    for(const [n,s] of changes)n.nodeValue=s;
  }
- document.addEventListener('DOMContentLoaded',()=>{
+ window.JisrStorage.ready(()=>{
    visit(document.body);
    const obs=new MutationObserver(items=>{
      for(const m of items){

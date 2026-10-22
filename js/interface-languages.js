@@ -739,7 +739,7 @@
       );
     });
   }
-  document.addEventListener("DOMContentLoaded", setup);
+  window.JisrStorage.ready(setup);
   window.AppLanguage = { translate, get: () => lang, t: translated };
 })();
 // Additional dynamic text for the retake action is registered through the existing translation engine.

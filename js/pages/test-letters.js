@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    document.addEventListener("DOMContentLoaded", () => {
+    window.JisrStorage.ready(() => {
         const vocab = VocabApp.getCurrentVocabList();
         const selected = VocabApp.selectFreshTestWords(vocab, "letters");
         const maskedWords = [];

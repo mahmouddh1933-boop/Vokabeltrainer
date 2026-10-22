@@ -1,5 +1,5 @@
 (()=>{'use strict';
-document.addEventListener('DOMContentLoaded',()=>{
+window.JisrStorage.ready(()=>{
  const vocab=VocabApp.getCurrentVocabList().filter(w=>/\p{Script=Arabic}/u.test(w[0]) && [...VocabApp.stripArabicDiacritics(w[0]).replace(/\s/g,'')].length>=2);
  const selected=VocabApp.selectFreshTestWords(vocab,'scramble');
  const area=document.getElementById('test-area');const submitButton=document.getElementById('submit-test');

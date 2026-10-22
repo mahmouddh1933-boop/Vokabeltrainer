@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  document.addEventListener("DOMContentLoaded", () => {
+  window.JisrStorage.ready(() => {
     const $ = (id) => document.getElementById(id);
     const { modes, createQuestions } = window.ArabicLetterTraining;
     const sessions = new Map();

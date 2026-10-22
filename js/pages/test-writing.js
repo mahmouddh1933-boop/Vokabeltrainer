@@ -1,6 +1,6 @@
 (function () {
     "use strict";
-    document.addEventListener("DOMContentLoaded", () => {
+    window.JisrStorage.ready(() => {
         const vocab = VocabApp.getCurrentVocabList();
         const selected = VocabApp.selectFreshTestWords(vocab, "writing");
         const area = document.getElementById("test-area");

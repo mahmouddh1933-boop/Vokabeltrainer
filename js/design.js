@@ -23,7 +23,7 @@
     `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.book}</svg>`;
   const label = (de, ar) =>
     `<span data-de="${de}" data-ar="${ar}">${ar}</span>`;
-  document.addEventListener("DOMContentLoaded", () => {
+  window.JisrStorage.ready(() => {
     const page = location.pathname.split("/").pop() || "index.html";
     const isHome = page === "index.html";
     const nav = [

@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   const sessionStorage = window.JisrStorage.session;
-  document.addEventListener("DOMContentLoaded", () => {
+  window.JisrStorage.ready(() => {
     const $ = (id) => document.getElementById(id);
     const { letters } = window.ArabicLetterData;
     const { createLetterQuestions, isCorrectAnswer } =
