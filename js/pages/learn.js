@@ -23,6 +23,17 @@
             const [arabic, german] = vocabList[currentIndex];
             front.textContent = arabic;
             back.textContent = german;
+            const picture = window.VocabPictures?.get(arabic, german);
+            if (picture) {
+                const label = document.createElement("span");
+                label.textContent = german; label.lang = "de"; label.dir = "ltr";
+                const image = document.createElement("img");
+                image.src = picture; image.alt = ""; image.width = 96; image.height = 80;
+                image.className = "vocab-picture"; image.decoding = "async";
+                image.addEventListener("error", () => image.remove(), {once:true});
+                const content = document.createElement("div"); content.className = "vocab-back-content";
+                content.append(label, image); back.replaceChildren(content);
+            }
             flashcard.classList.remove("flipped");
             VocabApp.markStudied(arabic, german);
             speechStatus.textContent = "";

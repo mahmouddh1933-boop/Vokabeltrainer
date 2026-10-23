@@ -55,41 +55,10 @@ test("Sun and moon lists partition the Arabic alphabet correctly", () => {
   assert.deepEqual(sunLetters, Array.from("تثدذرزسشصضطظلن"));
   assert.deepEqual(moonLetters, Array.from("أبجحخعغفقكمهوي"));
 });
-test("30 bilingual lessons, valid highlights, and 380 distinct questions", () => {
+test("37 bilingual lessons, valid highlights, and 464 distinct questions", () => {
   assert.deepEqual(
     lessons.map((l) => l.id),
-    [
-      "sun-moon",
-      "pronouns",
-      "gender",
-      "number",
-      "basic-verbs",
-      "hamza-initial",
-      "hamza-medial",
-      "hamza-final",
-      "five-verbs",
-      "five-nouns",
-      "active-participle",
-      "passive-participle",
-      "instrument-noun",
-      "intensive-participle",
-      "word-classes",
-      "sentence-types",
-      "relative-pronouns",
-      "prepositions",
-      "defective-verbs",
-      "inna-particles",
-      "numerals",
-      "present-inflection",
-      "past-construction",
-      "imperative-construction",
-      "adjectival-attribute",
-      "idafa",
-      "purpose-object",
-      "absolute-object",
-      "apposition",
-      "demonstratives",
-    ],
+    ["word-classes", "gender", "pronouns", "demonstratives", "sun-moon", "sentence-types", "basic-verbs", "ta-endings", "alif-endings", "case-basics", "prepositions", "idafa", "number", "adjectival-attribute", "subject-object", "relative-pronouns", "hamza-initial", "past-construction", "imperative-construction", "present-inflection", "five-verbs", "defective-verbs", "inna-particles", "numerals", "hamza-medial", "hamza-final", "active-participle", "passive-participle", "instrument-noun", "intensive-participle", "five-nouns", "circumstantial", "tamyiz", "purpose-object", "absolute-object", "apposition", "hamza-exceptions"],
   );
   let questionCount = 0;
   for (const lesson of lessons) {
@@ -151,7 +120,7 @@ test("30 bilingual lessons, valid highlights, and 380 distinct questions", () =>
       }
     }
   }
-  assert.equal(questionCount, 380);
+  assert.equal(questionCount, 464);
 });
 test("Key grammar answers and irregular basic verbs are accurate", () => {
   const correct = (lesson, index) =>

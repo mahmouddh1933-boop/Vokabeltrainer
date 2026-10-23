@@ -684,3 +684,16 @@ body .container.grammar-page {
     padding: 11px;
   }
 }
+.grammar-path-panel{margin-block:1.5rem;padding:1.25rem;border:1px solid #d2ddc5;border-radius:24px;background:#f3f6ec;line-height:1.85}
+.grammar-stages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem;margin-block:1rem}
+.grammar-stages button{display:flex;flex-direction:column;gap:.5rem;text-align:start;min-width:0;padding:1rem;border:1px solid #cad7bd;border-radius:16px;background:#fffdf5;color:#25483a}
+.grammar-stages button[aria-pressed=true]{border:2px solid #52764c;background:#e8efd9}
+.grammar-stages button span{font-size:.85rem;font-weight:400;line-height:1.75}
+.grammar-stages progress{width:100%;height:8px;accent-color:#52764c}
+.grammar-route-info{padding:1rem;border-radius:18px;background:#eef3e6;margin-block:1rem;line-height:1.9}
+.grammar-route-info p{font-weight:700}.grammar-route-info a{color:#315d43;text-decoration:underline}
+.grammar-lesson-route{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-block:1.5rem}
+.grammar-lesson-route a{padding:1rem;border:1px solid #cbd7bd;border-radius:16px;color:#315d43;background:#f5f7ef;flex:1 1 220px}
+.grammar-path-method{font-size:.9rem}.grammar-path-method summary{cursor:pointer;font-weight:700}
+@media(max-width:700px){.grammar-stages{grid-template-columns:repeat(2,minmax(0,1fr))}.grammar-stages button{padding:.7rem}.grammar-path-panel{padding:1rem}.grammar-path-panel .section-heading{flex-wrap:wrap}#grammar-resume{max-width:100%;white-space:normal}}
+.grammar-page #grammar-lesson{scroll-margin-top:100px}

@@ -46,8 +46,9 @@ function capture(path, name) {
 const letters = require('./js/letter-data.js');
 letters.letters = letters.letters.slice(0,6);
 const grammar = require('./js/grammar-data.js');
-grammar.lessons = grammar.lessons.slice(0,3).map(l=>({...l, questions:l.questions.slice(0,8)}));
+grammar.lessons = ["sun-moon","pronouns","gender"].map(id=>grammar.lessons.find(l=>l.id===id)).map(l=>({...l, questions:l.questions.slice(0,8)}));
 delete grammar.basicVerbs;
+delete grammar.stages;
 const practice = require('./js/practice-data.js');
 practice.sounds = practice.sounds.slice(0,2);
 practice.sentences = [...practice.sentences.filter(s=>s.level==='A1').slice(0,3),
@@ -58,7 +59,7 @@ vocabulary.verbs = vocabulary.verbs.filter(v=>['write','study','open','drink','p
 const rows = capture('js/letter-examples.js', 'rows').slice(0,6);
 const extras = capture('js/letter-focused-data.js', 'extras');
 const chosenExtras = Object.fromEntries(letters.letters.map(l=>[l.char, extras[l.char]]));
-console.log(JSON.stringify({letters,grammar,practice,verbs:vocabulary.verbs,rows,extras:chosenExtras}));
+console.log(JSON.stringify({letters,grammar,practice,verbs:vocabulary.verbs,rows,extras:chosenExtras,pictures:require("./js/vocab-pictures.js").mappings}));
 '''
 data = json.loads(subprocess.check_output(['node', '-e', extract], cwd=ROOT, text=True))
 
@@ -135,6 +136,8 @@ for name in PAGES:
     source = (ROOT / (name + '.html')).read_text()
     source = re.sub(r'<script\b[^>]*\bsrc=["\']([^"\']+)["\'][^>]*>\s*</script>',
         lambda match: '' if match[1].split('?')[0] in EXCLUDED_SCRIPTS or match[1].startswith('https:') else match[0], source)
+    if name == 'grammar':
+        source = re.sub(r'<script[^>]*src=[\"\']js/grammar-path-data.js[^\"\']*[\"\'][^>]*>\s*</script>', '', source)
     source = re.sub(r'<link\b[^>]*href=["\']css/auth.css[^"\']*["\'][^>]*>', '', source)
     source = re.sub(r'((?:src|href)=["\'])([^"\']+\.(?:js|css))\?[^"\']*(["\'])', r'\1\2\3', source)
     source = source.replace('</title>', ' · Demo</title>')
@@ -185,6 +188,11 @@ for name in PAGES:
 for reference in references:
     if reference not in {'css/demo.css', 'js/demo.js'} and not (DEST / reference).exists():
         write(reference, (ROOT / reference).read_text())
+related_page = DEST / 'js/pages/letters-related.js'
+if related_page.exists():
+    # Keep supplementary links inside the demo's three selected grammar lessons.
+    ids = dump([lesson['id'] for lesson in data['grammar']['lessons']])
+    related_page.write_text(related_page.read_text().replace('...links.map(', '...links.filter(([id]) => '+ids+'.includes(id)).map('))
 home = (ROOT / 'js/pages/home.js').read_text()
 home = '(function(){ "use strict"; window.JisrStorage.ready(async()=>{ const app=window.VocabApp; document.getElementById("wrong-total").textContent=app.getWrongWords().length; document.getElementById("mastered-lists-total").textContent=app.getMasterySummary().masteredLists; document.getElementById("tests-total").textContent=app.getStats().totalTests||0; renderLearningPath(await app.loadCatalog(),document.getElementById("learning-path")); });\n' + home[home.index('  function listSource('):]
 write('js/pages/home.js', home)
@@ -233,6 +241,17 @@ for name in PAGES:
     assert count == 1, name
     path.write_text(html)
 
+picture_keys = set()
+for item in catalog['lists']:
+    for word in item['words']:
+        ar = ''.join(c for c in normalize(word['ar']) if not unicodedata.category(c).startswith('M') and c != 'ـ').strip()
+        picture_keys.add(dump([ar, normalize(word['de']).strip().lower()]))
+demo_pictures = {key:path for key,path in data['pictures'].items() if key in picture_keys}
+picture_source = (ROOT/'js/vocab-pictures.js').read_text()
+write('js/vocab-pictures.js', picture_source.replace('const mappings = '+dump(data['pictures']), 'const mappings = '+dump(demo_pictures)))
+for picture in demo_pictures.values():
+    (DEST/picture).parent.mkdir(parents=True,exist_ok=True)
+    shutil.copyfile(ROOT/picture,DEST/picture)
 for folder in ['images/brand', 'fonts']:
     shutil.copytree(ROOT / folder, DEST / folder, dirs_exist_ok=True)
 for image in [letter['img'] for letter in letters['letters']]:
@@ -241,7 +260,8 @@ for image in [letter['img'] for letter in letters['letters']]:
     shutil.copyfile(ROOT / image, path)
 # The existing CSS uses one local illustration sheet for story art.
 shutil.copytree(ROOT / 'images/stories', DEST / 'images/stories', dirs_exist_ok=True)
-for audio in set(letters['audio'].values()) | set(practice['audio'].values()):
+related_audio = {clip['path'] for clip in json.loads((ROOT/'audio/letter-related-manifest.json').read_text())['clips']}
+for audio in set(letters['audio'].values()) | set(practice['audio'].values()) | related_audio:
     path = DEST / audio
     path.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(ROOT / audio, path)

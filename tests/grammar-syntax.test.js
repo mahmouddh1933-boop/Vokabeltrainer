@@ -21,8 +21,8 @@ test("New curriculum has ten bilingual lessons with examples and 140 questions",
     "demonstratives",
   ];
   assert.deepEqual(
-    lessons.slice(20).map((l) => l.id),
-    ids,
+    lessons.filter(l => ids.includes(l.id)).map((l) => l.id).sort(),
+    [...ids].sort(),
   );
   assert.equal(
     ids.reduce((s, id) => s + get(id).questions.length, 0),

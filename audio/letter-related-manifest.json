@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-23",
+  "provider": "Google Translate TTS (ar)",
+  "slow": true,
+  "clips": [
+    {
+      "text": "أَسَدٌ",
+      "path": "audio/letter-related/01.mp3",
+      "sha256": "48720b9abd2b78586a836437f97aba9304778c04157ace6f2ef7df0ec7221979"
+    },
+    {
+      "text": "إِبْرَةٌ",
+      "path": "audio/letter-related/02.mp3",
+      "sha256": "751a77374426b04ef2246a696b43cee53dc0709fc4b868e3e58b21499b2381ea"
+    },
+    {
+      "text": "آدَمُ",
+      "path": "audio/letter-related/03.mp3",
+      "sha256": "df66c01c0437982e3558a58549d8a31d75ad669f925985b3e01c20de1b03b0f4"
+    },
+    {
+      "text": "بَابٌ",
+      "path": "audio/letter-related/04.mp3",
+      "sha256": "a9649b0327de4b4f11974483ceb25a0667863beab3b11345f00861d6bdde1f99"
+    },
+    {
+      "text": "مُؤْمِنٌ",
+      "path": "audio/letter-related/05.mp3",
+      "sha256": "ccfa08ce9f2c38e95cbdb56c6009164faa26ab11c44a3e498e0ec00426ed5baa"
+    },
+    {
+      "text": "بِئْرٌ",
+      "path": "audio/letter-related/06.mp3",
+      "sha256": "4ce9facaeec8d5e39e1d43d5d82d9ede0a68624bb67ef94e91cb7ffdd313a78c"
+    },
+    {
+      "text": "مَاءٌ",
+      "path": "audio/letter-related/07.mp3",
+      "sha256": "8c00a094d2badf2b7ababfda325db16f77609968480cbc2a214413974e16ea75"
+    },
+    {
+      "text": "فَتًى",
+      "path": "audio/letter-related/08.mp3",
+      "sha256": "768a4a3ba7c613058987f2ec4dbfd013baae5d8c9dc643e564d929877ec5235c"
+    },
+    {
+      "text": "بَيْتٌ",
+      "path": "audio/letter-related/09.mp3",
+      "sha256": "615ea121f44b06c2d1d1ed7fd831401631b55f31a4458353d6c6d5bcd79c5f54"
+    },
+    {
+      "text": "مَدْرَسَةٌ",
+      "path": "audio/letter-related/10.mp3",
+      "sha256": "57a2b831065f6f7d145b93bff2d218457f3da1947541ac6742e8e3d9fb645293"
+    },
+    {
+      "text": "كُرَةٌ",
+      "path": "audio/letter-related/11.mp3",
+      "sha256": "6ea88db56592831cab786c46820ac836923f065578970b8311afefab9d5c0a08"
+    }
+  ]
+}

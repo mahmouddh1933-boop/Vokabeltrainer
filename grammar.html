@@ -7,8 +7,8 @@
     <title>حروف من الزيتون · قواعد العربية / Arabische Grammatik</title>
     <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
     <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
-    <link rel="stylesheet" href="css/modern.css?v=f00c5a8bafa7" />
-    <link rel="stylesheet" href="css/grammar.css?v=aea262dc4626" />
+    <link rel="stylesheet" href="css/modern.css?v=8a75138498b6" />
+    <link rel="stylesheet" href="css/grammar.css?v=bbe72b1d11bd" />
     <script src="js/storage.js?v=234b995827cd" defer></script>
     <script src="js/firebase-config.js?v=bcb6b5390ad9" defer></script>
     <script src="js/auth-session.js?v=e80b2ec59f82" defer></script>
@@ -19,8 +19,9 @@
     <script src="js/verb-data.js?v=36fd482e0a00" defer></script>
     <script src="js/grammar-expanded.js?v=291699b7999f" defer></script>
     <script src="js/grammar-syntax.js?v=0e8557f8efff" defer></script>
-    <script src="js/grammar-data.js?v=5a102c7f812f" defer></script>
-    <script src="js/pages/grammar.js?v=12661b014aa0" defer></script>
+    <script src="js/grammar-path-data.js?v=b4d90f073bf7" defer></script>
+    <script src="js/grammar-data.js?v=dd332494b931" defer></script>
+    <script src="js/pages/grammar.js?v=526beddb3b60" defer></script>
   <meta name="application-name" content="حروف من الزيتون" />
 <link rel="icon" href="images/brand/olive-symbol.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="css/olive-theme.css?v=4b4842e4a626" />
@@ -45,19 +46,26 @@
             قواعد العربية
           </h1>
           <p
-            data-ar="30 درسًا في القواعد والإملاء · 380 سؤالًا مع شرح الإجابات."
-            data-de="30 Lektionen zu Grammatik und Rechtschreibung · 380 Fragen mit Erklärungen."
+            id="grammar-total-summary"
           >
-            30 درسًا في القواعد والإملاء · 380 سؤالًا مع شرح الإجابات.
+            مسار متدرّج في القواعد والإملاء، مع شرح الإجابات.
           </p>
         </div>
         <span class="welcome-symbol" aria-hidden="true">✳</span>
       </header>
+      <section class="grammar-path-panel" aria-labelledby="grammar-path-title">
+        <div class="section-heading"><h2 id="grammar-path-title" data-ar="مسارك في القواعد" data-de="Dein Grammatikpfad">مسارك في القواعد</h2><button id="grammar-resume" type="button"></button></div>
+        <p data-ar="ابدأ بالتأسيس ثم تقدّم إلى بناء الجملة والتوسّع والتعمّق. إتقان الدرس هنا يعني الإجابة عن جميع أسئلته مع صحة ٨٠٪ على الأقل. يمكنك فتح أي درس للمراجعة." data-de="Beginne beim Einstieg und gehe über Satzbau und Ausbau zur Vertiefung. Eine Lektion gilt hier als beherrscht, wenn alle Fragen beantwortet und mindestens 80 % richtig sind. Alle Lektionen bleiben frei zugänglich.">ابدأ بالتأسيس ثم تقدّم إلى بناء الجملة والتوسّع والتعمّق. يمكنك فتح أي درس للمراجعة.</p>
+        <div id="grammar-stages" class="grammar-stages" role="group" aria-label="المراحل / Lernstufen"></div>
+        <p id="grammar-path-progress" role="status"></p>
+        <details class="grammar-path-method"><summary data-ar="كيف رُتّب المسار؟" data-de="Wie ist der Pfad aufgebaut?">كيف رُتّب المسار؟</summary><p data-ar="هذا ترتيب تحريري بحسب المتطلبات السابقة، يستأنس بالتدرّج العام في العربية بين يديك وAl-Kitaab وMastering Arabic: من الكلمات والجمل البسيطة إلى التراكيب ثم المنصوبات والمشتقات. ليست المراحل معادلة رسمية لمستويات CEFR ولا نقلًا لترتيب طبعة محددة؛ لم نتمكن من فحص فهارس الناشرين مباشرة." data-de="Redaktionelle Reihenfolge nach Voraussetzungen, orientiert am allgemeinen Aufbau von العربية بين يديك, Al-Kitaab und Mastering Arabic: von Wörtern und einfachen Sätzen zu komplexeren Strukturen, Akkusativfunktionen und Wortbildung. Keine amtliche CEFR-Zuordnung und keine Übernahme einer bestimmten Ausgabe; die Verlagsinhaltsverzeichnisse waren nicht direkt abrufbar.">ترتيب تحريري بحسب المتطلبات السابقة.</p></details>
+      </section>
       <section
         class="grammar-catalog"
         aria-label="اختيار الدرس / Lektion wählen"
       >
         <div class="grammar-catalog-filters">
+          <label><span data-ar="مرحلة التعلّم" data-de="Lernstufe">مرحلة التعلّم</span><select id="grammar-stage"><option value="all" data-ar="كل المراحل" data-de="Alle Stufen">كل المراحل</option></select></label>
           <label
             ><span data-ar="ابحث عن قاعدة" data-de="Regel suchen"
               >ابحث عن قاعدة</span
@@ -134,6 +142,7 @@
         </div>
       </section>
       <article id="grammar-lesson" aria-labelledby="lesson-title">
+        <div class="grammar-route-info"><p id="grammar-lesson-stage"></p><nav id="grammar-prerequisites" aria-label="متطلبات الدرس / Voraussetzungen"></nav></div>
         <header class="grammar-lesson-header">
           <div>
             <p class="eyebrow" id="lesson-counter"></p>
@@ -222,13 +231,13 @@
           </div>
           <p
             class="grammar-session-note"
-            data-ar="هذا التمرين مستقلّ عن اختبارات المفردات. تبقى نتيجته أثناء فتح هذه الصفحة."
-            data-de="Diese Übung ist unabhängig von den Vokabeltests. Ihr Ergebnis bleibt erhalten, solange diese Seite geöffnet ist."
+            data-ar="هذا التمرين مستقل عن اختبارات المفردات. تُحفظ الإجابات وموضع السؤال تلقائيًّا مع التقدّم."
+            data-de="Unabhängig von den Vokabeltests. Antworten und Frageposition werden mit dem Lernfortschritt automatisch gespeichert."
           >
-            هذا التمرين مستقلّ عن اختبارات المفردات. تبقى نتيجته أثناء فتح هذه
-            الصفحة.
+            تُحفظ الإجابات وموضع السؤال تلقائيًّا مع التقدّم.
           </p>
         </section>
+        <nav id="grammar-lesson-route" class="grammar-lesson-route" aria-label="التنقل بين الدروس / Lektionen wechseln"></nav>
       </article>
     </main>
     <footer class="teacher-credit" id="teacher-credit"></footer>

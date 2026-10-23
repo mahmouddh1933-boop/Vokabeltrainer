@@ -33,3 +33,10 @@
 .letters-page .letters-big{line-height:1.2!important}
 .letters-page .card-example strong{line-height:1.55}
 .letters-page .letters-controls{align-items:center}
+.letter-related{margin-block:1.5rem;padding:1.2rem;border:1px solid #cddabb;border-radius:22px;background:#f5f7ee;line-height:1.9}
+.letter-related[hidden]{display:none}.letter-related-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}
+.letter-related-card{display:flex;flex-direction:column;align-items:center;text-align:center;background:#fffdf8;border:1px solid #d8e0cb;border-radius:16px;padding:1rem;min-width:0}
+.letter-related-card .related-glyph{font-size:2.8rem;color:#42663a;line-height:1.8}.letter-related-card .related-word{font-size:1.7rem;line-height:2;margin:.25rem}
+.letter-related-card p:not(.related-word){font-size:.9rem;flex:1}.letter-related-card button{font-size:.85rem;padding:.65rem;max-width:100%}
+@media(max-width:700px){.letter-related-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.letter-related{padding:.8rem}.letter-related-card{padding:.7rem}}
+#letter-related-links{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem}#letter-related-links a{color:#315e42;text-decoration:underline;line-height:1.9}

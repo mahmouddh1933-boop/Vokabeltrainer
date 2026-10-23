@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   window.JisrStorage.ready(() => {
-    const { lessons } = window.ArabicGrammarData;
+    const { lessons, stages = [] } = window.ArabicGrammarData;
     const $ = (id) => document.getElementById(id);
     const escape = window.VocabApp.escapeHTML;
     const language = () => (window.AppLanguage?.get() === "de" ? "de" : "ar");
@@ -10,10 +10,48 @@
     const text = (ar, de) => (language() === "ar" ? ar : de);
     const sessions = new Map();
     let current = lessons[0];
+    const pathState = () => window.VocabApp.getStats().grammarPathV1 || {};
     function session() {
-      if (!sessions.has(current.id))
-        sessions.set(current.id, { index: 0, answers: [] });
+      if (!sessions.has(current.id)) {
+        const saved = pathState().lessons?.[current.id] || {};
+        const answers = Array.isArray(saved.answers) ? saved.answers.slice(0, current.questions.length).map((a, i) =>
+          Number.isInteger(a) && a >= 0 && a < current.questions[i].options.length ? a : undefined) : [];
+        sessions.set(current.id, { index: Number.isInteger(saved.index) && saved.index >= 0 && saved.index < current.questions.length ? saved.index : 0, answers });
+      }
       return sessions.get(current.id);
+    }
+    function persist() {
+      const stats = window.VocabApp.getStats();
+      const prior = stats.grammarPathV1 || {};
+      window.VocabApp.setJSON("learningStats", { ...stats, grammarPathV1: {
+        lastLesson: current.id, lessons: { ...prior.lessons, [current.id]: session() },
+      }});
+    }
+    function mastered(lesson) {
+      const answers = (sessions.get(lesson.id) || pathState().lessons?.[lesson.id] || {}).answers || [];
+      return lesson.questions.every((q, i) => Number.isInteger(answers[i])) &&
+        lesson.questions.filter((q, i) => q.correct === answers[i]).length / lesson.questions.length >= .8;
+    }
+    function resumeTarget() {
+      const last = lessons.find(l => l.id === pathState().lastLesson);
+      return last && !mastered(last) ? last : lessons.find(l => !mastered(l)) || lessons[0];
+    }
+    function renderPath() {
+      const stageValue = $("grammar-stage").value || "all";
+      $("grammar-stage").replaceChildren(new Option(text("كل المراحل", "Alle Stufen"), "all"), ...stages.map(s => new Option(localized(s.title), s.id)));
+      $("grammar-stage").value = stageValue;
+      $("grammar-stages").innerHTML = stages.map(s => {
+        const bank = lessons.filter(l => l.stage === s.id);
+        const done = bank.filter(mastered).length;
+        return `<button type="button" data-grammar-stage="${s.id}" aria-pressed="${stageValue === s.id}"><strong>${escape(localized(s.title))}</strong><span>${escape(localized(s.description))}</span><small>${done} / ${bank.length} ${text("دروس متقنة", "Lektionen beherrscht")}</small><progress value="${done}" max="${bank.length}"></progress></button>`;
+      }).join("");
+      $("grammar-stages").querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
+        $("grammar-stage").value = b.dataset.grammarStage;
+        filterCatalog();
+      }));
+      $("grammar-path-progress").textContent = text(`${lessons.filter(mastered).length} من ${lessons.length} درسًا متقنًا · يُحفظ موضعك وإجاباتك تلقائيًّا.`, `${lessons.filter(mastered).length} von ${lessons.length} Lektionen beherrscht · Position und Antworten werden automatisch gespeichert.`);
+      $("grammar-resume").textContent = text("تابع: ", "Weiter: ") + localized(resumeTarget().title);
+      $("grammar-total-summary").textContent = text(`${lessons.length} درسًا · ${lessons.reduce((n,l)=>n+l.questions.length,0)} سؤالًا مع شرح الإجابات.`, `${lessons.length} Lektionen · ${lessons.reduce((n,l)=>n+l.questions.length,0)} Fragen mit Erklärungen.`);
     }
     const normalize = (value) =>
       value
@@ -43,6 +81,7 @@
       return lessons.filter(
         (lesson) =>
           (category === "all" || lesson.category === category) &&
+          ($("grammar-stage").value === "all" || lesson.stage === $("grammar-stage").value) &&
           searchIndex.get(lesson.id).includes(query),
       );
     }
@@ -84,6 +123,7 @@
       return `<div class="grammar-table-wrap" tabindex="0" role="region" aria-label="${escape(localized(current.title))}"><table class="grammar-table grammar-columns-${table.headers.length}"><caption class="sr-only">${escape(localized(current.title))}</caption><thead><tr>${table.headers.map((h) => `<th scope="col">${escape(localized(h))}</th>`).join("")}</tr></thead><tbody>${table.rows.map((row) => `<tr>${row.map((cell, index) => `<${index === 0 ? 'th scope="row"' : "td"}${cell.lang ? ` lang="${cell.lang}"` : ""}>${escape(cell.text || localized(cell))}</${index === 0 ? "th" : "td"}>`).join("")}</tr>`).join("")}</tbody></table></div>`;
     }
     function renderLesson() {
+      persist();
       renderTopics();
       $("lesson-counter").textContent = text(
         `الدرس ${lessons.indexOf(current) + 1} من ${lessons.length}`,
@@ -99,6 +139,12 @@
         )
         .join("");
       $("lesson-takeaway").textContent = localized(current.takeaway);
+      const stage = stages.find(s => s.id === current.stage);
+      $("grammar-lesson-stage").textContent = stage ? localized(stage.title) : "";
+      $("grammar-prerequisites").innerHTML = (current.prerequisites || []).filter(id => lessons.some(l => l.id === id)).length
+        ? `<span>${text("قبل هذا الدرس راجع: ", "Vorher wiederholen: ")}</span>` + current.prerequisites.map(id => lessons.find(l => l.id === id)).filter(Boolean).map(l => `<a href="#${l.id}">${escape(localized(l.title))}</a>`).join(" · ") : "";
+      const position = lessons.indexOf(current);
+      $("grammar-lesson-route").innerHTML = [position > 0 ? `<a href="#${lessons[position-1].id}">${text("الدرس السابق: ", "Vorherige Lektion: ")}${escape(localized(lessons[position-1].title))}</a>` : "", position < lessons.length-1 ? `<a href="#${lessons[position+1].id}">${text("الدرس التالي: ", "Nächste Lektion: ")}${escape(localized(lessons[position+1].title))}</a>` : ""].join("");
       $("lesson-verb-link").hidden = !["pronouns", "basic-verbs"].includes(
         current.id,
       );
@@ -146,6 +192,7 @@
           button.addEventListener("click", () => {
             if (state.answers[state.index] !== undefined) return;
             state.answers[state.index] = index;
+            persist();
             renderPractice();
           });
           return button;
@@ -180,6 +227,7 @@
         state.index === current.questions.length - 1
           ? text("إعادة التمرين", "Übung wiederholen")
           : text("السؤال التالي", "Nächste Frage");
+      renderPath();
     }
     $("grammar-next").addEventListener("click", () => {
       const state = session();
@@ -188,6 +236,7 @@
         state.index = 0;
         state.answers = [];
       } else state.index++;
+      persist();
       renderPractice();
       $("grammar-question").tabIndex = -1;
       $("grammar-question").focus({ preventScroll: true });
@@ -196,6 +245,7 @@
       const state = session();
       if (state.index === 0) return;
       state.index--;
+      persist();
       renderPractice();
       $("grammar-question").tabIndex = -1;
       $("grammar-question").focus({ preventScroll: true });
@@ -203,17 +253,25 @@
     function resetFilters() {
       $("grammar-search").value = "";
       $("grammar-category").value = "all";
+      $("grammar-stage").value = "all";
     }
     function filterCatalog() {
       const filtered = matches();
       if (filtered.length && !filtered.includes(current)) {
         current = filtered[0];
-        history.replaceState(null, "", `#${current.id}`);
+        try { history.replaceState(null, "", `#${current.id}`); } catch (_) {}
       }
       renderLesson();
     }
     $("grammar-search").addEventListener("input", filterCatalog);
     $("grammar-category").addEventListener("change", filterCatalog);
+    $("grammar-stage").addEventListener("change", filterCatalog);
+    $("grammar-resume").addEventListener("click", () => {
+      const id = resumeTarget().id;
+      if (location.hash === `#${id}`) { resetFilters(); renderLesson(); }
+      else location.hash = id;
+      $("grammar-lesson").scrollIntoView({ block: "start", behavior: "smooth" });
+    });
     $("grammar-clear-search").addEventListener("click", () => {
       resetFilters();
       filterCatalog();
@@ -222,10 +280,15 @@
     $("grammar-lesson-select").addEventListener("change", (event) => {
       location.hash = event.target.value;
       $("grammar-index").open = false;
+      $("grammar-lesson").scrollIntoView({ block: "start" });
     });
+    for (const id of ["grammar-lesson-route", "grammar-prerequisites"])
+      $(id).addEventListener("click", event => {
+        if (event.target.closest("a")) $("grammar-lesson").scrollIntoView({ block: "start" });
+      });
     function selectTopic() {
       const slug = location.hash.slice(1);
-      current = lessons.find((lesson) => lesson.id === slug) || lessons[0];
+      current = lessons.find((lesson) => lesson.id === slug) || resumeTarget();
       if (!matches().includes(current)) resetFilters();
       renderLesson();
     }

@@ -666,7 +666,13 @@
       ? require("./grammar-syntax.js")
       : window.ArabicGrammarSyntax;
   lessons.push(...syntax.lessons);
-  const api = { lessons, sunLetters, moonLetters, basicVerbs };
+  const path =
+    typeof module !== "undefined" && module.exports
+      ? require("./grammar-path-data.js")
+      : window.GrammarPathData;
+  lessons.push(...path.lessons);
+  path.arrange(lessons);
+  const api = { lessons, sunLetters, moonLetters, basicVerbs, stages: path.stages };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else window.ArabicGrammarData = api;
 })();

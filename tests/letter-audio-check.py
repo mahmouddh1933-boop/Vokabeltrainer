@@ -15,7 +15,9 @@ youth_clips = sorted((root/'audio/youth').glob('*.mp3'))
 assert len(youth_clips) == len(json.loads((root/'audio/youth-manifest.json').read_text())['clips'])
 part_one_clips = sorted((root/'audio/book-youth-two-part-one').glob('*.mp3'))
 assert len(part_one_clips) == len(json.loads((root/'audio/book-youth-two-part-one-manifest.json').read_text())['clips'])
-clips = letter_clips + practice_clips + book_clips + youth_clips + part_one_clips
+related_clips = sorted((root/'audio/letter-related').glob('*.mp3'))
+assert len(related_clips) == 11
+clips = letter_clips + practice_clips + book_clips + youth_clips + part_one_clips + related_clips
 for clip in clips:
     duration = float(subprocess.check_output([
         'ffprobe', '-v', 'error', '-show_entries', 'format=duration',

@@ -165,7 +165,7 @@ Gemeinsame Buchstabendaten und Audiodateizuordnung: `js/letter-data.js`. Aufgabe
 
 ### قواعد العربية · Grammatik
 
-`grammar.html` bietet 30 Lektionen mit deutsch-arabischem Sprachwechsel und insgesamt 380 Übungsfragen. Die bisherigen 20 Lektionen enthalten je 12 Fragen; die neuen Themen haben je 12, das Präsens 24 sowie Perfekt und Imperativ je 16 Fragen. Fünf Grundlagenthemen sind:
+`grammar.html` bietet 37 Lektionen in vier Lernstufen mit deutsch-arabischem Sprachwechsel und insgesamt 464 Übungsfragen. Die bisherigen 20 Lektionen enthalten je 12 Fragen; die neuen Themen haben je 12, das Präsens 24 sowie Perfekt und Imperativ je 16 Fragen. Fünf Grundlagenthemen sind:
 
 - `#sun-moon`: Sonnen- und Mondbuchstaben, vollständige Buchstabenlisten und Aussprachebeispiele.
 - `#pronouns`: selbstständige Personalpronomen, Dualformen und angehängte Possessivpronomen.
@@ -238,7 +238,7 @@ python3 tests/book-print-smoke.py
 python3 tests/letter-audio-check.py
 ```
 
-Die Tests prüfen alle 144 Konjugationstabellen der 48 Verben, Suche, Längenfilter und Imperativübungen sowie alle 380 Grammatikfragen, Themenfilter, Antworterklärungen, Rücknavigation, Zurücksetzen und Sprachwahl, Wortlisten, Lernkarten, einen vollständig beantworteten Multiple-Choice-Test, persistierte Ergebnisse, Statistiken, Excel-Import, den Sprachwechsel in beide Richtungen, mobile Navigation und die Lernseiten bei unterschiedlichen Bildschirmbreiten.
+Die Tests prüfen alle 144 Konjugationstabellen der 48 Verben, Suche, Längenfilter und Imperativübungen sowie alle 464 Grammatikfragen, Themenfilter, Antworterklärungen, Rücknavigation, Zurücksetzen und Sprachwahl, Wortlisten, Lernkarten, einen vollständig beantworteten Multiple-Choice-Test, persistierte Ergebnisse, Statistiken, Excel-Import, den Sprachwechsel in beide Richtungen, mobile Navigation und die Lernseiten bei unterschiedlichen Bildschirmbreiten.
 
 Excel-Import lädt XLSX 0.18.5 über `cdn.jsdelivr.net`. Wenn der Testbrowser den Cloud-HTTPS-Proxy nicht kennt, kann ausschließlich für den Funktionstest dieselbe Bibliothek mit aktiver TLS-Prüfung heruntergeladen und lokal bereitgestellt werden:
 
@@ -278,3 +278,9 @@ Die Hintergrundillustration ist stark abgeblendet, nicht anklickbar und vom Lese
 Auch die inneren Übungs- und Lesekarten tragen dezente Olivenzweige auf warmem Papier: Buchstabenformen, Satzbau, Jugendbuch-Aufgaben und Grammatik. `olive-card-branch.svg` liegt als CSS-Hintergrund direkt in diesen Flächen, damit die weißen Karten die Dekoration nicht verdecken. Die Zweige passen sich kleinen Bildschirmen an; Antwortzustände, Bedienung und Druckvorlagen bleiben unverändert.
 
 `python tests/olive-theme-smoke.py` prüft die neue Identität, die erste Auswahl nach der Sprache, alle drei Hintergründe, Fokusführung, Speicherung, verweigerten Speicher, ältere DOM-Methoden, Sprachwechsel, unveränderte Lernkarten und Einheiten sowie die Druckansicht. `--base-url http://127.0.0.1:8001 --portable` prüft dieselben Abläufe aus der entpackten ZIP bei blockierten separaten JS-/CSS-Dateien. Die Vorschau wurde für 320 bis 1440 Pixel und Touch-Bedienung geprüft; ein physisches Android-Gerät wurde nicht verwendet.
+
+## Lernpfad, verwandte Schriftzeichen und kleine Wortbilder
+
+Die Grammatik ist nach Voraussetzungen in Einstieg, Satzbau, Ausbau und Vertiefung geordnet. Sieben ergänzende Lektionen behandeln Kasusgrundlagen, Subjekt/Objekt, Ḥāl, Tamyīz, Tā-Endungen, Alif-Endungen und Hamza-Sonderfälle. Position und Antworten bleiben beim Wiederöffnen erhalten; diese Daten liegen im bereits synchronisierten Lernfortschritt. Eine Lektion gilt bei vollständig beantworteten Fragen und mindestens 80 % richtigen Antworten als beherrscht. Alle Themen bleiben frei wählbar. [Reihenfolge und Grenzen der allgemeinen Lehrwerksvergleichung](docs/GRAMMAR-LEARNING-PATH.md).
+
+Beim Alif erscheinen acht verwandte Hamza-/Alif-Schreibungen und beim Tā drei Endzeichen mit farbigen Beispielen und elf mitgelieferten Audioaufnahmen. Die Grundalphabettests bleiben bei 28 Buchstaben. Auf der deutschen Rückseite ausgewählter Lernkarten erscheinen 112 lokale Mini-SVGs; zusammen etwa 34 KB. Nicht eindeutig bebilderbare Begriffe bleiben textlich. `python3 tools/build-vocab-pictures.py` erzeugt die Bilder und die Zuordnung zu exakten arabisch-deutschen Wortpaaren.

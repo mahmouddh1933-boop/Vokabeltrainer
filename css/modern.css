@@ -2441,3 +2441,6 @@ html[dir="rtl"] .tool-link::after {
   background: #f7f3fb;
   border-color: #9d81b3;
 }
+.vocab-back-content{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;max-width:100%;direction:ltr}
+.vocab-picture{width:96px;height:80px;object-fit:contain;flex:0 0 auto;border-radius:16px}
+@media(max-width:500px){.vocab-back-content{gap:.65rem}.vocab-picture{width:84px;height:70px}}

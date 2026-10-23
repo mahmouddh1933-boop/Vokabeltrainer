@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>تعلّم الحروف العربية - حروف من الزيتون</title>
     <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
-    <link rel="stylesheet" href="css/letters.css?v=71fa58343459" />
+    <link rel="stylesheet" href="css/letters.css?v=46d148210671" />
     <script src="js/storage.js?v=234b995827cd" defer></script>
     <script src="js/firebase-config.js?v=bcb6b5390ad9" defer></script>
     <script src="js/auth-session.js?v=e80b2ec59f82" defer></script>
     <script src="js/app.js?v=6472f6c0097b" defer></script>
     <script src="js/letter-data.js?v=dbdd777581df" defer></script>
+    <script src="js/letter-related-data.js?v=373477f32032" defer></script>
     <script src="js/pages/letters-audio.js?v=1e1d310b6549" defer></script>
     <script src="js/letter-examples.js?v=13e985f53de1" defer></script>
     <script src="js/letter-focused-data.js?v=1267f769a091" defer></script>
     <script src="js/pages/letters-learning.js?v=4d07193d27ec" defer></script>
     <script src="js/pages/letters-enhanced.js?v=c7f9030ac01a" defer></script>
     <script src="js/pages/letters-focused.js?v=dc9b1cd7f805" defer></script>
+    <script src="js/pages/letters-related.js?v=3ce35624ccbb" defer></script>
     <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
     <script src="data/vocab_catalog_labels.js?v=77de3e826c87" defer></script>
     <script src="js/interface-languages.js?v=d233aae47963" defer></script>
     <script src="js/tanwin-display.js?v=97a12d8b8572" defer></script>
-    <link rel="stylesheet" href="css/modern.css?v=f00c5a8bafa7" />
+    <link rel="stylesheet" href="css/modern.css?v=8a75138498b6" />
     <link rel="stylesheet" href="css/letters-focused.css?v=0b6a0012f8ea" />
     <link rel="stylesheet" href="css/practice.css?v=e55c73e03b36" />
     <script src="js/design.js?v=8330c16fe2cc" defer></script>
@@ -109,6 +111,11 @@
         aria-live="polite"
       ></p>
       <section class="letter-extras" aria-label="Letter learning activities">
+        <section id="letter-related" class="letter-related" aria-labelledby="letter-related-title" hidden>
+          <h2 id="letter-related-title"></h2><p id="letter-related-intro"></p>
+          <div id="letter-related-cards" class="letter-related-cards"></div>
+          <nav id="letter-related-links" aria-label="دروس مرتبطة / Verwandte Lektionen"></nav>
+        </section>
         <h2 data-i18n="harakat">الحركات والنطق</h2>
         <div id="harakat-row" class="harakat-row"></div>
         <p id="sukun-help">

@@ -37,3 +37,7 @@ The complete download now includes **660 MP3 files**. All audio folders must rem
 All added clips were fully decoded with FFmpeg and checked for audible signal. Browser tests exercise playback with external requests blocked; they do not replace a native speaker's pronunciation review or a test on a physical Android phone. These are synthetic voices.
 
 The complete download now includes **794 MP3 files**. Extract all audio folders together with the HTML files.
+
+## Related Hamza, Alif and Tā spellings
+
+`audio/letter-related/` adds **11 synthetic MP3 samples** for the Alif and Tā supplements: أَسَدٌ، إِبْرَةٌ، آدَمُ، بَابٌ، مُؤْمِنٌ، بِئْرٌ، مَاءٌ، فَتًى، بَيْتٌ، مَدْرَسَةٌ، كُرَةٌ. `letter-related-manifest.json` records each vocalized input, path and SHA-256 hash. Generated on 2026-10-23 with the same Arabic Google Translate TTS endpoint and `ttsslow=1`, over verified HTTPS; every file was decoded and checked for audible signal. They are synthetic voices without human phonetic acceptance. `ArabicLetterRelated.audio` extends the existing local letter playback map. The complete release now contains **805 MP3s**.
