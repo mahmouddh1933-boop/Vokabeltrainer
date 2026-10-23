@@ -26,13 +26,28 @@
   window.JisrStorage.ready(() => {
     const page = location.pathname.split("/").pop() || "index.html";
     const isHome = page === "index.html";
-    const nav = window.LearningRoute.stages.map((s) => [
+    const nav = [
+      ...window.LearningRoute.stages,
+      { id: "exams", href: "exams.html", ar: "الاختبارات", de: "Tests" },
+      {
+        id: "placement",
+        href: "placement.html",
+        ar: "تحديد المستوى",
+        de: "Einstufung",
+      },
+    ].map((s) => [
       s.href,
-      s.id === "letters" ? "letters" : "book",
+      s.id === "letters"
+        ? "letters"
+        : ["exams", "placement"].includes(s.id)
+          ? "check"
+          : "book",
       s.de,
       s.ar,
     ]);
-    const activeHref = window.LearningRoute.stage?.href;
+    const activeHref = ["exams.html", "placement.html"].includes(page)
+      ? page
+      : window.LearningRoute.stage?.href;
     const sidebar = document.createElement("aside");
     sidebar.className = "app-sidebar";
     sidebar.id = "app-sidebar";

@@ -22,7 +22,7 @@ with sync_playwright() as p:
    for width in [320,390,768,1440]:
     page.set_viewport_size({'width':width,'height':900});page.wait_for_timeout(220);assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),(page.url,lang,width)
   page.set_viewport_size({'width':390,'height':900});language('ar');page.wait_for_timeout(300)
- expected=['الحروف وتدريباتها','القراءة والهجاء','المفردات','تكوين الجمل','قصص قصيرة','كتب ونصوص وتمارين','القواعد والإملاء']
+ expected=['الحروف وتدريباتها','القراءة والهجاء','المفردات','تكوين الجمل','قصص قصيرة','كتب ونصوص وتمارين','القواعد والإملاء','الاختبارات','تحديد المستوى']
  go('index');assert page.locator('.app-sidebar nav a').all_text_contents()==expected
  assert page.locator('.sidebar-credit').inner_text()=='إعداد الأستاذ محمود بركات';assert page.locator('#overall-learning-path li').count()==7
  page.locator('.route-step>button').nth(0).tap();page.reload();assert page.locator('.route-step>button').nth(0).get_attribute('aria-pressed')=='true';layout()

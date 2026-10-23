@@ -11,10 +11,10 @@
     <title>حروف من الزيتون · الاختبارات</title>
     <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
     <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
-    <link rel="stylesheet" href="css/modern.css?v=8a75138498b6" />
+    <link rel="stylesheet" href="css/modern.css?v=12f689bc07a2" />
     <link rel="stylesheet" href="css/verbs.css?v=7f25f6097677" />
     <link rel="stylesheet" href="css/grammar.css?v=bbe72b1d11bd" />
-    <link rel="stylesheet" href="css/practice.css?v=e55c73e03b36" />
+    <link rel="stylesheet" href="css/practice.css?v=73ad5016d723" />
 
     <script src="js/storage.js?v=234b995827cd" defer></script>
     <script src="js/firebase-config.js?v=bcb6b5390ad9" defer></script>
@@ -25,7 +25,7 @@
     <script src="js/interface-languages.js?v=d233aae47963" defer></script>
     <script src="js/tanwin-display.js?v=97a12d8b8572" defer></script>
     <script src="js/learning-path.js?v=12830d173902" defer></script>
-    <script src="js/design.js?v=2e74a33c644f" defer></script>
+    <script src="js/design.js?v=ff7677775afe" defer></script>
     <meta name="application-name" content="حروف من الزيتون" />
     <link
       rel="icon"
@@ -37,11 +37,11 @@
     <link rel="stylesheet" href="css/auth.css?v=2b57d96c4eaf" />
 
     <link rel="stylesheet" href="css/learning-route.css?v=9d7793050fac" />
-    <link rel="stylesheet" href="css/teacher-exams.css?v=95e58e2bee13" />
+    <link rel="stylesheet" href="css/teacher-exams.css?v=cf5cb88057fa" />
     <script src="js/practice-core.js?v=81b88bc2a7c0" defer></script>
-    <script src="js/teacher-exams-data.js?v=ab8c517d709a" defer></script>
-    <script src="js/teacher-exams-core.js?v=e756c719ff40" defer></script>
-    <script src="js/pages/teacher-exams.js?v=e03a342721cd" defer></script>
+    <script src="js/teacher-exams-data.js?v=775b9924ac81" defer></script>
+    <script src="js/teacher-exams-core.js?v=fd1f51724ec5" defer></script>
+    <script src="js/pages/teacher-exams.js?v=5146c6dbab8f" defer></script>
   </head>
   <body>
     <main class="container practice-page" id="main-content">
@@ -107,8 +107,8 @@
             اختبارات الأستاذ محمود بركات ونماذج مشابهة
           </h2>
           <p
-            data-ar="١٠ ملفات أصلية تضم ٢٦ صفحة، و١٠ نماذج جديدة تضم ٣٨٩ سؤالًا ومهمة. الأصل للعرض والتنزيل كما أُرسل، والنموذج المشابه تفاعلي وقابل للطباعة."
-            data-de="10 unveränderte Original-PDFs mit 26 Seiten und 10 neue interaktive, druckbare Tests mit 389 Aufgaben."
+            data-ar="١٠ اختبارات أصلية أُعيدت كتابتها لتُحل هنا داخل الموقع، و١٠ نماذج مشابهة. اختر «حل الاختبار الأصلي» أو «تدرب على نموذج مشابه»."
+            data-de="10 vollständig übertragene Originaltests und 10 ähnliche Tests, alle direkt auf dieser Seite lösbar. Wähle „Originaltest lösen“ oder „Ähnlichen Test üben“."
           >
             ١٠ ملفات أصلية تضم ٢٦ صفحة، و١٠ نماذج جديدة تضم ٣٨٩ سؤالًا ومهمة.
             الأصل للعرض والتنزيل كما أُرسل، والنموذج المشابه تفاعلي وقابل
@@ -134,29 +134,6 @@
           <div id="exam-history" class="practice-actions"></div>
         </section>
       </div>
-      <section id="exam-original" hidden>
-        <div class="exam-toolbar">
-          <button
-            id="exam-original-back"
-            class="practice-button"
-            type="button"
-            data-ar="العودة إلى الاختبارات"
-            data-de="Zur Testauswahl"
-          >
-            العودة إلى الاختبارات
-          </button>
-        </div>
-        <h2 id="exam-original-title" tabindex="-1"></h2>
-        <p
-          data-ar="الملف الأصلي محفوظ دون تعديل. اضغط الصفحة لتكبيرها، أو افتح PDF للطباعة بجودته الأصلية."
-          data-de="Unveränderte Originaldatei. Seite zum Vergrößern anklicken oder das PDF in Originalqualität öffnen und drucken."
-        >
-          الملف الأصلي محفوظ دون تعديل. اضغط الصفحة لتكبيرها، أو افتح PDF
-          للطباعة بجودته الأصلية.
-        </p>
-        <div class="practice-actions" id="exam-original-actions"></div>
-        <div id="exam-pages"></div>
-      </section>
       <section id="exam-session" hidden>
         <h2 id="exam-title" tabindex="-1"></h2>
         <p

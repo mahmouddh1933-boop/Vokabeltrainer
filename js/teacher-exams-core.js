@@ -59,7 +59,8 @@
         )
       );
     }
-    if (task.kind === "choice") return value === task.answer;
+    if (task.kind === "choice")
+      return [task.answer, ...(task.accepted || [])].includes(value);
     return [task.answer, ...(task.accepted || [])].some((a) =>
       matches(value, a),
     );

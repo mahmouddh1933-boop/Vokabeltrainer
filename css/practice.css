@@ -106,12 +106,33 @@
   color: #a4252c;
 }
 .practice-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-height: 48px;
+  line-height: 1.65;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  vertical-align: middle;
   border: 1px solid #cedbc8;
   background: #f1f5e9;
   color: #284d36;
   border-radius: 14px;
   padding: 12px 22px;
   font-weight: 600;
+}
+.practice-button[hidden] {
+  display: none !important;
+}
+.practice-page > .home-panel {
+  margin-block: 24px;
+}
+.home-panel > .practice-button {
+  margin-block: 8px;
 }
 .practice-actions {
   display: flex;

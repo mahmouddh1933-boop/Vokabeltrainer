@@ -8,15 +8,15 @@ const root = path.resolve(__dirname, '..'), D = C.data;
 const all = D.exams.flatMap(C.tasks);
 const strip = text => text.normalize('NFC').replace(/[\u064b-\u0652\u0670]/g,'');
 test('All 10 uploaded originals retain exact bytes, all 26 pages have previews, and every page has new exercise coverage', () => {
- assert.equal(D.originals.length,10); assert.equal(D.exams.length,10); assert.equal(all.length,389);
+ assert.equal(D.originals.length,10); assert.equal(D.exams.length,20); assert.equal(all.length,799);
  assert.equal(D.originals.reduce((n,o)=>n+o.pages,0),26);
- assert.equal(new Set(all.map(q=>q.id)).size,389);
+ assert.equal(new Set(all.map(q=>q.id)).size,799);
  for (const o of D.originals) {
   const bytes=fs.readFileSync(path.join(root,o.pdf)); assert.equal(bytes.length,o.bytes);
   assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),o.sha256);
   assert.equal(o.previews.length,o.pages); assert.equal(o.coverage.length,o.pages);
   for(const image of o.previews) assert.ok(fs.statSync(path.join(root,image)).size>1000);
-  const e=D.exams.find(e=>e.source===o.id);assert.ok(e);
+  const e=D.exams.find(e=>e.source===o.id && e.category==='original');assert.ok(e);assert.ok(D.exams.some(e=>e.source===o.id && e.category==='similar'));
   assert.deepEqual([...new Set(e.sections.flatMap(s=>s.sourcePages))].sort(),Array.from({length:o.pages},(_,i)=>i+1));
  }
 });
@@ -31,7 +31,7 @@ test('Every closed answer is solvable and incorrect or blank answers are rejecte
    for(const alt of q.acceptedOrders||[])assert.equal(C.correct(q,alt),true,q.id);
   }else{
    assert.equal(C.correct(q,q.answer),true,q.id);assert.equal(C.correct(q,'جواب غير صحيح'),false,q.id);
-   if(q.kind==='choice'){assert.equal(new Set(q.options).size,q.options.length);for(const wrong of q.options.filter(o=>o!==q.answer))assert.equal(C.correct(q,wrong),false);}
+   if(q.kind==='choice'){assert.equal(new Set(q.options).size,q.options.length);for(const wrong of q.options.filter(o=>o!==q.answer && !(q.accepted||[]).includes(o)))assert.equal(C.correct(q,wrong),false);}
    else assert.equal(C.correct(q,strip(q.answer)),true,q.id);
   }
  }
@@ -80,7 +80,7 @@ test('Draft and result updates preserve placement, vocabulary, reading, learning
 test('All eight dictation files and two writing illustrations are local; regeneration is deterministic',()=>{
  const dictation=all.filter(q=>q.kind==='dictation');assert.equal(dictation.length,8);
  for(const q of dictation)assert.ok(fs.statSync(path.join(root,q.audio)).size>500);
- const images=all.flatMap(q=>q.images||[]);assert.equal(images.length,2);for(const p of images)assert.ok(fs.existsSync(path.join(root,p)));
+ const images=all.flatMap(q=>q.images||[]);assert.equal(images.length,4);for(const p of images)assert.ok(fs.existsSync(path.join(root,p)));
  assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root,'data/exams/bank.json'))),D);
 });
 test('The existing cloud merge retains separate exam drafts from two devices and a concurrent placement result',()=>{
@@ -91,4 +91,21 @@ test('The existing cloud merge retains separate exam drafts from two devices and
  const merged=JSON.parse(sync.mergeValue('learningStats',{base:JSON.stringify(base),value:JSON.stringify(local)},JSON.stringify(remote)));
  assert.deepEqual(Object.keys(merged.teacherExamsV1.attempts).sort(),['device-a','device-b']);
  assert.deepEqual(merged.placementV1,remote.placementV1);assert.equal(merged.totalTests,4);
+});
+test('Original exams preserve source identities, full readings and exercise families instead of substituting similar models',()=>{
+ const originals=D.exams.filter(e=>e.category==='original'), similar=D.exams.filter(e=>e.category==='similar');
+ assert.equal(originals.length,10);assert.equal(similar.length,10);
+ assert.equal(originals.flatMap(C.tasks).length,410);assert.equal(similar.flatMap(C.tasks).length,389);
+ assert.match(originals[0].sections[0].passage,/أَيُّوبُ/);assert.match(originals[0].sections[0].passage,/كْرِيفِلْد/);
+ assert.match(originals[1].sections.find(s=>s.title==='أقرأ وأجيب').passage,/سَلْمَى/);
+ assert.match(originals[2].sections[0].passage,/لُبْنَى/);assert.match(originals[2].sections[1].passage,/نَدَى/);
+ assert.match(originals[3].sections[0].passage,/سَامِي/);assert.match(originals[5].sections[0].passage,/إِسْطَنْبُولَ/);
+ assert.match(originals[6].sections[1].passage,/أَمْجَدُ/);assert.match(originals[9].sections[1].passage,/صَفْحَتَيْنِ/);
+ assert.ok(originals[7].sections.some(s=>s.passage.includes('رَامِي')));
+ assert.equal(C.tasks(originals[8]).filter(q=>q.images).length,1);
+ const gaps=originals[1].sections.find(s=>s.title==='أكمل بالحاء أو الجيم').tasks;
+ assert.ok(C.correct(gaps[2],'ح')&&C.correct(gaps[2],'ج'));
+ assert.ok(C.tasks(originals[3]).some(q=>q.prompt.includes('فِعْلُ أَمْرٍ')&&q.answer.includes('غَيْرُ مَوْجُودٍ')));
+ const dictation=originals[4].sections.find(s=>s.title==='إملاء المعلم');assert.equal(dictation.tasks[0].kind,'manual');assert.match(dictation.note,/لم تتضمن/);
+ assert.equal(D.version,'2026-10-23.1'); // Existing model attempts remain compatible.
 });

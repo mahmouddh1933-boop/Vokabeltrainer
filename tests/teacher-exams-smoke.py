@@ -1,4 +1,4 @@
-"""Uploaded originals and all 389 new tasks through browser controls; reusable on the inline ZIP."""
+"""All 410 transcribed original tasks and 389 similar tasks through browser controls; reusable on the inline ZIP."""
 import argparse,hashlib
 from playwright.sync_api import sync_playwright,expect
 parser=argparse.ArgumentParser();parser.add_argument('--base-url',default='http://127.0.0.1:8026');parser.add_argument('--inline',action='store_true');args=parser.parse_args();base=args.base_url.rstrip('/')
@@ -20,21 +20,17 @@ with sync_playwright() as p:
     page.set_viewport_size({'width':width,'height':900});page.wait_for_timeout(80)
     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),(language,width)
   page.set_viewport_size({'width':390,'height':900});page.locator('#app-language-select').select_option('ar')
- page.goto(base+'/index.html');page.locator('#teacher-exams-entry').click();expect(page.locator('.exam-card')).to_have_count(10);assert page.locator('.app-sidebar nav a').count()==7;layout()
+ page.goto(base+'/index.html');page.locator('#teacher-exams-entry').click();expect(page.locator('.exam-card')).to_have_count(10);assert page.locator('.app-sidebar nav a').count()==9;layout()
  data=page.evaluate('TeacherExamData');
- for source in data['originals']:
-  card=page.locator('.exam-card').nth(data['originals'].index(source));card.get_by_role('button',name='عرض الأصل',exact=True).click()
-  expect(page.locator('#exam-pages img')).to_have_count(source['pages'])
-  for img in page.locator('#exam-pages img').all():img.scroll_into_view_if_needed();expect(img).to_be_visible();img.evaluate('(im)=>im.decode()');assert img.evaluate('im=>im.naturalWidth')>500
-  with page.expect_download() as download:page.locator('#exam-original-actions a[download]').click()
-  f=download.value;assert f.suggested_filename==source['title'];assert hashlib.sha256(open(f.path(),'rb').read()).hexdigest()==source['sha256']
-  page.locator('#exam-original-back').click()
+ assert page.locator('#exam-catalog a[href$=".pdf"]').count()==0
+ assert page.locator('[data-start-exam^="paper-"]').count()==10
+ assert page.locator('[data-start-exam^="model-"]').count()==10
  page.evaluate("VocabApp.setJSON('learningStats',{totalTests:4,placementV1:{attempts:{sentinel:{}}},learningRouteV1:{lastStage:'reading'},phonicsV1:{prior:true}})")
  for i,e in enumerate(data['exams']):
-  page.locator('.exam-card').nth(i).get_by_role('button',name='ابدأ النموذج المشابه',exact=True).click();tasks=[q for s in e['sections'] for q in s['tasks']]
+  page.locator(f'[data-start-exam="{e["id"]}"]').click();tasks=[q for s in e['sections'] for q in s['tasks']]
   assert page.locator('.exam-task').count()==len(tasks);assert page.locator('.exam-feedback').count()==0;assert not page.locator('#exam-key').is_visible()
   if i in [0,4,8]:layout()
-  if i==4:
+  if e['id']=='model-05':
    for q in [q for q in tasks if q['kind']=='dictation']:
     old=page.evaluate('__ended');page.locator(f'[data-question="{q["id"]}"]').get_by_role('button',name='◖ استمع',exact=True).click();page.wait_for_function(f'__ended>{old}',timeout=15000)
    q=next(q for q in tasks if q['kind']=='dictation');page.locator(f'[data-question="{q["id"]}"]').get_by_role('button',name='تعذّر الصوت / إعادة إدراجه',exact=True).click();assert page.locator(f'#answer-{q["id"]}').is_disabled()
@@ -54,7 +50,7 @@ with sync_playwright() as p:
    if q['kind']=='dictation':assert q['answer'] not in page.locator('#exam-print .exam-print-task').nth(index).inner_text()
   page.emulate_media(media='print');assert page.locator('#exam-print').is_visible();assert not page.locator('#main-content').is_visible();page.emulate_media(media='screen');page.evaluate("dispatchEvent(new Event('afterprint'))")
   page.locator('#exam-submit').click();expect(page.locator('#exam-result')).to_be_visible();assert '١٠٠' in page.locator('#exam-result').inner_text() or '100' in page.locator('#exam-result').inner_text();assert page.locator('.exam-feedback').count()==len(tasks)
-  if i==4:assert '1 مستبعدة' in page.locator('#exam-result').inner_text()
+  if e['id']=='model-05':assert '1 مستبعدة' in page.locator('#exam-result').inner_text()
   for input in page.locator('#exam-questions input,#exam-questions textarea').all():assert input.is_disabled()
   page.locator('#exam-key').click();assert 'دليل الإجابات' in page.locator('#exam-print').inner_text();page.evaluate("dispatchEvent(new Event('afterprint'))")
   page.locator('#exam-back').click()
@@ -62,8 +58,8 @@ with sync_playwright() as p:
  assert page.locator('#exam-history button').count()==10
  stats=page.evaluate('VocabApp.getStats()');assert stats['totalTests']==4 and stats['phonicsV1']['prior'] and 'sentinel' in stats['placementV1']['attempts'];assert stats['learningRouteV1']['lastStage']=='reading'
  page.locator('#exam-history button').first.click();assert page.locator('#exam-result').is_visible();page.reload();assert page.locator('#exam-result').is_visible();layout()
- page.goto(base+'/test.html');assert page.locator('.test-button-group button').count()==6;assert page.locator('a[href="exams.html"]').count()==1
- page.goto(base+'/placement.html');expect(page.locator('.placement-test-card')).to_have_count(5);assert page.locator('a[href="exams.html"]').count()==1
+ page.goto(base+'/test.html');assert page.locator('.test-button-group button').count()==6;assert page.locator('main a[href="exams.html"]').count()==1
+ page.goto(base+'/placement.html');expect(page.locator('.placement-test-card')).to_have_count(5);assert page.locator('main a[href="exams.html"]').count()==1
  assert not errors,errors;assert not failed,failed;assert not external,external
- print('10 PDFs + 26 previews, 389 tasks, 8 real audio playbacks, drafts/results, print, original hashes, AR/DE/mobile and existing test menus passed.')
+ print('20 interactive exams, 799 tasks, 8 real audio playbacks, drafts/results, print, original hashes, AR/DE/mobile and existing test menus passed.')
  b.close()

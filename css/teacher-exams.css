@@ -15,6 +15,21 @@
   font-weight: 700;
   color: #45623f;
 }
+.exam-kind {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 12px;
+  line-height: 1.8;
+  color: #526b45;
+}
+.exam-source-note {
+  padding: 14px 18px;
+  border-inline-start: 3px solid #9ba76b;
+  background: #f2f4e8;
+  border-radius: 12px;
+  line-height: 1.9;
+}
 .exam-toolbar {
   display: flex;
   flex-wrap: wrap;

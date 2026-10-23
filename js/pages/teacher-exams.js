@@ -6,8 +6,7 @@
       { el, button } = window.Practice;
     const $ = (id) => document.getElementById(id);
     const t = (ar, de) => (window.AppLanguage?.get() === "de" ? de : ar);
-    let attempt = null,
-      original = null;
+    let attempt = null;
     const audio = $("exam-player");
     function stop() {
       audio.onerror = null;
@@ -38,7 +37,6 @@
     function selectExam(id, saved) {
       if (!D.exams.some((e) => e.id === id)) return;
       stop();
-      original = null;
       attempt = saved
         ? structuredClone(saved)
         : {
@@ -64,40 +62,37 @@
       const host = $("exam-catalog");
       host.replaceChildren();
       for (const source of D.originals) {
-        const exam = D.exams.find((e) => e.source === source.id),
+        const exam = D.exams.find(
+            (e) => e.source === source.id && e.category === "original",
+          ),
+          similar = D.exams.find(
+            (e) => e.source === source.id && e.category === "similar",
+          ),
           card = el("article", undefined, "home-panel exam-card");
         card.append(
-          el("h2", source.title),
+          el("h2", exam.title),
           el("p", source.topic, "exam-topic"),
           el(
             "p",
             t(
-              `${source.pages} صفحات أصلية · ${C.tasks(exam).length} سؤالًا ومهمة في النموذج الجديد`,
-              `${source.pages} Originalseiten · ${C.tasks(exam).length} neue Aufgaben`,
+              `${C.tasks(exam).length} تمرينًا في الاختبار الأصلي · ${C.tasks(similar).length} في النموذج المشابه`,
+              `${C.tasks(exam).length} Aufgaben im Originaltest · ${C.tasks(similar).length} im ähnlichen Test`,
             ),
           ),
         );
         const actions = el("div", undefined, "practice-actions");
-        actions.append(
-          button(t("عرض الأصل", "Original ansehen"), () => {
-            original = source;
-            attempt = null;
-            history.replaceState(null, "", `#original=${source.id}`);
-            render();
-            $("exam-original-title").focus();
-            $("exam-original").scrollIntoView();
-          }),
-          link(
-            t("تنزيل PDF الأصلي", "Original-PDF herunterladen"),
-            source.pdf,
-            source.title,
-          ),
-          button(
-            t("ابدأ النموذج المشابه", "Ähnlichen Test starten"),
-            () => selectExam(exam.id),
-            "practice-button primary-action",
-          ),
+        const originalButton = button(
+          t("حل الاختبار الأصلي", "Originaltest lösen"),
+          () => selectExam(exam.id),
+          "practice-button primary-action",
         );
+        originalButton.dataset.startExam = exam.id;
+        const similarButton = button(
+          t("تدرب على نموذج مشابه", "Ähnlichen Test üben"),
+          () => selectExam(similar.id),
+        );
+        similarButton.dataset.startExam = similar.id;
+        actions.append(originalButton, similarButton);
         card.append(actions);
         host.append(card);
       }
@@ -131,55 +126,6 @@
           ),
         );
       }
-    }
-    function renderOriginal() {
-      $("exam-original-title").textContent = original.title;
-      const actions = $("exam-original-actions");
-      actions.replaceChildren(
-        link(
-          t("فتح PDF / طباعة الأصل", "PDF öffnen / Original drucken"),
-          original.pdf,
-        ),
-        link(
-          t("تنزيل الملف", "Datei herunterladen"),
-          original.pdf,
-          original.title,
-        ),
-      );
-      const pages = $("exam-pages");
-      pages.replaceChildren();
-      original.previews.forEach((path, i) => {
-        const figure = el("figure"),
-          a = el("a");
-        a.href = path;
-        a.target = "_blank";
-        a.rel = "noopener";
-        a.setAttribute(
-          "aria-label",
-          t(`تكبير الصفحة ${i + 1}`, `Seite ${i + 1} vergrößern`),
-        );
-        const img = el("img");
-        img.src = path;
-        img.alt = t(
-          `الصفحة ${i + 1} من ${original.title}`,
-          `Seite ${i + 1}: ${original.title}`,
-        );
-        img.loading = "lazy";
-        img.width = 952;
-        img.height = 1348;
-        a.append(img);
-        figure.append(
-          a,
-          el(
-            "figcaption",
-            t(
-              `الصفحة ${i + 1} من ${original.pages} · اضغط للتكبير`,
-              `Seite ${i + 1} von ${original.pages} · zum Vergrößern anklicken`,
-            ),
-          ),
-        );
-        pages.append(figure);
-      });
     }
     function feedback(task, node) {
       if (attempt.status !== "finished") return;
@@ -376,6 +322,18 @@
       const e = D.exams.find((e) => e.id === attempt.examId),
         finished = attempt.status === "finished";
       $("exam-title").textContent = e.title;
+      $("exam-title").append(
+        el(
+          "small",
+          e.category === "original"
+            ? t(
+                "الاختبار الأصلي — حل داخل الموقع",
+                "Originaltest · direkt auf der Seite lösen",
+              )
+            : t("نموذج مشابه للتدريب", "Ähnlicher Übungstest"),
+          "exam-kind",
+        ),
+      );
       $("exam-submit").hidden = finished;
       $("exam-key").hidden = !finished;
       const host = $("exam-questions");
@@ -388,6 +346,8 @@
         panel.id = `exam-section-${i}`;
         nav.append(link(`${i + 1}. ${section.title}`, `#${panel.id}`));
         panel.append(el("h3", section.title));
+        if (section.note)
+          panel.append(el("p", section.note, "exam-source-note"));
         if (section.passage) {
           const passage = el("p", section.passage, "exam-passage");
           passage.lang = "ar";
@@ -459,6 +419,7 @@
       let index = 0;
       for (const s of e.sections) {
         paper.append(el("h2", s.title));
+        if (s.note) paper.append(el("p", s.note));
         if (s.passage) paper.append(el("p", s.passage, "exam-passage"));
         for (const q of s.tasks) {
           const item = el("div", undefined, "exam-print-task");
@@ -502,24 +463,20 @@
       window.print();
     }
     function render() {
-      $("exam-catalog-panel").hidden = !!attempt || !!original;
+      $("exam-catalog-panel").hidden = !!attempt;
       $("exam-session").hidden = !attempt;
-      $("exam-original").hidden = !original;
       if (attempt) renderSession();
-      else if (original) renderOriginal();
       else catalog();
     }
     function back() {
       stop();
       attempt = null;
-      original = null;
       history.replaceState(null, "", location.pathname + location.search);
       render();
       $("exam-home-title").focus();
       window.scrollTo(0, 0);
     }
     $("exam-back").onclick = back;
-    $("exam-original-back").onclick = back;
     $("exam-blank").onclick = () => printExam(false);
     $("exam-key").onclick = () => printExam(true);
     window.addEventListener("afterprint", () =>
@@ -537,7 +494,21 @@
       D.exams.some((e) => e.id === prior.examId)
     )
       attempt = structuredClone(prior);
-    original = D.originals.find((o) => o.id === hash.get("original")) || null;
+    function openDirectLink() {
+      const query = new URLSearchParams(location.hash.slice(1));
+      const originalId = query.get("original"),
+        directId = query.get("exam");
+      const requested = D.exams.find(
+        (e) =>
+          e.id === directId ||
+          (originalId && e.source === originalId && e.category === "original"),
+      );
+      if (!requested) return false;
+      selectExam(requested.id);
+      return true;
+    }
+    window.addEventListener("hashchange", openDirectLink);
+    if (!attempt) openDirectLink();
     render();
     $("lesson-loading")?.remove();
   });

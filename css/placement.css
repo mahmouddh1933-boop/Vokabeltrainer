@@ -119,6 +119,22 @@
 #placement-results {
   line-height: 1.9;
 }
+#placement-recommendations,
+#placement-confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+#placement-recommendations h3 {
+  margin-block: 16px 0;
+}
+#placement-apply {
+  margin-block: 16px;
+}
+#placement-results > h3 {
+  margin-block: 24px 12px;
+}
 #placement-session {
   scroll-margin-top: 110px;
 }
