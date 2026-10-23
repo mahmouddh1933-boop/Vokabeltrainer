@@ -2,6 +2,12 @@
 :root {
   --olive-paper: #f6f2e6;
   --olive-scene-position: 0%;
+  --control-fill: #dce8ce;
+  --control-border: #70855e;
+  --control-ink: #254733;
+  --control-hover: #cbdcb8;
+  --control-primary: #35654a;
+  --control-primary-hover: #294f3b;
 }
 :root[data-learner-theme="girl"] {
   --olive-scene-position: 100%;
@@ -45,6 +51,142 @@ body.olive-app .container.home-container {
   border: 0;
   box-shadow: none;
 }
+/* Shared action palette. Keep the geometry of each exercise and its feedback states. */
+@media screen {
+  body.olive-app
+    :is(
+      button,
+      .practice-button,
+      .page-back-link,
+      .file-upload-label,
+      .route-stage-nav a,
+      .grammar-lesson-route a
+    ):not(
+      :where(
+        .letters-card,
+        .olive-profile-choice,
+        .ready-list-button,
+        .cefr-level-card,
+        .main-choice-button,
+        .menu-toggle,
+        .is-correct,
+        .is-wrong,
+        .correct,
+        .wrong,
+        .active,
+        .selected,
+        .selected-token,
+        [aria-pressed="true"]
+      )
+    ) {
+    background-color: var(--control-fill);
+    background-image: none;
+    border-color: var(--control-border);
+    color: var(--control-ink);
+  }
+  body.olive-app
+    :is(
+      button,
+      .practice-button,
+      .page-back-link,
+      .file-upload-label,
+      .route-stage-nav a,
+      .grammar-lesson-route a
+    ):not(
+      :where(
+        .letters-card,
+        .olive-profile-choice,
+        .ready-list-button,
+        .cefr-level-card,
+        .main-choice-button,
+        .menu-toggle,
+        .is-correct,
+        .is-wrong,
+        .correct,
+        .wrong,
+        .active,
+        .selected,
+        .selected-token,
+        [aria-pressed="true"]
+      )
+    ):hover:not(:disabled) {
+    background-color: var(--control-hover);
+    color: var(--control-ink);
+  }
+  body.olive-app
+    :is(
+      .primary-action,
+      .sound-play,
+      .file-upload-label,
+      #next-button,
+      #test-button,
+      #submit-test
+    ) {
+    background: var(--control-primary) !important;
+    color: #fff !important;
+    border-color: var(--control-primary) !important;
+  }
+  body.olive-app
+    :is(
+      .primary-action,
+      .sound-play,
+      .file-upload-label,
+      #next-button,
+      #test-button,
+      #submit-test
+    ):hover:not(:disabled) {
+    background: var(--control-primary-hover) !important;
+    border-color: var(--control-primary-hover) !important;
+  }
+  body.olive-app
+    :is(
+      button[aria-pressed="true"],
+      button.active,
+      button.selected,
+      .selected-token
+    ):not(
+      :where(
+        .letters-card,
+        .olive-profile-choice,
+        .cefr-level-card,
+        .is-correct,
+        .is-wrong
+      )
+    ) {
+    background-color: var(--control-primary);
+    border-color: var(--control-primary);
+    color: #fff;
+  }
+  body.olive-app .exam-option {
+    background-color: #edf2e5;
+    border-color: #9aaa89;
+  }
+  body.olive-app .exam-option:has(input:checked) {
+    background-color: var(--control-fill);
+    border-color: var(--control-primary);
+  }
+  body.olive-app .flashcard :is(.front, .back) {
+    flex-direction: column;
+    gap: 12px;
+    color: #254b38;
+    border: 1px solid #a6b795;
+    background: #f3f5e7 url("../images/brand/olive-card-branch.svg") left top /
+      135px 243px no-repeat;
+  }
+  body.olive-app .flashcard .back {
+    color: #234936;
+    background-color: #e4ecd6;
+    background-position: right bottom;
+  }
+}
+.vocab-number {
+  display: block;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 650;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+  color: inherit;
+}
 /* Decorate the learning surfaces themselves, including dynamically added tasks.
    Background images do not cover controls, intercept touches or change layout. */
 @media screen {
@@ -62,8 +204,12 @@ body.olive-app .container.home-container {
     background-image:
       url("../images/brand/olive-card-branch.svg"),
       url("../images/brand/olive-card-branch.svg");
-    background-position: left top, right bottom;
-    background-size: 170px 306px, 125px 225px;
+    background-position:
+      left top,
+      right bottom;
+    background-size:
+      170px 306px,
+      125px 225px;
     background-repeat: no-repeat;
   }
   .olive-app .youth-reading-row + .youth-reading-row {
@@ -84,7 +230,9 @@ body.olive-app .container.home-container {
         .book-task,
         .yt-passage
       ) {
-      background-size: 100px 180px, 80px 144px;
+      background-size:
+        100px 180px,
+        80px 144px;
     }
     .olive-app .youth-reading-row + .youth-reading-row {
       background-size: 65px 117px;

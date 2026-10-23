@@ -280,6 +280,7 @@
             ? t("أحسنت!", "Richtig!")
             : t("الإجابة الصحيحة:", "Richtige Antwort:"),
         ),
+        el("p", VocabApp.encouragement(result.correct)),
         highlight(el("span"), q.answer),
       );
       if (q.kind === "reading")

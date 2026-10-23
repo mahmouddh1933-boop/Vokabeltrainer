@@ -113,6 +113,7 @@
             ? t("أحسنت!", "Richtig!")
             : t("الإجابة الصحيحة:", "Richtige Antwort:"),
         ),
+        el("p", VocabApp.encouragement(answer === q.correct)),
         arabic(el("span", q.word)),
         el("p", P.bilingual(D.sounds.find((g) => g.id === q.group).tip)),
       );

@@ -213,6 +213,7 @@
         heading.textContent = right
           ? text("أحسنت! إجابة صحيحة.", "Richtig! Sehr gut.")
           : text("لنتعلّم من الإجابة.", "Lerne aus der Antwort.");
+        heading.textContent += " " + VocabApp.encouragement(right);
         const explanation = document.createElement("p");
         if (q.kind === "circle") {
           const found = answer.filter((i) => q.correct.includes(i)).length;

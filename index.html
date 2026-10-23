@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="css/modern.css?v=12f689bc07a2" />
     <link rel="stylesheet" href="css/verbs.css?v=7f25f6097677" />
     <link rel="stylesheet" href="css/grammar.css?v=bbe72b1d11bd" />
-    <link rel="stylesheet" href="css/practice.css?v=73ad5016d723" />
+    <link rel="stylesheet" href="css/practice.css?v=73cb20114e45" />
 
     <script src="js/storage.js?v=234b995827cd" defer></script>
     <script src="js/firebase-config.js?v=bcb6b5390ad9" defer></script>
     <script src="js/auth-session.js?v=e80b2ec59f82" defer></script>
-    <script src="js/app.js?v=266caa422c60" defer></script>
-    <script src="data/vocab_catalog_fallback.js?v=55e0976817d1" defer></script>
+    <script src="js/app.js?v=e542d6132360" defer></script>
+    <script src="data/vocab_catalog_fallback.js?v=eb9d535e311d" defer></script>
 
     <script src="data/vocab_catalog_labels.js?v=77de3e826c87" defer></script>
     <script src="js/interface-languages.js?v=d233aae47963" defer></script>
@@ -33,7 +33,7 @@
       href="images/brand/olive-symbol.svg"
       type="image/svg+xml"
     />
-    <link rel="stylesheet" href="css/olive-theme.css?v=4b4842e4a626" />
+    <link rel="stylesheet" href="css/olive-theme.css?v=2a69ab7dd182" />
     <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
     <link rel="stylesheet" href="css/auth.css?v=2b57d96c4eaf" />
     <script src="js/pages/route-home.js?v=89bf34be81ec" defer></script>
@@ -51,31 +51,6 @@
           </h1>
         </div>
       </header>
-      <section class="home-panel teacher-exams-entry"><h2 data-ar="الاختبارات" data-de="Tests">الاختبارات</h2><p data-ar="حل اختبارات الأستاذ محمود بركات ونماذج مشابهة داخل التطبيق، مع التصحيح وحفظ الإجابات." data-de="Originaltests und ähnliche Übungen direkt in der App lösen, korrigieren und speichern.">حل اختبارات الأستاذ محمود بركات ونماذج مشابهة داخل التطبيق، مع التصحيح وحفظ الإجابات.</p><a href="exams.html" class="practice-button primary-action" id="teacher-exams-entry" data-ar="افتح الاختبارات" data-de="Tests öffnen">افتح الاختبارات</a></section>
-      <section class="home-panel placement-entry">
-        <h2
-          data-ar="لست متأكدًا من أين تبدأ؟"
-          data-de="Du weißt noch nicht, wo du anfangen sollst?"
-        >
-          لست متأكدًا من أين تبدأ؟
-        </h2>
-        <p
-          data-ar="جرّب فحصًا قصيرًا، واحصل على ملف مهارات وروابط للدروس المناسبة."
-          data-de="Ein kurzer Check liefert ein Fertigkeitsprofil und passende Lektionen."
-        >
-          جرّب فحصًا قصيرًا، واحصل على ملف مهارات وروابط للدروس المناسبة.
-        </p>
-        <a
-          class="practice-button primary-action"
-          id="placement-entry"
-          href="placement.html"
-          data-ar="اختبارات تحديد المستوى"
-          data-de="Diagnostische Einstiegschecks"
-          >اختبارات تحديد المستوى</a
-        >
-        <p id="placement-home-result" hidden></p>
-        <a id="placement-home-report" class="practice-button" hidden></a>
-      </section>
       <section class="home-panel">
         <h2
           data-ar="مسار تعلّمك، خطوة بعد خطوة"
@@ -106,6 +81,54 @@
         منفصلة ولا تعني الزيارة إتقان المرحلة.
       </p>
       <ol id="overall-learning-path" class="route-list"></ol>
+
+      <section class="home-panel placement-entry">
+        <h2
+          data-ar="لست متأكدًا من أين تبدأ؟"
+          data-de="Du weißt noch nicht, wo du anfangen sollst?"
+        >
+          لست متأكدًا من أين تبدأ؟
+        </h2>
+        <p
+          data-ar="جرّب فحصًا قصيرًا، واحصل على ملف مهارات وروابط للدروس المناسبة."
+          data-de="Ein kurzer Check liefert ein Fertigkeitsprofil und passende Lektionen."
+        >
+          جرّب فحصًا قصيرًا، واحصل على ملف مهارات وروابط للدروس المناسبة.
+        </p>
+        <a
+          class="practice-button primary-action"
+          id="placement-entry"
+          href="placement.html"
+          data-ar="اختبارات تحديد المستوى"
+          data-de="Diagnostische Einstiegschecks"
+          >اختبارات تحديد المستوى</a
+        >
+        <p id="placement-home-result" hidden></p>
+        <a id="placement-home-report" class="practice-button" hidden></a>
+      </section>
+      <section class="home-panel teacher-exams-entry">
+        <h2
+          data-ar="الاختبارات الخاصة بالأستاذ محمود بركات"
+          data-de="Tests von Lehrer Mahmoud Barakat"
+        >
+          الاختبارات الخاصة بالأستاذ محمود بركات
+        </h2>
+        <p
+          data-ar="حل اختبارات الأستاذ محمود بركات ونماذج مشابهة داخل التطبيق، مع التصحيح وحفظ الإجابات."
+          data-de="Originaltests und ähnliche Übungen direkt in der App lösen, korrigieren und speichern."
+        >
+          حل اختبارات الأستاذ محمود بركات ونماذج مشابهة داخل التطبيق، مع التصحيح
+          وحفظ الإجابات.
+        </p>
+        <a
+          href="exams.html"
+          class="practice-button primary-action"
+          id="teacher-exams-entry"
+          data-ar="افتح الاختبارات"
+          data-de="Tests öffnen"
+          >افتح الاختبارات</a
+        >
+      </section>
     </main>
     <footer id="teacher-credit" class="teacher-credit">
       إعداد الأستاذ محمود بركات

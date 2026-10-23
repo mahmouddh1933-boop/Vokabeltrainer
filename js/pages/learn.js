@@ -34,6 +34,24 @@
                 const content = document.createElement("div"); content.className = "vocab-back-content";
                 content.append(label, image); back.replaceChildren(content);
             }
+            const number = VocabApp.numberCue(arabic, german);
+            if (number !== null) {
+              for (const [face, language, digits] of [
+                [front, "ar", String(number).replace(/\d/g, (d) => "٠١٢٣٤٥٦٧٨٩"[d])],
+                [back, "de", String(number)],
+              ]) {
+                const cue = document.createElement("span");
+                cue.className = "vocab-number";
+                cue.lang = language;
+                cue.dir = "ltr";
+                cue.textContent = digits;
+                face.append(cue);
+              }
+            }
+            front.lang = "ar";
+            front.dir = "rtl";
+            back.lang = "de";
+            back.dir = "ltr";
             flashcard.classList.remove("flipped");
             VocabApp.markStudied(arabic, german);
             speechStatus.textContent = "";

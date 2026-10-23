@@ -140,11 +140,11 @@
   gap: 9px;
   margin: 18px 0;
 }
-.practice-actions .primary-action,
+.primary-action,
 .sound-play {
-  background: #194e40 !important;
+  background: var(--control-primary, #35654a) !important;
   color: #fff !important;
-  border: 1px solid #194e40 !important;
+  border: 1px solid var(--control-primary, #35654a) !important;
 }
 .practice-feedback {
   padding: 15px 18px;

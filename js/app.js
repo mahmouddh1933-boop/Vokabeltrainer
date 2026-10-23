@@ -114,8 +114,140 @@
     }
 
     function getCurrentVocabList() {
-        const list = getJSON(KEYS.currentVocab, []);
-        return Array.isArray(list) ? list.filter(item => Array.isArray(item) && item.length >= 2) : [];
+      const list = getJSON(KEYS.currentVocab, []);
+      const cleaned = Array.isArray(list)
+        ? list.filter((item) => Array.isArray(item) && item.length >= 2)
+        : [];
+      // Refresh an already selected built-in calendar without changing imported lists or results.
+      const source = getCurrentSource();
+      if (source.type === "ready-list" && source.id === "a1_07") {
+        const calendar = {
+          Montag: "الِاثْنَيْنِ",
+          Januar: "كَانُونُ الثَّانِي",
+          Februar: "شُبَاطُ",
+          März: "آذَارُ",
+          April: "نَيْسَانُ",
+          Mai: "أَيَّارُ",
+          Juni: "حَزِيرَانُ",
+          Juli: "تَمُّوزُ",
+          August: "آبُ",
+          September: "أَيْلُولُ",
+          Oktober: "تِشْرِينُ الْأَوَّلُ",
+          November: "تِشْرِينُ الثَّانِي",
+          Dezember: "كَانُونُ الْأَوَّلُ",
+        };
+        const updated = cleaned.map(([ar, de]) => [(calendar[de] || ar).normalize("NFC"), de]);
+        if (JSON.stringify(updated) !== JSON.stringify(cleaned))
+          saveVocabList(updated, source);
+        return updated;
+      }
+      return cleaned;
+    }
+
+    const encouragements = {
+      correct: [
+        ["ممتاز!", "Ausgezeichnet!"],
+        ["جيد جدًا!", "Sehr gut!"],
+        ["بارك الله بك!", "Gottes Segen für dich!"],
+        ["عمل ممتاز!", "Tolle Arbeit!"],
+        ["أحسنت، واصل التقدّم!", "Gut gemacht, mach weiter!"],
+        ["رائع! تعلّمك يؤتي ثماره.", "Klasse! Dein Lernen zahlt sich aus."],
+        ["خطوة جميلة إلى الأمام!", "Ein schöner Schritt nach vorn!"],
+        ["أبدعت! استمر بهذا الاجتهاد.", "Prima! Bleib so fleißig."],
+      ],
+      retry: [
+        [
+          "لا بأس، الخطأ خطوة في طريق التعلّم.",
+          "Das ist in Ordnung. Fehler gehören zum Lernen.",
+        ],
+        [
+          "أنت تتعلّم! راجع المثال بهدوء.",
+          "Du lernst dazu! Sieh dir das Beispiel in Ruhe an.",
+        ],
+        ["كل محاولة تساعدك على التقدّم.", "Jeder Versuch bringt dich weiter."],
+        [
+          "خذ وقتك، واقرأ السؤال مرة أخرى.",
+          "Nimm dir Zeit und lies die Frage noch einmal.",
+        ],
+        [
+          "لا تستسلم، يمكنك التحسّن بالتدريب.",
+          "Bleib dran. Mit Übung wirst du sicherer.",
+        ],
+        [
+          "قارن بالتصحيح، وستصبح الخطوة التالية أسهل.",
+          "Vergleiche mit der Lösung. Das hilft dir beim nächsten Schritt.",
+        ],
+        ["محاولتك مهمّة، واصل التعلّم!", "Dein Versuch zählt. Lerne weiter!"],
+        [
+          "توقّف قليلًا، ثم جرّب من جديد بثقة.",
+          "Mach eine kurze Pause und versuche es dann wieder.",
+        ],
+      ],
+    };
+    const encouragementIndex = { correct: 0, retry: 0 };
+    function encouragement(correct, language) {
+      const kind = correct ? "correct" : "retry";
+      const phrases = encouragements[kind];
+      const phrase = phrases[encouragementIndex[kind]++ % phrases.length];
+      const lang =
+        language ||
+        window.AppLanguage?.get() ||
+        window.JisrStorage.local.getItem("vocabInterfaceLanguage");
+      return phrase[lang === "de" ? 1 : 0];
+    }
+
+    function numberCue(arabic, german) {
+      const words = [
+        "صفر",
+        "واحد",
+        "اثنان",
+        "ثلاثة",
+        "أربعة",
+        "خمسة",
+        "ستة",
+        "سبعة",
+        "ثمانية",
+        "تسعة",
+        "عشرة",
+        "أحد عشر",
+        "اثنا عشر",
+        "ثلاثة عشر",
+        "عشرون",
+        "ثلاثون",
+        "أربعون",
+        "خمسون",
+        "مئة",
+        "ألف",
+      ];
+      const translations = [
+        "null",
+        "eins",
+        "zwei",
+        "drei",
+        "vier",
+        "fünf",
+        "sechs",
+        "sieben",
+        "acht",
+        "neun",
+        "zehn",
+        "elf",
+        "zwölf",
+        "dreizehn",
+        "zwanzig",
+        "dreißig",
+        "vierzig",
+        "fünfzig",
+        "hundert",
+        "tausend",
+      ];
+      const index = words.indexOf(stripArabicDiacritics(arabic).normalize("NFC"));
+      if (
+        index < 0 ||
+        translations[index] !== String(german).trim().toLowerCase()
+      )
+        return null;
+      return [...Array(14).keys(), 20, 30, 40, 50, 100, 1000][index];
     }
 
     function getCurrentSource() {
@@ -698,6 +830,8 @@
         wordKey,
         escapeHTML,
         shuffle,
+        encouragement,
+        numberCue,
         getCurrentVocabList,
         getCurrentSource,
         saveVocabList,

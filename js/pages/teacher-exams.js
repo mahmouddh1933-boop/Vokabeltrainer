@@ -165,6 +165,7 @@
               good ? "Richtig" : "Bitte nacharbeiten",
             ),
           ),
+          el("p", VocabApp.encouragement(good)),
           el("p", `${t("الإجابة:", "Lösung:")} ${task.answer}`),
         );
         if (task.explanation) p.append(el("p", task.explanation));

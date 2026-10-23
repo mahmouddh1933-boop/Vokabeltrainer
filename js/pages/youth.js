@@ -202,6 +202,7 @@
             ) +
             q.answer +
             " — ") + q.explanation;
+      feedback.textContent += " " + VocabApp.encouragement(correct);
       feedback.className =
         "youth-task-feedback " + (correct ? "is-correct" : "is-wrong");
       for (const control of optionButtons) {

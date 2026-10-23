@@ -14,7 +14,7 @@
                 if (correct) correctCount += 1; else wrongCount += 1;
                 const div = document.createElement("div");
                 div.className = "result-question";
-                div.innerHTML = `<p><strong>${index + 1}. السؤال:</strong> <bdi>${VocabApp.escapeHTML(result.question)}</bdi></p><p><strong>إجابتك:</strong> <bdi>${VocabApp.escapeHTML(result.answer || "لم تتم الإجابة")}</bdi></p><p><strong>الإجابة الصحيحة:</strong> <bdi>${VocabApp.escapeHTML(result.correct)}</bdi></p><p class="${correct ? "result-correct" : "result-wrong"}">${correct ? "صحيح!" : "خطأ!"}</p><hr>`;
+                div.innerHTML = `<p><strong>${index + 1}. السؤال:</strong> <bdi>${VocabApp.escapeHTML(result.question)}</bdi></p><p><strong>إجابتك:</strong> <bdi>${VocabApp.escapeHTML(result.answer || "لم تتم الإجابة")}</bdi></p><p><strong>الإجابة الصحيحة:</strong> <bdi>${VocabApp.escapeHTML(result.correct)}</bdi></p><p class="${correct ? "result-correct" : "result-wrong"}">${correct ? "صحيح!" : "تحتاج إلى مراجعة."} ${VocabApp.escapeHTML(VocabApp.encouragement(correct))}</p><hr>`;
                 container.appendChild(div);
             });
             const score = Math.round((correctCount / results.length) * 100);

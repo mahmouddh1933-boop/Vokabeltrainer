@@ -53,7 +53,7 @@ test("Related letter forms have accurate seats, connected and disconnected ta ex
   }
 });
 test("Pictures are tiny local SVGs keyed to the exact bilingual meaning, with no atomic-corn confusion",()=>{
-  assert.equal(Object.keys(pictures.mappings).length,112);
+  assert.equal(Object.keys(pictures.mappings).length,212);
   for(const file of Object.values(pictures.mappings)){
     const payload=fs.readFileSync(path.join(__dirname,'..',file));
     assert.ok(payload.length<1400); assert.ok(payload.toString().startsWith('<svg'));
@@ -62,6 +62,11 @@ test("Pictures are tiny local SVGs keyed to the exact bilingual meaning, with no
   assert.ok(pictures.get('رُمَّانٌ','der Granatapfel'));
   assert.ok(pictures.get('ذُرَةٌ','der Mais'));
   assert.equal(pictures.get('ذَرَّةٌ','das Atom'),null);
+  const catalog = require('../data/vocab_catalog.json');
+  for (const id of ['a1_09','a1_10','a1_14','a1_15','a1_20']) {
+    for (const word of catalog.lists.find(l=>l.id===id).words)
+      assert.ok(pictures.get(word.ar,word.de),`${id}: ${word.ar} must have a matching illustration`);
+  }
   assert.ok(pictures.get('أحمر','rot'));
   assert.equal(pictures.get('أحمر','blau'),null);
   assert.equal(pictures.get('شيء غير معروف','unbekannt'),null);

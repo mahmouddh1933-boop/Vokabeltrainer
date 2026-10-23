@@ -210,6 +210,7 @@
           selected === question.correct
             ? text("أحسنت!", "Richtig!")
             : text("لنتعلّم من الإجابة.", "Lerne aus der Antwort.");
+        heading.textContent += " " + VocabApp.encouragement(selected === question.correct);
         const answer = document.createElement("p");
         const prefix = document.createElement("span");
         prefix.textContent = text("الإجابة الصحيحة: ", "Richtige Antwort: ");

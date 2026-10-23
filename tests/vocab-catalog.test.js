@@ -141,6 +141,27 @@ test("Vowel distinctions and contextual polysemy are deliberate rather than dupl
 });
 
 test("The beginner calendar includes all seven weekdays and all twelve months; weather includes all four seasons", () => {
+  const months = [
+    "كَانُونُ الثَّانِي",
+    "شُبَاطُ",
+    "آذَارُ",
+    "نَيْسَانُ",
+    "أَيَّارُ",
+    "حَزِيرَانُ",
+    "تَمُّوزُ",
+    "آبُ",
+    "أَيْلُولُ",
+    "تِشْرِينُ الْأَوَّلُ",
+    "تِشْرِينُ الثَّانِي",
+    "كَانُونُ الْأَوَّلُ",
+  ];
+  assert.deepEqual(
+    list("a1_07")
+      .words.slice(7, 19)
+      .map((w) => w.ar),
+    months.map((s) => s.normalize("NFC")),
+  );
+  assert.equal(word("a1_07", "الِاثْنَيْنِ").de, "Montag");
   const translations = new Set(list("a1_07").words.map((w) => w.de));
   for (const de of [
     "Montag",
@@ -170,4 +191,61 @@ test("The beginner calendar includes all seven weekdays and all twelve months; w
     word("b2_23", "يَرْمُزُ إِلَى").de,
     "symbolisieren / stehen für",
   );
+});
+
+test("Calendar updates selected built-in words while preserving imported lists and learning records; digits are display aids only", () => {
+  const saved = new Map();
+  const storage = {
+    getItem: (key) => saved.get(key) ?? null,
+    setItem: (key, value) => saved.set(key, value),
+  };
+  const context = {
+    window: { JisrStorage: { local: storage, session: storage } },
+  };
+  vm.runInNewContext(
+    fs.readFileSync(path.join(root, "js/app.js"), "utf8"),
+    context,
+  );
+  const app = context.window.VocabApp;
+  const records = {
+    totalTests: 27,
+    correctAnswers: 99,
+    teacherExamsV1: { keep: true },
+  };
+  app.setJSON("learningStats", records);
+  app.saveVocabList(
+    [
+      ["يَنَايِرُ", "Januar"],
+      ["يَوْمُ الِاثْنَيْنِ", "Montag"],
+    ],
+    { type: "ready-list", id: "a1_07" },
+  );
+  assert.deepEqual(JSON.parse(JSON.stringify(app.getCurrentVocabList())), [
+    ["كَانُونُ الثَّانِي", "Januar"],
+    ["الِاثْنَيْنِ", "Montag"],
+  ]);
+  assert.deepEqual(
+    JSON.parse(JSON.stringify(app.getJSON("learningStats"))),
+    records,
+  );
+  app.saveVocabList([["يَنَايِرُ", "Januar"]], { type: "excel", id: "a1_07" });
+  assert.equal(app.getCurrentVocabList()[0][0], "يَنَايِرُ");
+  const expected = [...Array(14).keys(), 20, 30, 40, 50, 100, 1000];
+  list("a1_05").words.forEach((w, i) =>
+    assert.equal(app.numberCue(w.ar, w.de), expected[i]),
+  );
+  assert.equal(app.numberCue("عَيْنٌ", "eins"), null);
+  assert.equal(app.numberCue("وَاحِدٌ", "die Einsamkeit"), null);
+  assert.ok(
+    !app.isCorrect("١", "وَاحِدٌ"),
+    "Digits must not replace the word the learner is practising",
+  );
+  for (const correct of [true, false]) {
+    const phrases = Array.from({ length: 8 }, () =>
+      app.encouragement(correct, "ar"),
+    );
+    assert.equal(new Set(phrases).size, 8);
+    assert.ok(phrases.every((s) => /[ء-ي]/.test(s)));
+    assert.match(app.encouragement(correct, "de"), /[a-z]/i);
+  }
 });

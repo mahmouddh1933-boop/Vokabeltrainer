@@ -33,7 +33,7 @@ with sync_playwright() as p:
     assert page.goto(base+'/youth-training-two.html').status == 200
     page.locator('#app-language-select').select_option('ar')
     expect(page.locator('#lesson-loading')).to_have_count(0)
-    assert page.locator('.app-sidebar a[aria-current="page"]').get_attribute('href') == 'youth-training-two.html'
+    assert page.locator('.app-sidebar a[aria-current="page"]').get_attribute('href') == 'books.html'
     activities = page.evaluate('ArabicYouthTwoData.activities')
     sources = page.evaluate('ArabicYouthTwoData.sources')
     assert len(sources) == 31

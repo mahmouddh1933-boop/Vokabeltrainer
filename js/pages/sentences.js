@@ -148,6 +148,7 @@
         el("p", P.bilingual(q.explanation)),
       );
     }
+    if (e.feedback || e.solved) $("sentence-feedback").append(el("p", VocabApp.encouragement(!!e.solved)));
     $("sentence-summary").hidden = done.length !== bank.length;
     P.navigation(
       $("sentence-previous"),

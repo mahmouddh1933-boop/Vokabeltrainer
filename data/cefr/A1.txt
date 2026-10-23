@@ -127,23 +127,23 @@
 @أيام الأسبوع وشهور السنة|Wochentage und Monate|أحدد يومًا وشهرًا عند ترتيب تاريخ بسيط.
 السَّبْتُ|Samstag
 الْأَحَدُ|Sonntag
-يَوْمُ الِاثْنَيْنِ|Montag
+الِاثْنَيْنِ|Montag
 الثُّلَاثَاءُ|Dienstag
 الْأَرْبِعَاءُ|Mittwoch
 الْخَمِيسُ|Donnerstag
 الْجُمُعَةُ|Freitag
-يَنَايِرُ|Januar
-فِبْرَايِرُ|Februar
-مَارِسُ|März
-أَبْرِيلُ|April
-مَايُو|Mai
-يُونْيُو|Juni
-يُولْيُو|Juli
-أَغُسْطُسُ|August
-سِبْتَمْبَرُ|September
-أُكْتُوبَرُ|Oktober
-نُوفَمْبَرُ|November
-دِيسَمْبَرُ|Dezember
+كَانُونُ الثَّانِي|Januar
+شُبَاطُ|Februar
+آذَارُ|März
+نَيْسَانُ|April
+أَيَّارُ|Mai
+حَزِيرَانُ|Juni
+تَمُّوزُ|Juli
+آبُ|August
+أَيْلُولُ|September
+تِشْرِينُ الْأَوَّلُ|Oktober
+تِشْرِينُ الثَّانِي|November
+كَانُونُ الْأَوَّلُ|Dezember
 نِهَايَةُ الْأُسْبُوعِ|das Wochenende
 @الألوان والأشكال|Farben und Formen|أصف لون الأشياء وشكلها البسيط.
 أَحْمَرُ|rot

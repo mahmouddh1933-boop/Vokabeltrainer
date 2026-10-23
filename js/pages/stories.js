@@ -124,6 +124,7 @@
                 "Sieh dir die richtige Antwort und den Beleg an:",
               ),
         ),
+        el("p", VocabApp.encouragement(answer === q.correct)),
         arabic(el("p", evidence.ar)),
       );
       $("story-lines").children[q.evidence].classList.add("is-evidence");

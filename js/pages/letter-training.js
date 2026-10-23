@@ -141,6 +141,7 @@
           s.answers[s.index] === q.correct
             ? text("أحسنت!", "Richtig!")
             : text("لنتعلّم من الإجابة.", "Lerne aus der Antwort.");
+        heading.textContent += " " + VocabApp.encouragement(s.answers[s.index] === q.correct);
         const explanation = document.createElement("p");
         explanation.textContent =
           mode === "names" || mode === "listening"

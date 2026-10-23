@@ -539,6 +539,7 @@
             : t("قارن بالتصحيح: ", "Vergleiche mit der Lösung: ") + answer,
         ),
         el("p", q.explanation || ""),
+        el("p", VocabApp.encouragement(good)),
       );
       actions.replaceChildren(
         button(

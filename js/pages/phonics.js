@@ -191,6 +191,7 @@
                 ),
           ),
         );
+        feedback.append(el("p", VocabApp.encouragement(!!e.solved)));
         if (e.solved) {
           feedback.append(
             el("p", state.mode === "segment" ? q.parts.join(" - ") : q.word),
