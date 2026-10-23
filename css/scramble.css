@@ -1,3 +1,43 @@
 .scramble-tiles{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;direction:rtl;margin:12px 0}.scramble-tile{font-family:inherit;font-size:clamp(22px,4vw,32px);min-width:49px;min-height:52px;padding:7px 12px;border-radius:11px;background:#f5f1ff;color:#29204e;border:2px solid #b2a4df;cursor:pointer}.scramble-tile:disabled{opacity:.3;cursor:default}.scramble-answer{display:flex;justify-content:center;align-items:center;min-height:65px;background:#f8fafc;border:2px dashed #a6acbf;border-radius:12px;font-size:30px;direction:rtl;letter-spacing:2px;margin:10px 0}.scramble-tools{display:flex;flex-wrap:wrap;gap:8px}.scramble-tools button{font-size:15px;padding:8px 14px}.scramble-hint{color:#526075;font-size:14px}.scramble-empty{padding:20px;text-align:center}
 /* Fixed gaps mark original word boundaries in multi-word answers. */
 .scramble-answer{white-space:pre-wrap;word-spacing:0.55em;letter-spacing:1px;padding:12px;unicode-bidi:plaintext;text-align:center}
+
+/* Letter tiles keep their own size instead of inheriting full-width mobile buttons. */
+.scramble-tiles .scramble-tile {
+  flex: 0 0 52px;
+  width: 52px;
+  min-width: 52px;
+  max-width: 52px;
+  height: 52px;
+  min-height: 52px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+  touch-action: manipulation;
+}
+.scramble-answer {
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+  letter-spacing: 0;
+  word-spacing: 0.35em;
+}
+.scramble-tools button {
+  flex: 1 1 100px;
+  width: auto;
+  min-height: 44px;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .scramble-tiles { gap: 6px; margin-block: 12px; }
+  .scramble-tiles .scramble-tile {
+    flex-basis: 46px;
+    width: 46px;
+    min-width: 46px;
+    max-width: 46px;
+    height: 46px;
+    min-height: 46px;
+    font-size: 26px;
+    border-radius: 10px;
+  }
+  .scramble-answer { min-height: 62px; padding: 8px; font-size: 24px; }
+}
