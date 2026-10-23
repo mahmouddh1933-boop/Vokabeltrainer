@@ -1,3 +1,16 @@
+/* Noto Naskh Arabic, SIL Open Font License; bundled for consistent offline shaping. */
+@font-face {
+  font-family: "Olive Exam Arabic";
+  src: url("../fonts/noto-naskh-arabic.woff") format("woff");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+.practice-page .exam-task,
+.practice-page .exam-task *,
+.practice-page .exam-passage {
+  font-family: Manrope, "Olive Exam Arabic", Tahoma, serif;
+}
 .exam-catalog {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -43,20 +56,31 @@
 #exam-original {
   scroll-margin-top: 100px;
 }
+.exam-section {
+  padding: 24px;
+  margin-block: 24px;
+  border: 1px solid #d8e1cc;
+  border-radius: 22px;
+  background: #fffdf5 url("../images/brand/olive-card-branch.svg") left top /
+    110px 198px no-repeat;
+}
 .exam-task {
   min-width: 0;
   border: 1px solid #cedbc5;
   border-radius: 18px;
   margin-block: 22px;
   padding: 22px;
-  background: rgba(250, 251, 243, 0.73);
+  background: rgba(255, 253, 245, 0.96);
+  font-family: Manrope, "Olive Exam Arabic", Tahoma, serif;
+  color: #203e37;
 }
 .exam-task legend {
   max-width: 100%;
   padding: 6px;
-  font-size: 1.15rem;
-  line-height: 2;
-  color: #244b3b;
+  font-size: clamp(24px, 2.4vw, 28px);
+  font-weight: 600;
+  line-height: 2.1;
+  color: #203e37;
 }
 .exam-task input[type="text"],
 .exam-task textarea {
@@ -68,8 +92,8 @@
   color: #183f33;
   background: #fffef8;
   font-family: inherit;
-  font-size: 1.2rem;
-  line-height: 1.9;
+  font-size: 26px;
+  line-height: 2;
 }
 .exam-options {
   display: grid;
@@ -84,8 +108,12 @@
   padding: 16px;
   border: 1px solid #b8c9ad;
   border-radius: 12px;
-  background: #fafbf5;
-  min-height: 54px;
+  background: rgba(255, 255, 255, 0.97);
+  min-height: 78px;
+  font-size: clamp(24px, 2.3vw, 27px);
+  font-weight: 600;
+  line-height: 2;
+  color: #203e37;
   overflow-wrap: anywhere;
 }
 .exam-options label:has(input:checked) {
@@ -102,6 +130,61 @@
 .exam-task button {
   margin: 4px;
   min-height: 46px;
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 1.9;
+}
+.exam-task .exam-manual-note {
+  font:
+    16px/1.9 Manrope,
+    Tahoma,
+    sans-serif;
+  color: #4e624b;
+}
+.exam-options.exam-letter-options {
+  grid-template-columns: repeat(2, minmax(76px, 110px));
+  justify-content: center;
+}
+.exam-letter-options label {
+  justify-content: center;
+  font-size: 32px;
+  padding: 8px;
+}
+.exam-letter-options label:has(input:checked) {
+  padding: 7px;
+}
+.exam-backbar {
+  position: sticky;
+  top: 12px;
+  z-index: 25;
+  padding: 10px;
+  margin-block: 0 20px;
+  background: #fffdf5;
+  border: 1px solid #d3dfc6;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px #2547350a;
+  display: flex;
+}
+.exam-backbar .practice-button {
+  margin: 0;
+}
+.exam-bottom-back {
+  margin-block: 18px;
+}
+@media (max-width: 960px) {
+  .exam-backbar {
+    top: 82px;
+  }
+  .exam-section,
+  #exam-result,
+  #exam-session {
+    scroll-margin-top: 172px;
+  }
+}
+@media (max-width: 600px) {
+  .exam-backbar {
+    top: 77px;
+  }
 }
 .exam-task button:focus-visible,
 .exam-options label:focus-within {
@@ -113,8 +196,11 @@
   color: #526247;
 }
 .exam-passage {
-  font-size: 1.4rem;
-  line-height: 2.5;
+  font-family: Manrope, "Olive Exam Arabic", Tahoma, serif;
+  font-size: clamp(25px, 2.5vw, 29px);
+  font-weight: 500;
+  line-height: 2.15;
+  color: #203e37;
   padding: 22px;
   border-inline-start: 4px solid #8d9a63;
   background: rgba(242, 244, 229, 0.8);
@@ -139,6 +225,12 @@
   background: #f0eee0;
   border-inline-start: 4px solid #9a905e;
   border-radius: 10px;
+}
+.exam-feedback p,
+.exam-feedback li {
+  font-size: 24px;
+  line-height: 2;
+  color: #203e37;
 }
 .exam-correct {
   border-color: #3b7a51;
@@ -200,9 +292,12 @@
   .exam-task {
     padding: 12px;
   }
+  .exam-section {
+    padding: 12px;
+    background-size: 70px 126px;
+  }
   .exam-passage {
     padding: 12px;
-    font-size: 1.2rem;
   }
   .exam-toolbar > * {
     flex: 1 1 145px;
@@ -222,7 +317,9 @@
     color: black;
     background: white;
     padding: 0;
-    font: 14pt/1.9 serif;
+    font:
+      14pt/1.9 "Olive Exam Arabic",
+      serif;
   }
   #exam-print .exam-passage {
     background: white;

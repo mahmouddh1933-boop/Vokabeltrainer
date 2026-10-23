@@ -131,6 +131,54 @@
       .forEach((a) => a.addEventListener("click", () => setMenu(false)));
     const main = document.querySelector("main");
     if (main && !main.id) main.id = "main-content";
+    if (main && !isHome && page !== "login.html") {
+      let destination = [
+        "index.html",
+        "رجوع إلى مسار التعلم",
+        "Zurück zum Lernpfad",
+      ];
+      if (/^test[1-6]\.html$/.test(page) || page === "ergebnis.html")
+        destination = [
+          "test.html",
+          "رجوع إلى اختيار الاختبار",
+          "Zurück zur Testauswahl",
+        ];
+      else if (
+        ["test.html", "placement.html"].includes(page) &&
+        window.LearningRoute
+      )
+        destination = [
+          "exams.html",
+          "رجوع إلى قائمة الاختبارات",
+          "Zurück zur Testübersicht",
+        ];
+      else if (
+        window.LearningRoute?.stage &&
+        window.LearningRoute.stage.href !== page
+      ) {
+        const parent = window.LearningRoute.stage;
+        destination = [
+          parent.href,
+          "رجوع إلى " + parent.ar,
+          "Zurück: " + parent.de,
+        ];
+      }
+      const existing = main.querySelector(".teacher-exams-context a");
+      const back = existing || document.createElement("a");
+      back.href = destination[0];
+      back.classList.add("page-back-link");
+      back.dataset.ar = destination[1];
+      back.dataset.de = destination[2];
+      back.textContent = destination[1];
+      if (existing) existing.parentElement.classList.add("page-back-nav");
+      else {
+        const bar = document.createElement("nav");
+        bar.className = "page-back-nav";
+        bar.setAttribute("aria-label", "الرجوع / Zurück");
+        bar.append(back);
+        main.prepend(bar);
+      }
+    }
     const skip = document.createElement("a");
     skip.href = "#main-content";
     skip.className = "skip-link";

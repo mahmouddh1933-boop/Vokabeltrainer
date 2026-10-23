@@ -160,3 +160,37 @@ select:focus-visible {
 .placement-context {
   margin-block: 12px 24px;
 }
+.page-back-nav {
+  margin-block: 0 22px;
+}
+.page-back-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  max-width: 100%;
+  padding: 10px 18px;
+  border: 1px solid #b7c9a8;
+  border-radius: 14px;
+  background: #f2f6e9;
+  color: #244c38;
+  font:
+    600 15px/1.8 Manrope,
+    Tahoma,
+    sans-serif;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.page-back-link:hover {
+  background: #e5edd8;
+}
+.page-back-nav[hidden] {
+  display: none !important;
+}
+@media print {
+  .page-back-nav,
+  .exam-backbar,
+  .exam-bottom-back {
+    display: none !important;
+  }
+}

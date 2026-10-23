@@ -205,6 +205,8 @@
       const finished = attempt.status === "finished";
       if (q.kind === "choice") {
         const options = el("div", undefined, "exam-options");
+        if (q.options.every((value) => [...value].length === 1))
+          options.classList.add("exam-letter-options");
         q.options.forEach((option) => {
           const label = el("label"),
             input = el("input");
@@ -463,6 +465,8 @@
       window.print();
     }
     function render() {
+      const pageBack = document.querySelector(".page-back-nav");
+      if (pageBack) pageBack.hidden = !!attempt;
       $("exam-catalog-panel").hidden = !!attempt;
       $("exam-session").hidden = !attempt;
       if (attempt) renderSession();
@@ -470,6 +474,7 @@
     }
     function back() {
       stop();
+      if (attempt) save();
       attempt = null;
       history.replaceState(null, "", location.pathname + location.search);
       render();
@@ -477,6 +482,7 @@
       window.scrollTo(0, 0);
     }
     $("exam-back").onclick = back;
+    $("exam-back-bottom").onclick = back;
     $("exam-blank").onclick = () => printExam(false);
     $("exam-key").onclick = () => printExam(true);
     window.addEventListener("afterprint", () =>

@@ -25,7 +25,7 @@
     <script src="js/interface-languages.js?v=d233aae47963" defer></script>
     <script src="js/tanwin-display.js?v=97a12d8b8572" defer></script>
     <script src="js/learning-path.js?v=12830d173902" defer></script>
-    <script src="js/design.js?v=ff7677775afe" defer></script>
+    <script src="js/design.js?v=3f390f3bd12e" defer></script>
     <meta name="application-name" content="حروف من الزيتون" />
     <link
       rel="icon"
@@ -36,12 +36,12 @@
     <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
     <link rel="stylesheet" href="css/auth.css?v=2b57d96c4eaf" />
 
-    <link rel="stylesheet" href="css/learning-route.css?v=9d7793050fac" />
-    <link rel="stylesheet" href="css/teacher-exams.css?v=cf5cb88057fa" />
+    <link rel="stylesheet" href="css/learning-route.css?v=190075957477" />
+    <link rel="stylesheet" href="css/teacher-exams.css?v=503f1d54ae53" />
     <script src="js/practice-core.js?v=81b88bc2a7c0" defer></script>
     <script src="js/teacher-exams-data.js?v=775b9924ac81" defer></script>
     <script src="js/teacher-exams-core.js?v=fd1f51724ec5" defer></script>
-    <script src="js/pages/teacher-exams.js?v=5146c6dbab8f" defer></script>
+    <script src="js/pages/teacher-exams.js?v=85d8c35ba10b" defer></script>
   </head>
   <body>
     <main class="container practice-page" id="main-content">
@@ -135,6 +135,20 @@
         </section>
       </div>
       <section id="exam-session" hidden>
+        <nav
+          class="exam-backbar"
+          aria-label="الرجوع من الاختبار / Zur Testauswahl"
+        >
+          <button
+            class="practice-button"
+            id="exam-back"
+            type="button"
+            data-ar="رجوع إلى قائمة الاختبارات"
+            data-de="Zurück zur Testauswahl"
+          >
+            رجوع إلى قائمة الاختبارات
+          </button>
+        </nav>
         <h2 id="exam-title" tabindex="-1"></h2>
         <p
           data-ar="أجب دون مساعدة. تُحفظ الإجابات أثناء الكتابة؛ يمكنك العودة لاحقًا. لا حد زمني. إنهاء النموذج يثبت الإجابات، والأسئلة المحددة الفارغة تُحسب صفرًا."
@@ -146,14 +160,6 @@
         </p>
         <div class="exam-toolbar">
           <button
-            class="practice-button"
-            id="exam-back"
-            type="button"
-            data-ar="حفظ والعودة إلى الاختبارات"
-            data-de="Speichern und zur Testauswahl"
-          >
-            حفظ والعودة إلى الاختبارات</button
-          ><button
             class="practice-button"
             id="exam-blank"
             type="button"
@@ -188,6 +194,17 @@
         >
           إنهاء النموذج وعرض التصحيح
         </button>
+        <div class="exam-bottom-back">
+          <button
+            class="practice-button"
+            id="exam-back-bottom"
+            type="button"
+            data-ar="حفظ والرجوع إلى قائمة الاختبارات"
+            data-de="Speichern und zurück zur Testauswahl"
+          >
+            حفظ والرجوع إلى قائمة الاختبارات
+          </button>
+        </div>
       </section>
       <audio id="exam-player" preload="none"></audio>
       <p id="practice-audio-status" role="status"></p>
