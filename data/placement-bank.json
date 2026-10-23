@@ -1,0 +1,4001 @@
+{
+  "version": 1,
+  "bankVersion": "2026-10-23.1",
+  "domains": {
+    "letters": {
+      "ar": "الحروف وأشكالها",
+      "de": "Buchstaben und Formen"
+    },
+    "phonics": {
+      "ar": "فك الرموز والهجاء",
+      "de": "Dekodieren und Buchstabieren"
+    },
+    "vocabulary": {
+      "ar": "المفردات في السياق",
+      "de": "Wortschatz im Kontext"
+    },
+    "sentences": {
+      "ar": "تركيب الجمل",
+      "de": "Satzbau"
+    },
+    "listening": {
+      "ar": "فهم المسموع",
+      "de": "Hörverstehen"
+    },
+    "reading": {
+      "ar": "فهم المقروء",
+      "de": "Leseverstehen"
+    },
+    "grammar": {
+      "ar": "التراكيب والقواعد",
+      "de": "Strukturen und Grammatik"
+    },
+    "spelling": {
+      "ar": "الإملاء",
+      "de": "Rechtschreibung"
+    }
+  },
+  "questions": [
+    {
+      "id": "letters-01",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "اختر حرف الباء.",
+        "de": "Wähle Bāʾ."
+      },
+      "options": [
+        "ث",
+        "ن",
+        "ب",
+        "ت"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الباء تحتها نقطة واحدة.",
+        "de": "Richtige Lösung: ب."
+      },
+      "lesson": "letters",
+      "stimulus": ""
+    },
+    {
+      "id": "letters-02",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "ما الحرف في أول «ثَوْب»؟",
+        "de": "Welcher Buchstabe steht am Anfang von ثَوْب?"
+      },
+      "options": [
+        "ث",
+        "ت",
+        "ب",
+        "ن"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "ثوب تبدأ بثاء ذات ثلاث نقاط.",
+        "de": "Richtige Lösung: ث."
+      },
+      "lesson": "letters",
+      "stimulus": "ثَوْب"
+    },
+    {
+      "id": "letters-03",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "اختر حرف الجيم.",
+        "de": "Wähle Ǧīm."
+      },
+      "options": [
+        "ج",
+        "ح",
+        "خ",
+        "ع"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "الجيم تحتها نقطة.",
+        "de": "Richtige Lösung: ج."
+      },
+      "lesson": "letters",
+      "stimulus": ""
+    },
+    {
+      "id": "letters-04",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "ما الحرف الأخير في «خُبْز»؟",
+        "de": "Welcher Buchstabe steht am Ende von خُبْز?"
+      },
+      "options": [
+        "ر",
+        "ذ",
+        "د",
+        "ز"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "خبز تنتهي بزاي منقوطة.",
+        "de": "Richtige Lösung: ز."
+      },
+      "lesson": "letters",
+      "stimulus": "خُبْز"
+    },
+    {
+      "id": "letters-05",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "اختر الحرف الذي له ثلاث نقاط فوقه.",
+        "de": "Welcher Buchstabe hat drei Punkte darüber?"
+      },
+      "options": [
+        "ب",
+        "ن",
+        "ث",
+        "ت"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الثاء لها ثلاث نقاط فوقها.",
+        "de": "Richtige Lösung: ث."
+      },
+      "lesson": "letters",
+      "stimulus": ""
+    },
+    {
+      "id": "letters-06",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "أي شكل للباء يقع في أول الكلمة ويتصل بما بعده؟",
+        "de": "Welche Bāʾ-Form steht verbunden am Wortanfang?"
+      },
+      "options": [
+        "ـبـ",
+        "ـب",
+        "ب",
+        "بـ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "بـ شكل الباء المتصلة في أول الكلمة.",
+        "de": "Richtige Lösung: بـ."
+      },
+      "lesson": "letter-forms",
+      "stimulus": ""
+    },
+    {
+      "id": "letters-07",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "اختر شكل العين في وسط «لَعِبَ».",
+        "de": "Wähle die mittlere ʿAin-Form in لَعِبَ."
+      },
+      "options": [
+        "ـعـ",
+        "عـ",
+        "ـع",
+        "ع"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "العين في لعب متصلة من الجهتين.",
+        "de": "Richtige Lösung: ـعـ."
+      },
+      "lesson": "letter-forms",
+      "stimulus": "لَعِبَ"
+    },
+    {
+      "id": "letters-08",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "ما الحرف الذي لا يتصل بالحرف الذي بعده؟",
+        "de": "Welcher Buchstabe verbindet sich nicht mit dem folgenden?"
+      },
+      "options": [
+        "ب",
+        "س",
+        "م",
+        "د"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "الدال لا تتصل بما بعدها.",
+        "de": "Richtige Lösung: د."
+      },
+      "lesson": "letter-forms",
+      "stimulus": ""
+    },
+    {
+      "id": "letters-09",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "اختر شكل الميم في آخر «قَلَم».",
+        "de": "Wähle die verbundene Endform von Mīm in قَلَم."
+      },
+      "options": [
+        "ـم",
+        "مـ",
+        "ـمـ",
+        "م"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "الميم في قلم متصلة باللام التي قبلها.",
+        "de": "Richtige Lösung: ـم."
+      },
+      "lesson": "letter-forms",
+      "stimulus": "قَلَم"
+    },
+    {
+      "id": "letters-10",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "أي زوج له الرسم الأساسي نفسه ويختلف بالنقطة؟",
+        "de": "Welches Paar unterscheidet sich durch den Punkt?"
+      },
+      "options": [
+        "ط / ف",
+        "ح / خ",
+        "س / م",
+        "ع / ر"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "الحاء والخاء لهما الرسم الأساسي نفسه.",
+        "de": "Richtige Lösung: ح / خ."
+      },
+      "lesson": "letters",
+      "stimulus": ""
+    },
+    {
+      "id": "letters-11",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "أي حرف في «وَرْد» يأتي بعد الواو؟",
+        "de": "Welcher Buchstabe folgt auf Wāw in وَرْد?"
+      },
+      "options": [
+        "و",
+        "ز",
+        "ر",
+        "د"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "ترتيب الحروف و، ر، د.",
+        "de": "Richtige Lösung: ر."
+      },
+      "lesson": "letters",
+      "stimulus": "وَرْد"
+    },
+    {
+      "id": "letters-12",
+      "domain": "letters",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر التاء المربوطة المنفصلة.",
+        "de": "Wähle das unverbundene Tāʾ marbūṭa."
+      },
+      "options": [
+        "ة",
+        "ت",
+        "ه",
+        "ـة"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "ة صورة التاء المربوطة غير المتصلة بما قبلها.",
+        "de": "Richtige Lösung: ة."
+      },
+      "lesson": "ta-endings",
+      "stimulus": ""
+    },
+    {
+      "id": "letters-13",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "اختر حرف الشين.",
+        "de": "Wähle Šīn."
+      },
+      "options": [
+        "س",
+        "ص",
+        "ض",
+        "ش"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "الشين لها ثلاث نقاط.",
+        "de": "Richtige Lösung: ش."
+      },
+      "lesson": "letters",
+      "stimulus": ""
+    },
+    {
+      "id": "letters-14",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "أي شكل للنون يتصل بما بعده فقط في بداية الكلمة؟",
+        "de": "Welche Nūn-Form verbindet sich am Anfang nur nach links?"
+      },
+      "options": [
+        "نـ",
+        "ـنـ",
+        "ـن",
+        "ن"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "نـ شكل النون في بداية الكلمة.",
+        "de": "Richtige Lösung: نـ."
+      },
+      "lesson": "letter-forms",
+      "stimulus": ""
+    },
+    {
+      "id": "letters-15",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "اختر شكل الهاء في وسط «نَهَر».",
+        "de": "Wähle die mittlere Hāʾ-Form in نَهَر."
+      },
+      "options": [
+        "ـه",
+        "ه",
+        "ـهـ",
+        "هـ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الهاء في نهر متصلة من الجهتين.",
+        "de": "Richtige Lösung: ـهـ."
+      },
+      "lesson": "letter-forms",
+      "stimulus": "نَهَر"
+    },
+    {
+      "id": "letters-16",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "ما الحرف الذي لا يتصل بما بعده؟",
+        "de": "Welcher Buchstabe verbindet sich nicht mit dem folgenden?"
+      },
+      "options": [
+        "ف",
+        "و",
+        "ل",
+        "ك"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "الواو لا تتصل بما بعدها.",
+        "de": "Richtige Lösung: و."
+      },
+      "lesson": "letter-forms",
+      "stimulus": ""
+    },
+    {
+      "id": "letters-17",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "اختر شكل السين في آخر «شَمْس».",
+        "de": "Wähle die verbundene Endform von Sīn in شَمْس."
+      },
+      "options": [
+        "سـ",
+        "ـسـ",
+        "س",
+        "ـس"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "السين تتصل بالميم قبلها في شمس.",
+        "de": "Richtige Lösung: ـس."
+      },
+      "lesson": "letter-forms",
+      "stimulus": "شَمْس"
+    },
+    {
+      "id": "letters-18",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "أي زوج له الرسم الأساسي نفسه ويختلف بالنقطة؟",
+        "de": "Welches Paar unterscheidet sich durch einen Punkt?"
+      },
+      "options": [
+        "ه / ر",
+        "د / ذ",
+        "ل / م",
+        "ك / ع"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "الدال والذال يختلفان بالنقطة فوق الذال.",
+        "de": "Richtige Lösung: د / ذ."
+      },
+      "lesson": "letters",
+      "stimulus": ""
+    },
+    {
+      "id": "letters-19",
+      "domain": "letters",
+      "band": "foundation",
+      "prompt": {
+        "ar": "ما الحرف الثاني في «سَمَك»؟",
+        "de": "Was ist der zweite Buchstabe in سَمَك?"
+      },
+      "options": [
+        "ن",
+        "م",
+        "س",
+        "ك"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "الميم هي الحرف الثاني في سمك.",
+        "de": "Richtige Lösung: م."
+      },
+      "lesson": "letters",
+      "stimulus": "سَمَك"
+    },
+    {
+      "id": "letters-20",
+      "domain": "letters",
+      "band": "basic",
+      "prompt": {
+        "ar": "أي رمز هو همزة على نبرة؟",
+        "de": "Welches Zeichen ist Hamza auf einem Yāʾ-Sitz?"
+      },
+      "options": [
+        "ؤ",
+        "أ",
+        "ء",
+        "ئ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "ئ همزة على نبرة.",
+        "de": "Richtige Lösung: ئ."
+      },
+      "lesson": "letters",
+      "stimulus": ""
+    },
+    {
+      "id": "phonics-01",
+      "domain": "phonics",
+      "band": "foundation",
+      "prompt": {
+        "ar": "اختر تقطيع «رَكَبَ» إلى وحدات النطق.",
+        "de": "Wähle die Sprecheinheiten von رَكَبَ."
+      },
+      "options": [
+        "رَ - كْبَ",
+        "رَكَ - بَ",
+        "رَ - كَ - بَ",
+        "رَكْ - بَ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "كل حركة قصيرة هنا مع الحرف الذي قبلها.",
+        "de": "Richtige Lösung: رَ - كَ - بَ."
+      },
+      "lesson": "segment",
+      "stimulus": "رَكَبَ"
+    },
+    {
+      "id": "phonics-02",
+      "domain": "phonics",
+      "band": "foundation",
+      "prompt": {
+        "ar": "ادمج الحروف: بَ - ا - ب.",
+        "de": "Verbinde die Buchstaben بَ - ا - ب."
+      },
+      "options": [
+        "بَرْد",
+        "بَاب",
+        "بِنْت",
+        "بَحْر"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "باء مفتوحة ثم ألف مد ثم باء: باب.",
+        "de": "Richtige Lösung: بَاب."
+      },
+      "lesson": "blend",
+      "stimulus": "بَ - ا - ب"
+    },
+    {
+      "id": "phonics-03",
+      "domain": "phonics",
+      "band": "foundation",
+      "prompt": {
+        "ar": "اختر تقطيع «نَزَلَ».",
+        "de": "Wähle die Sprecheinheiten von نَزَلَ."
+      },
+      "options": [
+        "نَ - زَ - لَ",
+        "نَزْ - لَ",
+        "نَ - زْلَ",
+        "نَزَ - لَ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "لكل حرف في هذه الكلمة حركة قصيرة.",
+        "de": "Richtige Lösung: نَ - زَ - لَ."
+      },
+      "lesson": "segment",
+      "stimulus": "نَزَلَ"
+    },
+    {
+      "id": "phonics-04",
+      "domain": "phonics",
+      "band": "foundation",
+      "prompt": {
+        "ar": "ادمج الحروف: قَ - لَ - م.",
+        "de": "Verbinde die Buchstaben قَ - لَ - م."
+      },
+      "options": [
+        "قَدَم",
+        "عَلَم",
+        "قَلَم",
+        "قَمَر"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الحروف قاف ولام وميم تكوّن قلم.",
+        "de": "Richtige Lösung: قَلَم."
+      },
+      "lesson": "blend",
+      "stimulus": "قَ - لَ - م"
+    },
+    {
+      "id": "phonics-05",
+      "domain": "phonics",
+      "band": "foundation",
+      "prompt": {
+        "ar": "أي مقطع يحتوي كسرة؟",
+        "de": "Welche Einheit trägt eine Kasra?"
+      },
+      "options": [
+        "بُ",
+        "بْ",
+        "بِ",
+        "بَ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الكسرة علامة تحت الحرف.",
+        "de": "Richtige Lösung: بِ."
+      },
+      "lesson": "vowels",
+      "stimulus": ""
+    },
+    {
+      "id": "phonics-06",
+      "domain": "phonics",
+      "band": "foundation",
+      "prompt": {
+        "ar": "أي كلمة تحتوي مدًّا بالألف؟",
+        "de": "Welches Wort enthält ein langes ā?"
+      },
+      "options": [
+        "خُبْز",
+        "بَاب",
+        "بِنْت",
+        "كَلْب"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "الألف في باب مسبوقة بفتحة.",
+        "de": "Richtige Lösung: بَاب."
+      },
+      "lesson": "vowels",
+      "stimulus": ""
+    },
+    {
+      "id": "phonics-07",
+      "domain": "phonics",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر التقطيع الصحيح عند الوقف: «بَحْرْ».",
+        "de": "Wähle die Gliederung der Pausenform بَحْرْ."
+      },
+      "options": [
+        "بُ - حُ - رُ",
+        "بَحْرْ",
+        "بَ - حَ - رَ",
+        "بِ - حِ - رِ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "بحر في الوقف مقطع واحد ثقيل؛ لا نضيف حركات إلى السواكن.",
+        "de": "Richtige Lösung: بَحْرْ."
+      },
+      "lesson": "segment",
+      "stimulus": "بَحْرْ"
+    },
+    {
+      "id": "phonics-08",
+      "domain": "phonics",
+      "band": "foundation",
+      "prompt": {
+        "ar": "ادمج الحروف: سَ - رِ - ي - ر.",
+        "de": "Verbinde die Buchstaben سَ - رِ - ي - ر."
+      },
+      "options": [
+        "سَفَر",
+        "سَمَك",
+        "سَرِير",
+        "سُور"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "ياء المد تبقى بعد الراء المكسورة في سرير.",
+        "de": "Richtige Lösung: سَرِير."
+      },
+      "lesson": "blend",
+      "stimulus": "سَ - رِ - ي - ر"
+    },
+    {
+      "id": "phonics-09",
+      "domain": "phonics",
+      "band": "basic",
+      "prompt": {
+        "ar": "كم حرف ميم ننطق في الميم المشددة في «أُمّ»؟",
+        "de": "Wie viele M-Laute vertritt das verdoppelte Mīm in أُمّ?"
+      },
+      "options": [
+        "حرفًا واحدًا قصيرًا",
+        "ثلاثة أحرف",
+        "لا ميم فيها",
+        "حرفين"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "الشدة تدل على تضعيف الحرف: ساكن ثم متحرك عند الوصل.",
+        "de": "Richtige Lösung: حرفين."
+      },
+      "lesson": "vowels",
+      "stimulus": "أُمّ"
+    },
+    {
+      "id": "phonics-10",
+      "domain": "phonics",
+      "band": "foundation",
+      "prompt": {
+        "ar": "أي كلمة لها نهاية صوتية مثل «نُور»؟",
+        "de": "Welches Wort endet wie نُور?"
+      },
+      "options": [
+        "نَار",
+        "نَمْل",
+        "نَهْر",
+        "سُور"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "نور وسور تشتركان في النهاية ـور.",
+        "de": "Richtige Lösung: سُور."
+      },
+      "lesson": "family",
+      "stimulus": "نُور"
+    },
+    {
+      "id": "phonics-11",
+      "domain": "phonics",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر تقطيع «مِفْتَاحْ» عند الوقف.",
+        "de": "Wähle die Gliederung der Pausenform مِفْتَاحْ."
+      },
+      "options": [
+        "مِفْ - تَاحْ",
+        "مِ - فَ - تَ - حَ",
+        "مِفْتَ - احْ",
+        "مِفْ - تَ - ا - حْ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "الفاء الساكنة مع ما قبلها، ومد الألف مع فتحة التاء.",
+        "de": "Richtige Lösung: مِفْ - تَاحْ."
+      },
+      "lesson": "segment",
+      "stimulus": "مِفْتَاحْ"
+    },
+    {
+      "id": "phonics-12",
+      "domain": "phonics",
+      "band": "basic",
+      "prompt": {
+        "ar": "كيف ننطق آخر «وَرْدَة» عند الوقف؟",
+        "de": "Wie klingt die Endung von وَرْدَة in der Pause?"
+      },
+      "options": [
+        "ياءً",
+        "هاءً ساكنة",
+        "تاءً مفتوحة دائمًا",
+        "واوًا"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "التاء المربوطة تنطق هاء عند الوقف.",
+        "de": "Richtige Lösung: هاءً ساكنة."
+      },
+      "lesson": "ta-endings",
+      "stimulus": "وَرْدَة"
+    },
+    {
+      "id": "phonics-13",
+      "domain": "phonics",
+      "band": "foundation",
+      "prompt": {
+        "ar": "أي مقطع يحمل ضمة؟",
+        "de": "Welche Einheit trägt eine Ḍamma?"
+      },
+      "options": [
+        "تَ",
+        "تْ",
+        "تُ",
+        "تِ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الضمة علامة فوق الحرف تدل هنا على u قصير.",
+        "de": "Richtige Lösung: تُ."
+      },
+      "lesson": "vowels",
+      "stimulus": ""
+    },
+    {
+      "id": "phonics-14",
+      "domain": "phonics",
+      "band": "foundation",
+      "prompt": {
+        "ar": "أي كلمة تحتوي مدًّا بالياء؟",
+        "de": "Welches Wort enthält ein langes ī?"
+      },
+      "options": [
+        "فَم",
+        "فَلْفَل",
+        "فَجْر",
+        "فِيل"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "الياء في فيل مسبوقة بكسرة.",
+        "de": "Richtige Lösung: فِيل."
+      },
+      "lesson": "vowels",
+      "stimulus": ""
+    },
+    {
+      "id": "phonics-15",
+      "domain": "phonics",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر تقطيع «بِنْتْ» عند الوقف.",
+        "de": "Wähle die Gliederung der Pausenform بِنْتْ."
+      },
+      "options": [
+        "بِنْتْ",
+        "بِ - نَ - تَ",
+        "بَ - نَ - تَ",
+        "بُ - نُ - تُ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "بنت في الوقف مقطع واحد؛ لا نضيف حركات غير مكتوبة.",
+        "de": "Richtige Lösung: بِنْتْ."
+      },
+      "lesson": "segment",
+      "stimulus": "بِنْتْ"
+    },
+    {
+      "id": "phonics-16",
+      "domain": "phonics",
+      "band": "foundation",
+      "prompt": {
+        "ar": "ادمج الحروف: حَ - لِ - ي - ب.",
+        "de": "Verbinde die Buchstaben حَ - لِ - ي - ب."
+      },
+      "options": [
+        "حِلْم",
+        "حَجَر",
+        "حَلِيب",
+        "حَبْل"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "حليب تحتوي مد الياء بعد اللام المكسورة.",
+        "de": "Richtige Lösung: حَلِيب."
+      },
+      "lesson": "blend",
+      "stimulus": "حَ - لِ - ي - ب"
+    },
+    {
+      "id": "phonics-17",
+      "domain": "phonics",
+      "band": "basic",
+      "prompt": {
+        "ar": "ما أثر الشدة على التاء في «سِتَّة»؟",
+        "de": "Was bewirkt die Šadda über Tāʾ in سِتَّة?"
+      },
+      "options": [
+        "تحويل التاء إلى سين",
+        "تضعيف التاء",
+        "حذف التاء",
+        "مد الألف"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "التاء المشددة تاء ساكنة تتبعها تاء متحركة.",
+        "de": "Richtige Lösung: تضعيف التاء."
+      },
+      "lesson": "vowels",
+      "stimulus": "سِتَّة"
+    },
+    {
+      "id": "phonics-18",
+      "domain": "phonics",
+      "band": "foundation",
+      "prompt": {
+        "ar": "أي كلمة تشترك في نهاية «صَبَاح»؟",
+        "de": "Welches Wort endet wie صَبَاح?"
+      },
+      "options": [
+        "مِفْتَاح",
+        "صَبْر",
+        "سَبَب",
+        "صَوْت"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "صباح ومفتاح لهما نهاية ـاح.",
+        "de": "Richtige Lösung: مِفْتَاح."
+      },
+      "lesson": "family",
+      "stimulus": "صَبَاح"
+    },
+    {
+      "id": "phonics-19",
+      "domain": "phonics",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر تقطيع «عُصْفُورْ» عند الوقف.",
+        "de": "Wähle die Gliederung der Pausenform عُصْفُورْ."
+      },
+      "options": [
+        "عُصْ - فُورْ",
+        "عُ - صَ - فُ - رَ",
+        "عُصْفُ - ورْ",
+        "عَ - صْ - فُورْ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "الصاد الساكنة مع العين، ومد الواو مع ضمة الفاء.",
+        "de": "Richtige Lösung: عُصْ - فُورْ."
+      },
+      "lesson": "segment",
+      "stimulus": "عُصْفُورْ"
+    },
+    {
+      "id": "phonics-20",
+      "domain": "phonics",
+      "band": "basic",
+      "prompt": {
+        "ar": "كيف ننطق التاء في «بَيْت» عند الوقف؟",
+        "de": "Wie klingt Tāʾ in بَيْت in der Pause?"
+      },
+      "options": [
+        "ألفًا",
+        "لا تنطق",
+        "تاءً ساكنة",
+        "هاءً"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "التاء المبسوطة تبقى تاء في الوقف.",
+        "de": "Richtige Lösung: تاءً ساكنة."
+      },
+      "lesson": "ta-endings",
+      "stimulus": "بَيْت"
+    },
+    {
+      "id": "vocabulary-01",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "أي كلمة تعني مكانًا نتعلّم فيه؟",
+        "de": "Welches Wort bezeichnet einen Ort zum Lernen?"
+      },
+      "options": [
+        "مَطْعَم",
+        "مَطَار",
+        "مَدْرَسَة",
+        "حَدِيقَة"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "المدرسة مكان التعلم.",
+        "de": "Richtige Lösung: مَدْرَسَة."
+      },
+      "lesson": "school",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-02",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر ضد «كَبِير».",
+        "de": "Wähle das Gegenteil von كَبِير."
+      },
+      "options": [
+        "طَوِيل",
+        "جَدِيد",
+        "نَظِيف",
+        "صَغِير"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "صغير ضد كبير في الحجم.",
+        "de": "Richtige Lösung: صَغِير."
+      },
+      "lesson": "adjectives",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-03",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "أي كلمة تعني شرابًا؟",
+        "de": "Welches Wort bezeichnet ein Getränk?"
+      },
+      "options": [
+        "حَلِيب",
+        "خُبْز",
+        "أَرُزّ",
+        "سَمَك"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "الحليب مشروب، أما بقية الكلمات فأطعمة.",
+        "de": "Richtige Lösung: حَلِيب."
+      },
+      "lesson": "food",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-04",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر ضد «بَارِد».",
+        "de": "Wähle das Gegenteil von بَارِد."
+      },
+      "options": [
+        "قَدِيم",
+        "سَاخِن",
+        "سَهْل",
+        "بَعِيد"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "ساخن ضد بارد في الحرارة.",
+        "de": "Richtige Lösung: سَاخِن."
+      },
+      "lesson": "adjectives",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-05",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "أي كلمة اسم فاكهة؟",
+        "de": "Welches Wort bezeichnet Obst?"
+      },
+      "options": [
+        "مَوْز",
+        "قَلَم",
+        "كُرْسِيّ",
+        "قَمِيص"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "الموز من الفواكه.",
+        "de": "Richtige Lösung: مَوْز."
+      },
+      "lesson": "food",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-06",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "أُمُّ أُمِّي هي ...",
+        "de": "Die Mutter meiner Mutter ist meine …"
+      },
+      "options": [
+        "بِنْتِي",
+        "جَدَّتِي",
+        "أُخْتِي",
+        "عَمَّتِي"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "أم الأم هي الجدة.",
+        "de": "Richtige Lösung: جَدَّتِي."
+      },
+      "lesson": "family-vocab",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-07",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "نكتب بالقلم في ...",
+        "de": "Mit einem Stift schreiben wir in ein …"
+      },
+      "options": [
+        "دَفْتَر",
+        "كُوب",
+        "حِذَاء",
+        "مِلْعَقَة"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "الدفتر للكتابة.",
+        "de": "Richtige Lösung: دَفْتَر."
+      },
+      "lesson": "school",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-08",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "أي فعل يناسب الماء؟",
+        "de": "Welches Verb passt zu Wasser?"
+      },
+      "options": [
+        "يَفْتَحُ",
+        "يَرْكَبُ",
+        "يَشْرَبُ",
+        "يَلْبَسُ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "نقول يشرب الماء.",
+        "de": "Richtige Lösung: يَشْرَبُ."
+      },
+      "lesson": "verbs-vocab",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-09",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "الطبيب يعمل غالبًا في ...",
+        "de": "Ein Arzt arbeitet häufig in einem …"
+      },
+      "options": [
+        "مَلْعَب",
+        "مَصْنَع",
+        "مُسْتَشْفَى",
+        "مَخْبَز"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "المستشفى مكان علاج المرضى.",
+        "de": "Richtige Lösung: مُسْتَشْفَى."
+      },
+      "lesson": "health",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-10",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "أحتاج إلى ___ كي أركب القطار.",
+        "de": "Ich brauche … für eine Zugfahrt."
+      },
+      "options": [
+        "وَصْفَة",
+        "مِمْحَاة",
+        "وَسَادَة",
+        "تَذْكِرَة"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "التذكرة تسمح بركوب القطار.",
+        "de": "Richtige Lösung: تَذْكِرَة."
+      },
+      "lesson": "travel",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-11",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "حقيبة ليست ثقيلة؛ إنها ...",
+        "de": "Eine Tasche ist nicht schwer; sie ist …"
+      },
+      "options": [
+        "مُزْدَحِمَة",
+        "خَفِيفَة",
+        "مَرِيضَة",
+        "مُغْلَقَة"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "خفيفة ضد ثقيلة.",
+        "de": "Richtige Lösung: خَفِيفَة."
+      },
+      "lesson": "adjectives",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-12",
+      "domain": "vocabulary",
+      "band": "extended",
+      "prompt": {
+        "ar": "قال البائع: هذا السعر أقل من السابق. أي كلمة تناسبه؟",
+        "de": "Der neue Preis ist niedriger. Welches Wort passt?"
+      },
+      "options": [
+        "أَثْقَل",
+        "أَبْعَد",
+        "أَرْخَص",
+        "أَطْوَل"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "أرخص تعني أقل ثمنًا.",
+        "de": "Richtige Lösung: أَرْخَص."
+      },
+      "lesson": "shopping",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-13",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "أي كلمة اسم خضار؟",
+        "de": "Welches Wort bezeichnet Gemüse?"
+      },
+      "options": [
+        "جَزَر",
+        "حَقِيبَة",
+        "سَاعَة",
+        "سَرِير"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "الجزر من الخضروات.",
+        "de": "Richtige Lösung: جَزَر."
+      },
+      "lesson": "food",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-14",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "أَخُ أَبِي هو ...",
+        "de": "Der Bruder meines Vaters ist mein …"
+      },
+      "options": [
+        "عَمِّي",
+        "خَالِي",
+        "جَدِّي",
+        "ابْنِي"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "أخو الأب هو العم؛ أخو الأم هو الخال.",
+        "de": "Richtige Lösung: عَمِّي."
+      },
+      "lesson": "family-vocab",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-15",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "نشرب الماء في ...",
+        "de": "Woraus trinken wir Wasser?"
+      },
+      "options": [
+        "دَفْتَر",
+        "قَمِيص",
+        "كُوب",
+        "حَقِيبَة"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الكوب وعاء للشرب.",
+        "de": "Richtige Lösung: كُوب."
+      },
+      "lesson": "food",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-16",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "أي فعل يناسب القميص؟",
+        "de": "Welches Verb passt zu einem Hemd?"
+      },
+      "options": [
+        "يَلْبَسُ",
+        "يَشْرَبُ",
+        "يَقْرَأُ",
+        "يَزْرَعُ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "نقول يلبس القميص.",
+        "de": "Richtige Lösung: يَلْبَسُ."
+      },
+      "lesson": "verbs-vocab",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-17",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "نشتري الدواء من ...",
+        "de": "Wo kaufen wir Medikamente?"
+      },
+      "options": [
+        "مَلْعَب",
+        "صَيْدَلِيَّة",
+        "مَكْتَبَة",
+        "حَدِيقَة"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "الصيدلية لبيع الدواء.",
+        "de": "Richtige Lösung: صَيْدَلِيَّة."
+      },
+      "lesson": "health",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-18",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "أريد غرفة في الفندق؛ أحتاج إلى ...",
+        "de": "Ich möchte ein Hotelzimmer. Was brauche ich?"
+      },
+      "options": [
+        "فَحْص",
+        "تَمْرِين",
+        "وَصْفَة",
+        "حَجْز"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "الحجز لتأمين الغرفة قبل الوصول.",
+        "de": "Richtige Lösung: حَجْز."
+      },
+      "lesson": "travel",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-19",
+      "domain": "vocabulary",
+      "band": "basic",
+      "prompt": {
+        "ar": "طريق ليس قريبًا؛ إنه ...",
+        "de": "Ein Ziel liegt nicht nahe. Es liegt …"
+      },
+      "options": [
+        "بَعِيد",
+        "جَدِيد",
+        "نَاعِم",
+        "حُلْو"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "بعيد ضد قريب.",
+        "de": "Richtige Lösung: بَعِيد."
+      },
+      "lesson": "adjectives",
+      "stimulus": ""
+    },
+    {
+      "id": "vocabulary-20",
+      "domain": "vocabulary",
+      "band": "extended",
+      "prompt": {
+        "ar": "سلعة ثمنها مرتفع. كيف نصفها؟",
+        "de": "Wie beschreibt man eine Ware mit hohem Preis?"
+      },
+      "options": [
+        "سَرِيعَة",
+        "مَفْتُوحَة",
+        "خَفِيفَة",
+        "غَالِيَة"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "غالية تعني مرتفعة الثمن.",
+        "de": "Richtige Lösung: غَالِيَة."
+      },
+      "lesson": "shopping",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-01",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "أكمل: أَنَا ___ الْعَرَبِيَّةَ.",
+        "de": "Ergänze: أَنَا ___ الْعَرَبِيَّةَ."
+      },
+      "options": [
+        "أَدْرُسُ",
+        "يَدْرُسُ",
+        "تَدْرُسِينَ",
+        "نَدْرُسُ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "أنا تلائمها أدرس.",
+        "de": "Richtige Lösung: أَدْرُسُ."
+      },
+      "lesson": "pronouns",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-02",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر سؤال المكان.",
+        "de": "Wähle die Frage nach einem Ort."
+      },
+      "options": [
+        "كَمْ قَلَمًا؟",
+        "أَيْنَ الْكِتَابُ؟",
+        "مَنْ هَذَا؟",
+        "مَتَى الدَّرْسُ؟"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "أين للسؤال عن المكان.",
+        "de": "Richtige Lösung: أَيْنَ الْكِتَابُ؟."
+      },
+      "lesson": "question",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-03",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "أكمل: هِيَ ___ كِتَابًا.",
+        "de": "Ergänze: هِيَ ___ كِتَابًا."
+      },
+      "options": [
+        "يَقْرَأُ",
+        "أَقْرَأُ",
+        "نَقْرَأُ",
+        "تَقْرَأُ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "هي تقرأ فعل مضارع للمفرد المؤنث الغائب.",
+        "de": "Richtige Lösung: تَقْرَأُ."
+      },
+      "lesson": "pronouns",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-04",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر سؤال الزمن.",
+        "de": "Wähle die Frage nach einer Zeit."
+      },
+      "options": [
+        "مَنْ أَنْتَ؟",
+        "مَاذَا تَأْكُلُ؟",
+        "مَتَى تَصِلُ؟",
+        "أَيْنَ الْبَيْتُ؟"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "متى للسؤال عن الزمن.",
+        "de": "Richtige Lösung: مَتَى تَصِلُ؟."
+      },
+      "lesson": "question",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-05",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر جملة تعني: هذا كتاب جديد.",
+        "de": "Wähle den korrekten Satz für: Das ist ein neues Buch."
+      },
+      "options": [
+        "هَذَا كِتَابٌ جَدِيدٌ.",
+        "هَذِهِ كِتَابٌ جَدِيدٌ.",
+        "هَذَا جَدِيدَةٌ كِتَابٌ.",
+        "هَذَا كِتَابٌ جَدِيدَةٌ."
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "كتاب مذكر، فتناسبه هذا وجديد.",
+        "de": "Richtige Lösung: هَذَا كِتَابٌ جَدِيدٌ.."
+      },
+      "lesson": "gender",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-06",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "أكمل: نَحْنُ ___ إِلَى الْمَدْرَسَةِ.",
+        "de": "Ergänze den Satz mit نَحْنُ."
+      },
+      "options": [
+        "تَذْهَبِينَ",
+        "نَذْهَبُ",
+        "يَذْهَبُ",
+        "أَذْهَبُ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "نحن نذهب توافق ضمير الجمع المتكلم.",
+        "de": "Richtige Lösung: نَذْهَبُ."
+      },
+      "lesson": "pronouns",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-07",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "أي جملة سؤال عن العدد؟",
+        "de": "Welche Frage erfragt eine Anzahl?"
+      },
+      "options": [
+        "مَنْ كَتَبَ؟",
+        "مَتَى تَقْرَأُ؟",
+        "كَمْ كِتَابًا عِنْدَكَ؟",
+        "أَيْنَ كِتَابُكَ؟"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "كم للسؤال عن العدد.",
+        "de": "Richtige Lösung: كَمْ كِتَابًا عِنْدَكَ؟."
+      },
+      "lesson": "question",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-08",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "أكمل: الْقَلَمُ ___ الطَّاوِلَةِ، وليس تحتها.",
+        "de": "Der Stift liegt auf dem Tisch, nicht darunter."
+      },
+      "options": [
+        "مِنْ",
+        "إِلَى",
+        "عَنْ",
+        "عَلَى"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "على تدل هنا على المكان فوق السطح.",
+        "de": "Richtige Lösung: عَلَى."
+      },
+      "lesson": "prepositions",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-09",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر نفي «أَشْرَبُ الْقَهْوَةَ» في الحاضر.",
+        "de": "Verneine den Satz in der Gegenwart."
+      },
+      "options": [
+        "لَا شَرِبْتُ الْقَهْوَةَ.",
+        "لَا أَشْرَبُ الْقَهْوَةَ.",
+        "لَنْ شَرِبْتُ الْقَهْوَةَ.",
+        "لَمْ أَشْرَبُ الْقَهْوَةَ."
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "لا مع المضارع هنا تنفي عادة حاضرة.",
+        "de": "Richtige Lösung: لَا أَشْرَبُ الْقَهْوَةَ.."
+      },
+      "lesson": "negation",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-10",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "أكمل سؤال السبب: ___ تَأَخَّرْتَ؟",
+        "de": "Ergänze die Frage nach dem Grund."
+      },
+      "options": [
+        "أَيْنَ",
+        "مَنْ",
+        "كَمْ",
+        "لِمَاذَا"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "لماذا للسؤال عن السبب.",
+        "de": "Richtige Lösung: لِمَاذَا."
+      },
+      "lesson": "question",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-11",
+      "domain": "sentences",
+      "band": "extended",
+      "prompt": {
+        "ar": "اختر جملة فعلية معناها أن الولد فتح الباب.",
+        "de": "Wähle einen Verbalsatz mit der Bedeutung: Der Junge öffnete die Tür."
+      },
+      "options": [
+        "فَتَحَ الْبَابُ الْوَلَدَ.",
+        "فَتَحَتْ الْوَلَدُ الْبَابَ.",
+        "فَتَحَ الْوَلَدَ الْبَابُ.",
+        "فَتَحَ الْوَلَدُ الْبَابَ."
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "الولد هو الفاعل المرفوع والباب مفعول به منصوب.",
+        "de": "Richtige Lösung: فَتَحَ الْوَلَدُ الْبَابَ.."
+      },
+      "lesson": "subject-object",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-12",
+      "domain": "sentences",
+      "band": "extended",
+      "prompt": {
+        "ar": "أكمل: أَخَذْتُ الْمِظَلَّةَ ___ الْمَطَرَ غَزِيرٌ.",
+        "de": "Ergänze den passenden kausalen Konnektor."
+      },
+      "options": [
+        "لِأَنَّ",
+        "ثُمَّ",
+        "أَوْ",
+        "لَكِنَّ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "لأن تربط الفعل بسببه.",
+        "de": "Richtige Lösung: لِأَنَّ."
+      },
+      "lesson": "connectors",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-13",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر الجملة الصحيحة عن بنت صغيرة.",
+        "de": "Wähle den richtigen Satz über ein kleines Mädchen."
+      },
+      "options": [
+        "هَذِهِ بِنْتٌ صَغِيرٌ.",
+        "هَذَا بِنْتٌ صَغِيرٌ.",
+        "هَذِهِ بِنْتٌ صَغِيرَةٌ.",
+        "هَذَا بِنْتٌ صَغِيرَةٌ."
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "اسم الإشارة والصفة يوافقان بنت في التأنيث.",
+        "de": "Richtige Lösung: هَذِهِ بِنْتٌ صَغِيرَةٌ.."
+      },
+      "lesson": "gender",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-14",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "أكمل: أَنْتِ ___ فِي الْمَكْتَبِ.",
+        "de": "Ergänze den Satz mit أَنْتِ."
+      },
+      "options": [
+        "أَعْمَلُ",
+        "يَعْمَلُ",
+        "تَعْمَلِينَ",
+        "تَعْمَلُونَ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "أنتِ تعملين للمفردة المخاطبة.",
+        "de": "Richtige Lösung: تَعْمَلِينَ."
+      },
+      "lesson": "pronouns",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-15",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر سؤالًا عن شخص.",
+        "de": "Wähle eine Frage nach einer Person."
+      },
+      "options": [
+        "أَيْنَ الْمَكْتَبُ؟",
+        "مَتَى الْمَوْعِدُ؟",
+        "كَمْ كِتَابًا؟",
+        "مَنْ يَعْمَلُ هُنَا؟"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "من للسؤال عن شخص.",
+        "de": "Richtige Lösung: مَنْ يَعْمَلُ هُنَا؟."
+      },
+      "lesson": "question",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-16",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "أكمل: ذَهَبْتُ ___ الْمَطَارِ.",
+        "de": "Ergänze: Ich ging zum Flughafen."
+      },
+      "options": [
+        "عَلَى",
+        "تَحْتَ",
+        "فَوْقَ",
+        "إِلَى"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "إلى تدل هنا على جهة الذهاب.",
+        "de": "Richtige Lösung: إِلَى."
+      },
+      "lesson": "prepositions",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-17",
+      "domain": "sentences",
+      "band": "extended",
+      "prompt": {
+        "ar": "اختر نفي الفعل في الماضي مع «لَمْ».",
+        "de": "Verneine die vergangene Handlung mit لَمْ."
+      },
+      "options": [
+        "لَمْ أَذْهَبَ.",
+        "لَمْ أَذْهَبْ.",
+        "لَمْ ذَهَبْتُ.",
+        "لَمْ أَذْهَبُ."
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "لم تدخل على المضارع المجزوم وتنفي وقوعه في الماضي.",
+        "de": "Richtige Lösung: لَمْ أَذْهَبْ.."
+      },
+      "lesson": "negation",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-18",
+      "domain": "sentences",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر سؤالًا عن كيفية الذهاب.",
+        "de": "Wähle die Frage nach der Art der Fortbewegung."
+      },
+      "options": [
+        "مَتَى تَذْهَبُ؟",
+        "لِمَاذَا تَذْهَبُ؟",
+        "كَيْفَ تَذْهَبُ؟",
+        "مَنْ يَذْهَبُ؟"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "كيف تسأل هنا عن وسيلة أو طريقة الذهاب.",
+        "de": "Richtige Lösung: كَيْفَ تَذْهَبُ؟."
+      },
+      "lesson": "question",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-19",
+      "domain": "sentences",
+      "band": "extended",
+      "prompt": {
+        "ar": "اختر جملة تخبر أن البنت قرأت القصة.",
+        "de": "Wähle den Satz: Das Mädchen las die Geschichte."
+      },
+      "options": [
+        "قَرَأَتِ الْقِصَّةُ الْبِنْتَ.",
+        "قَرَأَتِ الْبِنْتُ الْقِصَّةَ.",
+        "قَرَأَتِ الْبِنْتَ الْقِصَّةُ.",
+        "قَرَأَ الْبِنْتُ الْقِصَّةَ."
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "البنت فاعل مؤنث مرفوع، والقصة مفعول به منصوب.",
+        "de": "Richtige Lösung: قَرَأَتِ الْبِنْتُ الْقِصَّةَ.."
+      },
+      "lesson": "subject-object",
+      "stimulus": ""
+    },
+    {
+      "id": "sentences-20",
+      "domain": "sentences",
+      "band": "extended",
+      "prompt": {
+        "ar": "أكمل: رَتَّبْتُ الْغُرْفَةَ، ___ خَرَجْتُ لِلْمَشْيِ.",
+        "de": "Ergänze die zeitliche Abfolge."
+      },
+      "options": [
+        "كَيْ",
+        "ثُمَّ",
+        "لِأَنَّ",
+        "بِسَبَبِ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "ثم تدل هنا على ترتيب الحدثين.",
+        "de": "Richtige Lösung: ثُمَّ."
+      },
+      "lesson": "connectors",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-01",
+      "domain": "grammar",
+      "band": "basic",
+      "prompt": {
+        "ar": "ما نوع «يَكْتُبُ»؟",
+        "de": "Welche Wortart ist يَكْتُبُ?"
+      },
+      "options": [
+        "فِعْل",
+        "اسْم",
+        "حَرْفُ جَرّ",
+        "ضَمِير مُنْفَصِل"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "يكتب يدل على حدث في الزمن الحاضر.",
+        "de": "Richtige Lösung: فِعْل."
+      },
+      "lesson": "word-classes",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-02",
+      "domain": "grammar",
+      "band": "basic",
+      "prompt": {
+        "ar": "أكمل: ذَهَبْتُ إِلَى ___.",
+        "de": "Ergänze die Form nach إِلَى."
+      },
+      "options": [
+        "الْمَدْرَسَةُ",
+        "الْمَدْرَسَةَ",
+        "الْمَدْرَسَةْ",
+        "الْمَدْرَسَةِ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "الاسم بعد حرف الجر إلى مجرور بالكسرة.",
+        "de": "Richtige Lösung: الْمَدْرَسَةِ."
+      },
+      "lesson": "prepositions",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-03",
+      "domain": "grammar",
+      "band": "basic",
+      "prompt": {
+        "ar": "ما نوع جملة «الْجَوُّ جَمِيلٌ»؟",
+        "de": "Welche Satzart ist الْجَوُّ جَمِيلٌ?"
+      },
+      "options": [
+        "فِعْلُ أَمْر",
+        "حَرْفُ جَرّ",
+        "اسْمِيَّة",
+        "فِعْلِيَّة"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "تبدأ الجملة باسم، فهي اسمية.",
+        "de": "Richtige Lösung: اسْمِيَّة."
+      },
+      "lesson": "sentence-types",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-04",
+      "domain": "grammar",
+      "band": "basic",
+      "prompt": {
+        "ar": "أكمل: رَأَيْتُ ___.",
+        "de": "Ergänze das direkte Objekt."
+      },
+      "options": [
+        "الْوَلَدُ",
+        "الْوَلَدِ",
+        "الْوَلَدْ",
+        "الْوَلَدَ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "الولد مفعول به منصوب بالفتحة.",
+        "de": "Richtige Lösung: الْوَلَدَ."
+      },
+      "lesson": "subject-object",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-05",
+      "domain": "grammar",
+      "band": "basic",
+      "prompt": {
+        "ar": "ما نوع كلمة «فِي»؟",
+        "de": "Welche Wortart ist فِي?"
+      },
+      "options": [
+        "حَرْفُ جَرّ",
+        "فِعْل مَاضٍ",
+        "اسْم عَلَم",
+        "صِفَة"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "في من حروف الجر.",
+        "de": "Richtige Lösung: حَرْفُ جَرّ."
+      },
+      "lesson": "word-classes",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-06",
+      "domain": "grammar",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر المثنى المرفوع لكلمة «طَالِب».",
+        "de": "Wähle den Dual im Nominativ."
+      },
+      "options": [
+        "طُلَّابٌ",
+        "طَالِبَاتٌ",
+        "طَالِبَانِ",
+        "طَالِبَيْنِ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "المثنى المرفوع علامته الألف: طالبان.",
+        "de": "Richtige Lösung: طَالِبَانِ."
+      },
+      "lesson": "number",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-07",
+      "domain": "grammar",
+      "band": "basic",
+      "prompt": {
+        "ar": "أين المضاف إليه في «كِتَابُ الطَّالِبِ»؟",
+        "de": "Welches Wort ist das Genitivattribut?"
+      },
+      "options": [
+        "كِتَابُ",
+        "كِتَابُ الطَّالِبِ كلُّها فعل",
+        "لا يوجد",
+        "الطَّالِبِ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "الطالب مضاف إليه مجرور.",
+        "de": "Richtige Lösung: الطَّالِبِ."
+      },
+      "lesson": "idafa",
+      "stimulus": "كِتَابُ الطَّالِبِ"
+    },
+    {
+      "id": "grammar-08",
+      "domain": "grammar",
+      "band": "basic",
+      "prompt": {
+        "ar": "أكمل: هَذِهِ حَدِيقَةٌ ___.",
+        "de": "Ergänze das passende Attribut."
+      },
+      "options": [
+        "جَمِيلَةً",
+        "جَمِيلَةٍ",
+        "جَمِيلَةٌ",
+        "جَمِيلٌ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "النعت يوافق حديقة في التأنيث والرفع والتنكير.",
+        "de": "Richtige Lösung: جَمِيلَةٌ."
+      },
+      "lesson": "adjectival-attribute",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-09",
+      "domain": "grammar",
+      "band": "extended",
+      "prompt": {
+        "ar": "أكمل: كَانَ الْجَوُّ ___.",
+        "de": "Ergänze das Prädikat nach كَانَ."
+      },
+      "options": [
+        "بَارِدٍ",
+        "بَارِدَانِ",
+        "بَارِدًا",
+        "بَارِدٌ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "خبر كان منصوب.",
+        "de": "Richtige Lösung: بَارِدًا."
+      },
+      "lesson": "defective-verbs",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-10",
+      "domain": "grammar",
+      "band": "extended",
+      "prompt": {
+        "ar": "أكمل: لَنْ ___ عَنِ الْمَوْعِدِ.",
+        "de": "Ergänze den Konjunktiv nach لَنْ."
+      },
+      "options": [
+        "أَتَأَخَّرُ",
+        "أَتَأَخَّرْ",
+        "تَأَخَّرْتُ",
+        "أَتَأَخَّرَ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "لن تنصب المضارع، وعلامة نصبه الفتحة هنا.",
+        "de": "Richtige Lösung: أَتَأَخَّرَ."
+      },
+      "lesson": "present-inflection",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-11",
+      "domain": "grammar",
+      "band": "extended",
+      "prompt": {
+        "ar": "ما الحال في «عَادَ الطِّفْلُ مُبْتَسِمًا»؟",
+        "de": "Welches Wort beschreibt hier den Zustand bei der Rückkehr?"
+      },
+      "options": [
+        "مُبْتَسِمًا",
+        "عَادَ",
+        "الطِّفْلُ",
+        "لا يوجد"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "مبتسمًا حال يبين هيئة الطفل عند العودة.",
+        "de": "Richtige Lösung: مُبْتَسِمًا."
+      },
+      "lesson": "circumstantial",
+      "stimulus": "عَادَ الطِّفْلُ مُبْتَسِمًا"
+    },
+    {
+      "id": "grammar-12",
+      "domain": "grammar",
+      "band": "extended",
+      "prompt": {
+        "ar": "ما وظيفة «كِيلُوغْرَامًا» في «اشْتَرَيْتُ عِشْرِينَ كِيلُوغْرَامًا»؟",
+        "de": "Welche Funktion hat كِيلُوغْرَامًا nach der Zahl zwanzig?"
+      },
+      "options": [
+        "تَمْيِيز",
+        "فَاعِل",
+        "مُضَاف إِلَيْهِ",
+        "نَعْت مَرْفُوع"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "تمييز العدد عشرين مفرد منصوب.",
+        "de": "Richtige Lösung: تَمْيِيز."
+      },
+      "lesson": "tamyiz",
+      "stimulus": "اشْتَرَيْتُ عِشْرِينَ كِيلُوغْرَامًا"
+    },
+    {
+      "id": "grammar-13",
+      "domain": "grammar",
+      "band": "basic",
+      "prompt": {
+        "ar": "ما نوع «مَدِينَة»؟",
+        "de": "Welche Wortart ist مَدِينَة?"
+      },
+      "options": [
+        "حَرْف جَرّ",
+        "فِعْل أَمْر",
+        "اسْم",
+        "فِعْل"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "مدينة تدل على مكان دون اقتران بحدث وزمن.",
+        "de": "Richtige Lösung: اسْم."
+      },
+      "lesson": "word-classes",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-14",
+      "domain": "grammar",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر جمع المؤنث السالم لكلمة «مُعَلِّمَة».",
+        "de": "Wähle den regelmäßigen femininen Plural."
+      },
+      "options": [
+        "مُعَلِّمَتَانِ",
+        "مُعَلِّمُونَ",
+        "مُعَلِّمَةٌ",
+        "مُعَلِّمَاتٌ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "معلمات جمع مؤنث سالم بزيادة ألف وتاء.",
+        "de": "Richtige Lösung: مُعَلِّمَاتٌ."
+      },
+      "lesson": "number",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-15",
+      "domain": "grammar",
+      "band": "basic",
+      "prompt": {
+        "ar": "أين المضاف إليه في «بَابُ الْبَيْتِ»؟",
+        "de": "Welches Wort ist das Genitivattribut?"
+      },
+      "options": [
+        "لا يوجد",
+        "الْبَيْتِ",
+        "بَابُ",
+        "العبارة فعل ماضٍ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "البيت مضاف إليه مجرور.",
+        "de": "Richtige Lösung: الْبَيْتِ."
+      },
+      "lesson": "idafa",
+      "stimulus": "بَابُ الْبَيْتِ"
+    },
+    {
+      "id": "grammar-16",
+      "domain": "grammar",
+      "band": "basic",
+      "prompt": {
+        "ar": "أكمل: رَأَيْتُ وَلَدًا ___.",
+        "de": "Ergänze das passende Attribut zum Akkusativobjekt."
+      },
+      "options": [
+        "صَغِيرًا",
+        "صَغِيرٌ",
+        "صَغِيرٍ",
+        "صَغِيرَةً"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "النعت يوافق ولدًا في التذكير والنصب والتنكير.",
+        "de": "Richtige Lösung: صَغِيرًا."
+      },
+      "lesson": "adjectival-attribute",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-17",
+      "domain": "grammar",
+      "band": "extended",
+      "prompt": {
+        "ar": "أكمل: إِنَّ الْعِلْمَ ___.",
+        "de": "Ergänze das Prädikat nach إِنَّ."
+      },
+      "options": [
+        "نَافِعَيْنِ",
+        "نَافِعٌ",
+        "نَافِعًا",
+        "نَافِعٍ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "خبر إن مرفوع.",
+        "de": "Richtige Lösung: نَافِعٌ."
+      },
+      "lesson": "inna-particles",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-18",
+      "domain": "grammar",
+      "band": "extended",
+      "prompt": {
+        "ar": "أكمل: لَمْ ___ خَالِدٌ.",
+        "de": "Ergänze den Jussiv nach لَمْ."
+      },
+      "options": [
+        "يَحْضُرُ",
+        "يَحْضُرَ",
+        "حَضَرَ",
+        "يَحْضُرْ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "لم تجزم المضارع الصحيح الآخر بالسكون.",
+        "de": "Richtige Lösung: يَحْضُرْ."
+      },
+      "lesson": "present-inflection",
+      "stimulus": ""
+    },
+    {
+      "id": "grammar-19",
+      "domain": "grammar",
+      "band": "extended",
+      "prompt": {
+        "ar": "ما المفعول لأجله في «دَرَسْتُ رَغْبَةً فِي النَّجَاحِ»؟",
+        "de": "Welche Angabe nennt den Beweggrund des Lernens?"
+      },
+      "options": [
+        "النَّجَاحِ",
+        "فِي",
+        "رَغْبَةً",
+        "دَرَسْتُ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "رغبةً مصدر يبين سبب الدراسة.",
+        "de": "Richtige Lösung: رَغْبَةً."
+      },
+      "lesson": "purpose-object",
+      "stimulus": "دَرَسْتُ رَغْبَةً فِي النَّجَاحِ"
+    },
+    {
+      "id": "grammar-20",
+      "domain": "grammar",
+      "band": "extended",
+      "prompt": {
+        "ar": "ما المفعول المطلق في «فَرِحَ الطِّفْلُ فَرَحًا شَدِيدًا»؟",
+        "de": "Welches Wort ist das innere Objekt aus demselben Verbstamm?"
+      },
+      "options": [
+        "فَرِحَ",
+        "فَرَحًا",
+        "الطِّفْلُ",
+        "شَدِيدًا"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "فرحًا مصدر من لفظ الفعل فرح، وشديدًا نعته.",
+        "de": "Richtige Lösung: فَرَحًا."
+      },
+      "lesson": "absolute-object",
+      "stimulus": "فَرِحَ الطِّفْلُ فَرَحًا شَدِيدًا"
+    },
+    {
+      "id": "spelling-01",
+      "domain": "spelling",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر كتابة مكان التعلّم الصحيحة.",
+        "de": "Wähle die richtige Schreibweise für Schule."
+      },
+      "options": [
+        "مَدْرَسَا",
+        "مَدْرَسَة",
+        "مَدْرَسَه",
+        "مَدْرَسَت"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "مدرسة تنتهي بتاء مربوطة.",
+        "de": "Richtige Lösung: مَدْرَسَة."
+      },
+      "lesson": "ta-endings",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-02",
+      "domain": "spelling",
+      "band": "extended",
+      "prompt": {
+        "ar": "اختر الكتابة الصحيحة إملائيًّا.",
+        "de": "Wähle die richtige Schreibweise für Frage."
+      },
+      "options": [
+        "سُئَال",
+        "سُءَال",
+        "سُؤَال",
+        "سُأَال"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الهمزة مفتوحة وما قبلها مضموم، فتكتب على واو.",
+        "de": "Richtige Lösung: سُؤَال."
+      },
+      "lesson": "hamza-medial",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-03",
+      "domain": "spelling",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر الكتابة الصحيحة إملائيًّا.",
+        "de": "Wähle die richtige Schreibweise für Krankenhaus."
+      },
+      "options": [
+        "مُسْتَشْفَاء",
+        "مُسْتَشْفَى",
+        "مُسْتَشْفَا",
+        "مُسْتَشْفَي"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "مستشفى تنتهي بألف مقصورة.",
+        "de": "Richtige Lösung: مُسْتَشْفَى."
+      },
+      "lesson": "alif-endings",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-04",
+      "domain": "spelling",
+      "band": "extended",
+      "prompt": {
+        "ar": "اختر الكتابة الصحيحة إملائيًّا.",
+        "de": "Wähle die richtige Schreibweise für Ufer."
+      },
+      "options": [
+        "شَاطِء",
+        "شَاطِئ",
+        "شَاطِؤ",
+        "شَاطِأ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "قبل الهمزة المتطرفة كسرة، فتكتب على نبرة.",
+        "de": "Richtige Lösung: شَاطِئ."
+      },
+      "lesson": "hamza-final",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-05",
+      "domain": "spelling",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر الكتابة الصحيحة إملائيًّا.",
+        "de": "Wähle die richtige Schreibweise für Zimmer."
+      },
+      "options": [
+        "غُرْفَا",
+        "غُرْفَة",
+        "غُرْفَه",
+        "غُرْفَت"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "غرفة تنتهي بتاء مربوطة.",
+        "de": "Richtige Lösung: غُرْفَة."
+      },
+      "lesson": "ta-endings",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-06",
+      "domain": "spelling",
+      "band": "basic",
+      "prompt": {
+        "ar": "أكمل نهاية «بَيْـ...» بالحرف الصحيح.",
+        "de": "Ergänze das Wort بَيْـ… für Haus."
+      },
+      "options": [
+        "ة",
+        "ه",
+        "ى",
+        "ت"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "بيت تنتهي بتاء مبسوطة.",
+        "de": "Richtige Lösung: ت."
+      },
+      "lesson": "ta-endings",
+      "stimulus": "بَيْـ..."
+    },
+    {
+      "id": "spelling-07",
+      "domain": "spelling",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر كتابة فعل «يدعو» في الماضي.",
+        "de": "Wähle die Vergangenheitsform von يَدْعُو."
+      },
+      "options": [
+        "دَعَاء",
+        "دَعَا",
+        "دَعَى",
+        "دَعَي"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "أصل الألف واو يظهر في يدعو، فتكتب دعا.",
+        "de": "Richtige Lösung: دَعَا."
+      },
+      "lesson": "alif-endings",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-08",
+      "domain": "spelling",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر كتابة اسم المتكلّم.",
+        "de": "Wähle die richtige Schreibweise des Pronomens ich."
+      },
+      "options": [
+        "أَنَا",
+        "اَنَا",
+        "إَنَا",
+        "آنَا"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "أنا تبدأ بهمزة قطع مفتوحة.",
+        "de": "Richtige Lösung: أَنَا."
+      },
+      "lesson": "hamza-initial",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-09",
+      "domain": "spelling",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر فعل الأمر الصحيح من «يَكْتُبُ».",
+        "de": "Wähle die korrekte Befehlsform von يَكْتُبُ."
+      },
+      "options": [
+        "آكْتُبْ",
+        "اُكْتُبْ",
+        "أُكْتُبْ",
+        "إِكْتُبْ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "أمر الثلاثي اكتب يبدأ بهمزة وصل لا تكتب فوقها همزة قطع.",
+        "de": "Richtige Lösung: اُكْتُبْ."
+      },
+      "lesson": "hamza-initial",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-10",
+      "domain": "spelling",
+      "band": "extended",
+      "prompt": {
+        "ar": "اختر كتابة جمع «مَسْأَلَة».",
+        "de": "Wähle die richtige Schreibweise des Plurals von مَسْأَلَة."
+      },
+      "options": [
+        "مَسَاءِل",
+        "مَسَائِل",
+        "مَسَاؤِل",
+        "مَسَاأِل"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "الهمزة مكسورة فتكتب على نبرة.",
+        "de": "Richtige Lösung: مَسَائِل."
+      },
+      "lesson": "hamza-medial",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-11",
+      "domain": "spelling",
+      "band": "extended",
+      "prompt": {
+        "ar": "اختر الكتابة الصحيحة إملائيًّا.",
+        "de": "Wähle die richtige Schreibweise für Beginn."
+      },
+      "options": [
+        "بَدْؤ",
+        "بَدْئ",
+        "بَدْء",
+        "بَدْأ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "قبل الهمزة المتطرفة ساكن، فتكتب على السطر.",
+        "de": "Richtige Lösung: بَدْء."
+      },
+      "lesson": "hamza-final",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-12",
+      "domain": "spelling",
+      "band": "extended",
+      "prompt": {
+        "ar": "اختر كتابة «عَبَاءَة» الصحيحة.",
+        "de": "Wähle die richtige Schreibweise von ʿabāʾa."
+      },
+      "options": [
+        "عَبَاأَة",
+        "عَبَاؤَة",
+        "عَبَائَة",
+        "عَبَاءَة"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "الهمزة المفتوحة بعد ألف مد تكتب على السطر.",
+        "de": "Richtige Lösung: عَبَاءَة."
+      },
+      "lesson": "hamza-exceptions",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-13",
+      "domain": "spelling",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر الكتابة الصحيحة إملائيًّا.",
+        "de": "Wähle die richtige Schreibweise für Geschichte."
+      },
+      "options": [
+        "قِصَّة",
+        "قِصَّه",
+        "قِصَّت",
+        "قِصَّا"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "قصة تنتهي بتاء مربوطة.",
+        "de": "Richtige Lösung: قِصَّة."
+      },
+      "lesson": "ta-endings",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-14",
+      "domain": "spelling",
+      "band": "basic",
+      "prompt": {
+        "ar": "أكمل نهاية «بِنْـ...» بالحرف الصحيح.",
+        "de": "Ergänze das Wort für Mädchen: بِنْـ…"
+      },
+      "options": [
+        "ه",
+        "ى",
+        "ت",
+        "ة"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "بنت تنتهي بتاء مبسوطة.",
+        "de": "Richtige Lösung: ت."
+      },
+      "lesson": "ta-endings",
+      "stimulus": "بِنْـ..."
+    },
+    {
+      "id": "spelling-15",
+      "domain": "spelling",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر كتابة فعل «يرمي» في الماضي.",
+        "de": "Wähle die Vergangenheitsform von يَرْمِي."
+      },
+      "options": [
+        "رَمَا",
+        "رَمَي",
+        "رَمَاء",
+        "رَمَى"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "أصل الألف ياء يظهر في يرمي، فتكتب رمى.",
+        "de": "Richtige Lösung: رَمَى."
+      },
+      "lesson": "alif-endings",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-16",
+      "domain": "spelling",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر كتابة أداة التوكيد المكسورة الهمزة.",
+        "de": "Wähle die richtig geschriebene Bekräftigungspartikel mit i."
+      },
+      "options": [
+        "إِنَّ",
+        "اِنَّ",
+        "أِنَّ",
+        "آنَّ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "إن تبدأ بهمزة قطع مكسورة تحت الألف.",
+        "de": "Richtige Lösung: إِنَّ."
+      },
+      "lesson": "hamza-initial",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-17",
+      "domain": "spelling",
+      "band": "basic",
+      "prompt": {
+        "ar": "اختر الكتابة الصحيحة إملائيًّا.",
+        "de": "Wähle die richtige Schreibweise für Name."
+      },
+      "options": [
+        "إِسْم",
+        "أَسْم",
+        "آسْم",
+        "اسْم"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "اسم من الأسماء التي تبدأ بهمزة وصل.",
+        "de": "Richtige Lösung: اسْم."
+      },
+      "lesson": "hamza-initial",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-18",
+      "domain": "spelling",
+      "band": "extended",
+      "prompt": {
+        "ar": "اختر الكتابة الصحيحة إملائيًّا.",
+        "de": "Wähle die richtige Schreibweise für Brunnen."
+      },
+      "options": [
+        "بِأْر",
+        "بِءْر",
+        "بِئْر",
+        "بِؤْر"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الهمزة ساكنة وما قبلها مكسور، فتكتب على نبرة.",
+        "de": "Richtige Lösung: بِئْر."
+      },
+      "lesson": "hamza-medial",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-19",
+      "domain": "spelling",
+      "band": "extended",
+      "prompt": {
+        "ar": "اختر الكتابة الصحيحة إملائيًّا.",
+        "de": "Wähle die richtige Schreibweise für Zuflucht."
+      },
+      "options": [
+        "مَلْجَأ",
+        "مَلْجَؤ",
+        "مَلْجَئ",
+        "مَلْجَء"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "قبل الهمزة المتطرفة فتحة، فتكتب على ألف.",
+        "de": "Richtige Lösung: مَلْجَأ."
+      },
+      "lesson": "hamza-final",
+      "stimulus": ""
+    },
+    {
+      "id": "spelling-20",
+      "domain": "spelling",
+      "band": "extended",
+      "prompt": {
+        "ar": "اختر الكتابة الصحيحة للمصدر «قِرَاءَة».",
+        "de": "Wähle die richtige Schreibweise des Verbalnomens qirāʾa."
+      },
+      "options": [
+        "قِرَائَة",
+        "قِرَاءَة",
+        "قِرَاأَة",
+        "قِرَاؤَة"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "الهمزة المفتوحة بعد ألف المد تكتب على السطر.",
+        "de": "Richtige Lösung: قِرَاءَة."
+      },
+      "lesson": "hamza-exceptions",
+      "stimulus": ""
+    },
+    {
+      "id": "listening-01",
+      "domain": "listening",
+      "band": "basic",
+      "prompt": {
+        "ar": "أين ذهب سامي؟",
+        "de": "Wohin ging Sami?"
+      },
+      "options": [
+        "إِلَى الْمَطَارِ",
+        "إِلَى الْمَطْعَمِ",
+        "إِلَى الْمُسْتَشْفَى",
+        "إِلَى الْمَكْتَبَةِ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "ذهب سامي إلى المكتبة.",
+        "de": "Richtige Lösung: إِلَى الْمَكْتَبَةِ."
+      },
+      "lesson": "listen-detail",
+      "stimulus": "",
+      "passage": "l01"
+    },
+    {
+      "id": "listening-02",
+      "domain": "listening",
+      "band": "basic",
+      "prompt": {
+        "ar": "متى ذهب؟",
+        "de": "Wann ging er?"
+      },
+      "options": [
+        "صَبَاحًا",
+        "مَسَاءً",
+        "لَيْلًا",
+        "بَعْدَ الظُّهْرِ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "وردت كلمة صباحًا في التسجيل.",
+        "de": "Richtige Lösung: صَبَاحًا."
+      },
+      "lesson": "listen-time",
+      "stimulus": "",
+      "passage": "l01"
+    },
+    {
+      "id": "listening-03",
+      "domain": "listening",
+      "band": "basic",
+      "prompt": {
+        "ar": "أين تعمل هند؟",
+        "de": "Wo arbeitet Hind?"
+      },
+      "options": [
+        "فِي مَدْرَسَةٍ",
+        "فِي مَتْجَرٍ",
+        "فِي مُسْتَشْفًى",
+        "فِي مَخْبَزٍ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "هند تعمل في مستشفى.",
+        "de": "Richtige Lösung: فِي مُسْتَشْفًى."
+      },
+      "lesson": "listen-detail",
+      "stimulus": "",
+      "passage": "l02"
+    },
+    {
+      "id": "listening-04",
+      "domain": "listening",
+      "band": "basic",
+      "prompt": {
+        "ar": "كيف تذهب إلى العمل؟",
+        "de": "Wie fährt sie zur Arbeit?"
+      },
+      "options": [
+        "بِالْقِطَارِ",
+        "بِالسَّيَّارَةِ",
+        "مَشْيًا",
+        "بِالْحَافِلَةِ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "وسيلة الذهاب المذكورة هي الحافلة.",
+        "de": "Richtige Lösung: بِالْحَافِلَةِ."
+      },
+      "lesson": "listen-detail",
+      "stimulus": "",
+      "passage": "l02"
+    },
+    {
+      "id": "listening-05",
+      "domain": "listening",
+      "band": "basic",
+      "prompt": {
+        "ar": "أين تسكن ريم؟",
+        "de": "Wo wohnt Rim?"
+      },
+      "options": [
+        "بَعِيدًا عَنِ الْمَدِينَةِ",
+        "دَاخِلَ الْمُسْتَشْفَى",
+        "قُرْبَ الْمَدْرَسَةِ",
+        "خَلْفَ الْمَطَارِ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "ريم تسكن قرب المدرسة.",
+        "de": "Richtige Lösung: قُرْبَ الْمَدْرَسَةِ."
+      },
+      "lesson": "listen-detail",
+      "stimulus": "",
+      "passage": "l03"
+    },
+    {
+      "id": "listening-06",
+      "domain": "listening",
+      "band": "basic",
+      "prompt": {
+        "ar": "مع من تمشي إلى المدرسة؟",
+        "de": "Mit wem geht sie zur Schule?"
+      },
+      "options": [
+        "مَعَ مُعَلِّمَتِهَا",
+        "وَحْدَهَا",
+        "مَعَ أُخْتِهَا",
+        "مَعَ أَبِيهَا"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "ذكر التسجيل أخت ريم.",
+        "de": "Richtige Lösung: مَعَ أُخْتِهَا."
+      },
+      "lesson": "listen-detail",
+      "stimulus": "",
+      "passage": "l03"
+    },
+    {
+      "id": "listening-07",
+      "domain": "listening",
+      "band": "basic",
+      "prompt": {
+        "ar": "متى يبدأ الدرس؟",
+        "de": "Wann beginnt der Unterricht?"
+      },
+      "options": [
+        "فِي الثَّانِيَةِ مَسَاءً",
+        "فِي التَّاسِعَةِ",
+        "فِي الْعَاشِرَةِ",
+        "فِي الثَّامِنَةِ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "بداية الدرس في التاسعة.",
+        "de": "Richtige Lösung: فِي التَّاسِعَةِ."
+      },
+      "lesson": "listen-time",
+      "stimulus": "",
+      "passage": "l04"
+    },
+    {
+      "id": "listening-08",
+      "domain": "listening",
+      "band": "basic",
+      "prompt": {
+        "ar": "كم يستغرق الدرس؟",
+        "de": "Wie lange dauert der Unterricht?"
+      },
+      "options": [
+        "سَاعَةً وَاحِدَةً",
+        "عَشْرَ دَقَائِقَ",
+        "سَاعَتَيْنِ",
+        "نِصْفَ سَاعَةٍ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "من التاسعة إلى العاشرة ساعة واحدة.",
+        "de": "Richtige Lösung: سَاعَةً وَاحِدَةً."
+      },
+      "lesson": "listen-infer",
+      "stimulus": "",
+      "passage": "l04"
+    },
+    {
+      "id": "listening-09",
+      "domain": "listening",
+      "band": "extended",
+      "prompt": {
+        "ar": "ما لون القميص الذي اشتراه؟",
+        "de": "Welche Farbe hat das gekaufte Hemd?"
+      },
+      "options": [
+        "أَخْضَر",
+        "أَبْيَض",
+        "أَزْرَق",
+        "أَحْمَر"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "اختار في النهاية قميصًا أبيض.",
+        "de": "Richtige Lösung: أَبْيَض."
+      },
+      "lesson": "listen-sequence",
+      "stimulus": "",
+      "passage": "l05"
+    },
+    {
+      "id": "listening-10",
+      "domain": "listening",
+      "band": "extended",
+      "prompt": {
+        "ar": "لماذا لم يشتر القميص الأزرق؟",
+        "de": "Warum kaufte er das blaue Hemd nicht?"
+      },
+      "options": [
+        "لَمْ يَجِدْ مَقَاسَهُ",
+        "لِأَنَّهُ رَخِيصٌ",
+        "لِأَنَّهُ مُمَزَّقٌ",
+        "لِأَنَّ الْمَتْجَرَ مُغْلَقٌ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "المقاس المطلوب غير متاح.",
+        "de": "Richtige Lösung: لَمْ يَجِدْ مَقَاسَهُ."
+      },
+      "lesson": "listen-cause",
+      "stimulus": "",
+      "passage": "l05"
+    },
+    {
+      "id": "listening-11",
+      "domain": "listening",
+      "band": "extended",
+      "prompt": {
+        "ar": "متى ستكون الزيارة بعد التغيير؟",
+        "de": "Wann findet der Besuch nach der Änderung statt?"
+      },
+      "options": [
+        "يَوْمَ الْجُمُعَةِ",
+        "يَوْمَ الْأَحَدِ",
+        "يَوْمَ الْخَمِيسِ",
+        "يَوْمَ السَّبْتِ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "الموعد الجديد يوم السبت.",
+        "de": "Richtige Lösung: يَوْمَ السَّبْتِ."
+      },
+      "lesson": "listen-sequence",
+      "stimulus": "",
+      "passage": "l06"
+    },
+    {
+      "id": "listening-12",
+      "domain": "listening",
+      "band": "extended",
+      "prompt": {
+        "ar": "ما سبب التأجيل؟",
+        "de": "Was ist der Grund für die Verschiebung?"
+      },
+      "options": [
+        "الْحَافِلَةُ مُتَعَطِّلَةٌ",
+        "الصَّدِيقَةُ مَشْغُولَةٌ",
+        "الطَّقْسُ مُمْطِرٌ",
+        "سَلْمَى مَرِيضَةٌ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "انشغال الصديقة هو السبب المذكور.",
+        "de": "Richtige Lösung: الصَّدِيقَةُ مَشْغُولَةٌ."
+      },
+      "lesson": "listen-cause",
+      "stimulus": "",
+      "passage": "l06"
+    },
+    {
+      "id": "listening-13",
+      "domain": "listening",
+      "band": "basic",
+      "prompt": {
+        "ar": "أين يتناول نادر الفطور؟",
+        "de": "Wo frühstückt Nadir?"
+      },
+      "options": [
+        "فِي الْقِطَارِ",
+        "فِي الْبَيْتِ",
+        "فِي الْجَامِعَةِ",
+        "فِي الْمَطْعَمِ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "الفطور في البيت قبل الخروج.",
+        "de": "Richtige Lösung: فِي الْبَيْتِ."
+      },
+      "lesson": "listen-detail",
+      "stimulus": "",
+      "passage": "l07"
+    },
+    {
+      "id": "listening-14",
+      "domain": "listening",
+      "band": "basic",
+      "prompt": {
+        "ar": "مع من يذهب إلى الجامعة؟",
+        "de": "Mit wem geht er zur Universität?"
+      },
+      "options": [
+        "مَعَ أُمِّهِ",
+        "مَعَ أُخْتِهِ",
+        "وَحْدَهُ",
+        "مَعَ صَدِيقِهِ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "يذهب مع صديقه.",
+        "de": "Richtige Lösung: مَعَ صَدِيقِهِ."
+      },
+      "lesson": "listen-detail",
+      "stimulus": "",
+      "passage": "l07"
+    },
+    {
+      "id": "listening-15",
+      "domain": "listening",
+      "band": "basic",
+      "prompt": {
+        "ar": "متى يفتح المتجر في أيام العمل؟",
+        "de": "Wann öffnet das Geschäft an Arbeitstagen?"
+      },
+      "options": [
+        "فِي الثَّامِنَةِ صَبَاحًا",
+        "فِي السَّادِسَةِ مَسَاءً",
+        "عِنْدَ الظُّهْرِ",
+        "فِي الْعَاشِرَةِ لَيْلًا"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "يفتح في الثامنة صباحًا.",
+        "de": "Richtige Lösung: فِي الثَّامِنَةِ صَبَاحًا."
+      },
+      "lesson": "listen-time",
+      "stimulus": "",
+      "passage": "l08"
+    },
+    {
+      "id": "listening-16",
+      "domain": "listening",
+      "band": "basic",
+      "prompt": {
+        "ar": "هل يمكن الشراء منه يوم الأحد؟",
+        "de": "Kann man dort am Sonntag einkaufen?"
+      },
+      "options": [
+        "نَعَمْ طَوَالَ الْيَوْمِ",
+        "نَعَمْ قَبْلَ الثَّامِنَةِ",
+        "نَعَمْ مَسَاءً فَقَطْ",
+        "لَا، فَهُوَ مُغْلَقٌ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "يغلق المتجر طوال يوم الأحد.",
+        "de": "Richtige Lösung: لَا، فَهُوَ مُغْلَقٌ."
+      },
+      "lesson": "listen-infer",
+      "stimulus": "",
+      "passage": "l08"
+    },
+    {
+      "id": "listening-17",
+      "domain": "listening",
+      "band": "extended",
+      "prompt": {
+        "ar": "من الذي تأخر؟",
+        "de": "Wer oder was verspätete sich?"
+      },
+      "options": [
+        "الْقِطَارُ",
+        "لَيْلَى",
+        "صَدِيقَتُهَا",
+        "الْبَائِعُ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "ليلى وصلت مبكرًا، والقطار هو المتأخر.",
+        "de": "Richtige Lösung: الْقِطَارُ."
+      },
+      "lesson": "listen-sequence",
+      "stimulus": "",
+      "passage": "l09"
+    },
+    {
+      "id": "listening-18",
+      "domain": "listening",
+      "band": "extended",
+      "prompt": {
+        "ar": "كم تأخر القطار؟",
+        "de": "Wie groß war die Verspätung?"
+      },
+      "options": [
+        "يَوْمًا",
+        "عِشْرِينَ دَقِيقَةً",
+        "عَشْرَ دَقَائِقَ",
+        "سَاعَةً"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "مدة التأخر عشرون دقيقة.",
+        "de": "Richtige Lösung: عِشْرِينَ دَقِيقَةً."
+      },
+      "lesson": "listen-time",
+      "stimulus": "",
+      "passage": "l09"
+    },
+    {
+      "id": "listening-19",
+      "domain": "listening",
+      "band": "extended",
+      "prompt": {
+        "ar": "ماذا فعل خالد في النهاية؟",
+        "de": "Was tat Khalid schließlich?"
+      },
+      "options": [
+        "مَشَى فِي الْحَدِيقَةِ",
+        "رَكِبَ الْقِطَارَ",
+        "سَبَحَ فِي الْبَحْرِ",
+        "قَرَأَ قِصَّةً فِي الْبَيْتِ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "بقي في البيت وقرأ قصة بدل المشي.",
+        "de": "Richtige Lösung: قَرَأَ قِصَّةً فِي الْبَيْتِ."
+      },
+      "lesson": "listen-sequence",
+      "stimulus": "",
+      "passage": "l10"
+    },
+    {
+      "id": "listening-20",
+      "domain": "listening",
+      "band": "extended",
+      "prompt": {
+        "ar": "لماذا غيّر خطته؟",
+        "de": "Warum änderte er seinen Plan?"
+      },
+      "options": [
+        "لِأَنَّ الْحَدِيقَةَ بَعِيدَةٌ",
+        "لِأَنَّهُ نَسِيَ الْمِفْتَاحَ",
+        "لِأَنَّ الْمَطَرَ بَدَأَ",
+        "لِأَنَّ الْكِتَابَ ضَاعَ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "بدأ المطر قبل خروجه.",
+        "de": "Richtige Lösung: لِأَنَّ الْمَطَرَ بَدَأَ."
+      },
+      "lesson": "listen-cause",
+      "stimulus": "",
+      "passage": "l10"
+    },
+    {
+      "id": "reading-01",
+      "domain": "reading",
+      "band": "basic",
+      "prompt": {
+        "ar": "مع من تسكن أمل؟",
+        "de": "Mit wem wohnt Amal?"
+      },
+      "options": [
+        "مَعَ مُعَلِّمَتِهَا",
+        "وَحْدَهَا",
+        "مَعَ زَمِيلَاتِهَا",
+        "مَعَ أُسْرَتِهَا"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "النص يذكر أنها تسكن مع أسرتها.",
+        "de": "Richtige Lösung: مَعَ أُسْرَتِهَا."
+      },
+      "lesson": "read-detail",
+      "stimulus": "",
+      "passage": "r01"
+    },
+    {
+      "id": "reading-02",
+      "domain": "reading",
+      "band": "basic",
+      "prompt": {
+        "ar": "أين الحديقة؟",
+        "de": "Wo liegt der Garten?"
+      },
+      "options": [
+        "أَمَامَ الْمَطَارِ",
+        "خَلْفَ الْبَيْتِ",
+        "فَوْقَ الْبَيْتِ",
+        "دَاخِلَ الْمَدْرَسَةِ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "ورد خلف البيت صراحة.",
+        "de": "Richtige Lösung: خَلْفَ الْبَيْتِ."
+      },
+      "lesson": "read-detail",
+      "stimulus": "",
+      "passage": "r01"
+    },
+    {
+      "id": "reading-03",
+      "domain": "reading",
+      "band": "basic",
+      "prompt": {
+        "ar": "متى يزور حسن المكتبة؟",
+        "de": "Wann besucht Hasan die Bibliothek?"
+      },
+      "options": [
+        "كُلَّ خَمِيسٍ",
+        "كُلَّ جُمُعَةٍ",
+        "كُلَّ أَحَدٍ",
+        "كُلَّ يَوْمٍ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "يذكر النص كل خميس.",
+        "de": "Richtige Lösung: كُلَّ خَمِيسٍ."
+      },
+      "lesson": "read-detail",
+      "stimulus": "",
+      "passage": "r02"
+    },
+    {
+      "id": "reading-04",
+      "domain": "reading",
+      "band": "basic",
+      "prompt": {
+        "ar": "إلى ماذا يعود الضمير في «يُعِيدُهُ»؟",
+        "de": "Worauf bezieht sich das Pronomen in يُعِيدُهُ?"
+      },
+      "options": [
+        "الْمَكْتَبَةِ",
+        "الْكِتَابِ",
+        "الْخَمِيسِ",
+        "حَسَنٍ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "حسن يعيد الكتاب الذي استعاره.",
+        "de": "Richtige Lösung: الْكِتَابِ."
+      },
+      "lesson": "read-reference",
+      "stimulus": "",
+      "passage": "r02"
+    },
+    {
+      "id": "reading-05",
+      "domain": "reading",
+      "band": "basic",
+      "prompt": {
+        "ar": "ما مهنة نور؟",
+        "de": "Welchen Beruf hat Nur?"
+      },
+      "options": [
+        "مُهَنْدِسَةٌ",
+        "بَائِعَةٌ",
+        "مُعَلِّمَةٌ",
+        "طَبِيبَةٌ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "تعمل نور معلمة.",
+        "de": "Richtige Lösung: مُعَلِّمَةٌ."
+      },
+      "lesson": "read-detail",
+      "stimulus": "",
+      "passage": "r03"
+    },
+    {
+      "id": "reading-06",
+      "domain": "reading",
+      "band": "basic",
+      "prompt": {
+        "ar": "كيف تذهب إلى المدرسة؟",
+        "de": "Wie geht sie zur Schule?"
+      },
+      "options": [
+        "بِالْحَافِلَةِ",
+        "بِالطَّائِرَةِ",
+        "بِالْقِطَارِ",
+        "سَيْرًا عَلَى الْأَقْدَامِ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "سيرًا على الأقدام تعني أنها تمشي.",
+        "de": "Richtige Lösung: سَيْرًا عَلَى الْأَقْدَامِ."
+      },
+      "lesson": "read-detail",
+      "stimulus": "",
+      "passage": "r03"
+    },
+    {
+      "id": "reading-07",
+      "domain": "reading",
+      "band": "basic",
+      "prompt": {
+        "ar": "لمن كتبت مريم الرسالة؟",
+        "de": "An wen schrieb Maryam?"
+      },
+      "options": [
+        "لِأَبِيهَا",
+        "لِمُعَلِّمَتِهَا",
+        "لِزَمِيلَتِهَا",
+        "لِجَدَّتِهَا"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "الرسالة موجهة إلى الجدة.",
+        "de": "Richtige Lösung: لِجَدَّتِهَا."
+      },
+      "lesson": "read-detail",
+      "stimulus": "",
+      "passage": "r04"
+    },
+    {
+      "id": "reading-08",
+      "domain": "reading",
+      "band": "basic",
+      "prompt": {
+        "ar": "إلى ماذا يعود «ها» في «وَضَعَتْهَا»؟",
+        "de": "Worauf bezieht sich ها in وَضَعَتْهَا?"
+      },
+      "options": [
+        "الْأَبِ",
+        "الرِّسَالَةِ",
+        "الْجَدَّةِ",
+        "مَرْيَمَ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "مريم وضعت الرسالة في الظرف.",
+        "de": "Richtige Lösung: الرِّسَالَةِ."
+      },
+      "lesson": "read-reference",
+      "stimulus": "",
+      "passage": "r04"
+    },
+    {
+      "id": "reading-09",
+      "domain": "reading",
+      "band": "extended",
+      "prompt": {
+        "ar": "متى سبح الأطفال؟",
+        "de": "Wann schwammen die Kinder?"
+      },
+      "options": [
+        "بَعْدَ الْعَوْدَةِ",
+        "فِي اللَّيْلِ",
+        "بَعْدَ اشْتِدَادِ الرِّيحِ",
+        "قَبْلَ الْغَدَاءِ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "السباحة سبقت الغداء.",
+        "de": "Richtige Lösung: قَبْلَ الْغَدَاءِ."
+      },
+      "lesson": "read-sequence",
+      "stimulus": "",
+      "passage": "r05"
+    },
+    {
+      "id": "reading-10",
+      "domain": "reading",
+      "band": "extended",
+      "prompt": {
+        "ar": "لماذا انتهت الرحلة؟",
+        "de": "Warum endete der Ausflug?"
+      },
+      "options": [
+        "لِاشْتِدَادِ الرِّيحِ",
+        "لِضَيَاعِ الْكُتُبِ",
+        "لِإِغْلَاقِ الْمَدْرَسَةِ",
+        "لِوُصُولِ الْقِطَارِ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "العودة جاءت عند اشتداد الريح.",
+        "de": "Richtige Lösung: لِاشْتِدَادِ الرِّيحِ."
+      },
+      "lesson": "read-infer",
+      "stimulus": "",
+      "passage": "r05"
+    },
+    {
+      "id": "reading-11",
+      "domain": "reading",
+      "band": "extended",
+      "prompt": {
+        "ar": "ما القرار الذي اتخذته دانا؟",
+        "de": "Welche Entscheidung traf Dana?"
+      },
+      "options": [
+        "إِصْلَاحُ الدَّرَّاجَةِ الْقَدِيمَةِ",
+        "شِرَاءُ سَيَّارَةٍ",
+        "تَرْكُ الدِّرَاسَةِ",
+        "إِهْدَاءُ دَرَّاجَتِهَا"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "اختارت إصلاح القديمة بدل شراء الجديدة.",
+        "de": "Richtige Lösung: إِصْلَاحُ الدَّرَّاجَةِ الْقَدِيمَةِ."
+      },
+      "lesson": "read-sequence",
+      "stimulus": "",
+      "passage": "r06"
+    },
+    {
+      "id": "reading-12",
+      "domain": "reading",
+      "band": "extended",
+      "prompt": {
+        "ar": "أي وصف يناسب قرارها؟",
+        "de": "Welche Beschreibung passt zu ihrer Entscheidung?"
+      },
+      "options": [
+        "تَرْفُضُ اسْتِعْمَالَ الدَّرَّاجَاتِ",
+        "نَسِيَتْ مَكَانَ الدَّرَّاجَةِ",
+        "تُرِيدُ تَقْلِيلَ النَّفَقَاتِ",
+        "تُرِيدُ إِنْفَاقَ مَالٍ أَكْثَرَ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "إصلاح القديمة وتوفير المال يدلان على تقليل النفقات.",
+        "de": "Richtige Lösung: تُرِيدُ تَقْلِيلَ النَّفَقَاتِ."
+      },
+      "lesson": "read-infer",
+      "stimulus": "",
+      "passage": "r06"
+    },
+    {
+      "id": "reading-13",
+      "domain": "reading",
+      "band": "basic",
+      "prompt": {
+        "ar": "ما الحيوان الذي يربيه سليم؟",
+        "de": "Welches Tier hält Salim?"
+      },
+      "options": [
+        "قِطَّةً",
+        "كَلْبًا",
+        "أَرْنَبًا",
+        "عُصْفُورًا"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "النص عن قطة صغيرة.",
+        "de": "Richtige Lösung: قِطَّةً."
+      },
+      "lesson": "read-detail",
+      "stimulus": "",
+      "passage": "r07"
+    },
+    {
+      "id": "reading-14",
+      "domain": "reading",
+      "band": "basic",
+      "prompt": {
+        "ar": "أين تنام القطة؟",
+        "de": "Wo schläft die Katze?"
+      },
+      "options": [
+        "خَلْفَ الْمَدْرَسَةِ",
+        "فَوْقَ السَّيَّارَةِ",
+        "قُرْبَ النَّافِذَةِ",
+        "تَحْتَ الشَّجَرَةِ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "مكان النوم قرب النافذة.",
+        "de": "Richtige Lösung: قُرْبَ النَّافِذَةِ."
+      },
+      "lesson": "read-detail",
+      "stimulus": "",
+      "passage": "r07"
+    },
+    {
+      "id": "reading-15",
+      "domain": "reading",
+      "band": "basic",
+      "prompt": {
+        "ar": "أين وجدت هدى المحفظة؟",
+        "de": "Wo fand Huda die Geldbörse?"
+      },
+      "options": [
+        "خَلْفَ الْمُسْتَشْفَى",
+        "أَمَامَ الْمَدْرَسَةِ",
+        "دَاخِلَ الْمَطْعَمِ",
+        "فِي الْحَافِلَةِ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "ورد أمام المدرسة في النص.",
+        "de": "Richtige Lösung: أَمَامَ الْمَدْرَسَةِ."
+      },
+      "lesson": "read-detail",
+      "stimulus": "",
+      "passage": "r08"
+    },
+    {
+      "id": "reading-16",
+      "domain": "reading",
+      "band": "basic",
+      "prompt": {
+        "ar": "إلى ماذا يعود الضمير في «حَمَلَتْهَا»؟",
+        "de": "Worauf bezieht sich das Pronomen in حَمَلَتْهَا?"
+      },
+      "options": [
+        "هُدَى",
+        "الْمُدِيرَةِ",
+        "الْمِحْفَظَةِ",
+        "الْمَدْرَسَةِ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الشيء الذي حملته هدى هو المحفظة.",
+        "de": "Richtige Lösung: الْمِحْفَظَةِ."
+      },
+      "lesson": "read-reference",
+      "stimulus": "",
+      "passage": "r08"
+    },
+    {
+      "id": "reading-17",
+      "domain": "reading",
+      "band": "extended",
+      "prompt": {
+        "ar": "هل تأخر سامر عن موعده؟",
+        "de": "Kam Samir zu spät?"
+      },
+      "options": [
+        "نَعَمْ، بِنِصْفِ سَاعَةٍ",
+        "نَعَمْ، بِسَاعَةٍ",
+        "لَمْ يَذْهَبْ",
+        "لَا، وَصَلَ قَبْلَهُ"
+      ],
+      "correct": 3,
+      "explanation": {
+        "ar": "وصل قبل الموعد بربع ساعة.",
+        "de": "Richtige Lösung: لَا، وَصَلَ قَبْلَهُ."
+      },
+      "lesson": "read-sequence",
+      "stimulus": "",
+      "passage": "r09"
+    },
+    {
+      "id": "reading-18",
+      "domain": "reading",
+      "band": "extended",
+      "prompt": {
+        "ar": "في أي وقت وصل؟",
+        "de": "Um wie viel Uhr kam er an?"
+      },
+      "options": [
+        "١١:٠٠ صَبَاحًا",
+        "١٠:٠٠ صَبَاحًا",
+        "٩:٤٥ صَبَاحًا",
+        "١٠:١٥ صَبَاحًا"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الموعد ١٠:٠٠، وقبله بربع ساعة يعني ٩:٤٥.",
+        "de": "Der Termin ist um 10:00 Uhr; eine Viertelstunde früher ist 9:45 Uhr."
+      },
+      "lesson": "read-infer",
+      "stimulus": "",
+      "passage": "r09"
+    },
+    {
+      "id": "reading-19",
+      "domain": "reading",
+      "band": "extended",
+      "prompt": {
+        "ar": "ماذا فعل الطلاب أولًا بالأوراق؟",
+        "de": "Was taten die Schüler zuerst mit dem Papier?"
+      },
+      "options": [
+        "حَمَلُوهَا إِلَى الْبَيْتِ",
+        "جَمَعُوهَا فِي السَّلَّةِ",
+        "أَحْرَقُوهَا",
+        "تَرَكُوهَا عَلَى الْأَرْضِ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "جمعوا الأوراق ووضعوها في السلة.",
+        "de": "Richtige Lösung: جَمَعُوهَا فِي السَّلَّةِ."
+      },
+      "lesson": "read-sequence",
+      "stimulus": "",
+      "passage": "r10"
+    },
+    {
+      "id": "reading-20",
+      "domain": "reading",
+      "band": "extended",
+      "prompt": {
+        "ar": "ما الهدف من اللافتة؟",
+        "de": "Welchen Zweck hatte das Schild?"
+      },
+      "options": [
+        "تَشْجِيعُ النَّظَافَةِ",
+        "إِعْلَانُ رِحْلَةٍ",
+        "بَيْعُ الْكُتُبِ",
+        "تَغْيِيرُ مَوْعِدِ الدَّرْسِ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "اللافتة تدعو إلى المحافظة على النظافة.",
+        "de": "Richtige Lösung: تَشْجِيعُ النَّظَافَةِ."
+      },
+      "lesson": "read-infer",
+      "stimulus": "",
+      "passage": "r10"
+    }
+  ],
+  "passages": {
+    "l01": {
+      "id": "l01",
+      "kind": "audio",
+      "text": "ذَهَبَ سَامِي إِلَى الْمَكْتَبَةِ صَبَاحًا. اشْتَرَى كِتَابًا عَنِ الْحَيَوَانَاتِ.",
+      "band": "basic"
+    },
+    "l02": {
+      "id": "l02",
+      "kind": "audio",
+      "text": "تَعْمَلُ هِنْدٌ فِي مُسْتَشْفًى. تَذْهَبُ إِلَى عَمَلِهَا بِالْحَافِلَةِ.",
+      "band": "basic"
+    },
+    "l03": {
+      "id": "l03",
+      "kind": "audio",
+      "text": "تَسْكُنُ رِيمٌ قُرْبَ الْمَدْرَسَةِ. تَمْشِي إِلَيْهَا كُلَّ صَبَاحٍ مَعَ أُخْتِهَا.",
+      "band": "basic"
+    },
+    "l04": {
+      "id": "l04",
+      "kind": "audio",
+      "text": "يَبْدَأُ الدَّرْسُ فِي السَّاعَةِ التَّاسِعَةِ، وَيَنْتَهِي فِي الْعَاشِرَةِ. يَحْضُرُ الطُّلَّابُ قَبْلَ الْبِدَايَةِ بِعَشْرِ دَقَائِقَ.",
+      "band": "basic"
+    },
+    "l05": {
+      "id": "l05",
+      "kind": "audio",
+      "text": "أَرَادَ عُمَرُ شِرَاءَ قَمِيصٍ أَزْرَقَ. لَمْ يَجِدْ مَقَاسَهُ، فَاخْتَارَ قَمِيصًا أَبْيَضَ مُنَاسِبًا.",
+      "band": "extended"
+    },
+    "l06": {
+      "id": "l06",
+      "kind": "audio",
+      "text": "كَانَتْ سَلْمَى تَنْوِي زِيَارَةَ صَدِيقَتِهَا يَوْمَ الْجُمُعَةِ. اتَّفَقَتَا عَلَى تَأْجِيلِ الزِّيَارَةِ إِلَى السَّبْتِ لِأَنَّ الصَّدِيقَةَ مَشْغُولَةٌ.",
+      "band": "extended"
+    },
+    "l07": {
+      "id": "l07",
+      "kind": "audio",
+      "text": "يَسْتَيْقِظُ نَادِرٌ مُبَكِّرًا. يَتَنَاوَلُ الْفُطُورَ فِي الْبَيْتِ، ثُمَّ يَذْهَبُ إِلَى الْجَامِعَةِ مَعَ صَدِيقِهِ.",
+      "band": "basic"
+    },
+    "l08": {
+      "id": "l08",
+      "kind": "audio",
+      "text": "يَفْتَحُ الْمَتْجَرُ فِي الثَّامِنَةِ صَبَاحًا، وَيُغْلِقُ فِي السَّادِسَةِ مَسَاءً. يَغْلِقُ يَوْمَ الْأَحَدِ طَوَالَ الْيَوْمِ.",
+      "band": "basic"
+    },
+    "l09": {
+      "id": "l09",
+      "kind": "audio",
+      "text": "حَجَزَتْ لَيْلَى تَذْكِرَةً إِلَى الْمَدِينَةِ. وَصَلَتْ مُبَكِّرًا إِلَى الْمَحَطَّةِ، لَكِنَّ الْقِطَارَ تَأَخَّرَ عِشْرِينَ دَقِيقَةً.",
+      "band": "extended"
+    },
+    "l10": {
+      "id": "l10",
+      "kind": "audio",
+      "text": "أَرَادَ خَالِدٌ الْمَشْيَ فِي الْحَدِيقَةِ. بَدَأَ الْمَطَرُ قَبْلَ خُرُوجِهِ، فَبَقِيَ فِي الْبَيْتِ وَقَرَأَ قِصَّةً.",
+      "band": "extended"
+    },
+    "r01": {
+      "id": "r01",
+      "kind": "text",
+      "text": "تَسْكُنُ أَمَلُ فِي بَيْتٍ صَغِيرٍ مَعَ أُسْرَتِهَا. خَلْفَ الْبَيْتِ حَدِيقَةٌ فِيهَا شَجَرَةُ زَيْتُونٍ.",
+      "band": "basic"
+    },
+    "r02": {
+      "id": "r02",
+      "kind": "text",
+      "text": "يُحِبُّ حَسَنٌ الْقِرَاءَةَ. يَزُورُ الْمَكْتَبَةَ كُلَّ خَمِيسٍ وَيَسْتَعِيرُ كِتَابًا، ثُمَّ يُعِيدُهُ فِي الْأُسْبُوعِ التَّالِي.",
+      "band": "basic"
+    },
+    "r03": {
+      "id": "r03",
+      "kind": "text",
+      "text": "تَعْمَلُ نُورُ مُعَلِّمَةً. تَسْكُنُ قُرْبَ الْمَدْرَسَةِ، وَتَذْهَبُ إِلَيْهَا سَيْرًا عَلَى الْأَقْدَامِ.",
+      "band": "basic"
+    },
+    "r04": {
+      "id": "r04",
+      "kind": "text",
+      "text": "كَتَبَتْ مَرْيَمُ رِسَالَةً لِجَدَّتِهَا. وَضَعَتْهَا فِي ظَرْفٍ أَبْيَضَ، ثُمَّ أَرْسَلَتْهَا مَعَ أَبِيهَا.",
+      "band": "basic"
+    },
+    "r05": {
+      "id": "r05",
+      "kind": "text",
+      "text": "ذَهَبَتْ أُسْرَةُ عَادِلٍ إِلَى الْبَحْرِ صَبَاحًا. سَبَحَ الْأَطْفَالُ قَبْلَ الْغَدَاءِ. وَعِنْدَمَا اشْتَدَّتِ الرِّيحُ، جَمَعَ الْجَمِيعُ أَغْرَاضَهُمْ وَعَادُوا إِلَى الْبَيْتِ.",
+      "band": "extended"
+    },
+    "r06": {
+      "id": "r06",
+      "kind": "text",
+      "text": "أَرَادَتْ دَانَا شِرَاءَ دَرَّاجَةٍ جَدِيدَةٍ، لَكِنَّ ثَمَنَهَا مُرْتَفِعٌ. قَرَّرَتْ أَنْ تُصْلِحَ دَرَّاجَتَهَا الْقَدِيمَةَ وَتُوَفِّرَ الْمَالَ.",
+      "band": "extended"
+    },
+    "r07": {
+      "id": "r07",
+      "kind": "text",
+      "text": "يُرَبِّي سَلِيمٌ قِطَّةً صَغِيرَةً. يُقَدِّمُ لَهَا الطَّعَامَ وَالْمَاءَ كُلَّ يَوْمٍ. تَنَامُ الْقِطَّةُ قُرْبَ النَّافِذَةِ.",
+      "band": "basic"
+    },
+    "r08": {
+      "id": "r08",
+      "kind": "text",
+      "text": "وَجَدَتْ هُدَى مِحْفَظَةً أَمَامَ الْمَدْرَسَةِ. حَمَلَتْهَا إِلَى الْمُدِيرَةِ لِتَبْحَثَ عَنْ صَاحِبَتِهَا.",
+      "band": "basic"
+    },
+    "r09": {
+      "id": "r09",
+      "kind": "text",
+      "text": "كَانَ مَوْعِدُ سَامِرٍ عِنْدَ الطَّبِيبِ فِي السَّاعَةِ الْعَاشِرَةِ صَبَاحًا. خَرَجَ مُبَكِّرًا، وَوَصَلَ قَبْلَ الْمَوْعِدِ بِرُبْعِ سَاعَةٍ، فَانْتَظَرَ فِي غُرْفَةِ الِانْتِظَارِ.",
+      "band": "extended"
+    },
+    "r10": {
+      "id": "r10",
+      "kind": "text",
+      "text": "رَأَى طُلَّابُ الصَّفِّ أَوْرَاقًا عَلَى أَرْضِ الْحَدِيقَةِ. جَمَعُوهَا وَوَضَعُوهَا فِي السَّلَّةِ. وَفِي الْيَوْمِ التَّالِي عَلَّقُوا لَافِتَةً تَدْعُو إِلَى الْمُحَافَظَةِ عَلَى النَّظَافَةِ.",
+      "band": "extended"
+    }
+  },
+  "tests": [
+    {
+      "id": "quick",
+      "title": {
+        "ar": "الفحص العام السريع",
+        "de": "Kurzer Gesamtcheck"
+      },
+      "description": {
+        "ar": "سؤالان لكل مهارة؛ مؤشرات أولية تحتاج إلى تأكيد باختبار متخصص.",
+        "de": "Zwei Aufgaben je Fertigkeit: erste Hinweise, die ein Schwerpunktcheck bestätigt."
+      },
+      "minutes": "6–9",
+      "domains": [
+        "letters",
+        "phonics",
+        "vocabulary",
+        "sentences",
+        "listening",
+        "reading",
+        "grammar",
+        "spelling"
+      ],
+      "forms": {
+        "A": [
+          "letters-01",
+          "phonics-01",
+          "vocabulary-01",
+          "sentences-01",
+          "listening-01",
+          "reading-01",
+          "grammar-01",
+          "spelling-01",
+          "letters-02",
+          "phonics-02",
+          "vocabulary-02",
+          "sentences-02",
+          "listening-02",
+          "reading-02",
+          "grammar-02",
+          "spelling-02"
+        ],
+        "B": [
+          "letters-03",
+          "phonics-03",
+          "vocabulary-03",
+          "sentences-03",
+          "listening-03",
+          "reading-03",
+          "grammar-03",
+          "spelling-03",
+          "letters-04",
+          "phonics-04",
+          "vocabulary-04",
+          "sentences-04",
+          "listening-04",
+          "reading-04",
+          "grammar-04",
+          "spelling-04"
+        ]
+      }
+    },
+    {
+      "id": "foundations",
+      "title": {
+        "ar": "الحروف والهجاء",
+        "de": "Alphabet und Dekodieren"
+      },
+      "description": {
+        "ar": "تمييز الحروف والاتصال والحركات والمدود والشدة والتحليل والتركيب.",
+        "de": "Formen, Verbindung, Vokale, Länge, Verdopplung und Gliederung."
+      },
+      "minutes": "8–12",
+      "domains": [
+        "letters",
+        "phonics"
+      ],
+      "forms": {
+        "A": [
+          "letters-05",
+          "letters-06",
+          "letters-07",
+          "letters-08",
+          "letters-09",
+          "letters-10",
+          "letters-11",
+          "letters-12",
+          "phonics-05",
+          "phonics-06",
+          "phonics-07",
+          "phonics-08",
+          "phonics-09",
+          "phonics-10",
+          "phonics-11",
+          "phonics-12"
+        ],
+        "B": [
+          "letters-13",
+          "letters-14",
+          "letters-15",
+          "letters-16",
+          "letters-17",
+          "letters-18",
+          "letters-19",
+          "letters-20",
+          "phonics-13",
+          "phonics-14",
+          "phonics-15",
+          "phonics-16",
+          "phonics-17",
+          "phonics-18",
+          "phonics-19",
+          "phonics-20"
+        ]
+      }
+    },
+    {
+      "id": "language",
+      "title": {
+        "ar": "المفردات وتكوين الجمل",
+        "de": "Wortschatz und Satzbau"
+      },
+      "description": {
+        "ar": "المعاني في السياق، والضمائر، والأسئلة، والنفي، وترتيب المعنى.",
+        "de": "Kontextbedeutungen, Pronomen, Fragen, Verneinung und Satzbau."
+      },
+      "minutes": "8–12",
+      "domains": [
+        "vocabulary",
+        "sentences"
+      ],
+      "forms": {
+        "A": [
+          "vocabulary-05",
+          "vocabulary-06",
+          "vocabulary-07",
+          "vocabulary-08",
+          "vocabulary-09",
+          "vocabulary-10",
+          "vocabulary-11",
+          "vocabulary-12",
+          "sentences-05",
+          "sentences-06",
+          "sentences-07",
+          "sentences-08",
+          "sentences-09",
+          "sentences-10",
+          "sentences-11",
+          "sentences-12"
+        ],
+        "B": [
+          "vocabulary-13",
+          "vocabulary-14",
+          "vocabulary-15",
+          "vocabulary-16",
+          "vocabulary-17",
+          "vocabulary-18",
+          "vocabulary-19",
+          "vocabulary-20",
+          "sentences-13",
+          "sentences-14",
+          "sentences-15",
+          "sentences-16",
+          "sentences-17",
+          "sentences-18",
+          "sentences-19",
+          "sentences-20"
+        ]
+      }
+    },
+    {
+      "id": "comprehension",
+      "title": {
+        "ar": "فهم المسموع والمقروء",
+        "de": "Hör- und Leseverstehen"
+      },
+      "description": {
+        "ar": "التفاصيل والزمن وتسلسل الأحداث والضمائر والاستنتاج القريب.",
+        "de": "Details, Zeit, Reihenfolge, Pronomenbezug und einfache Schlussfolgerungen."
+      },
+      "minutes": "8–12",
+      "domains": [
+        "listening",
+        "reading"
+      ],
+      "forms": {
+        "A": [
+          "listening-05",
+          "listening-06",
+          "listening-07",
+          "listening-08",
+          "listening-09",
+          "listening-10",
+          "listening-11",
+          "listening-12",
+          "reading-05",
+          "reading-06",
+          "reading-07",
+          "reading-08",
+          "reading-09",
+          "reading-10",
+          "reading-11",
+          "reading-12"
+        ],
+        "B": [
+          "listening-13",
+          "listening-14",
+          "listening-15",
+          "listening-16",
+          "listening-17",
+          "listening-18",
+          "listening-19",
+          "listening-20",
+          "reading-13",
+          "reading-14",
+          "reading-15",
+          "reading-16",
+          "reading-17",
+          "reading-18",
+          "reading-19",
+          "reading-20"
+        ]
+      }
+    },
+    {
+      "id": "structures",
+      "title": {
+        "ar": "القواعد والإملاء",
+        "de": "Grammatik und Rechtschreibung"
+      },
+      "description": {
+        "ar": "التراكيب الأساسية والإعراب وبعض المنصوبات والتاء والألف والهمزات.",
+        "de": "Grundstrukturen, ausgewählte Kasusfunktionen und Rechtschreibung."
+      },
+      "minutes": "8–12",
+      "domains": [
+        "grammar",
+        "spelling"
+      ],
+      "forms": {
+        "A": [
+          "grammar-05",
+          "grammar-06",
+          "grammar-07",
+          "grammar-08",
+          "grammar-09",
+          "grammar-10",
+          "grammar-11",
+          "grammar-12",
+          "spelling-05",
+          "spelling-06",
+          "spelling-07",
+          "spelling-08",
+          "spelling-09",
+          "spelling-10",
+          "spelling-11",
+          "spelling-12"
+        ],
+        "B": [
+          "grammar-13",
+          "grammar-14",
+          "grammar-15",
+          "grammar-16",
+          "grammar-17",
+          "grammar-18",
+          "grammar-19",
+          "grammar-20",
+          "spelling-13",
+          "spelling-14",
+          "spelling-15",
+          "spelling-16",
+          "spelling-17",
+          "spelling-18",
+          "spelling-19",
+          "spelling-20"
+        ]
+      }
+    }
+  ],
+  "audio": {}
+}

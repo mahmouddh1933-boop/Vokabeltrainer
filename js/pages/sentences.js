@@ -8,6 +8,11 @@
   if (!["all", "A1", "A2"].includes(state.level)) state.level = "all";
   if (!["all", "statement", "question", "command"].includes(state.kind))
     state.kind = "all";
+  const query = new URLSearchParams(location.search);
+  if (["A1", "A2"].includes(query.get("level")))
+    state.level = query.get("level");
+  if (["statement", "question", "command"].includes(query.get("kind")))
+    state.kind = query.get("kind");
   const items = () =>
     D.sentences.filter(
       (q) =>
@@ -158,12 +163,22 @@
     render();
     $("sentence-heading").focus({ preventScroll: true });
   }
+  function updateFilterLink() {
+    const url = new URL(location.href);
+    if (url.searchParams.has("level") || url.searchParams.has("kind")) {
+      url.searchParams.set("level", state.level);
+      url.searchParams.set("kind", state.kind);
+      history.replaceState(null, "", url.pathname + url.search + url.hash);
+    }
+  }
   $("sentence-level").onchange = (e) => {
     state.level = e.target.value;
+    updateFilterLink();
     change(0);
   };
   $("sentence-kind").onchange = (e) => {
     state.kind = e.target.value;
+    updateFilterLink();
     change(0);
   };
   $("sentence-check").onclick = () => {

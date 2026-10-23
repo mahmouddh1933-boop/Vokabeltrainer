@@ -12,6 +12,8 @@
     };
     let state = window.VocabApp.getStats().phonicsV1 || {};
     if (!modes[state.mode]) state.mode = "segment";
+    const requestedMode = new URLSearchParams(location.search).get("mode");
+    if (modes[requestedMode]) state.mode = requestedMode;
     if (
       !state.answers ||
       typeof state.answers !== "object" ||
@@ -75,6 +77,15 @@
             () => {
               P.stop();
               state.mode = key;
+              const url = new URL(location.href);
+              if (url.searchParams.has("mode")) {
+                url.searchParams.set("mode", key);
+                history.replaceState(
+                  null,
+                  "",
+                  url.pathname + url.search + url.hash,
+                );
+              }
               save();
               render();
             },

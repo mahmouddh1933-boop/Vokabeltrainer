@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#123f37" />
+    <meta
+      name="description"
+      content="حروف من الزيتون: تعلّم العربية، من الحروف إلى المفردات والقواعد، بجذور راسخة ورسومات هادئة."
+    />
+    <title>حروف من الزيتون · اختبارات تحديد المستوى</title>
+    <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
+    <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
+    <link rel="stylesheet" href="css/modern.css?v=8a75138498b6" />
+    <link rel="stylesheet" href="css/verbs.css?v=7f25f6097677" />
+    <link rel="stylesheet" href="css/grammar.css?v=bbe72b1d11bd" />
+    <link rel="stylesheet" href="css/practice.css?v=e55c73e03b36" />
+
+    <script src="js/storage.js?v=234b995827cd" defer></script>
+    <script src="js/firebase-config.js?v=bcb6b5390ad9" defer></script>
+    <script src="js/auth-session.js?v=e80b2ec59f82" defer></script>
+    <script src="js/app.js?v=266caa422c60" defer></script>
+
+    <script src="data/vocab_catalog_labels.js?v=77de3e826c87" defer></script>
+    <script src="js/interface-languages.js?v=d233aae47963" defer></script>
+    <script src="js/tanwin-display.js?v=97a12d8b8572" defer></script>
+    <script src="js/learning-path.js?v=12830d173902" defer></script>
+    <script src="js/design.js?v=dd08d99fcaa7" defer></script>
+    <meta name="application-name" content="حروف من الزيتون" />
+    <link
+      rel="icon"
+      href="images/brand/olive-symbol.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/olive-theme.css?v=4b4842e4a626" />
+    <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
+    <link rel="stylesheet" href="css/auth.css?v=2b57d96c4eaf" />
+
+    <link rel="stylesheet" href="css/learning-route.css?v=9d7793050fac" />
+    <link rel="stylesheet" href="css/placement.css?v=cb0fa3b5ff34" />
+    <script src="js/practice-core.js?v=81b88bc2a7c0" defer></script>
+    <script src="js/placement-data.js?v=a152ce198965" defer></script>
+    <script src="js/placement-core.js?v=2673c50493d8" defer></script>
+    <script src="js/pages/placement.js?v=a95a5a03b972" defer></script>
+  </head>
+  <body>
+    <main class="container practice-page" id="main-content">
+      <p
+        id="lesson-loading"
+        role="status"
+        data-ar="جارٍ تحميل الاختبارات… استخرج ZIP كاملًا إذا استمر الانتظار."
+        data-de="Tests werden geladen… Bitte die gesamte ZIP entpacken, falls diese Meldung bestehen bleibt."
+      >
+        جارٍ تحميل الاختبارات…
+      </p>
+      <header class="page-heading">
+        <div>
+          <p
+            class="eyebrow"
+            data-ar="اعرف أين تبدأ"
+            data-de="Finde deinen Einstieg"
+          >
+            اعرف أين تبدأ
+          </p>
+          <h1
+            data-ar="اختبارات تحديد المستوى"
+            data-de="Diagnostische Einstiegschecks"
+          >
+            اختبارات تحديد المستوى
+          </h1>
+          <p
+            data-ar="خمسة اختبارات قصيرة، لكل منها نموذجان مختلفان. ابدأ بالفحص العام، أو اختر مهارة محددة."
+            data-de="Fünf kurze Tests mit je zwei unterschiedlichen Formen. Beginne mit dem Gesamtcheck oder einem Schwerpunkt."
+          >
+            خمسة اختبارات قصيرة، لكل منها نموذجان مختلفان. ابدأ بالفحص العام، أو
+            اختر مهارة محددة.
+          </p>
+        </div>
+      </header>
+      <section class="home-panel placement-intro">
+        <h2 data-ar="قبل أن تبدأ" data-de="Bevor du beginnst">قبل أن تبدأ</h2>
+        <p
+          data-ar="أجب بنفسك دون قاموس أو مساعدة. اختر «لا أعرف» بدل التخمين. لا حد زمني، ويمكنك التوقف والعودة. جرّب صوت الجهاز قبل اختبار الفهم."
+          data-de="Antworte ohne Wörterbuch und fremde Hilfe. Wähle lieber „Ich weiß es nicht“ als zu raten. Es gibt kein Zeitlimit; du kannst pausieren und zurückkehren. Prüfe vor dem Hörtest die Lautstärke."
+        >
+          أجب بنفسك دون قاموس أو مساعدة. اختر «لا أعرف» بدل التخمين. لا حد زمني،
+          ويمكنك التوقف والعودة. جرّب صوت الجهاز قبل اختبار الفهم.
+        </p>
+        <p
+          class="placement-note"
+          data-ar="النتيجة توصية تعليمية أولية داخل التطبيق، وليست شهادة CEFR. لا يقيّم الاختبار النطق الشفهي والكتابة الحرة تلقائيًّا، ولا تُعدّ المهارات غير المختبرة ضعيفة."
+          data-de="Das Ergebnis ist eine vorläufige Lernempfehlung innerhalb dieser App, kein CEFR-Zertifikat. Sprechen und freies Schreiben werden nicht automatisch bewertet. Nicht getestete Fertigkeiten gelten nicht als schwach."
+        >
+          النتيجة توصية تعليمية أولية داخل التطبيق، وليست شهادة CEFR. لا يقيّم
+          الاختبار النطق الشفهي والكتابة الحرة تلقائيًّا، ولا تُعدّ المهارات غير
+          المختبرة ضعيفة.
+        </p>
+      </section>
+      <p id="placement-notice" role="status"></p>
+      <div id="placement-catalog" class="placement-catalog"></div>
+      <section
+        class="home-panel"
+        id="placement-history-panel"
+        aria-labelledby="placement-history-heading"
+      >
+        <h2
+          id="placement-history-heading"
+          data-ar="محاولاتي: متابعة أو عرض النتائج"
+          data-de="Meine Versuche: fortsetzen oder Ergebnisse ansehen"
+        >
+          محاولاتي: متابعة أو عرض النتائج
+        </h2>
+        <p
+          data-ar="ابدأ بالنموذج الذي لم تره مؤخرًا. إعادة النموذج نفسه بعد حفظ الإجابات لا تصلح دليلًا مستقلًّا على تحسّن المستوى. تظهر هنا آخر عشر محاولات."
+          data-de="Nutze bevorzugt eine noch unbekannte Form. Das Wiederholen bereits bekannter Antworten belegt keinen unabhängigen Lernzuwachs. Hier stehen die letzten zehn Versuche."
+        >
+          ابدأ بالنموذج الذي لم تره مؤخرًا. إعادة النموذج نفسه بعد حفظ الإجابات
+          لا تصلح دليلًا مستقلًّا على تحسّن المستوى. تظهر هنا آخر عشر محاولات.
+        </p>
+        <div id="placement-history" class="practice-actions"></div>
+      </section>
+      <section id="placement-session" class="practice-panel" hidden>
+        <div class="practice-topline">
+          <h2 id="placement-heading" tabindex="-1"></h2>
+          <button
+            id="placement-close"
+            type="button"
+            class="practice-button"
+            data-ar="حفظ والعودة إلى الاختبارات"
+            data-de="Speichern und zur Testauswahl"
+          >
+            حفظ والعودة إلى الاختبارات
+          </button>
+        </div>
+        <div id="placement-question">
+          <p id="placement-position"></p>
+          <progress
+            id="placement-progress"
+            max="16"
+            value="0"
+            aria-label="الإجابات المحفوظة / Gespeicherte Antworten"
+          ></progress>
+          <p id="placement-answered"></p>
+          <nav
+            id="placement-question-nav"
+            aria-label="أسئلة الاختبار / Testaufgaben"
+          ></nav>
+          <div
+            id="placement-stimulus"
+            class="placement-passage"
+            lang="ar"
+            dir="rtl"
+          ></div>
+          <div id="placement-audio" hidden>
+            <button id="placement-listen" class="practice-button" type="button">
+              ◖ استمع للنص</button
+            ><audio
+              id="placement-player"
+              controls
+              preload="none"
+              aria-label="نص الاستماع / Hörtext"
+            ></audio>
+            <p id="placement-audio-status" role="status" aria-live="polite"></p>
+          </div>
+          <h3 id="placement-prompt"></h3>
+          <div
+            id="placement-options"
+            class="placement-options"
+            role="group"
+            aria-label="البدائل / Antworten"
+          ></div>
+          <div class="practice-actions">
+            <button
+              id="placement-unknown"
+              type="button"
+              class="practice-button"
+            >
+              لا أعرف الإجابة</button
+            ><button
+              id="placement-unavailable"
+              type="button"
+              class="practice-button"
+              hidden
+            >
+              تعذّر الصوت
+            </button>
+          </div>
+          <p
+            id="placement-selection-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+          <nav class="card-navigation" aria-label="التنقل / Navigation">
+            <button
+              id="placement-previous"
+              type="button"
+              class="practice-button"
+            >
+              السابق</button
+            ><button id="placement-next" type="button" class="practice-button">
+              التالي
+            </button>
+          </nav>
+          <p
+            data-ar="لن تظهر الحلول قبل الإنهاء. يمكنك مراجعة اختياراتك من أرقام الأسئلة؛ الإنهاء يتطلب إجابة أو تخطّيًا صريحًا لكل سؤال."
+            data-de="Lösungen erscheinen erst nach Abschluss. Über die Aufgabennummern kannst du Antworten ändern. Jede Aufgabe benötigt eine Antwort oder ein ausdrückliches Überspringen."
+          >
+            لن تظهر الحلول قبل الإنهاء. يمكنك مراجعة اختياراتك من أرقام الأسئلة؛
+            الإنهاء يتطلب إجابة أو تخطّيًا صريحًا لكل سؤال.
+          </p>
+          <button
+            id="placement-submit"
+            type="button"
+            class="practice-button primary-action"
+          >
+            إنهاء الاختبار وعرض النتيجة
+          </button>
+        </div>
+        <div id="placement-results" hidden>
+          <h3 id="placement-result-title"></h3>
+          <p id="placement-result-summary" role="status"></p>
+          <p
+            data-ar="اقرأ ملف المهارات، لا المجموع وحده. الفحص العام يعطي مؤشرات من سؤالين لكل مهارة؛ أكّدها بالاختبار المتخصص. حدود التوجيه أولية وتحتاج تقنينًا على متعلمين حقيقيين."
+            data-de="Lies das Fertigkeitsprofil statt nur die Gesamtzahl. Der Gesamtcheck nutzt zwei Aufgaben je Fertigkeit; bestätige Hinweise mit einem Schwerpunktcheck. Die vorläufigen Schwellen müssen noch mit realen Lernenden validiert werden."
+          >
+            اقرأ ملف المهارات، لا المجموع وحده. الفحص العام يعطي مؤشرات من
+            سؤالين لكل مهارة؛ أكّدها بالاختبار المتخصص. حدود التوجيه أولية
+            وتحتاج تقنينًا على متعلمين حقيقيين.
+          </p>
+          <div id="placement-skills" class="placement-skills"></div>
+          <p id="placement-unmeasured"></p>
+          <p id="placement-insufficient"></p>
+          <div id="placement-recommendations"></div>
+          <button id="placement-apply" type="button" class="practice-button">
+            اجعل هذه المحطة نقطة بدايتي
+          </button>
+          <p id="placement-applied" role="status"></p>
+          <h3
+            data-ar="دروس مرتبطة بما يحتاج إلى تدريب"
+            data-de="Passende Lektionen zum Üben"
+          >
+            دروس مرتبطة بما يحتاج إلى تدريب
+          </h3>
+          <div id="placement-lessons" class="practice-actions"></div>
+          <div id="placement-confirm"></div>
+          <div class="practice-actions">
+            <button
+              id="placement-review-toggle"
+              type="button"
+              class="practice-button"
+            >
+              مراجعة الإجابات</button
+            ><button
+              id="placement-print"
+              type="button"
+              class="practice-button"
+              data-ar="طباعة التقرير للمعلم"
+              data-de="Bericht für die Lehrkraft drucken"
+            >
+              طباعة التقرير للمعلم</button
+            ><a
+              href="index.html"
+              class="practice-button"
+              data-ar="العودة إلى مسار التعلم"
+              data-de="Zurück zum Lernpfad"
+              >العودة إلى مسار التعلم</a
+            >
+          </div>
+          <div id="placement-review" hidden></div>
+        </div>
+      </section>
+      <details class="home-panel placement-method" id="placement-method">
+        <summary
+          data-ar="كيف صُمّمت هذه الاختبارات؟"
+          data-de="Wie wurden die Tests entworfen?"
+        >
+          كيف صُمّمت هذه الاختبارات؟
+        </summary>
+        <div
+          data-ar="نستهدف العربية الفصحى، ونفصل معرفة الحروف وفك الرموز عن المفردات والتراكيب والفهم. ننتقل من تعرف المعلومات المباشرة إلى استنتاج قريب وتسلسل أحداث ومرجع الضمير. النصوص مشكولة؛ النتيجة لا تمثل قراءة نص غير مشكول أو إتقان لهجة محكية."
+          data-de="Die Tests zielen auf modernes Hocharabisch. Buchstaben und Dekodieren werden von Wortschatz, Strukturen und Verstehen getrennt. Aufgaben reichen von expliziten Informationen bis zu einfachen Schlussfolgerungen, Ereignisfolgen und Pronomenbezügen. Die Texte sind vokalisiert; unvokalisierte Texte und Dialekte werden damit nicht beurteilt."
+        >
+          نستهدف العربية الفصحى، ونفصل معرفة الحروف وفك الرموز عن المفردات
+          والتراكيب والفهم. ننتقل من تعرف المعلومات المباشرة إلى استنتاج قريب
+          وتسلسل أحداث ومرجع الضمير. النصوص مشكولة؛ النتيجة لا تمثل قراءة نص غير
+          مشكول أو إتقان لهجة محكية.
+        </div>
+        <p
+          data-ar="لكل اختبار ١٦ سؤالًا ونموذجان لا يكرران الأسئلة. في كل اختبار متخصص ٨ أسئلة لكل مهارة. لا تظهر الحلول أثناء الاختبار، ولا تعوّض قوة المفردات ضعف فك الرموز. يُسمح بإعادة الصوت دون عقوبة. تعذّر الصوت يُستبعد من المقام ولا يُعدّ خطأ؛ ولا أعرف إجابة غير صحيحة لكنها تبقى منفصلة في التقرير."
+          data-de="Jeder Test hat 16 Aufgaben und zwei Formen ohne gemeinsame Aufgaben. Schwerpunktchecks enthalten acht Aufgaben je Fertigkeit. Lösungen bleiben bis zum Ende verborgen; guter Wortschatz gleicht schwaches Dekodieren nicht aus. Audio darf ohne Punktabzug wiederholt werden. Audioprobleme werden aus dem Nenner ausgeschlossen. „Ich weiß es nicht“ zählt als nicht richtig und wird separat ausgewiesen."
+        >
+          لكل اختبار ١٦ سؤالًا ونموذجان لا يكرران الأسئلة. في كل اختبار متخصص ٨
+          أسئلة لكل مهارة. لا تظهر الحلول أثناء الاختبار، ولا تعوّض قوة المفردات
+          ضعف فك الرموز. يُسمح بإعادة الصوت دون عقوبة. تعذّر الصوت يُستبعد من
+          المقام ولا يُعدّ خطأ؛ ولا أعرف إجابة غير صحيحة لكنها تبقى منفصلة في
+          التقرير.
+        </p>
+        <p
+          data-ar="للتوجيه التعليمي فقط: مع ٦ إجابات صالحة على الأقل، أقل من النصف يقترح تدريبًا أساسيًّا، ومن النصف إلى أقل من ثلاثة أرباع يقترح تثبيتًا، وثلاثة أرباع فأكثر تشير إلى جاهزية مبدئية في العينة. أقل من ستة بنود صالحة يعطي دليلًا غير كافٍ. هذه الحدود ليست معايير CEFR، والنموذجان غير معادلين إحصائيًّا بعد."
+          data-de="Nur als didaktische Orientierung: Ab sechs bewertbaren Aufgaben führen weniger als die Hälfte richtiger Antworten zu Grundübungen, die Hälfte bis unter drei Viertel zu Festigung und mindestens drei Viertel zu vorläufiger Bereitschaft in dieser Stichprobe. Bei weniger als sechs bewertbaren Aufgaben fehlen Daten. Dies sind keine CEFR-Grenzwerte; die beiden Formen sind noch nicht statistisch gleichgesetzt."
+        >
+          للتوجيه التعليمي فقط: مع ٦ إجابات صالحة على الأقل، أقل من النصف يقترح
+          تدريبًا أساسيًّا، ومن النصف إلى أقل من ثلاثة أرباع يقترح تثبيتًا،
+          وثلاثة أرباع فأكثر تشير إلى جاهزية مبدئية في العينة. أقل من ذلك دليل
+          غير كافٍ. هذه الحدود ليست معايير CEFR، والنموذجان غير معادلين
+          إحصائيًّا بعد.
+        </p>
+        <p
+          data-ar="الاسترشاد: فصل أنشطة الاستقبال والإنتاج في CEFR، ووصف الأداء الوظيفي في ACTFL، وأبحاث تعلم القراءة العربية التي تميّز الوعي الصوتي والكتابة والصرف وازدواجية الفصحى والمحكية. لم تُقنّن هذه الأسئلة ميدانيًّا بعد."
+          data-de="Orientierung: getrennte rezeptive und produktive Aktivitäten im CEFR, funktionale Leistungsbeschreibungen bei ACTFL und Forschung zur arabischen Literalität mit Phonologie, Schrift, Morphologie und Diglossie. Diese Aufgaben wurden noch nicht empirisch normiert."
+        >
+          الاسترشاد: فصل أنشطة الاستقبال والإنتاج في CEFR، ووصف الأداء الوظيفي
+          في ACTFL، وأبحاث تعلم القراءة العربية التي تميّز الوعي الصوتي والكتابة
+          والصرف وازدواجية الفصحى والمحكية. لم تُقنّن هذه الأسئلة ميدانيًّا بعد.
+        </p>
+        <p>
+          <a
+            href="https://www.coe.int/en/web/common-european-framework-reference-languages/the-cefr-descriptors"
+            target="_blank"
+            rel="noopener"
+            >Council of Europe · CEFR</a
+          >
+          ·
+          <a
+            href="https://www.actfl.org/educator-resources/actfl-proficiency-guidelines"
+            target="_blank"
+            rel="noopener"
+            >ACTFL Proficiency Guidelines</a
+          >
+        </p>
+        <p
+          data-ar="أسئلة المفردات والقواعد مكتوبة، وقد يتأثر أداؤها بمهارة القراءة. يركز هذا الفحص على التأسيس وA1 وA2 الداخليين وبعض القواعد الأوسع؛ لا يفرز B1 وB2 وحده."
+          data-de="Wortschatz und Grammatik werden schriftlich geprüft und können durch die Lesefertigkeit beeinflusst werden. Der Check konzentriert sich auf Grundlagen, den internen A1/A2-Stoff und ausgewählte weiterführende Grammatik; B1 und B2 werden damit nicht allein eingestuft."
+        >
+          أسئلة المفردات والقواعد مكتوبة، وقد يتأثر أداؤها بمهارة القراءة. يركز
+          هذا الفحص على التأسيس وA1 وA2 الداخليين وبعض القواعد الأوسع؛ لا يفرز
+          B1 وB2 وحده.
+        </p>
+        <p lang="en">
+          Saiegh-Haddad &amp; Joshi (eds.), Handbook of Arabic Literacy:
+          Insights and Perspectives, Springer, 2014.
+        </p>
+      </details>
+      <details class="home-panel placement-method">
+        <summary
+          data-ar="للمعلم: أكمل التشخيص بقراءة جهرية وكتابة قصيرة"
+          data-de="Für Lehrkräfte: mit Vorlesen und kurzem Schreiben ergänzen"
+        >
+          للمعلم: أكمل التشخيص بقراءة جهرية وكتابة قصيرة
+        </summary>
+        <p
+          data-ar="اطلب من المتعلم قراءة النص الجديد أدناه دون سماع نموذج، ثم أن يشرح معناه. لاحظ دقة أصوات الحروف والحركات والمد والشدة، والتوقف الطبيعي، واستقلاله في فهم المعنى. دوّن المهارات التي يؤديها وحده أو بمساعدة أو التي لم تلاحظها، دون تحويلها آليًّا إلى مستوى CEFR."
+          data-de="Lass den neuen Text ohne Hörvorbild laut lesen und anschließend erklären. Beobachte Konsonanten, Vokale, Länge, Verdopplung, natürliche Pausen und selbstständiges Verstehen. Notiere: selbstständig, mit Hilfe oder noch nicht beobachtet. Daraus wird kein automatisches CEFR-Niveau abgeleitet."
+        >
+          اطلب من المتعلم قراءة النص الجديد أدناه دون سماع نموذج، ثم أن يشرح
+          معناه. لاحظ دقة أصوات الحروف والحركات والمد والشدة، والتوقف الطبيعي،
+          واستقلاله في فهم المعنى. دوّن المهارات التي يؤديها وحده أو بمساعدة أو
+          التي لم تلاحظها، دون تحويلها آليًّا إلى مستوى CEFR.
+        </p>
+        <p lang="ar" dir="rtl" class="placement-passage">
+          فِي صَبَاحِ الْجُمُعَةِ، ذَهَبَتْ هَنَاءُ مَعَ أَخِيهَا إِلَى
+          الْحَدِيقَةِ. شَاهَدَا شَجَرَةَ زَيْتُونٍ كَبِيرَةً وَعُصْفُورًا
+          صَغِيرًا. جَلَسَا تَحْتَ الشَّجَرَةِ، ثُمَّ قَرَأَتْ هَنَاءُ قِصَّةً
+          لِأَخِيهَا.
+        </p>
+        <p
+          data-ar="للكتابة: اطلب أربع جمل عن يومه أو أسرته وسؤالًا واحدًا. راجع وضوح المعنى، وترتيب الكلمات، وتوافق الضمير والفعل والصفة، ورسم الحروف والتاء والهمزات بحسب ما دُرس. لدى المبتدئ يمكن البدء بكلمات وجملتين بسيطتين. لا يسجّل التطبيق صوت المتعلم ولا يمنح حكمًا آليًّا على هذه المهمة."
+          data-de="Schreiben: vier Sätze über den Alltag oder die Familie und eine Frage. Prüfe Verständlichkeit, Wortstellung, Kongruenz und gelernte Schreibweisen. Anfänger können mit Wörtern und zwei einfachen Sätzen beginnen. Die App zeichnet keine Lernendenstimme auf und bewertet diese Aufgabe nicht automatisch."
+        >
+          للكتابة: اطلب أربع جمل عن يومه أو أسرته وسؤالًا واحدًا. راجع وضوح
+          المعنى، وترتيب الكلمات، وتوافق الضمير والفعل والصفة، ورسم الحروف
+          والتاء والهمزات بحسب ما دُرس. لدى المبتدئ يمكن البدء بكلمات وجملتين
+          بسيطتين. لا يسجّل التطبيق صوت المتعلم ولا يمنح حكمًا آليًّا على هذه
+          المهمة.
+        </p>
+      </details>
+    </main>
+    <footer class="teacher-credit" id="teacher-credit">
+      إعداد الأستاذ محمود بركات
+    </footer>
+  </body>
+</html>

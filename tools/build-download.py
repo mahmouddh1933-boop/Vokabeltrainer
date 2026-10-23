@@ -80,7 +80,7 @@ with ZipFile(args.output) as archive:
     youth_clips = len(json.loads((ROOT/'audio/youth-manifest.json').read_text())['clips'])
     book_clips = len(json.loads((ROOT/'audio/book-youth-two-part-one-manifest.json').read_text())['clips'])
     related_clips = len(json.loads((ROOT/'audio/letter-related-manifest.json').read_text())['clips'])
-    audio_count = 439 + youth_clips + book_clips + related_clips + sum(len(json.loads((ROOT/"audio"/name).read_text())["clips"]) for name in ["phonics-manifest.json","sentence-expanded-manifest.json"])
+    audio_count = 439 + youth_clips + book_clips + related_clips + sum(len(json.loads((ROOT/"audio"/name).read_text())["clips"]) for name in ["phonics-manifest.json","sentence-expanded-manifest.json","placement-manifest.json"])
     assert len([name for name in files if name.endswith('.mp3')]) == audio_count
     for name in ['huruf','lernseite','sounds','sentences','stories','book-level-two','arabic-youth','youth-training-two','youth-book-two-part-one']:
         html = archive.read('Vokabeltrainer/'+name+'.html').decode()

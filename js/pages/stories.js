@@ -13,6 +13,8 @@
   state.answers = state.answers || {};
   state.translations = state.translations || {};
   if (!["all", "A1", "A2"].includes(state.level)) state.level = "all";
+  const requestedLevel = new URLSearchParams(location.search).get("level");
+  if (["A1", "A2"].includes(requestedLevel)) state.level = requestedLevel;
   const items = () =>
     D.stories.filter((s) => state.level === "all" || s.level === state.level);
   const persist = () => P.save("stories", state);
@@ -159,6 +161,11 @@
   }
   $("story-level").onchange = (event) => {
     state.level = event.target.value;
+    const url = new URL(location.href);
+    if (url.searchParams.has("level")) {
+      url.searchParams.set("level", state.level);
+      history.replaceState(null, "", url.pathname + url.search + url.hash);
+    }
     select(items()[0].id);
   };
   $("story-translation").onclick = () => {

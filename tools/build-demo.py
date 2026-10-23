@@ -136,6 +136,7 @@ for name in PAGES:
     source = (ROOT / (name + '.html')).read_text()
     source = re.sub(r'<script\b[^>]*\bsrc=["\']([^"\']+)["\'][^>]*>\s*</script>',
         lambda match: '' if match[1].split('?')[0] in EXCLUDED_SCRIPTS or match[1].startswith('https:') else match[0], source)
+    source = re.sub(r'<p\b[^>]*class=["\']placement-context["\'][^>]*>.*?</p>', '', source, flags=re.S)
     if name == 'grammar':
         source = re.sub(r'<script[^>]*src=[\"\']js/grammar-path-data.js[^\"\']*[\"\'][^>]*>\s*</script>', '', source)
     source = re.sub(r'<link\b[^>]*href=["\']css/auth.css[^"\']*["\'][^>]*>', '', source)

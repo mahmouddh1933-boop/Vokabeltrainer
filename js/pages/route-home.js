@@ -41,6 +41,27 @@
         li.append(a, b);
         host.append(li);
       });
+      const latest = Object.values(
+        window.VocabApp.getStats().placementV1?.attempts || {},
+      )
+        .filter((a) => a.status === "finished" && a.result?.primary)
+        .sort((a, b) => b.finishedAt - a.finishedAt)[0];
+      const placementText = document.getElementById("placement-home-result"),
+        placementReport = document.getElementById("placement-home-report");
+      if (latest && placementText && placementReport) {
+        placementText.hidden = false;
+        placementReport.hidden = false;
+        placementText.textContent =
+          (de
+            ? "Deine letzte vorläufige Empfehlung: "
+            : "توصيتك التشخيصية الأخيرة: ") +
+          latest.result.primary.label[de ? "de" : "ar"];
+        placementReport.href =
+          "placement.html#attempt=" + encodeURIComponent(latest.id);
+        placementReport.textContent = de
+          ? "Fertigkeitsprofil und passende Lektionen ansehen"
+          : "عرض ملف المهارات والدروس المقترحة";
+      }
       const next =
         R.stages.find((s) => s.id === data.lastStage) ||
         R.stages.find((s) => !done[s.id]) ||

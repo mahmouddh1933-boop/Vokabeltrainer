@@ -152,3 +152,11 @@ select:focus-visible {
     transform: none;
   }
 }
+
+.placement-target-list {
+  outline: 3px solid #608146;
+  outline-offset: 3px;
+}
+.placement-context {
+  margin-block: 12px 24px;
+}

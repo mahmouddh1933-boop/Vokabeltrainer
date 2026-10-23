@@ -206,6 +206,11 @@
     advancedGrid.className = "cefr-level-grid";
     advanced.append(advancedGrid);
     target.append(advanced);
+    const query = new URLSearchParams(location.search),
+      requestedLevel = query.get("level");
+    const initialLevel = levels.some((l) => l.id === requestedLevel)
+      ? requestedLevel
+      : levels[0].id;
     levels.forEach((level, levelIndex) => {
       const levelLists = (level.listIds || [])
         .map((id) => byId.get(id))
@@ -215,7 +220,7 @@
       button.type = "button";
       button.className = "cefr-level-card";
       button.dataset.levelId = level.id;
-      button.setAttribute("aria-pressed", String(levelIndex === 0));
+      button.setAttribute("aria-pressed", String(level.id === initialLevel));
       button.innerHTML = `
                 <span class="cefr-level-code">${VocabApp.escapeHTML(level.cefr || level.id)}</span>
                 <span class="cefr-level-copy">
@@ -227,6 +232,13 @@
                     <span class="cefr-progress-label">${levelStats.percent}٪ تقدّم نحو الإتقان</span>
                 </span>`;
       button.addEventListener("click", () => {
+        const url = new URL(location.href);
+        if (url.searchParams.has("level")) {
+          if (url.searchParams.get("level") !== level.id)
+            url.searchParams.delete("list");
+          url.searchParams.set("level", level.id);
+          history.replaceState(null, "", url.pathname + url.search + url.hash);
+        }
         target.querySelectorAll(".cefr-level-card").forEach((item) => {
           item.classList.remove("active");
           item.setAttribute("aria-pressed", "false");
@@ -246,7 +258,7 @@
       (["B1", "B2"].includes(level.id) ? advancedGrid : levelGrid).appendChild(
         button,
       );
-      if (levelIndex === 0) {
+      if (level.id === initialLevel) {
         button.classList.add("active");
         renderLevelDetails(level, levelLists, detailsHost);
       }
@@ -309,6 +321,17 @@
         VocabApp.saveVocabList(vocab, source);
         window.location.href = "./lernseite.html";
       });
+      if (new URLSearchParams(location.search).get("list") === list.id) {
+        button.classList.add("placement-target-list");
+        setTimeout(() => {
+          button.scrollIntoView({ block: "center", behavior: "instant" });
+          button.focus({ preventScroll: true });
+        }, 40);
+        button.setAttribute(
+          "aria-label",
+          list.title + " · القائمة المقترحة / Empfohlene Liste",
+        );
+      }
       grid.appendChild(button);
     });
   }
