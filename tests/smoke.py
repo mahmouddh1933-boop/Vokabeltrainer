@@ -17,8 +17,8 @@ with sync_playwright() as p:
     page.locator('#language-welcome button').filter(has_text='Deutsch').click()
     assert page.locator('html').get_attribute('lang')=='de'
     page.locator('[data-learner-choice="neutral"]').click()
+    page.goto(base_url + '/vocabulary.html')
     page.wait_for_function('typeof XLSX !== "undefined"')
-    page.locator('#hero-start').click()
     page.wait_for_selector('.ready-list-button')
     assert page.locator('.cefr-level-card').count()==4
     catalog=page.evaluate('VocabApp.loadCatalog()')
@@ -59,7 +59,7 @@ with sync_playwright() as p:
     page.goto(base_url + '/huruf.html')
     assert page.locator('svg, img').count()>0
     print('Alphabet page loaded')
-    page.goto(base_url + '/index.html')
+    page.goto(base_url + '/vocabulary.html')
     page.wait_for_function('typeof XLSX !== "undefined"')
     workbook=page.evaluate('''() => {
         const book=XLSX.utils.book_new();

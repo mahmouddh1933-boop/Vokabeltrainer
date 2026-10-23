@@ -1,0 +1,317 @@
+{
+  "date": "2026-10-23",
+  "provider": "Google Translate TTS (ar)",
+  "slow": true,
+  "clips": [
+    {
+      "text": "كَتَبَ",
+      "path": "audio/phonics/7ef4234357ba7102.mp3",
+      "sha256": "fdfd09d66406bde2945ce1f45da46a1b9861ba2b578d152334a3ce9368877040"
+    },
+    {
+      "text": "دَرَسَ",
+      "path": "audio/phonics/3f9b8b57bcd4fcc1.mp3",
+      "sha256": "010f16c9cd508df6ca77ab1be21d4b31a921b3ea6d32c87aa0057a1d9dd533d1"
+    },
+    {
+      "text": "رَسَمَ",
+      "path": "audio/phonics/4b2730aea84cd732.mp3",
+      "sha256": "f9d377af6b66978615f48a57f3fdb2fe773388ab1d92f917d680b42b9a54ca82"
+    },
+    {
+      "text": "فَتَحَ",
+      "path": "audio/phonics/5e256782cba748f8.mp3",
+      "sha256": "1eb1f8a6b35add693e8efa48d7d506c94912295d8e2f5dda3a369cd357d0a7c0"
+    },
+    {
+      "text": "جَلَسَ",
+      "path": "audio/phonics/c16ecf21b0ce6996.mp3",
+      "sha256": "b8fad0a9e745c4ee22475957e14d6541a52aef3453cbe12ea0dc6c838cbd9312"
+    },
+    {
+      "text": "ذَهَبَ",
+      "path": "audio/phonics/a4c980dc35c68dcc.mp3",
+      "sha256": "69d746327c04d8b9ae09f13fccf0f145cbdf1f4bf5271bcdb1c2973d5bf368f1"
+    },
+    {
+      "text": "دَخَلَ",
+      "path": "audio/phonics/e0d38db7c1c8a04e.mp3",
+      "sha256": "514688e7feb8555297ed10acdea15201e88f1b0c108ff1daad3dc4c1bbef9a23"
+    },
+    {
+      "text": "خَرَجَ",
+      "path": "audio/phonics/35efbb9ea1bf1736.mp3",
+      "sha256": "24dea4dae2fb1b45a554b4fd4156b51005fae2e1a46949710745fbed5335c910"
+    },
+    {
+      "text": "شَرِبَ",
+      "path": "audio/phonics/da036fe550609c45.mp3",
+      "sha256": "d50989ee2e1012f11ef876b5df82cbd0856e887a6ae58f4aadba9d1713932df4"
+    },
+    {
+      "text": "لَعِبَ",
+      "path": "audio/phonics/7e9f8da8aa3fdd4c.mp3",
+      "sha256": "aabaa8a7e707580741a1e10b2497d749907b29491041b03d3935336ab56bed41"
+    },
+    {
+      "text": "رَكَضَ",
+      "path": "audio/phonics/c43f543b3671a5ed.mp3",
+      "sha256": "bdcada0c63172446e13b39be5fb336b8def4af08d20feaa62c19dcd509279716"
+    },
+    {
+      "text": "سَمِعَ",
+      "path": "audio/phonics/886584aa3fae6ead.mp3",
+      "sha256": "dc0ea610b433d966f72a6be9284896b9e85cc38de408e3babebf182b17ac3429"
+    },
+    {
+      "text": "قَلَمْ",
+      "path": "audio/phonics/0bbf51e4c7e2652d.mp3",
+      "sha256": "7343ac39c35a6bb05234ddfb62da261618f840fd4d146bc09ec321cc4cebdb41"
+    },
+    {
+      "text": "وَلَدْ",
+      "path": "audio/phonics/0db932a0dabcb5c4.mp3",
+      "sha256": "91dc7c01cd669afb5a86e2289591ca43e96522c5a3718c8b30ade5d662e0fd3c"
+    },
+    {
+      "text": "كِتَابْ",
+      "path": "audio/phonics/017d95f9bc525203.mp3",
+      "sha256": "1245e63d80692c4b9f77e9c2b5bfa3644da0fa239dab7862824a4d865de06f13"
+    },
+    {
+      "text": "حَلِيبْ",
+      "path": "audio/phonics/c34afb0b04aa45e1.mp3",
+      "sha256": "774e2d9e734b964241b1f7a6afb3f11b8c530f3999f8d153c4d4fa48eaffc9c4"
+    },
+    {
+      "text": "سَمَكْ",
+      "path": "audio/phonics/f31468422cbcb2fd.mp3",
+      "sha256": "c52a7163e5c2ef4e350b7677213e5954b9c9f6a895bcf11d199782a60f498376"
+    },
+    {
+      "text": "سَرِيرْ",
+      "path": "audio/phonics/c347e9b06096ace9.mp3",
+      "sha256": "e74f06e146596273db9713028778a1c4b3c30ed3a36502c8f4526ea60b6ee585"
+    },
+    {
+      "text": "مَطَارْ",
+      "path": "audio/phonics/3309cefc6c51645f.mp3",
+      "sha256": "ee21a78d92060fd854d826f2bb4a72125b2d79b758bc5f3b95982b00dd6140a4"
+    },
+    {
+      "text": "أَرْنَبْ",
+      "path": "audio/phonics/53713aee3ac3dc22.mp3",
+      "sha256": "76b5a59654e7189fcf8d8621ba13277273ff8392828a6a377e0406add64a7af7"
+    },
+    {
+      "text": "أَسَدْ",
+      "path": "audio/phonics/720cf1d18ac0c9ca.mp3",
+      "sha256": "87ab6bde2e98f668184ad189a680ec43244c6d2ae708e2e00fe001d2f769f35b"
+    },
+    {
+      "text": "عِنَبْ",
+      "path": "audio/phonics/58c9b89406e848a5.mp3",
+      "sha256": "57018ef1a56d37de1f2044fa203a409bf3faee36ac78b5ad381dbe9cc9d8331b"
+    },
+    {
+      "text": "جَمَلْ",
+      "path": "audio/phonics/730b240890414e00.mp3",
+      "sha256": "681188084f22d66c373f1e42b0651f005d561d96ea71aa196f1aa166517151f4"
+    },
+    {
+      "text": "حِصَانْ",
+      "path": "audio/phonics/29519da6ff23f577.mp3",
+      "sha256": "f49e0af3e5b8d5f66f68d2e9a283c956efcb3411fbe44a87a25bf0a914dce638"
+    },
+    {
+      "text": "مَدْرَسَة",
+      "path": "audio/phonics/b0cf63bae84aa986.mp3",
+      "sha256": "b93f6d2690fa1a9be6a9e36bce8ede1690cfbf318b4f8d14ffae6e521ef1e68a"
+    },
+    {
+      "text": "قَلَم",
+      "path": "audio/phonics/9a14a703fd797061.mp3",
+      "sha256": "f5981b3bfd4d00b088bf999f048c7332d971557df83de98cf5a014644eca5c66"
+    },
+    {
+      "text": "كِتَاب",
+      "path": "audio/phonics/85fcb04d12e31be9.mp3",
+      "sha256": "d7c5e4c29a3f17d1fee24ddc1f052d0ed82acc0c868cf2b0ff6f2500047a8a47"
+    },
+    {
+      "text": "حَقِيبَة",
+      "path": "audio/phonics/4a2c871b2adc33da.mp3",
+      "sha256": "9bbbd4c22109be3b1d420be7631bbe6464ae3b39e6518cc83299c62531f605c2"
+    },
+    {
+      "text": "طَالِب",
+      "path": "audio/phonics/f18da6a0b1c153ae.mp3",
+      "sha256": "0222cf0594669470be70018a3f40265e3e3b5c415131bd4077b18ad1d0c08cc8"
+    },
+    {
+      "text": "بَيْت",
+      "path": "audio/phonics/a29c323540e8fc90.mp3",
+      "sha256": "8fbd19c270152d8dd1e3550176bc36eef28c2d8e4f1493978c4929a4196a7042"
+    },
+    {
+      "text": "بَاب",
+      "path": "audio/phonics/06740eb42b1dda4b.mp3",
+      "sha256": "0bf94762ee8df1937cf0fc24859ace8ac5af9428afc80d890bda2d7bb7c24bda"
+    },
+    {
+      "text": "نَافِذَة",
+      "path": "audio/phonics/462901ce4b6b335b.mp3",
+      "sha256": "045958a5a3bce533368692874b056dc62b7343cc3a213b746ccd6208ca02e306"
+    },
+    {
+      "text": "مَاء",
+      "path": "audio/phonics/59ab7ecb69fa376d.mp3",
+      "sha256": "b95d568f115357ac0ef7b95a86d6cbf2c75c77c0226be9e077effebeae76b591"
+    },
+    {
+      "text": "حَلِيب",
+      "path": "audio/phonics/9bd4e6cf454aace0.mp3",
+      "sha256": "d8d6f92f583139e0f5f144c929e128ab80470a1263a240a45fc562e0c5fbfc77"
+    },
+    {
+      "text": "تُفَّاح",
+      "path": "audio/phonics/e3a725c520a8768d.mp3",
+      "sha256": "b0dbe4f3ff19e0c39ade8b3a6f9b3578e42cc2ca4534e17e924ed0f68a77de47"
+    },
+    {
+      "text": "مَوْز",
+      "path": "audio/phonics/2512ac5aed655b1b.mp3",
+      "sha256": "de683fe626e4679d92a2fa9f1ead84a970622ccf3059c72279122bfb6a8b99bb"
+    },
+    {
+      "text": "عِنَب",
+      "path": "audio/phonics/48db0e51e1a1865b.mp3",
+      "sha256": "9dd0c90bfef400f1bf21b3c60438d221cf4f99c7d3a47de04f3b6b647175e3c0"
+    },
+    {
+      "text": "خُبْز",
+      "path": "audio/phonics/80e3026ea41cb8b4.mp3",
+      "sha256": "dd604128ce3f3b88781c2912799e525ac4952827164e4867ee0ef279cd7da697"
+    },
+    {
+      "text": "قِطَّة",
+      "path": "audio/phonics/4f0f1d80f36cc876.mp3",
+      "sha256": "679132fae00880395fa15b58395e5073d1cd29dad44577e14a4dc7249b9f44d4"
+    },
+    {
+      "text": "كَلْب",
+      "path": "audio/phonics/651ffa57afd10588.mp3",
+      "sha256": "aa5b038edc731c8dd692acb5a9c051554479f328332853d8eedc3970d300edd1"
+    },
+    {
+      "text": "سَمَك",
+      "path": "audio/phonics/273bca6da785135e.mp3",
+      "sha256": "988bc00d394145235694dd94b1c7a293a4d428d23534beef2ae7de3a76b6149f"
+    },
+    {
+      "text": "شَمْس",
+      "path": "audio/phonics/516b994b0329c944.mp3",
+      "sha256": "f6549670c204b9f20eea0c1a39c5d233078677e4d2207da84703858c52610e49"
+    },
+    {
+      "text": "قَمَر",
+      "path": "audio/phonics/4e4f47bf6d279615.mp3",
+      "sha256": "f107124e7eb84b0343ab2911f85d7789678565ccd880c6671ed00d7d7045684e"
+    },
+    {
+      "text": "وَرْدَة",
+      "path": "audio/phonics/8cdd45621eb00d21.mp3",
+      "sha256": "457f7fa5a03a039e747dd182df8db32af5899a1643ecc88df87e23d70f96692b"
+    },
+    {
+      "text": "سَيَّارَة",
+      "path": "audio/phonics/a6983746de9561dc.mp3",
+      "sha256": "1e0dfdfab248122fd358664f23105b103c0afbaa05029dadabda0c09eee3fa72"
+    },
+    {
+      "text": "حَافِلَة",
+      "path": "audio/phonics/8b13da579378a481.mp3",
+      "sha256": "6fba9282beb77fbab0e234b9b419892704bc43b75880017403d54e8f2855cd7f"
+    },
+    {
+      "text": "سَرِير",
+      "path": "audio/phonics/217cbe9d56a546f6.mp3",
+      "sha256": "bcf111581fe2cf3ad30aa0c7de4f3848578f327eca593e79fbaf149857aa7d76"
+    },
+    {
+      "text": "كُرْسِيّ",
+      "path": "audio/phonics/a9e72f07dee572bf.mp3",
+      "sha256": "c116c79f804c35308264e5bc992b732d36d2d46634536670eb3e64c3b4c18f25"
+    },
+    {
+      "text": "مَكْتَب",
+      "path": "audio/phonics/b9098d4d706c2710.mp3",
+      "sha256": "97303bfa56825962547964c5d8497cc3c274538eb76351238fa9ec9775bc1693"
+    },
+    {
+      "text": "مَلْعَب",
+      "path": "audio/phonics/f0dd483db6bd91c5.mp3",
+      "sha256": "19ac824b657cb85a164402e478170c552de55a402579f524a72fdbb0c2131c1a"
+    },
+    {
+      "text": "مَدْخَل",
+      "path": "audio/phonics/34a5fb26109f8311.mp3",
+      "sha256": "150c4cb798b48a5bfe4fd210dd352b501197060fc29eb43891fc960372c95525"
+    },
+    {
+      "text": "كَاتِب",
+      "path": "audio/phonics/25c597cbfd4a432f.mp3",
+      "sha256": "8cf52d1fa657d292aad0bb134acbe0dc309d69515bdd5b3bb79349537ba1f35a"
+    },
+    {
+      "text": "عَامِل",
+      "path": "audio/phonics/174f0a43ee8920b4.mp3",
+      "sha256": "81a8ef438326f6e703d39a022d23e182f6ebbf730c65a5be09724e9b13ed5fa9"
+    },
+    {
+      "text": "رَاكِب",
+      "path": "audio/phonics/3eeb6bca26e14e14.mp3",
+      "sha256": "f1d117d2bec14c3510ffc06df8ac93fd82556b7cbc7338a4cefaa660d038cd85"
+    },
+    {
+      "text": "كَبِير",
+      "path": "audio/phonics/f132d51db4f9470c.mp3",
+      "sha256": "2872cf62f8457340be0bd7d76ea3d7c350e84411b1e95ee5089a9925d8e675e9"
+    },
+    {
+      "text": "صَغِير",
+      "path": "audio/phonics/b1d60e905ff482a0.mp3",
+      "sha256": "dbf2af77431034bda500616db3aac0f429b1de9a68ee8b84dcba38084389f4e5"
+    },
+    {
+      "text": "مِفْتَاح",
+      "path": "audio/phonics/365206ee50f1c44a.mp3",
+      "sha256": "1cda83a1f244110972b2099388ad5138daa087546d70b78c11dbb96db4592c01"
+    },
+    {
+      "text": "صَبَاح",
+      "path": "audio/phonics/92e6ca5b9511d9c3.mp3",
+      "sha256": "1b596f8f00bb41540c46169c28bd60d367cfe72da102d93b9bf6cd443d705385"
+    },
+    {
+      "text": "نُور",
+      "path": "audio/phonics/f280bdd89f69657b.mp3",
+      "sha256": "65808dddbfa6f222a13ea9df878b9098df77f0c2f4d703622074b588b6ac61fc"
+    },
+    {
+      "text": "سُور",
+      "path": "audio/phonics/46bd4a28e7910437.mp3",
+      "sha256": "766c6539abf0b2b0c58f0022db69d54c7fd483f237dd9144c83ccc3075b48a9f"
+    },
+    {
+      "text": "طُيُور",
+      "path": "audio/phonics/f9edd7ef6cf2a628.mp3",
+      "sha256": "3da5e8a4510bb4fced7d0dd8edc82036af0b5c586466c334325938a30caed10f"
+    },
+    {
+      "text": "حِسَاب",
+      "path": "audio/phonics/9b94c13917c1f2de.mp3",
+      "sha256": "d1a70204672e3a0b941cb1bd790b99aae3cba15201b64772246c9a037a75b6fb"
+    }
+  ]
+}

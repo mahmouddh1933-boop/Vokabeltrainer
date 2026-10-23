@@ -46,10 +46,10 @@ test("Six sound contrasts cover 36 listening questions, both sides and real loca
   );
 });
 
-test("24 sentence activities cover both levels with case-sensitive independent grammatical keys", () => {
-  assert.equal(D.sentences.length, 24);
-  assert.equal(D.sentences.filter((q) => q.level === "A1").length, 12);
-  assert.equal(D.sentences.filter((q) => q.level === "A2").length, 12);
+test("120 sentence activities cover both levels with case-sensitive independent grammatical keys", () => {
+  assert.equal(D.sentences.length, 120);
+  assert.equal(D.sentences.filter((q) => q.level === "A1").length, 60);
+  assert.equal(D.sentences.filter((q) => q.level === "A2").length, 60);
   const canonical = Object.fromEntries(
     D.sentences.map((q) => [q.id, q.words.join(" ")]),
   );
@@ -133,7 +133,7 @@ test("Six illustrated stories have 36 voiced lines, 24 vocabulary items and inde
 });
 
 test("Every new audio file is represented by exactly one reproducible synthesis input", () => {
-  assert.equal(Object.keys(D.audio).length, 120);
+  assert.equal(Object.keys(D.audio).length, 216);
   assert.equal(manifest.clips.length, 120);
   assert.equal(new Set(manifest.clips.map((c) => c.path)).size, 120);
   for (const clip of manifest.clips) {

@@ -44,7 +44,7 @@ with sync_playwright() as p:
 
     assert page.goto(base+'/sounds.html').status == 200
     language('ar')
-    assert page.locator('.app-sidebar a[aria-current="page"]').get_attribute('href') == 'sounds.html'
+    assert page.locator('.app-sidebar a[aria-current="page"]').get_attribute('href') == 'letters.html'
     assert page.locator('#sound-groups button').count() == 7
     assert page.locator('#sound-options button:disabled').count() == 2
     data = page.evaluate('({questions:ArabicPracticeData.soundQuestions(),audio:ArabicPracticeData.audio})')
@@ -95,20 +95,20 @@ with sync_playwright() as p:
         if index == 0:
             language('de'); assert 'Der Satz stimmt' in page.locator('#sentence-feedback').inner_text()
             language('ar')
-        if index < 23: page.locator('#sentence-next').tap()
+        if index < len(sentences)-1: page.locator('#sentence-next').tap()
     assert page.locator('#sentence-summary').is_visible()
-    assert '23 صحيحة من المحاولة الأولى' in page.locator('#sentence-score').inner_text()
+    assert '119 صحيحة من المحاولة الأولى' in page.locator('#sentence-score').inner_text()
     page.locator('#sentence-level').select_option('A1'); page.locator('#sentence-restart').tap()
     page.locator('#sentence-hint').tap()
     assert page.locator('#sentence-answer button').count() == 1
     page.locator('#sentence-bank button:enabled').first.tap(); page.locator('#sentence-check').tap()
     assert '0 صحيحة من المحاولة الأولى' in page.locator('#sentence-score').inner_text()
     page.locator('#sentence-next').tap()
-    page.reload(); assert page.locator('#sentence-counter').inner_text() == '2 / 12 · A1'
+    page.reload(); assert page.locator('#sentence-counter').inner_text() == '2 / 60 · A1'
     page.locator('#sentence-level').select_option('A2')
-    assert page.locator('#sentence-counter').inner_text() == '1 / 12 · A2'
+    assert page.locator('#sentence-counter').inner_text() == '1 / 60 · A2'
     layout(); page.screenshot(path='/tmp/jisr-sentences-mobile.png',full_page=True)
-    print('PASS sentences: 24 solutions and audio clips, wrong attempt/editing, hint scoring, persistence, level filters',flush=True)
+    print('PASS sentences: 120 solutions and audio clips, wrong attempt/editing, hint scoring, persistence, level filters',flush=True)
 
     page.goto(base+'/stories.html'); language('ar')
     stories = page.evaluate('ArabicPracticeData.stories')

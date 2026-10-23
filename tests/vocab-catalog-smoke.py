@@ -27,17 +27,19 @@ with sync_playwright() as p:
   else:r.abort()
  page.route('**/*',route)
  def home(language='ar'):
-  assert page.goto(base+'/index.html').status==200
+  assert page.goto(base+'/vocabulary.html').status==200
   page.locator('#app-language-select').select_option(language)
   expect(page.locator('.cefr-level-card')).to_have_count(4)
  def select_level(level):
-  card=page.locator('[data-level-id="'+level+'"]');card.tap()
+  card=page.locator('[data-level-id="'+level+'"]')
+  if level in ['B1','B2']:page.locator('#learning-path>details').evaluate('n=>n.open=true')
+  card.tap()
   expect(card).to_have_attribute('aria-pressed','true')
   assert page.locator('.cefr-level-card[aria-pressed="true"]').count()==1
   expect(page.locator('.ready-list-button')).to_have_count(30)
  home()
  assert page.evaluate('VocabApp.loadCatalog()')==C
- assert page.locator('.app-sidebar .nav-badge').inner_text()=='120'
+ assert page.locator('.app-sidebar nav a').count()==7
  # Existing history stays intact, while newly curated list IDs have independent mastery.
  page.evaluate('''()=>{const tests=Object.fromEntries(Object.keys(VocabApp.TEST_CONFIG).map(k=>[k,{qualifyingPasses:2,attempts:2,bestScore:100}]));localStorage.setItem('listMasteryV12',JSON.stringify({'ready-list:list_01':{sourceId:'list_01',type:'ready-list',mastered:true,tests}}));}''')
  for language in ['ar','de']:

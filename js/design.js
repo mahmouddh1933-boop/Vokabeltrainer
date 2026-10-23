@@ -26,66 +26,29 @@
   window.JisrStorage.ready(() => {
     const page = location.pathname.split("/").pop() || "index.html";
     const isHome = page === "index.html";
-    const nav = [
-      ["index.html", "home", "Übersicht", "نظرة عامة"],
-      ["index.html#ready-lists-panel", "book", "Mein Lernpfad", "مسار تعلّمي"],
-      ["huruf.html", "letters", "Das Alphabet", "الحروف العربية"],
-      ["letter-tests.html", "check", "Buchstaben üben", "تدريبات الحروف"],
-      ["sounds.html", "letters", "Ähnliche Laute", "الأصوات المتشابهة"],
-      ["sentences.html", "check", "Sätze bilden", "تكوين الجمل"],
-      ["stories.html", "book", "Kurzgeschichten", "قصص قصيرة"],
-      [
-        "book-level-two.html",
-        "book",
-        "Das Buch · Stufe zwei",
-        "الكتاب المستوى الثاني",
-      ],
-      [
-        "arabic-youth.html",
-        "book",
-        "Arabisch für Jugendliche",
-        "العربية للشباب",
-      ],
-      [
-        "youth-training-two.html",
-        "check",
-        "Jugendübungen 2",
-        "تدريبات الشباب 2",
-      ],
-      [
-        "youth-book-two-part-one.html",
-        "book",
-        "Jugendbuch 2 · Teil 1",
-        "كتاب الشباب2 ج1",
-      ],
-      ["test.html", "check", "Wissen testen", "اختبر معرفتك"],
-      ["review.html", "repeat", "Wiederholen", "المراجعة"],
-      ["stats.html", "chart", "Mein Fortschritt", "تقدّمي"],
-      ["verbs.html", "book", "Verben lernen", "تصريف الأفعال"],
-      [
-        "grammar.html",
-        "letters",
-        "Grammatik & Rechtschreibung",
-        "قواعد العربية",
-      ],
-    ];
+    const nav = window.LearningRoute.stages.map((s) => [
+      s.href,
+      s.id === "letters" ? "letters" : "book",
+      s.de,
+      s.ar,
+    ]);
+    const activeHref = window.LearningRoute.stage?.href;
     const sidebar = document.createElement("aside");
     sidebar.className = "app-sidebar";
     sidebar.id = "app-sidebar";
     sidebar.innerHTML = `<a href="index.html" class="brand" aria-label="حروف من الزيتون"><span class="brand-mark"><img src="images/brand/olive-symbol.svg" alt="" /></span><span class="brand-type" lang="ar" dir="rtl">حروف من الزيتون<span>${label("Mit festen Wurzeln wachsen", "نتعلّم وننمو، بجذور راسخة")}</span></span></a>
       <div class="sidebar-label">${label("DEIN LERNRAUM", "مساحة التعلّم")}</div>
-      <nav aria-label="${document.documentElement.lang === "de" ? "Hauptnavigation" : "القائمة الرئيسية"}">${nav.map(([href, name, de, ar]) => `<a href="${href}" class="nav-link ${href === page || (isHome && href === "index.html") || (page.startsWith("test") && href === "test.html") || (page === "lernseite.html" && href === "index.html#ready-lists-panel") ? "is-active" : ""}" ${href === page ? 'aria-current="page"' : ""}>${icon(name)}${label(de, ar)}${href === "index.html#ready-lists-panel" ? `<span class="nav-badge">${window.VOCAB_CATALOG_META?.lists || 120}</span>` : ""}</a>`).join("")}</nav>
-      <div class="sidebar-bottom"><div class="sidebar-note"><span class="note-spark">✳</span><strong>${label("Ein Buchstabe. Eine wachsende Wurzel.", "حرفٌ ينمو، وجذرٌ يثبت.")}</strong><p>${label("Bleib neugierig. Der Rest kommt Wort für Wort.", "ابقَ فضولياً. والباقي يأتي كلمة بعد كلمة.")}</p></div><a class="teacher-profile" href="index.html"><span class="teacher-avatar">MB</span><span><strong>Mahmoud Barakat</strong><small>${label("Dein Arabischlehrer", "معلّم اللغة العربية")}</small></span><span class="profile-dot"></span></a></div>`;
+      <nav aria-label="${document.documentElement.lang === "de" ? "Hauptnavigation" : "القائمة الرئيسية"}">${nav.map(([href, name, de, ar]) => `<a href="${href}" class="nav-link ${href === activeHref ? "is-active" : ""}" ${href === activeHref ? 'aria-current="page"' : ""}>${icon(name)}${label(de, ar)}${href === "index.html#ready-lists-panel" ? `<span class="nav-badge">${window.VOCAB_CATALOG_META?.lists || 120}</span>` : ""}</a>`).join("")}</nav>
+      <div class="sidebar-bottom"><p class="sidebar-credit" lang="ar" dir="rtl">إعداد الأستاذ محمود بركات</p></div>`;
     document.body.prepend(sidebar);
     const topbar = document.createElement("header");
     topbar.className = "app-topbar";
-    const current =
-      page === "lernseite.html"
-        ? nav[1]
-        : nav.find((item) => item[0] === page) ||
-          (page.startsWith("test")
-            ? nav.find((item) => item[0] === "test.html")
-            : ["", "book", "Lernraum", "مساحة التعلّم"]);
+    const current = nav.find((item) => item[0] === activeHref) || [
+      "",
+      "home",
+      "Dein Lernpfad",
+      "مسار تعلّمك",
+    ];
     topbar.innerHTML = `<div class="topbar-left"><button type="button" class="menu-toggle" aria-controls="app-sidebar" aria-expanded="false" aria-label="Menü / القائمة">${icon("menu")}</button><span class="breadcrumb-brand" lang="ar" dir="rtl">حروف من الزيتون</span><span class="breadcrumb-separator">/</span>${label(current[2], current[3])}</div><div class="topbar-right"><span class="learning-indicator"><span></span>${label("Zeit für etwas Neues", "وقت لاكتشاف شيء جديد")}</span><div class="language-slot"></div><span class="topbar-avatar" aria-hidden="true">${icon("spark")}</span></div>`;
     sidebar.after(topbar);
     const picker = document.querySelector(".app-language-bar");
@@ -155,8 +118,8 @@
       .querySelectorAll(".stat-arrow,.hero-cta>span:last-child")
       .forEach((el) => (el.innerHTML = icon("arrow")));
     document.querySelectorAll(".tool-link").forEach((el) => {
-      el.dataset.de = el.dataset.de.replace(" ↗", "");
-      el.dataset.ar = el.dataset.ar.replace(" ↖", "");
+      el.dataset.de = (el.dataset.de || "").replace(" ↗", "");
+      el.dataset.ar = (el.dataset.ar || "").replace(" ↖", "");
     });
     const footer = document.getElementById("teacher-credit");
     if (footer)
@@ -180,7 +143,7 @@
     window.addEventListener("app-language-change", syncLanguage);
     syncLanguage();
     document.getElementById("hero-start")?.addEventListener("click", () =>
-      document.getElementById("ready-lists-panel").scrollIntoView({
+      document.getElementById("ready-lists-panel")?.scrollIntoView({
         behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
           ? "instant"
           : "smooth",

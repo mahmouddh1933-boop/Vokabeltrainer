@@ -2,5 +2,5 @@
 window.JisrWorkbookConfig = {
   data: window.ArabicYouthBookTwoPartOneData,
   storageKey: "youth-book-two-part-one",
-  title: "كتاب الشباب2 ج1",
+  title: "كتاب 2",
 };

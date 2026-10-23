@@ -8,27 +8,25 @@
       name="description"
       content="حروف من الزيتون: تعلّم العربية، من الحروف إلى المفردات والقواعد، بجذور راسخة ورسومات هادئة."
     />
-    <title>حروف من الزيتون · Arabisch lernen</title>
+    <title>حروف من الزيتون · حروف من الزيتون</title>
     <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
     <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
     <link rel="stylesheet" href="css/modern.css?v=8a75138498b6" />
     <link rel="stylesheet" href="css/verbs.css?v=7f25f6097677" />
     <link rel="stylesheet" href="css/grammar.css?v=bbe72b1d11bd" />
     <link rel="stylesheet" href="css/practice.css?v=e55c73e03b36" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"
-      defer
-    ></script>
+
     <script src="js/storage.js?v=234b995827cd" defer></script>
     <script src="js/firebase-config.js?v=bcb6b5390ad9" defer></script>
     <script src="js/auth-session.js?v=e80b2ec59f82" defer></script>
-    <script src="js/app.js?v=6472f6c0097b" defer></script>
+    <script src="js/app.js?v=266caa422c60" defer></script>
     <script src="data/vocab_catalog_fallback.js?v=55e0976817d1" defer></script>
-    <script src="js/pages/home.js?v=8de0316305df" defer></script>
+
     <script src="data/vocab_catalog_labels.js?v=77de3e826c87" defer></script>
     <script src="js/interface-languages.js?v=d233aae47963" defer></script>
     <script src="js/tanwin-display.js?v=97a12d8b8572" defer></script>
-    <script src="js/design.js?v=8330c16fe2cc" defer></script>
+    <script src="js/learning-path.js?v=12830d173902" defer></script>
+    <script src="js/design.js?v=1c2d7bb7fae6" defer></script>
     <meta name="application-name" content="حروف من الزيتون" />
     <link
       rel="icon"
@@ -38,527 +36,54 @@
     <link rel="stylesheet" href="css/olive-theme.css?v=4b4842e4a626" />
     <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
     <link rel="stylesheet" href="css/auth.css?v=2b57d96c4eaf" />
+    <script src="js/pages/route-home.js?v=f3dfa0694342" defer></script>
+    <link rel="stylesheet" href="css/learning-route.css?v=d178dfa3e3d4" />
   </head>
-  <body class="dashboard">
-    <main class="container home-container" id="main-content">
+  <body>
+    <main class="container practice-page" id="main-content">
       <header class="page-heading">
         <div>
-          <p
-            class="eyebrow"
-            data-de="DEIN PERSÖNLICHER LERNRAUM"
-            data-ar="مساحتك الخاصة للتعلّم"
-          >
-            مساحتك الخاصة للتعلّم
+          <p class="eyebrow" data-ar="مسار تعلّمك" data-de="Dein Lernpfad">
+            مسار تعلّمك
           </p>
-          <h1 data-de="حروف من الزيتون" data-ar="حروف من الزيتون">
+          <h1 data-ar="حروف من الزيتون" data-de="حروف من الزيتون">
             حروف من الزيتون
           </h1>
-          <p
-            data-de="Ein kleines Stück Arabisch. Jeden Tag ein Stück weiter."
-            data-ar="قليل من العربية كل يوم. وخطوة جديدة إلى الأمام."
-          >
-            قليل من العربية كل يوم. وخطوة جديدة إلى الأمام.
-          </p>
         </div>
-        <span class="welcome-symbol" aria-hidden="true">✺</span>
       </header>
-      <section class="hero-card" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <span class="hero-tag"
-            ><span></span
-            ><span data-de="DEINE REISE BEGINNT HIER" data-ar="رحلتك تبدأ هنا"
-              >رحلتك تبدأ هنا</span
-            ></span
-          >
-          <h2
-            id="hero-title"
-            data-de="Buchstaben lernen.\nMit Wurzeln wachsen."
-            data-ar="حروفٌ نتعلّمها.\nوجذورٌ نعتزّ بها."
-          >
-            حروفٌ نتعلّمها.<br />وجذورٌ نعتزّ بها.
-          </h2>
-          <p
-            data-de="Buchstaben öffnen den Weg zum Wissen. Der Olivenbaum steht für Standhaftigkeit und Verbundenheit mit der Erde. Lerne in deinem Tempo."
-            data-ar="الحروف طريقنا إلى المعرفة، والزيتون رمز الصمود والتمسّك بالأرض. تعلّم على مهلك، كلمةً بعد كلمة."
-          >
-            الحروف طريقنا إلى المعرفة، والزيتون رمز الصمود والتمسّك بالأرض.
-            تعلّم على مهلك، كلمةً بعد كلمة.
-          </p>
-          <button class="hero-cta" id="hero-start" type="button">
-            <span data-de="Jetzt loslernen" data-ar="ابدأ التعلّم الآن"
-              >ابدأ التعلّم الآن</span
-            ><span aria-hidden="true">↗</span>
-          </button>
-          <div class="hero-meta">
-            <span data-de="120 Themen" data-ar="١٢٠ موضوعًا">١٢٠ موضوعًا</span
-            ><i></i
-            ><span data-de="4 Sprachniveaus" data-ar="٤ مستويات لغوية"
-              >٤ مستويات لغوية</span
-            ><i></i
-            ><span data-de="Dein Tempo" data-ar="على مهلك">على مهلك</span>
-          </div>
-        </div>
-        <div class="hero-art olive-hero-art" aria-hidden="true">
-          <div class="olive-hero-illustration"></div>
-          <span
-            class="olive-hero-caption"
-            data-ar="حرفٌ جديد، وجذرٌ أعمق"
-            data-de="Ein neuer Buchstabe. Eine tiefere Wurzel."
-            >حرفٌ جديد، وجذرٌ أعمق</span
-          >
-        </div>
-      </section>
-      <div class="section-heading">
-        <h2 data-de="Dein Fortschritt auf einen Blick" data-ar="تقدّمك في لمحة">
-          تقدّمك في لمحة
-        </h2>
-        <span
-          class="section-note"
-          data-de="Jeder Schritt zählt"
-          data-ar="كل خطوة لها قيمة"
-          >كل خطوة لها قيمة</span
-        >
-      </div>
-      <div class="home-status-grid">
-        <a class="status-card" href="stats.html"
-          ><span class="stat-icon" data-icon="check"></span>
-          <div>
-            <strong id="mastered-lists-total">0</strong
-            ><span data-de="Gemeisterte Listen" data-ar="قوائم أتقنتها"
-              >قوائم أتقنتها</span
-            >
-          </div>
-          <span class="stat-arrow">↗</span></a
-        >
-        <a class="status-card" href="stats.html"
-          ><span class="stat-icon peach" data-icon="chart"></span>
-          <div>
-            <strong id="tests-total">0</strong
-            ><span data-de="Abgeschlossene Tests" data-ar="اختبارات أكملتها"
-              >اختبارات أكملتها</span
-            >
-          </div>
-          <span class="stat-arrow">↗</span></a
-        >
-        <a class="status-card" href="review.html"
-          ><span class="stat-icon lavender" data-icon="repeat"></span>
-          <div>
-            <strong id="wrong-total">0</strong
-            ><span data-de="Wörter zum Wiederholen" data-ar="كلمات للمراجعة"
-              >كلمات للمراجعة</span
-            >
-          </div>
-          <span class="stat-arrow">↗</span></a
-        >
-      </div>
-      <section id="ready-lists-panel" class="home-panel learning-section">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow" data-de="WORT FÜR WORT" data-ar="كلمة بعد كلمة">
-              كلمة بعد كلمة
-            </p>
-            <h2 data-de="Dein Lernpfad" data-ar="مسار تعلّمك">مسار تعلّمك</h2>
-          </div>
-          <span class="path-label" data-de="A1 → B2" data-ar="A1 ← B2"
-            >A1 ← B2</span
-          >
-        </div>
-        <p
-          class="section-description"
-          data-de="30 Listen pro Niveau von A1 bis B2, jeweils 20 vokalisierte Wörter und Wendungen mit deutscher Übersetzung."
-          data-ar="٣٠ قائمة لكل مستوى من A1 إلى B2، و٢٠ كلمة وتعبيرًا في كل قائمة، مع التشكيل والترجمة الألمانية."
-        >
-          ٣٠ قائمة لكل مستوى من A1 إلى B2، و٢٠ كلمة وتعبيرًا في كل قائمة، مع
-          التشكيل والترجمة الألمانية.
-        </p>
-        <div id="learning-path"></div>
-      </section>
-      <a href="book-level-two.html" class="grammar-home-card">
-        <span class="grammar-home-glyph" lang="ar" aria-hidden="true">أ ب</span>
-        <div>
-          <span
-            class="lesson-label"
-            data-ar="كتاب مستقل · ٢٨ درسًا"
-            data-de="EIGENES BUCH · 28 LEKTIONEN"
-            >كتاب مستقل · ٢٨ درسًا</span
-          >
-          <h2 data-ar="الكتاب المستوى الثاني" data-de="Das Buch · Stufe zwei">
-            الكتاب المستوى الثاني
-          </h2>
-          <p
-            data-ar="كلمات مصوّرة ونصوص وتدريبات لغة وكتابة لكل حرف، مع أوراق عمل للطباعة."
-            data-de="Bildwörter, Lesetexte, Sprach- und Schreibübungen für jeden Buchstaben mit druckbaren Arbeitsblättern."
-          >
-            كلمات مصوّرة ونصوص وتدريبات لغة وكتابة لكل حرف، مع أوراق عمل
-            للطباعة.
-          </p>
-        </div>
-        <span aria-hidden="true">↗</span>
-      </a>
-      <a href="arabic-youth.html" class="grammar-home-card youth-home-card">
-        <span class="grammar-home-glyph" lang="ar" aria-hidden="true">٨</span>
-        <div>
-          <span
-            class="lesson-label"
-            data-ar="كتاب مستقل · ٨ وحدات"
-            data-de="EIGENES BUCH · 8 EINHEITEN"
-            >كتاب مستقل · ٨ وحدات</span
-          >
-          <h2 data-ar="العربية للشباب" data-de="Arabisch für Jugendliche">
-            العربية للشباب
-          </h2>
-          <p
-            data-ar="حوار ومفردات مصوّرة ومحادثة وقراءة وتراكيب وقراءة حرة، مع ٢٥٦ تمرينًا مصحّحًا وصوت مرفق."
-            data-de="Dialoge, Bildwörter, Sprechen, Lesetexte, Strukturen und freies Lesen mit 256 korrigierten Aufgaben und mitgeliefertem Audio."
-          >
-            حوار ومفردات مصوّرة ومحادثة وقراءة وتراكيب وقراءة حرة، مع ٢٥٦
-            تمرينًا مصحّحًا وصوت مرفق.
-          </p>
-        </div>
-        <span aria-hidden="true">↗</span>
-      </a>
-      <a href="youth-training-two.html" class="grammar-home-card">
-        <span class="grammar-home-glyph" lang="ar" aria-hidden="true">٢</span>
-        <div>
-          <span
-            class="lesson-label"
-            data-ar="٥٣ نشاطًا · مستوحاة من ٣١ صورة"
-            data-de="53 AUFGABENBLÖCKE · NACH 31 VORLAGEN"
-            >٥٣ نشاطًا · مستوحاة من ٣١ صورة</span
-          >
-          <h2 data-ar="تدريبات الشباب 2" data-de="Jugendübungen 2">
-            تدريبات الشباب 2
-          </h2>
-          <p
-            data-ar="٤٠٢ سؤال ومهمة: مفردات وقواعد وترتيب واستماع وكتابة، مع ساعة تفاعلية وأعضاء الجسم وتقدّم محفوظ وأوراق للطباعة."
-            data-de="402 Teilaufgaben: Wortschatz, Grammatik, Reihenfolgen, Hören und Schreiben mit interaktiver Uhr, Körperorganen, gespeichertem Fortschritt und Arbeitsblättern."
-          >
-            ٤٠٢ سؤال ومهمة: مفردات وقواعد وترتيب واستماع وكتابة، مع ساعة تفاعلية
-            وأعضاء الجسم وتقدّم محفوظ وأوراق للطباعة.
-          </p>
-        </div>
-        <span aria-hidden="true">↗</span>
-      </a>
-      <a
-        href="youth-book-two-part-one.html"
-        class="grammar-home-card youth-home-card"
-      >
-        <span class="grammar-home-glyph" lang="ar" aria-hidden="true">٦</span>
-        <div>
-          <span
-            class="lesson-label"
-            data-ar="كتاب مستقل · ٦ وحدات · ٣٧ صورة"
-            data-de="EIGENES BUCH · 6 EINHEITEN · 37 VORLAGEN"
-            >كتاب مستقل · ٦ وحدات · ٣٧ صورة</span
-          >
-          <h2 data-ar="كتاب الشباب2 ج1" data-de="Jugendbuch 2 · Teil 1">
-            كتاب الشباب2 ج1
-          </h2>
-          <p
-            data-ar="٤٩ نشاطًا و٤١٨ سؤالًا ومهمة: حوارات ومفردات وأصوات وقواعد وكتابة وقراءة، مع صوت مرفق وحفظ التقدّم وطباعة كل وحدة."
-            data-de="49 Aufgabenblöcke mit 418 Teilaufgaben: Dialoge, Wortschatz, Laute, Grammatik, Schreiben und Lesen mit mitgeliefertem Audio, gespeichertem Fortschritt und druckbaren Einheiten."
-          >
-            ٤٩ نشاطًا و٤١٨ سؤالًا ومهمة: حوارات ومفردات وأصوات وقواعد وكتابة
-            وقراءة، مع صوت مرفق وحفظ التقدّم وطباعة كل وحدة.
-          </p>
-        </div>
-        <span aria-hidden="true">↗</span>
-      </a>
-      <section aria-labelledby="practice-home-title">
+      <section class="home-panel">
         <h2
-          id="practice-home-title"
-          data-ar="استمع، كوّن جملة، واقرأ"
-          data-de="Hören, Sätze bilden und lesen"
+          data-ar="مسار تعلّمك، خطوة بعد خطوة"
+          data-de="Dein Lernpfad, Schritt für Schritt"
         >
-          استمع، كوّن جملة، واقرأ
+          مسار تعلّمك، خطوة بعد خطوة
         </h2>
-        <div class="practice-home-grid">
-          <a href="sounds.html" class="practice-home-card"
-            ><span class="activity-glyph" aria-hidden="true">ت / ط</span
-            ><strong data-ar="الأصوات المتشابهة" data-de="Ähnliche Laute"
-              >الأصوات المتشابهة</strong
-            ><small
-              data-ar="٦ مجموعات · ٣٦ سؤال استماع مع أمثلة"
-              data-de="6 Lautpaare · 36 Hörfragen mit Beispielen"
-              >٦ مجموعات · ٣٦ سؤال استماع مع أمثلة</small
-            ></a
-          >
-          <a href="sentences.html" class="practice-home-card"
-            ><span class="activity-glyph" aria-hidden="true">✦</span
-            ><strong data-ar="تكوين الجمل" data-de="Sätze bilden"
-              >تكوين الجمل</strong
-            ><small
-              data-ar="٢٤ جملة · ترتيب الكلمات وتفسير القواعد"
-              data-de="24 Sätze · Wörter ordnen und Grammatik verstehen"
-              >٢٤ جملة · ترتيب الكلمات وتفسير القواعد</small
-            ></a
-          >
-          <a href="stories.html" class="practice-home-card"
-            ><span class="activity-glyph" aria-hidden="true">▤</span
-            ><strong data-ar="قصص قصيرة" data-de="Kurzgeschichten"
-              >قصص قصيرة</strong
-            ><small
-              data-ar="٦ قصص مصوّرة · صوت وترجمة وأسئلة فهم"
-              data-de="6 illustrierte Geschichten · Audio, Übersetzung und Verständnisfragen"
-              >٦ قصص مصوّرة · صوت وترجمة وأسئلة فهم</small
-            ></a
-          >
-        </div>
+        <p
+          data-ar="سبع محطات من الحرف إلى النص والقواعد. يمكنك الرجوع إلى أي محطة في أي وقت."
+          data-de="Sieben Schritte vom Buchstaben zu Texten und Grammatik. Jeder Schritt bleibt frei zugänglich."
+        >
+          سبع محطات من الحرف إلى النص والقواعد. يمكنك الرجوع إلى أي محطة في أي
+          وقت.
+        </p>
+        <a
+          class="practice-button primary-action"
+          id="route-resume"
+          href="letters.html"
+          >ابدأ المسار</a
+        >
+        <p id="route-summary" role="status"></p>
       </section>
-      <a href="verbs.html" class="grammar-home-card">
-        <span class="grammar-home-glyph" lang="ar" aria-hidden="true"
-          >فَعَلَ</span
-        >
-        <div>
-          <span
-            class="lesson-label"
-            data-de="NEU · GRAMMATIK VERSTEHEN"
-            data-ar="جديد · افهم القواعد"
-            >جديد · افهم القواعد</span
-          >
-          <h2
-            data-de="Verben, die etwas bewegen."
-            data-ar="تعلّم تصريف الأفعال."
-          >
-            تعلّم تصريف الأفعال.
-          </h2>
-          <p
-            data-de="48 Verben, Vergangenheit, Gegenwart und Imperativ – mit Suche und Quiz."
-            data-ar="٤٨ فعلاً في الماضي والمضارع والأمر، مع بحث وتمارين تفاعلية."
-          >
-            ٤٨ فعلاً في الماضي والمضارع والأمر، مع بحث وتمارين تفاعلية.
-          </p>
-        </div>
-        <span
-          class="tool-link"
-          data-de="Lektion entdecken"
-          data-ar="اكتشف الدرس"
-          >اكتشف الدرس</span
-        >
-      </a>
-      <section
-        class="foundation-home-section"
-        aria-labelledby="foundation-heading"
-      >
-        <div class="section-heading">
-          <div>
-            <p
-              class="eyebrow"
-              data-ar="خطوة جديدة لفهم اللغة"
-              data-de="DEIN FUNDAMENT WÄCHST"
-            >
-              خطوة جديدة لفهم اللغة
-            </p>
-            <h2
-              id="foundation-heading"
-              data-ar="قواعد العربية"
-              data-de="Arabisch verstehen"
-            >
-              قواعد العربية
-            </h2>
-          </div>
-          <span
-            class="path-label"
-            data-ar="37 درسًا · 464 سؤالًا"
-            data-de="37 Lektionen · 464 Fragen"
-            >37 درسًا · 464 سؤالًا</span
-          >
-        </div>
-        <p><a class="lesson-verb-link" href="grammar.html" data-ar="ابدأ أو تابع مسار القواعد ←" data-de="Grammatikpfad beginnen oder fortsetzen →">ابدأ أو تابع مسار القواعد ←</a></p>
-        <div class="foundation-home-grid">
-          <a class="foundation-home-link" href="grammar.html#sun-moon"
-            ><span class="foundation-glyph" lang="ar" aria-hidden="true"
-              >الـ</span
-            >
-            <h3
-              data-ar="اللام الشمسية والقمرية"
-              data-de="Sonnen- und Mondbuchstaben"
-            >
-              اللام الشمسية والقمرية
-            </h3>
-            <p
-              data-ar="متى ننطق اللام ومتى ندغمها؟"
-              data-de="Wann wird das Lām gesprochen?"
-            >
-              متى ننطق اللام ومتى ندغمها؟
-            </p></a
-          ><a class="foundation-home-link" href="grammar.html#pronouns"
-            ><span class="foundation-glyph" lang="ar" aria-hidden="true"
-              >أنا</span
-            >
-            <h3 data-ar="الضمائر" data-de="Pronomen">الضمائر</h3>
-            <p
-              data-ar="تعرّف على المتكلّم والمخاطب والغائب."
-              data-de="Sprechende, Angesprochene und dritte Personen."
-            >
-              تعرّف على المتكلّم والمخاطب والغائب.
-            </p></a
-          ><a class="foundation-home-link" href="grammar.html#gender"
-            ><span class="foundation-glyph" lang="ar" aria-hidden="true"
-              >ة</span
-            >
-            <h3 data-ar="المذكّر والمؤنّث" data-de="Maskulin und feminin">
-              المذكّر والمؤنّث
-            </h3>
-            <p
-              data-ar="جنس الاسم والصفة واسم الإشارة."
-              data-de="Nomen, Adjektive und Demonstrativpronomen."
-            >
-              جنس الاسم والصفة واسم الإشارة.
-            </p></a
-          ><a class="foundation-home-link" href="grammar.html#number"
-            ><span class="foundation-glyph" lang="ar" aria-hidden="true"
-              >١ ٢ ٣</span
-            >
-            <h3
-              data-ar="المفرد والمثنّى والجمع"
-              data-de="Singular, Dual und Plural"
-            >
-              المفرد والمثنّى والجمع
-            </h3>
-            <p
-              data-ar="من واحد إلى اثنين إلى أكثر."
-              data-de="Von einem zu zweien und mehreren."
-            >
-              من واحد إلى اثنين إلى أكثر.
-            </p></a
-          ><a class="foundation-home-link" href="grammar.html#basic-verbs"
-            ><span class="foundation-glyph" lang="ar" aria-hidden="true"
-              >فَعَلَ</span
-            >
-            <h3 data-ar="الأفعال الأساسية" data-de="Grundlegende Verben">
-              الأفعال الأساسية
-            </h3>
-            <p
-              data-ar="١٢ فعلاً تحتاجها في يومك."
-              data-de="12 wichtige Verben für deinen Alltag."
-            >
-              ١٢ فعلاً تحتاجها في يومك.
-            </p></a
-          >
-          <a
-            class="foundation-home-link foundation-more"
-            href="grammar.html#hamza-initial"
-          >
-            <span class="foundation-glyph" lang="ar" aria-hidden="true"
-              >أ ء</span
-            >
-            <h3
-              data-ar="الإملاء والنحو والمشتقات"
-              data-de="Rechtschreibung, Satzbau & Wortbildung"
-            >
-              الإملاء والنحو والمشتقات
-            </h3>
-            <p
-              data-ar="الهمزات والعدد وإعراب الأفعال والتوابع. من 12 إلى 24 سؤالًا لكل درس."
-              data-de="Hamza, Zahlen, Verbformen, Attribute und mehr. 12–24 Fragen pro Lektion."
-            >
-              الهمزات والعدد وإعراب الأفعال والتوابع. من 12 إلى 24 سؤالًا لكل
-              درس.
-            </p>
-          </a>
-        </div>
-      </section>
-      <div class="section-heading tools-heading">
-        <h2 data-de="Mach das Lernen zu deinem" data-ar="تعلّم بطريقتك">
-          تعلّم بطريقتك
-        </h2>
-      </div>
-      <div class="main-choice-grid">
-        <a href="huruf.html" class="main-choice-button letters-home-link"
-          ><span class="tool-glyph" lang="ar">أ ب</span
-          ><span
-            ><strong
-              data-de="Alles beginnt mit Alif"
-              data-ar="كل شيء يبدأ بالألف"
-              >كل شيء يبدأ بالألف</strong
-            ><small
-              data-de="28 Buchstaben. Unendlich viele Möglichkeiten."
-              data-ar="٢٨ حرفاً. وإمكانيات لا تنتهي."
-              >٢٨ حرفاً. وإمكانيات لا تنتهي.</small
-            ><span
-              class="tool-link"
-              data-de="Alphabet entdecken ↗"
-              data-ar="اكتشف الحروف ↖"
-              >اكتشف الحروف ↖</span
-            ></span
-          ></a
-        >
-        <button
-          id="show-excel-button"
-          class="main-choice-button import-card"
-          type="button"
-        >
-          <span class="tool-file" data-icon="upload"></span
-          ><span
-            ><strong
-              data-de="Deine Wörter. Dein Lernplan."
-              data-ar="كلماتك. وخطتك الخاصة."
-              >كلماتك. وخطتك الخاصة.</strong
-            ><small
-              data-de="Lade deine eigene Vokabelliste als Excel-Datei hoch."
-              data-ar="ارفع قائمة مفرداتك الخاصة من ملف Excel."
-              >ارفع قائمة مفرداتك الخاصة من ملف Excel.</small
-            ><span
-              class="tool-link"
-              data-de="Liste importieren ↗"
-              data-ar="استيراد قائمة ↖"
-              >استيراد قائمة ↖</span
-            ></span
-          >
-        </button>
-      </div>
-
-      <section id="excel-panel" class="home-panel upload-panel" hidden>
-        <div class="panel-heading">
-          <span class="stat-icon" data-icon="upload"></span>
-          <h2
-            data-de="Platz für deine eigenen Wörter"
-            data-ar="مساحة لكلماتك الخاصة"
-          >
-            مساحة لكلماتك الخاصة
-          </h2>
-          <p
-            data-de="Arabisch und Deutsch in den ersten beiden Spalten. Als .xlsx oder .xls – die Reihenfolge ist egal."
-            data-ar="ضع العربية والألمانية في أول عمودين بأي ترتيب، بصيغة .xlsx أو .xls."
-          >
-            ضع العربية والألمانية في أول عمودين بأي ترتيب، بصيغة .xlsx أو .xls.
-          </p>
-        </div>
-        <label
-          for="file-upload"
-          class="file-upload-label"
-          tabindex="0"
-          data-de="Excel-Datei auswählen"
-          data-ar="اختر ملف Excel"
-          >اختر ملف Excel</label
-        ><input type="file" id="file-upload" accept=".xlsx,.xls" />
-        <div class="home-actions">
-          <button id="learn-button" type="button" hidden>
-            ابدأ التعلّم من ملف Excel
-          </button>
-        </div>
-        <p id="success-message" role="status" hidden></p>
-        <p id="error-message" role="alert" hidden></p>
-      </section>
-      <div class="home-secondary-actions">
-        <button id="review-button" class="secondary-button" type="button">
-          مراجعة الأخطاء</button
-        ><button id="stats-button" class="secondary-button" type="button">
-          التقدّم والإحصائيات
-        </button>
-      </div>
       <p
-        class="mastery-footnote"
-        data-de="So meisterst du eine Liste: Erreiche in jedem der sechs Tests zweimal mindestens 80 %."
-        data-ar="لإتقان القائمة: احصل على ٨٠٪ على الأقل مرتين في كل اختبار من الاختبارات الستة."
+        data-ar="علامة إتمام المرحلة تختارها بنفسك لتنظيم المسار؛ نتائج التمارين تحفظ منفصلة ولا تعني الزيارة إتقان المرحلة."
+        data-de="Du markierst abgeschlossene Schritte selbst. Übungsergebnisse werden separat gespeichert; ein Besuch bedeutet keine Beherrschung."
       >
-        لإتقان القائمة: احصل على ٨٠٪ على الأقل مرتين في كل اختبار من الاختبارات
-        الستة.
+        علامة إتمام المرحلة تختارها بنفسك لتنظيم المسار؛ نتائج التمارين تحفظ
+        منفصلة ولا تعني الزيارة إتقان المرحلة.
       </p>
+      <ol id="overall-learning-path" class="route-list"></ol>
     </main>
-    <footer class="teacher-credit" id="teacher-credit">
-      إعداد المعلم: <b>محمود بركات</b>
+    <footer id="teacher-credit" class="teacher-credit">
+      إعداد الأستاذ محمود بركات
     </footer>
   </body>
 </html>

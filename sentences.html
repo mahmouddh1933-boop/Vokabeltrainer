@@ -12,19 +12,19 @@
     <script src="js/storage.js?v=234b995827cd" defer></script>
     <script src="js/firebase-config.js?v=bcb6b5390ad9" defer></script>
     <script src="js/auth-session.js?v=e80b2ec59f82" defer></script>
-    <script src="js/app.js?v=6472f6c0097b" defer></script>
-    <script src="js/practice-data.js?v=0420c273d288" defer></script>
+    <script src="js/app.js?v=266caa422c60" defer></script>
+    <script src="js/sentence-expanded-data.js?v=ecdf41ab320b" defer></script><script src="js/practice-data.js?v=5a1e0b15c06d" defer></script>
     <script src="data/vocab_catalog_labels.js?v=77de3e826c87" defer></script>
     <script src="js/interface-languages.js?v=d233aae47963" defer></script>
-    <script src="js/design.js?v=8330c16fe2cc" defer></script>
+    <script src="js/learning-path.js?v=12830d173902" defer></script><script src="js/design.js?v=1c2d7bb7fae6" defer></script>
     <script src="js/practice-core.js?v=81b88bc2a7c0" defer></script>
-    <script src="js/pages/sentences.js?v=3152383c0b4e" defer></script>
+    <script src="js/pages/sentences.js?v=cf6ded5c27af" defer></script>
   <meta name="application-name" content="حروف من الزيتون" />
 <link rel="icon" href="images/brand/olive-symbol.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="css/olive-theme.css?v=4b4842e4a626" />
 <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
     <link rel="stylesheet" href="css/auth.css?v=2b57d96c4eaf" />
-</head>
+<link rel="stylesheet" href="css/learning-route.css?v=d178dfa3e3d4" /></head>
   <body>
     <main class="container practice-page">
       <p id="lesson-loading" role="status" data-ar="جارٍ تحميل الدرس… إذا استمرت هذه الرسالة، استخرج ملف ZIP كاملًا في مجلد جديد وافتح index.html في Chrome؛ معاينة الملف داخل ZIP لا تكفي." data-de="Lektion wird geladen… Bleibt diese Meldung stehen, entpacke die gesamte ZIP-Datei in einen neuen Ordner und öffne index.html in Chrome statt in der ZIP-Vorschau.">جارٍ تحميل الدرس… إذا استمرت هذه الرسالة، استخرج ملف ZIP كاملًا في مجلد جديد وافتح index.html في Chrome؛ معاينة الملف داخل ZIP لا تكفي.</p>
@@ -41,12 +41,12 @@
             كوّن جملة صحيحة
           </h1>
           <p
-            data-ar="اختر الكلمات بالترتيب لتكوين الجملة. ابدأ بالكلمة المحددة، واضغط على كلمة في إجابتك لإزالتها. ٢٤ تدريبًا في مستويين."
-            data-de="Tippe die Wörter in der richtigen Reihenfolge an. Beginne mit dem angegebenen Wort. Tippe ein Wort in deiner Antwort an, um es zu entfernen. 24 Übungen in zwei Niveaus."
+            data-ar="اختر الكلمات بالترتيب لتكوين الجملة. ابدأ بالكلمة المحددة، واضغط على كلمة في إجابتك لإزالتها. ١٢٠ تدريبًا: ٦٠ في A1 و٦٠ في A2، منها ٣٢ سؤالًا جديدًا."
+            data-de="Tippe die Wörter in der richtigen Reihenfolge an. Beginne mit dem angegebenen Wort. Tippe ein Wort in deiner Antwort an, um es zu entfernen. 120 Übungen: 60 in A1 und 60 in A2, darunter 32 neue Fragen."
             class="practice-intro"
           >
             اختر الكلمات بالترتيب لتكوين الجملة. ابدأ بالكلمة المحددة، واضغط على
-            كلمة في إجابتك لإزالتها. ٢٤ تدريبًا في مستويين.
+            كلمة في إجابتك لإزالتها. ١٢٠ تدريبًا: ٦٠ في A1 و٦٠ في A2، منها ٣٢ سؤالًا جديدًا.
           </p>
         </div>
         <span class="welcome-symbol" aria-hidden="true">✳</span>
@@ -87,6 +87,7 @@
               <option value="A2">A2</option>
             </select>
           </div>
+          <div><label for="sentence-kind" data-ar="نوع الجملة" data-de="Satzart">نوع الجملة</label><select id="sentence-kind"><option value="all" data-ar="كل الأنواع" data-de="Alle Arten">كل الأنواع</option><option value="statement" data-ar="جمل خبرية" data-de="Aussagen">جمل خبرية</option><option value="question" data-ar="أسئلة" data-de="Fragen">أسئلة</option><option value="command" data-ar="أمر ونهي" data-de="Aufforderungen">أمر ونهي</option></select></div>
           <span id="sentence-counter" dir="ltr"></span>
         </div>
         <p id="sentence-score" class="practice-score" role="status"></p>

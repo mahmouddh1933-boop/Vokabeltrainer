@@ -17,7 +17,10 @@ part_one_clips = sorted((root/'audio/book-youth-two-part-one').glob('*.mp3'))
 assert len(part_one_clips) == len(json.loads((root/'audio/book-youth-two-part-one-manifest.json').read_text())['clips'])
 related_clips = sorted((root/'audio/letter-related').glob('*.mp3'))
 assert len(related_clips) == 11
-clips = letter_clips + practice_clips + book_clips + youth_clips + part_one_clips + related_clips
+extra_clips=[]
+for name in ['phonics-manifest.json','sentence-expanded-manifest.json']:
+    extra_clips += [root/c['path'] for c in json.loads((root/'audio'/name).read_text())['clips']]
+clips = extra_clips + letter_clips + practice_clips + book_clips + youth_clips + part_one_clips + related_clips
 for clip in clips:
     duration = float(subprocess.check_output([
         'ffprobe', '-v', 'error', '-show_entries', 'format=duration',

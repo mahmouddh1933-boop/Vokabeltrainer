@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#194e40" />
+    <title>حروف من الزيتون · القراءة والهجاء</title>
+    <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
+    <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
+    <link rel="stylesheet" href="css/modern.css?v=8a75138498b6" />
+    <link rel="stylesheet" href="css/practice.css?v=e55c73e03b36" />
+    <script src="js/storage.js?v=234b995827cd" defer></script>
+    <script src="js/firebase-config.js?v=bcb6b5390ad9" defer></script>
+    <script src="js/auth-session.js?v=e80b2ec59f82" defer></script>
+    <script src="js/app.js?v=266caa422c60" defer></script>
+    <script src="js/phonics-data.js?v=a70afb4244aa" defer></script>
+    <script src="data/vocab_catalog_labels.js?v=77de3e826c87" defer></script>
+    <script src="js/interface-languages.js?v=d233aae47963" defer></script>
+    <script src="js/learning-path.js?v=12830d173902" defer></script>
+    <script src="js/design.js?v=1c2d7bb7fae6" defer></script>
+    <script src="js/practice-core.js?v=81b88bc2a7c0" defer></script>
+    <script src="js/pages/phonics.js?v=42dc90e143c8" defer></script>
+    <meta name="application-name" content="حروف من الزيتون" />
+    <link
+      rel="icon"
+      href="images/brand/olive-symbol.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/olive-theme.css?v=4b4842e4a626" />
+    <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
+    <link rel="stylesheet" href="css/auth.css?v=2b57d96c4eaf" />
+    <link rel="stylesheet" href="css/learning-route.css?v=d178dfa3e3d4" />
+  </head>
+  <body>
+    <main class="container practice-page">
+      <p id="lesson-loading" role="status">جارٍ تحميل التدريبات…</p>
+      <header class="page-heading">
+        <div>
+          <p
+            class="eyebrow"
+            data-ar="الخطوة ٢ · من الحرف إلى الكلمة"
+            data-de="Schritt 2 · Vom Buchstaben zum Wort"
+          >
+            الخطوة ٢ · من الحرف إلى الكلمة
+          </p>
+          <h1 data-ar="القراءة والهجاء" data-de="Lesen und Buchstabieren">
+            القراءة والهجاء
+          </h1>
+          <p
+            data-ar="٩٦ تدريبًا: ٢٤ لكل نوع، مع صوت ومساعدة وتصحيح وحفظ التقدّم."
+            data-de="96 Aufgaben: 24 je Übungsart, mit Audio, Hilfe, Rückmeldung und gespeichertem Fortschritt."
+          >
+            ٩٦ تدريبًا: ٢٤ لكل نوع، مع صوت ومساعدة وتصحيح وحفظ التقدّم.
+          </p>
+        </div>
+      </header>
+      <div
+        id="phonics-modes"
+        class="phonics-modes"
+        role="group"
+        aria-label="نوع التدريب / Übungsart"
+      ></div>
+      <section class="practice-panel">
+        <h2 id="phonics-heading" tabindex="-1"></h2>
+        <p id="phonics-lesson" class="phonics-lesson"></p>
+        <p id="phonics-score" role="status"></p>
+        <progress
+          id="phonics-progress"
+          max="24"
+          value="0"
+          aria-label="التقدم / Fortschritt"
+        ></progress>
+        <p id="phonics-counter" dir="ltr"></p>
+        <p id="phonics-prompt"></p>
+        <p id="phonics-family"></p>
+        <div
+          id="phonics-display"
+          class="phonics-display"
+          lang="ar"
+          dir="rtl"
+        ></div>
+        <div class="practice-actions">
+          <button id="phonics-listen" type="button" class="practice-button">
+            ◖ استمع</button
+          ><button id="phonics-help" type="button" class="practice-button">
+            مساعدة
+          </button>
+        </div>
+        <p
+          id="practice-audio-status"
+          role="status"
+          class="practice-audio-status"
+        ></p>
+        <form id="phonics-form">
+          <label for="phonics-input" id="phonics-input-label"></label
+          ><input
+            id="phonics-input"
+            class="phonics-input"
+            lang="ar"
+            dir="rtl"
+            autocomplete="off"
+          /><button
+            id="phonics-check"
+            type="submit"
+            class="practice-button primary-action"
+          >
+            تحقق
+          </button>
+        </form>
+        <div id="phonics-options" class="phonics-options"></div>
+        <div
+          id="phonics-feedback"
+          class="phonics-feedback"
+          role="status"
+          aria-live="polite"
+        ></div>
+        <nav class="card-navigation" aria-label="التنقل / Navigation">
+          <button id="phonics-prev" type="button" class="practice-button">
+            السابق</button
+          ><button id="phonics-next" type="button" class="practice-button">
+            التالي
+          </button>
+        </nav>
+        <button id="phonics-reset" type="button" class="practice-button">
+          أعد هذا النوع
+        </button>
+      </section>
+    </main>
+    <footer class="teacher-credit" id="teacher-credit">
+      إعداد الأستاذ محمود بركات
+    </footer>
+  </body>
+</html>

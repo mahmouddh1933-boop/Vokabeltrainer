@@ -675,6 +675,7 @@
       const recording =
         window.ArabicLetterData?.audio[value] ||
         window.ArabicPracticeData?.audio[value] ||
+        window.ArabicPhonicsData?.audio[value] ||
         window.ArabicBookData?.audio[value] ||
         window.ArabicYouthData?.audio[value] ||
         window.ArabicYouthTwoData?.audio[value] ||

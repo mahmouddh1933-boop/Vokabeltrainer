@@ -29,7 +29,7 @@ with sync_playwright() as p:
     page.locator('#letter-tests-link').tap();page.wait_for_url('**/letter-tests.html')
     assert page.locator('[data-training-mode]').count()==4
     assert page.locator('#training-run').is_hidden()
-    assert page.locator('.app-sidebar a[aria-current="page"]').get_attribute('href')=='letter-tests.html'
+    assert page.locator('.app-sidebar a[aria-current="page"]').get_attribute('href')=='letters.html'
     letters=page.evaluate('ArabicLetterData.letters')
     examples=page.evaluate('ArabicLetterExamples.examples')
     def choose_mode(mode):

@@ -135,8 +135,8 @@ with sync_playwright() as p:
     page.screenshot(path='/tmp/jisr-foundations-mobile.png')
     page.route('https://cdn.jsdelivr.net/**',lambda route:route.abort())
     page.goto(base+'/index.html')
-    assert page.locator('.foundation-home-link').count()==6
-    page.locator('.foundation-home-link[href="grammar.html#number"]').click()
+    assert page.locator('#overall-learning-path li').count()==7
+    page.goto(base+'/grammar.html#number')
     page.wait_for_url('**/grammar.html#number')
     assert page.locator('#lesson-title').inner_text()=='المفرد والمثنّى والجمع'
     assert not errors,errors

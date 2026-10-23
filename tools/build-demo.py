@@ -130,7 +130,7 @@ write('js/practice-data.js', '(() => { const data=' + dump(practice) + ';\nfunct
 PAGES = ['index', 'lernseite', 'test', 'test1', 'test2', 'test3', 'test4', 'test5', 'test6',
          'ergebnis', 'review', 'stats', 'huruf', 'letter-tests', 'grammar', 'verbs',
          'sounds', 'sentences', 'stories']
-EXCLUDED_SCRIPTS = {'js/firebase-config.js', 'js/auth-session.js', 'js/grammar-expanded.js', 'js/grammar-syntax.js'}
+EXCLUDED_SCRIPTS = {'js/firebase-config.js', 'js/auth-session.js', 'js/grammar-expanded.js', 'js/grammar-syntax.js', 'js/learning-path.js', 'js/pages/route-home.js', 'js/sentence-expanded-data.js'}
 references = set()
 for name in PAGES:
     source = (ROOT / (name + '.html')).read_text()
@@ -143,9 +143,10 @@ for name in PAGES:
     source = source.replace('</title>', ' · Demo</title>')
     source = source.replace('</head>', '<link rel="stylesheet" href="css/demo.css" />\n<script src="js/demo.js" defer></script>\n</head>')
     if name == 'index':
+        source = source.replace('</head>', '<script src="js/pages/home.js" defer></script></head>')
         # Keep the existing renderer but omit import and full-edition promotional sections.
-        start = source.index('    <main ')
-        end = source.index('    <footer ')
+        start = source.index('<main ')
+        end = source.index('<footer ')
         source = source[:start] + '''
     <main class="container home-container" id="main-content">
       <header class="page-heading"><div><p class="eyebrow" data-de="DEMO · ARABISCH ENTDECKEN" data-ar="نسخة تجريبية · اكتشف العربية">DEMO · ARABISCH ENTDECKEN</p><h1 lang="ar">حروف من الزيتون</h1><p data-de="Ausgewählte Lektionen zum Ausprobieren. In deinem Tempo." data-ar="دروس مختارة للتجربة، بالسرعة التي تناسبك.">Ausgewählte Lektionen zum Ausprobieren. In deinem Tempo.</p></div></header>
@@ -177,6 +178,8 @@ for name in PAGES:
     if name == 'sounds':
         source = source.replace('ست مجموعات', 'مجموعتين').replace('٣٦', '١٢').replace('sechs Lautpaare', 'zwei Lautpaare').replace('36', '12')
     if name == 'sentences':
+        source = source.replace('١٢٠ تدريبًا: ٦٠ في A1 و٦٠ في A2، منها ٣٢ سؤالًا جديدًا.', '٦ تدريبات في مستويين.').replace('120 Übungen: 60 in A1 und 60 in A2, darunter 32 neue Fragen.', '6 Übungen in zwei Niveaus.').replace('١٢٠ تدريبًا في مستويين.', '٦ تدريبات في مستويين.')
+        source = re.sub(r'<option value="(?:question|command)"[^>]*>.*?</option>', '', source)
         source = source.replace('٢٤', '٦').replace('24 Übungen', '6 Übungen')
     if name == 'stories':
         source = source.replace('ست قصص مصوّرة للحياة اليومية.', 'قصة مصوّرة للحياة اليومية.').replace('Sechs illustrierte Alltagsgeschichten.', 'Eine illustrierte Alltagsgeschichte.')
@@ -197,6 +200,9 @@ home = (ROOT / 'js/pages/home.js').read_text()
 home = '(function(){ "use strict"; window.JisrStorage.ready(async()=>{ const app=window.VocabApp; document.getElementById("wrong-total").textContent=app.getWrongWords().length; document.getElementById("mastered-lists-total").textContent=app.getMasterySummary().masteredLists; document.getElementById("tests-total").textContent=app.getStats().totalTests||0; renderLearningPath(await app.loadCatalog(),document.getElementById("learning-path")); });\n' + home[home.index('  function listSource('):]
 write('js/pages/home.js', home)
 design = (DEST / 'js/design.js').read_text()
+demo_nav = [["index.html","home","Übersicht","نظرة عامة"],["huruf.html","letters","Alphabet","الحروف"],["letter-tests.html","check","Buchstaben üben","تدريبات الحروف"],["sounds.html","letters","Ähnliche Laute","الأصوات المتشابهة"],["sentences.html","check","Sätze bilden","تكوين الجمل"],["stories.html","book","Kurzgeschichten","قصص قصيرة"],["grammar.html","book","Grammatik","القواعد"],["verbs.html","book","Verben","الأفعال"],["test.html","check","Tests","الاختبارات"],["review.html","repeat","Wiederholen","المراجعة"],["stats.html","chart","Fortschritt","تقدمي"]]
+design = re.sub(r'    const nav =.*?    const activeHref =.*?;\n', '    const nav = '+dump(demo_nav)+';\n    const activeHref = page;\n', design, count=1, flags=re.S)
+
 design = re.sub(r'      \[\n        "(?:book-level-two|arabic-youth|youth-training-two|youth-book-two-part-one)\.html",.*?\n      \],\n', '', design, flags=re.S)
 design = design.replace('window.VOCAB_CATALOG_META?.lists || 120', 'window.VOCAB_CATALOG_META?.lists || 6')
 write('js/design.js', design)

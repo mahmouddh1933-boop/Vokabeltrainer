@@ -6,8 +6,14 @@
   const state = P.load("sentences", { level: "all", index: 0, answers: {} });
   state.answers = state.answers || {};
   if (!["all", "A1", "A2"].includes(state.level)) state.level = "all";
+  if (!["all", "statement", "question", "command"].includes(state.kind))
+    state.kind = "all";
   const items = () =>
-    D.sentences.filter((q) => state.level === "all" || q.level === state.level);
+    D.sentences.filter(
+      (q) =>
+        (state.level === "all" || q.level === state.level) &&
+        (state.kind === "all" || q.kind === state.kind),
+    );
   const persist = () => P.save("sentences", state);
   const current = () => items()[state.index];
   function entry(q) {
@@ -46,6 +52,7 @@
     const q = current(),
       e = entry(q);
     $("sentence-level").value = state.level;
+    $("sentence-kind").value = state.kind;
     $("sentence-counter").textContent =
       `${state.index + 1} / ${bank.length} · ${q.level}`;
     const done = bank.filter((item) => state.answers[item.id]?.solved);
@@ -153,6 +160,10 @@
   }
   $("sentence-level").onchange = (e) => {
     state.level = e.target.value;
+    change(0);
+  };
+  $("sentence-kind").onchange = (e) => {
+    state.kind = e.target.value;
     change(0);
   };
   $("sentence-check").onclick = () => {

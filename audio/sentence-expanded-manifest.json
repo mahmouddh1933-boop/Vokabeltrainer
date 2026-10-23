@@ -1,0 +1,487 @@
+{
+  "date": "2026-10-23",
+  "provider": "Google Translate TTS (ar)",
+  "slow": true,
+  "clips": [
+    {
+      "text": "أَنَا أَسْكُنُ فِي بَيْتٍ صَغِيرٍ",
+      "path": "audio/sentence-expanded/b0d2979720ee2ab8.mp3",
+      "sha256": "7b3eb4e7eea17c90fedd9597ac9ecaf94baac2761eb1f3561a3a8f0cb53d5102"
+    },
+    {
+      "text": "أُمِّي مُعَلِّمَةٌ فِي الْمَدْرَسَةِ",
+      "path": "audio/sentence-expanded/5aee72fcfc741fbe.mp3",
+      "sha256": "efd74b95b5bb2aa97c7ca2c74fa5c631a1ba559fbf680cc24400903d87ea2113"
+    },
+    {
+      "text": "أَبِي يَعْمَلُ فِي مَكْتَبٍ",
+      "path": "audio/sentence-expanded/44edc9884076470b.mp3",
+      "sha256": "dd5a93e169d51f27f7075820d6d1fdbb44415bd2130a0f53776cb3c7248ed7b4"
+    },
+    {
+      "text": "أُخْتِي تَقْرَأُ كِتَابًا جَدِيدًا",
+      "path": "audio/sentence-expanded/d5396b3b17ccf761.mp3",
+      "sha256": "6b60b5571519191d31aac7fc8e7a5b54830690f843d46604b4bc5c14afac8698"
+    },
+    {
+      "text": "أَخِي يَلْعَبُ فِي الْحَدِيقَةِ",
+      "path": "audio/sentence-expanded/e72a3b5f723adc2e.mp3",
+      "sha256": "999212059511f5c1e8a433cdd1c40b69c6ea9d854bb825ba7ea1902166126b49"
+    },
+    {
+      "text": "نَحْنُ نَشْرَبُ الْمَاءَ",
+      "path": "audio/sentence-expanded/20133a8cb8dfc02d.mp3",
+      "sha256": "59ca61ecb51b5891d9676ab01a923faf9288729d244e3dd1909e2c2d9f1abf56"
+    },
+    {
+      "text": "الْقِطَّةُ تَحْتَ الْكُرْسِيِّ",
+      "path": "audio/sentence-expanded/336df2b43c362632.mp3",
+      "sha256": "3bc4676fb999b4a1d287fecc2623e09de9eb0dde7e2272a0b152dbe900b57ff2"
+    },
+    {
+      "text": "الْكَلْبُ أَمَامَ الْبَابِ",
+      "path": "audio/sentence-expanded/6e350951e72124b3.mp3",
+      "sha256": "8d783bcd8e8706cac3f3003fbd9f329429f476492bf66253bc2b1d23821979e1"
+    },
+    {
+      "text": "هَذَا قَلَمٌ أَخْضَرُ",
+      "path": "audio/sentence-expanded/f81da9c5ae4ed593.mp3",
+      "sha256": "d1978c447f99853a9ca4e8a7dfeed0a5af44baac2a35a6af0f1796e9f119e3c8"
+    },
+    {
+      "text": "هَذِهِ حَقِيبَةٌ حَمْرَاءُ",
+      "path": "audio/sentence-expanded/a804c3d8bb63b7fc.mp3",
+      "sha256": "6707d5ab8112a801706ce8211b7e39c9d0e580e7a1fa2fca751515b9d5fff124"
+    },
+    {
+      "text": "الْمَاءُ بَارِدٌ",
+      "path": "audio/sentence-expanded/59277b9ae28811cf.mp3",
+      "sha256": "eb8d0e1b16c2e7ecaa57eb8a682de1912e35cc876e439b4d26fc7465d3a7ea6b"
+    },
+    {
+      "text": "الْخُبْزُ طَازَجٌ",
+      "path": "audio/sentence-expanded/1d7e1736fe66cc49.mp3",
+      "sha256": "a5a864251f6cee2cf8fb232cbd46b2bfa4da91175e42ee4f404e723ed9883ec2"
+    },
+    {
+      "text": "التُّفَّاحُ عَلَى الطَّاوِلَةِ",
+      "path": "audio/sentence-expanded/77a0b76159624a71.mp3",
+      "sha256": "c4a1ffd561e40cbaed692f8ea1eb8d3c781f07926f5efa5d27fc9ee532169229"
+    },
+    {
+      "text": "أَنَا أُحِبُّ الْمَوْزَ",
+      "path": "audio/sentence-expanded/d894187db4082f65.mp3",
+      "sha256": "f7556e369e678af22fdf18fa9e9cfcd57a08cfe0fe63611593bc9f8293874f06"
+    },
+    {
+      "text": "الْوَلَدُ يَأْكُلُ خُبْزًا",
+      "path": "audio/sentence-expanded/24ba786587ebe452.mp3",
+      "sha256": "934b9d4f8dfa9eced2741da891ad650c694cbfa1cd8cb16494cafbd70bbb34f7"
+    },
+    {
+      "text": "الْبِنْتُ تَشْرَبُ حَلِيبًا",
+      "path": "audio/sentence-expanded/cba3149ce4b95cc2.mp3",
+      "sha256": "2523a1e48fdc01ed79c1d912a2f9bacd8c534e162ad853355b9eab45bee185e4"
+    },
+    {
+      "text": "الْمُعَلِّمُ يَكْتُبُ كَلِمَةً",
+      "path": "audio/sentence-expanded/2f17e47f606be563.mp3",
+      "sha256": "7487f35ea8df0dcfb86ee01d74cbd02fbda8e9cb44b5d5b3d994eb213f900d3d"
+    },
+    {
+      "text": "الطَّالِبَةُ تَفْتَحُ الْكِتَابَ",
+      "path": "audio/sentence-expanded/08a855b7c7ea8cd0.mp3",
+      "sha256": "40540e0d3cdbd16615a72c8e037fb8da8311572e0721a91cfaa18b05b60ca0c2"
+    },
+    {
+      "text": "نَحْنُ نَذْهَبُ إِلَى الْمَدْرَسَةِ",
+      "path": "audio/sentence-expanded/3c58680a9e77d99a.mp3",
+      "sha256": "5fa712a3634174aaeb185d77a4c5da454b0dd2d263dc7d1f99795616adaebfa8"
+    },
+    {
+      "text": "أَنَا أَرْكَبُ الْحَافِلَةَ",
+      "path": "audio/sentence-expanded/b004ba79e0fc73e9.mp3",
+      "sha256": "ed165c1de1bc3450599fee58732c27d19d2bd675f3a864796e0df8e0265f094c"
+    },
+    {
+      "text": "السَّيَّارَةُ سَرِيعَةٌ",
+      "path": "audio/sentence-expanded/23a2b2c477f1404c.mp3",
+      "sha256": "8b983dfcca2679d646d84c9a8b2b678683dc6effff977bbebc2a747466ae0821"
+    },
+    {
+      "text": "الشَّمْسُ فِي السَّمَاءِ",
+      "path": "audio/sentence-expanded/7a1730516337be12.mp3",
+      "sha256": "080e92305bdfae58b9d76b1f9ebc1652036e17869dd637a81635431d35a87f32"
+    },
+    {
+      "text": "الْجَوُّ جَمِيلٌ الْيَوْمَ",
+      "path": "audio/sentence-expanded/772e65129bfe64d2.mp3",
+      "sha256": "a1d665df1676b88f4107a29d4ee929602c7273bb0e8f79eab25fa85b41bedd03"
+    },
+    {
+      "text": "السَّاعَةُ فَوْقَ الْبَابِ",
+      "path": "audio/sentence-expanded/eb1e2ffcd7cd7f70.mp3",
+      "sha256": "f4675fd79261fb81c861be091d28b96a27be46c24a068a2abe03f6d0b33889d4"
+    },
+    {
+      "text": "أَيْنَ الْمَدْرَسَةُ؟",
+      "path": "audio/sentence-expanded/40e615b4d1431b05.mp3",
+      "sha256": "7797e6f7aeebe4eb41cbc8f8644f56e8dc4e96d1037b3477c364dbabfd11f80b"
+    },
+    {
+      "text": "أَيْنَ تَسْكُنُ؟",
+      "path": "audio/sentence-expanded/751bd6e4b5851662.mp3",
+      "sha256": "45869757dcaf93d60b00831afc1d687f2214f831ea387023d2485d6e20ea71d4"
+    },
+    {
+      "text": "مَا اسْمُكَ؟",
+      "path": "audio/sentence-expanded/3fc85f0dc4a3bd19.mp3",
+      "sha256": "e2403479dacf1dbd6c0d6d3d2d4189e187de55e63ac6beac572904668b9f173a"
+    },
+    {
+      "text": "مَنْ هَذَا الرَّجُلُ؟",
+      "path": "audio/sentence-expanded/db3b2feea1551f38.mp3",
+      "sha256": "b640064e48f21b50003440905230e9b0518fd295b1d3e9e9a24fb4c3aa6ab39d"
+    },
+    {
+      "text": "هَلْ أَنْتَ طَالِبٌ؟",
+      "path": "audio/sentence-expanded/9f54629cc87a7446.mp3",
+      "sha256": "2d084ce174f371ba3de6feb300b00d4ecdab8b4148258b68c2682e1dd3d42e82"
+    },
+    {
+      "text": "هَلْ هَذِهِ أُخْتُكَ؟",
+      "path": "audio/sentence-expanded/a98b6f8dd915429f.mp3",
+      "sha256": "4416c23133629da320b6a6594b7146a0074f2a2a7e07853ca3d72f1b0571a262"
+    },
+    {
+      "text": "مَاذَا تَأْكُلُ؟",
+      "path": "audio/sentence-expanded/3cff3ac1cba61ac7.mp3",
+      "sha256": "17a698426fbb90a5dd9bd3ce07608484e308095af83ab67c6851fde2cb0e87b9"
+    },
+    {
+      "text": "مَاذَا تَشْرَبُ؟",
+      "path": "audio/sentence-expanded/39fda0bf9f9f3419.mp3",
+      "sha256": "211dce6127cce1bf772f62665608a916398ed29dbd89e378a5577f9bf67f1d8b"
+    },
+    {
+      "text": "كَيْفَ حَالُكَ الْيَوْمَ؟",
+      "path": "audio/sentence-expanded/29129bee4df31b73.mp3",
+      "sha256": "a26e5ccdfe783d523a749b30877679d9290a2a09ee144615df61d5cecd148f42"
+    },
+    {
+      "text": "مَتَى تَذْهَبُ إِلَى الْمَدْرَسَةِ؟",
+      "path": "audio/sentence-expanded/30dd11d581729b89.mp3",
+      "sha256": "af639e59fd3bb01e8e6528b2bbbab10160217d3d684d93a871ffcf260f57d400"
+    },
+    {
+      "text": "كَمْ كِتَابًا عِنْدَكَ؟",
+      "path": "audio/sentence-expanded/18e806637208a2aa.mp3",
+      "sha256": "26748091592bf40832b4939e5d3052138b744da25141f93f1af3f9e0c263e0b7"
+    },
+    {
+      "text": "أَيَّ لَوْنٍ تُحِبُّ؟",
+      "path": "audio/sentence-expanded/5f95e5b32a92fb94.mp3",
+      "sha256": "ba1520a2c38244a88b32103edf79962fa0c9321dba981b2f98edaa72d4e87122"
+    },
+    {
+      "text": "هَلْ تُحِبُّ التُّفَّاحَ؟",
+      "path": "audio/sentence-expanded/996a1c83b05884c8.mp3",
+      "sha256": "147f323dacf9bc15a75ef969d21eac4456c5cbecd9fe92c96d9cf0c4c89a8a2f"
+    },
+    {
+      "text": "أَيْنَ قَلَمِي الْأَزْرَقُ؟",
+      "path": "audio/sentence-expanded/4c59c3ddcb5b1ea2.mp3",
+      "sha256": "45d1c364c278f991670c04ab7d523aad459b41c1b6893cec0c1134173223f4a0"
+    },
+    {
+      "text": "هَلِ الْبَابُ مَفْتُوحٌ؟",
+      "path": "audio/sentence-expanded/00f8ba90ad9c125a.mp3",
+      "sha256": "895ac56cc1cbacbf237c9f06878d32707d3dd27345c3472e161307b91ca9314d"
+    },
+    {
+      "text": "مَنْ يَقْرَأُ الْكِتَابَ؟",
+      "path": "audio/sentence-expanded/bf4c5bf2f4a4cf1c.mp3",
+      "sha256": "9d5f4b5ef2388635784d06e0696bf69f9c35d288fe12271ddbcc2568d56b90b9"
+    },
+    {
+      "text": "اِفْتَحِ الْبَابَ مِنْ فَضْلِكَ",
+      "path": "audio/sentence-expanded/1a9e97831b712077.mp3",
+      "sha256": "54577379a15078f49b55d9aa0212e3ab474b466df2f3b5e0852ebd29480fed61"
+    },
+    {
+      "text": "اُكْتُبِ اسْمَكَ هُنَا",
+      "path": "audio/sentence-expanded/f2762d8d13006c03.mp3",
+      "sha256": "1417e5c0230173f34fd62df1dc73e5d72756c466dffe7c56fb54db27523b3287"
+    },
+    {
+      "text": "اِقْرَأْ هَذِهِ الْكَلِمَةَ",
+      "path": "audio/sentence-expanded/ecc375c635b38079.mp3",
+      "sha256": "82ce2e6778f79e34b129053784275f7999653169cd17875eda9675487ba56ee6"
+    },
+    {
+      "text": "اِجْلِسْ عَلَى الْكُرْسِيِّ",
+      "path": "audio/sentence-expanded/3fc25d6bc087fa3f.mp3",
+      "sha256": "fecc204ab56f9293749b0ff743bcd09129bff0a90b215dd8b24876bac4d86a26"
+    },
+    {
+      "text": "أَنَا لَا أَشْرَبُ الْقَهْوَةَ",
+      "path": "audio/sentence-expanded/6c189ed60b36b6fd.mp3",
+      "sha256": "9df736a20ba8f145219f1fece957419d5c22c67fb819a5eb9d07becb024cde73"
+    },
+    {
+      "text": "هِيَ لَا تَأْكُلُ السَّمَكَ",
+      "path": "audio/sentence-expanded/cbaa33ff135439af.mp3",
+      "sha256": "cdb9743106435b3509b0f467c224dfa3b5b4fccdda8ebf37334b38213be21a98"
+    },
+    {
+      "text": "عِنْدِي أَخٌ وَأُخْتٌ",
+      "path": "audio/sentence-expanded/727fc1745e9d3e43.mp3",
+      "sha256": "c900c9cec56627c4ae30647bef747bca6b71a23e8ecbb3cec2830acbfb40a1a0"
+    },
+    {
+      "text": "غُرْفَتِي كَبِيرَةٌ وَنَظِيفَةٌ",
+      "path": "audio/sentence-expanded/4ab0f46b1e48bf4a.mp3",
+      "sha256": "d2b7aaaad50070fab74b0b27fc9a4ecb023842ef5389aabee257c0cef8a3c083"
+    },
+    {
+      "text": "سَافَرَتِ الْأُسْرَةُ بِالْقِطَارِ أَمْسِ",
+      "path": "audio/sentence-expanded/f8b3b9baa5e3a9d2.mp3",
+      "sha256": "4e0ac8024951e71824254c75f990c8417efa48bdb41052ec8cf59fb04973d805"
+    },
+    {
+      "text": "اشْتَرَيْتُ تَذْكِرَةً مِنَ الْمَحَطَّةِ",
+      "path": "audio/sentence-expanded/b55a6e6f0764a7ea.mp3",
+      "sha256": "05a96adfee794de1370abd15175339941d071b5d7ccc21c4ef707ffcb672065e"
+    },
+    {
+      "text": "حَجَزَ أَحْمَدُ غُرْفَةً فِي الْفُنْدُقِ",
+      "path": "audio/sentence-expanded/eb2dff5088f295a0.mp3",
+      "sha256": "a94c47717e2197a60e92957fb6db615f4398024e67b8cb4aeca1aac91f55230b"
+    },
+    {
+      "text": "تَنْتَظِرُ مَرْيَمُ الْحَافِلَةَ أَمَامَ الْمَحَطَّةِ",
+      "path": "audio/sentence-expanded/83b2e6b0eaa9dd5a.mp3",
+      "sha256": "c26a31628e6402e178eee3a5ad318591c1b50c613f50c0db2555780d20e6c896"
+    },
+    {
+      "text": "سَأَزُورُ صَدِيقِي فِي الْمَسَاءِ",
+      "path": "audio/sentence-expanded/a042cc268dc87610.mp3",
+      "sha256": "36ab57632938a995e21146f99e9c4c83f9deea5fc5b7a0fc4784e8263c57fd00"
+    },
+    {
+      "text": "سَنَذْهَبُ إِلَى الْمَطْعَمِ بَعْدَ الدَّرْسِ",
+      "path": "audio/sentence-expanded/5ac27380ed7d8c6e.mp3",
+      "sha256": "1ef59cad7a970aea9e982813d2ba0b01453299849912cc61a8ca73256e43b4a3"
+    },
+    {
+      "text": "أُرِيدُ طَبَقًا مِنَ الْأَرُزِّ",
+      "path": "audio/sentence-expanded/5dfdcf41aa732a8e.mp3",
+      "sha256": "595f9ef27e9098f4f4c4823f3e645e0a2fbbbc90ae4b7bd854cd62fd0e940107"
+    },
+    {
+      "text": "طَلَبَتْ سَارَةُ سَلَطَةً وَعَصِيرًا",
+      "path": "audio/sentence-expanded/1ed91b72b13c201a.mp3",
+      "sha256": "9b60597e25a73157e596ae4c0a5a367d9de87199c043f10134deab0f6ec117e9"
+    },
+    {
+      "text": "هَذَا الْقَمِيصُ أَرْخَصُ مِنْ ذَلِكَ",
+      "path": "audio/sentence-expanded/0cf0a05b34fc76e5.mp3",
+      "sha256": "b28ba7842896dbe869ba038e1e5b9ea134c8e4b8be41d4ea4763c5647dc52007"
+    },
+    {
+      "text": "الْحَقِيبَةُ الْجَدِيدَةُ خَفِيفَةٌ",
+      "path": "audio/sentence-expanded/df7242c7f790627d.mp3",
+      "sha256": "2f9525801807a4c6cab5468fea2af63b8a9fb8fe4ae33e40f64cd668e9399da3"
+    },
+    {
+      "text": "الطَّرِيقُ إِلَى الْمُسْتَشْفَى طَوِيلٌ",
+      "path": "audio/sentence-expanded/25c43e2077e996bc.mp3",
+      "sha256": "74ce2e0a6206412bca448f903071bacd3a5fea60a86b3af12aeffca73677aeda"
+    },
+    {
+      "text": "ذَهَبْتُ إِلَى الطَّبِيبِ لِأَنِّي مَرِيضٌ",
+      "path": "audio/sentence-expanded/a713d111f9683f98.mp3",
+      "sha256": "4514282f62155041742a83cad28c503d98f6d3be9466e08e24d2716c89c60b15"
+    },
+    {
+      "text": "أَخَذْتُ الدَّوَاءَ بَعْدَ الطَّعَامِ",
+      "path": "audio/sentence-expanded/e306c63cd37b5353.mp3",
+      "sha256": "0d3429c364809531d62073ca6e2a456c309ef0835f15d3efe0b6f89e47447a4d"
+    },
+    {
+      "text": "يَجِبُ أَنْ تَشْرَبَ مَاءً كَثِيرًا",
+      "path": "audio/sentence-expanded/4d0e53609fbe4fe0.mp3",
+      "sha256": "c496b7c96aafc2569701baf6a05c5b43cefaf84e0093504ab15c5ffaaf58867a"
+    },
+    {
+      "text": "يَسْتَيْقِظُ أَخِي مُبَكِّرًا كُلَّ يَوْمٍ",
+      "path": "audio/sentence-expanded/3716a98e9d90e46f.mp3",
+      "sha256": "81ef663ded76f2773c27e7336dba035cf43517c3a7e1e6443b95cfc5a00c45fe"
+    },
+    {
+      "text": "أَغْسِلُ يَدَيَّ قَبْلَ الطَّعَامِ",
+      "path": "audio/sentence-expanded/4b752d41c52b9e5e.mp3",
+      "sha256": "60b387c428545c22f51d38d2ee7a1e0334bd6b50fcae409098e26dd09cbf427f"
+    },
+    {
+      "text": "نُرَتِّبُ الْبَيْتَ فِي نِهَايَةِ الْأُسْبُوعِ",
+      "path": "audio/sentence-expanded/0e7ce2704c56d2a5.mp3",
+      "sha256": "44f1746fc0a033c43416c374023cfd6490736918dc08f1d8992d6a20cec5db9d"
+    },
+    {
+      "text": "تَطْبُخُ أُمِّي وَجْبَةً لَذِيذَةً",
+      "path": "audio/sentence-expanded/61efda553aee5222.mp3",
+      "sha256": "4124379c6300341a5ba8173d1cb3ff6458c1b0e05402c058873d7ad04de7eed6"
+    },
+    {
+      "text": "لَبِسْتُ مِعْطَفًا لِأَنَّ الْجَوَّ بَارِدٌ",
+      "path": "audio/sentence-expanded/ac1b4b50d8912c87.mp3",
+      "sha256": "c0c84fd4fef0baaa0366e82815c96fe4c6ca41ebbf9201a176cfe681d3cdb93e"
+    },
+    {
+      "text": "الْجَوُّ مَشْمِسٌ وَلَكِنَّ الرِّيحَ قَوِيَّةٌ",
+      "path": "audio/sentence-expanded/29bbc89e9e5b9af6.mp3",
+      "sha256": "5bbfd4fb0a60a89c081e696257fd1c485073e8bb3099946fe24fffe9f3da6ed9"
+    },
+    {
+      "text": "كَانَ الْمَتْجَرُ مُغْلَقًا أَمْسِ",
+      "path": "audio/sentence-expanded/d81f6e30b14a76d3.mp3",
+      "sha256": "a133597781150cfb9713003da9ca0c16aeecb73ea4372364fa15f063ec9d935c"
+    },
+    {
+      "text": "أَصْبَحَتِ الْحَدِيقَةُ جَمِيلَةً فِي الرَّبِيعِ",
+      "path": "audio/sentence-expanded/8a68ce621d24cf3d.mp3",
+      "sha256": "3ee895a732ecb59e45a7be95da948901d497a1af08972d21138095a0ce7ac5f9"
+    },
+    {
+      "text": "لَمْ أَشْتَرِ الْحِذَاءَ لِأَنَّهُ غَالٍ",
+      "path": "audio/sentence-expanded/36577816103aef11.mp3",
+      "sha256": "9f5b69fd53c960effb6c5fd0cea35f5194e51380a9175979f22d0e253770afa6"
+    },
+    {
+      "text": "لَنْ نَتَأَخَّرَ عَنِ الْمَوْعِدِ",
+      "path": "audio/sentence-expanded/0f5257a0fe986c17.mp3",
+      "sha256": "c16e7b31ae5dc16098758705b7a54b173139fd61ec6658d2a095f4564f27a36b"
+    },
+    {
+      "text": "أَيْنَ يُمْكِنُنِي شِرَاءُ تَذْكِرَةٍ؟",
+      "path": "audio/sentence-expanded/e9b2fad634ea6e9f.mp3",
+      "sha256": "57395b2d145bd9f1961971a1fed39d58fdf9fa37194f2b6a113b661a8472fb07"
+    },
+    {
+      "text": "مَتَى يَصِلُ الْقِطَارُ إِلَى الْمَحَطَّةِ؟",
+      "path": "audio/sentence-expanded/47f39e2898ab1ec3.mp3",
+      "sha256": "ff60c615cedd689cd69ff55aee8846ffc2bd4aa89343f36517761931725c5fcd"
+    },
+    {
+      "text": "كَمْ تَسْتَغْرِقُ الرِّحْلَةُ بِالْحَافِلَةِ؟",
+      "path": "audio/sentence-expanded/f2f2c7395cf0947d.mp3",
+      "sha256": "79c4879bdee9b828a3a956767905dd80f63c0ecf323fbfb9861fe73fb3baa983"
+    },
+    {
+      "text": "بِكَمْ هَذَا الْقَمِيصُ الْأَزْرَقُ؟",
+      "path": "audio/sentence-expanded/f1b96ad6c877e900.mp3",
+      "sha256": "e7c6442a1d47e05b6dd5cc26b9b0654c9741582cc12825db23ff0f35134066fb"
+    },
+    {
+      "text": "هَلْ عِنْدَكَ مَقَاسٌ أَصْغَرُ؟",
+      "path": "audio/sentence-expanded/74b01435a4616da1.mp3",
+      "sha256": "ff55bd8df88dcac6a69b0d36b5681a8fc038cc53503c72ebf8874f7159324909"
+    },
+    {
+      "text": "مَاذَا تُفَضِّلُ لِوَجْبَةِ الْإِفْطَارِ؟",
+      "path": "audio/sentence-expanded/acaab12f9edcf662.mp3",
+      "sha256": "e88760e25ce58a3fc3f9573beb953c584b83544c74407dd006ba82d36752252a"
+    },
+    {
+      "text": "لِمَاذَا ذَهَبْتَ إِلَى الطَّبِيبِ؟",
+      "path": "audio/sentence-expanded/1e78b2e33de60587.mp3",
+      "sha256": "4180ccceab2a8e7cb27430b58aff2069aaa21afde7e7ac278c857df30d1e74d8"
+    },
+    {
+      "text": "كَيْفَ أَصِلُ إِلَى الْمُسْتَشْفَى؟",
+      "path": "audio/sentence-expanded/511514aaa5ad3452.mp3",
+      "sha256": "d10b41accf8bc7b1fbedccbd14b7a7d5ce54663385d6fc416a737442d690a768"
+    },
+    {
+      "text": "أَيُّ حَافِلَةٍ تَذْهَبُ إِلَى الْمَطَارِ؟",
+      "path": "audio/sentence-expanded/b466479f13844f1b.mp3",
+      "sha256": "448edc27bab9ae20f5f06d69d811c4eb77eea81e8aca6d19b80c5bbef4e0997a"
+    },
+    {
+      "text": "هَلْ تَسْتَطِيعُ مُسَاعَدَتِي؟",
+      "path": "audio/sentence-expanded/ffb8472b4dc4064b.mp3",
+      "sha256": "e776c9524e2ad099df86b56e0110221279d4c416e7b5f4ee559554cc8920dab1"
+    },
+    {
+      "text": "مَعَ مَنْ سَافَرْتَ أَمْسِ؟",
+      "path": "audio/sentence-expanded/d68a5792e3b6d6b8.mp3",
+      "sha256": "82db0c2b4f0c50c4b851bc2a9d65abc785bf1f640be2c082cada35ace66b6613"
+    },
+    {
+      "text": "مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟",
+      "path": "audio/sentence-expanded/f249f3350b9c3c28.mp3",
+      "sha256": "f307f182750b0cc41553a5c8fa11bd536e1708b278a4daa722ec379535f97373"
+    },
+    {
+      "text": "كَمْ مَرَّةً تُمَارِسُ الرِّيَاضَةَ فِي الْأُسْبُوعِ؟",
+      "path": "audio/sentence-expanded/5d751b424750ec20.mp3",
+      "sha256": "75e07a20747bdaf5bee6e27d1242c8191d9260de083d4909b1b057c8d1e0f47a"
+    },
+    {
+      "text": "هَلْ يُوجَدُ مَطْعَمٌ قَرِيبٌ مِنْ هُنَا؟",
+      "path": "audio/sentence-expanded/46496511eab9714d.mp3",
+      "sha256": "d040b9c1c567ad0b0c6a841606d8970cde01158ea0a2793e4ba52e7d918bcc1f"
+    },
+    {
+      "text": "مَتَى يَبْدَأُ الْعَمَلُ؟",
+      "path": "audio/sentence-expanded/595850fc2a309ad1.mp3",
+      "sha256": "434926d41e022427f834b7632fe469d7eebf8638fca91212828d40b6bd2732cf"
+    },
+    {
+      "text": "لِمَاذَا لَمْ تَحْضُرِ الدَّرْسَ أَمْسِ؟",
+      "path": "audio/sentence-expanded/13e22d2220871934.mp3",
+      "sha256": "d8a8e2a4fb9cb3f0928f483b6a1038a643bcf842be60254ad56b0ec0d379774e"
+    },
+    {
+      "text": "اِنْعَطِفْ يَمِينًا عِنْدَ الْإِشَارَةِ",
+      "path": "audio/sentence-expanded/3cc408fbd6ad8bc1.mp3",
+      "sha256": "891912583c342c1bd9e4a5ad47092db0e908dbff05236bdbc87717bfe4d22acf"
+    },
+    {
+      "text": "اِمْشِ مُسْتَقِيمًا حَتَّى الْمَحَطَّةِ",
+      "path": "audio/sentence-expanded/8540fda596eefbd0.mp3",
+      "sha256": "788c3ee91fd0af91403212e53341916901d5c838c7bdc007b247da0de04c35cb"
+    },
+    {
+      "text": "لَا تَعْبُرِ الشَّارِعَ الْآنَ",
+      "path": "audio/sentence-expanded/71d3dcb908c85847.mp3",
+      "sha256": "5b88513ea27693c35d4d150ebddfcd32351ea05f981de5ed551c9de856cfd145"
+    },
+    {
+      "text": "خُذْ هَذَا الدَّوَاءَ بَعْدَ الطَّعَامِ",
+      "path": "audio/sentence-expanded/265e1259347519ad.mp3",
+      "sha256": "00862458609315115a8105abdb5caa96b7ebcdb53ac9feb36d69b19aed90c7b9"
+    },
+    {
+      "text": "عِنْدَمَا يَنْتَهِي الدَّرْسُ نَذْهَبُ إِلَى الْمَكْتَبَةِ",
+      "path": "audio/sentence-expanded/8e24729356fd1ef9.mp3",
+      "sha256": "fb27bd2537065d85f6d9ce3160dd443cd855dd859143dc3d942c0cc493e0298e"
+    },
+    {
+      "text": "أَدْرُسُ الْعَرَبِيَّةَ كَيْ أَقْرَأَ الْقِصَصَ",
+      "path": "audio/sentence-expanded/a74bc7ac23cec9a4.mp3",
+      "sha256": "374c4646109ebf749c762465f64814d8cff2fd5fa362890a05d66f85c51f29e7"
+    },
+    {
+      "text": "قَرَأْتُ قِصَّةً قَصِيرَةً ثُمَّ كَتَبْتُ رِسَالَةً",
+      "path": "audio/sentence-expanded/aa92ab993306f43c.mp3",
+      "sha256": "384a85b282d30ff103d69d6e7576ef2a324fe1b73dded4e8fbde3348d8b4cc6f"
+    },
+    {
+      "text": "أُحِبُّ السَّفَرَ لَكِنِّي أُفَضِّلُ الْقِطَارَ",
+      "path": "audio/sentence-expanded/da47665fa69f2b33.mp3",
+      "sha256": "7243b4b80054760afc222c7533b1b02b1be54d9b34e92c11368cfb2cff1b9a7a"
+    }
+  ]
+}

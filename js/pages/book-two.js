@@ -454,7 +454,7 @@
     const first = el("section", undefined, "book-print-page");
     arabic(first);
     first.append(
-      el("p", "الكتاب المستوى الثاني · الدرس " + (index + 1)),
+      el("p", "كتاب 1 · الدرس " + (index + 1)),
       el("h1", "حرف " + letters[index].name + " — " + l.char),
     );
     first.append(
@@ -540,7 +540,7 @@
     second.append(
       el(
         "small",
-        "إعداد المعلم محمود بركات · تمارين الكتاب المستوى الثاني · الرسوم: Twemoji / CC BY 4.0",
+        "إعداد المعلم محمود بركات · تمارين كتاب 1 · الرسوم: Twemoji / CC BY 4.0",
       ),
     );
     out.append(first, second);

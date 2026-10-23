@@ -195,6 +195,17 @@
     detailsHost.className = "cefr-level-details-host";
     target.appendChild(detailsHost);
 
+    const advanced = document.createElement("details");
+    const summary = document.createElement("summary");
+    summary.dataset.ar = "للتوسّع: B1 وB2";
+    summary.dataset.de = "Vertiefung: B1 und B2";
+    summary.textContent =
+      summary.dataset[window.AppLanguage?.get() === "de" ? "de" : "ar"];
+    advanced.append(summary);
+    const advancedGrid = document.createElement("div");
+    advancedGrid.className = "cefr-level-grid";
+    advanced.append(advancedGrid);
+    target.append(advanced);
     levels.forEach((level, levelIndex) => {
       const levelLists = (level.listIds || [])
         .map((id) => byId.get(id))
@@ -216,7 +227,7 @@
                     <span class="cefr-progress-label">${levelStats.percent}٪ تقدّم نحو الإتقان</span>
                 </span>`;
       button.addEventListener("click", () => {
-        levelGrid.querySelectorAll(".cefr-level-card").forEach((item) => {
+        target.querySelectorAll(".cefr-level-card").forEach((item) => {
           item.classList.remove("active");
           item.setAttribute("aria-pressed", "false");
         });
@@ -232,7 +243,9 @@
           20,
         );
       });
-      levelGrid.appendChild(button);
+      (["B1", "B2"].includes(level.id) ? advancedGrid : levelGrid).appendChild(
+        button,
+      );
       if (levelIndex === 0) {
         button.classList.add("active");
         renderLevelDetails(level, levelLists, detailsHost);

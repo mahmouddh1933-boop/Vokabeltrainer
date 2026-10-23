@@ -1526,6 +1526,9 @@
       نَافِذَة: "audio/practice/120.mp3",
     },
   };
+  const expansion = typeof module !== "undefined" && module.exports ? require("./sentence-expanded-data.js") : window.ArabicSentenceExpansion;
+  if (expansion) { data.sentences.push(...expansion.sentences); Object.assign(data.audio, expansion.audio); }
+  for (const q of data.sentences) q.kind ||= q.words.join(" ").endsWith("؟") ? "question" : "statement";
   // Canonical Unicode spelling also matches the shared playback API.
   data.audio = Object.fromEntries(
     Object.entries(data.audio).map(([text, file]) => [
