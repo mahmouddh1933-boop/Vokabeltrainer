@@ -2,6 +2,7 @@ const { test } = require("node:test");
 const assert = require("node:assert/strict");
 const { letters, audio } = require("../js/letter-data.js");
 const { clips } = require("../audio/pronunciation-corrections.json");
+const { clips: nameClips } = require("../audio/letter-name-waqf.json");
 
 test("Ambiguous picture words have explicit, matching vocalized recordings", () => {
   for (const [char, expected] of Object.entries({
@@ -13,7 +14,7 @@ test("Ambiguous picture words have explicit, matching vocalized recordings", () 
     assert.equal(file, audio[letter.word]);
     assert.ok(clips.some((c) => c.path === file && c.text === expected));
   }
-  assert.ok(clips.some((c) => c.path === audio["التاء"] && c.text === "تَاء"));
+  assert.ok(nameClips.some((c) => c.path === audio["التاء"] && c.text === "التَّاءْ".normalize("NFC")));
   assert.equal(letters.find((l) => l.char === "ر").img, "images/letters/10.png");
 });
 

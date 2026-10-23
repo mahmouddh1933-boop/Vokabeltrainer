@@ -28,6 +28,14 @@ with sync_playwright() as p:
     assert page.goto(base+'/huruf.html').status == 200
     page.locator('#app-language-select').select_option('ar')
     letters = page.evaluate('ArabicLetterData.letters')
+    page.evaluate('''() => {
+      window.__spokenText = null;
+      const speak = VocabApp.speakArabic;
+      VocabApp.speakArabic = (text, status) => {
+        window.__spokenText = text;
+        return speak(text, status);
+      };
+    }''')
     def play(selector, expected):
         before = page.evaluate('__playing')
         page.locator(selector).tap()
@@ -36,13 +44,15 @@ with sync_playwright() as p:
         assert actual['gesture'] and actual['src'].endswith(expected), actual
     for index, letter in enumerate(letters):
         page.locator('#letters-grid button').nth(index).tap()
+        play('#letter-speak', f'{index+1:02}-name-waqf.mp3')
+        assert page.evaluate('__spokenText') == letter['spokenName']
+        assert letter['spokenName'].endswith('ْ')
         assert page.locator('#sukun-sample').inner_text() == letter['sukunSample']
         play('#harakat-row button:nth-child(4)', f'{index+1:02}-vowel-3.mp3')
         if letter.get('spokenWord'):
             assert page.locator('#letter-card-word').inner_text() == letter['spokenWord']
             play('#card-say-word', f'{index+1:02}-word.mp3')
         if letter['char'] == 'ت':
-            play('#letter-speak', '03-name.mp3')
             for mark in range(3):
                 play(f'#harakat-row button:nth-child({mark+1})', f'03-vowel-{mark}.mp3')
     page.locator('#letters-grid button').nth(9).tap()
@@ -63,4 +73,4 @@ with sync_playwright() as p:
     assert not errors, errors
     assert not external, external
     browser.close()
-    print('PASS: all 28 sukun clips, six vocalized words, Ta name/vowels, pomegranate image, Arabic/German mobile layout and offline touch playback')
+    print('PASS: all 28 final-sukun names and contextual sukun clips, six vocalized words, Ta vowels, pomegranate image, Arabic/German mobile layout and offline touch playback')

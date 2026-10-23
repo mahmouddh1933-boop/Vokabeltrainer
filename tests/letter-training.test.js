@@ -2,6 +2,7 @@ const { test } = require("node:test");
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
+const { createHash } = require("node:crypto");
 const { letters, audio } = require("../js/letter-data.js");
 const { modes, createQuestions } = require("../js/letter-training-data.js");
 const { examples, graphemes } = require("../js/letter-examples.js");
@@ -37,6 +38,20 @@ test("Every letter has four presentation forms and six real, nonempty audio file
     "ﺩ",
     "ﺪ",
   ]);
+});
+test("Letter names use explicit final-sukun inputs and the new recordings for every alias", () => {
+  const manifest = require("../audio/letter-name-waqf.json");
+  assert.equal(manifest.clips.length, 28);
+  for (const letter of letters) {
+    const clip = manifest.clips.find((entry) => entry.letter === letter.char);
+    assert.ok(letter.spokenName.endsWith("ْ"));
+    assert.equal(letter.spokenName.replace(/\p{M}/gu, ""), letter.name);
+    assert.equal(clip.text.normalize("NFC"), letter.spokenName);
+    assert.ok(clip.path.endsWith("-name-waqf.mp3"));
+    for (const text of [letter.name, letter.name + "ْ", letter.spokenName])
+      assert.equal(audio[text.normalize("NFC")], clip.path);
+    assert.equal(createHash("sha256").update(fs.readFileSync(path.join(__dirname, "..", clip.path))).digest("hex"), clip.sha256);
+  }
 });
 test("Four exercise banks cover all 28 letters, four unique options and balanced positions", () => {
   assert.deepEqual(modes, ["names", "forms", "missing", "listening"]);

@@ -140,10 +140,6 @@
       "path": "audio/letters/28-vowel-3.mp3"
     },
     {
-      "text": "تَاء",
-      "path": "audio/letters/03-name.mp3"
-    },
-    {
       "text": "تَ",
       "path": "audio/letters/03-vowel-0.mp3"
     },
@@ -154,6 +150,13 @@
     {
       "text": "تُ",
       "path": "audio/letters/03-vowel-2.mp3"
+    }
+  ],
+  "supersededClips": [
+    {
+      "text": "تَاء",
+      "path": "audio/letters/03-name.mp3",
+      "supersededBy": "audio/letter-name-waqf.json"
     }
   ]
 }

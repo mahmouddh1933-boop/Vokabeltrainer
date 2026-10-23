@@ -221,7 +221,7 @@
     );
     $("training-listen").addEventListener("click", () => {
       const q = session().questions[session().index];
-      window.VocabApp.speakArabic(q.letter.name, (message, error) => {
+      window.VocabApp.speakArabic(q.letter.spokenName, (message, error) => {
         $("training-audio-status").textContent = message;
         $("training-audio-status").classList.toggle(
           "speech-error",

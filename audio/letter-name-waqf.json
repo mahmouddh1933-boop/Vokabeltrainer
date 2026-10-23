@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-23",
+  "provider": "Google Translate TTS (ar)",
+  "slow": true,
+  "pronunciation": "Letter names with final sukun (waqf); no final case vowel.",
+  "clips": [
+    {
+      "letter": "أ",
+      "name": "الألف",
+      "text": "الْأَلِفْ",
+      "path": "audio/letters/01-name-waqf.mp3",
+      "sha256": "b61750da6cf389db07edcfaa15c8e774195bcec2ef1ccfe6868d8f2d31d1c8e1"
+    },
+    {
+      "letter": "ب",
+      "name": "الباء",
+      "text": "الْبَاءْ",
+      "path": "audio/letters/02-name-waqf.mp3",
+      "sha256": "fac1099704bde3edf86af98a872318791cf93e99633997604877a14ff3cb7922"
+    },
+    {
+      "letter": "ت",
+      "name": "التاء",
+      "text": "التَّاءْ",
+      "path": "audio/letters/03-name-waqf.mp3",
+      "sha256": "e9c9fa3442c55bbfe07e8a849629658ff12db4b19cc06dd8f51e77b4d6acec76"
+    },
+    {
+      "letter": "ث",
+      "name": "الثاء",
+      "text": "الثَّاءْ",
+      "path": "audio/letters/04-name-waqf.mp3",
+      "sha256": "10f27601f4db35601f597c42e85b2096cf091eb9e4dd9d3ac4ebe3a0b528d2e2"
+    },
+    {
+      "letter": "ج",
+      "name": "الجيم",
+      "text": "الْجِيمْ",
+      "path": "audio/letters/05-name-waqf.mp3",
+      "sha256": "d9ec6e81538d1a5f72bc721299c67377ebebd2cc51478fa0c53b9d7c6eebbab7"
+    },
+    {
+      "letter": "ح",
+      "name": "الحاء",
+      "text": "الْحَاءْ",
+      "path": "audio/letters/06-name-waqf.mp3",
+      "sha256": "9035dab033adb8a320deb384077ac4b04ae7cb5fe0e9a8d0d4eba47026424f65"
+    },
+    {
+      "letter": "خ",
+      "name": "الخاء",
+      "text": "الْخَاءْ",
+      "path": "audio/letters/07-name-waqf.mp3",
+      "sha256": "ebd9176c1416b01a58461cb29237c65cbfe9b33049b5292084150079a79eae91"
+    },
+    {
+      "letter": "د",
+      "name": "الدال",
+      "text": "الدَّالْ",
+      "path": "audio/letters/08-name-waqf.mp3",
+      "sha256": "6bafcd18d1962186c183079da364429deff27f1aa472567ba1b3f0667803a10b"
+    },
+    {
+      "letter": "ذ",
+      "name": "الذال",
+      "text": "الذَّالْ",
+      "path": "audio/letters/09-name-waqf.mp3",
+      "sha256": "60a7f259edb0c7d9f2668bcb6989afa4e81b758b9d150320499277835c6a2cf3"
+    },
+    {
+      "letter": "ر",
+      "name": "الراء",
+      "text": "الرَّاءْ",
+      "path": "audio/letters/10-name-waqf.mp3",
+      "sha256": "23409884b4c60201727c00cedc1bc9c89f52b5704324fb748563a851f3a56d5c"
+    },
+    {
+      "letter": "ز",
+      "name": "الزاي",
+      "text": "الزَّايْ",
+      "path": "audio/letters/11-name-waqf.mp3",
+      "sha256": "c6b61a6266a6b389da6ff12a7d0e958a8bdecdbe196b49182680e0ec9a8a5c56"
+    },
+    {
+      "letter": "س",
+      "name": "السين",
+      "text": "السِّينْ",
+      "path": "audio/letters/12-name-waqf.mp3",
+      "sha256": "4f97bf880603b320753462eaa36e8e64439ecdedb2697109036a88273c595f42"
+    },
+    {
+      "letter": "ش",
+      "name": "الشين",
+      "text": "الشِّينْ",
+      "path": "audio/letters/13-name-waqf.mp3",
+      "sha256": "d5256ca699a3582fe13d461a5bac3b66dd56f640866a1d7c3c7b8403cc9db502"
+    },
+    {
+      "letter": "ص",
+      "name": "الصاد",
+      "text": "الصَّادْ",
+      "path": "audio/letters/14-name-waqf.mp3",
+      "sha256": "62b11ac00cca80c9ea229c8f0cf638b5337e238cd94d8c0380732a3006d55f3b"
+    },
+    {
+      "letter": "ض",
+      "name": "الضاد",
+      "text": "الضَّادْ",
+      "path": "audio/letters/15-name-waqf.mp3",
+      "sha256": "e62c14ce76d0fd36a04c061e23ef8a8b1a75c310b30a58b71a4564e65822dff1"
+    },
+    {
+      "letter": "ط",
+      "name": "الطاء",
+      "text": "الطَّاءْ",
+      "path": "audio/letters/16-name-waqf.mp3",
+      "sha256": "1de24603048225fd507fecc4eca1a32e532f3ae502780b4637640bf76297f642"
+    },
+    {
+      "letter": "ظ",
+      "name": "الظاء",
+      "text": "الظَّاءْ",
+      "path": "audio/letters/17-name-waqf.mp3",
+      "sha256": "33dcd2301ad2904b746c8c4f1a9b31d690fac36ec67a09a4e15af067f57eddcd"
+    },
+    {
+      "letter": "ع",
+      "name": "العين",
+      "text": "الْعَيْنْ",
+      "path": "audio/letters/18-name-waqf.mp3",
+      "sha256": "79a9bb10c6a6d673fe55c01380122e02845fb9c19c01d0ad1eda319ebc364798"
+    },
+    {
+      "letter": "غ",
+      "name": "الغين",
+      "text": "الْغَيْنْ",
+      "path": "audio/letters/19-name-waqf.mp3",
+      "sha256": "e85c68a1436f8ec4352716f4f0c6d763a56757e31bc505a81ebdde5a581badf7"
+    },
+    {
+      "letter": "ف",
+      "name": "الفاء",
+      "text": "الْفَاءْ",
+      "path": "audio/letters/20-name-waqf.mp3",
+      "sha256": "d2ad6c06332668db69acf8a67804458fbb9104208b04c7f93b4a95060e2dac71"
+    },
+    {
+      "letter": "ق",
+      "name": "القاف",
+      "text": "الْقَافْ",
+      "path": "audio/letters/21-name-waqf.mp3",
+      "sha256": "469fd05ad643aee96cefdc4233cfcb56f918c9302805b96ce814311dfa62ad47"
+    },
+    {
+      "letter": "ك",
+      "name": "الكاف",
+      "text": "الْكَافْ",
+      "path": "audio/letters/22-name-waqf.mp3",
+      "sha256": "ed12a2f4a906cc85849805b2eb73d98132423623344fc031ca0762be1a8445ab"
+    },
+    {
+      "letter": "ل",
+      "name": "اللام",
+      "text": "اللَّامْ",
+      "path": "audio/letters/23-name-waqf.mp3",
+      "sha256": "5e69985f4c7061279047955fc6439ce1868bb562d3a1e1da476ff14f9eeec1c2"
+    },
+    {
+      "letter": "م",
+      "name": "الميم",
+      "text": "الْمِيمْ",
+      "path": "audio/letters/24-name-waqf.mp3",
+      "sha256": "1c91f7b618128158cab207f96ccab3d8d187088647dfb9c8a2491e31bc563c9c"
+    },
+    {
+      "letter": "ن",
+      "name": "النون",
+      "text": "النُّونْ",
+      "path": "audio/letters/25-name-waqf.mp3",
+      "sha256": "73dc7b6cfa421406a7949fdec02e4273c59716f3bbf25c4251802b8e8d179534"
+    },
+    {
+      "letter": "ه",
+      "name": "الهاء",
+      "text": "الْهَاءْ",
+      "path": "audio/letters/26-name-waqf.mp3",
+      "sha256": "9506b4c160a46da8aaf9fa077db80b4f88bbf01dcd23bbd12c83273143ff4a84"
+    },
+    {
+      "letter": "و",
+      "name": "الواو",
+      "text": "الْوَاوْ",
+      "path": "audio/letters/27-name-waqf.mp3",
+      "sha256": "f21fda8e8a5c26185fc82792769503932de6a96795bf43e0c2ab3e7d2e7a17c6"
+    },
+    {
+      "letter": "ي",
+      "name": "الياء",
+      "text": "الْيَاءْ",
+      "path": "audio/letters/28-name-waqf.mp3",
+      "sha256": "6ded6b350bcdb8fb7702f90ab2c8158091c521b497e756fe7ff478d1669657f2"
+    }
+  ]
+}

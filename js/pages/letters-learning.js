@@ -134,7 +134,7 @@
   $("letter-previous").addEventListener("click", () => select(current - 1));
   $("letter-next").addEventListener("click", () => select(current + 1));
   $("letter-speak").addEventListener("click", () =>
-    window.lettersSpeak(letters[current][1]),
+    window.lettersSpeak(window.ArabicLetterData.letters[current].spokenName),
   );
   window.renderLetterFormsForLanguage = () => {
     const flipped = card.classList.contains("flipped");

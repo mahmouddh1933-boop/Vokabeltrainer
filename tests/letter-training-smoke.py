@@ -52,7 +52,7 @@ with sync_playwright() as p:
             else:
                 assert page.locator('#training-stimulus').inner_text()==''
                 before=page.evaluate('__audioPlaying');page.locator('#training-listen').tap();page.wait_for_function('before=>__audioPlaying>before',arg=before)
-                src=page.evaluate('__audioCalls.at(-1).src');letter_index=int(re.search(r'/(\d+)-name.mp3',src).group(1))-1;correct=letters[letter_index]['char']
+                src=page.evaluate('__audioCalls.at(-1).src');letter_index=int(re.search(r'/(\d+)-name-waqf.mp3',src).group(1))-1;correct=letters[letter_index]['char']
                 assert page.evaluate('__audioCalls.at(-1).gesture')
                 if index==0:
                     page.locator('#training-listen').tap()
