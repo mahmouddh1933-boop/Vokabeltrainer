@@ -1,0 +1,236 @@
+.exam-catalog {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.exam-card {
+  margin: 0;
+  min-width: 0;
+}
+.exam-card h2 {
+  overflow-wrap: anywhere;
+  font-size: 1.2rem;
+}
+.exam-topic {
+  font-weight: 700;
+  color: #45623f;
+}
+.exam-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-block: 18px;
+}
+.exam-section,
+#exam-session,
+#exam-result,
+#exam-original {
+  scroll-margin-top: 100px;
+}
+.exam-task {
+  min-width: 0;
+  border: 1px solid #cedbc5;
+  border-radius: 18px;
+  margin-block: 22px;
+  padding: 22px;
+  background: rgba(250, 251, 243, 0.73);
+}
+.exam-task legend {
+  max-width: 100%;
+  padding: 6px;
+  font-size: 1.15rem;
+  line-height: 2;
+  color: #244b3b;
+}
+.exam-task input[type="text"],
+.exam-task textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 14px;
+  border: 1px solid #91a783;
+  border-radius: 12px;
+  color: #183f33;
+  background: #fffef8;
+  font-family: inherit;
+  font-size: 1.2rem;
+  line-height: 1.9;
+}
+.exam-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.exam-options label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #b8c9ad;
+  border-radius: 12px;
+  background: #fafbf5;
+  min-height: 54px;
+  overflow-wrap: anywhere;
+}
+.exam-options label:has(input:checked) {
+  background: #e2edd5;
+  border: 2px solid #527644;
+  padding: 15px;
+}
+.exam-options input {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  accent-color: #426c44;
+}
+.exam-task button {
+  margin: 4px;
+  min-height: 46px;
+}
+.exam-task button:focus-visible,
+.exam-options label:focus-within {
+  outline: 3px solid #376e66;
+  outline-offset: 3px;
+}
+.exam-manual-note {
+  font-size: 0.9rem;
+  color: #526247;
+}
+.exam-passage {
+  font-size: 1.4rem;
+  line-height: 2.5;
+  padding: 22px;
+  border-inline-start: 4px solid #8d9a63;
+  background: rgba(242, 244, 229, 0.8);
+  border-radius: 12px;
+  white-space: pre-line;
+}
+.exam-ordered {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 64px;
+  border: 2px dashed #b5c6a4;
+  border-radius: 12px;
+  padding: 8px;
+}
+.exam-ordered:empty::before {
+  content: "…";
+  color: #79876f;
+}
+.exam-feedback {
+  margin-top: 16px;
+  padding: 18px;
+  background: #f0eee0;
+  border-inline-start: 4px solid #9a905e;
+  border-radius: 10px;
+}
+.exam-correct {
+  border-color: #3b7a51;
+  background: #eaf3e4;
+}
+.exam-incorrect {
+  border-color: #aa6a3d;
+  background: #fcf1e1;
+}
+#exam-result {
+  border: 2px solid #61834b;
+}
+#exam-save-status {
+  font-size: 0.9rem;
+  min-height: 1.6em;
+}
+#exam-section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-block: 20px;
+}
+#exam-section-nav a {
+  font-size: 0.85rem;
+  padding: 8px 12px;
+}
+.exam-illustrations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-block: 20px;
+}
+.exam-illustrations img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+#exam-pages figure {
+  margin: 24px 0;
+}
+#exam-pages img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #c9cbbd;
+}
+#exam-pages figcaption {
+  text-align: center;
+  padding: 10px;
+}
+.exam-print {
+  display: none;
+}
+@media (max-width: 650px) {
+  .exam-catalog,
+  .exam-options {
+    grid-template-columns: 1fr;
+  }
+  .exam-task {
+    padding: 12px;
+  }
+  .exam-passage {
+    padding: 12px;
+    font-size: 1.2rem;
+  }
+  .exam-toolbar > * {
+    flex: 1 1 145px;
+  }
+}
+@media print {
+  body.exam-printing > *:not(#exam-print) {
+    display: none !important;
+  }
+  body.exam-printing {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+  body.exam-printing #exam-print {
+    display: block !important;
+    color: black;
+    background: white;
+    padding: 0;
+    font: 14pt/1.9 serif;
+  }
+  #exam-print .exam-passage {
+    background: white;
+    border: 0;
+    padding: 0;
+    font: inherit;
+  }
+  #exam-print h1 {
+    font-size: 20pt;
+  }
+  #exam-print h2 {
+    font-size: 17pt;
+    break-after: avoid;
+  }
+  .exam-print-task {
+    break-inside: avoid;
+  }
+  #exam-print img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+  }
+  @page {
+    margin: 18mm;
+  }
+}

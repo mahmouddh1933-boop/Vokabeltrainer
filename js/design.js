@@ -44,19 +44,21 @@
     const topbar = document.createElement("header");
     topbar.className = "app-topbar";
     const current =
-      page === "placement.html"
-        ? [
-            "",
-            "check",
-            "Diagnostische Einstiegschecks",
-            "اختبارات تحديد المستوى",
-          ]
-        : nav.find((item) => item[0] === activeHref) || [
-            "",
-            "home",
-            "Dein Lernpfad",
-            "مسار تعلّمك",
-          ];
+      page === "exams.html"
+        ? ["", "check", "Tests", "الاختبارات"]
+        : page === "placement.html"
+          ? [
+              "",
+              "check",
+              "Diagnostische Einstiegschecks",
+              "اختبارات تحديد المستوى",
+            ]
+          : nav.find((item) => item[0] === activeHref) || [
+              "",
+              "home",
+              "Dein Lernpfad",
+              "مسار تعلّمك",
+            ];
     topbar.innerHTML = `<div class="topbar-left"><button type="button" class="menu-toggle" aria-controls="app-sidebar" aria-expanded="false" aria-label="Menü / القائمة">${icon("menu")}</button><span class="breadcrumb-brand" lang="ar" dir="rtl">حروف من الزيتون</span><span class="breadcrumb-separator">/</span>${label(current[2], current[3])}</div><div class="topbar-right"><span class="learning-indicator"><span></span>${label("Zeit für etwas Neues", "وقت لاكتشاف شيء جديد")}</span><div class="language-slot"></div><span class="topbar-avatar" aria-hidden="true">${icon("spark")}</span></div>`;
     sidebar.after(topbar);
     const picker = document.querySelector(".app-language-bar");

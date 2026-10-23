@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#123f37" />
+    <meta
+      name="description"
+      content="حروف من الزيتون: تعلّم العربية، من الحروف إلى المفردات والقواعد، بجذور راسخة ورسومات هادئة."
+    />
+    <title>حروف من الزيتون · الاختبارات</title>
+    <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
+    <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
+    <link rel="stylesheet" href="css/modern.css?v=8a75138498b6" />
+    <link rel="stylesheet" href="css/verbs.css?v=7f25f6097677" />
+    <link rel="stylesheet" href="css/grammar.css?v=bbe72b1d11bd" />
+    <link rel="stylesheet" href="css/practice.css?v=e55c73e03b36" />
+
+    <script src="js/storage.js?v=234b995827cd" defer></script>
+    <script src="js/firebase-config.js?v=bcb6b5390ad9" defer></script>
+    <script src="js/auth-session.js?v=e80b2ec59f82" defer></script>
+    <script src="js/app.js?v=266caa422c60" defer></script>
+
+    <script src="data/vocab_catalog_labels.js?v=77de3e826c87" defer></script>
+    <script src="js/interface-languages.js?v=d233aae47963" defer></script>
+    <script src="js/tanwin-display.js?v=97a12d8b8572" defer></script>
+    <script src="js/learning-path.js?v=12830d173902" defer></script>
+    <script src="js/design.js?v=2e74a33c644f" defer></script>
+    <meta name="application-name" content="حروف من الزيتون" />
+    <link
+      rel="icon"
+      href="images/brand/olive-symbol.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/olive-theme.css?v=4b4842e4a626" />
+    <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
+    <link rel="stylesheet" href="css/auth.css?v=2b57d96c4eaf" />
+
+    <link rel="stylesheet" href="css/learning-route.css?v=9d7793050fac" />
+    <link rel="stylesheet" href="css/teacher-exams.css?v=95e58e2bee13" />
+    <script src="js/practice-core.js?v=81b88bc2a7c0" defer></script>
+    <script src="js/teacher-exams-data.js?v=ab8c517d709a" defer></script>
+    <script src="js/teacher-exams-core.js?v=e756c719ff40" defer></script>
+    <script src="js/pages/teacher-exams.js?v=e03a342721cd" defer></script>
+  </head>
+  <body>
+    <main class="container practice-page" id="main-content">
+      <header class="page-heading">
+        <div>
+          <p
+            class="eyebrow"
+            data-ar="تدرّب وراجع ما تعلمته"
+            data-de="Üben und Gelerntes überprüfen"
+          >
+            تدرّب وراجع ما تعلمته
+          </p>
+          <h1
+            id="exam-home-title"
+            tabindex="-1"
+            data-ar="الاختبارات"
+            data-de="Tests"
+          >
+            الاختبارات
+          </h1>
+        </div>
+      </header>
+      <p
+        id="lesson-loading"
+        role="status"
+        data-ar="جارٍ تحميل الاختبارات…"
+        data-de="Tests werden geladen…"
+      >
+        جارٍ تحميل الاختبارات…
+      </p>
+      <div id="exam-catalog-panel">
+        <section class="home-panel">
+          <h2 data-ar="اختر نوع الاختبار" data-de="Testart wählen">
+            اختر نوع الاختبار
+          </h2>
+          <div class="practice-actions">
+            <a
+              class="practice-button"
+              href="placement.html"
+              data-ar="اختبارات تحديد المستوى"
+              data-de="Diagnostische Einstiegschecks"
+              >اختبارات تحديد المستوى</a
+            ><a
+              class="practice-button"
+              href="test.html"
+              data-ar="اختبارات قائمة المفردات الحالية"
+              data-de="Tests zur aktuellen Wortliste"
+              >اختبارات قائمة المفردات الحالية</a
+            ><a
+              class="practice-button"
+              href="letter-tests.html"
+              data-ar="اختبارات الحروف"
+              data-de="Buchstabentests"
+              >اختبارات الحروف</a
+            >
+          </div>
+        </section>
+        <section class="home-panel">
+          <h2
+            data-ar="اختبارات الأستاذ محمود بركات ونماذج مشابهة"
+            data-de="Originaltests von Mahmoud Barakat und ähnliche neue Tests"
+          >
+            اختبارات الأستاذ محمود بركات ونماذج مشابهة
+          </h2>
+          <p
+            data-ar="١٠ ملفات أصلية تضم ٢٦ صفحة، و١٠ نماذج جديدة تضم ٣٨٩ سؤالًا ومهمة. الأصل للعرض والتنزيل كما أُرسل، والنموذج المشابه تفاعلي وقابل للطباعة."
+            data-de="10 unveränderte Original-PDFs mit 26 Seiten und 10 neue interaktive, druckbare Tests mit 389 Aufgaben."
+          >
+            ١٠ ملفات أصلية تضم ٢٦ صفحة، و١٠ نماذج جديدة تضم ٣٨٩ سؤالًا ومهمة.
+            الأصل للعرض والتنزيل كما أُرسل، والنموذج المشابه تفاعلي وقابل
+            للطباعة.
+          </p>
+          <p
+            data-ar="الأسئلة المحددة تُصحّح بعد إنهاء النموذج. الفهم المفتوح والتعبير والنسخ والاستخراج ووصف الصور تُراجع بمعايير وإجابات استرشادية، خارج الدرجة الآلية. هذه اختبارات تحصيل، وليست تحديدًا معياريًّا للمستوى."
+            data-de="Geschlossene Aufgaben werden nach Abschluss automatisch korrigiert. Offenes Textverständnis, Schreiben, Abschreiben, Textbelege und Bildbeschreibungen erhalten Beispiele und Bewertungskriterien für die Lehrkraft; sie zählen nicht zur automatischen Punktzahl. Dies sind Lernerfolgstests, keine standardisierte Einstufung."
+          >
+            الأسئلة المحددة تُصحّح بعد إنهاء النموذج. الفهم المفتوح والتعبير
+            والنسخ والاستخراج ووصف الصور تُراجع بمعايير وإجابات استرشادية، خارج
+            الدرجة الآلية. هذه اختبارات تحصيل، وليست تحديدًا معياريًّا للمستوى.
+          </p>
+        </section>
+        <div id="exam-catalog" class="exam-catalog"></div>
+        <section class="home-panel">
+          <h2
+            data-ar="محاولاتي: متابعة أو مراجعة"
+            data-de="Meine Versuche: fortsetzen oder ansehen"
+          >
+            محاولاتي: متابعة أو مراجعة
+          </h2>
+          <div id="exam-history" class="practice-actions"></div>
+        </section>
+      </div>
+      <section id="exam-original" hidden>
+        <div class="exam-toolbar">
+          <button
+            id="exam-original-back"
+            class="practice-button"
+            type="button"
+            data-ar="العودة إلى الاختبارات"
+            data-de="Zur Testauswahl"
+          >
+            العودة إلى الاختبارات
+          </button>
+        </div>
+        <h2 id="exam-original-title" tabindex="-1"></h2>
+        <p
+          data-ar="الملف الأصلي محفوظ دون تعديل. اضغط الصفحة لتكبيرها، أو افتح PDF للطباعة بجودته الأصلية."
+          data-de="Unveränderte Originaldatei. Seite zum Vergrößern anklicken oder das PDF in Originalqualität öffnen und drucken."
+        >
+          الملف الأصلي محفوظ دون تعديل. اضغط الصفحة لتكبيرها، أو افتح PDF
+          للطباعة بجودته الأصلية.
+        </p>
+        <div class="practice-actions" id="exam-original-actions"></div>
+        <div id="exam-pages"></div>
+      </section>
+      <section id="exam-session" hidden>
+        <h2 id="exam-title" tabindex="-1"></h2>
+        <p
+          data-ar="أجب دون مساعدة. تُحفظ الإجابات أثناء الكتابة؛ يمكنك العودة لاحقًا. لا حد زمني. إنهاء النموذج يثبت الإجابات، والأسئلة المحددة الفارغة تُحسب صفرًا."
+          data-de="Antworte ohne Hilfe. Antworten werden beim Eingeben gespeichert; du kannst später fortfahren. Ohne Zeitlimit. Nach Abschluss sind die Antworten gesperrt; unbeantwortete geschlossene Aufgaben zählen als falsch."
+        >
+          أجب دون مساعدة. تُحفظ الإجابات أثناء الكتابة؛ يمكنك العودة لاحقًا. لا
+          حد زمني. إنهاء النموذج يثبت الإجابات، والأسئلة المحددة الفارغة تُحسب
+          صفرًا.
+        </p>
+        <div class="exam-toolbar">
+          <button
+            class="practice-button"
+            id="exam-back"
+            type="button"
+            data-ar="حفظ والعودة إلى الاختبارات"
+            data-de="Speichern und zur Testauswahl"
+          >
+            حفظ والعودة إلى الاختبارات</button
+          ><button
+            class="practice-button"
+            id="exam-blank"
+            type="button"
+            data-ar="طباعة ورقة فارغة"
+            data-de="Leeres Aufgabenblatt drucken"
+          >
+            طباعة ورقة فارغة</button
+          ><button
+            class="practice-button"
+            id="exam-key"
+            hidden
+            type="button"
+            data-ar="طباعة دليل الإجابات"
+            data-de="Lösungsleitfaden drucken"
+          >
+            طباعة دليل الإجابات
+          </button>
+        </div>
+        <p id="exam-save-status" role="status"></p>
+        <div id="exam-result" class="home-panel" tabindex="-1" hidden></div>
+        <nav
+          id="exam-section-nav"
+          aria-label="أجزاء النموذج / Testabschnitte"
+        ></nav>
+        <div id="exam-questions"></div>
+        <button
+          id="exam-submit"
+          class="practice-button primary-action"
+          type="button"
+          data-ar="إنهاء النموذج وعرض التصحيح"
+          data-de="Test abschließen und Korrektur anzeigen"
+        >
+          إنهاء النموذج وعرض التصحيح
+        </button>
+      </section>
+      <audio id="exam-player" preload="none"></audio>
+      <p id="practice-audio-status" role="status"></p>
+    </main>
+    <div id="exam-print" class="exam-print"></div>
+  </body>
+</html>
