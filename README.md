@@ -6,6 +6,14 @@ Ein deutsch-arabischer Vokabeltrainer mit einem neuen responsiven Design: Lern-D
 
 [Modernisierten Vokabeltrainer als ZIP herunterladen](https://github.com/mahmouddh1933-boop/Vokabeltrainer/raw/refs/heads/main/downloads/Vokabeltrainer-modern.zip). Entpacken und `index.html` im Browser öffnen oder den lokalen Server wie unten starten.
 
+## Eigenständige Demo ohne Firebase
+
+[Demo als ZIP herunterladen](https://github.com/mahmouddh1933-boop/Vokabeltrainer/raw/refs/heads/main/downloads/Huroof-Demo.zip). Die Demo enthält sechs Wortschatzlisten mit 120 Einträgen auf A1/A2, die ersten sechs Buchstaben mit Übungen, drei Grammatiklektionen mit 24 Fragen, sechs Verben, zwölf Hörfragen, sechs Satzbauaufgaben und eine Kurzgeschichte. Olivendesign, beide Oberflächensprachen, Lernkarten und die sechs Vokabeltestarten sind enthalten. Lernstände bleiben im jeweiligen Browser.
+
+Die ZIP enthält ausschließlich die Demo und ihre lokalen Dateien, einschließlich 64 Tonaufnahmen. Firebase-Konfiguration, Anmeldeskripte, Cloud-Synchronisierung und die übrigen Lerninhalte sind nicht enthalten. `index.html` liegt direkt im ZIP-Stammverzeichnis; den entpackten Ordner beispielsweise bei Netlify Drop oder Cloudflare Pages hochladen. Eine deutsche Anleitung liegt als `README-DEMO.txt` bei. Es ist kein Build-Schritt für das Hosting nötig.
+
+Zum erneuten Erstellen aus den Quellen: `python3 tools/build-demo.py --directory /tmp/huroof-demo-neu` (Python und Node.js nur für die Erstellung). Der Ausgabeordner muss leer sein. Prüfung nach Start eines lokalen HTTP-Servers: `python3 tests/demo-smoke.py --directory /tmp/huroof-demo-neu --base-url http://127.0.0.1:8012`.
+
 ## Lokal starten
 
 Im Repository-Verzeichnis:
