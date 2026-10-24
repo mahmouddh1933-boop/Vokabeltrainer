@@ -10,6 +10,7 @@ function setup({
   bookRecording = false,
   youthRecording = false,
   youthTwoRecording = false,
+  vocabularyRecording = false,
   language = "ar",
   behavior = "normal",
 } = {}) {
@@ -88,6 +89,10 @@ function setup({
     context.window.ArabicYouthTwoData = {
       audio: { سَمَك: "audio/letters/12-word.mp3" },
     };
+  if (vocabularyRecording)
+    context.window.ArabicVocabularyAudio = {
+      audio: {["كُرْسِيٌّ".normalize("NFC")]: "audio/vocabulary/chair.mp3"},
+    };
   vm.runInNewContext(
     fs.readFileSync(require.resolve("../js/storage.js"), "utf8"),
     context,
@@ -115,6 +120,27 @@ test("Native Arabic speak is invoked synchronously and does not contact online T
   assert.equal(calls.timers.size, 0);
   utterance.onend();
   assert.equal(calls.statuses.at(-1)[1], false);
+});
+test("Built-in vocabulary plays a local recording synchronously without an Arabic device voice", () => {
+  for (const native of [true,false]) {
+    const {app,calls}=setup({native,voices:[],vocabularyRecording:true});
+    assert.equal(app.speakArabic("كُرْسِيٌّ".normalize("NFD")),true);
+    assert.deepEqual(calls.play,["audio/vocabulary/chair.mp3"]);
+    assert.equal(calls.speak.length,0);
+    calls.audio[0].onplaying();
+    assert.equal(calls.timers.size,0);
+  }
+});
+test("Changing a vocabulary card cancels playback and stale errors cannot restart it", () => {
+  const {app,calls}=setup({vocabularyRecording:true});
+  app.speakArabic("كُرْسِيٌّ");
+  const stale=calls.audio[0].onerror;
+  app.stopSpeech();
+  stale({name:"AbortError"});
+  assert.equal(calls.speak.length,0);
+  assert.equal(calls.play.length,1);
+  assert.equal(calls.audio[0].onplaying,null);
+  assert.equal(calls.timers.size,0);
 });
 test("New listening and story recordings use local files without a native voice", () => {
   const { app, calls } = setup({ native: false, practiceRecording: true });

@@ -34,6 +34,7 @@
             area.querySelectorAll("[data-listen-index]").forEach(button => {
                 button.addEventListener("click", () => {
                     const index = Number(button.dataset.listenIndex);
+                    area.querySelectorAll(".listen-status").forEach(node => { node.textContent = ""; });
                     const status = document.getElementById(`listen-status-${index}`);
                     VocabApp.speakArabic(selected[index][0], (message, isError) => {
                         status.textContent = message;

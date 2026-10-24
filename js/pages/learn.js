@@ -14,6 +14,7 @@
         VocabApp.initSpeech();
 
         function showWord() {
+            VocabApp.stopSpeech();
             if (!vocabList.length) {
                 front.textContent = "لا توجد مفردات";
                 back.textContent = "اختر قائمة من الصفحة الرئيسية";

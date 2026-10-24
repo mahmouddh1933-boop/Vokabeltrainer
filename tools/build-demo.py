@@ -268,7 +268,11 @@ for image in [letter['img'] for letter in letters['letters']]:
 # The existing CSS uses one local illustration sheet for story art.
 shutil.copytree(ROOT / 'images/stories', DEST / 'images/stories', dirs_exist_ok=True)
 related_audio = {clip['path'] for clip in json.loads((ROOT/'audio/letter-related-manifest.json').read_text())['clips']}
-for audio in set(letters['audio'].values()) | set(practice['audio'].values()) | related_audio:
+vocab_words = {normalize(w['ar']) for item in catalog['lists'] for w in item['words']}
+vocab_audio = {clip['text']:clip['path'] for clip in json.loads((ROOT/'audio/vocabulary-manifest.json').read_text())['clips'] if normalize(clip['text']) in vocab_words}
+assert len(vocab_audio) == len(vocab_words)
+write('js/vocab-audio-data.js', 'window.ArabicVocabularyAudio = {audio:'+dump(vocab_audio)+'};\n')
+for audio in set(letters['audio'].values()) | set(practice['audio'].values()) | related_audio | set(vocab_audio.values()):
     path = DEST / audio
     path.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(ROOT / audio, path)
@@ -315,8 +319,8 @@ Konten und keine Synchronisierung zwischen Geräten. Ein anderer Browser oder
 das Löschen der Websitedaten setzt den lokalen Fortschritt zurück.
 Die Demo hat einen eigenen Namensraum für Lernstände. Sprache und Hintergrund
 können mit einer am gleichen Ursprung geöffneten Vollversion geteilt werden.
-Mitgelieferte Tonaufnahmen funktionieren ohne externen Audiodienst. Für weitere
-Wörter verwendet die Demo die Sprachausgabe des Geräts; hierfür muss eine
+Alle Wörter der sechs Demo-Wortlisten haben mitgelieferte Tonaufnahmen.
+Für zusätzlich importierte Wörter verwendet die Demo die Sprachausgabe des Geräts; hierfür muss eine
 arabische Stimme verfügbar sein. Je nach Betriebssystem benötigt diese Internet.
 Keine Analytics- oder Werbeskripte werden eingebunden.
 

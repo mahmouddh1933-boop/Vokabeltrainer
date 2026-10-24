@@ -805,6 +805,7 @@
         }
       }
       const recording =
+        window.ArabicVocabularyAudio?.audio[value] ||
         window.ArabicLetterData?.audio[value] ||
         window.ArabicPracticeData?.audio[value] ||
         window.ArabicPhonicsData?.audio[value] ||
@@ -816,6 +817,8 @@
       else local();
       return true;
     }
+
+    window.addEventListener?.("pagehide", stopSpeech);
 
     window.VocabApp = {
         KEYS,

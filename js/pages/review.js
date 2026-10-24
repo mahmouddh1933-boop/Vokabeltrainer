@@ -11,6 +11,7 @@
 
         function current() { return queue[index] || null; }
         function render() {
+            VocabApp.stopSpeech();
             if (!queue.length) { content.hidden = true; empty.hidden = false; return; }
             content.hidden = false; empty.hidden = true;
             if (index >= queue.length) index = 0;
