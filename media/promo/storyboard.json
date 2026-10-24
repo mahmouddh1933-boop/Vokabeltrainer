@@ -1,0 +1,359 @@
+{
+  "brand": "حروف من الزيتون",
+  "languages": {
+    "de": {
+      "label": "Deutsch",
+      "tagline": "Arabisch lernen. Mit starken Wurzeln.",
+      "credit": "Entwickelt von Lehrer Mahmoud Barakat",
+      "cta": "Dein nächster Schritt beginnt hier.",
+      "chapter": "ENTDECKE HUROOF",
+      "demo": "Einblicke in die App"
+    },
+    "ar": {
+      "label": "العربية",
+      "tagline": "تعلّمٌ ينمو… وجذورٌ راسخة",
+      "credit": "إعداد الأستاذ محمود بركات",
+      "cta": "ابدأ رحلتك مع العربية اليوم",
+      "chapter": "اكتشف حروف من الزيتون",
+      "demo": "جولة داخل التطبيق"
+    }
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "de": {
+        "title": "Deine Sprache.\nDeine Wurzeln.",
+        "items": [
+          "Arabisch entdecken",
+          "Selbstständig lernen",
+          "Gemeinsam wachsen"
+        ],
+        "speech": "Eine Sprache öffnet Türen und verbindet uns mit unseren Wurzeln. Entdecke Huroof, die deutsch-arabische Lernwelt von Lehrer Mahmoud Barakat."
+      },
+      "ar": {
+        "title": "حروفٌ نتعلّمها\nوجذورٌ نتمسّك بها",
+        "items": [
+          "لغة نتعلّمها",
+          "هوية نعتزّ بها",
+          "وتعلّم ينمو معنا"
+        ],
+        "speech": "حُرُوفٌ مِنَ الزَّيْتُون. لغة نتعلّمها، وجذور نتمسّك بها. رحلة مع العربية، بإعداد الأستاذ محمود بركات."
+      }
+    },
+    {
+      "id": "path",
+      "de": {
+        "title": "Ein klarer Weg.\nIn deinem Tempo.",
+        "items": [
+          "Sieben Lernstationen",
+          "Vom Buchstaben zum Text",
+          "Jederzeit frei wählen"
+        ],
+        "speech": "Sieben Lernstationen begleiten dich vom Buchstaben bis zu Texten und Grammatik. Du wählst dein Tempo und deinen nächsten Schritt."
+      },
+      "ar": {
+        "title": "طريق واضح\nخطوةً خطوة",
+        "items": [
+          "سبع محطات للتعلّم",
+          "من الحرف إلى النص",
+          "تقدّم بالسرعة المناسبة لك"
+        ],
+        "speech": "سبع محطات، من الحرف إلى النص والقواعد. اتبع المسار، وتعلّم بالسرعة التي تناسبك."
+      }
+    },
+    {
+      "id": "letters",
+      "de": {
+        "title": "Buchstaben\nwerden lebendig.",
+        "items": [
+          "28 Buchstaben und Schreibformen",
+          "Hören, Vokale und Beispielwörter",
+          "Mit Finger oder Maus schreiben"
+        ],
+        "speech": "Entdecke alle achtundzwanzig Buchstaben, ihre Schreibformen und Vokalzeichen. Höre Beispiele und übe das Schreiben mit Finger oder Maus."
+      },
+      "ar": {
+        "title": "اكتشف الحرف\nصوتًا وشكلًا",
+        "items": [
+          "٢٨ حرفًا وأشكالها",
+          "الحركات والنطق والأمثلة",
+          "تدرّب على الكتابة بإصبعك"
+        ],
+        "speech": "اكتشف الحروف وأشكالها وحركاتها. استمع إلى الأمثلة، وتدرّب على الكتابة بإصبعك أو بالفأرة."
+      }
+    },
+    {
+      "id": "sounds",
+      "de": {
+        "title": "Genau hören.\nSicher erkennen.",
+        "items": [
+          "Formen erkennen",
+          "Fehlende Buchstaben ergänzen",
+          "Ähnliche Laute unterscheiden"
+        ],
+        "speech": "Erkenne Formen, ergänze und umkreise Buchstaben. Mit Hörübungen lernst du außerdem, ähnliche arabische Laute zu unterscheiden."
+      },
+      "ar": {
+        "title": "أصوات متشابهة\nوتفاصيل تصنع الفرق",
+        "items": [
+          "أشكال الحرف والحرف الناقص",
+          "ضع دائرة حول الحرف",
+          "ميّز بين الأصوات المتقاربة"
+        ],
+        "speech": "أكمل الحروف الناقصة، وميّز أشكالها، وضع دائرة حول الحرف المطلوب. ودرّب أذنك على الأصوات المتقاربة."
+      }
+    },
+    {
+      "id": "reading",
+      "de": {
+        "title": "Aus Lauten\nwerden Wörter.",
+        "items": [
+          "Laute gliedern und verbinden",
+          "Wörter nach Gehör ergänzen",
+          "Wortfamilien entdecken"
+        ],
+        "speech": "Zerlege Wörter in Laute und setze Buchstaben zusammen. Ergänze Wörter nach Gehör und entdecke die Muster in Wortfamilien."
+      },
+      "ar": {
+        "title": "من الصوت\nإلى الكلمة",
+        "items": [
+          "تقطيع الكلمات ودمج الأصوات",
+          "إكمال الحرف الناقص",
+          "اكتشاف عائلات الكلمات"
+        ],
+        "speech": "حلّل الكلمات إلى وحداتها الصوتية، وادمج الحروف، وأكمل الكلمات، واكتشف الأنماط المشتركة في عائلاتها."
+      }
+    },
+    {
+      "id": "vocab",
+      "de": {
+        "title": "Wörter für\ndeinen Alltag.",
+        "items": [
+          "A1 · A2 · B1 · B2",
+          "120 Listen · 2.400 Einträge",
+          "Vokalzeichen, Bilder und Audio"
+        ],
+        "speech": "Vier Wortschatzstufen, hundertzwanzig Themenlisten. Lernkarten verbinden vokalisiertes Arabisch mit deutscher Bedeutung und Aussprache. Kleine Bilder unterstützen das Lernen vieler Alltagsbegriffe."
+      },
+      "ar": {
+        "title": "مفردات تنمو\nمع مستواك",
+        "items": [
+          "A1 · A2 · B1 · B2",
+          "١٢٠ قائمة · ٢٤٠٠ مدخل",
+          "تشكيل ونطق وصور توضيحية"
+        ],
+        "speech": "أربعة مستويات، ومئة وعشرون قائمة. مفردات مشكّلة، ومعانٍ ألمانية، ونطق مسموع، وصور توضيحية لكثير من الكلمات اليومية."
+      }
+    },
+    {
+      "id": "tests",
+      "de": {
+        "title": "Ein Wort.\nSechs Wege zu üben.",
+        "items": [
+          "Schreiben, Auswählen und Hören",
+          "Lücken und verbundene Formen",
+          "Buchstaben richtig ordnen"
+        ],
+        "speech": "Sechs Testarten festigen deinen Wortschatz: Schreiben, Auswählen, Hören, Buchstaben ergänzen, verbundene Formen erkennen und verstreute Zeichen richtig ordnen."
+      },
+      "ar": {
+        "title": "كلمة واحدة\nوست طرق للتدرّب",
+        "items": [
+          "الكتابة والاختيار والاستماع",
+          "الحروف الناقصة والمتصلة",
+          "ترتيب الحروف المبعثرة"
+        ],
+        "speech": "ستة اختبارات: الكتابة، والاختيار، والاستماع، والحروف الناقصة والمتصلة، وترتيب الحروف المبعثرة لتكوين الكلمات."
+      }
+    },
+    {
+      "id": "sentences",
+      "de": {
+        "title": "Wissen wird\nzu Sprache.",
+        "items": [
+          "120 Satzbauaufgaben",
+          "Aussagen, Fragen und Aufforderungen",
+          "Mit Hinweisen und Hörbeispielen"
+        ],
+        "speech": "Bilde Aussagen, Fragen und Aufforderungen mit Alltagswortschatz. Hundertzwanzig Satzbauaufgaben, hilfreiche Hinweise und Hörbeispiele begleiten dich."
+      },
+      "ar": {
+        "title": "رتّب الكلمات\nواصنع المعنى",
+        "items": [
+          "١٢٠ تدريبًا على تكوين الجمل",
+          "جمل وأسئلة وأوامر",
+          "تلميحات ونطق مسموع"
+        ],
+        "speech": "كوّن جملًا وأسئلة وتعبيرات مفيدة. رتّب الكلمات، واستفد من التلميحات، ثم استمع إلى الجملة بعد حلّها."
+      }
+    },
+    {
+      "id": "stories",
+      "de": {
+        "title": "Lesen. Hören.\nVerstehen.",
+        "items": [
+          "Illustrierte Kurzgeschichten",
+          "Deutsche Übersetzung auf Wunsch",
+          "Fragen zum Textverständnis"
+        ],
+        "speech": "Lies und höre bebilderte Kurzgeschichten. Entdecke neue Wörter, beantworte Verständnisfragen und blende bei Bedarf die deutsche Übersetzung ein."
+      },
+      "ar": {
+        "title": "قصص قصيرة\nومعانٍ قريبة",
+        "items": [
+          "قصص مصوّرة من الحياة اليومية",
+          "الترجمة الألمانية عند الطلب",
+          "أسئلة لفهم المقروء"
+        ],
+        "speech": "قصص قصيرة مصوّرة: اقرأ، واستمع، وأجب عن أسئلة الفهم. وأظهر الترجمة الألمانية عند الحاجة."
+      }
+    },
+    {
+      "id": "books",
+      "de": {
+        "title": "Vier Bücher.\nViele Lernmomente.",
+        "items": [
+          "Texte und Dialoge",
+          "Interaktive Aufgaben und Einheiten",
+          "Schreiben, Wiederholen, Drucken"
+        ],
+        "speech": "Vier eigenständige Bücher bieten Buchstabenlektionen, Dialoge, Texte und abwechslungsreiche Übungen. Bearbeite die Einheiten digital oder nutze die verfügbaren Druckansichten."
+      },
+      "ar": {
+        "title": "أربعة كتب\nفي مكان واحد",
+        "items": [
+          "دروس ونصوص وحوارات",
+          "وحدات وتمارين تفاعلية",
+          "قراءة وكتابة ومراجعة"
+        ],
+        "speech": "أربعة كتب مستقلة، تضم دروسًا وحوارات ونصوصًا وتمارين تفاعلية. مع خيارات للطباعة والتدريب."
+      }
+    },
+    {
+      "id": "grammar",
+      "de": {
+        "title": "Grammatik\nmit einem roten Faden.",
+        "items": [
+          "37 Lektionen in vier Lernstufen",
+          "Grammatik und Rechtschreibung",
+          "48 Verben: Vergangenheit bis Imperativ"
+        ],
+        "speech": "Lerne Grammatik und Rechtschreibung in vier aufbauenden Stufen. Übe Regeln mit Erklärungen und konjugiere Verben in Vergangenheit, Gegenwart und Imperativ."
+      },
+      "ar": {
+        "title": "افهم القاعدة\nوطبّقها بثقة",
+        "items": [
+          "٣٧ درسًا في أربع مراحل",
+          "قواعد وإملاء وتمارين مفسّرة",
+          "٤٨ فعلًا: الماضي والمضارع والأمر"
+        ],
+        "speech": "قواعد وإملاء في أربع مراحل متدرّجة، وتصحيح مفسّر. وتدريبات لتصريف الأفعال في الماضي والمضارع والأمر."
+      }
+    },
+    {
+      "id": "placement",
+      "de": {
+        "title": "Finde deinen\npassenden Einstieg.",
+        "items": [
+          "Fünf Checks mit je zwei Varianten",
+          "Dein persönliches Fertigkeitsprofil",
+          "Empfehlungen für passende Lektionen"
+        ],
+        "speech": "Finde deinen passenden Einstieg: Fünf Checks mit jeweils zwei Varianten zeigen deine Stärken, deinen Übungsbedarf und passende Lektionen."
+      },
+      "ar": {
+        "title": "اكتشف\nنقطة بدايتك",
+        "items": [
+          "خمسة اختبارات بنموذجين لكل اختبار",
+          "ملف شخصي للمهارات",
+          "توصيات بالدروس المناسبة"
+        ],
+        "speech": "اكتشف نقطة بدايتك بخمسة اختبارات، بنموذجين لكل اختبار. واحصل على ملف مهارات وتوصيات بالدروس المناسبة."
+      }
+    },
+    {
+      "id": "exams",
+      "de": {
+        "title": "Tests, die zum\nMitmachen einladen.",
+        "items": [
+          "20 Original- und Übungsmodelle",
+          "Interaktiv lösen und Antworten speichern",
+          "Korrektur und Lehrkraftbewertung"
+        ],
+        "speech": "Löse Originaltests von Lehrer Mahmoud Barakat und ähnliche Modelle direkt in der App. Mit gespeicherten Antworten, automatischer Korrektur oder Lehrkraftbewertung."
+      },
+      "ar": {
+        "title": "اختبر تعلّمك\nداخل التطبيق",
+        "items": [
+          "٢٠ نموذجًا أصليًا ومشابهًا",
+          "حل تفاعلي وحفظ الإجابات",
+          "تصحيح آلي ومراجعة المعلم"
+        ],
+        "speech": "حل اختبارات الأستاذ محمود بركات ونماذج مشابهة، مع حفظ الإجابات، والتصحيح الآلي، ومراجعة المعلم للأسئلة المفتوحة."
+      }
+    },
+    {
+      "id": "progress",
+      "de": {
+        "title": "Jeder Versuch\nbringt dich weiter.",
+        "items": [
+          "Fehler gezielt wiederholen",
+          "Lernfortschritt und Ergebnisse verfolgen",
+          "Ermutigendes Feedback erhalten"
+        ],
+        "speech": "Fehler werden zu Lernchancen. Wiederhole schwierige Wörter, verfolge deine Ergebnisse und deinen Fortschritt. Ermutigendes Feedback hilft dir beim Weiterlernen."
+      },
+      "ar": {
+        "title": "كل محاولة\nخطوة إلى الأمام",
+        "items": [
+          "راجع الكلمات التي أخطأت فيها",
+          "تابع النتائج والتقدّم",
+          "تشجيع عند النجاح وعند الخطأ"
+        ],
+        "speech": "راجع كلماتك الصعبة، وتابع نتائجك وتقدّمك. وتشجّع بعبارات تحفيزية عند النجاح، وعند الخطأ أيضًا."
+      }
+    },
+    {
+      "id": "flexible",
+      "de": {
+        "title": "Dein Lernen.\nDeine Möglichkeiten.",
+        "items": [
+          "Deutsch oder Arabisch · Handy oder PC",
+          "Eigene Wortlisten per Excel",
+          "Online-Konto mit Synchronisierung"
+        ],
+        "speech": "Am Handy oder Computer, auf Deutsch oder Arabisch. Wähle Hintergründe und importiere Excel-Wortlisten. Online mit Konto und Synchronisierung; offline mit Speicherung im Browser."
+      },
+      "ar": {
+        "title": "تعلّم يناسبك\nأينما كنت",
+        "items": [
+          "واجهة عربية وألمانية · هاتف وحاسوب",
+          "قوائمك الخاصة عبر إكسل",
+          "حساب ومزامنة في النسخة الإلكترونية"
+        ],
+        "speech": "على الهاتف والحاسوب، بالعربية والألمانية. اختر خلفيتك، واستورد قوائم إكسل. حساب ومزامنة في النسخة الإلكترونية، وحفظ محلي في النسخة غير المتصلة."
+      }
+    },
+    {
+      "id": "outro",
+      "de": {
+        "title": "Wachsen mit Sprache.\nVerbunden mit den Wurzeln.",
+        "items": [
+          "Huroof · حروف من الزيتون",
+          "Für Lernende und Lehrende",
+          "Beginne mit deinem ersten Schritt"
+        ],
+        "speech": "Für Lernende und Lehrende. Zum Entdecken, Üben und Weiterwachsen. Huroof: Arabisch lernen, mit starken Wurzeln. Beginne mit deinem ersten Schritt."
+      },
+      "ar": {
+        "title": "تعلّمٌ ينمو\nوجذورٌ راسخة",
+        "items": [
+          "حروف من الزيتون",
+          "للمتعلّم وللمعلّم",
+          "ابدأ رحلتك مع العربية اليوم"
+        ],
+        "speech": "للمتعلّم وللمعلّم. حروف من الزيتون: تعلّم ينمو، وجذور راسخة. ابدأ رحلتك مع العربية اليوم."
+      }
+    }
+  ]
+}

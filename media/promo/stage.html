@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1920,initial-scale=1">
+  <title>Huroof · Werbefilm / فيلم تعريفي</title>
+  <style>
+    @font-face{font-family:Manrope;src:url('../../fonts/manrope-latin.woff2');font-weight:200 800}
+    @font-face{font-family:OliveArabic;src:url('../../fonts/noto-naskh-arabic.woff');font-weight:400 700}
+    *{box-sizing:border-box}body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#f5f1e5;color:#234738;font-family:Manrope,OliveArabic,Tahoma,sans-serif}
+    .paper{position:absolute;inset:0;background:url('../../images/brand/olive-pattern.svg') repeat;background-size:600px 530px;opacity:.38}
+    .glow{position:absolute;width:1400px;height:1400px;left:740px;top:-320px;background:radial-gradient(circle,#d8e3c970,transparent 65%);border-radius:50%;animation:drift 24s ease-in-out infinite alternate}
+    .branch{position:absolute;left:-60px;bottom:0;width:360px;height:650px;background:url('../../images/brand/olive-card-branch.svg') center/contain no-repeat;opacity:.8}
+    header{position:absolute;inset:42px 68px auto;display:flex;align-items:center;justify-content:space-between;z-index:4}
+    .wordmark{display:flex;align-items:center;gap:19px}.wordmark img{width:65px;height:65px}.wordmark strong{font:700 44px OliveArabic;direction:rtl}.wordmark small{font-size:17px;letter-spacing:3px;margin-inline-start:22px;color:#6b7c59}
+    .chapter{display:flex;align-items:center;gap:20px;font-size:18px;color:#5b7354}.counter{background:#dfe8ce;border:1px solid #a7b994;border-radius:30px;padding:10px 22px;font-size:20px;font-weight:700;min-width:107px;text-align:center}
+    .copy{position:absolute;left:72px;top:227px;width:570px;transition:opacity .3s,transform .3s}.kicker{font-size:18px;font-weight:700;color:#78834e;letter-spacing:3px;margin-bottom:24px}
+    h1{font-size:61px;letter-spacing:-1.5px;line-height:1.23;font-weight:800;white-space:pre-line;margin:0 0 35px;overflow-wrap:anywhere}
+    .items{display:flex;flex-direction:column;gap:16px}.item{min-height:66px;display:flex;align-items:center;gap:16px;font-size:23px;line-height:1.45;padding:12px 17px;border:1px solid #c5d2b7;border-radius:16px;background:#fffdf5c9;color:#355b40}.item::before{content:'✓';font-family:Manrope;font-weight:800;color:#7a8b49;font-size:25px}
+    .app-window{position:absolute;left:700px;top:155px;width:1150px;height:748px;border:1px solid #acbc9b;border-radius:25px;overflow:hidden;box-shadow:0 30px 70px #28472d18;background:#fffdf6;animation:arrive .6s ease-out}
+    .window-bar{height:38px;background:#e6ecd9;display:flex;align-items:center;justify-content:space-between;padding:0 19px;font-size:14px;color:#617452;letter-spacing:.4px}.dots{display:flex;gap:7px}.dots i{width:9px;height:9px;border-radius:50%;background:#a9b894}.dots i:nth-child(2){background:#bbbf9b}.dots i:nth-child(3){background:#c3c8b2}
+    iframe{display:block;border:0;width:1280px;height:790px;transform:scale(.8984375);transform-origin:top left;background:#fffdf6}
+    .loading{position:absolute;inset:38px 0 0;display:grid;place-items:center;background:#f6f4e9;opacity:0;pointer-events:none;transition:opacity .25s}.loading img{width:90px;opacity:.7}.app-window[data-ready=false] .loading{opacity:1}
+    .hero{position:absolute;inset:130px 75px 180px;text-align:center;display:none}.hero-mark{width:160px;height:160px;margin:0 auto 20px;display:block}.hero-brand{font:700 110px/1.25 OliveArabic;direction:rtl;margin:0 0 25px}.hero-tag{font-size:49px;font-weight:700;color:#486b45;margin:0 auto 22px;max-width:1550px;line-height:1.4}.hero-credit{font-size:27px;line-height:1.6;color:#72815a;margin:12px 0 24px}.hero-items{display:flex;justify-content:center;gap:18px;flex-wrap:wrap}.hero-items span{background:#e1e9d2;border:1px solid #b1c299;padding:15px 29px;border-radius:40px;font-size:25px;font-weight:600}.hero-cta{font-size:30px;margin-top:24px;color:#335e42;font-weight:700}
+    .subtitle{position:absolute;bottom:21px;left:69px;width:1782px;height:142px;border-radius:21px;background:#214735;color:#fffdf4;padding:17px 42px;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 32px #1b3f3313;text-align:center;font-size:32px;line-height:1.5;z-index:6}.subtitle:empty{opacity:0}.total-progress{position:absolute;bottom:0;left:0;height:6px;background:#7d9757;width:0;z-index:7}
+    body.ar .copy{left:auto;right:72px;direction:rtl;text-align:right}body.ar h1{font-family:OliveArabic;font-size:81px;letter-spacing:0;line-height:1.4;margin-bottom:24px}body.ar .kicker{letter-spacing:0;font-size:26px;margin-bottom:11px}body.ar .item{font-family:OliveArabic;font-size:30px;line-height:1.45;padding:8px 17px}body.ar .app-window{left:70px}body.ar .subtitle{direction:rtl;font-family:OliveArabic;font-size:40px;line-height:1.38}body.ar .hero-tag{font-family:OliveArabic;font-size:70px;line-height:1.35}body.ar .hero-credit{font-family:OliveArabic;font-size:36px}body.ar .hero-items{direction:rtl}body.ar .hero-items span{font-family:OliveArabic;font-size:32px;padding:7px 29px}body.ar .hero-cta{font-family:OliveArabic;font-size:38px;margin-top:16px}body.ar .chapter{direction:rtl;font-family:OliveArabic;font-size:25px}
+    body.hero-mode .hero{display:block;animation:arrive .9s ease-out}body.hero-mode .copy,body.hero-mode .app-window{display:none}
+    body.hero-mode.outro .hero-mark{width:140px;height:140px;margin-bottom:10px}body.hero-mode.outro .hero-brand{font-size:100px;margin-bottom:10px}body.hero-mode.outro .hero-tag{font-size:46px;white-space:pre-line}body.ar.hero-mode.outro .hero-tag{font-size:65px;line-height:1.25}body.hero-mode.outro .hero-credit{margin:8px 0 18px}
+    @keyframes arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes drift{to{transform:translate(-90px,80px)}}
+  </style>
+</head>
+<body class="hero-mode">
+  <div class="paper"></div><div class="glow"></div><div class="branch"></div>
+  <header><div class="wordmark"><img src="../../images/brand/olive-symbol.svg" alt=""><strong>حروف من الزيتون</strong><small>HUROOF</small></div><div class="chapter"><span id="chapter-label"></span><span class="counter" id="counter">01 / 16</span></div></header>
+  <div class="copy"><div class="kicker" id="kicker"></div><h1 id="scene-title"></h1><div class="items" id="items"></div></div>
+  <div class="app-window" id="window" data-ready="false"><div class="window-bar"><span class="dots"><i></i><i></i><i></i></span><span id="window-label"></span><span>حروف من الزيتون</span></div><iframe id="app" title="Huroof app"></iframe><div class="loading"><img src="../../images/brand/olive-symbol.svg" alt=""></div></div>
+  <div class="hero"><img class="hero-mark" src="../../images/brand/olive-symbol.svg" alt=""><h2 class="hero-brand">حروف من الزيتون</h2><p class="hero-tag" id="hero-tag"></p><p class="hero-credit" id="hero-credit"></p><div class="hero-items" id="hero-items"></div><p class="hero-cta" id="hero-cta"></p></div>
+  <div class="subtitle" id="subtitle"></div><div class="total-progress" id="progress"></div>
+  <script>
+    const lang=new URLSearchParams(location.search).get('lang')==='ar'?'ar':'de';document.documentElement.lang=lang;document.body.classList.add(lang);
+    const urls={path:'index.html',letters:'huruf.html',sounds:'huruf.html',reading:'reading.html',vocab:'vocabulary.html',tests:'test.html',sentences:'sentences.html',stories:'stories.html',books:'books.html',grammar:'grammar.html',placement:'placement.html',exams:'exams.html',progress:'review.html',flexible:'vocabulary.html'};
+    const $=id=>document.getElementById(id);let data,t0=null,current=-1,subtitle=-1;
+    $('app').addEventListener('load',()=>{$('window').dataset.ready='true'});
+    function scene(i){const s=data.scenes[i];current=i;window.presentation.current=i;document.body.classList.toggle('hero-mode',['intro','outro'].includes(s.id));document.body.classList.toggle('outro',s.id==='outro');$('counter').textContent=String(i+1).padStart(2,'0')+' / '+data.scenes.length;$('scene-title').textContent=s.title;$('kicker').textContent=data.meta.chapter;$('items').replaceChildren(...s.items.map(t=>{const e=document.createElement('div');e.className='item';e.textContent=t;return e}));$('hero-tag').textContent=s.id==='outro'?s.title:data.meta.tagline;$('hero-credit').textContent=data.meta.credit;$('hero-cta').textContent=s.id==='outro'?data.meta.cta:'';$('hero-items').replaceChildren(...s.items.map(t=>{const e=document.createElement('span');e.textContent=t;return e}));if(urls[s.id]){$('window').dataset.ready='false';$('app').src='../../'+urls[s.id]}}
+    function tick(){if(t0!==null){const time=(performance.now()-t0)/1000;window.presentation.time=time;const index=data.scenes.findIndex(s=>time>=s.start&&time<s.end);if(index>=0&&index!==current)scene(index);const si=data.subtitles.findIndex(s=>time>=s.start&&time<s.end);if(si!==subtitle){subtitle=si;$('subtitle').textContent=si>=0?data.subtitles[si].text:''}$('progress').style.width=Math.min(100,time/data.duration*100)+'%';if(time>=data.duration)window.presentation.finished=true}requestAnimationFrame(tick)}
+    fetch('timeline-'+lang+'.json').then(r=>r.json()).then(d=>{data=d;window.presentation={current:-1,time:0,finished:false,data};$('chapter-label').textContent=d.meta.chapter;$('window-label').textContent=d.meta.demo;scene(0);window.showSceneForPreview=i=>{scene(i);$('subtitle').textContent=d.subtitles.find(s=>s.start>=d.scenes[i].start)?.text||''};window.startPresentation=()=>{t0=performance.now();window.presentation.started=true};tick()});
+  </script>
+</body>
+</html>

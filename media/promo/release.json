@@ -1,0 +1,20 @@
+{
+  "brand": "حروف من الزيتون",
+  "format": "1920×1080 / 16:9 / H.264 + AAC",
+  "videos": [
+    {
+      "language": "de",
+      "file": "Huroof-Werbung-DE.mp4",
+      "seconds": 180.015,
+      "bytes": 19239124,
+      "sha256": "4928e5486e4766578d2a2b56c21b2cefb85acaa490a041d807a270b7c091b942"
+    },
+    {
+      "language": "ar",
+      "file": "Huroof-Werbung-AR.mp4",
+      "seconds": 196.68,
+      "bytes": 18493559,
+      "sha256": "4123e8521b722b6d5a4c05d351beffce4a6470242ee11079e638c39ac0caca86"
+    }
+  ]
+}
