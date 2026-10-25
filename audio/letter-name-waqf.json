@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-25",
   "provider": "Google Translate TTS (ar)",
   "slow": true,
   "pronunciation": "Letter names with final sukun (waqf); no final case vowel.",
@@ -36,8 +36,13 @@
       "letter": "ج",
       "name": "الجيم",
       "text": "الْجِيمْ",
-      "path": "audio/letters/05-name-waqf.mp3",
-      "sha256": "d9ec6e81538d1a5f72bc721299c67377ebebd2cc51478fa0c53b9d7c6eebbab7"
+      "path": "audio/letters/05-clear-name-waqf.mp3",
+      "sha256": "1f169c917f172e690ddf93b0aa63e2a995444321f5f490f6bd3b983e4cd40f13",
+      "synthesisText": "اِسْمُ الْحَرْفِ. اَلْجِيمْ.",
+      "trimStart": 1.4963,
+      "trimEnd": 2.346,
+      "sourceSha256": "c2fe5ee8963a4ebbbe8d5827882aa1949c2a34f8a94b4249965bc9b797236b43",
+      "seconds": 0.9143
     },
     {
       "letter": "ح",
@@ -190,8 +195,13 @@
       "letter": "و",
       "name": "الواو",
       "text": "الْوَاوْ",
-      "path": "audio/letters/27-name-waqf.mp3",
-      "sha256": "f21fda8e8a5c26185fc82792769503932de6a96795bf43e0c2ab3e7d2e7a17c6"
+      "path": "audio/letters/27-clear-name-waqf.mp3",
+      "sha256": "57f008b103e3deb84610c67cf3dc91b5965ccb74967a102e072958d9683fb57a",
+      "synthesisText": "اِسْمُ الْحَرْفِ. اَلْوَاوْ.",
+      "trimStart": 1.4963,
+      "trimEnd": 2.3097,
+      "sourceSha256": "2dbb5da891a468fc18816a7b1cf8c0e0062537fa94d8ff2e2e153117f77b5262",
+      "seconds": 0.8882
     },
     {
       "letter": "ي",

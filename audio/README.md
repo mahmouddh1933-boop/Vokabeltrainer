@@ -1,5 +1,7 @@
 # أصوات الحروف · Alphabet audio
 
+**2026-10-25 revision:** Jīm, Wāw and the reported picture words have refreshed, explicitly vocalized target recordings under new filenames. The Kasra form is **إِ**. The related Alif-maqṣūra example is now **فَتَى**, read in pause without tanwīn. See [the revision notes](../docs/LETTER-PRONUNCIATION-REVISION.md) and `letter-pronunciation-revision.json` for exact prompts, target extraction and hashes. Historical descriptions below document earlier releases.
+
 168 MP3 clips are bundled with the application: 28 Arabic letter names, 28 example words and four marked forms per letter. The files play directly from the same folder as the application; they require no TTS service or installed Arabic voice at playback time. Keep `audio/letters/` when copying or extracting the app.
 
 The clips were generated with Arabic speech from the Google Translate TTS endpoint already used by this application and downloaded over verified HTTPS on 2026-10-18. Pronunciation corrections were generated on 2026-10-19 with explicitly vocalized text and the slower-speech request parameter. `pronunciation-corrections.json` records those 38 synthesis inputs and file paths. `js/letter-data.js` maps Arabic text to each file, including aliases for vocalized example words. They are synthesized speech, not human recordings.

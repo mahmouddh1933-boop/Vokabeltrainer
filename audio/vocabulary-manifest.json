@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "provider": "Google Translate TTS (ar); existing verified local lesson recordings reused",
   "catalogEntries": 2400,
   "clips": [
@@ -6839,9 +6839,9 @@
     },
     {
       "text": "ظَرْفٌ",
-      "path": "audio/vocabulary/00c1e4f6ef15e007.mp3",
-      "seconds": 1.228,
-      "sha256": "b5a43ad96461ff8d6773d5b17e1777a36d00f47eb821099c849c851332f6f496"
+      "path": "audio/letters/17-clear-word.mp3",
+      "seconds": 1.0188,
+      "sha256": "ac4a95ff28732053dd7139cba6af753481da3e4e82747a34c8214ac64cbc67bb"
     },
     {
       "text": "ظَهْرٌ",
@@ -7385,9 +7385,9 @@
     },
     {
       "text": "عِنَبٌ",
-      "path": "audio/vocabulary/9540222cca4e8742.mp3",
-      "seconds": 1.149,
-      "sha256": "5622710ef9d1bd82805e417c262a847a404053c89517f4c6476c102c7d411303"
+      "path": "audio/letters/18-clear-word.mp3",
+      "seconds": 0.9404,
+      "sha256": "5aac5ec299297f42ee75bc8ba4b42a6970e6c09eaf88ac58db70eea0b8a0e823"
     },
     {
       "text": "عِنْدَ",
@@ -7925,9 +7925,9 @@
     },
     {
       "text": "فِيلٌ",
-      "path": "audio/vocabulary/631bd896f52b36fb.mp3",
-      "seconds": 1.123,
-      "sha256": "f2476c0a4ea76c1cf4725050927168a8969e392cda847c0f44ad6cbe9cc14ac2"
+      "path": "audio/letters/20-clear-word.mp3",
+      "seconds": 0.9143,
+      "sha256": "a961bedff1674d0729b44de5cd6bdd98c2e12a2235b78c16ad106c560909cdfb"
     },
     {
       "text": "فِيلْمٌ",
@@ -8651,9 +8651,9 @@
     },
     {
       "text": "لَيْمُونٌ",
-      "path": "audio/vocabulary/0a76198a4e746ff3.mp3",
-      "seconds": 1.254,
-      "sha256": "4ca05fe68af933714617d9af14989a96cda1a51ddbd56b0da18825ddff9a954d"
+      "path": "audio/letters/23-clear-word.mp3",
+      "seconds": 1.0971,
+      "sha256": "c2c1f77099e85ce36f3a5202ca6f0cc9f461fa1c0fda36d655f4674bcb07d197"
     },
     {
       "text": "لُبْنَانُ",
@@ -12473,9 +12473,9 @@
     },
     {
       "text": "يَدٌ",
-      "path": "audio/vocabulary/c90c8c6d2d28ee31.mp3",
-      "seconds": 1.019,
-      "sha256": "00f540c5cf6c1c1b86276237e3f18b9b6e637c28425eef3ab763a219ed909ab1"
+      "path": "audio/letters/28-clear-word.mp3",
+      "seconds": 0.8359,
+      "sha256": "3a98b7e5069a67b3942cf74bf0bb080334358b49cd3321dc4a0ae88091c093ed"
     },
     {
       "text": "يَدْحَضُ",

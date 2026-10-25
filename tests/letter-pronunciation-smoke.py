@@ -44,14 +44,16 @@ with sync_playwright() as p:
         assert actual['gesture'] and actual['src'].endswith(expected), actual
     for index, letter in enumerate(letters):
         page.locator('#letters-grid button').nth(index).tap()
-        play('#letter-speak', f'{index+1:02}-name-waqf.mp3')
+        expected = page.evaluate('l=>ArabicLetterData.audio[l.spokenName]',letter)
+        play('#letter-speak', expected)
         assert page.evaluate('__spokenText') == letter['spokenName']
         assert letter['spokenName'].endswith('ْ')
         assert page.locator('#sukun-sample').inner_text() == letter['sukunSample']
         play('#harakat-row button:nth-child(4)', f'{index+1:02}-vowel-3.mp3')
         if letter.get('spokenWord'):
             assert page.locator('#letter-card-word').inner_text() == letter['spokenWord']
-            play('#card-say-word', f'{index+1:02}-word.mp3')
+            expected = page.evaluate('l=>ArabicLetterData.audio[l.spokenWord.normalize("NFC")]',letter)
+            play('#card-say-word', expected)
         if letter['char'] == 'ت':
             for mark in range(3):
                 play(f'#harakat-row button:nth-child({mark+1})', f'03-vowel-{mark}.mp3')

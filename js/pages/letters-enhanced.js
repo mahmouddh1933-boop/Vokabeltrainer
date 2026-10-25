@@ -84,7 +84,7 @@
     signs.forEach((mark, i) => {
       let b = document.createElement("button");
       b.type = "button";
-      const shown = d.char + mark;
+      const shown = d.vowelForms[i];
       b.innerHTML =
         '<span class="marked" lang="ar">' +
         shown +
@@ -139,14 +139,39 @@
     ctx = canvas.getContext("2d");
   let drawing = false;
   function drawGuide() {
-    ctx.clearRect(0, 0, 620, 290);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     if (guide) {
       ctx.save();
       ctx.fillStyle = "rgba(31,93,125,.14)";
       ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.font = "210px Tahoma,Arial";
-      ctx.fillText(data[index].char, 310, 145);
+      ctx.textBaseline = "alphabetic";
+      // Centre the ink itself, including Alif's high hamza, rather than a font's
+      // baseline box. Fit every glyph inside a margin before computing its origin.
+      const padding = 32;
+      let size = 210;
+      ctx.font = `${size}px Tahoma,Arial`;
+      const measure = () => {
+        const m = ctx.measureText(data[index].char);
+        return {
+          left: Number.isFinite(m.actualBoundingBoxLeft) ? m.actualBoundingBoxLeft : m.width / 2,
+          right: Number.isFinite(m.actualBoundingBoxRight) ? m.actualBoundingBoxRight : m.width / 2,
+          ascent: Number.isFinite(m.actualBoundingBoxAscent) ? m.actualBoundingBoxAscent : size * .8,
+          descent: Number.isFinite(m.actualBoundingBoxDescent) ? m.actualBoundingBoxDescent : size * .2,
+        };
+      };
+      let metrics = measure();
+      const inkWidth = metrics.left + metrics.right;
+      const inkHeight = metrics.ascent + metrics.descent;
+      const scale = Math.min(1, (canvas.width - 2 * padding) / Math.max(1, inkWidth),
+        (canvas.height - 2 * padding) / Math.max(1, inkHeight));
+      if (scale < 1) {
+        size *= scale;
+        ctx.font = `${size}px Tahoma,Arial`;
+        metrics = measure();
+      }
+      const x = canvas.width / 2 + (metrics.left - metrics.right) / 2;
+      const y = canvas.height / 2 + (metrics.ascent - metrics.descent) / 2;
+      ctx.fillText(data[index].char, x, y);
       ctx.restore();
     }
   }

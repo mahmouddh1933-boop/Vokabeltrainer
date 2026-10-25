@@ -25,7 +25,9 @@ args.cache.mkdir(parents=True, exist_ok=True)
 catalog = json.loads((ROOT/'data/vocab_catalog.json').read_text())
 texts = sorted({unicodedata.normalize('NFC',w['ar']) for item in catalog['lists'] for w in item['words']})
 existing = {}
-for manifest in sorted((ROOT/'audio').glob('*manifest.json')):
+revision = ROOT/'audio/letter-pronunciation-revision.json'
+sources = ([revision] if revision.exists() else []) + sorted((ROOT/'audio').glob('*manifest.json'))
+for manifest in sources:
     if manifest.name == 'vocabulary-manifest.json': continue
     for clip in json.loads(manifest.read_text()).get('clips',[]):
         if 'text' in clip and 'path' in clip and (ROOT/clip['path']).is_file():

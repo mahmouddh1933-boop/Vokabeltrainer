@@ -88,16 +88,32 @@
       "path": "audio/letters/17-vowel-3.mp3"
     },
     {
-      "text": "ظَرْف",
-      "path": "audio/letters/17-word.mp3"
+      "text": "ظَرْفٌ",
+      "path": "audio/letters/17-clear-word.mp3",
+      "kind": "word",
+      "letter": "ظ",
+      "synthesisText": "الْكَلِمَةُ. ظَرْفٌ.",
+      "trimStart": 1.3162,
+      "trimEnd": 2.2801,
+      "sourceSha256": "0839978946b8c5aa1459b42d11521e219354d8ba241c2a0bef83f8cd62c299d2",
+      "sha256": "ac4a95ff28732053dd7139cba6af753481da3e4e82747a34c8214ac64cbc67bb",
+      "seconds": 1.0188
     },
     {
       "text": "أَعْ",
       "path": "audio/letters/18-vowel-3.mp3"
     },
     {
-      "text": "عِنَب",
-      "path": "audio/letters/18-word.mp3"
+      "text": "عِنَبٌ",
+      "path": "audio/letters/18-clear-word.mp3",
+      "kind": "word",
+      "letter": "ع",
+      "synthesisText": "الْكَلِمَةُ. عِنَبٌ.",
+      "trimStart": 1.3158,
+      "trimEnd": 2.2031,
+      "sourceSha256": "9e53fb5edd441952b14f4eded1fb23b30bc7ad031b9c9bac63acb53f2aa2dcff",
+      "sha256": "5aac5ec299297f42ee75bc8ba4b42a6970e6c09eaf88ac58db70eea0b8a0e823",
+      "seconds": 0.9404
     },
     {
       "text": "أَغْ",
@@ -150,6 +166,78 @@
     {
       "text": "تُ",
       "path": "audio/letters/03-vowel-2.mp3"
+    },
+    {
+      "kind": "word",
+      "letter": "د",
+      "text": "دُبٌّ",
+      "path": "audio/letters/08-clear-word.mp3",
+      "synthesisText": "الْكَلِمَةُ. دُبٌّ.",
+      "trimStart": 1.3122,
+      "trimEnd": 2.1987,
+      "sourceSha256": "b9e7cdb3ed472d9c2829825d921945315adaea321fc4f9670c720b2ecfd1ecee",
+      "sha256": "88ea0304118450c4713ff9c096332f76ff8c95827cf741a5702367ed3fd75a27",
+      "seconds": 0.9404
+    },
+    {
+      "kind": "word",
+      "letter": "ف",
+      "text": "فِيلٌ",
+      "path": "audio/letters/20-clear-word.mp3",
+      "synthesisText": "الْكَلِمَةُ. فِيلٌ.",
+      "trimStart": 1.3513,
+      "trimEnd": 2.1877,
+      "sourceSha256": "111243ed85aef5c6c4e141e1acbe29154cd25d572fd841037d01ec32a196f329",
+      "sha256": "a961bedff1674d0729b44de5cd6bdd98c2e12a2235b78c16ad106c560909cdfb",
+      "seconds": 0.9143
+    },
+    {
+      "kind": "word",
+      "letter": "ل",
+      "text": "لَيْمُونٌ",
+      "path": "audio/letters/23-clear-word.mp3",
+      "synthesisText": "الْكَلِمَةُ. لَيْمُونٌ.",
+      "trimStart": 1.3138,
+      "trimEnd": 2.3372,
+      "sourceSha256": "00183e8673897476e5942c298eb90756355fed3f502df4df038da4a74bf2dc71",
+      "sha256": "c2c1f77099e85ce36f3a5202ca6f0cc9f461fa1c0fda36d655f4674bcb07d197",
+      "seconds": 1.0971
+    },
+    {
+      "kind": "word",
+      "letter": "ه",
+      "text": "هِلَالٌ",
+      "path": "audio/letters/26-clear-word.mp3",
+      "synthesisText": "الْكَلِمَةُ. هِلَالٌ.",
+      "trimStart": 1.3457,
+      "trimEnd": 2.3768,
+      "sourceSha256": "1f8b631c1024b1f186df30bb403a91dc6b549bd602032d3c12509bdffa7e86ff",
+      "sha256": "5a1095cf9df29b65aa857923dcc13bd66970d9c0e7f468c543fb0d1969694625",
+      "seconds": 1.0971
+    },
+    {
+      "kind": "word",
+      "letter": "ي",
+      "text": "يَدٌ",
+      "path": "audio/letters/28-clear-word.mp3",
+      "synthesisText": "الْكَلِمَةُ. يَدٌ.",
+      "trimStart": 1.3175,
+      "trimEnd": 2.0867,
+      "sourceSha256": "50d30dcbda67bbf9b490f998d2f6c793f64bf857004b3883dfaa3c910c23fc54",
+      "sha256": "3a98b7e5069a67b3942cf74bf0bb080334358b49cd3321dc4a0ae88091c093ed",
+      "seconds": 0.8359
+    },
+    {
+      "kind": "vowel",
+      "letter": "أ",
+      "text": "إِ",
+      "path": "audio/letters/01-clear-vowel-1.mp3",
+      "synthesisText": "الصَّوْتُ. إِ.",
+      "trimStart": 1.1748,
+      "trimEnd": 1.7784,
+      "sourceSha256": "97a1841c8fc93d9f0bbd8a888e055d193a6a7453f1cd12aadc7a1b4a06932702",
+      "sha256": "5dcf130df4d77a42f00abedc335e40a948700b3ed50691ba6393d796675e5998",
+      "seconds": 0.6792
     }
   ],
   "supersededClips": [

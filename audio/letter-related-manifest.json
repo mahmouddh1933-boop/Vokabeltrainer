@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-25",
   "provider": "Google Translate TTS (ar)",
   "slow": true,
   "clips": [
@@ -39,9 +39,16 @@
       "sha256": "8c00a094d2badf2b7ababfda325db16f77609968480cbc2a214413974e16ea75"
     },
     {
-      "text": "فَتًى",
-      "path": "audio/letter-related/08.mp3",
-      "sha256": "768a4a3ba7c613058987f2ec4dbfd013baae5d8c9dc643e564d929877ec5235c"
+      "text": "فَتَى",
+      "path": "audio/letter-related/08-waqf.mp3",
+      "sha256": "c5802857496239c3628f94297ce0b66cfcfabea805843813432402cff5bb2b45",
+      "kind": "related",
+      "letter": "ى",
+      "synthesisText": "الْكَلِمَةُ. فَتَى.",
+      "trimStart": 1.3551,
+      "trimEnd": 2.0183,
+      "sourceSha256": "3459f62f2c429ecf141a9694c58f839f2f9de7da26e904d76387640de8d8c792",
+      "seconds": 0.7314
     },
     {
       "text": "بَيْتٌ",

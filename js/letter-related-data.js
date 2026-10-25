@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   const bi = (ar, de) => ({ ar, de });
-  const card = (glyph, target, word, de, arNote, deNote, number) => ({ glyph, target, word, meaning: de, note: bi(arNote, deNote), audio: `audio/letter-related/${String(number).padStart(2,"0")}.mp3` });
+  const card = (glyph, target, word, de, arNote, deNote, number, audio = `audio/letter-related/${String(number).padStart(2,"0")}.mp3`) => ({ glyph, target, word, meaning: de, note: bi(arNote, deNote), audio });
   const groups = {
     "أ": {
       title: bi("الهمزة والألف: صور نقرأها مع الألف", "Hamza und Alif: verwandte Schreibungen"),
@@ -14,7 +14,7 @@
         card("ؤ", "ؤ", "مُؤْمِنٌ", "gläubig", "همزة على كرسي الواو؛ لا ننطق الكرسي واوًا مستقلة.", "Hamza auf Wāw; der Träger ist kein zusätzlicher w-Laut.", 5),
         card("ئ", "ئ", "بِئْرٌ", "Brunnen", "همزة على نبرة، وتسمى همزة على ياء أيضًا.", "Hamza auf einem Yā-Träger, auch Nabra genannt.", 6),
         card("ء", "ء", "مَاءٌ", "Wasser", "همزة مفردة على السطر.", "Hamza ohne Träger auf der Zeile.", 7),
-        card("ى", "ى", "فَتًى", "junger Mann", "ألف مقصورة في آخر الكلمة؛ لا نقطتين تحتها.", "Alif maqṣūra am Wortende, ohne zwei Punkte.", 8),
+        card("ى", "ى", "فَتَى", "junger Mann", "ألف مقصورة في آخر الكلمة؛ لا نقطتين تحتها. نقرأ المثال هنا عند الوقف: فَتَى، بلا تنوين مسموع.", "Alif maqṣūra am Wortende, ohne zwei Punkte. Dieses Beispiel wird in der Pause gesprochen: fatā, ohne hörbares Tanwīn.", 8, "audio/letter-related/08-waqf.mp3"),
       ],
     },
     "ت": {

@@ -78,6 +78,7 @@
         name: "الدال",
         de: "Dal",
         word: "دب",
+        spokenWord: "دُبٌّ",
         meaning: "Bär",
         img: "images/letters/08.svg",
         forms: ["ﺩ", "ﺪ", "ﺩ", "ﺪ"],
@@ -171,7 +172,7 @@
         name: "الظاء",
         de: "Za (emphatisch)",
         word: "ظرف",
-        spokenWord: "ظَرْف",
+        spokenWord: "ظَرْفٌ",
         meaning: "Briefumschlag",
         img: "images/letters/17.svg",
         forms: ["ﻇ", "ﻈ", "ﻅ", "ﻆ"],
@@ -182,7 +183,7 @@
         name: "العين",
         de: "Ain",
         word: "عنب",
-        spokenWord: "عِنَب",
+        spokenWord: "عِنَبٌ",
         meaning: "Trauben",
         img: "images/letters/18.svg",
         forms: ["ﻋ", "ﻌ", "ﻉ", "ﻊ"],
@@ -203,6 +204,7 @@
         name: "الفاء",
         de: "Fa",
         word: "فيل",
+        spokenWord: "فِيلٌ",
         meaning: "Elefant",
         img: "images/letters/20.svg",
         forms: ["ﻓ", "ﻔ", "ﻑ", "ﻒ"],
@@ -233,6 +235,7 @@
         name: "اللام",
         de: "Lam",
         word: "ليمون",
+        spokenWord: "لَيْمُونٌ",
         meaning: "Zitrone",
         img: "images/letters/23.svg",
         forms: ["ﻟ", "ﻠ", "ﻝ", "ﻞ"],
@@ -263,6 +266,7 @@
         name: "الهاء",
         de: "Ha",
         word: "هلال",
+        spokenWord: "هِلَالٌ",
         meaning: "Mondsichel",
         img: "images/letters/26.svg",
         forms: ["ﻫ", "ﻬ", "ﻩ", "ﻪ"],
@@ -283,6 +287,7 @@
         name: "الياء",
         de: "Ya",
         word: "يد",
+        spokenWord: "يَدٌ",
         meaning: "Hand",
         img: "images/letters/28.svg",
         forms: ["ﻳ", "ﻴ", "ﻱ", "ﻲ"],
@@ -293,7 +298,7 @@
       الألف: "audio/letters/01-name-waqf.mp3",
       أسد: "audio/letters/01-word.mp3",
       أَ: "audio/letters/01-vowel-0.mp3",
-      أِ: "audio/letters/01-vowel-1.mp3",
+      إِ: "audio/letters/01-clear-vowel-1.mp3",
       أُ: "audio/letters/01-vowel-2.mp3",
       أْ: "audio/letters/01-vowel-3.mp3",
       الباء: "audio/letters/02-name-waqf.mp3",
@@ -314,7 +319,7 @@
       ثِ: "audio/letters/04-vowel-1.mp3",
       ثُ: "audio/letters/04-vowel-2.mp3",
       ثْ: "audio/letters/04-vowel-3.mp3",
-      الجيم: "audio/letters/05-name-waqf.mp3",
+      الجيم: "audio/letters/05-clear-name-waqf.mp3",
       جمل: "audio/letters/05-word.mp3",
       جَ: "audio/letters/05-vowel-0.mp3",
       جِ: "audio/letters/05-vowel-1.mp3",
@@ -333,7 +338,7 @@
       خُ: "audio/letters/07-vowel-2.mp3",
       خْ: "audio/letters/07-vowel-3.mp3",
       الدال: "audio/letters/08-name-waqf.mp3",
-      دب: "audio/letters/08-word.mp3",
+      دب: "audio/letters/08-clear-word.mp3",
       دَ: "audio/letters/08-vowel-0.mp3",
       دِ: "audio/letters/08-vowel-1.mp3",
       دُ: "audio/letters/08-vowel-2.mp3",
@@ -387,13 +392,13 @@
       طُ: "audio/letters/16-vowel-2.mp3",
       طْ: "audio/letters/16-vowel-3.mp3",
       الظاء: "audio/letters/17-name-waqf.mp3",
-      ظرف: "audio/letters/17-word.mp3",
+      ظرف: "audio/letters/17-clear-word.mp3",
       ظَ: "audio/letters/17-vowel-0.mp3",
       ظِ: "audio/letters/17-vowel-1.mp3",
       ظُ: "audio/letters/17-vowel-2.mp3",
       ظْ: "audio/letters/17-vowel-3.mp3",
       العين: "audio/letters/18-name-waqf.mp3",
-      عنب: "audio/letters/18-word.mp3",
+      عنب: "audio/letters/18-clear-word.mp3",
       عَ: "audio/letters/18-vowel-0.mp3",
       عِ: "audio/letters/18-vowel-1.mp3",
       عُ: "audio/letters/18-vowel-2.mp3",
@@ -405,7 +410,7 @@
       غُ: "audio/letters/19-vowel-2.mp3",
       غْ: "audio/letters/19-vowel-3.mp3",
       الفاء: "audio/letters/20-name-waqf.mp3",
-      فيل: "audio/letters/20-word.mp3",
+      فيل: "audio/letters/20-clear-word.mp3",
       فَ: "audio/letters/20-vowel-0.mp3",
       فِ: "audio/letters/20-vowel-1.mp3",
       فُ: "audio/letters/20-vowel-2.mp3",
@@ -423,7 +428,7 @@
       كُ: "audio/letters/22-vowel-2.mp3",
       كْ: "audio/letters/22-vowel-3.mp3",
       اللام: "audio/letters/23-name-waqf.mp3",
-      ليمون: "audio/letters/23-word.mp3",
+      ليمون: "audio/letters/23-clear-word.mp3",
       لَ: "audio/letters/23-vowel-0.mp3",
       لِ: "audio/letters/23-vowel-1.mp3",
       لُ: "audio/letters/23-vowel-2.mp3",
@@ -441,19 +446,19 @@
       نُ: "audio/letters/25-vowel-2.mp3",
       نْ: "audio/letters/25-vowel-3.mp3",
       الهاء: "audio/letters/26-name-waqf.mp3",
-      هلال: "audio/letters/26-word.mp3",
+      هلال: "audio/letters/26-clear-word.mp3",
       هَ: "audio/letters/26-vowel-0.mp3",
       هِ: "audio/letters/26-vowel-1.mp3",
       هُ: "audio/letters/26-vowel-2.mp3",
       هْ: "audio/letters/26-vowel-3.mp3",
-      الواو: "audio/letters/27-name-waqf.mp3",
+      الواو: "audio/letters/27-clear-name-waqf.mp3",
       وردة: "audio/letters/27-word.mp3",
       وَ: "audio/letters/27-vowel-0.mp3",
       وِ: "audio/letters/27-vowel-1.mp3",
       وُ: "audio/letters/27-vowel-2.mp3",
       وْ: "audio/letters/27-vowel-3.mp3",
       الياء: "audio/letters/28-name-waqf.mp3",
-      يد: "audio/letters/28-word.mp3",
+      يد: "audio/letters/28-clear-word.mp3",
       يَ: "audio/letters/28-vowel-0.mp3",
       يِ: "audio/letters/28-vowel-1.mp3",
       يُ: "audio/letters/28-vowel-2.mp3",
@@ -468,6 +473,8 @@
     "الْكَافْ", "اللَّامْ", "الْمِيمْ", "النُّونْ", "الْهَاءْ", "الْوَاوْ", "الْيَاءْ",
   ];
   for (const [index, letter] of data.letters.entries()) {
+    letter.vowelForms = ["َ", "ِ", "ُ", "ْ"].map(mark =>
+      ((letter.char === "أ" && mark === "ِ" ? "إ" : letter.char) + mark).normalize("NFC"));
     letter.spokenName = spokenNames[index].normalize("NFC");
     const nameAudio = data.audio[letter.name];
     data.audio[letter.spokenName] = nameAudio;
@@ -481,6 +488,11 @@
     if (letter.spokenWord)
       data.audio[letter.spokenWord.normalize("NFC")] = data.audio[letter.word];
   }
+  // The visible Kasra form has its hamza below Alif. Keep the legacy lookup only
+  // for older saved exercises, never render it as an example for the learner.
+  data.audio["أِ".normalize("NFC")] = data.audio["إِ".normalize("NFC")];
+  for (const [legacy, current] of [["ظَرْف", "ظرف"], ["عِنَب", "عنب"]])
+    data.audio[legacy.normalize("NFC")] = data.audio[current];
   if (typeof module !== "undefined" && module.exports) module.exports = data;
   else window.ArabicLetterData = data;
 })();

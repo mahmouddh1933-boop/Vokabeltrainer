@@ -15,17 +15,24 @@ import urllib.parse
 import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
-letters = json.loads(subprocess.check_output(
-    ['node', '-e', 'console.log(JSON.stringify(require("./js/letter-data.js").letters))'],
+data = json.loads(subprocess.check_output(
+    ['node', '-e', 'console.log(JSON.stringify(require("./js/letter-data.js")))'],
     cwd=ROOT, text=True))
+letters = data['letters']
+revision = ROOT/'audio/letter-pronunciation-revision.json'
+revised = {c['path']:c for c in json.loads(revision.read_text())['clips'] if c['kind']=='name'} if revision.exists() else {}
 
 
 def generate(item):
     index, letter = item
     text = letter['spokenName']
     assert text.endswith('ْ')
-    relative = f'audio/letters/{index:02d}-name-waqf.mp3'
+    relative = data['audio'][letter['name']]
     target = ROOT / relative
+    if relative in revised:
+        clip = revised[relative]
+        assert target.exists() and hashlib.sha256(target.read_bytes()).hexdigest() == clip['sha256'], 'Run generate-letter-pronunciation-revision.py first'
+        return {'name':letter['name'],**{k:v for k,v in clip.items() if k!='kind'}}
     for attempt in range(3):
         try:
             query = urllib.parse.urlencode(dict(ie='UTF-8', client='gtx', tl='ar', ttsslow='1', q=text))
