@@ -4,6 +4,12 @@ Ein deutsch-arabischer Vokabeltrainer mit einem neuen responsiven Design: Lern-D
 
 Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](downloads/Huroof-Werbung-DE.mp4), [العربية](downloads/Huroof-Werbung-AR.mp4) oder [beide Filme mit Begleitmaterial als ZIP](downloads/Huroof-Werbevideos-DE-AR.zip). [Inhalt und bearbeitbare Quellen](media/promo/README.md).
 
+## Neue Fertigkeiten und A1/A2-Einheiten
+
+[المهارات والوحدات A1–A2](skills.html): zwölf integrierte Einheiten mit 24 Dialogen, zwölf Lesetexten, Hörverstehen, Gesprächsaufgaben, gestuftem Schreiben und Wortverbindungen. 204 geschlossene Aufgaben und 48 lokale synthetische Tonaufnahmen. Die 60 bestehenden A1/A2-Wortlisten sind verknüpft. Schreiben und Sprechen werden anhand von Beispielen und Kriterien selbst oder mit einer Lehrkraft überprüft. [Inhalt, Aufbau und Prüfungen](docs/SKILLS-AND-VERB-EXPANSION.md).
+
+[تصريف الأفعال](verbs.html) ist in [القواعد والإملاء](grammar.html) dauerhaft erreichbar: 51 Verben einschließlich endschwacher und geminierter Verben sowie Tabellen und Übungen für Verneinung und Verbot.
+
 ## Fertige Version herunterladen
 
 [Modernisierten Vokabeltrainer als ZIP herunterladen](https://github.com/mahmouddh1933-boop/Vokabeltrainer/raw/refs/heads/main/downloads/Vokabeltrainer-modern.zip). Entpacken und `index.html` im Browser öffnen oder den lokalen Server wie unten starten.

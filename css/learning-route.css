@@ -194,3 +194,5 @@ select:focus-visible {
     display: none !important;
   }
 }
+
+.skills-entry-links{display:flex;flex-wrap:wrap;gap:12px;margin-block:18px}.skills-entry-links a{display:inline-flex;max-width:100%;white-space:normal;line-height:1.7}

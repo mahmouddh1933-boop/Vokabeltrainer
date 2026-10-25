@@ -11,11 +11,11 @@ with sync_playwright() as p:
     errors=[]
     page.on('pageerror',lambda e:errors.append(str(e)))
     assert page.goto(base+'/verbs.html').status==200
-    assert page.locator('#verb-select option').count()==48
-    assert page.locator('#verb-select optgroup').count()==3
+    assert page.locator('#verb-select option').count()==51
+    assert page.locator('#verb-select optgroup').count()==4
     assert page.locator('#conjugation-body tr').count()==14
     assert page.locator('#conjugation-body tr').first.locator('.verb-form').text_content()=='كَتَبْتُ'
-    assert page.locator('.app-sidebar a[aria-current="page"]').get_attribute('href')=='verbs.html'
+    assert page.locator('.app-sidebar a[aria-current="page"]').get_attribute('href')=='grammar.html'
     def correct_option():
         pronoun=page.locator('#verb-question strong').inner_text()
         description=page.locator('#verb-question small').inner_text()
@@ -62,7 +62,7 @@ with sync_playwright() as p:
             assert correct_option() in options
     assert page.locator('#verb-specific-note').inner_text()
     # Three/four/five/six-letter filters combine with search and preserve the language switch.
-    for length,count in [('3',30),('4',6),('5',6),('6',6)]:
+    for length,count in [('3',33),('4',6),('5',6),('6',6)]:
         page.locator('#verb-length').select_option(length)
         assert page.locator('#verb-select option').count()==count
         selected=page.locator('#verb-select').input_value()
@@ -108,7 +108,7 @@ with sync_playwright() as p:
     # Changing tense while the results are empty must not restore a stale quiz.
     page.locator('[data-tense="past"]').click()
     page.locator('#verb-clear-search').click()
-    assert page.locator('#verb-select option').count()==48
+    assert page.locator('#verb-select option').count()==51
     assert page.locator('#conjugation-body tr').count()==14
     assert page.locator('#verb-content').is_visible()
     assert correct_option() in page.locator('#verb-answers button').all_text_contents()
@@ -134,7 +134,7 @@ with sync_playwright() as p:
     page.screenshot(path='/tmp/jisr-expanded-verbs-mobile.png')
     page.route('https://cdn.jsdelivr.net/**',lambda route:route.abort())
     page.goto(base+'/index.html')
-    page.locator('.grammar-home-card[href="verbs.html"]').click();page.wait_for_url('**/verbs.html')
+    page.goto(base+'/grammar.html');page.locator('#verbs-entry-title').locator('..').locator('a[href="verbs.html"]').click();page.wait_for_url('**/verbs.html')
     assert not errors,errors
-    print('PASS: 48 verbs / 144 tables, imperative-only addressees, Arabic/German search, empty-result recovery, quiz feedback, DE/AR state preservation and responsive layouts; no JavaScript errors')
+    print('PASS: 51 verbs / 153 tables, imperative-only addressees, Arabic/German search, empty-result recovery, quiz feedback, DE/AR state preservation and responsive layouts; no JavaScript errors')
     browser.close()

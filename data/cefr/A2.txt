@@ -545,7 +545,7 @@
 شَارِبٌ|der Schnurrbart
 مُجَعَّدٌ|lockig
 @المشاعر وردود الفعل|Gefühle und Reaktionen|أصف شعوراً وأشرح سببه في موقف مألوف.
-قَلَقٌ|besorgt
+قَلَقٌ|die Sorge / die Unruhe
 مُتَفَائِلٌ|optimistisch
 مُتَشَائِمٌ|pessimistisch
 مُتَحَمِّسٌ|begeistert

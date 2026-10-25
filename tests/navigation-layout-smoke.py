@@ -26,7 +26,7 @@ with sync_playwright() as p:
     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
     geometry('main a.practice-button, main button.practice-button')
     geometry('main a.practice-button, main button.practice-button','main h2,main h3,main p:not(:has(.practice-button))')
-    links=page.locator('.app-sidebar nav a');assert links.count()==9
+    links=page.locator('.app-sidebar nav a');assert links.count()==10
     if width>960:
      assert page.locator('.app-sidebar').bounding_box()['x']>page.locator('main').bounding_box()['x'] if language=='ar' else True
      geometry('.app-sidebar nav a');links.last.scroll_into_view_if_needed();expect(links.last).to_be_in_viewport()
@@ -39,4 +39,4 @@ with sync_playwright() as p:
  # Deep link from the old PDF-view route now starts an actual transcribed exam.
  page.goto(base+'/exams.html#original=original-01');expect(page.locator('[data-question^=paper-01]')).to_have_count(21);assert page.locator('#lesson-loading').count()==0
  assert not errors,errors;b.close()
- print('Home and placement: no button/button, button/text or sidebar overlaps in AR/DE at 320–1440 px; nine accessible navigation links and original-exam deep links passed.')
+ print('Home and placement: no button/button, button/text or sidebar overlaps in AR/DE at 320–1440 px; ten accessible navigation links and original-exam deep links passed.')

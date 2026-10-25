@@ -1,0 +1,315 @@
+@font-face {
+  font-family: OliveSkillsArabic;
+  src: url("../fonts/noto-naskh-arabic.woff") format("woff");
+  font-display: swap;
+}
+.skills-page {
+  padding: clamp(16px, 3vw, 32px) !important;
+}
+.skills-tabs,
+.skills-actions,
+.skills-module-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 18px;
+}
+.skills-page button,
+.skills-page .practice-button {
+  width: auto;
+  min-height: 46px;
+  max-width: 100%;
+  white-space: normal;
+  line-height: 1.7;
+  padding: 10px 17px;
+}
+.skills-page button[aria-pressed="true"],
+.skills-page a[aria-current="page"] {
+  background: #35654a !important;
+  color: #fff !important;
+  border-color: #35654a !important;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 18px;
+}
+.skills-card,
+.skills-block,
+.skills-player {
+  border: 1px solid #b8cba9;
+  border-radius: 18px;
+  background: #fffdf5 url("../images/brand/olive-card-branch.svg") no-repeat
+    left bottom;
+  background-size: 100px auto;
+  padding: clamp(16px, 2.5vw, 28px);
+  margin-block: 18px;
+  min-width: 0;
+}
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.skills-card h2,
+.skills-card p {
+  margin: 0;
+}
+.skills-card a {
+  margin-top: auto;
+  display: inline-flex;
+  align-self: flex-start;
+}
+.skills-player {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  background: #edf2e3;
+}
+.skills-player p {
+  flex: 1 1 100%;
+  margin: 0;
+}
+.skills-player audio {
+  width: min(100%, 520px);
+  min-width: 0;
+}
+.skills-player select {
+  width: auto;
+  min-height: 44px;
+}
+.skills-lesson {
+  font-family: OliveSkillsArabic, Tahoma, serif;
+  font-size: clamp(23px, 2.2vw, 28px);
+  line-height: 2;
+  direction: rtl;
+  text-align: right;
+  color: #183e32;
+  overflow-wrap: anywhere;
+}
+.skills-lesson h2,
+.skills-lesson h3 {
+  line-height: 1.7;
+}
+.skills-lesson p {
+  color: #234c3b;
+  font-size: inherit;
+  line-height: 2;
+}
+.skills-lesson legend {
+  font-size: inherit;
+  line-height: 1.9;
+  padding-inline: 8px;
+  max-width: 100%;
+}
+.skills-question {
+  margin-block: 24px;
+  padding: 18px;
+  border: 1px solid #b8cba9;
+  border-radius: 16px;
+  min-width: 0;
+  background: #f9faf1;
+}
+.skills-answers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  gap: 12px;
+}
+.skills-answers button {
+  font: inherit;
+  background: #e0e9d5;
+  color: #244936;
+  border: 1px solid #819b6f;
+}
+.skills-answers .is-correct {
+  background: #c8e5c5 !important;
+  border: 2px solid #39713d !important;
+  color: #173f25 !important;
+}
+.skills-answers .is-wrong {
+  background: #f2d6cc !important;
+  border: 2px solid #9b4b35 !important;
+  color: #682f22 !important;
+}
+.skills-feedback {
+  min-height: 1em;
+  font-size: 22px !important;
+}
+.skills-draft {
+  width: 100%;
+  min-height: 170px;
+  resize: vertical;
+  font: inherit;
+  line-height: 1.9;
+  padding: 14px;
+  color: #193f32;
+  background: #fffdf8;
+  border: 2px solid #99b183;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+.skills-dialogue {
+  border-inline-start: 4px solid #8da672;
+  padding-inline: 18px;
+  margin-block: 18px;
+}
+.skills-picture {
+  width: min(100%, 480px);
+  display: block;
+  margin-inline: auto;
+  border-radius: 16px;
+}
+.skills-rubric {
+  display: grid;
+  gap: 16px;
+}
+.skills-rubric label {
+  display: grid;
+  gap: 6px;
+}
+.skills-rubric select {
+  font: inherit;
+  min-height: 50px;
+  width: 100%;
+}
+.skills-vocab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+.skills-vocab-list li {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid #c7d6b9;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: #f5f7ed;
+  font-size: 23px;
+}
+.skills-vocab-list bdi[lang="de"] {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+.skills-note {
+  font:
+    16px/1.9 Tahoma,
+    Arial,
+    sans-serif;
+  color: #46634d;
+  white-space: pre-line;
+}
+.skills-model {
+  white-space: pre-line;
+  background: #eef3e3;
+  border-radius: 12px;
+  padding: 18px;
+}
+.skills-page details {
+  margin-block: 18px;
+}
+.skills-page summary {
+  cursor: pointer;
+}
+.skills-page :focus-visible {
+  outline: 3px solid #a76e28;
+  outline-offset: 3px;
+}
+.skills-order-result {
+  border: 1px dashed #829c70;
+  padding: 12px;
+  min-height: 70px;
+  list-style: decimal inside;
+}
+.skills-score {
+  font:
+    18px/1.9 Tahoma,
+    Arial,
+    sans-serif;
+  color: #284f3b;
+}
+.skills-unit-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.skills-unit-heading h2 {
+  margin: 0;
+}
+.skills-module-nav {
+  position: relative;
+  padding: 12px;
+  background: #eaf0df;
+  border-radius: 12px;
+}
+.skills-page small {
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 15px;
+}
+.skills-page .skills-actions a {
+  display: inline-flex;
+}
+.skills-prompt-label {
+  display: block;
+  margin-block: 14px;
+}
+.skills-page textarea[lang="ar"] {
+  direction: rtl;
+}
+.skills-page [hidden] {
+  display: none !important;
+}
+@media (max-width: 480px) {
+  .skills-page {
+    padding: 14px !important;
+  }
+  .skills-question {
+    padding: 12px;
+  }
+  .skills-tabs a,
+  .skills-module-nav a {
+    flex: 1 1 42%;
+    text-align: center;
+    justify-content: center;
+  }
+  .skills-answers {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .skills-answers button {
+    padding: 10px;
+    font-size: 23px;
+  }
+  .skills-page .skills-order-choices {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skills-page .skills-order-choices button {
+    flex: 1 1 40%;
+    font-size: 22px;
+  }
+  .skills-player {
+    padding: 12px;
+  }
+  .skills-page .page-heading h1 {
+    font-size: 27px;
+  }
+}
+
+.skills-page .practice-button {
+  border-radius: 12px;
+  text-decoration: none;
+}
+.skills-card h2 {
+  font-size: 25px;
+  line-height: 1.7;
+}
+.skills-page .page-heading p {
+  font-size: 18px;
+  line-height: 1.9;
+}

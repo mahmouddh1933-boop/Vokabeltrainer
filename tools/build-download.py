@@ -81,6 +81,10 @@ with ZipFile(args.output) as archive:
     book_clips = len(json.loads((ROOT/'audio/book-youth-two-part-one-manifest.json').read_text())['clips'])
     related_clips = len(json.loads((ROOT/'audio/letter-related-manifest.json').read_text())['clips'])
     audio_count = 439 + youth_clips + book_clips + related_clips + sum(len(json.loads((ROOT/"audio"/name).read_text())["clips"]) for name in ["phonics-manifest.json","sentence-expanded-manifest.json","placement-manifest.json"])
+    skills_clips = json.loads((ROOT/'audio/skills-manifest.json').read_text())['clips']
+    audio_count += len(skills_clips)
+    for clip in skills_clips:
+        assert 'Vokabeltrainer/'+clip['path'] in files, clip['path']
     vocab_clips = json.loads((ROOT/'audio/vocabulary-manifest.json').read_text())['clips']
     audio_count += len({c['path'] for c in vocab_clips if c['path'].startswith('audio/vocabulary/')})
     for clip in vocab_clips:

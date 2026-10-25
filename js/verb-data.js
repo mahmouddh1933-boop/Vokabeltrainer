@@ -1111,8 +1111,216 @@
       },
     ],
   );
+  verbs.push(...[
+  {
+    "id": "walk",
+    "meaning": {
+      "ar": "المشي",
+      "de": "zu Fuß gehen"
+    },
+    "kind": "weak",
+    "forms": {
+      "past": [
+        "مَشَيْتُ",
+        "مَشَيْنَا",
+        "مَشَيْتَ",
+        "مَشَيْتِ",
+        "مَشَيْتُمَا",
+        "مَشَيْتُمَا",
+        "مَشَيْتُمْ",
+        "مَشَيْتُنَّ",
+        "مَشَى",
+        "مَشَتْ",
+        "مَشَيَا",
+        "مَشَتَا",
+        "مَشَوْا",
+        "مَشَيْنَ"
+      ],
+      "present": [
+        "أَمْشِي",
+        "نَمْشِي",
+        "تَمْشِي",
+        "تَمْشِينَ",
+        "تَمْشِيَانِ",
+        "تَمْشِيَانِ",
+        "تَمْشُونَ",
+        "تَمْشِينَ",
+        "يَمْشِي",
+        "تَمْشِي",
+        "يَمْشِيَانِ",
+        "تَمْشِيَانِ",
+        "يَمْشُونَ",
+        "يَمْشِينَ"
+      ],
+      "imperative": [
+        "اِمْشِ",
+        "اِمْشِي",
+        "اِمْشِيَا",
+        "اِمْشُوا",
+        "اِمْشِينَ"
+      ]
+    },
+    "example": {
+      "past": [
+        "مَشَى إِلَى الْمَدْرَسَةِ.",
+        "Er ging zu Fuß zur Schule."
+      ],
+      "present": [
+        "يَمْشِي إِلَى الْمَدْرَسَةِ.",
+        "Er geht zu Fuß zur Schule."
+      ],
+      "imperative": [
+        "اِمْشِ بِهُدُوءٍ.",
+        "Geh ruhig."
+      ]
+    },
+    "note": {
+      "ar": "فعل ناقص يائي: تُحذف الياء في اِمْشِ ولَمْ يَمْشِ. ومع واو الجماعة نقول: مَشَوْا، يَمْشُونَ.",
+      "de": "Beachte die Stammänderungen in der Tabelle; die Formen sind vollständig ausgeschrieben."
+    }
+  },
+  {
+    "id": "call",
+    "meaning": {
+      "ar": "الدعاء",
+      "de": "rufen / bitten"
+    },
+    "kind": "weak",
+    "forms": {
+      "past": [
+        "دَعَوْتُ",
+        "دَعَوْنَا",
+        "دَعَوْتَ",
+        "دَعَوْتِ",
+        "دَعَوْتُمَا",
+        "دَعَوْتُمَا",
+        "دَعَوْتُمْ",
+        "دَعَوْتُنَّ",
+        "دَعَا",
+        "دَعَتْ",
+        "دَعَوَا",
+        "دَعَتَا",
+        "دَعَوْا",
+        "دَعَوْنَ"
+      ],
+      "present": [
+        "أَدْعُو",
+        "نَدْعُو",
+        "تَدْعُو",
+        "تَدْعِينَ",
+        "تَدْعُوَانِ",
+        "تَدْعُوَانِ",
+        "تَدْعُونَ",
+        "تَدْعُونَ",
+        "يَدْعُو",
+        "تَدْعُو",
+        "يَدْعُوَانِ",
+        "تَدْعُوَانِ",
+        "يَدْعُونَ",
+        "يَدْعُونَ"
+      ],
+      "imperative": [
+        "اُدْعُ",
+        "اُدْعِي",
+        "اُدْعُوَا",
+        "اُدْعُوا",
+        "اُدْعُونَ"
+      ]
+    },
+    "example": {
+      "past": [
+        "دَعَا صَدِيقَهُ.",
+        "Er rief seinen Freund."
+      ],
+      "present": [
+        "يَدْعُو صَدِيقَهُ.",
+        "Er ruft seinen Freund."
+      ],
+      "imperative": [
+        "اُدْعُ صَدِيقَكَ.",
+        "Ruf deinen Freund."
+      ]
+    },
+    "note": {
+      "ar": "فعل ناقص واوي: دَعَا، دَعَوْتُ؛ تُحذف الواو في اُدْعُ ولَمْ يَدْعُ. نون النسوة ثابتة في لَمْ يَدْعُونَ.",
+      "de": "Beachte die Stammänderungen in der Tabelle; die Formen sind vollständig ausgeschrieben."
+    }
+  },
+  {
+    "id": "extend",
+    "meaning": {
+      "ar": "المدّ",
+      "de": "ausstrecken"
+    },
+    "kind": "doubled",
+    "forms": {
+      "past": [
+        "مَدَدْتُ",
+        "مَدَدْنَا",
+        "مَدَدْتَ",
+        "مَدَدْتِ",
+        "مَدَدْتُمَا",
+        "مَدَدْتُمَا",
+        "مَدَدْتُمْ",
+        "مَدَدْتُنَّ",
+        "مَدَّ",
+        "مَدَّتْ",
+        "مَدَّا",
+        "مَدَّتَا",
+        "مَدُّوا",
+        "مَدَدْنَ"
+      ],
+      "present": [
+        "أَمُدُّ",
+        "نَمُدُّ",
+        "تَمُدُّ",
+        "تَمُدِّينَ",
+        "تَمُدَّانِ",
+        "تَمُدَّانِ",
+        "تَمُدُّونَ",
+        "تَمْدُدْنَ",
+        "يَمُدُّ",
+        "تَمُدُّ",
+        "يَمُدَّانِ",
+        "تَمُدَّانِ",
+        "يَمُدُّونَ",
+        "يَمْدُدْنَ"
+      ],
+      "imperative": [
+        "مُدَّ",
+        "مُدِّي",
+        "مُدَّا",
+        "مُدُّوا",
+        "اُمْدُدْنَ"
+      ]
+    },
+    "example": {
+      "past": [
+        "مَدَّ يَدَهُ.",
+        "Er streckte seine Hand aus."
+      ],
+      "present": [
+        "يَمُدُّ يَدَهُ.",
+        "Er streckt seine Hand aus."
+      ],
+      "imperative": [
+        "مُدَّ يَدَكَ.",
+        "Streck deine Hand aus."
+      ]
+    },
+    "note": {
+      "ar": "صحيح مضاعف: نفكّ الإدغام مع تاء الفاعل ونون النسوة: مَدَدْتُ، يَمْدُدْنَ. في الأمر مُدَّ، ويجوز اُمْدُدْ. نعرض في الجزم للمفرد الوجه المدغم بالفتح: لَمْ يَمُدَّ.",
+      "de": "Beachte die Stammänderungen in der Tabelle; die Formen sind vollständig ausgeschrieben."
+    }
+  }
+]);
   verbs.forEach((verb) => {
     verb.formLength ??= 3;
+  });
+  verbs.forEach(verb => {
+    verb.family = verb.kind === 'weak'
+      ? (verb.id === 'stand' ? 'example' : ['say','sleep'].includes(verb.id) ? 'hollow' : 'defective')
+      : verb.kind;
   });
   const pronouns = [
     {
@@ -1283,7 +1491,33 @@
     const segments = parts(verb, tense, person);
     return segments ? segments.join("") : null;
   }
+  // Person-sensitive mood changes: the feminine-plural Nūn is never removed.
+  function inflectedPresent(verb, person, mood) {
+    let form = conjugate(verb, 'present', person);
+    if ([7,13].includes(person.index)) return form;
+    if ([3,4,5,6,10,11,12].includes(person.index))
+      return form.replace(/ُونَ$/u, 'ُوا').replace(/ِينَ$/u, 'ِي').replace(/َانِ$/u, 'َا').replace(/آنِ$/u,'آ');
+    if (mood === 'subjunctive') {
+      if (['walk','call'].includes(verb.id)) return form + 'َ';
+      return form.replace(/ُ$/u, 'َ');
+    }
+    if (verb.id === 'say') return form.replace(/قُولُ$/u,'قُلْ');
+    if (verb.id === 'sleep') return form.replace(/نَامُ$/u,'نَمْ');
+    if (['walk','call'].includes(verb.id)) return form.slice(0,-1);
+    if (verb.id === 'extend') return form.replace(/ُ$/u,'َ');
+    return form.replace(/ُ$/u,'ْ');
+  }
+  function negativeForm(verb, mode, person) {
+    if (mode === 'past') return 'مَا ' + conjugate(verb,'past',person);
+    if (mode === 'present') return 'لَا ' + conjugate(verb,'present',person);
+    if (mode === 'past-lam') return 'لَمْ ' + inflectedPresent(verb,person,'jussive');
+    if (mode === 'future') return 'لَنْ ' + inflectedPresent(verb,person,'subjunctive');
+    if (mode === 'prohibition') return commandIndices[person.index] === undefined ? null : 'لَا ' + inflectedPresent(verb,person,'jussive');
+    return null;
+  }
   const data = {
+    negativeForm,
+    inflectedPresent,
     verbs,
     pronouns,
     imperativePronouns,

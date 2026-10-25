@@ -66,9 +66,9 @@ const {
   pronounsFor,
   parts,
 } = require("../js/verb-data.js");
-test("48 verbs provide 14 past, 14 present and 5 addressed imperative forms", () => {
-  assert.equal(verbs.length, 48);
-  assert.equal(new Set(verbs.map((v) => v.id)).size, 48);
+test("51 verbs provide 14 past, 14 present and 5 addressed imperative forms", () => {
+  assert.equal(verbs.length, 51);
+  assert.equal(new Set(verbs.map((v) => v.id)).size, 51);
   assert.equal(pronounsFor("imperative").length, 5);
   assert.deepEqual(
     imperativePronouns.map((p) => p.ar),
@@ -93,7 +93,7 @@ test("48 verbs provide 14 past, 14 present and 5 addressed imperative forms", ()
       );
     }
   }
-  assert.equal(count, 1584);
+  assert.equal(count, 1683);
   for (const person of [pronouns[0], pronouns[1], ...pronouns.slice(8)]) {
     assert.equal(conjugate(verbs[0], "imperative", person), null);
   }
@@ -292,7 +292,7 @@ test("Form length counts shadda twice and distinguishes three vs four root conso
   for (const length of [3, 4, 5, 6])
     assert.equal(
       verbs.filter((v) => v.formLength === length).length,
-      length === 3 ? 30 : 6,
+      length === 3 ? 33 : 6,
     );
   for (const v of verbs.filter((v) => v.pattern)) {
     const past = conjugate(v, "past", pronouns[8]);

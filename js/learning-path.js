@@ -32,6 +32,10 @@
       },
     },
     {
+      id: "skills", href: "skills.html", ar: "المهارات والوحدات A1–A2", de: "Fertigkeiten und Einheiten A1–A2",
+      description: {ar: "فهم المسموع والمحادثة والكتابة والتراكيب في ١٢ وحدة مرتبطة بمفرداتك.", de: "Hören, Gespräche, Schreiben und Wortverbindungen in 12 Einheiten mit deinem Wortschatz."},
+    },
+    {
       id: "sentences",
       href: "sentences.html",
       ar: "تكوين الجمل",
@@ -125,9 +129,9 @@
         ],
         ["index.html", "المسار الكامل", "Gesamter Lernpfad"],
         [
-          i < 6 ? stages[i + 1].href : "index.html",
-          i < 6 ? "الخطوة التالية" : "العودة للمسار",
-          i < 6 ? "Nächster Schritt" : "Zum Lernpfad",
+          i < stages.length - 1 ? stages[i + 1].href : "index.html",
+          i < stages.length - 1 ? "الخطوة التالية" : "العودة للمسار",
+          i < stages.length - 1 ? "Nächster Schritt" : "Zum Lernpfad",
         ],
       ]) {
         const a = document.createElement("a");

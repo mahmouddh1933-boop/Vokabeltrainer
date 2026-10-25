@@ -8,6 +8,7 @@
       pronounsFor,
       parts,
       conjugate,
+      negativeForm,
     } = window.VerbLessonData;
     const $ = (id) => document.getElementById(id);
     const escape = window.VocabApp.escapeHTML;
@@ -21,6 +22,7 @@
     const kinds = {
       sound: { ar: "أفعال صحيحة سالمة", de: "Regelmäßige Verben" },
       hamzated: { ar: "أفعال مهموزة", de: "Verben mit Hamza" },
+      doubled: { ar: "أفعال صحيحة مضاعفة", de: "Geminierte Verben" },
       weak: { ar: "أفعال معتلة", de: "Schwache Verben" },
     };
     const shuffle = window.VocabApp.shuffle;
@@ -115,6 +117,7 @@
             `<tr${tense !== "imperative" && [2, 8].includes(index) ? ' class="person-group-start"' : ""}><th scope="row" lang="ar">${escape(person.ar)}</th><td>${escape(language() === "ar" ? person.description : person.de)}</td><td class="verb-form" lang="ar">${formHTML(person)}</td></tr>`,
         )
         .join("");
+      renderNegation();
     }
     function renderPractice() {
       const person = question.person;
@@ -200,10 +203,12 @@
     function renderCatalog() {
       const query = normalize($("verb-search").value);
       const length = $("verb-length").value;
+      const family = $("verb-family").value;
       const matches = verbs.filter(
         (item) =>
           searchIndex.get(item.id).includes(query) &&
-          (length === "all" || item.formLength === Number(length)),
+          (length === "all" || item.formLength === Number(length)) &&
+          (family === "all" || item.family === family),
       );
       if (matches.length && !matches.some((item) => item.id === verb.id))
         verb = matches[0];
@@ -236,6 +241,7 @@
       $("verb-empty").hidden = !empty;
       $("verb-content").hidden = empty;
       $("verb-practice").hidden = empty;
+      $("verb-negation").hidden = empty;
       if (!empty) {
         renderLesson();
         if (
@@ -247,11 +253,34 @@
         else renderPractice();
       }
     }
+    function renderNegation() {
+      const mode=$("verb-negative-mode").value;
+      const people=mode==='prohibition'?imperativePronouns:pronouns;
+      const notes={
+        past:['ما + الماضي: نفي حدث ماضٍ؛ لا تتغيّر صيغة الماضي.','mā + Perfekt: die Verbform bleibt unverändert.'],
+        present:['لا النافية + المضارع المرفوع: نفي الحاضر أو العادة.','Verneinendes lā + Indikativ: Gegenwart oder Gewohnheit.'],
+        'past-lam':['لم + المضارع المجزوم: نفي الماضي. الجزم بالسكون أو حذف النون أو حرف العلة. نون النسوة ثابتة.','lam + Jussiv verneint die Vergangenheit: Sukūn, Wegfall von Nūn oder des schwachen Endlauts. Die feminine Pluralendung bleibt.'],
+        future:['لن + المضارع المنصوب: نفي المستقبل. النصب بالفتحة أو حذف النون؛ نون النسوة ثابتة.','lan + Subjunktiv: Zukunft verneinen. Fatḥa oder Wegfall von Nūn; die feminine Pluralendung bleibt.'],
+        prohibition:['لا الناهية + المضارع المجزوم للمخاطب. نقول: اُكْتُبْ ← لَا تَكْتُبْ.','Verbietendes lā + Jussiv für die angesprochene Person: uktub → lā taktub.']
+      };
+      $("verb-negative-note").textContent=text(...notes[mode]);
+      $("negative-caption").textContent=$("verb-negative-mode").selectedOptions[0].textContent+' · '+conjugate(verb,'past',pronouns[8]);
+      $("verb-negative-body").innerHTML=people.map(p=>`<tr><th scope="row" lang="ar">${escape(p.ar)}<small> · ${escape(language()==='ar'?p.description:p.de)}</small></th><td class="negative-verb-form" lang="ar">${escape(negativeForm(verb,mode,p))}</td></tr>`).join('');
+      const person=shuffle(people)[0],correct=negativeForm(verb,mode,person),forms=[...new Set(people.map(p=>negativeForm(verb,mode,p)))];
+      const options=shuffle([correct,...shuffle(forms.filter(f=>f!==correct)).slice(0,3)]);
+      $("verb-negative-question").textContent=text('اختر الصيغة مع: ','Wähle die Form für: ')+person.ar+' · '+text(person.description,person.de);
+      $("verb-negative-feedback").textContent='';
+      $("verb-negative-answers").replaceChildren(...options.map(form=>{const b=document.createElement('button');b.type='button';b.className='verb-answer';b.lang='ar';b.textContent=form;b.onclick=()=>{for(const btn of $("verb-negative-answers").children){btn.disabled=true;if(btn.textContent===correct)btn.classList.add('is-correct');else if(btn===b)btn.classList.add('is-wrong');}$("verb-negative-feedback").textContent=window.VocabApp.encouragement(form===correct)+' '+person.ar+' '+correct+' — '+text(...notes[mode]);};return b;}));
+    }
+    $("verb-negative-mode").addEventListener('change',renderNegation);
+    $("verb-negative-next").addEventListener('click',renderNegation);
     $("verb-search").addEventListener("input", renderCatalog);
     $("verb-length").addEventListener("change", renderCatalog);
+    $("verb-family").addEventListener("change", renderCatalog);
     $("verb-clear-search").addEventListener("click", () => {
       $("verb-search").value = "";
       $("verb-length").value = "all";
+      $("verb-family").value = "all";
       renderCatalog();
       $("verb-search").focus();
     });

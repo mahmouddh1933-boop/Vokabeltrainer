@@ -20,7 +20,7 @@ with sync_playwright() as p:
     page.set_viewport_size({'width':width,'height':900});page.wait_for_timeout(80)
     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),(language,width)
   page.set_viewport_size({'width':390,'height':900});page.locator('#app-language-select').select_option('ar')
- page.goto(base+'/index.html');page.locator('#teacher-exams-entry').click();expect(page.locator('.exam-card')).to_have_count(10);assert page.locator('.app-sidebar nav a').count()==9;layout()
+ page.goto(base+'/index.html');page.locator('#teacher-exams-entry').click();expect(page.locator('.exam-card')).to_have_count(10);assert page.locator('.app-sidebar nav a').count()==10;layout()
  data=page.evaluate('TeacherExamData');
  assert page.locator('#exam-catalog a[href$=".pdf"]').count()==0
  assert page.locator('[data-start-exam^="paper-"]').count()==10

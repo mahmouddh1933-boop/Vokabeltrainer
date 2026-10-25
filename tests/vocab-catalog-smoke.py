@@ -39,7 +39,7 @@ with sync_playwright() as p:
   expect(page.locator('.ready-list-button')).to_have_count(30)
  home()
  assert page.evaluate('VocabApp.loadCatalog()')==C
- assert page.locator('.app-sidebar nav a').count()==9
+ assert page.locator('.app-sidebar nav a').count()==10
  # Existing history stays intact, while newly curated list IDs have independent mastery.
  page.evaluate('''()=>{const tests=Object.fromEntries(Object.keys(VocabApp.TEST_CONFIG).map(k=>[k,{qualifyingPasses:2,attempts:2,bestScore:100}]));localStorage.setItem('listMasteryV12',JSON.stringify({'ready-list:list_01':{sourceId:'list_01',type:'ready-list',mastered:true,tests}}));}''')
  for language in ['ar','de']:

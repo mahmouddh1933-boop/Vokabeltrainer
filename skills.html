@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#123f37" />
+    <title>المهارات والوحدات A1–A2 · حروف من الزيتون</title>
+    <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
+    <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
+    <link rel="stylesheet" href="css/modern.css?v=12f689bc07a2" />
+    <link rel="stylesheet" href="css/skills.css?v=c8f444539971" />
+    <script src="js/storage.js?v=234b995827cd" defer></script>
+    <script src="js/firebase-config.js?v=bcb6b5390ad9" defer></script>
+    <script src="js/auth-session.js?v=e80b2ec59f82" defer></script>
+    <script src="js/app.js?v=967453105b0c" defer></script>
+    <script src="data/vocab_catalog_labels.js?v=77de3e826c87" defer></script>
+    <script src="js/interface-languages.js?v=d233aae47963" defer></script>
+    <script src="js/learning-path.js?v=27829e47acff" defer></script>
+    <script src="js/design.js?v=3f390f3bd12e" defer></script>
+    <meta name="application-name" content="حروف من الزيتون" />
+    <link
+      rel="icon"
+      href="images/brand/olive-symbol.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/olive-theme.css?v=2a69ab7dd182" />
+    <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
+    <link rel="stylesheet" href="css/auth.css?v=2b57d96c4eaf" />
+    <link rel="stylesheet" href="css/learning-route.css?v=e9bb6804b86d" />
+    <script src="js/vocab-audio-data.js?v=292bba9847f7" defer></script>
+    <script src="js/skills-data.js?v=6c5272be5c20" defer></script>
+    <script src="js/pages/skills.js?v=97ba60b33a1c" defer></script>
+  </head>
+
+  <body>
+    <main class="container skills-page">
+      <header class="page-heading">
+        <div>
+          <p
+            class="eyebrow"
+            data-ar="أَسْتَمِعُ · أَتَحَدَّثُ · أَكْتُبُ"
+            data-de="Hören · Sprechen · Schreiben"
+          >
+            أَسْتَمِعُ · أَتَحَدَّثُ · أَكْتُبُ
+          </p>
+          <h1
+            data-ar="المهارات والوحدات A1–A2"
+            data-de="Fertigkeiten und Einheiten A1–A2"
+          >
+            المهارات والوحدات A1–A2
+          </h1>
+          <p
+            data-ar="١٢ وحدة مرتبطة بمفرداتك: حوار ونص وقاعدة واستماع وتحدث وكتابة ومراجعة."
+            data-de="12 Einheiten mit deinem Wortschatz: Dialog, Text, Grammatik, Hören, Sprechen, Schreiben und Wiederholung."
+          >
+            ١٢ وحدة مرتبطة بمفرداتك.
+          </p>
+        </div>
+      </header>
+      <nav
+        id="skills-sections"
+        class="skills-tabs"
+        aria-label="المهارات / Fertigkeiten"
+      ></nav>
+      <section class="skills-player" aria-label="مشغّل الصوت / Audioplayer">
+        <p
+          id="skills-audio-label"
+          aria-live="polite"
+          data-ar="اختر تسجيلًا للاستماع. التسجيلات صوت آلي عربي محفوظ داخل التطبيق."
+          data-de="Wähle eine Aufnahme. Die synthetischen arabischen Aufnahmen sind in der App gespeichert."
+        >
+          اختر تسجيلًا للاستماع.
+        </p>
+        <audio id="skills-audio" controls preload="none"></audio
+        ><label
+          ><span data-ar="سرعة الصوت" data-de="Geschwindigkeit">سرعة الصوت</span
+          ><select id="skills-speed">
+            <option value="0.8">0.8×</option>
+            <option value="1" selected>1×</option>
+            <option value="1.15">1.15×</option>
+          </select></label
+        >
+      </section>
+      <div id="skills-content"></div>
+      <p id="skills-save-status" role="status"></p>
+    </main>
+    <footer class="teacher-credit" id="teacher-credit"></footer>
+  </body>
+</html>

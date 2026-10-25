@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
     <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
     <link rel="stylesheet" href="css/modern.css?v=12f689bc07a2" />
-    <link rel="stylesheet" href="css/verbs.css?v=7f25f6097677" />
+    <link rel="stylesheet" href="css/verbs.css?v=c383284ea9ab" />
     <script src="js/storage.js?v=234b995827cd" defer></script>
     <script src="js/firebase-config.js?v=bcb6b5390ad9" defer></script>
     <script src="js/auth-session.js?v=e80b2ec59f82" defer></script>
     <script src="js/app.js?v=967453105b0c" defer></script>
     <script src="data/vocab_catalog_labels.js?v=77de3e826c87" defer></script>
     <script src="js/interface-languages.js?v=d233aae47963" defer></script>
-    <script src="js/learning-path.js?v=12830d173902" defer></script><script src="js/design.js?v=3f390f3bd12e" defer></script>
-    <script src="js/verb-data.js?v=36fd482e0a00" defer></script>
-    <script src="js/pages/verbs.js?v=87d8f8b50b24" defer></script>
+    <script src="js/learning-path.js?v=27829e47acff" defer></script><script src="js/design.js?v=3f390f3bd12e" defer></script>
+    <script src="js/verb-data.js?v=3a929b063271" defer></script>
+    <script src="js/pages/verbs.js?v=1104976106e9" defer></script>
   <meta name="application-name" content="حروف من الزيتون" />
 <link rel="icon" href="images/brand/olive-symbol.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="css/olive-theme.css?v=2a69ab7dd182" />
 <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
     <link rel="stylesheet" href="css/auth.css?v=2b57d96c4eaf" />
-<link rel="stylesheet" href="css/learning-route.css?v=190075957477" /></head>
+<link rel="stylesheet" href="css/learning-route.css?v=e9bb6804b86d" /></head>
   <body>
     <main class="container verbs-page">
       <header class="page-heading">
@@ -42,10 +42,10 @@
             تصريف الأفعال، خطوة بخطوة.
           </h1>
           <p
-            data-de="48 Verben · Perfekt, Präsens und Imperativ · Beispiele und Übungen."
-            data-ar="٤٨ فعلاً · الماضي والمضارع والأمر · أمثلة وتمارين تفاعلية."
+            data-de="51 Verben · Perfekt, Präsens und Imperativ · Beispiele und Übungen."
+            data-ar="٥١ فعلاً · الماضي والمضارع والأمر · أمثلة وتمارين تفاعلية."
           >
-            ٤٨ فعلاً · الماضي والمضارع والأمر · أمثلة وتمارين تفاعلية.
+            ٥١ فعلاً · الماضي والمضارع والأمر · أمثلة وتمارين تفاعلية.
           </p>
         </div>
         <span class="welcome-symbol" aria-hidden="true">✳</span>
@@ -66,10 +66,10 @@
             ماذا يعني تصريف الفعل؟
           </h2>
           <p
-            data-de="Lerne 48 Verben im Perfekt, Präsens und Imperativ. Entdecke regelmäßige, hamzierte und schwache Verben – mit passenden Formen für jede Person."
-            data-ar="تعلّم تصريف ٤٨ فعلاً في الماضي والمضارع والأمر. ستجد أفعالاً صحيحة ومهموزة ومعتلّة، مع الصيغة المناسبة لكل ضمير."
+            data-de="Lerne 51 Verben im Perfekt, Präsens und Imperativ. Entdecke regelmäßige, hamzierte und schwache Verben – mit passenden Formen für jede Person."
+            data-ar="تعلّم تصريف ٥١ فعلاً في الماضي والمضارع والأمر. ستجد أفعالاً صحيحة ومهموزة ومعتلّة، مع الصيغة المناسبة لكل ضمير."
           >
-            تعلّم تصريف ٤٨ فعلاً في الماضي والمضارع والأمر. ستجد أفعالاً صحيحة
+            تعلّم تصريف ٥١ فعلاً في الماضي والمضارع والأمر. ستجد أفعالاً صحيحة
             ومهموزة ومعتلّة، مع الصيغة المناسبة لكل ضمير.
           </p>
         </div>
@@ -196,6 +196,7 @@
             aria-live="polite"
           ></span>
         </div>
+        <div class="verb-length-field"><label for="verb-family" data-ar="نوع الفعل" data-de="Verbtyp">نوع الفعل</label><select id="verb-family"><option value="all" data-ar="جميع الأنواع" data-de="Alle Typen">جميع الأنواع</option><option value="sound" data-ar="صحيح سالم" data-de="Regelmäßig">صحيح سالم</option><option value="hamzated" data-ar="صحيح مهموز" data-de="Mit Hamza">صحيح مهموز</option><option value="doubled" data-ar="صحيح مضاعف" data-de="Geminiert">صحيح مضاعف</option><option value="example" data-ar="معتل مثال" data-de="Anfangsschwach">معتل مثال</option><option value="hollow" data-ar="معتل أجوف" data-de="Mittelschwach">معتل أجوف</option><option value="defective" data-ar="معتل ناقص" data-de="Endschwach">معتل ناقص</option></select></div>
         <div class="verb-length-field">
           <label
             for="verb-length"
@@ -395,6 +396,7 @@
           سؤال جديد
         </button>
       </section>
+      <section id="verb-negation" class="verb-practice" aria-labelledby="verb-negation-title"><h2 id="verb-negation-title" data-ar="النفي والنهي مع الفعل المختار" data-de="Verneinung und Verbot mit dem gewählten Verb">النفي والنهي مع الفعل المختار</h2><p data-ar="قارن الصيغ المثبتة أعلاه بالصيغ المنفية. النهي ليس نفيًا لصيغة الأمر؛ يُبنى من لا الناهية والمضارع المجزوم، ويختص بالمخاطب هنا." data-de="Vergleiche mit den bejahten Formen oben. Ein Verbot besteht aus lā und dem Jussiv, nicht aus einem verneinten Imperativ; hier nur für angesprochene Personen.">قارن بين الإثبات والنفي والنهي.</p><label for="verb-negative-mode" data-ar="اختر الأسلوب" data-de="Form wählen">اختر الأسلوب</label><select id="verb-negative-mode"><option value="past" data-ar="نفي الماضي: ما" data-de="Perfekt verneinen: mā">نفي الماضي: ما</option><option value="present" data-ar="نفي الحاضر والعادة: لا" data-de="Präsens verneinen: lā">نفي الحاضر والعادة: لا</option><option value="past-lam" data-ar="نفي الماضي: لم + مضارع مجزوم" data-de="Vergangenheit: lam + Jussiv">نفي الماضي: لم + مضارع مجزوم</option><option value="future" data-ar="نفي المستقبل: لن + مضارع منصوب" data-de="Zukunft: lan + Subjunktiv">نفي المستقبل: لن + مضارع منصوب</option><option value="prohibition" data-ar="النهي: لا + مضارع مجزوم" data-de="Verbot: lā + Jussiv">النهي: لا + مضارع مجزوم</option></select><p id="verb-negative-note"></p><div class="verb-table-wrap"><table><caption id="negative-caption"></caption><thead><tr><th data-ar="الضمير" data-de="Person">الضمير</th><th data-ar="الصيغة" data-de="Form">الصيغة</th></tr></thead><tbody id="verb-negative-body"></tbody></table></div><h3 id="verb-negative-question"></h3><div id="verb-negative-answers" class="verb-answers"></div><p id="verb-negative-feedback" class="verb-feedback" role="status"></p><button id="verb-negative-next" type="button" data-ar="تدريب نفي جديد" data-de="Neue Verneinungsaufgabe">تدريب نفي جديد</button></section>
     </main>
     <footer class="teacher-credit" id="teacher-credit"></footer>
   </body>

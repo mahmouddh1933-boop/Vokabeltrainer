@@ -169,11 +169,12 @@ for name in PAGES:
     if name in ['huruf', 'letter-tests']:
         source = re.sub(r'\b28\b', '6', source)
     if name == 'grammar':
+        source = re.sub(r'<section class="grammar-path-panel" aria-labelledby="verbs-entry-title">.*?</section>', '<section class="grammar-path-panel"><h2 data-ar="تصريف الأفعال" data-de="Verbkonjugation">تصريف الأفعال</h2><p data-ar="ستة أفعال صحيحة مع الماضي والمضارع والأمر والنفي والنهي." data-de="Sechs regelmäßige Verben mit Perfekt, Präsens, Imperativ, Verneinung und Verbot.">ستة أفعال صحيحة.</p><a class="practice-button" href="verbs.html" data-ar="افتح تصريف الأفعال" data-de="Verbformen öffnen">افتح تصريف الأفعال</a></section>', source, flags=re.S)
         source = source.replace('30 درسًا في القواعد والإملاء · 380 سؤالًا مع شرح الإجابات.', '٣ دروس في القواعد · ٢٤ سؤالًا مع شرح الإجابات.').replace('30 Lektionen zu Grammatik und Rechtschreibung · 380 Fragen mit Erklärungen.', '3 Grammatiklektionen · 24 Fragen mit Erklärungen.')
         source = re.sub(r'<option\s+value="(?:spelling|morphology|syntax)"[^>]*>.*?</option>', '', source, flags=re.S)
         source = source.replace('همزة / Hamza · ضمائر / Pronomen', 'ضمائر / Pronomen')
     if name == 'verbs':
-        source = source.replace('48', '6').replace('٤٨', '٦')
+        source = source.replace('51', '6').replace('٥١', '٦')
         source = source.replace('Entdecke regelmäßige, hamzierte und schwache Verben', 'Entdecke sechs regelmäßige Verben')
         source = re.sub('ستجد أفعالاً صحيحة ومهموزة ومعتلّة،', 'ستجد ستة أفعال صحيحة،', source)
     if name == 'sounds':

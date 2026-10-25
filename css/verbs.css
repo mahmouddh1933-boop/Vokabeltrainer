@@ -721,3 +721,5 @@ body .container.verbs-page {
     font-size: 21px;
   }
 }
+
+#verb-family,#verb-negative-mode{width:100%;min-height:48px;padding:10px;border:1px solid #829b70;border-radius:10px;color:#234733;background:#f0f4e6;font-size:18px}#verb-negation{overflow:hidden}#verb-negative-body th{white-space:normal;font-size:22px}#verb-negative-body small{display:block;font-size:14px;line-height:1.8}.negative-verb-form{font-size:28px;line-height:2;color:#234733;white-space:nowrap}.verb-table-wrap{overflow-x:auto;max-width:100%}#verb-negation table{width:100%;border-collapse:collapse}#verb-negation th,#verb-negation td{padding:14px;border-bottom:1px solid #c5d4b8}#verb-negative-question{font-size:23px;line-height:1.9}

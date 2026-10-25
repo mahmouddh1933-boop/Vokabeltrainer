@@ -20,7 +20,7 @@ with sync_playwright() as p:
    for width in [320,390,768,1440]:
     page.set_viewport_size({'width':width,'height':900});page.wait_for_timeout(180);assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),(page.url,language,width)
   page.set_viewport_size({'width':390,'height':900});lang('ar');page.wait_for_timeout(300)
- go('placement');assert page.locator('.placement-test-card').count()==5;assert page.locator('.app-sidebar nav a').count()==9;layout()
+ go('placement');assert page.locator('.placement-test-card').count()==5;assert page.locator('.app-sidebar nav a').count()==10;layout()
  page.evaluate("VocabApp.setJSON('learningStats',{totalTests:4,learningRouteV1:{completed:{letters:true},lastStage:'vocabulary'},phonicsV1:{mode:'blend',answers:{prior:{solved:true}}}})")
  tests=page.evaluate('ArabicPlacementData.tests');bank={q['id']:q for q in page.evaluate('ArabicPlacementData.questions')}
  for test in tests:

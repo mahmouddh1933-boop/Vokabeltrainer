@@ -1,3 +1,7 @@
+## 2026-10-25 · المهارات والوحدات A1–A2
+
+48 neue lokale synthetische Aufnahmen (24 Dialoge, 12 Lesetexte, 12 Hörverstehen). Vollständige Skripte, Dauer und SHA-256: `skills-manifest.json`. Generator: `tools/generate-skills-audio.py`; Umsetzung und Grenzen: `docs/SKILLS-AND-VERB-EXPANSION.md`. Keine externen Audioanfragen beim Abspielen.
+
 # أصوات الحروف · Alphabet audio
 
 **2026-10-25 revision:** Jīm, Wāw and the reported picture words have refreshed, explicitly vocalized target recordings under new filenames. The Kasra form is **إِ**. The related Alif-maqṣūra example is now **فَتَى**, read in pause without tanwīn. See [the revision notes](../docs/LETTER-PRONUNCIATION-REVISION.md) and `letter-pronunciation-revision.json` for exact prompts, target extraction and hashes. Historical descriptions below document earlier releases.

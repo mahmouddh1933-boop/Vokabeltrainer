@@ -73,8 +73,8 @@
       document.getElementById("route-summary").textContent =
         Object.values(done).filter(Boolean).length +
         (de
-          ? " / 7 Schritte selbst als abgeschlossen markiert"
-          : " / ٧ مراحل علّمتها كمكتملة");
+          ? ` / ${R.stages.length} Schritte selbst als abgeschlossen markiert`
+          : ` / ${R.stages.length} مراحل علّمتها كمكتملة`);
     }
     window.addEventListener("app-language-change", render);
     render();
