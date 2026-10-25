@@ -302,3 +302,5 @@
     display: none !important;
   }
 }
+
+.access-gate-actions{display:flex;flex-wrap:wrap;gap:12px;max-width:650px;justify-content:center;margin:20px auto}.access-gate-actions button{width:auto;min-height:48px;padding:12px 18px;line-height:1.8;white-space:normal}.olive-account-panel a{display:block;padding:12px;background:#dce8ce;border:1px solid #849c72;border-radius:10px;text-align:center;color:#234733;text-decoration:none}

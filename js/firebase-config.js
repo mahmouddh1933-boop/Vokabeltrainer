@@ -11,8 +11,10 @@
     ) ||
     (hostname.startsWith(projectId + "--") && hostname.endsWith(".web.app"));
   window.OliveFirebaseConfig = Object.freeze({
-    enabled: (hosting && location.protocol === "https:") || emulator,
+    enabled: document.documentElement.dataset.oliveHosted === "true" || (hosting && location.protocol === "https:") || emulator,
     emulator,
+    accessControl: true,
+    functionsRegion: "europe-west1",
     firebase: Object.freeze({
       apiKey: "AIzaSyCwWZ3SKc5jjby5oHqS-CAhwC5XQt6JqDQ",
       authDomain: "letters-from-olive.firebaseapp.com",

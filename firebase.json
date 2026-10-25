@@ -75,7 +75,8 @@
     ]
   },
   "firestore": {
-    "rules": "firestore.rules"
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
   },
   "emulators": {
     "firestore": {
@@ -93,6 +94,22 @@
     "ui": {
       "enabled": false
     },
-    "singleProjectMode": true
-  }
+    "singleProjectMode": true,
+    "functions": {
+      "host": "127.0.0.1",
+      "port": 5001
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "olive-access",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "test",
+        "*-debug.log"
+      ]
+    }
+  ]
 }

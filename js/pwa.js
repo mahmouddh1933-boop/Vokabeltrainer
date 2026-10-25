@@ -206,13 +206,12 @@
     steps.className = "pwa-install-steps";
     steps.hidden = true;
     details.append(steps);
-    details.append(
-      node(
-        "p",
-        "تسجيل الدخول لأول مرة والمزامنة يحتاجان إلى الإنترنت. للدخول لاحقًا دون اتصال، استخدم «تذكّرني» على جهازك الشخصي. يُحفظ الصوت والصور عند الاستخدام ضمن مساحة محدودة؛ مسحها هنا لا يحذف إجاباتك أو تقدّمك.",
-        "Erste Anmeldung und Synchronisierung benötigen Internet. Für spätere Offline-Nutzung wähle „Angemeldet bleiben“ auf deinem eigenen Gerät. Medien werden beim Aufrufen begrenzt gespeichert; das Entfernen hier löscht keine Antworten oder Lernstände.",
-      ),
-    );
+    const restricted=window.OliveFirebaseConfig?.enabled&&window.OliveFirebaseConfig?.accessControl;
+    details.append(node("p",restricted
+      ?"يتطلب تسجيل الدخول والمزامنة والتحقق من الجهاز اتصالًا بالإنترنت؛ التشغيل دون اتصال متاح ٢٤ ساعة بعد التحقق. استخدم «تذكّرني» على جهازك الشخصي. تُحفظ التسجيلات والصور عند استخدامها ضمن مساحة محدودة؛ مسحها هنا لا يحذف إجاباتك أو تقدّمك."
+      :"التقدّم محفوظ محليًا في هذا المتصفح. تُحفظ التسجيلات والصور عند استخدامها أثناء الاتصال ضمن مساحة محدودة؛ مسحها هنا لا يحذف إجاباتك أو تقدّمك.",restricted
+      ?"Anmeldung, Synchronisierung und Geräteprüfung benötigen Internet; offline ist die Nutzung 24 Stunden nach einer Prüfung möglich. Wähle auf deinem eigenen Gerät Angemeldet bleiben. Medien werden beim Aufrufen begrenzt gespeichert; das Entfernen hier löscht keine Antworten oder Lernstände."
+      :"Dein Lernstand bleibt in diesem Browser gespeichert. Aufgerufene Medien werden mit Internet begrenzt gespeichert; das Entfernen hier löscht keine Antworten oder Lernstände."));
     const teacher = document
       .getElementById("teacher-exams-entry")
       ?.closest("section");

@@ -130,7 +130,7 @@ write('js/practice-data.js', '(() => { const data=' + dump(practice) + ';\nfunct
 PAGES = ['index', 'lernseite', 'test', 'test1', 'test2', 'test3', 'test4', 'test5', 'test6',
          'ergebnis', 'review', 'stats', 'huruf', 'letter-tests', 'grammar', 'verbs',
          'sounds', 'sentences', 'stories']
-EXCLUDED_SCRIPTS = {'js/firebase-config.js', 'js/auth-session.js', 'js/grammar-expanded.js', 'js/grammar-syntax.js', 'js/learning-path.js', 'js/pages/route-home.js', 'js/sentence-expanded-data.js'}
+EXCLUDED_SCRIPTS = {'js/firebase-config.js', 'js/auth-session.js', 'js/access-client.js', 'js/grammar-expanded.js', 'js/grammar-syntax.js', 'js/learning-path.js', 'js/pages/route-home.js', 'js/sentence-expanded-data.js'}
 references = set()
 for name in PAGES:
     source = (ROOT / (name + '.html')).read_text()

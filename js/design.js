@@ -28,6 +28,7 @@
     const isHome = page === "index.html";
     const nav = [
       ...window.LearningRoute.stages,
+      ...(window.OliveAccess?.isAdmin() ? [{id:"admin",href:"admin.html",ar:"لوحة الإدارة",de:"Verwaltung"}] : []),
       { id: "exams", href: "exams.html", ar: "الاختبارات", de: "Tests" },
       {
         id: "placement",
@@ -45,7 +46,7 @@
       s.de,
       s.ar,
     ]);
-    const activeHref = ["exams.html", "placement.html"].includes(page)
+    const activeHref = ["exams.html", "placement.html", "admin.html"].includes(page)
       ? page
       : window.LearningRoute.stage?.href;
     const sidebar = document.createElement("aside");

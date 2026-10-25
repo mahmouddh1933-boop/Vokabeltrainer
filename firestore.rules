@@ -1,7 +1,28 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    function owner(uid) { return request.auth != null && request.auth.uid == uid; }
+    function owner(uid) {
+      return request.auth != null && request.auth.uid == uid
+        && request.auth.token.email_verified == true
+        && request.auth.token.email is string
+        && request.auth.token.oliveDevice is string
+        && request.auth.token.oliveSession is string
+        && permitted(uid);
+    }
+    function permitted(uid) {
+      let member = get(/databases/$(database)/documents/oliveAccessUsers/$(uid)).data;
+      let invitation = get(/databases/$(database)/documents/oliveAllowedEmails/$(member.emailKey)).data;
+      let device = get(/databases/$(database)/documents/oliveAccessUsers/$(uid)/devices/$(request.auth.token.oliveDevice)).data;
+      return member.enabled == true && invitation.enabled == true && invitation.uid == uid
+        && member.email == invitation.email
+        && member.email == request.auth.token.email.lower()
+        && device.active == true && device.status == 'active'
+        && device.id == request.auth.token.oliveDevice
+        && device.sessionId == request.auth.token.oliveSession
+        && member.devices is map && member.devices.keys().size() <= 2
+        && member.devices[device.id] == device.sessionId
+        && device.expiresAtMs > request.time.toMillis();
+    }
     function known(key) {
       return key in ['learningStats', 'wrongWords', 'studiedWords', 'listMasteryV12',
         'vocabList', 'arabicList', 'currentVocabSource', 'testResults', 'lastTestOutcomeV12',

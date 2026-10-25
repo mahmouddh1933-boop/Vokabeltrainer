@@ -1,3 +1,5 @@
+> **Neue Zugriffskontrolle:** Diese Ausgabe benötigt zusätzlich Cloud Functions, Identity Platform und aktualisierte Firestore-Regeln. Nicht nur Hosting veröffentlichen. Zuerst `ADMIN-SETUP-AR.md` lesen, die offiziellen Rules-Tests ausführen und die Administratoradresse lokal konfigurieren.
+
 # حروف من الزيتون · Auf Firebase veröffentlichen
 
 Das vorbereitete Hosting-Paket gehört zum Firebase-Projekt **letters-from-olive**.

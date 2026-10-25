@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#123f37" />
+    <title>لوحة الإدارة · حروف من الزيتون</title>
+    <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
+    <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
+    <link rel="stylesheet" href="css/modern.css?v=12f689bc07a2" />
+    <link rel="stylesheet" href="css/admin.css?v=35aad038a117" />
+    <script src="js/storage.js?v=234b995827cd" defer></script>
+    <script src="js/firebase-config.js?v=e5a8ad4e7335" defer></script>
+    <script src="js/access-client.js?v=bdda19e61988" defer></script>
+    <script src="js/auth-session.js?v=2661f1927d06" defer></script>
+    <script src="js/app.js?v=967453105b0c" defer></script>
+    <script src="data/vocab_catalog_labels.js?v=77de3e826c87" defer></script>
+    <script src="js/interface-languages.js?v=d233aae47963" defer></script>
+    <script src="js/learning-path.js?v=27829e47acff" defer></script>
+    <script src="js/design.js?v=54c2ca0d33c6" defer></script>
+    <meta name="application-name" content="حروف من الزيتون" />
+    <link
+      rel="icon"
+      href="images/brand/olive-symbol.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/olive-theme.css?v=2a69ab7dd182" />
+    <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
+    <link rel="stylesheet" href="css/auth.css?v=193e81c25a14" />
+    <link rel="stylesheet" href="css/learning-route.css?v=e9bb6804b86d" />
+
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="images/pwa/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="stylesheet" href="css/pwa.css?v=021f9b88f80e" />
+    <script src="js/pwa.js?v=821151cc8d60" defer></script>
+    <script src="js/pages/admin.js?v=cd863c92ab6e" defer></script>
+  </head>
+
+  <body>
+    <main class="container admin-page">
+      <header class="page-heading">
+        <div>
+          <p class="eyebrow" data-ar="إدارة الوصول" data-de="Zugriff verwalten">
+            إدارة الوصول
+          </p>
+          <h1 data-ar="لوحة الإدارة" data-de="Verwaltung">لوحة الإدارة</h1>
+          <p
+            data-ar="قائمة الإيميلات المسموح بها وجهازان مسجّلان لكل حساب."
+            data-de="Freigegebene E-Mail-Adressen und zwei registrierte Geräte pro Konto."
+          >
+            قائمة الإيميلات المسموح بها وجهازان مسجّلان لكل حساب.
+          </p>
+        </div>
+      </header>
+      <section class="admin-card">
+        <h2 data-ar="إضافة بريد مسموح" data-de="E-Mail-Adresse freigeben">
+          إضافة بريد مسموح
+        </h2>
+        <form id="admin-add">
+          <label
+            for="admin-email"
+            data-ar="البريد الإلكتروني"
+            data-de="E-Mail-Adresse"
+            >البريد الإلكتروني</label
+          >
+          <div class="admin-actions">
+            <input
+              id="admin-email"
+              type="email"
+              dir="ltr"
+              autocomplete="off"
+              maxlength="254"
+              required
+            /><button
+              type="submit"
+              id="admin-add-button"
+              data-ar="إضافة إلى القائمة"
+              data-de="Freigeben"
+            >
+              إضافة إلى القائمة
+            </button>
+          </div>
+        </form>
+        <p
+          data-ar="بعد إضافة البريد ينشئ الطالب حسابه ويؤكد ملكية بريده. لا تعرض اللوحة كلمات السر أو مفاتيح الأجهزة."
+          data-de="Nach der Freigabe erstellt der Schüler sein Konto und bestätigt seine E-Mail-Adresse. Passwörter und Geräteschlüssel werden nicht angezeigt."
+        >
+          بعد إضافة البريد ينشئ الطالب حسابه ويؤكد ملكية بريده.
+        </p>
+      </section>
+      <section class="admin-card">
+        <div class="admin-actions">
+          <h2
+            data-ar="الإيميلات المسموح بها"
+            data-de="Freigegebene E-Mail-Adressen"
+          >
+            الإيميلات المسموح بها
+          </h2>
+          <button
+            id="admin-refresh"
+            type="button"
+            data-ar="تحديث القائمة"
+            data-de="Liste aktualisieren"
+          >
+            تحديث القائمة
+          </button>
+        </div>
+        <label
+          for="admin-search"
+          data-ar="ابحث ببداية البريد الإلكتروني"
+          data-de="Nach E-Mail-Anfang suchen"
+          >ابحث ببداية البريد الإلكتروني</label
+        ><input
+          id="admin-search"
+          type="search"
+          dir="ltr"
+          maxlength="254"
+          autocomplete="off"
+        />
+        <p id="admin-status" role="status" aria-live="polite"></p>
+        <div id="admin-members" class="admin-members"></div>
+        <button
+          id="admin-more"
+          type="button"
+          hidden
+          data-ar="عرض المزيد"
+          data-de="Mehr anzeigen"
+        >
+          عرض المزيد
+        </button>
+      </section>
+      <section id="admin-device-panel" class="admin-card" hidden>
+        <div class="admin-actions">
+          <h2 id="admin-device-title"></h2>
+          <button
+            id="admin-close-devices"
+            type="button"
+            data-ar="إغلاق قائمة الأجهزة"
+            data-de="Geräteliste schließen"
+          >
+            إغلاق قائمة الأجهزة
+          </button>
+        </div>
+        <p
+          data-ar="المسجّل يعني متصفحًا أو نسخة تطبيق، وليس تعريفًا قطعيًا لهاتف مادي. «نشط مؤخرًا» يعني تحققًا خلال آخر خمس دقائق. إلغاء التسجيل يمنع الطلبات المحمية من الجهاز، ويظهر له المنع عند التحقق التالي؛ النسخة المحمّلة دون اتصال لا يمكن سحبها فورًا."
+          data-de="Ein Gerät bezeichnet einen Browser oder eine App-Installation, nicht eindeutig ein physisches Telefon. Kürzlich aktiv bedeutet eine Prüfung innerhalb von fünf Minuten. Eine Sperre verweigert geschützte Anfragen und wird bei der nächsten Prüfung sichtbar; offline heruntergeladene Inhalte lassen sich nicht sofort zurückholen."
+        >
+          المسجّل يعني متصفحًا أو نسخة تطبيق.
+        </p>
+        <div id="admin-devices" class="admin-members"></div>
+      </section>
+    </main>
+    <footer class="teacher-credit" id="teacher-credit"></footer>
+  </body>
+</html>

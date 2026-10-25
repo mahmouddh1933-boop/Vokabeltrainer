@@ -28,7 +28,7 @@ for source in [*ROOT.glob('*.html'), ROOT / 'styles.css']:
     # Firebase has restored the account and storage is scoped to its UID.
     def gated_script(match):
         reference = match.group(1)
-        if reference.split('?')[0] in ['js/storage.js', 'js/firebase-config.js', 'js/auth-session.js', 'js/pwa.js']:
+        if reference.split('?')[0] in ['js/storage.js', 'js/firebase-config.js', 'js/auth-session.js', 'js/access-client.js', 'js/pwa.js']:
             return match.group(0)
         return f'<script type="application/x-olive-app" data-auth-src="{reference}"></script>'
     def version_asset(match):
@@ -38,6 +38,8 @@ for source in [*ROOT.glob('*.html'), ROOT / 'styles.css']:
         if not path.is_relative_to(ROOT) or not path.is_file(): return match.group(0)
         return match.group(1)+reference.split('?')[0]+'?v='+hashlib.sha256(path.read_bytes()).hexdigest()[:12]+match.group(3)
     content=re.sub(r'((?:src|href)=["\'])([^"\']+\.(?:js|css)(?:\?[^"\']*)?)(["\'])',version_asset,source.read_text())
+    if source.name != 'offline.html':
+        content=content.replace('<html ', '<html data-olive-hosted="true" ',1)
     if source.name not in ['login.html','offline.html']:
         content = re.sub(r'<script\b[^>]*\bsrc=["\']([^"\']+)["\'][^>]*>\s*</script>', gated_script, content)
     (OUTPUT / source.name).write_text(content)
@@ -62,7 +64,12 @@ if args.archive:
         archive.writestr(prefix + 'firebase.json', json.dumps(config, indent=2) + '\n')
         archive.write(ROOT / '.firebaserc', prefix + '.firebaserc')
         archive.write(ROOT / 'firestore.rules', prefix + 'firestore.rules')
+        archive.write(ROOT / 'firestore.indexes.json', prefix + 'firestore.indexes.json')
         archive.write(ROOT / 'FIREBASE-START-DE.md', prefix + 'FIREBASE-START-DE.md')
+        archive.write(ROOT / 'ADMIN-SETUP-AR.md', prefix + 'ADMIN-SETUP-AR.md')
+        for path in sorted((ROOT/'functions').rglob('*')):
+            if path.is_file() and not any(part.startswith('.') or part in ['node_modules'] for part in path.relative_to(ROOT/'functions').parts):
+                archive.write(path,prefix+'functions/'+path.relative_to(ROOT/'functions').as_posix())
         for path in sorted(OUTPUT.rglob('*')):
             if path.is_file(): archive.write(path, prefix + 'firebase-public/' + path.relative_to(OUTPUT).as_posix())
     with ZipFile(target) as archive:

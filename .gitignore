@@ -5,3 +5,5 @@ firebase-debug*.log
 *-debug.log
 __pycache__/
 *.pyc
+
+functions/.env*

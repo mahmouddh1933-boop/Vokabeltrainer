@@ -1,0 +1,4 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const vm=require('node:vm');const fs=require('node:fs');
+const code=fs.readFileSync('js/firebase-config.js','utf8');
+function config(host,protocol,port='',hosted=false){const context={window:{},location:{hostname:host,protocol,port},document:{documentElement:{dataset:hosted?{oliveHosted:'true'}:{}}}};vm.runInNewContext(code,context);return context.window.OliveFirebaseConfig;}
+test('Firebase hosting builds keep authentication enabled on custom domains and insecure mirrors fail closed',()=>{assert.equal(config('school.example','https:','',true).enabled,true);assert.equal(config('school.example','http:','',true).enabled,true);assert.equal(config('letters-from-olive.web.app','https:').enabled,true);assert.equal(config('127.0.0.1','http:','5000').emulator,true);assert.equal(config('127.0.0.1','http:','8070').enabled,false);assert.equal(config('','file:').enabled,false);});

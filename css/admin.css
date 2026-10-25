@@ -1,0 +1,111 @@
+.admin-page {
+  padding: clamp(16px, 3vw, 32px) !important;
+}
+.admin-card {
+  padding: clamp(16px, 3vw, 28px);
+  margin-block: 22px;
+  border: 1px solid #aac09a;
+  border-radius: 18px;
+  background: #fffdf4;
+}
+.admin-card h2 {
+  font-size: 24px;
+  line-height: 1.8;
+  margin-block: 0 14px;
+}
+.admin-card p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #36583e;
+}
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-block: 14px;
+}
+.admin-page button {
+  min-height: 46px;
+  width: auto;
+  max-width: 100%;
+  white-space: normal;
+  padding: 10px 17px;
+  line-height: 1.8;
+  border-radius: 11px;
+}
+.admin-page input {
+  min-height: 48px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #819b70;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.admin-actions input {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+.admin-card label {
+  display: block;
+  margin-block: 12px;
+}
+.admin-members {
+  display: grid;
+  gap: 16px;
+  margin-block: 18px;
+}
+.admin-member {
+  padding: 18px;
+  border: 1px solid #c2d0b3;
+  border-radius: 13px;
+  background: #f2f5e9;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.admin-member h3 {
+  font-size: 19px;
+  line-height: 1.8;
+  margin: 0;
+}
+.admin-member h3 bdi {
+  font-family: Arial, sans-serif;
+  overflow-wrap: anywhere;
+}
+.admin-member p {
+  margin-block: 8px;
+}
+.admin-member .admin-actions {
+  margin-bottom: 0;
+}
+.admin-page .is-error {
+  color: #8c3828;
+  font-weight: 600;
+}
+.admin-member .is-current {
+  font-weight: 700;
+  color: #285c39;
+}
+.admin-page [hidden] {
+  display: none !important;
+}
+.admin-page :focus-visible {
+  outline: 3px solid #a47531;
+  outline-offset: 3px;
+}
+@media (max-width: 480px) {
+  .admin-page button {
+    flex: 1 1 45%;
+    padding: 10px;
+  }
+  .admin-card {
+    padding: 16px;
+  }
+  .admin-card h2 {
+    font-size: 23px;
+  }
+  .admin-page input {
+    width: 100%;
+  }
+}

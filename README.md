@@ -10,6 +10,10 @@ Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](download
 
 [تصريف الأفعال](verbs.html) ist in [القواعد والإملاء](grammar.html) dauerhaft erreichbar: 51 Verben einschließlich endschwacher und geminierter Verben sowie Tabellen und Übungen für Verneinung und Verbot.
 
+## Freigaben, zwei Geräte und Verwaltung
+
+Die Firebase-Ausgabe hat serverseitige E-Mail-Freigaben, zwei registrierte Browser pro Konto und eine geschützte Verwaltung. Die Einrichtung benötigt Blaze, Identity Platform sowie Functions und aktualisierte Firestore-Regeln. Nur Hosting zu veröffentlichen reicht für diese Ausgabe nicht. [التفعيل بالعربية، حدود الأجهزة وخطوة اختبار القواعد الرسمية](ADMIN-SETUP-AR.md).
+
 ## Als PWA installieren
 
 Die App kann nach dem HTTPS-Hosting auf Android, iPhone und Desktop installiert werden. Textlektionen werden offline vorbereitet; aufgerufene Aufnahmen und Bilder werden begrenzt gespeichert. Neue Versionen werden vor dem Wechsel vorbereitet und erst nach Auswahl oder erneutem Öffnen aktiviert. [التفعيل والتثبيت خطوة بخطوة · Anleitung und technische Grenzen](docs/PWA.md).

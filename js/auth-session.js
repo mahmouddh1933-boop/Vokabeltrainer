@@ -48,6 +48,9 @@
     node.hidden = false;
   }
   function showError(error) {
+    if(window.OliveAccess?.enabled&&String(error?.message||"").includes("EMAIL_NOT_ALLOWED")){
+      showMessage(...window.OliveAccess.message("EMAIL_NOT_ALLOWED"),true);return;
+    }
     const messages = {
       "auth/invalid-email": [
         "أدخل بريدًا إلكترونيًا صالحًا.",
@@ -157,6 +160,24 @@
       retry.addEventListener("click", () => location.reload());
       node.append(retry);
     }
+  }
+  function accessBlocker(error) {
+    window.OliveSync?.stop();
+    window.OliveAccess?.stop();
+    window.VocabApp?.stopSpeech?.();
+    root.classList.add("auth-pending");
+    blocker();
+    const panel=$("auth-blocker"), code=error?.code||"NETWORK";
+    panel.querySelector("p").textContent=t(...window.OliveAccess.message(code));
+    const actions=document.createElement("div");actions.className="access-gate-actions";
+    function action(ar,de,fn){const b=document.createElement("button");b.type="button";b.textContent=t(ar,de);b.onclick=async()=>{b.disabled=true;try{await fn();}catch(_){b.disabled=false;panel.querySelector("p").textContent=t("تعذّر إكمال العملية. انتظر قليلًا ثم حاول مجددًا.","Aktion fehlgeschlagen. Warte kurz und versuche es erneut.");}};actions.append(b);}
+    if(code==="VERIFY_EMAIL"){
+      action("إرسال رسالة التحقق","Bestätigungs-E-Mail senden",async()=>{await auth.currentUser.sendEmailVerification();panel.querySelector("p").textContent=t("أُرسلت رسالة التحقق. افحص بريدك ومجلد الرسائل غير المرغوب فيها، ثم اضغط أعد التحقق.","Bestätigung gesendet. Prüfe dein Postfach und den Spamordner und bestätige anschließend erneut.");});
+      action("أعد التحقق","Erneut prüfen",async()=>{await auth.currentUser.reload();await auth.currentUser.getIdToken(true);location.reload();});
+    }else if(code==="ADMIN_ONLY") action("العودة إلى مسار التعلّم","Zurück zum Lernpfad",()=>location.assign("index.html"));
+    else action("أعد المحاولة","Erneut versuchen",()=>location.reload());
+    action("تسجيل الخروج واختيار حساب آخر","Abmelden und anderes Konto wählen",async()=>{window.OliveAccess.clearGrant();await auth.signOut();goToLogin();});
+    panel.append(actions);
   }
   async function startApp(user) {
     const scripts = Array.from(
@@ -310,6 +331,8 @@
           ]);
           window.OliveSync.stop();
         }
+        window.OliveAccess?.stop();
+        window.OliveAccess?.clearGrant();
         await auth.signOut();
       } catch (_) {
         root.classList.remove("auth-pending");
@@ -321,7 +344,11 @@
         );
       }
     });
-    panel.append(email, note, syncButton, logout);
+    panel.append(email, note, syncButton);
+    if(window.OliveAccess?.isAdmin()){
+      const adminLink=document.createElement("a");adminLink.href="admin.html";adminLink.id="auth-admin-link";adminLink.textContent=t("لوحة الإدارة","Verwaltung");adminLink.dataset.ar="لوحة الإدارة";adminLink.dataset.de="Verwaltung";panel.append(adminLink);
+    }
+    panel.append(logout);
     menu.append(summary, panel);
     document.querySelector(".topbar-right")?.prepend(menu);
     translate();
@@ -449,12 +476,10 @@
               ? window.firebase.auth.Auth.Persistence.LOCAL
               : window.firebase.auth.Auth.Persistence.SESSION,
           );
-          if (mode === "register")
-            await auth.createUserWithEmailAndPassword(
-              email,
-              $("auth-password").value,
-            );
-          else
+          if (mode === "register") {
+            const account=await auth.createUserWithEmailAndPassword(email,$("auth-password").value);
+            if(window.OliveAccess?.enabled) await account.user.sendEmailVerification();
+          } else
             await auth.signInWithEmailAndPassword(
               email,
               $("auth-password").value,
@@ -528,10 +553,14 @@
           starting = true;
           startedUid = user.uid;
           try {
-            await startApp(user);
-          } catch (_) {
-            root.classList.add("auth-pending");
-            blocker(true);
+            if(window.OliveAccess?.enabled){
+              const access=await window.OliveAccess.enter(user,auth);
+              currentUser=access.user||auth.currentUser;
+            }
+            await startApp(currentUser);
+          } catch (error) {
+            if(window.OliveAccess?.enabled) accessBlocker(error);
+            else {root.classList.add("auth-pending");blocker(true);}
           } finally {
             starting = false;
           }
@@ -554,6 +583,7 @@
       } else blocker(true);
     }
   }
+  window.addEventListener("olive-access-denied",event=>accessBlocker(event.detail));
   document.addEventListener("DOMContentLoaded", start, { once: true });
   window.addEventListener("pageshow", (event) => {
     if (enabled && !loginPage && event.persisted) {
