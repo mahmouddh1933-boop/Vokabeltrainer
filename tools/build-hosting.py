@@ -67,9 +67,9 @@ if args.archive:
         archive.write(ROOT / 'firestore.indexes.json', prefix + 'firestore.indexes.json')
         archive.write(ROOT / 'FIREBASE-START-DE.md', prefix + 'FIREBASE-START-DE.md')
         archive.write(ROOT / 'ADMIN-SETUP-AR.md', prefix + 'ADMIN-SETUP-AR.md')
-        for path in sorted((ROOT/'functions').rglob('*')):
-            if path.is_file() and not any(part.startswith('.') or part in ['node_modules'] for part in path.relative_to(ROOT/'functions').parts):
-                archive.write(path,prefix+'functions/'+path.relative_to(ROOT/'functions').as_posix())
+        for path in sorted((ROOT/'verification').rglob('*')):
+            if path.is_file() and not any(part.startswith('.') or part in ['node_modules'] for part in path.relative_to(ROOT/'verification').parts):
+                archive.write(path,prefix+'verification/'+path.relative_to(ROOT/'verification').as_posix())
         for path in sorted(OUTPUT.rglob('*')):
             if path.is_file(): archive.write(path, prefix + 'firebase-public/' + path.relative_to(OUTPUT).as_posix())
     with ZipFile(target) as archive:

@@ -12,7 +12,7 @@ Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](download
 
 ## Freigaben, zwei Geräte und Verwaltung
 
-Die Firebase-Ausgabe hat serverseitige E-Mail-Freigaben, zwei registrierte Browser pro Konto und eine geschützte Verwaltung. Die Einrichtung benötigt Blaze, Identity Platform sowie Functions und aktualisierte Firestore-Regeln. Nur Hosting zu veröffentlichen reicht für diese Ausgabe nicht. [التفعيل بالعربية، حدود الأجهزة وخطوة اختبار القواعد الرسمية](ADMIN-SETUP-AR.md).
+Die Firebase-Ausgabe verwendet den kostenlosen Spark-Tarif ohne Cloud Functions oder Zahlungsmittel. Firestore-Regeln schützen E-Mail-Freigaben, Kontodaten und die private Verwaltung. Zwei registrierte Browser werden kooperativ in der Oberfläche verwaltet; dies ist keine sichere Gerätesperre. [التفعيل بالعربية، حدود الأجهزة وخطوة اختبار القواعد الرسمية](ADMIN-SETUP-AR.md).
 
 ## Als PWA installieren
 

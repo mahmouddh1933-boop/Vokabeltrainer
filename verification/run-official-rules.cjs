@@ -4,4 +4,4 @@ const result = spawnSync(
   ["--test", require("node:path").join(__dirname, "rules.test.js")],
   { stdio: "inherit", env: { ...process.env, RUN_OFFICIAL_ACCESS_RULES: "1" } },
 );
-process.exitCode = result.status || 0;
+process.exitCode = result.status ?? 1;

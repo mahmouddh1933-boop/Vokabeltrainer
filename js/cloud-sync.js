@@ -246,8 +246,10 @@
       if (stopped) return;
       database ||= window.firebase.firestore();
       if (!transport) {
-        if (window.OliveFirebaseConfig.emulator)
+        if (window.OliveFirebaseConfig.emulator && !database.__oliveEmulator) {
           database.useEmulator("127.0.0.1", 8080);
+          database.__oliveEmulator = true;
+        }
         transport = firebaseTransport(uid);
         engine.connect(transport);
       }

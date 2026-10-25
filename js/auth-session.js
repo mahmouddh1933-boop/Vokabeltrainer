@@ -554,7 +554,7 @@
           startedUid = user.uid;
           try {
             if(window.OliveAccess?.enabled){
-              const access=await window.OliveAccess.enter(user,auth);
+              const access=await window.OliveAccess.enter(user,auth,loadScript);
               currentUser=access.user||auth.currentUser;
             }
             await startApp(currentUser);

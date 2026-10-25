@@ -155,8 +155,8 @@
             ? t("عدد الإيميلات المعروضة: ", "Angezeigte E-Mail-Adressen: ") +
                 rows.length
             : t(
-                "لا توجد إيميلات مطابقة. أضف البريد أولًا للسماح بالتسجيل.",
-                "Keine passenden Einträge. Gib zuerst eine E-Mail-Adresse frei.",
+                "لا توجد إيميلات مطابقة. أضف البريد أولًا للسماح بفتح الدروس.",
+                "Keine passenden Einträge. Gib zuerst eine E-Mail-Adresse für die Lektionen frei.",
               ),
         );
       } catch (e) {
@@ -178,7 +178,7 @@
           node("p", t("لا توجد أجهزة مسجّلة.", "Keine Geräte registriert.")),
         );
       const own = window.OliveAuth.getUser(),
-        ownClaims = await own.getIdTokenResult();
+        ownDevice = await api.deviceId();
       for (const d of result.devices) {
         const card = node("article");
         card.className = "admin-member";
@@ -207,13 +207,13 @@
             node(
               "p",
               t(
-                "نشط خلال آخر خمس دقائق",
-                "Innerhalb der letzten fünf Minuten aktiv",
+                "نشط خلال آخر عشر دقائق",
+                "Innerhalb der letzten zehn Minuten aktiv",
               ),
             ),
           );
         const current =
-          row.uid === own.uid && d.id === ownClaims.claims.oliveDevice;
+          row.uid === own.uid && d.id === ownDevice;
         if (current) {
           const p = node("p", t("هذا جهازك الحالي", "Dein aktuelles Gerät"));
           p.className = "is-current";

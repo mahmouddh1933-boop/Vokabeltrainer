@@ -1,27 +1,73 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    function owner(uid) {
-      return request.auth != null && request.auth.uid == uid
+    function verified() {
+      return request.auth != null
         && request.auth.token.email_verified == true
         && request.auth.token.email is string
-        && request.auth.token.oliveDevice is string
-        && request.auth.token.oliveSession is string
-        && permitted(uid);
+        && request.auth.token.email.matches('^[^/]+$');
     }
-    function permitted(uid) {
-      let member = get(/databases/$(database)/documents/oliveAccessUsers/$(uid)).data;
-      let invitation = get(/databases/$(database)/documents/oliveAllowedEmails/$(member.emailKey)).data;
-      let device = get(/databases/$(database)/documents/oliveAccessUsers/$(uid)/devices/$(request.auth.token.oliveDevice)).data;
-      return member.enabled == true && invitation.enabled == true && invitation.uid == uid
-        && member.email == invitation.email
-        && member.email == request.auth.token.email.lower()
-        && device.active == true && device.status == 'active'
-        && device.id == request.auth.token.oliveDevice
-        && device.sessionId == request.auth.token.oliveSession
-        && member.devices is map && member.devices.keys().size() <= 2
-        && member.devices[device.id] == device.sessionId
-        && device.expiresAtMs > request.time.toMillis();
+    function admin() {
+      return verified()
+        && exists(/databases/$(database)/documents/oliveFreeAdmins/$(request.auth.uid))
+        && get(/databases/$(database)/documents/oliveFreeAdmins/$(request.auth.uid)).data.enabled == true;
+    }
+    function permitted() {
+      return verified() && (admin()
+        || (exists(/databases/$(database)/documents/oliveFreeEmails/$(request.auth.token.email.lower()))
+          && get(/databases/$(database)/documents/oliveFreeEmails/$(request.auth.token.email.lower())).data.enabled == true));
+    }
+    function owner(uid) {
+      return request.auth != null && request.auth.uid == uid && permitted();
+    }
+    // Device entries describe browser-reported usage, not token-bound identity.
+    // The email list, admin role and account isolation are enforced separately.
+    function validUsage() {
+      let next = request.resource.data;
+      let id = next.touchedDevice;
+      let entry = next.devices[id];
+      return next.keys().hasOnly(['email','devices','touchedDevice','createdAt','lastSeenAt'])
+        && next.email == request.auth.token.email.lower()
+        && next.createdAt is timestamp && next.lastSeenAt == request.time
+        && id is string && id.matches('^[a-f0-9]{64}$')
+        && next.devices is map && next.devices.size() >= 1 && next.devices.size() <= 2
+        && entry is map && entry.keys().hasOnly(['label','agent','firstSeenAt','lastSeenAt'])
+        && entry.label is string && entry.label.size() <= 120
+        && entry.agent is string && entry.agent.size() <= 240
+        && entry.firstSeenAt is timestamp && entry.lastSeenAt == request.time
+        && !exists(/databases/$(database)/documents/oliveFreeMembers/$(request.auth.uid)/deviceBlocks/$(id));
+    }
+    match /oliveFreeAdmins/{uid} {
+      // Only a project owner can seed roles through Console/Admin SDK.
+      allow get: if verified() && request.auth.uid == uid;
+      allow list, write: if false;
+    }
+    match /oliveFreeEmails/{email} {
+      allow get: if admin() || (verified() && request.auth.token.email.lower() == email);
+      allow list: if admin();
+      allow create, update: if admin()
+        && request.resource.data.keys().hasOnly(['email','enabled','createdAt','updatedAt'])
+        && request.resource.data.email == email && email == email.lower()
+        && request.resource.data.enabled is bool
+        && request.resource.data.createdAt is timestamp
+        && request.resource.data.updatedAt == request.time;
+      allow delete: if admin();
+    }
+    match /oliveFreeMembers/{uid} {
+      allow get: if admin() || owner(uid);
+      allow list: if admin();
+      allow create: if admin() || (owner(uid) && validUsage()
+        && request.resource.data.devices.size() == 1
+        && request.resource.data.createdAt == request.time);
+      allow update: if admin() || (owner(uid) && validUsage()
+        && request.resource.data.createdAt == resource.data.createdAt
+        && request.resource.data.devices.keys().hasAll(resource.data.devices.keys())
+        && request.resource.data.devices.diff(resource.data.devices).affectedKeys().hasOnly([request.resource.data.touchedDevice]));
+      allow delete: if admin();
+      match /deviceBlocks/{id} {
+        allow get: if admin() || owner(uid);
+        allow list, write: if admin();
+      }
     }
     function known(key) {
       return key in ['learningStats', 'wrongWords', 'studiedWords', 'listMasteryV12',
