@@ -1,25 +1,71 @@
 {
   "hosting": {
     "public": "firebase-public",
-    "predeploy": ["python3 tools/build-hosting.py"],
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "predeploy": [
+      "python3 tools/build-hosting.py"
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "headers": [
       {
+        "source": "/pwa-worker.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      },
+      {
+        "source": "/manifest.webmanifest",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/manifest+json; charset=utf-8"
+          }
+        ]
+      },
+      {
         "source": "/js/cloud-sync*.js",
-        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
       },
       {
         "source": "**/*.html",
-        "headers": [{ "key": "Cache-Control", "value": "no-store" }]
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-store"
+          }
+        ]
       },
       {
         "source": "/",
-        "headers": [{ "key": "Cache-Control", "value": "no-store" }]
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-store"
+          }
+        ]
       },
       {
         "source": "**",
         "headers": [
-          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
           {
             "key": "Referrer-Policy",
             "value": "strict-origin-when-cross-origin"
@@ -28,12 +74,25 @@
       }
     ]
   },
-  "firestore": { "rules": "firestore.rules" },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
   "emulators": {
-    "firestore": { "host": "127.0.0.1", "port": 8080 },
-    "auth": { "host": "127.0.0.1", "port": 9099 },
-    "hosting": { "host": "127.0.0.1", "port": 5000 },
-    "ui": { "enabled": false },
+    "firestore": {
+      "host": "127.0.0.1",
+      "port": 8080
+    },
+    "auth": {
+      "host": "127.0.0.1",
+      "port": 9099
+    },
+    "hosting": {
+      "host": "127.0.0.1",
+      "port": 5000
+    },
+    "ui": {
+      "enabled": false
+    },
     "singleProjectMode": true
   }
 }

@@ -6,6 +6,8 @@ import json
 import hashlib
 import posixpath
 import re
+import subprocess
+import runpy
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
@@ -65,12 +67,16 @@ def portable_html(page):
     source = source.replace('</body>', '\n'.join(scripts)+'\n</body>')
     return source.encode()
 
+subprocess.run(['python3', str(ROOT/'tools/build-pwa.py')], check=True)
+
 files = {}
 for path in sorted(ROOT.rglob('*')):
     rel = path.relative_to(ROOT)
     if not path.is_file() or any(part.startswith('.') or part in {'downloads','__pycache__','firebase-public','node_modules'} for part in rel.parts) or path.suffix in {'.zip','.pyc','.log'}:
         continue
     files['Vokabeltrainer/'+rel.as_posix()] = portable_html(path) if path.suffix == '.html' else path.read_bytes()
+pwa = runpy.run_path(str(ROOT/'tools/build-pwa.py'), run_name='olive_pwa_builder')
+files['Vokabeltrainer/pwa-worker.js'] = pwa['render_worker']({name.removeprefix('Vokabeltrainer/'):data for name,data in files.items()}).encode()
 args.output.parent.mkdir(parents=True, exist_ok=True)
 with ZipFile(args.output, 'w', ZIP_DEFLATED) as archive:
     for name, payload in files.items(): archive.writestr(name, payload)

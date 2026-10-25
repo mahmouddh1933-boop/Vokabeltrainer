@@ -285,6 +285,7 @@
   async function flush() {
     if (stopped || !engine) return false;
     clearTimeout(timer);
+    if (navigator.onLine === false) { engine.fail("offline"); return false; }
     if (!transport) {
       await connect(loadFirestore);
     }
@@ -309,10 +310,14 @@
     session.setItem("__oliveSyncClientV1", clientId);
     releaseOwner = owner.release;
     engine = C.createSync({ storage, clientId, onChange: emit });
-    const task = connect(loadScript);
-    try {
-      await deadline(task, 5000);
-    } catch (_) {
+    if (navigator.onLine !== false) {
+      const task = connect(loadScript);
+      try {
+        await deadline(task, 5000);
+      } catch (_) {
+        engine.fail("offline");
+      }
+    } else {
       engine.fail("offline");
     }
     engine.activate();

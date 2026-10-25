@@ -1,0 +1,79 @@
+.olive-pwa-panel {
+  margin-block: 24px;
+  padding: 18px 22px;
+  background: #edf2e2;
+  border: 1px solid #9ab284;
+  border-radius: 16px;
+  color: #214432;
+  font:
+    17px/1.9 Tahoma,
+    Arial,
+    sans-serif;
+  clear: both;
+}
+.olive-pwa-panel summary {
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.8;
+  min-height: 44px;
+  display: list-item;
+}
+.olive-pwa-panel p {
+  font: inherit;
+  color: inherit;
+  margin-block: 12px;
+}
+.olive-pwa-panel .pwa-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-block: 14px;
+}
+.olive-pwa-panel button {
+  width: auto;
+  max-width: 100%;
+  min-height: 46px;
+  padding: 10px 16px;
+  line-height: 1.7;
+  border: 1px solid #728d60;
+  border-radius: 11px;
+  background: #dce8ce;
+  color: #254733;
+  font: inherit;
+  white-space: normal;
+}
+.olive-pwa-panel button:not(:disabled):hover {
+  background: #cbdcb8;
+}
+.olive-pwa-panel button:disabled {
+  opacity: 0.65;
+}
+.olive-pwa-panel button:focus-visible {
+  outline: 3px solid #936b27;
+  outline-offset: 3px;
+}
+.olive-pwa-panel #pwa-update {
+  background: #35654a;
+  color: #fff;
+}
+.olive-pwa-panel .pwa-install-steps {
+  white-space: pre-line;
+  background: #fffdf4;
+  padding: 14px;
+  border-radius: 10px;
+}
+.olive-pwa-panel [hidden] {
+  display: none !important;
+}
+.auth-card .olive-pwa-panel {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+@media (max-width: 480px) {
+  .olive-pwa-panel {
+    padding: 16px;
+  }
+  .olive-pwa-panel .pwa-actions button {
+    flex: 1 1 43%;
+  }
+}

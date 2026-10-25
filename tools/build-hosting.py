@@ -4,6 +4,8 @@ import shutil
 import re
 import argparse
 import json
+import subprocess
+import hashlib
 from zipfile import ZipFile, ZIP_DEFLATED
 
 parser = argparse.ArgumentParser()
@@ -19,20 +21,30 @@ if OUTPUT.exists():
     shutil.rmtree(OUTPUT)
 OUTPUT.mkdir()
 for source in [*ROOT.glob('*.html'), ROOT / 'styles.css']:
-    if source.suffix != '.html' or source.name == 'login.html':
+    if source.suffix != '.html':
         shutil.copy2(source, OUTPUT / source.name)
         continue
     # The shared gate starts these scripts in their original order only once
     # Firebase has restored the account and storage is scoped to its UID.
     def gated_script(match):
         reference = match.group(1)
-        if reference.split('?')[0] in ['js/storage.js', 'js/firebase-config.js', 'js/auth-session.js']:
+        if reference.split('?')[0] in ['js/storage.js', 'js/firebase-config.js', 'js/auth-session.js', 'js/pwa.js']:
             return match.group(0)
         return f'<script type="application/x-olive-app" data-auth-src="{reference}"></script>'
-    content = re.sub(r'<script\b[^>]*\bsrc=["\']([^"\']+)["\'][^>]*>\s*</script>', gated_script, source.read_text())
+    def version_asset(match):
+        reference=match.group(2)
+        if re.match(r'^[a-z][a-z0-9+.-]*:|^//',reference,re.I): return match.group(0)
+        path=(ROOT/reference.split('?')[0]).resolve()
+        if not path.is_relative_to(ROOT) or not path.is_file(): return match.group(0)
+        return match.group(1)+reference.split('?')[0]+'?v='+hashlib.sha256(path.read_bytes()).hexdigest()[:12]+match.group(3)
+    content=re.sub(r'((?:src|href)=["\'])([^"\']+\.(?:js|css)(?:\?[^"\']*)?)(["\'])',version_asset,source.read_text())
+    if source.name not in ['login.html','offline.html']:
+        content = re.sub(r'<script\b[^>]*\bsrc=["\']([^"\']+)["\'][^>]*>\s*</script>', gated_script, content)
     (OUTPUT / source.name).write_text(content)
 for name in ['css', 'js', 'data', 'images', 'fonts', 'audio']:
     shutil.copytree(ROOT / name, OUTPUT / name)
+shutil.copy2(ROOT / 'manifest.webmanifest', OUTPUT / 'manifest.webmanifest')
+subprocess.run(['python3', str(ROOT/'tools/build-pwa.py'), '--directory', str(OUTPUT)], check=True)
 assert (OUTPUT / 'index.html').is_file()
 assert (OUTPUT / 'login.html').is_file()
 assert not (OUTPUT / 'downloads').exists()

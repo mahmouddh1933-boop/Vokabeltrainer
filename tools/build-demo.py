@@ -328,6 +328,14 @@ Keine Analytics- oder Werbeskripte werden eingebunden.
 Erstellt für Mahmoud Barakat · حروف من الزيتون
 ''')
 
+shutil.copytree(ROOT/'images/pwa',DEST/'images/pwa',dirs_exist_ok=True)
+shutil.copy2(ROOT/'offline.html',DEST/'offline.html')
+pwa=json.loads((ROOT/'manifest.webmanifest').read_text())
+pwa['name']='حروف من الزيتون · Demo'
+pwa['short_name']='حروف · Demo'
+pwa['shortcuts']=[{'name':'Lernpfad · مسار التعلم','url':'./index.html'},{'name':'Alphabet · الحروف','url':'./huruf.html'}]
+write('manifest.webmanifest',json.dumps(pwa,ensure_ascii=False,indent=2)+'\n')
+
 # Inline local scripts and CSS for reliable file:// opening as in the full ZIP.
 def portable(path):
     source = path.read_text()
@@ -362,6 +370,7 @@ manifest = {'edition': 'demo', 'vocabularyLists': 6, 'vocabularyEntries': 120,
             'sentences': 6, 'stories': 1, 'pages': [page + '.html' for page in PAGES],
             'recordings': len(list(DEST.rglob('*.mp3')))}
 write('demo-manifest.json', dump(manifest))
+subprocess.run(['python3',str(ROOT/'tools/build-pwa.py'),'--directory',str(DEST)],check=True)
 files = sorted(path for path in DEST.rglob('*') if path.is_file())
 assert not any('firebase' in path.name or 'cloud-sync' in path.name or 'auth-session' in path.name for path in files)
 assert len(catalog['lists']) == 6

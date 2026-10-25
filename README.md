@@ -10,6 +10,10 @@ Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](download
 
 [تصريف الأفعال](verbs.html) ist in [القواعد والإملاء](grammar.html) dauerhaft erreichbar: 51 Verben einschließlich endschwacher und geminierter Verben sowie Tabellen und Übungen für Verneinung und Verbot.
 
+## Als PWA installieren
+
+Die App kann nach dem HTTPS-Hosting auf Android, iPhone und Desktop installiert werden. Textlektionen werden offline vorbereitet; aufgerufene Aufnahmen und Bilder werden begrenzt gespeichert. Neue Versionen werden vor dem Wechsel vorbereitet und erst nach Auswahl oder erneutem Öffnen aktiviert. [التفعيل والتثبيت خطوة بخطوة · Anleitung und technische Grenzen](docs/PWA.md).
+
 ## Fertige Version herunterladen
 
 [Modernisierten Vokabeltrainer als ZIP herunterladen](https://github.com/mahmouddh1933-boop/Vokabeltrainer/raw/refs/heads/main/downloads/Vokabeltrainer-modern.zip). Entpacken und `index.html` im Browser öffnen oder den lokalen Server wie unten starten.

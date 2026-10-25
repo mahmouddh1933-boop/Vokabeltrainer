@@ -143,3 +143,9 @@ python3 tools/build-hosting.py --archive
 Bei einer späteren eigenen Domain muss sie zu `js/firebase-config.js` und zu
 Firebase Authentication → Authorized domains hinzugefügt werden. Weitere
 Firebase-Hosting-Sites mit anderen Namen benötigen ebenfalls einen passenden Host-Eintrag.
+
+## PWA nach dem Hosting installieren
+
+Diese Ausgabe enthält Manifest, App-Symbole und einen versionsgebundenen Service Worker. Nach `firebase deploy --only hosting --project letters-from-olive` die HTTPS-Seite im Browser öffnen und unter „App installieren und offline lernen“ die Vorbereitung abwarten. Android/Chrome: Menü ⋮ → App installieren; iPhone/Safari: Teilen → Zum Home-Bildschirm; Desktop/Chrome oder Edge: Installationssymbol in der Adressleiste.
+
+Für den späteren Offline-Start eines bereits angemeldeten Kontos „Angemeldet bleiben“ auf dem eigenen Gerät wählen. Neue Anmeldung und Cloud-Synchronisierung brauchen Internet. Aufnahmen und Bilder werden beim Aufrufen gespeichert, bis maximal 500 Dateien oder 40 MiB. Eine vollständige Anleitung liegt im Quellrepository unter `docs/PWA.md`.
