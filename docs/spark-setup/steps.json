@@ -1,0 +1,47 @@
+[
+  {
+    "step": 1,
+    "title": "نزّل النسخة المجانية وافتح المجلد الصحيح",
+    "image": "images/step-01.png"
+  },
+  {
+    "step": 2,
+    "title": "ثبّت الأدوات المجانية وسجّل دخول Firebase",
+    "image": "images/step-02.png"
+  },
+  {
+    "step": 3,
+    "title": "اختر Spark وفعّل البريد وكلمة السر",
+    "image": "images/step-03.png"
+  },
+  {
+    "step": 4,
+    "title": "استخدم قاعدة Firestore الحالية",
+    "image": "images/step-04.png"
+  },
+  {
+    "step": 5,
+    "title": "اختبر قواعد الوصول قبل نشر الموقع",
+    "image": "images/step-05.png"
+  },
+  {
+    "step": 6,
+    "title": "انشر ملفات الموقع والقواعد الجديدة",
+    "image": "images/step-06.png"
+  },
+  {
+    "step": 7,
+    "title": "أنشئ حسابك وأكّد بريدك، ثم انسخ UID",
+    "image": "images/step-07.png"
+  },
+  {
+    "step": 8,
+    "title": "امنح حسابك صلاحية المدير مرة واحدة",
+    "image": "images/step-08.png"
+  },
+  {
+    "step": 9,
+    "title": "افتح لوحة الإدارة وأضف إيميلات الطلاب",
+    "image": "images/step-09.png"
+  }
+]

@@ -14,6 +14,8 @@ Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](download
 
 Die Firebase-Ausgabe verwendet den kostenlosen Spark-Tarif ohne Cloud Functions oder Zahlungsmittel. Firestore-Regeln schützen E-Mail-Freigaben, Kontodaten und die private Verwaltung. Zwei registrierte Browser werden kooperativ in der Oberfläche verwaltet; dies ist keine sichere Gerätesperre. [التفعيل بالعربية، حدود الأجهزة وخطوة اختبار القواعد الرسمية](ADMIN-SETUP-AR.md).
 
+[دليل الإعداد المجاني بالصور · ٩ خطوات PDF](downloads/Huroof-Spark-Setup-AR.pdf) · [حزمة الصور وHTML مع أزرار نسخ الأوامر](downloads/Huroof-Spark-Setup-AR.zip). صور Firebase مخططات توضيحية؛ لقطة لوحة التطبيق من المحاكي ببيانات تجريبية.
+
 ## Als PWA installieren
 
 Die App kann nach dem HTTPS-Hosting auf Android, iPhone und Desktop installiert werden. Textlektionen werden offline vorbereitet; aufgerufene Aufnahmen und Bilder werden begrenzt gespeichert. Neue Versionen werden vor dem Wechsel vorbereitet und erst nach Auswahl oder erneutem Öffnen aktiviert. [التفعيل والتثبيت خطوة بخطوة · Anleitung und technische Grenzen](docs/PWA.md).
