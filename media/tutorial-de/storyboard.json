@@ -1,0 +1,595 @@
+{
+  "title": "Huroof – Die ausführliche App-Tour",
+  "language": "de",
+  "author": "Mahmoud Barakat",
+  "description": "Deutsche Einführung mit echten Ansichten und bearbeiteten Beispielen; synthetische Sprecherstimme. Konto- und Synchronisationsfunktionen setzen die eingerichtete Online-Ausgabe voraus.",
+  "chapters": [
+    {
+      "id": "willkommen",
+      "title": "Willkommen bei Huroof",
+      "bullets": [
+        "Arabisch verstehen und anwenden",
+        "Eine Tour durch die ganze Lernwelt",
+        "Entwickelt von Mahmoud Barakat"
+      ],
+      "parts": [
+        {
+          "shot": "intro",
+          "text": "Willkommen bei Huroof, Buchstaben vom Olivenbaum. Die Anwendung von Lehrer Mahmoud Barakat verbindet Arabischlernen mit Orientierung, Übung und Wiederholung. Der Olivenbaum steht dabei für Verwurzelung und Standhaftigkeit."
+        },
+        {
+          "shot": "intro-map",
+          "text": "In dieser ausführlichen Tour lernst du die Lernbereiche und wichtigsten Werkzeuge kennen. Du siehst, wie du Buchstaben erkundest, Wörter festigst, Sätze bildest und dich an Texte, Gespräche und Grammatik heranarbeitest."
+        },
+        {
+          "shot": "route-top",
+          "text": "Wir benutzen die deutsche Oberfläche. Die arabischen Wörter bleiben in arabischer Schrift erhalten. Die Vorführung arbeitet mit Beispieldaten, damit du jeden Schritt nachvollziehen kannst."
+        }
+      ]
+    },
+    {
+      "id": "lernweg",
+      "title": "Deinen Lernweg finden",
+      "bullets": [
+        "Acht Lernstationen",
+        "Frei wählen oder dem Pfad folgen",
+        "Abschlussmarkierungen selbst setzen"
+      ],
+      "parts": [
+        {
+          "shot": "route-overview",
+          "text": "Die Startseite zeigt deinen Lernpfad Schritt für Schritt. Er führt vom Alphabet über Lesen und Wortschatz zu Fertigkeiten, Satzbau, Kurzgeschichten sowie Grammatik und Rechtschreibung."
+        },
+        {
+          "shot": "route-lower",
+          "text": "Öffne eine Station durch Anklicken. Du kannst dem vorgeschlagenen Weg folgen oder zu einem passenden Thema springen. Die Navigation am Seitenende führt zum vorherigen Schritt, zum nächsten Schritt oder zurück zur Übersicht."
+        },
+        {
+          "shot": "route-mark",
+          "text": "Mit Schritt abgeschlossen markierst du eine Station selbst. Diese Markierung dient deiner Organisation. Sie ist kein automatischer Nachweis, dass du alle Aufgaben beherrschst. Weiter führt dich zur zuletzt besuchten oder nächsten Station."
+        }
+      ]
+    },
+    {
+      "id": "einstieg",
+      "title": "Wo soll ich anfangen?",
+      "bullets": [
+        "Fünf diagnostische Checks",
+        "Zwei Aufgabenformen pro Check",
+        "Empfehlung statt Sprachzertifikat"
+      ],
+      "parts": [
+        {
+          "shot": "placement-catalog",
+          "text": "Wenn du deinen Einstieg nicht kennst, öffne die Einstiegschecks. Neben einem kurzen Gesamtcheck gibt es eigene Tests für Alphabet, Wortschatz und Satzbau, Verstehen sowie Grammatik und Rechtschreibung."
+        },
+        {
+          "shot": "placement-question",
+          "text": "Jeder Check umfasst sechzehn Aufgaben und hat zwei Aufgabenformen. Arbeite ohne Zeitdruck und möglichst ohne Hilfe. Bei Hörfragen hörst du zuerst die Aufnahme, bevor du die Antwort auswählst."
+        },
+        {
+          "shot": "placement-results",
+          "text": "Am Ende erhältst du ein vorläufiges Fertigkeitsprofil mit einer empfohlenen Startstation und passenden Lektionen. Das ist eine Lernorientierung, kein amtliches Sprachzertifikat. Frühere Versuche kannst du später wieder öffnen."
+        }
+      ]
+    },
+    {
+      "id": "alphabet",
+      "title": "Buchstaben wirklich kennenlernen",
+      "bullets": [
+        "28 Buchstaben",
+        "Wortbeispiele und Schreibformen",
+        "Sonderformen entdecken"
+      ],
+      "parts": [
+        {
+          "shot": "letters-front",
+          "text": "Im Alphabetbereich öffnest du zuerst die Lernkarten. Wähle einen der achtundzwanzig Buchstaben. Die Karte verbindet Zeichen, Namen und ein Beispielwort. Über die benachbarten Tasten wechselst du bequem weiter."
+        },
+        {
+          "shot": "letters-forms",
+          "text": "Durch Antippen drehst du die Karte um. Dort erkennst du, wie sich die Form am Wortanfang, in der Wortmitte und am Wortende verändert. Der Zielbuchstabe ist in den Beispielwörtern farbig hervorgehoben."
+        },
+        {
+          "shot": "letters-related",
+          "text": "Bei Alif findest du außerdem verwandte Schreibweisen wie verschiedene Hamzaformen, den langen Anlaut und Alif maqsura. Beim Buchstaben Ta wird auch Ta marbuta erklärt. So lernst du Unterschiede im Zusammenhang."
+        }
+      ]
+    },
+    {
+      "id": "aussprache-schrift",
+      "title": "Hören, Vokale und Handschrift",
+      "bullets": [
+        "Kurze und lange Vokale",
+        "Sukūn und Lautbeispiele",
+        "Mit Maus oder Finger schreiben"
+      ],
+      "parts": [
+        {
+          "shot": "letters-harakat",
+          "text": "Die Vokalzeichen helfen dir, kurze Vokale und vokallose Stellen zu unterscheiden. Wähle eine Form und höre sie mehrfach an. Vergleiche außerdem die langen Vokale mit den kurzen Varianten."
+        },
+        {
+          "shot": "letters-audio",
+          "text": "Sprich das Gehörte anschließend selbst nach. Eine Aufnahme zeigt dir ein Modell, ersetzt aber keine Rückmeldung zur eigenen Aussprache. Besonders bei ähnlichen Lauten lohnt sich der Vergleich mit einer Lehrkraft.",
+          "demoAudio": "audio/letters/02-name-waqf.mp3",
+          "demoCaption": "Hörbeispiel aus der App: Buchstabe Ba."
+        },
+        {
+          "shot": "letters-writing",
+          "text": "Auf der Schreibfläche zeichnest du den Buchstaben mit Maus oder Finger nach. Die Vorlage dient als Orientierung. Mit Löschen beginnst du neu. Achte auf Form, Richtung und die Lage der Punkte."
+        }
+      ]
+    },
+    {
+      "id": "buchstabenuebungen",
+      "title": "Den gewählten Buchstaben üben",
+      "bullets": [
+        "Formen, Lücken und Suchaufgaben",
+        "Zusätzliche Buchstabentests",
+        "Ähnliche Laute vergleichen"
+      ],
+      "parts": [
+        {
+          "shot": "letters-focused",
+          "text": "Unter der Karte findest du passende Aufgaben zum aktuell gewählten Buchstaben: Formen erkennen, den fehlenden Buchstaben ergänzen und den Zielbuchstaben in Wörtern finden. Beim Wechsel des Buchstabens wechseln auch diese Aufgaben."
+        },
+        {
+          "shot": "letter-tests",
+          "text": "Die eigenständigen Buchstabentests bieten weitere Übungsarten zu Namen, Formen, Lücken und Hörverstehen. Wähle einen Modus, beantworte die Frage und lies die Rückmeldung, bevor du zur nächsten Aufgabe gehst."
+        },
+        {
+          "shot": "similar-sounds",
+          "text": "Im Bereich ähnliche Laute vergleichst du leicht verwechselbare Buchstaben. Höre genau hin und entscheide dich dann. Ziel ist bewusstes Unterscheiden, nicht schnelles Raten nach dem Aussehen."
+        }
+      ]
+    },
+    {
+      "id": "lesen",
+      "title": "Lesen und Buchstabieren",
+      "bullets": [
+        "Lautanalyse und Zusammensetzen",
+        "Fehlende Buchstaben",
+        "Wortfamilien erkennen"
+      ],
+      "parts": [
+        {
+          "shot": "phonics-segment",
+          "text": "Die Lesestation baut eine Brücke vom einzelnen Zeichen zum Wort. Bei der Lautanalyse zerlegst du ein vokalisiertes Wort in die vorgegebenen Ausspracheeinheiten. Beachte dabei die Vokalzeichen."
+        },
+        {
+          "shot": "phonics-blend",
+          "text": "Beim Zusammensetzen arbeitest du umgekehrt: Aus getrennten Zeichen oder Einheiten entsteht ein ganzes Wort. Lies zunächst langsam und verbinde die Teile danach zu einer flüssigen Aussprache."
+        },
+        {
+          "shot": "phonics-family",
+          "text": "Weitere Modi ergänzen fehlende Buchstaben und zeigen Wortfamilien mit ähnlichen Mustern oder Endungen. Wiederhole schwierige Beispiele laut. Ein ähnliches Ende bedeutet dabei nicht automatisch, dass die Wörter dieselbe Bedeutung haben."
+        }
+      ]
+    },
+    {
+      "id": "wortschatz",
+      "title": "Wortschatz von A1 bis B2",
+      "bullets": [
+        "30 Listen je Lernstufe",
+        "Thematische Auswahl",
+        "Arabische Wörter mit Vokalzeichen"
+      ],
+      "parts": [
+        {
+          "shot": "vocab-a1",
+          "text": "Im Wortschatz stehen vier Lernstufen mit jeweils dreißig thematischen Listen bereit. Beginne normalerweise mit A eins. Wähle zunächst vertraute Themen wie Familie, Essen, Wohnen oder den Alltag."
+        },
+        {
+          "shot": "vocab-a2",
+          "text": "A zwei erweitert diese Grundlage. B eins und B zwei bieten anspruchsvollere Themen und Ausdrucksmöglichkeiten. Die Stufen sind eine redaktionelle Lernordnung; eine bearbeitete Liste allein bestätigt noch kein vollständiges Sprachniveau."
+        },
+        {
+          "shot": "vocab-b2",
+          "text": "Öffne eine Liste, die zu deinem Lernziel passt, und arbeite regelmäßig mit kleinen Portionen. Die arabischen Wörter tragen Vokalzeichen. Deutsche Bedeutungen helfen beim Verstehen, ersetzen aber nicht den Gebrauch im Satz."
+        }
+      ]
+    },
+    {
+      "id": "lernkarten",
+      "title": "So benutzt du die Lernkarten",
+      "bullets": [
+        "Erst selbst erinnern, dann umdrehen",
+        "Audio und kleine Bildhilfen",
+        "Vor und zurück navigieren"
+      ],
+      "parts": [
+        {
+          "shot": "card-front",
+          "text": "Die arabische Kartenseite zeigt das Wort. Versuche zunächst selbst, seine Bedeutung und Aussprache zu erinnern. Tippe erst danach auf die Karte, um die deutsche Seite zu sehen."
+        },
+        {
+          "shot": "card-back",
+          "text": "Die Gegenseite zeigt die deutsche Bedeutung. In passenden einfachen Themenlisten unterstützen kleine Bilder das Verständnis. Bei Zahlen helfen zusätzlich arabische beziehungsweise westliche Ziffern auf der jeweiligen Kartenseite."
+        },
+        {
+          "shot": "card-next",
+          "text": "Nutze die Vor- und Zurücktasten direkt an der Karte. Mit der Hörfunktion vergleichst du deine Aussprache mit der Aufnahme. Wiederhole schwierige Karten und teste dich anschließend, statt nur passiv weiterzublättern.",
+          "demoAudio": "audio/vocabulary/d5b24bebc1c3cac2.mp3",
+          "demoCaption": "Hörbeispiel aus der gezeigten Wortschatzkarte."
+        }
+      ]
+    },
+    {
+      "id": "worttests",
+      "title": "Sechs Wege, Wörter zu festigen",
+      "bullets": [
+        "Schreiben, Auswählen und Hören",
+        "Lücken und Buchstabenreihenfolge",
+        "Rückmeldung und Listenfortschritt"
+      ],
+      "parts": [
+        {
+          "shot": "tests-menu",
+          "text": "Zur ausgewählten Liste gehören sechs Testarten: arabische Wörter schreiben, Bedeutungen auswählen, fehlende Buchstaben ergänzen, Gehörtes erkennen, verstreute Buchstaben ordnen und verbundene Buchstaben vervollständigen."
+        },
+        {
+          "shot": "tests-duration",
+          "text": "Vor dem Start wählst du sechzig, neunzig oder hundertzwanzig Sekunden. Ein Durchgang nutzt bis zu fünf zufällige Wörter. Beginne bei Bedarf mit mehr Zeit und wechsle die Testart regelmäßig."
+        },
+        {
+          "shot": "test-scramble",
+          "text": "Beim Ordnen klickst du die Buchstaben in der richtigen Reihenfolge an. Hier siehst du einen vollständig gelösten Beispieldurchgang. Lies die fertige Wortform noch einmal, bevor du abgibst."
+        },
+        {
+          "shot": "test-result",
+          "text": "Die Auswertung zeigt deinen Lernstand und Fehler. Für die interne Listenbeherrschung verlangt die Anwendung mindestens achtzig Prozent zweimal in jeder der sechs Testarten. Das ist eine Übungsregel, kein offizieller Sprachnachweis."
+        }
+      ]
+    },
+    {
+      "id": "saetze",
+      "title": "Vom Wort zum ganzen Satz",
+      "bullets": [
+        "120 Satzbauaufgaben",
+        "Alltagswortschatz aus A1 und A2",
+        "Hinweise gezielt einsetzen"
+      ],
+      "parts": [
+        {
+          "shot": "sentence-start",
+          "text": "Im Satzbau nutzt du Wörter aus dem Alltag auf A eins und A zwei. Hundertzwanzig Aufgaben üben Aussagen und Fragen mit verschiedenen Verben, Nomen und Adjektiven."
+        },
+        {
+          "shot": "sentence-built",
+          "text": "Klicke die Wortbausteine in der richtigen Reihenfolge an. Die deutsche Bedeutung und der vorgegebene Satzanfang unterstützen dich. Kontrolliere die Stellung der Wörter, bevor du die Antwort prüfen lässt."
+        },
+        {
+          "shot": "sentence-checked",
+          "text": "Wenn du festhängst, nutze den Hinweis auf das nächste Wort. Danach solltest du den ganzen Satz selbst lesen und noch einmal ohne Hilfe bilden. Die Hörfunktion liefert dir ein zusätzliches Aussprachemodell."
+        }
+      ]
+    },
+    {
+      "id": "einheiten",
+      "title": "Zusammenhängend lernen mit A1 und A2",
+      "bullets": [
+        "Zwölf integrierte Einheiten",
+        "Dialog, Text und Regel",
+        "Vom Kennenlernen bis zum Reisen"
+      ],
+      "parts": [
+        {
+          "shot": "skills-overview",
+          "text": "Die integrierten Fertigkeitseinheiten verbinden die einzelnen Lernbereiche. Für A eins und A zwei gibt es jeweils sechs Einheiten. Jede Einheit knüpft an Wortschatzlisten an und führt durch mehrere Lernschritte."
+        },
+        {
+          "shot": "skills-dialog",
+          "text": "Du beginnst mit Wortschatz und Dialogen. Öffne die verknüpfte Liste, höre die einzelnen Gesprächsbeiträge und kläre unbekannte Wörter. Danach kannst du den Dialog mit verteilten Rollen laut lesen."
+        },
+        {
+          "shot": "skills-reading",
+          "text": "Im Abschnitt Lesen und Grammatik begegnet dir eine passende Regel im Zusammenhang eines Textes. Arbeite zuerst am Sinn, dann an der Form. Anschließend folgen Hören, Gespräche, Schreiben, Wortverbindungen und Wiederholung."
+        }
+      ]
+    },
+    {
+      "id": "hoeren",
+      "title": "Hörverstehen Schritt für Schritt",
+      "bullets": [
+        "Gesamtidee und Details",
+        "Ereignisse ordnen",
+        "Geschwindigkeit anpassen"
+      ],
+      "parts": [
+        {
+          "shot": "skills-listening",
+          "text": "Im Hörverstehen arbeitest du mit kurzen Gesprächen, Nachrichten, Ansagen und Erzählungen. Höre zuerst auf die Gesamtsituation: Wer spricht, worum geht es und welches Ziel hat die Mitteilung?"
+        },
+        {
+          "shot": "skills-listening-answer",
+          "text": "Beim zweiten Hören konzentrierst du dich auf Einzelheiten und beantwortest die Fragen. Bei Ordnungsaufgaben bringst du die Ereignisse in die gehörte Reihenfolge. Gehe danach noch einmal zu unklaren Stellen zurück."
+        },
+        {
+          "shot": "skills-speed",
+          "text": "Der Player bietet eine langsamere und eine schnellere Wiedergabe. Nutze langsames Hören als Unterstützung und kehre später zur normalen Geschwindigkeit zurück. Die mitgelieferten arabischen Aufnahmen sind synthetisch erzeugt."
+        }
+      ]
+    },
+    {
+      "id": "gespraeche",
+      "title": "Sprechen und sich verständigen",
+      "bullets": [
+        "Gespräche ergänzen",
+        "Eigene Antworten formulieren",
+        "Mit Partner oder Lehrkraft üben"
+      ],
+      "parts": [
+        {
+          "shot": "conversation-model",
+          "text": "Die Gesprächsaufgaben behandeln Alltagssituationen: sich vorstellen, Hilfe erbitten, etwas kaufen, einen Weg beschreiben, Termine vereinbaren oder eine Meinung äußern. Lies zunächst das Gesprächsmodell und kläre die Rollen."
+        },
+        {
+          "shot": "conversation-draft",
+          "text": "Ergänze dann eine Antwort und formuliere anschließend eine eigene Variante. Tausche beispielsweise Ort, Zeitpunkt oder Wunsch aus. Du kannst deinen Entwurf speichern und das Gespräch mit einer zweiten Person üben."
+        },
+        {
+          "shot": "conversation-criteria",
+          "text": "Offene Sprechaufgaben werden nicht automatisch auf Aussprache oder Sprachqualität benotet. Nutze die Hinweise zur Selbsteinschätzung und lass dir möglichst von einer Lehrkraft Rückmeldung zu Verständlichkeit und passenden Formulierungen geben."
+        }
+      ]
+    },
+    {
+      "id": "schreiben",
+      "title": "Schreiben mit Modell und Kriterien",
+      "bullets": [
+        "Satz, Beschreibung und Nachricht",
+        "Absatz, E-Mail und Zusammenfassung",
+        "Entwurf speichern und verbessern"
+      ],
+      "parts": [
+        {
+          "shot": "writing-task",
+          "text": "Das Schreiben ist gestuft aufgebaut: vom einfachen Satz über eine Beschreibung zu Absätzen, persönlichen Nachrichten, E-Mails und Zusammenfassungen. Lies die Aufgabe genau und überlege, für wen du schreibst."
+        },
+        {
+          "shot": "writing-model",
+          "text": "Das Modell zeigt eine mögliche Lösung. Schreibe zuerst selbst, bevor du es vergleichst. Übernimm nicht nur den Text, sondern untersuche, wie Einleitung, wichtige Informationen und Abschluss zusammenhängen."
+        },
+        {
+          "shot": "writing-rubric",
+          "text": "Bewerte deinen Entwurf nach Bedeutung, Aufbau, sprachlicher Richtigkeit und Rechtschreibung. Speichere die Antwort und überarbeite sie später. Die Kriterien unterstützen Selbstkontrolle und Unterricht; eine automatische Bewertung freier Texte wird nicht behauptet."
+        }
+      ]
+    },
+    {
+      "id": "wortverbindungen",
+      "title": "Wörter im Zusammenhang lernen",
+      "bullets": [
+        "Feste Wortverbindungen",
+        "Verben mit Präpositionen",
+        "Synonyme und Gegensätze"
+      ],
+      "parts": [
+        {
+          "shot": "collocations",
+          "text": "Einzelwörter werden nützlicher, wenn du typische Verbindungen kennst. Dieser Bereich zeigt feste Wortgruppen, Verben mit passenden Präpositionen, ähnliche Bedeutungen und Gegensätze."
+        },
+        {
+          "shot": "collocations-answer",
+          "text": "Lerne die Verbindung möglichst als ganze Einheit und verwende sie in einem eigenen Satz. Achte darauf, welche Präposition mit dem Verb zusammengehört und wodurch sich ähnlich übersetzte Wörter unterscheiden."
+        }
+      ]
+    },
+    {
+      "id": "geschichten",
+      "title": "Kurze Geschichten verstehen",
+      "bullets": [
+        "Text und Audio verbinden",
+        "Deutsche Übersetzung bei Bedarf",
+        "Verständnisfragen beantworten"
+      ],
+      "parts": [
+        {
+          "shot": "story-text",
+          "text": "Die Kurzgeschichten helfen dir beim Übergang von Einzelsätzen zu zusammenhängenden Texten. Lies zuerst den Titel und versuche, die Situation zu erkennen. Höre danach die Abschnitte an."
+        },
+        {
+          "shot": "story-translation",
+          "text": "Die deutsche Übersetzung unterstützt dich bei schwierigen Stellen. Versuche zunächst selbst zu verstehen, und blende die Hilfe erst danach ein. Lies den arabischen Abschnitt anschließend erneut."
+        },
+        {
+          "shot": "story-question",
+          "text": "Mit den Verständnisfragen kontrollierst du, ob du die Informationen richtig erfasst hast. Erzähle die Geschichte zum Abschluss mit wenigen eigenen Sätzen nach. So verbindest du Lesen, Hören und Sprechen."
+        }
+      ]
+    },
+    {
+      "id": "grammatik",
+      "title": "Grammatik und Rechtschreibung verstehen",
+      "bullets": [
+        "37 geordnete Lektionen",
+        "Erklärung, Beispiel und Übung",
+        "Von Grundlagen zu schwierigeren Themen"
+      ],
+      "parts": [
+        {
+          "shot": "grammar-stages",
+          "text": "Der Grammatikbereich ordnet siebenunddreißig Lektionen nach zunehmender Schwierigkeit. Beginne mit Wortarten, Geschlecht, Pronomen und einfachen Satztypen. Die Stufen helfen bei der Auswahl, ersetzen aber keine individuelle Unterrichtsplanung."
+        },
+        {
+          "shot": "grammar-easy",
+          "text": "Jede Lektion verbindet Erklärung, Beispiele und Übungen. Themen wie Sonnen- und Mondbuchstaben, Präpositionen, Genitivverbindungen und Attribute werden dadurch nicht nur benannt, sondern direkt angewendet."
+        },
+        {
+          "shot": "grammar-hamza",
+          "text": "Später folgen unter anderem Verbmodi, Zahlwörter, Partizipien, besondere Akkusative und die Hamzaschreibung. Eigene Lektionen behandeln ähnliche Endungen sowie Sonderfälle. Lies bei einem Fehler die Erklärung und suche danach ein eigenes Beispiel."
+        }
+      ]
+    },
+    {
+      "id": "verben",
+      "title": "Verbformen systematisch vergleichen",
+      "bullets": [
+        "51 Verben und verschiedene Verbklassen",
+        "Vergangenheit, Gegenwart und Imperativ",
+        "Verneinung und Verbot"
+      ],
+      "parts": [
+        {
+          "shot": "verbs-past",
+          "text": "Der eigene Verbtrainer ist direkt aus Grammatik und Rechtschreibung erreichbar. Wähle eines von einundfünfzig Verben und vergleiche die Formen mit den zugehörigen Personalpronomen."
+        },
+        {
+          "shot": "verbs-present",
+          "text": "Die Auswahl umfasst regelmäßige und unterschiedliche unregelmäßige Verben, darunter schwache, hamzahaltige und verdoppelte Verben. Auch längere Verbbildungen sind vertreten. Vergleiche ähnliche Muster, statt jede Tabelle isoliert auswendig zu lernen."
+        },
+        {
+          "shot": "verbs-imperative",
+          "text": "Wechsle zwischen Vergangenheit, Gegenwart und Imperativ. Die Befehlsform wird bei den passenden Anredepronomen gezeigt. Beispielsätze und Übungen helfen dir, die Tabellen auf konkrete Aussagen zu übertragen."
+        },
+        {
+          "shot": "verbs-negative",
+          "text": "Auch Verneinung und Verbot werden behandelt. Achte darauf, dass eine Verneinung nicht einfach in jedem Zusammenhang dasselbe Wort vor der Verbform bedeutet. Vergleiche die angebotenen Konstruktionen und ihre Formveränderungen."
+        }
+      ]
+    },
+    {
+      "id": "pruefungen",
+      "title": "Unterrichtstests direkt bearbeiten",
+      "bullets": [
+        "Zehn ursprüngliche Prüfungen",
+        "Zehn zusätzliche Übungsmodelle",
+        "Geschlossene und offene Aufgaben"
+      ],
+      "parts": [
+        {
+          "shot": "exams-catalog",
+          "text": "Die Prüfungssammlung enthält die zehn früheren Prüfungen von Lehrer Mahmoud Barakat als interaktive Aufgaben sowie zehn zusätzliche ähnliche Modelle. Wähle zuerst die Sammlung und dann einen passenden Test."
+        },
+        {
+          "shot": "exam-task",
+          "text": "Du beantwortest Aufgaben direkt auf der Seite: etwa Auswahlfragen, Wahr oder Falsch, Ergänzungen, Zuordnungen und Reihenfolgen. Lies zuerst den zugehörigen Text und kontrolliere deine Antworten vor der Auswertung."
+        },
+        {
+          "shot": "exam-feedback",
+          "text": "Geschlossene Aufgaben können automatisch ausgewertet werden. Freie Texte und Aufgaben mit mehreren möglichen richtigen Lösungen benötigen Selbstkontrolle oder die Lehrkraft. Die Auswertung sollte deshalb immer zusammen mit der Aufgabenart gelesen werden. Dein Versuch wird gespeichert und kann später wieder geöffnet werden."
+        }
+      ]
+    },
+    {
+      "id": "wiederholen",
+      "title": "Fehler nutzen und Fortschritt sehen",
+      "bullets": [
+        "Schwierige Wörter gezielt wiederholen",
+        "Testergebnisse und Listenstatus",
+        "Regelmäßig statt nur einmal lernen"
+      ],
+      "parts": [
+        {
+          "shot": "review-card",
+          "text": "Im Wiederholungsbereich sammelst du schwierige Wörter aus den Wortschatztests. Versuche die Bedeutung selbst zu erinnern, drehe die Karte um und konzentriere dich gezielt auf deine Unsicherheiten."
+        },
+        {
+          "shot": "stats",
+          "text": "Die Fortschrittsansicht fasst bearbeitete Tests und den Stand deiner Listen zusammen. Sie zeigt, was du bereits geübt hast und wo weitere Wiederholung sinnvoll ist. Einzelne gute Ergebnisse sind noch keine dauerhafte Beherrschung."
+        },
+        {
+          "shot": "stats-details",
+          "text": "Wiederhole Wörter an mehreren Tagen und in unterschiedlichen Aufgabenarten. Nutze anschließend einen Satz oder eine kurze Geschichte, um die Wörter im Zusammenhang einzusetzen. So wird aus Wiedererkennen zunehmend selbstständiges Anwenden."
+        }
+      ]
+    },
+    {
+      "id": "anpassen",
+      "title": "Eigene Listen und persönliche Oberfläche",
+      "bullets": [
+        "Excel-Listen importieren",
+        "Deutsch und Arabisch umschalten",
+        "Ruhige Olivenmotive auswählen"
+      ],
+      "parts": [
+        {
+          "shot": "excel-panel",
+          "text": "Für eigene Unterrichtsinhalte kannst du eine Excel-Liste importieren. Die ersten beiden Spalten enthalten arabische Wörter und deutsche Bedeutungen. Klare Überschriften helfen der Anwendung, die Sprachen richtig zuzuordnen."
+        },
+        {
+          "shot": "excel-imported",
+          "text": "Nach dem Import öffnest du deine Lernkarten und kannst die vorhandenen Testarten mit der eigenen Liste nutzen. Prüfe vorher Schreibweise und Übersetzung. Die Qualität selbst importierter Inhalte hängt von deiner Datei ab."
+        },
+        {
+          "shot": "theme-language",
+          "text": "Die Oberfläche lässt sich zwischen Deutsch und Arabisch umschalten. Über die Gestaltung wählst du dekorative Hintergründe oder eine neutrale Olivenansicht. Die Motive verändern die Darstellung, nicht die Lernanforderungen."
+        }
+      ]
+    },
+    {
+      "id": "konto-offline",
+      "title": "Konto, Geräte und Offline-Nutzung",
+      "bullets": [
+        "Online-Anmeldung und gespeicherter Lernstand",
+        "Installation als PWA",
+        "Unterschiede zur unabhängigen ZIP-Version"
+      ],
+      "parts": [
+        {
+          "shot": "account-diagram",
+          "text": "In der entsprechend eingerichteten Online-Ausgabe meldest du dich mit E-Mail-Adresse und Passwort an und bestätigst dein Postfach. Passwort zurücksetzen und Abmelden gehören ebenfalls dazu. Deine Lehrkraft muss die E-Mail-Adresse freigeben."
+        },
+        {
+          "shot": "sync-diagram",
+          "text": "Die Online-Ausgabe kann Lernstände über Firebase zwischen deinen Geräten synchronisieren. Ohne Verbindung bleiben Änderungen zunächst im Browser. Synchronisierung benötigt wieder Internet. Die unabhängige ZIP-Version speichert lokal und verbindet sich nicht automatisch mit einem Konto."
+        },
+        {
+          "shot": "pwa-panel",
+          "text": "Als progressive Web-App lässt sich die Website auf unterstützten Geräten installieren. Android und Desktop bieten je nach Browser eine Installationsfunktion. Auf dem iPhone nutzt du in Safari Teilen und Zum Home-Bildschirm."
+        },
+        {
+          "shot": "offline-reading",
+          "text": "Vorbereitete Textlektionen können offline verfügbar sein. Audio und Bilder werden beim Benutzen begrenzt gespeichert. In der geschützten Online-Ausgabe gilt für gemerkte Freigaben eine Frist von vierundzwanzig Stunden; danach ist eine erneute Prüfung nötig."
+        },
+        {
+          "shot": "pwa-tools",
+          "text": "Im App-Bereich kannst du ein angebotenes Update übernehmen oder gespeicherte Medien entfernen. Das Entfernen dieser Medien löscht deine Antworten und Lernstände nicht."
+        }
+      ]
+    },
+    {
+      "id": "verwaltung",
+      "title": "Zugang für eine Lerngruppe verwalten",
+      "bullets": [
+        "Private Verwaltung für die Lehrkraft",
+        "E-Mail-Adressen freigeben oder sperren",
+        "Geräteübersicht mit klaren Grenzen"
+      ],
+      "parts": [
+        {
+          "shot": "admin-demo",
+          "text": "Die private Verwaltung richtet sich an die Lehrkraft. Nach der einmaligen Einrichtung kannst du E-Mail-Adressen freigeben oder sperren und gemeldete Browser sowie den letzten Aktivitätszeitpunkt ansehen. Hier siehst du eine Beispielansicht mit Testdaten."
+        },
+        {
+          "shot": "admin-limits",
+          "text": "Die kostenlose Spark-Ausgabe verwaltet zwei Browsereinträge kooperativ in der Oberfläche. Das ist keine sichere Sperre gegen technisch umgangene Kontofreigabe. Eine gesperrte E-Mail verliert dagegen den Zugriff auf geschützte Kontodaten gemäß den Datenbankregeln."
+        }
+      ]
+    },
+    {
+      "id": "lernplan",
+      "title": "Deine nächste Lerneinheit",
+      "bullets": [
+        "Wenige Wörter gründlich üben",
+        "Hören, Sprechen und Schreiben verbinden",
+        "Am nächsten Tag wiederholen"
+      ],
+      "parts": [
+        {
+          "shot": "routine",
+          "text": "Für eine kurze Lerneinheit beginne mit wenigen Buchstaben oder Wörtern. Höre genau zu, sprich nach und prüfe dich ohne Vorlage. Baue anschließend einen Satz und lies einen passenden kurzen Text."
+        },
+        {
+          "shot": "routine-units",
+          "text": "Wenn du schon Grundlagen hast, arbeite eine integrierte Einheit durch: Dialog und Wortschatz, Lesen, Hören, eigene Antworten und eine kurze Schreibaufgabe. Beende die Einheit mit Wiederholung und einer Notiz zu deinen Schwierigkeiten."
+        },
+        {
+          "shot": "outro",
+          "text": "Lerne regelmäßig, in deinem Tempo und mit bewusster Rückmeldung. Huroof verbindet die ersten Buchstaben mit lebendiger Anwendung. Öffne deinen Lernpfad und wähle jetzt den nächsten passenden Schritt. Viel Freude beim Arabischlernen!"
+        }
+      ]
+    }
+  ]
+}

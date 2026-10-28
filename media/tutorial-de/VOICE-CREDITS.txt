@@ -1,0 +1,21 @@
+German narration: synthetic speech generated locally with Piper TTS, using the
+Thorsten medium German voice model. This is not a recording of Mahmoud Barakat.
+
+Voice model: de_DE-thorsten-medium
+Sample rate: 22,050 Hz, resampled to 48,000 Hz for the MP4.
+Model source: https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-de_DE-thorsten-medium.tar.bz2
+Original voice dataset: https://github.com/thorstenMueller/Thorsten-Voice
+Dataset license stated in MODEL_CARD: CC0.
+Piper implementation: https://github.com/OHF-Voice/piper1-gpl
+
+Two short Arabic listening examples are existing local lesson recordings from
+this application's audio/letters and audio/vocabulary folders. They were not
+replaced or regenerated for this video.
+
+Visuals: genuine local app views with disposable example data, the app's existing
+olive artwork and bundled font files. Explanatory account/storage diagrams are
+labelled as overviews. The administrator example is a prior local emulator view
+with test data, not a production account. No real account was opened or changed.
+
+There is no background music in this tutorial, so the speech and listening
+examples remain clear. Font licenses are supplied in the application fonts folder.

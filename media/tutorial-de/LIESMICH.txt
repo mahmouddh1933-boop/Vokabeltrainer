@@ -1,0 +1,13 @@
+Huroof – Ausführliche App-Tour auf Deutsch
+
+Das Video Huroof-Rundgang-DE.mp4 separat herunterladen. Dieses Paket enthält die
+Untertitel, Kapitel, Beschreibung, Sprechertext, das Vorschaubild und eine kleine
+Excel-Beispielliste für die Funktion Eigene Wörter importieren.
+
+Die Untertitel sind im Film bereits sichtbar. Die SRT-Datei kann zusätzlich bei
+YouTube als Untertiteldatei hochgeladen oder zur Bearbeitung genutzt werden.
+Die Kapitel sind außerdem im MP4 eingebettet. Für YouTube die Kapitel aus der
+Textdatei in die Videobeschreibung übernehmen.
+
+Die Excel-Datei ist ein kleines, neues Unterrichtsbeispiel mit drei Wortpaaren.
+Stimme und Ansichten sind in VOICE-CREDITS.txt erläutert.
