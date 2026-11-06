@@ -10,6 +10,11 @@ Provenance: audio/reading-trainer-manifest.json records the source commit, sourc
 report checksum and checksum of each source recording and final compiled track.
 Intermediate recordings are retained on the audio/reading-voice-recovery branch.
 
+Application sentences: 300 complete vocalized sentences, synthesized at normal
+rate with the same Google Arabic service. Sources, durations and hashes are in
+audio/reading-sentences-manifest.json. No carrier extraction or word-level timing
+is used for these sentence files. The target word is statically emphasized.
+
 The app ships compiled synthetic recordings. No model weights or Piper engine
 are shipped or used for this revision. IPA fields are pronunciation references;
 they are not a claim that a speech engine faithfully realized each phoneme.

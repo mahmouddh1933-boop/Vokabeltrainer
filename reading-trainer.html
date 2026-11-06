@@ -12,19 +12,19 @@
     <link rel="stylesheet" href="css/olive-theme.css?v=2a69ab7dd182" />
     <link rel="stylesheet" href="css/auth.css?v=193e81c25a14" />
     <link rel="stylesheet" href="css/learning-route.css?v=e9bb6804b86d" />
-    <link rel="stylesheet" href="css/reading-trainer.css?v=a1aecd996900" />
+    <link rel="stylesheet" href="css/reading-trainer.css?v=caa97253df0a" />
     <script src="js/storage.js?v=234b995827cd" defer></script>
     <script src="js/firebase-config.js?v=8c7993a85b2c" defer></script>
     <script src="js/access-client.js?v=6d7404b1ce0e" defer></script>
     <script src="js/auth-session.js?v=328a881b2d5c" defer></script>
     <script src="js/app.js?v=967453105b0c" defer></script>
-    <script src="js/reading-trainer-data.js?v=e2642ea41b96" defer></script>
+    <script src="js/reading-trainer-data.js?v=ff6368841a84" defer></script>
     <script src="data/vocab_catalog_labels.js?v=77de3e826c87" defer></script>
     <script src="js/interface-languages.js?v=d233aae47963" defer></script>
     <script src="js/learning-path.js?v=d1c2f9b5f022" defer></script>
     <script src="js/design.js?v=54c2ca0d33c6" defer></script>
     <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
-    <script src="js/pages/reading-trainer.js?v=ff1440a87108" defer></script>
+    <script src="js/pages/reading-trainer.js?v=4b7078234cf2" defer></script>
     <meta name="application-name" content="حروف من الزيتون" />
     <link rel="icon" href="images/brand/olive-symbol.svg" type="image/svg+xml" />
     <link rel="manifest" href="manifest.webmanifest" />
@@ -39,7 +39,7 @@
       <p id="lesson-loading" role="status">جارٍ تحميل مدرّب القراءة…</p>
       <header class="page-heading">
         <div>
-          <p class="eyebrow" data-ar="من الحرف إلى الكلمة" data-de="Vom Buchstaben zum Wort">من الحرف إلى الكلمة</p>
+          <p class="eyebrow" data-ar="من الصوت إلى الكلمة، ثم الجملة" data-de="Vom Laut zum Wort und zum Satz">من الصوت إلى الكلمة، ثم الجملة</p>
           <h1 data-ar="مدرّب القراءة" data-de="Lesetrainer">مدرّب القراءة</h1>
           <p class="practice-intro" data-ar="١٥٠ كلمة مُشكَّلة من الحياة اليومية · ٣ مستويات · استمع وتابع اللون، ثم اقرأ بنفسك." data-de="150 vokalisierte Alltagswörter · 3 Stufen · Höre zu, folge der Markierung und lies selbst.">١٥٠ كلمة مُشكَّلة من الحياة اليومية · ٣ مستويات · استمع وتابع اللون، ثم اقرأ بنفسك.</p>
         </div>
@@ -74,13 +74,23 @@
           <li data-stage="word"><button type="button" class="practice-button" data-play="word" data-ar="٣ · الكلمة كاملة" data-de="3 · Ganzes Wort">٣ · الكلمة كاملة</button></li>
         </ol>
         <p id="rt-current" class="rt-current" aria-live="off"></p>
-        <p class="rt-strip-label" data-ar="الحروف مع حركاتها" data-de="Laute mit Vokalen">الحروف مع حركاتها</p>
+        <h3 class="rt-step-title" data-ar="١ · افهم الأصوات" data-de="1 · Laute verstehen">١ · افهم الأصوات</h3>
+        <p class="rt-strip-label" data-ar="استمع لكل صوت بحركته، ثم كرّره. تُقرأ السلسلة من اليمين إلى اليسار." data-de="Höre jeden Laut mit seinem Vokal und sprich nach. Die Lautfolge läuft von rechts nach links.">استمع لكل صوت بحركته، ثم كرّره. تُقرأ السلسلة من اليمين إلى اليسار.</p>
         <div id="rt-letter-strip" class="rt-letter-strip" lang="ar" dir="rtl" role="group" aria-label="الحروف مع حركاتها / Laute mit Vokalen"></div>
+        <h3 class="rt-step-title" data-ar="٢ · صِل الأصوات تدريجيًا" data-de="2 · Schrittweise verbinden">٢ · صِل الأصوات تدريجيًا</h3>
         <p class="rt-strip-label" data-ar="ابدأ بأول حرفين، ثم أضف حرفًا في كل خطوة" data-de="Erst zwei Buchstaben, dann jeweils einen mehr">ابدأ بأول حرفين، ثم أضف حرفًا في كل خطوة</p>
         <div id="rt-prefixes" class="rt-prefixes" lang="ar" dir="rtl" role="group" aria-label="بدايات الكلمة المتراكمة / Wachsende Wortanfänge"></div>
         <p class="rt-note" data-ar="اضغط صوتًا أو بداية كلمة لإعادتها. نلفظ كَ، كِ، كُ مع الحركة المكتوبة، وحروف المد مع ما قبلها بصوتها الطويل. يُسمع الساكن والمشدّد في سياقهما دون إضافة حركة؛ يلوَّن الجزء المسموع. ثم ندمج أول حرفين، فأول ثلاثة، فأول أربعة، حتى تكتمل الكلمة. تُقرأ التاء المربوطة هاءً عند الوقف." data-de="Tippe auf einen Laut oder Wortanfang zum Wiederholen. Du hörst ka, ki oder ku mit dem geschriebenen Vokal, lange Vokale zusammen mit dem vorigen Buchstaben. Sukūn und Schadda hörst du im Wortzusammenhang ohne zusätzlichen Vokal; der gehörte Teil wird markiert. Danach verbinden wir die ersten zwei, drei, vier Buchstaben bis zum ganzen Wort. Tāʾ marbūṭa klingt in der Pausenform wie h.">اضغط صوتًا أو بداية كلمة لإعادتها. نلفظ كَ، كِ، كُ مع الحركة المكتوبة، وحروف المد مع ما قبلها بصوتها الطويل. يُسمع الساكن والمشدّد في سياقهما دون إضافة حركة؛ يلوَّن الجزء المسموع. ثم ندمج أول حرفين، فأول ثلاثة، فأول أربعة، حتى تكتمل الكلمة. تُقرأ التاء المربوطة هاءً عند الوقف.</p>
+        <h3 class="rt-step-title" data-ar="٣ · اقرأ الكلمة بنفسك" data-de="3 · Das Wort selbst lesen">٣ · اقرأ الكلمة بنفسك</h3>
+        <p class="rt-note" data-ar="حاول قراءة الكلمة الكبيرة دون صوت، ثم استمع للمقارنة. بعدها انتقل إلى الجملتين." data-de="Lies das große Wort zuerst selbst und höre danach zum Vergleichen. Gehe anschließend zu den beiden Sätzen weiter.">حاول قراءة الكلمة الكبيرة دون صوت، ثم استمع للمقارنة. بعدها انتقل إلى الجملتين.</p>
+        <button id="rt-compare-word" class="practice-button rt-compare-word" type="button" data-ar="◖ قارن بقراءة الكلمة كاملة" data-de="◖ Mit der Wortaufnahme vergleichen">◖ قارن بقراءة الكلمة كاملة</button>
         <button id="rt-self-read" class="practice-button rt-self-read" type="button" aria-pressed="false"></button>
         <p class="rt-note" data-ar="علامة «قرأتُها بنفسي» لتتبّع تدريبك فقط؛ لا يُسجّل الميكروفون صوتك ولا يُقيَّم النطق آليًا." data-de="Die Markierung „Selbst gelesen“ erfasst dein Üben. Das Mikrofon wird nicht verwendet; die Aussprache wird nicht automatisch bewertet.">علامة «قرأتُها بنفسي» لتتبّع تدريبك فقط؛ لا يُسجّل الميكروفون صوتك ولا يُقيَّم النطق آليًا.</p>
+      </section>
+      <section class="practice-panel rt-application" aria-labelledby="rt-application-title">
+        <h2 id="rt-application-title" data-ar="من الكلمة إلى الجملة" data-de="Vom Wort zum Satz">من الكلمة إلى الجملة</h2>
+        <p class="rt-note" data-ar="اقرأ الجملة بنفسك أولًا، ثم استمع للمقارنة. الكلمة المستهدفة مميّزة بلون مختلف. قد تتغيّر حركة آخرها بحسب موقعها في الجملة." data-de="Lies zuerst selbst und höre danach zum Vergleichen. Das Übungswort ist farbig markiert. Seine Endung kann sich durch seine Funktion im Satz ändern.">اقرأ الجملة بنفسك أولًا، ثم استمع للمقارنة. الكلمة المستهدفة مميّزة بلون مختلف. قد تتغيّر حركة آخرها بحسب موقعها في الجملة.</p>
+        <div id="rt-sentences"></div>
       </section>
       <section class="practice-panel">
         <h2 data-ar="تقدّم التدريب" data-de="Dein Übungsfortschritt">تقدّم التدريب</h2>

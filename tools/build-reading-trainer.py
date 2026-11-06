@@ -105,8 +105,27 @@ byid={c['id']:c for c in manifest['clips']}
 for w in words:
     clip=byid[w['id']];assert clip['text']==w['word']
     w.update({k:clip[k] for k in ['path','seconds','events']})
-data={'version':3,'levels':[{k:v for k,v in l.items() if k not in ['words','spellings']} for l in source['levels']],'words':words}
+sentence_source=ROOT/'data/reading-trainer-sentences.json'
+sentence_bank=json.loads(sentence_source.read_text())
+sentence_manifest=json.loads((ROOT/'audio/reading-sentences-manifest.json').read_text())
+assert sentence_manifest['complete']
+assert sentence_manifest['sourceSha256']==hashlib.sha256(sentence_source.read_bytes()).hexdigest(),'Sentence text changed: regenerate recordings.'
+sentence_audio={c['text']:c for c in sentence_manifest['clips']}
+sentence_words={w['id']:w['sentences'] for w in sentence_bank['words']}
+assert set(sentence_words)==set(byid)
+for w in words:
+    sentences=sentence_words[w['id']]
+    assert len(sentences)==2
+    w['sentences']=[]
+    for sentence in sentences:
+        assert sentence['ar'].count(sentence['focus'])==1
+        recording=sentence_audio[sentence['ar']]
+        path=ROOT/recording['path']
+        assert path.resolve().is_relative_to((ROOT/'audio/reading-sentences').resolve())
+        assert hashlib.sha256(path.read_bytes()).hexdigest()==recording['sha256']
+        w['sentences'].append({**sentence,'path':recording['path'],'seconds':recording['seconds']})
+data={'version':4,'levels':[{k:v for k,v in l.items() if k not in ['words','spellings']} for l in source['levels']],'words':words}
 (ROOT/'js/reading-trainer-data.js').write_text('/* Generated from the vocalized bank and replacement Arabic voice recordings. */\n'
     +'(() => { "use strict"; const data = '+json.dumps(data,ensure_ascii=False,separators=(',',':'))
     +'; if (typeof module !== "undefined" && module.exports) module.exports = data; else window.ArabicReadingTrainer = data; })();\n')
-print('Built 150 replacement-voice tracks: sounds, cumulative word beginnings, whole words.')
+print('Built 150 reading entries: sounds, cumulative word beginnings, whole words and 300 application sentences.')

@@ -56,6 +56,28 @@
 .rt-current { min-height: 2em; color: #734022; font-size: 1.1rem; text-align: center; }
 .rt-strip-label { text-align: center; font-weight: 600; font-size: 1rem; margin: 12px 0 4px; }
 .rt-letter-strip, .rt-prefixes { justify-content: center; margin-block: 12px; }
+.rt-letter-strip button + button::before, .rt-prefixes button + button::before {
+  content: "←";
+  position: absolute;
+  inset-inline-start: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #526b52;
+  font: 1rem sans-serif;
+  pointer-events: none;
+}
+.rt-letter-strip, .rt-prefixes { gap: 18px; }
+.rt-letter-strip button, .rt-prefixes button { position: relative; }
+.rt-step-title { border-block-start: 1px solid #cad8bc; padding-block-start: 18px; margin-block: 22px 8px; color: #254f3e; }
+.rt-sentence-card { min-width: 0; border: 1px solid #bfceb0; border-radius: 18px; padding: clamp(14px, 3vw, 24px); background: #f8faef; margin-block: 18px; }
+.rt-sentence-card h3 { margin-block: 0 10px; font-size: 1.15rem; }
+.reading-trainer-page .rt-sentence-text { font-family: "Reading Naskh", "Noto Naskh Arabic", serif; font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 2.1; color: #203e37; overflow-wrap: anywhere; margin-block: 10px; }
+.rt-sentence-text mark { background: #e5edcf; color: #254f3e; padding: 0 .08em; border-radius: 4px; text-decoration: underline; text-underline-offset: .15em; }
+.rt-sentence-card.is-playing { border-color: #527e58; box-shadow: inset 0 0 0 1px #527e58; }
+.rt-sentence-card audio { display: block; width: 100%; max-width: 440px; min-width: 0; margin-block-start: 12px; }
+.rt-sentence-translation { font-size: 1.05rem; line-height: 1.7; color: #435e50; }
+.rt-sentence-card details summary { cursor: pointer; min-height: 44px; display: list-item; padding-block: 10px; line-height: 1.5; color: #254f3e; font-weight: 600; }
+.rt-sentence-error { color: #9b2924; font-size: 1rem; line-height: 1.8; }
 .reading-trainer-page .rt-letter-strip button, .reading-trainer-page .rt-prefixes button,
 .reading-trainer-page .rt-word-grid button {
   font-family: "Reading Naskh", "Noto Naskh Arabic", serif;
@@ -70,6 +92,7 @@
 .rt-navigation { justify-content: space-between; margin-block: 20px; }
 .rt-navigation button { flex: 1 1 120px; }
 .rt-self-read { width: 100% !important; }
+.rt-compare-word { width: 100%; margin-block: 0 12px; }
 .rt-word-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; padding-block: 16px; }
 .rt-word-grid button[aria-current="true"] { border: 2px solid #285b46; background: #e0edd9; }
 .rt-word-grid button[data-read="true"]::after { content: " ✓"; color: #285b46; font-size: 1rem; }
@@ -81,7 +104,7 @@
   .rt-stages { gap: 6px; }
   .rt-stages li { flex: 1 1 75px; }
   .rt-stages button { font-size: .9rem; min-height: 64px; }
-  .rt-letter-strip, .rt-prefixes { gap: 7px; }
+  .rt-letter-strip, .rt-prefixes { gap: 16px; }
   .reading-trainer-page .rt-letter-strip button { min-width: 46px; padding-inline: 8px; }
   .rt-transport button { padding-inline: 12px; }
 }

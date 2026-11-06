@@ -56,6 +56,7 @@
     let wordSpans = [];
     let letterButtons = [];
     let prefixButtons = [];
+    let sentenceAudios = [];
     let audioReady = false;
     let audioLoading = false;
     let preparation = 0;
@@ -70,11 +71,12 @@
     function transport() {
       $("rt-listen").disabled = audioLoading;
       document.querySelectorAll("[data-play]").forEach((b) => { b.disabled = !audioReady; });
+      $("rt-compare-word").disabled = !audioReady;
       [...letterButtons, ...prefixButtons].forEach((b) => { b.disabled = !audioReady; });
       $("rt-pause").disabled = !session || !session.started;
       $("rt-pause").textContent = audio.paused && session?.started
         ? t("استئناف", "Fortsetzen") : t("إيقاف مؤقت", "Pause");
-      $("rt-stop").disabled = !session;
+      $("rt-stop").disabled = !session && !sentenceAudios.some((a) => !a.paused);
       $("rt-listen").setAttribute("aria-pressed", String(!!session?.full));
     }
     function prepareAudio(w) {
@@ -160,13 +162,15 @@
         $("rt-current").textContent = `${stageNames()[event.stage]}${step}: ${text}`;
       } else $("rt-current").textContent = "";
     }
-    function stop(clearStatus = true) {
+    function stop(clearStatus = true, includeSentences = true) {
       request++;
       cancelAnimationFrame(frame);
       clearTimeout(loadingTimer);
-      audio.onplaying = audio.onended = audio.onerror = audio.ontimeupdate =
-        audio.onloadedmetadata = audio.onwaiting = null;
+      audio.onplaying = audio.onended = audio.ontimeupdate = audio.onwaiting = null;
+      // Stopping a sentence must not detach a word's still-pending preparation.
+      if (!audioLoading) audio.onerror = audio.onloadedmetadata = null;
       audio.pause();
+      if (includeSentences) sentenceAudios.forEach((a) => a.pause());
       session = null;
       activeKey = "reset";
       highlight(null);
@@ -276,6 +280,66 @@
       $("rt-word").focus({ preventScroll: true });
       if (fromLibrary) $("rt-word").scrollIntoView({ block: "center", behavior: "instant" });
     }
+    function renderSentences(w) {
+      sentenceAudios.forEach((a) => {
+        a.onplay = a.onplaying = a.onpause = a.onended = a.onerror = null;
+        a.pause();
+        a.removeAttribute("src");
+        a.load();
+      });
+      sentenceAudios = [];
+      $("rt-sentences").replaceChildren(...w.sentences.map((sentence, i) => {
+        const card = el("article", undefined, "rt-sentence-card");
+        card.dataset.sentence = String(i);
+        const heading = el("h3", i === 0 ? t("٤ · جملة قصيرة", "4 · Ein kurzer Satz")
+          : t("٥ · جملة أطول قليلًا", "5 · Den Satz erweitern"));
+        const text = el("p", undefined, "rt-sentence-text");
+        text.lang = "ar";
+        text.dir = "rtl";
+        const at = sentence.ar.indexOf(sentence.focus);
+        text.append(document.createTextNode(sentence.ar.slice(0, at)), el("mark", sentence.focus),
+          document.createTextNode(sentence.ar.slice(at + sentence.focus.length)));
+        const details = el("details");
+        details.append(el("summary", t("عرض المعنى بالألمانية", "Deutsche Bedeutung anzeigen")));
+        const meaning = el("p", sentence.de, "rt-sentence-translation");
+        meaning.lang = "de";
+        meaning.dir = "ltr";
+        details.append(meaning);
+        const label = el("p", t("اقرأ بنفسك، ثم شغّل التسجيل للمقارنة.", "Lies zuerst selbst. Spiele danach die Aufnahme zum Vergleichen ab."), "rt-note");
+        const media = el("audio");
+        media.controls = true;
+        media.preload = "metadata";
+        media.src = sentence.path;
+        media.playbackRate = state.speed;
+        media.preservesPitch = true;
+        media.setAttribute("aria-label", t(`استمع إلى الجملة: ${sentence.ar}`, `Satz anhören: ${sentence.ar}`));
+        media.dataset.readingSentence = `${w.id}-${i}`;
+        const error = el("p", "", "rt-sentence-error");
+        error.setAttribute("role", "status");
+        media.onplay = () => {
+          if (session) stop(false, false);
+          else audio.pause();
+          app.stopSpeech();
+          sentenceAudios.forEach((other) => { if (other !== media) other.pause(); });
+          transport();
+        };
+        media.onplaying = () => {
+          card.classList.add("is-playing");
+          error.textContent = "";
+          transport();
+        };
+        media.onpause = media.onended = () => { card.classList.remove("is-playing"); transport(); };
+        media.onerror = () => {
+          card.classList.remove("is-playing");
+          error.textContent = t("تعذّر تحميل تسجيل الجملة. أعد المحاولة وتحقّق من الاتصال أو مجلد audio.",
+            "Die Satzaufnahme konnte nicht geladen werden. Versuche es erneut und prüfe die Verbindung oder den Audioordner.");
+          transport();
+        };
+        sentenceAudios.push(media);
+        card.append(heading, text, details, label, media, error);
+        return card;
+      }));
+    }
     function render() {
       stop();
       const w = current();
@@ -302,7 +366,10 @@
       $("rt-word").setAttribute("aria-label", w.word);
       $("rt-meaning").textContent = w.de;
       letterButtons = w.sounds.map((sound, i) => {
-        const b = button(sound.text, () => play("letters", i));
+        // Show exactly what will be heard, including necessary coda/shadda or
+        // long-vowel context, instead of promising an isolated bare consonant.
+        const b = button(sound.spokenText, () => play("letters", i));
+        b.dataset.context = String(sound.context);
         b.setAttribute("aria-label", t(`استمع للصوت: ${sound.spokenText}`, `Laut hören: ${sound.spokenText}`));
         b.title = sound.context ? t(`نقرأه في سياقه: ${sound.spokenText}`, `Im Wortzusammenhang: ${sound.spokenText}`) : sound.text;
         return b;
@@ -315,6 +382,7 @@
       });
       $("rt-letter-strip").replaceChildren(...letterButtons);
       $("rt-prefixes").replaceChildren(...prefixButtons);
+      renderSentences(w);
       $("rt-word-grid").replaceChildren(...bank().map((word, i) => {
         const b = button(word.word, () => selectWord(i, true));
         if (i === index()) b.setAttribute("aria-current", "true");
@@ -327,6 +395,7 @@
       prepareAudio(w);
     }
     $("rt-listen").onclick = () => play();
+    $("rt-compare-word").onclick = () => play("word");
     document.querySelectorAll("[data-play]").forEach((b) => { b.onclick = () => play(b.dataset.play); });
     $("rt-stop").onclick = () => { stop(); status(t("تم إيقاف الصوت.", "Audio gestoppt.")); };
     $("rt-pause").onclick = () => {
@@ -348,6 +417,7 @@
     $("rt-speed").onchange = (e) => {
       state.speed = e.target.value === "0.8" ? 0.8 : 1;
       audio.playbackRate = state.speed;
+      sentenceAudios.forEach((a) => { a.playbackRate = state.speed; });
       save();
     };
     $("rt-word-select").onchange = (e) => selectWord(Number(e.target.value));

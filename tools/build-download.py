@@ -94,6 +94,10 @@ with ZipFile(args.output) as archive:
     assert len(trainer_clips) == 150
     for clip in trainer_clips:
         assert 'Vokabeltrainer/'+clip['path'] in files, clip['path']
+    sentence_clips = json.loads((ROOT/'audio/reading-sentences-manifest.json').read_text())['clips']
+    audio_count += len(sentence_clips)
+    for clip in sentence_clips:
+        assert 'Vokabeltrainer/'+clip['path'] in files, clip['path']
     for clip in skills_clips:
         assert 'Vokabeltrainer/'+clip['path'] in files, clip['path']
     vocab_clips = json.loads((ROOT/'audio/vocabulary-manifest.json').read_text())['clips']

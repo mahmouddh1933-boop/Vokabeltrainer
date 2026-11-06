@@ -9,7 +9,7 @@ const norm = (s) => s.normalize('NFC');
 const word = (s) => D.words.find((w) => w.word === norm(s));
 
 test('150 vocalized words retain three levels of 50 and contain sounds instead of letter names', () => {
-  assert.equal(D.version, 3);
+  assert.equal(D.version, 4);
   assert.equal(D.words.length, 150);
   assert.equal(new Set(D.words.map((w) => w.word)).size, 150);
   assert.equal(new Set(D.words.map((w) => w.id)).size, 150);
@@ -25,6 +25,33 @@ test('150 vocalized words retain three levels of 50 and contain sounds instead o
       assert(s.letters.includes(i) && s.letters.every((j) => j <= i));
       assert.equal(s.context, s.letters.length > 1);
       assert(s.phonemes && !/[A-Z]/u.test(s.phonemes));
+    }
+  }
+});
+
+test('every reading word has a short and expanded vocalized sentence with a matching bundled recording', () => {
+  const source = require('../data/reading-trainer-sentences.json');
+  const manifest = require('../audio/reading-sentences-manifest.json');
+  assert.equal(manifest.complete, true);
+  assert.equal(manifest.sourceSha256, crypto.createHash('sha256').update(fs.readFileSync(path.join(__dirname, '../data/reading-trainer-sentences.json'))).digest('hex'));
+  assert.equal(source.words.length, 150);
+  assert.equal(manifest.clips.length, 300);
+  const strip = (s) => norm(s).replace(/[\u064b-\u065f\u0670]/gu, '');
+  const recorded = new Map(manifest.clips.map((c) => [c.text, c]));
+  for (const w of D.words) {
+    assert.equal(w.sentences.length, 2);
+    assert.deepEqual(w.sentences.map(({ar,de,focus}) => ({ar,de,focus})), source.words.find((s) => s.id === w.id).sentences);
+    assert(w.sentences[1].ar.split(' ').length > w.sentences[0].ar.split(' ').length);
+    for (const s of w.sentences) {
+      assert.equal(strip(s.focus), strip(w.word));
+      assert.equal(s.ar.split(s.focus).length, 2);
+      assert(/[\u064e-\u0652]/u.test(s.ar));
+      assert(s.ar.endsWith('.') && s.de && s.ar.split(' ').length <= 10);
+      const c = recorded.get(s.ar);
+      assert.equal(s.path, c.path);
+      assert.equal(s.seconds, c.seconds);
+      assert(c.seconds > .4 && c.seconds < 20);
+      assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(__dirname, '..', c.path))).digest('hex'), c.sha256);
     }
   }
 });

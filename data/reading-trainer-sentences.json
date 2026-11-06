@@ -1,0 +1,2255 @@
+{
+  "version": 1,
+  "words": [
+    {
+      "id": "rt-1-01",
+      "sentences": [
+        {
+          "ar": "كَتَبَ سَامِرٌ.",
+          "de": "Samer schrieb.",
+          "focus": "كَتَبَ"
+        },
+        {
+          "ar": "كَتَبَ سَامِرٌ كَلِمَةً.",
+          "de": "Samer schrieb ein Wort.",
+          "focus": "كَتَبَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-02",
+      "sentences": [
+        {
+          "ar": "قَرَأَ عُمَرُ.",
+          "de": "Omar las.",
+          "focus": "قَرَأَ"
+        },
+        {
+          "ar": "قَرَأَ عُمَرُ كِتَابًا.",
+          "de": "Omar las ein Buch.",
+          "focus": "قَرَأَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-03",
+      "sentences": [
+        {
+          "ar": "أَكَلَ حَسَنٌ.",
+          "de": "Hasan aß.",
+          "focus": "أَكَلَ"
+        },
+        {
+          "ar": "أَكَلَ حَسَنٌ تُفَّاحَةً.",
+          "de": "Hasan aß einen Apfel.",
+          "focus": "أَكَلَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-04",
+      "sentences": [
+        {
+          "ar": "شَرِبَ أَحْمَدُ.",
+          "de": "Ahmad trank.",
+          "focus": "شَرِبَ"
+        },
+        {
+          "ar": "شَرِبَ أَحْمَدُ حَلِيبًا.",
+          "de": "Ahmad trank Milch.",
+          "focus": "شَرِبَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-05",
+      "sentences": [
+        {
+          "ar": "لَعِبَ سَامِرٌ.",
+          "de": "Samer spielte.",
+          "focus": "لَعِبَ"
+        },
+        {
+          "ar": "لَعِبَ سَامِرٌ مَعَ أَخِيهِ.",
+          "de": "Samer spielte mit seinem Bruder.",
+          "focus": "لَعِبَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-06",
+      "sentences": [
+        {
+          "ar": "رَسَمَ عُمَرُ.",
+          "de": "Omar zeichnete.",
+          "focus": "رَسَمَ"
+        },
+        {
+          "ar": "رَسَمَ عُمَرُ بَيْتًا.",
+          "de": "Omar zeichnete ein Haus.",
+          "focus": "رَسَمَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-07",
+      "sentences": [
+        {
+          "ar": "جَلَسَ أَحْمَدُ.",
+          "de": "Ahmad setzte sich.",
+          "focus": "جَلَسَ"
+        },
+        {
+          "ar": "جَلَسَ أَحْمَدُ عَلَى كُرْسِيٍّ.",
+          "de": "Ahmad setzte sich auf einen Stuhl.",
+          "focus": "جَلَسَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-08",
+      "sentences": [
+        {
+          "ar": "وَقَفَ حَسَنٌ.",
+          "de": "Hasan stand.",
+          "focus": "وَقَفَ"
+        },
+        {
+          "ar": "وَقَفَ حَسَنٌ أَمَامَ الْبَابِ.",
+          "de": "Hasan stand vor der Tür.",
+          "focus": "وَقَفَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-09",
+      "sentences": [
+        {
+          "ar": "خَرَجَ عُمَرُ.",
+          "de": "Omar ging hinaus.",
+          "focus": "خَرَجَ"
+        },
+        {
+          "ar": "خَرَجَ عُمَرُ مِنَ الْبَيْتِ.",
+          "de": "Omar ging aus dem Haus.",
+          "focus": "خَرَجَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-10",
+      "sentences": [
+        {
+          "ar": "دَخَلَ سَامِرٌ.",
+          "de": "Samer kam herein.",
+          "focus": "دَخَلَ"
+        },
+        {
+          "ar": "دَخَلَ سَامِرٌ إِلَى الْغُرْفَةِ.",
+          "de": "Samer kam ins Zimmer.",
+          "focus": "دَخَلَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-11",
+      "sentences": [
+        {
+          "ar": "ذَهَبَ أَحْمَدُ.",
+          "de": "Ahmad ging.",
+          "focus": "ذَهَبَ"
+        },
+        {
+          "ar": "ذَهَبَ أَحْمَدُ إِلَى الْمَدْرَسَةِ.",
+          "de": "Ahmad ging zur Schule.",
+          "focus": "ذَهَبَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-12",
+      "sentences": [
+        {
+          "ar": "رَكِبَ عُمَرُ.",
+          "de": "Omar stieg ein.",
+          "focus": "رَكِبَ"
+        },
+        {
+          "ar": "رَكِبَ عُمَرُ الْحَافِلَةَ.",
+          "de": "Omar stieg in den Bus.",
+          "focus": "رَكِبَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-13",
+      "sentences": [
+        {
+          "ar": "نَزَلَ حَسَنٌ.",
+          "de": "Hasan stieg hinab.",
+          "focus": "نَزَلَ"
+        },
+        {
+          "ar": "نَزَلَ حَسَنٌ مِنَ الْحَافِلَةِ.",
+          "de": "Hasan stieg aus dem Bus.",
+          "focus": "نَزَلَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-14",
+      "sentences": [
+        {
+          "ar": "صَعِدَ سَامِرٌ.",
+          "de": "Samer stieg hinauf.",
+          "focus": "صَعِدَ"
+        },
+        {
+          "ar": "صَعِدَ سَامِرٌ إِلَى غُرْفَتِهِ.",
+          "de": "Samer ging hinauf in sein Zimmer.",
+          "focus": "صَعِدَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-15",
+      "sentences": [
+        {
+          "ar": "فَتَحَ أَحْمَدُ.",
+          "de": "Ahmad öffnete.",
+          "focus": "فَتَحَ"
+        },
+        {
+          "ar": "فَتَحَ أَحْمَدُ الْبَابَ.",
+          "de": "Ahmad öffnete die Tür.",
+          "focus": "فَتَحَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-16",
+      "sentences": [
+        {
+          "ar": "غَسَلَ عُمَرُ.",
+          "de": "Omar wusch.",
+          "focus": "غَسَلَ"
+        },
+        {
+          "ar": "غَسَلَ عُمَرُ يَدَيْهِ.",
+          "de": "Omar wusch seine Hände.",
+          "focus": "غَسَلَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-17",
+      "sentences": [
+        {
+          "ar": "لَبِسَ حَسَنٌ.",
+          "de": "Hasan zog sich an.",
+          "focus": "لَبِسَ"
+        },
+        {
+          "ar": "لَبِسَ حَسَنٌ قَمِيصًا.",
+          "de": "Hasan zog ein Hemd an.",
+          "focus": "لَبِسَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-18",
+      "sentences": [
+        {
+          "ar": "حَمَلَ سَامِرٌ.",
+          "de": "Samer trug etwas.",
+          "focus": "حَمَلَ"
+        },
+        {
+          "ar": "حَمَلَ سَامِرٌ حَقِيبَةً.",
+          "de": "Samer trug eine Tasche.",
+          "focus": "حَمَلَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-19",
+      "sentences": [
+        {
+          "ar": "طَبَخَ أَحْمَدُ.",
+          "de": "Ahmad kochte.",
+          "focus": "طَبَخَ"
+        },
+        {
+          "ar": "طَبَخَ أَحْمَدُ طَعَامًا.",
+          "de": "Ahmad kochte Essen.",
+          "focus": "طَبَخَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-20",
+      "sentences": [
+        {
+          "ar": "زَرَعَ عُمَرُ.",
+          "de": "Omar pflanzte.",
+          "focus": "زَرَعَ"
+        },
+        {
+          "ar": "زَرَعَ عُمَرُ شَجَرَةً.",
+          "de": "Omar pflanzte einen Baum.",
+          "focus": "زَرَعَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-21",
+      "sentences": [
+        {
+          "ar": "جَمَعَ حَسَنٌ.",
+          "de": "Hasan sammelte.",
+          "focus": "جَمَعَ"
+        },
+        {
+          "ar": "جَمَعَ حَسَنٌ أَقْلَامَهُ.",
+          "de": "Hasan sammelte seine Stifte ein.",
+          "focus": "جَمَعَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-22",
+      "sentences": [
+        {
+          "ar": "نَجَحَ سَامِرٌ.",
+          "de": "Samer hatte Erfolg.",
+          "focus": "نَجَحَ"
+        },
+        {
+          "ar": "نَجَحَ سَامِرٌ فِي الِاخْتِبَارِ.",
+          "de": "Samer bestand den Test.",
+          "focus": "نَجَحَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-23",
+      "sentences": [
+        {
+          "ar": "سَمِعَ أَحْمَدُ.",
+          "de": "Ahmad hörte.",
+          "focus": "سَمِعَ"
+        },
+        {
+          "ar": "سَمِعَ أَحْمَدُ صَوْتًا.",
+          "de": "Ahmad hörte ein Geräusch.",
+          "focus": "سَمِعَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-24",
+      "sentences": [
+        {
+          "ar": "فَهِمَ عُمَرُ.",
+          "de": "Omar verstand.",
+          "focus": "فَهِمَ"
+        },
+        {
+          "ar": "فَهِمَ عُمَرُ السُّؤَالَ.",
+          "de": "Omar verstand die Frage.",
+          "focus": "فَهِمَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-25",
+      "sentences": [
+        {
+          "ar": "حَفِظَ حَسَنٌ.",
+          "de": "Hasan lernte auswendig.",
+          "focus": "حَفِظَ"
+        },
+        {
+          "ar": "حَفِظَ حَسَنٌ كَلِمَةً جَدِيدَةً.",
+          "de": "Hasan lernte ein neues Wort auswendig.",
+          "focus": "حَفِظَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-26",
+      "sentences": [
+        {
+          "ar": "بَحَثَ سَامِرٌ.",
+          "de": "Samer suchte.",
+          "focus": "بَحَثَ"
+        },
+        {
+          "ar": "بَحَثَ سَامِرٌ عَنْ قَلَمِهِ.",
+          "de": "Samer suchte nach seinem Stift.",
+          "focus": "بَحَثَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-27",
+      "sentences": [
+        {
+          "ar": "طَلَبَ أَحْمَدُ.",
+          "de": "Ahmad bat um etwas.",
+          "focus": "طَلَبَ"
+        },
+        {
+          "ar": "طَلَبَ أَحْمَدُ كَأْسَ مَاءٍ.",
+          "de": "Ahmad bat um ein Glas Wasser.",
+          "focus": "طَلَبَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-28",
+      "sentences": [
+        {
+          "ar": "مَسَحَ عُمَرُ.",
+          "de": "Omar wischte.",
+          "focus": "مَسَحَ"
+        },
+        {
+          "ar": "مَسَحَ عُمَرُ الطَّاوِلَةَ.",
+          "de": "Omar wischte den Tisch ab.",
+          "focus": "مَسَحَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-29",
+      "sentences": [
+        {
+          "ar": "قَطَعَ حَسَنٌ.",
+          "de": "Hasan schnitt.",
+          "focus": "قَطَعَ"
+        },
+        {
+          "ar": "قَطَعَ حَسَنٌ رَغِيفًا.",
+          "de": "Hasan schnitt einen Brotlaib.",
+          "focus": "قَطَعَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-30",
+      "sentences": [
+        {
+          "ar": "سَبَحَ سَامِرٌ.",
+          "de": "Samer schwamm.",
+          "focus": "سَبَحَ"
+        },
+        {
+          "ar": "سَبَحَ سَامِرٌ فِي الْبَحْرِ.",
+          "de": "Samer schwamm im Meer.",
+          "focus": "سَبَحَ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-31",
+      "sentences": [
+        {
+          "ar": "هَذِهِ يَدٌ.",
+          "de": "Das ist eine Hand.",
+          "focus": "يَدٌ"
+        },
+        {
+          "ar": "هَذِهِ يَدٌ نَظِيفَةٌ.",
+          "de": "Das ist eine saubere Hand.",
+          "focus": "يَدٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-32",
+      "sentences": [
+        {
+          "ar": "هَذَا فَمٌ.",
+          "de": "Das ist ein Mund.",
+          "focus": "فَمٌ"
+        },
+        {
+          "ar": "لِلْقِطِّ فَمٌ صَغِيرٌ.",
+          "de": "Die Katze hat einen kleinen Mund.",
+          "focus": "فَمٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-33",
+      "sentences": [
+        {
+          "ar": "سَامِرٌ أَبٌ.",
+          "de": "Samer ist Vater.",
+          "focus": "أَبٌ"
+        },
+        {
+          "ar": "سَامِرٌ أَبٌ لِطِفْلَيْنِ.",
+          "de": "Samer ist Vater von zwei Kindern.",
+          "focus": "أَبٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-34",
+      "sentences": [
+        {
+          "ar": "لِي أَخٌ.",
+          "de": "Ich habe einen Bruder.",
+          "focus": "أَخٌ"
+        },
+        {
+          "ar": "لِي أَخٌ صَغِيرٌ.",
+          "de": "Ich habe einen kleinen Bruder.",
+          "focus": "أَخٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-35",
+      "sentences": [
+        {
+          "ar": "هَذَا قَلَمٌ.",
+          "de": "Das ist ein Stift.",
+          "focus": "قَلَمٌ"
+        },
+        {
+          "ar": "هَذَا قَلَمٌ أَزْرَقُ.",
+          "de": "Das ist ein blauer Stift.",
+          "focus": "قَلَمٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-36",
+      "sentences": [
+        {
+          "ar": "هَذَا جَمَلٌ.",
+          "de": "Das ist ein Kamel.",
+          "focus": "جَمَلٌ"
+        },
+        {
+          "ar": "هَذَا جَمَلٌ كَبِيرٌ.",
+          "de": "Das ist ein großes Kamel.",
+          "focus": "جَمَلٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-37",
+      "sentences": [
+        {
+          "ar": "هَذَا جَبَلٌ.",
+          "de": "Das ist ein Berg.",
+          "focus": "جَبَلٌ"
+        },
+        {
+          "ar": "هَذَا جَبَلٌ عَالٍ.",
+          "de": "Das ist ein hoher Berg.",
+          "focus": "جَبَلٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-38",
+      "sentences": [
+        {
+          "ar": "هَذَا سَمَكٌ.",
+          "de": "Das ist Fisch.",
+          "focus": "سَمَكٌ"
+        },
+        {
+          "ar": "هَذَا سَمَكٌ طَازَجٌ.",
+          "de": "Das ist frischer Fisch.",
+          "focus": "سَمَكٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-39",
+      "sentences": [
+        {
+          "ar": "هَذَا عِنَبٌ.",
+          "de": "Das sind Weintrauben.",
+          "focus": "عِنَبٌ"
+        },
+        {
+          "ar": "هَذَا عِنَبٌ حُلْوٌ.",
+          "de": "Das sind süße Weintrauben.",
+          "focus": "عِنَبٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-40",
+      "sentences": [
+        {
+          "ar": "هَذَا عَسَلٌ.",
+          "de": "Das ist Honig.",
+          "focus": "عَسَلٌ"
+        },
+        {
+          "ar": "هَذَا عَسَلٌ لَذِيذٌ.",
+          "de": "Das ist leckerer Honig.",
+          "focus": "عَسَلٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-41",
+      "sentences": [
+        {
+          "ar": "هَذَا لَبَنٌ.",
+          "de": "Das ist Sauermilch.",
+          "focus": "لَبَنٌ"
+        },
+        {
+          "ar": "هَذَا لَبَنٌ بَارِدٌ.",
+          "de": "Das ist kalte Sauermilch.",
+          "focus": "لَبَنٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-42",
+      "sentences": [
+        {
+          "ar": "هَذَا تَمْرٌ.",
+          "de": "Das sind Datteln.",
+          "focus": "تَمْرٌ"
+        },
+        {
+          "ar": "هَذَا تَمْرٌ حُلْوٌ.",
+          "de": "Das sind süße Datteln.",
+          "focus": "تَمْرٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-43",
+      "sentences": [
+        {
+          "ar": "هَذَا بَدْرٌ.",
+          "de": "Das ist ein Vollmond.",
+          "focus": "بَدْرٌ"
+        },
+        {
+          "ar": "فِي السَّمَاءِ بَدْرٌ مُضِيءٌ.",
+          "de": "Am Himmel leuchtet ein Vollmond.",
+          "focus": "بَدْرٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-44",
+      "sentences": [
+        {
+          "ar": "هَذَا بَحْرٌ.",
+          "de": "Das ist ein Meer.",
+          "focus": "بَحْرٌ"
+        },
+        {
+          "ar": "هَذَا بَحْرٌ وَاسِعٌ.",
+          "de": "Das ist ein weites Meer.",
+          "focus": "بَحْرٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-45",
+      "sentences": [
+        {
+          "ar": "هَذِهِ شَمْسٌ.",
+          "de": "Das ist eine Sonne.",
+          "focus": "شَمْسٌ"
+        },
+        {
+          "ar": "فِي الرَّسْمِ شَمْسٌ صَفْرَاءُ.",
+          "de": "Auf der Zeichnung ist eine gelbe Sonne.",
+          "focus": "شَمْسٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-46",
+      "sentences": [
+        {
+          "ar": "هَذَا نَهْرٌ.",
+          "de": "Das ist ein Fluss.",
+          "focus": "نَهْرٌ"
+        },
+        {
+          "ar": "هَذَا نَهْرٌ طَوِيلٌ.",
+          "de": "Das ist ein langer Fluss.",
+          "focus": "نَهْرٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-47",
+      "sentences": [
+        {
+          "ar": "هَذَا زَهْرٌ.",
+          "de": "Das sind Blüten.",
+          "focus": "زَهْرٌ"
+        },
+        {
+          "ar": "فِي الْحَدِيقَةِ زَهْرٌ جَمِيلٌ.",
+          "de": "Im Garten gibt es schöne Blüten.",
+          "focus": "زَهْرٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-48",
+      "sentences": [
+        {
+          "ar": "هَذَا نَمْلٌ.",
+          "de": "Das sind Ameisen.",
+          "focus": "نَمْلٌ"
+        },
+        {
+          "ar": "تَحْتَ الشَّجَرَةِ نَمْلٌ كَثِيرٌ.",
+          "de": "Unter dem Baum sind viele Ameisen.",
+          "focus": "نَمْلٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-49",
+      "sentences": [
+        {
+          "ar": "هَذَا نَجْمٌ.",
+          "de": "Das ist ein Stern.",
+          "focus": "نَجْمٌ"
+        },
+        {
+          "ar": "فِي السَّمَاءِ نَجْمٌ لَامِعٌ.",
+          "de": "Am Himmel ist ein heller Stern.",
+          "focus": "نَجْمٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-1-50",
+      "sentences": [
+        {
+          "ar": "هَذَا وَرْدٌ.",
+          "de": "Das sind Rosen.",
+          "focus": "وَرْدٌ"
+        },
+        {
+          "ar": "فِي الْمَزْهَرِيَّةِ وَرْدٌ أَحْمَرُ.",
+          "de": "In der Vase stehen rote Rosen.",
+          "focus": "وَرْدٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-01",
+      "sentences": [
+        {
+          "ar": "هَذَا بَابٌ.",
+          "de": "Das ist eine Tür.",
+          "focus": "بَابٌ"
+        },
+        {
+          "ar": "هَذَا بَابٌ مَفْتُوحٌ.",
+          "de": "Das ist eine offene Tür.",
+          "focus": "بَابٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-02",
+      "sentences": [
+        {
+          "ar": "هَذَا مَاءٌ.",
+          "de": "Das ist Wasser.",
+          "focus": "مَاءٌ"
+        },
+        {
+          "ar": "هَذَا مَاءٌ بَارِدٌ.",
+          "de": "Das ist kaltes Wasser.",
+          "focus": "مَاءٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-03",
+      "sentences": [
+        {
+          "ar": "هَذِهِ دَارٌ.",
+          "de": "Das ist ein Haus.",
+          "focus": "دَارٌ"
+        },
+        {
+          "ar": "هَذِهِ دَارٌ وَاسِعَةٌ.",
+          "de": "Das ist ein geräumiges Haus.",
+          "focus": "دَارٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-04",
+      "sentences": [
+        {
+          "ar": "هَذِهِ نَارٌ.",
+          "de": "Das ist ein Feuer.",
+          "focus": "نَارٌ"
+        },
+        {
+          "ar": "هَذِهِ نَارٌ قَوِيَّةٌ.",
+          "de": "Das ist ein starkes Feuer.",
+          "focus": "نَارٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-05",
+      "sentences": [
+        {
+          "ar": "هَذَا نُورٌ.",
+          "de": "Das ist Licht.",
+          "focus": "نُورٌ"
+        },
+        {
+          "ar": "هَذَا نُورٌ سَاطِعٌ.",
+          "de": "Das ist helles Licht.",
+          "focus": "نُورٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-06",
+      "sentences": [
+        {
+          "ar": "هَذَا سُوقٌ.",
+          "de": "Das ist ein Markt.",
+          "focus": "سُوقٌ"
+        },
+        {
+          "ar": "هَذَا سُوقٌ قَرِيبٌ.",
+          "de": "Das ist ein Markt in der Nähe.",
+          "focus": "سُوقٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-07",
+      "sentences": [
+        {
+          "ar": "هَذَا تُوتٌ.",
+          "de": "Das sind Maulbeeren.",
+          "focus": "تُوتٌ"
+        },
+        {
+          "ar": "هَذَا تُوتٌ نَاضِجٌ.",
+          "de": "Das sind reife Maulbeeren.",
+          "focus": "تُوتٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-08",
+      "sentences": [
+        {
+          "ar": "هَذَا تِينٌ.",
+          "de": "Das sind Feigen.",
+          "focus": "تِينٌ"
+        },
+        {
+          "ar": "هَذَا تِينٌ طَازَجٌ.",
+          "de": "Das sind frische Feigen.",
+          "focus": "تِينٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-09",
+      "sentences": [
+        {
+          "ar": "هَذَا زَيْتٌ.",
+          "de": "Das ist Öl.",
+          "focus": "زَيْتٌ"
+        },
+        {
+          "ar": "هَذَا زَيْتٌ مِنَ الزَّيْتُونِ.",
+          "de": "Das ist Öl aus Oliven.",
+          "focus": "زَيْتٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-10",
+      "sentences": [
+        {
+          "ar": "هَذَا بَيْتٌ.",
+          "de": "Das ist ein Haus.",
+          "focus": "بَيْتٌ"
+        },
+        {
+          "ar": "هَذَا بَيْتٌ جَمِيلٌ.",
+          "de": "Das ist ein schönes Haus.",
+          "focus": "بَيْتٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-11",
+      "sentences": [
+        {
+          "ar": "هَذَا يَوْمٌ جَمِيلٌ.",
+          "de": "Das ist ein schöner Tag.",
+          "focus": "يَوْمٌ"
+        },
+        {
+          "ar": "هَذَا يَوْمٌ جَمِيلٌ لِلْقِرَاءَةِ.",
+          "de": "Das ist ein schöner Tag zum Lesen.",
+          "focus": "يَوْمٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-12",
+      "sentences": [
+        {
+          "ar": "هَذِهِ عَيْنٌ.",
+          "de": "Das ist ein Auge.",
+          "focus": "عَيْنٌ"
+        },
+        {
+          "ar": "هَذِهِ عَيْنٌ تَرَى الْأَلْوَانَ.",
+          "de": "Dieses Auge sieht Farben.",
+          "focus": "عَيْنٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-13",
+      "sentences": [
+        {
+          "ar": "هَذَا لَيْلٌ هَادِئٌ.",
+          "de": "Das ist eine ruhige Nacht.",
+          "focus": "لَيْلٌ"
+        },
+        {
+          "ar": "هَذَا لَيْلٌ هَادِئٌ بَعْدَ يَوْمٍ طَوِيلٍ.",
+          "de": "Das ist eine ruhige Nacht nach einem langen Tag.",
+          "focus": "لَيْلٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-14",
+      "sentences": [
+        {
+          "ar": "هَذَا فِيلٌ.",
+          "de": "Das ist ein Elefant.",
+          "focus": "فِيلٌ"
+        },
+        {
+          "ar": "هَذَا فِيلٌ كَبِيرٌ.",
+          "de": "Das ist ein großer Elefant.",
+          "focus": "فِيلٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-15",
+      "sentences": [
+        {
+          "ar": "هَذَا حُوتٌ.",
+          "de": "Das ist ein Wal.",
+          "focus": "حُوتٌ"
+        },
+        {
+          "ar": "هَذَا حُوتٌ يَسْبَحُ فِي الْبَحْرِ.",
+          "de": "Dieser Wal schwimmt im Meer.",
+          "focus": "حُوتٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-16",
+      "sentences": [
+        {
+          "ar": "هَذَا ضَوْءٌ.",
+          "de": "Das ist ein Lichtschein.",
+          "focus": "ضَوْءٌ"
+        },
+        {
+          "ar": "هَذَا ضَوْءٌ مِنَ الْمِصْبَاحِ.",
+          "de": "Dieser Lichtschein kommt von der Lampe.",
+          "focus": "ضَوْءٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-17",
+      "sentences": [
+        {
+          "ar": "هَذَا كَأْسٌ.",
+          "de": "Das ist ein Trinkglas.",
+          "focus": "كَأْسٌ"
+        },
+        {
+          "ar": "هَذَا كَأْسٌ مِنَ الْمَاءِ.",
+          "de": "Das ist ein Glas Wasser.",
+          "focus": "كَأْسٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-18",
+      "sentences": [
+        {
+          "ar": "هَذَا رَأْسٌ.",
+          "de": "Das ist ein Kopf.",
+          "focus": "رَأْسٌ"
+        },
+        {
+          "ar": "لِلْفِيلِ رَأْسٌ كَبِيرٌ.",
+          "de": "Der Elefant hat einen großen Kopf.",
+          "focus": "رَأْسٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-19",
+      "sentences": [
+        {
+          "ar": "هَذَا كِتَابٌ.",
+          "de": "Das ist ein Buch.",
+          "focus": "كِتَابٌ"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ عَنْ حَيَوَانَاتِ الْغَابَةِ.",
+          "de": "Das ist ein Buch über Waldtiere.",
+          "focus": "كِتَابٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-20",
+      "sentences": [
+        {
+          "ar": "هَذَا حَلِيبٌ.",
+          "de": "Das ist Milch.",
+          "focus": "حَلِيبٌ"
+        },
+        {
+          "ar": "هَذَا حَلِيبٌ دَافِئٌ.",
+          "de": "Das ist warme Milch.",
+          "focus": "حَلِيبٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-21",
+      "sentences": [
+        {
+          "ar": "هَذَا عَصِيرٌ.",
+          "de": "Das ist Saft.",
+          "focus": "عَصِيرٌ"
+        },
+        {
+          "ar": "هَذَا عَصِيرٌ مِنَ الْبُرْتُقَالِ.",
+          "de": "Das ist Orangensaft.",
+          "focus": "عَصِيرٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-22",
+      "sentences": [
+        {
+          "ar": "هَذَا رَغِيفٌ.",
+          "de": "Das ist ein Brotlaib.",
+          "focus": "رَغِيفٌ"
+        },
+        {
+          "ar": "هَذَا رَغِيفٌ طَازَجٌ.",
+          "de": "Das ist ein frischer Brotlaib.",
+          "focus": "رَغِيفٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-23",
+      "sentences": [
+        {
+          "ar": "هَذَا طَعَامٌ.",
+          "de": "Das ist Essen.",
+          "focus": "طَعَامٌ"
+        },
+        {
+          "ar": "هَذَا طَعَامٌ لَذِيذٌ.",
+          "de": "Das ist leckeres Essen.",
+          "focus": "طَعَامٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-24",
+      "sentences": [
+        {
+          "ar": "هَذَا مَوْزٌ.",
+          "de": "Das sind Bananen.",
+          "focus": "مَوْزٌ"
+        },
+        {
+          "ar": "هَذَا مَوْزٌ أَصْفَرُ.",
+          "de": "Das sind gelbe Bananen.",
+          "focus": "مَوْزٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-25",
+      "sentences": [
+        {
+          "ar": "هَذَا لَيْمُونٌ.",
+          "de": "Das sind Zitronen.",
+          "focus": "لَيْمُونٌ"
+        },
+        {
+          "ar": "هَذَا لَيْمُونٌ مِنَ الْحَدِيقَةِ.",
+          "de": "Das sind Zitronen aus dem Garten.",
+          "focus": "لَيْمُونٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-26",
+      "sentences": [
+        {
+          "ar": "هَذَا زَيْتُونٌ.",
+          "de": "Das sind Oliven.",
+          "focus": "زَيْتُونٌ"
+        },
+        {
+          "ar": "هَذَا زَيْتُونٌ أَخْضَرُ.",
+          "de": "Das sind grüne Oliven.",
+          "focus": "زَيْتُونٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-27",
+      "sentences": [
+        {
+          "ar": "هَذَا خِيَارٌ.",
+          "de": "Das sind Gurken.",
+          "focus": "خِيَارٌ"
+        },
+        {
+          "ar": "هَذَا خِيَارٌ طَازَجٌ.",
+          "de": "Das sind frische Gurken.",
+          "focus": "خِيَارٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-28",
+      "sentences": [
+        {
+          "ar": "هَذَا سَرِيرٌ.",
+          "de": "Das ist ein Bett.",
+          "focus": "سَرِيرٌ"
+        },
+        {
+          "ar": "هَذَا سَرِيرٌ مُرِيحٌ.",
+          "de": "Das ist ein bequemes Bett.",
+          "focus": "سَرِيرٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-29",
+      "sentences": [
+        {
+          "ar": "هَذَا سِتَارٌ.",
+          "de": "Das ist ein Vorhang.",
+          "focus": "سِتَارٌ"
+        },
+        {
+          "ar": "هَذَا سِتَارٌ أَزْرَقُ.",
+          "de": "Das ist ein blauer Vorhang.",
+          "focus": "سِتَارٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-30",
+      "sentences": [
+        {
+          "ar": "هَذِهِ نَافِذَةٌ.",
+          "de": "Das ist ein Fenster.",
+          "focus": "نَافِذَةٌ"
+        },
+        {
+          "ar": "هَذِهِ نَافِذَةٌ مَفْتُوحَةٌ.",
+          "de": "Das ist ein offenes Fenster.",
+          "focus": "نَافِذَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-31",
+      "sentences": [
+        {
+          "ar": "هَذِهِ مَدْرَسَةٌ.",
+          "de": "Das ist eine Schule.",
+          "focus": "مَدْرَسَةٌ"
+        },
+        {
+          "ar": "هَذِهِ مَدْرَسَةٌ قَرِيبَةٌ مِنْ بَيْتِي.",
+          "de": "Diese Schule ist in der Nähe meines Hauses.",
+          "focus": "مَدْرَسَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-32",
+      "sentences": [
+        {
+          "ar": "هَذِهِ مَكْتَبَةٌ.",
+          "de": "Das ist eine Bibliothek.",
+          "focus": "مَكْتَبَةٌ"
+        },
+        {
+          "ar": "هَذِهِ مَكْتَبَةٌ فِيهَا كُتُبٌ كَثِيرَةٌ.",
+          "de": "In dieser Bibliothek gibt es viele Bücher.",
+          "focus": "مَكْتَبَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-33",
+      "sentences": [
+        {
+          "ar": "هَذِهِ حَقِيبَةٌ.",
+          "de": "Das ist eine Tasche.",
+          "focus": "حَقِيبَةٌ"
+        },
+        {
+          "ar": "هَذِهِ حَقِيبَةٌ خَفِيفَةٌ.",
+          "de": "Das ist eine leichte Tasche.",
+          "focus": "حَقِيبَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-34",
+      "sentences": [
+        {
+          "ar": "هَذِهِ حَدِيقَةٌ.",
+          "de": "Das ist ein Garten.",
+          "focus": "حَدِيقَةٌ"
+        },
+        {
+          "ar": "هَذِهِ حَدِيقَةٌ فِيهَا أَشْجَارٌ.",
+          "de": "In diesem Garten stehen Bäume.",
+          "focus": "حَدِيقَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-35",
+      "sentences": [
+        {
+          "ar": "هَذِهِ مَدِينَةٌ.",
+          "de": "Das ist eine Stadt.",
+          "focus": "مَدِينَةٌ"
+        },
+        {
+          "ar": "هَذِهِ مَدِينَةٌ كَبِيرَةٌ.",
+          "de": "Das ist eine große Stadt.",
+          "focus": "مَدِينَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-36",
+      "sentences": [
+        {
+          "ar": "سَامِرٌ طَبِيبٌ.",
+          "de": "Samer ist Arzt.",
+          "focus": "طَبِيبٌ"
+        },
+        {
+          "ar": "سَامِرٌ طَبِيبٌ فِي الْمُسْتَشْفَى.",
+          "de": "Samer ist Arzt im Krankenhaus.",
+          "focus": "طَبِيبٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-37",
+      "sentences": [
+        {
+          "ar": "عُمَرُ مَرِيضٌ.",
+          "de": "Omar ist krank.",
+          "focus": "مَرِيضٌ"
+        },
+        {
+          "ar": "عُمَرُ مَرِيضٌ وَيَحْتَاجُ إِلَى الرَّاحَةِ.",
+          "de": "Omar ist krank und braucht Ruhe.",
+          "focus": "مَرِيضٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-38",
+      "sentences": [
+        {
+          "ar": "بَيْتِي قَرِيبٌ.",
+          "de": "Mein Haus ist in der Nähe.",
+          "focus": "قَرِيبٌ"
+        },
+        {
+          "ar": "بَيْتِي قَرِيبٌ مِنَ الْمَدْرَسَةِ.",
+          "de": "Mein Haus ist in der Nähe der Schule.",
+          "focus": "قَرِيبٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-39",
+      "sentences": [
+        {
+          "ar": "بَيْتِي بَعِيدٌ.",
+          "de": "Mein Haus ist weit weg.",
+          "focus": "بَعِيدٌ"
+        },
+        {
+          "ar": "بَيْتِي بَعِيدٌ عَنِ السُّوقِ.",
+          "de": "Mein Haus ist weit vom Markt entfernt.",
+          "focus": "بَعِيدٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-40",
+      "sentences": [
+        {
+          "ar": "هَذَا بَيْتٌ كَبِيرٌ.",
+          "de": "Das ist ein großes Haus.",
+          "focus": "كَبِيرٌ"
+        },
+        {
+          "ar": "هَذَا بَيْتٌ كَبِيرٌ لِعَائِلَةٍ كَبِيرَةٍ.",
+          "de": "Das ist ein großes Haus für eine große Familie.",
+          "focus": "كَبِيرٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-41",
+      "sentences": [
+        {
+          "ar": "هَذَا قَلَمٌ صَغِيرٌ.",
+          "de": "Das ist ein kleiner Stift.",
+          "focus": "صَغِيرٌ"
+        },
+        {
+          "ar": "هَذَا قَلَمٌ صَغِيرٌ فِي حَقِيبَتِي.",
+          "de": "Das ist ein kleiner Stift in meiner Tasche.",
+          "focus": "صَغِيرٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-42",
+      "sentences": [
+        {
+          "ar": "هَذَا رَسْمٌ جَمِيلٌ.",
+          "de": "Das ist eine schöne Zeichnung.",
+          "focus": "جَمِيلٌ"
+        },
+        {
+          "ar": "هَذَا رَسْمٌ جَمِيلٌ لِحَدِيقَةٍ.",
+          "de": "Das ist eine schöne Zeichnung eines Gartens.",
+          "focus": "جَمِيلٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-43",
+      "sentences": [
+        {
+          "ar": "هَذَا كِتَابٌ جَدِيدٌ.",
+          "de": "Das ist ein neues Buch.",
+          "focus": "جَدِيدٌ"
+        },
+        {
+          "ar": "هَذَا كِتَابٌ جَدِيدٌ عَنِ الرِّيَاضَةِ.",
+          "de": "Das ist ein neues Buch über Sport.",
+          "focus": "جَدِيدٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-44",
+      "sentences": [
+        {
+          "ar": "هَذَا بَيْتٌ قَدِيمٌ.",
+          "de": "Das ist ein altes Haus.",
+          "focus": "قَدِيمٌ"
+        },
+        {
+          "ar": "هَذَا بَيْتٌ قَدِيمٌ فِي قَرْيَتِنَا.",
+          "de": "Das ist ein altes Haus in unserem Dorf.",
+          "focus": "قَدِيمٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-45",
+      "sentences": [
+        {
+          "ar": "أَحْمَدُ سَعِيدٌ.",
+          "de": "Ahmad ist glücklich.",
+          "focus": "سَعِيدٌ"
+        },
+        {
+          "ar": "أَحْمَدُ سَعِيدٌ بِنَجَاحِهِ.",
+          "de": "Ahmad freut sich über seinen Erfolg.",
+          "focus": "سَعِيدٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-46",
+      "sentences": [
+        {
+          "ar": "هَذَا قَمِيصٌ نَظِيفٌ.",
+          "de": "Das ist ein sauberes Hemd.",
+          "focus": "نَظِيفٌ"
+        },
+        {
+          "ar": "هَذَا قَمِيصٌ نَظِيفٌ فِي الْخِزَانَةِ.",
+          "de": "Das ist ein sauberes Hemd im Schrank.",
+          "focus": "نَظِيفٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-47",
+      "sentences": [
+        {
+          "ar": "هَذَا قِطَارٌ سَرِيعٌ.",
+          "de": "Das ist ein schneller Zug.",
+          "focus": "سَرِيعٌ"
+        },
+        {
+          "ar": "هَذَا قِطَارٌ سَرِيعٌ بَيْنَ الْمَدِينَتَيْنِ.",
+          "de": "Dieser schnelle Zug verbindet die beiden Städte.",
+          "focus": "سَرِيعٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-48",
+      "sentences": [
+        {
+          "ar": "هَذَا مَشْيٌ بَطِيءٌ.",
+          "de": "Das ist langsames Gehen.",
+          "focus": "بَطِيءٌ"
+        },
+        {
+          "ar": "هَذَا مَشْيٌ بَطِيءٌ نَحْوَ الْبَيْتِ.",
+          "de": "Das ist langsames Gehen in Richtung des Hauses.",
+          "focus": "بَطِيءٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-49",
+      "sentences": [
+        {
+          "ar": "سَامِرٌ صَدِيقٌ.",
+          "de": "Samer ist ein Freund.",
+          "focus": "صَدِيقٌ"
+        },
+        {
+          "ar": "سَامِرٌ صَدِيقٌ يُسَاعِدُنِي.",
+          "de": "Samer ist ein Freund, der mir hilft.",
+          "focus": "صَدِيقٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-2-50",
+      "sentences": [
+        {
+          "ar": "هَذَا طَرِيقٌ.",
+          "de": "Das ist ein Weg.",
+          "focus": "طَرِيقٌ"
+        },
+        {
+          "ar": "هَذَا طَرِيقٌ إِلَى الْمَدْرَسَةِ.",
+          "de": "Das ist ein Weg zur Schule.",
+          "focus": "طَرِيقٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-01",
+      "sentences": [
+        {
+          "ar": "هَذِهِ أُمٌّ.",
+          "de": "Das ist eine Mutter.",
+          "focus": "أُمٌّ"
+        },
+        {
+          "ar": "هَذِهِ أُمٌّ تَقْرَأُ لِطِفْلِهَا.",
+          "de": "Diese Mutter liest ihrem Kind vor.",
+          "focus": "أُمٌّ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-02",
+      "sentences": [
+        {
+          "ar": "هَذَا دُبٌّ.",
+          "de": "Das ist ein Bär.",
+          "focus": "دُبٌّ"
+        },
+        {
+          "ar": "هَذَا دُبٌّ فِي الْغَابَةِ.",
+          "de": "Das ist ein Bär im Wald.",
+          "focus": "دُبٌّ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-03",
+      "sentences": [
+        {
+          "ar": "هَذَا قِطٌّ.",
+          "de": "Das ist eine Katze.",
+          "focus": "قِطٌّ"
+        },
+        {
+          "ar": "هَذَا قِطٌّ يَلْعَبُ بِكُرَةٍ.",
+          "de": "Diese Katze spielt mit einem Ball.",
+          "focus": "قِطٌّ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-04",
+      "sentences": [
+        {
+          "ar": "هَذَا حُبٌّ.",
+          "de": "Das ist Liebe.",
+          "focus": "حُبٌّ"
+        },
+        {
+          "ar": "هَذَا حُبٌّ لِلْعَائِلَةِ.",
+          "de": "Das ist Liebe zur Familie.",
+          "focus": "حُبٌّ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-05",
+      "sentences": [
+        {
+          "ar": "هَذَا جَدٌّ.",
+          "de": "Das ist ein Großvater.",
+          "focus": "جَدٌّ"
+        },
+        {
+          "ar": "هَذَا جَدٌّ يَحْكِي قِصَّةً.",
+          "de": "Dieser Großvater erzählt eine Geschichte.",
+          "focus": "جَدٌّ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-06",
+      "sentences": [
+        {
+          "ar": "هَذَا حَظٌّ جَيِّدٌ.",
+          "de": "Das ist Glück.",
+          "focus": "حَظٌّ"
+        },
+        {
+          "ar": "هَذَا حَظٌّ جَيِّدٌ فِي الْمُسَابَقَةِ.",
+          "de": "Das ist Glück beim Wettbewerb.",
+          "focus": "حَظٌّ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-07",
+      "sentences": [
+        {
+          "ar": "هَذَا صَفٌّ.",
+          "de": "Das ist eine Klasse.",
+          "focus": "صَفٌّ"
+        },
+        {
+          "ar": "هَذَا صَفٌّ فِيهِ عِشْرُونَ طَالِبًا.",
+          "de": "In dieser Klasse sind zwanzig Schüler.",
+          "focus": "صَفٌّ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-08",
+      "sentences": [
+        {
+          "ar": "هَذَا حَقٌّ.",
+          "de": "Das ist ein Recht.",
+          "focus": "حَقٌّ"
+        },
+        {
+          "ar": "التَّعَلُّمُ حَقٌّ لِلْجَمِيعِ.",
+          "de": "Lernen ist ein Recht für alle.",
+          "focus": "حَقٌّ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-09",
+      "sentences": [
+        {
+          "ar": "أَقْرَأُ ثُمَّ أَكْتُبُ.",
+          "de": "Ich lese und schreibe danach.",
+          "focus": "ثُمَّ"
+        },
+        {
+          "ar": "أَقْرَأُ الْكَلِمَةَ ثُمَّ أَكْتُبُهَا.",
+          "de": "Ich lese das Wort und schreibe es danach.",
+          "focus": "ثُمَّ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-10",
+      "sentences": [
+        {
+          "ar": "هَذِهِ جَدَّةٌ.",
+          "de": "Das ist eine Großmutter.",
+          "focus": "جَدَّةٌ"
+        },
+        {
+          "ar": "هَذِهِ جَدَّةٌ تَزْرَعُ الْوَرْدَ.",
+          "de": "Diese Großmutter pflanzt Rosen.",
+          "focus": "جَدَّةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-11",
+      "sentences": [
+        {
+          "ar": "عُمَرُ مُعَلِّمٌ.",
+          "de": "Omar ist Lehrer.",
+          "focus": "مُعَلِّمٌ"
+        },
+        {
+          "ar": "عُمَرُ مُعَلِّمٌ فِي مَدْرَسَتِنَا.",
+          "de": "Omar ist Lehrer an unserer Schule.",
+          "focus": "مُعَلِّمٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-12",
+      "sentences": [
+        {
+          "ar": "سَلْمَى مُعَلِّمَةٌ.",
+          "de": "Salma ist Lehrerin.",
+          "focus": "مُعَلِّمَةٌ"
+        },
+        {
+          "ar": "سَلْمَى مُعَلِّمَةٌ تُعَلِّمُنَا الْقِرَاءَةَ.",
+          "de": "Salma ist eine Lehrerin, die uns Lesen beibringt.",
+          "focus": "مُعَلِّمَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-13",
+      "sentences": [
+        {
+          "ar": "سَامِرٌ مُهَنْدِسٌ.",
+          "de": "Samer ist Ingenieur.",
+          "focus": "مُهَنْدِسٌ"
+        },
+        {
+          "ar": "سَامِرٌ مُهَنْدِسٌ يَرْسُمُ بَيْتًا.",
+          "de": "Samer ist ein Ingenieur, der ein Haus entwirft.",
+          "focus": "مُهَنْدِسٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-14",
+      "sentences": [
+        {
+          "ar": "سَلْمَى مُهَنْدِسَةٌ.",
+          "de": "Salma ist Ingenieurin.",
+          "focus": "مُهَنْدِسَةٌ"
+        },
+        {
+          "ar": "سَلْمَى مُهَنْدِسَةٌ تَعْمَلُ فِي مَكْتَبٍ.",
+          "de": "Salma ist Ingenieurin und arbeitet in einem Büro.",
+          "focus": "مُهَنْدِسَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-15",
+      "sentences": [
+        {
+          "ar": "أَحْمَدُ مُمَرِّضٌ.",
+          "de": "Ahmad ist Krankenpfleger.",
+          "focus": "مُمَرِّضٌ"
+        },
+        {
+          "ar": "أَحْمَدُ مُمَرِّضٌ يُسَاعِدُ الْمَرْضَى.",
+          "de": "Ahmad ist ein Krankenpfleger, der den Kranken hilft.",
+          "focus": "مُمَرِّضٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-16",
+      "sentences": [
+        {
+          "ar": "نُورُ مُمَرِّضَةٌ.",
+          "de": "Nur ist Krankenpflegerin.",
+          "focus": "مُمَرِّضَةٌ"
+        },
+        {
+          "ar": "نُورُ مُمَرِّضَةٌ فِي الْمُسْتَشْفَى.",
+          "de": "Nur ist Krankenpflegerin im Krankenhaus.",
+          "focus": "مُمَرِّضَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-17",
+      "sentences": [
+        {
+          "ar": "عُمَرُ نَجَّارٌ.",
+          "de": "Omar ist Tischler.",
+          "focus": "نَجَّارٌ"
+        },
+        {
+          "ar": "عُمَرُ نَجَّارٌ يَصْنَعُ طَاوِلَةً.",
+          "de": "Omar ist ein Tischler, der einen Tisch baut.",
+          "focus": "نَجَّارٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-18",
+      "sentences": [
+        {
+          "ar": "حَسَنٌ خَبَّازٌ.",
+          "de": "Hasan ist Bäcker.",
+          "focus": "خَبَّازٌ"
+        },
+        {
+          "ar": "حَسَنٌ خَبَّازٌ يَصْنَعُ الْخُبْزَ.",
+          "de": "Hasan ist ein Bäcker, der Brot backt.",
+          "focus": "خَبَّازٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-19",
+      "sentences": [
+        {
+          "ar": "سَامِرٌ فَلَّاحٌ.",
+          "de": "Samer ist Bauer.",
+          "focus": "فَلَّاحٌ"
+        },
+        {
+          "ar": "سَامِرٌ فَلَّاحٌ يَزْرَعُ الْخَضْرَاوَاتِ.",
+          "de": "Samer ist ein Bauer, der Gemüse anbaut.",
+          "focus": "فَلَّاحٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-20",
+      "sentences": [
+        {
+          "ar": "هَذِهِ سَيَّارَةٌ.",
+          "de": "Das ist ein Auto.",
+          "focus": "سَيَّارَةٌ"
+        },
+        {
+          "ar": "هَذِهِ سَيَّارَةٌ أَمَامَ الْبَيْتِ.",
+          "de": "Dieses Auto steht vor dem Haus.",
+          "focus": "سَيَّارَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-21",
+      "sentences": [
+        {
+          "ar": "هَذِهِ دَرَّاجَةٌ.",
+          "de": "Das ist ein Fahrrad.",
+          "focus": "دَرَّاجَةٌ"
+        },
+        {
+          "ar": "هَذِهِ دَرَّاجَةٌ جَدِيدَةٌ لِأَخِي.",
+          "de": "Das ist ein neues Fahrrad für meinen Bruder.",
+          "focus": "دَرَّاجَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-22",
+      "sentences": [
+        {
+          "ar": "هَذِهِ طَائِرَةٌ.",
+          "de": "Das ist ein Flugzeug.",
+          "focus": "طَائِرَةٌ"
+        },
+        {
+          "ar": "هَذِهِ طَائِرَةٌ فَوْقَ الْمَدِينَةِ.",
+          "de": "Dieses Flugzeug fliegt über der Stadt.",
+          "focus": "طَائِرَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-23",
+      "sentences": [
+        {
+          "ar": "هَذَا رُمَّانٌ.",
+          "de": "Das sind Granatäpfel.",
+          "focus": "رُمَّانٌ"
+        },
+        {
+          "ar": "هَذَا رُمَّانٌ مِنْ حَدِيقَتِنَا.",
+          "de": "Das sind Granatäpfel aus unserem Garten.",
+          "focus": "رُمَّانٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-24",
+      "sentences": [
+        {
+          "ar": "هَذَا تُفَّاحٌ.",
+          "de": "Das sind Äpfel.",
+          "focus": "تُفَّاحٌ"
+        },
+        {
+          "ar": "هَذَا تُفَّاحٌ أَحْمَرُ.",
+          "de": "Das sind rote Äpfel.",
+          "focus": "تُفَّاحٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-25",
+      "sentences": [
+        {
+          "ar": "هَذَا سُكَّرٌ.",
+          "de": "Das ist Zucker.",
+          "focus": "سُكَّرٌ"
+        },
+        {
+          "ar": "هَذَا سُكَّرٌ لِلشَّايِ.",
+          "de": "Das ist Zucker für den Tee.",
+          "focus": "سُكَّرٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-26",
+      "sentences": [
+        {
+          "ar": "هَذَا سُلَّمٌ.",
+          "de": "Das ist eine Leiter.",
+          "focus": "سُلَّمٌ"
+        },
+        {
+          "ar": "هَذَا سُلَّمٌ لِلصُّعُودِ إِلَى السَّطْحِ.",
+          "de": "Das ist eine Leiter zum Dach.",
+          "focus": "سُلَّمٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-27",
+      "sentences": [
+        {
+          "ar": "هَذِهِ مَظَلَّةٌ.",
+          "de": "Das ist ein Regenschirm.",
+          "focus": "مَظَلَّةٌ"
+        },
+        {
+          "ar": "هَذِهِ مَظَلَّةٌ تَحْمِينِي مِنَ الْمَطَرِ.",
+          "de": "Dieser Regenschirm schützt mich vor dem Regen.",
+          "focus": "مَظَلَّةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-28",
+      "sentences": [
+        {
+          "ar": "هَذِهِ سَبُّورَةٌ.",
+          "de": "Das ist eine Schultafel.",
+          "focus": "سَبُّورَةٌ"
+        },
+        {
+          "ar": "هَذِهِ سَبُّورَةٌ فِي الصَّفِّ.",
+          "de": "Diese Schultafel steht im Klassenraum.",
+          "focus": "سَبُّورَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-29",
+      "sentences": [
+        {
+          "ar": "هَذِهِ ثَلَّاجَةٌ.",
+          "de": "Das ist ein Kühlschrank.",
+          "focus": "ثَلَّاجَةٌ"
+        },
+        {
+          "ar": "هَذِهِ ثَلَّاجَةٌ فِيهَا حَلِيبٌ.",
+          "de": "In diesem Kühlschrank steht Milch.",
+          "focus": "ثَلَّاجَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-30",
+      "sentences": [
+        {
+          "ar": "هَذِهِ غَسَّالَةٌ.",
+          "de": "Das ist eine Waschmaschine.",
+          "focus": "غَسَّالَةٌ"
+        },
+        {
+          "ar": "هَذِهِ غَسَّالَةٌ تَغْسِلُ الْمَلَابِسَ.",
+          "de": "Diese Waschmaschine wäscht die Kleidung.",
+          "focus": "غَسَّالَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-31",
+      "sentences": [
+        {
+          "ar": "هَذَا كُرْسِيٌّ.",
+          "de": "Das ist ein Stuhl.",
+          "focus": "كُرْسِيٌّ"
+        },
+        {
+          "ar": "هَذَا كُرْسِيٌّ قُرْبَ الطَّاوِلَةِ.",
+          "de": "Dieser Stuhl steht neben dem Tisch.",
+          "focus": "كُرْسِيٌّ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-32",
+      "sentences": [
+        {
+          "ar": "هَذِهِ هَدِيَّةٌ.",
+          "de": "Das ist ein Geschenk.",
+          "focus": "هَدِيَّةٌ"
+        },
+        {
+          "ar": "هَذِهِ هَدِيَّةٌ لِأُمِّي.",
+          "de": "Das ist ein Geschenk für meine Mutter.",
+          "focus": "هَدِيَّةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-33",
+      "sentences": [
+        {
+          "ar": "الْمَشْيُ رِيَاضَةٌ.",
+          "de": "Gehen ist Sport.",
+          "focus": "رِيَاضَةٌ"
+        },
+        {
+          "ar": "الْمَشْيُ رِيَاضَةٌ مُفِيدَةٌ لِلْجِسْمِ.",
+          "de": "Gehen ist eine gesunde Sportart für den Körper.",
+          "focus": "رِيَاضَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-34",
+      "sentences": [
+        {
+          "ar": "هَذَا مُسْتَشْفَى.",
+          "de": "Das ist ein Krankenhaus.",
+          "focus": "مُسْتَشْفَى"
+        },
+        {
+          "ar": "هَذَا مُسْتَشْفَى قَرِيبٌ مِنْ بَيْتِي.",
+          "de": "Dieses Krankenhaus ist in der Nähe meines Hauses.",
+          "focus": "مُسْتَشْفَى"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-35",
+      "sentences": [
+        {
+          "ar": "هَذِهِ صَيْدَلِيَّةٌ.",
+          "de": "Das ist eine Apotheke.",
+          "focus": "صَيْدَلِيَّةٌ"
+        },
+        {
+          "ar": "هَذِهِ صَيْدَلِيَّةٌ لِشِرَاءِ الدَّوَاءِ.",
+          "de": "In dieser Apotheke kann man Medikamente kaufen.",
+          "focus": "صَيْدَلِيَّةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-36",
+      "sentences": [
+        {
+          "ar": "أَحْتَاجُ إِلَى مُسَاعَدَةٍ.",
+          "de": "Ich brauche Hilfe.",
+          "focus": "مُسَاعَدَةٍ"
+        },
+        {
+          "ar": "أَحْتَاجُ إِلَى مُسَاعَدَةٍ فِي قِرَاءَةِ الْكَلِمَةِ.",
+          "de": "Ich brauche Hilfe beim Lesen des Wortes.",
+          "focus": "مُسَاعَدَةٍ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-37",
+      "sentences": [
+        {
+          "ar": "هَذِهِ مُسَابَقَةٌ.",
+          "de": "Das ist ein Wettbewerb.",
+          "focus": "مُسَابَقَةٌ"
+        },
+        {
+          "ar": "هَذِهِ مُسَابَقَةٌ فِي الْقِرَاءَةِ.",
+          "de": "Das ist ein Lesewettbewerb.",
+          "focus": "مُسَابَقَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-38",
+      "sentences": [
+        {
+          "ar": "هَذِهِ مُحَادَثَةٌ.",
+          "de": "Das ist ein Gespräch.",
+          "focus": "مُحَادَثَةٌ"
+        },
+        {
+          "ar": "هَذِهِ مُحَادَثَةٌ بَيْنَ صَدِيقَيْنِ.",
+          "de": "Das ist ein Gespräch zwischen zwei Freunden.",
+          "focus": "مُحَادَثَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-39",
+      "sentences": [
+        {
+          "ar": "هَذِهِ مُرَاجَعَةٌ.",
+          "de": "Das ist eine Wiederholung.",
+          "focus": "مُرَاجَعَةٌ"
+        },
+        {
+          "ar": "هَذِهِ مُرَاجَعَةٌ لِلْكَلِمَاتِ الْجَدِيدَةِ.",
+          "de": "Das ist eine Wiederholung der neuen Wörter.",
+          "focus": "مُرَاجَعَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-40",
+      "sentences": [
+        {
+          "ar": "هَذِهِ اِسْتِرَاحَةٌ.",
+          "de": "Das ist eine Pause.",
+          "focus": "اِسْتِرَاحَةٌ"
+        },
+        {
+          "ar": "هَذِهِ اِسْتِرَاحَةٌ بَعْدَ الدَّرْسِ.",
+          "de": "Das ist eine Pause nach dem Unterricht.",
+          "focus": "اِسْتِرَاحَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-41",
+      "sentences": [
+        {
+          "ar": "هَذَا اِسْتِمَاعٌ.",
+          "de": "Das ist Zuhören.",
+          "focus": "اِسْتِمَاعٌ"
+        },
+        {
+          "ar": "هَذَا اِسْتِمَاعٌ إِلَى حِوَارٍ قَصِيرٍ.",
+          "de": "Hier hört man einem kurzen Dialog zu.",
+          "focus": "اِسْتِمَاعٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-42",
+      "sentences": [
+        {
+          "ar": "هَذَا اِسْتِخْدَامٌ مُفِيدٌ.",
+          "de": "Das ist eine sinnvolle Benutzung.",
+          "focus": "اِسْتِخْدَامٌ"
+        },
+        {
+          "ar": "هَذَا اِسْتِخْدَامٌ مُفِيدٌ لِلْكِتَابِ.",
+          "de": "Das ist eine sinnvolle Benutzung des Buches.",
+          "focus": "اِسْتِخْدَامٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-43",
+      "sentences": [
+        {
+          "ar": "هَذَا تَعَاوُنٌ.",
+          "de": "Das ist Zusammenarbeit.",
+          "focus": "تَعَاوُنٌ"
+        },
+        {
+          "ar": "هَذَا تَعَاوُنٌ بَيْنَ الزُّمَلَاءِ.",
+          "de": "Das ist Zusammenarbeit unter Mitschülern.",
+          "focus": "تَعَاوُنٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-44",
+      "sentences": [
+        {
+          "ar": "هَذَا تَعَلُّمٌ.",
+          "de": "Das ist Lernen.",
+          "focus": "تَعَلُّمٌ"
+        },
+        {
+          "ar": "هَذَا تَعَلُّمٌ لِكَلِمَاتٍ جَدِيدَةٍ.",
+          "de": "Hier werden neue Wörter gelernt.",
+          "focus": "تَعَلُّمٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-45",
+      "sentences": [
+        {
+          "ar": "هَذَا تَحَدُّثٌ.",
+          "de": "Das ist Sprechen.",
+          "focus": "تَحَدُّثٌ"
+        },
+        {
+          "ar": "هَذَا تَحَدُّثٌ بِاللُّغَةِ الْعَرَبِيَّةِ.",
+          "de": "Hier wird Arabisch gesprochen.",
+          "focus": "تَحَدُّثٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-46",
+      "sentences": [
+        {
+          "ar": "أَنَا مَسْؤُولٌ.",
+          "de": "Ich bin verantwortlich.",
+          "focus": "مَسْؤُولٌ"
+        },
+        {
+          "ar": "أَنَا مَسْؤُولٌ عَنْ نَظَافَةِ غُرْفَتِي.",
+          "de": "Ich bin für die Sauberkeit meines Zimmers verantwortlich.",
+          "focus": "مَسْؤُولٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-47",
+      "sentences": [
+        {
+          "ar": "هَذَا سُؤَالٌ.",
+          "de": "Das ist eine Frage.",
+          "focus": "سُؤَالٌ"
+        },
+        {
+          "ar": "هَذَا سُؤَالٌ عَنِ الدَّرْسِ.",
+          "de": "Das ist eine Frage zum Unterricht.",
+          "focus": "سُؤَالٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-48",
+      "sentences": [
+        {
+          "ar": "هَذِهِ بِيئَةٌ نَظِيفَةٌ.",
+          "de": "Das ist eine saubere Umwelt.",
+          "focus": "بِيئَةٌ"
+        },
+        {
+          "ar": "هَذِهِ بِيئَةٌ نَظِيفَةٌ نُحَافِظُ عَلَيْهَا.",
+          "de": "Das ist eine saubere Umwelt, die wir schützen.",
+          "focus": "بِيئَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-49",
+      "sentences": [
+        {
+          "ar": "هَذِهِ قِرَاءَةٌ.",
+          "de": "Das ist Lesen.",
+          "focus": "قِرَاءَةٌ"
+        },
+        {
+          "ar": "هَذِهِ قِرَاءَةٌ لِقِصَّةٍ قَصِيرَةٍ.",
+          "de": "Hier wird eine kurze Geschichte gelesen.",
+          "focus": "قِرَاءَةٌ"
+        }
+      ]
+    },
+    {
+      "id": "rt-3-50",
+      "sentences": [
+        {
+          "ar": "هَذِهِ عَائِلَةٌ.",
+          "de": "Das ist eine Familie.",
+          "focus": "عَائِلَةٌ"
+        },
+        {
+          "ar": "هَذِهِ عَائِلَةٌ تَسْكُنُ فِي قَرْيَتِنَا.",
+          "de": "Diese Familie wohnt in unserem Dorf.",
+          "focus": "عَائِلَةٌ"
+        }
+      ]
+    }
+  ]
+}

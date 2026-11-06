@@ -1,5 +1,6 @@
 """Real service worker, range audio, cached lessons, repair, privacy and responsive UI."""
 import argparse,json,tempfile
+from pathlib import Path
 from playwright.sync_api import sync_playwright,expect
 parser=argparse.ArgumentParser();parser.add_argument('--base-url',default='http://127.0.0.1:8070');args=parser.parse_args();BASE=args.base_url.rstrip('/')
 with sync_playwright() as p:
@@ -21,6 +22,8 @@ with sync_playwright() as p:
  assert response['status']==206 and response['bytes']==128 and response['range'].startswith('bytes 0-127/')
  trainer_clip='audio/reading-trainer/rt-1-01-voice-v3.mp3'
  assert page.evaluate("p=>fetch(p,{headers:{Range:'bytes=0-127'}}).then(r=>r.status)",trainer_clip)==206
+ sentence_clip=json.loads((Path(__file__).resolve().parents[1]/'audio/reading-sentences-manifest.json').read_text())['clips'][0]['path']
+ assert page.evaluate("p=>fetch(p,{headers:{Range:'bytes=0-127'}}).then(r=>r.status)",sentence_clip)==206
  page.wait_for_function('''()=>new Promise(resolve=>{const c=new MessageChannel();c.port1.onmessage=e=>resolve(e.data.mediaCount>0);navigator.serviceWorker.controller.postMessage({type:'PWA_STATUS'},[c.port2]);})''')
  page.evaluate('VocabApp.setJSON("learningStats",{...VocabApp.getStats(),pwaSentinel:"preserve-progress"})')
  # Non-allowlisted same-origin API-like responses and POSTs never enter the caches.
@@ -33,6 +36,7 @@ with sync_playwright() as p:
  for name in ['letters.html','reading.html','reading-trainer.html','vocabulary.html','skills.html#a1-01/writing','grammar.html','verbs.html','placement.html','exams.html','stories.html','books.html']:
   page.goto(BASE+'/'+name);page.wait_for_selector('main');assert page.evaluate('typeof VocabApp')=='object',name
  page.goto(BASE+'/reading-trainer.html');page.get_by_role('button',name='٣ · الكلمة كاملة',exact=True).tap();page.wait_for_function('window.__lastAudio&&!__lastAudio.paused');assert page.evaluate('__lastAudio.dataset.readingSource')==trainer_clip;assert page.evaluate('__lastAudio.currentSrc').startswith('blob:');page.locator('#rt-stop').tap()
+ page.locator('.rt-sentence-card audio').nth(0).evaluate('a=>a.play()');page.wait_for_function('document.querySelector(".rt-sentence-card audio").currentTime>.1');assert page.locator('.rt-sentence-card audio').nth(0).get_attribute('src')==sentence_clip;page.locator('.rt-sentence-card audio').nth(0).evaluate('a=>a.pause()')
  page.goto(BASE+'/skills.html#a1-01/listening');page.get_by_role('button',name='◖ استمع: تسجيل فهم المسموع',exact=True).tap();page.wait_for_function('!document.getElementById("skills-audio").paused');page.evaluate('document.getElementById("skills-audio").pause()')
  page.goto(BASE+'/skills.html#a1-01/writing');page.locator('[data-draft=writing]').fill('أَتَدَرَّبُ دُونَ اتِّصَالٍ.');page.get_by_role('button',name='احفظ إجابتي',exact=True).tap();page.reload();expect(page.locator('[data-draft=writing]')).to_have_value('أَتَدَرَّبُ دُونَ اتِّصَالٍ.')
  page.goto(BASE+'/missing-lesson.html');expect(page.locator('h1')).to_have_text('أنت دون اتصال')

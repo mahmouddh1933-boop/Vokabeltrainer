@@ -9,7 +9,9 @@ test('Installable manifest uses scoped relative URLs and opaque correctly sized 
 test('Worker precache inventory matches public source bytes and excludes private/API/PDF resources',()=>{
  assert.ok(assets['styles.css']&&!assets['styles.css'].media);assert.ok(assets['index.html']&&!assets['index.html'].media);assert.ok(assets['login.html']&&!assets['login.html'].media);assert.ok(assets['js/vendor/firebase/firebase-auth-compat.js']);
  for(const [name,a] of Object.entries(assets)){const bytes=fs.readFileSync(name);assert.equal(a.rev,crypto.createHash('sha256').update(bytes).digest('hex').slice(0,16),name);assert.equal(a.bytes,bytes.length);assert.ok(!name.endsWith('.pdf')&&!name.startsWith('downloads/')&&!name.includes('/users/')&&!name.includes('://'));}
- assert.equal(Object.keys(assets).filter(n=>n.endsWith('.mp3')).length,3494);assert.ok(assets['audio/skills/a1-01-listening.mp3'].media);
+ const sentenceClips=require('../audio/reading-sentences-manifest.json').clips;
+ assert.equal(Object.keys(assets).filter(n=>n.endsWith('.mp3')).length,3494+sentenceClips.length);assert.ok(assets['audio/skills/a1-01-listening.mp3'].media);
+ for(const clip of sentenceClips)assert.ok(assets[clip.path].media,clip.path);
  assert.ok(assets['reading-trainer.html']&&!assets['reading-trainer.html'].media);
  assert.ok(assets['audio/reading-trainer/rt-3-50-voice-v3.mp3'].media);
  assert.equal(assets['audio/reading-trainer/rt-3-50.mp3'], undefined);
