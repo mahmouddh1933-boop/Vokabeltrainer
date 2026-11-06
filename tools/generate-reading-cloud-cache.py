@@ -7,6 +7,8 @@ from pathlib import Path
 import json,hashlib,time,urllib.request,urllib.parse,unicodedata,subprocess,re
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime,timezone
+import shutil
+assert shutil.which("ffmpeg") and shutil.which("ffprobe"), "Install FFmpeg before generation"
 from reading_trainer_phonetics import reading_sounds,reading_prefixes,whole_ipa
 ROOT=Path(__file__).resolve().parents[1];out=ROOT/'audio/reading-cloud-cache';out.mkdir(exist_ok=True)
 source=json.loads((ROOT/'data/reading-trainer-source.json').read_text())
@@ -34,7 +36,7 @@ def make(text):
       data=r.read();assert r.headers.get('Content-Type','').startswith('audio/') and len(data)>500
      raw.write_bytes(data);time.sleep(.7)
     duration=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',str(raw)]))
-    scan=subprocess.run(['ffmpeg','-v','info','-i',str(raw),'-af','silencedetect=noise=-42dB:d=0.14','-f','null','-'],capture_output=True,text=True,check=True).stderr
+    scan=subprocess.run(['ffmpeg','-nostdin','-v','info','-i',str(raw),'-af','silencedetect=noise=-42dB:d=0.14','-f','null','-'],capture_output=True,text=True,check=True).stderr
     intervals=[(float(a),float(b)) for a,b in re.findall(r'silence_start: ([0-9.]+).*?silence_end: ([0-9.]+)',scan,re.S)]
     internal=[(a,b) for a,b in intervals if a>.25 and b<duration-.10]
     assert internal,('no separable carrier pause',text,intervals)
@@ -49,6 +51,8 @@ def make(text):
    info=json.loads(target.with_suffix('.json').read_text())
    return dict(text=text,path=target.relative_to(ROOT).as_posix(),sha256=hashlib.sha256(target.read_bytes()).hexdigest(),**info)
   except Exception as e:
+   print('GENERATION',repr(text),str(e),flush=True)
+   if isinstance(e,AssertionError):return dict(text=text,error=str(e))
    if attempt==2:return dict(text=text,error=str(e))
    time.sleep(2+attempt*3)
 with ThreadPoolExecutor(max_workers=2) as pool:clips=list(pool.map(make,texts))
