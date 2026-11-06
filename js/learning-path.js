@@ -17,8 +17,8 @@
       ar: "القراءة والهجاء",
       de: "Lesen und Buchstabieren",
       description: {
-        ar: "حلّل وحدات النطق، وادمج الحروف، وأكمل الكلمات، واكتشف عائلاتها.",
-        de: "Laute gliedern, Buchstaben verbinden, Wörter ergänzen und Wortfamilien entdecken.",
+        ar: "تدرّب على قراءة ١٥٠ كلمة مع الصوت والتلوين، ثم حلّل المقاطع وادمج الحروف وأكمل الكلمات.",
+        de: "Lies 150 Wörter mit Audio und Markierungen, gliedere Silben, verbinde Buchstaben und ergänze Wörter.",
       },
     },
     {
@@ -77,6 +77,7 @@
     },
   ];
   const groups = {
+    "reading-trainer.html": "reading",
     "huruf.html": "letters",
     "letter-tests.html": "letters",
     "sounds.html": "letters",

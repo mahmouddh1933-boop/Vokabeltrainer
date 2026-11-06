@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#194e40" />
+    <title>حروف من الزيتون · مدرّب القراءة</title>
+    <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
+    <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
+    <link rel="stylesheet" href="css/modern.css?v=12f689bc07a2" />
+    <link rel="stylesheet" href="css/practice.css?v=73cb20114e45" />
+    <link rel="stylesheet" href="css/olive-theme.css?v=2a69ab7dd182" />
+    <link rel="stylesheet" href="css/auth.css?v=193e81c25a14" />
+    <link rel="stylesheet" href="css/learning-route.css?v=e9bb6804b86d" />
+    <link rel="stylesheet" href="css/reading-trainer.css?v=1aed7cc78022" />
+    <script src="js/storage.js?v=234b995827cd" defer></script>
+    <script src="js/firebase-config.js?v=8c7993a85b2c" defer></script>
+    <script src="js/access-client.js?v=6d7404b1ce0e" defer></script>
+    <script src="js/auth-session.js?v=328a881b2d5c" defer></script>
+    <script src="js/app.js?v=967453105b0c" defer></script>
+    <script src="js/reading-trainer-data.js?v=bc0080d62292" defer></script>
+    <script src="data/vocab_catalog_labels.js?v=77de3e826c87" defer></script>
+    <script src="js/interface-languages.js?v=d233aae47963" defer></script>
+    <script src="js/learning-path.js?v=d1c2f9b5f022" defer></script>
+    <script src="js/design.js?v=54c2ca0d33c6" defer></script>
+    <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
+    <script src="js/pages/reading-trainer.js?v=2738527a7b28" defer></script>
+    <meta name="application-name" content="حروف من الزيتون" />
+    <link rel="icon" href="images/brand/olive-symbol.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="images/pwa/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="stylesheet" href="css/pwa.css?v=021f9b88f80e" />
+    <script src="js/pwa.js?v=6abccd6e9e0d" defer></script>
+  </head>
+  <body>
+    <main class="container practice-page reading-trainer-page">
+      <p id="lesson-loading" role="status">جارٍ تحميل مدرّب القراءة…</p>
+      <header class="page-heading">
+        <div>
+          <p class="eyebrow" data-ar="من الحرف إلى الكلمة" data-de="Vom Buchstaben zum Wort">من الحرف إلى الكلمة</p>
+          <h1 data-ar="مدرّب القراءة" data-de="Lesetrainer">مدرّب القراءة</h1>
+          <p class="practice-intro" data-ar="١٥٠ كلمة مُشكَّلة من الحياة اليومية · ٣ مستويات · استمع وتابع اللون، ثم اقرأ بنفسك." data-de="150 vokalisierte Alltagswörter · 3 Stufen · Höre zu, folge der Markierung und lies selbst.">١٥٠ كلمة مُشكَّلة من الحياة اليومية · ٣ مستويات · استمع وتابع اللون، ثم اقرأ بنفسك.</p>
+        </div>
+      </header>
+      <div id="rt-levels" class="rt-levels" role="group" aria-label="المستوى / Stufe"></div>
+      <p id="rt-level-description" class="rt-note"></p>
+      <section class="practice-panel rt-card" aria-labelledby="rt-title">
+        <div class="rt-card-topline">
+          <h2 id="rt-title" data-ar="استمع، ثم اقرأ" data-de="Erst hören, dann lesen">استمع، ثم اقرأ</h2>
+          <span id="rt-counter" dir="ltr"></span>
+        </div>
+        <label for="rt-word-select" data-ar="اختر كلمة من المستوى" data-de="Wort dieser Stufe auswählen">اختر كلمة من المستوى</label>
+        <select id="rt-word-select" lang="ar" dir="rtl"></select>
+        <div id="rt-word" class="rt-word" lang="ar" dir="rtl" tabindex="-1"></div>
+        <p id="rt-meaning" class="rt-meaning" lang="de" dir="ltr"></p>
+        <div class="rt-navigation">
+          <button id="rt-prev" class="practice-button" type="button" data-ar="الكلمة السابقة" data-de="Voriges Wort">الكلمة السابقة</button>
+          <button id="rt-next" class="practice-button" type="button" data-ar="الكلمة التالية" data-de="Nächstes Wort">الكلمة التالية</button>
+        </div>
+        <div class="rt-transport">
+          <button id="rt-listen" class="practice-button primary-action" type="button" data-ar="◖ استمع للتدرّج كاملًا" data-de="◖ Alle drei Schritte hören">◖ استمع للتدرّج كاملًا</button>
+          <button id="rt-pause" class="practice-button" type="button" disabled></button>
+          <button id="rt-stop" class="practice-button" type="button" disabled data-ar="إيقاف" data-de="Stopp">إيقاف</button>
+          <label class="rt-speed-label" for="rt-speed"><span data-ar="السرعة" data-de="Tempo">السرعة</span>
+            <select id="rt-speed"><option value="0.8" data-ar="أبطأ · 0.8×" data-de="Langsamer · 0,8×">أبطأ · 0.8×</option><option value="1" data-ar="هادئ · 1×" data-de="Ruhig · 1×" selected>هادئ · 1×</option></select>
+          </label>
+        </div>
+        <p id="rt-status" class="rt-status" role="status" aria-live="polite"></p>
+        <ol id="rt-stages" class="rt-stages">
+          <li data-stage="letters"><button type="button" class="practice-button" data-play="letters" data-ar="١ · أسماء الحروف" data-de="1 · Buchstabennamen">١ · أسماء الحروف</button></li>
+          <li data-stage="syllables"><button type="button" class="practice-button" data-play="syllables" data-ar="٢ · المقاطع الصوتية" data-de="2 · Silben">٢ · المقاطع الصوتية</button></li>
+          <li data-stage="word"><button type="button" class="practice-button" data-play="word" data-ar="٣ · الكلمة كاملة" data-de="3 · Ganzes Wort">٣ · الكلمة كاملة</button></li>
+        </ol>
+        <p id="rt-current" class="rt-current" aria-live="off"></p>
+        <p class="rt-strip-label" data-ar="الحروف المكتوبة" data-de="Geschriebene Buchstaben">الحروف المكتوبة</p>
+        <div id="rt-letter-strip" class="rt-letter-strip" lang="ar" dir="rtl" role="group" aria-label="الحروف / Buchstaben"></div>
+        <p class="rt-strip-label" data-ar="المقاطع الصوتية" data-de="Silben">المقاطع الصوتية</p>
+        <div id="rt-syllables" class="rt-syllables" lang="ar" dir="rtl" role="group" aria-label="المقاطع / Silben"></div>
+        <p class="rt-note" data-ar="اضغط حرفًا أو مقطعًا لإعادته. في الخطوة الأولى نسمّي الحروف؛ وفي الثانية نقرأ أصواتها مجتمعة في مقاطع. حرف المد والساكن يبقيان مع ما قبلهما. تُفكّ الشدّة في المقاطع، وتُقرأ التاء المربوطة هاءً عند الوقف." data-de="Tippe auf einen Buchstaben oder eine Silbe, um ihn oder sie zu wiederholen. Zuerst hörst du Buchstabennamen, danach verbundene Laute als Silben. Lange Vokale und Konsonanten mit Sukūn bleiben bei der vorigen Einheit. Schadda wird in den Silben aufgelöst; Tāʾ marbūṭa klingt in der Pausenform wie h.">اضغط حرفًا أو مقطعًا لإعادته. في الخطوة الأولى نسمّي الحروف؛ وفي الثانية نقرأ أصواتها مجتمعة في مقاطع. حرف المد والساكن يبقيان مع ما قبلهما. تُفكّ الشدّة في المقاطع، وتُقرأ التاء المربوطة هاءً عند الوقف.</p>
+        <button id="rt-self-read" class="practice-button rt-self-read" type="button" aria-pressed="false"></button>
+        <p class="rt-note" data-ar="علامة «قرأتُها بنفسي» لتتبّع تدريبك فقط؛ لا يُسجّل الميكروفون صوتك ولا يُقيَّم النطق آليًا." data-de="Die Markierung „Selbst gelesen“ erfasst dein Üben. Das Mikrofon wird nicht verwendet; die Aussprache wird nicht automatisch bewertet.">علامة «قرأتُها بنفسي» لتتبّع تدريبك فقط؛ لا يُسجّل الميكروفون صوتك ولا يُقيَّم النطق آليًا.</p>
+      </section>
+      <section class="practice-panel">
+        <h2 data-ar="تقدّم التدريب" data-de="Dein Übungsfortschritt">تقدّم التدريب</h2>
+        <p id="rt-progress-text"></p>
+        <progress id="rt-progress" max="50" value="0" aria-label="كلمات قرأتها بنفسي / Selbst gelesene Wörter"></progress>
+        <details id="rt-library"><summary data-ar="تصفّح كلمات المستوى الخمسين" data-de="Alle 50 Wörter dieser Stufe ansehen">تصفّح كلمات المستوى الخمسين</summary><div id="rt-word-grid" class="rt-word-grid" lang="ar" dir="rtl"></div></details>
+      </section>
+    </main>
+    <footer class="teacher-credit" id="teacher-credit">إعداد الأستاذ محمود بركات</footer>
+  </body>
+</html>

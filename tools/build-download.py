@@ -89,6 +89,11 @@ with ZipFile(args.output) as archive:
     audio_count = 439 + youth_clips + book_clips + related_clips + sum(len(json.loads((ROOT/"audio"/name).read_text())["clips"]) for name in ["phonics-manifest.json","sentence-expanded-manifest.json","placement-manifest.json"])
     skills_clips = json.loads((ROOT/'audio/skills-manifest.json').read_text())['clips']
     audio_count += len(skills_clips)
+    trainer_clips = json.loads((ROOT/'audio/reading-trainer-manifest.json').read_text())['clips']
+    audio_count += len(trainer_clips)
+    assert len(trainer_clips) == 150
+    for clip in trainer_clips:
+        assert 'Vokabeltrainer/'+clip['path'] in files, clip['path']
     for clip in skills_clips:
         assert 'Vokabeltrainer/'+clip['path'] in files, clip['path']
     vocab_clips = json.loads((ROOT/'audio/vocabulary-manifest.json').read_text())['clips']
@@ -96,7 +101,7 @@ with ZipFile(args.output) as archive:
     for clip in vocab_clips:
         assert 'Vokabeltrainer/'+clip['path'] in files, clip['path']
     assert len([name for name in files if name.endswith('.mp3')]) == audio_count
-    for name in ['huruf','lernseite','sounds','sentences','stories','book-level-two','arabic-youth','youth-training-two','youth-book-two-part-one']:
+    for name in ['huruf','lernseite','sounds','sentences','stories','book-level-two','arabic-youth','youth-training-two','youth-book-two-part-one','reading-trainer']:
         html = archive.read('Vokabeltrainer/'+name+'.html').decode()
         assert '<script data-source="js/storage.js">' in html
         assert not re.search(r'<script\b[^>]*\bsrc=["\'](?:js/|\./js/)', html)

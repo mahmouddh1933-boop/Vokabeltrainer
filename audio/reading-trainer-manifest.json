@@ -1,0 +1,7713 @@
+{
+  "version": 1,
+  "provider": "Piper / ar_JO-kareem-medium; explicit MSA phonemes",
+  "sampleRate": 22050,
+  "letterStage": "Written letter names, not isolated consonant sounds.",
+  "syllableStage": "Curated syllables. Shadda unfolds across syllables; tāʾ marbūṭa is /h/ at pause.",
+  "clips": [
+    {
+      "id": "rt-1-01",
+      "text": "كَتَبَ",
+      "path": "audio/reading-trainer/rt-1-01.mp3",
+      "seconds": 6.2433,
+      "sha256": "334da08b2537bb75553f71816a27aa70056e9e4952aa1e44ea01f95253b74186",
+      "wordPhonemes": "kˈataba",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.2009
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4809,
+          "end": 1.8277
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.7077,
+          "end": 3.0095
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.3295,
+          "end": 3.6258
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 3.9458,
+          "end": 4.3057
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2257,
+          "end": 5.9339
+        }
+      ]
+    },
+    {
+      "id": "rt-1-02",
+      "text": "قَرَأَ",
+      "path": "audio/reading-trainer/rt-1-02.mp3",
+      "seconds": 5.9298,
+      "sha256": "343ac2b34e4e85765ca8cb177c7430ea0168111790acdc6af71ebab4c1eb102c",
+      "wordPhonemes": "qˈaraʔa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4881
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7681,
+          "end": 1.1499
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4299,
+          "end": 1.8711
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.7511,
+          "end": 3.0994
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.4194,
+          "end": 3.7104
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.0304,
+          "end": 4.3241
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2441,
+          "end": 5.6156
+        }
+      ]
+    },
+    {
+      "id": "rt-1-03",
+      "text": "أَكَلَ",
+      "path": "audio/reading-trainer/rt-1-03.mp3",
+      "seconds": 6.7918,
+      "sha256": "c744c7cc01db5ee305d89c7d391996cf7ef4fc36ec9ab969d3006b72ecee559c",
+      "wordPhonemes": "ʔˈakala",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5912
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8712,
+          "end": 1.2776
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5576,
+          "end": 2.1574
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.0374,
+          "end": 3.3311
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.6511,
+          "end": 3.953
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.273,
+          "end": 4.721
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.641,
+          "end": 6.4843
+        }
+      ]
+    },
+    {
+      "id": "rt-1-04",
+      "text": "شَرِبَ",
+      "path": "audio/reading-trainer/rt-1-04.mp3",
+      "seconds": 6.2433,
+      "sha256": "bf0adb997aa3b8d684562379c548c537f3dd42e987c66d8ddcb6189016163c02",
+      "wordPhonemes": "ʃˈariba",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4867
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7667,
+          "end": 1.1485
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4285,
+          "end": 1.7753
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.6553,
+          "end": 2.9459
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.2659,
+          "end": 3.591
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 3.911,
+          "end": 4.2709
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.1909,
+          "end": 5.9239
+        }
+      ]
+    },
+    {
+      "id": "rt-1-05",
+      "text": "لَعِبَ",
+      "path": "audio/reading-trainer/rt-1-05.mp3",
+      "seconds": 6.5045,
+      "sha256": "2c923f6b4995561372f018d77645fec0957e48510eec78be26a28c5d40fec721",
+      "wordPhonemes": "lˈaʕiba",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.7499
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0299,
+          "end": 1.362
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.642,
+          "end": 1.9888
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.8688,
+          "end": 3.3168
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.6368,
+          "end": 3.9463
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.2663,
+          "end": 4.6262
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.5462,
+          "end": 6.1917
+        }
+      ]
+    },
+    {
+      "id": "rt-1-06",
+      "text": "رَسَمَ",
+      "path": "audio/reading-trainer/rt-1-06.mp3",
+      "seconds": 6.7657,
+      "sha256": "352ce6ede44254ed6a347983ce7ae4ac181ea5aadbb90b2b14db5eeb652ca7d4",
+      "wordPhonemes": "rˈasama",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5318
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8118,
+          "end": 1.2182
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4982,
+          "end": 2.1551
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.0351,
+          "end": 3.3262
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.6462,
+          "end": 3.9728
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.2928,
+          "end": 4.8233
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.7433,
+          "end": 6.457
+        }
+      ]
+    },
+    {
+      "id": "rt-1-07",
+      "text": "جَلَسَ",
+      "path": "audio/reading-trainer/rt-1-07.mp3",
+      "seconds": 6.8702,
+      "sha256": "a4f385ff07766938ce0d3a68b6b900a9320f6db5b03c04919ab7657c231702d7",
+      "wordPhonemes": "dʒˈalasa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.6604
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.9404,
+          "end": 1.5402
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.8202,
+          "end": 2.2266
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.1066,
+          "end": 3.4311
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.7511,
+          "end": 4.1991
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.5191,
+          "end": 4.8458
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.7658,
+          "end": 6.5631
+        }
+      ]
+    },
+    {
+      "id": "rt-1-08",
+      "text": "وَقَفَ",
+      "path": "audio/reading-trainer/rt-1-08.mp3",
+      "seconds": 6.5567,
+      "sha256": "c47defa2bc5739d8ca3246b5a45359c9813268ea21f532917a50c970c2f57c30",
+      "wordPhonemes": "wˈaqafa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.6159
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8959,
+          "end": 1.234
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.514,
+          "end": 1.9554
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.8354,
+          "end": 3.2493
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.5693,
+          "end": 3.9176
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.2376,
+          "end": 4.5289
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.4489,
+          "end": 6.2488
+        }
+      ]
+    },
+    {
+      "id": "rt-1-09",
+      "text": "خَرَجَ",
+      "path": "audio/reading-trainer/rt-1-09.mp3",
+      "seconds": 6.1388,
+      "sha256": "beac684dca7f3344a8140591263fda577a14fe501cdeb51fcb67f2271dfbec4e",
+      "wordPhonemes": "xˈaradʒa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4356
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7156,
+          "end": 1.0974
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3774,
+          "end": 1.8878
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.7678,
+          "end": 3.0939
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.4139,
+          "end": 3.7049
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.0249,
+          "end": 4.3495
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2695,
+          "end": 5.8293
+        }
+      ]
+    },
+    {
+      "id": "rt-1-10",
+      "text": "دَخَلَ",
+      "path": "audio/reading-trainer/rt-1-10.mp3",
+      "seconds": 6.818,
+      "sha256": "47d0b0cb18ef9b5ade4bc6ab65a354af7bc137ea6bcef0045d130a9003129d40",
+      "wordPhonemes": "dˈaxala",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.777
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.057,
+          "end": 1.3425
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6225,
+          "end": 2.2224
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.1024,
+          "end": 3.4507
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.7707,
+          "end": 4.0968
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.4168,
+          "end": 4.8649
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.7849,
+          "end": 6.5021
+        }
+      ]
+    },
+    {
+      "id": "rt-1-11",
+      "text": "ذَهَبَ",
+      "path": "audio/reading-trainer/rt-1-11.mp3",
+      "seconds": 6.1388,
+      "sha256": "0e7f4ee05bd67726aa900078fda420cfba9ab77918eafee2bdf86133fd34b3f3",
+      "wordPhonemes": "ðˈahaba",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5099
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7899,
+          "end": 1.2079
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4879,
+          "end": 1.8347
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.7147,
+          "end": 3.0094
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.3294,
+          "end": 3.623
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 3.943,
+          "end": 4.3029
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2229,
+          "end": 5.812
+        }
+      ]
+    },
+    {
+      "id": "rt-1-12",
+      "text": "رَكِبَ",
+      "path": "audio/reading-trainer/rt-1-12.mp3",
+      "seconds": 6.1388,
+      "sha256": "87213fd5c8a9e77ab3ddb655fe911a95a8f83632491f65141825873f6b1e9c5c",
+      "wordPhonemes": "rˈakiba",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5318
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8118,
+          "end": 1.2182
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4982,
+          "end": 1.845
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.725,
+          "end": 3.0161
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.3361,
+          "end": 3.6238
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 3.9438,
+          "end": 4.3037
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2237,
+          "end": 5.8232
+        }
+      ]
+    },
+    {
+      "id": "rt-1-13",
+      "text": "نَزَلَ",
+      "path": "audio/reading-trainer/rt-1-13.mp3",
+      "seconds": 6.5829,
+      "sha256": "45373aeffcdc25cbe839db48e3556cf550d7e39165db9b1dd33414e898052aba",
+      "wordPhonemes": "nˈazala",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4943
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7743,
+          "end": 1.0632
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3432,
+          "end": 1.9431
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.8231,
+          "end": 3.2028
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.5228,
+          "end": 3.8132
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.1332,
+          "end": 4.5812
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.5012,
+          "end": 6.2549
+        }
+      ]
+    },
+    {
+      "id": "rt-1-14",
+      "text": "صَعِدَ",
+      "path": "audio/reading-trainer/rt-1-14.mp3",
+      "seconds": 6.4784,
+      "sha256": "339cc9e8be1eb2ae3eecb4b3b3d463a5271901d5d03f6e033f1942378784b8b5",
+      "wordPhonemes": "sˤˈaʕida",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4706
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7506,
+          "end": 1.0827
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3627,
+          "end": 1.9897
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.8697,
+          "end": 3.1452
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.4652,
+          "end": 3.7746
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.0946,
+          "end": 4.4429
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.3629,
+          "end": 6.1576
+        }
+      ]
+    },
+    {
+      "id": "rt-1-15",
+      "text": "فَتَحَ",
+      "path": "audio/reading-trainer/rt-1-15.mp3",
+      "seconds": 6.3216,
+      "sha256": "479cf768a00404543ac3d5b1db013aa1c703d24d83d0baf9dedec8ec5f20969e",
+      "wordPhonemes": "fˈataħa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5914
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8714,
+          "end": 1.2359
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5159,
+          "end": 1.8495
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.7295,
+          "end": 3.0208
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.3408,
+          "end": 3.6371
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 3.9571,
+          "end": 4.2873
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2073,
+          "end": 5.9967
+        }
+      ]
+    },
+    {
+      "id": "rt-1-16",
+      "text": "غَسَلَ",
+      "path": "audio/reading-trainer/rt-1-16.mp3",
+      "seconds": 6.818,
+      "sha256": "521678e1ecf9b328d96ae7caab5a6f3ffad12b0070588c8964e12f790e77c3e2",
+      "wordPhonemes": "ɣˈasala",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.6709
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.9509,
+          "end": 1.3573
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6373,
+          "end": 2.2371
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.1171,
+          "end": 3.4059
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.7259,
+          "end": 4.0525
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.3725,
+          "end": 4.8205
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.7405,
+          "end": 6.4952
+        }
+      ]
+    },
+    {
+      "id": "rt-1-17",
+      "text": "لَبِسَ",
+      "path": "audio/reading-trainer/rt-1-17.mp3",
+      "seconds": 6.7396,
+      "sha256": "0d6a52197d379cade470df601d6d24e64a92dd94efa0bb16487bb0019bfea62a",
+      "wordPhonemes": "lˈabisa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.7499
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0299,
+          "end": 1.3767
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6567,
+          "end": 2.063
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.943,
+          "end": 3.3911
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.7111,
+          "end": 4.0082
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.3282,
+          "end": 4.6549
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.5749,
+          "end": 6.4359
+        }
+      ]
+    },
+    {
+      "id": "rt-1-18",
+      "text": "حَمَلَ",
+      "path": "audio/reading-trainer/rt-1-18.mp3",
+      "seconds": 7.0531,
+      "sha256": "5d18d9e6cb4d771477ca02c7b88102caa9f31e4bef8c47beaffb893b064ffa2c",
+      "wordPhonemes": "ħˈamala",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4836
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7636,
+          "end": 1.4205
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7005,
+          "end": 2.3004
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.1804,
+          "end": 3.5106
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.8306,
+          "end": 4.3611
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.6811,
+          "end": 5.1291
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 6.0491,
+          "end": 6.7457
+        }
+      ]
+    },
+    {
+      "id": "rt-1-19",
+      "text": "طَبَخَ",
+      "path": "audio/reading-trainer/rt-1-19.mp3",
+      "seconds": 5.8776,
+      "sha256": "f69334f2577e2ba00146c1b5fdf202bc1b77812595ae98cbd0f5e0d2c12013d1",
+      "wordPhonemes": "tˤˈabaxa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4519
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7319,
+          "end": 1.0787
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3587,
+          "end": 1.6443
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.5243,
+          "end": 2.802
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.122,
+          "end": 3.4819
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 3.8019,
+          "end": 4.128
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.048,
+          "end": 5.5704
+        }
+      ]
+    },
+    {
+      "id": "rt-1-20",
+      "text": "زَرَعَ",
+      "path": "audio/reading-trainer/rt-1-20.mp3",
+      "seconds": 5.8253,
+      "sha256": "6d890179e170c144c127019bc50e7d144bd5f5daf25eb0b025eeeac91cdd34f5",
+      "wordPhonemes": "zˈaraʕa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.439
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.719,
+          "end": 1.1008
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3808,
+          "end": 1.7129
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.5929,
+          "end": 2.8832
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.2032,
+          "end": 3.4943
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 3.8143,
+          "end": 4.1063
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.0263,
+          "end": 5.5139
+        }
+      ]
+    },
+    {
+      "id": "rt-1-21",
+      "text": "جَمَعَ",
+      "path": "audio/reading-trainer/rt-1-21.mp3",
+      "seconds": 6.8441,
+      "sha256": "eab704631f248264dc07a472d5d30b175e1dae394e2d91be37ffc34a23809a3b",
+      "wordPhonemes": "dʒˈamaʕa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.6604
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.9404,
+          "end": 1.5973
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.8773,
+          "end": 2.2094
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.0894,
+          "end": 3.4139
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.7339,
+          "end": 4.2644
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.5844,
+          "end": 4.8764
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.7964,
+          "end": 6.5172
+        }
+      ]
+    },
+    {
+      "id": "rt-1-22",
+      "text": "نَجَحَ",
+      "path": "audio/reading-trainer/rt-1-22.mp3",
+      "seconds": 6.6351,
+      "sha256": "b7303083abc15df087569ed241f8214697a84832389bc871649b5833ae15f89d",
+      "wordPhonemes": "nˈadʒaħa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4943
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7743,
+          "end": 1.2846
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5646,
+          "end": 1.8982
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.7782,
+          "end": 3.158
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.478,
+          "end": 3.8025
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.1225,
+          "end": 4.4527
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.3727,
+          "end": 6.3128
+        }
+      ]
+    },
+    {
+      "id": "rt-1-23",
+      "text": "سَمِعَ",
+      "path": "audio/reading-trainer/rt-1-23.mp3",
+      "seconds": 6.6351,
+      "sha256": "9a1fbb156eab5170ef6a3fce0926fe5571d40bbe008d64547154bf108f983172",
+      "wordPhonemes": "sˈamiʕa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.4933
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7733,
+          "end": 2.1054
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.9854,
+          "end": 3.3121
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.6321,
+          "end": 4.0152
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.3352,
+          "end": 4.6272
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.5472,
+          "end": 6.325
+        }
+      ]
+    },
+    {
+      "id": "rt-1-24",
+      "text": "فَهِمَ",
+      "path": "audio/reading-trainer/rt-1-24.mp3",
+      "seconds": 6.5306,
+      "sha256": "f30628303d1ff048d4b08f7639502b026c8cd6843884a3f2458a7e0c11ca68fd",
+      "wordPhonemes": "fˈahima",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5914
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8714,
+          "end": 1.2894
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5694,
+          "end": 2.2263
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.1063,
+          "end": 3.3976
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.7176,
+          "end": 4.0037
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.3237,
+          "end": 4.8541
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.7741,
+          "end": 6.2269
+        }
+      ]
+    },
+    {
+      "id": "rt-1-25",
+      "text": "حَفِظَ",
+      "path": "audio/reading-trainer/rt-1-25.mp3",
+      "seconds": 6.4261,
+      "sha256": "7ac52e20b5f4a801e1b6cf9179bc29ef3cbb231b7fb3e2025f40e5d3843aebcb",
+      "wordPhonemes": "ħˈafiðˤa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4836
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7636,
+          "end": 1.205
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.485,
+          "end": 1.8554
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.7354,
+          "end": 3.0656
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.3856,
+          "end": 3.6641
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 3.9841,
+          "end": 4.2942
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2142,
+          "end": 6.1013
+        }
+      ]
+    },
+    {
+      "id": "rt-1-26",
+      "text": "بَحَثَ",
+      "path": "audio/reading-trainer/rt-1-26.mp3",
+      "seconds": 6.3739,
+      "sha256": "c92b7c1232e72b70a1c7ec22d86184697dabedaa9a80afabbc5961119d2d6554",
+      "wordPhonemes": "bˈaħaθa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4968
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7768,
+          "end": 1.1104
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3904,
+          "end": 1.7636
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.6436,
+          "end": 3.0035
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.3235,
+          "end": 3.6537
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 3.9737,
+          "end": 4.247
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.167,
+          "end": 6.0713
+        }
+      ]
+    },
+    {
+      "id": "rt-1-27",
+      "text": "طَلَبَ",
+      "path": "audio/reading-trainer/rt-1-27.mp3",
+      "seconds": 6.3478,
+      "sha256": "04ca830c9ebc12c40faf5484025443ae482840efe4b1a9d69de9e072bcfd290f",
+      "wordPhonemes": "tˤˈalaba",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4519
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7319,
+          "end": 1.3317
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6117,
+          "end": 1.9585
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.8385,
+          "end": 3.1162
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.4362,
+          "end": 3.8843
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.2043,
+          "end": 4.5642
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.4842,
+          "end": 6.0415
+        }
+      ]
+    },
+    {
+      "id": "rt-1-28",
+      "text": "مَسَحَ",
+      "path": "audio/reading-trainer/rt-1-28.mp3",
+      "seconds": 7.0269,
+      "sha256": "771ae2be1753b17a11a9da22ebae55ef548fb4e273dd50b30602f3a84ffd553b",
+      "wordPhonemes": "mˈasaħa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.4933
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7733,
+          "end": 2.1069
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.9869,
+          "end": 3.5174
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.8374,
+          "end": 4.164
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.484,
+          "end": 4.8142
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.7342,
+          "end": 6.6996
+        }
+      ]
+    },
+    {
+      "id": "rt-1-29",
+      "text": "قَطَعَ",
+      "path": "audio/reading-trainer/rt-1-29.mp3",
+      "seconds": 6.0082,
+      "sha256": "65197dfb6de1473b916710c5df167f465ca5e0096ca9f5bd6ea4788c0b2ea7a9",
+      "wordPhonemes": "qˈatˤaʕa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4881
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7681,
+          "end": 1.0699
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3499,
+          "end": 1.682
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.562,
+          "end": 2.9103
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.2303,
+          "end": 3.508
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 3.828,
+          "end": 4.12
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.04,
+          "end": 5.7033
+        }
+      ]
+    },
+    {
+      "id": "rt-1-30",
+      "text": "سَبَحَ",
+      "path": "audio/reading-trainer/rt-1-30.mp3",
+      "seconds": 6.2171,
+      "sha256": "2bbdf4b24bca6d67543761437e05b365f0d6b08589dcccd406e3c57bafef9096",
+      "wordPhonemes": "sˈabaħa",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.1832
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4632,
+          "end": 1.7968
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.6768,
+          "end": 3.0034
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.3234,
+          "end": 3.6834
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.0034,
+          "end": 4.3336
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2536,
+          "end": 5.8921
+        }
+      ]
+    },
+    {
+      "id": "rt-1-31",
+      "text": "يَدْ",
+      "path": "audio/reading-trainer/rt-1-31.mp3",
+      "seconds": 4.1012,
+      "sha256": "77837e039435767a689c4ddcab1a9e59cb1a3c7b74e2a61fb306723227f24418",
+      "wordPhonemes": "jˈad",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4438
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7238,
+          "end": 1.3507
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.2307,
+          "end": 2.5442
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.4642,
+          "end": 3.7777
+        }
+      ]
+    },
+    {
+      "id": "rt-1-32",
+      "text": "فَمْ",
+      "path": "audio/reading-trainer/rt-1-32.mp3",
+      "seconds": 4.258,
+      "sha256": "55e148a22aa2ceca7da31111af6152abf2500ebcb222ca85b1878530072f69fa",
+      "wordPhonemes": "fˈam",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5914
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8714,
+          "end": 1.5283
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.4083,
+          "end": 2.71
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.63,
+          "end": 3.9317
+        }
+      ]
+    },
+    {
+      "id": "rt-1-33",
+      "text": "أَبْ",
+      "path": "audio/reading-trainer/rt-1-33.mp3",
+      "seconds": 3.8922,
+      "sha256": "afa4a7b9926fe42e59a5f9d2ac0178e69fab0a5ef79af1d6711c2672fd0523e2",
+      "wordPhonemes": "ʔˈab",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5912
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8712,
+          "end": 1.218
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.098,
+          "end": 2.3838
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.3038,
+          "end": 3.5896
+        }
+      ]
+    },
+    {
+      "id": "rt-1-34",
+      "text": "أَخْ",
+      "path": "audio/reading-trainer/rt-1-34.mp3",
+      "seconds": 3.84,
+      "sha256": "63a0f9a3bbe296a76fc3e867331fb62a7abe0b7b20178ec9d8c0364081785c60",
+      "wordPhonemes": "ʔˈax",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5912
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8712,
+          "end": 1.1568
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.0368,
+          "end": 2.3182
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.2382,
+          "end": 3.5196
+        }
+      ]
+    },
+    {
+      "id": "rt-1-35",
+      "text": "قَلَمْ",
+      "path": "audio/reading-trainer/rt-1-35.mp3",
+      "seconds": 6.1649,
+      "sha256": "dd854442e5c64b7c6983b375b82f423a40c2af87d2493331beeff0ceed1fedca",
+      "wordPhonemes": "qˈalam",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4881
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7681,
+          "end": 1.3679
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6479,
+          "end": 2.3049
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.1849,
+          "end": 3.5332
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.8532,
+          "end": 4.3073
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2273,
+          "end": 5.8547
+        }
+      ]
+    },
+    {
+      "id": "rt-1-36",
+      "text": "جَمَلْ",
+      "path": "audio/reading-trainer/rt-1-36.mp3",
+      "seconds": 6.4784,
+      "sha256": "85e86f38b48f3f1102392821e497813183ba08ed7626a46b87b7383c6286c83e",
+      "wordPhonemes": "dʒˈamal",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.6604
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.9404,
+          "end": 1.5973
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.8773,
+          "end": 2.4771
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.3571,
+          "end": 3.6817
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.0017,
+          "end": 4.5828
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.5028,
+          "end": 6.1761
+        }
+      ]
+    },
+    {
+      "id": "rt-1-37",
+      "text": "جَبَلْ",
+      "path": "audio/reading-trainer/rt-1-37.mp3",
+      "seconds": 5.6947,
+      "sha256": "8ac68a7616148b7756775304d83c1db9a13cad2a7ff65c1058c0f64c47de5554",
+      "wordPhonemes": "dʒˈabal",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.6604
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.9404,
+          "end": 1.2872
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5672,
+          "end": 2.167
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.047,
+          "end": 3.3716
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.6916,
+          "end": 4.0166
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.9366,
+          "end": 5.3777
+        }
+      ]
+    },
+    {
+      "id": "rt-1-38",
+      "text": "سَمَكْ",
+      "path": "audio/reading-trainer/rt-1-38.mp3",
+      "seconds": 6.1388,
+      "sha256": "9457b39b5547dd322ba706184a3f4302a78aa140fb56f258553d896aae4ca613",
+      "wordPhonemes": "sˈamak",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.4933
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7733,
+          "end": 2.1796
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.0596,
+          "end": 3.3863
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.7063,
+          "end": 4.4377
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.3577,
+          "end": 5.8361
+        }
+      ]
+    },
+    {
+      "id": "rt-1-39",
+      "text": "عِنَبْ",
+      "path": "audio/reading-trainer/rt-1-39.mp3",
+      "seconds": 5.329,
+      "sha256": "9945d1df3a1169ec7f143212910b657ae53e597a00d329ddc4c7c808658dff0b",
+      "wordPhonemes": "ʕˈinab",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4821
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7621,
+          "end": 1.1064
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3864,
+          "end": 1.7332
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.6132,
+          "end": 2.9227
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.2427,
+          "end": 3.6684
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.5884,
+          "end": 5.0021
+        }
+      ]
+    },
+    {
+      "id": "rt-1-40",
+      "text": "عَسَلْ",
+      "path": "audio/reading-trainer/rt-1-40.mp3",
+      "seconds": 5.7208,
+      "sha256": "4dd7dcbebdd58b3f659d375f819cd27bc00d8e3b36c3f7d5f5d0dcff6f5a43f2",
+      "wordPhonemes": "ʕˈasal",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4821
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7621,
+          "end": 1.1685
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4485,
+          "end": 2.0483
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.9283,
+          "end": 3.2203
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.5403,
+          "end": 3.8338
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.7538,
+          "end": 5.3973
+        }
+      ]
+    },
+    {
+      "id": "rt-1-41",
+      "text": "لَبَنْ",
+      "path": "audio/reading-trainer/rt-1-41.mp3",
+      "seconds": 5.8253,
+      "sha256": "f234fbf4943db159e17227abddb00dcd3ca9d9bb44eeeabd2d20b4c58482b104",
+      "wordPhonemes": "lˈaban",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.7499
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0299,
+          "end": 1.3767
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6567,
+          "end": 2.001
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.881,
+          "end": 3.329
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.649,
+          "end": 3.9539
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.8739,
+          "end": 5.5202
+        }
+      ]
+    },
+    {
+      "id": "rt-1-42",
+      "text": "تَمْرْ",
+      "path": "audio/reading-trainer/rt-1-42.mp3",
+      "seconds": 4.8065,
+      "sha256": "049d7fd8a14640cdc7fb4db4389cbd278a7a6ca07094be0936aa0ff7031061c2",
+      "wordPhonemes": "tˈamr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5145
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7945,
+          "end": 1.4514
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7314,
+          "end": 2.1132
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.9932,
+          "end": 3.2837
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.2037,
+          "end": 4.4942
+        }
+      ]
+    },
+    {
+      "id": "rt-1-43",
+      "text": "بَدْرْ",
+      "path": "audio/reading-trainer/rt-1-43.mp3",
+      "seconds": 4.9894,
+      "sha256": "d0f104aee7b1a8480b7d72cc69fe33413f4b7e4355916a4798846c9ac635f92c",
+      "wordPhonemes": "bˈadr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4968
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7768,
+          "end": 1.4038
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6838,
+          "end": 2.0656
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.9456,
+          "end": 3.3519
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.2719,
+          "end": 4.6783
+        }
+      ]
+    },
+    {
+      "id": "rt-1-44",
+      "text": "بَحْرْ",
+      "path": "audio/reading-trainer/rt-1-44.mp3",
+      "seconds": 4.5714,
+      "sha256": "f333025554e7c0451f5d9903ec31725d7d3cb65fc6d31a646076ed46fab8c8cd",
+      "wordPhonemes": "bˈaħr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4968
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7768,
+          "end": 1.1104
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3904,
+          "end": 1.7722
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.6522,
+          "end": 2.9924
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.9124,
+          "end": 4.2525
+        }
+      ]
+    },
+    {
+      "id": "rt-1-45",
+      "text": "شَمْسْ",
+      "path": "audio/reading-trainer/rt-1-45.mp3",
+      "seconds": 5.4335,
+      "sha256": "aa26d2970c62bbc10bafc2d562e5c8b02780b2fa1f6cca93b427e9ad0598ad0c",
+      "wordPhonemes": "ʃˈams",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4867
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7667,
+          "end": 1.4236
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7036,
+          "end": 2.11
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.99,
+          "end": 3.5988
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.5188,
+          "end": 5.1277
+        }
+      ]
+    },
+    {
+      "id": "rt-1-46",
+      "text": "نَهْرْ",
+      "path": "audio/reading-trainer/rt-1-46.mp3",
+      "seconds": 5.2506,
+      "sha256": "ab98a8e92d29104bc70ae0b31fe0416db9916c67c01e0adc89efd2787d97359c",
+      "wordPhonemes": "nˈahr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4943
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7743,
+          "end": 1.1922
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4722,
+          "end": 1.8541
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.7341,
+          "end": 3.3687
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.2887,
+          "end": 4.9233
+        }
+      ]
+    },
+    {
+      "id": "rt-1-47",
+      "text": "زَهْرْ",
+      "path": "audio/reading-trainer/rt-1-47.mp3",
+      "seconds": 4.4931,
+      "sha256": "5824e51626308dd3f098b5fb807a3c537afad7f4b8b3da3c2a8d752fa9e32c00",
+      "wordPhonemes": "zˈahr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.439
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.719,
+          "end": 1.1369
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4169,
+          "end": 1.7987
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.6787,
+          "end": 2.971
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.891,
+          "end": 4.1832
+        }
+      ]
+    },
+    {
+      "id": "rt-1-48",
+      "text": "نَمْلْ",
+      "path": "audio/reading-trainer/rt-1-48.mp3",
+      "seconds": 5.6424,
+      "sha256": "28d3f177091b299abb28036c8ff9434cd443fa6b9d64d8383352e2a0e42b1ad4",
+      "wordPhonemes": "nˈaml",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4943
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7743,
+          "end": 1.4312
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7112,
+          "end": 2.3111
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.1911,
+          "end": 3.8024
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.7224,
+          "end": 5.3338
+        }
+      ]
+    },
+    {
+      "id": "rt-1-49",
+      "text": "نَجْمْ",
+      "path": "audio/reading-trainer/rt-1-49.mp3",
+      "seconds": 5.4596,
+      "sha256": "0cf4599ffe318267f71b3a0ba536e8958c76c08402ce8c265bfd3938ed9b5f5c",
+      "wordPhonemes": "nˈadʒm",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4943
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7743,
+          "end": 1.2846
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5646,
+          "end": 2.2215
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.1015,
+          "end": 3.6622
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.5822,
+          "end": 5.1429
+        }
+      ]
+    },
+    {
+      "id": "rt-1-50",
+      "text": "وَرْدْ",
+      "path": "audio/reading-trainer/rt-1-50.mp3",
+      "seconds": 5.2245,
+      "sha256": "ce6d3f3f984343f9d083be6a890e75c92350b0ac1a5b0b54a0f3007c2f39338c",
+      "wordPhonemes": "wˈard",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.6159
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8959,
+          "end": 1.2777
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5577,
+          "end": 2.1847
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.0647,
+          "end": 3.5254
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.4454,
+          "end": 4.906
+        }
+      ]
+    },
+    {
+      "id": "rt-2-01",
+      "text": "بَابْ",
+      "path": "audio/reading-trainer/rt-2-01.mp3",
+      "seconds": 4.6759,
+      "sha256": "656475bb4b22178fb6ca40783c5b1fe8047a5f8806fb31f20e472d6dca27d227",
+      "wordPhonemes": "bˈaːb",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4968
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7768,
+          "end": 1.3268
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6068,
+          "end": 1.9537
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.8337,
+          "end": 3.1352
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.0552,
+          "end": 4.3568
+        }
+      ]
+    },
+    {
+      "id": "rt-2-02",
+      "text": "مَاءْ",
+      "path": "audio/reading-trainer/rt-2-02.mp3",
+      "seconds": 5.538,
+      "sha256": "2df8330708416ac2064dc6d2505c9d9c131d5c7fe52397fca44c6cc8f5371544",
+      "wordPhonemes": "mˈaːʔ",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.637
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.917,
+          "end": 2.3581
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.2381,
+          "end": 3.7678
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.6878,
+          "end": 5.2176
+        }
+      ]
+    },
+    {
+      "id": "rt-2-03",
+      "text": "دَارْ",
+      "path": "audio/reading-trainer/rt-2-03.mp3",
+      "seconds": 5.4073,
+      "sha256": "a226947535b6460f0b69335fa06b32aa9e3ba411dfdccaac1082cd5253d5c5ae",
+      "wordPhonemes": "dˈaːr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.777
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.057,
+          "end": 1.607
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.887,
+          "end": 2.2688
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.1488,
+          "end": 3.6561
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.5761,
+          "end": 5.0834
+        }
+      ]
+    },
+    {
+      "id": "rt-2-04",
+      "text": "نَارْ",
+      "path": "audio/reading-trainer/rt-2-04.mp3",
+      "seconds": 5.3551,
+      "sha256": "4db6afb851ca02a14c82d795f9ea08146e4e003ce14c00d94ff78191f12b2daf",
+      "wordPhonemes": "nˈaːr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4943
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7743,
+          "end": 1.3243
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6043,
+          "end": 1.9861
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.8661,
+          "end": 3.4888
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.4088,
+          "end": 5.0314
+        }
+      ]
+    },
+    {
+      "id": "rt-2-05",
+      "text": "نُورْ",
+      "path": "audio/reading-trainer/rt-2-05.mp3",
+      "seconds": 5.12,
+      "sha256": "43cd05daa08b41ad9ae6043f598f0999d03584bf2ddb445af4e69496d53f3fbd",
+      "wordPhonemes": "nˈuːr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4943
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7743,
+          "end": 1.2402
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5202,
+          "end": 1.902
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.782,
+          "end": 3.3356
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.2556,
+          "end": 4.8092
+        }
+      ]
+    },
+    {
+      "id": "rt-2-06",
+      "text": "سُوقْ",
+      "path": "audio/reading-trainer/rt-2-06.mp3",
+      "seconds": 4.8849,
+      "sha256": "4790e65c07ada33d0351cb725eb9536ba36f0cb821c2f3bd51605598734b9511",
+      "wordPhonemes": "sˈuːq",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.3023
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5823,
+          "end": 1.9203
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.8003,
+          "end": 3.223
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.143,
+          "end": 4.5657
+        }
+      ]
+    },
+    {
+      "id": "rt-2-07",
+      "text": "تُوتْ",
+      "path": "audio/reading-trainer/rt-2-07.mp3",
+      "seconds": 4.5976,
+      "sha256": "4ac205652f0180d2d981d92f2ea76b9f4845d7c9d2a8e7bf7559ac12eabf44c1",
+      "wordPhonemes": "tˈuːt",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5145
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7945,
+          "end": 1.2604
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5404,
+          "end": 1.9049
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.7849,
+          "end": 3.0751
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.9951,
+          "end": 4.2854
+        }
+      ]
+    },
+    {
+      "id": "rt-2-08",
+      "text": "تِينْ",
+      "path": "audio/reading-trainer/rt-2-08.mp3",
+      "seconds": 4.7804,
+      "sha256": "3185a4cbda8264bf5a41b698c5b79ce0df846c002bf91136d70f59979d944268",
+      "wordPhonemes": "tˈiːn",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5145
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7945,
+          "end": 1.0883
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3683,
+          "end": 1.7126
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.5926,
+          "end": 3.0686
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.9886,
+          "end": 4.4646
+        }
+      ]
+    },
+    {
+      "id": "rt-2-09",
+      "text": "زَيْتْ",
+      "path": "audio/reading-trainer/rt-2-09.mp3",
+      "seconds": 4.3624,
+      "sha256": "2c970d17630fff5e271373f6a1db8aaa6608ec947740ebf85e2ecfc2c830de7a",
+      "wordPhonemes": "zˈajt",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.439
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.719,
+          "end": 1.0127
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.2927,
+          "end": 1.6572
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.5372,
+          "end": 2.8275
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.7475,
+          "end": 4.0377
+        }
+      ]
+    },
+    {
+      "id": "rt-2-10",
+      "text": "بَيْتْ",
+      "path": "audio/reading-trainer/rt-2-10.mp3",
+      "seconds": 4.5453,
+      "sha256": "9ba526c14c67c6180fe2e0a7bdb12893a39df142d219ef4c0021a67153d2fb7f",
+      "wordPhonemes": "bˈajt",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4968
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7768,
+          "end": 1.0706
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3506,
+          "end": 1.7151
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.5951,
+          "end": 2.9462
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.8662,
+          "end": 4.2173
+        }
+      ]
+    },
+    {
+      "id": "rt-2-11",
+      "text": "يَوْمْ",
+      "path": "audio/reading-trainer/rt-2-11.mp3",
+      "seconds": 5.2506,
+      "sha256": "25bcf23cf374d90ba8e1d0f667aed25b0752d50f78ed370675a887775724606a",
+      "wordPhonemes": "jˈawm",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4438
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7238,
+          "end": 1.1897
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4697,
+          "end": 2.1266
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.0066,
+          "end": 3.5135
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.4335,
+          "end": 4.9404
+        }
+      ]
+    },
+    {
+      "id": "rt-2-12",
+      "text": "عَيْنْ",
+      "path": "audio/reading-trainer/rt-2-12.mp3",
+      "seconds": 4.4669,
+      "sha256": "0af883c03bc68ad61a82926bd7493f2f9da0ef542b67854ab210997a240ec29f",
+      "wordPhonemes": "ʕˈajn",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4821
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7621,
+          "end": 1.0559
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3359,
+          "end": 1.6802
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.5602,
+          "end": 2.8923
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.8123,
+          "end": 4.1444
+        }
+      ]
+    },
+    {
+      "id": "rt-2-13",
+      "text": "لَيْلْ",
+      "path": "audio/reading-trainer/rt-2-13.mp3",
+      "seconds": 5.2245,
+      "sha256": "45fe1a21b2844fa30c7a67a433a354d9ae18af96389ff300285116f0ed9269f9",
+      "wordPhonemes": "lˈajl",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.7499
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0299,
+          "end": 1.3237
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6037,
+          "end": 2.2035
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.0835,
+          "end": 3.5413
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.4613,
+          "end": 4.919
+        }
+      ]
+    },
+    {
+      "id": "rt-2-14",
+      "text": "فِيلْ",
+      "path": "audio/reading-trainer/rt-2-14.mp3",
+      "seconds": 4.8849,
+      "sha256": "b529111b24d65b7f43c139c76ba8c358cf7fcf3969cdb72d5e2fcb2b77129fd2",
+      "wordPhonemes": "fˈiːl",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5914
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8714,
+          "end": 1.1652
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4452,
+          "end": 2.0451
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.9251,
+          "end": 3.285
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.205,
+          "end": 4.5649
+        }
+      ]
+    },
+    {
+      "id": "rt-2-15",
+      "text": "حُوتْ",
+      "path": "audio/reading-trainer/rt-2-15.mp3",
+      "seconds": 4.9633,
+      "sha256": "c2f1d1e5909f8b79723cd0f59b39739b3e6361eea53d194187dec50bfe171829",
+      "wordPhonemes": "ħˈuːt",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4836
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7636,
+          "end": 1.2295
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5095,
+          "end": 1.874
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.754,
+          "end": 3.2474
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.1674,
+          "end": 4.6609
+        }
+      ]
+    },
+    {
+      "id": "rt-2-16",
+      "text": "ضَوْءْ",
+      "path": "audio/reading-trainer/rt-2-16.mp3",
+      "seconds": 5.0939,
+      "sha256": "e78cd10297cced0bd4698562019147f87f8c7e9d06c13e56b9d84243079ce6cb",
+      "wordPhonemes": "dˤˈawʔ",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.6437
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.9237,
+          "end": 1.3896
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6696,
+          "end": 2.1108
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.9908,
+          "end": 3.4205
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.3405,
+          "end": 4.7701
+        }
+      ]
+    },
+    {
+      "id": "rt-2-17",
+      "text": "كَأْسْ",
+      "path": "audio/reading-trainer/rt-2-17.mp3",
+      "seconds": 4.7282,
+      "sha256": "dbd918391b455316a30fb704747a5305f7397213e7b6c2e0de0223dfc7b4e2b4",
+      "wordPhonemes": "kˈaʔs",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.2776
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5576,
+          "end": 1.9639
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.8439,
+          "end": 3.1652
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.0852,
+          "end": 4.4064
+        }
+      ]
+    },
+    {
+      "id": "rt-2-18",
+      "text": "رَأْسْ",
+      "path": "audio/reading-trainer/rt-2-18.mp3",
+      "seconds": 4.702,
+      "sha256": "88706f152fc79958cef2f3140b3efcae7b9a4fb9f25fc40157c59021509b9b05",
+      "wordPhonemes": "rˈaʔs",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5318
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8118,
+          "end": 1.253
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.533,
+          "end": 1.9394
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.8194,
+          "end": 3.1433
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.0633,
+          "end": 4.3873
+        }
+      ]
+    },
+    {
+      "id": "rt-2-19",
+      "text": "كِتَابْ",
+      "path": "audio/reading-trainer/rt-2-19.mp3",
+      "seconds": 6.5045,
+      "sha256": "244c654d9b5d3eac562c333be3b914401cdc5b438892bac57908ab46809798cb",
+      "wordPhonemes": "kitˈaːb",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.2009
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4809,
+          "end": 2.0309
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.3109,
+          "end": 2.6577
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.5377,
+          "end": 3.8254
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.1454,
+          "end": 4.5286
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.4486,
+          "end": 6.1968
+        }
+      ]
+    },
+    {
+      "id": "rt-2-20",
+      "text": "حَلِيبْ",
+      "path": "audio/reading-trainer/rt-2-20.mp3",
+      "seconds": 6.3739,
+      "sha256": "168d05d4e258e7663052709800d2eb809611faf616728fe7156e675469bb028e",
+      "wordPhonemes": "ħalˈiːb",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4836
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7636,
+          "end": 1.3635
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6435,
+          "end": 1.9373
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.2173,
+          "end": 2.5641
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.4441,
+          "end": 3.7743
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.0943,
+          "end": 4.6277
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.5477,
+          "end": 6.0701
+        }
+      ]
+    },
+    {
+      "id": "rt-2-21",
+      "text": "عَصِيرْ",
+      "path": "audio/reading-trainer/rt-2-21.mp3",
+      "seconds": 6.0604,
+      "sha256": "699a81b60f4a5be86b19b8961e6aa2ff7b95cde539f77328d45bb21f1d136fa2",
+      "wordPhonemes": "ʕasˤˈiːr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4821
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7621,
+          "end": 1.0827
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3627,
+          "end": 1.6565
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 1.9365,
+          "end": 2.3183
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.1983,
+          "end": 3.4903
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.8103,
+          "end": 4.2189
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.1389,
+          "end": 5.7424
+        }
+      ]
+    },
+    {
+      "id": "rt-2-22",
+      "text": "رَغِيفْ",
+      "path": "audio/reading-trainer/rt-2-22.mp3",
+      "seconds": 6.2955,
+      "sha256": "0e8a8f525026247856a29bbfb4ebfb5ebcf71ca61f228dec3f3e27598bd27cfd",
+      "wordPhonemes": "raɣˈiːf",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5318
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8118,
+          "end": 1.3327
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6127,
+          "end": 1.9065
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.1865,
+          "end": 2.6279
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.5079,
+          "end": 3.799
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.119,
+          "end": 4.4962
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.4162,
+          "end": 5.9926
+        }
+      ]
+    },
+    {
+      "id": "rt-2-23",
+      "text": "طَعَامْ",
+      "path": "audio/reading-trainer/rt-2-23.mp3",
+      "seconds": 6.7396,
+      "sha256": "2b80c67623e6c518d4736290a53af31e012726013198c051806f221a2ec9b35a",
+      "wordPhonemes": "tˤaʕˈaːm",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4519
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7319,
+          "end": 1.064
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.344,
+          "end": 1.894
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.174,
+          "end": 2.8309
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.7109,
+          "end": 3.9886
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.3086,
+          "end": 4.7382
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.6582,
+          "end": 6.4278
+        }
+      ]
+    },
+    {
+      "id": "rt-2-24",
+      "text": "مَوْزْ",
+      "path": "audio/reading-trainer/rt-2-24.mp3",
+      "seconds": 5.1722,
+      "sha256": "2d56817905ec6a9f52f2311a5c681bc4c35a4fbbe8272e6663f8ccd7c4f4aba3",
+      "wordPhonemes": "mˈawz",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.5528
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.8328,
+          "end": 2.1218
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.0018,
+          "end": 3.4639
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.3839,
+          "end": 4.8459
+        }
+      ]
+    },
+    {
+      "id": "rt-2-25",
+      "text": "لَيْمُونْ",
+      "path": "audio/reading-trainer/rt-2-25.mp3",
+      "seconds": 7.889,
+      "sha256": "58f4921187dc2a9de881a7bc07560ead62927eb10c4dd564266f86980a9f0160",
+      "wordPhonemes": "lajmˈuːn",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.7499
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0299,
+          "end": 1.3237
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6037,
+          "end": 2.2606
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.5406,
+          "end": 3.0065
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.2865,
+          "end": 3.6307
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 4.5107,
+          "end": 4.8772
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 5.1972,
+          "end": 5.636
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 6.556,
+          "end": 7.5636
+        }
+      ]
+    },
+    {
+      "id": "rt-2-26",
+      "text": "زَيْتُونْ",
+      "path": "audio/reading-trainer/rt-2-26.mp3",
+      "seconds": 7.0792,
+      "sha256": "52b8a64911743505e7b0da246583d75f809a928a22a06c04f49c82b75341026c",
+      "wordPhonemes": "zajtˈuːn",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.439
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.719,
+          "end": 1.0127
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.2927,
+          "end": 1.6572
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 1.9372,
+          "end": 2.4031
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 2.6831,
+          "end": 3.0274
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.9074,
+          "end": 4.1954
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.5154,
+          "end": 5.0117
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.9317,
+          "end": 6.7538
+        }
+      ]
+    },
+    {
+      "id": "rt-2-27",
+      "text": "خِيَارْ",
+      "path": "audio/reading-trainer/rt-2-27.mp3",
+      "seconds": 6.1127,
+      "sha256": "827da5ae193972760db3a413de087e8eef5535dbc3688fb55934f3fd244bde13",
+      "wordPhonemes": "xijˈaːr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4356
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7156,
+          "end": 1.0094
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.2894,
+          "end": 1.8394
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.1194,
+          "end": 2.5012
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.3812,
+          "end": 3.6748
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.9948,
+          "end": 4.4075
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.3275,
+          "end": 5.7941
+        }
+      ]
+    },
+    {
+      "id": "rt-2-28",
+      "text": "سَرِيرْ",
+      "path": "audio/reading-trainer/rt-2-28.mp3",
+      "seconds": 6.0343,
+      "sha256": "5044acb48f6be359723528f1e3633762a6b3aae8d935b86c0611ec6c37f1a566",
+      "wordPhonemes": "sarˈiːr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.2182
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4982,
+          "end": 1.792
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.072,
+          "end": 2.4538
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.3338,
+          "end": 3.6605
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.9805,
+          "end": 4.3824
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.3024,
+          "end": 5.7087
+        }
+      ]
+    },
+    {
+      "id": "rt-2-29",
+      "text": "سِتَارْ",
+      "path": "audio/reading-trainer/rt-2-29.mp3",
+      "seconds": 6.5829,
+      "sha256": "b04d7133607f019acc81dd8b5593b28494eb4506c0a30f6bf18c89742cf9d9fa",
+      "wordPhonemes": "sitˈaːr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.2009
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4809,
+          "end": 2.0309
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.3109,
+          "end": 2.6927
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.5727,
+          "end": 3.848
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.168,
+          "end": 4.5132
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.4332,
+          "end": 6.2575
+        }
+      ]
+    },
+    {
+      "id": "rt-2-30",
+      "text": "نَافِذَة",
+      "path": "audio/reading-trainer/rt-2-30.mp3",
+      "seconds": 9.1951,
+      "sha256": "7300997f93d157a5106ac17c362ed08ffef00f7e157d3ce944754b0c00fe5bdc",
+      "wordPhonemes": "nˈaːfiðah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4943
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7743,
+          "end": 1.3243
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6043,
+          "end": 2.0457
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.3257,
+          "end": 2.6856
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 2.9656,
+          "end": 4.418
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.298,
+          "end": 5.8463
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.1663,
+          "end": 6.4449
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 6.7649,
+          "end": 7.0551
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 7.9751,
+          "end": 8.89
+        }
+      ]
+    },
+    {
+      "id": "rt-2-31",
+      "text": "مَدْرَسَة",
+      "path": "audio/reading-trainer/rt-2-31.mp3",
+      "seconds": 9.6131,
+      "sha256": "2fbc672f6013f543d4dcfc7276062628cd82eae5bf427de623bd79c4b2463711",
+      "wordPhonemes": "mˈadrasah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.7139
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.9939,
+          "end": 2.3757
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.6557,
+          "end": 3.062
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.342,
+          "end": 4.7944
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.6744,
+          "end": 6.1794
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.4994,
+          "end": 6.7904
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.1104,
+          "end": 7.3845
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 8.3045,
+          "end": 9.2955
+        }
+      ]
+    },
+    {
+      "id": "rt-2-32",
+      "text": "مَكْتَبَة",
+      "path": "audio/reading-trainer/rt-2-32.mp3",
+      "seconds": 9.5347,
+      "sha256": "e4eda2c8419293c0566774d864488d4fa10b6ee86c70bb36fc280e88c9f933d4",
+      "wordPhonemes": "mˈaktabah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.4933
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7733,
+          "end": 2.1378
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.4178,
+          "end": 2.7646
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.0446,
+          "end": 4.4969
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.3769,
+          "end": 6.1083
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.4283,
+          "end": 6.7246
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.0446,
+          "end": 7.4819
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 8.4019,
+          "end": 9.2174
+        }
+      ]
+    },
+    {
+      "id": "rt-2-33",
+      "text": "حَقِيبَة",
+      "path": "audio/reading-trainer/rt-2-33.mp3",
+      "seconds": 8.9078,
+      "sha256": "2d91143f850de002f3b97f34a6d3a12b762d93db2fe6a7077349357c27cfce0a",
+      "wordPhonemes": "ħaqˈiːbah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4836
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7636,
+          "end": 1.1017
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3817,
+          "end": 1.6755
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 1.9555,
+          "end": 2.3023
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 2.5823,
+          "end": 4.0346
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 4.9146,
+          "end": 5.2448
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 5.5648,
+          "end": 6.0408
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 6.3608,
+          "end": 6.7981
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 7.7181,
+          "end": 8.5829
+        }
+      ]
+    },
+    {
+      "id": "rt-2-34",
+      "text": "حَدِيقَة",
+      "path": "audio/reading-trainer/rt-2-34.mp3",
+      "seconds": 9.2735,
+      "sha256": "3fadd9e82a81fa95c9f9717a7b155724bcc669d5115f02531bda2fe19f16823f",
+      "wordPhonemes": "ħadˈiːqah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4836
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7636,
+          "end": 1.3906
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6706,
+          "end": 1.9644
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.2444,
+          "end": 2.5824
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 2.8624,
+          "end": 4.3147
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.1947,
+          "end": 5.5249
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 5.8449,
+          "end": 6.3801
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 6.7001,
+          "end": 6.9819
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 7.9019,
+          "end": 8.9584
+        }
+      ]
+    },
+    {
+      "id": "rt-2-35",
+      "text": "مَدِينَة",
+      "path": "audio/reading-trainer/rt-2-35.mp3",
+      "seconds": 10.0049,
+      "sha256": "6ed50373c992b58a73460383f6534639d02f32976fc48ab6c964a2f616b8d548",
+      "wordPhonemes": "madˈiːnah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.7139
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.9939,
+          "end": 2.2877
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.5677,
+          "end": 2.9119
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.1919,
+          "end": 4.6443
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.5243,
+          "end": 6.0547
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.3747,
+          "end": 6.9099
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.2299,
+          "end": 7.8063
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 8.7263,
+          "end": 9.69
+        }
+      ]
+    },
+    {
+      "id": "rt-2-36",
+      "text": "طَبِيبْ",
+      "path": "audio/reading-trainer/rt-2-36.mp3",
+      "seconds": 6.1127,
+      "sha256": "c4ba782c01bf195e6a1f680e285272b089d04ede5e257d717967bb36deee8a7e",
+      "wordPhonemes": "tˤabˈiːb",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4519
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7319,
+          "end": 1.0787
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3587,
+          "end": 1.6525
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 1.9325,
+          "end": 2.2793
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.1593,
+          "end": 3.437
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.757,
+          "end": 4.2062
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.1262,
+          "end": 5.7888
+        }
+      ]
+    },
+    {
+      "id": "rt-2-37",
+      "text": "مَرِيضْ",
+      "path": "audio/reading-trainer/rt-2-37.mp3",
+      "seconds": 6.8441,
+      "sha256": "c7e0e7e69a2969bbf644b5b70912d18c0a2324fa4c80d412c6bfb703964bde2b",
+      "wordPhonemes": "marˈiːdˤ",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.4688
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7488,
+          "end": 2.0425
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.3225,
+          "end": 2.8162
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.6962,
+          "end": 4.2267
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.5467,
+          "end": 4.9087
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.8287,
+          "end": 6.5295
+        }
+      ]
+    },
+    {
+      "id": "rt-2-38",
+      "text": "قَرِيبْ",
+      "path": "audio/reading-trainer/rt-2-38.mp3",
+      "seconds": 6.1649,
+      "sha256": "1226a4de9dbd59ea28a72db5ff105a97080d9d64915a6dd01a861c4fd1d96ea6",
+      "wordPhonemes": "qarˈiːb",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4881
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7681,
+          "end": 1.1499
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4299,
+          "end": 1.7237
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.0037,
+          "end": 2.3505
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.2305,
+          "end": 3.5788
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.8988,
+          "end": 4.3587
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2787,
+          "end": 5.8437
+        }
+      ]
+    },
+    {
+      "id": "rt-2-39",
+      "text": "بَعِيدْ",
+      "path": "audio/reading-trainer/rt-2-39.mp3",
+      "seconds": 6.4261,
+      "sha256": "6524f1a833a022ca4c07df9fc06ead9c230fe50c738f5c509ec64da7e69261ad",
+      "wordPhonemes": "baʕˈiːd",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4968
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7768,
+          "end": 1.1089
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3889,
+          "end": 1.6827
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 1.9627,
+          "end": 2.5897
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.4697,
+          "end": 3.8296
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.1496,
+          "end": 4.4746
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.3946,
+          "end": 6.1145
+        }
+      ]
+    },
+    {
+      "id": "rt-2-40",
+      "text": "كَبِيرْ",
+      "path": "audio/reading-trainer/rt-2-40.mp3",
+      "seconds": 6.4,
+      "sha256": "d060beb6e404fb6198327451c869068b51d0b2bfaa114035a42646f181f35036",
+      "wordPhonemes": "kabˈiːr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.1832
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4632,
+          "end": 1.757
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.037,
+          "end": 2.4188
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.2988,
+          "end": 3.6006
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.9206,
+          "end": 4.5011
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.4211,
+          "end": 6.0962
+        }
+      ]
+    },
+    {
+      "id": "rt-2-41",
+      "text": "صَغِيرْ",
+      "path": "audio/reading-trainer/rt-2-41.mp3",
+      "seconds": 6.3478,
+      "sha256": "6a5bf875673a135d0e4da15d2b88b1a82c338f4b37b0407b3032b289e33839c4",
+      "wordPhonemes": "sˤaɣˈiːr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4706
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7506,
+          "end": 1.2715
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5515,
+          "end": 1.8453
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.1253,
+          "end": 2.5071
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.3871,
+          "end": 3.6626
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.9826,
+          "end": 4.4197
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.3397,
+          "end": 6.0268
+        }
+      ]
+    },
+    {
+      "id": "rt-2-42",
+      "text": "جَمِيلْ",
+      "path": "audio/reading-trainer/rt-2-42.mp3",
+      "seconds": 7.3665,
+      "sha256": "58239c51d1b10f88e5eb97d9937a069ca0af7f8363625b15620d644af2537d38",
+      "wordPhonemes": "dʒamˈiːl",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.6604
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.9404,
+          "end": 1.5973
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.8773,
+          "end": 2.1711
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.4511,
+          "end": 3.0509
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.9309,
+          "end": 4.2555
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.5755,
+          "end": 5.1829
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 6.1029,
+          "end": 7.0437
+        }
+      ]
+    },
+    {
+      "id": "rt-2-43",
+      "text": "جَدِيدْ",
+      "path": "audio/reading-trainer/rt-2-43.mp3",
+      "seconds": 6.7918,
+      "sha256": "04eadd8d049c8ed710cdb1d1c409e348d16c995a3a81fb6dbea452512faa1a2c",
+      "wordPhonemes": "dʒadˈiːd",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.6604
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.9404,
+          "end": 1.5673
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.8473,
+          "end": 2.1411
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.4211,
+          "end": 3.048
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.928,
+          "end": 4.2526
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.5726,
+          "end": 4.9441
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.8641,
+          "end": 6.4846
+        }
+      ]
+    },
+    {
+      "id": "rt-2-44",
+      "text": "قَدِيمْ",
+      "path": "audio/reading-trainer/rt-2-44.mp3",
+      "seconds": 6.7918,
+      "sha256": "27fd121e18eba402493ff14bad1fd64746f3ec332b3e15e7efbfb5e061e422c2",
+      "wordPhonemes": "qadˈiːm",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4881
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7681,
+          "end": 1.395
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.675,
+          "end": 1.9688
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.2488,
+          "end": 2.9057
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.7857,
+          "end": 4.134
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.454,
+          "end": 4.9649
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.8849,
+          "end": 6.4852
+        }
+      ]
+    },
+    {
+      "id": "rt-2-45",
+      "text": "سَعِيدْ",
+      "path": "audio/reading-trainer/rt-2-45.mp3",
+      "seconds": 6.4,
+      "sha256": "1b431da1593192cd6116f9e7f95b311cb32cf99d3fcfdfdb7f4617ef9fd3c186",
+      "wordPhonemes": "saʕˈiːd",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.1685
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4485,
+          "end": 1.7423
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.0223,
+          "end": 2.6492
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.5292,
+          "end": 3.8559
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.1759,
+          "end": 4.501
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.421,
+          "end": 6.0827
+        }
+      ]
+    },
+    {
+      "id": "rt-2-46",
+      "text": "نَظِيفْ",
+      "path": "audio/reading-trainer/rt-2-46.mp3",
+      "seconds": 6.4784,
+      "sha256": "28c971f609cffbd26b12faeda1b9f72057f523f430e346c814dc52ec55600be8",
+      "wordPhonemes": "naðˤˈiːf",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4943
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7743,
+          "end": 1.1446
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4246,
+          "end": 1.7184
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 1.9984,
+          "end": 2.4398
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.3198,
+          "end": 3.6995
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.0195,
+          "end": 4.3596
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2796,
+          "end": 6.1723
+        }
+      ]
+    },
+    {
+      "id": "rt-2-47",
+      "text": "سَرِيعْ",
+      "path": "audio/reading-trainer/rt-2-47.mp3",
+      "seconds": 6.191,
+      "sha256": "829c08bebb5d2d3cba55c40401ee3d44d9fd69b34dc9346035fce4017aff2ce7",
+      "wordPhonemes": "sarˈiːʕ",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.2182
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4982,
+          "end": 1.792
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.072,
+          "end": 2.4041
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.2841,
+          "end": 3.6107
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.9307,
+          "end": 4.3444
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2644,
+          "end": 5.8681
+        }
+      ]
+    },
+    {
+      "id": "rt-2-48",
+      "text": "بَطِيءْ",
+      "path": "audio/reading-trainer/rt-2-48.mp3",
+      "seconds": 6.3216,
+      "sha256": "15a7fa16911830e02674706b70028755644776b79784e8ae7e02f274d6991502",
+      "wordPhonemes": "batˤˈiːʔ",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4968
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7768,
+          "end": 1.0787
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3587,
+          "end": 1.6525
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 1.9325,
+          "end": 2.3737
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.2537,
+          "end": 3.6136
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.9336,
+          "end": 4.3051
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2251,
+          "end": 6.0008
+        }
+      ]
+    },
+    {
+      "id": "rt-2-49",
+      "text": "صَدِيقْ",
+      "path": "audio/reading-trainer/rt-2-49.mp3",
+      "seconds": 6.3216,
+      "sha256": "8387a344a1034f6e2df02c037d7b3584fb89024e521756f38e801cb3d7cefe7d",
+      "wordPhonemes": "sˤadˈiːq",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4706
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7506,
+          "end": 1.3776
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6576,
+          "end": 1.9513
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.2313,
+          "end": 2.5694
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.4494,
+          "end": 3.7249
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.0449,
+          "end": 4.4707
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.3907,
+          "end": 6.0112
+        }
+      ]
+    },
+    {
+      "id": "rt-2-50",
+      "text": "طَرِيقْ",
+      "path": "audio/reading-trainer/rt-2-50.mp3",
+      "seconds": 6.0082,
+      "sha256": "563bbd745f2715953cb7a700d2e695199be4cc4fcb9b9edc3cc128d6286d2da9",
+      "wordPhonemes": "tˤarˈiːq",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4519
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7319,
+          "end": 1.1137
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3937,
+          "end": 1.6875
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 1.9675,
+          "end": 2.3055
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.1855,
+          "end": 3.4632
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.7832,
+          "end": 4.2625
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.1825,
+          "end": 5.6956
+        }
+      ]
+    },
+    {
+      "id": "rt-3-01",
+      "text": "أُمّْ",
+      "path": "audio/reading-trainer/rt-3-01.mp3",
+      "seconds": 4.5714,
+      "sha256": "32766434649c850d6ef3f6b60592f133c84c2fd821e66bec917cacbabb7441a4",
+      "wordPhonemes": "ʔˈumm",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5912
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8712,
+          "end": 1.5281
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.4081,
+          "end": 2.8776
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.7976,
+          "end": 4.2672
+        }
+      ]
+    },
+    {
+      "id": "rt-3-02",
+      "text": "دُبّْ",
+      "path": "audio/reading-trainer/rt-3-02.mp3",
+      "seconds": 4.3886,
+      "sha256": "5479269093af7cb9dde8512d4def0c75f578a34a35655f1d982d391d8e8c3821",
+      "wordPhonemes": "dˈubb",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.777
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.057,
+          "end": 1.4038
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.2838,
+          "end": 2.7238
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.6438,
+          "end": 4.0838
+        }
+      ]
+    },
+    {
+      "id": "rt-3-03",
+      "text": "قِطّْ",
+      "path": "audio/reading-trainer/rt-3-03.mp3",
+      "seconds": 3.7616,
+      "sha256": "8be71a66e92e344f8db428dab04a62212c7b2ba9f5dddcc1e378f6a1e146c74c",
+      "wordPhonemes": "qˈitˤtˤ",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4881
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7681,
+          "end": 1.0699
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 1.9499,
+          "end": 2.2386
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.1586,
+          "end": 3.4473
+        }
+      ]
+    },
+    {
+      "id": "rt-3-04",
+      "text": "حُبّْ",
+      "path": "audio/reading-trainer/rt-3-04.mp3",
+      "seconds": 4.0229,
+      "sha256": "f6f0a98e9915062c2125fc1a58284f05b95f775eea6992d3eed060c1e194fb0d",
+      "wordPhonemes": "ħˈubb",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4836
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7636,
+          "end": 1.1104
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 1.9904,
+          "end": 2.3876
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.3076,
+          "end": 3.7047
+        }
+      ]
+    },
+    {
+      "id": "rt-3-05",
+      "text": "جَدّْ",
+      "path": "audio/reading-trainer/rt-3-05.mp3",
+      "seconds": 4.258,
+      "sha256": "9b33a834cb55d55e61c914c59c2212d8d582a776926df86c93d2a9164e41f7eb",
+      "wordPhonemes": "dʒˈadd",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.6604
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.9404,
+          "end": 1.5673
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.4473,
+          "end": 2.7305
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.6505,
+          "end": 3.9337
+        }
+      ]
+    },
+    {
+      "id": "rt-3-06",
+      "text": "حَظّْ",
+      "path": "audio/reading-trainer/rt-3-06.mp3",
+      "seconds": 3.8661,
+      "sha256": "977cf89aaa2736b3ddba6077d841b7c8f0a1cbe18fa6f6df93184e64ebaee5f8",
+      "wordPhonemes": "ħˈaðˤðˤ",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4836
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7636,
+          "end": 1.134
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.014,
+          "end": 2.3287
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.2487,
+          "end": 3.5634
+        }
+      ]
+    },
+    {
+      "id": "rt-3-07",
+      "text": "صَفّْ",
+      "path": "audio/reading-trainer/rt-3-07.mp3",
+      "seconds": 3.9445,
+      "sha256": "c43bd996bb3fb364fc89ce398743a43d3f367672a7f11850795d6365892dba87",
+      "wordPhonemes": "sˤˈaff",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4706
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7506,
+          "end": 1.192
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.072,
+          "end": 2.3879
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.3079,
+          "end": 3.6238
+        }
+      ]
+    },
+    {
+      "id": "rt-3-08",
+      "text": "حَقّْ",
+      "path": "audio/reading-trainer/rt-3-08.mp3",
+      "seconds": 3.8139,
+      "sha256": "5901be752f03860b82cece8248d8973adc8c35e8f967b32eeacc026cf94a6174",
+      "wordPhonemes": "ħˈaqq",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4836
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7636,
+          "end": 1.1017
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 1.9817,
+          "end": 2.2824
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 3.2024,
+          "end": 3.503
+        }
+      ]
+    },
+    {
+      "id": "rt-3-09",
+      "text": "ثُمَّ",
+      "path": "audio/reading-trainer/rt-3-09.mp3",
+      "seconds": 5.4073,
+      "sha256": "3a554425364bdbb418ba5488488c182483615a4ae6c186f7695fa05cbff9c8cc",
+      "wordPhonemes": "θˈumma",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5232
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8032,
+          "end": 1.4601
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.3401,
+          "end": 2.6353
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 2.9553,
+          "end": 3.4858
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.4058,
+          "end": 5.0893
+        }
+      ]
+    },
+    {
+      "id": "rt-3-10",
+      "text": "جَدَّة",
+      "path": "audio/reading-trainer/rt-3-10.mp3",
+      "seconds": 7.0008,
+      "sha256": "5527eeb21e0d8d68ff66f969d9094b8e31707e845c395f46df1eeee982e0552d",
+      "wordPhonemes": "dʒˈaddah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.6604
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.9404,
+          "end": 1.5673
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.8473,
+          "end": 3.2996
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 4.1796,
+          "end": 4.4633
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.7833,
+          "end": 5.2246
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 6.1446,
+          "end": 6.6903
+        }
+      ]
+    },
+    {
+      "id": "rt-3-11",
+      "text": "مُعَلِّمْ",
+      "path": "audio/reading-trainer/rt-3-11.mp3",
+      "seconds": 8.098,
+      "sha256": "212ec23c10bd82212bce4cfb4611496b5789265ec4fab31c8ee7fe7b5fcdba93",
+      "wordPhonemes": "muʕˈallim",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.419
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.699,
+          "end": 2.2989
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.5789,
+          "end": 3.2358
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 4.1158,
+          "end": 4.5454
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.8654,
+          "end": 5.1507
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 5.4707,
+          "end": 6.0004
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 6.9204,
+          "end": 7.772
+        }
+      ]
+    },
+    {
+      "id": "rt-3-12",
+      "text": "مُعَلِّمَة",
+      "path": "audio/reading-trainer/rt-3-12.mp3",
+      "seconds": 11.102,
+      "sha256": "03b6d715808897a0e09e6dfa18ef19fb20e636c1be37593f48cc02dc95a88269",
+      "wordPhonemes": "muʕˈallimah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.419
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.699,
+          "end": 2.2989
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.5789,
+          "end": 3.2358
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.5158,
+          "end": 4.9682
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.8482,
+          "end": 6.2777
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.5977,
+          "end": 6.8831
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.2031,
+          "end": 7.9229
+        },
+        {
+          "stage": "syllables",
+          "index": 3,
+          "start": 8.2429,
+          "end": 8.7631
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 9.6831,
+          "end": 10.7877
+        }
+      ]
+    },
+    {
+      "id": "rt-3-13",
+      "text": "مُهَنْدِسْ",
+      "path": "audio/reading-trainer/rt-3-13.mp3",
+      "seconds": 8.5943,
+      "sha256": "49aa6fb9d13f27e00e56e1ec3b4698264a9d23fd7894d73b4375676bd2d0828c",
+      "wordPhonemes": "muhˈandis",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.5049
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7849,
+          "end": 2.1292
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.4092,
+          "end": 3.0361
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.3161,
+          "end": 3.7224
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 4.6024,
+          "end": 5.032
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 5.352,
+          "end": 5.7584
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 6.0784,
+          "end": 6.371
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 7.291,
+          "end": 8.2833
+        }
+      ]
+    },
+    {
+      "id": "rt-3-14",
+      "text": "مُهَنْدِسَة",
+      "path": "audio/reading-trainer/rt-3-14.mp3",
+      "seconds": 11.2327,
+      "sha256": "bfa4d3aba8361c8cb3eca1d0b736aa7451d433be27405eb52991ffe29dce8d70",
+      "wordPhonemes": "muhˈandisah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.5049
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7849,
+          "end": 2.1292
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.4092,
+          "end": 3.0361
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.3161,
+          "end": 3.7224
+        },
+        {
+          "stage": "letters",
+          "index": 5,
+          "start": 4.0024,
+          "end": 5.4548
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 6.3348,
+          "end": 6.7644
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 7.0844,
+          "end": 7.4907
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.8107,
+          "end": 8.2054
+        },
+        {
+          "stage": "syllables",
+          "index": 3,
+          "start": 8.5254,
+          "end": 8.7995
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 9.7195,
+          "end": 10.9278
+        }
+      ]
+    },
+    {
+      "id": "rt-3-15",
+      "text": "مُمَرِّضْ",
+      "path": "audio/reading-trainer/rt-3-15.mp3",
+      "seconds": 8.1502,
+      "sha256": "6fc9436959c2cf695681d1604ce480c14ba8bd6842f2fa7278301177a3e7d5a0",
+      "wordPhonemes": "mumˈarridˤ",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.7439
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 2.0239,
+          "end": 2.4057
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.6857,
+          "end": 3.1794
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 4.0594,
+          "end": 4.4889
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.8089,
+          "end": 5.3546
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 5.6746,
+          "end": 5.9629
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 6.8829,
+          "end": 7.8317
+        }
+      ]
+    },
+    {
+      "id": "rt-3-16",
+      "text": "مُمَرِّضَة",
+      "path": "audio/reading-trainer/rt-3-16.mp3",
+      "seconds": 10.7886,
+      "sha256": "b09f3b3f73058ac5959d6d3be9a1f0ba445727625be0e734a0a11b2d47fccccf",
+      "wordPhonemes": "mumˈarridˤah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.7439
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 2.0239,
+          "end": 2.4057
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.6857,
+          "end": 3.1794
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.4594,
+          "end": 4.9117
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.7917,
+          "end": 6.2213
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.5413,
+          "end": 7.0869
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.4069,
+          "end": 7.732
+        },
+        {
+          "stage": "syllables",
+          "index": 3,
+          "start": 8.052,
+          "end": 8.462
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 9.382,
+          "end": 10.481
+        }
+      ]
+    },
+    {
+      "id": "rt-3-17",
+      "text": "نَجَّارْ",
+      "path": "audio/reading-trainer/rt-3-17.mp3",
+      "seconds": 6.8441,
+      "sha256": "7a3f3d28a72bd9ea5c0c2c8237ba31d0a9c497cbfcd0ad7fe359efcbc44fd301",
+      "wordPhonemes": "nadʒdʒˈaːr",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4943
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7743,
+          "end": 1.2846
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5646,
+          "end": 2.1146
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.3946,
+          "end": 2.7765
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.6565,
+          "end": 4.0512
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.3712,
+          "end": 4.7589
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.6789,
+          "end": 6.5259
+        }
+      ]
+    },
+    {
+      "id": "rt-3-18",
+      "text": "خَبَّازْ",
+      "path": "audio/reading-trainer/rt-3-18.mp3",
+      "seconds": 6.0865,
+      "sha256": "c4e08d26afebe0583ed9bb06a8d8394e29bf474aae3a0af03d42b39e9090c081",
+      "wordPhonemes": "xabbˈaːz",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4356
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7156,
+          "end": 1.0624
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3424,
+          "end": 1.8924
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.1724,
+          "end": 2.4614
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.3414,
+          "end": 3.6327
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.9527,
+          "end": 4.2474
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.1674,
+          "end": 5.7738
+        }
+      ]
+    },
+    {
+      "id": "rt-3-19",
+      "text": "فَلَّاحْ",
+      "path": "audio/reading-trainer/rt-3-19.mp3",
+      "seconds": 6.9486,
+      "sha256": "6a84a6389491598fbfbbc5e74bcf01ce3b2c0f6b3f45da95863c0e3d0f8bc460",
+      "wordPhonemes": "fallˈaːħ",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5914
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8714,
+          "end": 1.4713
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7513,
+          "end": 2.3013
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.5813,
+          "end": 2.9149
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.7949,
+          "end": 4.2245
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.5445,
+          "end": 5.0484
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.9684,
+          "end": 6.6418
+        }
+      ]
+    },
+    {
+      "id": "rt-3-20",
+      "text": "سَيَّارَة",
+      "path": "audio/reading-trainer/rt-3-20.mp3",
+      "seconds": 8.751,
+      "sha256": "46a24b65e632f51deb3cca27cf099e5ed5e4f9b4e8ae1c23a8c3126a536710f7",
+      "wordPhonemes": "sajjˈaːrah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.1302
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4102,
+          "end": 1.9602
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.2402,
+          "end": 2.622
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 2.902,
+          "end": 4.3543
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.2343,
+          "end": 5.52
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 5.84,
+          "end": 6.1363
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 6.4563,
+          "end": 6.8074
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 7.7274,
+          "end": 8.424
+        }
+      ]
+    },
+    {
+      "id": "rt-3-21",
+      "text": "دَرَّاجَة",
+      "path": "audio/reading-trainer/rt-3-21.mp3",
+      "seconds": 9.9527,
+      "sha256": "e42b9f55671197ac2d0ce44fe4d218425fefe4fd358249df1678a5d1e4e6a6ad",
+      "wordPhonemes": "darrˈaːdʒah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.777
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.057,
+          "end": 1.4388
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7188,
+          "end": 2.2688
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.5488,
+          "end": 3.0591
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.3391,
+          "end": 4.7915
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.6715,
+          "end": 6.043
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.363,
+          "end": 6.7124
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.0324,
+          "end": 7.4492
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 8.3692,
+          "end": 9.6341
+        }
+      ]
+    },
+    {
+      "id": "rt-3-22",
+      "text": "طَائِرَة",
+      "path": "audio/reading-trainer/rt-3-22.mp3",
+      "seconds": 10.4751,
+      "sha256": "7bb445ce4ae805fa70eb69d0fdcc635e770a840b7e94fa2c3f17b1afdedc5cc3",
+      "wordPhonemes": "tˤˈaːʔirah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4519
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7319,
+          "end": 1.2819
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5619,
+          "end": 3.6598
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 3.9398,
+          "end": 4.3216
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 4.6016,
+          "end": 6.0539
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 6.9339,
+          "end": 7.222
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 7.542,
+          "end": 7.9599
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 8.2799,
+          "end": 8.631
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 9.551,
+          "end": 10.1591
+        }
+      ]
+    },
+    {
+      "id": "rt-3-23",
+      "text": "رُمَّانْ",
+      "path": "audio/reading-trainer/rt-3-23.mp3",
+      "seconds": 7.2359,
+      "sha256": "2394ed61238f8798ae302cce1372eb5baab612713e9759ba2188e24a03eb66bb",
+      "wordPhonemes": "rummˈaːn",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5318
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8118,
+          "end": 1.4688
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7488,
+          "end": 2.2988
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.5788,
+          "end": 2.923
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.803,
+          "end": 4.1489
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.4689,
+          "end": 5.0337
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.9537,
+          "end": 6.921
+        }
+      ]
+    },
+    {
+      "id": "rt-3-24",
+      "text": "تُفَّاحْ",
+      "path": "audio/reading-trainer/rt-3-24.mp3",
+      "seconds": 6.7396,
+      "sha256": "7004ca0c76aff917b4acd4c1b22369fee703187ffb4e022b0ad6d6aca59ff6ea",
+      "wordPhonemes": "tuffˈaːħ",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5145
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7945,
+          "end": 1.2359
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5159,
+          "end": 2.0659
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.3459,
+          "end": 2.6795
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.5595,
+          "end": 3.8441
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.1641,
+          "end": 4.5997
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.5197,
+          "end": 6.4183
+        }
+      ]
+    },
+    {
+      "id": "rt-3-25",
+      "text": "سُكَّرْ",
+      "path": "audio/reading-trainer/rt-3-25.mp3",
+      "seconds": 5.5902,
+      "sha256": "1fe8ebbc80f8b0bfe818e64eea1c0dddbc3aaa59e13aab9dba027099dc40069f",
+      "wordPhonemes": "sˈukkar",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.2427
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5227,
+          "end": 1.9045
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 2.7845,
+          "end": 3.0776
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.3976,
+          "end": 3.8388
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 4.7588,
+          "end": 5.2632
+        }
+      ]
+    },
+    {
+      "id": "rt-3-26",
+      "text": "سُلَّمْ",
+      "path": "audio/reading-trainer/rt-3-26.mp3",
+      "seconds": 6.3216,
+      "sha256": "8b5524026091533af188f087e5c3e93f7d04ec51c5e224befb3f3b00884b8a81",
+      "wordPhonemes": "sˈullam",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.4362
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7162,
+          "end": 2.3732
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.2532,
+          "end": 3.5782
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 3.8982,
+          "end": 4.3524
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.2724,
+          "end": 5.9961
+        }
+      ]
+    },
+    {
+      "id": "rt-3-27",
+      "text": "مَظَلَّة",
+      "path": "audio/reading-trainer/rt-3-27.mp3",
+      "seconds": 9.5608,
+      "sha256": "05c1119d5ca6e2454beca95a2554d63268b54396e7e0aecafa8bce56170bb794",
+      "wordPhonemes": "maðˤˈallah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.4573
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7373,
+          "end": 2.3371
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.6171,
+          "end": 4.0695
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 4.9495,
+          "end": 5.48
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 5.8,
+          "end": 6.2411
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 6.5611,
+          "end": 7.1296
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 8.0496,
+          "end": 9.2332
+        }
+      ]
+    },
+    {
+      "id": "rt-3-28",
+      "text": "سَبُّورَة",
+      "path": "audio/reading-trainer/rt-3-28.mp3",
+      "seconds": 9.0645,
+      "sha256": "c4afc133d47277d0a009ad8c61630ac39276a4498eddf672945ea1d5874c241f",
+      "wordPhonemes": "sabbˈuːrah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.1832
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4632,
+          "end": 1.9291
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.2091,
+          "end": 2.5909
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 2.8709,
+          "end": 4.3232
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.2032,
+          "end": 5.5007
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 5.8207,
+          "end": 6.1546
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 6.4746,
+          "end": 6.8257
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 7.7457,
+          "end": 8.7405
+        }
+      ]
+    },
+    {
+      "id": "rt-3-29",
+      "text": "ثَلَّاجَة",
+      "path": "audio/reading-trainer/rt-3-29.mp3",
+      "seconds": 9.9788,
+      "sha256": "c464725e9f8a4304379f045102a121c4bcc8c197f9a91a6b63e82276d7c982bf",
+      "wordPhonemes": "θallˈaːdʒah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5232
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8032,
+          "end": 1.403
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.683,
+          "end": 2.2331
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.5131,
+          "end": 3.0234
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.3034,
+          "end": 4.7557
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.6357,
+          "end": 5.922
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.242,
+          "end": 6.8426
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.1626,
+          "end": 7.5794
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 8.4994,
+          "end": 9.6576
+        }
+      ]
+    },
+    {
+      "id": "rt-3-30",
+      "text": "غَسَّالَة",
+      "path": "audio/reading-trainer/rt-3-30.mp3",
+      "seconds": 9.9527,
+      "sha256": "d1328fe129693e3f9b25f0880ef2bfabaed37966d870c433304f03a846be8787",
+      "wordPhonemes": "ɣassˈaːlah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.6709
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.9509,
+          "end": 1.3573
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6373,
+          "end": 2.1873
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.4673,
+          "end": 3.0672
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.3472,
+          "end": 4.7995
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.6795,
+          "end": 5.9665
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.2865,
+          "end": 6.6232
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 6.9432,
+          "end": 7.5117
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 8.4317,
+          "end": 9.6249
+        }
+      ]
+    },
+    {
+      "id": "rt-3-31",
+      "text": "كُرْسِيّْ",
+      "path": "audio/reading-trainer/rt-3-31.mp3",
+      "seconds": 6.2433,
+      "sha256": "f5d6007ee14b14c5dac937bf8449c9d5b4ca9a6210c2186b38d4de2172126474",
+      "wordPhonemes": "kursˈijj",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 1.2182
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4982,
+          "end": 1.9045
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.1845,
+          "end": 2.4783
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.3583,
+          "end": 3.7531
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.0731,
+          "end": 4.4214
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 5.3414,
+          "end": 5.9154
+        }
+      ]
+    },
+    {
+      "id": "rt-3-32",
+      "text": "هَدِيَّة",
+      "path": "audio/reading-trainer/rt-3-32.mp3",
+      "seconds": 8.7249,
+      "sha256": "cf824db1d1696d7d40e07160cd87115b7b1b8de4c8af6e0c02c9d51388c3b6d3",
+      "wordPhonemes": "hadˈijjah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.568
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.848,
+          "end": 1.4749
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7549,
+          "end": 2.0487
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.3287,
+          "end": 3.781
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 4.661,
+          "end": 4.9547
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 5.2747,
+          "end": 5.7971
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 6.1171,
+          "end": 6.4628
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 7.3828,
+          "end": 8.4161
+        }
+      ]
+    },
+    {
+      "id": "rt-3-33",
+      "text": "رِيَاضَة",
+      "path": "audio/reading-trainer/rt-3-33.mp3",
+      "seconds": 9.2735,
+      "sha256": "b267cb6ce9d8cdbe90b168dd518cafb2e9759d96bcc2c040eeedc60a6ef4bff5",
+      "wordPhonemes": "rijˈaːdˤah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5318
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8118,
+          "end": 1.1056
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3856,
+          "end": 1.9356
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.2156,
+          "end": 2.7093
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 2.9893,
+          "end": 4.4417
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.3217,
+          "end": 5.6468
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 5.9668,
+          "end": 6.263
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 6.583,
+          "end": 6.9929
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 7.9129,
+          "end": 8.949
+        }
+      ]
+    },
+    {
+      "id": "rt-3-34",
+      "text": "مُسْتَشْفَى",
+      "path": "audio/reading-trainer/rt-3-34.mp3",
+      "seconds": 10.2139,
+      "sha256": "353bb05fb745f20de5a48fedf2b8d1ef09cdec123f36af691ff5f270611dd2e0",
+      "wordPhonemes": "mustˈaʃfaː",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.4933
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7733,
+          "end": 2.1378
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.4178,
+          "end": 2.7545
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.0345,
+          "end": 3.4759
+        },
+        {
+          "stage": "letters",
+          "index": 5,
+          "start": 3.7559,
+          "end": 5.3247
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 6.2047,
+          "end": 6.769
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 7.089,
+          "end": 7.3847
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.7047,
+          "end": 8.1345
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 9.0545,
+          "end": 9.8874
+        }
+      ]
+    },
+    {
+      "id": "rt-3-35",
+      "text": "صَيْدَلِيَّة",
+      "path": "audio/reading-trainer/rt-3-35.mp3",
+      "seconds": 10.5012,
+      "sha256": "3e0345af58c41a9c5a3d94571086d76e8979bb0dcf44331d57372354b8a13fbf",
+      "wordPhonemes": "sˤajdalˈijjah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4706
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7506,
+          "end": 1.0444
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3244,
+          "end": 1.9513
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.2313,
+          "end": 2.8312
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.1112,
+          "end": 3.405
+        },
+        {
+          "stage": "letters",
+          "index": 5,
+          "start": 3.685,
+          "end": 5.1373
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 6.0173,
+          "end": 6.3068
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.6268,
+          "end": 6.9751
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.2951,
+          "end": 7.7238
+        },
+        {
+          "stage": "syllables",
+          "index": 3,
+          "start": 8.0438,
+          "end": 8.3895
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 9.3095,
+          "end": 10.1918
+        }
+      ]
+    },
+    {
+      "id": "rt-3-36",
+      "text": "مُسَاعَدَة",
+      "path": "audio/reading-trainer/rt-3-36.mp3",
+      "seconds": 11.2849,
+      "sha256": "2df8909e9a35eb1caf4b47874c96504c3caf97b22745895a435dd1eef7895b24",
+      "wordPhonemes": "musˈaːʕadah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.4933
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7733,
+          "end": 2.3233
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.6033,
+          "end": 2.9354
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.2154,
+          "end": 3.8424
+        },
+        {
+          "stage": "letters",
+          "index": 5,
+          "start": 4.1224,
+          "end": 5.5747
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 6.4547,
+          "end": 6.8843
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 7.2043,
+          "end": 7.541
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.861,
+          "end": 8.1529
+        },
+        {
+          "stage": "syllables",
+          "index": 3,
+          "start": 8.4729,
+          "end": 8.9143
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 9.8343,
+          "end": 10.9639
+        }
+      ]
+    },
+    {
+      "id": "rt-3-37",
+      "text": "مُسَابَقَة",
+      "path": "audio/reading-trainer/rt-3-37.mp3",
+      "seconds": 10.9192,
+      "sha256": "03190ba0ceb43cf423b9b29423508759932ed0f75eb1fd6c57a09e3facc4643f",
+      "wordPhonemes": "musˈaːbaqah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.4933
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7733,
+          "end": 2.3233
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.6033,
+          "end": 2.9501
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.2301,
+          "end": 3.5682
+        },
+        {
+          "stage": "letters",
+          "index": 5,
+          "start": 3.8482,
+          "end": 5.3005
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 6.1805,
+          "end": 6.6101
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.9301,
+          "end": 7.2668
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.5868,
+          "end": 7.9467
+        },
+        {
+          "stage": "syllables",
+          "index": 3,
+          "start": 8.2667,
+          "end": 8.5484
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 9.4684,
+          "end": 10.5936
+        }
+      ]
+    },
+    {
+      "id": "rt-3-38",
+      "text": "مُحَادَثَة",
+      "path": "audio/reading-trainer/rt-3-38.mp3",
+      "seconds": 11.2588,
+      "sha256": "42ca39ff0d2e8a91d5b94e871b61be508a97338eb4e266480d3fdeed0cdc27f1",
+      "wordPhonemes": "muħˈaːdaθah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.4205
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7005,
+          "end": 2.2506
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.5306,
+          "end": 3.1575
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.4375,
+          "end": 3.8107
+        },
+        {
+          "stage": "letters",
+          "index": 5,
+          "start": 4.0907,
+          "end": 5.543
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 6.423,
+          "end": 6.8526
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 7.1726,
+          "end": 7.5093
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.8293,
+          "end": 8.1776
+        },
+        {
+          "stage": "syllables",
+          "index": 3,
+          "start": 8.4976,
+          "end": 8.7903
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 9.7103,
+          "end": 10.9413
+        }
+      ]
+    },
+    {
+      "id": "rt-3-39",
+      "text": "مُرَاجَعَة",
+      "path": "audio/reading-trainer/rt-3-39.mp3",
+      "seconds": 11.0759,
+      "sha256": "36025a4dad46f2ec3c661b4cd3fb37d82dfbe9d7a5e9c97e556e2a6b41e2379f",
+      "wordPhonemes": "murˈaːdʒaʕah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.4688
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7488,
+          "end": 2.2988
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.5788,
+          "end": 3.0891
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.3691,
+          "end": 3.7012
+        },
+        {
+          "stage": "letters",
+          "index": 5,
+          "start": 3.9812,
+          "end": 5.4336
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 6.3136,
+          "end": 6.7431
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 7.0631,
+          "end": 7.4126
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.7326,
+          "end": 8.0571
+        },
+        {
+          "stage": "syllables",
+          "index": 3,
+          "start": 8.3771,
+          "end": 8.6712
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 9.5912,
+          "end": 10.7621
+        }
+      ]
+    },
+    {
+      "id": "rt-3-40",
+      "text": "اِسْتِرَاحَة",
+      "path": "audio/reading-trainer/rt-3-40.mp3",
+      "seconds": 11.7029,
+      "sha256": "2fb7ab0fcbcffbf9d1c80401c57bbf115b5f336dbc47fcea5e12b26d5e64475c",
+      "wordPhonemes": "ʔistirˈaːħah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.7
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.98,
+          "end": 1.3864
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6664,
+          "end": 2.0309
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.3109,
+          "end": 2.6927
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 2.9727,
+          "end": 3.5227
+        },
+        {
+          "stage": "letters",
+          "index": 5,
+          "start": 3.8027,
+          "end": 4.1363
+        },
+        {
+          "stage": "letters",
+          "index": 6,
+          "start": 4.4163,
+          "end": 5.8687
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 6.7487,
+          "end": 7.1486
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 7.4686,
+          "end": 7.7599
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 8.0799,
+          "end": 8.4293
+        },
+        {
+          "stage": "syllables",
+          "index": 3,
+          "start": 8.7493,
+          "end": 9.0396
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 9.9596,
+          "end": 11.3899
+        }
+      ]
+    },
+    {
+      "id": "rt-3-41",
+      "text": "اِسْتِمَاعْ",
+      "path": "audio/reading-trainer/rt-3-41.mp3",
+      "seconds": 9.5608,
+      "sha256": "55ec81951135d4cba010213141083723443f733a8c1978c49cac15c62ef45095",
+      "wordPhonemes": "ʔistimˈaːʕ",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.7
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.98,
+          "end": 1.3864
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6664,
+          "end": 2.0309
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.3109,
+          "end": 2.9678
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 3.2478,
+          "end": 3.7978
+        },
+        {
+          "stage": "letters",
+          "index": 5,
+          "start": 4.0778,
+          "end": 4.4099
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.2899,
+          "end": 5.6898
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.0098,
+          "end": 6.3012
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 6.6212,
+          "end": 7.1034
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 8.0234,
+          "end": 9.2343
+        }
+      ]
+    },
+    {
+      "id": "rt-3-42",
+      "text": "اِسْتِخْدَامْ",
+      "path": "audio/reading-trainer/rt-3-42.mp3",
+      "seconds": 9.9004,
+      "sha256": "7c77a624d22f8045c42ff3e968b651b7854b8b950c3dd888c2c9ab82559c87ba",
+      "wordPhonemes": "ʔistixdˈaːm",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.7
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.98,
+          "end": 1.3864
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.6664,
+          "end": 2.0309
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.3109,
+          "end": 2.5965
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 2.8765,
+          "end": 3.5034
+        },
+        {
+          "stage": "letters",
+          "index": 5,
+          "start": 3.7834,
+          "end": 4.3334
+        },
+        {
+          "stage": "letters",
+          "index": 6,
+          "start": 4.6134,
+          "end": 5.2703
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 6.1503,
+          "end": 6.5502
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.8702,
+          "end": 7.1595
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 7.4795,
+          "end": 8.0202
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 8.9402,
+          "end": 9.5871
+        }
+      ]
+    },
+    {
+      "id": "rt-3-43",
+      "text": "تَعَاوُنْ",
+      "path": "audio/reading-trainer/rt-3-43.mp3",
+      "seconds": 8.0718,
+      "sha256": "288a25a9c8f7c6d6863d2af37286c21d9f350363ed130af22f116b3105e06d36",
+      "wordPhonemes": "taʕˈaːwun",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5145
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7945,
+          "end": 1.1266
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4066,
+          "end": 1.9566
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.2366,
+          "end": 2.7025
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 2.9825,
+          "end": 3.3268
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 4.2068,
+          "end": 4.503
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.823,
+          "end": 5.1109
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 5.4309,
+          "end": 5.8953
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 6.8153,
+          "end": 7.7463
+        }
+      ]
+    },
+    {
+      "id": "rt-3-44",
+      "text": "تَعَلُّمْ",
+      "path": "audio/reading-trainer/rt-3-44.mp3",
+      "seconds": 7.8629,
+      "sha256": "b73f91f136602de4eed286a37667cd14c2da8808f2543bcd26bc03a2280e6302",
+      "wordPhonemes": "taʕˈallum",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5145
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7945,
+          "end": 1.1266
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4066,
+          "end": 2.0065
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.2865,
+          "end": 2.9434
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.8234,
+          "end": 4.1196
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.4396,
+          "end": 4.725
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 5.045,
+          "end": 5.567
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 6.487,
+          "end": 7.5498
+        }
+      ]
+    },
+    {
+      "id": "rt-3-45",
+      "text": "تَحَدُّثْ",
+      "path": "audio/reading-trainer/rt-3-45.mp3",
+      "seconds": 7.6016,
+      "sha256": "40290669411003fd880551beee8fa10408783e52d2588a30ae08079f3f8dff83",
+      "wordPhonemes": "taħˈadduθ",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5145
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7945,
+          "end": 1.1281
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4081,
+          "end": 2.0351
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.3151,
+          "end": 2.6882
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 3.5682,
+          "end": 3.8644
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 4.1844,
+          "end": 4.4979
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 4.8179,
+          "end": 5.4913
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 6.4113,
+          "end": 7.2754
+        }
+      ]
+    },
+    {
+      "id": "rt-3-46",
+      "text": "مَسْؤُولْ",
+      "path": "audio/reading-trainer/rt-3-46.mp3",
+      "seconds": 9.8482,
+      "sha256": "92a74f22670a6dfcb0d8a0c0c05f8b053b5f0d818a024f0268e44aa01906f22f",
+      "wordPhonemes": "masʔˈuːl",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.8069
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 1.0869,
+          "end": 1.4933
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.7733,
+          "end": 3.6783
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 3.9583,
+          "end": 4.4242
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 4.7042,
+          "end": 5.3041
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 6.1841,
+          "end": 6.7375
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 7.0575,
+          "end": 7.5571
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 8.4771,
+          "end": 9.5403
+        }
+      ]
+    },
+    {
+      "id": "rt-3-47",
+      "text": "سُؤَالْ",
+      "path": "audio/reading-trainer/rt-3-47.mp3",
+      "seconds": 8.2286,
+      "sha256": "8a5c3b5ca319d0a3529a4e9cd78d93b89763c9001d104b96e1a9dedfca38d2b4",
+      "wordPhonemes": "suʔˈaːl",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.5564
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.8364,
+          "end": 2.7414
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 3.0214,
+          "end": 3.5714
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 3.8514,
+          "end": 4.4513
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.3313,
+          "end": 5.6239
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 5.9439,
+          "end": 6.2734
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 7.1934,
+          "end": 7.9004
+        }
+      ]
+    },
+    {
+      "id": "rt-3-48",
+      "text": "بِيئَة",
+      "path": "audio/reading-trainer/rt-3-48.mp3",
+      "seconds": 9.0384,
+      "sha256": "8a70d78d124b68659cde7cf79ab84a624e147f3704e50f9d64514bb121e70a4d",
+      "wordPhonemes": "bˈiːʔah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4968
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7768,
+          "end": 1.0706
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.3506,
+          "end": 3.4485
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 3.7285,
+          "end": 5.1808
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 6.0608,
+          "end": 6.5717
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 6.8917,
+          "end": 7.183
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 8.103,
+          "end": 8.7133
+        }
+      ]
+    },
+    {
+      "id": "rt-3-49",
+      "text": "قِرَاءَة",
+      "path": "audio/reading-trainer/rt-3-49.mp3",
+      "seconds": 8.9339,
+      "sha256": "e6efb341b4a600d269cf894638c4cd1f16458a4c97d3c78488d37dd37fcc3d07",
+      "wordPhonemes": "qirˈaːʔah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4881
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7681,
+          "end": 1.1499
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.4299,
+          "end": 1.9799
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 2.2599,
+          "end": 2.7011
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 2.9811,
+          "end": 4.4334
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 5.3134,
+          "end": 5.5912
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 5.9112,
+          "end": 6.2607
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 6.5807,
+          "end": 6.8721
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 7.7921,
+          "end": 8.6059
+        }
+      ]
+    },
+    {
+      "id": "rt-3-50",
+      "text": "عَائِلَة",
+      "path": "audio/reading-trainer/rt-3-50.mp3",
+      "seconds": 11.311,
+      "sha256": "287c0e08c4351cb2a63979007fd6c35bb963272eb592ce485245eb56f68f0097",
+      "wordPhonemes": "ʕˈaːʔilah",
+      "events": [
+        {
+          "stage": "letters",
+          "index": 0,
+          "start": 0.15,
+          "end": 0.4821
+        },
+        {
+          "stage": "letters",
+          "index": 1,
+          "start": 0.7621,
+          "end": 1.3122
+        },
+        {
+          "stage": "letters",
+          "index": 2,
+          "start": 1.5922,
+          "end": 3.69
+        },
+        {
+          "stage": "letters",
+          "index": 3,
+          "start": 3.97,
+          "end": 4.5699
+        },
+        {
+          "stage": "letters",
+          "index": 4,
+          "start": 4.8499,
+          "end": 6.3022
+        },
+        {
+          "stage": "syllables",
+          "index": 0,
+          "start": 7.1822,
+          "end": 7.4701
+        },
+        {
+          "stage": "syllables",
+          "index": 1,
+          "start": 7.7901,
+          "end": 8.2081
+        },
+        {
+          "stage": "syllables",
+          "index": 2,
+          "start": 8.5281,
+          "end": 9.0966
+        },
+        {
+          "stage": "word",
+          "index": 0,
+          "start": 10.0166,
+          "end": 10.9931
+        }
+      ]
+    }
+  ]
+}
