@@ -5,72 +5,95 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const D = require('../js/reading-trainer-data');
 const M = require('../audio/reading-trainer-manifest.json');
-const normalized = (s) => s.normalize('NFC');
-const word = (s) => D.words.find((w) => w.word === normalized(s));
+const norm = (s) => s.normalize('NFC');
+const word = (s) => D.words.find((w) => w.word === norm(s));
 
-test('150 distinct, vocalized useful words are divided into three curated banks of 50', () => {
+test('150 vocalized words retain three levels of 50 and contain sounds instead of letter names', () => {
+  assert.equal(D.version, 2);
   assert.equal(D.words.length, 150);
   assert.equal(new Set(D.words.map((w) => w.word)).size, 150);
   assert.equal(new Set(D.words.map((w) => w.id)).size, 150);
-  for (const level of D.levels) {
-    assert.equal(D.words.filter((w) => w.level === level.id).length, 50);
-    assert(level.description.ar && level.description.de);
-  }
+  for (const level of D.levels) assert.equal(D.words.filter((w) => w.level === level.id).length, 50);
   for (const w of D.words) {
     assert(w.de && /[\u064e-\u0652]/u.test(w.word));
     assert.equal(w.letters.map((l) => l.text).join(''), w.word);
-    assert(w.letters.every((l) => l.name));
-    const covered = new Set(w.syllables.flatMap((s) => s.letters));
-    assert.deepEqual([...covered].sort((a,b) => a-b), w.letters.map((_,i) => i));
-    for (const s of w.syllables) {
-      assert(s.text && s.letters.length && new Set(s.letters).size === s.letters.length);
-      assert(s.letters.every((i) => Number.isInteger(i) && i >= 0 && i < w.letters.length));
+    assert.equal(w.sounds.length, w.letters.length);
+    for (const [i,s] of w.sounds.entries()) {
+      assert.equal(w.letters[i].name, undefined);
+      assert.equal(s.text, w.letters[i].text);
+      assert.equal(s.spokenText, s.letters.map((j) => w.letters[j].text).join(''));
+      assert(s.letters.includes(i) && s.letters.every((j) => j <= i));
+      assert.equal(s.context, s.letters.length > 1);
+      assert(s.phonemes && !/[A-Z]/u.test(s.phonemes));
     }
   }
 });
 
-test('independent syllable and phoneme fixtures preserve vowels, long vowels, shadda, hamza and pause forms', () => {
-  for (const [text, syllables, ipa] of [
-    ['كَتَبَ', ['كَ','تَ','بَ'], 'kˈataba'],
-    ['كِتَابْ', ['كِ','تَابْ'], 'kitˈaːb'],
-    ['مَدْرَسَة', ['مَدْ','رَ','سَة'], 'mˈadrasah'],
-    ['مُعَلِّمْ', ['مُ','عَلْ','لِمْ'], 'muʕˈallim'],
-    ['هَدِيَّة', ['هَ','دِيْ','يَة'], 'hadˈijjah'],
-    ['مَسْؤُولْ', ['مَسْ','ؤُولْ'], 'masʔˈuːl'],
-  ]) {
-    const w = word(text);
-    assert.deepEqual(w.syllables.map((s) => s.text), syllables);
-    assert.equal(M.clips.find((c) => c.id === w.id).wordPhonemes, ipa);
-  }
-  assert.deepEqual(word('مُعَلِّمْ').syllables.map((s) => s.letters), [[0],[1,2],[2,3]]);
-  assert.deepEqual(word('كِتَابْ').syllables.map((s) => s.letters), [[0],[1,2,3]]);
-  assert.equal(word('جَلَسَ').letters[0].name, 'جِيمْ');
-  assert.equal(word('وَقَفَ').letters[0].name, 'وَاوْ');
-  assert(word('مُسْتَشْفَى'));
+test('independent sound fixtures pronounce ka/ki/ku, ja and wa without any letter-name phones', () => {
+  assert.deepEqual(word('كَتَبَ').sounds.map((s) => s.spokenText), ['كَ','تَ','بَ']);
+  assert.deepEqual(word('كَتَبَ').sounds.map((s) => s.phonemes), ['kˈa','tˈa','bˈa']);
+  assert.equal(word('كِتَابْ').sounds[0].phonemes, 'kˈi');
+  assert.equal(word('كُرْسِيّْ').sounds[0].phonemes, 'kˈu');
+  assert.equal(word('جَلَسَ').sounds[0].phonemes, 'dʒˈa');
+  assert.equal(word('وَقَفَ').sounds[0].phonemes, 'wˈa');
+  assert.equal(word('كِتَابْ').sounds[2].phonemes, 'ˈaː');
+  assert.equal(word('كِتَابْ').sounds[3].spokenText, 'تَابْ');
+  assert.deepEqual(word('كِتَابْ').sounds[3].letters, [1,2,3]);
+  assert.equal(word('مَدْرَسَة').sounds[1].spokenText, 'مَدْ');
+  assert.equal(word('مُعَلِّمْ').sounds[2].phonemes, 'ʕˈalli');
+  assert.equal(word('مَدْرَسَة').sounds.at(-1).phonemes, 'sˈah');
+  for (const w of D.words) for (const s of w.sounds) assert(!/كَاف|بَاء|تَاء|جِيم|وَاو/u.test(s.spokenText));
 });
 
-test('all 150 local tracks have verified bytes and ordered real audio-clock events for all three stages', () => {
+test('cumulative reading begins with the first two written letters and grows by exactly one to the full word', () => {
+  for (const [text, expected] of [
+    ['كَتَبَ', ['كَتَ','كَتَبَ']],
+    ['كِتَابْ', ['كِتَ','كِتَا','كِتَابْ']],
+    ['مَدْرَسَة', ['مَدْ','مَدْرَ','مَدْرَسَ','مَدْرَسَة']],
+    ['مُعَلِّمْ', ['مُعَ','مُعَلِّ','مُعَلِّمْ']],
+  ]) assert.deepEqual(word(text).prefixes.map((p) => p.text), expected.map(norm));
+  for (const w of D.words) {
+    assert.equal(w.prefixes.length, w.letters.length-1);
+    for (const [i,p] of w.prefixes.entries()) {
+      assert.equal(p.count, i+2);
+      assert.deepEqual(p.letters, Array.from({length:i+2}, (_,j) => j));
+      assert.equal(p.text, w.letters.slice(0,i+2).map((l) => l.text).join(''));
+    }
+    assert.equal(w.prefixes.at(-1).text, w.word);
+    assert.equal(w.prefixes.at(-1).phonemes, w.wordPhonemes);
+  }
+  assert.deepEqual(word('كَتَبَ').prefixes.map((p) => p.phonemes), ['kˈata','kˈataba']);
+  assert.equal(word('هَدِيَّة').wordPhonemes, 'hadˈijjah');
+  assert.equal(word('مَسْؤُولْ').wordPhonemes, 'masʔˈuːl');
+});
+
+test('all corrected local tracks have new cache-safe URLs, verified bytes, and sound/prefix/word clock events', () => {
+  assert.equal(M.version, 2);
   assert.equal(M.clips.length, 150);
   assert.equal(new Set(M.clips.map((c) => c.path)).size, 150);
+  assert.equal(fs.readdirSync(path.join(__dirname,'../audio/reading-trainer')).filter((n) => n.endsWith('.mp3')).length, 150);
   for (const w of D.words) {
     const c = M.clips.find((c) => c.id === w.id);
+    assert(c.path.endsWith('-sounds-v2.mp3'));
+    assert(!fs.existsSync(path.join(__dirname,'../audio/reading-trainer',w.id+'.mp3')));
     const bytes = fs.readFileSync(path.join(__dirname, '..', c.path));
     assert(bytes.length > 15000);
     assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), c.sha256);
     assert.equal(c.text, w.word);
     assert.deepEqual(w.events, c.events);
-    assert(c.seconds > 3 && c.seconds < 25);
-    assert.equal(c.events.length, w.letters.length + w.syllables.length + 1);
-    assert.deepEqual(c.events.map((e) => e.stage), [
-      ...w.letters.map(() => 'letters'), ...w.syllables.map(() => 'syllables'), 'word',
-    ]);
-    let end = 0;
-    for (const e of c.events) {
+    assert(c.seconds > 3 && c.seconds < 45);
+    const expected=[...w.sounds.map((s)=>({stage:'letters',text:s.spokenText,ipa:s.phonemes})),
+      ...w.prefixes.map((p)=>({stage:'prefixes',text:p.text,ipa:p.phonemes})),
+      {stage:'word',text:w.word,ipa:w.wordPhonemes}];
+    assert.equal(c.events.length, expected.length);
+    let end=0;
+    for (const [i,e] of c.events.entries()) {
+      assert.equal(e.stage, expected[i].stage);
+      assert.equal(e.spokenText, expected[i].text);
+      assert.equal(e.phonemes, expected[i].ipa);
       assert(e.start >= end && e.end > e.start && e.end < c.seconds);
-      assert(e.end - e.start > 0.09);
-      end = e.end;
+      assert(e.end-e.start > .09);
+      end=e.end;
     }
-    assert.equal(c.events[0].index, 0);
-    assert.equal(c.events.at(-1).index, 0);
   }
 });

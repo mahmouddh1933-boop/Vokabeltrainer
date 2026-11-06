@@ -8,7 +8,7 @@ Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](download
 
 ## Neue Fertigkeiten und A1/A2-Einheiten
 
-[مدرّب القراءة / Lesetrainer](reading-trainer.html): 150 vokalisierte Alltagswörter in drei Stufen mit je 50 Wörtern. Lokales Audio führt von den Buchstabennamen über Silben zum ganzen Wort; die Markierung folgt dem Audio. Große arabische Schrift, Wiederholung einzelner Teile, Pause, Tempo und gespeicherter Übungsfortschritt. Unter **Lesen und Buchstabieren** erreichbar. [Inhalt und technische Hinweise](docs/READING-TRAINER.md).
+[مدرّب القراءة / Lesetrainer](reading-trainer.html): 150 vokalisierte Alltagswörter in drei Stufen mit je 50 Wörtern. Lokales Audio spricht die Laute mit ihren Vokalen und verbindet danach die ersten zwei, drei, vier Buchstaben bis zum ganzen Wort; die Markierung folgt dem Audio. Große arabische Schrift, Wiederholung einzelner Teile, Pause, Tempo und gespeicherter Übungsfortschritt. Unter **Lesen und Buchstabieren** erreichbar. [Inhalt und technische Hinweise](docs/READING-TRAINER.md).
 
 [المهارات والوحدات A1–A2](skills.html): zwölf integrierte Einheiten mit 24 Dialogen, zwölf Lesetexten, Hörverstehen, Gesprächsaufgaben, gestuftem Schreiben und Wortverbindungen. 204 geschlossene Aufgaben und 48 lokale synthetische Tonaufnahmen. Die 60 bestehenden A1/A2-Wortlisten sind verknüpft. Schreiben und Sprechen werden anhand von Beispielen und Kriterien selbst oder mit einer Lehrkraft überprüft. [Inhalt, Aufbau und Prüfungen](docs/SKILLS-AND-VERB-EXPANSION.md).
 

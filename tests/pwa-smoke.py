@@ -19,7 +19,7 @@ with sync_playwright() as p:
  clip='audio/skills/a1-01-listening.mp3'
  response=page.evaluate('''async path=>{const r=await fetch(path,{headers:{Range:'bytes=0-127'}});return{status:r.status,range:r.headers.get('Content-Range'),bytes:(await r.arrayBuffer()).byteLength}}''',clip)
  assert response['status']==206 and response['bytes']==128 and response['range'].startswith('bytes 0-127/')
- trainer_clip='audio/reading-trainer/rt-1-01.mp3'
+ trainer_clip='audio/reading-trainer/rt-1-01-sounds-v2.mp3'
  assert page.evaluate("p=>fetch(p,{headers:{Range:'bytes=0-127'}}).then(r=>r.status)",trainer_clip)==206
  page.wait_for_function('''()=>new Promise(resolve=>{const c=new MessageChannel();c.port1.onmessage=e=>resolve(e.data.mediaCount>0);navigator.serviceWorker.controller.postMessage({type:'PWA_STATUS'},[c.port2]);})''')
  page.evaluate('VocabApp.setJSON("learningStats",{...VocabApp.getStats(),pwaSentinel:"preserve-progress"})')
@@ -32,7 +32,7 @@ with sync_playwright() as p:
  assert page.evaluate("p=>fetch(p,{headers:{Range:'bytes=99999999-'}}).then(r=>r.status)",clip)==416
  for name in ['letters.html','reading.html','reading-trainer.html','vocabulary.html','skills.html#a1-01/writing','grammar.html','verbs.html','placement.html','exams.html','stories.html','books.html']:
   page.goto(BASE+'/'+name);page.wait_for_selector('main');assert page.evaluate('typeof VocabApp')=='object',name
- page.goto(BASE+'/reading-trainer.html');page.get_by_role('button',name='٣ · الكلمة كاملة',exact=True).tap();page.wait_for_function('window.__lastAudio&&!__lastAudio.paused');assert page.evaluate('__lastAudio.currentSrc').endswith(trainer_clip);page.locator('#rt-stop').tap()
+ page.goto(BASE+'/reading-trainer.html');page.get_by_role('button',name='٣ · الكلمة كاملة',exact=True).tap();page.wait_for_function('window.__lastAudio&&!__lastAudio.paused');assert page.evaluate('__lastAudio.dataset.readingSource')==trainer_clip;assert page.evaluate('__lastAudio.currentSrc').startswith('blob:');page.locator('#rt-stop').tap()
  page.goto(BASE+'/skills.html#a1-01/listening');page.get_by_role('button',name='◖ استمع: تسجيل فهم المسموع',exact=True).tap();page.wait_for_function('!document.getElementById("skills-audio").paused');page.evaluate('document.getElementById("skills-audio").pause()')
  page.goto(BASE+'/skills.html#a1-01/writing');page.locator('[data-draft=writing]').fill('أَتَدَرَّبُ دُونَ اتِّصَالٍ.');page.get_by_role('button',name='احفظ إجابتي',exact=True).tap();page.reload();expect(page.locator('[data-draft=writing]')).to_have_value('أَتَدَرَّبُ دُونَ اتِّصَالٍ.')
  page.goto(BASE+'/missing-lesson.html');expect(page.locator('h1')).to_have_text('أنت دون اتصال')

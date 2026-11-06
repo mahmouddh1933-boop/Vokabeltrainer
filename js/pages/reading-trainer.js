@@ -35,10 +35,11 @@
       return Number.isInteger(n) && n >= 0 && n < bank().length ? n : 0;
     };
     const current = () => bank()[index()];
+    const prefixLabel = (count) => t(count === 2 ? "أول حرفين" : `أول ${number(count)} حروف`, `erste ${count} Buchstaben`);
     const save = () => app.setJSON("learningStats", { ...app.getStats(), readingTrainerV1: state });
     const stageNames = () => ({
-      letters: t("أسماء الحروف", "Buchstabennamen"),
-      syllables: t("المقاطع الصوتية", "Silben"),
+      letters: t("الحروف مع حركاتها", "Buchstabenlaute mit Vokalen"),
+      prefixes: t("الدمج التراكمي", "Schrittweise verbinden"),
       word: t("الكلمة كاملة", "Ganzes Wort"),
     });
 
@@ -54,38 +55,109 @@
     let activeKey = "";
     let wordSpans = [];
     let letterButtons = [];
-    let syllableButtons = [];
+    let prefixButtons = [];
+    let audioReady = false;
+    let audioLoading = false;
+    let preparation = 0;
+    let preparationTimer = 0;
+    let controller = null;
+    let objectURL = null;
 
     function status(message, error = false) {
       $("rt-status").textContent = message;
       $("rt-status").classList.toggle("is-error", error);
     }
     function transport() {
+      $("rt-listen").disabled = audioLoading;
+      document.querySelectorAll("[data-play]").forEach((b) => { b.disabled = !audioReady; });
+      [...letterButtons, ...prefixButtons].forEach((b) => { b.disabled = !audioReady; });
       $("rt-pause").disabled = !session || !session.started;
       $("rt-pause").textContent = audio.paused && session?.started
         ? t("استئناف", "Fortsetzen") : t("إيقاف مؤقت", "Pause");
       $("rt-stop").disabled = !session;
       $("rt-listen").setAttribute("aria-pressed", String(!!session?.full));
     }
+    function prepareAudio(w) {
+      const token = ++preparation;
+      clearTimeout(preparationTimer);
+      controller?.abort();
+      controller = new AbortController();
+      audioReady = false;
+      audioLoading = true;
+      audio.removeAttribute("src");
+      audio.load();
+      if (objectURL) URL.revokeObjectURL(objectURL);
+      objectURL = null;
+      audio.dataset.readingWord = w.id;
+      audio.dataset.readingSource = w.path;
+      status(t("جارٍ تحميل صوت الكلمة…", "Wortaudio wird geladen…"));
+      transport();
+      const live = () => token === preparation;
+      const fail = () => {
+        if (!live()) return;
+        clearTimeout(preparationTimer);
+        audioLoading = false;
+        audioReady = false;
+        transport();
+        status(t("تعذّر تحميل صوت الكلمة. اضغط الاستماع لإعادة المحاولة، وتحقق من الاتصال أو مجلد audio في نسخة ZIP.",
+          "Wortaudio konnte nicht geladen werden. Tippe zum erneuten Laden auf Anhören und prüfe die Verbindung oder den Audioordner der ZIP-Version."), true);
+      };
+      const load = (url) => {
+        if (!live()) return;
+        audio.onloadedmetadata = () => {
+          if (!live()) return;
+          clearTimeout(preparationTimer);
+          audioLoading = false;
+          audioReady = true;
+          transport();
+          status(t("اضغط الاستماع، ثم اقرأ الكلمة بصوتك.", "Tippe auf Anhören und lies das Wort anschließend laut."));
+        };
+        audio.onerror = fail;
+        audio.preload = "auto";
+        audio.src = url;
+        audio.load();
+      };
+      preparationTimer = setTimeout(() => {
+        if (!live()) return;
+        controller.abort();
+        fail();
+      }, 15000);
+      // Memory-backed media is seekable even on simple static hosts that do
+      // not implement HTTP Range. This prevents a selected prefix/letter from
+      // accidentally playing the entire earlier part of the track.
+      if (location.protocol === "file:") load(w.path);
+      else fetch(w.path, { signal: controller.signal })
+        .then((r) => {
+          if (!r.ok) throw new Error("audio-http");
+          return r.arrayBuffer();
+        })
+        .then((bytes) => {
+          if (!live()) return;
+          objectURL = URL.createObjectURL(new Blob([bytes], { type: "audio/mpeg" }));
+          load(objectURL);
+        })
+        .catch((error) => { if (error.name !== "AbortError") fail(); });
+    }
     function highlight(event) {
       const key = event ? `${event.stage}:${event.index}` : "";
       if (key === activeKey) return;
       activeKey = key;
       const w = current();
-      const indices = event?.stage === "letters" ? [event.index]
-        : event?.stage === "syllables" ? w.syllables[event.index].letters
+      const indices = event?.stage === "letters" ? w.sounds[event.index].letters
+        : event?.stage === "prefixes" ? w.prefixes[event.index].letters
           : event?.stage === "word" ? wordSpans.map((_, i) => i) : [];
       wordSpans.forEach((s, i) => s.classList.toggle("rt-active", indices.includes(i)));
       letterButtons.forEach((b, i) => b.classList.toggle("rt-active", event?.stage === "letters" && i === event.index));
-      syllableButtons.forEach((b, i) => b.classList.toggle("rt-active", event?.stage === "syllables" && i === event.index));
+      prefixButtons.forEach((b, i) => b.classList.toggle("rt-active", event?.stage === "prefixes" && i === event.index));
       document.querySelectorAll("#rt-stages li").forEach((li) => {
         if (li.dataset.stage === event?.stage) li.setAttribute("aria-current", "step");
         else li.removeAttribute("aria-current");
       });
       if (event) {
-        const text = event.stage === "letters" ? w.letters[event.index].name
-          : event.stage === "syllables" ? w.syllables[event.index].text : w.word;
-        $("rt-current").textContent = `${stageNames()[event.stage]}: ${text}`;
+        const text = event.stage === "letters" ? w.sounds[event.index].spokenText
+          : event.stage === "prefixes" ? w.prefixes[event.index].text : w.word;
+        const step = event.stage === "prefixes" ? ` · ${prefixLabel(w.prefixes[event.index].count)}` : "";
+        $("rt-current").textContent = `${stageNames()[event.stage]}${step}: ${text}`;
       } else $("rt-current").textContent = "";
     }
     function stop(clearStatus = true) {
@@ -129,6 +201,10 @@
       if (session) frame = requestAnimationFrame(() => animate(token));
     }
     function play(stage = "all", onlyIndex = null) {
+      if (!audioReady) {
+        if (!audioLoading) prepareAudio(current());
+        return;
+      }
       stop();
       app.stopSpeech();
       const w = current();
@@ -148,14 +224,11 @@
             "Wortaudio konnte nicht abgespielt werden. Versuche es erneut. Prüfe die Verbindung oder bei der ZIP-Version den Ordner audio."), true);
       };
       audio.playbackRate = state.speed;
-      audio.onloadedmetadata = () => {
-        if (live()) audio.currentTime = start;
-      };
       audio.onplaying = () => {
         if (!live()) return;
         session.started = true;
         clearTimeout(loadingTimer);
-        status(t("استمع وتابع الحرف أو المقطع الملوَّن.", "Höre zu und folge der markierten Stelle."));
+        status(t("استمع وتابع الحرف أو بداية الكلمة الملوَّنة.", "Höre zu und folge dem markierten Laut oder Wortanfang."));
         transport();
         cancelAnimationFrame(frame);
         animate(token);
@@ -175,8 +248,7 @@
       loadingTimer = setTimeout(() => fail(), 15000);
       try {
         audio.currentTime = start;
-        // Keep play() inside the tap event. The metadata handler reapplies a
-        // seek if the browser has not loaded duration information yet.
+        // Media is already loaded and seekable. Keep play() inside the tap.
         const result = audio.play();
         result?.catch(fail);
       } catch (error) { fail(error); }
@@ -229,18 +301,20 @@
       $("rt-word").replaceChildren(...wordSpans);
       $("rt-word").setAttribute("aria-label", w.word);
       $("rt-meaning").textContent = w.de;
-      letterButtons = w.letters.map((l, i) => {
-        const b = button(l.text, () => play("letters", i));
-        b.setAttribute("aria-label", t(`استمع لاسم الحرف: ${l.name}`, `Buchstabennamen hören: ${l.name}`));
+      letterButtons = w.sounds.map((sound, i) => {
+        const b = button(sound.text, () => play("letters", i));
+        b.setAttribute("aria-label", t(`استمع للصوت: ${sound.spokenText}`, `Laut hören: ${sound.spokenText}`));
+        b.title = sound.context ? t(`نقرأه في سياقه: ${sound.spokenText}`, `Im Wortzusammenhang: ${sound.spokenText}`) : sound.text;
         return b;
       });
-      syllableButtons = w.syllables.map((s, i) => {
-        const b = button(s.text, () => play("syllables", i));
-        b.setAttribute("aria-label", t(`استمع للمقطع: ${s.text}`, `Silbe hören: ${s.text}`));
+      prefixButtons = w.prefixes.map((prefix, i) => {
+        const b = button(prefix.text, () => play("prefixes", i));
+        b.setAttribute("aria-label", t(`دمج ${prefixLabel(prefix.count)}: ${prefix.text}`, `${prefixLabel(prefix.count)} verbinden: ${prefix.text}`));
+        b.dataset.count = String(prefix.count);
         return b;
       });
       $("rt-letter-strip").replaceChildren(...letterButtons);
-      $("rt-syllables").replaceChildren(...syllableButtons);
+      $("rt-prefixes").replaceChildren(...prefixButtons);
       $("rt-word-grid").replaceChildren(...bank().map((word, i) => {
         const b = button(word.word, () => selectWord(i, true));
         if (i === index()) b.setAttribute("aria-current", "true");
@@ -249,10 +323,8 @@
       $("rt-prev").disabled = index() === 0;
       $("rt-next").disabled = index() === bank().length-1;
       $("rt-speed").value = String(state.speed);
-      audio.src = w.path;
-      audio.load();
       progress();
-      status(t("اضغط الاستماع، ثم اقرأ الكلمة بصوتك.", "Tippe auf Anhören und lies das Wort anschließend laut."));
+      prepareAudio(w);
     }
     $("rt-listen").onclick = () => play();
     document.querySelectorAll("[data-play]").forEach((b) => { b.onclick = () => play(b.dataset.play); });
@@ -291,8 +363,12 @@
       lang = event.detail.lang === "de" ? "de" : "ar";
       render();
     });
-    window.addEventListener("pagehide", () => stop());
-    document.addEventListener("visibilitychange", () => { if (document.hidden) stop(); });
+    window.addEventListener("pagehide", () => { stop(); controller?.abort(); clearTimeout(preparationTimer); });
+    window.addEventListener("pageshow", (e) => { if (e.persisted && !audioReady) prepareAudio(current()); });
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) stop();
+      else if (!audioReady) prepareAudio(current());
+    });
     render();
     $("lesson-loading")?.remove();
   });

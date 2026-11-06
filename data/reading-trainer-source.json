@@ -121,7 +121,7 @@
       "id": "3",
       "ar": "المستوى ٣ · الشدّة والكلمات الأطول",
       "de": "Stufe 3 · Schadda und längere Wörter",
-      "description": {"ar": "شدّة وهمزات وكلمات أطول من الحياة اليومية. نفكّ الشدّة عند تقطيع المقاطع إلى حرف ساكن وآخر متحرك.", "de": "Verdoppelte Konsonanten, Hamza und längere Alltagswörter. Bei der Silbengliederung wird die Schadda in zwei Konsonanten aufgelöst."},
+      "description": {"ar": "شدّة وهمزات وكلمات أطول من الحياة اليومية. استمع إلى الحروف مع حركاتها، ثم اقرأ بداية الكلمة وأضف حرفًا في كل خطوة.", "de": "Schadda, Hamza und längere Alltagswörter. Höre die vokalisierten Laute und verbinde dann die Wortanfänge mit jeweils einem weiteren Buchstaben."},
       "words": [
         ["أُمّْ", "Mutter"],
         ["دُبّْ", "Bär"],

@@ -1,4 +1,4 @@
-"""Real mobile audio, clock highlights, cancellation, saved progress and AR/DE layouts."""
+"""Real vowel sounds, cumulative prefixes, clock highlights, persistence and AR/DE layouts."""
 import argparse, unicodedata
 from pathlib import Path
 from playwright.sync_api import sync_playwright, expect
@@ -21,12 +21,12 @@ with sync_playwright() as pw:
         setInterval(()=>{
           const a=window.__rtAudio,D=window.ArabicReadingTrainer;
           if(!a||a.paused||!D)return;
-          const w=D.words.find(w=>a.src.endsWith(w.path));if(!w)return;
+          const w=D.words.find(w=>w.id===a.dataset.readingWord);if(!w)return;
           const e=w.events.find(e=>a.currentTime>e.start+.09&&a.currentTime<e.end-.09);if(!e)return;
           const li=document.querySelector('#rt-stages [aria-current="step"]');
           if(!li)return;
           const actual=[...document.querySelector('#rt-word').children].flatMap((n,i)=>n.classList.contains('rt-active')?[i]:[]);
-          const expected=e.stage==='letters'?[e.index]:e.stage==='syllables'?w.syllables[e.index].letters:w.letters.map((_,i)=>i);
+          const expected=e.stage==='letters'?w.sounds[e.index].letters:e.stage==='prefixes'?w.prefixes[e.index].letters:w.letters.map((_,i)=>i);
           window.__seen.push(e.stage+':'+e.index);
           if(li.dataset.stage!==e.stage||JSON.stringify(actual)!==JSON.stringify(expected))window.__mismatches.push({time:a.currentTime,e,actual,expected});
         },35);
@@ -43,10 +43,10 @@ with sync_playwright() as pw:
     assert page.locator('.app-sidebar a[aria-current=page]').get_attribute('href') == 'reading.html'
     assert page.locator('#rt-word-select option').count()==50
     expect(page.locator('#rt-word')).to_have_text('كَتَبَ')
-    # A completed real track must light every letter, every syllable and the word.
+    # A completed real track must light every vowel sound, growing prefix and word.
     page.locator('#rt-listen').tap()
     page.wait_for_function("VocabApp.getStats().readingTrainerV1?.heard.includes('rt-1-01')",timeout=25000)
-    assert set(page.evaluate('__seen')) == {'letters:0','letters:1','letters:2','syllables:0','syllables:1','syllables:2','word:0'}
+    assert set(page.evaluate('__seen')) == {'letters:0','letters:1','letters:2','prefixes:0','prefixes:1','word:0'}
     assert not page.evaluate('__mismatches'),page.evaluate('__mismatches')
     assert page.locator('#rt-word .rt-active').count()==0
     page.locator('#rt-self-read').tap();page.reload()
@@ -64,7 +64,7 @@ with sync_playwright() as pw:
     page.locator('#rt-stop').tap();assert page.evaluate('__rtAudio.paused')
     assert not page.evaluate("VocabApp.getStats().readingTrainerV1.heard.includes('rt-1-02')")
     # A stage-only/individual replay cannot count as hearing the complete track.
-    for selector in ['[data-play=word]','#rt-letter-strip button:first-child','#rt-syllables button:first-child']:
+    for selector in ['[data-play=word]','#rt-letter-strip button:first-child','#rt-prefixes button:first-child']:
         page.locator(selector).tap()
         page.wait_for_function('!document.querySelector("#rt-status").textContent.includes("جارٍ")')
         page.wait_for_function('document.querySelector("#rt-stop").disabled',timeout=12000)
@@ -80,7 +80,20 @@ with sync_playwright() as pw:
     page.locator('#rt-listen').tap()
     page.wait_for_function("id=>VocabApp.getStats().readingTrainerV1.heard.includes(id)",arg=teacher['id'],timeout=25000)
     assert not page.evaluate('__mismatches'),page.evaluate('__mismatches')
-    assert 'syllables:1' in page.evaluate('__seen') and 'syllables:2' in page.evaluate('__seen')
+    assert 'prefixes:1' in page.evaluate('__seen') and 'prefixes:2' in page.evaluate('__seen')
+    # المدرسة-style reading is cumulative, not disjoint syllables.
+    page.locator('[data-level="2"]').tap()
+    school=next(w for w in data['words'] if w['word']==unicodedata.normalize('NFC','مَدْرَسَة'))
+    school_index=[w['id'] for w in data['words'] if w['level']=='2'].index(school['id'])
+    page.locator('#rt-word-select').select_option(str(school_index))
+    assert page.locator('#rt-prefixes button').all_text_contents()==['مَدْ','مَدْرَ','مَدْرَسَ','مَدْرَسَة']
+    assert page.locator('#rt-prefixes button').evaluate_all('nodes=>nodes.map(n=>n.dataset.count)')==['2','3','4','5']
+    page.evaluate('__seen=[];__mismatches=[]')
+    page.locator('[data-play=prefixes]').tap()
+    page.wait_for_function('document.querySelector("#rt-stop").disabled',timeout=16000)
+    assert set(page.evaluate('__seen'))=={'prefixes:0','prefixes:1','prefixes:2','prefixes:3'},page.evaluate('({seen:[...new Set(__seen)],mismatches:__mismatches})')
+    assert not page.evaluate('__mismatches'),page.evaluate('__mismatches')
+    assert not page.evaluate("id=>VocabApp.getStats().readingTrainerV1.heard.includes(id)",school['id'])
     # Every word fits a 320px phone, including the longest words with diacritics.
     page.set_viewport_size({'width':320,'height':900})
     for level in ['1','2','3']:
@@ -113,18 +126,18 @@ with sync_playwright() as pw:
     page.locator('#rt-next').tap();page.wait_for_timeout(500)
     assert page.evaluate('__rtAudio.paused') and page.locator('#rt-word .rt-active').count()==0
     if not args.file:
-        page.route('**/audio/reading-trainer/rt-2-01.mp3', lambda r:r.abort())
+        page.route('**/audio/reading-trainer/rt-2-01-sounds-v2.mp3', lambda r:r.abort())
         page.locator('[data-level="2"]').tap()
         page.locator('#rt-word-select').select_option('0')
         page.locator('#rt-listen').tap()
         page.wait_for_selector('#rt-status.is-error',timeout=18000)
         assert not page.evaluate("VocabApp.getStats().readingTrainerV1.heard.includes('rt-2-01')")
         assert page.locator('#rt-stop').is_disabled()
-        page.unroute('**/audio/reading-trainer/rt-2-01.mp3')
+        page.unroute('**/audio/reading-trainer/rt-2-01-sounds-v2.mp3')
         page.goto(base+'/reading.html')
         assert page.locator('a[href="reading-trainer.html"]').count()==1
         assert page.locator('#phonics-modes button').count()==4
     assert not errors,errors
     assert not bad,bad
     browser.close()
-    print('PASS actual local audio and clock highlights, three stages, shared shadda ranges, pause/resume/speed, cancellation, progress, all 150 words at 320px and AR/DE layouts',flush=True)
+    print('PASS vowel sounds, cumulative 2/3/4/5-letter prefixes and clock highlights, pause/resume/speed, cancellation, progress, all 150 words at 320px and AR/DE layouts',flush=True)

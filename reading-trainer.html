@@ -12,19 +12,19 @@
     <link rel="stylesheet" href="css/olive-theme.css?v=2a69ab7dd182" />
     <link rel="stylesheet" href="css/auth.css?v=193e81c25a14" />
     <link rel="stylesheet" href="css/learning-route.css?v=e9bb6804b86d" />
-    <link rel="stylesheet" href="css/reading-trainer.css?v=1aed7cc78022" />
+    <link rel="stylesheet" href="css/reading-trainer.css?v=a1aecd996900" />
     <script src="js/storage.js?v=234b995827cd" defer></script>
     <script src="js/firebase-config.js?v=8c7993a85b2c" defer></script>
     <script src="js/access-client.js?v=6d7404b1ce0e" defer></script>
     <script src="js/auth-session.js?v=328a881b2d5c" defer></script>
     <script src="js/app.js?v=967453105b0c" defer></script>
-    <script src="js/reading-trainer-data.js?v=bc0080d62292" defer></script>
+    <script src="js/reading-trainer-data.js?v=e91e56fd7e88" defer></script>
     <script src="data/vocab_catalog_labels.js?v=77de3e826c87" defer></script>
     <script src="js/interface-languages.js?v=d233aae47963" defer></script>
     <script src="js/learning-path.js?v=d1c2f9b5f022" defer></script>
     <script src="js/design.js?v=54c2ca0d33c6" defer></script>
     <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
-    <script src="js/pages/reading-trainer.js?v=2738527a7b28" defer></script>
+    <script src="js/pages/reading-trainer.js?v=ff1440a87108" defer></script>
     <meta name="application-name" content="حروف من الزيتون" />
     <link rel="icon" href="images/brand/olive-symbol.svg" type="image/svg+xml" />
     <link rel="manifest" href="manifest.webmanifest" />
@@ -69,16 +69,16 @@
         </div>
         <p id="rt-status" class="rt-status" role="status" aria-live="polite"></p>
         <ol id="rt-stages" class="rt-stages">
-          <li data-stage="letters"><button type="button" class="practice-button" data-play="letters" data-ar="١ · أسماء الحروف" data-de="1 · Buchstabennamen">١ · أسماء الحروف</button></li>
-          <li data-stage="syllables"><button type="button" class="practice-button" data-play="syllables" data-ar="٢ · المقاطع الصوتية" data-de="2 · Silben">٢ · المقاطع الصوتية</button></li>
+          <li data-stage="letters"><button type="button" class="practice-button" data-play="letters" data-ar="١ · الحروف مع حركاتها" data-de="1 · Laute mit Vokalen">١ · الحروف مع حركاتها</button></li>
+          <li data-stage="prefixes"><button type="button" class="practice-button" data-play="prefixes" data-ar="٢ · الدمج التراكمي" data-de="2 · Schrittweise verbinden">٢ · الدمج التراكمي</button></li>
           <li data-stage="word"><button type="button" class="practice-button" data-play="word" data-ar="٣ · الكلمة كاملة" data-de="3 · Ganzes Wort">٣ · الكلمة كاملة</button></li>
         </ol>
         <p id="rt-current" class="rt-current" aria-live="off"></p>
-        <p class="rt-strip-label" data-ar="الحروف المكتوبة" data-de="Geschriebene Buchstaben">الحروف المكتوبة</p>
-        <div id="rt-letter-strip" class="rt-letter-strip" lang="ar" dir="rtl" role="group" aria-label="الحروف / Buchstaben"></div>
-        <p class="rt-strip-label" data-ar="المقاطع الصوتية" data-de="Silben">المقاطع الصوتية</p>
-        <div id="rt-syllables" class="rt-syllables" lang="ar" dir="rtl" role="group" aria-label="المقاطع / Silben"></div>
-        <p class="rt-note" data-ar="اضغط حرفًا أو مقطعًا لإعادته. في الخطوة الأولى نسمّي الحروف؛ وفي الثانية نقرأ أصواتها مجتمعة في مقاطع. حرف المد والساكن يبقيان مع ما قبلهما. تُفكّ الشدّة في المقاطع، وتُقرأ التاء المربوطة هاءً عند الوقف." data-de="Tippe auf einen Buchstaben oder eine Silbe, um ihn oder sie zu wiederholen. Zuerst hörst du Buchstabennamen, danach verbundene Laute als Silben. Lange Vokale und Konsonanten mit Sukūn bleiben bei der vorigen Einheit. Schadda wird in den Silben aufgelöst; Tāʾ marbūṭa klingt in der Pausenform wie h.">اضغط حرفًا أو مقطعًا لإعادته. في الخطوة الأولى نسمّي الحروف؛ وفي الثانية نقرأ أصواتها مجتمعة في مقاطع. حرف المد والساكن يبقيان مع ما قبلهما. تُفكّ الشدّة في المقاطع، وتُقرأ التاء المربوطة هاءً عند الوقف.</p>
+        <p class="rt-strip-label" data-ar="الحروف مع حركاتها" data-de="Laute mit Vokalen">الحروف مع حركاتها</p>
+        <div id="rt-letter-strip" class="rt-letter-strip" lang="ar" dir="rtl" role="group" aria-label="الحروف مع حركاتها / Laute mit Vokalen"></div>
+        <p class="rt-strip-label" data-ar="ابدأ بأول حرفين، ثم أضف حرفًا في كل خطوة" data-de="Erst zwei Buchstaben, dann jeweils einen mehr">ابدأ بأول حرفين، ثم أضف حرفًا في كل خطوة</p>
+        <div id="rt-prefixes" class="rt-prefixes" lang="ar" dir="rtl" role="group" aria-label="بدايات الكلمة المتراكمة / Wachsende Wortanfänge"></div>
+        <p class="rt-note" data-ar="اضغط صوتًا أو بداية كلمة لإعادتها. نلفظ كَ، كِ، كُ مع الحركة المكتوبة، وحروف المد بصوتها الطويل. يُسمع الساكن والمشدّد في سياقهما دون إضافة حركة؛ يلوَّن الجزء المسموع. ثم ندمج أول حرفين، فأول ثلاثة، فأول أربعة، حتى تكتمل الكلمة. تُقرأ التاء المربوطة هاءً عند الوقف." data-de="Tippe auf einen Laut oder Wortanfang zum Wiederholen. Du hörst ka, ki oder ku mit dem geschriebenen Vokal, lange Vokale als lange Laute. Sukūn und Schadda hörst du im Wortzusammenhang ohne zusätzlichen Vokal; der gehörte Teil wird markiert. Danach verbinden wir die ersten zwei, drei, vier Buchstaben bis zum ganzen Wort. Tāʾ marbūṭa klingt in der Pausenform wie h.">اضغط صوتًا أو بداية كلمة لإعادتها. نلفظ كَ، كِ، كُ مع الحركة المكتوبة، وحروف المد بصوتها الطويل. يُسمع الساكن والمشدّد في سياقهما دون إضافة حركة؛ يلوَّن الجزء المسموع. ثم ندمج أول حرفين، فأول ثلاثة، فأول أربعة، حتى تكتمل الكلمة. تُقرأ التاء المربوطة هاءً عند الوقف.</p>
         <button id="rt-self-read" class="practice-button rt-self-read" type="button" aria-pressed="false"></button>
         <p class="rt-note" data-ar="علامة «قرأتُها بنفسي» لتتبّع تدريبك فقط؛ لا يُسجّل الميكروفون صوتك ولا يُقيَّم النطق آليًا." data-de="Die Markierung „Selbst gelesen“ erfasst dein Üben. Das Mikrofon wird nicht verwendet; die Aussprache wird nicht automatisch bewertet.">علامة «قرأتُها بنفسي» لتتبّع تدريبك فقط؛ لا يُسجّل الميكروفون صوتك ولا يُقيَّم النطق آليًا.</p>
       </section>

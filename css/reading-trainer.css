@@ -4,7 +4,7 @@
   font-weight: 400 700;
   font-display: swap;
 }
-.rt-levels, .rt-transport, .rt-navigation, .rt-letter-strip, .rt-syllables {
+.rt-levels, .rt-transport, .rt-navigation, .rt-letter-strip, .rt-prefixes {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -55,8 +55,8 @@
 .reading-trainer-page .rt-stages li[aria-current="step"] button { background: #f4dfab !important; color: #66341f !important; border-color: #9a6c2b !important; box-shadow: inset 0 -3px #9a6c2b; }
 .rt-current { min-height: 2em; color: #734022; font-size: 1.1rem; text-align: center; }
 .rt-strip-label { text-align: center; font-weight: 600; font-size: 1rem; margin: 12px 0 4px; }
-.rt-letter-strip, .rt-syllables { justify-content: center; margin-block: 12px; }
-.reading-trainer-page .rt-letter-strip button, .reading-trainer-page .rt-syllables button,
+.rt-letter-strip, .rt-prefixes { justify-content: center; margin-block: 12px; }
+.reading-trainer-page .rt-letter-strip button, .reading-trainer-page .rt-prefixes button,
 .reading-trainer-page .rt-word-grid button {
   font-family: "Reading Naskh", "Noto Naskh Arabic", serif;
   line-height: 2;
@@ -81,7 +81,7 @@
   .rt-stages { gap: 6px; }
   .rt-stages li { flex: 1 1 75px; }
   .rt-stages button { font-size: .9rem; min-height: 64px; }
-  .rt-letter-strip, .rt-syllables { gap: 7px; }
+  .rt-letter-strip, .rt-prefixes { gap: 7px; }
   .reading-trainer-page .rt-letter-strip button { min-width: 46px; padding-inline: 8px; }
   .rt-transport button { padding-inline: 12px; }
 }
