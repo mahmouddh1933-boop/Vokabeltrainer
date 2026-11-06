@@ -80,9 +80,11 @@ def reading_sounds(word):
             indices=[i]
             spoken=g
         elif long:
-            ipa=long+'ː'
-            indices=[i]
-            spoken=g
+            # A bare ا/و/ي would be read as a letter name by text TTS.
+            # Keep the actual preceding consonant and its long vowel together.
+            indices=[i-1,i]
+            spoken=''.join(gs[i-1:i+1])
+            ipa=phonemes(spoken)
         else:
             # Includes final sukūn, geminated codas and the pausal /h/ of ة.
             start=i-1 if v and 'ّ' in g else i

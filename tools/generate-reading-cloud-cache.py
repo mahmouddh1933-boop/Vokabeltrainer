@@ -7,11 +7,18 @@ from pathlib import Path
 import json,hashlib,time,urllib.request,urllib.parse,unicodedata
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime,timezone
+from reading_trainer_phonetics import reading_sounds,reading_prefixes,whole_ipa
 ROOT=Path(__file__).resolve().parents[1];out=ROOT/'audio/reading-cloud-cache';out.mkdir(exist_ok=True)
 source=json.loads((ROOT/'data/reading-trainer-source.json').read_text())
 words=[unicodedata.normalize('NFC',l.get('spellings',{}).get(s,s.replace('|',''))) for l in source['levels'] for s,_ in l['words']]
 samples=['ذَ','هَ','بَ','كَ','كِ','كُ','ذَهَ','كَتَ','مَدْ','مَدْرَ','مَدْرَسَ','كِتَ','كِتَا', 'ذَـ','هَـ','بَـ','كَـ','كِـ','كُـ']
-texts=list(dict.fromkeys(samples+words))
+fragments=[]
+for level in source['levels']:
+ for segmented,_ in level['words']:
+  word=unicodedata.normalize('NFC',level.get('spellings',{}).get(segmented,segmented.replace('|','')))
+  fragments.extend(s['spokenText'] for s in reading_sounds(word))
+  fragments.extend(p['text'] for p in reading_prefixes(word,whole_ipa(segmented.split('|'))))
+texts=list(dict.fromkeys(samples+words+fragments))
 def make(text):
  target=out/(hashlib.sha256(text.encode()).hexdigest()[:20]+'.mp3')
  for attempt in range(3):
