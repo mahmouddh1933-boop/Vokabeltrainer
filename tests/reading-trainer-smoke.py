@@ -126,14 +126,14 @@ with sync_playwright() as pw:
     page.locator('#rt-next').tap();page.wait_for_timeout(500)
     assert page.evaluate('__rtAudio.paused') and page.locator('#rt-word .rt-active').count()==0
     if not args.file:
-        page.route('**/audio/reading-trainer/rt-2-01-sounds-v2.mp3', lambda r:r.abort())
+        page.route('**/audio/reading-trainer/rt-2-01-voice-v3.mp3', lambda r:r.abort())
         page.locator('[data-level="2"]').tap()
         page.locator('#rt-word-select').select_option('0')
         page.locator('#rt-listen').tap()
         page.wait_for_selector('#rt-status.is-error',timeout=18000)
         assert not page.evaluate("VocabApp.getStats().readingTrainerV1.heard.includes('rt-2-01')")
         assert page.locator('#rt-stop').is_disabled()
-        page.unroute('**/audio/reading-trainer/rt-2-01-sounds-v2.mp3')
+        page.unroute('**/audio/reading-trainer/rt-2-01-voice-v3.mp3')
         page.goto(base+'/reading.html')
         assert page.locator('a[href="reading-trainer.html"]').count()==1
         assert page.locator('#phonics-modes button').count()==4

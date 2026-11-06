@@ -9,7 +9,7 @@ const norm = (s) => s.normalize('NFC');
 const word = (s) => D.words.find((w) => w.word === norm(s));
 
 test('150 vocalized words retain three levels of 50 and contain sounds instead of letter names', () => {
-  assert.equal(D.version, 2);
+  assert.equal(D.version, 3);
   assert.equal(D.words.length, 150);
   assert.equal(new Set(D.words.map((w) => w.word)).size, 150);
   assert.equal(new Set(D.words.map((w) => w.id)).size, 150);
@@ -29,20 +29,34 @@ test('150 vocalized words retain three levels of 50 and contain sounds instead o
   }
 });
 
-test('independent sound fixtures pronounce ka/ki/ku, ja and wa without any letter-name phones', () => {
+test('written sound references preserve ka/ki/ku, ja and wa without letter-name phones', () => {
   assert.deepEqual(word('كَتَبَ').sounds.map((s) => s.spokenText), ['كَ','تَ','بَ']);
   assert.deepEqual(word('كَتَبَ').sounds.map((s) => s.phonemes), ['kˈa','tˈa','bˈa']);
   assert.equal(word('كِتَابْ').sounds[0].phonemes, 'kˈi');
   assert.equal(word('كُرْسِيّْ').sounds[0].phonemes, 'kˈu');
   assert.equal(word('جَلَسَ').sounds[0].phonemes, 'dʒˈa');
   assert.equal(word('وَقَفَ').sounds[0].phonemes, 'wˈa');
-  assert.equal(word('كِتَابْ').sounds[2].phonemes, 'ˈaː');
+  assert.equal(word('كِتَابْ').sounds[2].phonemes, 'tˈaː');
   assert.equal(word('كِتَابْ').sounds[3].spokenText, 'تَابْ');
   assert.deepEqual(word('كِتَابْ').sounds[3].letters, [1,2,3]);
   assert.equal(word('مَدْرَسَة').sounds[1].spokenText, 'مَدْ');
   assert.equal(word('مُعَلِّمْ').sounds[2].phonemes, 'ʕˈalli');
   assert.equal(word('مَدْرَسَة').sounds.at(-1).phonemes, 'sˈah');
   for (const w of D.words) for (const s of w.sounds) assert(!/كَاف|بَاء|تَاء|جِيم|وَاو/u.test(s.spokenText));
+});
+
+test('reported dahaba regression uses three distinct recordings and retains the acoustic diagnostic for the actual track', () => {
+  const w = word('ذَهَبَ');
+  const clip = M.clips.find((c) => c.id === w.id);
+  assert.equal(new Set(clip.events.filter((e) => e.stage === 'letters').map((e) => e.sourceSha256)).size, 3);
+  const report = require('../docs/READING-VOICE-AUDIT.json');
+  const check = report.results.find((r) => r.id === w.id);
+  assert.equal(check.word, w.word);
+  assert.equal(typeof check.recognized, 'string');
+  assert(check.recognized.length > 0);
+  assert.equal(check.trackSha256, clip.sha256);
+  assert.equal(check.sourceSha256, clip.events.at(-1).sourceSha256);
+  assert.equal(report.humanPhoneticReview, false);
 });
 
 test('cumulative reading begins with the first two written letters and grows by exactly one to the full word', () => {
@@ -68,18 +82,20 @@ test('cumulative reading begins with the first two written letters and grows by 
 });
 
 test('all corrected local tracks have new cache-safe URLs, verified bytes, and sound/prefix/word clock events', () => {
-  assert.equal(M.version, 2);
+  assert.equal(M.version, 3);
   assert.equal(M.clips.length, 150);
   assert.equal(new Set(M.clips.map((c) => c.path)).size, 150);
   assert.equal(fs.readdirSync(path.join(__dirname,'../audio/reading-trainer')).filter((n) => n.endsWith('.mp3')).length, 150);
   for (const w of D.words) {
     const c = M.clips.find((c) => c.id === w.id);
-    assert(c.path.endsWith('-sounds-v2.mp3'));
+    assert(c.path.endsWith('-voice-v3.mp3'));
     assert(!fs.existsSync(path.join(__dirname,'../audio/reading-trainer',w.id+'.mp3')));
     const bytes = fs.readFileSync(path.join(__dirname, '..', c.path));
     assert(bytes.length > 15000);
     assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), c.sha256);
     assert.equal(c.text, w.word);
+    assert.match(M.provider,/Google Translate/);
+    assert(c.events.every((e)=>/^[a-f0-9]{64}$/.test(e.sourceSha256)));
     assert.deepEqual(w.events, c.events);
     assert(c.seconds > 3 && c.seconds < 45);
     const expected=[...w.sounds.map((s)=>({stage:'letters',text:s.spokenText,ipa:s.phonemes})),

@@ -19,7 +19,7 @@ with sync_playwright() as p:
  clip='audio/skills/a1-01-listening.mp3'
  response=page.evaluate('''async path=>{const r=await fetch(path,{headers:{Range:'bytes=0-127'}});return{status:r.status,range:r.headers.get('Content-Range'),bytes:(await r.arrayBuffer()).byteLength}}''',clip)
  assert response['status']==206 and response['bytes']==128 and response['range'].startswith('bytes 0-127/')
- trainer_clip='audio/reading-trainer/rt-1-01-sounds-v2.mp3'
+ trainer_clip='audio/reading-trainer/rt-1-01-voice-v3.mp3'
  assert page.evaluate("p=>fetch(p,{headers:{Range:'bytes=0-127'}}).then(r=>r.status)",trainer_clip)==206
  page.wait_for_function('''()=>new Promise(resolve=>{const c=new MessageChannel();c.port1.onmessage=e=>resolve(e.data.mediaCount>0);navigator.serviceWorker.controller.postMessage({type:'PWA_STATUS'},[c.port2]);})''')
  page.evaluate('VocabApp.setJSON("learningStats",{...VocabApp.getStats(),pwaSentinel:"preserve-progress"})')

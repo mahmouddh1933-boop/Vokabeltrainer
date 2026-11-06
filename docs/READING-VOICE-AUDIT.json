@@ -1,0 +1,1361 @@
+{
+  "provider": "Google Translate TTS (ar), normal rate inside a spoken carrier; target extracted after sentence pause; downloaded and compiled locally",
+  "method": "Whisper-small int8, Arabic transcription, three audio repetitions, no expected-text prompt.",
+  "limitations": "Single-word transcription can differ in spelling and inflection. This is not a human phonetic review or validation of every vowel.",
+  "humanPhoneticReview": false,
+  "count": 150,
+  "exactWordFound": 31,
+  "meanMinimumCharacterErrorRate": 0.483,
+  "results": [
+    {
+      "id": "rt-1-01",
+      "word": "كَتَبَ",
+      "recognized": "كتبا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "7543efb7745c3006d060166e1b4bf25643fa13868df3f80d1a7b5c249e657520",
+      "sourceSha256": "ab0327d690ef76daaf7dacccadd38ee66ed970c181f2222073edf2e079a92e66"
+    },
+    {
+      "id": "rt-1-02",
+      "word": "قَرَأَ",
+      "recognized": "كرا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "d4b45f4c615bace8063edad639410e023efcce3f7750e43104f954d628347e07",
+      "sourceSha256": "f23767d2b3d0bbdd43e305f6cb9d9ae6e07c17294878069640e48ddef6d9ad97"
+    },
+    {
+      "id": "rt-1-03",
+      "word": "أَكَلَ",
+      "recognized": "أكلة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "69e7bdd10d3195f5b178e85cf6c76e4bfa0849f8215a19557be0bb5ccb4f5e3d",
+      "sourceSha256": "4602346aa605cef34d70c4a24dfe266740c3f0d584b1df64c0b2ef656502a7a8"
+    },
+    {
+      "id": "rt-1-04",
+      "word": "شَرِبَ",
+      "recognized": "شريبة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "6c03b274c1a2a5554a99ff92d8556b4506fc5be1cf9ee164e2a1ab393d6473b9",
+      "sourceSha256": "0ae29bd6811bb8f71ff311226dd472f4596eed056a8f38bbc7643a7b2e1cd2b6"
+    },
+    {
+      "id": "rt-1-05",
+      "word": "لَعِبَ",
+      "recognized": "لعبة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "372216520bf2e0512a40eea91c6cab8a19d76f18bb2b3b3afac85bc66b156abd",
+      "sourceSha256": "1fe732738af1b00852717805c4339ea8a0e6b1613acef141b7eae62480bd7ebe"
+    },
+    {
+      "id": "rt-1-06",
+      "word": "رَسَمَ",
+      "recognized": "براسما",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "9bdca1c70a29b1d57b64024a4d16b47fb49181144f7a9e9836963befa9c4620c",
+      "sourceSha256": "8f27604ce69ee685742c0c38e03f92e67a766b9e3c4d261bf0292a86de133726"
+    },
+    {
+      "id": "rt-1-07",
+      "word": "جَلَسَ",
+      "recognized": "جلسة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "0102d47851cff097e023f363c200a9df542380f1000214272253d92b6d03f5b8",
+      "sourceSha256": "c983f0c1cabaf289c1eb87e6ed65a205e477317cf23f6b603f5740fe0d87e3ce"
+    },
+    {
+      "id": "rt-1-08",
+      "word": "وَقَفَ",
+      "recognized": "وقثة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "e00bd0991fd629af5feda2df324c09b168dbf5794c84352c54da25b0c4fb5eef",
+      "sourceSha256": "dfffecde7f2c16eb94e6f6837c82d2f6fe89be5e6eed28724e36594c36695b21"
+    },
+    {
+      "id": "rt-1-09",
+      "word": "خَرَجَ",
+      "recognized": "خلجة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "a82c467ebc6a04b7984e9853af0e4f6f01e784fdf3b607395be289997e54b258",
+      "sourceSha256": "c7e77ceaa5858419e57f0366bb5c14ca72b2b32019839dabdd98f5f22f756fb5"
+    },
+    {
+      "id": "rt-1-10",
+      "word": "دَخَلَ",
+      "recognized": "دخلا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "dbc68aa3e720f77ada89fe6f9b579a1d0c0cce85d83b7777d3a83af3c5c1c031",
+      "sourceSha256": "dba235a9fb43ed17c29b81069b8e1d494a7fe5d4f8f775bb8ead55ac44e4c4e0"
+    },
+    {
+      "id": "rt-1-11",
+      "word": "ذَهَبَ",
+      "recognized": "الزهبة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.333,
+      "trackSha256": "654e21b41a3f249fc91329baeeed8b766b827bcd3fee9824000566b1facbe622",
+      "sourceSha256": "c03c583cfdd4bfc70cf5799ebb5689edd65b4404a33dbcc1b351ed93f7413a28"
+    },
+    {
+      "id": "rt-1-12",
+      "word": "رَكِبَ",
+      "recognized": "راكبا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "f656a01baf6b1cf4b98d89f1599e24788372238b0493170eaa9a05e30c245118",
+      "sourceSha256": "eb706670cc17655ac9217aadd9d66a704929e073445d129468f5a68b7a1f5f94"
+    },
+    {
+      "id": "rt-1-13",
+      "word": "نَزَلَ",
+      "recognized": "نزل",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "8b394dd326ed9e443dafbb38981d620ce4773af56c4a99d89db2482cda929af6",
+      "sourceSha256": "fe965d3462509eb6f4791a658b0c1635413ac60214d49906b950585e8920c9a4"
+    },
+    {
+      "id": "rt-1-14",
+      "word": "صَعِدَ",
+      "recognized": "ساويد",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.333,
+      "trackSha256": "b16b417539a0984fae0c93293f77f1b3e5b9a1008c84fd670c87dc645e5578a7",
+      "sourceSha256": "5fe3e52e5c0ac7fb1e7e78c870c43f59afab1e9483f90cb10199eab1bccbf61b"
+    },
+    {
+      "id": "rt-1-15",
+      "word": "فَتَحَ",
+      "recognized": "فتح",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "6ed9522ceb4ed1c6c64bfc367f3983d094da7a307757f87a1b262534ffaadda1",
+      "sourceSha256": "396f7e88af98f58b868a0c24170245a74f89589c8d06220bd999a2b03fce4ee8"
+    },
+    {
+      "id": "rt-1-16",
+      "word": "غَسَلَ",
+      "recognized": "رسلة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "1019c7dec680e5d0d726d92192213cb1f0399709651baaf02069b2158b2b91d4",
+      "sourceSha256": "0dfa2bb9ac38953c515b243f6a847aca0e45c033fa37c7fd58bd6b45945b4d4d"
+    },
+    {
+      "id": "rt-1-17",
+      "word": "لَبِسَ",
+      "recognized": "لابيسة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "bf32aeda1e27ec727d6f6819c838bfd3174fa20df3b3a29419887acffda08f3c",
+      "sourceSha256": "f269784fd297453548f700e52d3d9805c54930d28f8a51e68f2fe6948b92ff42"
+    },
+    {
+      "id": "rt-1-18",
+      "word": "حَمَلَ",
+      "recognized": "خملة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "7588bc6a522c0b8d95e0ddfa5dff2e3fae9411d07fd13c557b1656894b6c2427",
+      "sourceSha256": "2141a12c19dbbed7e1ab7cf69816264d31697b9acb9034eb6fd15bd712d4011e"
+    },
+    {
+      "id": "rt-1-19",
+      "word": "طَبَخَ",
+      "recognized": "تمخة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "3f990f4e5195352e17a6808e799334d7d6e4ceac601c6c3a566206d6f6022543",
+      "sourceSha256": "6a35270a4c5167ef6f89ca0a6de59b45d3f998af558e2c355268bc129825bec6"
+    },
+    {
+      "id": "rt-1-20",
+      "word": "زَرَعَ",
+      "recognized": "0",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1,
+      "trackSha256": "09ab84dad35e9cf36b84d54fa60755e7479a28e2f6f8bf0343b00c9bbc505dcd",
+      "sourceSha256": "e592908df91317c2b5e70b1a9ba1356160b98a69ae1b8f9def5b5bd2aa58d550"
+    },
+    {
+      "id": "rt-1-21",
+      "word": "جَمَعَ",
+      "recognized": "جمع",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "dcce75c95a8c9b5fe4165ebacb7b7d71f87f2d844b941ff7bf53d81d8f564cde",
+      "sourceSha256": "3aaf10c3cc34f08e8af95040b627706ef64cd9a204fbd2d2280a041f6dbbfeb3"
+    },
+    {
+      "id": "rt-1-22",
+      "word": "نَجَحَ",
+      "recognized": "نجحة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "44702bf903b33955748b43d0c145173f27c33217f4bdbc58788bad660445eaa4",
+      "sourceSha256": "85ea26a5f8b6c13da3785c82d0560fc512c6bc377b12825f2b1b9e1b3cbf2bfe"
+    },
+    {
+      "id": "rt-1-23",
+      "word": "سَمِعَ",
+      "recognized": "ساميا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "67b07fa60e569bc6354238d54d9f95ec4d4c2c2c2bffe0ca07ab9d94cb551b95",
+      "sourceSha256": "7cd4c31ae375bf337f9f526def8ca47fcfba35f8b519bb507a842778257c4b77"
+    },
+    {
+      "id": "rt-1-24",
+      "word": "فَهِمَ",
+      "recognized": "سحيما",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.333,
+      "trackSha256": "868e8fcc80f66d69d0a2ecb1c05fd4aa44267b1aca0abf118bee71d88ef50a58",
+      "sourceSha256": "0cdb460e3e34615fac97ec2817e986581873299bb691aeea5b9a6eff5fbe982b"
+    },
+    {
+      "id": "rt-1-25",
+      "word": "حَفِظَ",
+      "recognized": "حافظة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "f81d6855801e797b371e4de1f19b632043df45a7f8e26346a15f18758965fb78",
+      "sourceSha256": "c903eb74feba11472d09833c1dece92eb0be3fb49ba9f6199d6b218b06a0a345"
+    },
+    {
+      "id": "rt-1-26",
+      "word": "بَحَثَ",
+      "recognized": "بحثة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "4f1a728d65b45457cce47092feb79030a7d664041406aa24db46339179255804",
+      "sourceSha256": "43b56cc728cd585fc6184459a483d1326f735f9e15b71f0a21837ce976f1e3e9"
+    },
+    {
+      "id": "rt-1-27",
+      "word": "طَلَبَ",
+      "recognized": "طلب",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "d4a2b970d76565062916866ad8973c0c62244dca290da179777bd9d342ebc8d9",
+      "sourceSha256": "ab0452e448c101a0aa9c627ce797c8516a615b373a4fd69fc8c0b39ed5812b55"
+    },
+    {
+      "id": "rt-1-28",
+      "word": "مَسَحَ",
+      "recognized": "مسحة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "8ed883a82112c30d502ca25b0f07f51a0016a111a3f08718928cf79f8ca79487",
+      "sourceSha256": "6928e29dabec2e6acb139266e09cc953a3755bc2792aa14182f81a979ed3f8d6"
+    },
+    {
+      "id": "rt-1-29",
+      "word": "قَطَعَ",
+      "recognized": "كتا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "ce935b8eec3d76812f8739402960a2f645a22eab5e9f139102d9e4fd89970ff4",
+      "sourceSha256": "77a45225c5d219683d0fc118859a7cbdd4a2618e741a6fb16f568c1cfeddc263"
+    },
+    {
+      "id": "rt-1-30",
+      "word": "سَبَحَ",
+      "recognized": "سبحة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "88cdf88e219500cc3ef1f1700b025304128fc8ffcf9a8fc498451cf1e1a4849f",
+      "sourceSha256": "e16f6b880ccd25b04216b088f4c70bbc08e0d3b6a1a3abc6b7d6f1707547ad0b"
+    },
+    {
+      "id": "rt-1-31",
+      "word": "يَدْ",
+      "recognized": "ياند",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "3d9e63063acba095bad95a6247c963a518de8236cae2ac8e6934014531eb353d",
+      "sourceSha256": "c4eee5e88bee800d641c250540031faed4120dfb5a8b87f13ed43a3eca67dec4"
+    },
+    {
+      "id": "rt-1-32",
+      "word": "فَمْ",
+      "recognized": "فن",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "e94e4a0f826ba59d22e01e641462027259faa8db91f1f85d01a31a084bc14681",
+      "sourceSha256": "ce84ea4b85b0627bfac21f6219aa594ef28d6843879b63c999df346faf9328bc"
+    },
+    {
+      "id": "rt-1-33",
+      "word": "أَبْ",
+      "recognized": "أم",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "d6cbd0069bff6109f1dd24dd0e8e840b538641d5fd0d389be8058ee6b894ced1",
+      "sourceSha256": "2981fed21eb96a50096dd3992f8587579626dd884b8a33faad58a8afadc1427d"
+    },
+    {
+      "id": "rt-1-34",
+      "word": "أَخْ",
+      "recognized": "اخ",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "34fb39c30ea8acb887c8d23686d5b057cfe69cf405cee423bdc0f5d8c90e3cd8",
+      "sourceSha256": "34cbe9d334fb80d4802c6912244f43cb9545c0bafc8261e4745abddbc2cdb34c"
+    },
+    {
+      "id": "rt-1-35",
+      "word": "قَلَمْ",
+      "recognized": "قلم",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "b5be3f90a63bb2cf2309c4de948326c78f78f7a44c668fb60c974e63474c45ef",
+      "sourceSha256": "20026c7fb01a960f866505832a1760e7fe5883d7ccc6e2b7d3949c7464acec62"
+    },
+    {
+      "id": "rt-1-36",
+      "word": "جَمَلْ",
+      "recognized": "جمال",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "3cce00f187354197af080fb16446b3ad3c87398b429d14b12e244a63c519931b",
+      "sourceSha256": "f77410a0769b6ec4fcb4277ce7289143457fd07ed8102d9849ab1efc2cb761f5"
+    },
+    {
+      "id": "rt-1-37",
+      "word": "جَبَلْ",
+      "recognized": "إشابل",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "831a3d45565c0f42cedcb795601213b96e30b4e592dbe569beaadb89aa2ff58c",
+      "sourceSha256": "cf8387ee6b60925e54bd13a518bab396b0f7c6f6de510bc907b75846913a029e"
+    },
+    {
+      "id": "rt-1-38",
+      "word": "سَمَكْ",
+      "recognized": "سمك",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "b45dcc6234cbb2f6927d82f96b1911cbb869781bb9e6baeedbe270105564aa56",
+      "sourceSha256": "75c5e3337d6a49b86ffbd5679b9db52b337a23960d439bea0c73b2c60b7c12cf"
+    },
+    {
+      "id": "rt-1-39",
+      "word": "عِنَبْ",
+      "recognized": "عينب",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "1529bb00ce0e8fee31c57c5532643bef3989b94417a8d81ab8c8fe27d13901fc",
+      "sourceSha256": "48cf7cf8a0e32abee87773b1bdfcfe1c348893d67abe0400ccb080aea81895b0"
+    },
+    {
+      "id": "rt-1-40",
+      "word": "عَسَلْ",
+      "recognized": "عصل",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "07b34f9335032e1a8e585840e3dcbb647808bca260743ab4abd8bf223dd6e13d",
+      "sourceSha256": "e4bf59d9ce8855a53cf194a98d39a313366509477fa92fbfe367a9745709d0af"
+    },
+    {
+      "id": "rt-1-41",
+      "word": "لَبَنْ",
+      "recognized": "لبن",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "275848d21f3fb70913a21524510d32f59db61fec8d88fde151956e213852d13e",
+      "sourceSha256": "dbf48f05f761619797f69283f647b43661371488295f8281e8b3e0ac86bb566c"
+    },
+    {
+      "id": "rt-1-42",
+      "word": "تَمْرْ",
+      "recognized": "تان",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "1e8799e32f9b8da9ee10b07fb704e4aca48b92718b9d766f2afc93726fafd270",
+      "sourceSha256": "9e3cbb560e2982e3fa06b696d4a54f0c5ae53e000f15e00bfc68e4220ea906ac"
+    },
+    {
+      "id": "rt-1-43",
+      "word": "بَدْرْ",
+      "recognized": "بد",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "7b423974749a4d046d7d262f5a6f280e455cad2bd2c2d4972e90e44eadb15cd0",
+      "sourceSha256": "0b0e55e771504699ccd3a905a2d4da12181720aeacfa9e69a0c8e9da42590965"
+    },
+    {
+      "id": "rt-1-44",
+      "word": "بَحْرْ",
+      "recognized": "محل",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "4553ce10a48f5ba3bfce0911ced4e181802323908a6535cb1183b836c4a65a01",
+      "sourceSha256": "186245f897b201ac413f954feb3f2508661652557e301d6aed08a02c1eceacfc"
+    },
+    {
+      "id": "rt-1-45",
+      "word": "شَمْسْ",
+      "recognized": "شمس",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "a43deeabf6d50bbd3d2eb9f668f564fd36bf28edfce1e469a22c26d99fc9446d",
+      "sourceSha256": "00e77f0485b3a08da22832379b66a8d577caa31d4873c7b61bd404e8fc8fc6d6"
+    },
+    {
+      "id": "rt-1-46",
+      "word": "نَهْرْ",
+      "recognized": "نحا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "3ded1333f58b55182da8df11dce2d389daf0aef179bf09a2edb79566e8b7d848",
+      "sourceSha256": "255ec04787e6c8ebd75eb15672d6a4264338ffc6e5c4546e6c83e358d3f08bc7"
+    },
+    {
+      "id": "rt-1-47",
+      "word": "زَهْرْ",
+      "recognized": "زالة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "fdab95a39cd62f5555cda0955fea4536eb42744f04ea2de010260d94224447b7",
+      "sourceSha256": "3da898aab60167f6de6a80fb7d840b0da268bc9ca3ec627af00ba44ba14be703"
+    },
+    {
+      "id": "rt-1-48",
+      "word": "نَمْلْ",
+      "recognized": "نامي",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "a65591020cc24c4a3b8e7193299a41fd52431059662c133a94252ca3178ea1dc",
+      "sourceSha256": "cbc06ac57d7bc72462df46bd7eb453def6805d26df66e601acd56d1a8aec8a3d"
+    },
+    {
+      "id": "rt-1-49",
+      "word": "نَجْمْ",
+      "recognized": "نشون",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "5e96f5fe1bead1ac45af1be6bfdb3ec80d33b556a40ea431dcc373f8ec1de973",
+      "sourceSha256": "215a1e7f46e9f755bdbb38e49a5725358f997ac3acaaab5ef4b4f73ae341f431"
+    },
+    {
+      "id": "rt-1-50",
+      "word": "وَرْدْ",
+      "recognized": "وانت",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "313a601ebe41b240d5f55c30c467ea0edb44a5a66952efb6d33d349f24fdda3d",
+      "sourceSha256": "8397e98275af4fbd92730185b4bb8f2ac874bae7547158bd9b00c30acb154dbc"
+    },
+    {
+      "id": "rt-2-01",
+      "word": "بَابْ",
+      "recognized": "بام",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "1ef179eac0a171fec54c5c596160f63de9476af301123b007843017ae8476960",
+      "sourceSha256": "259ef09dbb661c237ca87259df9a6fe4253ed61c644a216c12d0a1dfb77bfce7"
+    },
+    {
+      "id": "rt-2-02",
+      "word": "مَاءْ",
+      "recognized": "مأ",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "15e65136a5ac2c6199f0a6657a6322a6b5e35b4db9b21b308079d1975399f9a1",
+      "sourceSha256": "fd6f6ca6566adce5cf12540168f20b49205fc5b33e5303d6e2d176fc6c979664"
+    },
+    {
+      "id": "rt-2-03",
+      "word": "دَارْ",
+      "recognized": "نار",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "6efc958ef89b382d9b0a4659b2677b06274c4907fe7b629a74d7d4b6fa541115",
+      "sourceSha256": "75aa6623c57c9a62a3f47d93eb4e3d01f388fe207848064fc75eefcb5dc3f71e"
+    },
+    {
+      "id": "rt-2-04",
+      "word": "نَارْ",
+      "recognized": "نا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "660b8cf8d9b2ed52f919e68e913b073b6af63a83feb3b2a01c50e37cd6c42a40",
+      "sourceSha256": "c143eff3d9fa7e4bc25912b3c6a1e77872c2e8473d6ed5d1464f19f0eb02d59c"
+    },
+    {
+      "id": "rt-2-05",
+      "word": "نُورْ",
+      "recognized": "نوع",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "bffea85495de4193a29feaedef9f5d13d7b9b47651012de94f9ebfb36ecbaada",
+      "sourceSha256": "79d2af126807606c4dae44128dda752f1de225997b0d0b5c186e48fb2a1c4a56"
+    },
+    {
+      "id": "rt-2-06",
+      "word": "سُوقْ",
+      "recognized": "سمك",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "16c2d78d447ad62a0af86385fb800733193b9104b32744437ff2c533bae08750",
+      "sourceSha256": "00f5ea8199f23ab79f8e4fa72d487713b89e8339d6e5d1e941f9aee9144de356"
+    },
+    {
+      "id": "rt-2-07",
+      "word": "تُوتْ",
+      "recognized": "جو",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "12b51e4ad94012a45f952b97570d6a60c60c5e6a35973f599230315363c739bd",
+      "sourceSha256": "d9691b84c21bd2e4e8e293f84ce07945c265f1dacea571b051632b974dbb1f82"
+    },
+    {
+      "id": "rt-2-08",
+      "word": "تِينْ",
+      "recognized": "تين",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "eca208fa73fd0647ce76b52b079397a5d62fa64ad1be6f4cbc5ca5129bd66f64",
+      "sourceSha256": "852abfbccf12fc3d8109e1f153514f1ec18e4bea2d002430fc1c06825aec76bc"
+    },
+    {
+      "id": "rt-2-09",
+      "word": "زَيْتْ",
+      "recognized": "ذايت",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "113462aba7ff58f1f97cf9aebd37081ad92be4bc32322b7c6170211840bbd190",
+      "sourceSha256": "7874c8e16200fc2f0f5382ed455cd7f3fd8530262e199b4be21ffa94f654e15e"
+    },
+    {
+      "id": "rt-2-10",
+      "word": "بَيْتْ",
+      "recognized": "بيت",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "c378ae560f268bfbd652b566dd9781f3ef4b69174b9d876981ea5cb312f23b76",
+      "sourceSha256": "2e1c575eecbbe4d35b08e0a0c9e344dcf731de74f0b6aeee1a6a98f0c1e75e99"
+    },
+    {
+      "id": "rt-2-11",
+      "word": "يَوْمْ",
+      "recognized": "يون",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "a5b2d1d02de54b9ac81fe85686bd940706e0afd6615bce1809fa8b7af4073d05",
+      "sourceSha256": "fa279af17f0d102a6b4687dd449c59ebcab79f7ea278eac605c5d7b6f0eff7dd"
+    },
+    {
+      "id": "rt-2-12",
+      "word": "عَيْنْ",
+      "recognized": "اين",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "8623ba607244151254d8a72bde814046c5e9b31c2a8fafd3fa8c26785defecdd",
+      "sourceSha256": "ecaa220a47d3a584a68ad8da7478f8cf11baa1035dbb6d3cf340b58bf372e77f"
+    },
+    {
+      "id": "rt-2-13",
+      "word": "لَيْلْ",
+      "recognized": "ليل",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "7c0cd86a4a72c341716b363be4d80d6de996b166d1171ecf83ce56629dc55a22",
+      "sourceSha256": "0ded1b40a7859436c361a4d7a961c6d5ef21684db3ab61a84d383200a0741d40"
+    },
+    {
+      "id": "rt-2-14",
+      "word": "فِيلْ",
+      "recognized": "فيل",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "b6cdd03fc22d8c76818643beaf7cc16cfba9f9903602d09f6d4fc5f26d70682e",
+      "sourceSha256": "afafc6c45f7657c28994962c06313b9a1f386434a339f750b61c1406ff7f8a4d"
+    },
+    {
+      "id": "rt-2-15",
+      "word": "حُوتْ",
+      "recognized": "حود",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "a586a3ad6568976c3faeec0d603cdbd120a829ffe9bcb5d51d065c8be1f247b8",
+      "sourceSha256": "524cee2eb3e13bac5d6a20fec69622b011de1b388cefbe2ac8fed752a7bdc1d2"
+    },
+    {
+      "id": "rt-2-16",
+      "word": "ضَوْءْ",
+      "recognized": "دو",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "124ef80b92e57ee8fff44b3f3698b4b95780cece919a24bba323047a741974b3",
+      "sourceSha256": "1ba9754e3fad2debb0eb509e12d35447c0489c780a14d115fe4641f9943a91e8"
+    },
+    {
+      "id": "rt-2-17",
+      "word": "كَأْسْ",
+      "recognized": "كتس",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "5f222f6aebe48096bf4d473bd3c8846fb8a4c54b4b2cbec71395e25ee259a757",
+      "sourceSha256": "fd04433ca239e319a911b99a187de36d369d72c63cfea25836c4d151c0570c16"
+    },
+    {
+      "id": "rt-2-18",
+      "word": "رَأْسْ",
+      "recognized": "لس",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "de75c512edd325b827cb56f6cef391de94ca57d2fd0d04ba4b47136f8ebb451d",
+      "sourceSha256": "68e0a4984c4a4e99974e61f4ee981b298c33770320cfa1ff50245bea68602d83"
+    },
+    {
+      "id": "rt-2-19",
+      "word": "كِتَابْ",
+      "recognized": "كتام",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.25,
+      "trackSha256": "8bd4253f4b03d7acb9f8e1a65671077f0077548124ab977f70130ea8e5b4a7fe",
+      "sourceSha256": "e6bb7377266b1e8bd203aebc822c5c1175208134b681ba9d3a9cc4445eb9722d"
+    },
+    {
+      "id": "rt-2-20",
+      "word": "حَلِيبْ",
+      "recognized": "حليم",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.25,
+      "trackSha256": "0257021cdec990ea383c1af39da67e548b42076ceb3b891d02554875cbd993d9",
+      "sourceSha256": "39b3b237a76ac6ff64eba90f77e4facffcbd035be49b436d960afa5cd612705d"
+    },
+    {
+      "id": "rt-2-21",
+      "word": "عَصِيرْ",
+      "recognized": "أسير",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "eead8e82c3c534bbf20463d2bb5d2bbe9697357800290540bf3856ce5bb6d6b8",
+      "sourceSha256": "0f8678b74f8347792c04bd5368ac2e40a7f871571927417be7a44d5af38e886d"
+    },
+    {
+      "id": "rt-2-22",
+      "word": "رَغِيفْ",
+      "recognized": "براظيب",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "9c99a9f56b71c0ac1cc7e2ff3d840a32b32edcfbcfaa6aa40ca29fab79aa5c49",
+      "sourceSha256": "71c839c89d0d961f13b85e70813d2addf096fa3c3cde67598776d2fe0e0cfaa4"
+    },
+    {
+      "id": "rt-2-23",
+      "word": "طَعَامْ",
+      "recognized": "تان",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.75,
+      "trackSha256": "a6d87be50e47cd774d1ad19049055da76f21a97fdbde287b9e657ead1f709b55",
+      "sourceSha256": "d23fc3cdd43fa9113e96c0cb831cf36f65f21a872b9bc3956a9b75c1573343eb"
+    },
+    {
+      "id": "rt-2-24",
+      "word": "مَوْزْ",
+      "recognized": "نوز",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "f67f4821f619b63d2f540666a17bc268f0be9673d59d42ddb36c31c62c617602",
+      "sourceSha256": "2af44fd8534b1c7171227d243d6091c4a3fff12e675c246e2119fa2a62532be1"
+    },
+    {
+      "id": "rt-2-25",
+      "word": "لَيْمُونْ",
+      "recognized": "ليمون",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "2156d561726ed871659c1cc752d4374445b5ad8dad5a0591073c49f4b05c00ba",
+      "sourceSha256": "97ad6a6398d518ca7466d0a50ad4384c91ab2fd0fabf3bcdef7c42d6c97be374"
+    },
+    {
+      "id": "rt-2-26",
+      "word": "زَيْتُونْ",
+      "recognized": "زي تون",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.4,
+      "trackSha256": "7ed8c71f081f9f46a8cf9a2831e99e9b2a001895282845221247cd4f76520e2f",
+      "sourceSha256": "a204b5b478b568dfa0701e7d009d8114a7308df0921cdd2d909855f78fff70b5"
+    },
+    {
+      "id": "rt-2-27",
+      "word": "خِيَارْ",
+      "recognized": "خيان",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.25,
+      "trackSha256": "f0a0474d695b4c33209d58954157a2fbf8590de402f1d83d9a38159cfa6f274b",
+      "sourceSha256": "8947486c194430fc2d141c8405a78a96d1d782c642e43e29ee94adcb9da26b28"
+    },
+    {
+      "id": "rt-2-28",
+      "word": "سَرِيرْ",
+      "recognized": "سارية",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "595c135e9d2b4089d566bcd9bb3f366574e23a8188197556d12eff60f8a80ff2",
+      "sourceSha256": "ac1d7efd5d0a325230f8010e53898b5e18af87ff69ed07fe22c30c7a4fea7008"
+    },
+    {
+      "id": "rt-2-29",
+      "word": "سِتَارْ",
+      "recognized": "سيطال",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.75,
+      "trackSha256": "474fe9eccb46470530c4e0a00194c23fe0454ce57f64178798091bb5406a02a2",
+      "sourceSha256": "caa25e5f061adeebc48f39afdcec73accb27dda1f6bd6c982bf725d0a9f9a2c7"
+    },
+    {
+      "id": "rt-2-30",
+      "word": "نَافِذَة",
+      "recognized": "نفيدة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.6,
+      "trackSha256": "af2bfaa6e37b1c7a1bfba3da4cdc9fd21e7451f6f54bf46aa3685af419d1e311",
+      "sourceSha256": "983147f8d7f97887d42d487b0c377a7e7439d4c0067c2cc64c9aa651d5fcbfe9"
+    },
+    {
+      "id": "rt-2-31",
+      "word": "مَدْرَسَة",
+      "recognized": "مدرسة",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "0becd3d493c40e1a0fc0538cbc753fb1a6f507c3700712765ac4e73ac4556129",
+      "sourceSha256": "f6ebc0cf3104db741b29ca32e0ffa187161fa7aa043099318dfc33089fcde1ac"
+    },
+    {
+      "id": "rt-2-32",
+      "word": "مَكْتَبَة",
+      "recognized": "مكتبة",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "abfb2723a46e5bc5a002f7f2dfcdb7634a2157d2abab9dcd471e0ab69d0378f0",
+      "sourceSha256": "16444e7554a0c3a19795fe020905452b6e06057e1474051451e0598d4ab30cd7"
+    },
+    {
+      "id": "rt-2-33",
+      "word": "حَقِيبَة",
+      "recognized": "حقب",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.4,
+      "trackSha256": "3597708aa23cc1b814bfe8f2eed43e3599a1c7c904deb4f9a0e329be26a93ab3",
+      "sourceSha256": "e27d90559d93a597b6b50eb263cacb3bd8947f01deffb53d96e488262e1e77ab"
+    },
+    {
+      "id": "rt-2-34",
+      "word": "حَدِيقَة",
+      "recognized": "حديقة",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "729aa8ae6eef161c2ceaac07b1c88bf155915351e3eea8b86c633827ef07b3e8",
+      "sourceSha256": "1d34abb57a012dda76b19322e599a66328be8e8cbdbd8350dd519f0e0cfa70e8"
+    },
+    {
+      "id": "rt-2-35",
+      "word": "مَدِينَة",
+      "recognized": "مدينة",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "e0cbeb5b0aeaccc03090ec7c6d895cf88779b0a8d8a7fd396a3d8dabc8110a9e",
+      "sourceSha256": "2fa3a7837cd3b5f4e47a3e14e39344358a0da2612e8e5bd013d28f7ada711b1b"
+    },
+    {
+      "id": "rt-2-36",
+      "word": "طَبِيبْ",
+      "recognized": "طبيم",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.25,
+      "trackSha256": "046cb825d1067ebedbae760014672a85458b02ab3d70e31a75b05c65f591f79a",
+      "sourceSha256": "7af8b0a2c724405636eb9e7116d27c26fc16bb6e5270819746f69aa7c12839d6"
+    },
+    {
+      "id": "rt-2-37",
+      "word": "مَرِيضْ",
+      "recognized": "مارين",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "6b67442e59f922b16617beccb09f68154e917d902ee3874d2576e75e3f8a93f9",
+      "sourceSha256": "0827c9d113a96e35d90ffaf89c1df37db9d5e315f6205600fe37ddb26409d8d0"
+    },
+    {
+      "id": "rt-2-38",
+      "word": "قَرِيبْ",
+      "recognized": "قريم",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.25,
+      "trackSha256": "587a4c29ed68d55392df767e17b8073f43fc9ec3bd68a1736b2936f63f47041c",
+      "sourceSha256": "c24624d04fa647d30c960cec2c02d8c234df2d989eeb0b642de6fd64f4128741"
+    },
+    {
+      "id": "rt-2-39",
+      "word": "بَعِيدْ",
+      "recognized": "بايند",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "6be17fce92ee835182ce90b11cb2ca636276d58216fa9189e3c3b0effb2d1f9e",
+      "sourceSha256": "41a860f923c93721970b0cb4c1a6f89368948df2202d9e32536a306a435b9dc4"
+    },
+    {
+      "id": "rt-2-40",
+      "word": "كَبِيرْ",
+      "recognized": "كامير",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "f9f1b81eea0836572374e14faccbc8cb85720e90d42ae1302e9d9a2d14ec1a97",
+      "sourceSha256": "c4053b770bf88acb11d16daef7c71776f82c26fdb291a27fdfeaabc620cfe3ac"
+    },
+    {
+      "id": "rt-2-41",
+      "word": "صَغِيرْ",
+      "recognized": "ساري",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "22b367c27ab39b00bb20a721a3f2fd2d00bc9a860479ae770e9279d21868b5b7",
+      "sourceSha256": "5e5460b034e62c6418da962bc4d76da88c5eaa34eeade9f37f37bc99231b51e4"
+    },
+    {
+      "id": "rt-2-42",
+      "word": "جَمِيلْ",
+      "recognized": "جاميل",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.25,
+      "trackSha256": "1b92c74e0d746b382008c5c2e4d826402b5890335bc69a9f31dff5aec289c794",
+      "sourceSha256": "b1c0bfbb9add518005356ef1d936141a597c64ea1bf6949f70cb4dc144113ab9"
+    },
+    {
+      "id": "rt-2-43",
+      "word": "جَدِيدْ",
+      "recognized": "جدين",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.25,
+      "trackSha256": "84b5d9d04c22f60b6b68a114200b20530bc5d4486945cf922957598143e90e99",
+      "sourceSha256": "23581c9b77cda2156f2b6a8d615ac286bdacb411adb5a442cd6f70e53cc13975"
+    },
+    {
+      "id": "rt-2-44",
+      "word": "قَدِيمْ",
+      "recognized": "قدين",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.25,
+      "trackSha256": "da1b63c85c7bb146f6d1c4726c94ace73678ada014389bbcc1a6242169395b6f",
+      "sourceSha256": "a0b03f4a4e474764b3a295fd45e959623ebcc3d85648956c201c76f8782207ff"
+    },
+    {
+      "id": "rt-2-45",
+      "word": "سَعِيدْ",
+      "recognized": "ساين",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "3031539d17d26c93326b8171cabd17fd81395dfdf32a601923aea88f68fd8405",
+      "sourceSha256": "8fae3fd924eefea4fca7802bcefb8fbe7df911c347ac296aa54629e44ba13ef1"
+    },
+    {
+      "id": "rt-2-46",
+      "word": "نَظِيفْ",
+      "recognized": "نظيف",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "c07346d27126292399a44b7e5b46931aba8ef3defe8c29810327e06938777f08",
+      "sourceSha256": "45fcb89ecd617915000a3e951f9ee6940b6e6f21fa605dea79cf801a6c36513c"
+    },
+    {
+      "id": "rt-2-47",
+      "word": "سَرِيعْ",
+      "recognized": "سارية",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "7cfa731e267f2decd9f83f842c0d657fb6cad665ddb644286a90df11bf6efd2e",
+      "sourceSha256": "1cb84cb3a57820f4bad300f86f3056a288974897795fad80e72545c36f033b25"
+    },
+    {
+      "id": "rt-2-48",
+      "word": "بَطِيءْ",
+      "recognized": "ماتي",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "e98a54e5e89a5693055cd2b3dc371ebfc6874908d50e950b1f8bcc7f25863380",
+      "sourceSha256": "1e00dd9ace2b3e1cf39b02f1c64733a9851e52ccd55b171950b0530d27b0cd0e"
+    },
+    {
+      "id": "rt-2-49",
+      "word": "صَدِيقْ",
+      "recognized": "صديق",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "f87034111eed720c4f81adc3390867be499a81833255912b9483723b1c8a7562",
+      "sourceSha256": "ca03b7edbfe0fb288904ec7516e23212a3d14fd7cb74b0c5d31b61a764d7a32f"
+    },
+    {
+      "id": "rt-2-50",
+      "word": "طَرِيقْ",
+      "recognized": "طاريك",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "b5cde85170e3023ebccedf74840eacc26db5bdc57fc41e6bfd79cb601292e114",
+      "sourceSha256": "2f119739f1a1a845f566fd9e3fe065d01265d78be092fd9f3eb22df9139ef2d2"
+    },
+    {
+      "id": "rt-3-01",
+      "word": "أُمّْ",
+      "recognized": "اون",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.5,
+      "trackSha256": "22d7b8e26ff4edc55a515801438c2a2d89ac434508a5e24ca643380fe2cececb",
+      "sourceSha256": "4a259c2e25a5dd7c61c5e607b180b611f2b68c87a3274eb0ebc67827fb5617f3"
+    },
+    {
+      "id": "rt-3-02",
+      "word": "دُبّْ",
+      "recognized": "نومب",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.5,
+      "trackSha256": "4e93e8e68b6cf4bf0206e67da20636e831402027eef1e74b33035fa2d0d7fd29",
+      "sourceSha256": "4765dcc6fc3031988734e58cc2df77bd82f60463cab1c7cf21e9e44d22dc00b0"
+    },
+    {
+      "id": "rt-3-03",
+      "word": "قِطّْ",
+      "recognized": "قت",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "2d702aa596e9c7dcf69b462f9db4009e7a81c60dc8d9260583c50ff2614fb34f",
+      "sourceSha256": "d41553e4666df61349fe59a2ff50eac83c557272527c76d3bb7694a2fd1ec028"
+    },
+    {
+      "id": "rt-3-04",
+      "word": "حُبّْ",
+      "recognized": "هوم",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.5,
+      "trackSha256": "c4ded6346b04650e25c26463a314e9b20a6a3fbb771ff903dce5aea829e9806a",
+      "sourceSha256": "b01150a93ecc811ed7a9138cff9496aca847163997d99975b0639cc020ed97fd"
+    },
+    {
+      "id": "rt-3-05",
+      "word": "جَدّْ",
+      "recognized": "جن",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "e3e17a03f28f5de4c9d68f6c48de12a1d3760825e060f07446beab087ee43600",
+      "sourceSha256": "e0d6053d276582ee67fe577c73e7f4e9219e759b8f78c2ea788a54762950d1d1"
+    },
+    {
+      "id": "rt-3-06",
+      "word": "حَظّْ",
+      "recognized": "هاله",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 2.0,
+      "trackSha256": "7bfe5b2a7141d4aba311d3f93fec4f031c6a9cf7638bac87f15b85b5b25d7fa2",
+      "sourceSha256": "11430b46e5b909bc0250f160bff1db76b8508541a8c527c59532d4d7bbdf7cf7"
+    },
+    {
+      "id": "rt-3-07",
+      "word": "صَفّْ",
+      "recognized": "صف",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "893a71a705f81e9a96bb9f985ae0ca6cedcb88ada95c46e498a687032f7517cf",
+      "sourceSha256": "1fbf3025c0ef8889272339025660f351c41b62ad96ad1e26dc3a050530a2c5f7"
+    },
+    {
+      "id": "rt-3-08",
+      "word": "حَقّْ",
+      "recognized": "حق",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "4ce6d40510bca30f0a1066cda831f4857ef2a4efd043ff6e2e39385837409b64",
+      "sourceSha256": "562ef3a74f598bb45c97375c526bfaaee0a93dc4b896aa27a2131ef43422a095"
+    },
+    {
+      "id": "rt-3-09",
+      "word": "ثُمَّ",
+      "recognized": "سوم ما",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "e36676001294bb8304b13cecc1a121bdc83e02ccfa11445d3dffbc78b34543de",
+      "sourceSha256": "01a888b92a51c54db4a540473f5bf3d506b84de80abb0be2863f485d43ab8960"
+    },
+    {
+      "id": "rt-3-10",
+      "word": "جَدَّة",
+      "recognized": "بشندا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.333,
+      "trackSha256": "63ecdc7008a63921153920288a1d9857e9b0b75404d89403d0069d9e536b06dc",
+      "sourceSha256": "dc8e8c1a7423fa94a90684b51460c243f6b4e859baebfa4edf41834d23d15c38"
+    },
+    {
+      "id": "rt-3-11",
+      "word": "مُعَلِّمْ",
+      "recognized": "معلم",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "ff52aeb3e4a026746b6630eeed50bc3c754c444c88c576b28dedbebdd3af215e",
+      "sourceSha256": "beeddc3ba1083e0db09548476db6ac9bfcc076c8742a989e9b2f14fb22e1477a"
+    },
+    {
+      "id": "rt-3-12",
+      "word": "مُعَلِّمَة",
+      "recognized": "معلمة",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "ec53e8b89942e223abbba3474e90b8096cc3c433a2fc6ade85fffcea22c9a162",
+      "sourceSha256": "7569148e4b4d257290f930f6392df3c14e4334e6f61741feb10ddd90b1efc6d8"
+    },
+    {
+      "id": "rt-3-13",
+      "word": "مُهَنْدِسْ",
+      "recognized": "مهندس",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "200c926a7f68208635aac840203ebbb1a9544797ad8694cfd9b118609a7184d6",
+      "sourceSha256": "b35ab8abcf2f9bc038e3d42c87a0bd9c1e2bbcd97aa1f0c72017c4011e2c0439"
+    },
+    {
+      "id": "rt-3-14",
+      "word": "مُهَنْدِسَة",
+      "recognized": "مهندسة",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "2554eec821c58a2062dbbb91baaabdc3c36844ff18591bb7a3a71cc3edf62835",
+      "sourceSha256": "99238237f62e0df4cb7a76ffe3fcd2eaa9b5cb0f6956419be77f48b09965e70f"
+    },
+    {
+      "id": "rt-3-15",
+      "word": "مُمَرِّضْ",
+      "recognized": "مومرد",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "c36ccc32221e7e25910ec7b7653916b6d182a910ccaa6efa3679f1590b04547d",
+      "sourceSha256": "961968c43102c11d8f9422587a80d5341324bc1a17cad7fa791001073b4e3f37"
+    },
+    {
+      "id": "rt-3-16",
+      "word": "مُمَرِّضَة",
+      "recognized": "موماريدا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "3d3684c88d01627c902d24956b868562d0dd1d87a5c20f6be419e40fd284da7a",
+      "sourceSha256": "4d0e6b71fa683531c2c625ec42a4f94aa58bdcd287b0ad48eb902f8d1784d5ac"
+    },
+    {
+      "id": "rt-3-17",
+      "word": "نَجَّارْ",
+      "recognized": "نشاء",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "f83702e2ba8cb56df5ec549f2f6ba03e9dcc4fbf72c35c8a902f1acf7d8e0bd1",
+      "sourceSha256": "98348d77458bef7e772e9618ccd77828142705e1a2866d690fe37d7f5c151b9f"
+    },
+    {
+      "id": "rt-3-18",
+      "word": "خَبَّازْ",
+      "recognized": "خم باز",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.25,
+      "trackSha256": "853d3005edda2a6726c6e834c144e6f50b10e8e9b865f88a8df8ba27723480d1",
+      "sourceSha256": "497c99ab19d83f2eb0bcce2365e806a641a8e202d527b092f3cd4ec84ef92cf2"
+    },
+    {
+      "id": "rt-3-19",
+      "word": "فَلَّاحْ",
+      "recognized": "فلح",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.25,
+      "trackSha256": "f26132e5fc62dd5eb975c587d9e2f41e6bdd4927b32c0846af7cf1321ea80537",
+      "sourceSha256": "9908ca52a6f52afa1bf887d842a54f6de0582eabaaf9daeae1c0c4277b5fb2a5"
+    },
+    {
+      "id": "rt-3-20",
+      "word": "سَيَّارَة",
+      "recognized": "سيارة",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "b2f791a24148e263932ec8929a9be0290fe14709af30f99ab09c52ca098e4bd0",
+      "sourceSha256": "4feabd1c98e953767cc36b591e5d1737a5c1f323747d446d889e6e13b89e894c"
+    },
+    {
+      "id": "rt-3-21",
+      "word": "دَرَّاجَة",
+      "recognized": "دل رزا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.8,
+      "trackSha256": "7204748b7172e7abd7b2791b8f955965fbdeb72c11c7789ca48143ac94d52384",
+      "sourceSha256": "a0451b0f500338aa94652db822392c63545c87da9563b872165ae7c1efbe234a"
+    },
+    {
+      "id": "rt-3-22",
+      "word": "طَائِرَة",
+      "recognized": "فا إيرى",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.8,
+      "trackSha256": "d2633dfc5383216cfa9190574370af94e2a81b2f9bce14e8a03a474898955875",
+      "sourceSha256": "b274ee811ae1689b5aca7432c3f153f95921b592a161f8d6e858c786f63c706e"
+    },
+    {
+      "id": "rt-3-23",
+      "word": "رُمَّانْ",
+      "recognized": "روماً",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "6fcb8406775c62b539d3d523f714f4082c2a26f15666085b9adbdf1961333437",
+      "sourceSha256": "2c01c6cb7754f221eb86c8e4098495a63c05770a2fd8e000605056f4c6efe561"
+    },
+    {
+      "id": "rt-3-24",
+      "word": "تُفَّاحْ",
+      "recognized": "طفا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "aa62b0fdebee2f019fd7936f7eabca032b26faa4e8575c19cd62b23715491add",
+      "sourceSha256": "3a335bd080e8309b82b09e8e6d3e3ec2195f32c092317a22853d6a69c3e35cb8"
+    },
+    {
+      "id": "rt-3-25",
+      "word": "سُكَّرْ",
+      "recognized": "سوكال",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 1.0,
+      "trackSha256": "2a49d736b5dc953b552a5eb2017004cf5e7b56eeeb768e68ab7df49f800300d9",
+      "sourceSha256": "f04ee964ed564d3ed749e9f64e04c7b33c4ef51cfe3a3e1c3c4d982aa98a7c8c"
+    },
+    {
+      "id": "rt-3-26",
+      "word": "سُلَّمْ",
+      "recognized": "سلم",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "7fc86521b2a73724ef9f203ab063cfcba887b5aa2127fe4836a617ed764bf2a8",
+      "sourceSha256": "f8af6762aae6a24dc99b27469276268e9b7f028f77e2e385f33a9a47fafa553e"
+    },
+    {
+      "id": "rt-3-27",
+      "word": "مَظَلَّة",
+      "recognized": "مضالا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.75,
+      "trackSha256": "cfacc3f72bb870533e6f00b507982839579621bdf0c71c73a6468479c6dc866a",
+      "sourceSha256": "916ce37f0b7629e71c41d453300e241732c04184788fe5e2c9b3497ac87210cc"
+    },
+    {
+      "id": "rt-3-28",
+      "word": "سَبُّورَة",
+      "recognized": "سنبويا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.6,
+      "trackSha256": "a528d96e7310c903f1deffe2f4b3c351e7b358cd656edeff2cce0b67b830bbd4",
+      "sourceSha256": "803465d86763a59d190c4051785e6d0e5f5e54f5c4c75d3d46997197f219adaf"
+    },
+    {
+      "id": "rt-3-29",
+      "word": "ثَلَّاجَة",
+      "recognized": "فلجة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.4,
+      "trackSha256": "d7c97646debfeb4ce6011bb9d5de27ab6f8b290032278c79405db04e187249a5",
+      "sourceSha256": "f962ea2dca1f6f36bc5534f8949e4d38bbc75b20b37c34d6ed3c9b2fe2a50d45"
+    },
+    {
+      "id": "rt-3-30",
+      "word": "غَسَّالَة",
+      "recognized": "غسلا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.4,
+      "trackSha256": "61a07ff2019cae9b91d85814dbdafbac1e8114f411a4a1587b039a0b4f22275c",
+      "sourceSha256": "2ed14ed5d3f54ce1189b88222250834c57a9509549d4881cc2f9a293d14a7db0"
+    },
+    {
+      "id": "rt-3-31",
+      "word": "كُرْسِيّْ",
+      "recognized": "كرسة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.25,
+      "trackSha256": "51137c9abc96219cd99510d1c56d58dcdc1bbc8374cea3949dd6b0e1eea49fc2",
+      "sourceSha256": "f4df8868f0ee246c1435f894b88bbee2984fcbda4e986046ffe743e1d3a141e8"
+    },
+    {
+      "id": "rt-3-32",
+      "word": "هَدِيَّة",
+      "recognized": "أديا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "5705ab2cb0cf9efd830d0132a9906a3d37853f227c3d2af57ab15c34faca99da",
+      "sourceSha256": "7eff7e0fe9b76cec6ec3cc1ee92831e0c0374d23298226b1fdda4813fbe256a7"
+    },
+    {
+      "id": "rt-3-33",
+      "word": "رِيَاضَة",
+      "recognized": "بريادة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.4,
+      "trackSha256": "385eeefe0ab7f5fba42924f7d5491b9bdf8aad93c23282733677af47e495c9a9",
+      "sourceSha256": "01bc271799d2933f6fdb3503f08bc72fe61c1360a096502d88d116804cef755d"
+    },
+    {
+      "id": "rt-3-34",
+      "word": "مُسْتَشْفَى",
+      "recognized": "مستشفى",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "8c96a218ca4c1f79bea69619c562c0df9fa53bd2f43d0bca0d23fa351fa74862",
+      "sourceSha256": "6d1189c68ce88c4fcdb82a34d06f584b3d1b6f705578217a91f62a94eccbb3d4"
+    },
+    {
+      "id": "rt-3-35",
+      "word": "صَيْدَلِيَّة",
+      "recognized": "سيدالية",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "abe158c60497c1fbfb1f0248755e62cd8a138876facb7d0439d1f7d42b1ce178",
+      "sourceSha256": "9f44d63d0870afc49feeea1d3b534c5fb9d958142cea96515d4a9d02d5bf1d91"
+    },
+    {
+      "id": "rt-3-36",
+      "word": "مُسَاعَدَة",
+      "recognized": "موصد",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "6de4a06b16664d1b9c43ca3ced4646d5af89a36a183c51fb323a9e21940cb8ce",
+      "sourceSha256": "bc866ee45a64ff12231155357435b07d1ab09a9f26b97f0a4d778e08ea07b46b"
+    },
+    {
+      "id": "rt-3-37",
+      "word": "مُسَابَقَة",
+      "recognized": "موسى بقى",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "255071e5365844737b812653aba84361a9902d23c58db95c34f9340e6fe080a7",
+      "sourceSha256": "423b9c3fa8e4cee68034e02518d6d96d7793bd88d443e910f88961dee64c394d"
+    },
+    {
+      "id": "rt-3-38",
+      "word": "مُحَادَثَة",
+      "recognized": "محادسة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.167,
+      "trackSha256": "156d662ba1aa6823cbf5beddd5870ab2fd16a887178897c9390b9c5f10af5d96",
+      "sourceSha256": "428aadafb7f49bdf3edfd1d8ff4f4c61908590c6977e1e4b8fb2e380c3f1b09e"
+    },
+    {
+      "id": "rt-3-39",
+      "word": "مُرَاجَعَة",
+      "recognized": "مراجا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.333,
+      "trackSha256": "d53d8a01f789c7f68dd6252e265e93b9861a2fb449b9fc9a4a4d37e71a6ee2da",
+      "sourceSha256": "33a69b6ca9163624d33a06c34da6b185d419593466566ebc7650e050d3dde218"
+    },
+    {
+      "id": "rt-3-40",
+      "word": "اِسْتِرَاحَة",
+      "recognized": "إستراحة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.143,
+      "trackSha256": "103408562eaa232b0f730fa69a3739ec10d1be9d884e8b106628376bca18015c",
+      "sourceSha256": "950016b34c315f518e1166ad9015e1af204db2f2c91f4d3bbccca1fa7b66c848"
+    },
+    {
+      "id": "rt-3-41",
+      "word": "اِسْتِمَاعْ",
+      "recognized": "إستيمة",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.667,
+      "trackSha256": "b6b0f1c40d98ef617cb68f1dc8bfc3057ef23e6b99c96a29ef13a707bc6c7a11",
+      "sourceSha256": "880c6602aab02a21004302d109cb120058e9d405e7107bc7a87fcf4b8d33b239"
+    },
+    {
+      "id": "rt-3-42",
+      "word": "اِسْتِخْدَامْ",
+      "recognized": "استخدام",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "b10ae04989130970d78d52a7d83f1da44c383a0c312c9dc0ebc8d169871676e6",
+      "sourceSha256": "0d56e0639172ac0fcda52cf1324ea4e33078766cf0798d4889638eeb55884427"
+    },
+    {
+      "id": "rt-3-43",
+      "word": "تَعَاوُنْ",
+      "recognized": "داون",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.4,
+      "trackSha256": "e39a665776da771369fe49e5c01a2f18727a4018911fbb37431352c1de0470d7",
+      "sourceSha256": "d21ef9af0123452dde1134dbee3e336d5efd72494e6bceb672783b1f437a1d64"
+    },
+    {
+      "id": "rt-3-44",
+      "word": "تَعَلُّمْ",
+      "recognized": "تعلم",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "1ce346482f58f79f3f7ea268aac4373c37422184b860197f7b58fd63c635a6e2",
+      "sourceSha256": "c129181ebdd8f0d1c25535408a37d376ba49d9b836f0d7ace93e9138d51ffbd8"
+    },
+    {
+      "id": "rt-3-45",
+      "word": "تَحَدُّثْ",
+      "recognized": "تحد دوز",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.25,
+      "trackSha256": "46527c25ab0904c8b76b12a211de232dd20d39bfedb0ff5bae55880b3cab1b5e",
+      "sourceSha256": "1817588e50e9ecc0bbba21f3ebab5b053db5c2f760847829fb4152b6856c172d"
+    },
+    {
+      "id": "rt-3-46",
+      "word": "مَسْؤُولْ",
+      "recognized": "نسؤول",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.2,
+      "trackSha256": "396052cfc314fe5bdb8de746cb60ae47afac68e717b9e10be596a4b6f993c8b9",
+      "sourceSha256": "9ffe145577fc5a25c31ccd0a64c70ce8af27ded74821bbde4995465470e1f71a"
+    },
+    {
+      "id": "rt-3-47",
+      "word": "سُؤَالْ",
+      "recognized": "سؤال",
+      "exactWordFound": true,
+      "minimumCharacterErrorRate": 0.0,
+      "trackSha256": "c4b8c748f4d1428b0ae4325e594fe090665ecc6e0c75d9eb1193be8a3c2fa079",
+      "sourceSha256": "a811742a8f6c84b736dc5526b002dbe27045d1bde463bc59f49ce4fc9c8cf3e5"
+    },
+    {
+      "id": "rt-3-48",
+      "word": "بِيئَة",
+      "recognized": "بيا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.5,
+      "trackSha256": "1355b3b042825735966e8ec865a5efbb1a3d5e453a54dc68d2fa98feff3620ba",
+      "sourceSha256": "59f32ce539952145e69913b9ee0ba267718f33b8390db69bb06f3cff71b68cac"
+    },
+    {
+      "id": "rt-3-49",
+      "word": "قِرَاءَة",
+      "recognized": "قيرا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.6,
+      "trackSha256": "778ca3d9376cf0649941eb7f19a7f6aed659dbbabea4121d0ed0b1727b3735c6",
+      "sourceSha256": "60cd895e12bada8a80a6f5528d21a64f62886f7692eeb8bdec76852985f0ece9"
+    },
+    {
+      "id": "rt-3-50",
+      "word": "عَائِلَة",
+      "recognized": "آئلا",
+      "exactWordFound": false,
+      "minimumCharacterErrorRate": 0.6,
+      "trackSha256": "2fea6d02eb92d0bee5aceba5bdedc3ff2169a50033d834fb76edff869a83da37",
+      "sourceSha256": "c37fd8e50f88681ab87f0ec3cc015882fcb99094e9c3561129c3c5701a55da4e"
+    }
+  ]
+}

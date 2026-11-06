@@ -1,0 +1,20 @@
+حروف من الزيتون · مصادر مدرّب القراءة، الإصدار الثالث
+
+Provider: Google Translate TTS, Arabic, normal-rate synthesis inside a spoken
+carrier. Only the requested target after the sentence pause is included in the
+learning audio. Input words and fragments are fully vocalized Arabic text.
+
+Generation: tools/generate-reading-cloud-cache.py
+Compilation: tools/build-reading-trainer.py --recordings /path/to/report.json
+Provenance: audio/reading-trainer-manifest.json records the source commit, source
+report checksum and checksum of each source recording and final compiled track.
+Intermediate recordings are retained on the audio/reading-voice-recovery branch.
+
+The app ships compiled synthetic recordings. No model weights or Piper engine
+are shipped or used for this revision. IPA fields are pronunciation references;
+they are not a claim that a speech engine faithfully realized each phoneme.
+
+File decoding, signal checks and browser tests do not establish pronunciation
+quality. Independent automatic speech recognition is used as an additional
+check, with its limitations documented in docs/READING-TRAINER.md. It does not
+replace a native Arabic speaker's listening assessment.
