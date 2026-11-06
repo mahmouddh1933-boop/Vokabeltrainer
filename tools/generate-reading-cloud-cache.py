@@ -22,9 +22,9 @@ for level in source['levels']:
   fragments.extend(p['text'] for p in reading_prefixes(word,whole_ipa(segmented.split('|'))))
 texts=list(dict.fromkeys(samples+words+fragments))
 def make(text):
- target=out/(hashlib.sha256(('normal-context-v1|'+text).encode()).hexdigest()[:20]+'.mp3')
+ target=out/(hashlib.sha256(('normal-context-v2|'+text).encode()).hexdigest()[:20]+'.mp3')
  raw_dir=out/'raw';raw_dir.mkdir(exist_ok=True)
- raw=raw_dir/target.name
+ raw=raw_dir/(hashlib.sha256(('normal-context-v1|'+text).encode()).hexdigest()[:20]+'.mp3')
  prompt='اِسْتَمِعْ. '+text+'.'
  for attempt in range(3):
   try:
@@ -40,7 +40,7 @@ def make(text):
     intervals=[(float(a),float(b)) for a,b in re.findall(r'silence_start: ([0-9.]+).*?silence_end: ([0-9.]+)',scan,re.S)]
     internal=[(a,b) for a,b in intervals if a>.25 and b<duration-.10]
     assert internal,('no separable carrier pause',text,intervals)
-    pause=max(internal,key=lambda ab:ab[1]-ab[0])
+    pause=internal[0]  # First pause follows the single carrier word; later pauses can be consonant closures.
     start=max(0,pause[1]-.06)
     trailing=[a for a,b in intervals if b>duration-.08 and a>start+.1]
     end=min(duration,trailing[-1]+.1) if trailing else duration
