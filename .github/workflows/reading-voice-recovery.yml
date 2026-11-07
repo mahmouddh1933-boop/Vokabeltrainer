@@ -7,6 +7,8 @@ on:
       - tools/generate-reading-cloud-cache.py
       - tools/generate-reading-sentence-audio.py
       - data/reading-trainer-sentences.json
+      - data/book-vocabulary-source.json
+      - tools/generate-book-vocabulary-audio.py
   workflow_dispatch:
 permissions:
   contents: write
@@ -19,13 +21,13 @@ jobs:
       - name: Install audio decoding tools
         run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
       - name: Generate public word recordings for review
-        run: python3 tools/generate-reading-sentence-audio.py
+        run: python3 tools/generate-book-vocabulary-audio.py
       - name: Save generated sources and generation report on recovery branch
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add audio/reading-sentences audio/reading-sentences-manifest.json
+          git add audio/book-vocabulary audio/book-vocabulary-manifest.json js/book-vocabulary-audio.js
           if ! git diff --cached --quiet; then
             git commit -m "Save Arabic speech recovery sources for acoustic review"
             git push origin HEAD:audio/reading-voice-recovery
