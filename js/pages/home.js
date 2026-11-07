@@ -39,6 +39,7 @@
 
     try {
       const catalog = await VocabApp.loadCatalog();
+      renderBookVocabulary(catalog.bookVocabulary);
       renderLearningPath(catalog, learningPath);
     } catch (error) {
       learningPath.innerHTML = `<p class="empty-message">${VocabApp.escapeHTML(error.message)}</p>`;
@@ -161,14 +162,24 @@
     return {
       type: "ready-list",
       id: list.id,
-      cefr: level?.cefr || level?.id || null,
+      cefr: level?.collection === "book-vocabulary" ? null : level?.cefr || level?.id || null,
       levelId: level?.id || null,
+      ...(level?.collection ? { collection: level.collection } : {}),
       levelTitle: level
         ? `${level.title}${level.subtitle ? ` · ${level.subtitle}` : ""}`
         : "",
       title: list.title,
       count: (list.words || []).length,
     };
+  }
+
+  function renderBookVocabulary(collection) {
+    const panel = document.getElementById("book-vocabulary-panel");
+    const grid = document.getElementById("book-vocabulary-lists");
+    if (!panel || !grid || !collection?.lists?.length) return;
+    panel.hidden = false;
+    const level = { id: collection.id, collection: collection.id, title: collection.title };
+    renderListCards(level, collection.lists, grid);
   }
 
   function renderLearningPath(catalog, target) {
@@ -299,6 +310,11 @@
             </section>`;
 
     const grid = host.querySelector(".ready-lists-grid");
+    renderListCards(level, levelLists, grid);
+  }
+
+  function renderListCards(level, levelLists, grid) {
+    grid.innerHTML = "";
     levelLists.forEach((list, index) => {
       const source = listSource(list, level);
       const progress = VocabApp.getListProgress(list.words, source);

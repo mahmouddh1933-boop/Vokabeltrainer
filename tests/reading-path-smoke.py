@@ -63,8 +63,8 @@ with sync_playwright() as p:
  for name in ['book-level-two','youth-book-two-part-one','youth-training-two','arabic-youth']:
   go(name);assert page.locator('.app-sidebar a[aria-current=page]').get_attribute('href')=='books.html'
  go('vocabulary');assert page.locator('.cefr-level-card').count()==4;assert page.locator('.cefr-level-card:visible').count()==2
- page.locator('.cefr-level-card[data-level-id=A2]').tap();assert page.locator('.ready-list-button').count()==30
- page.locator('.ready-list-button').first.tap();page.wait_for_url('**/lernseite.html');assert page.locator('.app-sidebar a[aria-current=page]').get_attribute('href')=='vocabulary.html'
+ page.locator('.cefr-level-card[data-level-id=A2]').tap();assert page.locator('#learning-path .ready-list-button').count()==30
+ page.locator('#learning-path .ready-list-button').first.tap();page.wait_for_url('**/lernseite.html');assert page.locator('.app-sidebar a[aria-current=page]').get_attribute('href')=='vocabulary.html'
  page.locator('#flashcard').tap();assert 'flipped' in page.locator('#flashcard').get_attribute('class');page.locator('#next-button').tap()
  go('grammar');assert page.locator('.app-sidebar a[aria-current=page]').get_attribute('href')=='grammar.html'
  go('index');assert page.locator('#route-resume').get_attribute('href')=='grammar.html';assert page.locator('.route-step>button').nth(0).get_attribute('aria-pressed')=='true'

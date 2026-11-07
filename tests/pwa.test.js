@@ -10,7 +10,10 @@ test('Worker precache inventory matches public source bytes and excludes private
  assert.ok(assets['styles.css']&&!assets['styles.css'].media);assert.ok(assets['index.html']&&!assets['index.html'].media);assert.ok(assets['login.html']&&!assets['login.html'].media);assert.ok(assets['js/vendor/firebase/firebase-auth-compat.js']);
  for(const [name,a] of Object.entries(assets)){const bytes=fs.readFileSync(name);assert.equal(a.rev,crypto.createHash('sha256').update(bytes).digest('hex').slice(0,16),name);assert.equal(a.bytes,bytes.length);assert.ok(!name.endsWith('.pdf')&&!name.startsWith('downloads/')&&!name.includes('/users/')&&!name.includes('://'));}
  const sentenceClips=require('../audio/reading-sentences-manifest.json').clips;
- assert.equal(Object.keys(assets).filter(n=>n.endsWith('.mp3')).length,3494+sentenceClips.length);assert.ok(assets['audio/skills/a1-01-listening.mp3'].media);
+ const bookClips=require('../audio/book-vocabulary-manifest.json').clips;
+ const newBookPaths=new Set(bookClips.filter(c=>c.path.startsWith('audio/book-vocabulary/')).map(c=>c.path));
+ assert.equal(Object.keys(assets).filter(n=>n.endsWith('.mp3')).length,3494+sentenceClips.length+newBookPaths.size);assert.ok(assets['audio/skills/a1-01-listening.mp3'].media);
+ for(const clip of bookClips)assert.ok(assets[clip.path].media,clip.path);
  for(const clip of sentenceClips)assert.ok(assets[clip.path].media,clip.path);
  assert.ok(assets['reading-trainer.html']&&!assets['reading-trainer.html'].media);
  assert.ok(assets['audio/reading-trainer/rt-3-50-voice-v3.mp3'].media);

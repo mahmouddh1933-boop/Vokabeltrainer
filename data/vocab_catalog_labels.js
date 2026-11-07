@@ -135,6 +135,16 @@ window.VOCAB_CATALOG_LABELS = {
   "الأزمات وتقدير المخاطر": "Krisen und Risikobewertung",
   "التفاوض وحل النزاعات": "Verhandeln und Konflikte lösen",
   "المراسلات والعروض الرسمية": "Formelle Korrespondenz und Präsentationen",
-  "روابط دقيقة والتحفظ في الرأي": "Präzise Verknüpfung und differenzierte Aussagen"
+  "روابط دقيقة والتحفظ في الرأي": "Präzise Verknüpfung und differenzierte Aussagen",
+  "القائمة الأولى": "Liste 1",
+  "القائمة الثانية": "Liste 2",
+  "القائمة الثالثة": "Liste 3",
+  "القائمة الرابعة": "Liste 4",
+  "القائمة الخامسة": "Liste 5",
+  "القائمة السادسة": "Liste 6",
+  "القائمة السابعة": "Liste 7",
+  "القائمة الثامنة": "Liste 8",
+  "القائمة التاسعة": "Liste 9",
+  "مفردات الكتب": "Buchwortschatz"
 };
 window.VOCAB_CATALOG_META = {lists:120, words:2400, levels:4};

@@ -149,8 +149,8 @@ with sync_playwright() as p:
     login_ready(page); form(email_a, PASSWORD+'new'); ready(page)
     assert page.url == BASE+'/index.html'
     page.locator('#hero-start').click()
-    page.wait_for_selector('.ready-list-button')
-    page.locator('.ready-list-button').first.click()
+    page.wait_for_selector('#learning-path .ready-list-button')
+    page.locator('#learning-path .ready-list-button').first.click()
     page.wait_for_url('**/lernseite.html');ready(page)
     vocab=page.evaluate('VocabApp.getCurrentVocabList()')
     assert len(vocab)==20

@@ -20,7 +20,7 @@ LEVELS = [
      'Präziser Wortschatz und Wendungen zum Analysieren von Ideen, Erörtern von Themen, Bewerten von Belegen und differenzierten Argumentieren.'),
 ]
 
-catalog = dict(version=12, sourceLanguage='ar', translationLanguage='de',
+catalog = dict(version=13, sourceLanguage='ar', translationLanguage='de',
                maxWordsPerBuiltInList=25, excelUploadWordLimit=None,
                wordsPerList=20, levels=[], lists=[], cefrLevels=[l[0] for l in LEVELS])
 labels = {}
@@ -57,6 +57,27 @@ for level, subtitle, subtitle_de, description, description_de in LEVELS:
                                   description=description, recommended=level=='A1',
                                   listIds=ids))
 assert len(catalog['lists']) == 120
+# Keep book vocabulary outside CEFR so the existing level IDs and mastery stay stable.
+book_source=json.loads((ROOT/'data/book-vocabulary-source.json').read_text())
+book_entries=book_source['entries']
+assert len({w['id'] for w in book_entries})==len(book_entries)
+assert len({w['ar'] for w in book_entries})==len(book_entries)
+ordinals=['الأولى','الثانية','الثالثة','الرابعة','الخامسة','السادسة','السابعة','الثامنة','التاسعة','العاشرة',
+          'الحادية عشرة','الثانية عشرة','الثالثة عشرة','الرابعة عشرة','الخامسة عشرة']
+book_lists=[]
+for offset in range(0,len(book_entries),20):
+    order=offset//20+1
+    title='القائمة '+ordinals[order-1] if order<=len(ordinals) else 'القائمة '+str(order)
+    title_de='Liste '+str(order)
+    labels[title]=title_de
+    words=[dict(ar=w['ar'],de=w['de'],entryId=w['id']) for w in book_entries[offset:offset+20]]
+    assert 1<=len(words)<=20
+    assert len({w['de'] for w in words})==len(words),'Ambiguous German choices in '+title
+    book_lists.append(dict(id=f'books_20261107_{order:02}',title=title,titleDe=title_de,
+        count=len(words),words=words,collection='book-vocabulary',order=order))
+catalog['bookVocabulary']=dict(version=1,id='book-vocabulary',title='مفردات الكتب',titleDe='Buchwortschatz',
+    sourceImageCount=book_source['sourceImageCount'],count=len(book_entries),wordsPerList=20,lists=book_lists)
+labels['مفردات الكتب']='Buchwortschatz'
 payload = json.dumps(catalog, ensure_ascii=False, indent=2)+'\n'
 (ROOT/'data/vocab_catalog.json').write_text(payload)
 (ROOT/'data/vocab_catalog_fallback.js').write_text(
@@ -67,6 +88,18 @@ payload = json.dumps(catalog, ensure_ascii=False, indent=2)+'\n'
     'window.VOCAB_CATALOG_LABELS = '+json.dumps(labels, ensure_ascii=False, indent=2)+';\n'
     'window.VOCAB_CATALOG_META = {lists:120, words:2400, levels:4};\n')
 print('Built CEFR catalog: A1/A2/B1/B2, 30 lists and 600 entries per level; 120 lists / 2400 vocalized entries.')
+print(f'Book vocabulary: {len(book_entries)} entries from {book_source["sourceImageCount"]} photographs; {len(book_lists)} lists.')
+book_doc=['# مفردات الكتب · مراجعة الصور والكلمات','',
+    'المصدر: '+book_source['sourceArchive']+'، ويضم ٢٩ صورة. تمت قراءة الصور واحدة واحدة ومراجعة الكلمات وترجماتها، ولا يُعتمد على OCR في ضبط الحركات.','',
+    '١٧٥ مدخلًا دون تكرار داخل المجموعة: ٨ قوائم من ٢٠ كلمة، وقائمة أخيرة من ١٥. لا تُضاف حشوات من خارج الصور لإكمال عدد القائمة الأخيرة. تبقى قوائم A1–B2 الـ١٢٠ مستقلة وبمعرفاتها ومحتوياتها السابقة.','',
+    'تُدمج أداة التعريف وصيغ الإعراب والملكية وتكرار تصريف الفعل في بطاقة واحدة. مثل: الغرفة/غرف، حقيبتي/حقيبتك/حقيبته. يُحفظ المدخل بتشكيل واضح، مع فصل أَنْتَ عن أَنْتِ، ومَنْ عن مِنْ، والمذكر المعجمي عن مؤنثه مثل تلميذ/تلميذة. تبقى معاني الكلمات في سياق الصور؛ صَبَاح يجمع معنى الصباح واسم الشخصية في بطاقة واحدة.','',
+    'تُستخرج الكلمات المقروءة من النصوص والحوارات والعناوين والتعليقات والأسئلة. لا تُخمّن الكلمات المبتورة في حواف الصور ولا الكتابة الدقيقة غير المقروءة داخل الرسومات. تُحفظ بصمات الصور وألفاظها المرجعية وربطها بالبطاقات في `data/book-vocabulary-source.json`. أرقام الصور أدناه تبدأ من ١ بحسب ترتيب ملف ZIP.','',
+    'التشغيل: المفردات ← مفردات الكتب، أعلى مستويات CEFR. تستخدم القوائم البطاقات والاختبارات الستة والمراجعة والإتقان نفسها؛ مصدرها مجموعة مستقلة دون نسبتها إلى مستوى CEFR. ملف JSON ونسخة JavaScript المحلية متكافئان. النطق ملفات محلية مصنّعة بخدمة Google العربية، وتُعاد الاستفادة من التسجيل السابق عند تطابق الكلمة وتشكيلها تمامًا.','',
+    '| القائمة | عدد الكلمات |','| --- | --- |']
+for item in book_lists:book_doc.append(f'| {item["title"]} | {item["count"]} |')
+book_doc+=['','| الكلمة | المعنى بالألمانية | الصور |','| --- | --- | --- |']
+for entry in book_entries:book_doc.append('| '+entry['ar']+' | '+entry['de'].replace('|','/')+' | '+', '.join(str(n+1) for n in sorted(entry['sourceImages']))+' |')
+(ROOT/'docs/BOOK-VOCABULARY.md').write_text('\n'.join(book_doc)+'\n')
 
 # Keep the editorial rationale and every topic's learning goal reviewable.
 lines = [

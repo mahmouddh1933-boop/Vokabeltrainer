@@ -19,11 +19,11 @@ with sync_playwright() as p:
     page.locator('[data-learner-choice="neutral"]').click()
     page.goto(base_url + '/vocabulary.html')
     page.wait_for_function('typeof XLSX !== "undefined"')
-    page.wait_for_selector('.ready-list-button')
+    page.wait_for_selector('#learning-path .ready-list-button')
     assert page.locator('.cefr-level-card').count()==4
     catalog=page.evaluate('VocabApp.loadCatalog()')
     print('Catalog:', len(catalog['lists']), 'lists')
-    page.locator('.ready-list-button').first.click()
+    page.locator('#learning-path .ready-list-button').first.click()
     page.wait_for_url('**/lernseite.html')
     vocab=page.evaluate('VocabApp.getCurrentVocabList()')
     assert len(vocab)>0
@@ -74,9 +74,9 @@ with sync_playwright() as p:
     assert not errors, errors
     page.locator('#app-language-select').select_option('ar')
     assert page.locator('html').get_attribute('dir') == 'rtl'
-    page.wait_for_function("document.querySelector('.ready-list-button strong').textContent.includes('التحيات')")
+    page.wait_for_function("document.querySelector('#learning-path .ready-list-button strong').textContent.includes('التحيات')")
     page.locator('#app-language-select').select_option('de')
-    page.wait_for_function("document.querySelector('.ready-list-button strong').textContent.includes('Begrüßung')")
+    page.wait_for_function("document.querySelector('#learning-path .ready-list-button strong').textContent.includes('Begrüßung')")
     for width in [390, 768, 1440]:
         page.set_viewport_size({'width': width, 'height': 900})
         page.wait_for_timeout(300)

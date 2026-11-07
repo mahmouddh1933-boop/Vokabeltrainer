@@ -24,6 +24,9 @@ with sync_playwright() as p:
  assert page.evaluate("p=>fetch(p,{headers:{Range:'bytes=0-127'}}).then(r=>r.status)",trainer_clip)==206
  sentence_clip=json.loads((Path(__file__).resolve().parents[1]/'audio/reading-sentences-manifest.json').read_text())['clips'][0]['path']
  assert page.evaluate("p=>fetch(p,{headers:{Range:'bytes=0-127'}}).then(r=>r.status)",sentence_clip)==206
+ book_manifest=json.loads((Path(__file__).resolve().parents[1]/'audio/book-vocabulary-manifest.json').read_text())
+ book_clip=next(c['path'] for c in book_manifest['clips'] if c['text']=='فَتْحِي')
+ assert page.evaluate("p=>fetch(p,{headers:{Range:'bytes=0-127'}}).then(r=>r.status)",book_clip)==206
  page.wait_for_function('''()=>new Promise(resolve=>{const c=new MessageChannel();c.port1.onmessage=e=>resolve(e.data.mediaCount>0);navigator.serviceWorker.controller.postMessage({type:'PWA_STATUS'},[c.port2]);})''')
  page.evaluate('VocabApp.setJSON("learningStats",{...VocabApp.getStats(),pwaSentinel:"preserve-progress"})')
  # Non-allowlisted same-origin API-like responses and POSTs never enter the caches.
@@ -37,6 +40,9 @@ with sync_playwright() as p:
   page.goto(BASE+'/'+name);page.wait_for_selector('main');assert page.evaluate('typeof VocabApp')=='object',name
  page.goto(BASE+'/reading-trainer.html');page.get_by_role('button',name='٣ · الكلمة كاملة',exact=True).tap();page.wait_for_function('window.__lastAudio&&!__lastAudio.paused');assert page.evaluate('__lastAudio.dataset.readingSource')==trainer_clip;assert page.evaluate('__lastAudio.currentSrc').startswith('blob:');page.locator('#rt-stop').tap()
  page.locator('.rt-sentence-card audio').nth(0).evaluate('a=>a.play()');page.wait_for_function('document.querySelector(".rt-sentence-card audio").currentTime>.1');assert page.locator('.rt-sentence-card audio').nth(0).get_attribute('src')==sentence_clip;page.locator('.rt-sentence-card audio').nth(0).evaluate('a=>a.pause()')
+ page.goto(BASE+'/vocabulary.html');page.locator('#book-vocabulary-lists button').first.tap();page.wait_for_url('**/lernseite.html')
+ for _ in range(4):page.locator('#next-button').tap()
+ expect(page.locator('#front')).to_have_text('فَتْحِي');page.locator('#pronounce-button').tap();page.wait_for_function('window.__lastAudio&&!__lastAudio.paused');assert page.evaluate('__lastAudio.currentSrc').endswith(book_clip);page.evaluate('VocabApp.stopSpeech()')
  page.goto(BASE+'/skills.html#a1-01/listening');page.get_by_role('button',name='◖ استمع: تسجيل فهم المسموع',exact=True).tap();page.wait_for_function('!document.getElementById("skills-audio").paused');page.evaluate('document.getElementById("skills-audio").pause()')
  page.goto(BASE+'/skills.html#a1-01/writing');page.locator('[data-draft=writing]').fill('أَتَدَرَّبُ دُونَ اتِّصَالٍ.');page.get_by_role('button',name='احفظ إجابتي',exact=True).tap();page.reload();expect(page.locator('[data-draft=writing]')).to_have_value('أَتَدَرَّبُ دُونَ اتِّصَالٍ.')
  page.goto(BASE+'/missing-lesson.html');expect(page.locator('h1')).to_have_text('أنت دون اتصال')

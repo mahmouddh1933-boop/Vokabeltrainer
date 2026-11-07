@@ -806,6 +806,7 @@
       }
       const recording =
         window.ArabicVocabularyAudio?.audio[value] ||
+        window.ArabicBookVocabularyAudio?.audio[value] ||
         window.ArabicLetterData?.audio[value] ||
         window.ArabicPracticeData?.audio[value] ||
         window.ArabicPhonicsData?.audio[value] ||

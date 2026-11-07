@@ -104,6 +104,10 @@ with ZipFile(args.output) as archive:
     audio_count += len({c['path'] for c in vocab_clips if c['path'].startswith('audio/vocabulary/')})
     for clip in vocab_clips:
         assert 'Vokabeltrainer/'+clip['path'] in files, clip['path']
+    book_vocab_clips = json.loads((ROOT/'audio/book-vocabulary-manifest.json').read_text())['clips']
+    audio_count += len({c['path'] for c in book_vocab_clips if c['path'].startswith('audio/book-vocabulary/')})
+    for clip in book_vocab_clips:
+        assert 'Vokabeltrainer/'+clip['path'] in files, clip['path']
     assert len([name for name in files if name.endswith('.mp3')]) == audio_count
     for name in ['huruf','lernseite','sounds','sentences','stories','book-level-two','arabic-youth','youth-training-two','youth-book-two-part-one','reading-trainer']:
         html = archive.read('Vokabeltrainer/'+name+'.html').decode()

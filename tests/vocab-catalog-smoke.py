@@ -36,7 +36,7 @@ with sync_playwright() as p:
   card.tap()
   expect(card).to_have_attribute('aria-pressed','true')
   assert page.locator('.cefr-level-card[aria-pressed="true"]').count()==1
-  expect(page.locator('.ready-list-button')).to_have_count(30)
+  expect(page.locator('#learning-path .ready-list-button')).to_have_count(30)
  home()
  assert page.evaluate('VocabApp.loadCatalog()')==C
  assert page.locator('.app-sidebar nav a').count()==10
@@ -46,9 +46,9 @@ with sync_playwright() as p:
   page.locator('#app-language-select').select_option(language)
   for level in C['levels']:
    select_level(level['id'])
-   ids=page.locator('.ready-list-button').evaluate_all('ns=>ns.map(n=>n.dataset.listId)')
+   ids=page.locator('#learning-path .ready-list-button').evaluate_all('ns=>ns.map(n=>n.dataset.listId)')
    assert ids==level['listIds']
-   titles=page.locator('.ready-list-button strong').all_inner_texts()
+   titles=page.locator('#learning-path .ready-list-button strong').all_inner_texts()
    assert titles==[by_id[i]['title' if language=='ar' else 'titleDe'] for i in ids],(language,level['id'],titles)
    assert '600' in page.locator('[data-level-id="'+level['id']+'"] .cefr-level-meta').inner_text()
    for width in [320,390,768,1440]:

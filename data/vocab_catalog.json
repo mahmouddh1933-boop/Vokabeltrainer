@@ -1,5 +1,5 @@
 {
-  "version": 12,
+  "version": 13,
   "sourceLanguage": "ar",
   "translationLanguage": "de",
   "maxWordsPerBuiltInList": 25,
@@ -11094,5 +11094,981 @@
     "A2",
     "B1",
     "B2"
-  ]
+  ],
+  "bookVocabulary": {
+    "version": 1,
+    "id": "book-vocabulary",
+    "title": "مفردات الكتب",
+    "titleDe": "Buchwortschatz",
+    "sourceImageCount": 29,
+    "count": 175,
+    "wordsPerList": 20,
+    "lists": [
+      {
+        "id": "books_20261107_01",
+        "title": "القائمة الأولى",
+        "titleDe": "Liste 1",
+        "count": 20,
+        "words": [
+          {
+            "ar": "سَلَامٌ",
+            "de": "der Frieden; Grußformel",
+            "entryId": "bv-001"
+          },
+          {
+            "ar": "عَلَى",
+            "de": "auf / über",
+            "entryId": "bv-002"
+          },
+          {
+            "ar": "اِسْمٌ",
+            "de": "der Name",
+            "entryId": "bv-003"
+          },
+          {
+            "ar": "طَارِقٌ",
+            "de": "Tariq (Vorname)",
+            "entryId": "bv-004"
+          },
+          {
+            "ar": "فَتْحِي",
+            "de": "Fathi (Vorname)",
+            "entryId": "bv-005"
+          },
+          {
+            "ar": "مَا",
+            "de": "was",
+            "entryId": "bv-006"
+          },
+          {
+            "ar": "كَيْفَ",
+            "de": "wie",
+            "entryId": "bv-007"
+          },
+          {
+            "ar": "حَالٌ",
+            "de": "der Zustand; das Befinden",
+            "entryId": "bv-008"
+          },
+          {
+            "ar": "خَيْرٌ",
+            "de": "das Gute; gut (Befinden)",
+            "entryId": "bv-009"
+          },
+          {
+            "ar": "حَمْدٌ",
+            "de": "das Lob",
+            "entryId": "bv-010"
+          },
+          {
+            "ar": "اللَّهُ",
+            "de": "Gott",
+            "entryId": "bv-011"
+          },
+          {
+            "ar": "حِوَارٌ",
+            "de": "der Dialog",
+            "entryId": "bv-012"
+          },
+          {
+            "ar": "اُنْظُرْ",
+            "de": "schau hin!",
+            "entryId": "bv-013"
+          },
+          {
+            "ar": "اِسْتَمِعْ",
+            "de": "höre zu!",
+            "entryId": "bv-014"
+          },
+          {
+            "ar": "رَدِّدْ",
+            "de": "sprich nach!",
+            "entryId": "bv-015"
+          },
+          {
+            "ar": "أَنْتَ",
+            "de": "du (männlich)",
+            "entryId": "bv-016"
+          },
+          {
+            "ar": "أَنْتِ",
+            "de": "du (weiblich)",
+            "entryId": "bv-017"
+          },
+          {
+            "ar": "وَلَدٌ",
+            "de": "der Junge",
+            "entryId": "bv-018"
+          },
+          {
+            "ar": "بِنْتٌ",
+            "de": "das Mädchen",
+            "entryId": "bv-019"
+          },
+          {
+            "ar": "مُعَلِّمٌ",
+            "de": "der Lehrer",
+            "entryId": "bv-020"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 1
+      },
+      {
+        "id": "books_20261107_02",
+        "title": "القائمة الثانية",
+        "titleDe": "Liste 2",
+        "count": 20,
+        "words": [
+          {
+            "ar": "مُعَلِّمَةٌ",
+            "de": "die Lehrerin",
+            "entryId": "bv-021"
+          },
+          {
+            "ar": "فَصْلٌ",
+            "de": "die Jahreszeit",
+            "entryId": "bv-022"
+          },
+          {
+            "ar": "أَرْبَعَةٌ",
+            "de": "vier",
+            "entryId": "bv-023"
+          },
+          {
+            "ar": "صَيْفٌ",
+            "de": "der Sommer",
+            "entryId": "bv-024"
+          },
+          {
+            "ar": "خَرِيفٌ",
+            "de": "der Herbst",
+            "entryId": "bv-025"
+          },
+          {
+            "ar": "شِتَاءٌ",
+            "de": "der Winter",
+            "entryId": "bv-026"
+          },
+          {
+            "ar": "قِرَاءَةٌ",
+            "de": "das Lesen",
+            "entryId": "bv-027"
+          },
+          {
+            "ar": "اِقْرَأْ",
+            "de": "lies!",
+            "entryId": "bv-028"
+          },
+          {
+            "ar": "نَصٌّ",
+            "de": "der Text",
+            "entryId": "bv-029"
+          },
+          {
+            "ar": "ثُمَّ",
+            "de": "dann / danach",
+            "entryId": "bv-030"
+          },
+          {
+            "ar": "أَجِبْ",
+            "de": "antworte!",
+            "entryId": "bv-031"
+          },
+          {
+            "ar": "عَنْ",
+            "de": "über / zu (einem Thema)",
+            "entryId": "bv-032"
+          },
+          {
+            "ar": "سُؤَالٌ",
+            "de": "die Frage",
+            "entryId": "bv-033"
+          },
+          {
+            "ar": "سَلَّمَ",
+            "de": "begrüßen (mit dem Friedensgruß)",
+            "entryId": "bv-034"
+          },
+          {
+            "ar": "مَنْ",
+            "de": "wer",
+            "entryId": "bv-035"
+          },
+          {
+            "ar": "هَلْ",
+            "de": "Fragepartikel für Ja-Nein-Fragen",
+            "entryId": "bv-036"
+          },
+          {
+            "ar": "صَالِحَةُ",
+            "de": "Saliha (Vorname)",
+            "entryId": "bv-037"
+          },
+          {
+            "ar": "صَبَاحٌ",
+            "de": "der Morgen; Sabah (Vorname)",
+            "entryId": "bv-038"
+          },
+          {
+            "ar": "مِنْ",
+            "de": "aus / von",
+            "entryId": "bv-039"
+          },
+          {
+            "ar": "أَيْنَ",
+            "de": "wo",
+            "entryId": "bv-040"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 2
+      },
+      {
+        "id": "books_20261107_03",
+        "title": "القائمة الثالثة",
+        "titleDe": "Liste 3",
+        "count": 20,
+        "words": [
+          {
+            "ar": "أَنَا",
+            "de": "ich",
+            "entryId": "bv-041"
+          },
+          {
+            "ar": "فَرَنْسَا",
+            "de": "Frankreich",
+            "entryId": "bv-042"
+          },
+          {
+            "ar": "بَلْجِيكَا",
+            "de": "Belgien",
+            "entryId": "bv-043"
+          },
+          {
+            "ar": "خَرِيطَةٌ",
+            "de": "die Landkarte",
+            "entryId": "bv-044"
+          },
+          {
+            "ar": "أَمْرِيكَا",
+            "de": "Amerika",
+            "entryId": "bv-045"
+          },
+          {
+            "ar": "دَوْلَةٌ",
+            "de": "der Staat",
+            "entryId": "bv-046"
+          },
+          {
+            "ar": "عَرَبِيَّةٌ",
+            "de": "arabisch (weiblich)",
+            "entryId": "bv-047"
+          },
+          {
+            "ar": "أُورُوبَّا",
+            "de": "Europa",
+            "entryId": "bv-048"
+          },
+          {
+            "ar": "عَالَمٌ",
+            "de": "die Welt",
+            "entryId": "bv-049"
+          },
+          {
+            "ar": "هَذِهِ",
+            "de": "diese / das (weiblich)",
+            "entryId": "bv-050"
+          },
+          {
+            "ar": "خَدِيجَةُ",
+            "de": "Khadidscha (Vorname)",
+            "entryId": "bv-051"
+          },
+          {
+            "ar": "هِيَ",
+            "de": "sie (Einzahl)",
+            "entryId": "bv-052"
+          },
+          {
+            "ar": "تِلْمِيذَةٌ",
+            "de": "die Schülerin",
+            "entryId": "bv-053"
+          },
+          {
+            "ar": "جَدِيدَةٌ",
+            "de": "neu (weiblich)",
+            "entryId": "bv-054"
+          },
+          {
+            "ar": "أَهْلًا",
+            "de": "willkommen!",
+            "entryId": "bv-055"
+          },
+          {
+            "ar": "بِكِ",
+            "de": "mit dir; bei „willkommen“: an dich (weiblich)",
+            "entryId": "bv-057"
+          },
+          {
+            "ar": "مَدْرَسَةٌ",
+            "de": "die Schule",
+            "entryId": "bv-058"
+          },
+          {
+            "ar": "تِلْمِيذٌ",
+            "de": "der Schüler",
+            "entryId": "bv-059"
+          },
+          {
+            "ar": "فِي",
+            "de": "in",
+            "entryId": "bv-060"
+          },
+          {
+            "ar": "صَفٌّ",
+            "de": "die Klasse",
+            "entryId": "bv-061"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 3
+      },
+      {
+        "id": "books_20261107_04",
+        "title": "القائمة الرابعة",
+        "titleDe": "Liste 4",
+        "count": 20,
+        "words": [
+          {
+            "ar": "يُدَرِّسُ",
+            "de": "unterrichten",
+            "entryId": "bv-062"
+          },
+          {
+            "ar": "يَحْمِلُ",
+            "de": "tragen",
+            "entryId": "bv-063"
+          },
+          {
+            "ar": "كُتُبٌ",
+            "de": "die Bücher",
+            "entryId": "bv-064"
+          },
+          {
+            "ar": "طَيِّبٌ",
+            "de": "gut / in Ordnung",
+            "entryId": "bv-065"
+          },
+          {
+            "ar": "قَالَ",
+            "de": "sagen",
+            "entryId": "bv-066"
+          },
+          {
+            "ar": "لَا",
+            "de": "nein / nicht",
+            "entryId": "bv-067"
+          },
+          {
+            "ar": "تَعْرِفُ",
+            "de": "kennen (sie kennt / du kennst)",
+            "entryId": "bv-068"
+          },
+          {
+            "ar": "رَحَّبَتْ",
+            "de": "begrüßen / willkommen heißen (sie begrüßte)",
+            "entryId": "bv-069"
+          },
+          {
+            "ar": "تَبَادَلْ",
+            "de": "tausche aus!",
+            "entryId": "bv-070"
+          },
+          {
+            "ar": "مَعَ",
+            "de": "mit",
+            "entryId": "bv-071"
+          },
+          {
+            "ar": "صَدِيقٌ",
+            "de": "der Freund",
+            "entryId": "bv-072"
+          },
+          {
+            "ar": "هَذَا",
+            "de": "dieser / das (männlich)",
+            "entryId": "bv-073"
+          },
+          {
+            "ar": "كَمَالٌ",
+            "de": "Kamal (Vorname)",
+            "entryId": "bv-074"
+          },
+          {
+            "ar": "رَفِيقٌ",
+            "de": "Rafiq (Vorname)",
+            "entryId": "bv-075"
+          },
+          {
+            "ar": "يَا",
+            "de": "Anredepartikel (z. B. „Hallo, …“)",
+            "entryId": "bv-076"
+          },
+          {
+            "ar": "حَقِيبَةٌ",
+            "de": "die Tasche",
+            "entryId": "bv-077"
+          },
+          {
+            "ar": "نَعَمْ",
+            "de": "ja",
+            "entryId": "bv-078"
+          },
+          {
+            "ar": "دَفْتَرٌ",
+            "de": "das Notizheft",
+            "entryId": "bv-079"
+          },
+          {
+            "ar": "مِسْطَرَةٌ",
+            "de": "das Lineal",
+            "entryId": "bv-080"
+          },
+          {
+            "ar": "مِمْحَاةٌ",
+            "de": "der Radiergummi",
+            "entryId": "bv-081"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 4
+      },
+      {
+        "id": "books_20261107_05",
+        "title": "القائمة الخامسة",
+        "titleDe": "Liste 5",
+        "count": 20,
+        "words": [
+          {
+            "ar": "شُكْرًا",
+            "de": "danke",
+            "entryId": "bv-082"
+          },
+          {
+            "ar": "أَدَوَاتٌ",
+            "de": "die Utensilien",
+            "entryId": "bv-083"
+          },
+          {
+            "ar": "مَدْرَسِيَّةٌ",
+            "de": "schulisch (weiblich)",
+            "entryId": "bv-084"
+          },
+          {
+            "ar": "يَذْهَبُ",
+            "de": "gehen",
+            "entryId": "bv-085"
+          },
+          {
+            "ar": "إِلَى",
+            "de": "zu / nach",
+            "entryId": "bv-086"
+          },
+          {
+            "ar": "تَقْرَأُ",
+            "de": "lesen (sie liest)",
+            "entryId": "bv-087"
+          },
+          {
+            "ar": "يُرَتِّبُ",
+            "de": "ordnen / aufräumen",
+            "entryId": "bv-088"
+          },
+          {
+            "ar": "كَمَا",
+            "de": "wie (im Vergleich)",
+            "entryId": "bv-089"
+          },
+          {
+            "ar": "مِثَالٌ",
+            "de": "das Beispiel",
+            "entryId": "bv-090"
+          },
+          {
+            "ar": "قَلَمٌ",
+            "de": "der Stift",
+            "entryId": "bv-091"
+          },
+          {
+            "ar": "مِقَصٌّ",
+            "de": "die Schere",
+            "entryId": "bv-092"
+          },
+          {
+            "ar": "مِبْرَاةٌ",
+            "de": "der Anspitzer",
+            "entryId": "bv-093"
+          },
+          {
+            "ar": "وَرَقَةٌ",
+            "de": "das Blatt Papier",
+            "entryId": "bv-094"
+          },
+          {
+            "ar": "مُفْرَدَاتٌ",
+            "de": "die Vokabeln",
+            "entryId": "bv-095"
+          },
+          {
+            "ar": "كَلَامٌ",
+            "de": "das Sprechen",
+            "entryId": "bv-096"
+          },
+          {
+            "ar": "كُرَّاسَةٌ",
+            "de": "das Schulheft",
+            "entryId": "bv-097"
+          },
+          {
+            "ar": "أُسْرَةٌ",
+            "de": "die Familie",
+            "entryId": "bv-098"
+          },
+          {
+            "ar": "زَيْنَبُ",
+            "de": "Zainab (Vorname)",
+            "entryId": "bv-099"
+          },
+          {
+            "ar": "سَامِي",
+            "de": "Sami (Vorname)",
+            "entryId": "bv-100"
+          },
+          {
+            "ar": "أَبٌ",
+            "de": "der Vater",
+            "entryId": "bv-101"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 5
+      },
+      {
+        "id": "books_20261107_06",
+        "title": "القائمة السادسة",
+        "titleDe": "Liste 6",
+        "count": 20,
+        "words": [
+          {
+            "ar": "سَلِيمٌ",
+            "de": "Salim (Vorname)",
+            "entryId": "bv-102"
+          },
+          {
+            "ar": "أُمٌّ",
+            "de": "die Mutter",
+            "entryId": "bv-103"
+          },
+          {
+            "ar": "عَزِيزَةُ",
+            "de": "Aziza (Vorname)",
+            "entryId": "bv-104"
+          },
+          {
+            "ar": "أَخٌ",
+            "de": "der Bruder",
+            "entryId": "bv-105"
+          },
+          {
+            "ar": "نِزَارٌ",
+            "de": "Nizar (Vorname)",
+            "entryId": "bv-106"
+          },
+          {
+            "ar": "هُوَ",
+            "de": "er",
+            "entryId": "bv-107"
+          },
+          {
+            "ar": "أُخْتٌ",
+            "de": "die Schwester",
+            "entryId": "bv-108"
+          },
+          {
+            "ar": "سَعِيدَةُ",
+            "de": "Saida (Vorname)",
+            "entryId": "bv-109"
+          },
+          {
+            "ar": "تُحِبُّ",
+            "de": "lieben / mögen (sie liebt)",
+            "entryId": "bv-110"
+          },
+          {
+            "ar": "جَدٌّ",
+            "de": "der Großvater",
+            "entryId": "bv-111"
+          },
+          {
+            "ar": "جَدَّةٌ",
+            "de": "die Großmutter",
+            "entryId": "bv-112"
+          },
+          {
+            "ar": "عَمٌّ",
+            "de": "der Onkel väterlicherseits",
+            "entryId": "bv-113"
+          },
+          {
+            "ar": "عَمَّةٌ",
+            "de": "die Tante väterlicherseits",
+            "entryId": "bv-114"
+          },
+          {
+            "ar": "مُحَمَّدٌ",
+            "de": "Muhammad (Vorname)",
+            "entryId": "bv-115"
+          },
+          {
+            "ar": "يَعْمَلُ",
+            "de": "arbeiten",
+            "entryId": "bv-116"
+          },
+          {
+            "ar": "طَبِيبٌ",
+            "de": "der Arzt",
+            "entryId": "bv-117"
+          },
+          {
+            "ar": "مُعِزٌّ",
+            "de": "Muizz (Vorname)",
+            "entryId": "bv-118"
+          },
+          {
+            "ar": "وَفَاءُ",
+            "de": "Wafa (Vorname)",
+            "entryId": "bv-119"
+          },
+          {
+            "ar": "مُمَرِّضَةٌ",
+            "de": "die Krankenpflegerin",
+            "entryId": "bv-120"
+          },
+          {
+            "ar": "بَيْتٌ",
+            "de": "das Haus",
+            "entryId": "bv-121"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 6
+      },
+      {
+        "id": "books_20261107_07",
+        "title": "القائمة السابعة",
+        "titleDe": "Liste 7",
+        "count": 20,
+        "words": [
+          {
+            "ar": "أَمِينٌ",
+            "de": "Amin (Vorname)",
+            "entryId": "bv-122"
+          },
+          {
+            "ar": "أَيُّوبُ",
+            "de": "Ayyub (Vorname)",
+            "entryId": "bv-123"
+          },
+          {
+            "ar": "كَمْ",
+            "de": "wie viele",
+            "entryId": "bv-124"
+          },
+          {
+            "ar": "غُرْفَةٌ",
+            "de": "das Zimmer",
+            "entryId": "bv-125"
+          },
+          {
+            "ar": "مَاذَا",
+            "de": "was (Frage nach Handlung/Inhalt)",
+            "entryId": "bv-126"
+          },
+          {
+            "ar": "مَطْبَخٌ",
+            "de": "die Küche",
+            "entryId": "bv-127"
+          },
+          {
+            "ar": "فُرْنٌ",
+            "de": "der Backofen",
+            "entryId": "bv-128"
+          },
+          {
+            "ar": "حَمَّامٌ",
+            "de": "das Badezimmer",
+            "entryId": "bv-129"
+          },
+          {
+            "ar": "مَغْطَسٌ",
+            "de": "die Badewanne",
+            "entryId": "bv-130"
+          },
+          {
+            "ar": "جُلُوسٌ",
+            "de": "das Sitzen",
+            "entryId": "bv-131"
+          },
+          {
+            "ar": "أَرِيكَةٌ",
+            "de": "das Sofa",
+            "entryId": "bv-132"
+          },
+          {
+            "ar": "ثَلَّاجَةٌ",
+            "de": "der Kühlschrank",
+            "entryId": "bv-133"
+          },
+          {
+            "ar": "غَسَّالَةٌ",
+            "de": "die Waschmaschine",
+            "entryId": "bv-134"
+          },
+          {
+            "ar": "طَاوِلَةٌ",
+            "de": "der Tisch",
+            "entryId": "bv-135"
+          },
+          {
+            "ar": "نَوْمٌ",
+            "de": "der Schlaf",
+            "entryId": "bv-136"
+          },
+          {
+            "ar": "فَدْوَى",
+            "de": "Fadwa (Vorname)",
+            "entryId": "bv-137"
+          },
+          {
+            "ar": "قِصَّةٌ",
+            "de": "die Geschichte",
+            "entryId": "bv-138"
+          },
+          {
+            "ar": "يُوسُفُ",
+            "de": "Yusuf (Vorname)",
+            "entryId": "bv-139"
+          },
+          {
+            "ar": "يَغْتَسِلُ",
+            "de": "sich waschen (den ganzen Körper)",
+            "entryId": "bv-140"
+          },
+          {
+            "ar": "فَرِيدَةُ",
+            "de": "Farida (Name der Schmetterlingsfigur)",
+            "entryId": "bv-141"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 7
+      },
+      {
+        "id": "books_20261107_08",
+        "title": "القائمة الثامنة",
+        "titleDe": "Liste 8",
+        "count": 20,
+        "words": [
+          {
+            "ar": "فَرَاشَةٌ",
+            "de": "der Schmetterling",
+            "entryId": "bv-142"
+          },
+          {
+            "ar": "وَحِيدَةٌ",
+            "de": "allein / einsam (weiblich)",
+            "entryId": "bv-143"
+          },
+          {
+            "ar": "يَفْعَلُ",
+            "de": "tun / machen",
+            "entryId": "bv-144"
+          },
+          {
+            "ar": "يَكْتُبُ",
+            "de": "schreiben",
+            "entryId": "bv-145"
+          },
+          {
+            "ar": "مُرَادٌ",
+            "de": "Murad (Vorname)",
+            "entryId": "bv-146"
+          },
+          {
+            "ar": "مَسْجِدٌ",
+            "de": "die Moschee",
+            "entryId": "bv-147"
+          },
+          {
+            "ar": "يُصَلِّي",
+            "de": "beten",
+            "entryId": "bv-148"
+          },
+          {
+            "ar": "أَنِيسٌ",
+            "de": "Anis (Vorname)",
+            "entryId": "bv-149"
+          },
+          {
+            "ar": "فِرَاشٌ",
+            "de": "das Bettzeug",
+            "entryId": "bv-150"
+          },
+          {
+            "ar": "شَقَّةٌ",
+            "de": "die Wohnung",
+            "entryId": "bv-151"
+          },
+          {
+            "ar": "يُنَظِّفُ",
+            "de": "putzen / reinigen",
+            "entryId": "bv-152"
+          },
+          {
+            "ar": "سُمَيَّةُ",
+            "de": "Sumayya (Vorname)",
+            "entryId": "bv-153"
+          },
+          {
+            "ar": "مَتَى",
+            "de": "wann",
+            "entryId": "bv-154"
+          },
+          {
+            "ar": "يَقُومُ",
+            "de": "aufstehen",
+            "entryId": "bv-155"
+          },
+          {
+            "ar": "تَوْفِيقٌ",
+            "de": "Taufiq (Vorname)",
+            "entryId": "bv-156"
+          },
+          {
+            "ar": "يَغْسِلُ",
+            "de": "waschen",
+            "entryId": "bv-157"
+          },
+          {
+            "ar": "وَجْهٌ",
+            "de": "das Gesicht",
+            "entryId": "bv-158"
+          },
+          {
+            "ar": "يَلْبَسُ",
+            "de": "anziehen / tragen (Kleidung)",
+            "entryId": "bv-159"
+          },
+          {
+            "ar": "ثِيَابٌ",
+            "de": "die Kleidung",
+            "entryId": "bv-160"
+          },
+          {
+            "ar": "يَأْكُلُ",
+            "de": "essen",
+            "entryId": "bv-161"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 8
+      },
+      {
+        "id": "books_20261107_09",
+        "title": "القائمة التاسعة",
+        "titleDe": "Liste 9",
+        "count": 15,
+        "words": [
+          {
+            "ar": "فُطُورٌ",
+            "de": "das Frühstück",
+            "entryId": "bv-162"
+          },
+          {
+            "ar": "يُمَشِّطُ",
+            "de": "kämmen",
+            "entryId": "bv-163"
+          },
+          {
+            "ar": "شَعْرٌ",
+            "de": "das Haar",
+            "entryId": "bv-164"
+          },
+          {
+            "ar": "يَدٌ",
+            "de": "die Hand",
+            "entryId": "bv-165"
+          },
+          {
+            "ar": "أَسْنَانٌ",
+            "de": "die Zähne",
+            "entryId": "bv-166"
+          },
+          {
+            "ar": "يَسْتَحِمُّ",
+            "de": "baden / duschen",
+            "entryId": "bv-167"
+          },
+          {
+            "ar": "مَسَاءٌ",
+            "de": "der Abend",
+            "entryId": "bv-168"
+          },
+          {
+            "ar": "أَيْضًا",
+            "de": "auch",
+            "entryId": "bv-169"
+          },
+          {
+            "ar": "يَنَامُ",
+            "de": "schlafen",
+            "entryId": "bv-170"
+          },
+          {
+            "ar": "يَتَدَرَّبُ",
+            "de": "üben / trainieren",
+            "entryId": "bv-171"
+          },
+          {
+            "ar": "حَاسُوبٌ",
+            "de": "der Computer",
+            "entryId": "bv-172"
+          },
+          {
+            "ar": "يُرَاجِعُ",
+            "de": "wiederholen (Lernstoff)",
+            "entryId": "bv-173"
+          },
+          {
+            "ar": "دَرْسٌ",
+            "de": "die Lektion",
+            "entryId": "bv-174"
+          },
+          {
+            "ar": "يُشَاهِدُ",
+            "de": "anschauen",
+            "entryId": "bv-175"
+          },
+          {
+            "ar": "تِلْفَازٌ",
+            "de": "der Fernseher",
+            "entryId": "bv-176"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 9
+      }
+    ]
+  }
 }
