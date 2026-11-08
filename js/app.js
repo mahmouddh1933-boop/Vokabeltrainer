@@ -251,7 +251,12 @@
     }
 
     function getCurrentSource() {
-        return getJSON(KEYS.currentSource, {});
+        const source = getJSON(KEYS.currentSource, {});
+        // Rename the former shared book collection without changing IDs or learning records.
+        if (source?.type === "ready-list" && /^books_20261107_/.test(source.id || "")) {
+            return { ...source, levelTitle: "مفردات الكتاب 1" };
+        }
+        return source;
     }
 
     function saveVocabList(vocabList, sourceInfo) {

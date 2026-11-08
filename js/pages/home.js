@@ -40,6 +40,7 @@
     try {
       const catalog = await VocabApp.loadCatalog();
       renderBookVocabulary(catalog.bookVocabulary);
+      renderBookVocabulary(catalog.bookVocabulary2, "book-vocabulary-2");
       renderLearningPath(catalog, learningPath);
     } catch (error) {
       learningPath.innerHTML = `<p class="empty-message">${VocabApp.escapeHTML(error.message)}</p>`;
@@ -173,12 +174,12 @@
     };
   }
 
-  function renderBookVocabulary(collection) {
-    const panel = document.getElementById("book-vocabulary-panel");
-    const grid = document.getElementById("book-vocabulary-lists");
+  function renderBookVocabulary(collection, prefix = "book-vocabulary") {
+    const panel = document.getElementById(`${prefix}-panel`);
+    const grid = document.getElementById(`${prefix}-lists`);
     if (!panel || !grid || !collection?.lists?.length) return;
     panel.hidden = false;
-    const level = { id: collection.id, collection: collection.id, title: collection.title };
+    const level = { id: collection.id, collection: "book-vocabulary", title: collection.title };
     renderListCards(level, collection.lists, grid);
   }
 

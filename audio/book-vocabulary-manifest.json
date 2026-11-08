@@ -1,8 +1,20 @@
 {
   "version": 1,
-  "date": "2026-11-08T00:16:00.597283+00:00",
+  "date": "2026-11-08T00:47:53.026626+00:00",
   "provider": "Google Translate TTS (ar); exact existing vocabulary recordings reused. Synthetic speech, not human recordings.",
   "sourceSha256": "ed0d54d57beacc7c74586fd835dbcd8758e00d3deda47e23a5d1eb56a104b60e",
+  "sources": [
+    {
+      "path": "data/book-vocabulary-source.json",
+      "sha256": "ed0d54d57beacc7c74586fd835dbcd8758e00d3deda47e23a5d1eb56a104b60e",
+      "count": 340
+    },
+    {
+      "path": "data/book-vocabulary-2-source.json",
+      "sha256": "b62175e6858f9705626e16e61911a5f22201117c643dcf3352521e51c203078f",
+      "count": 644
+    }
+  ],
   "complete": true,
   "clips": [
     {
@@ -2044,6 +2056,2712 @@
       "path": "audio/book-vocabulary/ccf9fc8462457e93.mp3",
       "seconds": 1.272,
       "sha256": "d67723a08dea80fea6e677e40314a2966c8ca00b31d30a0a417adb6d4c7ba186"
+    },
+    {
+      "text": "سَلْمَى",
+      "path": "audio/book-vocabulary/99cffd150b5a87bb.mp3",
+      "seconds": 0.912,
+      "sha256": "d6777f8c5e2def38f414e8f17812afbc64cdb71beed481a99608cbc6790a5a0d"
+    },
+    {
+      "text": "هِوَايَةٌ",
+      "path": "audio/vocabulary/e1102bb86923a771.mp3",
+      "seconds": 1.437,
+      "sha256": "7c14c5f40098e7d8152db80bbfdf406ea0d92bb89dde0d0f66a870e93e9d2e77"
+    },
+    {
+      "text": "كَثِيرٌ",
+      "path": "audio/book-vocabulary/28a1744a69c5cc39.mp3",
+      "seconds": 1.152,
+      "sha256": "a36b97f119e1db0e912afd78c27474548dd64aff14e3328071d8a5a432ef4fb2"
+    },
+    {
+      "text": "رِيَاضَةٌ",
+      "path": "audio/youth/101.mp3",
+      "seconds": 1.344,
+      "sha256": "8779bd7acd7a861ea35f56aa595b762fbff10affe013ff20764e32aa4083c11a"
+    },
+    {
+      "text": "تَجَوُّلٌ",
+      "path": "audio/book-vocabulary/3cfbf1dc4f38061c.mp3",
+      "seconds": 1.272,
+      "sha256": "0a66bd903d38d219f6d4f84d59eb786b7e59ac783b3b3e626462c8e0aecbf882"
+    },
+    {
+      "text": "حَدِيقَةٌ",
+      "path": "audio/youth/073.mp3",
+      "seconds": 1.416,
+      "sha256": "52393d8a8ec57a3736e75d2b91193e8565e14c9a7f2d6734aec3ca8ab505c06f"
+    },
+    {
+      "text": "حَيَوَانٌ",
+      "path": "audio/vocabulary/54e5efe76745e7dc.mp3",
+      "seconds": 1.384,
+      "sha256": "7f4dcf5661d4596360dc28ea54a3fffa7f3f0007347792af7e979c9eedfdc34b"
+    },
+    {
+      "text": "رَسْمٌ",
+      "path": "audio/vocabulary/15b7f1e0dc28f9b4.mp3",
+      "seconds": 1.149,
+      "sha256": "506a2d28e634a018acb44341200e25f81caad241cc804b2490007c0787a47582"
+    },
+    {
+      "text": "سَفَرٌ",
+      "path": "audio/vocabulary/35e58eff7c333fd5.mp3",
+      "seconds": 1.228,
+      "sha256": "d69a5d3dac134bdd0ba1503629994d5111a94864e10b47e37334f0a683719ff4"
+    },
+    {
+      "text": "لَدَى",
+      "path": "audio/book-vocabulary/6079f19a2c497560.mp3",
+      "seconds": 0.816,
+      "sha256": "df4a3c07b9397cf43521b738d7e5cb7e2de742f5806eba6c00cb3504f7009aa4"
+    },
+    {
+      "text": "مَكْتَبَةٌ",
+      "path": "audio/youth/100.mp3",
+      "seconds": 1.344,
+      "sha256": "331c8e8e4b12c46b397a3b931bc0f03d8f3491ef6d82710c89854eb87356bd26"
+    },
+    {
+      "text": "كَبِيرٌ",
+      "path": "audio/vocabulary/fa607be42511106e.mp3",
+      "seconds": 1.176,
+      "sha256": "79ae357916ed2b2976d0a590f9cbf07d5f2e9ec680f47de01c439b075a2f7dbd"
+    },
+    {
+      "text": "لَيْسَ",
+      "path": "audio/book-vocabulary/c542e8a77a7fdd23.mp3",
+      "seconds": 0.936,
+      "sha256": "cebbd09a79c55e221596e1329a1396bdb116ab780e6e1bcdc9d062b1d97b952d"
+    },
+    {
+      "text": "مَهْدِي",
+      "path": "audio/book-vocabulary/865990c44ed73f79.mp3",
+      "seconds": 0.96,
+      "sha256": "077edd024c541f749658a667f0580d1d27c22567c97527684b9e5685a9451142"
+    },
+    {
+      "text": "لَعِبٌ",
+      "path": "audio/book-vocabulary/e67f70fd535b4469.mp3",
+      "seconds": 1.128,
+      "sha256": "51a53322129ef66f4ab5d45251f34fe6232c36da516f48e71357addc2617faf8"
+    },
+    {
+      "text": "كُرَةٌ",
+      "path": "audio/book-vocabulary/aa2725acdc84551c.mp3",
+      "seconds": 1.08,
+      "sha256": "4c5d3479487294a8f57310adb2dd5ca2ef2de754f4ca074c0cb6232ec567366f"
+    },
+    {
+      "text": "سُعَادُ",
+      "path": "audio/book-vocabulary/0995e5cf5457f9be.mp3",
+      "seconds": 1.104,
+      "sha256": "5cee092ecd3421b949830f11ebdb11b8a5b32b750ef9db6630efe14f3d4fb595"
+    },
+    {
+      "text": "سِبَاحَةٌ",
+      "path": "audio/vocabulary/c9e4095380ae1879.mp3",
+      "seconds": 1.515,
+      "sha256": "79e539afd616055372c5ea133f9b9455566d1f252c8ac234ec25f37b002d84a3"
+    },
+    {
+      "text": "زِيَارَةٌ",
+      "path": "audio/vocabulary/7e15674d29b6b55f.mp3",
+      "seconds": 1.384,
+      "sha256": "4f6fd50d14dfeb9d7bd2a79a31801fa67299a0ac0fc9ae50d9f0ecfcdd17ae3d"
+    },
+    {
+      "text": "مَعْرِضٌ",
+      "path": "audio/vocabulary/90489c363fc93672.mp3",
+      "seconds": 1.254,
+      "sha256": "241590ed4b304cd1fd8a027211e9d2ae2ec525965d9d6b1a9ba21298f77255e5"
+    },
+    {
+      "text": "رِحْلَةٌ",
+      "path": "audio/vocabulary/ef2eb6b8ed65db6d.mp3",
+      "seconds": 1.254,
+      "sha256": "ccaa31c11109317fa73e88dff4b10b35a376d49a085ffcef3c5484dbca6c9107"
+    },
+    {
+      "text": "جَمْعٌ",
+      "path": "audio/book-vocabulary/a385453cae5dfc7d.mp3",
+      "seconds": 1.104,
+      "sha256": "430110f630bae891a5ccb2ee959bbfaae55010b3311628a788198280a2624027"
+    },
+    {
+      "text": "صُورَةٌ",
+      "path": "audio/vocabulary/94ec4b175fdeb864.mp3",
+      "seconds": 1.28,
+      "sha256": "e24bef27df0bdfdda2fc2bd5be395d18a2007dabe5df14e4d328fe27b09a8107"
+    },
+    {
+      "text": "خَطٌّ",
+      "path": "audio/vocabulary/6fbd5931d9de253b.mp3",
+      "seconds": 1.149,
+      "sha256": "68ce230567ff123fe031a4b489c100ce73ec3cd7a8a9c45555025c25d3c629f3"
+    },
+    {
+      "text": "عَرَبِيٌّ",
+      "path": "audio/vocabulary/909a80831b7309f8.mp3",
+      "seconds": 1.358,
+      "sha256": "eac3cf0b07ffec21071805061f0b02cde942fb31f56ea1533bdaef1e88e9cdf7"
+    },
+    {
+      "text": "طَابَعٌ",
+      "path": "audio/book-vocabulary/770a3e9c7ff195b2.mp3",
+      "seconds": 1.176,
+      "sha256": "d60b2e6b8dbee77d96955782ebc46ec234eee45ca9ff22b02eba9fad3fe1d160"
+    },
+    {
+      "text": "صَدِيقَةٌ",
+      "path": "audio/vocabulary/bde4e1d4c4348371.mp3",
+      "seconds": 1.489,
+      "sha256": "bcc6ab474230e63b80aac059f7af6ece223b93613b346fefddd152c18c6dd43b"
+    },
+    {
+      "text": "سَأَلَ",
+      "path": "audio/book-vocabulary/1b487e806f99f6db.mp3",
+      "seconds": 0.984,
+      "sha256": "f538d25f226fe43f9f72464ed3e679df7deea7256c8558b532ee63cd7dceb89d"
+    },
+    {
+      "text": "سَالِمٌ",
+      "path": "audio/book-vocabulary/900f9e41d8d0ed5a.mp3",
+      "seconds": 1.224,
+      "sha256": "8579801eace4c5e98db3fdadf5304bd3d89c27950a7caa40ed5a2619f2345d1e"
+    },
+    {
+      "text": "مَحْمُودٌ",
+      "path": "audio/book-vocabulary/d6f336d7ede9064a.mp3",
+      "seconds": 1.296,
+      "sha256": "32ef5c8959a4e1ed490c4c5e4cff15267a61545cd91f79c9fb453b49280675d6"
+    },
+    {
+      "text": "مَالِي",
+      "path": "audio/book-vocabulary/05dd6e081b0805b1.mp3",
+      "seconds": 0.96,
+      "sha256": "6eba768a82d21d2e0490e392624542920a49f48e1fb52f03e51aea48f2d9874a"
+    },
+    {
+      "text": "مَالِيٌّ",
+      "path": "audio/book-vocabulary/a6306d0c8f9f04dc.mp3",
+      "seconds": 1.296,
+      "sha256": "65001817ffda23b5091e8a4012f88600c2322706a6d2ef7cb0754f213c78de22"
+    },
+    {
+      "text": "جِنْسِيَّةٌ",
+      "path": "audio/vocabulary/e50e11ff66361e27.mp3",
+      "seconds": 1.567,
+      "sha256": "d4199d191681534f7840cd43ab77a39abf52bce706ef77c31ac01196885f834e"
+    },
+    {
+      "text": "فَرَنْسِيٌّ",
+      "path": "audio/book-vocabulary/4ba1f6a6da252b50.mp3",
+      "seconds": 1.488,
+      "sha256": "65b86ed401b15952f0f742480b885a56ce772a3a5066d4cca2996ca9cebf1f33"
+    },
+    {
+      "text": "يَقَعُ",
+      "path": "audio/book-vocabulary/5ebcbf16e09e4c10.mp3",
+      "seconds": 0.984,
+      "sha256": "8244fcffc01aba23d56117b15961107e274bd05bc8139e26036eb49f580441b2"
+    },
+    {
+      "text": "أَفْرِيقِيَا",
+      "path": "audio/book-vocabulary/cb72c45ac4f0f1a5.mp3",
+      "seconds": 1.272,
+      "sha256": "d5aefb758052a4a4acb6e1828bf40711e88afad79717c241c02f9af9e859fcef"
+    },
+    {
+      "text": "يَشْتَغِلُ",
+      "path": "audio/book-vocabulary/eb3435acd36a3dbc.mp3",
+      "seconds": 1.2,
+      "sha256": "e7884ceab32f59b4858df26bef2f932c500e9710a9d87870378c8ac95cd665bf"
+    },
+    {
+      "text": "مُهَنْدِسٌ",
+      "path": "audio/vocabulary/ff570345dbcdcee0.mp3",
+      "seconds": 1.437,
+      "sha256": "3fcd3cb8597a03e7b341e739124cd8c7a0ad26cea9039ae7a8b6618347f2be04"
+    },
+    {
+      "text": "مَصْنَعٌ",
+      "path": "audio/vocabulary/5c25e61735dcdc81.mp3",
+      "seconds": 1.254,
+      "sha256": "3a57e9216e14db3ff2942958f39b3c99e96953c3f02264d5f0aeb9eb9138ac23"
+    },
+    {
+      "text": "بَارِيسُ",
+      "path": "audio/book-vocabulary/8a67eab2eee88d47.mp3",
+      "seconds": 1.08,
+      "sha256": "957346534f476d0a45994663476911a434193cbdcac689e19b1dc99f63fafce9"
+    },
+    {
+      "text": "إِسْلَامِيٌّ",
+      "path": "audio/book-vocabulary/a4b17ec447be351d.mp3",
+      "seconds": 1.296,
+      "sha256": "89ec022a58710dfd784607cd86e2767ef8bef2399644b942114eb1fee7e8d116"
+    },
+    {
+      "text": "كَنَدَا",
+      "path": "audio/book-vocabulary/3ffa605927cb729a.mp3",
+      "seconds": 0.912,
+      "sha256": "c097a100403ecd250f31e679d794901cff2d6c49efd0773c1cddd3ea9128e582"
+    },
+    {
+      "text": "أَلْمَانِيَا",
+      "path": "audio/vocabulary/b6ce1a256156587f.mp3",
+      "seconds": 1.28,
+      "sha256": "3c8385f1ba4ed08820c68e1f6b9074bce96b187165d22b532654205e56db7f5f"
+    },
+    {
+      "text": "السُّوِيدُ",
+      "path": "audio/book-vocabulary/a3213e3e77d1d89b.mp3",
+      "seconds": 1.152,
+      "sha256": "dccaf39472f9d6fa8ec5c9de70b03c01f1bafdc7a2ce70184321eb26243dc762"
+    },
+    {
+      "text": "النَّمْسَا",
+      "path": "audio/book-vocabulary/49949ff1db92177e.mp3",
+      "seconds": 1.128,
+      "sha256": "8481f8963d4df374f3cb86c3e2c89f1fd5a0243d5108c23fee6e0c675ba68529"
+    },
+    {
+      "text": "الدَّانِمَارْكُ",
+      "path": "audio/book-vocabulary/cdfd46873387fc21.mp3",
+      "seconds": 1.464,
+      "sha256": "5724e5a222f612b67a02ec5d67a8742e1ff27095eea58771ea405893a6c93d7b"
+    },
+    {
+      "text": "تُونِسُ",
+      "path": "audio/vocabulary/2380a1aa50ffee4f.mp3",
+      "seconds": 1.097,
+      "sha256": "5f8e78f93e2ffe93626f8fa46ea1d46bae8343051e160e869192996724d6b18a"
+    },
+    {
+      "text": "لُبْنَانُ",
+      "path": "audio/vocabulary/a6684908c8547ccd.mp3",
+      "seconds": 1.176,
+      "sha256": "bba540ae57b9a8336e0d11a1b664fc61b209ce0e22685778d90b4e83e40240cd"
+    },
+    {
+      "text": "فِلَسْطِينُ",
+      "path": "audio/book-vocabulary/ce465f2d689f4fbb.mp3",
+      "seconds": 1.32,
+      "sha256": "d6b2d513f56b3506c2ba581c85547d3e820683511b2df7149ffbc3e56d811b20"
+    },
+    {
+      "text": "يَذْكُرُ",
+      "path": "audio/book-vocabulary/0ca2a14b2866653e.mp3",
+      "seconds": 1.032,
+      "sha256": "181ff2a7a73e8ca3a9dfe46d06938d8f3583e0319b4e52da3383d20e60bf8f0d"
+    },
+    {
+      "text": "كُلٌّ",
+      "path": "audio/book-vocabulary/5bc8b6737a8af49d.mp3",
+      "seconds": 0.936,
+      "sha256": "2001b450893f7f494c1a38047ace99f36e180354b15a78140f67234cd79809d5"
+    },
+    {
+      "text": "بَلَدٌ",
+      "path": "audio/book-youth-two-part-one/439662fb4f7c45.mp3",
+      "seconds": 1.104,
+      "sha256": "28ff9ff309ece8e1f96328b97a5cc24e860b87b025aa790a58f2049788f67b07"
+    },
+    {
+      "text": "السِّنِغَالُ",
+      "path": "audio/book-vocabulary/a75cc4b778550383.mp3",
+      "seconds": 1.368,
+      "sha256": "2380ef7512070ef0d096051014f9c36b288acdf47ae21b861a94b4ccf5b832e8"
+    },
+    {
+      "text": "الْجَزَائِرُ",
+      "path": "audio/book-vocabulary/a212b07b062ec42d.mp3",
+      "seconds": 1.32,
+      "sha256": "3b3aa802b103cef2d1dac6bd3f5e412166c238695ba6b31998d1ffff6e6f781c"
+    },
+    {
+      "text": "سُورِيَا",
+      "path": "audio/vocabulary/bfc6fc0a3c93e63e.mp3",
+      "seconds": 1.071,
+      "sha256": "ec6b3fdfaabf4ffd90d43717b8aa7eb35034e2a06da09f2c93326470deec20dc"
+    },
+    {
+      "text": "الْمَكْسِيكُ",
+      "path": "audio/book-vocabulary/1cf73d0adf3dbd2f.mp3",
+      "seconds": 1.296,
+      "sha256": "33baab01fa49954aab3f584b0360f16556013204ea99b07c5c03ca79d12977d1"
+    },
+    {
+      "text": "الْيَابَانُ",
+      "path": "audio/book-vocabulary/3ef3b54948275498.mp3",
+      "seconds": 1.224,
+      "sha256": "ac4c9d740a1562af6c4a62e23a1d53dbe38ba3e2cd8737642b50d02dbb02afbc"
+    },
+    {
+      "text": "النِّيجَرُ",
+      "path": "audio/book-vocabulary/3133a0076f255804.mp3",
+      "seconds": 1.2,
+      "sha256": "5f7894b6fc3f01816d76d062b5cfcefce66e652141baaa9446737a72c9f82835"
+    },
+    {
+      "text": "الْآنَ",
+      "path": "audio/vocabulary/fe4fe97fd6cef8a0.mp3",
+      "seconds": 1.149,
+      "sha256": "00950486a462b1091b213651a451e56069195dc1f615f44bc7c5a29b9d07639f"
+    },
+    {
+      "text": "هُدَى",
+      "path": "audio/book-vocabulary/06fa2bb64ba87822.mp3",
+      "seconds": 0.84,
+      "sha256": "8df231f98d9e7a99f172b6273da0724c44303900028987a05a80d9b45b3b8f87"
+    },
+    {
+      "text": "إِبْرَاهِيمُ",
+      "path": "audio/book-vocabulary/72d0551a470abef8.mp3",
+      "seconds": 1.272,
+      "sha256": "489f2dc54825140895810cdbdb08ac9edd3b766253d44e03ce8793482fdec866"
+    },
+    {
+      "text": "وَقْتٌ",
+      "path": "audio/vocabulary/eaa93b75e7884102.mp3",
+      "seconds": 1.123,
+      "sha256": "62c77b81a34c9ac83138a97a8d53dc7600857224005415a795466fa48ba24193"
+    },
+    {
+      "text": "مُبَكِّرٌ",
+      "path": "audio/book-vocabulary/5b899aaf89d6aa66.mp3",
+      "seconds": 1.296,
+      "sha256": "62ef56b4042b2c2cf6d446417f1f56d28a015af078d4e44085b287587bcb9d17"
+    },
+    {
+      "text": "بَعِيدٌ",
+      "path": "audio/vocabulary/c174956ba2469e48.mp3",
+      "seconds": 1.254,
+      "sha256": "c03fae2615de49294520a9eebfdfbf8dddf0eeefff36b27026daaecc8bd7f6ec"
+    },
+    {
+      "text": "يَبْدَأُ",
+      "path": "audio/vocabulary/4c9b12ddc42822bb.mp3",
+      "seconds": 1.123,
+      "sha256": "5fe2bfcda8b88c5b6a935f1b9bb7fe8b5ef247882c4886202ce4dbff17a55fdc"
+    },
+    {
+      "text": "دِرَاسِيٌّ",
+      "path": "audio/book-vocabulary/ad3851cc4a40b3b8.mp3",
+      "seconds": 1.392,
+      "sha256": "c2fc8fbeb2deaad7d129b1cb9e0972a168678dd4eb92bde3996f486038fc1c5d"
+    },
+    {
+      "text": "سِتَّةٌ",
+      "path": "audio/vocabulary/d4b325b1bd518ff3.mp3",
+      "seconds": 1.28,
+      "sha256": "70fcba706ece86750863eeed3a140c97dc8d4fc85bf7003b50adf9de5f29bdb1"
+    },
+    {
+      "text": "صَاحِبٌ",
+      "path": "audio/book-vocabulary/931a33c7ba21777c.mp3",
+      "seconds": 1.248,
+      "sha256": "3b80c6a050eeb84fc63996979838f58a296c6c9a230fa212b49475a14ffe42df"
+    },
+    {
+      "text": "نَائِمَةٌ",
+      "path": "audio/book-vocabulary/ec1a92e1b013e8a0.mp3",
+      "seconds": 1.344,
+      "sha256": "09c47f8d2af43890d46767a918146f0ec4a2dde122a3816d916410883239746b"
+    },
+    {
+      "text": "تَاسِعَةٌ",
+      "path": "audio/book-vocabulary/6979de785d73cbb5.mp3",
+      "seconds": 1.392,
+      "sha256": "bc860e5c0ec1558faf1b8716127e415808eb2ac4156e08dc279ca0f84e71eeaf"
+    },
+    {
+      "text": "مُتَأَخِّرٌ",
+      "path": "audio/book-vocabulary/1c97319c3fedee3e.mp3",
+      "seconds": 1.464,
+      "sha256": "de037236674e1757adbaa01fad4cd055ea813ab91283c619f05ab2fb7ac79836"
+    },
+    {
+      "text": "يَسْكُنُ",
+      "path": "audio/vocabulary/d6ba3814e23fda08.mp3",
+      "seconds": 1.123,
+      "sha256": "5fafef7b7360de590beddc425fe05acdd60a6afb7f94d2f90a699ddad9bfa957"
+    },
+    {
+      "text": "عَلِيٌّ",
+      "path": "audio/book-vocabulary/922fa19e2981a3ad.mp3",
+      "seconds": 1.2,
+      "sha256": "31e564edd363e333ed0873caf6877fb7a1b29d344d0daa08c50aec1cfd9e4bcb"
+    },
+    {
+      "text": "أَحْمَدُ",
+      "path": "audio/book-vocabulary/3c208d5fc23073fa.mp3",
+      "seconds": 1.032,
+      "sha256": "2095b3c050bfdb0e1651d72e92f7938c32f3d3ae8d595900e7293836cf34419b"
+    },
+    {
+      "text": "حَيٌّ",
+      "path": "audio/vocabulary/76a14c5ec1a16e75.mp3",
+      "seconds": 1.149,
+      "sha256": "939e7a406cde128184cf56b6fa9b1511701445eac0bb0760fc52ee995d9daddd"
+    },
+    {
+      "text": "زَهْرَةٌ",
+      "path": "audio/vocabulary/ba06fef74b480e83.mp3",
+      "seconds": 1.332,
+      "sha256": "60d2f32187050f9d843079006714e0acf36528a4a60d10e7238181137b3caada"
+    },
+    {
+      "text": "مِينَاءٌ",
+      "path": "audio/book-vocabulary/31748c8b6773f665.mp3",
+      "seconds": 1.2,
+      "sha256": "3ef15679b283d5e2d603d33c2adf1b0b4c8dc52bab3662efa2c31cef3f81b5bb"
+    },
+    {
+      "text": "وَاسِعٌ",
+      "path": "audio/vocabulary/6b885f7f708136fe.mp3",
+      "seconds": 1.332,
+      "sha256": "ab04ef1bfbdf197d87d8472b334a7968111c3c8efaf93914a90954a201c04350"
+    },
+    {
+      "text": "طَابِقٌ",
+      "path": "audio/vocabulary/a745e230b2a43b15.mp3",
+      "seconds": 1.254,
+      "sha256": "2cc09ac647ab4e61143f29d168b2494257cc7d28b59e368d08ff93b0051a9398"
+    },
+    {
+      "text": "ثَانٍ",
+      "path": "audio/book-vocabulary/6591da2eacc4ce61.mp3",
+      "seconds": 1.104,
+      "sha256": "f7b31bdb863622bb43b412e00751720031c05a0f779de7c5c434bd0fefa053ff"
+    },
+    {
+      "text": "لِ",
+      "path": "audio/book-vocabulary/c09f1ab2e58ceeb8.mp3",
+      "seconds": 0.792,
+      "sha256": "49e21f35a38385bf579c38b244ffe475c279802bc6bc6e1de15c3472a9443bc8"
+    },
+    {
+      "text": "اِسْتِقْبَالٌ",
+      "path": "audio/vocabulary/3d3e41d73b370d76.mp3",
+      "seconds": 1.515,
+      "sha256": "6858d16841585a596c45b0b725c20a0c7797bee03bb33552b43bd368197ae677"
+    },
+    {
+      "text": "ضَيْفٌ",
+      "path": "audio/vocabulary/e821465a6071b731.mp3",
+      "seconds": 1.176,
+      "sha256": "4a7bf4eb3dd48090f0d53c2e54a5d6d766a21e40a2b304b597e5c769f49fb269"
+    },
+    {
+      "text": "بَدْرٌ",
+      "path": "audio/book-vocabulary/e48879b881be4666.mp3",
+      "seconds": 1.08,
+      "sha256": "21c33e5962efe812d8f993f435b4892605a93bc453d109d0aa463c8abd1e9dd0"
+    },
+    {
+      "text": "مَلْعَبٌ",
+      "path": "audio/vocabulary/fc9fa93e37779f56.mp3",
+      "seconds": 1.228,
+      "sha256": "325170f76703de8ae9ce8fff5cdaa2d89d7a6f36c694f0fe0841a464e5fa787b"
+    },
+    {
+      "text": "سَعَادَةٌ",
+      "path": "audio/book-vocabulary/43830d5178c50136.mp3",
+      "seconds": 1.416,
+      "sha256": "fbb4cedd4c3550ea504ed1030c43cfee480d33732f5c8932a9649a8e24f1d7e9"
+    },
+    {
+      "text": "الَّذِي",
+      "path": "audio/book-vocabulary/a6470bb8a0e1547d.mp3",
+      "seconds": 0.912,
+      "sha256": "b429a8b649ada14a69010d7a6c62d13b29eb8d313f1e856ab7237df53598f1b4"
+    },
+    {
+      "text": "مَدِينَةٌ",
+      "path": "audio/vocabulary/404bb2ca0a80ebe5.mp3",
+      "seconds": 1.463,
+      "sha256": "290e3510f772078ac7c3a9efe3cff0375d5a52297d4288f3ab1589374717d9b2"
+    },
+    {
+      "text": "قَرْيَةٌ",
+      "path": "audio/vocabulary/85df8473a9477ca6.mp3",
+      "seconds": 1.254,
+      "sha256": "8c30ab6a06849bb74016cf5fc9ffafd2e57799fb5318ca2a52f93f8fe4ca48af"
+    },
+    {
+      "text": "صَغِيرٌ",
+      "path": "audio/vocabulary/28d540d594c9e251.mp3",
+      "seconds": 1.254,
+      "sha256": "41a545da464c96fe9b3c3af5c23d28a7abfe9598173d6177d80d31e173c63c11"
+    },
+    {
+      "text": "عِمَارَةٌ",
+      "path": "audio/book-vocabulary/8624fdb5313f5ab3.mp3",
+      "seconds": 1.392,
+      "sha256": "c0725a0b27a9c46d2b0310f3fa4297f8b4cfe3664a7ff4eb75d06e1ab1a4babe"
+    },
+    {
+      "text": "عَالٍ",
+      "path": "audio/book-vocabulary/6c09c71d03ed6fa0.mp3",
+      "seconds": 1.056,
+      "sha256": "79b2fafdf1124cdec05b6ea27dbd7027cab83355ca85b488cbd6c71a13ccc660"
+    },
+    {
+      "text": "نَاسٌ",
+      "path": "audio/book-vocabulary/d4c85484ad93eaae.mp3",
+      "seconds": 1.128,
+      "sha256": "4069e5707b964d7dfb63b8b357735ad4b79d4256e914a13faf311164ecc238d3"
+    },
+    {
+      "text": "شَارِعٌ",
+      "path": "audio/youth/127.mp3",
+      "seconds": 1.272,
+      "sha256": "340a47417bfa4722adccbc19dd56391ceb8df2ea3a23eecf3c8a6d99f8be3b31"
+    },
+    {
+      "text": "طَرِيقٌ",
+      "path": "audio/vocabulary/359a3fc1669f5f04.mp3",
+      "seconds": 1.228,
+      "sha256": "d6726c802be09acafd39bc988926abf428dd29a80ebb12325b489f351ca96148"
+    },
+    {
+      "text": "مُزْدَحِمٌ",
+      "path": "audio/book-vocabulary/fcef4ae3f7868df5.mp3",
+      "seconds": 1.32,
+      "sha256": "4f8c1af9f1caedbe60a186916240d3e76c6cb64dcf40c1b7dc9f3163205de333"
+    },
+    {
+      "text": "فَارِغٌ",
+      "path": "audio/vocabulary/eba557abf1d1173e.mp3",
+      "seconds": 1.306,
+      "sha256": "bba8734a718e35daee6c36dc9843312db2f36fbaffefdd2b5de04c1e4d3ced08"
+    },
+    {
+      "text": "طِفْلٌ",
+      "path": "audio/vocabulary/4b83fb0d246eab09.mp3",
+      "seconds": 1.071,
+      "sha256": "47ac125100e3bd45226648a017d6df116a63e73a219d73eb020eec4094b08f55"
+    },
+    {
+      "text": "ثَالِثٌ",
+      "path": "audio/book-vocabulary/6b56d146b20d6ba4.mp3",
+      "seconds": 1.272,
+      "sha256": "40ecb86d186a0e293fbef7c391d4061ff70efc25a4e55c91fbc3d6dd0dc33730"
+    },
+    {
+      "text": "خَالَةٌ",
+      "path": "audio/vocabulary/89fe156768ac829e.mp3",
+      "seconds": 1.332,
+      "sha256": "0046a9260f8a819d29314517ed8cbf41118fcbc8e6689786eccf55ecfc87db4e"
+    },
+    {
+      "text": "سَهْلًا",
+      "path": "audio/book-vocabulary/1c545f6c5a7daf82.mp3",
+      "seconds": 1.08,
+      "sha256": "bbdb9ecfc0f6e1d2069a7bbd09ffdb405f088f831eb9beb730bcc5d2df249b05"
+    },
+    {
+      "text": "دُخُولٌ",
+      "path": "audio/book-vocabulary/582816916253517a.mp3",
+      "seconds": 1.2,
+      "sha256": "8285eff3c1d9d5e3d2e09e529055ee7136b86b578c9b5ee8e78b1efb1655f7f2"
+    },
+    {
+      "text": "هُنَا",
+      "path": "audio/vocabulary/f99baa9b41be4866.mp3",
+      "seconds": 0.888,
+      "sha256": "e010d893e9bb1ea413b7dc3436089269ab0fc34153f95ae896dc2e474a1c3046"
+    },
+    {
+      "text": "اُدْخُلْ",
+      "path": "audio/book-vocabulary/4af73579182e7efc.mp3",
+      "seconds": 0.96,
+      "sha256": "420580a9ea26e5418abdef76a6e491c60cffa7658edacc5b9a3c14c9e1b06002"
+    },
+    {
+      "text": "مُرَتَّبَةٌ",
+      "path": "audio/book-vocabulary/1d8bbf6db5096dad.mp3",
+      "seconds": 1.464,
+      "sha256": "5f493750cc1378d48e6a9caa2e2072049a55fe6828593b252abb9107e8466dfd"
+    },
+    {
+      "text": "سَرِيرٌ",
+      "path": "audio/youth/071.mp3",
+      "seconds": 1.152,
+      "sha256": "7122bd3fbe154dcff8101ebf45cda4d272738fd262d0c4df87045d758a57aae1"
+    },
+    {
+      "text": "مَكْتَبٌ",
+      "path": "audio/vocabulary/6986740cfc067e30.mp3",
+      "seconds": 1.254,
+      "sha256": "5f8f143008dfa91b2da41146d648776770f9cfc3c8a9f7ba2177a68cb64eef12"
+    },
+    {
+      "text": "خِزَانَةٌ",
+      "path": "audio/vocabulary/80a5d70bbb17ebe8.mp3",
+      "seconds": 1.541,
+      "sha256": "2e4ab4d2495b5ea3c87a4a9f32d830324a64370cd9ca44f88220a953eb422bea"
+    },
+    {
+      "text": "يُعَلِّقُ",
+      "path": "audio/book-vocabulary/d03abc5c52c0c183.mp3",
+      "seconds": 1.272,
+      "sha256": "b272afee3b64b6be8adfd6e99e50825788717421a28ae37ea8ae22e5ebc02e20"
+    },
+    {
+      "text": "مَلْآنَةٌ",
+      "path": "audio/book-vocabulary/e61a26e9e30e8f6b.mp3",
+      "seconds": 1.464,
+      "sha256": "3a7caa4110e0969b93f07e326ef8f8655d1881555b9c5791e0a9fbda180f7200"
+    },
+    {
+      "text": "يَشْتَرِي",
+      "path": "audio/vocabulary/a41c04f198a81cc0.mp3",
+      "seconds": 1.123,
+      "sha256": "9eb1337909431decddd33b6089a6e7b3d7a018d7bb9fa4f820ae23b30e48415f"
+    },
+    {
+      "text": "مُنَاسَبَةٌ",
+      "path": "audio/vocabulary/579bc0e65fad64ef.mp3",
+      "seconds": 1.567,
+      "sha256": "afd19dbcea98a500c8be7b69f6d0bb8c34592f2794481dd420c8c855020125e2"
+    },
+    {
+      "text": "مُخْتَلِفَةٌ",
+      "path": "audio/book-vocabulary/66185d1da1960d1b.mp3",
+      "seconds": 1.512,
+      "sha256": "b307b5db7bd7b01067542120c18e7ee0b164f30862f579a8190941173a91bd03"
+    },
+    {
+      "text": "يُقَدِّمُ",
+      "path": "audio/book-vocabulary/5a637788ab2cc6a4.mp3",
+      "seconds": 1.248,
+      "sha256": "196af129b9362ba95d081f54846806d34e73ef1ee23f764c0af954d82f0e1d55"
+    },
+    {
+      "text": "مُطَالَعَةٌ",
+      "path": "audio/book-vocabulary/d33786fdae5a8d9f.mp3",
+      "seconds": 1.464,
+      "sha256": "0ad39421d681ee6de8f628fa45f3344f33967f6714acb972a7774e5712bcdfdb"
+    },
+    {
+      "text": "يَطْلُبُ",
+      "path": "audio/book-vocabulary/bbf0d21423e74eb8.mp3",
+      "seconds": 1.032,
+      "sha256": "92b0241d36508f45ad45ed9b0a57928cc1f1b78325c40c0aedbbfe5567313645"
+    },
+    {
+      "text": "أَنْ",
+      "path": "audio/book-vocabulary/21053ea34ac3b7be.mp3",
+      "seconds": 0.816,
+      "sha256": "7c741bfed7d1dddfe7a50974c062b5ddc4a8991ac011b15f99679b31cbf1b976"
+    },
+    {
+      "text": "يَصْنَعُ",
+      "path": "audio/book-vocabulary/97b160b5b3a77559.mp3",
+      "seconds": 1.08,
+      "sha256": "99f83ea73227a0d04367999ab0eb923c978a526dccd8a5321256edb9674a78ff"
+    },
+    {
+      "text": "غَيْرُ",
+      "path": "audio/book-vocabulary/d2c2b9604e2cf204.mp3",
+      "seconds": 0.936,
+      "sha256": "747f86b07591e61de13dd59d4b64998113db59a1c0f5d2565e99762f335cca3f"
+    },
+    {
+      "text": "إِطَارٌ",
+      "path": "audio/book-vocabulary/893cc84467cf7a4c.mp3",
+      "seconds": 1.152,
+      "sha256": "713aaf4504473dc380de30a8e3530935487add768b19cbe8f937907a1955ee3a"
+    },
+    {
+      "text": "كُرْسِيٌّ",
+      "path": "audio/vocabulary/a67606fd936b11d9.mp3",
+      "seconds": 1.306,
+      "sha256": "64a7dd5fcc3f5b52470b56e1f399d4d1be00ea304a1db293b913dae8c178cbf6"
+    },
+    {
+      "text": "دَرَجٌ",
+      "path": "audio/book-vocabulary/c81ee016e869718c.mp3",
+      "seconds": 1.152,
+      "sha256": "8a4da0121a5e327df59cdb470f12d6bc7a69c8ce98d1598f4499950c255fb764"
+    },
+    {
+      "text": "مِرْحَاضٌ",
+      "path": "audio/book-vocabulary/9812557c70c194c0.mp3",
+      "seconds": 1.248,
+      "sha256": "a33465c1a2b752dbcad50c96e5007a17377636d75e7fb61905cb837863f058e1"
+    },
+    {
+      "text": "مُسْتَوْدَعٌ",
+      "path": "audio/book-vocabulary/523c4cc4dcda1202.mp3",
+      "seconds": 1.44,
+      "sha256": "96340f8d3b93579b9a68818f6aba2a17b3594437a10a47b80c7c72dfdf15427b"
+    },
+    {
+      "text": "وَصَلَتْ",
+      "path": "audio/book-vocabulary/e2172847f4ad2154.mp3",
+      "seconds": 1.056,
+      "sha256": "d4d0ae187582d794cfec468fd1b547be3ebd84043be6a72af5d57b5b9c2ce6a2"
+    },
+    {
+      "text": "دُكَّانٌ",
+      "path": "audio/book-vocabulary/60115613da4b59e1.mp3",
+      "seconds": 1.272,
+      "sha256": "a2fe68287b3de6a9f9cc2e4476a2de252ac8d9a00dbd6d00e89c08eecb6de53e"
+    },
+    {
+      "text": "خَبَّازٌ",
+      "path": "audio/book-youth-two-part-one/4bfb5562e5dc86.mp3",
+      "seconds": 1.344,
+      "sha256": "63885516e17afb9d5e5b41ddb425ddf30ef125e5ed03dafeea71065cfb18c322"
+    },
+    {
+      "text": "إِنَّ",
+      "path": "audio/book-vocabulary/05eb551f82196747.mp3",
+      "seconds": 0.84,
+      "sha256": "308ac8ab84356484a257e6936c3559b312490bd44b173780803be52153bffe7a"
+    },
+    {
+      "text": "قَرِيبٌ",
+      "path": "audio/vocabulary/654cd7aed8ea04e1.mp3",
+      "seconds": 1.202,
+      "sha256": "0449d1825ad5d180b58b2fb1b6c5fb80334d5ed2d2bc55b7d4a109300c69368f"
+    },
+    {
+      "text": "أَمَامَ",
+      "path": "audio/vocabulary/b484c6d4c342f21e.mp3",
+      "seconds": 1.071,
+      "sha256": "6fb8fa88c7e1030d25b0c60e868b2625ca203920502a862f32c9cbdc4a60cf5b"
+    },
+    {
+      "text": "سُكَّرٌ",
+      "path": "audio/vocabulary/b004da763375b683.mp3",
+      "seconds": 1.202,
+      "sha256": "62f92bfcdf690c2c45f7d110caad2153cdc2d18f8801a18dc01e1fa06145f31d"
+    },
+    {
+      "text": "بُنٌّ",
+      "path": "audio/book-vocabulary/3645fbf9186c4621.mp3",
+      "seconds": 0.936,
+      "sha256": "1560f3c9e0544487fec40f5cf4793bf03808e10934aa679a5d251fa6e8b79493"
+    },
+    {
+      "text": "يُوجَدُ",
+      "path": "audio/book-vocabulary/566656aacabc27e5.mp3",
+      "seconds": 1.056,
+      "sha256": "5663672d329bfbda9099c50ddd8e218400e3ecbd0003cb53baded5cc6525558e"
+    },
+    {
+      "text": "مَتْجَرٌ",
+      "path": "audio/vocabulary/db390557dcc3bdd0.mp3",
+      "seconds": 1.202,
+      "sha256": "773b4975326abf22a76fc72c4b1e08da55bafd677fbbd310efc76dae9e162688"
+    },
+    {
+      "text": "جَانِبٌ",
+      "path": "audio/book-vocabulary/3309b6026c1a06b3.mp3",
+      "seconds": 1.2,
+      "sha256": "de6c493495b5ba18a074f256a56ca62cad44ee556dea05b9b7347bea22fafe1c"
+    },
+    {
+      "text": "قُرْبٌ",
+      "path": "audio/book-vocabulary/635c4e6e06f54f69.mp3",
+      "seconds": 1.008,
+      "sha256": "c0b2b320c27bf8b3c0adba92b10937e716ceb36887e742c96c1aee1806657aed"
+    },
+    {
+      "text": "صَيْدَلِيَّةٌ",
+      "path": "audio/vocabulary/dee0a1affb28de7f.mp3",
+      "seconds": 1.62,
+      "sha256": "0461d0d9284a26973dd848ccb22b2d6458adab98c2efc6e73da702cd3818ef41"
+    },
+    {
+      "text": "شَيْءٌ",
+      "path": "audio/book-vocabulary/3f2f40309c220a18.mp3",
+      "seconds": 1.056,
+      "sha256": "a4d368c3ffea8762a2b85461cb31968c7b22a1ffa77e8e228c4de61e69442935"
+    },
+    {
+      "text": "آخَرُ",
+      "path": "audio/book-vocabulary/448ce5124b05c19c.mp3",
+      "seconds": 1.056,
+      "sha256": "ef103fffb4403cc55a89930ed8132f374504035ae2c488fe882969618d320b6d"
+    },
+    {
+      "text": "زُجَاجَةٌ",
+      "path": "audio/vocabulary/c354af2b01c43e2e.mp3",
+      "seconds": 1.541,
+      "sha256": "9660d76fe2ce4ae01306aa0f833581444aa5f38a877404ce8ea6dbfdeeaba628"
+    },
+    {
+      "text": "زَيْتٌ",
+      "path": "audio/vocabulary/d70bdb0299a10354.mp3",
+      "seconds": 1.176,
+      "sha256": "bf411f2841d3dd429cc924f1b5fcd13b043ea6329aed8d811d846a062c9b176b"
+    },
+    {
+      "text": "صَابُونٌ",
+      "path": "audio/vocabulary/9ea750d44cf3ff85.mp3",
+      "seconds": 1.28,
+      "sha256": "f06aedd011fd87150a6075248c1364787e7376953b4c94c6c091fc3c88fc58ff"
+    },
+    {
+      "text": "مَعْجُونٌ",
+      "path": "audio/book-vocabulary/fb8e4840e645a1f2.mp3",
+      "seconds": 1.32,
+      "sha256": "fb4cfe5dc31ab22aca7a938d8be62cbc124ad71ca31c6b548008de00a5a94df0"
+    },
+    {
+      "text": "يُعْطِي",
+      "path": "audio/vocabulary/68863a0dcc19e4ae.mp3",
+      "seconds": 1.097,
+      "sha256": "ca290986e44fb82c1bf7fa56cb60ed264b06b1bb134cdb12688632bda0988479"
+    },
+    {
+      "text": "نُقُودٌ",
+      "path": "audio/youth/158.mp3",
+      "seconds": 1.2,
+      "sha256": "72fb7625ae5d81cb376566eb786cdfc09b3ef7c36e8b20ec4a8a61170ff09602"
+    },
+    {
+      "text": "يُسْرِعُ",
+      "path": "audio/book-vocabulary/928f9226fc7aa697.mp3",
+      "seconds": 1.152,
+      "sha256": "ee7bddfee0dd833c8664725115147cccaf2f75343a961050365d609ed6ea7948"
+    },
+    {
+      "text": "حَلَّاقٌ",
+      "path": "audio/vocabulary/2302c6b6b61233bf.mp3",
+      "seconds": 1.358,
+      "sha256": "7cc696b68f046a39df6d9f751f34b239e6b0229cb901dd3ea9524ab0c772bc0b"
+    },
+    {
+      "text": "نُورٌ",
+      "path": "audio/book-vocabulary/1f16d2bdc78fea34.mp3",
+      "seconds": 1.008,
+      "sha256": "36f631d0248cd4dd3824418b5f1c0d58bdea73147aa585c35ca29d66e9dc0afc"
+    },
+    {
+      "text": "تُفَّاحَةٌ",
+      "path": "audio/book-vocabulary/96a9e1fdbc1a576f.mp3",
+      "seconds": 1.488,
+      "sha256": "33d5c9ca613ac84877e6aeac8de21c356b5e0fc3f092f67ce31489018723b92c"
+    },
+    {
+      "text": "إِجَّاصَةٌ",
+      "path": "audio/book-vocabulary/c7405d0146ba0e35.mp3",
+      "seconds": 1.464,
+      "sha256": "45782e6bed9d4533a707ccd976f34ac99cd5d000cd7d34be19a7d1f42c062025"
+    },
+    {
+      "text": "عِنَبٌ",
+      "path": "audio/letters/18-clear-word.mp3",
+      "seconds": 0.9404,
+      "sha256": "5aac5ec299297f42ee75bc8ba4b42a6970e6c09eaf88ac58db70eea0b8a0e823"
+    },
+    {
+      "text": "مَوْزٌ",
+      "path": "audio/vocabulary/4de1c3c67e2d7d50.mp3",
+      "seconds": 1.123,
+      "sha256": "2e5fa81d383fc7b485ab18abf24ff759c17d5cce8dda9f96afe5042a89137ca3"
+    },
+    {
+      "text": "خُضَرٌ",
+      "path": "audio/book-vocabulary/a2049ec1d535b766.mp3",
+      "seconds": 1.08,
+      "sha256": "464a224e01673cb9132748872a7ccfff77f3e6849024db1783bdb687b21180a8"
+    },
+    {
+      "text": "جَزَرٌ",
+      "path": "audio/vocabulary/dec2a61802b04f78.mp3",
+      "seconds": 1.202,
+      "sha256": "c1afb2422ce111764bec0e4bf69594ab052ae5fe1b6a8bf4731d4e46c99ccd3c"
+    },
+    {
+      "text": "لَيْمُونٌ",
+      "path": "audio/letters/23-clear-word.mp3",
+      "seconds": 1.0971,
+      "sha256": "c2c1f77099e85ce36f3a5202ca6f0cc9f461fa1c0fda36d655f4674bcb07d197"
+    },
+    {
+      "text": "تَسَوُّقٌ",
+      "path": "audio/book-vocabulary/f95495928e0497bb.mp3",
+      "seconds": 1.344,
+      "sha256": "103d91a2891ffaddc0315c3feeb487d1f6ae27a5eff3f5b52b00c9e73720252d"
+    },
+    {
+      "text": "عَامٌّ",
+      "path": "audio/book-vocabulary/5f39e89f092dc9a2.mp3",
+      "seconds": 1.104,
+      "sha256": "c84b10c85189a3814bea443127d509292a59e87d681869a8a11e0c482c910a1c"
+    },
+    {
+      "text": "شِرَاءٌ",
+      "path": "audio/book-vocabulary/ca0245c30c4905f9.mp3",
+      "seconds": 1.248,
+      "sha256": "d17404f56185475a46a5161a863bcd37ebfd896a0b675dde1fe06eb199a40b5a"
+    },
+    {
+      "text": "خُرُوجٌ",
+      "path": "audio/book-vocabulary/70b5a751fd940b3d.mp3",
+      "seconds": 1.176,
+      "sha256": "92cf212925dcdce9f7d79f54b3bf88d93bf459df7d7a224130eef9aed5cac443"
+    },
+    {
+      "text": "بَائِعٌ",
+      "path": "audio/vocabulary/f067a8202637586e.mp3",
+      "seconds": 1.254,
+      "sha256": "b96af66e5160a23be86b6920e3f3e52cd170eca2caedfe4e3ee7799a2e51cf48"
+    },
+    {
+      "text": "فَضْلٌ",
+      "path": "audio/book-vocabulary/af00b5dcfaf75c6b.mp3",
+      "seconds": 1.032,
+      "sha256": "6d5f27995e64fa98284c3161f8cb589e47d1a88bef172154437b1ccd7a9f1cd0"
+    },
+    {
+      "text": "يَدْفَعُ",
+      "path": "audio/vocabulary/1f565fc98b8f9a42.mp3",
+      "seconds": 1.149,
+      "sha256": "e95d2b112f41cbd6ff6ca4ab702acf60ed21c4de7fa4846ad1702eac593ae4ea"
+    },
+    {
+      "text": "حِسَابٌ",
+      "path": "audio/vocabulary/62130ade0412f4e7.mp3",
+      "seconds": 1.332,
+      "sha256": "7038e1aa49493114a95cba4c6f6ae282fe79ec75a17aad7e42fe32ff81d4fe20"
+    },
+    {
+      "text": "ثَلَاثُونَ",
+      "path": "audio/vocabulary/3383a9b24996c52d.mp3",
+      "seconds": 1.332,
+      "sha256": "24a839c4390a4db53525a301078d5936d7c81094a850b2c56e21b869d352d8eb"
+    },
+    {
+      "text": "يُورُو",
+      "path": "audio/vocabulary/f3d4734663b2348f.mp3",
+      "seconds": 0.94,
+      "sha256": "bcf00ad25dcac74879741a07e8c347a02a81c43c906080ffb56ee8103ddd19bd"
+    },
+    {
+      "text": "سَلَامَةٌ",
+      "path": "audio/book-vocabulary/4db02623f28c6800.mp3",
+      "seconds": 1.416,
+      "sha256": "217288db208ca368341797c1ae56c0c7936149b67c2dc0a1f6549b644ca9a1d9"
+    },
+    {
+      "text": "مِلْحٌ",
+      "path": "audio/vocabulary/c459a179f5a56b77.mp3",
+      "seconds": 1.149,
+      "sha256": "5d1567a8da04d4852997dd231f9e913446638dd5fe9efaffd2dd909ddbc0d353"
+    },
+    {
+      "text": "فُلْفُلٌ",
+      "path": "audio/vocabulary/775d20e00e50b57b.mp3",
+      "seconds": 1.28,
+      "sha256": "bc982602811651f830303ab6f04e8698577e926bc8088b99ca8f01d9eea4e91d"
+    },
+    {
+      "text": "قَصَّابٌ",
+      "path": "audio/book-vocabulary/1e483424ad1ef8b0.mp3",
+      "seconds": 1.272,
+      "sha256": "7a39110822ce35288febd13f92a8c69049b69d1e2d77ba807639c539d6d15ca4"
+    },
+    {
+      "text": "يَبِيعُ",
+      "path": "audio/book-vocabulary/bc51c8d188ef1f2d.mp3",
+      "seconds": 1.128,
+      "sha256": "d89f4dde737e1e7b4f9934d6213d45c7aeb2ad2e175176e3cd06ba75dbf88948"
+    },
+    {
+      "text": "دُولَارٌ",
+      "path": "audio/book-vocabulary/90d90f0a64f36dbe.mp3",
+      "seconds": 1.224,
+      "sha256": "6a29edb60c7938fde5fcde248e067e85137de53a4fc28145a9804630b5eca6c8"
+    },
+    {
+      "text": "شَكَرَ",
+      "path": "audio/book-vocabulary/352a9bda95d1321f.mp3",
+      "seconds": 0.96,
+      "sha256": "95d7626ee6f980292137f6dcf22cdfe75f445e7be804a831dfd4db93a558da2d"
+    },
+    {
+      "text": "رَجَعَ",
+      "path": "audio/book-vocabulary/d598840d8472b59c.mp3",
+      "seconds": 0.96,
+      "sha256": "d0c119aa690a994a208984fa9359c3080cfad31223c22bd7feaa106b9e08579b"
+    },
+    {
+      "text": "الَّتِي",
+      "path": "audio/book-vocabulary/0f61f17d9e8e2363.mp3",
+      "seconds": 0.96,
+      "sha256": "894b73a2eee97fd14d53c26e012070c399f4a9c8dcc32c7269008b472df19060"
+    },
+    {
+      "text": "كَانَ",
+      "path": "audio/vocabulary/f14ab1770a44d692.mp3",
+      "seconds": 0.94,
+      "sha256": "f5afb437a623ff52925f6f97ffeb49d1ac5a2db4e43e96f2faebd3b866055160"
+    },
+    {
+      "text": "حَلْوَى",
+      "path": "audio/book-vocabulary/67a56412b17e2301.mp3",
+      "seconds": 0.936,
+      "sha256": "e3a5af81d2a2516698300d536a68c5777a3bb38d370e448915a3556d6f8ad17b"
+    },
+    {
+      "text": "فَرْحَانُ",
+      "path": "audio/book-vocabulary/45b330cc659ca314.mp3",
+      "seconds": 1.2,
+      "sha256": "d3ccb1724d83dc70927fd76fedfc4259f9b03e3847a1d719f0e973fa0e0ccd57"
+    },
+    {
+      "text": "نَجَاحٌ",
+      "path": "audio/vocabulary/6eedef1c058c15a9.mp3",
+      "seconds": 1.332,
+      "sha256": "1fdcbbcc6b1c36bac3c0ac424fe244c16161e3b55ea2e0baff15a6b19b52e773"
+    },
+    {
+      "text": "اِمْتِحَانٌ",
+      "path": "audio/vocabulary/ab4cb9e4df3fe4e4.mp3",
+      "seconds": 1.489,
+      "sha256": "a541acd1c88552000ed258ca245b142970192c9b4307924575c5b9058c7229db"
+    },
+    {
+      "text": "سَلْوَى",
+      "path": "audio/book-vocabulary/d6e4aac3538ec37e.mp3",
+      "seconds": 0.96,
+      "sha256": "308eb68da745242e5d2b253d333a9eb48070b6f7fb70c4862130dd396da5f9c8"
+    },
+    {
+      "text": "يَأْتِي",
+      "path": "audio/vocabulary/0ca82b2e461de5f8.mp3",
+      "seconds": 1.097,
+      "sha256": "c8af1c6fef0ea4c585c2b4e3707be577fea7b700e934f140190a5cb39ce046fa"
+    },
+    {
+      "text": "يَجِبُ",
+      "path": "audio/book-vocabulary/84cc12ce9e69d379.mp3",
+      "seconds": 1.008,
+      "sha256": "de3ba0a325e0a054a06a53955adf1ee19bfdebc3a19f16bc32dae462cf853622"
+    },
+    {
+      "text": "مَاهِرَةٌ",
+      "path": "audio/book-vocabulary/8a649906b7fb412c.mp3",
+      "seconds": 1.368,
+      "sha256": "5500e7ffa098510f94e4b379f59df7eb1828df0f5a9c8853eec4d5b9e8b8e608"
+    },
+    {
+      "text": "لَوَازِمُ",
+      "path": "audio/book-vocabulary/48b40d1d3c46fb03.mp3",
+      "seconds": 1.176,
+      "sha256": "7e0298471fb853ffbb9dd58fded35876f35cb3bef9cfe76276408f4cf7558927"
+    },
+    {
+      "text": "دَقِيقٌ",
+      "path": "audio/vocabulary/71d342aa661772fb.mp3",
+      "seconds": 1.332,
+      "sha256": "a36292f1b3aa0be2fb33d44a39d54b32a9f0a505852db9123d81a10357ea51d6"
+    },
+    {
+      "text": "يَخْلِطُ",
+      "path": "audio/vocabulary/ceacfff7dbb11ebc.mp3",
+      "seconds": 1.202,
+      "sha256": "63cb2a29c137f71db1e92f12ceb7fb1c8255f0e4d0946d1e12c49b48493997d1"
+    },
+    {
+      "text": "يَخْبِزُ",
+      "path": "audio/vocabulary/f341097244bd05a3.mp3",
+      "seconds": 1.176,
+      "sha256": "2b2dc0bb510cf22cb158fd3ca073637992a721ea3a1afd04df1cc8d8e95459f4"
+    },
+    {
+      "text": "صِينِيَّةٌ",
+      "path": "audio/book-vocabulary/b1a22802664bad68.mp3",
+      "seconds": 1.368,
+      "sha256": "d7d07b37bbb6efc7a958a9eddbbbef650e8787fd24cb4bec3a7b03d463a06710"
+    },
+    {
+      "text": "يُشْعِلُ",
+      "path": "audio/book-vocabulary/82bd29d984b1bf5f.mp3",
+      "seconds": 1.08,
+      "sha256": "6f33d94fdb698f4409829bbdef42131a97058e13a553ae88268a934c4231271b"
+    },
+    {
+      "text": "غَازٌ",
+      "path": "audio/vocabulary/e26591f7399478de.mp3",
+      "seconds": 1.254,
+      "sha256": "93108220f1a14a1efce3f20ce1e29735d90e1936c8904e4f5db4341008bceaa0"
+    },
+    {
+      "text": "اِنْتِهَاءٌ",
+      "path": "audio/book-vocabulary/ed19240b3c5bfff6.mp3",
+      "seconds": 1.392,
+      "sha256": "b23feb50d887980acfd5cc84eed1fbd3193a45625185446199ee134f0de1b173"
+    },
+    {
+      "text": "عَمَلٌ",
+      "path": "audio/book-vocabulary/0ad8bedaf4e87c86.mp3",
+      "seconds": 1.08,
+      "sha256": "8b8900ffc0e6e8c04f1dddf9c1fbe883a51de2c6b8abbdd8d3c9890e10f29d79"
+    },
+    {
+      "text": "يُزَيِّنُ",
+      "path": "audio/book-vocabulary/16e387750336106a.mp3",
+      "seconds": 1.2,
+      "sha256": "a2a9bc9a727855af813c25681799e6c773ba2eba35b4846394124b35c38f8625"
+    },
+    {
+      "text": "يَدُقُّ",
+      "path": "audio/book-vocabulary/221c9b248b0829dc.mp3",
+      "seconds": 1.176,
+      "sha256": "2fe9255239fe32174e8d0ba9a6fa67fd0c35a544cdf700f0a731969abb7cd129"
+    },
+    {
+      "text": "عَجِينٌ",
+      "path": "audio/vocabulary/83b24ab29e054ac0.mp3",
+      "seconds": 1.28,
+      "sha256": "bbef3e3c0c2736ded2e939c23f302f96e24e40fc4ed4ca643e7c3c607096072e"
+    },
+    {
+      "text": "نَوْعٌ",
+      "path": "audio/book-vocabulary/c2fc7453be31ef7e.mp3",
+      "seconds": 1.056,
+      "sha256": "35f73d37e382ab2a0faef730e1f07ed08ce48eb14e2789af7a5ae7bdc1899df5"
+    },
+    {
+      "text": "لِأَنَّ",
+      "path": "audio/vocabulary/57e840ff93141d73.mp3",
+      "seconds": 1.097,
+      "sha256": "421f3182b280289547aa910d27011c2c79e0cdc1afd57166edea8146f3ca7476"
+    },
+    {
+      "text": "نَجَحَ",
+      "path": "audio/book-vocabulary/ef1650b95b705972.mp3",
+      "seconds": 1.032,
+      "sha256": "f2c83774c02293728a943a80753f69ac143085130f79d4cbd372c27a1e2bb246"
+    },
+    {
+      "text": "خَائِفَةٌ",
+      "path": "audio/book-vocabulary/145b9796cdd5cd9e.mp3",
+      "seconds": 1.44,
+      "sha256": "cba3e9ee56da0a7f0cc8c70a2e40f39380c9c97c10578fda7ec33adcbd9085c1"
+    },
+    {
+      "text": "قَلِقَةٌ",
+      "path": "audio/book-vocabulary/c2858a4db74fd9be.mp3",
+      "seconds": 1.224,
+      "sha256": "ae1de682aff24fd444607d44be0961df09f048ade13c96d17f1b6c246991e7a8"
+    },
+    {
+      "text": "غَضْبَانُ",
+      "path": "audio/book-vocabulary/ee68dce3f62d8830.mp3",
+      "seconds": 1.08,
+      "sha256": "f82080efacf0d730ffab13136a37176056cfd877cd6ee7f39ad14757206cb463"
+    },
+    {
+      "text": "يَبْكِي",
+      "path": "audio/vocabulary/21f7142f6fa7709d.mp3",
+      "seconds": 1.097,
+      "sha256": "65c82371c14cde1c22e69baece054ac755693a690c54c99aaaab4785998931e5"
+    },
+    {
+      "text": "دَهِشَ",
+      "path": "audio/book-vocabulary/b7b043ec0e7151bc.mp3",
+      "seconds": 1.032,
+      "sha256": "7d294e1d08579745c562bc49c68b390c47649dbc2b8905f882f802ee00910293"
+    },
+    {
+      "text": "حَزِينَةٌ",
+      "path": "audio/book-vocabulary/5a1a98a777876dfc.mp3",
+      "seconds": 1.392,
+      "sha256": "835585750df6be2fc31676ea025852c6e9a8af8e8fd4efd658e57366193203b0"
+    },
+    {
+      "text": "سُنْبُلَةٌ",
+      "path": "audio/book-vocabulary/c680e1b108c86714.mp3",
+      "seconds": 1.368,
+      "sha256": "7ac059959760d9533297198b5579f2126b793acd47581224eabf6716ca0fd540"
+    },
+    {
+      "text": "قَمْحٌ",
+      "path": "audio/book-vocabulary/e9c8e880ed069a48.mp3",
+      "seconds": 1.056,
+      "sha256": "67aba006b9f26559fb8f0192ddc9703c7b37ee774c553b46dcd6a16c62378f05"
+    },
+    {
+      "text": "كِيسٌ",
+      "path": "audio/youth/160.mp3",
+      "seconds": 1.032,
+      "sha256": "de9cc7556ef9ca1e69fd66eda114c11712b7cc832e817239045a3363570bb2dd"
+    },
+    {
+      "text": "يَعْجِنُ",
+      "path": "audio/book-vocabulary/43b408bb2a7992a4.mp3",
+      "seconds": 1.056,
+      "sha256": "08718afeb28a8a3111db834ad19ea4d4436d574665351022cce00fb900a822be"
+    },
+    {
+      "text": "يَضَعُ",
+      "path": "audio/vocabulary/44d7e48890ac1eee.mp3",
+      "seconds": 1.019,
+      "sha256": "5814a571e3582e940727538b3f5df0cff101a75a3cc8ca46e9317d6addfd0372"
+    },
+    {
+      "text": "يَقْطَعُ",
+      "path": "audio/book-vocabulary/79d1d695ef097801.mp3",
+      "seconds": 1.08,
+      "sha256": "05bc0e999b3fc441a627ea4a32878912aac409528dbccd954b2ee20a0f1f941f"
+    },
+    {
+      "text": "يَصُبُّ",
+      "path": "audio/book-vocabulary/97578b1c5422e1ed.mp3",
+      "seconds": 1.152,
+      "sha256": "7d7d927475a585144270d7382d3509eaf76a0177ad6204ce99989f1c4bd9db91"
+    },
+    {
+      "text": "هِلَالِيَّةٌ",
+      "path": "audio/book-vocabulary/33005e5d53de0ff0.mp3",
+      "seconds": 1.512,
+      "sha256": "132392e76674ea37f81bbfeb05cb591479d9df88960ab81bdcf8e54f4dbc83e6"
+    },
+    {
+      "text": "أَمَّا",
+      "path": "audio/book-vocabulary/72158527c1277835.mp3",
+      "seconds": 0.864,
+      "sha256": "4b6498af80ee442bac8645f187eb1eddeb369f3d52cc5334c111c2a87b59a3ac"
+    },
+    {
+      "text": "جَمِيعٌ",
+      "path": "audio/book-vocabulary/a462dcd2f4e80a49.mp3",
+      "seconds": 1.248,
+      "sha256": "dedc50c87c2b650bf6467b1a72e914bda16174e217f555e422ba0747b92fb7dd"
+    },
+    {
+      "text": "مَطْعَمٌ",
+      "path": "audio/vocabulary/1d344ee024d058d1.mp3",
+      "seconds": 1.202,
+      "sha256": "089218df8f761ebcf73f434380a5bd0a5f6865bc9159998b0d22612d896f988a"
+    },
+    {
+      "text": "خَالِدٌ",
+      "path": "audio/book-vocabulary/05365b27530ac728.mp3",
+      "seconds": 1.224,
+      "sha256": "a1df6465dd5d94b6b5ef507bc3e74e08b0f1b25009771a4978100d07c48329fb"
+    },
+    {
+      "text": "جَوْعَانُ",
+      "path": "audio/book-vocabulary/9b9291ca830367d9.mp3",
+      "seconds": 1.2,
+      "sha256": "4d1503ea1aa5b8fe4aa70bcf714e8517ced825ca5e296fe15313118d2d7cd1d4"
+    },
+    {
+      "text": "يَتَنَاوَلُ",
+      "path": "audio/book-vocabulary/fdcd470a16b1630c.mp3",
+      "seconds": 1.344,
+      "sha256": "f94a01d1b06fced43a6d84b9082ad29bccc125aaba7c9d354e70f42982702491"
+    },
+    {
+      "text": "نَظِيفٌ",
+      "path": "audio/vocabulary/8bf91b8eec944876.mp3",
+      "seconds": 1.28,
+      "sha256": "4d25eb490c63f0f1a3056feedf6c343c25f780b9538146dc3ff7bbba4b12f3c1"
+    },
+    {
+      "text": "مَأْكُولَاتٌ",
+      "path": "audio/book-vocabulary/05e8ce6dbf598387.mp3",
+      "seconds": 1.464,
+      "sha256": "ae1f58c5cc7102059a6765802a08de10225d255d111d29d9020b128b489275ab"
+    },
+    {
+      "text": "عَامِلٌ",
+      "path": "audio/vocabulary/622cf1eb5e226fa3.mp3",
+      "seconds": 1.254,
+      "sha256": "18e65c3504a40162790850bc28ae67b7ecfad07f627534270c8949d2d810d83d"
+    },
+    {
+      "text": "هَا",
+      "path": "audio/book-vocabulary/5b6517e3c3f47783.mp3",
+      "seconds": 0.864,
+      "sha256": "b5963aff2f945264a9db6aa174ab12b799a7c175bed5dc59a85e83998773e4ff"
+    },
+    {
+      "text": "قَادِمٌ",
+      "path": "audio/book-vocabulary/a2874e0cdffc6b71.mp3",
+      "seconds": 1.176,
+      "sha256": "ddaaa906e707fe83c29494626a44cc0d25491bf78e0ea372cef6a5e14b50f769"
+    },
+    {
+      "text": "عِنْدَ",
+      "path": "audio/vocabulary/90289110ec07a5ef.mp3",
+      "seconds": 0.967,
+      "sha256": "cb1930f49c6209697682810b94558037afc70eb3adcc481a8304f64682308dbd"
+    },
+    {
+      "text": "رُزٌّ",
+      "path": "audio/book-vocabulary/fd5127d241900e3e.mp3",
+      "seconds": 0.96,
+      "sha256": "1a07c927e0bc4433258de6a9941ed9445d8bdc9e1327e31993b26e583889bee9"
+    },
+    {
+      "text": "أَوْ",
+      "path": "audio/vocabulary/1e1e1d5b152e4991.mp3",
+      "seconds": 0.784,
+      "sha256": "026156ba9d6f5e79f8f5398ae11ce01a7e98c6bc357c6dc502d10c3bc49ec295"
+    },
+    {
+      "text": "يُفَضِّلُ",
+      "path": "audio/vocabulary/8a8e2398a0e00239.mp3",
+      "seconds": 1.28,
+      "sha256": "1912e6f848c49969121ffcb8b3107bf05408f75ef1c0c5d566f0f11506812e4d"
+    },
+    {
+      "text": "قَهْوَةٌ",
+      "path": "audio/vocabulary/33cd0b9a068badef.mp3",
+      "seconds": 1.28,
+      "sha256": "d991bdca4ae4dc5c328627202e52b0d517706277756eb0c6192b7a90fed5267f"
+    },
+    {
+      "text": "طَبَّاخٌ",
+      "path": "audio/vocabulary/d34f1d28944489e1.mp3",
+      "seconds": 1.306,
+      "sha256": "96175991056a160646d903187431dcc39c4bf16839a00137aac131d1a143db3e"
+    },
+    {
+      "text": "مَشْوِيٌّ",
+      "path": "audio/vocabulary/58df4e5560e0a585.mp3",
+      "seconds": 1.358,
+      "sha256": "8ff24751a14504c0c97dd0f0cd7d359291b69262a27c6a07912be851742f6524"
+    },
+    {
+      "text": "حَسَاءٌ",
+      "path": "audio/youth/182.mp3",
+      "seconds": 1.272,
+      "sha256": "7d0985c7e75953d9274634825332eaa8e1d1887c00baff07a9e2f4d72f6df418"
+    },
+    {
+      "text": "بِيتْزَا",
+      "path": "audio/book-vocabulary/e1b1ce0e1354d77d.mp3",
+      "seconds": 0.96,
+      "sha256": "1aacf3bebee0a343dde1be97282b9cfabddaddeb580dcb7afd2c7de98d9b9e3f"
+    },
+    {
+      "text": "شَطِيرَةٌ",
+      "path": "audio/book-vocabulary/4196bc2ac920cf57.mp3",
+      "seconds": 1.416,
+      "sha256": "838983790920dac21be96f2cdd0ceb2f0c17a21e4078a47c555a4be76b605a99"
+    },
+    {
+      "text": "بَطَاطَا",
+      "path": "audio/book-vocabulary/9efcc6fc06f88522.mp3",
+      "seconds": 1.056,
+      "sha256": "c3ff68898daced040572769a96edbba2c9e275215fc730d826eef719be56bf09"
+    },
+    {
+      "text": "سَلَطَةٌ",
+      "path": "audio/youth/183.mp3",
+      "seconds": 1.32,
+      "sha256": "ceccb7321e510917bd40821f89a0ead53a8fe3ed83baeba23579ec9bf86b745f"
+    },
+    {
+      "text": "رَقَائِقُ",
+      "path": "audio/book-vocabulary/0852e31118ff214d.mp3",
+      "seconds": 1.248,
+      "sha256": "16225f71c69d60fbcbaff6fd9b57ed9bbf25cfd6819dbb2dc86ba89052f13f98"
+    },
+    {
+      "text": "دَخَلَ",
+      "path": "audio/book-vocabulary/e0d38db7c1c8a04e.mp3",
+      "seconds": 0.984,
+      "sha256": "41ca5d74004e83978525f0d66b336aacc6a770a62423cab9b8fcd23ecd024aa9"
+    },
+    {
+      "text": "اِخْتَارَ",
+      "path": "audio/book-vocabulary/18b2792be70ea06b.mp3",
+      "seconds": 1.128,
+      "sha256": "24d8912a401e067c1a1274c848903aeec48205c9dfea558cff07a94238021273"
+    },
+    {
+      "text": "وَزَّةٌ",
+      "path": "audio/book-vocabulary/4a3d24db49c34fbc.mp3",
+      "seconds": 1.272,
+      "sha256": "766ca8cad1b0d77a63fc0ed01780116fc014d5f43b7da34df76c93d26321a6bd"
+    },
+    {
+      "text": "حَمَامَةٌ",
+      "path": "audio/book-vocabulary/0bd143de32254e85.mp3",
+      "seconds": 1.416,
+      "sha256": "4b49b11877435abc934ccdc399296f6c62ed9218413d5b14a5e1179880d82ce7"
+    },
+    {
+      "text": "دِيكٌ",
+      "path": "audio/book-vocabulary/df39f9edf8623a24.mp3",
+      "seconds": 1.032,
+      "sha256": "9b7fedeaee32e69cc98e2ab1a2ac393c5ab92ed4ba53a30e9db22dcaa2a1dfa2"
+    },
+    {
+      "text": "دَجَاجَةٌ",
+      "path": "audio/vocabulary/cd4ca5facbf82532.mp3",
+      "seconds": 1.541,
+      "sha256": "9b09751e1c188f9cea7ae19d2c78c7e8544bc749e669f4a89206b43a9f598df2"
+    },
+    {
+      "text": "بَطَّةٌ",
+      "path": "audio/vocabulary/202f6726981a4953.mp3",
+      "seconds": 1.228,
+      "sha256": "1a1ebb05687f9c72ec935e5bd8878cbdaf36e1d4020c32f31e913e3a04732a92"
+    },
+    {
+      "text": "طَاوُوسٌ",
+      "path": "audio/book-vocabulary/7c232ed968418fd0.mp3",
+      "seconds": 1.248,
+      "sha256": "9cdc7719c0ea7a6c2eca2b115bc2bb1669242c284518d83d0497b4da8f0bad13"
+    },
+    {
+      "text": "عُصْفُورٌ",
+      "path": "audio/vocabulary/5bba3b0520e5f67c.mp3",
+      "seconds": 1.332,
+      "sha256": "37895925315ac57d850f4e944bfa945f6ea781a5f47f35b67e41aaf0e660ec23"
+    },
+    {
+      "text": "نَسْرٌ",
+      "path": "audio/book-vocabulary/eabc5656f31860a3.mp3",
+      "seconds": 1.104,
+      "sha256": "2afbaa96b173f84e265f3e0e8e0218bbaf37c3622a28c3ddf175aae892b41479"
+    },
+    {
+      "text": "جُحَا",
+      "path": "audio/book-vocabulary/8b08f871c50247bd.mp3",
+      "seconds": 0.936,
+      "sha256": "2c31cd87efaf57e796f871ed852c8675a9fdb5d6fff8dca1d48397ebbd4707ed"
+    },
+    {
+      "text": "نَفْسٌ",
+      "path": "audio/book-vocabulary/4e132883fee9540c.mp3",
+      "seconds": 1.08,
+      "sha256": "22cdae62ada0c71e5c995a1cedb2228d238e179722bf2e1fcce1d9d463ab7493"
+    },
+    {
+      "text": "سَمِينَةٌ",
+      "path": "audio/book-vocabulary/6fc03569dfa0e785.mp3",
+      "seconds": 1.416,
+      "sha256": "3babdd661e0d3370a561452c5c0e452fc7182cf46ba5a64062203ce338ee045f"
+    },
+    {
+      "text": "نَضِجَتْ",
+      "path": "audio/book-vocabulary/025c4708695e2bbf.mp3",
+      "seconds": 1.056,
+      "sha256": "414d28a2b2dd73a7ee1cbad1c413502d7eecb8fcb667bacb09f07a2a56beb85a"
+    },
+    {
+      "text": "لَقَدْ",
+      "path": "audio/book-vocabulary/6425aeab0cba5572.mp3",
+      "seconds": 0.864,
+      "sha256": "36d05ec42c2485e3e7d9f22a4bffb53d842cdf4ac25571b8d6662551fd6e60ca"
+    },
+    {
+      "text": "يَطِيرُ",
+      "path": "audio/book-vocabulary/0719ae1fa1ed857a.mp3",
+      "seconds": 1.08,
+      "sha256": "132339936146b7f1e8482163237f49402fa89d49a551a5140cfa4e48de8db37f"
+    },
+    {
+      "text": "يُعِيرُ",
+      "path": "audio/book-vocabulary/36883d9623b785d9.mp3",
+      "seconds": 1.056,
+      "sha256": "3056efcf93c2057cee2191bc0ed3524162d9f596036b79468b15b8e4370da167"
+    },
+    {
+      "text": "حِمَارٌ",
+      "path": "audio/vocabulary/50068f85874f70df.mp3",
+      "seconds": 1.28,
+      "sha256": "26ed9bee74f294909a8373b7e93ae144d38ea6c0ed86974ce1d475e38796d800"
+    },
+    {
+      "text": "فَتْرَةٌ",
+      "path": "audio/book-vocabulary/7c59a72576eef3bd.mp3",
+      "seconds": 1.272,
+      "sha256": "1e9e1fd8b618e805a909cfe769dc0f621e7ba2dfe5e50063efc3a594ab367360"
+    },
+    {
+      "text": "مُتَعَجِّبٌ",
+      "path": "audio/book-vocabulary/375a96b3a94e67eb.mp3",
+      "seconds": 1.464,
+      "sha256": "3f7fbbd686115877408309e9104d2b37a8ddfab718e6b476a0c642daf4e6f4f6"
+    },
+    {
+      "text": "نَبَتَ",
+      "path": "audio/book-vocabulary/e4ecd76a7bb6bbc1.mp3",
+      "seconds": 1.008,
+      "sha256": "ec93e72e664ed1747126755316bca9960ef9c4fdd15ca93793419e10e703385f"
+    },
+    {
+      "text": "جَنَاحٌ",
+      "path": "audio/book-vocabulary/f7ebef014adee90a.mp3",
+      "seconds": 1.296,
+      "sha256": "e3cdb68d8013cd15d83ad4a33f71b94b98d2c2eab87d67c20872843c679a0665"
+    },
+    {
+      "text": "لَمْ",
+      "path": "audio/book-vocabulary/d4ed5209d00e1dc6.mp3",
+      "seconds": 0.888,
+      "sha256": "de96b6765e94996bdec572014a7fef7f11212fcc52b19818dd21c87c643061cb"
+    },
+    {
+      "text": "يُصَدِّقُ",
+      "path": "audio/book-vocabulary/4f30b0f0df31b021.mp3",
+      "seconds": 1.296,
+      "sha256": "c4543c01736d5509ec1d100b20e0de426fcf5e04e76ef7e6f17a19205915dcd8"
+    },
+    {
+      "text": "مَذْبُوحَةٌ",
+      "path": "audio/book-vocabulary/a29dcda1e77a855b.mp3",
+      "seconds": 1.488,
+      "sha256": "181e445a1cfc6607a54655b4621cb0fbf1df2409b0e9bde3252746c65ca798fd"
+    },
+    {
+      "text": "حَصَلَ",
+      "path": "audio/book-vocabulary/3f38d5263da04736.mp3",
+      "seconds": 1.008,
+      "sha256": "78ece173a1bdf3404f05dedd483c0c873f122d541c58c3529c15e637f53ba71b"
+    },
+    {
+      "text": "بِمَ",
+      "path": "audio/book-vocabulary/4cb7b1e5f09fa805.mp3",
+      "seconds": 0.816,
+      "sha256": "dcf9ff8f95cba92e6b917b660db1d7971ebee262ecc5074c25d6e1f06752d567"
+    },
+    {
+      "text": "دُكْتُورٌ",
+      "path": "audio/book-vocabulary/9cfdef45fe60c10c.mp3",
+      "seconds": 1.224,
+      "sha256": "d99874b909cb3ac86a8b06bfed71811d9bd1005a7240274f0c8bce0be28cf00a"
+    },
+    {
+      "text": "يَتَحَسَّنُ",
+      "path": "audio/book-vocabulary/7a91a310bc64b7ba.mp3",
+      "seconds": 1.344,
+      "sha256": "c7abc7ab5bf1b77868607841e18e477119ad0ba74e64029fd719d7f62fe2171a"
+    },
+    {
+      "text": "سُرْعَةٌ",
+      "path": "audio/vocabulary/8906b244774a8b21.mp3",
+      "seconds": 1.254,
+      "sha256": "075dfb4b5024ecec87434adfde3848b9ab721941206d47f6e3531fc9671e1750"
+    },
+    {
+      "text": "فَحَصَ",
+      "path": "audio/book-vocabulary/dde55213bf2de6bd.mp3",
+      "seconds": 1.056,
+      "sha256": "5a8df031cd80e0baff2711f6f21e89d71f09bc62da820d997ab63709bc5a172e"
+    },
+    {
+      "text": "صَدْرٌ",
+      "path": "audio/book-vocabulary/083fe4f2d722bb6a.mp3",
+      "seconds": 1.08,
+      "sha256": "f53475452f2327367447274e489deb1f7d78808084e8ffbc936a7dd73f6b74fa"
+    },
+    {
+      "text": "قَلْبٌ",
+      "path": "audio/book-vocabulary/a660c58ade2aa1a0.mp3",
+      "seconds": 1.008,
+      "sha256": "8f11c2d9eeb64293f526693113f96a992140919d5cf149917c5289bd5723962d"
+    },
+    {
+      "text": "قَاسَ",
+      "path": "audio/book-vocabulary/f7e5e8aac376491c.mp3",
+      "seconds": 0.96,
+      "sha256": "e557379720f74ceb185fb953106727512adbe3ebbdf7491d391060ce7fb07b64"
+    },
+    {
+      "text": "ضَغْطٌ",
+      "path": "audio/book-vocabulary/629ec446f30f6355.mp3",
+      "seconds": 1.128,
+      "sha256": "9fed835a4b0f1c1afa8c596ab19e1884c4ef2913f37e15292e2e75914456b413"
+    },
+    {
+      "text": "دَمٌ",
+      "path": "audio/book-vocabulary/43eb8f73a3b94e30.mp3",
+      "seconds": 1.008,
+      "sha256": "134bef0ae6b5a622b56c4373f601ddce8c1a6de0141827872ee16a12ca38fb7a"
+    },
+    {
+      "text": "نَتِيجَةٌ",
+      "path": "audio/vocabulary/17e5a62545e6c466.mp3",
+      "seconds": 1.489,
+      "sha256": "4acbbf477dbe8792a52cb4f00b56a7e5e74c335e4279ffcc8515d52341504e0f"
+    },
+    {
+      "text": "يَبْعَثُ",
+      "path": "audio/book-vocabulary/e3651c9e33cb3ee8.mp3",
+      "seconds": 1.128,
+      "sha256": "609acb12c1a11ed32fe2e355d013b8d596eaacaf5d865024651b39a24d459ea4"
+    },
+    {
+      "text": "قَلَقٌ",
+      "path": "audio/vocabulary/38c083b813884334.mp3",
+      "seconds": 1.097,
+      "sha256": "5dd52d93e96b13d383362bcda28163e0ab4c558e0acf7bdc0e480515f0190cca"
+    },
+    {
+      "text": "بِمَاذَا",
+      "path": "audio/book-vocabulary/4b3d7fb77ef6bb93.mp3",
+      "seconds": 1.08,
+      "sha256": "ecb4c5fc8fd7fec96822fc6aa172b144083de4392e785be9fe2edd872091979b"
+    },
+    {
+      "text": "نَصَحَ",
+      "path": "audio/book-vocabulary/4a03b5cf93920680.mp3",
+      "seconds": 1.008,
+      "sha256": "119f8403bfbab671a1a74c0645d998b4b874a2a54b468d232ee087845d68caa6"
+    },
+    {
+      "text": "رَاحَةٌ",
+      "path": "audio/vocabulary/cff3a53fa583ff1a.mp3",
+      "seconds": 1.306,
+      "sha256": "895ca6115cb8c6162303f1b7d73926fb94acb9a8fe4e6a8e400d2d22e7b0bba5"
+    },
+    {
+      "text": "دَوَاءٌ",
+      "path": "audio/vocabulary/acf87a8178a996c8.mp3",
+      "seconds": 1.254,
+      "sha256": "1e3a7e62081e4795160010c0fb6ad892cbbc180d18d01b925f0337db56a5c0ba"
+    },
+    {
+      "text": "تَرْكٌ",
+      "path": "audio/book-vocabulary/e9fa9ad0d2d2b3b6.mp3",
+      "seconds": 1.008,
+      "sha256": "d9d293d37890829cff7cb2a8a2f72734de208cc4a10549d23a3e2f2b35a63bf6"
+    },
+    {
+      "text": "سُكَّرِيَّاتٌ",
+      "path": "audio/book-vocabulary/a0ffca268c7cdfbb.mp3",
+      "seconds": 1.512,
+      "sha256": "a919e0224629a93df4360051551c688d94384f9b9d1fa867e1e7e1b8fb9bf1f2"
+    },
+    {
+      "text": "شَفَى",
+      "path": "audio/book-vocabulary/a6a6d1bddc7f707d.mp3",
+      "seconds": 0.936,
+      "sha256": "64f61bccf3e340d6002e9671d80a45eba0c4fc8f7a797740423761e4c0db2542"
+    },
+    {
+      "text": "ظَهْرٌ",
+      "path": "audio/vocabulary/3f7d21235021887e.mp3",
+      "seconds": 1.176,
+      "sha256": "726fa70d60dc5ef0e4917d801bf3f12611fdae7a3751d627c2282b822c8b6733"
+    },
+    {
+      "text": "عَيْنٌ",
+      "path": "audio/vocabulary/d95d9accf7898400.mp3",
+      "seconds": 1.045,
+      "sha256": "144efc28bbb30c6a6735f82d86a60abf9fb79bad848d6d842979648915f3dfc7"
+    },
+    {
+      "text": "مَرِيضٌ",
+      "path": "audio/vocabulary/f27950766d9a3741.mp3",
+      "seconds": 1.228,
+      "sha256": "060fe41acec7e8500863f11f6805b41e58f895d759dc22b4b62e5f21f12e1a30"
+    },
+    {
+      "text": "أَلَمٌ",
+      "path": "audio/vocabulary/ff123e90961b58e5.mp3",
+      "seconds": 1.071,
+      "sha256": "5e54ed455d55c8d9257ca2b69a1c6def00ca5fe9093a3bb5bda9ac27513e5a60"
+    },
+    {
+      "text": "شَدِيدٌ",
+      "path": "audio/book-vocabulary/20f0457265c8a92e.mp3",
+      "seconds": 1.272,
+      "sha256": "c55b554ec07739e4cc7d704452dadc9039d6943ef276ba0e837e3cb488775eca"
+    },
+    {
+      "text": "رَأْسٌ",
+      "path": "audio/vocabulary/4b57a47103d05d03.mp3",
+      "seconds": 1.149,
+      "sha256": "abedf78ca701df67e6cb5af2b23b8b14dc0f03cffdc32d415009a1b5d2de75d7"
+    },
+    {
+      "text": "حَنْجَرَةٌ",
+      "path": "audio/book-vocabulary/2cf896ba1a015eda.mp3",
+      "seconds": 1.392,
+      "sha256": "616349c367c82fa6578af1704f32b436a58f97008da71af3fec487be4fc5d314"
+    },
+    {
+      "text": "أَنْفٌ",
+      "path": "audio/vocabulary/4fa3871ac97ff09d.mp3",
+      "seconds": 1.097,
+      "sha256": "251a70df59a4d918222ccd8df3bff4175d0bcc1106b69b6406bd828f43657b8b"
+    },
+    {
+      "text": "رِجْلٌ",
+      "path": "audio/book-vocabulary/d1a4b948d50455e9.mp3",
+      "seconds": 1.032,
+      "sha256": "c21a8d4cb5a407ea4ab81df42b3834de6b8ecf17b24fee7cb94d4cb71954b9e8"
+    },
+    {
+      "text": "جُرْحٌ",
+      "path": "audio/vocabulary/444f681a8dcd2628.mp3",
+      "seconds": 1.202,
+      "sha256": "138147792d9a432e848c72632a2e8f468a23110cf7b9b9896a12c62e6caf259e"
+    },
+    {
+      "text": "سَاقٌ",
+      "path": "audio/vocabulary/96c0e443576e0b4a.mp3",
+      "seconds": 1.202,
+      "sha256": "f75d2d4ef9b9a351364a0a3d840ee212fb5b5259c1290a7e552692b2b3dab2d0"
+    },
+    {
+      "text": "إِصْبَعٌ",
+      "path": "audio/vocabulary/83ce9a767861fa51.mp3",
+      "seconds": 1.202,
+      "sha256": "e7f7123c941d63c2749e9e982f8816a4c87122c3ca9d7b05b1a6627021b9bdd1"
+    },
+    {
+      "text": "زُكَامٌ",
+      "path": "audio/vocabulary/08f3fa9b48704ba0.mp3",
+      "seconds": 1.254,
+      "sha256": "ceb5be04b79b94ed11659874907af8353ce28cee60dce62633dcb0844c881f72"
+    },
+    {
+      "text": "صُدَاعٌ",
+      "path": "audio/vocabulary/3b6a81fa138f5923.mp3",
+      "seconds": 1.254,
+      "sha256": "308b4532fd9aa04ca2485f921f07273d22d4d6703f6ee437f608093f8c92b810"
+    },
+    {
+      "text": "كَسْرٌ",
+      "path": "audio/book-vocabulary/5621827660ad4ffc.mp3",
+      "seconds": 1.032,
+      "sha256": "2eabb2f3bac24f8e165cfaec4d1f6e73945c86edfd85da3cac7d11b509327ea9"
+    },
+    {
+      "text": "ذِرَاعٌ",
+      "path": "audio/vocabulary/6333900e42a83bb7.mp3",
+      "seconds": 1.332,
+      "sha256": "d279bbb24becdcde69dd3193f838418c2a9fde650cc4551d0827231b58ee220e"
+    },
+    {
+      "text": "حَرَارَةٌ",
+      "path": "audio/vocabulary/88adfdbcaad65775.mp3",
+      "seconds": 1.437,
+      "sha256": "d7b93b8df133ec460ae9e6123f1592a4420a2c2436ce16a44a2e08f55f701d99"
+    },
+    {
+      "text": "أَجَابَ",
+      "path": "audio/book-vocabulary/6e7b72471ee56923.mp3",
+      "seconds": 1.056,
+      "sha256": "b26ea52541b73030131b2cacae91fff3f719debff18e86fbf231e727c762ada1"
+    },
+    {
+      "text": "تَمَنَّى",
+      "path": "audio/book-vocabulary/50ae9fc627a17ca4.mp3",
+      "seconds": 1.008,
+      "sha256": "360c1f8f0e76d54fdd80a1a108108625116bfacc2532c7b5bde773bd039a17e0"
+    },
+    {
+      "text": "شِفَاءٌ",
+      "path": "audio/vocabulary/11f4ea7719191024.mp3",
+      "seconds": 1.384,
+      "sha256": "263939e588a6cedf81c7d35dc712dcb5b5b8e5fd1bfe028f3ca87767d9bf777d"
+    },
+    {
+      "text": "عَاجِلٌ",
+      "path": "audio/book-vocabulary/8186a730f1fd8bb1.mp3",
+      "seconds": 1.2,
+      "sha256": "5ec8b7d309df023170612491401eddb9f433c5b6dc0fad2839a972e905236586"
+    },
+    {
+      "text": "ضُحَى",
+      "path": "audio/book-vocabulary/8d0c3988eddaf996.mp3",
+      "seconds": 0.936,
+      "sha256": "308342de9ff0740ad978d54c332d6a254507dd199745b42c56f61033b693ac02"
+    },
+    {
+      "text": "عُمَرُ",
+      "path": "audio/book-vocabulary/2eaa2184d07a7512.mp3",
+      "seconds": 0.888,
+      "sha256": "eb2474ec327cbabb5e74cf89006ed03508a686b27a5877abaa22f72e2be08544"
+    },
+    {
+      "text": "صُنْدُوقٌ",
+      "path": "audio/vocabulary/f05e1211036b26d8.mp3",
+      "seconds": 1.411,
+      "sha256": "d4c78b73007d7259ae9e35d40ea285fc307b99efd416de5a146f27625d1e571c"
+    },
+    {
+      "text": "مُكَعَّبٌ",
+      "path": "audio/book-vocabulary/0929bb63b4a88ce6.mp3",
+      "seconds": 1.344,
+      "sha256": "3703c11fa3b6860d3455361e0d3ea86202dff946bd42f7421db831bd00a7eb44"
+    },
+    {
+      "text": "رَجُلٌ",
+      "path": "audio/vocabulary/2ff28c4d08cde9e4.mp3",
+      "seconds": 1.176,
+      "sha256": "639714cd4a807680f04e1eba010ca969fb3145adb5296f5c213117c733dc51cc"
+    },
+    {
+      "text": "آلِيٌّ",
+      "path": "audio/book-vocabulary/318b482362879523.mp3",
+      "seconds": 1.128,
+      "sha256": "d4c6575ccd9d97fe3bce9b82438ea8e627189d12a604ea9f245a8c0514acacd7"
+    },
+    {
+      "text": "هَيَّا",
+      "path": "audio/book-vocabulary/8c9c3fbde714330e.mp3",
+      "seconds": 0.888,
+      "sha256": "bc041789dc58ceeb63d2354fabb898727456e807fb321a69e3cf81600d015c53"
+    },
+    {
+      "text": "يَتَوَزَّعُ",
+      "path": "audio/book-vocabulary/9b624ad47b55aa58.mp3",
+      "seconds": 1.392,
+      "sha256": "34617a87ed871b4e542f4e836680a8ad7f342da4439dc03957167be2f0ec478b"
+    },
+    {
+      "text": "فَرِيقٌ",
+      "path": "audio/vocabulary/00b1954440f12474.mp3",
+      "seconds": 1.28,
+      "sha256": "8b081f3ee095ca53f2f904aafc34e06571c237f78c37fd5334d53d2e10586f59"
+    },
+    {
+      "text": "يُرَكِّبُ",
+      "path": "audio/book-vocabulary/0e8c8aa7ad134767.mp3",
+      "seconds": 1.224,
+      "sha256": "f077d45c539a2d5c353d4dafaab6b1c51a79201db34628a1c93d6e33e6d94397"
+    },
+    {
+      "text": "يَبْنِي",
+      "path": "audio/book-vocabulary/05a6a7c81e4baa17.mp3",
+      "seconds": 0.96,
+      "sha256": "af27689221de4b939fbc4315124ebeb345341134179ba0f89bf50af0cf6fcfc0"
+    },
+    {
+      "text": "وَسَطٌ",
+      "path": "audio/book-vocabulary/ffbc96799206e2b6.mp3",
+      "seconds": 1.176,
+      "sha256": "e9c76e78fa1baf63d3c0bd9b4749c336dda5502d2209ad5dc1169e1eda2a5c82"
+    },
+    {
+      "text": "مِفْتَاحٌ",
+      "path": "audio/youth/070.mp3",
+      "seconds": 1.344,
+      "sha256": "b50c3783e1d056907812f1825d8f965214a4742c9c5bf8c25593132b46bfb77c"
+    },
+    {
+      "text": "يُعَمِّرُ",
+      "path": "audio/book-vocabulary/da95d9feda7a582c.mp3",
+      "seconds": 1.2,
+      "sha256": "c3901b2cf56dc8ddac8d167a0f594bf64a42776c07ecd7f5001dc8d0b132f4f9"
+    },
+    {
+      "text": "يُطْلِقُ",
+      "path": "audio/book-vocabulary/50a47fb2234e5ce8.mp3",
+      "seconds": 1.128,
+      "sha256": "b2d8f559bc793a3c754ca3175024efe43312ce00e5c3098d560f4eebedd31a07"
+    },
+    {
+      "text": "اِنْطَلِقْ",
+      "path": "audio/book-vocabulary/7612c7dae539159f.mp3",
+      "seconds": 1.152,
+      "sha256": "787021ae3ced72bbab3320fcfbc2b5c489ec17d6c438e705a812530834fecf09"
+    },
+    {
+      "text": "أَيُّهَا",
+      "path": "audio/book-vocabulary/36e106c42cef2a59.mp3",
+      "seconds": 1.032,
+      "sha256": "5319d390c07f1848abfbe7e7b889d08d41a686a546aeb03cf1b208db59900b90"
+    },
+    {
+      "text": "يَتَجَوَّلُ",
+      "path": "audio/vocabulary/b414c80efc1b4e68.mp3",
+      "seconds": 1.411,
+      "sha256": "6b93931f4777496b01f97af7873867a0d411a5e646994f5babe5214f6ad08b5a"
+    },
+    {
+      "text": "يَمْشِي",
+      "path": "audio/vocabulary/afde6cd265130c2b.mp3",
+      "seconds": 1.097,
+      "sha256": "bf032648eadb1e516fda6fda909eda5673e702d061eb65c344c58f20423307eb"
+    },
+    {
+      "text": "مُتَثَاقِلٌ",
+      "path": "audio/book-vocabulary/16d5073d9ddedac9.mp3",
+      "seconds": 1.488,
+      "sha256": "e9fd8ccb07d06bb7bc02069c75794ce1bb1478bcbba2efd4fe1a090103cd63ba"
+    },
+    {
+      "text": "يَصْطَدِمُ",
+      "path": "audio/book-vocabulary/1ab93acb6e18f161.mp3",
+      "seconds": 1.248,
+      "sha256": "cd7d2fc683a9e9df9afe3a5470275d79e54ee82bbb124126b9f3fd50f213331b"
+    },
+    {
+      "text": "أَحَدٌ",
+      "path": "audio/book-vocabulary/5e79a2002dd0cdf5.mp3",
+      "seconds": 1.104,
+      "sha256": "ae0bd7340df7beb7acd867c582547ae80cccb8a98854d47941045d5904013408"
+    },
+    {
+      "text": "مَنْزِلٌ",
+      "path": "audio/book-vocabulary/0c4c8b8e922c9de8.mp3",
+      "seconds": 1.176,
+      "sha256": "c51c36e70b405bf386d8dd642c6ca208b690275ea37186557fa5699fa4f4d33f"
+    },
+    {
+      "text": "يُوقِفُ",
+      "path": "audio/book-vocabulary/673a5bbd799295a7.mp3",
+      "seconds": 1.104,
+      "sha256": "c57fd9fed05c57340440a29d92847a4af0c8233424adf49937c80a3e49856a72"
+    },
+    {
+      "text": "كَهْرَبَائِيٌّ",
+      "path": "audio/book-youth-two-part-one/94e8dabfefd2b1.mp3",
+      "seconds": 1.512,
+      "sha256": "f724fa1b9c105e644020c226b666aa18e6fee0dea29018a5d37332552e00ab5d"
+    },
+    {
+      "text": "أُرْجُوحَةٌ",
+      "path": "audio/book-vocabulary/62617f6caae29e43.mp3",
+      "seconds": 1.464,
+      "sha256": "7617e969908bd4c8e350f6633301e36de710e380ca369657e229f7e350d5732e"
+    },
+    {
+      "text": "بِطَاقَةٌ",
+      "path": "audio/book-vocabulary/6c63630995856058.mp3",
+      "seconds": 1.392,
+      "sha256": "4ea3dacb9001ceb6c2f3e4f2a746d4f6d5b29023aef1c5b9e9e9b955fdd5e3c8"
+    },
+    {
+      "text": "مَعًا",
+      "path": "audio/book-vocabulary/94a5d4df12b83672.mp3",
+      "seconds": 0.936,
+      "sha256": "8e765fb7fb89c78e21ac0e0c3ead0c199dc9d194d070529ebb371021c888bbdd"
+    },
+    {
+      "text": "اِقْتَرَحَتْ",
+      "path": "audio/book-vocabulary/0246ed66f154e8ed.mp3",
+      "seconds": 1.224,
+      "sha256": "63aca4880249a18fbe750afc21d2cf136895a0bb1231f86223778bb2ddc25cff"
+    },
+    {
+      "text": "فِكْرَةٌ",
+      "path": "audio/book-vocabulary/aa525a5d7368b077.mp3",
+      "seconds": 1.224,
+      "sha256": "9bb4be1844d0af7b4b631a7ff3352902fa9d3350c89ba877c0ea2c93bef0c0c6"
+    },
+    {
+      "text": "اِقْتِرَاحٌ",
+      "path": "audio/vocabulary/0615d3d34201bece.mp3",
+      "seconds": 1.437,
+      "sha256": "e756838c4f71cc6fa17e75451e85e6a808b6120711eb89ac6413fcb37cfec095"
+    },
+    {
+      "text": "يَتَعَلَّمُ",
+      "path": "audio/vocabulary/4c2b37d1a10ce4c9.mp3",
+      "seconds": 1.358,
+      "sha256": "41900968faf0791a8d76accb446e81f89a63c24e6fd8e4efc9b3809fe41206da"
+    },
+    {
+      "text": "حَقْلٌ",
+      "path": "audio/vocabulary/34f57fc4f17870b6.mp3",
+      "seconds": 1.097,
+      "sha256": "0d77f44b3ab01cb008fa4f8d6abd1ddde6fb7468018ffa682b8a57f9e76e9a34"
+    },
+    {
+      "text": "لَنْ",
+      "path": "audio/book-vocabulary/b88f06e37ad7649a.mp3",
+      "seconds": 0.864,
+      "sha256": "6c5dde8c721dadf9936cd34283edc4da48552996c60b282ac76758f62c98889d"
+    },
+    {
+      "text": "طَيْرٌ",
+      "path": "audio/book-vocabulary/c9a527fb7af154d1.mp3",
+      "seconds": 1.008,
+      "sha256": "dd738e32ad4dc5716b4ab75a9122baa7ec243a65e467c62de6f4ac7ba0f445f1"
+    },
+    {
+      "text": "مَشْغُولَةٌ",
+      "path": "audio/book-vocabulary/41df72365deb97a6.mp3",
+      "seconds": 1.512,
+      "sha256": "ed7385690d75d5947ed0654067ad497c486140962d6d35fc90e308bcfe98ed6d"
+    },
+    {
+      "text": "بِنَاءٌ",
+      "path": "audio/book-vocabulary/438d8b995feece56.mp3",
+      "seconds": 1.2,
+      "sha256": "3b76bf3d4e6633c5c03b3e0352d096d016b184af62e438a9ed33dee0884fbc08"
+    },
+    {
+      "text": "عُشٌّ",
+      "path": "audio/book-vocabulary/8933d2437b89c1c1.mp3",
+      "seconds": 0.96,
+      "sha256": "8a860a6bcf205aadfc28050d91c24cd2f36f56ee054b11e448c6efe387a6efa0"
+    },
+    {
+      "text": "نَمْلَةٌ",
+      "path": "audio/book-vocabulary/94bd1abb5203b17d.mp3",
+      "seconds": 1.2,
+      "sha256": "ede26f78049ab9f4d3e6e2f1b232b76a76a30e0708a0e6863a42fdd0968c602f"
+    },
+    {
+      "text": "يَجِيءُ",
+      "path": "audio/book-vocabulary/21a63c43060a17ae.mp3",
+      "seconds": 1.128,
+      "sha256": "aec67b8b463f89dd0afd6af450daf7ccbd826774cf6b69c98b12a5f91beafa14"
+    },
+    {
+      "text": "قُوتٌ",
+      "path": "audio/book-vocabulary/b314875e9e2f9222.mp3",
+      "seconds": 1.032,
+      "sha256": "d18468cfe76d315a7445858111e78c21014f9a0d3ddb5f7c3c3094394f8bff38"
+    },
+    {
+      "text": "نَحْلَةٌ",
+      "path": "audio/vocabulary/97717a1664f2bb46.mp3",
+      "seconds": 1.306,
+      "sha256": "f5fc6157abd375e1f9e573fee24a87fa3894cf1cdb6480966666fb36a65e9d28"
+    },
+    {
+      "text": "يَمُصُّ",
+      "path": "audio/book-vocabulary/995f5d126844229b.mp3",
+      "seconds": 1.152,
+      "sha256": "a65e5701358d3e5fb5acd8810e04785684cec0b4da2c6245330a7761a0108248"
+    },
+    {
+      "text": "رَحِيقٌ",
+      "path": "audio/book-vocabulary/1f10238a3662f023.mp3",
+      "seconds": 1.224,
+      "sha256": "3a4d3f726a89ea55fd57ca233f1a79a6a0b2f401a75f30b201112a126298beae"
+    },
+    {
+      "text": "جِدٌّ",
+      "path": "audio/book-vocabulary/423951f9ffd8f0a3.mp3",
+      "seconds": 1.056,
+      "sha256": "9135e0d8ceac4e7ce7993083709d107bc6220a9538fa3a90d68fa592b9dfa36a"
+    },
+    {
+      "text": "حَتَّى",
+      "path": "audio/vocabulary/2359a47dde17169b.mp3",
+      "seconds": 0.993,
+      "sha256": "1efd22607e6aff55481b8eea8c14c8fbdaa0b700920ee1ae0dd32ff20cd903e6"
+    },
+    {
+      "text": "اِعْتَذَرَ",
+      "path": "audio/book-vocabulary/f11657f901e3c2a2.mp3",
+      "seconds": 1.2,
+      "sha256": "b99d2c90a74cb6bf9ad4f0a8693f63979f730ef3512174bf36ca241685717122"
+    },
+    {
+      "text": "سَيِّدٌ",
+      "path": "audio/book-vocabulary/20ddfc3147caacc3.mp3",
+      "seconds": 1.152,
+      "sha256": "9c0fd40ace4d309a11a14f6f54ad723f12e0a6e933c8e69f153e9cc2b95f06e9"
+    },
+    {
+      "text": "يَتَغَيَّبُ",
+      "path": "audio/book-vocabulary/68f167689d20a0bf.mp3",
+      "seconds": 1.344,
+      "sha256": "a5d523056df5ebc854fb28954b5d24de47ba29ff501e01d5b350287a5888b908"
+    },
+    {
+      "text": "حَسَنًا",
+      "path": "audio/book-vocabulary/144bf48f46a3bff0.mp3",
+      "seconds": 1.152,
+      "sha256": "0c7f598a6eed80338a496f66d4bcdd1a45d7be983bd79c744ea1ab72bc4264d0"
+    },
+    {
+      "text": "دُعْسُوقَةٌ",
+      "path": "audio/book-vocabulary/c985808ea7afde78.mp3",
+      "seconds": 1.488,
+      "sha256": "3ef3ac9c556b6a54a3f77ef9376c9d7422b662e7bf09108a37e367f488ee5998"
+    },
+    {
+      "text": "ذُبَابَةٌ",
+      "path": "audio/book-vocabulary/216004bf48bef2fc.mp3",
+      "seconds": 1.416,
+      "sha256": "f5e006bad46038c9a0ca45c53bfe9eddbbd340cfb8f065ebffc3d81b4cc604a0"
+    },
+    {
+      "text": "حَلَزُونٌ",
+      "path": "audio/book-vocabulary/e2f1f4152a23eabb.mp3",
+      "seconds": 1.344,
+      "sha256": "f5bd0a4502140303d7c86e387ae2cc6883e36c3bbb88c9732ed2e746c06d3f88"
+    },
+    {
+      "text": "دُودَةٌ",
+      "path": "audio/book-vocabulary/b217022e35db35e5.mp3",
+      "seconds": 1.224,
+      "sha256": "5aa875c465e9142232e7fe2ba4af77f873944f383f29a83f63c812a9fb9f1859"
+    },
+    {
+      "text": "صَرَّارٌ",
+      "path": "audio/book-vocabulary/51dc2914dc8f78b8.mp3",
+      "seconds": 1.248,
+      "sha256": "d180b25e119932f9803248eb20ebc82ee78593ea7407a9a37a1c091f98a78bf2"
+    },
+    {
+      "text": "نَظَرَ",
+      "path": "audio/book-vocabulary/ae4a175a3e1363e9.mp3",
+      "seconds": 0.936,
+      "sha256": "6d3213e07fa42938eeeeb68495821a246d0dcdf83e7a9762cff3bc529c1c77b6"
+    },
+    {
+      "text": "يَمْتَصُّ",
+      "path": "audio/book-vocabulary/f2c5310747753136.mp3",
+      "seconds": 1.248,
+      "sha256": "e0fe79efc544a7d5fe44de49794c09b8f365e9ac40a557ea2ca5bf7208033b6e"
+    },
+    {
+      "text": "أَحَسَّ",
+      "path": "audio/book-vocabulary/d56929da56e317f8.mp3",
+      "seconds": 1.104,
+      "sha256": "628ed26c86dfe3d27a051eeb3e241181049c6feee3140e22aaa93972485bfd82"
+    },
+    {
+      "text": "خَجَلٌ",
+      "path": "audio/book-vocabulary/95d19147ac5e323f.mp3",
+      "seconds": 1.152,
+      "sha256": "54b5758891b962d11db8067d285848da18f7df49495d942d282d91be21264d1d"
+    },
+    {
+      "text": "مُسْرِعٌ",
+      "path": "audio/book-vocabulary/de8929973b14dc01.mp3",
+      "seconds": 1.224,
+      "sha256": "4248dc7eb93d1c0d2254539c8f5c892bbfc55f234c3342998c5478fed2037ac1"
+    },
+    {
+      "text": "أَبَدًا",
+      "path": "audio/book-vocabulary/825247f5418cb797.mp3",
+      "seconds": 1.032,
+      "sha256": "5e4cff74ef711eed70e940df5ffe57e99eebca135dec45c88236fd053de5beba"
+    },
+    {
+      "text": "صَارَ",
+      "path": "audio/book-vocabulary/fe882cd90e501c6d.mp3",
+      "seconds": 0.96,
+      "sha256": "330c0a8d97844ccebb9a4aceeb4f73cec0a444d0ec968350bff4b0cfc1a7ebbb"
+    },
+    {
+      "text": "طَيَرَانٌ",
+      "path": "audio/book-vocabulary/732a907e8143552a.mp3",
+      "seconds": 1.296,
+      "sha256": "33a16c7a88a48bd62c063c23875cf6643e4aa1fc1ccfdba33344a588470586c2"
+    },
+    {
+      "text": "اِبْنٌ",
+      "path": "audio/vocabulary/611cb8e183374bdd.mp3",
+      "seconds": 1.019,
+      "sha256": "001377b91e42b58417f8c797b9956e528034a57e45141fbf01043acb32bcfd26"
+    },
+    {
+      "text": "قَادِرٌ",
+      "path": "audio/book-vocabulary/8e7e466e71fba458.mp3",
+      "seconds": 1.152,
+      "sha256": "71a3b7d9928b259371c9e9dd5cdf80703e254b49fc987590ed52db556d4c7cad"
+    },
+    {
+      "text": "يَخَافُ",
+      "path": "audio/vocabulary/3b84c4961e97aeab.mp3",
+      "seconds": 1.254,
+      "sha256": "13f386fcb15eb36cb07b8852656e0869253790cdb4e6c3cc48bcb0f2637a2041"
+    },
+    {
+      "text": "أَرْضٌ",
+      "path": "audio/book-vocabulary/a5c4147dfd69c928.mp3",
+      "seconds": 0.984,
+      "sha256": "7542b53621319d5027ea1ecd5605370d75b72538385c5e52d7a703051577b19a"
+    },
+    {
+      "text": "يَمُوتُ",
+      "path": "audio/book-vocabulary/e61b3beb92aba9e7.mp3",
+      "seconds": 1.128,
+      "sha256": "fa3d9dc9598e3a5dd2b0ee25c348dbdc0e2a79be1d69257d3840f9dd9f39fe62"
+    },
+    {
+      "text": "اُتْرُكْ",
+      "path": "audio/book-vocabulary/434624278917742e.mp3",
+      "seconds": 0.936,
+      "sha256": "18413396f897b15bd8f7a89c014d9ba5757ec82e51c4e1fac7d11b227a7a39c6"
+    },
+    {
+      "text": "غُصْنٌ",
+      "path": "audio/book-vocabulary/1cc553c3c7c1efac.mp3",
+      "seconds": 1.08,
+      "sha256": "bc18727c5e0bbd438cdb46900f32e2002e0e12a291125715a1201ff7495bd92a"
+    },
+    {
+      "text": "يُحَرِّكُ",
+      "path": "audio/book-vocabulary/1fd73b08020e0c7c.mp3",
+      "seconds": 1.272,
+      "sha256": "c64afc78911374a9d3e45261b5b72b3a26e4658e8218418bca23e2e5b92f4547"
+    },
+    {
+      "text": "جَرِّبْ",
+      "path": "audio/book-vocabulary/7971b99c34b2b7f8.mp3",
+      "seconds": 0.96,
+      "sha256": "af2909e96fa2666dca704fd6404313c21af37b7c565203acd07cde09dd76a15e"
+    },
+    {
+      "text": "جَبَانٌ",
+      "path": "audio/book-vocabulary/7df4cbfe8789f81b.mp3",
+      "seconds": 1.248,
+      "sha256": "e96b21ff392cb2363ef72b36d6eb7d0ab15cf3bef08dcd7a4ee2efbed2533b99"
+    },
+    {
+      "text": "دَعِينِي",
+      "path": "audio/book-vocabulary/0e08d2de357c24b0.mp3",
+      "seconds": 1.08,
+      "sha256": "222e65d82e090745e0867a63014717128d27dc5cb3950914930a2dd8cade98d4"
+    },
+    {
+      "text": "سُقُوطٌ",
+      "path": "audio/book-vocabulary/85529586d2859477.mp3",
+      "seconds": 1.2,
+      "sha256": "bb38e664e809972983a60d60932dc780e2b701b33a21b0211c73cf6b9065b8b1"
+    },
+    {
+      "text": "آخْ",
+      "path": "audio/book-vocabulary/ec9acf9edeae6acc.mp3",
+      "seconds": 1.032,
+      "sha256": "23b28cc49d7f6d97be57d9e8538b49e25c4d749367eec3e338d5e3d28e82bb96"
+    },
+    {
+      "text": "يُنْقِذُ",
+      "path": "audio/book-vocabulary/8b8c348b93fcb4e2.mp3",
+      "seconds": 1.128,
+      "sha256": "339df6880d91f77812cc2aca0de8bcf0fb97541aea034d0e5aaeb8540515fff3"
+    },
+    {
+      "text": "شَجَرَةٌ",
+      "path": "audio/vocabulary/f9eb9cd6a3bd70f4.mp3",
+      "seconds": 1.384,
+      "sha256": "476a021a35467a412d54b716bf0b9d1d370c6f14295e4e0e26dfa21e7274cc3f"
+    },
+    {
+      "text": "حَمْلٌ",
+      "path": "audio/book-vocabulary/2ec0f99489f9f6a0.mp3",
+      "seconds": 1.032,
+      "sha256": "767276e9a3fa2afc995aebb63b57718c82c7589e5e5ae3b919d16524b5015ec5"
+    },
+    {
+      "text": "ثَقِيلَةٌ",
+      "path": "audio/book-vocabulary/e6407169d210922f.mp3",
+      "seconds": 1.392,
+      "sha256": "cb3742a7126b15765f8da00596a880ffd0197d307ae5f9015e57bfa62b959cc7"
+    },
+    {
+      "text": "نَقْلٌ",
+      "path": "audio/book-vocabulary/f4c2fbda2b49bae5.mp3",
+      "seconds": 1.032,
+      "sha256": "f732a6c486f96c588c9735125d78b3d15ab99fe387e09f14600c3bee65c4bbab"
+    },
+    {
+      "text": "جَذْبٌ",
+      "path": "audio/book-vocabulary/ebab444193e1f55f.mp3",
+      "seconds": 1.056,
+      "sha256": "1e5830f11116688c5afb1b972e7cf7ae6cafec2738ac3f7965917f4da88622b9"
+    },
+    {
+      "text": "عَرَبَةٌ",
+      "path": "audio/book-vocabulary/ba01b07ef485bad0.mp3",
+      "seconds": 1.248,
+      "sha256": "9fdc5769bc67211b8398ea23753a5e43fd5a16ca279df14648ec65e68f6ddb79"
+    },
+    {
+      "text": "أَرْنَبٌ",
+      "path": "audio/vocabulary/8b23ee1bbcefaf0a.mp3",
+      "seconds": 1.202,
+      "sha256": "02ef2889e718538a8fba4474b063a0255d543e3661936cb37c94f803de27ccbb"
+    },
+    {
+      "text": "قِطٌّ",
+      "path": "audio/book-vocabulary/198eccd0e4ee6704.mp3",
+      "seconds": 0.984,
+      "sha256": "13fb199579ac1c4f2610574880361729b1baa234bdb835bfbe5cc79fe01dc0a6"
+    },
+    {
+      "text": "كَلْبٌ",
+      "path": "audio/vocabulary/2e196d8c8ce9e68d.mp3",
+      "seconds": 1.045,
+      "sha256": "8a3a1b4185ae7fa45e5fa5c076e87cd192763aced36afe6d7455a483e169a628"
+    },
+    {
+      "text": "جَمَلٌ",
+      "path": "audio/vocabulary/28f97335c8e365a1.mp3",
+      "seconds": 1.176,
+      "sha256": "268fd5ce8ffe14baba1ad4738f3056ca5e74113440b19cd5b9abb0f7c63d474b"
+    },
+    {
+      "text": "زَرَافَةٌ",
+      "path": "audio/book-vocabulary/2f289fc02341d105.mp3",
+      "seconds": 1.464,
+      "sha256": "ea0571bcd550303add0fe584497cddf8e610c91c087d2904c8faac7cbc82a586"
+    },
+    {
+      "text": "مَاعِزٌ",
+      "path": "audio/vocabulary/50e39469456f0f94.mp3",
+      "seconds": 1.254,
+      "sha256": "6735f45745d41a6abc871e2593412d3263ad0bc86aca5bd41b396842481cf2ef"
+    },
+    {
+      "text": "رَفَضَ",
+      "path": "audio/book-vocabulary/bf18f67228f3c752.mp3",
+      "seconds": 0.96,
+      "sha256": "302da4a66b59d64a075044c20f542fdbbdaea1e004a96f768e453ace163b66fe"
+    },
+    {
+      "text": "سَمَاعٌ",
+      "path": "audio/book-vocabulary/a30550993617a7ba.mp3",
+      "seconds": 1.248,
+      "sha256": "41edfb9dc518c50eec453bd4087232f514eb8c081fb926baa45db0a00c99ed4a"
+    },
+    {
+      "text": "حَاوَلَتْ",
+      "path": "audio/book-vocabulary/f5d27c9007c448c0.mp3",
+      "seconds": 1.104,
+      "sha256": "b02883df5b6df28bb99ec8442065b4ffd68d1b9515c7cd95c0408efe3759a015"
+    },
+    {
+      "text": "تُقْنِعُ",
+      "path": "audio/book-vocabulary/d4ec456ba423e1c8.mp3",
+      "seconds": 1.032,
+      "sha256": "801fa0f19bacf6ab99ec8b89df827cfab5a3e9d8eed0c18510a0fc920b82a507"
+    },
+    {
+      "text": "عِنْدَمَا",
+      "path": "audio/vocabulary/dc9f0109420cec5b.mp3",
+      "seconds": 1.071,
+      "sha256": "0a2eacf70474d999bdc40176b7558392ea3693a00ae4164842db72e357bdf566"
+    },
+    {
+      "text": "تَرَدُّدٌ",
+      "path": "audio/book-vocabulary/9f0dfee27fb0e9e7.mp3",
+      "seconds": 1.296,
+      "sha256": "2e9a702668f74e780f065ed869e859bb6a0c30976af32f5751e2bec48bde5291"
+    },
+    {
+      "text": "فَوْقَ",
+      "path": "audio/vocabulary/8c1bd064fb3ba74c.mp3",
+      "seconds": 1.045,
+      "sha256": "072b12487feca8d36b484259faaa5a6a41d2537f5a60eed5db1ac5968a6384b2"
+    },
+    {
+      "text": "فَرِحَ",
+      "path": "audio/book-vocabulary/ecac7e45d25dc407.mp3",
+      "seconds": 1.032,
+      "sha256": "9ea85368801780571c7026760f92dab4e3d1e5e40ff17466e5eaa8f700b660dc"
+    },
+    {
+      "text": "قَامَةٌ",
+      "path": "audio/book-vocabulary/f7100d26593f4677.mp3",
+      "seconds": 1.224,
+      "sha256": "e163c30c39c63543104475582b4afc8cc0c1cc3e34534df728fc9480a5f65b74"
+    },
+    {
+      "text": "طَوِيلَةٌ",
+      "path": "audio/book-vocabulary/8fd8b565bbfdfbd4.mp3",
+      "seconds": 1.344,
+      "sha256": "fcf9e50a70077e0c306e7e675859cf30792fc113541f13f301d574931a43e577"
+    },
+    {
+      "text": "أَفْضَلُ",
+      "path": "audio/book-vocabulary/97e6542d1af8fd4c.mp3",
+      "seconds": 1.008,
+      "sha256": "a06391e0ed4e31b8e0b69abe0bbae6e78b7050057895b609d3d9e69dafbd22e6"
+    },
+    {
+      "text": "قَصِيرَةٌ",
+      "path": "audio/book-vocabulary/4ed80ff0c729939e.mp3",
+      "seconds": 1.344,
+      "sha256": "2cda3d8bbd1ab3cdd650a99f81bb3ceaaeea6814c946299d3a8c4fe3020d8db6"
+    },
+    {
+      "text": "فَائِدَةٌ",
+      "path": "audio/vocabulary/a863914414dc93ab.mp3",
+      "seconds": 1.489,
+      "sha256": "1b24a1147c91f39c94bf07488ade1b630ab79f15da24e701a80da469f4d46bf7"
+    },
+    {
+      "text": "مِثْلٌ",
+      "path": "audio/book-vocabulary/a47e6fd764f2e7c6.mp3",
+      "seconds": 1.032,
+      "sha256": "b3ad1a38fed041e52e5a1e042fb6be19fdc36bb47e61a7a7d727d508e05ecb54"
+    },
+    {
+      "text": "أَسْتَطِيعُ",
+      "path": "audio/book-vocabulary/f951312c76a798a1.mp3",
+      "seconds": 1.272,
+      "sha256": "877b69c38eb70d613d8c026a1025bf4625c4332c0dae27357318d6b8918ec0a4"
+    },
+    {
+      "text": "إِذًا",
+      "path": "audio/book-vocabulary/dfc05d18f41e5d19.mp3",
+      "seconds": 0.912,
+      "sha256": "f3a0f23773e2052f03568c8c6479732095a0a8c818f0a3207d3d3c530d32af47"
+    },
+    {
+      "text": "غَزَالَةٌ",
+      "path": "audio/book-vocabulary/f45d5ce0e91af158.mp3",
+      "seconds": 1.464,
+      "sha256": "4f8e9f41545ee0b7663fb1f1c6d192d9c9999f08df77078cb3ffc7f33207c472"
+    },
+    {
+      "text": "فَتْحَةٌ",
+      "path": "audio/book-vocabulary/55033ca8fe1b3cfc.mp3",
+      "seconds": 1.224,
+      "sha256": "df9a046eed1ad262b1386d909b8de63ba614077aa955ab200fa59407d5a09fc8"
+    },
+    {
+      "text": "حَائِطٌ",
+      "path": "audio/book-vocabulary/a8eb3ff6e9ed3ff1.mp3",
+      "seconds": 1.224,
+      "sha256": "b7e06c345cae96bcdc7e570d20bafda0ff9bc43895345a2210e0503bc5cfa6b0"
+    },
+    {
+      "text": "سَأُبَرْهِنُ",
+      "path": "audio/book-vocabulary/895600780f07dc55.mp3",
+      "seconds": 1.344,
+      "sha256": "9edaf0785469d3dae973af9db4bae9e3a80ebb2c619dae6c4bcce148c544b727"
+    },
+    {
+      "text": "صِحَّةٌ",
+      "path": "audio/book-vocabulary/9a0efbfd1676754f.mp3",
+      "seconds": 1.272,
+      "sha256": "14b78e18101091627f43326036087f0887a20887649cc8f91171345299277f8d"
+    },
+    {
+      "text": "رَأْيٌ",
+      "path": "audio/vocabulary/9b9914fe7a5d12ae.mp3",
+      "seconds": 1.097,
+      "sha256": "20fd2a795f46f96bcc1f87cff9beb59d98b5766cc3adc569a0ef27462383962b"
+    },
+    {
+      "text": "يَمُرُّ",
+      "path": "audio/book-vocabulary/dc5e366c79769583.mp3",
+      "seconds": 1.08,
+      "sha256": "0ddb1716722c01c78b5feef059ffae36c8dec382c5b143dfda5059d9d9a7c967"
+    },
+    {
+      "text": "مَا لَكَ؟",
+      "path": "audio/book-vocabulary/34ec0f7232dd2c03.mp3",
+      "seconds": 1.176,
+      "sha256": "30754e3ae81e7519b7c05f85a541e249016eeaf4b3a52707b84cbf4c7cc155a0"
+    },
+    {
+      "text": "تَوَقَّفَتْ",
+      "path": "audio/book-vocabulary/0b3a00f997c2b480.mp3",
+      "seconds": 1.248,
+      "sha256": "c1edbf9d76c91b99e6bc96f940cab1d155cb50deb2a6a50335c051db9081d4b1"
+    },
+    {
+      "text": "سَمِعَ",
+      "path": "audio/book-vocabulary/886584aa3fae6ead.mp3",
+      "seconds": 1.056,
+      "sha256": "032e6a3217c80a16f53c7c48ba3a42fa16203b45e63190794f0985a84d66766b"
+    },
+    {
+      "text": "قِرْدٌ",
+      "path": "audio/vocabulary/95185c49700ec684.mp3",
+      "seconds": 1.045,
+      "sha256": "5411ebc5dab8df0ece44abfb0c1ef330ba8aec411214c5a37641adae64ee896e"
+    },
+    {
+      "text": "يَصِحُّ",
+      "path": "audio/book-vocabulary/57b017e22364c9ec.mp3",
+      "seconds": 1.2,
+      "sha256": "4dc4d1edcff4b421a4f41dfcc640f7328b719b2cbafd939f0c325f417d362f99"
+    },
+    {
+      "text": "مَخْلُوقٌ",
+      "path": "audio/book-vocabulary/7b530cc39ac7238a.mp3",
+      "seconds": 1.32,
+      "sha256": "6e7fb6037007c9e2f692f894c465f8c960f351acacf669413a871ff45d0620bc"
+    },
+    {
+      "text": "مَزِيَّةٌ",
+      "path": "audio/book-vocabulary/cdcc38b7ab79c3a6.mp3",
+      "seconds": 1.368,
+      "sha256": "7dfa8d958378a97f78ea151602ae30969a2dd2e3944dda02d267411555bd5e01"
+    },
+    {
+      "text": "فِيلٌ",
+      "path": "audio/letters/20-clear-word.mp3",
+      "seconds": 0.9143,
+      "sha256": "a961bedff1674d0729b44de5cd6bdd98c2e12a2235b78c16ad106c560909cdfb"
+    },
+    {
+      "text": "تِمْسَاحٌ",
+      "path": "audio/book-vocabulary/c4ce14c4c87b40bb.mp3",
+      "seconds": 1.296,
+      "sha256": "714d50c25248f655f7ba3b57cdf315ae257f2951b8da382f83ccbc0b70f1f2e3"
+    },
+    {
+      "text": "ثُعْبَانٌ",
+      "path": "audio/book-vocabulary/8e96f882442d7944.mp3",
+      "seconds": 1.224,
+      "sha256": "72a29d9627d7bc2c9bd812f880d413e558f122b0df8f8f18ec20d023840d087f"
+    },
+    {
+      "text": "أَسَدٌ",
+      "path": "audio/letter-related/01.mp3",
+      "seconds": 1.128,
+      "sha256": "48720b9abd2b78586a836437f97aba9304778c04157ace6f2ef7df0ec7221979"
+    },
+    {
+      "text": "نَمِرٌ",
+      "path": "audio/book-vocabulary/c8a679a3217a5ab0.mp3",
+      "seconds": 1.08,
+      "sha256": "02e6abb0596148359a34e9055f3d8dc26ff539478e8c2dac43ce6154fa60751c"
+    },
+    {
+      "text": "سُلَحْفَاةٌ",
+      "path": "audio/vocabulary/ffed9ee8590dc8ea.mp3",
+      "seconds": 1.541,
+      "sha256": "96a564dc713bf1c2697dd73866d918e8ac2cd021d71d85c98bf221602e1ef35f"
+    },
+    {
+      "text": "سَبَبٌ",
+      "path": "audio/vocabulary/5aa74e399c85e26d.mp3",
+      "seconds": 1.202,
+      "sha256": "55823b554f30d671f7b872842f1de4d47c281aabdb39acf7c41c85488fe0c29f"
+    },
+    {
+      "text": "تَفْتَخِرُ",
+      "path": "audio/book-vocabulary/cfa155a6daf99cab.mp3",
+      "seconds": 1.2,
+      "sha256": "d13cebfe3fb68fa3c60335b7b81ef07b5bb5b18ca4820daf66b334e5fa4d8143"
+    },
+    {
+      "text": "أَلُو",
+      "path": "audio/book-vocabulary/196ba9fa5c0c9d2e.mp3",
+      "seconds": 0.744,
+      "sha256": "f53b603af36badf6daa53cc70611f418ac93482f3c307c9da934f9552ce5ea64"
+    },
+    {
+      "text": "مُوسَى",
+      "path": "audio/book-vocabulary/cf9068950f467cf5.mp3",
+      "seconds": 1.008,
+      "sha256": "ace2af5c4079e716147e94b64dcc11de3d2f44c6fcafdbdeae76efc60a951d94"
+    },
+    {
+      "text": "يَتَكَلَّمُ",
+      "path": "audio/vocabulary/a1d15bbf3ec2eda0.mp3",
+      "seconds": 1.411,
+      "sha256": "350d2ad7d47cf89f957b1e270d5f7c82843c940e17e42de89aebaa296bad4055"
+    },
+    {
+      "text": "مَكَّةُ",
+      "path": "audio/book-vocabulary/1cc38c682fb41b30.mp3",
+      "seconds": 1.056,
+      "sha256": "c6c9ea0ccb83fa56bdfe85b98a65faa0c2e37421dbad8ad5ae67d43b40ae871d"
+    },
+    {
+      "text": "مُكَرَّمَةٌ",
+      "path": "audio/book-vocabulary/6f2a1012f462ccdd.mp3",
+      "seconds": 1.464,
+      "sha256": "8872f2a81763101dc50f0d5ac43d656a2a147bc5d8fbd4c180ef9ce5658abc28"
+    },
+    {
+      "text": "دَرَجَةٌ",
+      "path": "audio/book-vocabulary/1055f3c12121ec6a.mp3",
+      "seconds": 1.32,
+      "sha256": "185416f45249d450abb949a21497ab97d130f960566b0cef75c08c76cc54afc1"
+    },
+    {
+      "text": "أَرْبَعُونَ",
+      "path": "audio/vocabulary/b3b7cd1cc073d8a8.mp3",
+      "seconds": 1.28,
+      "sha256": "f0baf2cf74790aeb103a84d57a69cff6e2e54049ef0b46f0cb91e3046b1ddfb2"
+    },
+    {
+      "text": "دَافِئٌ",
+      "path": "audio/vocabulary/34f9960e9a139b25.mp3",
+      "seconds": 1.254,
+      "sha256": "d8a26384e9ca3da2ba7ea9ed30a8e2587501b84f4da9b5125a89fa32fbce3f46"
+    },
+    {
+      "text": "عِشْرُونَ",
+      "path": "audio/vocabulary/fb5a9b1c9323ab89.mp3",
+      "seconds": 1.228,
+      "sha256": "a0ba2a269bc6fceae66a58650070340061257d655ef2358299d31201d69e338a"
+    },
+    {
+      "text": "يَقْضِي",
+      "path": "audio/book-vocabulary/7bd9c6a75779af91.mp3",
+      "seconds": 0.984,
+      "sha256": "7b9aba8563869c695323209af6de8f5146396e4712dbaccbc4c3a0908ff416e6"
+    },
+    {
+      "text": "مُقْبِلٌ",
+      "path": "audio/book-vocabulary/c29c9ca2c06e8804.mp3",
+      "seconds": 1.152,
+      "sha256": "3df93b1bdf360efee84e713c1226d75b09263cc529d0c3e23ef864f6ef5db37c"
+    },
+    {
+      "text": "بَرِيطَانِيَا",
+      "path": "audio/book-vocabulary/f3259086dbe810b9.mp3",
+      "seconds": 1.32,
+      "sha256": "922839eb09ec3b6406764e23b0ece534bc70c90db98feea1847f65ba315b929c"
+    },
+    {
+      "text": "هُولَنْدَا",
+      "path": "audio/book-vocabulary/cfeea7bd09d691be.mp3",
+      "seconds": 1.08,
+      "sha256": "bb07bba0d42b0468d95b82f791c3587c2a365e2904e8005d5c014a985c2141ce"
+    },
+    {
+      "text": "الْعِرَاقُ",
+      "path": "audio/vocabulary/bcbd014ea1c94755.mp3",
+      "seconds": 1.306,
+      "sha256": "90a17a97fdb8b0d9ea790d110aa713670c749501ad255954e48317803578baf2"
+    },
+    {
+      "text": "وَاحِدٌ وَعِشْرُونَ",
+      "path": "audio/book-vocabulary/d1fb972db8976956.mp3",
+      "seconds": 2.064,
+      "sha256": "b3e8338143410478e44b187cab1756042e68b579c44b3d05396f9810f9adefa3"
+    },
+    {
+      "text": "اِثْنَانِ وَعِشْرُونَ",
+      "path": "audio/book-vocabulary/ee1ed69c248109c8.mp3",
+      "seconds": 2.016,
+      "sha256": "d9437effc273a1ccdf07e7639b6f09f4299705f2372b5a63d4227ca1c75aa59b"
+    },
+    {
+      "text": "ثَلَاثَةٌ وَعِشْرُونَ",
+      "path": "audio/book-vocabulary/381da64bb8757c08.mp3",
+      "seconds": 2.28,
+      "sha256": "92f39a26fcf6d1444c8a8b29a62f9f067bce2e47fd1189bd3783e9cdf2bc39e1"
+    },
+    {
+      "text": "أَرْبَعَةٌ وَعِشْرُونَ",
+      "path": "audio/book-vocabulary/fc2a0eabb8d2f7a2.mp3",
+      "seconds": 2.112,
+      "sha256": "4643480f2a5697a715f247ff5308def71adc45a86c683e413d09708035555558"
+    },
+    {
+      "text": "خَمْسَةٌ وَعِشْرُونَ",
+      "path": "audio/book-vocabulary/073129b895778a56.mp3",
+      "seconds": 2.064,
+      "sha256": "a4309eceb8dfdb90abb951298641936a26c70b4777519bbf1d545fca38f7ee3f"
+    },
+    {
+      "text": "هَاتِفِيًّا",
+      "path": "audio/book-vocabulary/cb35ff42185ce6c8.mp3",
+      "seconds": 1.44,
+      "sha256": "4560bc5aa9ea4a2053d6c01de3f89ee68845bfff648fe65557ae525d6a0ace1b"
+    },
+    {
+      "text": "هَاتِفٌ",
+      "path": "audio/youth/074.mp3",
+      "seconds": 1.32,
+      "sha256": "31ffce58e3d0fb9353c9d0d9e90188553dcb0ec5bb7fcc48a3a4c1822c4e7063"
     }
   ]
 }

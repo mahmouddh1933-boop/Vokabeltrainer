@@ -23,7 +23,7 @@ with sync_playwright() as pw:
  assert page.evaluate('VocabApp.loadCatalog()')==C
  for lang in ['ar','de']:
   page.locator('#app-language-select').select_option(lang)
-  expect(page.locator('#book-vocabulary-title')).to_have_text('Buchwortschatz' if lang=='de' else 'مفردات الكتب')
+  expect(page.locator('#book-vocabulary-title')).to_have_text('Buchwortschatz 1' if lang=='de' else 'مفردات الكتاب 1')
   assert page.locator('#book-vocabulary-lists strong').all_text_contents()==[l['titleDe' if lang=='de' else 'title'] for l in B['lists']]
   for width in [320,390,768,1440]:
    page.set_viewport_size({'width':width,'height':950});assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),(lang,width)
@@ -38,7 +38,7 @@ with sync_playwright() as pw:
   s=page.evaluate('VocabApp.getCurrentSource()');assert s['id']==l['id'] and s['collection']=='book-vocabulary' and s['cefr'] is None and s['count']==len(pairs)
   if l['order'] in [1,9]:assert page.evaluate('VocabApp.getCurrentListMasteryProgress().completedPasses')==(1 if l['order']==1 else 0)
   meta=page.locator('#source-meta').inner_text()
-  assert ('Buchwortschatz' if page.locator('html').get_attribute('lang')=='de' else 'مفردات الكتب') in meta,meta
+  assert ('Buchwortschatz 1' if page.locator('html').get_attribute('lang')=='de' else 'مفردات الكتاب 1') in meta,meta
   expect(page.locator('#front')).to_contain_text(pairs[0][0].replace('ًا','اً'));page.locator('#flashcard').tap();expect(page.locator('#back')).to_have_text(pairs[0][1]);page.locator('#next-button').tap();expect(page.locator('#front')).to_contain_text(pairs[1][0].replace('ًا','اً'))
   page.locator('#prev-button').tap();page.locator('#prev-button').tap();expect(page.locator('#front')).to_contain_text(pairs[-1][0].replace('ًا','اً'))
  # A book-only proper name uses its bundled MP3, rather than remote/device TTS.

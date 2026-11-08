@@ -1,5 +1,5 @@
 {
-  "version": 14,
+  "version": 15,
   "sourceLanguage": "ar",
   "translationLanguage": "de",
   "maxWordsPerBuiltInList": 25,
@@ -11098,8 +11098,8 @@
   "bookVocabulary": {
     "version": 2,
     "id": "book-vocabulary",
-    "title": "مفردات الكتب",
-    "titleDe": "Buchwortschatz",
+    "title": "مفردات الكتاب 1",
+    "titleDe": "Buchwortschatz 1",
     "sourceImageCount": 53,
     "count": 340,
     "wordsPerList": 20,
@@ -12973,6 +12973,3600 @@
         ],
         "collection": "book-vocabulary",
         "order": 17
+      }
+    ]
+  },
+  "bookVocabulary2": {
+    "version": 1,
+    "id": "book-vocabulary-2",
+    "title": "مفردات الكتاب 2",
+    "titleDe": "Buchwortschatz 2",
+    "sourceImageCount": 46,
+    "count": 644,
+    "wordsPerList": 20,
+    "lists": [
+      {
+        "id": "book2_20261108_01",
+        "title": "القائمة الأولى",
+        "titleDe": "Liste 1",
+        "count": 20,
+        "words": [
+          {
+            "ar": "حِوَارٌ",
+            "de": "der Dialog",
+            "entryId": "b2v-001"
+          },
+          {
+            "ar": "اُنْظُرْ",
+            "de": "schau hin!",
+            "entryId": "b2v-002"
+          },
+          {
+            "ar": "اِسْتَمِعْ",
+            "de": "höre zu!",
+            "entryId": "b2v-003"
+          },
+          {
+            "ar": "رَدِّدْ",
+            "de": "sprich nach!",
+            "entryId": "b2v-004"
+          },
+          {
+            "ar": "سَلْمَى",
+            "de": "Salma (Vorname)",
+            "entryId": "b2v-005"
+          },
+          {
+            "ar": "سَلَامٌ",
+            "de": "der Frieden; Grußformel",
+            "entryId": "b2v-006"
+          },
+          {
+            "ar": "عَلَى",
+            "de": "auf / über",
+            "entryId": "b2v-007"
+          },
+          {
+            "ar": "زَيْنَبُ",
+            "de": "Zainab (Vorname)",
+            "entryId": "b2v-008"
+          },
+          {
+            "ar": "مَنْ",
+            "de": "wer",
+            "entryId": "b2v-009"
+          },
+          {
+            "ar": "هَذِهِ",
+            "de": "diese / das (weiblich)",
+            "entryId": "b2v-010"
+          },
+          {
+            "ar": "بُشْرَى",
+            "de": "Bushra (Vorname)",
+            "entryId": "b2v-011"
+          },
+          {
+            "ar": "هِيَ",
+            "de": "sie (Einzahl)",
+            "entryId": "b2v-012"
+          },
+          {
+            "ar": "تِلْمِيذَةٌ",
+            "de": "die Schülerin",
+            "entryId": "b2v-013"
+          },
+          {
+            "ar": "جَدِيدَةٌ",
+            "de": "neu (weiblich)",
+            "entryId": "b2v-014"
+          },
+          {
+            "ar": "أَهْلًا",
+            "de": "willkommen!",
+            "entryId": "b2v-015"
+          },
+          {
+            "ar": "بِكِ",
+            "de": "mit dir; bei „willkommen“: an dich (weiblich)",
+            "entryId": "b2v-016"
+          },
+          {
+            "ar": "يَا",
+            "de": "Anredepartikel (z. B. „Hallo, …“)",
+            "entryId": "b2v-017"
+          },
+          {
+            "ar": "مَا",
+            "de": "was",
+            "entryId": "b2v-018"
+          },
+          {
+            "ar": "هِوَايَةٌ",
+            "de": "das Hobby",
+            "entryId": "b2v-019"
+          },
+          {
+            "ar": "كَثِيرٌ",
+            "de": "viel; zahlreich",
+            "entryId": "b2v-020"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 1,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_02",
+        "title": "القائمة الثانية",
+        "titleDe": "Liste 2",
+        "count": 20,
+        "words": [
+          {
+            "ar": "قِرَاءَةٌ",
+            "de": "das Lesen",
+            "entryId": "b2v-021"
+          },
+          {
+            "ar": "رِيَاضَةٌ",
+            "de": "der Sport",
+            "entryId": "b2v-022"
+          },
+          {
+            "ar": "تَجَوُّلٌ",
+            "de": "das Umhergehen; der Spaziergang",
+            "entryId": "b2v-023"
+          },
+          {
+            "ar": "فِي",
+            "de": "in",
+            "entryId": "b2v-024"
+          },
+          {
+            "ar": "حَدِيقَةٌ",
+            "de": "der Garten; der Park",
+            "entryId": "b2v-025"
+          },
+          {
+            "ar": "حَيَوَانٌ",
+            "de": "das Tier",
+            "entryId": "b2v-026"
+          },
+          {
+            "ar": "رَسْمٌ",
+            "de": "das Zeichnen",
+            "entryId": "b2v-027"
+          },
+          {
+            "ar": "سَفَرٌ",
+            "de": "die Reise; das Reisen",
+            "entryId": "b2v-028"
+          },
+          {
+            "ar": "هَلْ",
+            "de": "Fragepartikel für Ja-Nein-Fragen",
+            "entryId": "b2v-029"
+          },
+          {
+            "ar": "لَدَى",
+            "de": "bei; im Besitz von",
+            "entryId": "b2v-030"
+          },
+          {
+            "ar": "مَكْتَبَةٌ",
+            "de": "die Bibliothek; das Bücherregal",
+            "entryId": "b2v-031"
+          },
+          {
+            "ar": "نَعَمْ",
+            "de": "ja",
+            "entryId": "b2v-032"
+          },
+          {
+            "ar": "كَبِيرٌ",
+            "de": "groß",
+            "entryId": "b2v-033"
+          },
+          {
+            "ar": "لَا",
+            "de": "nein / nicht",
+            "entryId": "b2v-034"
+          },
+          {
+            "ar": "لَيْسَ",
+            "de": "nicht sein",
+            "entryId": "b2v-035"
+          },
+          {
+            "ar": "مُفْرَدَاتٌ",
+            "de": "die Vokabeln",
+            "entryId": "b2v-036"
+          },
+          {
+            "ar": "سَلَّمَ",
+            "de": "begrüßen; übergeben",
+            "entryId": "b2v-037"
+          },
+          {
+            "ar": "كَلَامٌ",
+            "de": "das Sprechen",
+            "entryId": "b2v-038"
+          },
+          {
+            "ar": "تَبَادَلْ",
+            "de": "tausche aus!",
+            "entryId": "b2v-039"
+          },
+          {
+            "ar": "مَعَ",
+            "de": "mit",
+            "entryId": "b2v-040"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 2,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_03",
+        "title": "القائمة الثالثة",
+        "titleDe": "Liste 3",
+        "count": 20,
+        "words": [
+          {
+            "ar": "صَدِيقٌ",
+            "de": "der Freund",
+            "entryId": "b2v-041"
+          },
+          {
+            "ar": "كَمَا",
+            "de": "wie (im Vergleich)",
+            "entryId": "b2v-042"
+          },
+          {
+            "ar": "مِثَالٌ",
+            "de": "das Beispiel",
+            "entryId": "b2v-043"
+          },
+          {
+            "ar": "مَهْدِي",
+            "de": "Mahdi (Vorname)",
+            "entryId": "b2v-044"
+          },
+          {
+            "ar": "أَنْتَ",
+            "de": "du (männlich)",
+            "entryId": "b2v-045"
+          },
+          {
+            "ar": "مُرَادٌ",
+            "de": "Murad (Vorname)",
+            "entryId": "b2v-046"
+          },
+          {
+            "ar": "لَعِبٌ",
+            "de": "das Spielen",
+            "entryId": "b2v-047"
+          },
+          {
+            "ar": "كُرَةٌ",
+            "de": "der Ball",
+            "entryId": "b2v-048"
+          },
+          {
+            "ar": "سُعَادُ",
+            "de": "Suad (Vorname)",
+            "entryId": "b2v-049"
+          },
+          {
+            "ar": "حَاسُوبٌ",
+            "de": "der Computer",
+            "entryId": "b2v-050"
+          },
+          {
+            "ar": "سِبَاحَةٌ",
+            "de": "das Schwimmen",
+            "entryId": "b2v-051"
+          },
+          {
+            "ar": "بَحْرٌ",
+            "de": "das Meer",
+            "entryId": "b2v-052"
+          },
+          {
+            "ar": "زِيَارَةٌ",
+            "de": "der Besuch",
+            "entryId": "b2v-053"
+          },
+          {
+            "ar": "مَعْرِضٌ",
+            "de": "die Ausstellung",
+            "entryId": "b2v-054"
+          },
+          {
+            "ar": "رِحْلَةٌ",
+            "de": "der Ausflug; die Fahrt",
+            "entryId": "b2v-055"
+          },
+          {
+            "ar": "جَمْعٌ",
+            "de": "das Sammeln",
+            "entryId": "b2v-056"
+          },
+          {
+            "ar": "صُورَةٌ",
+            "de": "das Bild; das Foto",
+            "entryId": "b2v-057"
+          },
+          {
+            "ar": "خَطٌّ",
+            "de": "die Schrift; die Kalligrafie",
+            "entryId": "b2v-058"
+          },
+          {
+            "ar": "عَرَبِيٌّ",
+            "de": "arabisch (männlich)",
+            "entryId": "b2v-059"
+          },
+          {
+            "ar": "طَابَعٌ",
+            "de": "die Briefmarke",
+            "entryId": "b2v-060"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 3,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_04",
+        "title": "القائمة الرابعة",
+        "titleDe": "Liste 4",
+        "count": 20,
+        "words": [
+          {
+            "ar": "اِقْرَأْ",
+            "de": "lies!",
+            "entryId": "b2v-061"
+          },
+          {
+            "ar": "نَصٌّ",
+            "de": "der Text",
+            "entryId": "b2v-062"
+          },
+          {
+            "ar": "ثُمَّ",
+            "de": "dann / danach",
+            "entryId": "b2v-063"
+          },
+          {
+            "ar": "أَجِبْ",
+            "de": "antworte!",
+            "entryId": "b2v-064"
+          },
+          {
+            "ar": "عَنْ",
+            "de": "über / zu (einem Thema)",
+            "entryId": "b2v-065"
+          },
+          {
+            "ar": "سُؤَالٌ",
+            "de": "die Frage",
+            "entryId": "b2v-066"
+          },
+          {
+            "ar": "صَدِيقَةٌ",
+            "de": "die Freundin",
+            "entryId": "b2v-067"
+          },
+          {
+            "ar": "سَأَلَ",
+            "de": "fragen",
+            "entryId": "b2v-068"
+          },
+          {
+            "ar": "قَالَ",
+            "de": "sagen",
+            "entryId": "b2v-069"
+          },
+          {
+            "ar": "أَيْضًا",
+            "de": "auch",
+            "entryId": "b2v-070"
+          },
+          {
+            "ar": "تُحِبُّ",
+            "de": "lieben / mögen (sie liebt)",
+            "entryId": "b2v-071"
+          },
+          {
+            "ar": "مِنْ",
+            "de": "aus / von",
+            "entryId": "b2v-072"
+          },
+          {
+            "ar": "أَيْنَ",
+            "de": "wo",
+            "entryId": "b2v-073"
+          },
+          {
+            "ar": "سَالِمٌ",
+            "de": "Salim (Vorname mit langem a)",
+            "entryId": "b2v-074"
+          },
+          {
+            "ar": "مَحْمُودٌ",
+            "de": "Mahmud (Vorname)",
+            "entryId": "b2v-075"
+          },
+          {
+            "ar": "أَنَا",
+            "de": "ich",
+            "entryId": "b2v-076"
+          },
+          {
+            "ar": "مَالِي",
+            "de": "Mali (Land)",
+            "entryId": "b2v-077"
+          },
+          {
+            "ar": "مَالِيٌّ",
+            "de": "malisch; der Malier",
+            "entryId": "b2v-078"
+          },
+          {
+            "ar": "جِنْسِيَّةٌ",
+            "de": "die Staatsangehörigkeit",
+            "entryId": "b2v-079"
+          },
+          {
+            "ar": "فَرَنْسِيٌّ",
+            "de": "französisch; der Franzose",
+            "entryId": "b2v-080"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 4,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_05",
+        "title": "القائمة الخامسة",
+        "titleDe": "Liste 5",
+        "count": 20,
+        "words": [
+          {
+            "ar": "فَرَنْسَا",
+            "de": "Frankreich",
+            "entryId": "b2v-081"
+          },
+          {
+            "ar": "يَقَعُ",
+            "de": "fallen; liegen (Ort)",
+            "entryId": "b2v-082"
+          },
+          {
+            "ar": "أُورُوبَّا",
+            "de": "Europa",
+            "entryId": "b2v-083"
+          },
+          {
+            "ar": "أَفْرِيقِيَا",
+            "de": "Afrika",
+            "entryId": "b2v-084"
+          },
+          {
+            "ar": "مَاذَا",
+            "de": "was (Frage nach Handlung/Inhalt)",
+            "entryId": "b2v-085"
+          },
+          {
+            "ar": "يَشْتَغِلُ",
+            "de": "arbeiten; beruflich tätig sein",
+            "entryId": "b2v-086"
+          },
+          {
+            "ar": "أَبٌ",
+            "de": "der Vater",
+            "entryId": "b2v-087"
+          },
+          {
+            "ar": "مُهَنْدِسٌ",
+            "de": "der Ingenieur",
+            "entryId": "b2v-088"
+          },
+          {
+            "ar": "مَصْنَعٌ",
+            "de": "die Fabrik",
+            "entryId": "b2v-089"
+          },
+          {
+            "ar": "بَارِيسُ",
+            "de": "Paris",
+            "entryId": "b2v-090"
+          },
+          {
+            "ar": "طَبِيبٌ",
+            "de": "der Arzt",
+            "entryId": "b2v-091"
+          },
+          {
+            "ar": "خَرِيطَةٌ",
+            "de": "die Landkarte",
+            "entryId": "b2v-092"
+          },
+          {
+            "ar": "عَالَمٌ",
+            "de": "die Welt",
+            "entryId": "b2v-093"
+          },
+          {
+            "ar": "إِسْلَامِيٌّ",
+            "de": "islamisch",
+            "entryId": "b2v-094"
+          },
+          {
+            "ar": "بَلْجِيكَا",
+            "de": "Belgien",
+            "entryId": "b2v-095"
+          },
+          {
+            "ar": "كَنَدَا",
+            "de": "Kanada",
+            "entryId": "b2v-096"
+          },
+          {
+            "ar": "أَمْرِيكَا",
+            "de": "Amerika",
+            "entryId": "b2v-097"
+          },
+          {
+            "ar": "أَلْمَانِيَا",
+            "de": "Deutschland",
+            "entryId": "b2v-098"
+          },
+          {
+            "ar": "السُّوِيدُ",
+            "de": "Schweden",
+            "entryId": "b2v-099"
+          },
+          {
+            "ar": "النَّمْسَا",
+            "de": "Österreich",
+            "entryId": "b2v-100"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 5,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_06",
+        "title": "القائمة السادسة",
+        "titleDe": "Liste 6",
+        "count": 20,
+        "words": [
+          {
+            "ar": "الدَّانِمَارْكُ",
+            "de": "Dänemark",
+            "entryId": "b2v-101"
+          },
+          {
+            "ar": "بَاكِسْتَانُ",
+            "de": "Pakistan",
+            "entryId": "b2v-102"
+          },
+          {
+            "ar": "تُونِسُ",
+            "de": "Tunesien",
+            "entryId": "b2v-103"
+          },
+          {
+            "ar": "لُبْنَانُ",
+            "de": "der Libanon",
+            "entryId": "b2v-104"
+          },
+          {
+            "ar": "فِلَسْطِينُ",
+            "de": "Palästina",
+            "entryId": "b2v-105"
+          },
+          {
+            "ar": "يَذْكُرُ",
+            "de": "nennen; erwähnen",
+            "entryId": "b2v-106"
+          },
+          {
+            "ar": "كُلٌّ",
+            "de": "jeder; alle",
+            "entryId": "b2v-107"
+          },
+          {
+            "ar": "تِلْمِيذٌ",
+            "de": "der Schüler",
+            "entryId": "b2v-108"
+          },
+          {
+            "ar": "بَلَدٌ",
+            "de": "das Land; die Heimat",
+            "entryId": "b2v-109"
+          },
+          {
+            "ar": "السِّنِغَالُ",
+            "de": "der Senegal",
+            "entryId": "b2v-110"
+          },
+          {
+            "ar": "الْجَزَائِرُ",
+            "de": "Algerien",
+            "entryId": "b2v-111"
+          },
+          {
+            "ar": "مَغْرِبٌ",
+            "de": "der Sonnenuntergang; das Abendgebet",
+            "entryId": "b2v-112"
+          },
+          {
+            "ar": "سُورِيَا",
+            "de": "Syrien",
+            "entryId": "b2v-113"
+          },
+          {
+            "ar": "الْمَكْسِيكُ",
+            "de": "Mexiko",
+            "entryId": "b2v-114"
+          },
+          {
+            "ar": "الْيَابَانُ",
+            "de": "Japan",
+            "entryId": "b2v-115"
+          },
+          {
+            "ar": "النِّيجَرُ",
+            "de": "der Niger (Staat)",
+            "entryId": "b2v-116"
+          },
+          {
+            "ar": "هُوَ",
+            "de": "er",
+            "entryId": "b2v-117"
+          },
+          {
+            "ar": "وَلَدٌ",
+            "de": "der Junge",
+            "entryId": "b2v-118"
+          },
+          {
+            "ar": "كَمْ",
+            "de": "wie viele",
+            "entryId": "b2v-119"
+          },
+          {
+            "ar": "سَاعَةٌ",
+            "de": "die Stunde; die Uhr",
+            "entryId": "b2v-120"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 6,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_07",
+        "title": "القائمة السابعة",
+        "titleDe": "Liste 7",
+        "count": 20,
+        "words": [
+          {
+            "ar": "الْآنَ",
+            "de": "jetzt",
+            "entryId": "b2v-121"
+          },
+          {
+            "ar": "هُدَى",
+            "de": "Huda (Vorname)",
+            "entryId": "b2v-122"
+          },
+          {
+            "ar": "إِلَى",
+            "de": "zu / nach",
+            "entryId": "b2v-123"
+          },
+          {
+            "ar": "يَذْهَبُ",
+            "de": "gehen",
+            "entryId": "b2v-124"
+          },
+          {
+            "ar": "إِبْرَاهِيمُ",
+            "de": "Ibrahim (Vorname)",
+            "entryId": "b2v-125"
+          },
+          {
+            "ar": "مَدْرَسَةٌ",
+            "de": "die Schule",
+            "entryId": "b2v-126"
+          },
+          {
+            "ar": "وَقْتٌ",
+            "de": "die Zeit",
+            "entryId": "b2v-127"
+          },
+          {
+            "ar": "مُبَكِّرٌ",
+            "de": "früh",
+            "entryId": "b2v-128"
+          },
+          {
+            "ar": "سَابِعَةٌ",
+            "de": "siebte (weiblich)",
+            "entryId": "b2v-129"
+          },
+          {
+            "ar": "صَبَاحٌ",
+            "de": "der Morgen",
+            "entryId": "b2v-130"
+          },
+          {
+            "ar": "بَعِيدٌ",
+            "de": "weit; entfernt",
+            "entryId": "b2v-131"
+          },
+          {
+            "ar": "بَيْتٌ",
+            "de": "das Haus",
+            "entryId": "b2v-132"
+          },
+          {
+            "ar": "مَتَى",
+            "de": "wann",
+            "entryId": "b2v-133"
+          },
+          {
+            "ar": "يَبْدَأُ",
+            "de": "beginnen",
+            "entryId": "b2v-134"
+          },
+          {
+            "ar": "يَوْمٌ",
+            "de": "der Tag",
+            "entryId": "b2v-135"
+          },
+          {
+            "ar": "دِرَاسِيٌّ",
+            "de": "schulisch; den Unterricht betreffend",
+            "entryId": "b2v-136"
+          },
+          {
+            "ar": "ثَامِنَةٌ",
+            "de": "achte (weiblich)",
+            "entryId": "b2v-137"
+          },
+          {
+            "ar": "حَافِلَةٌ",
+            "de": "der Bus",
+            "entryId": "b2v-138"
+          },
+          {
+            "ar": "يَدْرُسُ",
+            "de": "lernen; studieren",
+            "entryId": "b2v-139"
+          },
+          {
+            "ar": "أُسْبُوعٌ",
+            "de": "die Woche",
+            "entryId": "b2v-140"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 7,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_08",
+        "title": "القائمة الثامنة",
+        "titleDe": "Liste 8",
+        "count": 20,
+        "words": [
+          {
+            "ar": "سِتَّةٌ",
+            "de": "sechs",
+            "entryId": "b2v-141"
+          },
+          {
+            "ar": "الِاثْنَيْنِ",
+            "de": "Montag",
+            "entryId": "b2v-142"
+          },
+          {
+            "ar": "الثُّلَاثَاءُ",
+            "de": "Dienstag",
+            "entryId": "b2v-143"
+          },
+          {
+            "ar": "الْأَرْبِعَاءُ",
+            "de": "Mittwoch",
+            "entryId": "b2v-144"
+          },
+          {
+            "ar": "الْخَمِيسُ",
+            "de": "Donnerstag",
+            "entryId": "b2v-145"
+          },
+          {
+            "ar": "الْجُمُعَةُ",
+            "de": "Freitag",
+            "entryId": "b2v-146"
+          },
+          {
+            "ar": "السَّبْتُ",
+            "de": "Samstag",
+            "entryId": "b2v-147"
+          },
+          {
+            "ar": "يَفْعَلُ",
+            "de": "tun / machen",
+            "entryId": "b2v-148"
+          },
+          {
+            "ar": "الْأَحَدُ",
+            "de": "Sonntag",
+            "entryId": "b2v-149"
+          },
+          {
+            "ar": "يَلْعَبُ",
+            "de": "spielen",
+            "entryId": "b2v-150"
+          },
+          {
+            "ar": "صَاحِبٌ",
+            "de": "der Gefährte; der Kamerad",
+            "entryId": "b2v-151"
+          },
+          {
+            "ar": "نَائِمَةٌ",
+            "de": "schlafend (weiblich)",
+            "entryId": "b2v-152"
+          },
+          {
+            "ar": "سَادِسَةٌ",
+            "de": "sechste (weiblich)",
+            "entryId": "b2v-153"
+          },
+          {
+            "ar": "يَأْكُلُ",
+            "de": "essen",
+            "entryId": "b2v-154"
+          },
+          {
+            "ar": "وَاحِدَةٌ",
+            "de": "eine; bei der Uhrzeit: ein Uhr",
+            "entryId": "b2v-155"
+          },
+          {
+            "ar": "خَامِسَةٌ",
+            "de": "fünfte (weiblich)",
+            "entryId": "b2v-156"
+          },
+          {
+            "ar": "يُرَاجِعُ",
+            "de": "wiederholen (Lernstoff)",
+            "entryId": "b2v-157"
+          },
+          {
+            "ar": "دَرْسٌ",
+            "de": "die Lektion",
+            "entryId": "b2v-158"
+          },
+          {
+            "ar": "يَنَامُ",
+            "de": "schlafen",
+            "entryId": "b2v-159"
+          },
+          {
+            "ar": "تَاسِعَةٌ",
+            "de": "neunte (weiblich)",
+            "entryId": "b2v-160"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 8,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_09",
+        "title": "القائمة التاسعة",
+        "titleDe": "Liste 9",
+        "count": 20,
+        "words": [
+          {
+            "ar": "مُتَأَخِّرٌ",
+            "de": "spät",
+            "entryId": "b2v-161"
+          },
+          {
+            "ar": "يَسْكُنُ",
+            "de": "wohnen",
+            "entryId": "b2v-162"
+          },
+          {
+            "ar": "عَلِيٌّ",
+            "de": "Ali (Vorname)",
+            "entryId": "b2v-163"
+          },
+          {
+            "ar": "أَحْمَدُ",
+            "de": "Ahmad (Vorname)",
+            "entryId": "b2v-164"
+          },
+          {
+            "ar": "حَيٌّ",
+            "de": "das Wohnviertel",
+            "entryId": "b2v-165"
+          },
+          {
+            "ar": "زَهْرَةٌ",
+            "de": "die Blume; die Blüte",
+            "entryId": "b2v-166"
+          },
+          {
+            "ar": "مِينَاءٌ",
+            "de": "der Hafen",
+            "entryId": "b2v-167"
+          },
+          {
+            "ar": "شَقَّةٌ",
+            "de": "die Wohnung",
+            "entryId": "b2v-168"
+          },
+          {
+            "ar": "وَاسِعٌ",
+            "de": "geräumig; breit",
+            "entryId": "b2v-169"
+          },
+          {
+            "ar": "أَيٌّ",
+            "de": "welcher / welche / welches",
+            "entryId": "b2v-170"
+          },
+          {
+            "ar": "طَابِقٌ",
+            "de": "die Etage; das Stockwerk",
+            "entryId": "b2v-171"
+          },
+          {
+            "ar": "ثَانٍ",
+            "de": "zweiter (männlich)",
+            "entryId": "b2v-172"
+          },
+          {
+            "ar": "غُرْفَةٌ",
+            "de": "das Zimmer",
+            "entryId": "b2v-173"
+          },
+          {
+            "ar": "أَرْبَعَةٌ",
+            "de": "vier",
+            "entryId": "b2v-174"
+          },
+          {
+            "ar": "أُمٌّ",
+            "de": "die Mutter",
+            "entryId": "b2v-175"
+          },
+          {
+            "ar": "ثَانِيَةٌ",
+            "de": "zweite (weiblich)",
+            "entryId": "b2v-176"
+          },
+          {
+            "ar": "أُخْتٌ",
+            "de": "die Schwester",
+            "entryId": "b2v-177"
+          },
+          {
+            "ar": "ثَالِثَةٌ",
+            "de": "dritte (weiblich)",
+            "entryId": "b2v-178"
+          },
+          {
+            "ar": "لِ",
+            "de": "für; zu (Präposition)",
+            "entryId": "b2v-179"
+          },
+          {
+            "ar": "رَابِعَةٌ",
+            "de": "vierte (weiblich)",
+            "entryId": "b2v-180"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 9,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_10",
+        "title": "القائمة العاشرة",
+        "titleDe": "Liste 10",
+        "count": 20,
+        "words": [
+          {
+            "ar": "اِسْتِقْبَالٌ",
+            "de": "der Empfang (von Gästen)",
+            "entryId": "b2v-181"
+          },
+          {
+            "ar": "ضَيْفٌ",
+            "de": "der Gast",
+            "entryId": "b2v-182"
+          },
+          {
+            "ar": "جُلُوسٌ",
+            "de": "das Sitzen",
+            "entryId": "b2v-183"
+          },
+          {
+            "ar": "نَوْمٌ",
+            "de": "der Schlaf",
+            "entryId": "b2v-184"
+          },
+          {
+            "ar": "بَدْرٌ",
+            "de": "Badr (Vorname)",
+            "entryId": "b2v-185"
+          },
+          {
+            "ar": "مَلْعَبٌ",
+            "de": "der Sportplatz; der Spielplatz",
+            "entryId": "b2v-186"
+          },
+          {
+            "ar": "سَعَادَةٌ",
+            "de": "das Glück; die Zufriedenheit",
+            "entryId": "b2v-187"
+          },
+          {
+            "ar": "الَّذِي",
+            "de": "der; welcher (Relativpronomen)",
+            "entryId": "b2v-188"
+          },
+          {
+            "ar": "مَدِينَةٌ",
+            "de": "die Stadt",
+            "entryId": "b2v-189"
+          },
+          {
+            "ar": "قَرْيَةٌ",
+            "de": "das Dorf",
+            "entryId": "b2v-190"
+          },
+          {
+            "ar": "صَغِيرٌ",
+            "de": "klein",
+            "entryId": "b2v-191"
+          },
+          {
+            "ar": "عِمَارَةٌ",
+            "de": "das mehrstöckige Wohnhaus",
+            "entryId": "b2v-192"
+          },
+          {
+            "ar": "عَالٍ",
+            "de": "hoch",
+            "entryId": "b2v-193"
+          },
+          {
+            "ar": "نَاسٌ",
+            "de": "die Menschen; die Leute",
+            "entryId": "b2v-194"
+          },
+          {
+            "ar": "شَارِعٌ",
+            "de": "die Straße",
+            "entryId": "b2v-195"
+          },
+          {
+            "ar": "طَرِيقٌ",
+            "de": "der Weg",
+            "entryId": "b2v-196"
+          },
+          {
+            "ar": "مُزْدَحِمٌ",
+            "de": "überfüllt; verkehrsreich",
+            "entryId": "b2v-197"
+          },
+          {
+            "ar": "فَارِغٌ",
+            "de": "leer",
+            "entryId": "b2v-198"
+          },
+          {
+            "ar": "طِفْلٌ",
+            "de": "das Kind",
+            "entryId": "b2v-199"
+          },
+          {
+            "ar": "ثَالِثٌ",
+            "de": "dritter (männlich)",
+            "entryId": "b2v-200"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 10,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_11",
+        "title": "القائمة الحادية عشرة",
+        "titleDe": "Liste 11",
+        "count": 20,
+        "words": [
+          {
+            "ar": "خَيْرٌ",
+            "de": "das Gute; gut (Befinden)",
+            "entryId": "b2v-201"
+          },
+          {
+            "ar": "خَالَةٌ",
+            "de": "die Tante mütterlicherseits",
+            "entryId": "b2v-202"
+          },
+          {
+            "ar": "سَهْلًا",
+            "de": "in أَهْلًا وَسَهْلًا: herzlich willkommen",
+            "entryId": "b2v-203"
+          },
+          {
+            "ar": "تَفَضَّلْ",
+            "de": "bitte schön! (beim Anbieten)",
+            "entryId": "b2v-204"
+          },
+          {
+            "ar": "دُخُولٌ",
+            "de": "das Eintreten; der Eintritt",
+            "entryId": "b2v-205"
+          },
+          {
+            "ar": "فَاطِمَةُ",
+            "de": "Fatima (Vorname)",
+            "entryId": "b2v-206"
+          },
+          {
+            "ar": "هُنَا",
+            "de": "hier",
+            "entryId": "b2v-207"
+          },
+          {
+            "ar": "اُدْخُلْ",
+            "de": "tritt ein!",
+            "entryId": "b2v-208"
+          },
+          {
+            "ar": "مُرَتَّبَةٌ",
+            "de": "aufgeräumt; ordentlich (weiblich)",
+            "entryId": "b2v-209"
+          },
+          {
+            "ar": "هَذَا",
+            "de": "dieser / das (männlich)",
+            "entryId": "b2v-210"
+          },
+          {
+            "ar": "سَرِيرٌ",
+            "de": "das Bett",
+            "entryId": "b2v-211"
+          },
+          {
+            "ar": "مَكْتَبٌ",
+            "de": "der Schreibtisch; das Büro",
+            "entryId": "b2v-212"
+          },
+          {
+            "ar": "خِزَانَةٌ",
+            "de": "der Schrank",
+            "entryId": "b2v-213"
+          },
+          {
+            "ar": "يُعَلِّقُ",
+            "de": "aufhängen",
+            "entryId": "b2v-214"
+          },
+          {
+            "ar": "ثِيَابٌ",
+            "de": "die Kleidung",
+            "entryId": "b2v-215"
+          },
+          {
+            "ar": "مَلْآنَةٌ",
+            "de": "voll; gefüllt (weiblich)",
+            "entryId": "b2v-216"
+          },
+          {
+            "ar": "كُتُبٌ",
+            "de": "die Bücher",
+            "entryId": "b2v-217"
+          },
+          {
+            "ar": "يَشْتَرِي",
+            "de": "kaufen",
+            "entryId": "b2v-218"
+          },
+          {
+            "ar": "مُنَاسَبَةٌ",
+            "de": "der Anlass",
+            "entryId": "b2v-219"
+          },
+          {
+            "ar": "مُخْتَلِفَةٌ",
+            "de": "verschieden (weiblich)",
+            "entryId": "b2v-220"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 11,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_12",
+        "title": "القائمة الثانية عشرة",
+        "titleDe": "Liste 12",
+        "count": 20,
+        "words": [
+          {
+            "ar": "يُقَدِّمُ",
+            "de": "überreichen; anbieten",
+            "entryId": "b2v-221"
+          },
+          {
+            "ar": "هَدِيَّةٌ",
+            "de": "das Geschenk",
+            "entryId": "b2v-222"
+          },
+          {
+            "ar": "مُطَالَعَةٌ",
+            "de": "das Lesen zur Bildung oder Unterhaltung",
+            "entryId": "b2v-223"
+          },
+          {
+            "ar": "يَطْلُبُ",
+            "de": "bitten; verlangen; bestellen",
+            "entryId": "b2v-224"
+          },
+          {
+            "ar": "أَنْ",
+            "de": "dass; zu (vor einem Verb)",
+            "entryId": "b2v-225"
+          },
+          {
+            "ar": "يَصْنَعُ",
+            "de": "herstellen; machen",
+            "entryId": "b2v-226"
+          },
+          {
+            "ar": "غَيْرُ",
+            "de": "anders; nicht; außer",
+            "entryId": "b2v-227"
+          },
+          {
+            "ar": "يُرَتِّبُ",
+            "de": "ordnen / aufräumen",
+            "entryId": "b2v-228"
+          },
+          {
+            "ar": "فِرَاشٌ",
+            "de": "das Bettzeug",
+            "entryId": "b2v-229"
+          },
+          {
+            "ar": "إِطَارٌ",
+            "de": "der Rahmen",
+            "entryId": "b2v-230"
+          },
+          {
+            "ar": "كُرْسِيٌّ",
+            "de": "der Stuhl",
+            "entryId": "b2v-231"
+          },
+          {
+            "ar": "دَرَجٌ",
+            "de": "die Treppe",
+            "entryId": "b2v-232"
+          },
+          {
+            "ar": "مِرْحَاضٌ",
+            "de": "die Toilette",
+            "entryId": "b2v-233"
+          },
+          {
+            "ar": "أَخٌ",
+            "de": "der Bruder",
+            "entryId": "b2v-234"
+          },
+          {
+            "ar": "حَمَّامٌ",
+            "de": "das Badezimmer",
+            "entryId": "b2v-235"
+          },
+          {
+            "ar": "مَطْبَخٌ",
+            "de": "die Küche",
+            "entryId": "b2v-236"
+          },
+          {
+            "ar": "مُسْتَوْدَعٌ",
+            "de": "der Abstellraum; das Lager",
+            "entryId": "b2v-237"
+          },
+          {
+            "ar": "سَيَّارَةٌ",
+            "de": "das Auto",
+            "entryId": "b2v-238"
+          },
+          {
+            "ar": "وَصَلَتْ",
+            "de": "ankommen (sie kam an)",
+            "entryId": "b2v-239"
+          },
+          {
+            "ar": "رَحَّبَتْ",
+            "de": "begrüßen / willkommen heißen (sie begrüßte)",
+            "entryId": "b2v-240"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 12,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_13",
+        "title": "القائمة الثالثة عشرة",
+        "titleDe": "Liste 13",
+        "count": 20,
+        "words": [
+          {
+            "ar": "كَيْفَ",
+            "de": "wie",
+            "entryId": "b2v-241"
+          },
+          {
+            "ar": "يُرِيدُ",
+            "de": "wollen; möchten",
+            "entryId": "b2v-242"
+          },
+          {
+            "ar": "خُبْزٌ",
+            "de": "das Brot",
+            "entryId": "b2v-243"
+          },
+          {
+            "ar": "دُكَّانٌ",
+            "de": "der Laden",
+            "entryId": "b2v-244"
+          },
+          {
+            "ar": "خَبَّازٌ",
+            "de": "der Bäcker",
+            "entryId": "b2v-245"
+          },
+          {
+            "ar": "إِنَّ",
+            "de": "dass; tatsächlich (bekräftigende Partikel)",
+            "entryId": "b2v-246"
+          },
+          {
+            "ar": "قَرِيبٌ",
+            "de": "nah; verwandt",
+            "entryId": "b2v-247"
+          },
+          {
+            "ar": "يَرَى",
+            "de": "sehen",
+            "entryId": "b2v-248"
+          },
+          {
+            "ar": "مَسْجِدٌ",
+            "de": "die Moschee",
+            "entryId": "b2v-249"
+          },
+          {
+            "ar": "أَمَامَ",
+            "de": "vor (räumlich)",
+            "entryId": "b2v-250"
+          },
+          {
+            "ar": "سُكَّرٌ",
+            "de": "der Zucker",
+            "entryId": "b2v-251"
+          },
+          {
+            "ar": "بُنٌّ",
+            "de": "die Kaffeebohnen; das Kaffeepulver",
+            "entryId": "b2v-252"
+          },
+          {
+            "ar": "شَايٌ",
+            "de": "der Tee",
+            "entryId": "b2v-253"
+          },
+          {
+            "ar": "عَصِيرٌ",
+            "de": "der Saft",
+            "entryId": "b2v-254"
+          },
+          {
+            "ar": "فَوَاكِهُ",
+            "de": "das Obst; die Früchte",
+            "entryId": "b2v-255"
+          },
+          {
+            "ar": "يُوجَدُ",
+            "de": "sich befinden; es gibt",
+            "entryId": "b2v-256"
+          },
+          {
+            "ar": "مَتْجَرٌ",
+            "de": "das Geschäft",
+            "entryId": "b2v-257"
+          },
+          {
+            "ar": "جَانِبٌ",
+            "de": "die Seite; in بِجَانِبِ: neben",
+            "entryId": "b2v-258"
+          },
+          {
+            "ar": "قُرْبٌ",
+            "de": "die Nähe",
+            "entryId": "b2v-259"
+          },
+          {
+            "ar": "صَيْدَلِيَّةٌ",
+            "de": "die Apotheke",
+            "entryId": "b2v-260"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 13,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_14",
+        "title": "القائمة الرابعة عشرة",
+        "titleDe": "Liste 14",
+        "count": 20,
+        "words": [
+          {
+            "ar": "شَيْءٌ",
+            "de": "die Sache; etwas",
+            "entryId": "b2v-261"
+          },
+          {
+            "ar": "آخَرُ",
+            "de": "anderer; weiterer",
+            "entryId": "b2v-262"
+          },
+          {
+            "ar": "زُجَاجَةٌ",
+            "de": "die Flasche",
+            "entryId": "b2v-263"
+          },
+          {
+            "ar": "زَيْتٌ",
+            "de": "das Öl",
+            "entryId": "b2v-264"
+          },
+          {
+            "ar": "صَابُونٌ",
+            "de": "die Seife",
+            "entryId": "b2v-265"
+          },
+          {
+            "ar": "مَعْجُونٌ",
+            "de": "die Paste; in مَعْجُونُ أَسْنَانٍ: Zahnpasta",
+            "entryId": "b2v-266"
+          },
+          {
+            "ar": "أَسْنَانٌ",
+            "de": "die Zähne",
+            "entryId": "b2v-267"
+          },
+          {
+            "ar": "يُعْطِي",
+            "de": "geben",
+            "entryId": "b2v-268"
+          },
+          {
+            "ar": "نُقُودٌ",
+            "de": "das Geld; die Münzen",
+            "entryId": "b2v-269"
+          },
+          {
+            "ar": "يَأْخُذُ",
+            "de": "nehmen",
+            "entryId": "b2v-270"
+          },
+          {
+            "ar": "يُسْرِعُ",
+            "de": "sich beeilen",
+            "entryId": "b2v-271"
+          },
+          {
+            "ar": "حَلَّاقٌ",
+            "de": "der Friseur",
+            "entryId": "b2v-272"
+          },
+          {
+            "ar": "نُورٌ",
+            "de": "das Licht",
+            "entryId": "b2v-273"
+          },
+          {
+            "ar": "تُفَّاحَةٌ",
+            "de": "der Apfel",
+            "entryId": "b2v-274"
+          },
+          {
+            "ar": "إِجَّاصَةٌ",
+            "de": "die Birne",
+            "entryId": "b2v-275"
+          },
+          {
+            "ar": "عِنَبٌ",
+            "de": "die Trauben",
+            "entryId": "b2v-276"
+          },
+          {
+            "ar": "مَوْزٌ",
+            "de": "die Bananen",
+            "entryId": "b2v-277"
+          },
+          {
+            "ar": "خُضَرٌ",
+            "de": "das Gemüse",
+            "entryId": "b2v-278"
+          },
+          {
+            "ar": "جَزَرٌ",
+            "de": "die Karotten",
+            "entryId": "b2v-279"
+          },
+          {
+            "ar": "لَيْمُونٌ",
+            "de": "die Zitrone; die Zitronen",
+            "entryId": "b2v-280"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 14,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_15",
+        "title": "القائمة الخامسة عشرة",
+        "titleDe": "Liste 15",
+        "count": 20,
+        "words": [
+          {
+            "ar": "تَمْرٌ",
+            "de": "die Datteln",
+            "entryId": "b2v-281"
+          },
+          {
+            "ar": "بُرْتُقَالٌ",
+            "de": "die Orangen",
+            "entryId": "b2v-282"
+          },
+          {
+            "ar": "تَسَوُّقٌ",
+            "de": "das Einkaufen",
+            "entryId": "b2v-283"
+          },
+          {
+            "ar": "عَامٌّ",
+            "de": "allgemein; öffentlich",
+            "entryId": "b2v-284"
+          },
+          {
+            "ar": "شِرَاءٌ",
+            "de": "der Kauf",
+            "entryId": "b2v-285"
+          },
+          {
+            "ar": "خُرُوجٌ",
+            "de": "das Hinausgehen; der Ausgang",
+            "entryId": "b2v-286"
+          },
+          {
+            "ar": "بَائِعٌ",
+            "de": "der Verkäufer",
+            "entryId": "b2v-287"
+          },
+          {
+            "ar": "فَضْلٌ",
+            "de": "die Gunst; in مِنْ فَضْلِكَ: bitte",
+            "entryId": "b2v-288"
+          },
+          {
+            "ar": "يَدْفَعُ",
+            "de": "bezahlen; schieben; stoßen",
+            "entryId": "b2v-289"
+          },
+          {
+            "ar": "حِسَابٌ",
+            "de": "die Rechnung",
+            "entryId": "b2v-290"
+          },
+          {
+            "ar": "ثَلَاثُونَ",
+            "de": "dreißig",
+            "entryId": "b2v-291"
+          },
+          {
+            "ar": "يُورُو",
+            "de": "der Euro",
+            "entryId": "b2v-292"
+          },
+          {
+            "ar": "شُكْرًا",
+            "de": "danke",
+            "entryId": "b2v-293"
+          },
+          {
+            "ar": "سَلَامَةٌ",
+            "de": "die Unversehrtheit; in مَعَ السَّلَامَةِ: auf Wiedersehen",
+            "entryId": "b2v-294"
+          },
+          {
+            "ar": "مِلْحٌ",
+            "de": "das Salz",
+            "entryId": "b2v-295"
+          },
+          {
+            "ar": "فُلْفُلٌ",
+            "de": "der Pfeffer",
+            "entryId": "b2v-296"
+          },
+          {
+            "ar": "بَيْضٌ",
+            "de": "die Eier",
+            "entryId": "b2v-297"
+          },
+          {
+            "ar": "عَسَلٌ",
+            "de": "der Honig",
+            "entryId": "b2v-298"
+          },
+          {
+            "ar": "جُبْنٌ",
+            "de": "der Käse",
+            "entryId": "b2v-299"
+          },
+          {
+            "ar": "حَلِيبٌ",
+            "de": "die Milch",
+            "entryId": "b2v-300"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 15,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_16",
+        "title": "القائمة السادسة عشرة",
+        "titleDe": "Liste 16",
+        "count": 20,
+        "words": [
+          {
+            "ar": "مُثَلَّجَةٌ",
+            "de": "das Speiseeis",
+            "entryId": "b2v-301"
+          },
+          {
+            "ar": "كَعْكٌ",
+            "de": "das Gebäck; der Kuchen",
+            "entryId": "b2v-302"
+          },
+          {
+            "ar": "قَصَّابٌ",
+            "de": "der Metzger",
+            "entryId": "b2v-303"
+          },
+          {
+            "ar": "يَبِيعُ",
+            "de": "verkaufen",
+            "entryId": "b2v-304"
+          },
+          {
+            "ar": "مَلَابِسُ",
+            "de": "die Kleidungsstücke",
+            "entryId": "b2v-305"
+          },
+          {
+            "ar": "دُولَارٌ",
+            "de": "der Dollar",
+            "entryId": "b2v-306"
+          },
+          {
+            "ar": "شَكَرَ",
+            "de": "danken (Vergangenheit)",
+            "entryId": "b2v-307"
+          },
+          {
+            "ar": "رَجَعَ",
+            "de": "zurückgehen; zurückkommen",
+            "entryId": "b2v-308"
+          },
+          {
+            "ar": "الَّتِي",
+            "de": "die; welche (Relativpronomen)",
+            "entryId": "b2v-309"
+          },
+          {
+            "ar": "كَانَ",
+            "de": "sein (Vergangenheit)",
+            "entryId": "b2v-310"
+          },
+          {
+            "ar": "حَلْوَى",
+            "de": "die Süßspeise; das Konfekt",
+            "entryId": "b2v-311"
+          },
+          {
+            "ar": "فَرْحَانُ",
+            "de": "froh; glücklich",
+            "entryId": "b2v-312"
+          },
+          {
+            "ar": "نَجَاحٌ",
+            "de": "der Erfolg; das Bestehen einer Prüfung",
+            "entryId": "b2v-313"
+          },
+          {
+            "ar": "اِمْتِحَانٌ",
+            "de": "die Prüfung",
+            "entryId": "b2v-314"
+          },
+          {
+            "ar": "سَلْوَى",
+            "de": "Salwa (Vorname)",
+            "entryId": "b2v-315"
+          },
+          {
+            "ar": "جِدًّا",
+            "de": "sehr",
+            "entryId": "b2v-316"
+          },
+          {
+            "ar": "غَدًا",
+            "de": "morgen",
+            "entryId": "b2v-317"
+          },
+          {
+            "ar": "يَأْتِي",
+            "de": "kommen",
+            "entryId": "b2v-318"
+          },
+          {
+            "ar": "تَهَانٍ",
+            "de": "die Glückwünsche",
+            "entryId": "b2v-319"
+          },
+          {
+            "ar": "عَمَّةٌ",
+            "de": "die Tante väterlicherseits",
+            "entryId": "b2v-320"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 16,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_17",
+        "title": "القائمة السابعة عشرة",
+        "titleDe": "Liste 17",
+        "count": 20,
+        "words": [
+          {
+            "ar": "يَجِبُ",
+            "de": "müssen; nötig sein",
+            "entryId": "b2v-321"
+          },
+          {
+            "ar": "لَذِيذٌ",
+            "de": "lecker; köstlich",
+            "entryId": "b2v-322"
+          },
+          {
+            "ar": "أَنْتِ",
+            "de": "du (weiblich)",
+            "entryId": "b2v-323"
+          },
+          {
+            "ar": "مَاهِرَةٌ",
+            "de": "geschickt; geübt (weiblich)",
+            "entryId": "b2v-324"
+          },
+          {
+            "ar": "يُحْضِرُ",
+            "de": "herbeibringen; mitbringen",
+            "entryId": "b2v-325"
+          },
+          {
+            "ar": "لَوَازِمُ",
+            "de": "die benötigten Dinge; die Zutaten",
+            "entryId": "b2v-326"
+          },
+          {
+            "ar": "دَقِيقٌ",
+            "de": "das Mehl",
+            "entryId": "b2v-327"
+          },
+          {
+            "ar": "يَخْلِطُ",
+            "de": "mischen; vermengen",
+            "entryId": "b2v-328"
+          },
+          {
+            "ar": "يَخْبِزُ",
+            "de": "backen",
+            "entryId": "b2v-329"
+          },
+          {
+            "ar": "صِينِيَّةٌ",
+            "de": "das Tablett; das Backblech",
+            "entryId": "b2v-330"
+          },
+          {
+            "ar": "يُشْعِلُ",
+            "de": "anzünden; einschalten",
+            "entryId": "b2v-331"
+          },
+          {
+            "ar": "فُرْنٌ",
+            "de": "der Backofen",
+            "entryId": "b2v-332"
+          },
+          {
+            "ar": "غَازٌ",
+            "de": "das Gas",
+            "entryId": "b2v-333"
+          },
+          {
+            "ar": "يُنَظِّفُ",
+            "de": "putzen / reinigen",
+            "entryId": "b2v-334"
+          },
+          {
+            "ar": "بَعْدَ",
+            "de": "nach; danach",
+            "entryId": "b2v-335"
+          },
+          {
+            "ar": "اِنْتِهَاءٌ",
+            "de": "das Ende; die Beendigung",
+            "entryId": "b2v-336"
+          },
+          {
+            "ar": "عَمَلٌ",
+            "de": "die Arbeit; die Tätigkeit",
+            "entryId": "b2v-337"
+          },
+          {
+            "ar": "مَسَاءٌ",
+            "de": "der Abend",
+            "entryId": "b2v-338"
+          },
+          {
+            "ar": "يُزَيِّنُ",
+            "de": "schmücken",
+            "entryId": "b2v-339"
+          },
+          {
+            "ar": "يَدُقُّ",
+            "de": "klopfen; schlagen; hier: Teig bearbeiten",
+            "entryId": "b2v-340"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 17,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_18",
+        "title": "القائمة الثامنة عشرة",
+        "titleDe": "Liste 18",
+        "count": 20,
+        "words": [
+          {
+            "ar": "عَجِينٌ",
+            "de": "der Teig",
+            "entryId": "b2v-341"
+          },
+          {
+            "ar": "نَوْعٌ",
+            "de": "die Art; die Sorte",
+            "entryId": "b2v-342"
+          },
+          {
+            "ar": "حَلَوِيَّاتٌ",
+            "de": "die Süßigkeiten",
+            "entryId": "b2v-343"
+          },
+          {
+            "ar": "لِمَاذَا",
+            "de": "warum",
+            "entryId": "b2v-344"
+          },
+          {
+            "ar": "لِأَنَّ",
+            "de": "weil",
+            "entryId": "b2v-345"
+          },
+          {
+            "ar": "نَجَحَ",
+            "de": "Erfolg haben; eine Prüfung bestehen",
+            "entryId": "b2v-346"
+          },
+          {
+            "ar": "خَائِفَةٌ",
+            "de": "ängstlich (weiblich)",
+            "entryId": "b2v-347"
+          },
+          {
+            "ar": "قَلِقَةٌ",
+            "de": "besorgt (weiblich)",
+            "entryId": "b2v-348"
+          },
+          {
+            "ar": "غَضْبَانُ",
+            "de": "wütend",
+            "entryId": "b2v-349"
+          },
+          {
+            "ar": "يَبْكِي",
+            "de": "weinen",
+            "entryId": "b2v-350"
+          },
+          {
+            "ar": "دَهِشَ",
+            "de": "staunen; überrascht sein",
+            "entryId": "b2v-351"
+          },
+          {
+            "ar": "حَزِينَةٌ",
+            "de": "traurig (weiblich)",
+            "entryId": "b2v-352"
+          },
+          {
+            "ar": "سُنْبُلَةٌ",
+            "de": "die Ähre",
+            "entryId": "b2v-353"
+          },
+          {
+            "ar": "قَمْحٌ",
+            "de": "der Weizen",
+            "entryId": "b2v-354"
+          },
+          {
+            "ar": "كِيسٌ",
+            "de": "der Sack; die Tüte",
+            "entryId": "b2v-355"
+          },
+          {
+            "ar": "يَعْجِنُ",
+            "de": "kneten",
+            "entryId": "b2v-356"
+          },
+          {
+            "ar": "يَضَعُ",
+            "de": "legen; stellen; setzen",
+            "entryId": "b2v-357"
+          },
+          {
+            "ar": "يَقْطَعُ",
+            "de": "schneiden",
+            "entryId": "b2v-358"
+          },
+          {
+            "ar": "يَصُبُّ",
+            "de": "gießen; einschenken",
+            "entryId": "b2v-359"
+          },
+          {
+            "ar": "هِلَالِيَّةٌ",
+            "de": "das Croissant; das Hörnchen",
+            "entryId": "b2v-360"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 18,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_19",
+        "title": "القائمة التاسعة عشرة",
+        "titleDe": "Liste 19",
+        "count": 20,
+        "words": [
+          {
+            "ar": "مَشْرُوبَاتٌ",
+            "de": "die Getränke",
+            "entryId": "b2v-361"
+          },
+          {
+            "ar": "أَمَّا",
+            "de": "was … betrifft; hingegen",
+            "entryId": "b2v-362"
+          },
+          {
+            "ar": "جَمِيعٌ",
+            "de": "alle; die Gesamtheit",
+            "entryId": "b2v-363"
+          },
+          {
+            "ar": "مَطْعَمٌ",
+            "de": "das Restaurant",
+            "entryId": "b2v-364"
+          },
+          {
+            "ar": "خَالِدٌ",
+            "de": "Khalid (Vorname)",
+            "entryId": "b2v-365"
+          },
+          {
+            "ar": "جَوْعَانُ",
+            "de": "hungrig",
+            "entryId": "b2v-366"
+          },
+          {
+            "ar": "يَتَنَاوَلُ",
+            "de": "zu sich nehmen; einnehmen (Essen oder Medikamente)",
+            "entryId": "b2v-367"
+          },
+          {
+            "ar": "غَدَاءٌ",
+            "de": "das Mittagessen",
+            "entryId": "b2v-368"
+          },
+          {
+            "ar": "نَظِيفٌ",
+            "de": "sauber",
+            "entryId": "b2v-369"
+          },
+          {
+            "ar": "جَمِيلٌ",
+            "de": "schön",
+            "entryId": "b2v-370"
+          },
+          {
+            "ar": "مَأْكُولَاتٌ",
+            "de": "die Speisen; die Gerichte",
+            "entryId": "b2v-371"
+          },
+          {
+            "ar": "عَامِلٌ",
+            "de": "der Arbeiter; hier: die Bedienung",
+            "entryId": "b2v-372"
+          },
+          {
+            "ar": "هَا",
+            "de": "da!; siehe! (hinweisende Partikel)",
+            "entryId": "b2v-373"
+          },
+          {
+            "ar": "قَادِمٌ",
+            "de": "kommend; unterwegs hierher",
+            "entryId": "b2v-374"
+          },
+          {
+            "ar": "عِنْدَ",
+            "de": "bei; haben (mit Besitzangabe)",
+            "entryId": "b2v-375"
+          },
+          {
+            "ar": "لَحْمٌ",
+            "de": "das Fleisch",
+            "entryId": "b2v-376"
+          },
+          {
+            "ar": "سَمَكٌ",
+            "de": "der Fisch (als Nahrung)",
+            "entryId": "b2v-377"
+          },
+          {
+            "ar": "دَجَاجٌ",
+            "de": "das Hühnerfleisch; die Hühner",
+            "entryId": "b2v-378"
+          },
+          {
+            "ar": "رُزٌّ",
+            "de": "der Reis",
+            "entryId": "b2v-379"
+          },
+          {
+            "ar": "أَوْ",
+            "de": "oder",
+            "entryId": "b2v-380"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 19,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_20",
+        "title": "القائمة العشرون",
+        "titleDe": "Liste 20",
+        "count": 20,
+        "words": [
+          {
+            "ar": "يُفَضِّلُ",
+            "de": "bevorzugen",
+            "entryId": "b2v-381"
+          },
+          {
+            "ar": "يَشْرَبُ",
+            "de": "trinken",
+            "entryId": "b2v-382"
+          },
+          {
+            "ar": "قَهْوَةٌ",
+            "de": "der Kaffee (Getränk)",
+            "entryId": "b2v-383"
+          },
+          {
+            "ar": "طَبَّاخٌ",
+            "de": "der Koch",
+            "entryId": "b2v-384"
+          },
+          {
+            "ar": "مَشْوِيٌّ",
+            "de": "gegrillt; gebraten",
+            "entryId": "b2v-385"
+          },
+          {
+            "ar": "حَسَاءٌ",
+            "de": "die Suppe",
+            "entryId": "b2v-386"
+          },
+          {
+            "ar": "بِيتْزَا",
+            "de": "die Pizza",
+            "entryId": "b2v-387"
+          },
+          {
+            "ar": "شَطِيرَةٌ",
+            "de": "das Sandwich; das belegte Brötchen",
+            "entryId": "b2v-388"
+          },
+          {
+            "ar": "بَطَاطَا",
+            "de": "die Kartoffeln",
+            "entryId": "b2v-389"
+          },
+          {
+            "ar": "سَلَطَةٌ",
+            "de": "der Salat",
+            "entryId": "b2v-390"
+          },
+          {
+            "ar": "رَقَائِقُ",
+            "de": "die dünnen Scheiben; die Chips",
+            "entryId": "b2v-391"
+          },
+          {
+            "ar": "طَعَامٌ",
+            "de": "das Essen; die Nahrung",
+            "entryId": "b2v-392"
+          },
+          {
+            "ar": "يَغْسِلُ",
+            "de": "waschen",
+            "entryId": "b2v-393"
+          },
+          {
+            "ar": "يَدٌ",
+            "de": "die Hand",
+            "entryId": "b2v-394"
+          },
+          {
+            "ar": "دَخَلَ",
+            "de": "eintreten; hineingehen",
+            "entryId": "b2v-395"
+          },
+          {
+            "ar": "اِخْتَارَ",
+            "de": "auswählen",
+            "entryId": "b2v-396"
+          },
+          {
+            "ar": "وَزَّةٌ",
+            "de": "die Gans",
+            "entryId": "b2v-397"
+          },
+          {
+            "ar": "حَمَامَةٌ",
+            "de": "die Taube",
+            "entryId": "b2v-398"
+          },
+          {
+            "ar": "دِيكٌ",
+            "de": "der Hahn",
+            "entryId": "b2v-399"
+          },
+          {
+            "ar": "دَجَاجَةٌ",
+            "de": "die Henne",
+            "entryId": "b2v-400"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 20,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_21",
+        "title": "القائمة الحادية والعشرون",
+        "titleDe": "Liste 21",
+        "count": 20,
+        "words": [
+          {
+            "ar": "بَطَّةٌ",
+            "de": "die Ente",
+            "entryId": "b2v-401"
+          },
+          {
+            "ar": "طَاوُوسٌ",
+            "de": "der Pfau",
+            "entryId": "b2v-402"
+          },
+          {
+            "ar": "عُصْفُورٌ",
+            "de": "der kleine Vogel; der Spatz",
+            "entryId": "b2v-403"
+          },
+          {
+            "ar": "نَسْرٌ",
+            "de": "der Geier",
+            "entryId": "b2v-404"
+          },
+          {
+            "ar": "جُحَا",
+            "de": "Dschuha (Erzählfigur)",
+            "entryId": "b2v-405"
+          },
+          {
+            "ar": "يَشْوِي",
+            "de": "grillen; braten",
+            "entryId": "b2v-406"
+          },
+          {
+            "ar": "نَفْسٌ",
+            "de": "das Selbst; sich selbst",
+            "entryId": "b2v-407"
+          },
+          {
+            "ar": "سَمِينَةٌ",
+            "de": "dick; gut gemästet (weiblich)",
+            "entryId": "b2v-408"
+          },
+          {
+            "ar": "نَضِجَتْ",
+            "de": "gar werden; reif werden (sie wurde gar)",
+            "entryId": "b2v-409"
+          },
+          {
+            "ar": "ثَلَاثَةٌ",
+            "de": "drei",
+            "entryId": "b2v-410"
+          },
+          {
+            "ar": "يَعُودُ",
+            "de": "zurückkehren",
+            "entryId": "b2v-411"
+          },
+          {
+            "ar": "لَقَدْ",
+            "de": "bereits; tatsächlich (vor Vergangenheit)",
+            "entryId": "b2v-412"
+          },
+          {
+            "ar": "يَطِيرُ",
+            "de": "fliegen",
+            "entryId": "b2v-413"
+          },
+          {
+            "ar": "يُعِيرُ",
+            "de": "verleihen",
+            "entryId": "b2v-414"
+          },
+          {
+            "ar": "حِمَارٌ",
+            "de": "der Esel",
+            "entryId": "b2v-415"
+          },
+          {
+            "ar": "فَتْرَةٌ",
+            "de": "der Zeitraum; die Weile",
+            "entryId": "b2v-416"
+          },
+          {
+            "ar": "مُتَعَجِّبٌ",
+            "de": "erstaunt; verwundert",
+            "entryId": "b2v-417"
+          },
+          {
+            "ar": "نَبَتَ",
+            "de": "wachsen; sprießen",
+            "entryId": "b2v-418"
+          },
+          {
+            "ar": "جَنَاحٌ",
+            "de": "der Flügel",
+            "entryId": "b2v-419"
+          },
+          {
+            "ar": "لَمْ",
+            "de": "nicht (vor Verb mit Vergangenheitsbedeutung)",
+            "entryId": "b2v-420"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 21,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_22",
+        "title": "القائمة الثانية والعشرون",
+        "titleDe": "Liste 22",
+        "count": 20,
+        "words": [
+          {
+            "ar": "يُصَدِّقُ",
+            "de": "glauben; für wahr halten",
+            "entryId": "b2v-421"
+          },
+          {
+            "ar": "ذَلِكَ",
+            "de": "das; jenes (männlich)",
+            "entryId": "b2v-422"
+          },
+          {
+            "ar": "مَذْبُوحَةٌ",
+            "de": "geschlachtet (weiblich)",
+            "entryId": "b2v-423"
+          },
+          {
+            "ar": "حَصَلَ",
+            "de": "geschehen; passieren",
+            "entryId": "b2v-424"
+          },
+          {
+            "ar": "بِمَ",
+            "de": "womit; wodurch",
+            "entryId": "b2v-425"
+          },
+          {
+            "ar": "يَشْعُرُ",
+            "de": "fühlen; empfinden",
+            "entryId": "b2v-426"
+          },
+          {
+            "ar": "حَالٌ",
+            "de": "der Zustand; das Befinden",
+            "entryId": "b2v-427"
+          },
+          {
+            "ar": "جَدٌّ",
+            "de": "der Großvater",
+            "entryId": "b2v-428"
+          },
+          {
+            "ar": "دُكْتُورٌ",
+            "de": "der Doktor",
+            "entryId": "b2v-429"
+          },
+          {
+            "ar": "يَتَحَسَّنُ",
+            "de": "sich bessern",
+            "entryId": "b2v-430"
+          },
+          {
+            "ar": "سُرْعَةٌ",
+            "de": "die Geschwindigkeit; in بِسُرْعَةٍ: schnell",
+            "entryId": "b2v-431"
+          },
+          {
+            "ar": "فَحَصَ",
+            "de": "untersuchen",
+            "entryId": "b2v-432"
+          },
+          {
+            "ar": "صَدْرٌ",
+            "de": "die Brust; der Brustkorb",
+            "entryId": "b2v-433"
+          },
+          {
+            "ar": "قَلْبٌ",
+            "de": "das Herz",
+            "entryId": "b2v-434"
+          },
+          {
+            "ar": "قَاسَ",
+            "de": "messen",
+            "entryId": "b2v-435"
+          },
+          {
+            "ar": "ضَغْطٌ",
+            "de": "der Druck",
+            "entryId": "b2v-436"
+          },
+          {
+            "ar": "دَمٌ",
+            "de": "das Blut",
+            "entryId": "b2v-437"
+          },
+          {
+            "ar": "نَتِيجَةٌ",
+            "de": "das Ergebnis",
+            "entryId": "b2v-438"
+          },
+          {
+            "ar": "سَلِيمٌ",
+            "de": "gesund; unversehrt",
+            "entryId": "b2v-439"
+          },
+          {
+            "ar": "حَمْدٌ",
+            "de": "das Lob",
+            "entryId": "b2v-440"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 22,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_23",
+        "title": "القائمة الثالثة والعشرون",
+        "titleDe": "Liste 23",
+        "count": 20,
+        "words": [
+          {
+            "ar": "اللَّهُ",
+            "de": "Gott",
+            "entryId": "b2v-441"
+          },
+          {
+            "ar": "يَبْعَثُ",
+            "de": "auslösen; hervorrufen; senden",
+            "entryId": "b2v-442"
+          },
+          {
+            "ar": "قَلَقٌ",
+            "de": "die Sorge; die Unruhe",
+            "entryId": "b2v-443"
+          },
+          {
+            "ar": "بِمَاذَا",
+            "de": "womit; wozu",
+            "entryId": "b2v-444"
+          },
+          {
+            "ar": "نَصَحَ",
+            "de": "raten; empfehlen",
+            "entryId": "b2v-445"
+          },
+          {
+            "ar": "رَاحَةٌ",
+            "de": "die Ruhe; die Erholung",
+            "entryId": "b2v-446"
+          },
+          {
+            "ar": "دَوَاءٌ",
+            "de": "das Medikament",
+            "entryId": "b2v-447"
+          },
+          {
+            "ar": "تَرْكٌ",
+            "de": "das Aufgeben; das Unterlassen",
+            "entryId": "b2v-448"
+          },
+          {
+            "ar": "سُكَّرِيَّاتٌ",
+            "de": "die zuckerhaltigen Lebensmittel",
+            "entryId": "b2v-449"
+          },
+          {
+            "ar": "شَفَى",
+            "de": "heilen (jemanden)",
+            "entryId": "b2v-450"
+          },
+          {
+            "ar": "ظَهْرٌ",
+            "de": "der Rücken",
+            "entryId": "b2v-451"
+          },
+          {
+            "ar": "عَيْنٌ",
+            "de": "das Auge",
+            "entryId": "b2v-452"
+          },
+          {
+            "ar": "مَرِيضٌ",
+            "de": "krank; der Patient",
+            "entryId": "b2v-453"
+          },
+          {
+            "ar": "أَلَمٌ",
+            "de": "der Schmerz",
+            "entryId": "b2v-454"
+          },
+          {
+            "ar": "شَدِيدٌ",
+            "de": "stark; heftig",
+            "entryId": "b2v-455"
+          },
+          {
+            "ar": "رَأْسٌ",
+            "de": "der Kopf",
+            "entryId": "b2v-456"
+          },
+          {
+            "ar": "حَنْجَرَةٌ",
+            "de": "der Kehlkopf; der Hals (innen)",
+            "entryId": "b2v-457"
+          },
+          {
+            "ar": "أَنْفٌ",
+            "de": "die Nase",
+            "entryId": "b2v-458"
+          },
+          {
+            "ar": "رِجْلٌ",
+            "de": "das Bein; der Fuß",
+            "entryId": "b2v-459"
+          },
+          {
+            "ar": "جُرْحٌ",
+            "de": "die Wunde",
+            "entryId": "b2v-460"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 23,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_24",
+        "title": "القائمة الرابعة والعشرون",
+        "titleDe": "Liste 24",
+        "count": 20,
+        "words": [
+          {
+            "ar": "سَاقٌ",
+            "de": "der Unterschenkel; das Bein",
+            "entryId": "b2v-461"
+          },
+          {
+            "ar": "إِصْبَعٌ",
+            "de": "der Finger",
+            "entryId": "b2v-462"
+          },
+          {
+            "ar": "زُكَامٌ",
+            "de": "der Schnupfen",
+            "entryId": "b2v-463"
+          },
+          {
+            "ar": "صُدَاعٌ",
+            "de": "die Kopfschmerzen",
+            "entryId": "b2v-464"
+          },
+          {
+            "ar": "كَسْرٌ",
+            "de": "der Knochenbruch",
+            "entryId": "b2v-465"
+          },
+          {
+            "ar": "ذِرَاعٌ",
+            "de": "der Arm",
+            "entryId": "b2v-466"
+          },
+          {
+            "ar": "حَرَارَةٌ",
+            "de": "die Temperatur; die Wärme",
+            "entryId": "b2v-467"
+          },
+          {
+            "ar": "أَجَابَ",
+            "de": "antworten (Vergangenheit)",
+            "entryId": "b2v-468"
+          },
+          {
+            "ar": "تَمَنَّى",
+            "de": "wünschen",
+            "entryId": "b2v-469"
+          },
+          {
+            "ar": "شِفَاءٌ",
+            "de": "die Genesung",
+            "entryId": "b2v-470"
+          },
+          {
+            "ar": "عَاجِلٌ",
+            "de": "rasch; bald; dringend",
+            "entryId": "b2v-471"
+          },
+          {
+            "ar": "ضُحَى",
+            "de": "Duha (Vorname)",
+            "entryId": "b2v-472"
+          },
+          {
+            "ar": "عُمَرُ",
+            "de": "Umar (Vorname)",
+            "entryId": "b2v-473"
+          },
+          {
+            "ar": "صُنْدُوقٌ",
+            "de": "die Kiste; der Kasten",
+            "entryId": "b2v-474"
+          },
+          {
+            "ar": "مُكَعَّبٌ",
+            "de": "der Würfel; der Bauklotz",
+            "entryId": "b2v-475"
+          },
+          {
+            "ar": "أَمِينٌ",
+            "de": "Amin (Vorname)",
+            "entryId": "b2v-476"
+          },
+          {
+            "ar": "رَجُلٌ",
+            "de": "der Mann",
+            "entryId": "b2v-477"
+          },
+          {
+            "ar": "آلِيٌّ",
+            "de": "automatisch; mechanisch",
+            "entryId": "b2v-478"
+          },
+          {
+            "ar": "هَيَّا",
+            "de": "los!; auf geht's!",
+            "entryId": "b2v-479"
+          },
+          {
+            "ar": "يَتَوَزَّعُ",
+            "de": "sich aufteilen",
+            "entryId": "b2v-480"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 24,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_25",
+        "title": "القائمة الخامسة والعشرون",
+        "titleDe": "Liste 25",
+        "count": 20,
+        "words": [
+          {
+            "ar": "فَرِيقٌ",
+            "de": "das Team; die Gruppe",
+            "entryId": "b2v-481"
+          },
+          {
+            "ar": "يُرَكِّبُ",
+            "de": "zusammenbauen; montieren",
+            "entryId": "b2v-482"
+          },
+          {
+            "ar": "يَبْنِي",
+            "de": "bauen",
+            "entryId": "b2v-483"
+          },
+          {
+            "ar": "وَسَطٌ",
+            "de": "die Mitte",
+            "entryId": "b2v-484"
+          },
+          {
+            "ar": "مِفْتَاحٌ",
+            "de": "der Schlüssel",
+            "entryId": "b2v-485"
+          },
+          {
+            "ar": "يُعَمِّرُ",
+            "de": "aufziehen; betriebsbereit machen (Spielzeug)",
+            "entryId": "b2v-486"
+          },
+          {
+            "ar": "يُطْلِقُ",
+            "de": "loslassen; starten lassen",
+            "entryId": "b2v-487"
+          },
+          {
+            "ar": "اِنْطَلِقْ",
+            "de": "los geht's!; geh los!",
+            "entryId": "b2v-488"
+          },
+          {
+            "ar": "أَيُّهَا",
+            "de": "Anredepartikel „du …!“ (männlich)",
+            "entryId": "b2v-489"
+          },
+          {
+            "ar": "يَتَجَوَّلُ",
+            "de": "spazieren gehen; umhergehen",
+            "entryId": "b2v-490"
+          },
+          {
+            "ar": "يَمْشِي",
+            "de": "gehen; laufen",
+            "entryId": "b2v-491"
+          },
+          {
+            "ar": "مُتَثَاقِلٌ",
+            "de": "schwerfällig; schleppend",
+            "entryId": "b2v-492"
+          },
+          {
+            "ar": "يَصْطَدِمُ",
+            "de": "zusammenstoßen; aufprallen",
+            "entryId": "b2v-493"
+          },
+          {
+            "ar": "أَحَدٌ",
+            "de": "einer; jemand",
+            "entryId": "b2v-494"
+          },
+          {
+            "ar": "مَنْزِلٌ",
+            "de": "das Wohnhaus; das Zuhause",
+            "entryId": "b2v-495"
+          },
+          {
+            "ar": "سَقَطَ",
+            "de": "fallen (Vergangenheit)",
+            "entryId": "b2v-496"
+          },
+          {
+            "ar": "يُوقِفُ",
+            "de": "anhalten; aufrichten",
+            "entryId": "b2v-497"
+          },
+          {
+            "ar": "قِطَارٌ",
+            "de": "der Zug",
+            "entryId": "b2v-498"
+          },
+          {
+            "ar": "كَهْرَبَائِيٌّ",
+            "de": "elektrisch",
+            "entryId": "b2v-499"
+          },
+          {
+            "ar": "أُرْجُوحَةٌ",
+            "de": "die Schaukel",
+            "entryId": "b2v-500"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 25,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_26",
+        "title": "القائمة السادسة والعشرون",
+        "titleDe": "Liste 26",
+        "count": 20,
+        "words": [
+          {
+            "ar": "دَرَّاجَةٌ",
+            "de": "das Fahrrad",
+            "entryId": "b2v-501"
+          },
+          {
+            "ar": "بِطَاقَةٌ",
+            "de": "die Karte (Spiel- oder Lernkarte)",
+            "entryId": "b2v-502"
+          },
+          {
+            "ar": "شَاطِئٌ",
+            "de": "der Strand",
+            "entryId": "b2v-503"
+          },
+          {
+            "ar": "ثَلْجٌ",
+            "de": "der Schnee",
+            "entryId": "b2v-504"
+          },
+          {
+            "ar": "مَعًا",
+            "de": "zusammen",
+            "entryId": "b2v-505"
+          },
+          {
+            "ar": "اِقْتَرَحَتْ",
+            "de": "vorschlagen (sie schlug vor)",
+            "entryId": "b2v-506"
+          },
+          {
+            "ar": "فِكْرَةٌ",
+            "de": "die Idee",
+            "entryId": "b2v-507"
+          },
+          {
+            "ar": "اِقْتِرَاحٌ",
+            "de": "der Vorschlag",
+            "entryId": "b2v-508"
+          },
+          {
+            "ar": "يَتَعَلَّمُ",
+            "de": "lernen; etwas erlernen",
+            "entryId": "b2v-509"
+          },
+          {
+            "ar": "حَقْلٌ",
+            "de": "das Feld",
+            "entryId": "b2v-510"
+          },
+          {
+            "ar": "لَنْ",
+            "de": "nicht; niemals (vor einem zukünftigen Verb)",
+            "entryId": "b2v-511"
+          },
+          {
+            "ar": "طَيْرٌ",
+            "de": "der Vogel; Vögel als Gesamtheit",
+            "entryId": "b2v-512"
+          },
+          {
+            "ar": "مَشْغُولَةٌ",
+            "de": "beschäftigt (weiblich)",
+            "entryId": "b2v-513"
+          },
+          {
+            "ar": "بِنَاءٌ",
+            "de": "das Bauen; der Bau",
+            "entryId": "b2v-514"
+          },
+          {
+            "ar": "عُشٌّ",
+            "de": "das Nest",
+            "entryId": "b2v-515"
+          },
+          {
+            "ar": "نَمْلَةٌ",
+            "de": "die Ameise",
+            "entryId": "b2v-516"
+          },
+          {
+            "ar": "يَجِيءُ",
+            "de": "kommen; herkommen",
+            "entryId": "b2v-517"
+          },
+          {
+            "ar": "يَحْمِلُ",
+            "de": "tragen",
+            "entryId": "b2v-518"
+          },
+          {
+            "ar": "قُوتٌ",
+            "de": "die Nahrung zum Leben",
+            "entryId": "b2v-519"
+          },
+          {
+            "ar": "يَعْمَلُ",
+            "de": "arbeiten",
+            "entryId": "b2v-520"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 26,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_27",
+        "title": "القائمة السابعة والعشرون",
+        "titleDe": "Liste 27",
+        "count": 20,
+        "words": [
+          {
+            "ar": "نَحْلَةٌ",
+            "de": "die Biene",
+            "entryId": "b2v-521"
+          },
+          {
+            "ar": "يَمُصُّ",
+            "de": "saugen",
+            "entryId": "b2v-522"
+          },
+          {
+            "ar": "رَحِيقٌ",
+            "de": "der Nektar",
+            "entryId": "b2v-523"
+          },
+          {
+            "ar": "جِدٌّ",
+            "de": "der Fleiß; die Ernsthaftigkeit",
+            "entryId": "b2v-524"
+          },
+          {
+            "ar": "حَتَّى",
+            "de": "bis; damit",
+            "entryId": "b2v-525"
+          },
+          {
+            "ar": "اِعْتَذَرَ",
+            "de": "sich entschuldigen",
+            "entryId": "b2v-526"
+          },
+          {
+            "ar": "سَيِّدٌ",
+            "de": "der Herr; Anrede: mein Herr",
+            "entryId": "b2v-527"
+          },
+          {
+            "ar": "يَتَغَيَّبُ",
+            "de": "fernbleiben; fehlen",
+            "entryId": "b2v-528"
+          },
+          {
+            "ar": "مُعَلِّمٌ",
+            "de": "der Lehrer",
+            "entryId": "b2v-529"
+          },
+          {
+            "ar": "حَسَنًا",
+            "de": "gut!; in Ordnung!",
+            "entryId": "b2v-530"
+          },
+          {
+            "ar": "فَرَاشَةٌ",
+            "de": "der Schmetterling",
+            "entryId": "b2v-531"
+          },
+          {
+            "ar": "دُعْسُوقَةٌ",
+            "de": "der Marienkäfer",
+            "entryId": "b2v-532"
+          },
+          {
+            "ar": "ذُبَابَةٌ",
+            "de": "die Fliege",
+            "entryId": "b2v-533"
+          },
+          {
+            "ar": "حَلَزُونٌ",
+            "de": "die Schnecke",
+            "entryId": "b2v-534"
+          },
+          {
+            "ar": "دُودَةٌ",
+            "de": "der Wurm; die Raupe",
+            "entryId": "b2v-535"
+          },
+          {
+            "ar": "صَرَّارٌ",
+            "de": "die Grille; die Zikade",
+            "entryId": "b2v-536"
+          },
+          {
+            "ar": "مَرَّةٌ",
+            "de": "ein Mal; die Wiederholung",
+            "entryId": "b2v-537"
+          },
+          {
+            "ar": "يُشَاهِدُ",
+            "de": "anschauen",
+            "entryId": "b2v-538"
+          },
+          {
+            "ar": "نَظَرَ",
+            "de": "schauen; betrachten",
+            "entryId": "b2v-539"
+          },
+          {
+            "ar": "يَمْتَصُّ",
+            "de": "aufsaugen; einsaugen",
+            "entryId": "b2v-540"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 27,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_28",
+        "title": "القائمة الثامنة والعشرون",
+        "titleDe": "Liste 28",
+        "count": 20,
+        "words": [
+          {
+            "ar": "أَحَسَّ",
+            "de": "empfinden; verspüren",
+            "entryId": "b2v-541"
+          },
+          {
+            "ar": "خَجَلٌ",
+            "de": "die Scham; die Schüchternheit",
+            "entryId": "b2v-542"
+          },
+          {
+            "ar": "مُسْرِعٌ",
+            "de": "eilig; in Eile",
+            "entryId": "b2v-543"
+          },
+          {
+            "ar": "أَبَدًا",
+            "de": "jemals; mit Verneinung: niemals",
+            "entryId": "b2v-544"
+          },
+          {
+            "ar": "صَارَ",
+            "de": "werden",
+            "entryId": "b2v-545"
+          },
+          {
+            "ar": "طَيَرَانٌ",
+            "de": "das Fliegen; der Flug",
+            "entryId": "b2v-546"
+          },
+          {
+            "ar": "اِبْنٌ",
+            "de": "der Sohn",
+            "entryId": "b2v-547"
+          },
+          {
+            "ar": "قَادِرٌ",
+            "de": "fähig; imstande",
+            "entryId": "b2v-548"
+          },
+          {
+            "ar": "يَخَافُ",
+            "de": "Angst haben",
+            "entryId": "b2v-549"
+          },
+          {
+            "ar": "أَرْضٌ",
+            "de": "die Erde; der Boden",
+            "entryId": "b2v-550"
+          },
+          {
+            "ar": "يَمُوتُ",
+            "de": "sterben",
+            "entryId": "b2v-551"
+          },
+          {
+            "ar": "اُتْرُكْ",
+            "de": "lass los!; lass zurück!",
+            "entryId": "b2v-552"
+          },
+          {
+            "ar": "غُصْنٌ",
+            "de": "der Zweig; der Ast",
+            "entryId": "b2v-553"
+          },
+          {
+            "ar": "يُحَرِّكُ",
+            "de": "bewegen (etwas)",
+            "entryId": "b2v-554"
+          },
+          {
+            "ar": "جَرِّبْ",
+            "de": "versuche es!",
+            "entryId": "b2v-555"
+          },
+          {
+            "ar": "جَبَانٌ",
+            "de": "feige; der Feigling",
+            "entryId": "b2v-556"
+          },
+          {
+            "ar": "دَعِينِي",
+            "de": "lass mich! (an eine Frau)",
+            "entryId": "b2v-557"
+          },
+          {
+            "ar": "سُقُوطٌ",
+            "de": "das Fallen; der Sturz",
+            "entryId": "b2v-558"
+          },
+          {
+            "ar": "آخْ",
+            "de": "aua!; ach! (Schmerzausruf)",
+            "entryId": "b2v-559"
+          },
+          {
+            "ar": "يُنْقِذُ",
+            "de": "retten",
+            "entryId": "b2v-560"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 28,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_29",
+        "title": "القائمة التاسعة والعشرون",
+        "titleDe": "Liste 29",
+        "count": 20,
+        "words": [
+          {
+            "ar": "شَجَرَةٌ",
+            "de": "der Baum",
+            "entryId": "b2v-561"
+          },
+          {
+            "ar": "حَمْلٌ",
+            "de": "das Tragen",
+            "entryId": "b2v-562"
+          },
+          {
+            "ar": "حَقِيبَةٌ",
+            "de": "die Tasche",
+            "entryId": "b2v-563"
+          },
+          {
+            "ar": "ثَقِيلَةٌ",
+            "de": "schwer (weiblich)",
+            "entryId": "b2v-564"
+          },
+          {
+            "ar": "يُسَاعِدُ",
+            "de": "helfen",
+            "entryId": "b2v-565"
+          },
+          {
+            "ar": "نَقْلٌ",
+            "de": "das Transportieren; das Umstellen",
+            "entryId": "b2v-566"
+          },
+          {
+            "ar": "جَذْبٌ",
+            "de": "das Ziehen",
+            "entryId": "b2v-567"
+          },
+          {
+            "ar": "عَرَبَةٌ",
+            "de": "der Wagen; die Karre",
+            "entryId": "b2v-568"
+          },
+          {
+            "ar": "خَرُوفٌ",
+            "de": "das Schaf; das Lamm",
+            "entryId": "b2v-569"
+          },
+          {
+            "ar": "أَرْنَبٌ",
+            "de": "das Kaninchen",
+            "entryId": "b2v-570"
+          },
+          {
+            "ar": "قِطٌّ",
+            "de": "die Katze",
+            "entryId": "b2v-571"
+          },
+          {
+            "ar": "كَلْبٌ",
+            "de": "der Hund",
+            "entryId": "b2v-572"
+          },
+          {
+            "ar": "جَمَلٌ",
+            "de": "das Kamel",
+            "entryId": "b2v-573"
+          },
+          {
+            "ar": "زَرَافَةٌ",
+            "de": "die Giraffe",
+            "entryId": "b2v-574"
+          },
+          {
+            "ar": "مَاعِزٌ",
+            "de": "die Ziege",
+            "entryId": "b2v-575"
+          },
+          {
+            "ar": "رَفَضَ",
+            "de": "ablehnen; sich weigern",
+            "entryId": "b2v-576"
+          },
+          {
+            "ar": "سَمَاعٌ",
+            "de": "das Hören; das Zuhören",
+            "entryId": "b2v-577"
+          },
+          {
+            "ar": "حَاوَلَتْ",
+            "de": "versuchen (sie versuchte)",
+            "entryId": "b2v-578"
+          },
+          {
+            "ar": "تُقْنِعُ",
+            "de": "überzeugen (sie überzeugt)",
+            "entryId": "b2v-579"
+          },
+          {
+            "ar": "عِنْدَمَا",
+            "de": "wenn; als (zeitlich)",
+            "entryId": "b2v-580"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 29,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_30",
+        "title": "القائمة الثلاثون",
+        "titleDe": "Liste 30",
+        "count": 20,
+        "words": [
+          {
+            "ar": "تَرَدُّدٌ",
+            "de": "das Zögern",
+            "entryId": "b2v-581"
+          },
+          {
+            "ar": "فَوْقَ",
+            "de": "über; oberhalb von",
+            "entryId": "b2v-582"
+          },
+          {
+            "ar": "فَرِحَ",
+            "de": "sich freuen",
+            "entryId": "b2v-583"
+          },
+          {
+            "ar": "قَامَةٌ",
+            "de": "die Körpergröße; der Wuchs",
+            "entryId": "b2v-584"
+          },
+          {
+            "ar": "طَوِيلَةٌ",
+            "de": "lang; groß gewachsen (weiblich)",
+            "entryId": "b2v-585"
+          },
+          {
+            "ar": "أَفْضَلُ",
+            "de": "besser; am besten",
+            "entryId": "b2v-586"
+          },
+          {
+            "ar": "قَصِيرَةٌ",
+            "de": "kurz; klein gewachsen (weiblich)",
+            "entryId": "b2v-587"
+          },
+          {
+            "ar": "فَائِدَةٌ",
+            "de": "der Nutzen; der Vorteil",
+            "entryId": "b2v-588"
+          },
+          {
+            "ar": "وَرَقَةٌ",
+            "de": "das Blatt (Papier oder am Baum)",
+            "entryId": "b2v-589"
+          },
+          {
+            "ar": "مِثْلٌ",
+            "de": "das Gleiche; in مِثْلِي: wie ich",
+            "entryId": "b2v-590"
+          },
+          {
+            "ar": "أَسْتَطِيعُ",
+            "de": "können; imstande sein",
+            "entryId": "b2v-591"
+          },
+          {
+            "ar": "إِذًا",
+            "de": "also; folglich",
+            "entryId": "b2v-592"
+          },
+          {
+            "ar": "غَزَالَةٌ",
+            "de": "die Gazelle",
+            "entryId": "b2v-593"
+          },
+          {
+            "ar": "فَتْحَةٌ",
+            "de": "die Öffnung",
+            "entryId": "b2v-594"
+          },
+          {
+            "ar": "حَائِطٌ",
+            "de": "die Mauer; die Wand",
+            "entryId": "b2v-595"
+          },
+          {
+            "ar": "سَأُبَرْهِنُ",
+            "de": "ich werde beweisen",
+            "entryId": "b2v-596"
+          },
+          {
+            "ar": "صِحَّةٌ",
+            "de": "die Gesundheit; die Richtigkeit",
+            "entryId": "b2v-597"
+          },
+          {
+            "ar": "رَأْيٌ",
+            "de": "die Meinung",
+            "entryId": "b2v-598"
+          },
+          {
+            "ar": "يَمُرُّ",
+            "de": "vorbeigehen; hindurchgehen",
+            "entryId": "b2v-599"
+          },
+          {
+            "ar": "مَا لَكَ؟",
+            "de": "was ist los mit dir? (männlich)",
+            "entryId": "b2v-600"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 30,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_31",
+        "title": "القائمة الحادية والثلاثون",
+        "titleDe": "Liste 31",
+        "count": 20,
+        "words": [
+          {
+            "ar": "تَوَقَّفَتْ",
+            "de": "anhalten (sie hielt an)",
+            "entryId": "b2v-601"
+          },
+          {
+            "ar": "سَمِعَ",
+            "de": "hören (Vergangenheit)",
+            "entryId": "b2v-602"
+          },
+          {
+            "ar": "قِرْدٌ",
+            "de": "der Affe",
+            "entryId": "b2v-603"
+          },
+          {
+            "ar": "يَصِحُّ",
+            "de": "richtig sein; sich gehören",
+            "entryId": "b2v-604"
+          },
+          {
+            "ar": "مَخْلُوقٌ",
+            "de": "das Geschöpf; das Lebewesen",
+            "entryId": "b2v-605"
+          },
+          {
+            "ar": "مَزِيَّةٌ",
+            "de": "der Vorzug; die besondere Stärke",
+            "entryId": "b2v-606"
+          },
+          {
+            "ar": "فِيلٌ",
+            "de": "der Elefant",
+            "entryId": "b2v-607"
+          },
+          {
+            "ar": "تِمْسَاحٌ",
+            "de": "das Krokodil",
+            "entryId": "b2v-608"
+          },
+          {
+            "ar": "ثُعْبَانٌ",
+            "de": "die Schlange",
+            "entryId": "b2v-609"
+          },
+          {
+            "ar": "أَسَدٌ",
+            "de": "der Löwe",
+            "entryId": "b2v-610"
+          },
+          {
+            "ar": "نَمِرٌ",
+            "de": "der Tiger",
+            "entryId": "b2v-611"
+          },
+          {
+            "ar": "سُلَحْفَاةٌ",
+            "de": "die Schildkröte",
+            "entryId": "b2v-612"
+          },
+          {
+            "ar": "سَبَبٌ",
+            "de": "der Grund; die Ursache",
+            "entryId": "b2v-613"
+          },
+          {
+            "ar": "تَفْتَخِرُ",
+            "de": "stolz sein; sich rühmen (sie rühmt sich)",
+            "entryId": "b2v-614"
+          },
+          {
+            "ar": "أَلُو",
+            "de": "hallo! (am Telefon)",
+            "entryId": "b2v-615"
+          },
+          {
+            "ar": "مُوسَى",
+            "de": "Musa (Vorname)",
+            "entryId": "b2v-616"
+          },
+          {
+            "ar": "يَتَكَلَّمُ",
+            "de": "sprechen; sich unterhalten",
+            "entryId": "b2v-617"
+          },
+          {
+            "ar": "مَكَّةُ",
+            "de": "Mekka",
+            "entryId": "b2v-618"
+          },
+          {
+            "ar": "مُكَرَّمَةٌ",
+            "de": "geehrt; ehrwürdig (weiblich)",
+            "entryId": "b2v-619"
+          },
+          {
+            "ar": "جَوٌّ",
+            "de": "das Wetter",
+            "entryId": "b2v-620"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 31,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_32",
+        "title": "القائمة الثانية والثلاثون",
+        "titleDe": "Liste 32",
+        "count": 20,
+        "words": [
+          {
+            "ar": "حَارٌّ",
+            "de": "heiß",
+            "entryId": "b2v-621"
+          },
+          {
+            "ar": "دَرَجَةٌ",
+            "de": "der Grad; die Stufe",
+            "entryId": "b2v-622"
+          },
+          {
+            "ar": "أَرْبَعُونَ",
+            "de": "vierzig",
+            "entryId": "b2v-623"
+          },
+          {
+            "ar": "دَافِئٌ",
+            "de": "warm; angenehm warm",
+            "entryId": "b2v-624"
+          },
+          {
+            "ar": "عِشْرُونَ",
+            "de": "zwanzig",
+            "entryId": "b2v-625"
+          },
+          {
+            "ar": "يَقْضِي",
+            "de": "verbringen (Zeit)",
+            "entryId": "b2v-626"
+          },
+          {
+            "ar": "عُطْلَةٌ",
+            "de": "die Ferien; der Urlaub",
+            "entryId": "b2v-627"
+          },
+          {
+            "ar": "بَارِدٌ",
+            "de": "kalt",
+            "entryId": "b2v-628"
+          },
+          {
+            "ar": "صَيْفٌ",
+            "de": "der Sommer",
+            "entryId": "b2v-629"
+          },
+          {
+            "ar": "مُقْبِلٌ",
+            "de": "kommend; nächster",
+            "entryId": "b2v-630"
+          },
+          {
+            "ar": "إِنْ",
+            "de": "wenn; falls",
+            "entryId": "b2v-631"
+          },
+          {
+            "ar": "شَاءَ",
+            "de": "wollen (Vergangenheit; in „so Gott will“)",
+            "entryId": "b2v-632"
+          },
+          {
+            "ar": "مُعْتَدِلٌ",
+            "de": "mild; gemäßigt",
+            "entryId": "b2v-633"
+          },
+          {
+            "ar": "بَرِيطَانِيَا",
+            "de": "Großbritannien",
+            "entryId": "b2v-634"
+          },
+          {
+            "ar": "مِصْرُ",
+            "de": "Ägypten",
+            "entryId": "b2v-635"
+          },
+          {
+            "ar": "هُولَنْدَا",
+            "de": "die Niederlande",
+            "entryId": "b2v-636"
+          },
+          {
+            "ar": "الْعِرَاقُ",
+            "de": "der Irak",
+            "entryId": "b2v-637"
+          },
+          {
+            "ar": "وَاحِدٌ وَعِشْرُونَ",
+            "de": "einundzwanzig",
+            "entryId": "b2v-638"
+          },
+          {
+            "ar": "اِثْنَانِ وَعِشْرُونَ",
+            "de": "zweiundzwanzig",
+            "entryId": "b2v-639"
+          },
+          {
+            "ar": "ثَلَاثَةٌ وَعِشْرُونَ",
+            "de": "dreiundzwanzig",
+            "entryId": "b2v-640"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 32,
+        "bookId": "book-vocabulary-2"
+      },
+      {
+        "id": "book2_20261108_33",
+        "title": "القائمة الثالثة والثلاثون",
+        "titleDe": "Liste 33",
+        "count": 4,
+        "words": [
+          {
+            "ar": "أَرْبَعَةٌ وَعِشْرُونَ",
+            "de": "vierundzwanzig",
+            "entryId": "b2v-641"
+          },
+          {
+            "ar": "خَمْسَةٌ وَعِشْرُونَ",
+            "de": "fünfundzwanzig",
+            "entryId": "b2v-642"
+          },
+          {
+            "ar": "هَاتِفِيًّا",
+            "de": "telefonisch",
+            "entryId": "b2v-643"
+          },
+          {
+            "ar": "هَاتِفٌ",
+            "de": "das Telefon",
+            "entryId": "b2v-644"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 33,
+        "bookId": "book-vocabulary-2"
       }
     ]
   }

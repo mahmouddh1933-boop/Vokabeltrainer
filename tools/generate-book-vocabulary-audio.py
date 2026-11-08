@@ -8,8 +8,15 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime,timezone
 import hashlib,json,subprocess,urllib.request,urllib.parse,time,unicodedata,re
 ROOT=Path(__file__).resolve().parents[1]
-source=ROOT/'data/book-vocabulary-source.json';entries=json.loads(source.read_text())['entries']
+source=ROOT/'data/book-vocabulary-source.json'
+sources=[source]+([ROOT/'data/book-vocabulary-2-source.json'] if (ROOT/'data/book-vocabulary-2-source.json').exists() else [])
+# One exact recording may serve both books, while the learning lists stay independent.
+entries=list({e['ar']:e for p in sources for e in json.loads(p.read_text())['entries']}.values())
 existing={unicodedata.normalize('NFC',c['text']):c for c in json.loads((ROOT/'audio/vocabulary-manifest.json').read_text())['clips']}
+# Reuse already checked book clips as well as CEFR clips.
+previous=ROOT/'audio/book-vocabulary-manifest.json'
+if previous.exists():
+ existing.update({unicodedata.normalize('NFC',c['text']):c for c in json.loads(previous.read_text())['clips'] if 'path' in c})
 folder=ROOT/'audio/book-vocabulary';folder.mkdir(exist_ok=True)
 def make(entry):
  text=entry['ar'];old=existing.get(text)
@@ -35,7 +42,8 @@ def make(entry):
    time.sleep(1+attempt)
 with ThreadPoolExecutor(max_workers=2) as pool:clips=list(pool.map(make,entries))
 report={'version':1,'date':datetime.now(timezone.utc).isoformat(),'provider':'Google Translate TTS (ar); exact existing vocabulary recordings reused. Synthetic speech, not human recordings.',
- 'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'complete':all('path' in c for c in clips),'clips':clips}
+ 'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),
+ 'sources':[dict(path=p.relative_to(ROOT).as_posix(),sha256=hashlib.sha256(p.read_bytes()).hexdigest(),count=len(json.loads(p.read_text())['entries'])) for p in sources],'complete':all('path' in c for c in clips),'clips':clips}
 (ROOT/'audio/book-vocabulary-manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 assert report['complete'],[c for c in clips if 'error' in c]
 mapping={c['text']:c['path'] for c in clips}

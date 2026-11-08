@@ -9,6 +9,8 @@ const collection=require('../data/vocab_catalog.json').bookVocabulary;
 const manifest=require('../audio/book-vocabulary-manifest.json');
 const audio=require('../js/book-vocabulary-audio.js').audio;
 const norm=s=>s.normalize('NFC');
+const source2=require('../data/book-vocabulary-2-source.json');
+const allAudioWords=[...new Set([...source.entries,...source2.entries].map(e=>e.ar))];
 
 test('all 53 photographed pages are represented and every reviewed form has a non-duplicated lexical card',()=>{
  assert.equal(source.sourceImageCount,53);
@@ -41,7 +43,7 @@ test('all 53 photographed pages are represented and every reviewed form has a no
 
 test('book vocabulary has seventeen complete lists of twenty, independent of CEFR',()=>{
  assert.equal(collection.id,'book-vocabulary');assert.equal(collection.count,340);
- assert.equal(collection.title,'مفردات الكتب');
+ assert.equal(collection.title,'مفردات الكتاب 1');
  assert.deepEqual(collection.lists.map(l=>l.count),Array(17).fill(20));
  assert.equal(collection.lists[0].title,'القائمة الأولى');assert.equal(collection.lists[8].title,'القائمة التاسعة');
  const words=collection.lists.flatMap(l=>l.words);
@@ -59,9 +61,9 @@ test('book vocabulary has seventeen complete lists of twenty, independent of CEF
 
 test('all book words have exact local audio, with vowel-sensitive keys and unchanged CEFR audio',()=>{
  assert.equal(manifest.complete,true);
- assert.equal(manifest.clips.length,340);
+ assert.equal(manifest.clips.length,allAudioWords.length);
  assert.equal(manifest.sourceSha256,crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'data/book-vocabulary-source.json'))).digest('hex'));
- assert.deepEqual(Object.keys(audio).sort(),source.entries.map(w=>w.ar).sort());
+ assert.deepEqual(Object.keys(audio).sort(),allAudioWords.slice().sort());
  for(const c of manifest.clips){
   assert.equal(audio[c.text],c.path);
   assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,c.path))).digest('hex'),c.sha256);

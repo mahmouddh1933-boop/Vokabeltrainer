@@ -20,7 +20,7 @@ LEVELS = [
      'Präziser Wortschatz und Wendungen zum Analysieren von Ideen, Erörtern von Themen, Bewerten von Belegen und differenzierten Argumentieren.'),
 ]
 
-catalog = dict(version=14, sourceLanguage='ar', translationLanguage='de',
+catalog = dict(version=15, sourceLanguage='ar', translationLanguage='de',
                maxWordsPerBuiltInList=25, excelUploadWordLimit=None,
                wordsPerList=20, levels=[], lists=[], cefrLevels=[l[0] for l in LEVELS])
 labels = {}
@@ -64,7 +64,10 @@ assert len({w['id'] for w in book_entries})==len(book_entries)
 assert len({w['ar'] for w in book_entries})==len(book_entries)
 ordinals=['الأولى','الثانية','الثالثة','الرابعة','الخامسة','السادسة','السابعة','الثامنة','التاسعة','العاشرة',
           'الحادية عشرة','الثانية عشرة','الثالثة عشرة','الرابعة عشرة','الخامسة عشرة',
-          'السادسة عشرة','السابعة عشرة','الثامنة عشرة','التاسعة عشرة','العشرون']
+          'السادسة عشرة','السابعة عشرة','الثامنة عشرة','التاسعة عشرة','العشرون',
+          'الحادية والعشرون','الثانية والعشرون','الثالثة والعشرون','الرابعة والعشرون','الخامسة والعشرون',
+          'السادسة والعشرون','السابعة والعشرون','الثامنة والعشرون','التاسعة والعشرون','الثلاثون',
+          'الحادية والثلاثون','الثانية والثلاثون','الثالثة والثلاثون','الرابعة والثلاثون','الخامسة والثلاثون']
 book_lists=[]
 for offset in range(0,len(book_entries),20):
     order=offset//20+1
@@ -78,9 +81,24 @@ for offset in range(0,len(book_entries),20):
     list_id=f'books_20261107_{order:02}'+('_v2' if order==9 and len(words)>15 else '')
     book_lists.append(dict(id=list_id,title=title,titleDe=title_de,
         count=len(words),words=words,collection='book-vocabulary',order=order))
-catalog['bookVocabulary']=dict(version=2,id='book-vocabulary',title='مفردات الكتب',titleDe='Buchwortschatz',
+catalog['bookVocabulary']=dict(version=2,id='book-vocabulary',title='مفردات الكتاب 1',titleDe='Buchwortschatz 1',
     sourceImageCount=book_source['sourceImageCount'],count=len(book_entries),wordsPerList=20,lists=book_lists)
-labels['مفردات الكتب']='Buchwortschatz'
+labels['مفردات الكتاب 1']='Buchwortschatz 1'
+labels['مفردات الكتب']='Buchwortschatz 1' # previously saved source labels
+book2_source=json.loads((ROOT/'data/book-vocabulary-2-source.json').read_text())
+book2_entries=book2_source['entries'];book2_lists=[]
+for offset in range(0,len(book2_entries),20):
+    order=offset//20+1
+    title='القائمة '+ordinals[order-1] if order<=len(ordinals) else 'القائمة '+str(order)
+    title_de='Liste '+str(order);labels[title]=title_de
+    words=[dict(ar=w['ar'],de=w['de'],entryId=w['id']) for w in book2_entries[offset:offset+20]]
+    assert len({w['ar'] for w in words})==len(words)
+    assert len({w['de'] for w in words})==len(words),'Ambiguous German choices in Book 2 '+title
+    book2_lists.append(dict(id=f'book2_20261108_{order:02}',title=title,titleDe=title_de,
+        count=len(words),words=words,collection='book-vocabulary',order=order,bookId='book-vocabulary-2'))
+catalog['bookVocabulary2']=dict(version=1,id='book-vocabulary-2',title='مفردات الكتاب 2',titleDe='Buchwortschatz 2',
+    sourceImageCount=book2_source['sourceImageCount'],count=len(book2_entries),wordsPerList=20,lists=book2_lists)
+labels['مفردات الكتاب 2']='Buchwortschatz 2'
 payload = json.dumps(catalog, ensure_ascii=False, indent=2)+'\n'
 (ROOT/'data/vocab_catalog.json').write_text(payload)
 (ROOT/'data/vocab_catalog_fallback.js').write_text(
@@ -93,18 +111,32 @@ payload = json.dumps(catalog, ensure_ascii=False, indent=2)+'\n'
 print('Built CEFR catalog: A1/A2/B1/B2, 30 lists and 600 entries per level; 120 lists / 2400 vocalized entries.')
 print(f'Book vocabulary: {len(book_entries)} entries from {book_source["sourceImageCount"]} photographs; {len(book_lists)} lists.')
 archives=book_source.get('archives',[dict(fileName=book_source['sourceArchive'],imageCount=book_source['sourceImageCount'])])
-book_doc=['# مفردات الكتب · مراجعة الصور والكلمات','',
+book_doc=['# مفردات الكتاب 1 · مراجعة الصور والكلمات','',
     'المصادر: '+'؛ '.join(a['fileName']+' ('+str(a['imageCount'])+' صورة)' for a in archives)+'. تمت قراءة الصور واحدة واحدة ومراجعة الكلمات وترجماتها، ولا يُعتمد على OCR في ضبط الحركات.','',
     f"{len(book_entries)} مدخلًا دون تكرار داخل المجموعة، موزعة على {len(book_lists)} قائمة، بحد أقصى ٢٠ كلمة للقائمة. لا تُضاف حشوات من خارج الصور لإكمال القائمة الأخيرة. تبقى قوائم A1–B2 الـ١٢٠ مستقلة وبمعرفاتها ومحتوياتها السابقة.",'',
     'تُدمج أداة التعريف وصيغ الإعراب والملكية وتكرار تصريف الفعل في بطاقة واحدة. مثل: الغرفة/غرف، حقيبتي/حقيبتك/حقيبته. يُحفظ المدخل بتشكيل واضح، مع فصل أَنْتَ عن أَنْتِ، ومَنْ عن مِنْ، والمذكر المعجمي عن مؤنثه مثل تلميذ/تلميذة. تبقى معاني الكلمات في سياق الصور؛ صَبَاح يجمع معنى الصباح واسم الشخصية في بطاقة واحدة.','',
     'تُستخرج الكلمات المقروءة من النصوص والحوارات والعناوين والتعليقات والأسئلة. لا تُخمّن الكلمات المبتورة في حواف الصور ولا الكتابة الدقيقة غير المقروءة داخل الرسومات. تُحفظ بصمات الصور وألفاظها المرجعية وربطها بالبطاقات في `data/book-vocabulary-source.json`. أرقام الصور أدناه تبدأ من ١: الصور ١–٢٩ من الملف الأول، و٣٠–٥٣ من الملف الثاني، حسب ترتيب كل ZIP.','',
     'تحديث الملف الثاني: دُمجت لَذِيذ/اللذيذة في بطاقة واحدة للصفة؛ يُدَرِّسُ (يعلّم) مستقل عن يَدْرُسُ (يتعلّم). الأعداد ١١–١٧ عبارات كاملة، وعِيدُ الْأَضْحَى تركيب كامل. معنى وَرَقَة توسّع ليشمل ورق الشجر. تحتفظ القوائم الثماني الأولى بمعرفاتها؛ التاسعة أصبحت ٢٠ كلمة بدل ١٥، ولها سجل إتقان جديد كي لا تُعد الكلمات المضافة مُتقنة مسبقًا.','',
-    'التشغيل: المفردات ← مفردات الكتب، أعلى مستويات CEFR. تستخدم القوائم البطاقات والاختبارات الستة والمراجعة والإتقان نفسها؛ مصدرها مجموعة مستقلة دون نسبتها إلى مستوى CEFR. ملف JSON ونسخة JavaScript المحلية متكافئان. النطق ملفات محلية مصنّعة بخدمة Google العربية، وتُعاد الاستفادة من التسجيل السابق عند تطابق الكلمة وتشكيلها تمامًا.','',
+    'التشغيل: المفردات ← مفردات الكتاب 1، أعلى مستويات CEFR. تستخدم القوائم البطاقات والاختبارات الستة والمراجعة والإتقان نفسها؛ مصدرها مجموعة مستقلة دون نسبتها إلى مستوى CEFR. ملف JSON ونسخة JavaScript المحلية متكافئان. النطق ملفات محلية مصنّعة بخدمة Google العربية، وتُعاد الاستفادة من التسجيل السابق عند تطابق الكلمة وتشكيلها تمامًا.','',
     '| القائمة | عدد الكلمات |','| --- | --- |']
 for item in book_lists:book_doc.append(f'| {item["title"]} | {item["count"]} |')
 book_doc+=['','| الكلمة | المعنى بالألمانية | الصور |','| --- | --- | --- |']
 for entry in book_entries:book_doc.append('| '+entry['ar']+' | '+entry['de'].replace('|','/')+' | '+', '.join(str(n+1) for n in sorted(entry['sourceImages']))+' |')
 (ROOT/'docs/BOOK-VOCABULARY.md').write_text('\n'.join(book_doc)+'\n')
+book2_doc=['# مفردات الكتاب 2 · مراجعة الصور والكلمات','',
+    f"{len(book2_entries)} بطاقة من {book2_source['sourceImageCount']} صورة، موزعة على {len(book2_lists)} قائمة؛ ٢٠ كلمة للقائمة، والأخيرة للكلمات المتبقية.",'',
+    'المصادر: '+'؛ '.join(a['fileName']+' ('+str(a['imageCount'])+' صورة)' for a in book2_source['archives']), '',
+    'تمت قراءة الصور الـ٤٦ يدويًا: ٢٤ من الملف الأول و٢٢ من الثاني. ترقيم الصور أدناه متصل من ١ إلى ٤٦. تتضمن المراجعة العناوين والحوارات والمفردات والقصص وأسئلة الفهم، وتستبعد الحواف المبتورة والطباعة الدقيقة غير المقروءة داخل الرسومات.','',
+    'تُدمج صيغ الإعراب والملكية وتصريفات الفعل المتكرر في بطاقة واحدة. تُراعى الفروق ذات المعنى: مَنْ/مِنْ، جَدّ/جِدّ، رَجُل/رِجْل، مَالِي/مَالِيّ. الأعداد المركبة من ٢١ إلى ٢٥ بطاقات كاملة. تترجم سَلِيم في سياق صحة القلب، وسَلَّمَ بمعنيي التحية والتسليم بحسب النص.','',
+    'لكل كتاب قوائمه ومصدره وسجل إتقانه المستقل. يجوز تكرار الكلمة المشتركة في كتابين؛ لا تتكرر داخل الكتاب نفسه. تبقى بطاقات الكتاب الأول الـ٣٤٠ ومعرفاتها وترتيبها محفوظة. تُستخدم ملفات صوتية محلية مصنّعة، ويعاد استخدام التسجيل المطابق تمامًا عندما تكون الكلمة مشتركة.','',
+    'المراجعة اليدوية: `data/book-vocabulary-2-review.json`. البناء القابل للتكرار: `python tools/build-book-vocabulary-2.py` ثم `python tools/build-vocab-catalog.py`. مرجع الصور والبطاقات: `data/book-vocabulary-2-source.json`.','',
+    '| القائمة | عدد الكلمات |','| --- | --- |']
+for item in book2_lists:book2_doc.append(f"| {item['title']} | {item['count']} |")
+book2_doc+=['','| الكلمة | المعنى بالألمانية | الصور |','| --- | --- | --- |']
+for entry in book2_entries:book2_doc.append('| '+entry['ar']+' | '+entry['de'].replace('|','/')+' | '+', '.join(str(n+1) for n in sorted(entry['sourceImages']))+' |')
+(ROOT/'docs/BOOK-VOCABULARY-2.md').write_text('\n'.join(book2_doc)+'\n')
+print(f'Book 2: {len(book2_entries)} entries; {len(book2_lists)} lists.')
+
 
 # Keep the editorial rationale and every topic's learning goal reviewable.
 lines = [
