@@ -3930,12 +3930,14 @@
     {
       "id": "bv-301",
       "ar": "لَذِيذٌ",
-      "de": "lecker; köstlich (männlich)",
+      "de": "lecker; köstlich",
       "sourceForms": [
-        "لذيذ"
+        "لذيذ",
+        "اللذيذة"
       ],
       "sourceImages": [
-        46
+        46,
+        47
       ]
     },
     {
@@ -4075,17 +4077,6 @@
     },
     {
       "id": "bv-314",
-      "ar": "لَذِيذَةٌ",
-      "de": "lecker; köstlich (weiblich)",
-      "sourceForms": [
-        "اللذيذة"
-      ],
-      "sourceImages": [
-        47
-      ]
-    },
-    {
-      "id": "bv-315",
       "ar": "أَكْلٌ",
       "de": "das Essen (die Tätigkeit)",
       "sourceForms": [
@@ -4096,7 +4087,7 @@
       ]
     },
     {
-      "id": "bv-316",
+      "id": "bv-315",
       "ar": "فَمٌ",
       "de": "der Mund",
       "sourceForms": [
@@ -4107,7 +4098,7 @@
       ]
     },
     {
-      "id": "bv-317",
+      "id": "bv-316",
       "ar": "يَأْخُذُ",
       "de": "nehmen",
       "sourceForms": [
@@ -4118,7 +4109,7 @@
       ]
     },
     {
-      "id": "bv-318",
+      "id": "bv-317",
       "ar": "دَرَّاجَةٌ",
       "de": "das Fahrrad",
       "sourceForms": [
@@ -4129,7 +4120,7 @@
       ]
     },
     {
-      "id": "bv-319",
+      "id": "bv-318",
       "ar": "قِطَارٌ",
       "de": "der Zug",
       "sourceForms": [
@@ -4141,7 +4132,7 @@
       ]
     },
     {
-      "id": "bv-320",
+      "id": "bv-319",
       "ar": "حَلَوِيَّاتٌ",
       "de": "die Süßigkeiten",
       "sourceForms": [
@@ -4152,7 +4143,7 @@
       ]
     },
     {
-      "id": "bv-321",
+      "id": "bv-320",
       "ar": "يَتَبَادَلُ",
       "de": "einander austauschen",
       "sourceForms": [
@@ -4163,7 +4154,7 @@
       ]
     },
     {
-      "id": "bv-322",
+      "id": "bv-321",
       "ar": "تَهَانٍ",
       "de": "die Glückwünsche",
       "sourceForms": [
@@ -4174,7 +4165,7 @@
       ]
     },
     {
-      "id": "bv-323",
+      "id": "bv-322",
       "ar": "مَرْحَبًا",
       "de": "hallo!; willkommen!",
       "sourceForms": [
@@ -4185,7 +4176,7 @@
       ]
     },
     {
-      "id": "bv-324",
+      "id": "bv-323",
       "ar": "عُطْلَةٌ",
       "de": "die Ferien; der Urlaub",
       "sourceForms": [
@@ -4197,7 +4188,7 @@
       ]
     },
     {
-      "id": "bv-325",
+      "id": "bv-324",
       "ar": "فَاطِمَةُ",
       "de": "Fatima (Vorname)",
       "sourceForms": [
@@ -4208,7 +4199,7 @@
       ]
     },
     {
-      "id": "bv-326",
+      "id": "bv-325",
       "ar": "اِقْتَرَبَتْ",
       "de": "näherkommen (sie kam näher)",
       "sourceForms": [
@@ -4219,7 +4210,7 @@
       ]
     },
     {
-      "id": "bv-327",
+      "id": "bv-326",
       "ar": "مِصْرُ",
       "de": "Ägypten",
       "sourceForms": [
@@ -4230,7 +4221,7 @@
       ]
     },
     {
-      "id": "bv-328",
+      "id": "bv-327",
       "ar": "إِنْ",
       "de": "wenn; falls",
       "sourceForms": [
@@ -4241,7 +4232,7 @@
       ]
     },
     {
-      "id": "bv-329",
+      "id": "bv-328",
       "ar": "شَاءَ",
       "de": "wollen (Vergangenheit; in „so Gott will“)",
       "sourceForms": [
@@ -4252,7 +4243,7 @@
       ]
     },
     {
-      "id": "bv-330",
+      "id": "bv-329",
       "ar": "لِمَاذَا",
       "de": "warum",
       "sourceForms": [
@@ -4264,7 +4255,7 @@
       ]
     },
     {
-      "id": "bv-331",
+      "id": "bv-330",
       "ar": "يَرَى",
       "de": "sehen",
       "sourceForms": [
@@ -4276,7 +4267,7 @@
       ]
     },
     {
-      "id": "bv-332",
+      "id": "bv-331",
       "ar": "نَهْرٌ",
       "de": "der Fluss",
       "sourceForms": [
@@ -4287,7 +4278,7 @@
       ]
     },
     {
-      "id": "bv-333",
+      "id": "bv-332",
       "ar": "النِّيلُ",
       "de": "der Nil",
       "sourceForms": [
@@ -4298,7 +4289,7 @@
       ]
     },
     {
-      "id": "bv-334",
+      "id": "bv-333",
       "ar": "طَائِرَةٌ",
       "de": "das Flugzeug",
       "sourceForms": [
@@ -4310,7 +4301,7 @@
       ]
     },
     {
-      "id": "bv-335",
+      "id": "bv-334",
       "ar": "الْأُرْدُنُّ",
       "de": "Jordanien",
       "sourceForms": [
@@ -4321,7 +4312,7 @@
       ]
     },
     {
-      "id": "bv-336",
+      "id": "bv-335",
       "ar": "أَفْغَانِسْتَانُ",
       "de": "Afghanistan",
       "sourceForms": [
@@ -4332,7 +4323,7 @@
       ]
     },
     {
-      "id": "bv-337",
+      "id": "bv-336",
       "ar": "تُرْكِيَا",
       "de": "die Türkei",
       "sourceForms": [
@@ -4343,7 +4334,7 @@
       ]
     },
     {
-      "id": "bv-338",
+      "id": "bv-337",
       "ar": "بَاكِسْتَانُ",
       "de": "Pakistan",
       "sourceForms": [
@@ -4354,7 +4345,7 @@
       ]
     },
     {
-      "id": "bv-339",
+      "id": "bv-338",
       "ar": "لِيبِيَا",
       "de": "Libyen",
       "sourceForms": [
@@ -4365,7 +4356,7 @@
       ]
     },
     {
-      "id": "bv-340",
+      "id": "bv-339",
       "ar": "السُّعُودِيَّةُ",
       "de": "Saudi-Arabien",
       "sourceForms": [
@@ -4376,7 +4367,7 @@
       ]
     },
     {
-      "id": "bv-341",
+      "id": "bv-340",
       "ar": "بَاخِرَةٌ",
       "de": "das Schiff; der Dampfer",
       "sourceForms": [
@@ -4387,7 +4378,7 @@
       ]
     },
     {
-      "id": "bv-342",
+      "id": "bv-341",
       "ar": "مُخَيَّمٌ",
       "de": "das Zeltlager; der Campingplatz",
       "sourceForms": [
@@ -6534,7 +6525,7 @@
         "bv-101",
         "bv-312",
         "bv-313",
-        "bv-314"
+        "bv-301"
       ]
     },
     {
@@ -6581,14 +6572,14 @@
         "bv-126",
         "bv-144",
         "bv-266",
-        "bv-315",
+        "bv-314",
         "bv-157",
+        "bv-315",
         "bv-316",
-        "bv-317",
         "bv-299",
         "bv-276",
+        "bv-317",
         "bv-318",
-        "bv-319",
         "bv-095",
         "bv-054",
         "bv-013",
@@ -6618,9 +6609,9 @@
         "bv-291",
         "bv-281",
         "bv-161",
+        "bv-319",
         "bv-320",
-        "bv-321",
-        "bv-322"
+        "bv-321"
       ]
     },
     {
@@ -6657,29 +6648,29 @@
         "بالطائرة"
       ],
       "entryIds": [
+        "bv-322",
         "bv-323",
-        "bv-324",
         "bv-012",
         "bv-013",
         "bv-014",
         "bv-015",
+        "bv-324",
         "bv-325",
-        "bv-326",
         "bv-076",
         "bv-101",
         "bv-086",
         "bv-040",
         "bv-248",
+        "bv-326",
         "bv-327",
         "bv-328",
-        "bv-329",
         "bv-011",
+        "bv-329",
         "bv-330",
         "bv-331",
         "bv-332",
-        "bv-333",
         "bv-007",
-        "bv-334"
+        "bv-333"
       ]
     },
     {
@@ -6724,18 +6715,18 @@
         "bv-089",
         "bv-060",
         "bv-090",
-        "bv-330",
+        "bv-329",
         "bv-248",
         "bv-086",
-        "bv-335",
-        "bv-331",
-        "bv-007",
         "bv-334",
+        "bv-330",
+        "bv-007",
+        "bv-333",
+        "bv-335",
         "bv-336",
         "bv-337",
         "bv-338",
         "bv-339",
-        "bv-340",
         "bv-095",
         "bv-054",
         "bv-013",
@@ -6758,10 +6749,10 @@
       ],
       "entryIds": [
         "bv-248",
-        "bv-341",
-        "bv-319",
+        "bv-340",
+        "bv-318",
         "bv-203",
-        "bv-342"
+        "bv-341"
       ]
     }
   ],
