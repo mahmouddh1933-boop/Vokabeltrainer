@@ -1,5 +1,5 @@
 {
-  "version": 13,
+  "version": 14,
   "sourceLanguage": "ar",
   "translationLanguage": "de",
   "maxWordsPerBuiltInList": 25,
@@ -11096,12 +11096,12 @@
     "B2"
   ],
   "bookVocabulary": {
-    "version": 1,
+    "version": 2,
     "id": "book-vocabulary",
     "title": "مفردات الكتب",
     "titleDe": "Buchwortschatz",
-    "sourceImageCount": 29,
-    "count": 175,
+    "sourceImageCount": 53,
+    "count": 340,
     "wordsPerList": 20,
     "lists": [
       {
@@ -11612,7 +11612,7 @@
           },
           {
             "ar": "وَرَقَةٌ",
-            "de": "das Blatt Papier",
+            "de": "das Blatt (Papier oder am Baum)",
             "entryId": "bv-094"
           },
           {
@@ -11985,10 +11985,10 @@
         "order": 8
       },
       {
-        "id": "books_20261107_09",
+        "id": "books_20261107_09_v2",
         "title": "القائمة التاسعة",
         "titleDe": "Liste 9",
-        "count": 15,
+        "count": 20,
         "words": [
           {
             "ar": "فُطُورٌ",
@@ -12064,10 +12064,915 @@
             "ar": "تِلْفَازٌ",
             "de": "der Fernseher",
             "entryId": "bv-176"
+          },
+          {
+            "ar": "ثُرَيَّا",
+            "de": "Thurayya (Vorname)",
+            "entryId": "bv-177"
+          },
+          {
+            "ar": "عَفَافٌ",
+            "de": "Afaf (Vorname)",
+            "entryId": "bv-178"
+          },
+          {
+            "ar": "مَرَّةٌ",
+            "de": "ein Mal; die Wiederholung",
+            "entryId": "bv-179"
+          },
+          {
+            "ar": "يَوْمٌ",
+            "de": "der Tag",
+            "entryId": "bv-180"
+          },
+          {
+            "ar": "ثَلَاثَةٌ",
+            "de": "drei",
+            "entryId": "bv-181"
           }
         ],
         "collection": "book-vocabulary",
         "order": 9
+      },
+      {
+        "id": "books_20261107_10",
+        "title": "القائمة العاشرة",
+        "titleDe": "Liste 10",
+        "count": 20,
+        "words": [
+          {
+            "ar": "غَدَاءٌ",
+            "de": "das Mittagessen",
+            "entryId": "bv-182"
+          },
+          {
+            "ar": "عَشَاءٌ",
+            "de": "das Abendessen; im Gebetsnamen: Nachtgebet",
+            "entryId": "bv-183"
+          },
+          {
+            "ar": "لَحْمٌ",
+            "de": "das Fleisch",
+            "entryId": "bv-184"
+          },
+          {
+            "ar": "دَجَاجٌ",
+            "de": "das Hühnerfleisch; die Hühner",
+            "entryId": "bv-185"
+          },
+          {
+            "ar": "خُبْزٌ",
+            "de": "das Brot",
+            "entryId": "bv-186"
+          },
+          {
+            "ar": "يَشْرَبُ",
+            "de": "trinken",
+            "entryId": "bv-187"
+          },
+          {
+            "ar": "عَصِيرٌ",
+            "de": "der Saft",
+            "entryId": "bv-188"
+          },
+          {
+            "ar": "جُبْنٌ",
+            "de": "der Käse",
+            "entryId": "bv-189"
+          },
+          {
+            "ar": "حَلِيبٌ",
+            "de": "die Milch",
+            "entryId": "bv-190"
+          },
+          {
+            "ar": "بَيْضٌ",
+            "de": "die Eier",
+            "entryId": "bv-191"
+          },
+          {
+            "ar": "شَايٌ",
+            "de": "der Tee",
+            "entryId": "bv-192"
+          },
+          {
+            "ar": "عَسَلٌ",
+            "de": "der Honig",
+            "entryId": "bv-193"
+          },
+          {
+            "ar": "مُرَبَّى",
+            "de": "die Konfitüre",
+            "entryId": "bv-194"
+          },
+          {
+            "ar": "سَمَكٌ",
+            "de": "der Fisch (als Nahrung)",
+            "entryId": "bv-195"
+          },
+          {
+            "ar": "بُرْتُقَالٌ",
+            "de": "die Orangen",
+            "entryId": "bv-196"
+          },
+          {
+            "ar": "مُثَلَّجَةٌ",
+            "de": "das Speiseeis",
+            "entryId": "bv-197"
+          },
+          {
+            "ar": "تَقْوَى",
+            "de": "Taqwa (Vorname)",
+            "entryId": "bv-198"
+          },
+          {
+            "ar": "سَاعَةٌ",
+            "de": "die Stunde; die Uhr",
+            "entryId": "bv-199"
+          },
+          {
+            "ar": "سَابِعَةٌ",
+            "de": "siebte (weiblich)",
+            "entryId": "bv-200"
+          },
+          {
+            "ar": "ثَامِنَةٌ",
+            "de": "achte (weiblich)",
+            "entryId": "bv-201"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 10
+      },
+      {
+        "id": "books_20261107_11",
+        "title": "القائمة الحادية عشرة",
+        "titleDe": "Liste 11",
+        "count": 20,
+        "words": [
+          {
+            "ar": "سَيَّارَةٌ",
+            "de": "das Auto",
+            "entryId": "bv-202"
+          },
+          {
+            "ar": "حَافِلَةٌ",
+            "de": "der Bus",
+            "entryId": "bv-203"
+          },
+          {
+            "ar": "سَادِسَةٌ",
+            "de": "sechste (weiblich)",
+            "entryId": "bv-204"
+          },
+          {
+            "ar": "خَامِسَةٌ",
+            "de": "fünfte (weiblich)",
+            "entryId": "bv-205"
+          },
+          {
+            "ar": "وَاحِدَةٌ",
+            "de": "eine; bei der Uhrzeit: ein Uhr",
+            "entryId": "bv-206"
+          },
+          {
+            "ar": "ثَانِيَةٌ",
+            "de": "zweite (weiblich)",
+            "entryId": "bv-207"
+          },
+          {
+            "ar": "ثَالِثَةٌ",
+            "de": "dritte (weiblich)",
+            "entryId": "bv-208"
+          },
+          {
+            "ar": "رَابِعَةٌ",
+            "de": "vierte (weiblich)",
+            "entryId": "bv-209"
+          },
+          {
+            "ar": "سَنَةٌ",
+            "de": "das Jahr",
+            "entryId": "bv-210"
+          },
+          {
+            "ar": "وَجْدِي",
+            "de": "Wajdi (Vorname)",
+            "entryId": "bv-211"
+          },
+          {
+            "ar": "حَلِيمَةُ",
+            "de": "Halima (Vorname)",
+            "entryId": "bv-212"
+          },
+          {
+            "ar": "جَوٌّ",
+            "de": "das Wetter",
+            "entryId": "bv-213"
+          },
+          {
+            "ar": "بَارِدٌ",
+            "de": "kalt",
+            "entryId": "bv-214"
+          },
+          {
+            "ar": "جِدًّا",
+            "de": "sehr",
+            "entryId": "bv-215"
+          },
+          {
+            "ar": "يَشْعُرُ",
+            "de": "fühlen; empfinden",
+            "entryId": "bv-216"
+          },
+          {
+            "ar": "بَرْدٌ",
+            "de": "die Kälte",
+            "entryId": "bv-217"
+          },
+          {
+            "ar": "مَلَابِسُ",
+            "de": "die Kleidungsstücke",
+            "entryId": "bv-218"
+          },
+          {
+            "ar": "صُوفِيَّةٌ",
+            "de": "aus Wolle (weiblich)",
+            "entryId": "bv-219"
+          },
+          {
+            "ar": "سَقَطَ",
+            "de": "fallen (Vergangenheit)",
+            "entryId": "bv-220"
+          },
+          {
+            "ar": "ثَلْجٌ",
+            "de": "der Schnee",
+            "entryId": "bv-221"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 11
+      },
+      {
+        "id": "books_20261107_12",
+        "title": "القائمة الثانية عشرة",
+        "titleDe": "Liste 12",
+        "count": 20,
+        "words": [
+          {
+            "ar": "بِكَثْرَةٍ",
+            "de": "reichlich; in großer Menge",
+            "entryId": "bv-222"
+          },
+          {
+            "ar": "أَيٌّ",
+            "de": "welcher / welche / welches",
+            "entryId": "bv-223"
+          },
+          {
+            "ar": "نَحْنُ",
+            "de": "wir",
+            "entryId": "bv-224"
+          },
+          {
+            "ar": "مُمْطِرٌ",
+            "de": "regnerisch",
+            "entryId": "bv-225"
+          },
+          {
+            "ar": "مُعْتَدِلٌ",
+            "de": "mild; gemäßigt",
+            "entryId": "bv-226"
+          },
+          {
+            "ar": "رَبِيعٌ",
+            "de": "der Frühling",
+            "entryId": "bv-227"
+          },
+          {
+            "ar": "حَارٌّ",
+            "de": "heiß",
+            "entryId": "bv-228"
+          },
+          {
+            "ar": "سَمَاءٌ",
+            "de": "der Himmel",
+            "entryId": "bv-229"
+          },
+          {
+            "ar": "صَافِيَةٌ",
+            "de": "klar; wolkenlos (weiblich)",
+            "entryId": "bv-230"
+          },
+          {
+            "ar": "رِيحٌ",
+            "de": "der Wind",
+            "entryId": "bv-231"
+          },
+          {
+            "ar": "قَوِيَّةٌ",
+            "de": "stark (weiblich)",
+            "entryId": "bv-232"
+          },
+          {
+            "ar": "شَاطِئٌ",
+            "de": "der Strand",
+            "entryId": "bv-233"
+          },
+          {
+            "ar": "بَحْرٌ",
+            "de": "das Meer",
+            "entryId": "bv-234"
+          },
+          {
+            "ar": "يَتَسَاقَطُ",
+            "de": "herabfallen; abfallen",
+            "entryId": "bv-235"
+          },
+          {
+            "ar": "بُشْرَى",
+            "de": "Bushra (Vorname)",
+            "entryId": "bv-236"
+          },
+          {
+            "ar": "شَهْرَزَادُ",
+            "de": "Scheherazade (Vorname)",
+            "entryId": "bv-237"
+          },
+          {
+            "ar": "أُسْبُوعٌ",
+            "de": "die Woche",
+            "entryId": "bv-238"
+          },
+          {
+            "ar": "سَبْعَةٌ",
+            "de": "sieben",
+            "entryId": "bv-239"
+          },
+          {
+            "ar": "الِاثْنَيْنِ",
+            "de": "Montag",
+            "entryId": "bv-240"
+          },
+          {
+            "ar": "الثُّلَاثَاءُ",
+            "de": "Dienstag",
+            "entryId": "bv-241"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 12
+      },
+      {
+        "id": "books_20261107_13",
+        "title": "القائمة الثالثة عشرة",
+        "titleDe": "Liste 13",
+        "count": 20,
+        "words": [
+          {
+            "ar": "الْأَرْبِعَاءُ",
+            "de": "Mittwoch",
+            "entryId": "bv-242"
+          },
+          {
+            "ar": "الْخَمِيسُ",
+            "de": "Donnerstag",
+            "entryId": "bv-243"
+          },
+          {
+            "ar": "الْجُمُعَةُ",
+            "de": "Freitag",
+            "entryId": "bv-244"
+          },
+          {
+            "ar": "السَّبْتُ",
+            "de": "Samstag",
+            "entryId": "bv-245"
+          },
+          {
+            "ar": "الْأَحَدُ",
+            "de": "Sonntag",
+            "entryId": "bv-246"
+          },
+          {
+            "ar": "شَهْرٌ",
+            "de": "der Monat",
+            "entryId": "bv-247"
+          },
+          {
+            "ar": "يُسَافِرُ",
+            "de": "reisen",
+            "entryId": "bv-248"
+          },
+          {
+            "ar": "يَعُودُ",
+            "de": "zurückkehren",
+            "entryId": "bv-249"
+          },
+          {
+            "ar": "غَابَةٌ",
+            "de": "der Wald",
+            "entryId": "bv-250"
+          },
+          {
+            "ar": "يَصْعَدُ",
+            "de": "hinaufsteigen",
+            "entryId": "bv-251"
+          },
+          {
+            "ar": "جَبَلٌ",
+            "de": "der Berg",
+            "entryId": "bv-252"
+          },
+          {
+            "ar": "عَشَرَةٌ",
+            "de": "zehn",
+            "entryId": "bv-253"
+          },
+          {
+            "ar": "أَحَدَ عَشَرَ",
+            "de": "elf",
+            "entryId": "bv-254"
+          },
+          {
+            "ar": "اِثْنَا عَشَرَ",
+            "de": "zwölf",
+            "entryId": "bv-255"
+          },
+          {
+            "ar": "ثَلَاثَةَ عَشَرَ",
+            "de": "dreizehn",
+            "entryId": "bv-256"
+          },
+          {
+            "ar": "أَرْبَعَةَ عَشَرَ",
+            "de": "vierzehn",
+            "entryId": "bv-257"
+          },
+          {
+            "ar": "خَمْسَةَ عَشَرَ",
+            "de": "fünfzehn",
+            "entryId": "bv-258"
+          },
+          {
+            "ar": "سِتَّةَ عَشَرَ",
+            "de": "sechzehn",
+            "entryId": "bv-259"
+          },
+          {
+            "ar": "سَبْعَةَ عَشَرَ",
+            "de": "siebzehn",
+            "entryId": "bv-260"
+          },
+          {
+            "ar": "رِيَاضٌ",
+            "de": "Riyad (Vorname)",
+            "entryId": "bv-261"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 13
+      },
+      {
+        "id": "books_20261107_14",
+        "title": "القائمة الرابعة عشرة",
+        "titleDe": "Liste 14",
+        "count": 20,
+        "words": [
+          {
+            "ar": "نَاصِرٌ",
+            "de": "Nasir (Vorname)",
+            "entryId": "bv-262"
+          },
+          {
+            "ar": "رَمَضَانُ",
+            "de": "Ramadan (Fastenmonat)",
+            "entryId": "bv-263"
+          },
+          {
+            "ar": "يَصُومُ",
+            "de": "fasten",
+            "entryId": "bv-264"
+          },
+          {
+            "ar": "نَهَارٌ",
+            "de": "der Tag (helle Tageszeit)",
+            "entryId": "bv-265"
+          },
+          {
+            "ar": "بَعْدَ",
+            "de": "nach; danach",
+            "entryId": "bv-266"
+          },
+          {
+            "ar": "أَذَانٌ",
+            "de": "der Gebetsruf",
+            "entryId": "bv-267"
+          },
+          {
+            "ar": "مَغْرِبٌ",
+            "de": "der Sonnenuntergang; das Abendgebet",
+            "entryId": "bv-268"
+          },
+          {
+            "ar": "يُفْطِرُ",
+            "de": "das Fasten brechen",
+            "entryId": "bv-269"
+          },
+          {
+            "ar": "ذَلِكَ",
+            "de": "das; jenes (männlich)",
+            "entryId": "bv-270"
+          },
+          {
+            "ar": "تَرَاوِيحُ",
+            "de": "die zusätzlichen Nachtgebete im Ramadan",
+            "entryId": "bv-271"
+          },
+          {
+            "ar": "يُعِدُّ",
+            "de": "zubereiten; vorbereiten",
+            "entryId": "bv-272"
+          },
+          {
+            "ar": "طَعَامٌ",
+            "de": "das Essen; die Nahrung",
+            "entryId": "bv-273"
+          },
+          {
+            "ar": "يَدْرُسُ",
+            "de": "lernen; studieren",
+            "entryId": "bv-274"
+          },
+          {
+            "ar": "يُسَاعِدُ",
+            "de": "helfen",
+            "entryId": "bv-275"
+          },
+          {
+            "ar": "يَلْعَبُ",
+            "de": "spielen",
+            "entryId": "bv-276"
+          },
+          {
+            "ar": "أَكْبَرُ",
+            "de": "größer; am größten",
+            "entryId": "bv-277"
+          },
+          {
+            "ar": "مُؤَذِّنٌ",
+            "de": "der Muezzin (Gebetsrufer)",
+            "entryId": "bv-278"
+          },
+          {
+            "ar": "تَمْرٌ",
+            "de": "die Datteln",
+            "entryId": "bv-279"
+          },
+          {
+            "ar": "يُرِيدُ",
+            "de": "wollen; möchten",
+            "entryId": "bv-280"
+          },
+          {
+            "ar": "عِيدٌ",
+            "de": "das Fest",
+            "entryId": "bv-281"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 14
+      },
+      {
+        "id": "books_20261107_15",
+        "title": "القائمة الخامسة عشرة",
+        "titleDe": "Liste 15",
+        "count": 20,
+        "words": [
+          {
+            "ar": "فِطْرٌ",
+            "de": "das Fastenbrechen",
+            "entryId": "bv-282"
+          },
+          {
+            "ar": "عَبِيرٌ",
+            "de": "Abir (Vorname)",
+            "entryId": "bv-283"
+          },
+          {
+            "ar": "فُسْتَانٌ",
+            "de": "das Kleid",
+            "entryId": "bv-284"
+          },
+          {
+            "ar": "أَخْضَرُ",
+            "de": "grün",
+            "entryId": "bv-285"
+          },
+          {
+            "ar": "جَمِيلٌ",
+            "de": "schön",
+            "entryId": "bv-286"
+          },
+          {
+            "ar": "غَسَّانُ",
+            "de": "Ghassan (Vorname)",
+            "entryId": "bv-287"
+          },
+          {
+            "ar": "حِذَاءٌ",
+            "de": "der Schuh; das Schuhwerk",
+            "entryId": "bv-288"
+          },
+          {
+            "ar": "أَحْمَرُ",
+            "de": "rot",
+            "entryId": "bv-289"
+          },
+          {
+            "ar": "غَدًا",
+            "de": "morgen",
+            "entryId": "bv-290"
+          },
+          {
+            "ar": "يَحْتَفِلُ",
+            "de": "feiern",
+            "entryId": "bv-291"
+          },
+          {
+            "ar": "بَلِيغٌ",
+            "de": "Baligh (Vorname)",
+            "entryId": "bv-292"
+          },
+          {
+            "ar": "قَمِيصٌ",
+            "de": "das Hemd",
+            "entryId": "bv-293"
+          },
+          {
+            "ar": "تَفَضَّلْ",
+            "de": "bitte schön! (beim Anbieten)",
+            "entryId": "bv-294"
+          },
+          {
+            "ar": "مِعْطَفٌ",
+            "de": "der Mantel",
+            "entryId": "bv-295"
+          },
+          {
+            "ar": "سُتْرَةٌ",
+            "de": "die Jacke",
+            "entryId": "bv-296"
+          },
+          {
+            "ar": "نَظَّارَةٌ",
+            "de": "die Brille",
+            "entryId": "bv-297"
+          },
+          {
+            "ar": "دُبْدُوبٌ",
+            "de": "der Teddybär",
+            "entryId": "bv-298"
+          },
+          {
+            "ar": "هَدِيَّةٌ",
+            "de": "das Geschenk",
+            "entryId": "bv-299"
+          },
+          {
+            "ar": "كَعْكٌ",
+            "de": "das Gebäck; der Kuchen",
+            "entryId": "bv-300"
+          },
+          {
+            "ar": "لَذِيذٌ",
+            "de": "lecker; köstlich",
+            "entryId": "bv-301"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 15
+      },
+      {
+        "id": "books_20261107_16",
+        "title": "القائمة السادسة عشرة",
+        "titleDe": "Liste 16",
+        "count": 20,
+        "words": [
+          {
+            "ar": "يُغَنِّي",
+            "de": "singen",
+            "entryId": "bv-302"
+          },
+          {
+            "ar": "عِيدُ الْأَضْحَى",
+            "de": "das Opferfest",
+            "entryId": "bv-303"
+          },
+          {
+            "ar": "نَدَى",
+            "de": "Nada (Vorname)",
+            "entryId": "bv-304"
+          },
+          {
+            "ar": "صَلَاةٌ",
+            "de": "das Gebet",
+            "entryId": "bv-305"
+          },
+          {
+            "ar": "يَذْبَحُ",
+            "de": "schlachten",
+            "entryId": "bv-306"
+          },
+          {
+            "ar": "خَرُوفٌ",
+            "de": "das Schaf; das Lamm",
+            "entryId": "bv-307"
+          },
+          {
+            "ar": "يَشْوِي",
+            "de": "grillen; braten",
+            "entryId": "bv-308"
+          },
+          {
+            "ar": "غَادَةُ",
+            "de": "Ghada (Vorname)",
+            "entryId": "bv-309"
+          },
+          {
+            "ar": "يُحْضِرُ",
+            "de": "herbeibringen; mitbringen",
+            "entryId": "bv-310"
+          },
+          {
+            "ar": "فَوَاكِهُ",
+            "de": "das Obst; die Früchte",
+            "entryId": "bv-311"
+          },
+          {
+            "ar": "يُجَهِّزُ",
+            "de": "bereitstellen; herrichten",
+            "entryId": "bv-312"
+          },
+          {
+            "ar": "مَشْرُوبَاتٌ",
+            "de": "die Getränke",
+            "entryId": "bv-313"
+          },
+          {
+            "ar": "أَكْلٌ",
+            "de": "das Essen (die Tätigkeit)",
+            "entryId": "bv-314"
+          },
+          {
+            "ar": "فَمٌ",
+            "de": "der Mund",
+            "entryId": "bv-315"
+          },
+          {
+            "ar": "يَأْخُذُ",
+            "de": "nehmen",
+            "entryId": "bv-316"
+          },
+          {
+            "ar": "دَرَّاجَةٌ",
+            "de": "das Fahrrad",
+            "entryId": "bv-317"
+          },
+          {
+            "ar": "قِطَارٌ",
+            "de": "der Zug",
+            "entryId": "bv-318"
+          },
+          {
+            "ar": "حَلَوِيَّاتٌ",
+            "de": "die Süßigkeiten",
+            "entryId": "bv-319"
+          },
+          {
+            "ar": "يَتَبَادَلُ",
+            "de": "einander austauschen",
+            "entryId": "bv-320"
+          },
+          {
+            "ar": "تَهَانٍ",
+            "de": "die Glückwünsche",
+            "entryId": "bv-321"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 16
+      },
+      {
+        "id": "books_20261107_17",
+        "title": "القائمة السابعة عشرة",
+        "titleDe": "Liste 17",
+        "count": 20,
+        "words": [
+          {
+            "ar": "مَرْحَبًا",
+            "de": "hallo!; willkommen!",
+            "entryId": "bv-322"
+          },
+          {
+            "ar": "عُطْلَةٌ",
+            "de": "die Ferien; der Urlaub",
+            "entryId": "bv-323"
+          },
+          {
+            "ar": "فَاطِمَةُ",
+            "de": "Fatima (Vorname)",
+            "entryId": "bv-324"
+          },
+          {
+            "ar": "اِقْتَرَبَتْ",
+            "de": "näherkommen (sie kam näher)",
+            "entryId": "bv-325"
+          },
+          {
+            "ar": "مِصْرُ",
+            "de": "Ägypten",
+            "entryId": "bv-326"
+          },
+          {
+            "ar": "إِنْ",
+            "de": "wenn; falls",
+            "entryId": "bv-327"
+          },
+          {
+            "ar": "شَاءَ",
+            "de": "wollen (Vergangenheit; in „so Gott will“)",
+            "entryId": "bv-328"
+          },
+          {
+            "ar": "لِمَاذَا",
+            "de": "warum",
+            "entryId": "bv-329"
+          },
+          {
+            "ar": "يَرَى",
+            "de": "sehen",
+            "entryId": "bv-330"
+          },
+          {
+            "ar": "نَهْرٌ",
+            "de": "der Fluss",
+            "entryId": "bv-331"
+          },
+          {
+            "ar": "النِّيلُ",
+            "de": "der Nil",
+            "entryId": "bv-332"
+          },
+          {
+            "ar": "طَائِرَةٌ",
+            "de": "das Flugzeug",
+            "entryId": "bv-333"
+          },
+          {
+            "ar": "الْأُرْدُنُّ",
+            "de": "Jordanien",
+            "entryId": "bv-334"
+          },
+          {
+            "ar": "أَفْغَانِسْتَانُ",
+            "de": "Afghanistan",
+            "entryId": "bv-335"
+          },
+          {
+            "ar": "تُرْكِيَا",
+            "de": "die Türkei",
+            "entryId": "bv-336"
+          },
+          {
+            "ar": "بَاكِسْتَانُ",
+            "de": "Pakistan",
+            "entryId": "bv-337"
+          },
+          {
+            "ar": "لِيبِيَا",
+            "de": "Libyen",
+            "entryId": "bv-338"
+          },
+          {
+            "ar": "السُّعُودِيَّةُ",
+            "de": "Saudi-Arabien",
+            "entryId": "bv-339"
+          },
+          {
+            "ar": "بَاخِرَةٌ",
+            "de": "das Schiff; der Dampfer",
+            "entryId": "bv-340"
+          },
+          {
+            "ar": "مُخَيَّمٌ",
+            "de": "das Zeltlager; der Campingplatz",
+            "entryId": "bv-341"
+          }
+        ],
+        "collection": "book-vocabulary",
+        "order": 17
       }
     ]
   }

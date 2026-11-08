@@ -1,13 +1,13 @@
 {
-  "version": 1,
+  "version": 2,
   "title": "مفردات الكتب",
   "titleDe": "Buchwortschatz",
   "sourceArchive": "WhatsApp Unknown 2026-11-07 at 23.59.35.zip",
   "sourceArchiveSha256": "642045648801d023a8dfa2b75e3e1e489523f1c4d3b5073dc2d0278006f9220f",
-  "sourceImageCount": 29,
+  "sourceImageCount": 53,
   "reviewMethod": "Manual image-by-image reading; automatic OCR is not the authority for vowel marks.",
   "deduplication": "One lexical card: merge case, articles, possessive suffixes and repeated conjugations; retain distinct pronouns, masculine/feminine lexical entries and مَنْ versus مِنْ.",
-  "scope": "Readable educational text, headings, picture captions and exercise prompts. Incomplete margins and unreadable microprint inside illustrations are excluded.",
+  "scope": "Readable educational text, headings, picture captions and exercise prompts. Incomplete margins and unreadable microprint inside illustrations are excluded. Compound numbers eleven through seventeen are kept as complete lexical expressions.",
   "entries": [
     {
       "id": "bv-001",
@@ -42,12 +42,14 @@
       "sourceForms": [
         "اسمي",
         "اسمك",
-        "اسم"
+        "اسم",
+        "أسماء"
       ],
       "sourceImages": [
         28,
         25,
-        10
+        10,
+        38
       ]
     },
     {
@@ -97,7 +99,11 @@
         "كيف"
       ],
       "sourceImages": [
-        28
+        28,
+        35,
+        36,
+        50,
+        51
       ]
     },
     {
@@ -143,11 +149,14 @@
       "ar": "اللَّهُ",
       "de": "Gott",
       "sourceForms": [
-        "لله"
+        "لله",
+        "الله"
       ],
       "sourceImages": [
         28,
-        26
+        26,
+        43,
+        50
       ]
     },
     {
@@ -169,7 +178,23 @@
         9,
         7,
         3,
-        2
+        2,
+        29,
+        30,
+        32,
+        33,
+        35,
+        36,
+        38,
+        39,
+        41,
+        42,
+        44,
+        45,
+        47,
+        48,
+        50,
+        51
       ]
     },
     {
@@ -192,7 +217,22 @@
         7,
         5,
         3,
-        2
+        2,
+        29,
+        30,
+        32,
+        33,
+        35,
+        36,
+        38,
+        39,
+        42,
+        44,
+        45,
+        47,
+        48,
+        50,
+        51
       ]
     },
     {
@@ -215,7 +255,22 @@
         7,
         5,
         3,
-        2
+        2,
+        29,
+        30,
+        32,
+        33,
+        35,
+        36,
+        38,
+        39,
+        42,
+        44,
+        45,
+        47,
+        48,
+        50,
+        51
       ]
     },
     {
@@ -238,7 +293,22 @@
         7,
         5,
         3,
-        2
+        2,
+        29,
+        30,
+        32,
+        33,
+        35,
+        36,
+        38,
+        39,
+        42,
+        44,
+        45,
+        47,
+        48,
+        50,
+        51
       ]
     },
     {
@@ -316,10 +386,14 @@
       "ar": "فَصْلٌ",
       "de": "die Jahreszeit",
       "sourceForms": [
-        "الفصول"
+        "الفصول",
+        "فصول",
+        "فصل"
       ],
       "sourceImages": [
-        27
+        27,
+        35,
+        36
       ]
     },
     {
@@ -343,7 +417,8 @@
         "الصيف"
       ],
       "sourceImages": [
-        27
+        27,
+        36
       ]
     },
     {
@@ -354,7 +429,8 @@
         "الخريف"
       ],
       "sourceImages": [
-        27
+        27,
+        36
       ]
     },
     {
@@ -365,7 +441,9 @@
         "الشتاء"
       ],
       "sourceImages": [
-        27
+        27,
+        35,
+        36
       ]
     },
     {
@@ -499,14 +577,19 @@
       "ar": "هَلْ",
       "de": "Fragepartikel für Ja-Nein-Fragen",
       "sourceForms": [
-        "هل"
+        "هل",
+        "وهل"
       ],
       "sourceImages": [
         26,
         20,
         19,
         16,
-        10
+        10,
+        32,
+        35,
+        38,
+        39
       ]
     },
     {
@@ -535,7 +618,9 @@
         23,
         20,
         3,
-        0
+        0,
+        30,
+        47
       ]
     },
     {
@@ -549,7 +634,9 @@
       "sourceImages": [
         25,
         3,
-        0
+        0,
+        32,
+        33
       ]
     },
     {
@@ -562,7 +649,8 @@
       "sourceImages": [
         25,
         7,
-        5
+        5,
+        50
       ]
     },
     {
@@ -570,11 +658,17 @@
       "ar": "أَنَا",
       "de": "ich",
       "sourceForms": [
-        "أنا"
+        "أنا",
+        "فأنا",
+        "وأنا"
       ],
       "sourceImages": [
         25,
-        14
+        14,
+        32,
+        35,
+        44,
+        47
       ]
     },
     {
@@ -706,7 +800,8 @@
       "sourceImages": [
         23,
         20,
-        14
+        14,
+        46
       ]
     },
     {
@@ -740,7 +835,17 @@
         11,
         5,
         2,
-        1
+        1,
+        30,
+        33,
+        36,
+        39,
+        42,
+        44,
+        45,
+        48,
+        49,
+        51
       ]
     },
     {
@@ -777,7 +882,8 @@
         22,
         17,
         3,
-        0
+        0,
+        32
       ]
     },
     {
@@ -814,7 +920,18 @@
         5,
         3,
         2,
-        0
+        0,
+        29,
+        30,
+        33,
+        36,
+        39,
+        41,
+        42,
+        45,
+        47,
+        48,
+        51
       ]
     },
     {
@@ -890,10 +1007,16 @@
       "ar": "لَا",
       "de": "nein / nicht",
       "sourceForms": [
-        "لا"
+        "لا",
+        "فلا",
+        "ولا"
       ],
       "sourceImages": [
-        20
+        20,
+        32,
+        35,
+        38,
+        41
       ]
     },
     {
@@ -901,10 +1024,14 @@
       "ar": "تَعْرِفُ",
       "de": "kennen (sie kennt / du kennst)",
       "sourceForms": [
-        "تعرف"
+        "تعرف",
+        "تعرفين",
+        "أعرف"
       ],
       "sourceImages": [
-        20
+        20,
+        38,
+        39
       ]
     },
     {
@@ -928,7 +1055,15 @@
       "sourceImages": [
         21,
         16,
-        2
+        2,
+        30,
+        33,
+        36,
+        39,
+        42,
+        45,
+        48,
+        51
       ]
     },
     {
@@ -941,7 +1076,15 @@
       "sourceImages": [
         21,
         16,
-        2
+        2,
+        30,
+        33,
+        36,
+        39,
+        42,
+        45,
+        48,
+        51
       ]
     },
     {
@@ -954,7 +1097,15 @@
       "sourceImages": [
         21,
         16,
-        2
+        2,
+        30,
+        33,
+        36,
+        39,
+        42,
+        45,
+        48,
+        51
       ]
     },
     {
@@ -968,7 +1119,10 @@
         21,
         16,
         14,
-        11
+        11,
+        35,
+        44,
+        45
       ]
     },
     {
@@ -1006,7 +1160,11 @@
       "sourceImages": [
         23,
         20,
-        19
+        19,
+        35,
+        44,
+        45,
+        50
       ]
     },
     {
@@ -1034,7 +1192,10 @@
       ],
       "sourceImages": [
         19,
-        16
+        16,
+        35,
+        38,
+        39
       ]
     },
     {
@@ -1085,7 +1246,8 @@
         "شكرا"
       ],
       "sourceImages": [
-        19
+        19,
+        45
       ]
     },
     {
@@ -1117,12 +1279,20 @@
       "sourceForms": [
         "يذهب",
         "وأذهب",
-        "ويذهب"
+        "ويذهب",
+        "تذهبين",
+        "أذهب",
+        "تذهب",
+        "نذهب"
       ],
       "sourceImages": [
         17,
         3,
-        0
+        0,
+        32,
+        39,
+        43,
+        47
       ]
     },
     {
@@ -1135,7 +1305,12 @@
       "sourceImages": [
         17,
         3,
-        0
+        0,
+        32,
+        39,
+        43,
+        50,
+        51
       ]
     },
     {
@@ -1171,7 +1346,15 @@
       ],
       "sourceImages": [
         16,
-        2
+        2,
+        30,
+        33,
+        36,
+        39,
+        42,
+        45,
+        48,
+        51
       ]
     },
     {
@@ -1183,7 +1366,15 @@
       ],
       "sourceImages": [
         16,
-        2
+        2,
+        30,
+        33,
+        36,
+        39,
+        42,
+        45,
+        48,
+        51
       ]
     },
     {
@@ -1225,13 +1416,15 @@
     {
       "id": "bv-094",
       "ar": "وَرَقَةٌ",
-      "de": "das Blatt Papier",
+      "de": "das Blatt (Papier oder am Baum)",
       "sourceForms": [
         "ورقتك",
-        "ورقتي"
+        "ورقتي",
+        "الأوراق"
       ],
       "sourceImages": [
-        16
+        16,
+        37
       ]
     },
     {
@@ -1248,7 +1441,15 @@
         11,
         5,
         2,
-        1
+        1,
+        30,
+        33,
+        36,
+        39,
+        42,
+        45,
+        48,
+        51
       ]
     },
     {
@@ -1261,7 +1462,15 @@
       "sourceImages": [
         21,
         16,
-        2
+        2,
+        30,
+        33,
+        36,
+        39,
+        42,
+        45,
+        48,
+        51
       ]
     },
     {
@@ -1320,13 +1529,18 @@
       "de": "der Vater",
       "sourceForms": [
         "أبي",
-        "الأب"
+        "الأب",
+        "أبوك"
       ],
       "sourceImages": [
         14,
         13,
         11,
-        7
+        7,
+        41,
+        44,
+        47,
+        50
       ]
     },
     {
@@ -1347,12 +1561,15 @@
       "de": "die Mutter",
       "sourceForms": [
         "أمي",
-        "الأم"
+        "الأم",
+        "أمك"
       ],
       "sourceImages": [
         14,
         13,
-        7
+        7,
+        42,
+        47
       ]
     },
     {
@@ -1374,12 +1591,14 @@
       "sourceForms": [
         "أخي",
         "أخوها",
-        "الأخ"
+        "الأخ",
+        "أخوك"
       ],
       "sourceImages": [
         14,
         11,
-        10
+        10,
+        42
       ]
     },
     {
@@ -1404,7 +1623,9 @@
       "sourceImages": [
         14,
         11,
-        5
+        5,
+        44,
+        46
       ]
     },
     {
@@ -1414,12 +1635,14 @@
       "sourceForms": [
         "أختي",
         "أختها",
-        "الأخت"
+        "الأخت",
+        "أختك"
       ],
       "sourceImages": [
         14,
         11,
-        10
+        10,
+        42
       ]
     },
     {
@@ -1444,7 +1667,8 @@
       ],
       "sourceImages": [
         14,
-        10
+        10,
+        47
       ]
     },
     {
@@ -1601,7 +1825,8 @@
         "كم"
       ],
       "sourceImages": [
-        9
+        9,
+        29
       ]
     },
     {
@@ -1639,7 +1864,15 @@
         9,
         5,
         3,
-        2
+        2,
+        29,
+        30,
+        41,
+        42,
+        44,
+        45,
+        47,
+        48
       ]
     },
     {
@@ -1754,7 +1987,9 @@
       "sourceImages": [
         8,
         3,
-        0
+        0,
+        32,
+        33
       ]
     },
     {
@@ -1841,12 +2076,17 @@
       "de": "tun / machen",
       "sourceForms": [
         "يفعل",
-        "تفعل"
+        "تفعل",
+        "نفعل"
       ],
       "sourceImages": [
         5,
         3,
-        2
+        2,
+        41,
+        42,
+        47,
+        48
       ]
     },
     {
@@ -1879,7 +2119,9 @@
         "المسجد"
       ],
       "sourceImages": [
-        5
+        5,
+        41,
+        43
       ]
     },
     {
@@ -1888,11 +2130,15 @@
       "de": "beten",
       "sourceForms": [
         "يصلي",
-        "أصلي"
+        "أصلي",
+        "ويصلي",
+        "تصلي"
       ],
       "sourceImages": [
         5,
-        2
+        2,
+        41,
+        42
       ]
     },
     {
@@ -1903,7 +2149,8 @@
         "أنيس"
       ],
       "sourceImages": [
-        5
+        5,
+        32
       ]
     },
     {
@@ -1957,10 +2204,14 @@
       "ar": "مَتَى",
       "de": "wann",
       "sourceForms": [
-        "متى"
+        "متى",
+        "ومتى"
       ],
       "sourceImages": [
-        3
+        3,
+        32,
+        33,
+        39
       ]
     },
     {
@@ -1970,11 +2221,14 @@
       "sourceForms": [
         "تقوم",
         "أقوم",
-        "يقوم"
+        "يقوم",
+        "تقومين"
       ],
       "sourceImages": [
         3,
-        0
+        0,
+        32,
+        33
       ]
     },
     {
@@ -2000,7 +2254,8 @@
       "sourceImages": [
         3,
         1,
-        0
+        0,
+        48
       ]
     },
     {
@@ -2022,11 +2277,15 @@
       "de": "anziehen / tragen (Kleidung)",
       "sourceForms": [
         "وألبس",
-        "ويلبس"
+        "ويلبس",
+        "ألبس",
+        "ونلبس"
       ],
       "sourceImages": [
         3,
-        0
+        0,
+        35,
+        44
       ]
     },
     {
@@ -2048,11 +2307,17 @@
       "de": "essen",
       "sourceForms": [
         "آكل",
-        "يأكل"
+        "يأكل",
+        "تأكلين",
+        "تأكل"
       ],
       "sourceImages": [
         3,
-        0
+        0,
+        29,
+        30,
+        41,
+        49
       ]
     },
     {
@@ -2060,11 +2325,14 @@
       "ar": "فُطُورٌ",
       "de": "das Frühstück",
       "sourceForms": [
-        "فطور"
+        "فطور",
+        "الفطور"
       ],
       "sourceImages": [
         3,
-        0
+        0,
+        29,
+        30
       ]
     },
     {
@@ -2130,7 +2398,8 @@
         "المساء"
       ],
       "sourceImages": [
-        2
+        2,
+        41
       ]
     },
     {
@@ -2149,10 +2418,12 @@
       "ar": "يَنَامُ",
       "de": "schlafen",
       "sourceForms": [
-        "أنام"
+        "أنام",
+        "تنام"
       ],
       "sourceImages": [
-        2
+        2,
+        33
       ]
     },
     {
@@ -2220,6 +2491,1902 @@
       "sourceImages": [
         2
       ]
+    },
+    {
+      "id": "bv-177",
+      "ar": "ثُرَيَّا",
+      "de": "Thurayya (Vorname)",
+      "sourceForms": [
+        "ثريا"
+      ],
+      "sourceImages": [
+        29
+      ]
+    },
+    {
+      "id": "bv-178",
+      "ar": "عَفَافٌ",
+      "de": "Afaf (Vorname)",
+      "sourceForms": [
+        "عفاف"
+      ],
+      "sourceImages": [
+        29
+      ]
+    },
+    {
+      "id": "bv-179",
+      "ar": "مَرَّةٌ",
+      "de": "ein Mal; die Wiederholung",
+      "sourceForms": [
+        "مرة",
+        "مرات"
+      ],
+      "sourceImages": [
+        29
+      ]
+    },
+    {
+      "id": "bv-180",
+      "ar": "يَوْمٌ",
+      "de": "der Tag",
+      "sourceForms": [
+        "اليوم",
+        "أيام",
+        "يوم"
+      ],
+      "sourceImages": [
+        29,
+        35,
+        36,
+        38,
+        39
+      ]
+    },
+    {
+      "id": "bv-181",
+      "ar": "ثَلَاثَةٌ",
+      "de": "drei",
+      "sourceForms": [
+        "ثلاث"
+      ],
+      "sourceImages": [
+        29
+      ]
+    },
+    {
+      "id": "bv-182",
+      "ar": "غَدَاءٌ",
+      "de": "das Mittagessen",
+      "sourceForms": [
+        "والغداء",
+        "الغداء"
+      ],
+      "sourceImages": [
+        29
+      ]
+    },
+    {
+      "id": "bv-183",
+      "ar": "عَشَاءٌ",
+      "de": "das Abendessen; im Gebetsnamen: Nachtgebet",
+      "sourceForms": [
+        "والعشاء",
+        "العشاء"
+      ],
+      "sourceImages": [
+        29,
+        41
+      ]
+    },
+    {
+      "id": "bv-184",
+      "ar": "لَحْمٌ",
+      "de": "das Fleisch",
+      "sourceForms": [
+        "اللحم",
+        "لحم"
+      ],
+      "sourceImages": [
+        29,
+        47
+      ]
+    },
+    {
+      "id": "bv-185",
+      "ar": "دَجَاجٌ",
+      "de": "das Hühnerfleisch; die Hühner",
+      "sourceForms": [
+        "والدجاج"
+      ],
+      "sourceImages": [
+        29
+      ]
+    },
+    {
+      "id": "bv-186",
+      "ar": "خُبْزٌ",
+      "de": "das Brot",
+      "sourceForms": [
+        "والخبز"
+      ],
+      "sourceImages": [
+        29
+      ]
+    },
+    {
+      "id": "bv-187",
+      "ar": "يَشْرَبُ",
+      "de": "trinken",
+      "sourceForms": [
+        "تشربين",
+        "أشرب",
+        "تشرب",
+        "يشرب"
+      ],
+      "sourceImages": [
+        29,
+        30,
+        41
+      ]
+    },
+    {
+      "id": "bv-188",
+      "ar": "عَصِيرٌ",
+      "de": "der Saft",
+      "sourceForms": [
+        "العصير",
+        "عصير"
+      ],
+      "sourceImages": [
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "id": "bv-189",
+      "ar": "جُبْنٌ",
+      "de": "der Käse",
+      "sourceForms": [
+        "الجبن"
+      ],
+      "sourceImages": [
+        30
+      ]
+    },
+    {
+      "id": "bv-190",
+      "ar": "حَلِيبٌ",
+      "de": "die Milch",
+      "sourceForms": [
+        "الحليب",
+        "حليب"
+      ],
+      "sourceImages": [
+        30,
+        43
+      ]
+    },
+    {
+      "id": "bv-191",
+      "ar": "بَيْضٌ",
+      "de": "die Eier",
+      "sourceForms": [
+        "البيض"
+      ],
+      "sourceImages": [
+        30
+      ]
+    },
+    {
+      "id": "bv-192",
+      "ar": "شَايٌ",
+      "de": "der Tee",
+      "sourceForms": [
+        "الشاي"
+      ],
+      "sourceImages": [
+        30
+      ]
+    },
+    {
+      "id": "bv-193",
+      "ar": "عَسَلٌ",
+      "de": "der Honig",
+      "sourceForms": [
+        "العسل"
+      ],
+      "sourceImages": [
+        30
+      ]
+    },
+    {
+      "id": "bv-194",
+      "ar": "مُرَبَّى",
+      "de": "die Konfitüre",
+      "sourceForms": [
+        "المربى"
+      ],
+      "sourceImages": [
+        31
+      ]
+    },
+    {
+      "id": "bv-195",
+      "ar": "سَمَكٌ",
+      "de": "der Fisch (als Nahrung)",
+      "sourceForms": [
+        "السمك"
+      ],
+      "sourceImages": [
+        31
+      ]
+    },
+    {
+      "id": "bv-196",
+      "ar": "بُرْتُقَالٌ",
+      "de": "die Orangen",
+      "sourceForms": [
+        "البرتقال"
+      ],
+      "sourceImages": [
+        31
+      ]
+    },
+    {
+      "id": "bv-197",
+      "ar": "مُثَلَّجَةٌ",
+      "de": "das Speiseeis",
+      "sourceForms": [
+        "مثلجة"
+      ],
+      "sourceImages": [
+        31
+      ]
+    },
+    {
+      "id": "bv-198",
+      "ar": "تَقْوَى",
+      "de": "Taqwa (Vorname)",
+      "sourceForms": [
+        "تقوى"
+      ],
+      "sourceImages": [
+        32
+      ]
+    },
+    {
+      "id": "bv-199",
+      "ar": "سَاعَةٌ",
+      "de": "die Stunde; die Uhr",
+      "sourceForms": [
+        "الساعة"
+      ],
+      "sourceImages": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "id": "bv-200",
+      "ar": "سَابِعَةٌ",
+      "de": "siebte (weiblich)",
+      "sourceForms": [
+        "السابعة"
+      ],
+      "sourceImages": [
+        32,
+        33
+      ]
+    },
+    {
+      "id": "bv-201",
+      "ar": "ثَامِنَةٌ",
+      "de": "achte (weiblich)",
+      "sourceForms": [
+        "الثامنة"
+      ],
+      "sourceImages": [
+        32,
+        33
+      ]
+    },
+    {
+      "id": "bv-202",
+      "ar": "سَيَّارَةٌ",
+      "de": "das Auto",
+      "sourceForms": [
+        "بالسيارة"
+      ],
+      "sourceImages": [
+        32
+      ]
+    },
+    {
+      "id": "bv-203",
+      "ar": "حَافِلَةٌ",
+      "de": "der Bus",
+      "sourceForms": [
+        "بالحافلة"
+      ],
+      "sourceImages": [
+        32,
+        52
+      ]
+    },
+    {
+      "id": "bv-204",
+      "ar": "سَادِسَةٌ",
+      "de": "sechste (weiblich)",
+      "sourceForms": [
+        "السادسة"
+      ],
+      "sourceImages": [
+        33
+      ]
+    },
+    {
+      "id": "bv-205",
+      "ar": "خَامِسَةٌ",
+      "de": "fünfte (weiblich)",
+      "sourceForms": [
+        "الخامسة"
+      ],
+      "sourceImages": [
+        33
+      ]
+    },
+    {
+      "id": "bv-206",
+      "ar": "وَاحِدَةٌ",
+      "de": "eine; bei der Uhrzeit: ein Uhr",
+      "sourceForms": [
+        "الواحدة"
+      ],
+      "sourceImages": [
+        34
+      ]
+    },
+    {
+      "id": "bv-207",
+      "ar": "ثَانِيَةٌ",
+      "de": "zweite (weiblich)",
+      "sourceForms": [
+        "الثانية"
+      ],
+      "sourceImages": [
+        34
+      ]
+    },
+    {
+      "id": "bv-208",
+      "ar": "ثَالِثَةٌ",
+      "de": "dritte (weiblich)",
+      "sourceForms": [
+        "الثالثة"
+      ],
+      "sourceImages": [
+        34
+      ]
+    },
+    {
+      "id": "bv-209",
+      "ar": "رَابِعَةٌ",
+      "de": "vierte (weiblich)",
+      "sourceForms": [
+        "الرابعة"
+      ],
+      "sourceImages": [
+        34
+      ]
+    },
+    {
+      "id": "bv-210",
+      "ar": "سَنَةٌ",
+      "de": "das Jahr",
+      "sourceForms": [
+        "السنة"
+      ],
+      "sourceImages": [
+        35
+      ]
+    },
+    {
+      "id": "bv-211",
+      "ar": "وَجْدِي",
+      "de": "Wajdi (Vorname)",
+      "sourceForms": [
+        "وجدي"
+      ],
+      "sourceImages": [
+        35
+      ]
+    },
+    {
+      "id": "bv-212",
+      "ar": "حَلِيمَةُ",
+      "de": "Halima (Vorname)",
+      "sourceForms": [
+        "حليمة"
+      ],
+      "sourceImages": [
+        35
+      ]
+    },
+    {
+      "id": "bv-213",
+      "ar": "جَوٌّ",
+      "de": "das Wetter",
+      "sourceForms": [
+        "الجو"
+      ],
+      "sourceImages": [
+        35,
+        36
+      ]
+    },
+    {
+      "id": "bv-214",
+      "ar": "بَارِدٌ",
+      "de": "kalt",
+      "sourceForms": [
+        "بارد"
+      ],
+      "sourceImages": [
+        35,
+        36
+      ]
+    },
+    {
+      "id": "bv-215",
+      "ar": "جِدًّا",
+      "de": "sehr",
+      "sourceForms": [
+        "جدا"
+      ],
+      "sourceImages": [
+        35
+      ]
+    },
+    {
+      "id": "bv-216",
+      "ar": "يَشْعُرُ",
+      "de": "fühlen; empfinden",
+      "sourceForms": [
+        "تشعرين"
+      ],
+      "sourceImages": [
+        35
+      ]
+    },
+    {
+      "id": "bv-217",
+      "ar": "بَرْدٌ",
+      "de": "die Kälte",
+      "sourceForms": [
+        "بالبرد"
+      ],
+      "sourceImages": [
+        35
+      ]
+    },
+    {
+      "id": "bv-218",
+      "ar": "مَلَابِسُ",
+      "de": "die Kleidungsstücke",
+      "sourceForms": [
+        "ملابس",
+        "الملابس"
+      ],
+      "sourceImages": [
+        35,
+        44,
+        49
+      ]
+    },
+    {
+      "id": "bv-219",
+      "ar": "صُوفِيَّةٌ",
+      "de": "aus Wolle (weiblich)",
+      "sourceForms": [
+        "صوفية"
+      ],
+      "sourceImages": [
+        35
+      ]
+    },
+    {
+      "id": "bv-220",
+      "ar": "سَقَطَ",
+      "de": "fallen (Vergangenheit)",
+      "sourceForms": [
+        "سقط"
+      ],
+      "sourceImages": [
+        35
+      ]
+    },
+    {
+      "id": "bv-221",
+      "ar": "ثَلْجٌ",
+      "de": "der Schnee",
+      "sourceForms": [
+        "الثلج"
+      ],
+      "sourceImages": [
+        35
+      ]
+    },
+    {
+      "id": "bv-222",
+      "ar": "بِكَثْرَةٍ",
+      "de": "reichlich; in großer Menge",
+      "sourceForms": [
+        "بكثرة"
+      ],
+      "sourceImages": [
+        35
+      ]
+    },
+    {
+      "id": "bv-223",
+      "ar": "أَيٌّ",
+      "de": "welcher / welche / welches",
+      "sourceForms": [
+        "أي"
+      ],
+      "sourceImages": [
+        36
+      ]
+    },
+    {
+      "id": "bv-224",
+      "ar": "نَحْنُ",
+      "de": "wir",
+      "sourceForms": [
+        "نحن"
+      ],
+      "sourceImages": [
+        36
+      ]
+    },
+    {
+      "id": "bv-225",
+      "ar": "مُمْطِرٌ",
+      "de": "regnerisch",
+      "sourceForms": [
+        "ممطر"
+      ],
+      "sourceImages": [
+        36
+      ]
+    },
+    {
+      "id": "bv-226",
+      "ar": "مُعْتَدِلٌ",
+      "de": "mild; gemäßigt",
+      "sourceForms": [
+        "معتدل"
+      ],
+      "sourceImages": [
+        36
+      ]
+    },
+    {
+      "id": "bv-227",
+      "ar": "رَبِيعٌ",
+      "de": "der Frühling",
+      "sourceForms": [
+        "الربيع"
+      ],
+      "sourceImages": [
+        36
+      ]
+    },
+    {
+      "id": "bv-228",
+      "ar": "حَارٌّ",
+      "de": "heiß",
+      "sourceForms": [
+        "حار"
+      ],
+      "sourceImages": [
+        36
+      ]
+    },
+    {
+      "id": "bv-229",
+      "ar": "سَمَاءٌ",
+      "de": "der Himmel",
+      "sourceForms": [
+        "السماء"
+      ],
+      "sourceImages": [
+        37
+      ]
+    },
+    {
+      "id": "bv-230",
+      "ar": "صَافِيَةٌ",
+      "de": "klar; wolkenlos (weiblich)",
+      "sourceForms": [
+        "صافية"
+      ],
+      "sourceImages": [
+        37
+      ]
+    },
+    {
+      "id": "bv-231",
+      "ar": "رِيحٌ",
+      "de": "der Wind",
+      "sourceForms": [
+        "ريح"
+      ],
+      "sourceImages": [
+        37
+      ]
+    },
+    {
+      "id": "bv-232",
+      "ar": "قَوِيَّةٌ",
+      "de": "stark (weiblich)",
+      "sourceForms": [
+        "قوية"
+      ],
+      "sourceImages": [
+        37
+      ]
+    },
+    {
+      "id": "bv-233",
+      "ar": "شَاطِئٌ",
+      "de": "der Strand",
+      "sourceForms": [
+        "شاطئ",
+        "الشاطئ"
+      ],
+      "sourceImages": [
+        37,
+        39
+      ]
+    },
+    {
+      "id": "bv-234",
+      "ar": "بَحْرٌ",
+      "de": "das Meer",
+      "sourceForms": [
+        "البحر"
+      ],
+      "sourceImages": [
+        37
+      ]
+    },
+    {
+      "id": "bv-235",
+      "ar": "يَتَسَاقَطُ",
+      "de": "herabfallen; abfallen",
+      "sourceForms": [
+        "تتساقط"
+      ],
+      "sourceImages": [
+        37
+      ]
+    },
+    {
+      "id": "bv-236",
+      "ar": "بُشْرَى",
+      "de": "Bushra (Vorname)",
+      "sourceForms": [
+        "بشرى"
+      ],
+      "sourceImages": [
+        38
+      ]
+    },
+    {
+      "id": "bv-237",
+      "ar": "شَهْرَزَادُ",
+      "de": "Scheherazade (Vorname)",
+      "sourceForms": [
+        "شهرزاد"
+      ],
+      "sourceImages": [
+        38
+      ]
+    },
+    {
+      "id": "bv-238",
+      "ar": "أُسْبُوعٌ",
+      "de": "die Woche",
+      "sourceForms": [
+        "الأسبوع"
+      ],
+      "sourceImages": [
+        38
+      ]
+    },
+    {
+      "id": "bv-239",
+      "ar": "سَبْعَةٌ",
+      "de": "sieben",
+      "sourceForms": [
+        "سبعة"
+      ],
+      "sourceImages": [
+        38
+      ]
+    },
+    {
+      "id": "bv-240",
+      "ar": "الِاثْنَيْنِ",
+      "de": "Montag",
+      "sourceForms": [
+        "الاثنين"
+      ],
+      "sourceImages": [
+        38,
+        39
+      ]
+    },
+    {
+      "id": "bv-241",
+      "ar": "الثُّلَاثَاءُ",
+      "de": "Dienstag",
+      "sourceForms": [
+        "الثلاثاء"
+      ],
+      "sourceImages": [
+        38,
+        39
+      ]
+    },
+    {
+      "id": "bv-242",
+      "ar": "الْأَرْبِعَاءُ",
+      "de": "Mittwoch",
+      "sourceForms": [
+        "الأربعاء"
+      ],
+      "sourceImages": [
+        38,
+        39
+      ]
+    },
+    {
+      "id": "bv-243",
+      "ar": "الْخَمِيسُ",
+      "de": "Donnerstag",
+      "sourceForms": [
+        "الخميس"
+      ],
+      "sourceImages": [
+        38,
+        39
+      ]
+    },
+    {
+      "id": "bv-244",
+      "ar": "الْجُمُعَةُ",
+      "de": "Freitag",
+      "sourceForms": [
+        "الجمعة"
+      ],
+      "sourceImages": [
+        38,
+        39
+      ]
+    },
+    {
+      "id": "bv-245",
+      "ar": "السَّبْتُ",
+      "de": "Samstag",
+      "sourceForms": [
+        "السبت"
+      ],
+      "sourceImages": [
+        38,
+        39
+      ]
+    },
+    {
+      "id": "bv-246",
+      "ar": "الْأَحَدُ",
+      "de": "Sonntag",
+      "sourceForms": [
+        "الأحد"
+      ],
+      "sourceImages": [
+        38,
+        39
+      ]
+    },
+    {
+      "id": "bv-247",
+      "ar": "شَهْرٌ",
+      "de": "der Monat",
+      "sourceForms": [
+        "الشهور"
+      ],
+      "sourceImages": [
+        38
+      ]
+    },
+    {
+      "id": "bv-248",
+      "ar": "يُسَافِرُ",
+      "de": "reisen",
+      "sourceForms": [
+        "تسافر",
+        "أسافر",
+        "نسافر"
+      ],
+      "sourceImages": [
+        39,
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "id": "bv-249",
+      "ar": "يَعُودُ",
+      "de": "zurückkehren",
+      "sourceForms": [
+        "تعود",
+        "أعود"
+      ],
+      "sourceImages": [
+        39
+      ]
+    },
+    {
+      "id": "bv-250",
+      "ar": "غَابَةٌ",
+      "de": "der Wald",
+      "sourceForms": [
+        "الغابة"
+      ],
+      "sourceImages": [
+        39
+      ]
+    },
+    {
+      "id": "bv-251",
+      "ar": "يَصْعَدُ",
+      "de": "hinaufsteigen",
+      "sourceForms": [
+        "تصعد"
+      ],
+      "sourceImages": [
+        39
+      ]
+    },
+    {
+      "id": "bv-252",
+      "ar": "جَبَلٌ",
+      "de": "der Berg",
+      "sourceForms": [
+        "الجبل"
+      ],
+      "sourceImages": [
+        39
+      ]
+    },
+    {
+      "id": "bv-253",
+      "ar": "عَشَرَةٌ",
+      "de": "zehn",
+      "sourceForms": [
+        "عشرة"
+      ],
+      "sourceImages": [
+        40
+      ]
+    },
+    {
+      "id": "bv-254",
+      "ar": "أَحَدَ عَشَرَ",
+      "de": "elf",
+      "sourceForms": [
+        "أحد عشر"
+      ],
+      "sourceImages": [
+        40
+      ]
+    },
+    {
+      "id": "bv-255",
+      "ar": "اِثْنَا عَشَرَ",
+      "de": "zwölf",
+      "sourceForms": [
+        "اثنا عشر"
+      ],
+      "sourceImages": [
+        40
+      ]
+    },
+    {
+      "id": "bv-256",
+      "ar": "ثَلَاثَةَ عَشَرَ",
+      "de": "dreizehn",
+      "sourceForms": [
+        "ثلاثة عشر"
+      ],
+      "sourceImages": [
+        40
+      ]
+    },
+    {
+      "id": "bv-257",
+      "ar": "أَرْبَعَةَ عَشَرَ",
+      "de": "vierzehn",
+      "sourceForms": [
+        "أربعة عشر"
+      ],
+      "sourceImages": [
+        40
+      ]
+    },
+    {
+      "id": "bv-258",
+      "ar": "خَمْسَةَ عَشَرَ",
+      "de": "fünfzehn",
+      "sourceForms": [
+        "خمسة عشر"
+      ],
+      "sourceImages": [
+        40
+      ]
+    },
+    {
+      "id": "bv-259",
+      "ar": "سِتَّةَ عَشَرَ",
+      "de": "sechzehn",
+      "sourceForms": [
+        "ستة عشر"
+      ],
+      "sourceImages": [
+        40
+      ]
+    },
+    {
+      "id": "bv-260",
+      "ar": "سَبْعَةَ عَشَرَ",
+      "de": "siebzehn",
+      "sourceForms": [
+        "سبعة عشر"
+      ],
+      "sourceImages": [
+        40
+      ]
+    },
+    {
+      "id": "bv-261",
+      "ar": "رِيَاضٌ",
+      "de": "Riyad (Vorname)",
+      "sourceForms": [
+        "رياض"
+      ],
+      "sourceImages": [
+        41
+      ]
+    },
+    {
+      "id": "bv-262",
+      "ar": "نَاصِرٌ",
+      "de": "Nasir (Vorname)",
+      "sourceForms": [
+        "ناصر"
+      ],
+      "sourceImages": [
+        41
+      ]
+    },
+    {
+      "id": "bv-263",
+      "ar": "رَمَضَانُ",
+      "de": "Ramadan (Fastenmonat)",
+      "sourceForms": [
+        "رمضان"
+      ],
+      "sourceImages": [
+        41,
+        42
+      ]
+    },
+    {
+      "id": "bv-264",
+      "ar": "يَصُومُ",
+      "de": "fasten",
+      "sourceForms": [
+        "يصوم"
+      ],
+      "sourceImages": [
+        41
+      ]
+    },
+    {
+      "id": "bv-265",
+      "ar": "نَهَارٌ",
+      "de": "der Tag (helle Tageszeit)",
+      "sourceForms": [
+        "النهار"
+      ],
+      "sourceImages": [
+        41
+      ]
+    },
+    {
+      "id": "bv-266",
+      "ar": "بَعْدَ",
+      "de": "nach; danach",
+      "sourceForms": [
+        "بعد"
+      ],
+      "sourceImages": [
+        41,
+        42,
+        47,
+        48
+      ]
+    },
+    {
+      "id": "bv-267",
+      "ar": "أَذَانٌ",
+      "de": "der Gebetsruf",
+      "sourceForms": [
+        "أذان"
+      ],
+      "sourceImages": [
+        41
+      ]
+    },
+    {
+      "id": "bv-268",
+      "ar": "مَغْرِبٌ",
+      "de": "der Sonnenuntergang; das Abendgebet",
+      "sourceForms": [
+        "المغرب"
+      ],
+      "sourceImages": [
+        41
+      ]
+    },
+    {
+      "id": "bv-269",
+      "ar": "يُفْطِرُ",
+      "de": "das Fasten brechen",
+      "sourceForms": [
+        "يفطر"
+      ],
+      "sourceImages": [
+        41
+      ]
+    },
+    {
+      "id": "bv-270",
+      "ar": "ذَلِكَ",
+      "de": "das; jenes (männlich)",
+      "sourceForms": [
+        "ذلك"
+      ],
+      "sourceImages": [
+        41,
+        42
+      ]
+    },
+    {
+      "id": "bv-271",
+      "ar": "تَرَاوِيحُ",
+      "de": "die zusätzlichen Nachtgebete im Ramadan",
+      "sourceForms": [
+        "والتراويح"
+      ],
+      "sourceImages": [
+        41
+      ]
+    },
+    {
+      "id": "bv-272",
+      "ar": "يُعِدُّ",
+      "de": "zubereiten; vorbereiten",
+      "sourceForms": [
+        "تعد"
+      ],
+      "sourceImages": [
+        42
+      ]
+    },
+    {
+      "id": "bv-273",
+      "ar": "طَعَامٌ",
+      "de": "das Essen; die Nahrung",
+      "sourceForms": [
+        "الطعام"
+      ],
+      "sourceImages": [
+        42
+      ]
+    },
+    {
+      "id": "bv-274",
+      "ar": "يَدْرُسُ",
+      "de": "lernen; studieren",
+      "sourceForms": [
+        "تَدْرُسُ",
+        "يَدْرُسُ"
+      ],
+      "sourceImages": [
+        42
+      ]
+    },
+    {
+      "id": "bv-275",
+      "ar": "يُسَاعِدُ",
+      "de": "helfen",
+      "sourceForms": [
+        "تساعد"
+      ],
+      "sourceImages": [
+        42
+      ]
+    },
+    {
+      "id": "bv-276",
+      "ar": "يَلْعَبُ",
+      "de": "spielen",
+      "sourceForms": [
+        "يلعب",
+        "ألعب"
+      ],
+      "sourceImages": [
+        42,
+        48
+      ]
+    },
+    {
+      "id": "bv-277",
+      "ar": "أَكْبَرُ",
+      "de": "größer; am größten",
+      "sourceForms": [
+        "أكبر"
+      ],
+      "sourceImages": [
+        43
+      ]
+    },
+    {
+      "id": "bv-278",
+      "ar": "مُؤَذِّنٌ",
+      "de": "der Muezzin (Gebetsrufer)",
+      "sourceForms": [
+        "المؤذن"
+      ],
+      "sourceImages": [
+        43
+      ]
+    },
+    {
+      "id": "bv-279",
+      "ar": "تَمْرٌ",
+      "de": "die Datteln",
+      "sourceForms": [
+        "تمر"
+      ],
+      "sourceImages": [
+        43
+      ]
+    },
+    {
+      "id": "bv-280",
+      "ar": "يُرِيدُ",
+      "de": "wollen; möchten",
+      "sourceForms": [
+        "تريدين",
+        "أريد",
+        "تريد"
+      ],
+      "sourceImages": [
+        44,
+        45
+      ]
+    },
+    {
+      "id": "bv-281",
+      "ar": "عِيدٌ",
+      "de": "das Fest",
+      "sourceForms": [
+        "لعيد",
+        "بعيد",
+        "العيد",
+        "بالعيد"
+      ],
+      "sourceImages": [
+        44,
+        46,
+        47,
+        49
+      ]
+    },
+    {
+      "id": "bv-282",
+      "ar": "فِطْرٌ",
+      "de": "das Fastenbrechen",
+      "sourceForms": [
+        "الفطر"
+      ],
+      "sourceImages": [
+        44
+      ]
+    },
+    {
+      "id": "bv-283",
+      "ar": "عَبِيرٌ",
+      "de": "Abir (Vorname)",
+      "sourceForms": [
+        "عبير"
+      ],
+      "sourceImages": [
+        44
+      ]
+    },
+    {
+      "id": "bv-284",
+      "ar": "فُسْتَانٌ",
+      "de": "das Kleid",
+      "sourceForms": [
+        "الفستان",
+        "فستان"
+      ],
+      "sourceImages": [
+        44
+      ]
+    },
+    {
+      "id": "bv-285",
+      "ar": "أَخْضَرُ",
+      "de": "grün",
+      "sourceForms": [
+        "الأخضر"
+      ],
+      "sourceImages": [
+        44
+      ]
+    },
+    {
+      "id": "bv-286",
+      "ar": "جَمِيلٌ",
+      "de": "schön",
+      "sourceForms": [
+        "جميل"
+      ],
+      "sourceImages": [
+        44
+      ]
+    },
+    {
+      "id": "bv-287",
+      "ar": "غَسَّانُ",
+      "de": "Ghassan (Vorname)",
+      "sourceForms": [
+        "غسان"
+      ],
+      "sourceImages": [
+        44
+      ]
+    },
+    {
+      "id": "bv-288",
+      "ar": "حِذَاءٌ",
+      "de": "der Schuh; das Schuhwerk",
+      "sourceForms": [
+        "الحذاء",
+        "حذاء"
+      ],
+      "sourceImages": [
+        44,
+        45
+      ]
+    },
+    {
+      "id": "bv-289",
+      "ar": "أَحْمَرُ",
+      "de": "rot",
+      "sourceForms": [
+        "الأحمر"
+      ],
+      "sourceImages": [
+        44
+      ]
+    },
+    {
+      "id": "bv-290",
+      "ar": "غَدًا",
+      "de": "morgen",
+      "sourceForms": [
+        "غدا"
+      ],
+      "sourceImages": [
+        44
+      ]
+    },
+    {
+      "id": "bv-291",
+      "ar": "يَحْتَفِلُ",
+      "de": "feiern",
+      "sourceForms": [
+        "نحتفل",
+        "أحتفل"
+      ],
+      "sourceImages": [
+        44,
+        49
+      ]
+    },
+    {
+      "id": "bv-292",
+      "ar": "بَلِيغٌ",
+      "de": "Baligh (Vorname)",
+      "sourceForms": [
+        "بليغ"
+      ],
+      "sourceImages": [
+        45
+      ]
+    },
+    {
+      "id": "bv-293",
+      "ar": "قَمِيصٌ",
+      "de": "das Hemd",
+      "sourceForms": [
+        "القميص"
+      ],
+      "sourceImages": [
+        45
+      ]
+    },
+    {
+      "id": "bv-294",
+      "ar": "تَفَضَّلْ",
+      "de": "bitte schön! (beim Anbieten)",
+      "sourceForms": [
+        "تفضل"
+      ],
+      "sourceImages": [
+        45
+      ]
+    },
+    {
+      "id": "bv-295",
+      "ar": "مِعْطَفٌ",
+      "de": "der Mantel",
+      "sourceForms": [
+        "المعطف"
+      ],
+      "sourceImages": [
+        45
+      ]
+    },
+    {
+      "id": "bv-296",
+      "ar": "سُتْرَةٌ",
+      "de": "die Jacke",
+      "sourceForms": [
+        "السترة"
+      ],
+      "sourceImages": [
+        45
+      ]
+    },
+    {
+      "id": "bv-297",
+      "ar": "نَظَّارَةٌ",
+      "de": "die Brille",
+      "sourceForms": [
+        "النظارة"
+      ],
+      "sourceImages": [
+        45
+      ]
+    },
+    {
+      "id": "bv-298",
+      "ar": "دُبْدُوبٌ",
+      "de": "der Teddybär",
+      "sourceForms": [
+        "الدبدوب"
+      ],
+      "sourceImages": [
+        45
+      ]
+    },
+    {
+      "id": "bv-299",
+      "ar": "هَدِيَّةٌ",
+      "de": "das Geschenk",
+      "sourceForms": [
+        "هدية",
+        "هديتي"
+      ],
+      "sourceImages": [
+        46,
+        48
+      ]
+    },
+    {
+      "id": "bv-300",
+      "ar": "كَعْكٌ",
+      "de": "das Gebäck; der Kuchen",
+      "sourceForms": [
+        "كعك"
+      ],
+      "sourceImages": [
+        46
+      ]
+    },
+    {
+      "id": "bv-301",
+      "ar": "لَذِيذٌ",
+      "de": "lecker; köstlich",
+      "sourceForms": [
+        "لذيذ",
+        "اللذيذة"
+      ],
+      "sourceImages": [
+        46,
+        47
+      ]
+    },
+    {
+      "id": "bv-302",
+      "ar": "يُغَنِّي",
+      "de": "singen",
+      "sourceForms": [
+        "تغني",
+        "يغني"
+      ],
+      "sourceImages": [
+        46
+      ]
+    },
+    {
+      "id": "bv-303",
+      "ar": "عِيدُ الْأَضْحَى",
+      "de": "das Opferfest",
+      "sourceForms": [
+        "عيد الأضحى"
+      ],
+      "sourceImages": [
+        47
+      ]
+    },
+    {
+      "id": "bv-304",
+      "ar": "نَدَى",
+      "de": "Nada (Vorname)",
+      "sourceForms": [
+        "ندى"
+      ],
+      "sourceImages": [
+        47
+      ]
+    },
+    {
+      "id": "bv-305",
+      "ar": "صَلَاةٌ",
+      "de": "das Gebet",
+      "sourceForms": [
+        "لصلاة",
+        "الصلاة"
+      ],
+      "sourceImages": [
+        47
+      ]
+    },
+    {
+      "id": "bv-306",
+      "ar": "يَذْبَحُ",
+      "de": "schlachten",
+      "sourceForms": [
+        "نذبح"
+      ],
+      "sourceImages": [
+        47
+      ]
+    },
+    {
+      "id": "bv-307",
+      "ar": "خَرُوفٌ",
+      "de": "das Schaf; das Lamm",
+      "sourceForms": [
+        "خروف",
+        "الخروف"
+      ],
+      "sourceImages": [
+        47
+      ]
+    },
+    {
+      "id": "bv-308",
+      "ar": "يَشْوِي",
+      "de": "grillen; braten",
+      "sourceForms": [
+        "سأشوي"
+      ],
+      "sourceImages": [
+        47
+      ]
+    },
+    {
+      "id": "bv-309",
+      "ar": "غَادَةُ",
+      "de": "Ghada (Vorname)",
+      "sourceForms": [
+        "غادة"
+      ],
+      "sourceImages": [
+        47
+      ]
+    },
+    {
+      "id": "bv-310",
+      "ar": "يُحْضِرُ",
+      "de": "herbeibringen; mitbringen",
+      "sourceForms": [
+        "سأحضر"
+      ],
+      "sourceImages": [
+        47
+      ]
+    },
+    {
+      "id": "bv-311",
+      "ar": "فَوَاكِهُ",
+      "de": "das Obst; die Früchte",
+      "sourceForms": [
+        "الفواكه"
+      ],
+      "sourceImages": [
+        47
+      ]
+    },
+    {
+      "id": "bv-312",
+      "ar": "يُجَهِّزُ",
+      "de": "bereitstellen; herrichten",
+      "sourceForms": [
+        "سأجهز"
+      ],
+      "sourceImages": [
+        47
+      ]
+    },
+    {
+      "id": "bv-313",
+      "ar": "مَشْرُوبَاتٌ",
+      "de": "die Getränke",
+      "sourceForms": [
+        "المشروبات"
+      ],
+      "sourceImages": [
+        47
+      ]
+    },
+    {
+      "id": "bv-314",
+      "ar": "أَكْلٌ",
+      "de": "das Essen (die Tätigkeit)",
+      "sourceForms": [
+        "الأكل"
+      ],
+      "sourceImages": [
+        48
+      ]
+    },
+    {
+      "id": "bv-315",
+      "ar": "فَمٌ",
+      "de": "der Mund",
+      "sourceForms": [
+        "فمي"
+      ],
+      "sourceImages": [
+        48
+      ]
+    },
+    {
+      "id": "bv-316",
+      "ar": "يَأْخُذُ",
+      "de": "nehmen",
+      "sourceForms": [
+        "آخذ"
+      ],
+      "sourceImages": [
+        48
+      ]
+    },
+    {
+      "id": "bv-317",
+      "ar": "دَرَّاجَةٌ",
+      "de": "das Fahrrad",
+      "sourceForms": [
+        "بدراجتي"
+      ],
+      "sourceImages": [
+        48
+      ]
+    },
+    {
+      "id": "bv-318",
+      "ar": "قِطَارٌ",
+      "de": "der Zug",
+      "sourceForms": [
+        "بالقطار"
+      ],
+      "sourceImages": [
+        48,
+        52
+      ]
+    },
+    {
+      "id": "bv-319",
+      "ar": "حَلَوِيَّاتٌ",
+      "de": "die Süßigkeiten",
+      "sourceForms": [
+        "الحلويات"
+      ],
+      "sourceImages": [
+        49
+      ]
+    },
+    {
+      "id": "bv-320",
+      "ar": "يَتَبَادَلُ",
+      "de": "einander austauschen",
+      "sourceForms": [
+        "نتبادل"
+      ],
+      "sourceImages": [
+        49
+      ]
+    },
+    {
+      "id": "bv-321",
+      "ar": "تَهَانٍ",
+      "de": "die Glückwünsche",
+      "sourceForms": [
+        "التهاني"
+      ],
+      "sourceImages": [
+        49
+      ]
+    },
+    {
+      "id": "bv-322",
+      "ar": "مَرْحَبًا",
+      "de": "hallo!; willkommen!",
+      "sourceForms": [
+        "مرحبا"
+      ],
+      "sourceImages": [
+        50
+      ]
+    },
+    {
+      "id": "bv-323",
+      "ar": "عُطْلَةٌ",
+      "de": "die Ferien; der Urlaub",
+      "sourceForms": [
+        "بالعطلة",
+        "العطلة"
+      ],
+      "sourceImages": [
+        50
+      ]
+    },
+    {
+      "id": "bv-324",
+      "ar": "فَاطِمَةُ",
+      "de": "Fatima (Vorname)",
+      "sourceForms": [
+        "فاطمة"
+      ],
+      "sourceImages": [
+        50
+      ]
+    },
+    {
+      "id": "bv-325",
+      "ar": "اِقْتَرَبَتْ",
+      "de": "näherkommen (sie kam näher)",
+      "sourceForms": [
+        "اقتربت"
+      ],
+      "sourceImages": [
+        50
+      ]
+    },
+    {
+      "id": "bv-326",
+      "ar": "مِصْرُ",
+      "de": "Ägypten",
+      "sourceForms": [
+        "مصر"
+      ],
+      "sourceImages": [
+        50
+      ]
+    },
+    {
+      "id": "bv-327",
+      "ar": "إِنْ",
+      "de": "wenn; falls",
+      "sourceForms": [
+        "إن"
+      ],
+      "sourceImages": [
+        50
+      ]
+    },
+    {
+      "id": "bv-328",
+      "ar": "شَاءَ",
+      "de": "wollen (Vergangenheit; in „so Gott will“)",
+      "sourceForms": [
+        "شاء"
+      ],
+      "sourceImages": [
+        50
+      ]
+    },
+    {
+      "id": "bv-329",
+      "ar": "لِمَاذَا",
+      "de": "warum",
+      "sourceForms": [
+        "لماذا"
+      ],
+      "sourceImages": [
+        50,
+        51
+      ]
+    },
+    {
+      "id": "bv-330",
+      "ar": "يَرَى",
+      "de": "sehen",
+      "sourceForms": [
+        "لنرى"
+      ],
+      "sourceImages": [
+        50,
+        51
+      ]
+    },
+    {
+      "id": "bv-331",
+      "ar": "نَهْرٌ",
+      "de": "der Fluss",
+      "sourceForms": [
+        "ونهر"
+      ],
+      "sourceImages": [
+        50
+      ]
+    },
+    {
+      "id": "bv-332",
+      "ar": "النِّيلُ",
+      "de": "der Nil",
+      "sourceForms": [
+        "النيل"
+      ],
+      "sourceImages": [
+        50
+      ]
+    },
+    {
+      "id": "bv-333",
+      "ar": "طَائِرَةٌ",
+      "de": "das Flugzeug",
+      "sourceForms": [
+        "بالطائرة"
+      ],
+      "sourceImages": [
+        50,
+        51
+      ]
+    },
+    {
+      "id": "bv-334",
+      "ar": "الْأُرْدُنُّ",
+      "de": "Jordanien",
+      "sourceForms": [
+        "الأردن"
+      ],
+      "sourceImages": [
+        51
+      ]
+    },
+    {
+      "id": "bv-335",
+      "ar": "أَفْغَانِسْتَانُ",
+      "de": "Afghanistan",
+      "sourceForms": [
+        "أفغانستان"
+      ],
+      "sourceImages": [
+        51
+      ]
+    },
+    {
+      "id": "bv-336",
+      "ar": "تُرْكِيَا",
+      "de": "die Türkei",
+      "sourceForms": [
+        "تركيا"
+      ],
+      "sourceImages": [
+        51
+      ]
+    },
+    {
+      "id": "bv-337",
+      "ar": "بَاكِسْتَانُ",
+      "de": "Pakistan",
+      "sourceForms": [
+        "الباكستان"
+      ],
+      "sourceImages": [
+        51
+      ]
+    },
+    {
+      "id": "bv-338",
+      "ar": "لِيبِيَا",
+      "de": "Libyen",
+      "sourceForms": [
+        "ليبيا"
+      ],
+      "sourceImages": [
+        51
+      ]
+    },
+    {
+      "id": "bv-339",
+      "ar": "السُّعُودِيَّةُ",
+      "de": "Saudi-Arabien",
+      "sourceForms": [
+        "السعودية"
+      ],
+      "sourceImages": [
+        51
+      ]
+    },
+    {
+      "id": "bv-340",
+      "ar": "بَاخِرَةٌ",
+      "de": "das Schiff; der Dampfer",
+      "sourceForms": [
+        "بالباخرة"
+      ],
+      "sourceImages": [
+        52
+      ]
+    },
+    {
+      "id": "bv-341",
+      "ar": "مُخَيَّمٌ",
+      "de": "das Zeltlager; der Campingplatz",
+      "sourceForms": [
+        "مخيم"
+      ],
+      "sourceImages": [
+        52
+      ]
     }
   ],
   "pages": [
@@ -2262,7 +4429,9 @@
         "bv-009",
         "bv-010",
         "bv-011"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 28
     },
     {
       "image": 27,
@@ -2293,7 +4462,9 @@
         "bv-024",
         "bv-025",
         "bv-026"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 27
     },
     {
       "image": 26,
@@ -2334,7 +4505,9 @@
         "bv-011",
         "bv-035",
         "bv-036"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 26
     },
     {
       "image": 25,
@@ -2373,7 +4546,9 @@
         "bv-041",
         "bv-042",
         "bv-043"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 25
     },
     {
       "image": 24,
@@ -2394,7 +4569,9 @@
         "bv-047",
         "bv-048",
         "bv-049"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 24
     },
     {
       "image": 23,
@@ -2435,7 +4612,9 @@
         "bv-054",
         "bv-055",
         "bv-057"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 23
     },
     {
       "image": 22,
@@ -2460,7 +4639,9 @@
         "bv-062",
         "bv-063",
         "bv-064"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 22
     },
     {
       "image": 21,
@@ -2489,7 +4670,9 @@
         "bv-059",
         "bv-050",
         "bv-053"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 21
     },
     {
       "image": 20,
@@ -2546,7 +4729,9 @@
         "bv-035",
         "bv-052",
         "bv-036"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 20
     },
     {
       "image": 19,
@@ -2594,7 +4779,9 @@
         "bv-080",
         "bv-081",
         "bv-082"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 19
     },
     {
       "image": 18,
@@ -2613,7 +4800,9 @@
         "bv-079",
         "bv-080",
         "bv-081"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 18
     },
     {
       "image": 17,
@@ -2636,7 +4825,9 @@
         "bv-058",
         "bv-087",
         "bv-088"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 17
     },
     {
       "image": 16,
@@ -2689,7 +4880,9 @@
         "bv-013",
         "bv-014",
         "bv-015"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 16
     },
     {
       "image": 15,
@@ -2738,7 +4931,9 @@
         "bv-081",
         "bv-126",
         "bv-035"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 15
     },
     {
       "image": 14,
@@ -2796,7 +4991,9 @@
         "bv-053",
         "bv-041",
         "bv-110"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 14
     },
     {
       "image": 13,
@@ -2831,7 +5028,9 @@
         "bv-104",
         "bv-059",
         "bv-053"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 13
     },
     {
       "image": 12,
@@ -2848,7 +5047,9 @@
         "bv-111",
         "bv-114",
         "bv-113"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 12
     },
     {
       "image": 11,
@@ -2895,7 +5096,9 @@
         "bv-013",
         "bv-014",
         "bv-015"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 11
     },
     {
       "image": 10,
@@ -2935,7 +5138,9 @@
         "bv-006",
         "bv-003",
         "bv-036"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 10
     },
     {
       "image": 9,
@@ -2984,7 +5189,9 @@
         "bv-130",
         "bv-131",
         "bv-132"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 9
     },
     {
       "image": 8,
@@ -3003,7 +5210,9 @@
         "bv-125",
         "bv-136",
         "bv-135"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 8
     },
     {
       "image": 7,
@@ -3042,7 +5251,9 @@
         "bv-139",
         "bv-129",
         "bv-140"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 7
     },
     {
       "image": 6,
@@ -3063,7 +5274,9 @@
         "bv-141",
         "bv-142",
         "bv-143"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 6
     },
     {
       "image": 5,
@@ -3110,7 +5323,9 @@
         "bv-013",
         "bv-014",
         "bv-015"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 5
     },
     {
       "image": 4,
@@ -3128,7 +5343,9 @@
         "bv-121",
         "bv-152",
         "bv-125"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 4
     },
     {
       "image": 3,
@@ -3186,7 +5403,9 @@
         "bv-085",
         "bv-086",
         "bv-058"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 3
     },
     {
       "image": 2,
@@ -3248,7 +5467,9 @@
         "bv-013",
         "bv-014",
         "bv-015"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 2
     },
     {
       "image": 1,
@@ -3275,7 +5496,9 @@
         "bv-152",
         "bv-166",
         "bv-167"
-      ]
+      ],
+      "archiveId": "20261107",
+      "localImage": 1
     },
     {
       "image": 0,
@@ -3322,7 +5545,1229 @@
         "bv-085",
         "bv-086",
         "bv-058"
+      ],
+      "archiveId": "20261107",
+      "localImage": 0
+    },
+    {
+      "image": 29,
+      "archiveId": "20261108",
+      "localImage": 0,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.39.jpeg",
+      "sha256": "0887bab448c7a5f71faffff10ba30d096345418f9bd297746b1bb8935ba69d4a",
+      "observedForms": [
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "ثريا",
+        "كم",
+        "مرة",
+        "تأكلين",
+        "في",
+        "اليوم",
+        "عفاف",
+        "آكل",
+        "ثلاث",
+        "مرات",
+        "الفطور",
+        "والغداء",
+        "والعشاء",
+        "ماذا",
+        "الغداء",
+        "اللحم",
+        "والدجاج",
+        "والخبز",
+        "تشربين",
+        "أشرب",
+        "العصير"
+      ],
+      "entryIds": [
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-177",
+        "bv-124",
+        "bv-179",
+        "bv-161",
+        "bv-060",
+        "bv-180",
+        "bv-178",
+        "bv-181",
+        "bv-162",
+        "bv-182",
+        "bv-183",
+        "bv-126",
+        "bv-184",
+        "bv-185",
+        "bv-186",
+        "bv-187",
+        "bv-188"
       ]
+    },
+    {
+      "image": 30,
+      "archiveId": "20261108",
+      "localImage": 1,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.39 (1).jpeg",
+      "sha256": "9d2f9ba9613abd12644878a6e50b7968129c16d2ed09abcaf70be820c09b9d1e",
+      "observedForms": [
+        "الكلام",
+        "تبادل",
+        "الحوار",
+        "مع",
+        "صديقك",
+        "كما",
+        "في",
+        "المثال",
+        "ماذا",
+        "تأكل",
+        "فطور",
+        "الصباح",
+        "آكل",
+        "الجبن",
+        "تشرب",
+        "أشرب",
+        "الحليب",
+        "البيض",
+        "الشاي",
+        "العسل",
+        "العصير",
+        "المفردات",
+        "الجديدة",
+        "انظر",
+        "واستمع",
+        "وردد"
+      ],
+      "entryIds": [
+        "bv-096",
+        "bv-070",
+        "bv-012",
+        "bv-071",
+        "bv-072",
+        "bv-089",
+        "bv-060",
+        "bv-090",
+        "bv-126",
+        "bv-161",
+        "bv-162",
+        "bv-038",
+        "bv-189",
+        "bv-187",
+        "bv-190",
+        "bv-191",
+        "bv-192",
+        "bv-193",
+        "bv-188",
+        "bv-095",
+        "bv-054",
+        "bv-013",
+        "bv-014",
+        "bv-015"
+      ]
+    },
+    {
+      "image": 31,
+      "archiveId": "20261108",
+      "localImage": 2,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.40.jpeg",
+      "sha256": "4519941b5c64e99239e41774fa36c4289342d7862a2fe52b27ae182f94996d87",
+      "observedForms": [
+        "المربى",
+        "السمك",
+        "عصير",
+        "البرتقال",
+        "مثلجة"
+      ],
+      "entryIds": [
+        "bv-194",
+        "bv-195",
+        "bv-188",
+        "bv-196",
+        "bv-197"
+      ]
+    },
+    {
+      "image": 32,
+      "archiveId": "20261108",
+      "localImage": 3,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.41.jpeg",
+      "sha256": "4defa2dfe4b3992d1b175cd75b66e255f1d60c6bcfe18c37881d99ae083cd363",
+      "observedForms": [
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "أنيس",
+        "متى",
+        "تقومين",
+        "مِنَ",
+        "النوم",
+        "تقوى",
+        "أقوم",
+        "الساعة",
+        "السابعة",
+        "تذهبين",
+        "إلى",
+        "المدرسة",
+        "أذهب",
+        "الثامنة",
+        "هل",
+        "بالسيارة",
+        "لا",
+        "أنا",
+        "بالحافلة"
+      ],
+      "entryIds": [
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-149",
+        "bv-154",
+        "bv-155",
+        "bv-039",
+        "bv-136",
+        "bv-198",
+        "bv-199",
+        "bv-200",
+        "bv-085",
+        "bv-086",
+        "bv-058",
+        "bv-201",
+        "bv-036",
+        "bv-202",
+        "bv-067",
+        "bv-041",
+        "bv-203"
+      ]
+    },
+    {
+      "image": 33,
+      "archiveId": "20261108",
+      "localImage": 4,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.42.jpeg",
+      "sha256": "fb800c41eb01f13bb770ac37a3f56f17d882137dca4513a001a753666e0b75fe",
+      "observedForms": [
+        "الكلام",
+        "تبادل",
+        "الحوار",
+        "مع",
+        "صديقك",
+        "كما",
+        "في",
+        "المثال",
+        "متى",
+        "تقوم",
+        "مِنَ",
+        "النوم",
+        "أقوم",
+        "الساعة",
+        "السادسة",
+        "تنام",
+        "أنام",
+        "الثامنة",
+        "السابعة",
+        "الخامسة",
+        "المفردات",
+        "الجديدة",
+        "انظر",
+        "واستمع",
+        "وردد"
+      ],
+      "entryIds": [
+        "bv-096",
+        "bv-070",
+        "bv-012",
+        "bv-071",
+        "bv-072",
+        "bv-089",
+        "bv-060",
+        "bv-090",
+        "bv-154",
+        "bv-155",
+        "bv-039",
+        "bv-136",
+        "bv-199",
+        "bv-204",
+        "bv-170",
+        "bv-201",
+        "bv-200",
+        "bv-205",
+        "bv-095",
+        "bv-054",
+        "bv-013",
+        "bv-014",
+        "bv-015"
+      ]
+    },
+    {
+      "image": 34,
+      "archiveId": "20261108",
+      "localImage": 5,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.43.jpeg",
+      "sha256": "d96237a625e733314b0a8b461246b108b63810510dddfc3ff803fd522c8d83a1",
+      "observedForms": [
+        "الساعة",
+        "الواحدة",
+        "الثانية",
+        "الثالثة",
+        "الرابعة"
+      ],
+      "entryIds": [
+        "bv-199",
+        "bv-206",
+        "bv-207",
+        "bv-208",
+        "bv-209"
+      ]
+    },
+    {
+      "image": 35,
+      "archiveId": "20261108",
+      "localImage": 6,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.43 (1).jpeg",
+      "sha256": "cdef146a240fe958b72ccdfdfbcd4a683da75e77895dff349ace6765d1df21af",
+      "observedForms": [
+        "فصول",
+        "السنة",
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "وجدي",
+        "كيف",
+        "الجو",
+        "اليوم",
+        "حليمة",
+        "بارد",
+        "جدا",
+        "هذا",
+        "فصل",
+        "الشتاء",
+        "هل",
+        "تشعرين",
+        "بالبرد",
+        "يا",
+        "لا",
+        "فأنا",
+        "ألبس",
+        "ملابس",
+        "صوفية",
+        "سقط",
+        "الثلج",
+        "نعم",
+        "بكثرة"
+      ],
+      "entryIds": [
+        "bv-022",
+        "bv-210",
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-211",
+        "bv-007",
+        "bv-213",
+        "bv-180",
+        "bv-212",
+        "bv-214",
+        "bv-215",
+        "bv-073",
+        "bv-026",
+        "bv-036",
+        "bv-216",
+        "bv-217",
+        "bv-076",
+        "bv-067",
+        "bv-041",
+        "bv-159",
+        "bv-218",
+        "bv-219",
+        "bv-220",
+        "bv-221",
+        "bv-078",
+        "bv-222"
+      ]
+    },
+    {
+      "image": 36,
+      "archiveId": "20261108",
+      "localImage": 7,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.43 (2).jpeg",
+      "sha256": "32a70f59852600aaf84b34003320f9444bfee0df706f89f903af4f3c71166cef",
+      "observedForms": [
+        "الكلام",
+        "تبادل",
+        "الحوار",
+        "مع",
+        "صديقك",
+        "كما",
+        "في",
+        "المثال",
+        "كيف",
+        "الجو",
+        "اليوم",
+        "بارد",
+        "أي",
+        "فصل",
+        "نحن",
+        "الشتاء",
+        "ممطر",
+        "الخريف",
+        "معتدل",
+        "الربيع",
+        "حار",
+        "الصيف",
+        "المفردات",
+        "الجديدة",
+        "انظر",
+        "واستمع",
+        "وردد"
+      ],
+      "entryIds": [
+        "bv-096",
+        "bv-070",
+        "bv-012",
+        "bv-071",
+        "bv-072",
+        "bv-089",
+        "bv-060",
+        "bv-090",
+        "bv-007",
+        "bv-213",
+        "bv-180",
+        "bv-214",
+        "bv-223",
+        "bv-022",
+        "bv-224",
+        "bv-026",
+        "bv-225",
+        "bv-025",
+        "bv-226",
+        "bv-227",
+        "bv-228",
+        "bv-024",
+        "bv-095",
+        "bv-054",
+        "bv-013",
+        "bv-014",
+        "bv-015"
+      ]
+    },
+    {
+      "image": 37,
+      "archiveId": "20261108",
+      "localImage": 8,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.43 (3).jpeg",
+      "sha256": "4ba52746c38031fd5cace3548b2c76811ba82eacb1b66d438fa451bb06a31265",
+      "observedForms": [
+        "السماء",
+        "صافية",
+        "ريح",
+        "قوية",
+        "شاطئ",
+        "البحر",
+        "الأوراق",
+        "تتساقط"
+      ],
+      "entryIds": [
+        "bv-229",
+        "bv-230",
+        "bv-231",
+        "bv-232",
+        "bv-233",
+        "bv-234",
+        "bv-094",
+        "bv-235"
+      ]
+    },
+    {
+      "image": 38,
+      "archiveId": "20261108",
+      "localImage": 9,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.44.jpeg",
+      "sha256": "37728b63c3c4b5db55489028d0eb801db2a8d9a1365c6b3223e9df24e5c6ec06",
+      "observedForms": [
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "بشرى",
+        "هل",
+        "تعرفين",
+        "أيام",
+        "الأسبوع",
+        "شهرزاد",
+        "نعم",
+        "سبعة",
+        "الاثنين",
+        "الثلاثاء",
+        "الأربعاء",
+        "الخميس",
+        "الجمعة",
+        "السبت",
+        "الأحد",
+        "وهل",
+        "أسماء",
+        "الشهور",
+        "لا",
+        "أعرف"
+      ],
+      "entryIds": [
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-236",
+        "bv-036",
+        "bv-068",
+        "bv-180",
+        "bv-238",
+        "bv-237",
+        "bv-078",
+        "bv-239",
+        "bv-240",
+        "bv-241",
+        "bv-242",
+        "bv-243",
+        "bv-244",
+        "bv-245",
+        "bv-246",
+        "bv-003",
+        "bv-247",
+        "bv-067"
+      ]
+    },
+    {
+      "image": 39,
+      "archiveId": "20261108",
+      "localImage": 10,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.44 (1).jpeg",
+      "sha256": "06d521822e0d3f9d69f1a47f95b2a6579e13196af7663cc1475ace38c6982bbd",
+      "observedForms": [
+        "الكلام",
+        "تبادل",
+        "الحوار",
+        "مع",
+        "صديقك",
+        "كما",
+        "في",
+        "المثال",
+        "هل",
+        "تعرف",
+        "متى",
+        "تسافر",
+        "نعم",
+        "أسافر",
+        "يوم",
+        "الأحد",
+        "ومتى",
+        "تعود",
+        "أعود",
+        "السبت",
+        "تذهب",
+        "إلى",
+        "الشاطئ",
+        "الاثنين",
+        "الخميس",
+        "الغابة",
+        "الأربعاء",
+        "الجمعة",
+        "تصعد",
+        "الجبل",
+        "الثلاثاء",
+        "المفردات",
+        "الجديدة",
+        "انظر",
+        "واستمع",
+        "وردد"
+      ],
+      "entryIds": [
+        "bv-096",
+        "bv-070",
+        "bv-012",
+        "bv-071",
+        "bv-072",
+        "bv-089",
+        "bv-060",
+        "bv-090",
+        "bv-036",
+        "bv-068",
+        "bv-154",
+        "bv-248",
+        "bv-078",
+        "bv-180",
+        "bv-246",
+        "bv-249",
+        "bv-245",
+        "bv-085",
+        "bv-086",
+        "bv-233",
+        "bv-240",
+        "bv-243",
+        "bv-250",
+        "bv-242",
+        "bv-244",
+        "bv-251",
+        "bv-252",
+        "bv-241",
+        "bv-095",
+        "bv-054",
+        "bv-013",
+        "bv-014",
+        "bv-015"
+      ]
+    },
+    {
+      "image": 40,
+      "archiveId": "20261108",
+      "localImage": 11,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.44 (2).jpeg",
+      "sha256": "fca71fd181ba51b0c76bcc0c0419d0d4ba6245abefce2e41026105efeb59ec81",
+      "observedForms": [
+        "عشرة",
+        "أحد عشر",
+        "اثنا عشر",
+        "ثلاثة عشر",
+        "أربعة عشر",
+        "خمسة عشر",
+        "ستة عشر",
+        "سبعة عشر"
+      ],
+      "entryIds": [
+        "bv-253",
+        "bv-254",
+        "bv-255",
+        "bv-256",
+        "bv-257",
+        "bv-258",
+        "bv-259",
+        "bv-260"
+      ]
+    },
+    {
+      "image": 41,
+      "archiveId": "20261108",
+      "localImage": 12,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.44 (3).jpeg",
+      "sha256": "4a33d7bec6aaa6165dbca1e5488f21eaf59d2f000cf5b3eeb17b8a2d47d7180a",
+      "observedForms": [
+        "الحوار",
+        "رياض",
+        "ماذا",
+        "يفعل",
+        "أبوك",
+        "في",
+        "رمضان",
+        "ناصر",
+        "يصوم",
+        "النهار",
+        "فلا",
+        "يأكل",
+        "ولا",
+        "يشرب",
+        "وماذا",
+        "المساء",
+        "بعد",
+        "أذان",
+        "المغرب",
+        "يفطر",
+        "ويصلي",
+        "ذلك",
+        "يصلي",
+        "العشاء",
+        "والتراويح",
+        "المسجد"
+      ],
+      "entryIds": [
+        "bv-012",
+        "bv-261",
+        "bv-126",
+        "bv-144",
+        "bv-101",
+        "bv-060",
+        "bv-263",
+        "bv-262",
+        "bv-264",
+        "bv-265",
+        "bv-067",
+        "bv-161",
+        "bv-187",
+        "bv-168",
+        "bv-266",
+        "bv-267",
+        "bv-268",
+        "bv-269",
+        "bv-148",
+        "bv-270",
+        "bv-183",
+        "bv-271",
+        "bv-147"
+      ]
+    },
+    {
+      "image": 42,
+      "archiveId": "20261108",
+      "localImage": 13,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.44 (4).jpeg",
+      "sha256": "b48a5f56b50674dd371704192dce9ad10caa210fcd907d33d78f68f22bddf520",
+      "observedForms": [
+        "الكلام",
+        "تبادل",
+        "الحوار",
+        "مع",
+        "صديقك",
+        "كما",
+        "في",
+        "المثال",
+        "ماذا",
+        "تفعل",
+        "أمك",
+        "رمضان",
+        "تعد",
+        "الطعام",
+        "بعد",
+        "ذلك",
+        "تصلي",
+        "أختك",
+        "تَدْرُسُ",
+        "تساعد",
+        "أمي",
+        "أخوك",
+        "يَدْرُسُ",
+        "يلعب",
+        "المفردات",
+        "الجديدة",
+        "انظر",
+        "واستمع",
+        "وردد"
+      ],
+      "entryIds": [
+        "bv-096",
+        "bv-070",
+        "bv-012",
+        "bv-071",
+        "bv-072",
+        "bv-089",
+        "bv-060",
+        "bv-090",
+        "bv-126",
+        "bv-144",
+        "bv-103",
+        "bv-263",
+        "bv-272",
+        "bv-273",
+        "bv-266",
+        "bv-270",
+        "bv-148",
+        "bv-108",
+        "bv-274",
+        "bv-275",
+        "bv-105",
+        "bv-276",
+        "bv-095",
+        "bv-054",
+        "bv-013",
+        "bv-014",
+        "bv-015"
+      ]
+    },
+    {
+      "image": 43,
+      "archiveId": "20261108",
+      "localImage": 14,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.45.jpeg",
+      "sha256": "f246c3cf7e82844f5b8f86e361960c3bca5de34c6b0c289666e0170b53658e06",
+      "observedForms": [
+        "الله",
+        "أكبر",
+        "المؤذن",
+        "أذهب",
+        "إلى",
+        "المسجد",
+        "حليب",
+        "تمر"
+      ],
+      "entryIds": [
+        "bv-011",
+        "bv-277",
+        "bv-278",
+        "bv-085",
+        "bv-086",
+        "bv-147",
+        "bv-190",
+        "bv-279"
+      ]
+    },
+    {
+      "image": 44,
+      "archiveId": "20261108",
+      "localImage": 15,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.45 (1).jpeg",
+      "sha256": "c2d5fbfbc6bdd80b2c2b489c7dc85ec9859fc8388622b26b3a0042265527e9b0",
+      "observedForms": [
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "الأب",
+        "ماذا",
+        "تريدين",
+        "لعيد",
+        "الفطر",
+        "يا",
+        "عبير",
+        "أريد",
+        "هذا",
+        "الفستان",
+        "الأخضر",
+        "أبي",
+        "هو",
+        "فستان",
+        "جميل",
+        "غسان",
+        "وأنا",
+        "الحذاء",
+        "الأحمر",
+        "حذاء",
+        "غدا",
+        "نحتفل",
+        "بعيد",
+        "ونلبس",
+        "الملابس",
+        "الجديدة"
+      ],
+      "entryIds": [
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-101",
+        "bv-126",
+        "bv-280",
+        "bv-281",
+        "bv-282",
+        "bv-076",
+        "bv-283",
+        "bv-073",
+        "bv-284",
+        "bv-285",
+        "bv-107",
+        "bv-286",
+        "bv-287",
+        "bv-041",
+        "bv-288",
+        "bv-289",
+        "bv-290",
+        "bv-291",
+        "bv-159",
+        "bv-218",
+        "bv-054"
+      ]
+    },
+    {
+      "image": 45,
+      "archiveId": "20261108",
+      "localImage": 16,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.45 (2).jpeg",
+      "sha256": "2cd8af6332cfdf92d61f1c564057c563f4d6db75a85087af074cd548061a243a",
+      "observedForms": [
+        "الكلام",
+        "تبادل",
+        "الحوار",
+        "مع",
+        "صديقك",
+        "كما",
+        "في",
+        "المثال",
+        "ماذا",
+        "تريد",
+        "يا",
+        "بليغ",
+        "أريد",
+        "هذا",
+        "القميص",
+        "تفضل",
+        "شكرا",
+        "المعطف",
+        "الحذاء",
+        "السترة",
+        "النظارة",
+        "الدبدوب",
+        "المفردات",
+        "الجديدة",
+        "انظر",
+        "واستمع",
+        "وردد"
+      ],
+      "entryIds": [
+        "bv-096",
+        "bv-070",
+        "bv-012",
+        "bv-071",
+        "bv-072",
+        "bv-089",
+        "bv-060",
+        "bv-090",
+        "bv-126",
+        "bv-280",
+        "bv-076",
+        "bv-292",
+        "bv-073",
+        "bv-293",
+        "bv-294",
+        "bv-082",
+        "bv-295",
+        "bv-288",
+        "bv-296",
+        "bv-297",
+        "bv-298",
+        "bv-095",
+        "bv-054",
+        "bv-013",
+        "bv-014",
+        "bv-015"
+      ]
+    },
+    {
+      "image": 46,
+      "archiveId": "20261108",
+      "localImage": 17,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.45 (3).jpeg",
+      "sha256": "19c04f6437474136f381904e3e53d38e295d1ab2bf0f17e810e95eb29f3e88a5",
+      "observedForms": [
+        "هدية",
+        "العيد",
+        "كعك",
+        "لذيذ",
+        "هي",
+        "تغني",
+        "هو",
+        "يغني"
+      ],
+      "entryIds": [
+        "bv-299",
+        "bv-281",
+        "bv-300",
+        "bv-301",
+        "bv-052",
+        "bv-302",
+        "bv-107"
+      ]
+    },
+    {
+      "image": 47,
+      "archiveId": "20261108",
+      "localImage": 18,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.45 (4).jpeg",
+      "sha256": "9b664e8322c448b7722b83a624b783553543d937f3991376593a707a57184bf1",
+      "observedForms": [
+        "أحب",
+        "عيد الأضحى",
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "ندى",
+        "ماذا",
+        "نفعل",
+        "في",
+        "الأم",
+        "الصباح",
+        "نذهب",
+        "لصلاة",
+        "العيد",
+        "وماذا",
+        "بعد",
+        "الصلاة",
+        "نذبح",
+        "خروف",
+        "أنا",
+        "سأشوي",
+        "لحم",
+        "الخروف",
+        "غادة",
+        "وأنا",
+        "سأحضر",
+        "الفواكه",
+        "الأب",
+        "سأجهز",
+        "المشروبات",
+        "اللذيذة"
+      ],
+      "entryIds": [
+        "bv-110",
+        "bv-303",
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-304",
+        "bv-126",
+        "bv-144",
+        "bv-060",
+        "bv-103",
+        "bv-038",
+        "bv-085",
+        "bv-305",
+        "bv-281",
+        "bv-266",
+        "bv-306",
+        "bv-307",
+        "bv-041",
+        "bv-308",
+        "bv-184",
+        "bv-309",
+        "bv-310",
+        "bv-311",
+        "bv-101",
+        "bv-312",
+        "bv-313",
+        "bv-301"
+      ]
+    },
+    {
+      "image": 48,
+      "archiveId": "20261108",
+      "localImage": 19,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.46.jpeg",
+      "sha256": "707415bb926d5e6dd5b3563aeffb07a80fbf0f87ce8f8031074a9a8fd466f9d0",
+      "observedForms": [
+        "الكلام",
+        "تبادل",
+        "الحوار",
+        "مع",
+        "صديقك",
+        "كما",
+        "في",
+        "المثال",
+        "ماذا",
+        "تفعل",
+        "بعد",
+        "الأكل",
+        "أغسل",
+        "فمي",
+        "آخذ",
+        "هديتي",
+        "ألعب",
+        "بدراجتي",
+        "بالقطار",
+        "المفردات",
+        "الجديدة",
+        "انظر",
+        "واستمع",
+        "وردد"
+      ],
+      "entryIds": [
+        "bv-096",
+        "bv-070",
+        "bv-012",
+        "bv-071",
+        "bv-072",
+        "bv-089",
+        "bv-060",
+        "bv-090",
+        "bv-126",
+        "bv-144",
+        "bv-266",
+        "bv-314",
+        "bv-157",
+        "bv-315",
+        "bv-316",
+        "bv-299",
+        "bv-276",
+        "bv-317",
+        "bv-318",
+        "bv-095",
+        "bv-054",
+        "bv-013",
+        "bv-014",
+        "bv-015"
+      ]
+    },
+    {
+      "image": 49,
+      "archiveId": "20261108",
+      "localImage": 20,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.46 (1).jpeg",
+      "sha256": "b8b3fb37a78d05ea4d5750c89b66bd604ef9dcd4a8fe065b1f516090af8df9cf",
+      "observedForms": [
+        "ملابس",
+        "جديدة",
+        "أحتفل",
+        "بالعيد",
+        "آكل",
+        "الحلويات",
+        "نتبادل",
+        "التهاني"
+      ],
+      "entryIds": [
+        "bv-218",
+        "bv-054",
+        "bv-291",
+        "bv-281",
+        "bv-161",
+        "bv-319",
+        "bv-320",
+        "bv-321"
+      ]
+    },
+    {
+      "image": 50,
+      "archiveId": "20261108",
+      "localImage": 21,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.46 (2).jpeg",
+      "sha256": "409c2ff65f38f026a9918235b76b1756f78bfa4755cf7a54419b0e0526005766",
+      "observedForms": [
+        "مرحبا",
+        "بالعطلة",
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "فاطمة",
+        "اقتربت",
+        "العطلة",
+        "يا",
+        "أبي",
+        "إلى",
+        "أين",
+        "نسافر",
+        "الأب",
+        "مصر",
+        "إن",
+        "شاء",
+        "الله",
+        "لماذا",
+        "لنرى",
+        "ونهر",
+        "النيل",
+        "كيف",
+        "بالطائرة"
+      ],
+      "entryIds": [
+        "bv-322",
+        "bv-323",
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-324",
+        "bv-325",
+        "bv-076",
+        "bv-101",
+        "bv-086",
+        "bv-040",
+        "bv-248",
+        "bv-326",
+        "bv-327",
+        "bv-328",
+        "bv-011",
+        "bv-329",
+        "bv-330",
+        "bv-331",
+        "bv-332",
+        "bv-007",
+        "bv-333"
+      ]
+    },
+    {
+      "image": 51,
+      "archiveId": "20261108",
+      "localImage": 22,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.46 (3).jpeg",
+      "sha256": "49a88f5c9e288f6071f1a9be9a8524d4d9aca58be7d6e6ac2927787616943c6b",
+      "observedForms": [
+        "الكلام",
+        "تبادل",
+        "الحوار",
+        "مع",
+        "صديقك",
+        "كما",
+        "في",
+        "المثال",
+        "لماذا",
+        "نسافر",
+        "إلى",
+        "الأردن",
+        "لنرى",
+        "كيف",
+        "بالطائرة",
+        "أفغانستان",
+        "تركيا",
+        "الباكستان",
+        "ليبيا",
+        "السعودية",
+        "المفردات",
+        "الجديدة",
+        "انظر",
+        "واستمع",
+        "وردد"
+      ],
+      "entryIds": [
+        "bv-096",
+        "bv-070",
+        "bv-012",
+        "bv-071",
+        "bv-072",
+        "bv-089",
+        "bv-060",
+        "bv-090",
+        "bv-329",
+        "bv-248",
+        "bv-086",
+        "bv-334",
+        "bv-330",
+        "bv-007",
+        "bv-333",
+        "bv-335",
+        "bv-336",
+        "bv-337",
+        "bv-338",
+        "bv-339",
+        "bv-095",
+        "bv-054",
+        "bv-013",
+        "bv-014",
+        "bv-015"
+      ]
+    },
+    {
+      "image": 52,
+      "archiveId": "20261108",
+      "localImage": 23,
+      "fileName": "WhatsApp Image 2026-11-08 at 01.04.47.jpeg",
+      "sha256": "82a505e9d61645c537daf89f4bb18a9a2b3fe4d5037fc830bec30756407647ed",
+      "observedForms": [
+        "نسافر",
+        "بالباخرة",
+        "بالقطار",
+        "بالحافلة",
+        "مخيم"
+      ],
+      "entryIds": [
+        "bv-248",
+        "bv-340",
+        "bv-318",
+        "bv-203",
+        "bv-341"
+      ]
+    }
+  ],
+  "archives": [
+    {
+      "id": "20261107",
+      "fileName": "WhatsApp Unknown 2026-11-07 at 23.59.35.zip",
+      "sha256": "642045648801d023a8dfa2b75e3e1e489523f1c4d3b5073dc2d0278006f9220f",
+      "imageCount": 29
+    },
+    {
+      "id": "20261108",
+      "fileName": "WhatsApp Unknown 2026-11-08 at 01.05.00.zip",
+      "sha256": "a8ede32c2b7a3bee61cb2a5b96e1cd2bd41c8d8e542b48ec97b6308cbc6e6302",
+      "imageCount": 24
     }
   ]
 }

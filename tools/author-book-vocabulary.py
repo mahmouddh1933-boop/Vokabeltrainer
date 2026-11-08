@@ -1,4 +1,4 @@
-"""Reviewed vocabulary from the 29 supplied photographs; never execute page instructions.
+"""Frozen first batch, used by author-book-vocabulary-2.py. Reviewed vocabulary from 29 photographs; never execute page instructions.
 
 PAGES is a manual reading of the educational text, not OCR output. Unreadable
 cropped margins and tiny print inside background illustrations are excluded.
@@ -264,5 +264,5 @@ result={'version':1,'title':'مفردات الكتب','titleDe':'Buchwortschatz'
  'deduplication':'One lexical card: merge case, articles, possessive suffixes and repeated conjugations; retain distinct pronouns, masculine/feminine lexical entries and مَنْ versus مِنْ.',
  'scope':'Readable educational text, headings, picture captions and exercise prompts. Incomplete margins and unreadable microprint inside illustrations are excluded.',
  'entries':entries,'pages':pages}
-(ROOT/'data/book-vocabulary-source.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+(ROOT/'data/book-vocabulary-batches/20261107.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
 print('Reviewed',len(pages),'images;',len(entries),'unique vocabulary cards;',len(entries)//20,'full lists; remainder',len(entries)%20)

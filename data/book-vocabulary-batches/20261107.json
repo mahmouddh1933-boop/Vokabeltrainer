@@ -1,0 +1,3328 @@
+{
+  "version": 1,
+  "title": "مفردات الكتب",
+  "titleDe": "Buchwortschatz",
+  "sourceArchive": "WhatsApp Unknown 2026-11-07 at 23.59.35.zip",
+  "sourceArchiveSha256": "642045648801d023a8dfa2b75e3e1e489523f1c4d3b5073dc2d0278006f9220f",
+  "sourceImageCount": 29,
+  "reviewMethod": "Manual image-by-image reading; automatic OCR is not the authority for vowel marks.",
+  "deduplication": "One lexical card: merge case, articles, possessive suffixes and repeated conjugations; retain distinct pronouns, masculine/feminine lexical entries and مَنْ versus مِنْ.",
+  "scope": "Readable educational text, headings, picture captions and exercise prompts. Incomplete margins and unreadable microprint inside illustrations are excluded.",
+  "entries": [
+    {
+      "id": "bv-001",
+      "ar": "سَلَامٌ",
+      "de": "der Frieden; Grußformel",
+      "sourceForms": [
+        "السلام"
+      ],
+      "sourceImages": [
+        28
+      ]
+    },
+    {
+      "id": "bv-002",
+      "ar": "عَلَى",
+      "de": "auf / über",
+      "sourceForms": [
+        "عليكم",
+        "وعليكم",
+        "على"
+      ],
+      "sourceImages": [
+        28,
+        26,
+        2
+      ]
+    },
+    {
+      "id": "bv-003",
+      "ar": "اِسْمٌ",
+      "de": "der Name",
+      "sourceForms": [
+        "اسمي",
+        "اسمك",
+        "اسم"
+      ],
+      "sourceImages": [
+        28,
+        25,
+        10
+      ]
+    },
+    {
+      "id": "bv-004",
+      "ar": "طَارِقٌ",
+      "de": "Tariq (Vorname)",
+      "sourceForms": [
+        "طارق"
+      ],
+      "sourceImages": [
+        28,
+        26
+      ]
+    },
+    {
+      "id": "bv-005",
+      "ar": "فَتْحِي",
+      "de": "Fathi (Vorname)",
+      "sourceForms": [
+        "فتحي"
+      ],
+      "sourceImages": [
+        28,
+        26
+      ]
+    },
+    {
+      "id": "bv-006",
+      "ar": "مَا",
+      "de": "was",
+      "sourceForms": [
+        "ما"
+      ],
+      "sourceImages": [
+        28,
+        25,
+        19,
+        15,
+        10
+      ]
+    },
+    {
+      "id": "bv-007",
+      "ar": "كَيْفَ",
+      "de": "wie",
+      "sourceForms": [
+        "كيف"
+      ],
+      "sourceImages": [
+        28
+      ]
+    },
+    {
+      "id": "bv-008",
+      "ar": "حَالٌ",
+      "de": "der Zustand; das Befinden",
+      "sourceForms": [
+        "حالك"
+      ],
+      "sourceImages": [
+        28
+      ]
+    },
+    {
+      "id": "bv-009",
+      "ar": "خَيْرٌ",
+      "de": "das Gute; gut (Befinden)",
+      "sourceForms": [
+        "بخير",
+        "الخير"
+      ],
+      "sourceImages": [
+        28,
+        26,
+        23,
+        20
+      ]
+    },
+    {
+      "id": "bv-010",
+      "ar": "حَمْدٌ",
+      "de": "das Lob",
+      "sourceForms": [
+        "والحمد"
+      ],
+      "sourceImages": [
+        28,
+        26
+      ]
+    },
+    {
+      "id": "bv-011",
+      "ar": "اللَّهُ",
+      "de": "Gott",
+      "sourceForms": [
+        "لله"
+      ],
+      "sourceImages": [
+        28,
+        26
+      ]
+    },
+    {
+      "id": "bv-012",
+      "ar": "حِوَارٌ",
+      "de": "der Dialog",
+      "sourceForms": [
+        "الحوار"
+      ],
+      "sourceImages": [
+        28,
+        25,
+        23,
+        21,
+        19,
+        16,
+        14,
+        13,
+        9,
+        7,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "bv-013",
+      "ar": "اُنْظُرْ",
+      "de": "schau hin!",
+      "sourceForms": [
+        "انظر"
+      ],
+      "sourceImages": [
+        28,
+        25,
+        23,
+        19,
+        16,
+        14,
+        13,
+        11,
+        9,
+        7,
+        5,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "bv-014",
+      "ar": "اِسْتَمِعْ",
+      "de": "höre zu!",
+      "sourceForms": [
+        "واستمع"
+      ],
+      "sourceImages": [
+        28,
+        25,
+        23,
+        19,
+        16,
+        14,
+        13,
+        11,
+        9,
+        7,
+        5,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "bv-015",
+      "ar": "رَدِّدْ",
+      "de": "sprich nach!",
+      "sourceForms": [
+        "وردد"
+      ],
+      "sourceImages": [
+        28,
+        25,
+        23,
+        19,
+        16,
+        14,
+        13,
+        11,
+        9,
+        7,
+        5,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "bv-016",
+      "ar": "أَنْتَ",
+      "de": "du (männlich)",
+      "sourceForms": [
+        "أَنْتَ"
+      ],
+      "sourceImages": [
+        27
+      ]
+    },
+    {
+      "id": "bv-017",
+      "ar": "أَنْتِ",
+      "de": "du (weiblich)",
+      "sourceForms": [
+        "أَنْتِ",
+        "وأَنْتِ"
+      ],
+      "sourceImages": [
+        27,
+        25
+      ]
+    },
+    {
+      "id": "bv-018",
+      "ar": "وَلَدٌ",
+      "de": "der Junge",
+      "sourceForms": [
+        "ولد"
+      ],
+      "sourceImages": [
+        27
+      ]
+    },
+    {
+      "id": "bv-019",
+      "ar": "بِنْتٌ",
+      "de": "das Mädchen",
+      "sourceForms": [
+        "بنت"
+      ],
+      "sourceImages": [
+        27
+      ]
+    },
+    {
+      "id": "bv-020",
+      "ar": "مُعَلِّمٌ",
+      "de": "der Lehrer",
+      "sourceForms": [
+        "معلم",
+        "المعلم"
+      ],
+      "sourceImages": [
+        27,
+        22
+      ]
+    },
+    {
+      "id": "bv-021",
+      "ar": "مُعَلِّمَةٌ",
+      "de": "die Lehrerin",
+      "sourceForms": [
+        "معلمة"
+      ],
+      "sourceImages": [
+        27
+      ]
+    },
+    {
+      "id": "bv-022",
+      "ar": "فَصْلٌ",
+      "de": "die Jahreszeit",
+      "sourceForms": [
+        "الفصول"
+      ],
+      "sourceImages": [
+        27
+      ]
+    },
+    {
+      "id": "bv-023",
+      "ar": "أَرْبَعَةٌ",
+      "de": "vier",
+      "sourceForms": [
+        "الأربعة",
+        "أربع"
+      ],
+      "sourceImages": [
+        27,
+        9
+      ]
+    },
+    {
+      "id": "bv-024",
+      "ar": "صَيْفٌ",
+      "de": "der Sommer",
+      "sourceForms": [
+        "الصيف"
+      ],
+      "sourceImages": [
+        27
+      ]
+    },
+    {
+      "id": "bv-025",
+      "ar": "خَرِيفٌ",
+      "de": "der Herbst",
+      "sourceForms": [
+        "الخريف"
+      ],
+      "sourceImages": [
+        27
+      ]
+    },
+    {
+      "id": "bv-026",
+      "ar": "شِتَاءٌ",
+      "de": "der Winter",
+      "sourceForms": [
+        "الشتاء"
+      ],
+      "sourceImages": [
+        27
+      ]
+    },
+    {
+      "id": "bv-027",
+      "ar": "قِرَاءَةٌ",
+      "de": "das Lesen",
+      "sourceForms": [
+        "القراءة"
+      ],
+      "sourceImages": [
+        26,
+        20,
+        15,
+        0
+      ]
+    },
+    {
+      "id": "bv-028",
+      "ar": "اِقْرَأْ",
+      "de": "lies!",
+      "sourceForms": [
+        "اقرأ"
+      ],
+      "sourceImages": [
+        26,
+        20,
+        15,
+        0
+      ]
+    },
+    {
+      "id": "bv-029",
+      "ar": "نَصٌّ",
+      "de": "der Text",
+      "sourceForms": [
+        "النص"
+      ],
+      "sourceImages": [
+        26,
+        20,
+        15,
+        0
+      ]
+    },
+    {
+      "id": "bv-030",
+      "ar": "ثُمَّ",
+      "de": "dann / danach",
+      "sourceForms": [
+        "ثم"
+      ],
+      "sourceImages": [
+        26,
+        20,
+        15,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-031",
+      "ar": "أَجِبْ",
+      "de": "antworte!",
+      "sourceForms": [
+        "أجب"
+      ],
+      "sourceImages": [
+        26,
+        20,
+        15
+      ]
+    },
+    {
+      "id": "bv-032",
+      "ar": "عَنْ",
+      "de": "über / zu (einem Thema)",
+      "sourceForms": [
+        "عن"
+      ],
+      "sourceImages": [
+        26,
+        20,
+        15
+      ]
+    },
+    {
+      "id": "bv-033",
+      "ar": "سُؤَالٌ",
+      "de": "die Frage",
+      "sourceForms": [
+        "الأسئلة"
+      ],
+      "sourceImages": [
+        26,
+        20,
+        15
+      ]
+    },
+    {
+      "id": "bv-034",
+      "ar": "سَلَّمَ",
+      "de": "begrüßen (mit dem Friedensgruß)",
+      "sourceForms": [
+        "سلم"
+      ],
+      "sourceImages": [
+        26
+      ]
+    },
+    {
+      "id": "bv-035",
+      "ar": "مَنْ",
+      "de": "wer",
+      "sourceForms": [
+        "مَنْ",
+        "بِمَنْ"
+      ],
+      "sourceImages": [
+        26,
+        23,
+        21,
+        20,
+        15,
+        14,
+        11,
+        10
+      ]
+    },
+    {
+      "id": "bv-036",
+      "ar": "هَلْ",
+      "de": "Fragepartikel für Ja-Nein-Fragen",
+      "sourceForms": [
+        "هل"
+      ],
+      "sourceImages": [
+        26,
+        20,
+        19,
+        16,
+        10
+      ]
+    },
+    {
+      "id": "bv-037",
+      "ar": "صَالِحَةُ",
+      "de": "Saliha (Vorname)",
+      "sourceForms": [
+        "صالحة"
+      ],
+      "sourceImages": [
+        25,
+        23,
+        20
+      ]
+    },
+    {
+      "id": "bv-038",
+      "ar": "صَبَاحٌ",
+      "de": "der Morgen; Sabah (Vorname)",
+      "sourceForms": [
+        "صباح",
+        "الصباح"
+      ],
+      "sourceImages": [
+        25,
+        23,
+        20,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-039",
+      "ar": "مِنْ",
+      "de": "aus / von",
+      "sourceForms": [
+        "مِنْ",
+        "مِنَ"
+      ],
+      "sourceImages": [
+        25,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-040",
+      "ar": "أَيْنَ",
+      "de": "wo",
+      "sourceForms": [
+        "أين"
+      ],
+      "sourceImages": [
+        25,
+        7,
+        5
+      ]
+    },
+    {
+      "id": "bv-041",
+      "ar": "أَنَا",
+      "de": "ich",
+      "sourceForms": [
+        "أنا"
+      ],
+      "sourceImages": [
+        25,
+        14
+      ]
+    },
+    {
+      "id": "bv-042",
+      "ar": "فَرَنْسَا",
+      "de": "Frankreich",
+      "sourceForms": [
+        "فرنسا"
+      ],
+      "sourceImages": [
+        25
+      ]
+    },
+    {
+      "id": "bv-043",
+      "ar": "بَلْجِيكَا",
+      "de": "Belgien",
+      "sourceForms": [
+        "بلجيكا"
+      ],
+      "sourceImages": [
+        25
+      ]
+    },
+    {
+      "id": "bv-044",
+      "ar": "خَرِيطَةٌ",
+      "de": "die Landkarte",
+      "sourceForms": [
+        "خريطة"
+      ],
+      "sourceImages": [
+        24
+      ]
+    },
+    {
+      "id": "bv-045",
+      "ar": "أَمْرِيكَا",
+      "de": "Amerika",
+      "sourceForms": [
+        "أمريكا"
+      ],
+      "sourceImages": [
+        24
+      ]
+    },
+    {
+      "id": "bv-046",
+      "ar": "دَوْلَةٌ",
+      "de": "der Staat",
+      "sourceForms": [
+        "الدول"
+      ],
+      "sourceImages": [
+        24
+      ]
+    },
+    {
+      "id": "bv-047",
+      "ar": "عَرَبِيَّةٌ",
+      "de": "arabisch (weiblich)",
+      "sourceForms": [
+        "العربية"
+      ],
+      "sourceImages": [
+        24
+      ]
+    },
+    {
+      "id": "bv-048",
+      "ar": "أُورُوبَّا",
+      "de": "Europa",
+      "sourceForms": [
+        "أوروبا"
+      ],
+      "sourceImages": [
+        24
+      ]
+    },
+    {
+      "id": "bv-049",
+      "ar": "عَالَمٌ",
+      "de": "die Welt",
+      "sourceForms": [
+        "العالم"
+      ],
+      "sourceImages": [
+        24
+      ]
+    },
+    {
+      "id": "bv-050",
+      "ar": "هَذِهِ",
+      "de": "diese / das (weiblich)",
+      "sourceForms": [
+        "هذه"
+      ],
+      "sourceImages": [
+        23,
+        21,
+        19,
+        18,
+        15,
+        14,
+        13,
+        10
+      ]
+    },
+    {
+      "id": "bv-051",
+      "ar": "خَدِيجَةُ",
+      "de": "Khadidscha (Vorname)",
+      "sourceForms": [
+        "خديجة",
+        "بخديجة"
+      ],
+      "sourceImages": [
+        23,
+        20
+      ]
+    },
+    {
+      "id": "bv-052",
+      "ar": "هِيَ",
+      "de": "sie (Einzahl)",
+      "sourceForms": [
+        "هي"
+      ],
+      "sourceImages": [
+        23,
+        20,
+        14
+      ]
+    },
+    {
+      "id": "bv-053",
+      "ar": "تِلْمِيذَةٌ",
+      "de": "die Schülerin",
+      "sourceForms": [
+        "تلميذة"
+      ],
+      "sourceImages": [
+        23,
+        21,
+        20,
+        14,
+        13,
+        10
+      ]
+    },
+    {
+      "id": "bv-054",
+      "ar": "جَدِيدَةٌ",
+      "de": "neu (weiblich)",
+      "sourceForms": [
+        "جديدة",
+        "الجديدة"
+      ],
+      "sourceImages": [
+        23,
+        20,
+        16,
+        11,
+        5,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "bv-055",
+      "ar": "أَهْلًا",
+      "de": "willkommen!",
+      "sourceForms": [
+        "أهلا"
+      ],
+      "sourceImages": [
+        23
+      ]
+    },
+    {
+      "id": "bv-057",
+      "ar": "بِكِ",
+      "de": "mit dir; bei „willkommen“: an dich (weiblich)",
+      "sourceForms": [
+        "بِكِ"
+      ],
+      "sourceImages": [
+        23
+      ]
+    },
+    {
+      "id": "bv-058",
+      "ar": "مَدْرَسَةٌ",
+      "de": "die Schule",
+      "sourceForms": [
+        "مدرسة",
+        "المدرسة"
+      ],
+      "sourceImages": [
+        22,
+        17,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-059",
+      "ar": "تِلْمِيذٌ",
+      "de": "der Schüler",
+      "sourceForms": [
+        "التلاميذ",
+        "تلميذ"
+      ],
+      "sourceImages": [
+        22,
+        21,
+        14,
+        13,
+        11,
+        10
+      ]
+    },
+    {
+      "id": "bv-060",
+      "ar": "فِي",
+      "de": "in",
+      "sourceForms": [
+        "في"
+      ],
+      "sourceImages": [
+        22,
+        19,
+        16,
+        15,
+        9,
+        7,
+        5,
+        3,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "bv-061",
+      "ar": "صَفٌّ",
+      "de": "die Klasse",
+      "sourceForms": [
+        "الصف"
+      ],
+      "sourceImages": [
+        22
+      ]
+    },
+    {
+      "id": "bv-062",
+      "ar": "يُدَرِّسُ",
+      "de": "unterrichten",
+      "sourceForms": [
+        "يدرس"
+      ],
+      "sourceImages": [
+        22
+      ]
+    },
+    {
+      "id": "bv-063",
+      "ar": "يَحْمِلُ",
+      "de": "tragen",
+      "sourceForms": [
+        "يحمل"
+      ],
+      "sourceImages": [
+        22
+      ]
+    },
+    {
+      "id": "bv-064",
+      "ar": "كُتُبٌ",
+      "de": "die Bücher",
+      "sourceForms": [
+        "الكتب"
+      ],
+      "sourceImages": [
+        22
+      ]
+    },
+    {
+      "id": "bv-065",
+      "ar": "طَيِّبٌ",
+      "de": "gut / in Ordnung",
+      "sourceForms": [
+        "طيب"
+      ],
+      "sourceImages": [
+        20
+      ]
+    },
+    {
+      "id": "bv-066",
+      "ar": "قَالَ",
+      "de": "sagen",
+      "sourceForms": [
+        "قالت",
+        "قال"
+      ],
+      "sourceImages": [
+        20,
+        15
+      ]
+    },
+    {
+      "id": "bv-067",
+      "ar": "لَا",
+      "de": "nein / nicht",
+      "sourceForms": [
+        "لا"
+      ],
+      "sourceImages": [
+        20
+      ]
+    },
+    {
+      "id": "bv-068",
+      "ar": "تَعْرِفُ",
+      "de": "kennen (sie kennt / du kennst)",
+      "sourceForms": [
+        "تعرف"
+      ],
+      "sourceImages": [
+        20
+      ]
+    },
+    {
+      "id": "bv-069",
+      "ar": "رَحَّبَتْ",
+      "de": "begrüßen / willkommen heißen (sie begrüßte)",
+      "sourceForms": [
+        "رحبت"
+      ],
+      "sourceImages": [
+        20
+      ]
+    },
+    {
+      "id": "bv-070",
+      "ar": "تَبَادَلْ",
+      "de": "tausche aus!",
+      "sourceForms": [
+        "تبادل"
+      ],
+      "sourceImages": [
+        21,
+        16,
+        2
+      ]
+    },
+    {
+      "id": "bv-071",
+      "ar": "مَعَ",
+      "de": "mit",
+      "sourceForms": [
+        "مع"
+      ],
+      "sourceImages": [
+        21,
+        16,
+        2
+      ]
+    },
+    {
+      "id": "bv-072",
+      "ar": "صَدِيقٌ",
+      "de": "der Freund",
+      "sourceForms": [
+        "صديقك"
+      ],
+      "sourceImages": [
+        21,
+        16,
+        2
+      ]
+    },
+    {
+      "id": "bv-073",
+      "ar": "هَذَا",
+      "de": "dieser / das (männlich)",
+      "sourceForms": [
+        "هذا"
+      ],
+      "sourceImages": [
+        21,
+        16,
+        14,
+        11
+      ]
+    },
+    {
+      "id": "bv-074",
+      "ar": "كَمَالٌ",
+      "de": "Kamal (Vorname)",
+      "sourceForms": [
+        "كمال"
+      ],
+      "sourceImages": [
+        19,
+        15
+      ]
+    },
+    {
+      "id": "bv-075",
+      "ar": "رَفِيقٌ",
+      "de": "Rafiq (Vorname)",
+      "sourceForms": [
+        "رفيق",
+        "لرفيق"
+      ],
+      "sourceImages": [
+        19,
+        15
+      ]
+    },
+    {
+      "id": "bv-076",
+      "ar": "يَا",
+      "de": "Anredepartikel (z. B. „Hallo, …“)",
+      "sourceForms": [
+        "يا"
+      ],
+      "sourceImages": [
+        23,
+        20,
+        19
+      ]
+    },
+    {
+      "id": "bv-077",
+      "ar": "حَقِيبَةٌ",
+      "de": "die Tasche",
+      "sourceForms": [
+        "حقيبتك",
+        "حقيبة",
+        "حقيبتي",
+        "حقيبته"
+      ],
+      "sourceImages": [
+        19,
+        18,
+        15
+      ]
+    },
+    {
+      "id": "bv-078",
+      "ar": "نَعَمْ",
+      "de": "ja",
+      "sourceForms": [
+        "نعم"
+      ],
+      "sourceImages": [
+        19,
+        16
+      ]
+    },
+    {
+      "id": "bv-079",
+      "ar": "دَفْتَرٌ",
+      "de": "das Notizheft",
+      "sourceForms": [
+        "دفتر"
+      ],
+      "sourceImages": [
+        19,
+        18
+      ]
+    },
+    {
+      "id": "bv-080",
+      "ar": "مِسْطَرَةٌ",
+      "de": "das Lineal",
+      "sourceForms": [
+        "ومسطرة",
+        "مسطرة"
+      ],
+      "sourceImages": [
+        19,
+        18,
+        15
+      ]
+    },
+    {
+      "id": "bv-081",
+      "ar": "مِمْحَاةٌ",
+      "de": "der Radiergummi",
+      "sourceForms": [
+        "وممحاة",
+        "ممحاة"
+      ],
+      "sourceImages": [
+        19,
+        18,
+        15
+      ]
+    },
+    {
+      "id": "bv-082",
+      "ar": "شُكْرًا",
+      "de": "danke",
+      "sourceForms": [
+        "شكرا"
+      ],
+      "sourceImages": [
+        19
+      ]
+    },
+    {
+      "id": "bv-083",
+      "ar": "أَدَوَاتٌ",
+      "de": "die Utensilien",
+      "sourceForms": [
+        "الأدوات"
+      ],
+      "sourceImages": [
+        17
+      ]
+    },
+    {
+      "id": "bv-084",
+      "ar": "مَدْرَسِيَّةٌ",
+      "de": "schulisch (weiblich)",
+      "sourceForms": [
+        "المدرسية"
+      ],
+      "sourceImages": [
+        17
+      ]
+    },
+    {
+      "id": "bv-085",
+      "ar": "يَذْهَبُ",
+      "de": "gehen",
+      "sourceForms": [
+        "يذهب",
+        "وأذهب",
+        "ويذهب"
+      ],
+      "sourceImages": [
+        17,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-086",
+      "ar": "إِلَى",
+      "de": "zu / nach",
+      "sourceForms": [
+        "إلى"
+      ],
+      "sourceImages": [
+        17,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-087",
+      "ar": "تَقْرَأُ",
+      "de": "lesen (sie liest)",
+      "sourceForms": [
+        "تقرأ"
+      ],
+      "sourceImages": [
+        17,
+        7
+      ]
+    },
+    {
+      "id": "bv-088",
+      "ar": "يُرَتِّبُ",
+      "de": "ordnen / aufräumen",
+      "sourceForms": [
+        "يرتب"
+      ],
+      "sourceImages": [
+        17,
+        5
+      ]
+    },
+    {
+      "id": "bv-089",
+      "ar": "كَمَا",
+      "de": "wie (im Vergleich)",
+      "sourceForms": [
+        "كما"
+      ],
+      "sourceImages": [
+        16,
+        2
+      ]
+    },
+    {
+      "id": "bv-090",
+      "ar": "مِثَالٌ",
+      "de": "das Beispiel",
+      "sourceForms": [
+        "المثال"
+      ],
+      "sourceImages": [
+        16,
+        2
+      ]
+    },
+    {
+      "id": "bv-091",
+      "ar": "قَلَمٌ",
+      "de": "der Stift",
+      "sourceForms": [
+        "قلمك",
+        "قلمي"
+      ],
+      "sourceImages": [
+        16
+      ]
+    },
+    {
+      "id": "bv-092",
+      "ar": "مِقَصٌّ",
+      "de": "die Schere",
+      "sourceForms": [
+        "مقصك",
+        "مقصي"
+      ],
+      "sourceImages": [
+        16
+      ]
+    },
+    {
+      "id": "bv-093",
+      "ar": "مِبْرَاةٌ",
+      "de": "der Anspitzer",
+      "sourceForms": [
+        "مبراتك",
+        "مبراتي"
+      ],
+      "sourceImages": [
+        16
+      ]
+    },
+    {
+      "id": "bv-094",
+      "ar": "وَرَقَةٌ",
+      "de": "das Blatt Papier",
+      "sourceForms": [
+        "ورقتك",
+        "ورقتي"
+      ],
+      "sourceImages": [
+        16
+      ]
+    },
+    {
+      "id": "bv-095",
+      "ar": "مُفْرَدَاتٌ",
+      "de": "die Vokabeln",
+      "sourceForms": [
+        "المفردات",
+        "مفردات"
+      ],
+      "sourceImages": [
+        16,
+        13,
+        11,
+        5,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "bv-096",
+      "ar": "كَلَامٌ",
+      "de": "das Sprechen",
+      "sourceForms": [
+        "الكلام"
+      ],
+      "sourceImages": [
+        21,
+        16,
+        2
+      ]
+    },
+    {
+      "id": "bv-097",
+      "ar": "كُرَّاسَةٌ",
+      "de": "das Schulheft",
+      "sourceForms": [
+        "كراسة"
+      ],
+      "sourceImages": [
+        15
+      ]
+    },
+    {
+      "id": "bv-098",
+      "ar": "أُسْرَةٌ",
+      "de": "die Familie",
+      "sourceForms": [
+        "أسرة",
+        "أسرتي",
+        "أسرتها"
+      ],
+      "sourceImages": [
+        14,
+        13,
+        10
+      ]
+    },
+    {
+      "id": "bv-099",
+      "ar": "زَيْنَبُ",
+      "de": "Zainab (Vorname)",
+      "sourceForms": [
+        "زينب"
+      ],
+      "sourceImages": [
+        14,
+        10
+      ]
+    },
+    {
+      "id": "bv-100",
+      "ar": "سَامِي",
+      "de": "Sami (Vorname)",
+      "sourceForms": [
+        "سامي"
+      ],
+      "sourceImages": [
+        14,
+        5
+      ]
+    },
+    {
+      "id": "bv-101",
+      "ar": "أَبٌ",
+      "de": "der Vater",
+      "sourceForms": [
+        "أبي",
+        "الأب"
+      ],
+      "sourceImages": [
+        14,
+        13,
+        11,
+        7
+      ]
+    },
+    {
+      "id": "bv-102",
+      "ar": "سَلِيمٌ",
+      "de": "Salim (Vorname)",
+      "sourceForms": [
+        "سليم"
+      ],
+      "sourceImages": [
+        14,
+        13
+      ]
+    },
+    {
+      "id": "bv-103",
+      "ar": "أُمٌّ",
+      "de": "die Mutter",
+      "sourceForms": [
+        "أمي",
+        "الأم"
+      ],
+      "sourceImages": [
+        14,
+        13,
+        7
+      ]
+    },
+    {
+      "id": "bv-104",
+      "ar": "عَزِيزَةُ",
+      "de": "Aziza (Vorname)",
+      "sourceForms": [
+        "عزيزة"
+      ],
+      "sourceImages": [
+        14,
+        13
+      ]
+    },
+    {
+      "id": "bv-105",
+      "ar": "أَخٌ",
+      "de": "der Bruder",
+      "sourceForms": [
+        "أخي",
+        "أخوها",
+        "الأخ"
+      ],
+      "sourceImages": [
+        14,
+        11,
+        10
+      ]
+    },
+    {
+      "id": "bv-106",
+      "ar": "نِزَارٌ",
+      "de": "Nizar (Vorname)",
+      "sourceForms": [
+        "نزار"
+      ],
+      "sourceImages": [
+        14,
+        10
+      ]
+    },
+    {
+      "id": "bv-107",
+      "ar": "هُوَ",
+      "de": "er",
+      "sourceForms": [
+        "هو"
+      ],
+      "sourceImages": [
+        14,
+        11,
+        5
+      ]
+    },
+    {
+      "id": "bv-108",
+      "ar": "أُخْتٌ",
+      "de": "die Schwester",
+      "sourceForms": [
+        "أختي",
+        "أختها",
+        "الأخت"
+      ],
+      "sourceImages": [
+        14,
+        11,
+        10
+      ]
+    },
+    {
+      "id": "bv-109",
+      "ar": "سَعِيدَةُ",
+      "de": "Saida (Vorname)",
+      "sourceForms": [
+        "سعيدة"
+      ],
+      "sourceImages": [
+        14,
+        10
+      ]
+    },
+    {
+      "id": "bv-110",
+      "ar": "تُحِبُّ",
+      "de": "lieben / mögen (sie liebt)",
+      "sourceForms": [
+        "أحب",
+        "تحب"
+      ],
+      "sourceImages": [
+        14,
+        10
+      ]
+    },
+    {
+      "id": "bv-111",
+      "ar": "جَدٌّ",
+      "de": "der Großvater",
+      "sourceForms": [
+        "جد"
+      ],
+      "sourceImages": [
+        12
+      ]
+    },
+    {
+      "id": "bv-112",
+      "ar": "جَدَّةٌ",
+      "de": "die Großmutter",
+      "sourceForms": [
+        "جدة"
+      ],
+      "sourceImages": [
+        12
+      ]
+    },
+    {
+      "id": "bv-113",
+      "ar": "عَمٌّ",
+      "de": "der Onkel väterlicherseits",
+      "sourceForms": [
+        "عم"
+      ],
+      "sourceImages": [
+        12
+      ]
+    },
+    {
+      "id": "bv-114",
+      "ar": "عَمَّةٌ",
+      "de": "die Tante väterlicherseits",
+      "sourceForms": [
+        "عمة"
+      ],
+      "sourceImages": [
+        12
+      ]
+    },
+    {
+      "id": "bv-115",
+      "ar": "مُحَمَّدٌ",
+      "de": "Muhammad (Vorname)",
+      "sourceForms": [
+        "محمد"
+      ],
+      "sourceImages": [
+        11
+      ]
+    },
+    {
+      "id": "bv-116",
+      "ar": "يَعْمَلُ",
+      "de": "arbeiten",
+      "sourceForms": [
+        "يعمل"
+      ],
+      "sourceImages": [
+        11
+      ]
+    },
+    {
+      "id": "bv-117",
+      "ar": "طَبِيبٌ",
+      "de": "der Arzt",
+      "sourceForms": [
+        "طبيب"
+      ],
+      "sourceImages": [
+        11
+      ]
+    },
+    {
+      "id": "bv-118",
+      "ar": "مُعِزٌّ",
+      "de": "Muizz (Vorname)",
+      "sourceForms": [
+        "معز"
+      ],
+      "sourceImages": [
+        11
+      ]
+    },
+    {
+      "id": "bv-119",
+      "ar": "وَفَاءُ",
+      "de": "Wafa (Vorname)",
+      "sourceForms": [
+        "وفاء"
+      ],
+      "sourceImages": [
+        11
+      ]
+    },
+    {
+      "id": "bv-120",
+      "ar": "مُمَرِّضَةٌ",
+      "de": "die Krankenpflegerin",
+      "sourceForms": [
+        "ممرضة"
+      ],
+      "sourceImages": [
+        11
+      ]
+    },
+    {
+      "id": "bv-121",
+      "ar": "بَيْتٌ",
+      "de": "das Haus",
+      "sourceForms": [
+        "بيت",
+        "بيتكم",
+        "بيتنا"
+      ],
+      "sourceImages": [
+        9,
+        4
+      ]
+    },
+    {
+      "id": "bv-122",
+      "ar": "أَمِينٌ",
+      "de": "Amin (Vorname)",
+      "sourceForms": [
+        "أمين"
+      ],
+      "sourceImages": [
+        9
+      ]
+    },
+    {
+      "id": "bv-123",
+      "ar": "أَيُّوبُ",
+      "de": "Ayyub (Vorname)",
+      "sourceForms": [
+        "أيوب"
+      ],
+      "sourceImages": [
+        9
+      ]
+    },
+    {
+      "id": "bv-124",
+      "ar": "كَمْ",
+      "de": "wie viele",
+      "sourceForms": [
+        "كم"
+      ],
+      "sourceImages": [
+        9
+      ]
+    },
+    {
+      "id": "bv-125",
+      "ar": "غُرْفَةٌ",
+      "de": "das Zimmer",
+      "sourceForms": [
+        "غرفة",
+        "غرف",
+        "الغرف",
+        "الغرفة"
+      ],
+      "sourceImages": [
+        9,
+        8,
+        7,
+        6,
+        5,
+        4
+      ]
+    },
+    {
+      "id": "bv-126",
+      "ar": "مَاذَا",
+      "de": "was (Frage nach Handlung/Inhalt)",
+      "sourceForms": [
+        "ماذا",
+        "وماذا"
+      ],
+      "sourceImages": [
+        20,
+        19,
+        15,
+        11,
+        9,
+        5,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "bv-127",
+      "ar": "مَطْبَخٌ",
+      "de": "die Küche",
+      "sourceForms": [
+        "المطبخ"
+      ],
+      "sourceImages": [
+        9
+      ]
+    },
+    {
+      "id": "bv-128",
+      "ar": "فُرْنٌ",
+      "de": "der Backofen",
+      "sourceForms": [
+        "فرن"
+      ],
+      "sourceImages": [
+        9
+      ]
+    },
+    {
+      "id": "bv-129",
+      "ar": "حَمَّامٌ",
+      "de": "das Badezimmer",
+      "sourceForms": [
+        "الحمام",
+        "حمام"
+      ],
+      "sourceImages": [
+        9,
+        7,
+        6
+      ]
+    },
+    {
+      "id": "bv-130",
+      "ar": "مَغْطَسٌ",
+      "de": "die Badewanne",
+      "sourceForms": [
+        "مغطس"
+      ],
+      "sourceImages": [
+        9
+      ]
+    },
+    {
+      "id": "bv-131",
+      "ar": "جُلُوسٌ",
+      "de": "das Sitzen",
+      "sourceForms": [
+        "الجلوس"
+      ],
+      "sourceImages": [
+        9
+      ]
+    },
+    {
+      "id": "bv-132",
+      "ar": "أَرِيكَةٌ",
+      "de": "das Sofa",
+      "sourceForms": [
+        "أريكة"
+      ],
+      "sourceImages": [
+        9
+      ]
+    },
+    {
+      "id": "bv-133",
+      "ar": "ثَلَّاجَةٌ",
+      "de": "der Kühlschrank",
+      "sourceForms": [
+        "ثلاجة"
+      ],
+      "sourceImages": [
+        8
+      ]
+    },
+    {
+      "id": "bv-134",
+      "ar": "غَسَّالَةٌ",
+      "de": "die Waschmaschine",
+      "sourceForms": [
+        "غسالة"
+      ],
+      "sourceImages": [
+        8
+      ]
+    },
+    {
+      "id": "bv-135",
+      "ar": "طَاوِلَةٌ",
+      "de": "der Tisch",
+      "sourceForms": [
+        "طاولة"
+      ],
+      "sourceImages": [
+        8
+      ]
+    },
+    {
+      "id": "bv-136",
+      "ar": "نَوْمٌ",
+      "de": "der Schlaf",
+      "sourceForms": [
+        "النوم"
+      ],
+      "sourceImages": [
+        8,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-137",
+      "ar": "فَدْوَى",
+      "de": "Fadwa (Vorname)",
+      "sourceForms": [
+        "فدوى"
+      ],
+      "sourceImages": [
+        7
+      ]
+    },
+    {
+      "id": "bv-138",
+      "ar": "قِصَّةٌ",
+      "de": "die Geschichte",
+      "sourceForms": [
+        "قصة"
+      ],
+      "sourceImages": [
+        7,
+        6
+      ]
+    },
+    {
+      "id": "bv-139",
+      "ar": "يُوسُفُ",
+      "de": "Yusuf (Vorname)",
+      "sourceForms": [
+        "يوسف"
+      ],
+      "sourceImages": [
+        7
+      ]
+    },
+    {
+      "id": "bv-140",
+      "ar": "يَغْتَسِلُ",
+      "de": "sich waschen (den ganzen Körper)",
+      "sourceForms": [
+        "يغتسل"
+      ],
+      "sourceImages": [
+        7
+      ]
+    },
+    {
+      "id": "bv-141",
+      "ar": "فَرِيدَةُ",
+      "de": "Farida (Name der Schmetterlingsfigur)",
+      "sourceForms": [
+        "فريدة"
+      ],
+      "sourceImages": [
+        6
+      ]
+    },
+    {
+      "id": "bv-142",
+      "ar": "فَرَاشَةٌ",
+      "de": "der Schmetterling",
+      "sourceForms": [
+        "الفراشة"
+      ],
+      "sourceImages": [
+        6
+      ]
+    },
+    {
+      "id": "bv-143",
+      "ar": "وَحِيدَةٌ",
+      "de": "allein / einsam (weiblich)",
+      "sourceForms": [
+        "الوحيدة"
+      ],
+      "sourceImages": [
+        6
+      ]
+    },
+    {
+      "id": "bv-144",
+      "ar": "يَفْعَلُ",
+      "de": "tun / machen",
+      "sourceForms": [
+        "يفعل",
+        "تفعل"
+      ],
+      "sourceImages": [
+        5,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "bv-145",
+      "ar": "يَكْتُبُ",
+      "de": "schreiben",
+      "sourceForms": [
+        "يكتب"
+      ],
+      "sourceImages": [
+        5
+      ]
+    },
+    {
+      "id": "bv-146",
+      "ar": "مُرَادٌ",
+      "de": "Murad (Vorname)",
+      "sourceForms": [
+        "مراد"
+      ],
+      "sourceImages": [
+        5
+      ]
+    },
+    {
+      "id": "bv-147",
+      "ar": "مَسْجِدٌ",
+      "de": "die Moschee",
+      "sourceForms": [
+        "المسجد"
+      ],
+      "sourceImages": [
+        5
+      ]
+    },
+    {
+      "id": "bv-148",
+      "ar": "يُصَلِّي",
+      "de": "beten",
+      "sourceForms": [
+        "يصلي",
+        "أصلي"
+      ],
+      "sourceImages": [
+        5,
+        2
+      ]
+    },
+    {
+      "id": "bv-149",
+      "ar": "أَنِيسٌ",
+      "de": "Anis (Vorname)",
+      "sourceForms": [
+        "أنيس"
+      ],
+      "sourceImages": [
+        5
+      ]
+    },
+    {
+      "id": "bv-150",
+      "ar": "فِرَاشٌ",
+      "de": "das Bettzeug",
+      "sourceForms": [
+        "الفراش"
+      ],
+      "sourceImages": [
+        5
+      ]
+    },
+    {
+      "id": "bv-151",
+      "ar": "شَقَّةٌ",
+      "de": "die Wohnung",
+      "sourceForms": [
+        "شقة"
+      ],
+      "sourceImages": [
+        4
+      ]
+    },
+    {
+      "id": "bv-152",
+      "ar": "يُنَظِّفُ",
+      "de": "putzen / reinigen",
+      "sourceForms": [
+        "تنظف",
+        "ينظف"
+      ],
+      "sourceImages": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "bv-153",
+      "ar": "سُمَيَّةُ",
+      "de": "Sumayya (Vorname)",
+      "sourceForms": [
+        "سمية"
+      ],
+      "sourceImages": [
+        3
+      ]
+    },
+    {
+      "id": "bv-154",
+      "ar": "مَتَى",
+      "de": "wann",
+      "sourceForms": [
+        "متى"
+      ],
+      "sourceImages": [
+        3
+      ]
+    },
+    {
+      "id": "bv-155",
+      "ar": "يَقُومُ",
+      "de": "aufstehen",
+      "sourceForms": [
+        "تقوم",
+        "أقوم",
+        "يقوم"
+      ],
+      "sourceImages": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-156",
+      "ar": "تَوْفِيقٌ",
+      "de": "Taufiq (Vorname)",
+      "sourceForms": [
+        "توفيق"
+      ],
+      "sourceImages": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-157",
+      "ar": "يَغْسِلُ",
+      "de": "waschen",
+      "sourceForms": [
+        "أغسل",
+        "يغسل"
+      ],
+      "sourceImages": [
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "bv-158",
+      "ar": "وَجْهٌ",
+      "de": "das Gesicht",
+      "sourceForms": [
+        "وجهي",
+        "وجهه"
+      ],
+      "sourceImages": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-159",
+      "ar": "يَلْبَسُ",
+      "de": "anziehen / tragen (Kleidung)",
+      "sourceForms": [
+        "وألبس",
+        "ويلبس"
+      ],
+      "sourceImages": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-160",
+      "ar": "ثِيَابٌ",
+      "de": "die Kleidung",
+      "sourceForms": [
+        "ثيابي",
+        "ثيابه"
+      ],
+      "sourceImages": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-161",
+      "ar": "يَأْكُلُ",
+      "de": "essen",
+      "sourceForms": [
+        "آكل",
+        "يأكل"
+      ],
+      "sourceImages": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-162",
+      "ar": "فُطُورٌ",
+      "de": "das Frühstück",
+      "sourceForms": [
+        "فطور"
+      ],
+      "sourceImages": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bv-163",
+      "ar": "يُمَشِّطُ",
+      "de": "kämmen",
+      "sourceForms": [
+        "يمشط"
+      ],
+      "sourceImages": [
+        1
+      ]
+    },
+    {
+      "id": "bv-164",
+      "ar": "شَعْرٌ",
+      "de": "das Haar",
+      "sourceForms": [
+        "شعره"
+      ],
+      "sourceImages": [
+        1
+      ]
+    },
+    {
+      "id": "bv-165",
+      "ar": "يَدٌ",
+      "de": "die Hand",
+      "sourceForms": [
+        "يديه"
+      ],
+      "sourceImages": [
+        1
+      ]
+    },
+    {
+      "id": "bv-166",
+      "ar": "أَسْنَانٌ",
+      "de": "die Zähne",
+      "sourceForms": [
+        "أسنانها"
+      ],
+      "sourceImages": [
+        1
+      ]
+    },
+    {
+      "id": "bv-167",
+      "ar": "يَسْتَحِمُّ",
+      "de": "baden / duschen",
+      "sourceForms": [
+        "يستحم"
+      ],
+      "sourceImages": [
+        1
+      ]
+    },
+    {
+      "id": "bv-168",
+      "ar": "مَسَاءٌ",
+      "de": "der Abend",
+      "sourceForms": [
+        "المساء"
+      ],
+      "sourceImages": [
+        2
+      ]
+    },
+    {
+      "id": "bv-169",
+      "ar": "أَيْضًا",
+      "de": "auch",
+      "sourceForms": [
+        "أيضا"
+      ],
+      "sourceImages": [
+        2
+      ]
+    },
+    {
+      "id": "bv-170",
+      "ar": "يَنَامُ",
+      "de": "schlafen",
+      "sourceForms": [
+        "أنام"
+      ],
+      "sourceImages": [
+        2
+      ]
+    },
+    {
+      "id": "bv-171",
+      "ar": "يَتَدَرَّبُ",
+      "de": "üben / trainieren",
+      "sourceForms": [
+        "أتدرب"
+      ],
+      "sourceImages": [
+        2
+      ]
+    },
+    {
+      "id": "bv-172",
+      "ar": "حَاسُوبٌ",
+      "de": "der Computer",
+      "sourceForms": [
+        "الحاسوب"
+      ],
+      "sourceImages": [
+        2
+      ]
+    },
+    {
+      "id": "bv-173",
+      "ar": "يُرَاجِعُ",
+      "de": "wiederholen (Lernstoff)",
+      "sourceForms": [
+        "أراجع"
+      ],
+      "sourceImages": [
+        2
+      ]
+    },
+    {
+      "id": "bv-174",
+      "ar": "دَرْسٌ",
+      "de": "die Lektion",
+      "sourceForms": [
+        "دروسي"
+      ],
+      "sourceImages": [
+        2
+      ]
+    },
+    {
+      "id": "bv-175",
+      "ar": "يُشَاهِدُ",
+      "de": "anschauen",
+      "sourceForms": [
+        "أشاهد"
+      ],
+      "sourceImages": [
+        2
+      ]
+    },
+    {
+      "id": "bv-176",
+      "ar": "تِلْفَازٌ",
+      "de": "der Fernseher",
+      "sourceForms": [
+        "التلفاز"
+      ],
+      "sourceImages": [
+        2
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "image": 28,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.59.01 (4).jpeg",
+      "sha256": "81e0f7c93a80889412afad852a602fbcbdfe132001276cc17b1d38febbb89dd1",
+      "observedForms": [
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "طارق",
+        "السلام",
+        "عليكم",
+        "فتحي",
+        "وعليكم",
+        "اسمي",
+        "ما",
+        "اسمك",
+        "كيف",
+        "حالك",
+        "بخير",
+        "والحمد",
+        "لله"
+      ],
+      "entryIds": [
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-004",
+        "bv-001",
+        "bv-002",
+        "bv-005",
+        "bv-003",
+        "bv-006",
+        "bv-007",
+        "bv-008",
+        "bv-009",
+        "bv-010",
+        "bv-011"
+      ]
+    },
+    {
+      "image": 27,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.59.01 (3).jpeg",
+      "sha256": "f96e01c260b5de5fad5212d51e7e418d498fd93bd79b185e58b1344a1dc1adfa",
+      "observedForms": [
+        "أَنْتَ",
+        "ولد",
+        "أَنْتِ",
+        "بنت",
+        "معلم",
+        "معلمة",
+        "الفصول",
+        "الأربعة",
+        "الصيف",
+        "الخريف",
+        "الشتاء"
+      ],
+      "entryIds": [
+        "bv-016",
+        "bv-018",
+        "bv-017",
+        "bv-019",
+        "bv-020",
+        "bv-021",
+        "bv-022",
+        "bv-023",
+        "bv-024",
+        "bv-025",
+        "bv-026"
+      ]
+    },
+    {
+      "image": 26,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.59.01 (2).jpeg",
+      "sha256": "0838845a5c96fbca3a44b2deffbd873d288f7d09f60e90f5275b13029eb66f48",
+      "observedForms": [
+        "القراءة",
+        "اقرأ",
+        "النص",
+        "ثم",
+        "أجب",
+        "عن",
+        "الأسئلة",
+        "سلم",
+        "طارق",
+        "على",
+        "فتحي",
+        "بخير",
+        "والحمد",
+        "لله",
+        "مَنْ",
+        "هل"
+      ],
+      "entryIds": [
+        "bv-027",
+        "bv-028",
+        "bv-029",
+        "bv-030",
+        "bv-031",
+        "bv-032",
+        "bv-033",
+        "bv-034",
+        "bv-004",
+        "bv-002",
+        "bv-005",
+        "bv-009",
+        "bv-010",
+        "bv-011",
+        "bv-035",
+        "bv-036"
+      ]
+    },
+    {
+      "image": 25,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.59.01 (1).jpeg",
+      "sha256": "056793ab007be6b59c11607ef10f216b55600f98771f5fe436b07673f9321ac9",
+      "observedForms": [
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "صالحة",
+        "اسمي",
+        "ما",
+        "اسمك",
+        "صباح",
+        "مِنْ",
+        "أين",
+        "أَنْتِ",
+        "أنا",
+        "فرنسا",
+        "وأَنْتِ",
+        "بلجيكا"
+      ],
+      "entryIds": [
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-037",
+        "bv-003",
+        "bv-006",
+        "bv-038",
+        "bv-039",
+        "bv-040",
+        "bv-017",
+        "bv-041",
+        "bv-042",
+        "bv-043"
+      ]
+    },
+    {
+      "image": 24,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.59.01.jpeg",
+      "sha256": "48933277ecf71dca2219ba4906842231386180b21342f1d40b1db25bb7da3c69",
+      "observedForms": [
+        "خريطة",
+        "أمريكا",
+        "الدول",
+        "العربية",
+        "أوروبا",
+        "العالم"
+      ],
+      "entryIds": [
+        "bv-044",
+        "bv-045",
+        "bv-046",
+        "bv-047",
+        "bv-048",
+        "bv-049"
+      ]
+    },
+    {
+      "image": 23,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.59.00 (4).jpeg",
+      "sha256": "0c1fb2c2070f78764c1e1da986017714fbf27f614b17e9319b7c16e1c1129b16",
+      "observedForms": [
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "صالحة",
+        "صباح",
+        "الخير",
+        "يا",
+        "مَنْ",
+        "هذه",
+        "خديجة",
+        "هي",
+        "تلميذة",
+        "جديدة",
+        "أهلا",
+        "بِكِ"
+      ],
+      "entryIds": [
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-037",
+        "bv-038",
+        "bv-009",
+        "bv-076",
+        "bv-035",
+        "bv-050",
+        "bv-051",
+        "bv-052",
+        "bv-053",
+        "bv-054",
+        "bv-055",
+        "bv-057"
+      ]
+    },
+    {
+      "image": 22,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.59.00 (3).jpeg",
+      "sha256": "23c6ed7248813b52f3836801350718a9c8333c7500471df120549aba10aea248",
+      "observedForms": [
+        "مدرسة",
+        "التلاميذ",
+        "في",
+        "الصف",
+        "المعلم",
+        "يدرس",
+        "يحمل",
+        "الكتب"
+      ],
+      "entryIds": [
+        "bv-058",
+        "bv-059",
+        "bv-060",
+        "bv-061",
+        "bv-020",
+        "bv-062",
+        "bv-063",
+        "bv-064"
+      ]
+    },
+    {
+      "image": 21,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.59.00 (2).jpeg",
+      "sha256": "eef30b23e5d831a8ce28c9aed08e137b57c39a9cd936b86295f1a82be4356eee",
+      "observedForms": [
+        "الكلام",
+        "تبادل",
+        "الحوار",
+        "مع",
+        "صديقك",
+        "مَنْ",
+        "هذا",
+        "تلميذ",
+        "هذه",
+        "تلميذة"
+      ],
+      "entryIds": [
+        "bv-096",
+        "bv-070",
+        "bv-012",
+        "bv-071",
+        "bv-072",
+        "bv-035",
+        "bv-073",
+        "bv-059",
+        "bv-050",
+        "bv-053"
+      ]
+    },
+    {
+      "image": 20,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.59.00 (1).jpeg",
+      "sha256": "ac9fb9ade5efb9e3fedc2ec2acc439ff8ed75997e21b1cd51c792574e0923b5d",
+      "observedForms": [
+        "طيب",
+        "القراءة",
+        "اقرأ",
+        "النص",
+        "ثم",
+        "أجب",
+        "عن",
+        "الأسئلة",
+        "قالت",
+        "صالحة",
+        "صباح",
+        "الخير",
+        "يا",
+        "لا",
+        "تعرف",
+        "خديجة",
+        "تلميذة",
+        "جديدة",
+        "رحبت",
+        "بخديجة",
+        "ماذا",
+        "مَنْ",
+        "هي",
+        "هل",
+        "بِمَنْ"
+      ],
+      "entryIds": [
+        "bv-065",
+        "bv-027",
+        "bv-028",
+        "bv-029",
+        "bv-030",
+        "bv-031",
+        "bv-032",
+        "bv-033",
+        "bv-066",
+        "bv-037",
+        "bv-038",
+        "bv-009",
+        "bv-076",
+        "bv-067",
+        "bv-068",
+        "bv-051",
+        "bv-053",
+        "bv-054",
+        "bv-069",
+        "bv-126",
+        "bv-035",
+        "bv-052",
+        "bv-036"
+      ]
+    },
+    {
+      "image": 19,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.59.00.jpeg",
+      "sha256": "de69b4e4c73d72ae24617df2ba91e1f5b801d8aa243ecd25fe0f43dc89934066",
+      "observedForms": [
+        "ماذا",
+        "في",
+        "حقيبتك",
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "كمال",
+        "ما",
+        "هذه",
+        "يا",
+        "رفيق",
+        "حقيبة",
+        "هل",
+        "نعم",
+        "حقيبتي",
+        "وماذا",
+        "دفتر",
+        "ومسطرة",
+        "وممحاة",
+        "شكرا"
+      ],
+      "entryIds": [
+        "bv-126",
+        "bv-060",
+        "bv-077",
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-074",
+        "bv-006",
+        "bv-050",
+        "bv-076",
+        "bv-075",
+        "bv-036",
+        "bv-078",
+        "bv-079",
+        "bv-080",
+        "bv-081",
+        "bv-082"
+      ]
+    },
+    {
+      "image": 18,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.59 (4).jpeg",
+      "sha256": "f4bf598903b918234b9c9ed9662314840075177a22cc2ff81ce913d1b0ef36dd",
+      "observedForms": [
+        "هذه",
+        "حقيبة",
+        "دفتر",
+        "مسطرة",
+        "ممحاة"
+      ],
+      "entryIds": [
+        "bv-050",
+        "bv-077",
+        "bv-079",
+        "bv-080",
+        "bv-081"
+      ]
+    },
+    {
+      "image": 17,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.59 (3).jpeg",
+      "sha256": "b4ab959766fe20f9c22603044cdeda824e2220f9da09990bc922ea1fa96826ae",
+      "observedForms": [
+        "الأدوات",
+        "المدرسية",
+        "يذهب",
+        "إلى",
+        "المدرسة",
+        "تقرأ",
+        "يرتب"
+      ],
+      "entryIds": [
+        "bv-083",
+        "bv-084",
+        "bv-085",
+        "bv-086",
+        "bv-058",
+        "bv-087",
+        "bv-088"
+      ]
+    },
+    {
+      "image": 16,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.59 (2).jpeg",
+      "sha256": "2b0a2d2d4530a5cf313ada6039c5afd80b0b6341df490002d7bf60e572c38360",
+      "observedForms": [
+        "الكلام",
+        "تبادل",
+        "الحوار",
+        "مع",
+        "صديقك",
+        "كما",
+        "في",
+        "المثال",
+        "هل",
+        "هذا",
+        "قلمك",
+        "نعم",
+        "قلمي",
+        "مقصك",
+        "مقصي",
+        "مبراتك",
+        "مبراتي",
+        "ورقتك",
+        "ورقتي",
+        "المفردات",
+        "الجديدة",
+        "انظر",
+        "واستمع",
+        "وردد"
+      ],
+      "entryIds": [
+        "bv-096",
+        "bv-070",
+        "bv-012",
+        "bv-071",
+        "bv-072",
+        "bv-089",
+        "bv-060",
+        "bv-090",
+        "bv-036",
+        "bv-073",
+        "bv-091",
+        "bv-078",
+        "bv-092",
+        "bv-093",
+        "bv-094",
+        "bv-095",
+        "bv-054",
+        "bv-013",
+        "bv-014",
+        "bv-015"
+      ]
+    },
+    {
+      "image": 15,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.59 (1).jpeg",
+      "sha256": "79c7df32456a60ce935765248fe8a1af99d291b91292892e2bc3ddf51a9a40ae",
+      "observedForms": [
+        "القراءة",
+        "اقرأ",
+        "النص",
+        "ثم",
+        "أجب",
+        "عن",
+        "الأسئلة",
+        "قال",
+        "كمال",
+        "لرفيق",
+        "ما",
+        "هذه",
+        "حقيبة",
+        "رفيق",
+        "في",
+        "حقيبته",
+        "كراسة",
+        "ومسطرة",
+        "وممحاة",
+        "ماذا",
+        "مَنْ"
+      ],
+      "entryIds": [
+        "bv-027",
+        "bv-028",
+        "bv-029",
+        "bv-030",
+        "bv-031",
+        "bv-032",
+        "bv-033",
+        "bv-066",
+        "bv-074",
+        "bv-075",
+        "bv-006",
+        "bv-050",
+        "bv-077",
+        "bv-060",
+        "bv-097",
+        "bv-080",
+        "bv-081",
+        "bv-126",
+        "bv-035"
+      ]
+    },
+    {
+      "image": 14,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.59.jpeg",
+      "sha256": "c70bcda433ef4d42db7983f82fd3da75ca93419de8db6298618ffcac8b1c79e9",
+      "observedForms": [
+        "أسرة",
+        "زينب",
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "سامي",
+        "مَنْ",
+        "هذه",
+        "أسرتي",
+        "هذا",
+        "أبي",
+        "سليم",
+        "أمي",
+        "عزيزة",
+        "أخي",
+        "نزار",
+        "هو",
+        "تلميذ",
+        "أختي",
+        "سعيدة",
+        "هي",
+        "تلميذة",
+        "أنا",
+        "أحب"
+      ],
+      "entryIds": [
+        "bv-098",
+        "bv-099",
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-100",
+        "bv-035",
+        "bv-050",
+        "bv-073",
+        "bv-101",
+        "bv-102",
+        "bv-103",
+        "bv-104",
+        "bv-105",
+        "bv-106",
+        "bv-107",
+        "bv-059",
+        "bv-108",
+        "bv-109",
+        "bv-052",
+        "bv-053",
+        "bv-041",
+        "bv-110"
+      ]
+    },
+    {
+      "image": 13,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.58 (4).jpeg",
+      "sha256": "906db4b3860d3dbaf8bcd143160ab791a61537d71f1e932afcd4dc43959f9982",
+      "observedForms": [
+        "مفردات",
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "هذه",
+        "أسرتي",
+        "أبي",
+        "سليم",
+        "أمي",
+        "عزيزة",
+        "تلميذ",
+        "تلميذة"
+      ],
+      "entryIds": [
+        "bv-095",
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-050",
+        "bv-098",
+        "bv-101",
+        "bv-102",
+        "bv-103",
+        "bv-104",
+        "bv-059",
+        "bv-053"
+      ]
+    },
+    {
+      "image": 12,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.58 (3).jpeg",
+      "sha256": "2e6d9de42bc21c27115855b00ca981c85aaa89cda4648d190a329189ae66ba2e",
+      "observedForms": [
+        "جدة",
+        "جد",
+        "عمة",
+        "عم"
+      ],
+      "entryIds": [
+        "bv-112",
+        "bv-111",
+        "bv-114",
+        "bv-113"
+      ]
+    },
+    {
+      "image": 11,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.58 (2).jpeg",
+      "sha256": "6b70185972414d26e4debd0052ca838b4cb0fd166613412db21e7eed5f8617e9",
+      "observedForms": [
+        "مَنْ",
+        "هذا",
+        "أبي",
+        "محمد",
+        "ماذا",
+        "يعمل",
+        "هو",
+        "طبيب",
+        "أخي",
+        "معز",
+        "تلميذ",
+        "أختي",
+        "وفاء",
+        "ممرضة",
+        "المفردات",
+        "الجديدة",
+        "انظر",
+        "واستمع",
+        "وردد"
+      ],
+      "entryIds": [
+        "bv-035",
+        "bv-073",
+        "bv-101",
+        "bv-115",
+        "bv-126",
+        "bv-116",
+        "bv-107",
+        "bv-117",
+        "bv-105",
+        "bv-118",
+        "bv-059",
+        "bv-108",
+        "bv-119",
+        "bv-120",
+        "bv-095",
+        "bv-054",
+        "bv-013",
+        "bv-014",
+        "bv-015"
+      ]
+    },
+    {
+      "image": 10,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.58 (1).jpeg",
+      "sha256": "91ec52b5da6079d18e4dd09664967c2856437a89805809eeff438a2fbd416b8b",
+      "observedForms": [
+        "هذه",
+        "أسرة",
+        "زينب",
+        "أخوها",
+        "نزار",
+        "تلميذ",
+        "أختها",
+        "سعيدة",
+        "تلميذة",
+        "تحب",
+        "أسرتها",
+        "مَنْ",
+        "ما",
+        "اسم",
+        "الأخ",
+        "الأخت",
+        "هل"
+      ],
+      "entryIds": [
+        "bv-050",
+        "bv-098",
+        "bv-099",
+        "bv-105",
+        "bv-106",
+        "bv-059",
+        "bv-108",
+        "bv-109",
+        "bv-053",
+        "bv-110",
+        "bv-035",
+        "bv-006",
+        "bv-003",
+        "bv-036"
+      ]
+    },
+    {
+      "image": 9,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.58.jpeg",
+      "sha256": "8b92b5542fcbe653a16cbe3b9f7bae6b3069b28584e57732818a3956af39935c",
+      "observedForms": [
+        "بيت",
+        "أمين",
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "أيوب",
+        "كم",
+        "غرفة",
+        "في",
+        "بيتكم",
+        "بيتنا",
+        "أربع",
+        "غرف",
+        "ماذا",
+        "الغرف",
+        "المطبخ",
+        "فرن",
+        "الحمام",
+        "مغطس",
+        "الجلوس",
+        "أريكة"
+      ],
+      "entryIds": [
+        "bv-121",
+        "bv-122",
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-123",
+        "bv-124",
+        "bv-125",
+        "bv-060",
+        "bv-023",
+        "bv-126",
+        "bv-127",
+        "bv-128",
+        "bv-129",
+        "bv-130",
+        "bv-131",
+        "bv-132"
+      ]
+    },
+    {
+      "image": 8,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.57 (3).jpeg",
+      "sha256": "d6a74903d19279a8c56ce2a6c4a95f362f7b8d46331388bc88581138ca3f2751",
+      "observedForms": [
+        "غسالة",
+        "ثلاجة",
+        "غرفة",
+        "النوم",
+        "طاولة"
+      ],
+      "entryIds": [
+        "bv-134",
+        "bv-133",
+        "bv-125",
+        "bv-136",
+        "bv-135"
+      ]
+    },
+    {
+      "image": 7,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.57 (2).jpeg",
+      "sha256": "bd4d1aeae5985244e6514db81dbe67c8fa320f2688cbc492851eb1b4d36660c5",
+      "observedForms": [
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "الأب",
+        "أين",
+        "فدوى",
+        "الأم",
+        "في",
+        "الغرفة",
+        "تقرأ",
+        "قصة",
+        "يوسف",
+        "الحمام",
+        "يغتسل"
+      ],
+      "entryIds": [
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-101",
+        "bv-040",
+        "bv-137",
+        "bv-103",
+        "bv-060",
+        "bv-125",
+        "bv-087",
+        "bv-138",
+        "bv-139",
+        "bv-129",
+        "bv-140"
+      ]
+    },
+    {
+      "image": 6,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.57 (1).jpeg",
+      "sha256": "1b3447ac2bba8e703e7fb9c743a311ab25e97d7e6cfd99996f1e3487d895305c",
+      "observedForms": [
+        "حمام",
+        "قصة",
+        "غرفة",
+        "فريدة",
+        "الفراشة",
+        "الوحيدة"
+      ],
+      "entryIds": [
+        "bv-129",
+        "bv-138",
+        "bv-125",
+        "bv-141",
+        "bv-142",
+        "bv-143"
+      ]
+    },
+    {
+      "image": 5,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.57.jpeg",
+      "sha256": "bc93bfb6ea3ff6e4e0f08918d3b40d1a33d720c2c78eb99d83487294d4a9d08e",
+      "observedForms": [
+        "أين",
+        "سامي",
+        "في",
+        "الغرفة",
+        "ماذا",
+        "يفعل",
+        "هو",
+        "يكتب",
+        "مراد",
+        "المسجد",
+        "يصلي",
+        "أنيس",
+        "يرتب",
+        "الفراش",
+        "المفردات",
+        "الجديدة",
+        "انظر",
+        "واستمع",
+        "وردد"
+      ],
+      "entryIds": [
+        "bv-040",
+        "bv-100",
+        "bv-060",
+        "bv-125",
+        "bv-126",
+        "bv-144",
+        "bv-107",
+        "bv-145",
+        "bv-146",
+        "bv-147",
+        "bv-148",
+        "bv-149",
+        "bv-088",
+        "bv-150",
+        "bv-095",
+        "bv-054",
+        "bv-013",
+        "bv-014",
+        "bv-015"
+      ]
+    },
+    {
+      "image": 4,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.54.jpeg",
+      "sha256": "2f7615304ef950cb5a97013a0f26c8b52775bcdc4a8862a89cbba379b39f95b2",
+      "observedForms": [
+        "شقة",
+        "بيت",
+        "تنظف",
+        "ينظف",
+        "الغرفة"
+      ],
+      "entryIds": [
+        "bv-151",
+        "bv-121",
+        "bv-152",
+        "bv-125"
+      ]
+    },
+    {
+      "image": 3,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.53 (2).jpeg",
+      "sha256": "50f74854e883db337348fe77c6ad4893516a6ac3d53b55e8b0c3a1414f2fd029",
+      "observedForms": [
+        "في",
+        "الصباح",
+        "الحوار",
+        "انظر",
+        "واستمع",
+        "وردد",
+        "سمية",
+        "متى",
+        "تقوم",
+        "مِنَ",
+        "النوم",
+        "توفيق",
+        "أقوم",
+        "ماذا",
+        "تفعل",
+        "أغسل",
+        "وجهي",
+        "وألبس",
+        "ثيابي",
+        "ثم",
+        "آكل",
+        "فطور",
+        "وأذهب",
+        "إلى",
+        "المدرسة"
+      ],
+      "entryIds": [
+        "bv-060",
+        "bv-038",
+        "bv-012",
+        "bv-013",
+        "bv-014",
+        "bv-015",
+        "bv-153",
+        "bv-154",
+        "bv-155",
+        "bv-039",
+        "bv-136",
+        "bv-156",
+        "bv-126",
+        "bv-144",
+        "bv-157",
+        "bv-158",
+        "bv-159",
+        "bv-160",
+        "bv-030",
+        "bv-161",
+        "bv-162",
+        "bv-085",
+        "bv-086",
+        "bv-058"
+      ]
+    },
+    {
+      "image": 2,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.53 (1).jpeg",
+      "sha256": "ab2cbad199909030afa2655fd5ed3238a3e7581ac6ab5466e18fd111308968fa",
+      "observedForms": [
+        "الكلام",
+        "تبادل",
+        "الحوار",
+        "مع",
+        "صديقك",
+        "كما",
+        "في",
+        "المثال",
+        "ماذا",
+        "تفعل",
+        "المساء",
+        "أصلي",
+        "وماذا",
+        "أيضا",
+        "أنام",
+        "أتدرب",
+        "على",
+        "الحاسوب",
+        "أراجع",
+        "دروسي",
+        "أشاهد",
+        "التلفاز",
+        "المفردات",
+        "الجديدة",
+        "انظر",
+        "واستمع",
+        "وردد"
+      ],
+      "entryIds": [
+        "bv-096",
+        "bv-070",
+        "bv-012",
+        "bv-071",
+        "bv-072",
+        "bv-089",
+        "bv-060",
+        "bv-090",
+        "bv-126",
+        "bv-144",
+        "bv-168",
+        "bv-148",
+        "bv-169",
+        "bv-170",
+        "bv-171",
+        "bv-002",
+        "bv-172",
+        "bv-173",
+        "bv-174",
+        "bv-175",
+        "bv-176",
+        "bv-095",
+        "bv-054",
+        "bv-013",
+        "bv-014",
+        "bv-015"
+      ]
+    },
+    {
+      "image": 1,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.53.jpeg",
+      "sha256": "4e4b36eadf6fdf01edc08b8e08b8118f814e5bac11b313436f488cfcbd167b2d",
+      "observedForms": [
+        "المفردات",
+        "الجديدة",
+        "يمشط",
+        "شعره",
+        "يغسل",
+        "يديه",
+        "تنظف",
+        "أسنانها",
+        "يستحم"
+      ],
+      "entryIds": [
+        "bv-095",
+        "bv-054",
+        "bv-163",
+        "bv-164",
+        "bv-157",
+        "bv-165",
+        "bv-152",
+        "bv-166",
+        "bv-167"
+      ]
+    },
+    {
+      "image": 0,
+      "fileName": "WhatsApp Image 2026-11-07 at 23.58.52.jpeg",
+      "sha256": "d97038b6100d340242efe0788f18aae38873ed85656f73bd85a7f58fd43baba2",
+      "observedForms": [
+        "القراءة",
+        "اقرأ",
+        "النص",
+        "ثم",
+        "يقوم",
+        "توفيق",
+        "مِنَ",
+        "النوم",
+        "في",
+        "الصباح",
+        "يغسل",
+        "وجهه",
+        "ويلبس",
+        "ثيابه",
+        "يأكل",
+        "فطور",
+        "ويذهب",
+        "إلى",
+        "المدرسة"
+      ],
+      "entryIds": [
+        "bv-027",
+        "bv-028",
+        "bv-029",
+        "bv-030",
+        "bv-155",
+        "bv-156",
+        "bv-039",
+        "bv-136",
+        "bv-060",
+        "bv-038",
+        "bv-157",
+        "bv-158",
+        "bv-159",
+        "bv-160",
+        "bv-161",
+        "bv-162",
+        "bv-085",
+        "bv-086",
+        "bv-058"
+      ]
+    }
+  ]
+}

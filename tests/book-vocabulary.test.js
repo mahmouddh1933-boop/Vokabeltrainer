@@ -10,14 +10,14 @@ const manifest=require('../audio/book-vocabulary-manifest.json');
 const audio=require('../js/book-vocabulary-audio.js').audio;
 const norm=s=>s.normalize('NFC');
 
-test('all 29 photographed pages are represented and every reviewed form has a non-duplicated lexical card',()=>{
- assert.equal(source.sourceImageCount,29);
- assert.equal(source.pages.length,29);
- assert.deepEqual(source.pages.map(p=>p.image).sort((a,b)=>a-b),Array.from({length:29},(_,i)=>i));
+test('all 53 photographed pages are represented and every reviewed form has a non-duplicated lexical card',()=>{
+ assert.equal(source.sourceImageCount,53);
+ assert.equal(source.pages.length,53);
+ assert.deepEqual(source.pages.map(p=>p.image).sort((a,b)=>a-b),Array.from({length:53},(_,i)=>i));
  assert.match(source.sourceArchiveSha256,/^[a-f0-9]{64}$/);
  const byId=new Map(source.entries.map(w=>[w.id,w]));
- assert.equal(byId.size,175);
- assert.equal(new Set(source.entries.map(w=>norm(w.ar))).size,175);
+ assert.equal(byId.size,340);
+ assert.equal(new Set(source.entries.map(w=>norm(w.ar))).size,340);
  for(const page of source.pages){
   assert.match(page.sha256,/^[a-f0-9]{64}$/);
   assert(page.fileName.endsWith('.jpeg')&&page.observedForms.length&&page.entryIds.length);
@@ -39,10 +39,10 @@ test('all 29 photographed pages are represented and every reviewed form has a no
  assert(entry('خَرِيطَةٌ').sourceImages.includes(24));
 });
 
-test('book vocabulary has eight lists of twenty and an honest last list of fifteen, independent of CEFR',()=>{
- assert.equal(collection.id,'book-vocabulary');assert.equal(collection.count,175);
+test('book vocabulary has seventeen complete lists of twenty, independent of CEFR',()=>{
+ assert.equal(collection.id,'book-vocabulary');assert.equal(collection.count,340);
  assert.equal(collection.title,'مفردات الكتب');
- assert.deepEqual(collection.lists.map(l=>l.count),[20,20,20,20,20,20,20,20,15]);
+ assert.deepEqual(collection.lists.map(l=>l.count),Array(17).fill(20));
  assert.equal(collection.lists[0].title,'القائمة الأولى');assert.equal(collection.lists[8].title,'القائمة التاسعة');
  const words=collection.lists.flatMap(l=>l.words);
  assert.deepEqual(words.map(w=>w.entryId),source.entries.map(w=>w.id));
@@ -59,7 +59,7 @@ test('book vocabulary has eight lists of twenty and an honest last list of fifte
 
 test('all book words have exact local audio, with vowel-sensitive keys and unchanged CEFR audio',()=>{
  assert.equal(manifest.complete,true);
- assert.equal(manifest.clips.length,175);
+ assert.equal(manifest.clips.length,340);
  assert.equal(manifest.sourceSha256,crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'data/book-vocabulary-source.json'))).digest('hex'));
  assert.deepEqual(Object.keys(audio).sort(),source.entries.map(w=>w.ar).sort());
  for(const c of manifest.clips){
@@ -73,4 +73,20 @@ test('all book words have exact local audio, with vowel-sensitive keys and uncha
   assert(html.indexOf('js/book-vocabulary-audio.js')>=0);
   assert(html.indexOf('js/book-vocabulary-audio.js')<html.indexOf('js/app.js'));
  }
+});
+
+
+test('second photo batch adds vocabulary without duplicating earlier inflections or inheriting ninth-list mastery',()=>{
+ const old=require('../data/book-vocabulary-batches/20261107.json');
+ assert.deepEqual(source.archives.map(a=>a.imageCount),[29,24]);
+ assert.deepEqual(source.entries.slice(0,175).map(e=>[e.id,e.ar]),old.entries.map(e=>[e.id,e.ar]));
+ const get=ar=>source.entries.find(e=>e.ar===norm(ar));
+ for(const [ar,de] of [['جُبْنٌ','der Käse'],['صُوفِيَّةٌ','aus Wolle (weiblich)'],['أَحَدَ عَشَرَ','elf'],['سَبْعَةَ عَشَرَ','siebzehn'],['يَدْرُسُ','lernen; studieren'],['مُخَيَّمٌ','das Zeltlager; der Campingplatz']])assert.equal(get(ar)?.de,de);
+ assert(get('لَذِيذٌ').sourceForms.includes('اللذيذة'));
+ assert(!get('لَذِيذَةٌ'));
+ assert(get('يُدَرِّسُ'));assert(get('وَرَقَةٌ').sourceForms.includes('الأوراق'));
+ assert(get('يَأْكُلُ').sourceImages.includes(29));
+ for(let i=0;i<8;i++)assert.equal(collection.lists[i].id,`books_20261107_${String(i+1).padStart(2,'0')}`);
+ assert.equal(collection.lists[8].id,'books_20261107_09_v2');
+ for(const page of source.pages.filter(p=>p.archiveId==='20261108'))assert.equal(page.image,29+page.localImage);
 });
