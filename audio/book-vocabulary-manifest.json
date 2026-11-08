@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "date": "2026-11-08T00:14:54.456997+00:00",
+  "date": "2026-11-08T00:16:35.874511+00:00",
   "provider": "Google Translate TTS (ar); exact existing vocabulary recordings reused. Synthetic speech, not human recordings.",
-  "sourceSha256": "43bb92eb4e8a50adeb728f8317f65a621f93ff7ab556bbde7137f77a59b9b77a",
+  "sourceSha256": "ed0d54d57beacc7c74586fd835dbcd8758e00d3deda47e23a5d1eb56a104b60e",
   "complete": true,
   "clips": [
     {
@@ -1876,12 +1876,6 @@
       "path": "audio/book-vocabulary/5083435ca72d4a25.mp3",
       "seconds": 1.488,
       "sha256": "feada02a59f3e4bef90935285d4f201690ab3dc82b1f9a5a6ad8cf4bca914177"
-    },
-    {
-      "text": "لَذِيذَةٌ",
-      "path": "audio/book-vocabulary/7c5692947b56d9c5.mp3",
-      "seconds": 1.368,
-      "sha256": "fae4c6703c7c45e450dd502773328777c6d7374af799c949c502f820ca812ed3"
     },
     {
       "text": "أَكْلٌ",
