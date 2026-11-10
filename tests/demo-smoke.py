@@ -2,6 +2,7 @@
 import argparse
 import json
 from pathlib import Path
+from html.parser import HTMLParser
 import re
 from urllib.parse import urlsplit
 from playwright.sync_api import sync_playwright
@@ -17,8 +18,23 @@ catalog = json.loads((root / 'data/vocab_catalog.json').read_text())
 assert len(catalog['lists']) == 6
 assert len(catalog['levels']) == 2
 assert sum(len(item['words']) for item in catalog['lists']) == 120
+assert not any(key.startswith('bookVocabulary') for key in catalog)
+assert manifest['books'] == manifest['bookVocabularyEntries'] == 0
 for path in root.rglob('*'):
     assert not re.search(r'firebase|auth-session|cloud-sync|youth.*data|book-two-data', path.name)
+    assert not any(part.startswith(('book', 'youth')) for part in path.relative_to(root).parts)
+
+class LocalLinks(HTMLParser):
+    def handle_starttag(self, tag, attrs):
+        for key, value in attrs:
+            if key not in ['href', 'src'] or not value:
+                continue
+            target = urlsplit(value)
+            if not target.scheme and not target.netloc and target.path:
+                assert (root / target.path).is_file(), value
+
+for page_file in root.glob('*.html'):
+    LocalLinks().feed(page_file.read_text())
 
 with sync_playwright() as p:
     browser = p.chromium.launch(executable_path='/usr/bin/chromium', headless=True, args=['--no-sandbox'])
@@ -57,6 +73,19 @@ with sync_playwright() as p:
         assert page.locator('.cefr-level-card').count() == 2
         assert page.locator('.ready-list-button').count() == 3
         assert len(page.evaluate('VocabApp.loadCatalog()')['lists']) == 6
+        assert page.locator('#book-vocabulary-panel, #book-vocabulary-2-panel').count() == 0
+        assert page.locator('#demo-journey [data-demo-goal]').count() == 3
+        for button in page.locator('#demo-journey [data-demo-goal]').all():
+            button.tap()
+        assert page.locator('#demo-journey [aria-pressed=true]').count() == 3
+        assert '3 / 3' in page.locator('#demo-journey-status').inner_text()
+        if mode != 'storage-denied':
+            open_page('index')
+            assert page.locator('#demo-journey [aria-pressed=true]').count() == 3
+        page.locator('#app-language-select').select_option('ar')
+        assert '٣ / ٣' in page.locator('#demo-journey-status').inner_text()
+        page.locator('[data-demo-goal=letters]').tap()
+        assert page.locator('[data-demo-goal=letters]').get_attribute('aria-pressed') == 'false'
         assert page.locator('.app-sidebar a[href*=youth], .app-sidebar a[href*=book-level]').count() == 0
         page.locator('[data-level-id="A2"]').tap()
         assert page.locator('.ready-list-button').count() == 3

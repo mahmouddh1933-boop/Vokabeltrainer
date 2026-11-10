@@ -3,6 +3,7 @@
 Python 3.10+ and Node.js are needed only to build; the output needs no server code.
 """
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import re
@@ -90,6 +91,8 @@ texts = {normalize(text) for text in strings({key: practice[key] for key in ['so
 practice['audio'] = {key: path for key, path in practice['audio'].items() if normalize(key) in texts}
 
 catalog = json.loads((ROOT / 'data/vocab_catalog.json').read_text())
+# Only selected CEFR content belongs to the demo; never serialize the full books.
+catalog = {key: value for key, value in catalog.items() if not key.startswith('bookVocabulary')}
 selected_ids = {'a1_01', 'a1_04', 'a1_11', 'a2_01', 'a2_10', 'a2_16'}
 catalog['lists'] = [item for item in catalog['lists'] if item['id'] in selected_ids]
 catalog['levels'] = [item for item in catalog['levels'] if item['id'] in ['A1', 'A2']]
@@ -130,7 +133,7 @@ write('js/practice-data.js', '(() => { const data=' + dump(practice) + ';\nfunct
 PAGES = ['index', 'lernseite', 'test', 'test1', 'test2', 'test3', 'test4', 'test5', 'test6',
          'ergebnis', 'review', 'stats', 'huruf', 'letter-tests', 'grammar', 'verbs',
          'sounds', 'sentences', 'stories']
-EXCLUDED_SCRIPTS = {'js/firebase-config.js', 'js/auth-session.js', 'js/access-client.js', 'js/grammar-expanded.js', 'js/grammar-syntax.js', 'js/learning-path.js', 'js/pages/route-home.js', 'js/sentence-expanded-data.js'}
+EXCLUDED_SCRIPTS = {'js/firebase-config.js', 'js/auth-session.js', 'js/access-client.js', 'js/grammar-expanded.js', 'js/grammar-syntax.js', 'js/learning-path.js', 'js/pages/route-home.js', 'js/sentence-expanded-data.js', 'js/book-vocabulary-audio.js'}
 references = set()
 for name in PAGES:
     source = (ROOT / (name + '.html')).read_text()
@@ -163,9 +166,22 @@ for name in PAGES:
             ('sentences','أنا','Sätze bilden','تكوين الجمل','Sechs Aufgaben zum Ordnen von Wörtern.','ستة تدريبات على ترتيب الكلمات.'),
             ('stories','▤','Eine Kurzgeschichte','قصة قصيرة','Frühstück mit meiner Familie: Audio und vier Verständnisfragen.','فطور مع أسرتي: صوت وأربعة أسئلة فهم.'),
         ]) + '''</div></section>
-      <p class="demo-footer-note" data-de="Diese Demo enthält nur eine Auswahl. Weitere Bücher und die vollständigen Lernniveaus gehören zur Vollversion." data-ar="تحتوي هذه النسخة التجريبية على مختارات فقط. الكتب والمستويات الكاملة متاحة في النسخة الكاملة.">Diese Demo enthält nur eine Auswahl. Weitere Bücher und die vollständigen Lernniveaus gehören zur Vollversion.</p>
+      <p class="demo-footer-note" data-de="Jeder Versuch zählt. Fehler zeigen dir, was du als Nächstes üben kannst. Lerne in deinem Tempo." data-ar="كل محاولة خطوة إلى الأمام. تساعدك الأخطاء على معرفة ما تحتاج إلى تدريبه. تعلّم بالسرعة التي تناسبك.">Jeder Versuch zählt. Fehler zeigen dir, was du als Nächstes üben kannst. Lerne in deinem Tempo.</p>
     </main>
 ''' + source[end:]
+        source = source.replace('<div class="home-status-grid">', '''
+      <section id="demo-journey" class="home-panel" aria-labelledby="demo-journey-title">
+        <p class="eyebrow" data-de="DEIN ERSTER KLEINER ERFOLG" data-ar="إنجازك الصغير الأول">DEIN ERSTER KLEINER ERFOLG</p>
+        <h2 id="demo-journey-title" data-de="Drei kleine Schritte. Du schaffst das." data-ar="ثلاث خطوات صغيرة. أنت تستطيع.">Drei kleine Schritte. Du schaffst das.</h2>
+        <p data-de="Probiere die Aufgaben aus und hake selbst ab, was du geschafft hast. Das ist deine persönliche Lernrunde, keine Bewertung." data-ar="جرّب الأنشطة، ثم علّم بنفسك ما أنجزته. هذه جولتك الشخصية وليست تقييمًا لمستواك.">Probiere die Aufgaben aus und hake selbst ab, was du geschafft hast. Das ist deine persönliche Lernrunde, keine Bewertung.</p>
+        <div class="demo-journey-grid">
+          <article><span class="foundation-glyph" lang="ar">أ ب</span><h3 data-de="1 · Buchstaben entdecken" data-ar="١ · اكتشف الحروف">1 · Buchstaben entdecken</h3><p data-de="Höre أ und ب und probiere die Schreibfläche aus." data-ar="استمع إلى الألف والباء وجرّب لوحة الكتابة.">Höre أ und ب und probiere die Schreibfläche aus.</p><a class="practice-button" href="huruf.html" data-de="Buchstaben entdecken" data-ar="اكتشف الحروف">Buchstaben entdecken</a><button class="practice-button" type="button" data-demo-goal="letters" aria-pressed="false">Geschafft</button></article>
+          <article><span class="foundation-glyph" lang="ar">كَلِمَةٌ</span><h3 data-de="2 · Fünf Wörter lernen" data-ar="٢ · تعلّم خمس كلمات">2 · Fünf Wörter lernen</h3><p data-de="Drehe fünf Lernkarten um und sprich die Wörter nach." data-ar="اقلب خمس بطاقات وردّد الكلمات التي تسمعها.">Drehe fünf Lernkarten um und sprich die Wörter nach.</p><a class="practice-button" href="lernseite.html" data-de="Lernkarten öffnen" data-ar="افتح البطاقات">Lernkarten öffnen</a><button class="practice-button" type="button" data-demo-goal="words" aria-pressed="false">Geschafft</button></article>
+          <article><span class="foundation-glyph" lang="ar">أَنَا طَالِبٌ</span><h3 data-de="3 · Einen Satz bilden" data-ar="٣ · كوّن جملة">3 · Einen Satz bilden</h3><p data-de="Ordne die Wörter. Ein Tipp hilft dir, wenn du nicht weiterweißt." data-ar="رتّب الكلمات. يساعدك التلميح إن احتجت إليه.">Ordne die Wörter. Ein Tipp hilft dir, wenn du nicht weiterweißt.</p><a class="practice-button" href="sentences.html" data-de="Satz ausprobieren" data-ar="جرّب تكوين جملة">Satz ausprobieren</a><button class="practice-button" type="button" data-demo-goal="sentence" aria-pressed="false">Geschafft</button></article>
+        </div>
+        <p id="demo-journey-status" class="demo-journey-status" role="status" aria-live="polite"></p>
+      </section>
+      <div class="home-status-grid">''')
     if name in ['huruf', 'letter-tests']:
         source = re.sub(r'\b28\b', '6', source)
     if name == 'grammar':
@@ -237,10 +253,38 @@ write('js/demo.js', '''(() => {
     note.innerHTML = '<strong data-de="DEMO · حروف من الزيتون" data-ar="نسخة تجريبية · حروف من الزيتون">DEMO · حروف من الزيتون</strong><span data-de="Ohne Anmeldung. Dein Fortschritt bleibt in diesem Browser. Eine Auswahl der Lerninhalte ist enthalten." data-ar="بلا تسجيل دخول. يُحفظ التقدّم في هذا المتصفح فقط. تتضمن النسخة مختارات من المحتوى.">Ohne Anmeldung. Dein Fortschritt bleibt in diesem Browser. Eine Auswahl der Lerninhalte ist enthalten.</span>';
     main.prepend(note);
     window.AppLanguage?.translate();
+    const journey = document.getElementById("demo-journey");
+    if (journey) {
+      const key = "demoMiniJourneyV1";
+      let done;
+      try { done = JSON.parse(window.JisrStorage.local.getItem(key) || "{}"); } catch (_) { done = {}; }
+      if (!done || typeof done !== "object" || Array.isArray(done)) done = {};
+      const buttons = [...journey.querySelectorAll("[data-demo-goal]")];
+      function render() {
+        const de = window.AppLanguage?.get() !== "ar";
+        let count = 0;
+        buttons.forEach(button => {
+          const completed = done[button.dataset.demoGoal] === true;
+          count += Number(completed);
+          button.setAttribute("aria-pressed", String(completed));
+          button.textContent = completed ? (de ? "✓ Abgehakt · erneut üben" : "✓ أُنجز · تدرّب مجددًا") : (de ? "Selbst als geschafft markieren" : "علّم النشاط كمنجز");
+        });
+        document.getElementById("demo-journey-status").textContent = count === 3
+          ? (de ? "3 / 3 · Stark! Du hast deine erste Lernrunde selbst als geschafft markiert. Was möchtest du als Nächstes entdecken?" : "٣ / ٣ · أحسنت! علّمت أنشطة جولتك الأولى كمنجزة. ماذا تريد أن تكتشف الآن؟")
+          : (de ? `${count} / 3 selbst abgehakt · ${count ? "Gut gemacht! Ein kleiner Schritt nach dem anderen." : "Schon ein kleiner Anfang zählt."}` : `${count} / ٣ علّمتها بنفسك · ${count ? "أحسنت! خطوة صغيرة بعد أخرى." : "حتى البداية الصغيرة إنجاز."}`);
+      }
+      buttons.forEach(button => button.addEventListener("click", () => {
+        done[button.dataset.demoGoal] = !done[button.dataset.demoGoal];
+        window.JisrStorage.local.setItem(key, JSON.stringify(done));
+        render();
+      }));
+      window.addEventListener("app-language-change", render);
+      render();
+    }
   });
 })();
 '''.replace('__DEMO_INITIAL_LIST__', dump(catalog['lists'][0])))
-write('css/demo.css', '''.demo-notice{display:flex;flex-wrap:wrap;gap:.4rem 1rem;align-items:center;margin:0 0 1.5rem;padding:1rem 1.2rem;border:1px solid #c7d6b5;border-radius:18px;background:#eef3e6;color:#254b3e;line-height:1.7;font-size:.9rem}.demo-notice strong{font-size:.85rem}.demo-notice span{flex:1 1 280px}.demo-footer-note{margin-block:2rem;line-height:1.9;color:#3a5c49}.hero-copy h2{white-space:pre-line}@media print{.demo-notice{display:none}}
+write('css/demo.css', '''.demo-notice{display:flex;flex-wrap:wrap;gap:.4rem 1rem;align-items:center;margin:0 0 1.5rem;padding:1rem 1.2rem;border:1px solid #c7d6b5;border-radius:18px;background:#eef3e6;color:#254b3e;line-height:1.7;font-size:.9rem}.demo-notice strong{font-size:.85rem}.demo-notice span{flex:1 1 280px}.demo-footer-note{margin-block:2rem;line-height:1.9;color:#3a5c49}.hero-copy h2{white-space:pre-line}.demo-journey-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.2rem}.demo-journey-grid article{min-width:0;padding:1.25rem;border:1px solid #cad7bb;border-radius:20px;background:#f2f5e9}.demo-journey-grid h3{font-size:1.1rem;line-height:1.7}.demo-journey-grid p{line-height:1.8}.demo-journey-grid .practice-button{display:flex;width:100%;justify-content:center;min-height:44px;white-space:normal;margin-top:.7rem}.demo-journey-grid [aria-pressed=true]{background:#315b42;color:#fff}.demo-journey-status{padding:1rem;margin-top:1rem;border-radius:16px;background:#e6edd9;color:#254b3e;line-height:1.8;font-weight:600}@media(max-width:800px){.demo-journey-grid{grid-template-columns:1fr}}@media print{.demo-notice{display:none}}
 ''')
 for name in PAGES:
     path = DEST / (name + '.html')
@@ -272,9 +316,15 @@ related_audio = {clip['path'] for clip in json.loads((ROOT/'audio/letter-related
 vocab_words = {normalize(w['ar']) for item in catalog['lists'] for w in item['words']}
 vocab_audio = {clip['text']:clip['path'] for clip in json.loads((ROOT/'audio/vocabulary-manifest.json').read_text())['clips'] if normalize(clip['text']) in vocab_words}
 assert len(vocab_audio) == len(vocab_words)
+# Some general vocabulary words reuse a recording originally made for a book.
+# Ship only those selected words, under neutral demo paths, never book folders.
+vocab_paths = {path: ('audio/demo/' + hashlib.sha256((ROOT/path).read_bytes()).hexdigest()[:16] + '.mp3'
+                     if path.startswith(('audio/book-', 'audio/youth/')) else path)
+               for path in vocab_audio.values()}
+vocab_audio = {text: vocab_paths[path] for text, path in vocab_audio.items()}
 write('js/vocab-audio-data.js', 'window.ArabicVocabularyAudio = {audio:'+dump(vocab_audio)+'};\n')
-for audio in set(letters['audio'].values()) | set(practice['audio'].values()) | related_audio | set(vocab_audio.values()):
-    path = DEST / audio
+for audio in set(letters['audio'].values()) | set(practice['audio'].values()) | related_audio | set(vocab_paths):
+    path = DEST / vocab_paths.get(audio, audio)
     path.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(ROOT / audio, path)
 
@@ -294,6 +344,8 @@ INHALT
 - 2 Lautpaare mit 12 Hörfragen, 6 Satzbauaufgaben und 1 Kurzgeschichte
   mit 4 Verständnisfragen.
 - Deutsche und arabische Oberfläche, Olivenzweige und auswählbarer Hintergrund.
+- Eine kleine Lernrunde mit drei selbst abhakbaren Zielen und Ermutigung.
+- Bücher und Buchwortschatz sind nicht enthalten.
 
 KOSTENLOS HOSTEN: NETLIFY DROP
 1. Huroof-Demo.zip vollständig in einen neuen Ordner entpacken.
@@ -321,15 +373,13 @@ das Löschen der Websitedaten setzt den lokalen Fortschritt zurück.
 Die Demo hat einen eigenen Namensraum für Lernstände. Sprache und Hintergrund
 können mit einer am gleichen Ursprung geöffneten Vollversion geteilt werden.
 Alle Wörter der sechs Demo-Wortlisten haben mitgelieferte Tonaufnahmen.
-Für zusätzlich importierte Wörter verwendet die Demo die Sprachausgabe des Geräts; hierfür muss eine
-arabische Stimme verfügbar sein. Je nach Betriebssystem benötigt diese Internet.
 Keine Analytics- oder Werbeskripte werden eingebunden.
 
 Erstellt für Mahmoud Barakat · حروف من الزيتون
 ''')
 
 shutil.copytree(ROOT/'images/pwa',DEST/'images/pwa',dirs_exist_ok=True)
-shutil.copy2(ROOT/'offline.html',DEST/'offline.html')
+write('offline.html', re.sub(r'<a\s+href="login\.html">.*?</a>', '', (ROOT/'offline.html').read_text(), flags=re.S))
 pwa=json.loads((ROOT/'manifest.webmanifest').read_text())
 pwa['name']='حروف من الزيتون · Demo'
 pwa['short_name']='حروف · Demo'
@@ -365,6 +415,7 @@ for name in PAGES:
     path.write_text(portable(path))
 
 manifest = {'edition': 'demo', 'vocabularyLists': 6, 'vocabularyEntries': 120,
+            'books': 0, 'bookVocabularyEntries': 0, 'selfMarkedGoals': 3,
             'letters': 6, 'grammarLessons': 3, 'grammarQuestions': 24,
             'verbs': 6, 'soundGroups': 2, 'soundQuestions': 12,
             'sentences': 6, 'stories': 1, 'pages': [page + '.html' for page in PAGES],
@@ -374,6 +425,8 @@ subprocess.run(['python3',str(ROOT/'tools/build-pwa.py'),'--directory',str(DEST)
 files = sorted(path for path in DEST.rglob('*') if path.is_file())
 assert not any('firebase' in path.name or 'cloud-sync' in path.name or 'auth-session' in path.name for path in files)
 assert len(catalog['lists']) == 6
+assert not any(key.startswith('bookVocabulary') for key in catalog)
+assert not any(part.startswith(('book', 'youth')) for path in files for part in path.relative_to(DEST).parts)
 assert sum(len(item['words']) for item in catalog['lists']) == 120
 args.output.parent.mkdir(parents=True, exist_ok=True)
 with ZipFile(args.output, 'w', ZIP_DEFLATED) as archive:
