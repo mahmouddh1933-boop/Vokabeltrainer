@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-10",
+  "subject": "Standalone demo advertisement in German",
+  "durationSeconds": 110.94,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "framesPerSecond": 25,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "audioSampleRate": 48000,
+  "audioChannels": 2,
+  "integratedLoudnessLUFS": -16.0,
+  "truePeakDbTP": -2.1,
+  "subtitleSegments": 32,
+  "realDemoViews": 17,
+  "visualReview": [
+    "all 17 presentation frames",
+    "encoded laptop/mobile scene at 91 seconds",
+    "encoded sentence scene at 58 seconds"
+  ],
+  "checks": [
+    "Complete video/audio decoded without errors",
+    "All narrated feature counts match demo-manifest.json",
+    "Laptop and mobile included in narration, subtitles and visuals",
+    "Subtitle timing bounded by movie duration",
+    "No gaps between visual segments",
+    "ZIP integrity verified",
+    "No books, book vocabulary, Firebase or sign-in featured"
+  ],
+  "files": {
+    "Huroof-Demo-Werbung-DE.mp4": {
+      "bytes": 10177135,
+      "sha256": "bf83a5af0792ae18407b47f42a136a65211952972c8cf52fe73f5b3cbc8aa2b3"
+    },
+    "Huroof-Demo-Video-DE.zip": {
+      "bytes": 10327568,
+      "sha256": "760f6aed3ecbf11772f32358860757f1ca33aadd266c478d7b4553edf1e5a2fd"
+    }
+  }
+}
