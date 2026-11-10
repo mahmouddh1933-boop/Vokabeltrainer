@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-10",
+  "language": "ar",
+  "durationSeconds": 179.2,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "framesPerSecond": 25,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "audioSampleRate": 48000,
+  "audioChannels": 2,
+  "subtitleSegments": 33,
+  "realDemoViews": 17,
+  "voice": "Piper / ar_JO-kareem-medium / manual vowels preserved / pause pronunciation applied",
+  "automaticSpeechScreen": {
+    "model": "Whisper-small int8 / Arabic / no expected-text prompt",
+    "segments": 33,
+    "meanCharacterErrorRate": 0.038,
+    "limitations": "Automatic transcription is an intelligibility screen, not a human phonetic review."
+  },
+  "visualReview": [
+    "17 Arabic presentation frames",
+    "Full-HD Arabic laptop/mobile layout",
+    "Vocalized subtitle typography and right-to-left shaping at full resolution"
+  ],
+  "checks": [
+    "Final audio/video decoded without errors",
+    "Narrated counts match the packaged demo",
+    "Laptop and mobile included",
+    "Fully vocalized Arabic script and SRT",
+    "Clip and subtitle timings checked",
+    "Arabic subtitle font bundled into rendering inputs",
+    "No books, book vocabulary, Firebase or sign-in featured",
+    "Existing German MP4 unchanged",
+    "ZIP integrity and embedded MP4 hash verified"
+  ],
+  "files": {
+    "Huroof-Demo-Werbung-AR.mp4": {
+      "bytes": 10543143,
+      "sha256": "0df932953d88c14e7dda8b8e80946c2b31455af938663b9b1ed887c0dfdb2660"
+    },
+    "Huroof-Demo-Video-AR.zip": {
+      "bytes": 10719798,
+      "sha256": "e747bc3439fe8484714940ddad59d1d5f2c1994dc787d5bc75e9cbe858e2406a"
+    }
+  }
+}

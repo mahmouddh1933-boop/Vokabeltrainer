@@ -1,4 +1,4 @@
-"""Build a German, landscape demo advert from real demo views and offline speech.
+"""Build a German or Arabic demo advert from real demo views and offline speech.
 
 Requires FFmpeg, Chromium, Playwright, NumPy and piper-tts. Keep model/build files
 outside the repository. No accounts, Firebase or production data are accessed.
@@ -22,11 +22,27 @@ p.add_argument('--directory', type=Path, default=Path('/tmp/huroof-demo-video'))
 p.add_argument('--model', type=Path)
 p.add_argument('--demo-url', default='http://127.0.0.1:8086')
 p.add_argument('--stage-url', default='http://127.0.0.1:8077')
+p.add_argument('--language', choices=['de','ar'], default='de')
 p.add_argument('--step', choices=['all','audio','capture','render'], default='all')
 a = p.parse_args()
+LANG = a.language
+SUFFIX = LANG.upper()
 OUT = a.directory.resolve()
 OUT.mkdir(parents=True, exist_ok=True)
-story = json.loads((MEDIA / 'storyboard.json').read_text())
+story = json.loads((MEDIA / ('storyboard-ar.json' if LANG=='ar' else 'storyboard.json')).read_text())
+
+def wrap_caption(text, width):
+    if LANG!='ar':
+        return textwrap.wrap(text,width=width,break_long_words=False)
+    lines=[];line=''
+    for word in text.split():
+        candidate=(line+' '+word).strip()
+        visible=re.sub('[\u064b-\u065f\u0670]','',candidate)
+        if line and len(visible)>width:
+            lines.append(line);line=word
+        else:line=candidate
+    if line:lines.append(line)
+    return lines
 
 def run(*cmd):
     subprocess.run([str(x) for x in cmd], check=True)
@@ -43,7 +59,10 @@ def audio():
     ort.disable_telemetry_events()
     from piper import PiperVoice, SynthesisConfig
     voice = PiperVoice.load(a.model)
-    cfg = SynthesisConfig(length_scale=1.00, noise_scale=.6, noise_w_scale=.8)
+    if LANG=='ar':
+        # Preserve the reviewed vowels exactly; do not auto-diacritize them again.
+        voice.use_tashkeel=False
+    cfg = SynthesisConfig(length_scale=1.05 if LANG=='ar' else 1.00, noise_scale=.5 if LANG=='ar' else .6, noise_w_scale=.65 if LANG=='ar' else .8)
     rate = voice.config.sample_rate
     chunks, subs, scenes = [], [], []
     position = 0
@@ -57,29 +76,32 @@ def audio():
         start = position
         pause(.4)
         for sentence in re.split(r'(?<=[.!?])\s+',scene['text']):
-            for text in textwrap.wrap(sentence,width=150,break_long_words=False,break_on_hyphens=False):
-                key = hashlib.sha256(('thorsten-demo-1.0|'+text).encode()).hexdigest()[:24]
+            for text in textwrap.wrap(sentence,width=220 if LANG=='ar' else 150,break_long_words=False,break_on_hyphens=False):
+                # At an Arabic pause, stop on the final consonant. Keep the fully
+                # inflected spelling in the captions and editable script.
+                spoken=re.sub('[\u064b-\u0650\u0652]+(?=[.!?؟،؛])','\u0652',text) if LANG=='ar' else text
+                key = hashlib.sha256(((f'kareem-demo-ar-1.05-0.5-0.65-manual-vowels-pause-v2|' if LANG=='ar' else 'thorsten-demo-1.0|')+spoken).encode()).hexdigest()[:24]
                 dest = OUT/'voice'/f'{key}.wav'
                 if not dest.exists():
-                    with wave.open(str(dest),'wb') as f: voice.synthesize_wav(text,f,syn_config=cfg)
+                    with wave.open(str(dest),'wb') as f: voice.synthesize_wav(spoken,f,syn_config=cfg)
                 with wave.open(str(dest),'rb') as f:
                     assert f.getframerate()==rate and f.getnchannels()==1
                     raw=f.readframes(f.getnframes())
                 duration=len(raw)/(rate*2)
                 assert duration>.2 and any(raw)
-                subs.append(dict(start=position,end=position+duration,text=text))
+                subs.append(dict(start=position,end=position+duration,text=text,spokenText=spoken,audioFile='voice/'+dest.name))
                 chunks.append(raw)
                 position += duration
                 pause(.15)
         pause(.6)
         scenes.append(dict(scene,start=start,end=position))
         print('VOICE',scene['id'],round(position-start,1),'seconds',flush=True)
-    with wave.open(str(OUT/'narration-de.wav'),'wb') as f:
+    with wave.open(str(OUT/f'narration-{LANG}.wav'),'wb') as f:
         f.setnchannels(1); f.setsampwidth(2); f.setframerate(rate); f.writeframes(b''.join(chunks))
     (OUT/'timeline.json').write_text(json.dumps(dict(duration=position,scenes=scenes,subtitles=subs),ensure_ascii=False,indent=2))
-    (MEDIA/'Huroof-Demo-Werbung-DE.srt').write_text('\n\n'.join(f'{i+1}\n{stamp(s["start"])} --> {stamp(s["end"])}\n'+ '\n'.join(textwrap.wrap(s['text'],width=80,break_long_words=False)) for i,s in enumerate(subs))+'\n')
-    (MEDIA/'Sprechertext-DE.txt').write_text('\n\n'.join(s['title'].replace('\n',' ')+'\n'+s['text'] for s in scenes)+'\n')
-    (MEDIA/'YouTube-Kapitel-DE.txt').write_text('\n'.join(f'{int(s["start"])//60:02}:{int(s["start"])%60:02} '+s['title'].replace('\n',' ') for s in scenes)+'\n')
+    (MEDIA/f'Huroof-Demo-Werbung-{SUFFIX}.srt').write_text('\n\n'.join(f'{i+1}\n{stamp(s["start"])} --> {stamp(s["end"])}\n'+ '\n'.join(wrap_caption(s['text'],56 if LANG=='ar' else 80)) for i,s in enumerate(subs))+'\n')
+    (MEDIA/f'Sprechertext-{SUFFIX}.txt').write_text('\n\n'.join(s['title'].replace('\n',' ')+'\n'+s['text'] for s in scenes)+'\n')
+    (MEDIA/f'YouTube-Kapitel-{SUFFIX}.txt').write_text('\n'.join(f'{int(s["start"])//60:02}:{int(s["start"])%60:02} '+s['title'].replace('\n',' ') for s in scenes)+'\n')
 
 def capture():
     from playwright.sync_api import sync_playwright
@@ -88,7 +110,7 @@ def capture():
     with sync_playwright() as p:
         browser=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
         context=browser.new_context(viewport={'width':1180,'height':728},device_scale_factor=1)
-        context.add_init_script("localStorage.setItem('vocabInterfaceLanguage','de');localStorage.setItem('lettersLanguage','de');localStorage.setItem('oliveLearnerThemeV1','neutral');")
+        context.add_init_script("localStorage.setItem('vocabInterfaceLanguage',"+json.dumps(LANG)+");localStorage.setItem('lettersLanguage',"+json.dumps(LANG)+");localStorage.setItem('oliveLearnerThemeV1','neutral');")
         page=context.new_page(); errors=[]
         page.on('pageerror',lambda e:errors.append(str(e)))
         def go(name):
@@ -137,12 +159,12 @@ def capture():
         for scene in timeline['scenes']:
             images=sources.get(scene['id'],[None])
             for i,source in enumerate(images):
-                render=dict(scene,image=source,mobile=mobile if scene['id']=='devices' else None)
+                render=dict(scene,language=LANG,image=source,mobile=mobile if scene['id']=='devices' else None)
                 stage.evaluate('s=>render(s)',render)
                 path=frames/f'stage-{scene["id"]}-{i}.png';stage.screenshot(path=str(path))
                 shots.append(dict(path=str(path),scene=scene['id'],start=scene['start']+(scene['end']-scene['start'])*i/len(images),end=scene['start']+(scene['end']-scene['start'])*(i+1)/len(images)))
             print('VIEW',scene['id'],len(images),flush=True)
-        shutil.copyfile(frames/'stage-intro-0.png',MEDIA/'Huroof-Demo-Vorschaubild-DE.png')
+        shutil.copyfile(frames/'stage-intro-0.png',MEDIA/f'Huroof-Demo-Vorschaubild-{SUFFIX}.png')
         (OUT/'shots.json').write_text(json.dumps(shots,indent=2))
         browser.close()
 
@@ -174,9 +196,14 @@ Style: Default,DejaVu Sans,34,&H00FFFFFF,&H00FFFFFF,&H002A3F26,&H002A3F26,0,0,0,
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 '''
+    if LANG=='ar':
+        from fontTools.ttLib import TTFont
+        fontdir=OUT/'subtitle-fonts';fontdir.mkdir(exist_ok=True)
+        font=TTFont(ROOT/'fonts/noto-naskh-arabic.woff');font.flavor=None;font.save(fontdir/'NotoNaskhArabic.ttf')
+        header=header.replace('Default,DejaVu Sans,34,','Default,Noto Naskh Arabic,70,').replace(',3,17,0,2,90,90,62,1',',1,0,0,2,90,90,60,1')
     lines=[]
     for s in timeline['subtitles']:
-        text='\\N'.join(textwrap.wrap(s['text'],width=88,break_long_words=False))
+        text='\\N'.join(wrap_caption(s['text'],100 if LANG=='ar' else 88))
         lines.append(f'Dialogue: 0,{stamp(s["start"],True)},{stamp(s["end"],True)},Default,,0,0,0,,{text}')
     ass=OUT/'subtitles.ass';ass.write_text(header+'\n'.join(lines)+'\n')
     shots=json.loads((OUT/'shots.json').read_text());clips=[]
@@ -189,17 +216,18 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         clips.append(clip)
         print('RENDER',i+1,'/',len(shots),flush=True)
     concat=OUT/'clips.txt';concat.write_text(''.join(f"file '{x}'\n" for x in clips))
-    dest=ROOT/'downloads/Huroof-Demo-Werbung-DE.mp4'
-    run('ffmpeg','-y','-v','warning','-f','concat','-safe','0','-i',concat,'-i',OUT/'narration-de.wav','-i',OUT/'music.wav','-filter_complex',
-        f'[0:v]ass={ass},fade=t=out:st={duration-.6}:d=0.6:color=0xf5f1e5[v];[1:a]aformat=channel_layouts=stereo,asplit=2[voice][side];[2:a][side]sidechaincompress=threshold=0.02:ratio=4:attack=35:release=450[bed];[voice][bed]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=9[a]',
-        '-map','[v]','-map','[a]','-t',duration,'-c:v','libx264','-preset','veryfast','-crf','21','-threads','3','-pix_fmt','yuv420p','-profile:v','high','-level','4.1','-c:a','aac','-b:a','160k','-ar','48000','-movflags','+faststart','-metadata','title=Huroof – Dein erster Schritt ins Arabische','-metadata:s:a:0','language=deu','-metadata','comment=Real demo views; synthetic German narration; original instrumental music.',dest)
+    dest=ROOT/f'downloads/Huroof-Demo-Werbung-{SUFFIX}.mp4'
+    assfilter=('drawbox=x=70:y=930:w=1780:h=120:color=0x214735:t=fill,' if LANG=='ar' else '')+f'ass={ass}'+(f':fontsdir={fontdir}' if LANG=='ar' else '')
+    run('ffmpeg','-y','-v','warning','-f','concat','-safe','0','-i',concat,'-i',OUT/f'narration-{LANG}.wav','-i',OUT/'music.wav','-filter_complex',
+        f'[0:v]{assfilter},fade=t=out:st={duration-.6}:d=0.6:color=0xf5f1e5[v];[1:a]aformat=channel_layouts=stereo,asplit=2[voice][side];[2:a][side]sidechaincompress=threshold=0.02:ratio=4:attack=35:release=450[bed];[voice][bed]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=9[a]',
+        '-map','[v]','-map','[a]','-t',duration,'-c:v','libx264','-preset','veryfast','-crf','21','-threads','3','-pix_fmt','yuv420p','-profile:v','high','-level','4.1','-c:a','aac','-b:a','160k','-ar','48000','-movflags','+faststart','-metadata','title='+story['title'],'-metadata:s:a:0','language='+('ara' if LANG=='ar' else 'deu'),'-metadata','comment=Real demo views; synthetic narration; original instrumental music.',dest)
     info=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(dest)]))
     v=next(s for s in info['streams'] if s['codec_type']=='video');au=next(s for s in info['streams'] if s['codec_type']=='audio')
     assert (v['width'],v['height'],v['codec_name'],au['codec_name'])==(1920,1080,'h264','aac')
     assert abs(float(info['format']['duration'])-duration)<.15 and dest.stat().st_size<95_000_000
-    with zipfile.ZipFile(ROOT/'downloads/Huroof-Demo-Video-DE.zip','w',compression=zipfile.ZIP_STORED) as z:
+    with zipfile.ZipFile(ROOT/f'downloads/Huroof-Demo-Video-{SUFFIX}.zip','w',compression=zipfile.ZIP_STORED) as z:
         z.write(dest,dest.name)
-        for name in ['Huroof-Demo-Werbung-DE.srt','Huroof-Demo-Vorschaubild-DE.png','Sprechertext-DE.txt','YouTube-Kapitel-DE.txt','README.md']:
+        for name in [f'Huroof-Demo-Werbung-{SUFFIX}.srt',f'Huroof-Demo-Vorschaubild-{SUFFIX}.png',f'Sprechertext-{SUFFIX}.txt',f'YouTube-Kapitel-{SUFFIX}.txt','README-AR.md' if LANG=='ar' else 'README.md']:
             z.write(MEDIA/name,name)
     print('DONE',round(duration,2),'seconds;',dest.stat().st_size,'bytes',flush=True)
 

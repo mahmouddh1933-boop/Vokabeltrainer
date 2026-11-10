@@ -6,6 +6,11 @@ eingeblendete Untertitel. Separate SRT-Untertitel und ein Vorschaubild liegen be
 Für YouTube die SRT-Datei als deutsche Untertitel hochladen. Das MP4 kann auf einer
 Website mit einem normalen HTML-Videoelement eingebunden werden.
 
+Eine zusätzliche [arabische Fassung](README-AR.md) verwendet einen vokalisierten
+Sprechertext, arabische App-Ansichten und arabische Untertitel. Sie wird mit
+`--language ar` und einem eigenen Buildordner erstellt; die deutsche Fassung
+bleibt unter ihren bestehenden Dateinamen erhalten.
+
 Das Video zeigt echte Ansichten der Demo und stellt ihre Auswahl an Buchstaben,
 Vokabeln, Übungen, Grammatik, Verben und einer Geschichte vor. Eine eigene Szene
 zeigt die Nutzung am **Laptop und auf dem Handy**. Die drei Ziele werden von den
