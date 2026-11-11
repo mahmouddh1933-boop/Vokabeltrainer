@@ -1,4 +1,4 @@
-"""Capture real navigation, answers and correction examples for the Arabic demo guide.
+"""Capture real navigation, answers and correction examples for the demo guides.
 
 Uses only the extracted standalone demo and fresh, disposable browser storage.
 Gold outlines indicate controls to click; the demo itself is never modified.
@@ -14,14 +14,16 @@ p.add_argument('--directory',type=Path,default=Path('/tmp/huroof-demo-guide-ar')
 p.add_argument('--demo-url',default='http://127.0.0.1:8086')
 p.add_argument('--stage-url',default='http://127.0.0.1:8077')
 p.add_argument('--step',choices=['all','capture','stage'],default='all')
-a=p.parse_args();out=a.directory.resolve();frames=out/'frames';frames.mkdir(parents=True,exist_ok=True)
+p.add_argument('--language',choices=['ar','de'],default='ar')
+p.add_argument('--media-directory',type=Path,default=MEDIA)
+a=p.parse_args();LANG=a.language;MEDIA=a.media_directory.resolve();out=a.directory.resolve();frames=out/'frames';frames.mkdir(parents=True,exist_ok=True)
 sources={};evidence=[]
 
 def capture():
  with sync_playwright() as pw:
   b=pw.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox','--autoplay-policy=no-user-gesture-required'])
   ctx=b.new_context(viewport={'width':1180,'height':728},device_scale_factor=1)
-  ctx.add_init_script("localStorage.setItem('vocabInterfaceLanguage','ar');localStorage.setItem('lettersLanguage','ar');localStorage.setItem('oliveLearnerThemeV1','neutral');")
+  ctx.add_init_script("localStorage.setItem('vocabInterfaceLanguage',"+json.dumps(LANG)+");localStorage.setItem('lettersLanguage',"+json.dumps(LANG)+");localStorage.setItem('oliveLearnerThemeV1','neutral');")
   ctx.route('**/*',lambda r:r.continue_() if r.request.url.startswith(a.demo_url+'/') else r.abort())
   page=ctx.new_page();page.set_default_timeout(7000);errors=[];audio=[]
   page.on('pageerror',lambda ex:errors.append(str(ex)))
@@ -60,7 +62,7 @@ def capture():
   click('[data-training-mode=missing]');missing=snap('letter-missing','#training-run');click('[data-training-mode=listening]');listen=snap('letter-listening','#training-run');click('#training-listen');save('letter-listening',missing,listen)
   entry=nav('sounds','sounds');sound=snap('sounds-question','#sound-options');click('#sound-listen');save('sounds',entry,sound,snap('sound-button','#sound-listen'))
   entry=nav('index','vocabulary');levels=snap('vocab-levels','#ready-lists-panel');click('[data-level-id=A1]')
-  buttons=page.locator('.ready-list-button');food=buttons.filter(has_text='الطعام').first;assert food.count()==1
+  buttons=page.locator('.ready-list-button');food=buttons.filter(has_text='Essen und Küche' if LANG=='de' else 'الطعام').first;assert food.count()==1
   food.evaluate("n=>{n.id='guide-food-list'}");lists=snap('vocab-food','#guide-food-list');click('#guide-food-list');page.wait_for_url('**/lernseite.html');ready()
   assert len(page.evaluate('VocabApp.getCurrentVocabList()'))==20
   save('vocab-select',entry,levels,lists)
@@ -102,7 +104,7 @@ def capture():
   save('test-connected',entry,blank,snap('connected-answer','.question'))
   entry=nav('sentences','sentences');blank=snap('sentence-start','#sentence-answer')
   for word in ['أَنَا','طَالِبٌ']:page.locator('#sentence-bank button').filter(has_text=re.compile('^'+re.escape(word)+'$')).click()
-  click('#sentence-check');assert 'صحيحة' in page.locator('#sentence-feedback').inner_text();save('sentences',entry,blank,snap('sentence-done','#sentence-feedback'))
+  click('#sentence-check');assert ('stimmt' if LANG=='de' else 'صحيحة') in page.locator('#sentence-feedback').inner_text();save('sentences',entry,blank,snap('sentence-done','#sentence-feedback'))
   entry=nav('stories','stories');library=snap('story-library','#story-library');click('#story-library button');text=snap('story-text','#story-lines');click('#story-translation');translation=snap('story-translated','#story-lines');save('stories',entry,library,text,translation,snap('story-questions','#story-question'))
   entry=nav('grammar','grammar');dropdown=snap('grammar-lesson','#grammar-lesson-select');page.locator('#grammar-lesson-select').select_option('pronouns');explanation=snap('grammar-explanation','#lesson-sections');practice=snap('grammar-practice','#grammar-question');click('#grammar-answers button');save('grammar',entry,dropdown,explanation,practice)
   entry=nav('verbs','verbs');dropdown=snap('verb-select','#verb-select');click('[data-tense=present]');present=snap('verbs-present','#conjugation-body');click('[data-tense=imperative]');imperative=snap('verbs-imperative','#conjugation-body');save('verbs',entry,dropdown,present,imperative,snap('verbs-practice','#verb-question'))
@@ -117,15 +119,15 @@ def stage():
  with sync_playwright() as pw:
   b=pw.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox']);page=b.new_page(viewport={'width':1920,'height':1080},device_scale_factor=1)
   page.route('**/__demo_guide_frames__/*',lambda r:r.fulfill(path=str(frames/r.request.url.rsplit('/',1)[1]),content_type='image/png'))
-  page.goto(a.stage_url+'/media/demo-guide-ar/stage.html')
+  page.goto(a.stage_url+'/'+str(MEDIA.relative_to(ROOT))+'/stage.html')
   for index,scene in enumerate(timeline['scenes']):
    assert scene['id'] in sources or scene['id'] in ['intro','outro'];views=sources.get(scene['id'],[{}])
    for i,view in enumerate(views):
-    data=dict(scene,language='ar',**view,stepLabel=f'{index+1} / {len(timeline["scenes"])} · '+scene['title'].replace('\n',' '));page.evaluate('s=>render(s)',data)
+    data=dict(scene,language=LANG,**view,stepLabel=f'{index+1} / {len(timeline["scenes"])} · '+scene['title'].replace('\n',' '));page.evaluate('s=>render(s)',data)
     dest=frames/f'stage-{scene["id"]}-{i}.png';page.screenshot(path=str(dest));shots.append({'path':str(dest),'scene':scene['id'],'start':scene['start']+(scene['end']-scene['start'])*i/len(views),'end':scene['start']+(scene['end']-scene['start'])*(i+1)/len(views)})
    print('STAGE',scene['id'],len(views),flush=True)
   b.close()
- (out/'shots.json').write_text(json.dumps(shots,indent=2)+'\n');shutil.copyfile(frames/'stage-intro-0.png',MEDIA/'Huroof-Demo-Vorschaubild-AR.png')
+ (out/'shots.json').write_text(json.dumps(shots,indent=2)+'\n');shutil.copyfile(frames/'stage-intro-0.png',MEDIA/f'Huroof-Demo-Vorschaubild-{LANG.upper()}.png')
 
 if a.step in ['all','capture']:capture()
 if a.step in ['all','stage']:stage()

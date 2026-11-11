@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-11",
+  "language": "de",
+  "edition": "Extended standalone demo guide",
+  "durationSeconds": 344.92,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "framesPerSecond": 25,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "audioSampleRate": 48000,
+  "audioChannels": 2,
+  "integratedLoudnessLUFS": -16.12,
+  "truePeakDbTP": -2.43,
+  "chapters": 26,
+  "realUIViews": 72,
+  "presentationShots": 73,
+  "subtitleSegments": 93,
+  "voice": "Piper / de_DE-thorsten-medium / synthetic German narration",
+  "navigationAndExerciseChecks": {
+    "browserErrors": [],
+    "localAudioRequests": 5,
+    "realSubmittedTests": 1,
+    "deliberateWrongAnswersForReview": 1,
+    "vocabularyTestTypes": [
+      "writing",
+      "multiple choice",
+      "missing letters",
+      "listening",
+      "scrambled letters",
+      "connected letters"
+    ],
+    "letterModes": [
+      "names",
+      "forms",
+      "missing",
+      "listening"
+    ],
+    "mobileMenuOpened": true
+  },
+  "visualReview": [
+    "12 representative presentation frames",
+    "Final encoded mobile navigation at 21.04 seconds",
+    "Final encoded connected-letter example at 232.34 seconds",
+    "Final encoded test results at 246.86 seconds"
+  ],
+  "maximumTextBoxBottomPixels": 806.6,
+  "checks": [
+    "All 26 chapters and 73 shots present",
+    "German narration and subtitles",
+    "All available demo sections have captured entry paths",
+    "Six vocabulary tests have menu and answer examples",
+    "All four letter exercise modes captured",
+    "Real incorrect writing answer recorded and shown in review",
+    "Subtitle and image timing checked",
+    "Full final audio/video decoded without errors",
+    "ZIP integrity and embedded video hash verified",
+    "Arabic guide MP4 and ZIP unchanged",
+    "No books, book vocabulary or Firebase accounts accessed"
+  ],
+  "limitations": [
+    "Some original app labels are still Arabic; original screenshots are retained and explained by German callouts."
+  ],
+  "files": {
+    "Huroof-Demo-Anleitung-DE.mp4": {
+      "bytes": 40318804,
+      "sha256": "2e4c3fff08f19779dd846a99d1a07ef157aa84e078814d67017e62e7f34e2042"
+    },
+    "Huroof-Demo-Anleitung-DE.zip": {
+      "bytes": 40490177,
+      "sha256": "6e3b7498d112707cb042bf9ab749993813d2d49ce60bbb052d2d6dfb3c683de6"
+    }
+  }
+}

@@ -1,0 +1,387 @@
+1
+00:00:00,400 --> 00:00:02,629
+Willkommen bei Buchstaben vom Olivenbaum.
+
+2
+00:00:02,779 --> 00:00:08,213
+In dieser Anleitung zeige ich dir, wie du die Bereiche der Demo öffnest und die
+verschiedenen Tests löst.
+
+3
+00:00:08,363 --> 00:00:11,346
+Der goldene Rahmen zeigt dir die passende Schaltfläche.
+
+4
+00:00:12,496 --> 00:00:15,736
+Am Laptop wählst du den gewünschten Bereich in der Seitenleiste.
+
+5
+00:00:15,886 --> 00:00:19,218
+Auf dem Handy öffnest du das Menü über das Symbol mit den drei Strichen.
+
+6
+00:00:19,368 --> 00:00:22,526
+Tippe anschließend auf den Bereich, den du ausprobieren möchtest.
+
+7
+00:00:23,676 --> 00:00:24,755
+Öffne die Übersicht.
+
+8
+00:00:24,905 --> 00:00:29,979
+Hier findest du drei kleine Ziele: Buchstaben entdecken, fünf Wörter lernen und
+einen Satz bilden.
+
+9
+00:00:30,129 --> 00:00:32,277
+Was du geschafft hast, hakst du selbst ab.
+
+10
+00:00:32,427 --> 00:00:36,281
+Das ist deine persönliche Lernrunde und keine automatische Bewertung.
+
+11
+00:00:37,431 --> 00:00:39,173
+Klicke im Menü auf Alphabet.
+
+12
+00:00:39,323 --> 00:00:42,074
+Mit Zurück und Weiter wechselst du zwischen den Buchstaben.
+
+13
+00:00:42,224 --> 00:00:44,988
+Klicke auf die Karte, um ihre Schreibformen zu sehen.
+
+14
+00:00:45,138 --> 00:00:48,052
+Über die Schaltfläche zum Anhören hörst du den Buchstaben.
+
+15
+00:00:49,202 --> 00:00:51,640
+Scrolle auf derselben Seite zur Schreibfläche.
+
+16
+00:00:51,790 --> 00:00:54,634
+Fahre die Vorlage mit dem Finger oder der Maus nach.
+
+17
+00:00:54,784 --> 00:01:01,449
+Darunter findest du Übungen zu den Schreibformen, zum fehlenden Buchstaben und
+zum Einkreisen des gesuchten Buchstabens.
+
+18
+00:01:02,599 --> 00:01:06,383
+Für die Buchstabentests wählst du Buchstaben üben in der Seitenleiste.
+
+19
+00:01:06,533 --> 00:01:08,681
+Hier stehen vier Übungsarten bereit.
+
+20
+00:01:08,831 --> 00:01:14,625
+Wähle eine aus, beantworte die Frage und gehe anschließend mit der Schaltfläche
+Weiter zur nächsten Aufgabe.
+
+21
+00:01:15,775 --> 00:01:19,861
+Bei Buchstabe und Name liest du den Namen und wählst das passende Zeichen.
+
+22
+00:01:20,011 --> 00:01:24,203
+Bei Schreibformen erkennen suchst du den Buchstaben zu einer gezeigten Form.
+
+23
+00:01:24,353 --> 00:01:28,509
+Achte darauf, wie er am Wortanfang, in der Mitte oder am Ende aussieht.
+
+24
+00:01:29,659 --> 00:01:33,177
+Bei Fehlender Buchstabe ergänzt du ein Wort mit dem passenden Zeichen.
+
+25
+00:01:33,327 --> 00:01:36,659
+Bei Hören und zuordnen drückst du zuerst die Hörschaltfläche.
+
+26
+00:01:36,809 --> 00:01:40,269
+Danach wählst du den Buchstaben aus, dessen Namen du gehört hast.
+
+27
+00:01:41,419 --> 00:01:43,218
+Öffne Ähnliche Laute im Menü.
+
+28
+00:01:43,368 --> 00:01:47,943
+Höre dir das Beispiel aufmerksam an und wähle anschließend die passende Antwort.
+
+29
+00:01:48,093 --> 00:01:51,738
+So übst du, ähnlich klingende arabische Laute auseinanderzuhalten.
+
+30
+00:01:51,888 --> 00:01:54,152
+Wiederhole das Hörbeispiel bei Bedarf.
+
+31
+00:01:55,302 --> 00:01:59,470
+Für die Vokabeln gehst du zurück zur Übersicht und scrollst zum Demo-Lernpfad.
+
+32
+00:01:59,620 --> 00:02:02,732
+Wähle zuerst das Niveau und anschließend eine Wortliste.
+
+33
+00:02:02,882 --> 00:02:07,143
+In unserem Beispiel öffnen wir auf Niveau A eins die Liste Essen und Küche.
+
+34
+00:02:08,293 --> 00:02:10,766
+Auf der Vorderseite steht das arabische Wort.
+
+35
+00:02:10,916 --> 00:02:13,737
+Klicke auf die Karte, um die deutsche Bedeutung zu sehen.
+
+36
+00:02:13,887 --> 00:02:16,499
+Höre dir die Aussprache an und sprich nach.
+
+37
+00:02:16,649 --> 00:02:19,598
+Mit den Pfeilen wechselst du zur nächsten oder vorherigen Karte.
+
+38
+00:02:20,748 --> 00:02:24,788
+Nach den Lernkarten klickst du auf Wissen testen oder auf Tests im Menü.
+
+39
+00:02:24,938 --> 00:02:27,539
+Wähle die Dauer und dann eine der sechs Testarten.
+
+40
+00:02:27,689 --> 00:02:32,658
+Jeder Test verwendet bis zu fünf zufällig ausgewählte Wörter aus deiner
+aktuellen Liste.
+
+41
+00:02:33,808 --> 00:02:37,767
+Beim Schreibtest siehst du die deutsche Bedeutung und tippst das arabische Wort
+ein.
+
+42
+00:02:37,917 --> 00:02:40,785
+Nutze dafür die arabische Tastatur deines Geräts.
+
+43
+00:02:40,935 --> 00:02:43,884
+Die Antwort wird mit oder ohne Vokalzeichen akzeptiert.
+
+44
+00:02:44,034 --> 00:02:46,344
+So trainierst du Erinnern und Rechtschreibung.
+
+45
+00:02:47,494 --> 00:02:52,730
+Bei Multiple Choice liest du das arabische Wort und wählst seine deutsche
+Bedeutung aus den Antworten.
+
+46
+00:02:52,880 --> 00:02:57,095
+Für eine andere Übungsart verwendest du die Schaltfläche zur Testauswahl.
+
+47
+00:02:57,245 --> 00:02:59,323
+Du kannst dann einen weiteren Test öffnen.
+
+48
+00:03:00,473 --> 00:03:03,399
+Hier sind einige Buchstaben eines Wortes bereits sichtbar.
+
+49
+00:03:03,549 --> 00:03:07,438
+Nutze die deutsche Bedeutung und die vorhandenen Zeichen als Hinweise.
+
+50
+00:03:07,588 --> 00:03:12,522
+Trage in jede Lücke den passenden Buchstaben ein und kontrolliere danach die
+Reihenfolge.
+
+51
+00:03:13,672 --> 00:03:16,795
+Im Hörtest drückst du zuerst die markierte Hörschaltfläche.
+
+52
+00:03:16,945 --> 00:03:21,253
+Du hörst ein arabisches Wort und wählst anschließend seine deutsche Bedeutung
+aus.
+
+53
+00:03:21,403 --> 00:03:24,468
+Du kannst die Aufnahme vor deiner Antwort erneut abspielen.
+
+54
+00:03:24,618 --> 00:03:26,429
+Höre ruhig ein zweites Mal hin.
+
+55
+00:03:27,579 --> 00:03:31,700
+Bei Buchstaben ordnen baust du das Wort durch Anklicken der Buchstaben auf.
+
+56
+00:03:31,851 --> 00:03:33,395
+Deine Antwort erscheint darüber.
+
+57
+00:03:33,545 --> 00:03:40,011
+Bei einem Fehler kannst du den letzten Buchstaben zurücknehmen oder die Aufgabe
+zurücksetzen und noch einmal beginnen.
+
+58
+00:03:41,161 --> 00:03:44,540
+Bei Verbundene Buchstaben ergänzen liegen die Lücken direkt im Wort.
+
+59
+00:03:44,690 --> 00:03:48,928
+Tippe das fehlende Zeichen ein und beobachte seine Form neben den anderen
+Buchstaben.
+
+60
+00:03:49,078 --> 00:03:54,488
+Hier schreibst du innerhalb des Wortes, während du beim Sortiertest einzelne
+Buchstabenplättchen auswählst.
+
+61
+00:03:55,638 --> 00:03:58,436
+Wenn du fertig bist, klickst du auf Ergebnis anzeigen.
+
+62
+00:03:58,586 --> 00:04:01,070
+Du siehst deine Punktzahl und die richtigen Lösungen.
+
+63
+00:04:01,220 --> 00:04:06,399
+In unserem Schreibbeispiel ist eine Antwort absichtlich falsch, damit du die
+Korrektur kennenlernst.
+
+64
+00:04:06,549 --> 00:04:09,010
+Nutze den Fehler für deine nächste Wiederholung.
+
+65
+00:04:10,160 --> 00:04:11,878
+Öffne Sätze bilden im Menü.
+
+66
+00:04:12,028 --> 00:04:16,150
+Klicke die Wörter in der richtigen Reihenfolge an und überprüfe deinen Satz.
+
+67
+00:04:16,300 --> 00:04:19,493
+Wenn du Hilfe brauchst, nutze den Tipp für das nächste Wort.
+
+68
+00:04:19,643 --> 00:04:21,930
+Nach der Lösung kannst du dir den Satz anhören.
+
+69
+00:04:23,080 --> 00:04:25,982
+Unter Kurzgeschichten öffnest du die verfügbare Geschichte.
+
+70
+00:04:26,132 --> 00:04:28,025
+Lies die Abschnitte und höre zu.
+
+71
+00:04:28,175 --> 00:04:30,624
+Bei Bedarf blendest du die deutsche Übersetzung ein.
+
+72
+00:04:30,774 --> 00:04:35,012
+Scrolle danach zu den Verständnisfragen und wähle die passende Antwort aus.
+
+73
+00:04:36,162 --> 00:04:39,680
+Öffne Grammatik und wähle eine Lektion aus der Auswahlliste.
+
+74
+00:04:39,830 --> 00:04:42,222
+Lies zuerst die Erklärung und die Beispiele.
+
+75
+00:04:42,372 --> 00:04:43,602
+Scrolle dann zur Übung.
+
+76
+00:04:43,752 --> 00:04:48,559
+Wähle deine Antwort und lies die Rückmeldung, bevor du mit der nächsten Aufgabe
+weitermachst.
+
+77
+00:04:49,709 --> 00:04:52,391
+Öffne Verben und wähle ein Verb aus der Liste.
+
+78
+00:04:52,541 --> 00:04:57,371
+Wechsle zwischen Vergangenheit, Gegenwart und Befehlsform, um die Formen zu
+vergleichen.
+
+79
+00:04:57,521 --> 00:04:59,355
+Unter der Übersicht findest du eine Übung.
+
+80
+00:04:59,505 --> 00:05:01,699
+Wähle dort die passende Verbform aus.
+
+81
+00:05:02,849 --> 00:05:06,228
+Unter Wiederholen findest du Wörter, bei denen du Fehler gemacht hast.
+
+82
+00:05:06,378 --> 00:05:09,025
+Drehe die Karte um, höre zu und sprich nach.
+
+83
+00:05:09,175 --> 00:05:12,008
+Ist die Liste noch leer, bearbeite zunächst einen Test.
+
+84
+00:05:12,158 --> 00:05:15,745
+Ein Fehler ist ein Hinweis darauf, was du als Nächstes üben kannst.
+
+85
+00:05:16,895 --> 00:05:19,473
+Öffne Fortschritt, um deine Ergebnisse anzusehen.
+
+86
+00:05:19,623 --> 00:05:24,731
+Für den Abschluss einer Liste brauchst du zweimal mindestens achtzig Prozent in
+jeder der sechs Testarten.
+
+87
+00:05:24,881 --> 00:05:27,807
+Der Lernstand der Demo bleibt in diesem Browser gespeichert.
+
+88
+00:05:27,957 --> 00:05:30,093
+Zwischen Geräten wird er nicht synchronisiert.
+
+89
+00:05:31,243 --> 00:05:32,787
+Beginne mit einem kleinen Schritt.
+
+90
+00:05:32,937 --> 00:05:37,349
+Lerne mit den Karten, probiere die Tests aus und wiederhole schwierige Wörter.
+
+91
+00:05:37,499 --> 00:05:39,299
+Du musst nicht alles sofort können.
+
+92
+00:05:39,449 --> 00:05:41,480
+Jede Lernrunde bringt dich weiter.
+
+93
+00:05:41,630 --> 00:05:44,161
+Viel Freude mit Buchstaben vom Olivenbaum.

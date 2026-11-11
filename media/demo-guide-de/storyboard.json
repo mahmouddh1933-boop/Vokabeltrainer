@@ -1,0 +1,265 @@
+{
+  "title": "Huroof · Die Demo und ihre Tests Schritt für Schritt",
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "So lernst du mit\nBuchstaben vom Olivenbaum.",
+      "items": [
+        "Eine Anleitung zur Demo",
+        "Alle Bereiche öffnen",
+        "Übungen selbst ausprobieren"
+      ],
+      "text": "Willkommen bei Buchstaben vom Olivenbaum. In dieser Anleitung zeige ich dir, wie du die Bereiche der Demo öffnest und die verschiedenen Tests löst. Der goldene Rahmen zeigt dir die passende Schaltfläche."
+    },
+    {
+      "id": "navigation",
+      "title": "Dein Einstieg:\ndas Menü.",
+      "items": [
+        "Am Laptop: die Seitenleiste",
+        "Am Handy: die drei Striche",
+        "Den gewünschten Bereich wählen"
+      ],
+      "text": "Am Laptop wählst du den gewünschten Bereich in der Seitenleiste. Auf dem Handy öffnest du das Menü über das Symbol mit den drei Strichen. Tippe anschließend auf den Bereich, den du ausprobieren möchtest."
+    },
+    {
+      "id": "goals",
+      "title": "Übersicht öffnen.\nKleine Ziele setzen.",
+      "items": [
+        "Auf Übersicht klicken",
+        "Drei kleine Lernziele entdecken",
+        "Selbst als geschafft markieren"
+      ],
+      "text": "Öffne die Übersicht. Hier findest du drei kleine Ziele: Buchstaben entdecken, fünf Wörter lernen und einen Satz bilden. Was du geschafft hast, hakst du selbst ab. Das ist deine persönliche Lernrunde und keine automatische Bewertung."
+    },
+    {
+      "id": "letters",
+      "title": "Alphabet:\ndie erste Lernkarte.",
+      "items": [
+        "Alphabet im Menü öffnen",
+        "Mit Zurück und Weiter wechseln",
+        "Die Karte umdrehen und zuhören"
+      ],
+      "text": "Klicke im Menü auf Alphabet. Mit Zurück und Weiter wechselst du zwischen den Buchstaben. Klicke auf die Karte, um ihre Schreibformen zu sehen. Über die Schaltfläche zum Anhören hörst du den Buchstaben."
+    },
+    {
+      "id": "writing-letter",
+      "title": "Den Buchstaben\nselbst schreiben.",
+      "items": [
+        "Zur Schreibfläche scrollen",
+        "Mit Finger oder Maus nachfahren",
+        "Die Übungen darunter ausprobieren"
+      ],
+      "text": "Scrolle auf derselben Seite zur Schreibfläche. Fahre die Vorlage mit dem Finger oder der Maus nach. Darunter findest du Übungen zu den Schreibformen, zum fehlenden Buchstaben und zum Einkreisen des gesuchten Buchstabens."
+    },
+    {
+      "id": "letter-menu",
+      "title": "Buchstaben üben:\nvier Möglichkeiten.",
+      "items": [
+        "Buchstaben üben öffnen",
+        "Eine Übungsart auswählen",
+        "Antworten und weitergehen"
+      ],
+      "text": "Für die Buchstabentests wählst du Buchstaben üben in der Seitenleiste. Hier stehen vier Übungsarten bereit. Wähle eine aus, beantworte die Frage und gehe anschließend mit der Schaltfläche Weiter zur nächsten Aufgabe."
+    },
+    {
+      "id": "letter-recognition",
+      "title": "Namen und\nSchreibformen erkennen.",
+      "items": [
+        "Buchstabe und Name",
+        "Schreibformen erkennen",
+        "Auf die Position im Wort achten"
+      ],
+      "text": "Bei Buchstabe und Name liest du den Namen und wählst das passende Zeichen. Bei Schreibformen erkennen suchst du den Buchstaben zu einer gezeigten Form. Achte darauf, wie er am Wortanfang, in der Mitte oder am Ende aussieht."
+    },
+    {
+      "id": "letter-listening",
+      "title": "Ergänzen.\nHören und zuordnen.",
+      "items": [
+        "Den fehlenden Buchstaben ergänzen",
+        "Die Hörschaltfläche drücken",
+        "Das gehörte Zeichen auswählen"
+      ],
+      "text": "Bei Fehlender Buchstabe ergänzt du ein Wort mit dem passenden Zeichen. Bei Hören und zuordnen drückst du zuerst die Hörschaltfläche. Danach wählst du den Buchstaben aus, dessen Namen du gehört hast."
+    },
+    {
+      "id": "sounds",
+      "title": "Ähnliche Laute\nunterscheiden.",
+      "items": [
+        "Ähnliche Laute öffnen",
+        "Zuerst genau zuhören",
+        "Danach die Antwort auswählen"
+      ],
+      "text": "Öffne Ähnliche Laute im Menü. Höre dir das Beispiel aufmerksam an und wähle anschließend die passende Antwort. So übst du, ähnlich klingende arabische Laute auseinanderzuhalten. Wiederhole das Hörbeispiel bei Bedarf."
+    },
+    {
+      "id": "vocab-select",
+      "title": "So öffnest du\neine Vokabelliste.",
+      "items": [
+        "Zur Übersicht zurückkehren",
+        "Zum Demo-Lernpfad scrollen",
+        "Niveau und Wortliste auswählen"
+      ],
+      "text": "Für die Vokabeln gehst du zurück zur Übersicht und scrollst zum Demo-Lernpfad. Wähle zuerst das Niveau und anschließend eine Wortliste. In unserem Beispiel öffnen wir auf Niveau A eins die Liste Essen und Küche."
+    },
+    {
+      "id": "cards",
+      "title": "Lernkarten:\nsehen, hören, wiederholen.",
+      "items": [
+        "Arabisches Wort auf der Vorderseite",
+        "Deutsche Bedeutung auf der Rückseite",
+        "Aussprache anhören und weitergehen"
+      ],
+      "text": "Auf der Vorderseite steht das arabische Wort. Klicke auf die Karte, um die deutsche Bedeutung zu sehen. Höre dir die Aussprache an und sprich nach. Mit den Pfeilen wechselst du zur nächsten oder vorherigen Karte."
+    },
+    {
+      "id": "test-menu",
+      "title": "Tests starten:\nArt und Dauer wählen.",
+      "items": [
+        "Zuerst eine Wortliste auswählen",
+        "Wissen testen oder Tests anklicken",
+        "Dauer und Testart festlegen"
+      ],
+      "text": "Nach den Lernkarten klickst du auf Wissen testen oder auf Tests im Menü. Wähle die Dauer und dann eine der sechs Testarten. Jeder Test verwendet bis zu fünf zufällig ausgewählte Wörter aus deiner aktuellen Liste."
+    },
+    {
+      "id": "test-writing",
+      "title": "1. Arabisches Wort\nschreiben.",
+      "items": [
+        "Die deutsche Bedeutung lesen",
+        "Das arabische Wort eintippen",
+        "Vokalzeichen sind beim Prüfen optional"
+      ],
+      "text": "Beim Schreibtest siehst du die deutsche Bedeutung und tippst das arabische Wort ein. Nutze dafür die arabische Tastatur deines Geräts. Die Antwort wird mit oder ohne Vokalzeichen akzeptiert. So trainierst du Erinnern und Rechtschreibung."
+    },
+    {
+      "id": "test-choice",
+      "title": "2. Multiple Choice:\ndie Bedeutung wählen.",
+      "items": [
+        "Das arabische Wort lesen",
+        "Die deutsche Bedeutung anklicken",
+        "Für einen anderen Test zurückgehen"
+      ],
+      "text": "Bei Multiple Choice liest du das arabische Wort und wählst seine deutsche Bedeutung aus den Antworten. Für eine andere Übungsart verwendest du die Schaltfläche zur Testauswahl. Du kannst dann einen weiteren Test öffnen."
+    },
+    {
+      "id": "test-missing",
+      "title": "3. Fehlende\nBuchstaben ergänzen.",
+      "items": [
+        "Bedeutung und sichtbare Zeichen lesen",
+        "Pro Lücke einen Buchstaben eingeben",
+        "Die Reihenfolge kontrollieren"
+      ],
+      "text": "Hier sind einige Buchstaben eines Wortes bereits sichtbar. Nutze die deutsche Bedeutung und die vorhandenen Zeichen als Hinweise. Trage in jede Lücke den passenden Buchstaben ein und kontrolliere danach die Reihenfolge."
+    },
+    {
+      "id": "test-listening",
+      "title": "4. Hörtest:\nvom Klang zur Bedeutung.",
+      "items": [
+        "Die markierte Hörschaltfläche drücken",
+        "Das arabische Wort anhören",
+        "Die deutsche Bedeutung auswählen"
+      ],
+      "text": "Im Hörtest drückst du zuerst die markierte Hörschaltfläche. Du hörst ein arabisches Wort und wählst anschließend seine deutsche Bedeutung aus. Du kannst die Aufnahme vor deiner Antwort erneut abspielen. Höre ruhig ein zweites Mal hin."
+    },
+    {
+      "id": "test-scramble",
+      "title": "5. Buchstaben\nin die richtige Reihenfolge.",
+      "items": [
+        "Die Buchstaben der Reihe nach anklicken",
+        "Das gebildete Wort oben verfolgen",
+        "Bei Bedarf zurücknehmen oder neu starten"
+      ],
+      "text": "Bei Buchstaben ordnen baust du das Wort durch Anklicken der Buchstaben auf. Deine Antwort erscheint darüber. Bei einem Fehler kannst du den letzten Buchstaben zurücknehmen oder die Aufgabe zurücksetzen und noch einmal beginnen."
+    },
+    {
+      "id": "test-connected",
+      "title": "6. Verbundene\nBuchstaben ergänzen.",
+      "items": [
+        "Den Buchstaben in die Lücke schreiben",
+        "Seine Form im Wort beobachten",
+        "Den letzten Eintrag bei Bedarf zurücknehmen"
+      ],
+      "text": "Bei Verbundene Buchstaben ergänzen liegen die Lücken direkt im Wort. Tippe das fehlende Zeichen ein und beobachte seine Form neben den anderen Buchstaben. Hier schreibst du innerhalb des Wortes, während du beim Sortiertest einzelne Buchstabenplättchen auswählst."
+    },
+    {
+      "id": "results",
+      "title": "Den Test beenden.\nDas Ergebnis verstehen.",
+      "items": [
+        "Ergebnis anzeigen anklicken",
+        "Antwort und richtige Lösung vergleichen",
+        "Fehler wiederholen oder zurück zu den Karten"
+      ],
+      "text": "Wenn du fertig bist, klickst du auf Ergebnis anzeigen. Du siehst deine Punktzahl und die richtigen Lösungen. In unserem Schreibbeispiel ist eine Antwort absichtlich falsch, damit du die Korrektur kennenlernst. Nutze den Fehler für deine nächste Wiederholung."
+    },
+    {
+      "id": "sentences",
+      "title": "Sätze bilden:\nWörter sinnvoll verbinden.",
+      "items": [
+        "Sätze bilden im Menü öffnen",
+        "Die Wörter in der richtigen Reihenfolge wählen",
+        "Den Satz überprüfen und anhören"
+      ],
+      "text": "Öffne Sätze bilden im Menü. Klicke die Wörter in der richtigen Reihenfolge an und überprüfe deinen Satz. Wenn du Hilfe brauchst, nutze den Tipp für das nächste Wort. Nach der Lösung kannst du dir den Satz anhören."
+    },
+    {
+      "id": "stories",
+      "title": "Kurzgeschichten:\nlesen und verstehen.",
+      "items": [
+        "Die verfügbare Geschichte öffnen",
+        "Zuhören und bei Bedarf übersetzen",
+        "Die Verständnisfragen beantworten"
+      ],
+      "text": "Unter Kurzgeschichten öffnest du die verfügbare Geschichte. Lies die Abschnitte und höre zu. Bei Bedarf blendest du die deutsche Übersetzung ein. Scrolle danach zu den Verständnisfragen und wähle die passende Antwort aus."
+    },
+    {
+      "id": "grammar",
+      "title": "Grammatik:\neine Lektion wählen.",
+      "items": [
+        "Grammatik öffnen",
+        "Eine Lektion aus der Liste wählen",
+        "Erklärung lesen und die Aufgabe lösen"
+      ],
+      "text": "Öffne Grammatik und wähle eine Lektion aus der Auswahlliste. Lies zuerst die Erklärung und die Beispiele. Scrolle dann zur Übung. Wähle deine Antwort und lies die Rückmeldung, bevor du mit der nächsten Aufgabe weitermachst."
+    },
+    {
+      "id": "verbs",
+      "title": "Verben:\nFormen vergleichen.",
+      "items": [
+        "Verben im Menü öffnen",
+        "Ein Verb auswählen",
+        "Zwischen den Zeitformen wechseln"
+      ],
+      "text": "Öffne Verben und wähle ein Verb aus der Liste. Wechsle zwischen Vergangenheit, Gegenwart und Befehlsform, um die Formen zu vergleichen. Unter der Übersicht findest du eine Übung. Wähle dort die passende Verbform aus."
+    },
+    {
+      "id": "review",
+      "title": "Wiederholen:\naus Fehlern lernen.",
+      "items": [
+        "Wiederholen öffnen",
+        "Schwierige Wörter erneut ansehen",
+        "Die Karte umdrehen und nachsprechen"
+      ],
+      "text": "Unter Wiederholen findest du Wörter, bei denen du Fehler gemacht hast. Drehe die Karte um, höre zu und sprich nach. Ist die Liste noch leer, bearbeite zunächst einen Test. Ein Fehler ist ein Hinweis darauf, was du als Nächstes üben kannst."
+    },
+    {
+      "id": "stats",
+      "title": "Fortschritt:\ndeinen Lernstand ansehen.",
+      "items": [
+        "Fortschritt im Menü öffnen",
+        "Ergebnisse und Wiederholungen verfolgen",
+        "Die Demo speichert lokal im Browser"
+      ],
+      "text": "Öffne Fortschritt, um deine Ergebnisse anzusehen. Für den Abschluss einer Liste brauchst du zweimal mindestens achtzig Prozent in jeder der sechs Testarten. Der Lernstand der Demo bleibt in diesem Browser gespeichert. Zwischen Geräten wird er nicht synchronisiert."
+    },
+    {
+      "id": "outro",
+      "title": "Lernen. Ausprobieren.\nRegelmäßig wiederholen.",
+      "items": [
+        "Mit Buchstaben und Lernkarten beginnen",
+        "Das Wissen in Übungen anwenden",
+        "Jede kleine Lernrunde zählt"
+      ],
+      "text": "Beginne mit einem kleinen Schritt. Lerne mit den Karten, probiere die Tests aus und wiederhole schwierige Wörter. Du musst nicht alles sofort können. Jede Lernrunde bringt dich weiter. Viel Freude mit Buchstaben vom Olivenbaum."
+    }
+  ]
+}
