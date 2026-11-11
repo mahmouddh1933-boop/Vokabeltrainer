@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-11",
+  "language": "ar",
+  "edition": "Extended standalone demo guide",
+  "durationSeconds": 423.72,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "framesPerSecond": 25,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "audioSampleRate": 48000,
+  "audioChannels": 2,
+  "chapters": 26,
+  "realUIViews": 72,
+  "presentationShots": 73,
+  "vocalizedSubtitleSegments": 76,
+  "navigationAndExerciseChecks": {
+    "browserErrors": [],
+    "localAudioRequests": 5,
+    "realSubmittedTests": 1,
+    "deliberateWrongAnswersForReview": 1,
+    "vocabularyTestTypes": [
+      "writing",
+      "multiple choice",
+      "missing letters",
+      "listening",
+      "scrambled letters",
+      "connected letters"
+    ],
+    "letterModes": [
+      "names",
+      "forms",
+      "missing",
+      "listening"
+    ],
+    "mobileMenuOpened": true
+  },
+  "visualReview": [
+    "12 representative frames including all six vocabulary tests",
+    "Final encoded mobile navigation at 23 seconds",
+    "Final encoded letter ordering at 264 seconds",
+    "Final encoded result/correction at 299 seconds",
+    "Text boxes measured for all non-title scenes: maximum bottom 876px, caption area starts at 930px"
+  ],
+  "checks": [
+    "All available demo sections have captured entry paths",
+    "Six test types have menu selection and answer examples",
+    "Real incorrect writing answer recorded and displayed in review",
+    "Arabic script and captions contain vowel marks",
+    "Continuous picture/subtitle timing checked",
+    "Full audio/video decoded without errors",
+    "ZIP integrity and embedded MP4 hash match",
+    "H.264/AAC 1920x1080 with Arabic audio tag",
+    "Books and book vocabulary excluded; no Firebase accounts accessed"
+  ],
+  "files": {
+    "Huroof-Demo-Anleitung-AR.mp4": {
+      "bytes": 34232412,
+      "sha256": "fbd2ebac239a4e0167581ec435bac1474576f2204fee392dbb920bfd9fffd2f7"
+    },
+    "Huroof-Demo-Anleitung-AR.zip": {
+      "bytes": 34439807,
+      "sha256": "18e214ecdfd3788b6944190935734e860540c1f8e7b5a96f35272552c1f83897"
+    }
+  }
+}

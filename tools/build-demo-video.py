@@ -23,8 +23,13 @@ p.add_argument('--model', type=Path)
 p.add_argument('--demo-url', default='http://127.0.0.1:8086')
 p.add_argument('--stage-url', default='http://127.0.0.1:8077')
 p.add_argument('--language', choices=['de','ar'], default='de')
+p.add_argument('--media-directory',type=Path,default=MEDIA)
+p.add_argument('--output-stem',default='Huroof-Demo-Werbung')
+p.add_argument('--bundle-stem',default='Huroof-Demo-Video')
 p.add_argument('--step', choices=['all','audio','capture','render'], default='all')
 a = p.parse_args()
+MEDIA=a.media_directory.resolve()
+STEM=a.output_stem
 LANG = a.language
 SUFFIX = LANG.upper()
 OUT = a.directory.resolve()
@@ -99,7 +104,7 @@ def audio():
     with wave.open(str(OUT/f'narration-{LANG}.wav'),'wb') as f:
         f.setnchannels(1); f.setsampwidth(2); f.setframerate(rate); f.writeframes(b''.join(chunks))
     (OUT/'timeline.json').write_text(json.dumps(dict(duration=position,scenes=scenes,subtitles=subs),ensure_ascii=False,indent=2))
-    (MEDIA/f'Huroof-Demo-Werbung-{SUFFIX}.srt').write_text('\n\n'.join(f'{i+1}\n{stamp(s["start"])} --> {stamp(s["end"])}\n'+ '\n'.join(wrap_caption(s['text'],56 if LANG=='ar' else 80)) for i,s in enumerate(subs))+'\n')
+    (MEDIA/f'{STEM}-{SUFFIX}.srt').write_text('\n\n'.join(f'{i+1}\n{stamp(s["start"])} --> {stamp(s["end"])}\n'+ '\n'.join(wrap_caption(s['text'],56 if LANG=='ar' else 80)) for i,s in enumerate(subs))+'\n')
     (MEDIA/f'Sprechertext-{SUFFIX}.txt').write_text('\n\n'.join(s['title'].replace('\n',' ')+'\n'+s['text'] for s in scenes)+'\n')
     (MEDIA/f'YouTube-Kapitel-{SUFFIX}.txt').write_text('\n'.join(f'{int(s["start"])//60:02}:{int(s["start"])%60:02} '+s['title'].replace('\n',' ') for s in scenes)+'\n')
 
@@ -216,7 +221,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         clips.append(clip)
         print('RENDER',i+1,'/',len(shots),flush=True)
     concat=OUT/'clips.txt';concat.write_text(''.join(f"file '{x}'\n" for x in clips))
-    dest=ROOT/f'downloads/Huroof-Demo-Werbung-{SUFFIX}.mp4'
+    dest=ROOT/f'downloads/{STEM}-{SUFFIX}.mp4'
     assfilter=('drawbox=x=70:y=930:w=1780:h=120:color=0x214735:t=fill,' if LANG=='ar' else '')+f'ass={ass}'+(f':fontsdir={fontdir}' if LANG=='ar' else '')
     run('ffmpeg','-y','-v','warning','-f','concat','-safe','0','-i',concat,'-i',OUT/f'narration-{LANG}.wav','-i',OUT/'music.wav','-filter_complex',
         f'[0:v]{assfilter},fade=t=out:st={duration-.6}:d=0.6:color=0xf5f1e5[v];[1:a]aformat=channel_layouts=stereo,asplit=2[voice][side];[2:a][side]sidechaincompress=threshold=0.02:ratio=4:attack=35:release=450[bed];[voice][bed]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=9[a]',
@@ -225,9 +230,9 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     v=next(s for s in info['streams'] if s['codec_type']=='video');au=next(s for s in info['streams'] if s['codec_type']=='audio')
     assert (v['width'],v['height'],v['codec_name'],au['codec_name'])==(1920,1080,'h264','aac')
     assert abs(float(info['format']['duration'])-duration)<.15 and dest.stat().st_size<95_000_000
-    with zipfile.ZipFile(ROOT/f'downloads/Huroof-Demo-Video-{SUFFIX}.zip','w',compression=zipfile.ZIP_STORED) as z:
+    with zipfile.ZipFile(ROOT/f'downloads/{a.bundle_stem}-{SUFFIX}.zip','w',compression=zipfile.ZIP_STORED) as z:
         z.write(dest,dest.name)
-        for name in [f'Huroof-Demo-Werbung-{SUFFIX}.srt',f'Huroof-Demo-Vorschaubild-{SUFFIX}.png',f'Sprechertext-{SUFFIX}.txt',f'YouTube-Kapitel-{SUFFIX}.txt','README-AR.md' if LANG=='ar' else 'README.md']:
+        for name in [f'{STEM}-{SUFFIX}.srt',f'Huroof-Demo-Vorschaubild-{SUFFIX}.png',f'Sprechertext-{SUFFIX}.txt',f'YouTube-Kapitel-{SUFFIX}.txt','README-AR.md' if LANG=='ar' else 'README.md']:
             z.write(MEDIA/name,name)
     print('DONE',round(duration,2),'seconds;',dest.stat().st_size,'bytes',flush=True)
 

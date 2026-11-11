@@ -1,0 +1,368 @@
+{
+  "errors": [],
+  "steps": [
+    {
+      "id": "menu-desktop",
+      "page": "http://127.0.0.1:8086/index.html",
+      "control": ".app-sidebar nav"
+    },
+    {
+      "id": "menu-mobile-closed",
+      "page": "http://127.0.0.1:8086/index.html",
+      "control": ".menu-toggle"
+    },
+    {
+      "id": "menu-mobile-open",
+      "page": "http://127.0.0.1:8086/index.html",
+      "control": ".app-sidebar nav"
+    },
+    {
+      "id": "goals",
+      "page": "http://127.0.0.1:8086/index.html",
+      "control": "#demo-journey"
+    },
+    {
+      "id": "goals-marked",
+      "page": "http://127.0.0.1:8086/index.html",
+      "control": "#demo-journey-status"
+    },
+    {
+      "id": "letters-entry",
+      "page": "http://127.0.0.1:8086/index.html",
+      "control": ".app-sidebar a[href=\"huruf.html\"]"
+    },
+    {
+      "id": "letter-front",
+      "page": "http://127.0.0.1:8086/huruf.html",
+      "control": "#letter-card"
+    },
+    {
+      "id": "letter-forms",
+      "page": "http://127.0.0.1:8086/huruf.html",
+      "control": "#letter-card"
+    },
+    {
+      "id": "writing-guide",
+      "page": "http://127.0.0.1:8086/huruf.html",
+      "control": "#writing-canvas"
+    },
+    {
+      "id": "writing-practice",
+      "page": "http://127.0.0.1:8086/huruf.html",
+      "control": "#letter-focused-practice"
+    },
+    {
+      "id": "letter-tests-entry",
+      "page": "http://127.0.0.1:8086/huruf.html",
+      "control": ".app-sidebar a[href=\"letter-tests.html\"]"
+    },
+    {
+      "id": "letter-modes",
+      "page": "http://127.0.0.1:8086/letter-tests.html",
+      "control": "#training-modes"
+    },
+    {
+      "id": "letter-names",
+      "page": "http://127.0.0.1:8086/letter-tests.html#names",
+      "control": "#training-run"
+    },
+    {
+      "id": "letter-forms-quiz",
+      "page": "http://127.0.0.1:8086/letter-tests.html#forms",
+      "control": "#training-run"
+    },
+    {
+      "id": "letter-missing",
+      "page": "http://127.0.0.1:8086/letter-tests.html#missing",
+      "control": "#training-run"
+    },
+    {
+      "id": "letter-listening",
+      "page": "http://127.0.0.1:8086/letter-tests.html#listening",
+      "control": "#training-run"
+    },
+    {
+      "id": "sounds-entry",
+      "page": "http://127.0.0.1:8086/letter-tests.html#listening",
+      "control": ".app-sidebar a[href=\"sounds.html\"]"
+    },
+    {
+      "id": "sounds-question",
+      "page": "http://127.0.0.1:8086/sounds.html",
+      "control": "#sound-options"
+    },
+    {
+      "id": "sound-button",
+      "page": "http://127.0.0.1:8086/sounds.html",
+      "control": "#sound-listen"
+    },
+    {
+      "id": "vocabulary-entry",
+      "page": "http://127.0.0.1:8086/sounds.html",
+      "control": ".app-sidebar a[href=\"index.html\"]"
+    },
+    {
+      "id": "vocab-levels",
+      "page": "http://127.0.0.1:8086/index.html",
+      "control": "#ready-lists-panel"
+    },
+    {
+      "id": "vocab-food",
+      "page": "http://127.0.0.1:8086/index.html",
+      "control": "#guide-food-list"
+    },
+    {
+      "id": "card-ar",
+      "page": "http://127.0.0.1:8086/lernseite.html",
+      "control": "#flashcard"
+    },
+    {
+      "id": "card-de",
+      "page": "http://127.0.0.1:8086/lernseite.html",
+      "control": "#flashcard"
+    },
+    {
+      "id": "card-audio",
+      "page": "http://127.0.0.1:8086/lernseite.html",
+      "control": "#pronounce-button"
+    },
+    {
+      "id": "start-test",
+      "page": "http://127.0.0.1:8086/lernseite.html",
+      "control": "#test-button"
+    },
+    {
+      "id": "test-duration",
+      "page": "http://127.0.0.1:8086/test.html",
+      "control": ".test-duration-panel"
+    },
+    {
+      "id": "test-menu",
+      "page": "http://127.0.0.1:8086/test.html",
+      "control": ".test-button-group"
+    },
+    {
+      "id": "test-1-entry",
+      "page": "http://127.0.0.1:8086/test.html",
+      "control": "#test1-button"
+    },
+    {
+      "id": "writing-question",
+      "page": "http://127.0.0.1:8086/test1.html",
+      "control": ".question"
+    },
+    {
+      "id": "writing-answer",
+      "page": "http://127.0.0.1:8086/test1.html",
+      "control": ".question"
+    },
+    {
+      "id": "result-button",
+      "page": "http://127.0.0.1:8086/test1.html",
+      "control": "#submit-test"
+    },
+    {
+      "id": "result-page",
+      "page": "http://127.0.0.1:8086/ergebnis.html",
+      "control": "#results"
+    },
+    {
+      "id": "result-summary",
+      "page": "http://127.0.0.1:8086/ergebnis.html",
+      "control": ".summary"
+    },
+    {
+      "id": "result-review",
+      "page": "http://127.0.0.1:8086/ergebnis.html",
+      "control": "#review-errors"
+    },
+    {
+      "id": "test-2-entry",
+      "page": "http://127.0.0.1:8086/test.html",
+      "control": "#test2-button"
+    },
+    {
+      "id": "choice-question",
+      "page": "http://127.0.0.1:8086/test2.html",
+      "control": ".question"
+    },
+    {
+      "id": "choice-answer",
+      "page": "http://127.0.0.1:8086/test2.html",
+      "control": ".question"
+    },
+    {
+      "id": "test-3-entry",
+      "page": "http://127.0.0.1:8086/test.html",
+      "control": "#test3-button"
+    },
+    {
+      "id": "missing-question",
+      "page": "http://127.0.0.1:8086/test3.html",
+      "control": ".question"
+    },
+    {
+      "id": "missing-answer",
+      "page": "http://127.0.0.1:8086/test3.html",
+      "control": ".question"
+    },
+    {
+      "id": "test-4-entry",
+      "page": "http://127.0.0.1:8086/test.html",
+      "control": "#test4-button"
+    },
+    {
+      "id": "listening-question",
+      "page": "http://127.0.0.1:8086/test4.html",
+      "control": ".question"
+    },
+    {
+      "id": "listening-answer",
+      "page": "http://127.0.0.1:8086/test4.html",
+      "control": ".question"
+    },
+    {
+      "id": "test-5-entry",
+      "page": "http://127.0.0.1:8086/test.html",
+      "control": "#test5-button"
+    },
+    {
+      "id": "scramble-question",
+      "page": "http://127.0.0.1:8086/test5.html",
+      "control": ".question"
+    },
+    {
+      "id": "scramble-answer",
+      "page": "http://127.0.0.1:8086/test5.html",
+      "control": ".question"
+    },
+    {
+      "id": "test-6-entry",
+      "page": "http://127.0.0.1:8086/test.html",
+      "control": "#test6-button"
+    },
+    {
+      "id": "connected-question",
+      "page": "http://127.0.0.1:8086/test6.html",
+      "control": ".question"
+    },
+    {
+      "id": "connected-answer",
+      "page": "http://127.0.0.1:8086/test6.html",
+      "control": ".question"
+    },
+    {
+      "id": "sentences-entry",
+      "page": "http://127.0.0.1:8086/test6.html",
+      "control": ".app-sidebar a[href=\"sentences.html\"]"
+    },
+    {
+      "id": "sentence-start",
+      "page": "http://127.0.0.1:8086/sentences.html",
+      "control": "#sentence-answer"
+    },
+    {
+      "id": "sentence-done",
+      "page": "http://127.0.0.1:8086/sentences.html",
+      "control": "#sentence-feedback"
+    },
+    {
+      "id": "stories-entry",
+      "page": "http://127.0.0.1:8086/sentences.html",
+      "control": ".app-sidebar a[href=\"stories.html\"]"
+    },
+    {
+      "id": "story-library",
+      "page": "http://127.0.0.1:8086/stories.html",
+      "control": "#story-library"
+    },
+    {
+      "id": "story-text",
+      "page": "http://127.0.0.1:8086/stories.html",
+      "control": "#story-lines"
+    },
+    {
+      "id": "story-translated",
+      "page": "http://127.0.0.1:8086/stories.html",
+      "control": "#story-lines"
+    },
+    {
+      "id": "story-questions",
+      "page": "http://127.0.0.1:8086/stories.html",
+      "control": "#story-question"
+    },
+    {
+      "id": "grammar-entry",
+      "page": "http://127.0.0.1:8086/stories.html",
+      "control": ".app-sidebar a[href=\"grammar.html\"]"
+    },
+    {
+      "id": "grammar-lesson",
+      "page": "http://127.0.0.1:8086/grammar.html",
+      "control": "#grammar-lesson-select"
+    },
+    {
+      "id": "grammar-explanation",
+      "page": "http://127.0.0.1:8086/grammar.html#pronouns",
+      "control": "#lesson-sections"
+    },
+    {
+      "id": "grammar-practice",
+      "page": "http://127.0.0.1:8086/grammar.html#pronouns",
+      "control": "#grammar-question"
+    },
+    {
+      "id": "verbs-entry",
+      "page": "http://127.0.0.1:8086/grammar.html#pronouns",
+      "control": ".app-sidebar a[href=\"verbs.html\"]"
+    },
+    {
+      "id": "verb-select",
+      "page": "http://127.0.0.1:8086/verbs.html",
+      "control": "#verb-select"
+    },
+    {
+      "id": "verbs-present",
+      "page": "http://127.0.0.1:8086/verbs.html",
+      "control": "#conjugation-body"
+    },
+    {
+      "id": "verbs-imperative",
+      "page": "http://127.0.0.1:8086/verbs.html",
+      "control": "#conjugation-body"
+    },
+    {
+      "id": "verbs-practice",
+      "page": "http://127.0.0.1:8086/verbs.html",
+      "control": "#verb-question"
+    },
+    {
+      "id": "review-entry",
+      "page": "http://127.0.0.1:8086/verbs.html",
+      "control": ".app-sidebar a[href=\"review.html\"]"
+    },
+    {
+      "id": "review-card",
+      "page": "http://127.0.0.1:8086/review.html",
+      "control": "#review-card"
+    },
+    {
+      "id": "review-flipped",
+      "page": "http://127.0.0.1:8086/review.html",
+      "control": "#review-card"
+    },
+    {
+      "id": "stats-entry",
+      "page": "http://127.0.0.1:8086/review.html",
+      "control": ".app-sidebar a[href=\"stats.html\"]"
+    },
+    {
+      "id": "stats-page",
+      "page": "http://127.0.0.1:8086/stats.html",
+      "control": ".stats-grid"
+    }
+  ],
+  "localAudioRequests": 5,
+  "wrongWords": 1,
+  "totalTests": 1
+}
