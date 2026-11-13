@@ -1,4 +1,14 @@
 /* Only the beginner edition loads this stylesheet. */
+@font-face{font-family:"Noto Sans Arabic";src:url("../fonts/noto-sans-arabic.woff") format("woff");font-style:normal;font-weight:100 900;font-display:swap}
+html body,html body :not(svg):not(svg *):not(code):not(pre):not(kbd):not(samp){font-family:"Noto Sans Arabic",Tahoma,Arial,sans-serif!important}
+.olive-app .conjugation-table .verb-form{font-variant-ligatures:no-common-ligatures no-discretionary-ligatures;line-height:2.2}
+.olive-app .conjugation-table mark{font:inherit!important;display:inline!important;padding:0!important;margin:0;color:#9b642d;background:#faf0dd;border-radius:4px}
+.olive-app .test-button-group button>span{font-size:19px;line-height:1.8;font-weight:650;white-space:normal}
+.olive-app .test-button-group .test-pass-status{font-size:14px;line-height:1.7}
+.olive-app .mastery-test-card strong{font-size:16px;line-height:1.8;overflow-wrap:anywhere}
+.olive-app .mastery-test-card small{font-size:14px;line-height:1.8}
+.olive-app .conjugation-table td:not(.verb-form){font-size:15px;color:#52664b;line-height:1.9}
+.olive-app .app-sidebar .nav-link{font-size:15px;line-height:1.7}
 .olive-app .grammar-page{box-sizing:border-box;width:calc(100% - 32px)!important;max-width:1160px!important;min-width:0;margin:24px auto!important;padding:clamp(18px,3vw,32px)!important;overflow-wrap:anywhere}
 .grammar-page>*,.grammar-page section,.grammar-page .section-heading,.grammar-page .page-heading>div{min-width:0;max-width:100%}
 .grammar-page .page-heading{align-items:flex-start;gap:16px;margin-block-end:20px}

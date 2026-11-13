@@ -192,7 +192,9 @@ for definition in DEFINITIONS:
   return '<main class="container edition-page"><header class="edition-heading"><img src="images/brand/olive-symbol.svg" alt=""><div><span class="edition-badge" data-ar="تطبيق مستقل · حروف من الزيتون" data-de="Eigenständige App · Huroof">تطبيق مستقل · حروف من الزيتون</span><h1 data-ar="'+d['ar']+'" data-de="'+d['de']+'">'+d['ar']+'</h1></div></header>'+body+'</main><footer class="teacher-credit">إعداد الأستاذ محمود بركات</footer>'
  def page_source(name):
   template='index.html' if name in ['index','apps','progress'] else name+'.html';source=(ROOT/template).read_text()
-  if name=='offline':return source.replace('</title>',' · '+d['ar']+'</title>')
+  if name=='offline':
+   if ident=='a1-a2':source=source.replace('</head>','<link rel="stylesheet" href="css/a1-a2.css"></head>').replace('<body>','<body class="olive-app">')
+   return source.replace('</title>',' · '+d['ar']+'</title>')
   if name in ['index','apps','progress']:
    first=source.index('<main ');last=source.index('<footer ',first);end=source.index('</footer>',last)+len('</footer>');source=source[:first]+html_body(name)+source[end:]
   source=re.sub(r'<script\b[^>]*src=["\']([^"\']+)["\'][^>]*>\s*</script>',lambda m:'' if m[1].split('?')[0] in removed else m[0],source)
@@ -252,7 +254,7 @@ for definition in DEFINITIONS:
   for path in (ROOT/group).rglob('*'):
    if path.is_file() and path.suffix.lower() in ['.svg','.png','.jpg','.webp']:include(path.relative_to(ROOT).as_posix())
  for name,payload in included.items():write(base,name,payload)
- for license_name in ['fonts/OFL.txt','fonts/NotoNaskhArabic-OFL.txt']+(['js/vendor/xlsx-LICENSE.txt'] if 'js/vendor/xlsx.full.min.js' in included else []):
+ for license_name in ['fonts/OFL.txt','fonts/NotoNaskhArabic-OFL.txt']+(['fonts/NotoSansArabic-OFL.txt'] if ident=='a1-a2' else [])+(['js/vendor/xlsx-LICENSE.txt'] if 'js/vendor/xlsx.full.min.js' in included else []):
   write(base,license_name,(ROOT/license_name).read_bytes())
  manifest=json.loads((ROOT/'manifest.webmanifest').read_text());manifest.update(id='./',name=d['ar'],short_name=d['ar'].replace('حروف – ',''),description=d['description'],start_url='./index.html?source=pwa',scope='./',shortcuts=[{'name':r['ar'],'url':'./'+r['href']} for r in d['routes'][:4]])
  write(base,'manifest.webmanifest',dump(manifest));write(base,'edition-manifest.json',dump({**d,'hosted':a.hosting}))
