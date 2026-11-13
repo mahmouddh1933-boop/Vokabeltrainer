@@ -17,14 +17,14 @@
       ["review", "المراجعة", "Wiederholung"],
     ];
     const sections = [
-      ["A1", "وحدات A1", "A1-Einheiten"],
-      ["A2", "وحدات A2", "A2-Einheiten"],
-      ...modules.slice(2, 6),
+      ["A1", "وحدات المستوى الأول", "Einheiten der ersten Stufe · A1"],
+      ["A2", "وحدات المستوى الثاني", "Einheiten der zweiten Stufe · A2"],
     ];
     let filter = "A1",
       unit = null,
       module = "vocabulary",
-      saveTimer;
+      saveTimer,
+      speechRun = 0;
     const records = () => A.getStats().skillsV1 || {};
     const state = () => records()[unit.id] || {};
     function patch(changes) {
@@ -55,15 +55,20 @@
       return a;
     }
     function stop() {
+      speechRun++;
       audio.pause();
       audio.removeAttribute("src");
       audio.load();
       A.stopSpeech();
     }
     function play(path, label) {
+      speechRun++;
       A.stopSpeech();
       audio.pause();
       audio.src = path;
+      audio.muted = false;
+      audio.volume = 1;
+      audio.load();
       audio.playbackRate = Number(
         document.getElementById("skills-speed").value,
       );
@@ -97,6 +102,38 @@
       return button(t("◖ استمع: ", "◖ Anhören: ") + label, () =>
         play(path, label),
       );
+    }
+    function speakText(text, label) {
+      stop();
+      const run = speechRun;
+      // Short, complete phrases work better across mobile speech engines.
+      const chunks = text.match(/[^.!؟،؛\n]+[.!؟،؛]?/gu) || [text];
+      const queue = chunks.flatMap((chunk) => {
+        const words = chunk.trim().split(/\s+/), parts = [];
+        let part = "";
+        for (const word of words) {
+          if (part && (part + " " + word).length > 160) {
+            parts.push(part);
+            part = "";
+          }
+          part += (part ? " " : "") + word;
+        }
+        if (part) parts.push(part);
+        return parts;
+      });
+      const status = document.getElementById("skills-audio-label");
+      function next() {
+        if (run !== speechRun) return;
+        const phrase = queue.shift();
+        if (!phrase) return;
+        status.textContent = label;
+        A.speakArabic(phrase, (message) => {
+          if (run === speechRun) status.textContent = message;
+        }, (success) => {
+          if (success && run === speechRun) next();
+        });
+      }
+      next();
     }
     function block(title) {
       const b = node("section", undefined, "skills-block");
@@ -413,13 +450,9 @@
               ar,
               german,
               button(t("استمع", "Anhören"), () => {
-                audio.pause();
-                A.speakArabic(
-                  word.ar,
-                  (message) =>
-                    (document.getElementById("skills-audio-label").textContent =
-                      message),
-                );
+                const path = window.ArabicVocabularyAudio?.audio?.[word.ar.normalize("NFC")];
+                if (path) play(path, word.ar);
+                else speakText(word.ar, word.ar);
               }),
             );
             words.append(li);
@@ -467,6 +500,9 @@
         grammar.append(
           node("p", unit.grammar.body),
           node("p", unit.grammar.example, "skills-model"),
+          button(t("استمع إلى شرح القاعدة", "Grammatikerklärung anhören"), () =>
+            speakText(unit.grammar.title + ". " + unit.grammar.body + ". " + unit.grammar.example, unit.grammar.title)),
+          button(t("إيقاف الصوت", "Audio stoppen"), stop),
           link(
             t("شرح القاعدة كاملًا", "Zur Grammatiklektion"),
             unit.grammar.href,
@@ -727,7 +763,9 @@
       }
       const tabs = document.getElementById("skills-sections");
       tabs.replaceChildren();
-      for (const [id, ar, german] of sections) {
+      tabs.hidden = !!unit;
+      document.querySelector(".skills-player").hidden = !unit;
+      for (const [id, ar, german] of unit ? [] : sections) {
         const a = link(t(ar, german), "#" + id);
         if (id === filter) a.setAttribute("aria-current", "page");
         tabs.append(a);

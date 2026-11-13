@@ -1,0 +1,480 @@
+{
+  "id": "interrogative-nouns",
+  "glyph": "مَنْ؟",
+  "stage": "build",
+  "category": "syntax",
+  "prerequisites": [
+    "word-classes",
+    "sentence-types"
+  ],
+  "title": {
+    "ar": "أسماء الاستفهام",
+    "de": "Fragenomen"
+  },
+  "summary": {
+    "ar": "نَسْأَلُ عَنِ الشَّخْصِ وَالشَّيْءِ وَالْمَكَانِ وَالزَّمَانِ وَالْحَالِ وَالْعَدَدِ.",
+    "de": "Nach Personen, Dingen, Ort, Zeit, Zustand und Anzahl fragen."
+  },
+  "intro": {
+    "ar": "اسْمُ الِاسْتِفْهَامِ يَطْلُبُ مَعْلُومَةً مُعَيَّنَةً. نَخْتَارُهُ بِحَسَبِ مَا نُرِيدُ مَعْرِفَتَهُ، وَنَخْتِمُ السُّؤَالَ بِعَلَامَةِ الِاسْتِفْهَامِ «؟».",
+    "de": "Ein Fragenomen verlangt eine bestimmte Information. Wähle es passend zur gesuchten Information; arabische Fragen enden mit ؟."
+  },
+  "sections": [
+    {
+      "title": {
+        "ar": "مَنْ، مَا، مَاذَا",
+        "de": "Personen, Dinge und Handlungen"
+      },
+      "body": {
+        "ar": "نَسْأَلُ بِـ«مَنْ» عَنِ الْعَاقِلِ، وَبِـ«مَا» عَنِ الشَّيْءِ أَوْ حَقِيقَتِهِ، وَبِـ«مَاذَا» عَنِ الشَّيْءِ أَوِ الْفِعْلِ الْمَطْلُوبِ مَعْرِفَتُهُ.",
+        "de": "Man fragt mit man nach Personen, mit mā nach Dingen oder ihrem Wesen und mit māḏā nach Dingen oder Handlungen."
+      },
+      "examples": [
+        {
+          "ar": "مَنْ هَذَا؟ هَذَا أَحْمَدُ.",
+          "de": "Wer ist das? Das ist Ahmad.",
+          "focus": "مَنْ"
+        },
+        {
+          "ar": "مَا هَذَا؟ هَذَا كِتَابٌ.",
+          "de": "Was ist das? Das ist ein Buch.",
+          "focus": "مَا"
+        },
+        {
+          "ar": "مَاذَا تَقْرَأُ؟ أَقْرَأُ قِصَّةً.",
+          "de": "Was liest du? Ich lese eine Geschichte.",
+          "focus": "مَاذَا"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ar": "أَيْنَ، مَتَى، كَيْفَ",
+        "de": "Ort, Zeit und Zustand"
+      },
+      "body": {
+        "ar": "«أَيْنَ» لِلْمَكَانِ، وَ«مَتَى» لِلزَّمَانِ، وَ«كَيْفَ» لِلْحَالِ أَوِ الطَّرِيقَةِ.",
+        "de": "Aina fragt nach dem Ort, matā nach der Zeit und kaifa nach Zustand oder Art und Weise."
+      },
+      "examples": [
+        {
+          "ar": "أَيْنَ الْمَدْرَسَةُ؟ الْمَدْرَسَةُ قُرْبَ الْبَيْتِ.",
+          "de": "Wo ist die Schule? Nahe beim Haus.",
+          "focus": "أَيْنَ"
+        },
+        {
+          "ar": "مَتَى تَذْهَبُ؟ أَذْهَبُ صَبَاحًا.",
+          "de": "Wann gehst du? Morgens.",
+          "focus": "مَتَى"
+        },
+        {
+          "ar": "كَيْفَ حَالُكَ؟ أَنَا بِخَيْرٍ.",
+          "de": "Wie geht es dir? Mir geht es gut.",
+          "focus": "كَيْفَ"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ar": "كَمْ وَأَيّ",
+        "de": "Anzahl und Auswahl"
+      },
+      "body": {
+        "ar": "«كَمْ» لِلْعَدَدِ. وَ«أَيّ» لِتَعْيِينِ وَاحِدٍ مِنْ مُتَعَدِّدٍ، وَتُضَافُ إِلَى اسْمٍ بَعْدَهَا. أَسْمَاءُ الِاسْتِفْهَامِ مَبْنِيَّةٌ فِي هَذَا الدَّرْسِ إِلَّا «أَيّ»؛ فَحَرَكَتُهَا تَتَغَيَّرُ بِحَسَبِ مَوْقِعِهَا.",
+        "de": "Kam fragt nach der Anzahl. Ayy dient der Auswahl und wird mit einem folgenden Nomen verbunden. Anders als die anderen hier behandelten Fragewörter ist ayy deklinierbar."
+      },
+      "examples": [
+        {
+          "ar": "كَمْ كِتَابًا عِنْدَكَ؟ عِنْدِي ثَلَاثَةُ كُتُبٍ.",
+          "de": "Wie viele Bücher hast du? Drei.",
+          "focus": "كَمْ"
+        },
+        {
+          "ar": "أَيُّ كِتَابٍ مُفِيدٌ؟ هَذَا الْكِتَابُ مُفِيدٌ.",
+          "de": "Welches Buch ist nützlich? Dieses.",
+          "focus": "أَيُّ"
+        },
+        {
+          "ar": "أَيَّ كِتَابٍ تَقْرَأُ؟ أَقْرَأُ كِتَابَ الْقِرَاءَةِ.",
+          "de": "Welches Buch liest du? Das Lesebuch.",
+          "focus": "أَيَّ"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ar": "السَّبَبُ وَحَرْفُ الْجَرِّ",
+        "de": "Warum? und Präpositionen"
+      },
+      "body": {
+        "ar": "نَقُولُ «لِمَاذَا؟» أَوْ «لِمَ؟» لِلسُّؤَالِ عَنِ السَّبَبِ. فِي «لِمَ» دَخَلَتِ اللَّامُ عَلَى «مَا» الِاسْتِفْهَامِيَّةِ فَحُذِفَتْ أَلِفُهَا. وَنَقُولُ أَيْضًا «بِمَ؟» وَ«عَمَّ؟».",
+        "de": "Limāḏā und lima fragen nach dem Grund. Nach einer Präposition entfällt das Alif von fragendem mā: li-mā wird lima, bi-mā wird bima; ʿan mā wird ʿamma."
+      },
+      "examples": [
+        {
+          "ar": "لِمَاذَا تَدْرُسُ؟ أَدْرُسُ لِأَتَعَلَّمَ.",
+          "de": "Warum lernst du? Um zu lernen.",
+          "focus": "لِمَاذَا"
+        },
+        {
+          "ar": "بِمَ تَكْتُبُ؟ أَكْتُبُ بِقَلَمٍ.",
+          "de": "Womit schreibst du? Mit einem Stift.",
+          "focus": "بِمَ"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ar": "أَسْمَاءٌ وَحُرُوفٌ",
+        "de": "Fragenomen und Fragepartikeln"
+      },
+      "body": {
+        "ar": "«هَلْ» وَهَمْزَةُ الِاسْتِفْهَامِ حَرْفَانِ، وَلَيْسَا اسْمَيْنِ. يَكُونُ جَوَابُ «هَلْ» غَالِبًا «نَعَمْ» أَوْ «لَا». أَمَّا اسْمُ الِاسْتِفْهَامِ فَيَطْلُبُ مَعْلُومَةً مُعَيَّنَةً. لِلتَّعَرُّفِ: «أَنَّى» تَأْتِي بِمَعْنَى كَيْفَ أَوْ مِنْ أَيْنَ بِحَسَبِ السِّيَاقِ، وَ«أَيَّانَ» لِلسُّؤَالِ عَنِ الزَّمَانِ، وَهُمَا أَقَلُّ شُيُوعًا فِي كَلَامِنَا الْيَوْمِيِّ.",
+        "de": "Hal und das Frage-Hamza sind Partikeln, keine Nomen. Hal wird meist mit ja oder nein beantwortet. Ein Fragenomen verlangt eine bestimmte Information. Zur Wiedererkennung: annā bedeutet je nach Kontext wie oder woher; ayyāna fragt nach der Zeit. Beide sind im Alltag seltener."
+      },
+      "examples": [
+        {
+          "ar": "هَلْ أَنْتَ طَالِبٌ؟ نَعَمْ.",
+          "de": "Bist du Schüler? Ja.",
+          "focus": "هَلْ"
+        },
+        {
+          "ar": "أَأَنْتَ طَالِبٌ؟ نَعَمْ.",
+          "de": "Bist du Schüler? Ja.",
+          "focus": "أَ"
+        },
+        {
+          "ar": "مَنْ أَنْتَ؟ أَنَا سَامِرٌ.",
+          "de": "Wer bist du? Ich bin Samir.",
+          "focus": "مَنْ"
+        }
+      ]
+    }
+  ],
+  "takeaway": {
+    "ar": "حَدِّدْ مَا تَجْهَلُهُ، ثُمَّ اخْتَرِ اسْمَ الِاسْتِفْهَامِ. «هَلْ» وَالْهَمْزَةُ حَرْفَانِ، وَ«أَيّ» اسْمٌ مُعْرَبٌ.",
+    "de": "Bestimme die gesuchte Information. Hal und Hamza sind Partikeln; ayy ist deklinierbar."
+  },
+  "questions": [
+    {
+      "prompt": {
+        "ar": "___ جَاءَ؟ جَاءَ عَلِيٌّ.",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "مَنْ",
+        "مَتَى",
+        "أَيْنَ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "نَسْأَلُ عَنِ شَخْصٍ.",
+        "de": "Gesucht ist eine Person."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "___ تَسْكُنُ؟ أَسْكُنُ فِي بَرْلِين.",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "كَمْ",
+        "مَنْ",
+        "أَيْنَ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الْجَوَابُ يَدُلُّ عَلَى مَكَانٍ.",
+        "de": "Die Antwort nennt einen Ort."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "___ يَبْدَأُ الدَّرْسُ؟ فِي السَّاعَةِ التَّاسِعَةِ.",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "مَنْ",
+        "مَتَى",
+        "مَا"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "نَسْأَلُ عَنِ الْوَقْتِ.",
+        "de": "Gefragt wird nach der Zeit."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "___ حَالُكَ؟ أَنَا بِخَيْرٍ.",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "كَيْفَ",
+        "أَيْنَ",
+        "كَمْ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "نَسْأَلُ عَنِ الْحَالِ.",
+        "de": "Gefragt wird nach dem Befinden."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "___ قَلَمًا عِنْدَكَ؟ عِنْدِي قَلَمَانِ.",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "مَنْ",
+        "مَتَى",
+        "كَمْ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "نَسْأَلُ عَنِ الْعَدَدِ.",
+        "de": "Gefragt wird nach einer Anzahl."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "___ هَذَا؟ هَذَا مِفْتَاحٌ.",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "مَتَى",
+        "مَا",
+        "مَنْ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "الْمِفْتَاحُ شَيْءٌ غَيْرُ عَاقِلٍ.",
+        "de": "Ein Schlüssel ist ein Gegenstand."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "___ تَفْعَلُ؟ أَكْتُبُ رِسَالَةً.",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "مَاذَا",
+        "أَيْنَ",
+        "كَمْ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "نَسْأَلُ عَنِ الْفِعْلِ.",
+        "de": "Gefragt wird nach der Tätigkeit."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "___ تَدْرُسُ؟ لِأَتَعَلَّمَ.",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "مَنْ",
+        "مَتَى",
+        "لِمَاذَا"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الْجَوَابُ يُبَيِّنُ السَّبَبَ.",
+        "de": "Die Antwort nennt den Grund."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أَيُّ أَدَاةٍ تَطْلُبُ تَعْيِينَ وَاحِدٍ مِنْ مُتَعَدِّدٍ؟",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "هَلْ",
+        "أَيّ",
+        "مَتَى"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "«أَيّ» لِلتَّعْيِينِ وَالِاخْتِيَارِ.",
+        "de": "Ayy dient der Auswahl."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أَيُّ أَدَاةٍ لَيْسَتِ اسْمَ اسْتِفْهَامٍ؟",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "هَلْ",
+        "أَيْنَ",
+        "كَيْفَ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "«هَلْ» حَرْفُ اسْتِفْهَامٍ.",
+        "de": "Hal ist eine Partikel."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "هَمْزَةُ الِاسْتِفْهَامِ فِي «أَتَقْرَأُ؟» هِيَ:",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "اسْمٌ",
+        "فِعْلٌ",
+        "حَرْفٌ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الْهَمْزَةُ حَرْفٌ وَلَيْسَتِ اسْمًا.",
+        "de": "Das Frage-Hamza ist eine Partikel."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا الْجَوَابُ الْمُنَاسِبُ لِـ«مَاذَا تَأْكُلُ؟»؟",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "بِسُرْعَةٍ",
+        "خُبْزًا",
+        "فِي الْبَيْتِ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "نَذْكُرُ الشَّيْءَ الَّذِي نَأْكُلُهُ.",
+        "de": "Nenne das Gegessene."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا الْجَوَابُ الْمُنَاسِبُ لِـ«مَنْ صَدِيقُكَ؟»؟",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "خَالِدٌ",
+        "غَدًا",
+        "فِي الصَّفِّ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "«مَنْ» تَطْلُبُ تَعْيِينَ شَخْصٍ.",
+        "de": "Man fragt nach einer Person."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا الْجَوَابُ الْمُنَاسِبُ لِـ«مَتَى تَزُورُنَا؟»؟",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "أَخِي",
+        "بِخَيْرٍ",
+        "غَدًا"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "«غَدًا» تَدُلُّ عَلَى زَمَانٍ.",
+        "de": "Morgen ist eine Zeitangabe."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أَيُّ سُؤَالٍ يُنَاسِبُ الْجَوَابَ «فِي الْمَكْتَبَةِ»؟",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "كَمْ قَلَمًا عِنْدَكَ؟",
+        "أَيْنَ الْكِتَابُ؟",
+        "مَنْ هَذَا؟"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "الْجَوَابُ يَدُلُّ عَلَى مَكَانٍ.",
+        "de": "Die Antwort ist eine Ortsangabe."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أَيُّ سُؤَالٍ يُنَاسِبُ «ثَلَاثَةُ كُتُبٍ»؟",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "كَمْ كِتَابًا عِنْدَكَ؟",
+        "كَيْفَ حَالُكَ؟",
+        "مَنْ أَنْتَ؟"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "«كَمْ» تَسْأَلُ عَنِ الْعَدَدِ.",
+        "de": "Kam fragt nach einer Anzahl."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا الصِّيغَةُ الصَّحِيحَةُ بَعْدَ دُخُولِ الْبَاءِ عَلَى «مَا» الِاسْتِفْهَامِيَّةِ؟",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "بِمَا",
+        "مِمَّا",
+        "بِمَ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "تُحْذَفُ أَلِفُ «مَا» الِاسْتِفْهَامِيَّةِ بَعْدَ حَرْفِ الْجَرِّ.",
+        "de": "Das Alif von fragendem mā entfällt nach der Präposition."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "«مَتَى» اسْمُ اسْتِفْهَامٍ لِلسُّؤَالِ عَنِ:",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "الْعَدَدِ",
+        "الزَّمَانِ",
+        "الْمَكَانِ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "نَسْأَلُ بِـ«مَتَى» عَنِ الْوَقْتِ.",
+        "de": "Matā fragt nach der Zeit."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "«أَنَّى» فِي بَعْضِ السِّيَاقَاتِ بِمَعْنَى:",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "مِنْ أَيْنَ",
+        "كَمْ",
+        "هَلْ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "يَتَحَدَّدُ مَعْنَى «أَنَّى» مِنَ السِّيَاقِ.",
+        "de": "Der Kontext bestimmt die Bedeutung von annā."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أَيُّ اسْمِ اسْتِفْهَامٍ تَتَغَيَّرُ حَرَكَتُهُ بِحَسَبِ مَوْقِعِهِ؟",
+        "de": "Lies die arabische Frage und wähle die passende Antwort."
+      },
+      "options": [
+        "مَنْ",
+        "مَتَى",
+        "أَيّ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "«أَيّ» مُعْرَبَةٌ فِي اسْتِعْمَالِنَا هُنَا.",
+        "de": "Ayy ist hier deklinierbar."
+      }
+    }
+  ]
+}

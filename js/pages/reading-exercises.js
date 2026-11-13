@@ -10,12 +10,23 @@
   const button=(text,action,cls='rx-button')=>{const b=el('button',text,cls);b.type='button';b.addEventListener('click',action);return b;};
   const arabic=n=>{n.lang='ar';n.dir='rtl';return n;};
   let chapter=null,activity=null,palette='red',drawColor='black',search='',svgAbort=null;
+  let previousQuiz=[];
   const active=()=>A.getStats().readingExercisesV1||{};
   const saved=id=>active()[id]||{answers:{},colors:{},order:[],criteria:{}};
   function write(id,patch){const stats=A.getStats();A.setJSON('learningStats',{...stats,readingExercisesV1:{...(stats.readingExercisesV1||{}),[id]:{...saved(id),...patch}}});}
   function draft(patch){write(activity.id,{...patch,checked:false});updateCounter();}
   const norm=text=>String(text).normalize('NFC').replace(/[\u064b-\u065f\u0670ـ]/g,'').toLowerCase();
-  const done=a=>a.type==='draw'?saved(a.id).reviewed===true:saved(a.id).checked&&result(a,saved(a.id)).correct===result(a,saved(a.id)).total;
+  const done=a=>saved(a.id).completed===true||(a.type==='draw'?saved(a.id).reviewed===true:saved(a.id).checked&&result(a,saved(a.id)).correct===result(a,saved(a.id)).total);
+  function enterActivity(){
+   if(!activity)return;
+   const completed=!!done(activity);
+   write(activity.id,{answers:{},colors:{},order:[],criteria:{},checked:false,reviewed:false,completed});
+   if(activity.type==='draw')S.removeItem('readingExercisesDrawingV1:'+activity.id);
+  }
+  function selfCheck(){
+   const questions=window.ReadingSelfCheck.choose(D.activities,previousQuiz);previousQuiz=questions.map(q=>q.sourceKey);
+   return {id:'meaning-self-check',chapter:'meaning',title:'اِخْتَبِرْ نَفْسَكَ',type:'quiz',selfCheck:true,questions};
+  }
   function result(a,state){
    let correct=0,total=0;
    for(const [i,q] of (a.questions||[]).entries()){total++;if(state.answers?.['q'+i]===q.answer)correct++;}
@@ -34,6 +45,8 @@
   function route(){
    const parts=location.hash.slice(1).split('/');chapter=D.chapters.find(c=>c.id===parts[0])||null;
    activity=chapter?D.activities.find(a=>a.chapter===chapter.id&&a.id===parts[1])||null:null;
+   if(chapter?.id==='meaning'&&parts[1]==='self-check')activity=selfCheck();
+   enterActivity();
    svgAbort?.abort();narrator.stop();$('rx-audio-status').textContent='';render();
   }
   function go(hash){if(location.hash==='#'+hash)route();else location.hash=hash;}
@@ -58,6 +71,7 @@
     const label=el('label',t('ابحث عن نشاط داخل هذا الباب','Aufgabe in diesem Kapitel suchen'),'rx-search-label'),input=el('input');input.type='search';input.value=search;input.placeholder=t('ابحث بعنوان النشاط…','Aufgabentitel suchen…');label.append(input);host.append(label);
     const fill=()=>{grid.replaceChildren();let shown=0;for(const a of D.activities.filter(a=>a.chapter===chapter.id&&norm(a.title).includes(norm(search)))){
      shown++;grid.append(card(a.title,taskInstruction(a),()=>go(chapter.id+'/'+a.id),done(a)?t('✓ أكملت هذا النشاط','✓ Abgeschlossen'):t('اقرأ وجرّب ←','Lesen und ausprobieren ←')));}
+     if(chapter.id==='meaning'&&(!search||norm('اختبر نفسك').includes(norm(search)))){shown++;grid.append(card(t('اختبر نفسك','Teste dich selbst'),t('٥ أسئلة عشوائية من أنشطة هذا الباب. أعد الاختبار لتحصل على أسئلة مختلفة.','5 zufällige Fragen aus diesem Kapitel. Wiederhole den Test mit anderen Fragen.'),()=>go('meaning/self-check'),t('ابدأ جولة جديدة ←','Neue Runde starten ←'),'book'));}
      if(!shown)grid.append(el('p',t('لا توجد أنشطة تطابق البحث.','Keine passenden Aufgaben.')));};
     input.addEventListener('input',()=>{search=input.value;fill();});fill();
    }
@@ -67,6 +81,7 @@
   function renderActivity(host){
    const a=activity,section=el('section',undefined,'rx-activity');section.dataset.activity=a.id;
    const h=heading(a.title);section.append(h,el('p',taskInstruction(a),'rx-instruction'));$('rx-subtitle').textContent=de()?chapter.introDe:chapter.intro;
+   section.append(el('p',t('كل دخول إلى النشاط يبدأ بإجابات فارغة؛ تبقى علامة إنجازك السابقة محفوظة.','Bei jedem Einstieg beginnst du ohne Antworten. Dein bisheriger Abschluss bleibt erhalten.'),'rx-help'));
    if(a.type==='color')renderColor(a,section);
    else if(a.type==='draw')renderDrawing(a,section);
    else if(a.type==='story')renderStory(a,section);
@@ -79,11 +94,14 @@
     narrator.play(a,(message,error)=>{$('rx-audio-status').textContent=message;$('rx-audio-status').classList.toggle('is-error',error);});
    }),button(t('إيقاف الصوت','Audio stoppen'),()=>{narrator.stop();$('rx-audio-status').textContent='';}));
    section.append(actions);host.append(section);
+   if(saved(a.id).checked)showFeedback(a);
    const nav=el('nav',undefined,'rx-actions');nav.setAttribute('aria-label',t('التنقل بين الأنشطة','Aufgaben-Navigation'));
    const all=D.activities.filter(x=>x.chapter===chapter.id),index=all.findIndex(x=>x.id===a.id);
+   if(a.selfCheck){
+    nav.append(button(t('العودة إلى مفاتيح الكلمات','Zurück zum Kapitel'),()=>go('meaning')),button(t('إعادة الاختبار بأسئلة مختلفة','Mit anderen Fragen wiederholen'),()=>{activity=selfCheck();enterActivity();render();},'rx-button rx-primary'));host.append(nav);return;
+   }
    const prev=button(t('النشاط السابق','Vorherige Aufgabe'),()=>go(chapter.id+'/'+all[index-1].id)),next=button(t('النشاط التالي','Nächste Aufgabe'),()=>go(chapter.id+'/'+all[index+1].id));prev.disabled=index===0;next.disabled=index===all.length-1;
    nav.append(prev,button(t('أنشطة هذا الباب','Alle Kapitelaufgaben'),()=>go(chapter.id)),next);host.append(nav);
-   if(saved(a.id).checked)showFeedback(a);
   }
   function renderQuestions(a,section){
    const state=saved(a.id),quiz=el('div',undefined,'rx-questions');
@@ -104,7 +122,7 @@
    if(unanswered||(a.type==='story'&&(state.order||[]).length!==a.frames.length)){
     $('rx-feedback').textContent=t('أكمل الإجابات وترتيب الأحداث أولًا. خذ وقتك واقرأ بهدوء.','Ergänze zuerst alle Antworten und die Reihenfolge. Lies in Ruhe.');return;
    }
-   write(a.id,{checked:true});showFeedback(a);updateCounter();
+   const score=result(a,state);write(a.id,{checked:true,completed:saved(a.id).completed||score.correct===score.total});showFeedback(a);updateCounter();
   }
   function showFeedback(a){
    const state=saved(a.id),r=result(a,state),box=$('rx-feedback');box.replaceChildren();
@@ -172,7 +190,7 @@
    const label=el('label',a.writing,'rx-writing'),textarea=el('textarea');textarea.rows=3;textarea.maxLength=600;textarea.value=drawing.text||'';textarea.lang='ar';textarea.dir='rtl';textarea.addEventListener('input',()=>{drawing.text=textarea.value;persist();});label.append(textarea);section.append(label,el('p',t('الرسم والجملة يُحفظان على هذا المتصفح لهذا الحساب.','Bild und Satz bleiben für dieses Konto in diesem Browser gespeichert.'),'rx-help'));
    const criteria=el('fieldset',undefined,'rx-review');criteria.append(el('legend',t('راجع رسمك بندًا بندًا','Prüfe dein Bild Schritt für Schritt')));
    a.instructions.forEach((text,i)=>{const label=el('label'),input=el('input');input.type='checkbox';input.checked=!!saved(a.id).criteria?.[i];input.addEventListener('change',()=>{write(a.id,{criteria:{...(saved(a.id).criteria||{}),[i]:input.checked},reviewed:false});updateCounter();});label.append(input,arabic(el('span',text)));criteria.append(label);});
-   section.append(criteria,button(t('راجعت عملي وأنهيت النشاط','Geprüft und abgeschlossen'),()=>{if(a.instructions.every((_,i)=>saved(a.id).criteria?.[i])){write(a.id,{reviewed:true});updateCounter();$('rx-feedback').textContent=t('عمل جميل! أنجزت النشاط بالمراجعة الذاتية. شارك رسمك مع معلمك.','Gut gemacht! Selbstprüfung abgeschlossen. Zeige dein Bild deiner Lehrkraft.');}else $('rx-feedback').textContent=t('راجع جميع البنود أولًا، ثم علّم ما حققته في رسمك.','Prüfe zuerst alle Kriterien und hake Erledigtes ab.');},'rx-button rx-primary'));
+   section.append(criteria,button(t('راجعت عملي وأنهيت النشاط','Geprüft und abgeschlossen'),()=>{if(a.instructions.every((_,i)=>saved(a.id).criteria?.[i])){write(a.id,{reviewed:true,completed:true});updateCounter();$('rx-feedback').textContent=t('عمل جميل! أنجزت النشاط بالمراجعة الذاتية. شارك رسمك مع معلمك.','Gut gemacht! Selbstprüfung abgeschlossen. Zeige dein Bild deiner Lehrkraft.');}else $('rx-feedback').textContent=t('راجع جميع البنود أولًا، ثم علّم ما حققته في رسمك.','Prüfe zuerst alle Kriterien und hake Erledigtes ab.');},'rx-button rx-primary'));
    redraw();
   }
   function printActivities(){
@@ -193,6 +211,7 @@
   }
   $('rx-back').addEventListener('click',()=>{search='';go(activity?chapter.id:'');});$('rx-print').addEventListener('click',printActivities);
   window.addEventListener('hashchange',route);window.addEventListener('app-language-change',render);window.addEventListener('pagehide',()=>narrator.stop());
+  window.addEventListener('pageshow',event=>{if(event.persisted)route();});
   $('lesson-loading')?.remove();route();
  });
 })();

@@ -1,0 +1,476 @@
+{
+  "id": "time-place-adverbials",
+  "glyph": "مَتَى؟ أَيْنَ؟",
+  "stage": "build",
+  "category": "syntax",
+  "prerequisites": [
+    "case-basics",
+    "prepositions",
+    "subject-object"
+  ],
+  "title": {
+    "ar": "المفعول فيه: ظرف الزمان وظرف المكان",
+    "de": "Zeit- und Ortsangaben (al-mafʿūl fīhi)"
+  },
+  "summary": {
+    "ar": "نُحَدِّدُ زَمَانَ الْفِعْلِ وَمَكَانَهُ، وَنُمَيِّزُ الظَّرْفَ مِنَ الِاسْمِ الْمَجْرُورِ.",
+    "de": "Zeit und Ort benennen; Adverbial und Präpositionalgruppe unterscheiden."
+  },
+  "intro": {
+    "ar": "مَتَى حَدَثَ الْفِعْلُ؟ وَأَيْنَ حَدَثَ؟ نَتَعَلَّمُ ظَرْفَيِ الزَّمَانِ وَالْمَكَانِ فِي جُمَلٍ مِنْ حَيَاتِنَا.",
+    "de": "Wann und wo geschieht etwas? Lerne Zeit- und Ortsangaben anhand alltäglicher Sätze."
+  },
+  "sections": [
+    {
+      "title": {
+        "ar": "مَا الْمَفْعُولُ فِيهِ؟",
+        "de": "Was ist eine adverbiale Bestimmung?"
+      },
+      "body": {
+        "ar": "الْمَفْعُولُ فِيهِ اسْمٌ يَدُلُّ عَلَى زَمَانِ الْفِعْلِ أَوْ مَكَانِهِ، وَيَتَضَمَّنُ مَعْنَى «فِي». يُسَمَّى ظَرْفًا، وَيَكُونُ مَنْصُوبًا إِذَا كَانَ مُعْرَبًا. نَسْأَلُ عَنْ ظَرْفِ الزَّمَانِ بِـ«مَتَى؟»، وَعَنْ ظَرْفِ الْمَكَانِ بِـ«أَيْنَ؟».",
+        "de": "Ein ẓarf bezeichnet die Zeit oder den Ort eines Geschehens und enthält sinngemäß „in/zu“. Veränderliche Formen stehen im Akkusativ. Frage nach der Zeit mit matā und nach dem Ort mit ayna."
+      },
+      "examples": [
+        {
+          "ar": "سَافَرْتُ صَبَاحًا.",
+          "de": "Ich reiste am Morgen.",
+          "focus": "صَبَاحًا"
+        },
+        {
+          "ar": "جَلَسْتُ أَمَامَ الْبَيْتِ.",
+          "de": "Ich saß vor dem Haus.",
+          "focus": "أَمَامَ"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ar": "ظَرْفُ الزَّمَانِ",
+        "de": "Zeitangaben"
+      },
+      "body": {
+        "ar": "يُبَيِّنُ ظَرْفُ الزَّمَانِ وَقْتَ حُدُوثِ الْفِعْلِ أَوْ مُدَّتَهُ، مِثْلَ: صَبَاحًا، مَسَاءً، لَيْلًا، غَدًا، سَاعَةً، قَبْلَ، بَعْدَ. تَتَضِحُ دَلَالَةُ الْكَلِمَةِ مِنَ السِّيَاقِ؛ فَـ«قَبْلَ» وَ«بَعْدَ» تَدُلَّانِ عَلَى الزَّمَانِ فِي مِثْلِ «قَبْلَ الدَّرْسِ» وَ«بَعْدَ الْعَمَلِ».",
+        "de": "Zeitangaben nennen Zeitpunkt oder Dauer: morgens, abends, nachts, morgen, eine Stunde, vor und nach. Die Bedeutung ergibt sich aus dem Zusammenhang; vor dem Unterricht und nach der Arbeit sind Zeitangaben."
+      },
+      "examples": [
+        {
+          "ar": "أَقْرَأُ مَسَاءً.",
+          "de": "Ich lese abends.",
+          "focus": "مَسَاءً"
+        },
+        {
+          "ar": "انْتَظَرْتُ سَاعَةً.",
+          "de": "Ich wartete eine Stunde.",
+          "focus": "سَاعَةً"
+        },
+        {
+          "ar": "أَعُودُ بَعْدَ الْعَمَلِ.",
+          "de": "Ich komme nach der Arbeit zurück.",
+          "focus": "بَعْدَ"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ar": "ظَرْفُ الْمَكَانِ",
+        "de": "Ortsangaben"
+      },
+      "body": {
+        "ar": "يُبَيِّنُ ظَرْفُ الْمَكَانِ مَوْضِعَ حُدُوثِ الْفِعْلِ، وَمِنْ أَلْفَاظِهِ: أَمَامَ، خَلْفَ، فَوْقَ، تَحْتَ، بَيْنَ، عِنْدَ. تَرِدُ أَسْمَاءُ الْجِهَاتِ ظُرُوفًا كَثِيرًا. أَمَّا اسْمُ الْمَكَانِ الْمُحَدَّدِ، مِثْلُ «الْمَدْرَسَةِ»، فَنَسْتَعْمِلُهُ عَادَةً مَعَ حَرْفِ جَرٍّ: «فِي الْمَدْرَسَةِ» أَوْ «إِلَى الْمَدْرَسَةِ».",
+        "de": "Ortsangaben zeigen, wo etwas geschieht: vor, hinter, über, unter, zwischen und bei. Richtungswörter werden oft als ẓarf gebraucht. Bestimmte Orte wie „die Schule“ stehen gewöhnlich mit einer Präposition: in der Schule oder zur Schule."
+      },
+      "examples": [
+        {
+          "ar": "وَقَفَ سَامِرٌ خَلْفَ الْبَابِ.",
+          "de": "Samir stand hinter der Tür.",
+          "focus": "خَلْفَ"
+        },
+        {
+          "ar": "وَضَعْتُ الْقَلَمَ فَوْقَ الْمَكْتَبِ.",
+          "de": "Ich legte den Stift auf den Schreibtisch.",
+          "focus": "فَوْقَ"
+        },
+        {
+          "ar": "تَجْلِسُ سَلْمَى بَيْنَ أُخْتَيْهَا.",
+          "de": "Salma sitzt zwischen ihren beiden Schwestern.",
+          "focus": "بَيْنَ"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ar": "إِعْرَابٌ مُبَسَّطٌ وَإِضَافَةٌ",
+        "de": "Akkusativ und Genitivverbindung"
+      },
+      "body": {
+        "ar": "فِي «جَلَسْتُ أَمَامَ الْبَيْتِ»: «أَمَامَ» ظَرْفُ مَكَانٍ مَنْصُوبٌ بِالْفَتْحَةِ، وَهُوَ مُضَافٌ؛ وَ«الْبَيْتِ» مُضَافٌ إِلَيْهِ مَجْرُورٌ بِالْكَسْرَةِ. وَفِي «سَافَرْتُ صَبَاحًا»: «صَبَاحًا» ظَرْفُ زَمَانٍ مَنْصُوبٌ بِالْفَتْحَةِ. لَا نُضِيفُ التَّنْوِينَ إِلَى الظَّرْفِ إِذَا كَانَ مُضَافًا.",
+        "de": "In „vor dem Haus“ steht amāma als Ortsangabe im Akkusativ und eröffnet eine Genitivverbindung; al-bayti ist der Genitivpartner. Ṣabāḥan ist eine Zeitangabe im Akkusativ. Ein ẓarf als erstes Glied einer Genitivverbindung erhält kein Tanwīn."
+      },
+      "examples": [
+        {
+          "ar": "أَلْعَبُ بَعْدَ الدَّرْسِ.",
+          "de": "Ich spiele nach dem Unterricht.",
+          "focus": "بَعْدَ"
+        },
+        {
+          "ar": "تَنَامُ الْقِطَّةُ تَحْتَ الْكُرْسِيِّ.",
+          "de": "Die Katze schläft unter dem Stuhl.",
+          "focus": "تَحْتَ"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ar": "الْمَعْنَى وَالْوَظِيفَةُ فِي الْجُمْلَةِ",
+        "de": "Auf die Funktion im Satz achten"
+      },
+      "body": {
+        "ar": "لَيْسَ كُلُّ اسْمٍ يَدُلُّ عَلَى زَمَانٍ أَوْ مَكَانٍ مَفْعُولًا فِيهِ؛ نَنْظُرُ إِلَى وَظِيفَتِهِ فِي الْجُمْلَةِ. فِي «الصَّبَاحُ جَمِيلٌ» كَلِمَةُ «الصَّبَاحُ» مُبْتَدَأٌ مَرْفُوعٌ. وَفِي «فِي الصَّبَاحِ» كَلِمَةُ «الصَّبَاحِ» اسْمٌ مَجْرُورٌ، وَالْعِبَارَةُ تَدُلُّ عَلَى الزَّمَانِ. وَتُوجَدُ ظُرُوفٌ مَبْنِيَّةٌ لَا تَتَغَيَّرُ حَرَكَةُ آخِرِهَا، مِثْلُ «هُنَا»؛ فَفِي «جَلَسْتُ هُنَا» هِيَ ظَرْفُ مَكَانٍ مَبْنِيٌّ فِي مَحَلِّ نَصْبٍ.",
+        "de": "Ein Zeit- oder Ortswort ist nicht automatisch ein Akkusativadverbial: in „Der Morgen ist schön“ ist Morgen das Subjekt des Nominalsatzes; nach fī steht es im Genitiv. Manche Adverbien sind unveränderlich, etwa hunā: In „Ich saß hier“ hat es die Funktion einer Ortsangabe im Akkusativ, ohne eine veränderliche Endung."
+      },
+      "examples": [
+        {
+          "ar": "الصَّبَاحُ جَمِيلٌ.",
+          "de": "Der Morgen ist schön.",
+          "focus": "الصَّبَاحُ"
+        },
+        {
+          "ar": "أَقْرَأُ فِي الصَّبَاحِ.",
+          "de": "Ich lese am Morgen.",
+          "focus": "الصَّبَاحِ"
+        },
+        {
+          "ar": "جَلَسْتُ هُنَا.",
+          "de": "Ich saß hier.",
+          "focus": "هُنَا"
+        }
+      ]
+    }
+  ],
+  "takeaway": {
+    "ar": "نَسْأَلُ عَنِ الزَّمَانِ بِـ«مَتَى؟»، وَعَنِ الْمَكَانِ بِـ«أَيْنَ؟». الظَّرْفُ الْمُعْرَبُ مَنْصُوبٌ، وَالِاسْمُ بَعْدَ الظَّرْفِ الْمُضَافِ مَجْرُورٌ.",
+    "de": "Frage nach der Zeit mit matā und nach dem Ort mit ayna. Veränderliche Adverbialnomen stehen im Akkusativ, ihr Genitivpartner im Genitiv."
+  },
+  "questions": [
+    {
+      "prompt": {
+        "ar": "مَا ظَرْفُ الزَّمَانِ فِي «سَافَرْتُ صَبَاحًا»؟",
+        "de": "Welches Wort ist die Zeitangabe?"
+      },
+      "options": [
+        "صَبَاحًا",
+        "سَافَرْتُ",
+        "التَّاءُ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "«صَبَاحًا» تُبَيِّنُ وَقْتَ السَّفَرِ.",
+        "de": "Ṣabāḥan nennt den Zeitpunkt der Reise."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا نَوْعُ «خَلْفَ» فِي «وَقَفْتُ خَلْفَ الْبَابِ»؟",
+        "de": "Welche Funktion hat ḫalfa?"
+      },
+      "options": [
+        "ظَرْفُ زَمَانٍ",
+        "فَاعِلٌ",
+        "ظَرْفُ مَكَانٍ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "«خَلْفَ» تُجِيبُ عَنْ سُؤَالِ «أَيْنَ؟».",
+        "de": "Ḫalfa beantwortet die Ortsfrage „Wo?“."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "بِمَ نَسْأَلُ عَنْ ظَرْفِ الزَّمَانِ؟",
+        "de": "Wie fragt man nach der Zeit?"
+      },
+      "options": [
+        "مَنْ؟",
+        "مَتَى؟",
+        "أَيْنَ؟"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "«مَتَى؟» تَطْلُبُ مَعْرِفَةَ الزَّمَانِ.",
+        "de": "Matā fragt nach dem Zeitpunkt."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "بِمَ نَسْأَلُ عَنْ ظَرْفِ الْمَكَانِ؟",
+        "de": "Wie fragt man nach dem Ort?"
+      },
+      "options": [
+        "أَيْنَ؟",
+        "مَتَى؟",
+        "كَمْ؟"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "«أَيْنَ؟» تَطْلُبُ مَعْرِفَةَ الْمَكَانِ.",
+        "de": "Ayna fragt nach dem Ort."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا ظَرْفُ الْمَكَانِ فِي «الْقَلَمُ فَوْقَ الْمَكْتَبِ»؟",
+        "de": "Welche Ortsangabe enthält der Satz?"
+      },
+      "options": [
+        "الْقَلَمُ",
+        "الْمَكْتَبِ",
+        "فَوْقَ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "«فَوْقَ» تُحَدِّدُ مَوْضِعَ الْقَلَمِ.",
+        "de": "Fawqa gibt die Lage des Stiftes an."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أُكْمِلُ بِظَرْفِ زَمَانٍ: أَعُودُ مِنَ الْمَدْرَسَةِ ___.",
+        "de": "Ergänze mit einer Zeitangabe."
+      },
+      "options": [
+        "تَحْتَ",
+        "ظُهْرًا",
+        "خَلْفَ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "«ظُهْرًا» وَقْتُ الْعَوْدَةِ، وَالْخِيَارَانِ الْآخَرَانِ يَحْتَاجَانِ إِلَى تَكْمِلَةٍ هُنَا.",
+        "de": "Ẓuhran nennt den Zeitpunkt der Rückkehr. Die beiden anderen Optionen brauchen hier eine Ergänzung."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أُكْمِلُ بِظَرْفِ مَكَانٍ: نَامَتِ الْقِطَّةُ ___ الْكُرْسِيِّ.",
+        "de": "Ergänze mit einer Ortsangabe."
+      },
+      "options": [
+        "تَحْتَ",
+        "غَدًا",
+        "صَبَاحًا"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "«تَحْتَ الْكُرْسِيِّ» تُبَيِّنُ مَكَانَ النَّوْمِ.",
+        "de": "Taḥta l-kursiyyi bezeichnet den Ort des Schlafens."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا نَوْعُ «بَعْدَ» فِي «أَلْعَبُ بَعْدَ الدَّرْسِ»؟",
+        "de": "Welche Funktion hat baʿda hier?"
+      },
+      "options": [
+        "ظَرْفُ مَكَانٍ",
+        "مَفْعُولٌ بِهِ",
+        "ظَرْفُ زَمَانٍ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "الْعِبَارَةُ تُبَيِّنُ وَقْتَ اللَّعِبِ بِالنِّسْبَةِ إِلَى الدَّرْسِ.",
+        "de": "Baʿda d-darsi nennt die Zeit des Spielens im Verhältnis zum Unterricht."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا إِعْرَابُ «أَمَامَ» فِي «جَلَسْتُ أَمَامَ الْبَيْتِ»؟",
+        "de": "Wie wird amāma analysiert?"
+      },
+      "options": [
+        "اسْمٌ مَجْرُورٌ",
+        "ظَرْفُ مَكَانٍ مَنْصُوبٌ",
+        "فَاعِلٌ مَرْفُوعٌ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "«أَمَامَ» ظَرْفُ مَكَانٍ مَنْصُوبٌ بِالْفَتْحَةِ، وَهُوَ مُضَافٌ.",
+        "de": "Amāma ist eine Ortsangabe im Akkusativ mit Fatḥa und eröffnet eine Genitivverbindung."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا إِعْرَابُ «الْبَيْتِ» فِي «أَمَامَ الْبَيْتِ»؟",
+        "de": "Welche Funktion hat al-bayti?"
+      },
+      "options": [
+        "مُضَافٌ إِلَيْهِ مَجْرُورٌ",
+        "ظَرْفٌ مَنْصُوبٌ",
+        "مُبْتَدَأٌ مَرْفُوعٌ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "الِاسْمُ بَعْدَ الظَّرْفِ الْمُضَافِ مُضَافٌ إِلَيْهِ مَجْرُورٌ.",
+        "de": "Al-bayti ist der Genitivpartner zu amāma."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا عَلَامَةُ نَصْبِ «صَبَاحًا»؟",
+        "de": "Was kennzeichnet den Akkusativ von ṣabāḥan?"
+      },
+      "options": [
+        "الضَّمَّةُ",
+        "الْكَسْرَةُ",
+        "الْفَتْحَةُ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "«صَبَاحًا» ظَرْفُ زَمَانٍ مُعْرَبٌ مَنْصُوبٌ بِالْفَتْحَةِ.",
+        "de": "Ṣabāḥan ist eine veränderliche Zeitangabe im Akkusativ mit Fatḥa."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أَيُّ ضَبْطٍ صَحِيحٌ؟",
+        "de": "Welche Vokalisierung ist richtig?"
+      },
+      "options": [
+        "قَبْلُ الدَّرْسُ",
+        "قَبْلَ الدَّرْسِ",
+        "قَبْلًا الدَّرْسِ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "«قَبْلَ» مُضَافٌ فَلَا يُنَوَّنُ، وَ«الدَّرْسِ» مُضَافٌ إِلَيْهِ مَجْرُورٌ.",
+        "de": "Qabla eröffnet eine Genitivverbindung und erhält deshalb kein Tanwīn; ad-darsi steht im Genitiv."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا وَظِيفَةُ «الصَّبَاحُ» فِي «الصَّبَاحُ جَمِيلٌ»؟",
+        "de": "Welche Funktion hat aṣ-ṣabāḥu hier?"
+      },
+      "options": [
+        "مُبْتَدَأٌ",
+        "ظَرْفُ زَمَانٍ مَنْصُوبٌ",
+        "مَفْعُولٌ بِهِ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "هُنَا نَتَحَدَّثُ عَنِ الصَّبَاحِ، فَهُوَ مُبْتَدَأٌ مَرْفُوعٌ.",
+        "de": "Hier ist der Morgen das Subjekt des Nominalsatzes (mubtadaʾ), im Nominativ."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا إِعْرَابُ «الصَّبَاحِ» فِي «أَقْرَأُ فِي الصَّبَاحِ»؟",
+        "de": "Welcher Kasus folgt auf fī?"
+      },
+      "options": [
+        "ظَرْفٌ مَنْصُوبٌ",
+        "فَاعِلٌ مَرْفُوعٌ",
+        "اسْمٌ مَجْرُورٌ بِـ«فِي»"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "«فِي» حَرْفُ جَرٍّ؛ لِذَلِكَ «الصَّبَاحِ» اسْمٌ مَجْرُورٌ.",
+        "de": "Fī ist eine Präposition; aṣ-ṣabāḥi steht nach ihr im Genitiv."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا ظَرْفُ الْمَكَانِ الْمَبْنِيُّ فِي «جَلَسْتُ هُنَا»؟",
+        "de": "Welche Ortsangabe ist unveränderlich?"
+      },
+      "options": [
+        "التَّاءُ",
+        "هُنَا",
+        "جَلَسْتُ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "«هُنَا» ظَرْفُ مَكَانٍ مَبْنِيٌّ فِي مَحَلِّ نَصْبٍ.",
+        "de": "Hunā ist eine unveränderliche Ortsangabe mit der syntaktischen Funktion eines Akkusativadverbials."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "مَا نَوْعُ «سَاعَةً» فِي «انْتَظَرْتُ سَاعَةً»؟",
+        "de": "Was bezeichnet sāʿatan hier?"
+      },
+      "options": [
+        "ظَرْفُ زَمَانٍ يَدُلُّ عَلَى الْمُدَّةِ",
+        "ظَرْفُ مَكَانٍ",
+        "فَاعِلٌ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "«سَاعَةً» تُبَيِّنُ مُدَّةَ الِانْتِظَارِ.",
+        "de": "Sāʿatan bezeichnet die Dauer des Wartens."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أَيُّ جُمْلَةٍ تَحْتَوِي ظَرْفَيِ الزَّمَانِ وَالْمَكَانِ؟",
+        "de": "Welcher Satz enthält eine Zeit- und eine Ortsangabe?"
+      },
+      "options": [
+        "قَرَأْتُ كِتَابًا مُفِيدًا.",
+        "الْبَيْتُ جَمِيلٌ.",
+        "جَلَسْتُ مَسَاءً أَمَامَ الْبَيْتِ."
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "«مَسَاءً» ظَرْفُ زَمَانٍ، وَ«أَمَامَ» ظَرْفُ مَكَانٍ.",
+        "de": "Masāʾan ist eine Zeitangabe, amāma eine Ortsangabe."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أَيُّ جُمْلَةٍ صَحِيحَةٌ لِلتَّعْبِيرِ عَنِ الذَّهَابِ؟",
+        "de": "Welcher Satz drückt das Gehen korrekt aus?"
+      },
+      "options": [
+        "ذَهَبْتُ إِلَى الْمَدْرَسَةُ.",
+        "ذَهَبْتُ إِلَى الْمَدْرَسَةِ.",
+        "ذَهَبْتُ الْمَدْرَسَةَ."
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "نَسْتَعْمِلُ «إِلَى» لِبَيَانِ الْوِجْهَةِ، وَيَأْتِي الِاسْمُ بَعْدَهَا مَجْرُورًا.",
+        "de": "Ilā bezeichnet das Ziel einer Bewegung; das folgende Nomen steht im Genitiv."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أَيُّ كَلِمَةٍ ظَرْفُ مَكَانٍ فِي «وَقَفَ أَحْمَدُ بَيْنَ صَدِيقَيْهِ»؟",
+        "de": "Welche Ortsangabe steht im Satz?"
+      },
+      "options": [
+        "بَيْنَ",
+        "أَحْمَدُ",
+        "صَدِيقَيْهِ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "«بَيْنَ» تُبَيِّنُ مَوْضِعَ الْوُقُوفِ.",
+        "de": "Bayna beschreibt den Ort, an dem Ahmad steht."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أَيُّ سُؤَالٍ يُنَاسِبُ الْجَوَابَ «غَدًا»؟",
+        "de": "Welche Frage passt zur Antwort „morgen“?"
+      },
+      "options": [
+        "أَيْنَ تَسْكُنُ؟",
+        "مَنْ صَدِيقُكَ؟",
+        "مَتَى تَزُورُنَا؟"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "«غَدًا» ظَرْفُ زَمَانٍ؛ لِذَلِكَ نَسْأَلُ عَنْهُ بِـ«مَتَى؟».",
+        "de": "Ġadan ist eine Zeitangabe; dazu passt die Frage mit matā."
+      }
+    }
+  ]
+}

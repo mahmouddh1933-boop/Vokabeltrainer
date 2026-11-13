@@ -13,10 +13,15 @@ p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--directory',type=Path,default=ROOT/'firebase-public')
 p.add_argument('--hosting',action='store_true')
 p.add_argument('--archives',action='store_true')
+p.add_argument('--editions',nargs='+',choices=['start','a1-a2','b1-b2','books'],help='Rebuild only these editions; preserve other folders, ZIPs and assembly kit.')
 a=p.parse_args();OUT=a.directory.resolve()
 if OUT==ROOT or OUT in ROOT.parents or OUT.is_symlink():raise SystemExit('Choose a separate build directory.')
 if OUT.exists() and any(OUT.iterdir()):
- if OUT==ROOT/'firebase-public' or (OUT/'edition-build.json').exists():shutil.rmtree(OUT)
+ if OUT==ROOT/'firebase-public' or (OUT/'edition-build.json').exists():
+  if a.editions:
+   for ident in a.editions:
+    if (OUT/ident).exists():shutil.rmtree(OUT/ident)
+  else:shutil.rmtree(OUT)
  else:raise SystemExit('Output directory must be empty or an earlier suite build.')
 OUT.mkdir(parents=True,exist_ok=True)
 def dump(x):return json.dumps(x,ensure_ascii=False,separators=(',',':'))
@@ -106,6 +111,7 @@ def audio_subset(mapping,values):
 PWA=runpy.run_path(str(ROOT/'tools/build-pwa.py'),run_name='suite_pwa_builder')
 summaries=[]
 for definition in DEFINITIONS:
+ if a.editions and definition['id'] not in a.editions:continue
  d=json.loads(json.dumps(definition));ident=d['id'];base=OUT/ident;base.mkdir()
  pages=['index','apps','login','admin','offline']
  if ident=='start':pages+=FOUNDATION+['progress']
@@ -113,7 +119,7 @@ for definition in DEFINITIONS:
  elif ident=='b1-b2':pages+=VOCAB_PAGES+['grammar','verbs']
  else:pages+=VOCAB_PAGES+BOOKS
  pages=list(dict.fromkeys(pages));d['pages']=[n+'.html' for n in pages]
- ids=basic_ids if ident=='a1-a2' else advanced_ids if ident=='b1-b2' else []
+ ids=list(basic_ids if ident=='a1-a2' else advanced_ids if ident=='b1-b2' else [])
  d.update(grammarIds=ids,basicLessons=basic_ids,advancedLessons=advanced_ids,owners=owners,editions=all_details,suite=True)
  d['routes']=[{'href':href,'ar':ar,'de':de,'description':'افتح الدروس والتدريبات وتابع من حيث توقفت.','descriptionDe':'Lektionen und Übungen öffnen und weiterlernen.'} for href,ar,de in d['routes']]
  scoped={k:v for k,v in catalog.items() if k not in ['bookVocabulary','bookVocabulary2']}
@@ -129,6 +135,11 @@ for definition in DEFINITIONS:
  lessons=[json.loads(json.dumps(l)) for l in data['grammar']['lessons'] if l['id'] in ids]
  for l in lessons:l['prerequisites']=[i for i in l.get('prerequisites',[]) if i in ids]
  stages=[{**s,'ids':[i for i in s['ids'] if i in ids]} for s in data['grammar']['stages'] if any(i in ids for i in s['ids'])]
+ if ident=='a1-a2':
+  for filename in ['a1-a2-interrogatives.json','a1-a2-time-place.json']:
+   extra=json.loads((ROOT/'data'/filename).read_text());lessons.append(extra);ids.append(extra['id'])
+   for stage in stages:
+    if stage['id']==extra['stage']:stage['ids'].append(extra['id'])
  grammar={**data['grammar'],'lessons':lessons,'stages':stages,'basicVerbs':data['grammar']['basicVerbs'] if ident=='a1-a2' else []}
  verbs=data['verbs'][:30] if ident=='a1-a2' else data['verbs'][30:] if ident=='b1-b2' else []
  practice={**data['practice'],'sentences':data['practice']['sentences'] if ident=='a1-a2' else [],'stories':data['practice']['stories'] if ident=='a1-a2' else [],'sounds':data['practice']['sounds'] if ident=='start' else []}
@@ -178,6 +189,7 @@ for definition in DEFINITIONS:
   source=source.replace('</title>',' · '+d['ar']+'</title>')
   if a.hosting:source=source.replace('<html ','<html data-olive-hosted="true" ',1)
   source=source.replace('</head>','<link rel="stylesheet" href="css/editions.css"><script src="js/edition-ui.js" defer></script></head>')
+  if ident=='a1-a2':source=source.replace('</head>','<script src="js/pages/a1-back-navigation.js" defer></script></head>')
   source=source.replace('<head>','<head><script src="js/edition-config.js"></script><script src="js/edition.js"></script>',1)
   return source
  included={}
@@ -214,6 +226,8 @@ for definition in DEFINITIONS:
  for name in pages:write(base,name+'.html',portable(page_source(name),name))
  # Runtime-created paths and the on-demand authentication/synchronisation SDK.
  include('data/vocab_catalog.json')
+ if ident=='a1-a2':
+  for path in (ROOT/'audio/skills').glob('*.mp3'):include(path.relative_to(ROOT).as_posix())
  for name in ['js/cloud-sync-core.js','js/cloud-sync.js','js/vendor/firebase/firebase-app-compat.js','js/vendor/firebase/firebase-auth-compat.js','js/vendor/firebase/firebase-firestore-compat.js']:include(name)
  for group in ['images/pwa','images/brand']+['images/editions/'+item['id'] for item in DEFINITIONS if item['id']!=ident]+(['images/book-two','images/youth','images/youth-two','images/exams'] if ident=='books' else []):
   for path in (ROOT/group).rglob('*'):
@@ -243,6 +257,12 @@ for definition in DEFINITIONS:
   with ZipFile(ROOT/'downloads'/d['archive'],'w',ZIP_DEFLATED) as z:
    for name,payload in archive_files.items():z.writestr(ident+'/'+name,payload)
 
+if a.editions:
+ previous=json.loads((OUT/'edition-build.json').read_text())['editions'] if (OUT/'edition-build.json').exists() else []
+ selected={row['id']:row for row in summaries};merged=[selected.pop(row['id'],row) for row in previous]
+ write(OUT,'edition-build.json',dump({'schema':1,'editions':merged+list(selected.values())}))
+ print('SELECTED EDITIONS ready: '+', '.join(a.editions)+'; other edition folders, archives and assembly kit preserved.',flush=True)
+ raise SystemExit(0)
 cards=''.join('<a class="card" href="'+d['id']+'/index.html"><span>'+str(i+1)+'</span><h2>'+d['ar']+'</h2><p>'+d['description']+'</p><b>افتح التطبيق ←</b></a>' for i,d in enumerate(DEFINITIONS))
 hub='''<!doctype html><html lang="ar" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>حروف من الزيتون · التطبيقات الأربعة</title><style>@font-face{font-family:Olive;src:url('start/fonts/noto-naskh-arabic.woff')}*{box-sizing:border-box}body{margin:0;background:#f6f4e9 url('start/images/brand/olive-pattern.svg');color:#224737;font-family:Olive,Tahoma,sans-serif}main{max-width:1100px;margin:auto;padding:40px 20px}header{text-align:center;margin-bottom:30px}header img{width:100px}h1{font-size:clamp(30px,5vw,47px);margin:8px}header p{font-size:23px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:22px}.card{padding:30px;background:#fffef6ed;border:1px solid #c1d0ae;border-radius:26px;text-decoration:none;color:inherit;box-shadow:0 10px 35px #3553390a}.card:hover,.card:focus{outline:3px solid #7c9959}.card span{display:inline-grid;place-items:center;width:45px;height:45px;border-radius:50%;background:#dce8c6;font:700 24px Tahoma}.card h2{font-size:29px;margin:14px 0}.card p{font-size:22px;line-height:1.8}.card b{display:inline-block;background:#365f43;color:white;border-radius:13px;padding:10px 24px;font-size:21px}footer{text-align:center;font-size:21px;margin-top:30px}</style><main><header><img src="start/images/brand/olive-symbol.svg" alt=""><h1>حروف من الزيتون</h1><p>اختر التطبيق المناسب لمرحلتك. لكل تطبيق محتواه وتقدّمه المستقل.</p></header><div class="cards">'''+cards+'''</div><footer>إعداد الأستاذ محمود بركات</footer></main></html>'''
 hub=hub.replace('</html>',"<script>try{localStorage.setItem('huroofSuiteBaseV1',new URL('.',location.href).href)}catch(_){};if('serviceWorker'in navigator)navigator.serviceWorker.getRegistrations().then(rs=>rs.filter(r=>r.scope===new URL('.',location.href).href).forEach(r=>r.update())).catch(()=>{});</script></html>")
