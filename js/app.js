@@ -666,7 +666,7 @@
         `https://translate.googleapis.com/translate_tts?ie=UTF-8&client=gtx&tl=ar&q=${encoded}`,
       ];
     }
-    function speakArabic(text, onStatus) {
+    function speakArabic(text, onStatus, onComplete) {
       const value = String(text || "")
         .trim()
         .normalize("NFC");
@@ -674,22 +674,32 @@
       stopSpeech();
       const requestId = speechRequestId;
       const current = () => requestId === speechRequestId;
+      let completed = false;
+      const finish = (success) => {
+        if (!current() || completed) return;
+        completed = true;
+        if (typeof onComplete === "function") onComplete(success);
+      };
       const status = (ar, de, error = false) => {
         if (current() && typeof onStatus === "function")
           onStatus(speechText(ar, de), error);
       };
-      const blocked = () =>
+      const blocked = () => {
         status(
           "اضغط زر الاستماع مرة أخرى للسماح بالصوت، وتحقق من مستوى الصوت.",
           "Tippe erneut auf Anhören, um Audio zu erlauben, und prüfe die Lautstärke.",
           true,
         );
-      const unavailable = () =>
+        finish(false);
+      };
+      const unavailable = () => {
         status(
           "تعذّر تشغيل الصوت. تحقق من الاتصال أو فعّل صوتًا عربيًا في إعدادات النطق بالجهاز.",
           "Audio nicht verfügbar. Prüfe die Verbindung oder aktiviere eine arabische Stimme in den Spracheinstellungen des Geräts.",
           true,
         );
+        finish(false);
+      };
       function playMedia(url, fallback, recorded) {
         if (!current()) return;
         if (typeof Audio === "undefined") {
@@ -725,6 +735,7 @@
           clearTimeout(speechTimer);
           activeOnlineAudio = null;
           status("تم تشغيل النطق.", "Aussprache abgespielt.");
+          finish(true);
         };
         audio.onerror = fail;
         audio.src = url;
@@ -796,6 +807,7 @@
           clearTimeout(speechTimer);
           activeUtterance = null;
           status("تم تشغيل النطق.", "Aussprache abgespielt.");
+          finish(true);
         };
         utterance.onerror = fallback;
         status("جارٍ تشغيل صوت الجهاز…", "Gerätestimme wird gestartet…");

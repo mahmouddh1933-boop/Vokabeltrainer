@@ -3,6 +3,7 @@
  'use strict';
  window.JisrStorage.ready(()=>{
   const D=window.ArabicReadingExercises,A=window.VocabApp,S=window.JisrStorage.local;
+  const narrator=window.ReadingWorkshopAudio.create({speak:(...args)=>A.speakArabic(...args),stop:()=>A.stopSpeech()});
   const $=id=>document.getElementById(id),de=()=>window.AppLanguage?.get()==='de';
   const t=(ar,german)=>de()?german:ar;
   const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
@@ -33,7 +34,7 @@
   function route(){
    const parts=location.hash.slice(1).split('/');chapter=D.chapters.find(c=>c.id===parts[0])||null;
    activity=chapter?D.activities.find(a=>a.chapter===chapter.id&&a.id===parts[1])||null:null;
-   svgAbort?.abort();A.stopSpeech();$('rx-audio-status').textContent='';render();
+   svgAbort?.abort();narrator.stop();$('rx-audio-status').textContent='';render();
   }
   function go(hash){if(location.hash==='#'+hash)route();else location.hash=hash;}
   function card(title,description,action,detail,icon){
@@ -41,6 +42,7 @@
    n.append(el('h2',title),el('p',description),el('strong',detail,'rx-card-detail'));return n;
   }
   function render(){
+   narrator.stop();$('rx-audio-status').textContent='';
    updateCounter();const host=$('rx-content');host.replaceChildren();$('rx-back').hidden=!chapter;
    $('rx-back').textContent=activity?t('← العودة إلى أنشطة الباب','← Zurück zum Kapitel'):t('← جميع الأبواب','← Alle Kapitel');
    $('rx-breadcrumb').textContent=chapter?chapter.title+(activity?' / '+activity.title:''):t('رحلة من الجملة إلى الحكاية','Vom Satz zur Geschichte');
@@ -74,9 +76,8 @@
    const actions=el('div',undefined,'rx-actions');
    if(a.type!=='draw')actions.append(button(t('تحقّق من إجاباتي','Antworten prüfen'),()=>check(a),'rx-button rx-primary'));
    actions.append(button(t('استمع للنص','Text anhören'),()=>{
-    const text=[a.title,...(a.instructions||[]),...(a.frames||[]).map(f=>f.text),...(a.questions||[]).map(q=>q.prompt)].join(' ');
-    A.speakArabic(text,(message,error)=>{$('rx-audio-status').textContent=message;$('rx-audio-status').classList.toggle('is-error',error);});
-   }),button(t('إيقاف الصوت','Audio stoppen'),()=>{A.stopSpeech();$('rx-audio-status').textContent='';}));
+    narrator.play(a,(message,error)=>{$('rx-audio-status').textContent=message;$('rx-audio-status').classList.toggle('is-error',error);});
+   }),button(t('إيقاف الصوت','Audio stoppen'),()=>{narrator.stop();$('rx-audio-status').textContent='';}));
    section.append(actions);host.append(section);
    const nav=el('nav',undefined,'rx-actions');nav.setAttribute('aria-label',t('التنقل بين الأنشطة','Aufgaben-Navigation'));
    const all=D.activities.filter(x=>x.chapter===chapter.id),index=all.findIndex(x=>x.id===a.id);
@@ -126,8 +127,7 @@
    const refresh=()=>{
     selected.replaceChildren();choices.replaceChildren();const order=saved(a.id).order||[];
     order.forEach((index,pos)=>{const n=el('div',undefined,'rx-story-step');n.append(el('strong',String(pos+1)),arabic(el('p',a.frames[index].text)));selected.append(n);});
-    const arrangements=[[2,0,1],[1,2,0],[0,2,1],[1,0,2],[2,1,0]];
-    const display=arrangements[(Number(a.id.split('-').at(-1))-1)%arrangements.length];
+    const display=window.ReadingWorkshopAudio.displayOrder(a);
     for(const index of display){const f=a.frames[index],b=button('',()=>{draft({order:[...(saved(a.id).order||[]),index]});clearFeedback();refresh();},'rx-story-card');b.disabled=order.includes(index);b.dataset.frame=index;b.append(image(f.image,f.imageAlt),arabic(el('p',f.text)));choices.append(b);}
    };
    section.append(selected,choices,button(t('تراجع عن آخر حدث','Letztes Ereignis zurücknehmen'),()=>{draft({order:(saved(a.id).order||[]).slice(0,-1)});clearFeedback();refresh();}));refresh();
@@ -192,7 +192,7 @@
    window.print();
   }
   $('rx-back').addEventListener('click',()=>{search='';go(activity?chapter.id:'');});$('rx-print').addEventListener('click',printActivities);
-  window.addEventListener('hashchange',route);window.addEventListener('app-language-change',render);window.addEventListener('pagehide',()=>A.stopSpeech());
+  window.addEventListener('hashchange',route);window.addEventListener('app-language-change',render);window.addEventListener('pagehide',()=>narrator.stop());
   $('lesson-loading')?.remove();route();
  });
 })();

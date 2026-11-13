@@ -6,6 +6,7 @@
     const t=(ar,german)=>de()?german:ar;
     const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text)n.textContent=text;if(cls)n.className=cls;return n;};
     const page=location.pathname.split('/').pop()||'index.html';
+    const galleryPositions=new Map();
     function owner(url){
       const name=url.pathname.split('/').pop(),level=url.searchParams.get('level'),list=url.searchParams.get('list');
       if(name==='grammar.html'&&url.hash){const id=url.hash.slice(1);if(E.basicLessons.includes(id))return'a1-a2';if(E.advancedLessons.includes(id))return'b1-b2';}
@@ -39,24 +40,57 @@
       const host=document.getElementById('edition-directory');if(!host)return;
       host.replaceChildren();
       document.getElementById('edition-image-dialog')?.remove();
-      const dialog=el('dialog',null,'edition-image-dialog');dialog.id='edition-image-dialog';
+      const dialog=el('dialog',null,'edition-image-dialog');dialog.id='edition-image-dialog';let viewer=null;
       const close=el('button',t('إغلاق الصورة','Bild schließen'),'practice-button');close.type='button';close.addEventListener('click',()=>dialog.close());
-      const large=el('img'),caption=el('p');dialog.append(close,large,caption);document.body.append(dialog);
+      const large=el('img'),caption=el('p');
+      function counter(index,total){return t(`${index+1} من ${total}`,`${index+1} von ${total}`);}
+      function controls(shift){
+        const root=el('div',null,'edition-carousel-controls');root.dir=de()?'ltr':'rtl';
+        const previous=el('button',(de()?'← ':'→ ')+t('السابقة','Zurück'),'practice-button');previous.type='button';previous.dataset.galleryPrevious='';previous.setAttribute('aria-label',t('الصورة السابقة','Vorheriges Bild'));previous.addEventListener('click',()=>shift(-1));
+        const count=el('span',null,'edition-carousel-count');count.dataset.galleryCount='';count.setAttribute('aria-live','polite');count.setAttribute('aria-atomic','true');
+        const next=el('button',(de()?'→ ':'← ')+t('التالية','Weiter'),'practice-button');next.type='button';next.dataset.galleryNext='';next.setAttribute('aria-label',t('الصورة التالية','Nächstes Bild'));next.addEventListener('click',()=>shift(1));
+        root.append(previous,count,next);return {root,count};
+      }
+      function keyboard(event,shift,jump){
+        if(event.key==='ArrowLeft'){event.preventDefault();shift(de()?-1:1);}
+        else if(event.key==='ArrowRight'){event.preventDefault();shift(de()?1:-1);}
+        else if(event.key==='Home'){event.preventDefault();jump(0);}
+        else if(event.key==='End'){event.preventDefault();jump(-1);}
+      }
+      const modalControls=controls(step=>viewer?.shift(step));
+      dialog.append(close,large,caption,modalControls.root);document.body.append(dialog);
+      dialog.addEventListener('keydown',event=>keyboard(event,step=>viewer?.shift(step),index=>viewer?.jump(index)));
+      dialog.addEventListener('close',()=>{viewer=null;});
       dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
       const jump=el('nav',null,'edition-gallery-nav');jump.setAttribute('aria-label',t('معارض التطبيقات','App-Galerien'));
       for(const item of E.editions.filter(item=>item.id!==E.id)){const link=el('a',de()?item.de:item.ar,'practice-button');link.href='#preview-'+item.id;jump.append(link);}host.append(jump);
       for(const item of E.editions.filter(item=>item.id!==E.id)){
         const box=el('section',null,'edition-showcase');box.id='preview-'+item.id;
         box.append(el('h2',de()?item.de:item.ar),el('p',de()?item.descriptionDe:item.description));
-        const grid=el('div',null,'edition-preview-grid');
-        for(const [index,frame] of item.previews.entries()){
-          const figure=el('figure'),button=el('button',null,'edition-preview-button'),img=el('img');button.type='button';
-          img.src='images/editions/'+item.id+'/'+(index+1)+'.webp';img.alt=de()?frame.de:frame.ar;img.loading='lazy';img.width=1000;img.height=750;
+        const carousel=el('div',null,'edition-carousel');carousel.dataset.gallery=item.id;carousel.setAttribute('role','region');carousel.setAttribute('aria-label',de()?item.de:item.ar);carousel.setAttribute('aria-roledescription',t('معرض صور','Bildergalerie'));carousel.tabIndex=0;
+        const figure=el('figure'),button=el('button',null,'edition-preview-button'),img=el('img'),description=el('figcaption');button.type='button';
+        img.width=1000;img.height=750;img.loading='eager';img.id='preview-image-'+item.id;
+        const dots=el('div',null,'edition-carousel-dots');dots.setAttribute('role','group');dots.setAttribute('aria-label',t('اختيار الصورة','Bild wählen'));
+        let index=galleryPositions.get(item.id)||0;
+        const navigation=controls(step=>show(index+step));
+        for(const control of navigation.root.querySelectorAll('button'))control.setAttribute('aria-controls',img.id);
+        function show(next){
+          const focused=dots.contains(document.activeElement);index=(next+item.previews.length)%item.previews.length;galleryPositions.set(item.id,index);
+          const frame=item.previews[index];img.src='images/editions/'+item.id+'/'+(index+1)+'.webp';img.alt=de()?frame.de:frame.ar;description.textContent=img.alt;navigation.count.textContent=counter(index,item.previews.length);
           button.setAttribute('aria-label',t('تكبير الصورة: ','Bild vergrößern: ')+img.alt);
-          button.addEventListener('click',()=>{large.src=img.src;large.alt=img.alt;caption.textContent=img.alt;dialog.showModal();});button.append(img);
-          figure.append(button,el('figcaption',de()?frame.de:frame.ar));grid.append(figure);
+          [...dots.children].forEach((dot,i)=>{dot.setAttribute('aria-current',String(i===index));dot.tabIndex=i===index?0:-1;});
+          if(focused)dots.children[index].focus();if(viewer?.id===item.id)viewer.refresh();
         }
-        box.append(grid,el('p',t('كل خطوة صغيرة تفتح لك بابًا جديدًا في العربية.','Jeder kleine Schritt öffnet dir neue Möglichkeiten auf Arabisch.'),'edition-encouragement'));host.append(box);
+        for(const [i,frame] of item.previews.entries()){
+          const dot=el('button',String(i+1),'edition-carousel-dot');dot.type='button';dot.setAttribute('aria-label',t(`عرض الصورة ${i+1}: `,`Bild ${i+1} anzeigen: `)+(de()?frame.de:frame.ar));dot.addEventListener('click',()=>show(i));dots.append(dot);
+        }
+        button.addEventListener('click',()=>{
+          viewer={id:item.id,shift:step=>show(index+step),jump:show,refresh:()=>{large.src=img.src;large.alt=img.alt;caption.textContent=img.alt;modalControls.count.textContent=counter(index,item.previews.length);}};
+          viewer.refresh();dialog.setAttribute('aria-label',de()?item.de:item.ar);dialog.showModal();
+        });
+        carousel.addEventListener('keydown',event=>keyboard(event,step=>show(index+step),show));
+        button.append(img);figure.append(button,description);carousel.append(figure,navigation.root,dots);show(index);
+        box.append(carousel,el('p',t('كل خطوة صغيرة تفتح لك بابًا جديدًا في العربية.','Jeder kleine Schritt öffnet dir neue Möglichkeiten auf Arabisch.'),'edition-encouragement'));host.append(box);
       }
     }
     function home(){

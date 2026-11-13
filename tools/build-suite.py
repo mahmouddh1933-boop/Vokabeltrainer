@@ -58,7 +58,39 @@ PREVIEWS={
  'b1-b2':[['vocabulary.html','وسّع كلماتك للتعبير بدقّة أكبر.','Erweitere deinen Wortschatz für präziseren Ausdruck.'],['lernseite.html','راجع المفردات واجعلها جزءًا من لغتك.','Mache neue Wörter zu einem Teil deiner Sprache.'],['grammar.html','اكتشف تراكيب أكثر عمقًا.','Entdecke weiterführende Strukturen.'],['verbs.html','تدرّب على صيغ الأفعال وتغيّرها.','Übe verschiedene Verbformen.'],['test2.html','اختبر فهمك بخيارات واضحة.','Prüfe dein Verständnis mit klaren Auswahlaufgaben.'],['test.html','نوّع التدريب وثبّت ما تعلّمته.','Übe abwechslungsreich und festige dein Wissen.']],
  'books':[['books.html','أربعة كتب تفتح لك أبواب القراءة.','Vier Bücher eröffnen dir neue Lesewelten.'],['book-level-two.html','تعلّم من نصوص وتمارين متدرجة.','Lerne mit aufbauenden Texten und Aufgaben.'],['youth-book-two-part-one.html','رافق كل وحدة بممارسة وفهم.','Vertiefe jede Einheit durch aktive Übungen.'],['vocabulary.html','اجمع مفردات الكتب وراجعها بالبطاقات.','Lerne den Buchwortschatz mit Karten.'],['exams.html','تدرّب على اختبارات الأستاذ محمود بركات.','Übe mit Prüfungen von Mahmoud Barakat.'],['placement.html','اكتشف نقطة البداية المناسبة لك.','Finde einen passenden Einstieg.']]
 }
-for d in DEFINITIONS:d['previews']=[dict(zip(['page','ar','de'],r)) for r in PREVIEWS[d['id']]]
+EXTRA_PREVIEWS={
+ 'start':[
+  ['reading.html','حلّل الكلمة إلى أصوات، ثم اجمعها بثقة.','Zerlege Wörter in Laute und setze sie sicher zusammen.','#phonics-display',''],
+  ['huruf.html','اكتب الحرف على اللوحة، ودرّب يدك خطوة بخطوة.','Schreibe den Buchstaben auf der Zeichenfläche und übe Schritt für Schritt.','#writing-canvas','letters-writing'],
+  ['sounds.html','ميّز الأصوات المتشابهة، وامنح نطقك بداية أوضح.','Unterscheide ähnliche Laute und schaffe eine klare Aussprache.','#sound-question',''],
+  ['reading-exercises.html#pictures/pictures-3','اقرأ الصورة وابحث عن الدليل قبل اختيار الإجابة.','Lies das Bild und finde Belege für deine Antwort.','.rx-activity',''],
+  ['reading-exercises.html#meaning/meaning-1','أكمل الجملة وافهم معنى الكلمة في سياقها.','Ergänze den Satz und verstehe das Wort im Zusammenhang.','.rx-questions',''],
+  ['reading-exercises.html#draw/draw-1','حوّل ما تقرؤه إلى رسم جميل من إبداعك.','Verwandle das Gelesene in deine eigene Zeichnung.','.rx-canvas','draw-example']],
+ 'a1-a2':[
+  ['verbs.html','اكتشف الماضي والمضارع والأمر، ودرّب نفسك على التصريف.','Entdecke Vergangenheit, Gegenwart und Imperativ und übe Verbformen.','#conjugation-body','imperative'],
+  ['skills.html','انتقل من كلماتك إلى الاستماع والمحادثة والكتابة في وحدات مترابطة.','Verbinde deinen Wortschatz mit Hören, Sprechen und Schreiben.','','skills-unit'],
+  ['test.html','اختر من ستة أنواع لاختبارات المفردات، ونوّع طريقتك في التعلّم.','Wähle aus sechs Vokabeltestarten und lerne abwechslungsreich.','',''],
+  ['ergebnis.html','افرح بما أتقنته، واكتشف ما يستحق مراجعة جديدة.','Freue dich über Erfolge und entdecke, was du noch üben kannst.','','sample-test'],
+  ['review.html','خطؤك فرصة: ارجع إلى الكلمة وثبّتها بهدوء.','Fehler sind Chancen: Wiederhole das Wort in Ruhe.','',''],
+  ['stats.html','تابع اختباراتك ونتائجك، وشاهد خطواتك الصغيرة تتراكم.','Verfolge deine Tests und Ergebnisse und sieh deine kleinen Schritte wachsen.','','']],
+ 'b1-b2':[
+  ['grammar.html','طبّق القاعدة في سؤال واضح، وتعلّم من التصحيح.','Wende die Regel an und lerne aus der Rückmeldung.','#grammar-answers',''],
+  ['verbs.html','قارن صيغ الأمر مع بقية الأزمنة، ووسّع قدرتك على التعبير.','Vergleiche den Imperativ mit anderen Zeitformen und erweitere deinen Ausdruck.','#conjugation-body','imperative'],
+  ['test3.html','اختبر تذكّر الكلمة العربية، واجعل المفردات جاهزة للاستعمال.','Prüfe deine Erinnerung an das arabische Wort und mache es einsatzbereit.','.question',''],
+  ['ergebnis.html','اجعل نتيجة الاختبار نقطة انطلاق لتقدّم جديد.','Nutze dein Testergebnis als Ausgangspunkt für neue Fortschritte.','','sample-test'],
+  ['review.html','راجع الكلمات الصعبة بدل تركها تتراكم.','Wiederhole schwierige Wörter, bevor sie sich ansammeln.','',''],
+  ['stats.html','راقب تقدّمك، وواصل الممارسة بخطة أوضح.','Verfolge deinen Lernstand und übe mit einem klareren Plan weiter.','','']],
+ 'books':[
+  ['youth-training-two.html','تدرّب مع كتاب ٣ على أنشطة عربية متنوعة.','Übe abwechslungsreiche arabische Aufgaben mit Buch 3.','',''],
+  ['arabic-youth.html','رافق كتاب ٤ في القراءة والفهم والتراكيب.','Entdecke Lesen, Verstehen und Strukturen in Buch 4.','',''],
+  ['lernseite.html','مفردات الكتاب ٢ بين يديك: اقلب البطاقة واكتشف المعنى.','Lerne den Wortschatz von Buch 2 mit beidseitigen Karten.','#flashcard','book2-cards'],
+  ['test.html','حوّل مفردات الكتب إلى ممارسة بستة أنواع من الاختبارات.','Festige den Buchwortschatz mit sechs Testarten.','',''],
+  ['exams.html','حلّ امتحان الأستاذ مباشرة، وطبّق ما تعلمته.','Bearbeite die Lehrerprüfung direkt und wende dein Wissen an.','','teacher-exam'],
+  ['placement.html','جرّب سؤال تحديد مستوى، واكتشف نقطة انطلاقتك.','Probiere eine Einstufungsfrage und entdecke deinen Einstieg.','','placement-test']]
+}
+for d in DEFINITIONS:
+ d['previews']=[dict(zip(['page','ar','de','focus','action'],r)) for r in PREVIEWS[d['id']]+EXTRA_PREVIEWS[d['id']]]
+ assert len(d['previews'])==12
 all_details=[{k:d[k] for k in ['id','ar','de','description','descriptionDe','previews']} for d in DEFINITIONS]
 def strings(v):
  if isinstance(v,str):yield v
@@ -121,7 +153,7 @@ for definition in DEFINITIONS:
  design=(ROOT/'js/design.js').read_text();nav=[['index.html','home','Übersicht','نظرة عامة']]+[[r['href'],'book',r['de'],r['ar']] for r in d['routes']]
  if ident!='start':nav.insert(-1,['test.html','check','Vokabeltests','اختبارات المفردات'])
  nav.append(['apps.html','home','Weitere Apps','التطبيقات الأخرى'])
- design=re.sub(r'    const nav =.*?    const activeHref =.*?;\n','    const nav = '+dump(nav)+'.concat(window.OliveAccess?.isAdmin() ? [["admin.html","check","Verwaltung","لوحة الإدارة"]] : []);\n    const activeHref = page;\n',design,count=1,flags=re.S)
+ design=re.sub(r'    const nav =.*?    const activeHref =.*?;\n','    const nav = '+dump(nav)+'.concat(window.OliveAccess?.isAdmin() ? [["admin.html","admin","Verwaltung","لوحة الإدارة"]] : []).map(([href,_,de,ar])=>[href,iconForPage(href),de,ar]);\n    const activeHref = page;\n',design,count=1,flags=re.S)
  overrides['js/design.js']=design
  route_source=(ROOT/'js/learning-path.js').read_text();first=route_source.index('  const stages = ');last=route_source.index('  const groups = ')
  overrides['js/learning-path.js']=route_source[:first]+'  const stages = '+dump([{'id':r['href'].split('.')[0],**r} for r in d['routes']])+';\n'+route_source[last:]

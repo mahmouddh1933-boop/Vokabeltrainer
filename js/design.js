@@ -2,6 +2,20 @@
   "use strict";
   const localStorage = window.JisrStorage.local;
   const paths = {
+    phonics:'<circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><path d="M7 12h10M10 7l4 5-4 5M3 5v2m18-2v2M3 17v2m18-2v2"/>',
+    reader:'<path d="M4 4h12v7M4 4v16h8M7 8h6M7 12h3M7 16h3"/><circle cx="16" cy="15" r="4"/><path d="m19 18 3 3"/>',
+    workshop:'<path d="M4 3h10v5M4 3v18h16V11M14 3l6 5h-6V3M7 8h4M7 12h4M7 16h3m3 3 1-4 6-6 3 3-6 6-4 1Z"/>',
+    vocab:'<rect x="7" y="4" width="14" height="17" rx="2"/><path d="M4 18H3V2h14M10 10h8M10 14h6M10 18h4"/>',
+    skills:'<path d="M3 5h8v14H3zM11 8h10v11H11M6 8h2M6 11h2M14 12l2 2 3-4M14 17h4"/>',
+    sentence:'<path d="M3 4h18v14H7l-4 3V4Z M6 8h5m3 0h4M6 12h12M6 15h8"/>',
+    story:'<path d="M12 5C8 2 4 3 2 4v16c4-2 7-1 10 1 3-2 6-3 10-1V4c-3-1-7-1-10 1Zm0 0v16M5 8h4M5 12h4M16 7l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2Z"/>',
+    grammar:'<path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h3M14 16l2 2 4-5"/>',
+    verbs:'<path d="M4 6h13l-3-3M20 18H7l3 3M20 6v6M4 18v-6M8 10l-2 2 2 2m8-4 2 2-2 2M11 15l2-6"/>',
+    books:'<path d="M3 4h5v17H3zM8 7h5v14H8zM14 5l5-1 4 16-5 1-4-16ZM4 8h3m2 3h3m4-1 5-1"/>',
+    exam:'<path d="M8 3h8v3H8zM7 4H4v18h16V4h-3M7 10l1 1 2-2m2 1h5M7 15l1 1 2-2m2 1h5M7 19h10"/>',
+    placement:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/><path d="m16 8 6-6m-4 0h4v4"/>',
+    gallery:'<rect x="2" y="5" width="20" height="15" rx="2"/><circle cx="8" cy="10" r="2"/><path d="m3 18 6-5 4 3 4-6 5 7M6 2h12"/>',
+    admin:'<path d="M12 2 3 6v6c0 5 9 10 9 10s9-5 9-10V6l-9-4Z"/><circle cx="12" cy="9" r="2"/><path d="M8 16c0-4 8-4 8 0"/>',
     home: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
     book: '<path d="M12 5c-3-2-6-2-10-1v15c4-1 7-1 10 1 3-2 6-2 10-1V4c-4-1-7-1-10 1Zm0 0v15"/>',
     letters:
@@ -21,6 +35,13 @@
   };
   const icon = (name) =>
     `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.book}</svg>`;
+  const iconForPage=href=>({
+    'index.html':'home','letters.html':'letters','huruf.html':'letters','letter-tests.html':'check','sounds.html':'phonics',
+    'reading.html':'phonics','reading-trainer.html':'reader','reading-exercises.html':'workshop','progress.html':'chart',
+    'vocabulary.html':'vocab','lernseite.html':'vocab','skills.html':'skills','sentences.html':'sentence','stories.html':'story',
+    'grammar.html':'grammar','verbs.html':'verbs','books.html':'books','exams.html':'exam','placement.html':'placement',
+    'review.html':'repeat','test.html':'check','stats.html':'chart','apps.html':'gallery','admin.html':'admin'
+  })[href.split(/[?#]/)[0]]||'book';
   const label = (de, ar) =>
     `<span data-de="${de}" data-ar="${ar}">${ar}</span>`;
   window.JisrStorage.ready(() => {
@@ -38,11 +59,7 @@
       },
     ].map((s) => [
       s.href,
-      s.id === "letters"
-        ? "letters"
-        : ["exams", "placement"].includes(s.id)
-          ? "check"
-          : "book",
+      iconForPage(s.href),
       s.de,
       s.ar,
     ]);

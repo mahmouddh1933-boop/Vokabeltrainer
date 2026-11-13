@@ -19,8 +19,8 @@
       "readingWords": 150,
       "books": 0,
       "readingActivities": 64,
-      "files": 910,
-      "bytes": 31612143
+      "files": 929,
+      "bytes": 32281364
     },
     {
       "id": "a1-a2",
@@ -38,8 +38,8 @@
       "readingWords": 0,
       "books": 0,
       "readingActivities": 0,
-      "files": 1727,
-      "bytes": 29499097
+      "files": 1745,
+      "bytes": 30270923
     },
     {
       "id": "b1-b2",
@@ -57,8 +57,8 @@
       "readingWords": 0,
       "books": 0,
       "readingActivities": 0,
-      "files": 1523,
-      "bytes": 24330233
+      "files": 1541,
+      "bytes": 25064733
     },
     {
       "id": "books",
@@ -76,18 +76,19 @@
       "readingWords": 0,
       "books": 4,
       "readingActivities": 0,
-      "files": 2010,
-      "bytes": 59776072
+      "files": 2028,
+      "bytes": 60570426
     }
   ],
   "checks": {
-    "nodeStorageAndCloudSync": "22 passed, including workshop content and six requested flags",
+    "nodeStorageAndCloudSync": "41 passed: storage, cloud sync, suite isolation, workshop content/flags, speech completion hooks and narration timing/cancellation.",
     "browserSmoke": "All four editions, all learning pages, DE/AR, 320/390/768/1280 px, flashcards, vocabulary grading, grammar, verbs, placement, legacy imports and app isolation passed",
     "packages": "All four ZIP CRC checks, PWA asset SHA256 checks, exact vocabulary/catalog boundary checks, inline JS/CSS packaging and assembly-kit configuration passed",
     "authBootstrap": "Eight browser checks passed using stubbed Firebase: four signed-out redirects to own login and four signed-in app starts",
     "readingWorkshop": "All 64 tasks solved through the browser; wrong-answer feedback, 8 colour activities with keyboard painting, 8 story orders, 8 self-reviewed drawing activities, real pointer drawing, saved sentence and drawing reload, 64 print worksheets, DE/AR and 320/390/768/1280 px layouts passed; story-card child bounds checked.",
-    "appGalleries": "All four galleries passed: three other apps, six local images per app, 18 total images, no ZIP anchors, image decode, zoom dialog and keyboard close, both languages and responsive widths.",
-    "printRendering": "The 8 colouring activities were rendered as an 8-page A4 PDF in Chromium. pdfinfo validated the file; first page visually checked using pdftoppm. Print images use eager loading."
+    "appGalleries": "All four app galleries passed: three other apps with twelve frames each, one visible image per carousel, all local files decoded, arrows, 12-to-1 wrap, dots, Home/End, RTL keyboard direction, modal navigation, preserved slide on DE/AR switch, 320/390/768/1280 px layouts, small dot widths and closed mobile sidebar. All sidebar links use distinct relevant SVG icons.",
+    "printRendering": "The 8 colouring activities were rendered as an 8-page A4 PDF in Chromium. pdfinfo validated the file; first page visually checked using pdftoppm. Print images use eager loading.",
+    "readingNarration": "Controlled native voice engine with the actual speech adapter and UI: title announcement, full 2000 ms pause after its end, ordinal question labels, no underscores, stop during pause and navigation cancellation passed. Device-specific voice pronunciation was not acoustically evaluated."
   },
   "limitations": [
     "No live Firebase data or deployment accessed.",
@@ -98,28 +99,28 @@
   "downloads": [
     {
       "file": "Huroof-Start.zip",
-      "bytes": 23235897,
-      "sha256": "d4a56995fdf668e853177ce12107693e2bad66d8e6d23091e3e8ef0e23ae26ee"
+      "bytes": 23755534,
+      "sha256": "b96626895053a43ab563bf07d1997789f1c2e8057dcf72700ee1c4d8066972b8"
     },
     {
       "file": "Huroof-A1-A2.zip",
-      "bytes": 21102355,
-      "sha256": "9ea4d8d593f3b8f1bbe24d3d620b96836b288b7c81df3d784647260f8438eaf8"
+      "bytes": 21627383,
+      "sha256": "02c170fb1c63acaa4f041c26475b3a7d72f459205054226fc1101f2b9150a3f9"
     },
     {
       "file": "Huroof-B1-B2.zip",
-      "bytes": 17204427,
-      "sha256": "f2863261cf8ad6962650e4d4bd919295ef403ffed12703810261c27f31a36096"
+      "bytes": 17727081,
+      "sha256": "3a0b74d24cc5b0df19712befb29f19f6f7d39c31b4db80392f8ce41ffa8107ab"
     },
     {
       "file": "Huroof-Books.zip",
-      "bytes": 48148695,
-      "sha256": "3e9db1851e563eef8284c127371722d5097fb94b1252986acf3f46ec957e3346"
+      "bytes": 48676296,
+      "sha256": "50efa8686823280a8337d58b0c2703c4c306a4fb86a7e16adb45a9a1256d7844"
     },
     {
       "file": "Huroof-Suite-Setup.zip",
-      "bytes": 13633,
-      "sha256": "ebe9447ca3f8f80080f0235cc9067e6a15f78b5c5975075cd926819c001eb09c"
+      "bytes": 13910,
+      "sha256": "73cde29a964b6590431dab4720e5abee39c5f8e4262e6bbcb4432e653dbf678f"
     }
   ],
   "sourceBeforeReadingWorkshop": "2e0ae1fd68faed6bb13f26ef7c70ae4be4e77b7b",
@@ -142,9 +143,15 @@
     ]
   },
   "gallery": {
-    "realScreenshots": 24,
-    "screenshotsPerOtherApp": 6,
-    "screenshotsDisplayedPerEdition": 18,
-    "totalImageBytes": 671400
-  }
+    "realScreenshots": 48,
+    "screenshotsPerOtherApp": 12,
+    "availableSlidesPerEdition": 36,
+    "visibleCarouselsPerEdition": 3,
+    "totalImageBytes": 1263288
+  },
+  "sourceBeforeNarrationGalleryUpdate": "eaf23946f416b6bf9e00f4291e25813c37d278b6",
+  "contentCorrections": [
+    "stories-1 frames 1 and 2 show a two-leaf seedling; frame 3 retains a mature tree.",
+    "stories-3 remains the same stable activity ID and is now Bread for the female neighbour, with a woman in the final frame and feminine questions/answers."
+  ]
 }

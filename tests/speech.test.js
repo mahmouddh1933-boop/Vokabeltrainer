@@ -121,6 +121,15 @@ test("Native Arabic speak is invoked synchronously and does not contact online T
   utterance.onend();
   assert.equal(calls.statuses.at(-1)[1], false);
 });
+test('Narration completion follows the actual end event and fires once',()=>{
+ const {app,calls}=setup();const finished=[];app.speakArabic('عُنْوَانُ النَّشَاطِ',undefined,success=>finished.push(success));
+ assert.deepEqual(finished,[]);const end=calls.speak[0].onend;calls.speak[0].onstart();assert.deepEqual(finished,[]);end();end();assert.deepEqual(finished,[true]);
+});
+test('Completion works for audio fallback and stopped audio cannot resume a sequence',()=>{
+ const {app,calls}=setup({native:false});const finished=[];app.speakArabic('نَصٌّ',undefined,success=>finished.push(success));
+ calls.audio[0].onplaying();calls.audio[0].onended();assert.deepEqual(finished,[true]);
+ app.speakArabic('آخَرُ',undefined,success=>finished.push(success));const stale=calls.audio[0].onended;app.stopSpeech();stale();assert.deepEqual(finished,[true]);
+});
 test("Built-in vocabulary plays a local recording synchronously without an Arabic device voice", () => {
   for (const native of [true,false]) {
     const {app,calls}=setup({native,voices:[],vocabularyRecording:true});
