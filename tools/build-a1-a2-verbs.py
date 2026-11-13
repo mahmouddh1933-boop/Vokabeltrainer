@@ -1,0 +1,163 @@
+"""Build explicit paradigms from editorially specified stems, only for A1–A2."""
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+PAST=['ْتُ','ْنَا','ْتَ','ْتِ','ْتُمَا','ْتُمَا','ْتُمْ','ْتُنَّ','َ','َتْ','َا','َتَا','ُوا','ْنَ']
+PREFIX=['أ','ن','ت','ت','ت','ت','ت','ت','ي','ت','ي','ت','ي','ي']
+ENDING=['ُ','ُ','ُ','ِينَ','َانِ','َانِ','ُونَ','ْنَ','ُ','ُ','َانِ','َانِ','ُونَ','ْنَ']
+COMMAND=['ْ','ِي','َا','ُوا','ْنَ']
+FIVE={3,4,5,6,10,11,12}
+SINGULAR={0,1,2,8,9}
+verbs=[]
+def join(stem,ending):
+ return stem[:-1]+'نَّ'+ending[3:] if stem.endswith('ن') and ending.startswith('ْنَ') else stem+ending
+def regular(past,present,command,de,root,kind='sound',family=None,length=3,pattern='فَعَلَ',vowel='َ'):
+ forms={'past':[join(past,e) for e in PAST], 'present':[p+vowel+join(present,e) for p,e in zip(PREFIX,ENDING)],'imperative':[join(command,e) for e in COMMAND]}
+ # Two hamzas coalesce with the first-person prefix; final hamza + dual alif gives madd.
+ for tense in forms:
+  forms[tense]=[s.replace('أَأْ','آ').replace('أَا','آ') for s in forms[tense]]
+ moods={}
+ for mood,last in [('jussive','ْ'),('subjunctive','َ')]:
+  rows=[]
+  for i,f in enumerate(forms['present']):
+   if i in SINGULAR:f=f[:-1]+last
+   elif i in FIVE:
+    f=f.replace('ُونَ','ُوا').replace('ِينَ','ِي').replace('َانِ','َا').replace('آنِ','آ')
+   rows.append(f)
+  moods[mood]=rows
+ entry={'id':f'added-{len(verbs)+1:03d}','kind':kind,'family':family or kind,'root':root,'formLength':length,'pattern':pattern,
+  'structure':'ثلاثي مجرد' if length==3 else 'ثلاثي مزيد','meaning':{'ar':forms['past'][8],'de':de},'forms':forms,'moods':moods,
+  'example':{k:[forms[k][0 if k=='imperative' else 8]+' مَعَ صَدِيقٍ.','Mit einem Freund: '+de+'.'] for k in ['past','present','imperative']}}
+ # Neutral complete examples: do not impose an unsuitable object on an intransitive verb.
+ entry['example']={k:[('هُوَ ' if k!='imperative' else '')+forms[k][0 if k=='imperative' else 8]+'.',{'past':'Perfekt, er: ','present':'Präsens, er: ','imperative':'Imperativ, du: '}[k]+de+'.'] for k in forms}
+ verbs.append(entry);return entry
+
+sound='''نَصَر|نْصُر|اُنْصُر|helfen / unterstützen|ن ص ر
+ضَرَب|ضْرِب|اِضْرِب|schlagen|ض ر ب
+حَضَر|حْضُر|اُحْضُر|anwesend sein|ح ض ر
+خَلَق|خْلُق|اُخْلُق|erschaffen|خ ل ق
+سَجَد|سْجُد|اُسْجُد|sich niederwerfen|س ج د
+رَكَع|رْكَع|اِرْكَع|sich verbeugen|ر ك ع
+صَبَر|صْبِر|اِصْبِر|geduldig sein|ص ب ر
+شَكَر|شْكُر|اُشْكُر|danken|ش ك ر
+سَبَح|سْبَح|اِسْبَح|schwimmen|س ب ح
+قَفَز|قْفِز|اِقْفِز|springen|ق ف ز
+نَظَر|نْظُر|اُنْظُر|schauen|ن ظ ر
+بَحَث|بْحَث|اِبْحَث|suchen / forschen|ب ح ث
+جَمَع|جْمَع|اِجْمَع|sammeln|ج م ع
+زَرَع|زْرَع|اِزْرَع|pflanzen|ز ر ع
+قَطَع|قْطَع|اِقْطَع|schneiden|ق ط ع
+رَفَع|رْفَع|اِرْفَع|heben|ر ف ع
+تَرَك|تْرُك|اُتْرُك|verlassen / zurücklassen|ت ر ك
+سَحَب|سْحَب|اِسْحَب|ziehen|س ح ب
+كَسَر|كْسِر|اِكْسِر|zerbrechen|ك س ر
+رَبَط|رْبِط|اِرْبِط|verbinden / binden|ر ب ط
+مَسَح|مْسَح|اِمْسَح|abwischen|م س ح
+نَشَر|نْشُر|اُنْشُر|veröffentlichen|ن ش ر
+بَلَغ|بْلُغ|اُبْلُغ|erreichen|ب ل غ
+كَشَف|كْشِف|اِكْشِف|aufdecken|ك ش ف
+نَجَح|نْجَح|اِنْجَح|Erfolg haben|ن ج ح
+رَبِح|رْبَح|اِرْبَح|gewinnen|ر ب ح
+خَسِر|خْسَر|اِخْسَر|verlieren|خ س ر
+فَرِح|فْرَح|اِفْرَح|sich freuen|ف ر ح
+مَرِض|مْرَض|اِمْرَض|krank werden|م ر ض
+تَعِب|تْعَب|اِتْعَب|müde werden|ت ع ب'''
+for line in sound.splitlines():
+ p,s,c,de,r=line.split('|');regular(p,s,c,de,r,pattern='فَعِلَ' if 'ِ' in p else 'فَعَلَ')
+
+for p,s,c,de,r in [
+ ('أَمَر','أْمُر','مُر','befehlen','أ م ر'),('أَذِن','أْذَن','اِئْذَن','erlauben','أ ذ ن'),
+ ('بَدَأ','بْدَأ','اِبْدَأ','beginnen','ب د أ'),('مَلَأ','مْلَأ','اِمْلَأ','füllen','م ل أ'),
+ ('لَجَأ','لْجَأ','اِلْجَأ','Zuflucht suchen','ل ج أ'),('سَئِم','سْأَم','اِسْأَم','überdrüssig sein','س أ م')]:
+ v=regular(p,s,c,de,r,kind='hamzated',pattern='فَعِلَ' if 'ِ' in p else 'فَعَلَ')
+ if p.endswith('أ'):v['forms']['past'][12]=p[:-1]+'ؤُوا'
+
+for a,b,vowel,de in [('ر','د','ُ','zurückgeben / antworten'),('ش','د','ُ','festziehen'),('ع','د','ُ','zählen'),('ظ','ن','ُ','vermuten'),('ف','ر','ِ','fliehen'),('م','ر','ُ','vorbeigehen')]:
+ p=a+'َ'+b+'ّ';long=a+'َ'+b+'َ'+b;pr=a+vowel+b+'ّ';short=a+'ْ'+b+vowel+b
+ v=regular(p,pr,pr,de,f'{a} {b} {b}',kind='doubled')
+ v['forms']['past']=[join(long if i in {0,1,2,3,4,5,6,7,13} else p,e) for i,e in enumerate(PAST)]
+ for i in [7,13]:v['forms']['present'][i]=PREFIX[i]+'َ'+join(short,'ْنَ')
+ v['forms']['imperative']=[pr+'َ',pr+'ِي',pr+'َا',pr+'ُوا',('اُ' if vowel=='ُ' else 'اِ')+join(short,'ْنَ')]
+ for mood in v['moods']:
+  for i in SINGULAR:v['moods'][mood][i]=PREFIX[i]+'َ'+pr+'َ'
+  for i in [7,13]:v['moods'][mood][i]=v['forms']['present'][i]
+
+for p,s,c,de,r in [
+ ('وَصَل','صِل','صِل','ankommen','و ص ل'),('وَجَد','جِد','جِد','finden','و ج د'),
+ ('وَعَد','عِد','عِد','versprechen','و ع د'),('وَزَن','زِن','زِن','wiegen','و ز ن'),
+ ('وَصَف','صِف','صِف','beschreiben','و ص ف'),('وَثِق','ثِق','ثِق','vertrauen','و ث ق'),
+ ('وَهَب','هَب','هَب','schenken','و ه ب'),('وَضَع','ضَع','ضَع','legen','و ض ع')]:
+ regular(p,s,c,de,r,kind='weak',family='example',pattern='فَعِلَ' if 'ِ' in p else 'فَعَلَ')
+
+for past,short,pr,juss,cmd,de,root in [
+ ('بَاع','بِع','بِيع','بِع','بِع','verkaufen','ب ي ع'),('زَار','زُر','زُور','زُر','زُر','besuchen','ز و ر'),
+ ('عَاد','عُد','عُود','عُد','عُد','zurückkehren','ع و د'),('صَام','صُم','صُوم','صُم','صُم','fasten','ص و م'),
+ ('خَاف','خِف','خَاف','خَف','خَف','Angst haben','خ و ف'),('طَار','طِر','طِير','طِر','طِر','fliegen','ط ي ر')]:
+ v=regular(past,pr,cmd,de,root,kind='weak',family='hollow')
+ v['forms']['past']=[join(short if i in {0,1,2,3,4,5,6,7,13} else past,e) for i,e in enumerate(PAST)]
+ for i in [7,13]:v['forms']['present'][i]=PREFIX[i]+'َ'+join(juss,'ْنَ')
+ v['forms']['imperative']=[cmd+'ْ',pr+'ِي',pr+'َا',pr+'ُوا',juss+'ْنَ']
+ for mood in v['moods']:
+  for i in [7,13]:v['moods'][mood][i]=v['forms']['present'][i]
+  if mood=='jussive':
+   for i in SINGULAR:v['moods'][mood][i]=PREFIX[i]+'َ'+juss+'ْ'
+
+for past,connected,pr,cmd,last,de,root in [
+ ('رَمَى','رَمَيْ','رْم','اِرْم','i','werfen','ر م ي'),('بَنَى','بَنَيْ','بْن','اِبْن','i','bauen','ب ن ي'),
+ ('جَرَى','جَرَيْ','جْر','اِجْر','i','laufen','ج ر ي'),('بَكَى','بَكَيْ','بْك','اِبْك','i','weinen','ب ك ي'),
+ ('رَجَا','رَجَوْ','رْج','اُرْج','u','hoffen','ر ج و'),('سَعَى','سَعَيْ','سْع','اِسْع','a','sich bemühen','س ع ي')]:
+ v=regular(past,pr,cmd,de,root,kind='weak',family='defective')
+ base=past[:-1];connecting=connected[:-1] # remove final sukun before adding a suffix
+ v['forms']['past']=[connecting+e for e in PAST]
+ v['forms']['past'][8]=past
+ v['forms']['past'][9]=base+'تْ';v['forms']['past'][10]=connecting+'َا';v['forms']['past'][11]=base+'تَا';v['forms']['past'][12]=base+'وْا'
+ sing={'i':'ِي','u':'ُو','a':'َى'}[last];fem={'i':'ِينَ','u':'ِينَ','a':'َيْنَ'}[last]
+ dual={'i':'ِيَانِ','u':'ُوَانِ','a':'َيَانِ'}[last];plural={'i':'ُونَ','u':'ُونَ','a':'َوْنَ'}[last]
+ women={'i':'ِينَ','u':'ُونَ','a':'َيْنَ'}[last]
+ endings=[sing,sing,sing,fem,dual,dual,plural,women,sing,sing,dual,dual,plural,women]
+ v['forms']['present']=[p+'َ'+pr+e for p,e in zip(PREFIX,endings)]
+ v['forms']['imperative']=[cmd+{'i':'ِ','u':'ُ','a':'َ'}[last],cmd+fem[:-2],cmd+dual[:-2],cmd+({'a':'َوْا'}.get(last,'ُوا')),cmd+women]
+ for mood in ['jussive','subjunctive']:
+  rows=[]
+  for i,f in enumerate(v['forms']['present']):
+   if i in SINGULAR:
+    if mood=='jussive':f=f[:-1]
+    elif last!='a':f+='َ'
+   elif i in FIVE:f=f[:-2]+('ا' if i in {6,12} else '') if last=='a' else f.replace('ُونَ','ُوا').replace('ِينَ','ِي').replace('َانِ','َا')
+   rows.append(f)
+  v['moods'][mood]=rows
+
+derived=[
+ ('II','د ر ب','trainieren'),('II','ر ت ب','ordnen'),('II','ن ظ ف','reinigen'),('II','ج ه ز','vorbereiten'),('II','ف س ر','erklären'),('II','س ج ل','registrieren / aufnehmen'),('II','ق س م','aufteilen'),('II','ك ر ر','wiederholen'),('II','ح ض ر','vorbereiten'),('II','ب د ل','austauschen'),
+ ('III','ش ر ك','teilnehmen'),('III','ن ق ش','besprechen'),('III','ق ب ل','treffen'),('III','ج ل س','Gesellschaft leisten'),('III','ر س ل','korrespondieren'),('III','ط ل ب','fordern'),
+ ('IV','خ ر ج','hinausbringen'),('IV','د خ ل','hineinbringen'),('IV','س ل م','sich ergeben / den Islam annehmen'),('IV','ن ج ز','erledigen'),('IV','ع ل ن','bekanntgeben'),('IV','ح ض ر','herbeibringen'),('IV','ك م ل','vervollständigen'),('IV','ق ب ل','herankommen'),
+ ('V','د ر ب','sich trainieren'),('V','ح د ث','sprechen'),('V','ق د م','voranschreiten'),('V','ذ ك ر','sich erinnern'),('V','ف ك ر','nachdenken'),
+ ('VI','ن ق ش','miteinander diskutieren'),('VI','ق ب ل','einander treffen'),('VI','ب د ل','austauschen'),
+ ('VII','ك س ر','zerbrechen (intransitiv)'),('VII','ف ت ح','sich öffnen'),
+ ('VIII','ح ر م','respektieren'),('VIII','ش ر ك','teilnehmen / abonnieren'),
+ ('X','ف س ر','nachfragen'),('X','ك ش ف','erkunden')]
+for form,root,de in derived:
+ a,b,c=root.split()
+ templates={
+ 'II':(a+'َ'+b+'َّ'+c,a+'َ'+b+'ِّ'+c,a+'َ'+b+'ِّ'+c,'ُ',4,'فَعَّلَ'),
+ 'III':(a+'َا'+b+'َ'+c,a+'َا'+b+'ِ'+c,a+'َا'+b+'ِ'+c,'ُ',4,'فَاعَلَ'),
+ 'IV':('أَ'+a+'ْ'+b+'َ'+c,a+'ْ'+b+'ِ'+c,'أَ'+a+'ْ'+b+'ِ'+c,'ُ',4,'أَفْعَلَ'),
+ 'V':('تَ'+a+'َ'+b+'َّ'+c,'تَ'+a+'َ'+b+'َّ'+c,'تَ'+a+'َ'+b+'َّ'+c,'َ',5,'تَفَعَّلَ'),
+ 'VI':('تَ'+a+'َا'+b+'َ'+c,'تَ'+a+'َا'+b+'َ'+c,'تَ'+a+'َا'+b+'َ'+c,'َ',5,'تَفَاعَلَ'),
+ 'VII':('اِنْ'+a+'َ'+b+'َ'+c,'نْ'+a+'َ'+b+'ِ'+c,'اِنْ'+a+'َ'+b+'ِ'+c,'َ',5,'اِنْفَعَلَ'),
+ 'VIII':('اِ'+a+'ْتَ'+b+'َ'+c,a+'ْتَ'+b+'ِ'+c,'اِ'+a+'ْتَ'+b+'ِ'+c,'َ',5,'اِفْتَعَلَ'),
+ 'X':('اِسْتَ'+a+'ْ'+b+'َ'+c,'سْتَ'+a+'ْ'+b+'ِ'+c,'اِسْتَ'+a+'ْ'+b+'ِ'+c,'َ',6,'اِسْتَفْعَلَ')}
+ p,s,c,vowel,length,pattern=templates[form];regular(p,s,c,de,root,length=length,pattern=pattern,vowel=vowel)
+
+meanings='''النُّصْرَةُ|الضَّرْبُ|الْحُضُورُ|الْخَلْقُ|السُّجُودُ|الرُّكُوعُ|الصَّبْرُ|الشُّكْرُ|السِّبَاحَةُ|الْقَفْزُ|النَّظَرُ|الْبَحْثُ|الْجَمْعُ|الزِّرَاعَةُ|الْقَطْعُ|الرَّفْعُ|التَّرْكُ|السَّحْبُ|الْكَسْرُ|الرَّبْطُ|الْمَسْحُ|النَّشْرُ|الْبُلُوغُ|الْكَشْفُ|النَّجَاحُ|الرِّبْحُ|الْخَسَارَةُ|الْفَرَحُ|الْمَرَضُ|التَّعَبُ|الْأَمْرُ|الْإِذْنُ|الْبَدْءُ|الْمَلْءُ|اللُّجُوءُ|السَّأَمُ|الرَّدُّ|الشَّدُّ|الْعَدُّ|الظَّنُّ|الْفِرَارُ|الْمُرُورُ|الْوُصُولُ|الْعُثُورُ|الْوَعْدُ|الْوَزْنُ|الْوَصْفُ|الثِّقَةُ|الْهِبَةُ|الْوَضْعُ|الْبَيْعُ|الزِّيَارَةُ|الْعَوْدَةُ|الصَّوْمُ|الْخَوْفُ|الطَّيَرَانُ|الرَّمْيُ|الْبِنَاءُ|الْجَرْيُ|الْبُكَاءُ|الرَّجَاءُ|السَّعْيُ|التَّدْرِيبُ|التَّرْتِيبُ|التَّنْظِيفُ|التَّجْهِيزُ|التَّفْسِيرُ|التَّسْجِيلُ|التَّقْسِيمُ|التَّكْرَارُ|التَّحْضِيرُ|التَّبْدِيلُ|الْمُشَارَكَةُ|الْمُنَاقَشَةُ|الْمُقَابَلَةُ|الْمُجَالَسَةُ|الْمُرَاسَلَةُ|الْمُطَالَبَةُ|الْإِخْرَاجُ|الْإِدْخَالُ|الْإِسْلَامُ|الْإِنْجَازُ|الْإِعْلَانُ|الْإِحْضَارُ|الْإِكْمَالُ|الْإِقْبَالُ|التَّدَرُّبُ|التَّحَدُّثُ|التَّقَدُّمُ|التَّذَكُّرُ|التَّفَكُّرُ|التَّنَاقُشُ|التَّقَابُلُ|التَّبَادُلُ|الِانْكِسَارُ|الِانْفِتَاحُ|الِاحْتِرَامُ|الِاشْتِرَاكُ|الِاسْتِفْسَارُ|الِاسْتِكْشَافُ'''.split('|')
+assert len(meanings)==len(verbs)
+# Keep examples aligned with overridden irregular paradigms.
+for v,meaning in zip(verbs,meanings):
+ v['meaning']['ar']=meaning
+ for tense in v['forms']:
+  f=v['forms'][tense][0 if tense=='imperative' else 8]
+  v['example'][tense][0]=('هُوَ ' if tense!='imperative' else '')+f+'.'
+assert len(verbs)==100,len(verbs)
+assert len({v['forms']['past'][8] for v in verbs})==100
+(ROOT/'data/a1-a2-extra-verbs.json').write_text(json.dumps(verbs,ensure_ascii=False,indent=2)+'\n')
+print('Built 100 additional verbs with complete paradigms and moods.')

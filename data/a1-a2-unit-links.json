@@ -1,0 +1,43 @@
+{
+  "a1-01": [
+    "pronouns",
+    "interrogative-nouns"
+  ],
+  "a1-02": [
+    "basic-verbs",
+    "sequence-conjunctions"
+  ],
+  "a1-03": [
+    "gender",
+    "adjectival-attribute"
+  ],
+  "a1-04": [
+    "subject-object"
+  ],
+  "a1-05": [
+    "prepositions",
+    "time-place-adverbials"
+  ],
+  "a1-06": [
+    "sequence-conjunctions"
+  ],
+  "a2-01": [
+    "present-inflection"
+  ],
+  "a2-02": [
+    "reason-result"
+  ],
+  "a2-03": [
+    "reason-result"
+  ],
+  "a2-04": [
+    "imperative-construction",
+    "sequence-conjunctions"
+  ],
+  "a2-05": [
+    "comparison-basic"
+  ],
+  "a2-06": [
+    "past-future-context"
+  ]
+}

@@ -1,0 +1,2576 @@
+[
+  {
+    "id": "family-cat",
+    "level": "A1",
+    "title": {
+      "ar": "قِطَّةٌ فِي الْبَيْتِ",
+      "de": "Eine Katze im Haus"
+    },
+    "art": 0,
+    "lines": [
+      {
+        "ar": "عِنْدَ سَامِرٍ قِطَّةٌ صَغِيرَةٌ.",
+        "de": "Samir hat eine kleine Katze."
+      },
+      {
+        "ar": "اسْمُ الْقِطَّةِ لُولُو.",
+        "de": "Die Katze heißt Lulu."
+      },
+      {
+        "ar": "لَوْنُهَا أَبْيَضُ وَعَيْنَاهَا خَضْرَاوَانِ.",
+        "de": "Sie ist weiß und hat grüne Augen."
+      },
+      {
+        "ar": "تَنَامُ لُولُو تَحْتَ الْكُرْسِيِّ.",
+        "de": "Lulu schläft unter dem Stuhl."
+      },
+      {
+        "ar": "يَضَعُ سَامِرٌ لَهَا الْمَاءَ فِي وِعَاءٍ.",
+        "de": "Samir stellt ihr Wasser in einer Schale hin."
+      },
+      {
+        "ar": "فِي الْمَسَاءِ تَلْعَبُ الْقِطَّةُ بِكُرَةٍ.",
+        "de": "Am Abend spielt die Katze mit einem Ball."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "قِطَّةٌ",
+        "de": "Katze"
+      },
+      {
+        "ar": "أَبْيَضُ",
+        "de": "weiß"
+      },
+      {
+        "ar": "وِعَاءٌ",
+        "de": "Schale"
+      },
+      {
+        "ar": "كُرْسِيٌّ",
+        "de": "Stuhl"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "مَا اسْمُ الْقِطَّةِ؟",
+          "de": "Wie heißt die Katze?"
+        },
+        "options": [
+          {
+            "ar": "لُولُو",
+            "de": "Lulu"
+          },
+          {
+            "ar": "سَلْمَى",
+            "de": "Salma"
+          },
+          {
+            "ar": "هِنْدٌ",
+            "de": "Hind"
+          }
+        ],
+        "correct": 0,
+        "evidence": 1
+      },
+      {
+        "prompt": {
+          "ar": "مَا لَوْنُهَا؟",
+          "de": "Welche Farbe hat sie?"
+        },
+        "options": [
+          {
+            "ar": "أَسْوَدُ",
+            "de": "Schwarz"
+          },
+          {
+            "ar": "بُنِّيٌّ",
+            "de": "Braun"
+          },
+          {
+            "ar": "أَبْيَضُ",
+            "de": "Weiß"
+          }
+        ],
+        "correct": 2,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "أَيْنَ تَنَامُ؟",
+          "de": "Wo schläft sie?"
+        },
+        "options": [
+          {
+            "ar": "فِي الْحَدِيقَةِ",
+            "de": "Im Garten"
+          },
+          {
+            "ar": "تَحْتَ الْكُرْسِيِّ",
+            "de": "Unter dem Stuhl"
+          },
+          {
+            "ar": "فَوْقَ السَّرِيرِ",
+            "de": "Auf dem Bett"
+          }
+        ],
+        "correct": 1,
+        "evidence": 3
+      },
+      {
+        "prompt": {
+          "ar": "مَتَى تَلْعَبُ؟",
+          "de": "Wann spielt sie?"
+        },
+        "options": [
+          {
+            "ar": "فِي الْمَسَاءِ",
+            "de": "Am Abend"
+          },
+          {
+            "ar": "فِي الصَّبَاحِ",
+            "de": "Am Morgen"
+          },
+          {
+            "ar": "عِنْدَ الظُّهْرِ",
+            "de": "Mittags"
+          }
+        ],
+        "correct": 0,
+        "evidence": 5
+      }
+    ]
+  },
+  {
+    "id": "small-garden",
+    "level": "A1",
+    "title": {
+      "ar": "حَدِيقَتُنَا الصَّغِيرَةُ",
+      "de": "Unser kleiner Garten"
+    },
+    "art": 1,
+    "lines": [
+      {
+        "ar": "أَسْكُنُ فِي بَيْتٍ صَغِيرٍ.",
+        "de": "Ich wohne in einem kleinen Haus."
+      },
+      {
+        "ar": "خَلْفَ الْبَيْتِ حَدِيقَةٌ.",
+        "de": "Hinter dem Haus ist ein Garten."
+      },
+      {
+        "ar": "فِي الْحَدِيقَةِ شَجَرَةُ لَيْمُونٍ.",
+        "de": "Im Garten steht ein Zitronenbaum."
+      },
+      {
+        "ar": "أَزْرَعُ الْوَرْدَ مَعَ أُمِّي.",
+        "de": "Ich pflanze mit meiner Mutter Rosen."
+      },
+      {
+        "ar": "أَسْقِي الْوَرْدَ كُلَّ صَبَاحٍ.",
+        "de": "Ich gieße die Rosen jeden Morgen."
+      },
+      {
+        "ar": "أَجْلِسُ مَعَ أُسْرَتِي فِي الْحَدِيقَةِ.",
+        "de": "Ich sitze mit meiner Familie im Garten."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "حَدِيقَةٌ",
+        "de": "Garten"
+      },
+      {
+        "ar": "شَجَرَةٌ",
+        "de": "Baum"
+      },
+      {
+        "ar": "وَرْدٌ",
+        "de": "Rosen"
+      },
+      {
+        "ar": "أَسْقِي",
+        "de": "ich gieße"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أَيْنَ الْحَدِيقَةُ؟",
+          "de": "Wo ist der Garten?"
+        },
+        "options": [
+          {
+            "ar": "خَلْفَ الْبَيْتِ",
+            "de": "Hinter dem Haus"
+          },
+          {
+            "ar": "أَمَامَ الْمَدْرَسَةِ",
+            "de": "Vor der Schule"
+          },
+          {
+            "ar": "فَوْقَ الْبَيْتِ",
+            "de": "Über dem Haus"
+          }
+        ],
+        "correct": 0,
+        "evidence": 1
+      },
+      {
+        "prompt": {
+          "ar": "مَا الشَّجَرَةُ الْمَوْجُودَةُ؟",
+          "de": "Welcher Baum steht dort?"
+        },
+        "options": [
+          {
+            "ar": "شَجَرَةُ تُفَّاحٍ",
+            "de": "Ein Apfelbaum"
+          },
+          {
+            "ar": "شَجَرَةُ زَيْتُونٍ",
+            "de": "Ein Olivenbaum"
+          },
+          {
+            "ar": "شَجَرَةُ لَيْمُونٍ",
+            "de": "Ein Zitronenbaum"
+          }
+        ],
+        "correct": 2,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "مَعَ مَنْ أَزْرَعُ الْوَرْدَ؟",
+          "de": "Mit wem pflanze ich Rosen?"
+        },
+        "options": [
+          {
+            "ar": "مَعَ مُعَلِّمِي",
+            "de": "Mit meinem Lehrer"
+          },
+          {
+            "ar": "مَعَ أُمِّي",
+            "de": "Mit meiner Mutter"
+          },
+          {
+            "ar": "مَعَ أَخِي",
+            "de": "Mit meinem Bruder"
+          }
+        ],
+        "correct": 1,
+        "evidence": 3
+      },
+      {
+        "prompt": {
+          "ar": "مَتَى أَسْقِي الْوَرْدَ؟",
+          "de": "Wann gieße ich die Rosen?"
+        },
+        "options": [
+          {
+            "ar": "كُلَّ صَبَاحٍ",
+            "de": "Jeden Morgen"
+          },
+          {
+            "ar": "كُلَّ مَسَاءٍ",
+            "de": "Jeden Abend"
+          },
+          {
+            "ar": "يَوْمَ الْجُمُعَةِ فَقَطْ",
+            "de": "Nur freitags"
+          }
+        ],
+        "correct": 0,
+        "evidence": 4
+      }
+    ]
+  },
+  {
+    "id": "blue-shirt",
+    "level": "A1",
+    "title": {
+      "ar": "قَمِيصُ عُمَرَ",
+      "de": "Omars Hemd"
+    },
+    "art": 2,
+    "lines": [
+      {
+        "ar": "يَسْتَيْقِظُ عُمَرُ مُبَكِّرًا.",
+        "de": "Omar wacht früh auf."
+      },
+      {
+        "ar": "يَفْتَحُ خِزَانَةَ الْمَلَابِسِ.",
+        "de": "Er öffnet den Kleiderschrank."
+      },
+      {
+        "ar": "يَخْتَارُ قَمِيصًا أَزْرَقَ وَسِرْوَالًا أَسْوَدَ.",
+        "de": "Er wählt ein blaues Hemd und eine schwarze Hose."
+      },
+      {
+        "ar": "حِذَاؤُهُ قُرْبَ الْبَابِ.",
+        "de": "Seine Schuhe stehen neben der Tür."
+      },
+      {
+        "ar": "يَلْبَسُ مَلَابِسَهُ، ثُمَّ يَأْكُلُ الْفَطُورَ.",
+        "de": "Er zieht sich an und frühstückt dann."
+      },
+      {
+        "ar": "يَذْهَبُ إِلَى الْمَدْرَسَةِ مَعَ أُخْتِهِ.",
+        "de": "Er geht mit seiner Schwester zur Schule."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "قَمِيصٌ",
+        "de": "Hemd"
+      },
+      {
+        "ar": "سِرْوَالٌ",
+        "de": "Hose"
+      },
+      {
+        "ar": "خِزَانَةٌ",
+        "de": "Schrank"
+      },
+      {
+        "ar": "حِذَاءٌ",
+        "de": "Schuhwerk"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "مَا لَوْنُ الْقَمِيصِ؟",
+          "de": "Welche Farbe hat das Hemd?"
+        },
+        "options": [
+          {
+            "ar": "أَزْرَقُ",
+            "de": "Blau"
+          },
+          {
+            "ar": "أَحْمَرُ",
+            "de": "Rot"
+          },
+          {
+            "ar": "أَخْضَرُ",
+            "de": "Grün"
+          }
+        ],
+        "correct": 0,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "أَيْنَ الْحِذَاءُ؟",
+          "de": "Wo stehen die Schuhe?"
+        },
+        "options": [
+          {
+            "ar": "فِي الْخِزَانَةِ",
+            "de": "Im Schrank"
+          },
+          {
+            "ar": "تَحْتَ الطَّاوِلَةِ",
+            "de": "Unter dem Tisch"
+          },
+          {
+            "ar": "قُرْبَ الْبَابِ",
+            "de": "Neben der Tür"
+          }
+        ],
+        "correct": 2,
+        "evidence": 3
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا يَفْعَلُ بَعْدَ لُبْسِ الْمَلَابِسِ؟",
+          "de": "Was macht er nach dem Anziehen?"
+        },
+        "options": [
+          {
+            "ar": "يَلْعَبُ",
+            "de": "Er spielt"
+          },
+          {
+            "ar": "يَأْكُلُ الْفَطُورَ",
+            "de": "Er frühstückt"
+          },
+          {
+            "ar": "يَنَامُ",
+            "de": "Er schläft"
+          }
+        ],
+        "correct": 1,
+        "evidence": 4
+      },
+      {
+        "prompt": {
+          "ar": "مَعَ مَنْ يَذْهَبُ؟",
+          "de": "Mit wem geht er?"
+        },
+        "options": [
+          {
+            "ar": "مَعَ أُخْتِهِ",
+            "de": "Mit seiner Schwester"
+          },
+          {
+            "ar": "مَعَ جَدِّهِ",
+            "de": "Mit seinem Großvater"
+          },
+          {
+            "ar": "مَعَ جَارِهِ",
+            "de": "Mit seinem Nachbarn"
+          }
+        ],
+        "correct": 0,
+        "evidence": 5
+      }
+    ]
+  },
+  {
+    "id": "rainy-morning",
+    "level": "A1",
+    "title": {
+      "ar": "مَطَرٌ فِي الصَّبَاحِ",
+      "de": "Regen am Morgen"
+    },
+    "art": 3,
+    "lines": [
+      {
+        "ar": "تَنْظُرُ هِنْدٌ مِنَ النَّافِذَةِ.",
+        "de": "Hind schaut aus dem Fenster."
+      },
+      {
+        "ar": "السَّمَاءُ رَمَادِيَّةٌ وَالْجَوُّ بَارِدٌ.",
+        "de": "Der Himmel ist grau und es ist kalt."
+      },
+      {
+        "ar": "يَنْزِلُ الْمَطَرُ فِي الشَّارِعِ.",
+        "de": "Es regnet auf der Straße."
+      },
+      {
+        "ar": "تَلْبَسُ هِنْدٌ مِعْطَفًا.",
+        "de": "Hind zieht einen Mantel an."
+      },
+      {
+        "ar": "تَأْخُذُ مِظَلَّةً صَفْرَاءَ.",
+        "de": "Sie nimmt einen gelben Regenschirm."
+      },
+      {
+        "ar": "تَمْشِي إِلَى الْمَكْتَبَةِ مَعَ أَبِيهَا.",
+        "de": "Sie geht mit ihrem Vater zur Bibliothek."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "مَطَرٌ",
+        "de": "Regen"
+      },
+      {
+        "ar": "نَافِذَةٌ",
+        "de": "Fenster"
+      },
+      {
+        "ar": "مِعْطَفٌ",
+        "de": "Mantel"
+      },
+      {
+        "ar": "مِظَلَّةٌ",
+        "de": "Regenschirm"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "كَيْفَ الْجَوُّ؟",
+          "de": "Wie ist das Wetter?"
+        },
+        "options": [
+          {
+            "ar": "بَارِدٌ",
+            "de": "Kalt"
+          },
+          {
+            "ar": "حَارٌّ",
+            "de": "Heiß"
+          },
+          {
+            "ar": "مُشْمِسٌ",
+            "de": "Sonnig"
+          }
+        ],
+        "correct": 0,
+        "evidence": 1
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا تَلْبَسُ هِنْدٌ؟",
+          "de": "Was zieht Hind an?"
+        },
+        "options": [
+          {
+            "ar": "قُبَّعَةً فَقَطْ",
+            "de": "Nur eine Mütze"
+          },
+          {
+            "ar": "فُسْتَانًا جَدِيدًا",
+            "de": "Ein neues Kleid"
+          },
+          {
+            "ar": "مِعْطَفًا",
+            "de": "Einen Mantel"
+          }
+        ],
+        "correct": 2,
+        "evidence": 3
+      },
+      {
+        "prompt": {
+          "ar": "مَا لَوْنُ الْمِظَلَّةِ؟",
+          "de": "Welche Farbe hat der Schirm?"
+        },
+        "options": [
+          {
+            "ar": "أَبْيَضُ",
+            "de": "Weiß"
+          },
+          {
+            "ar": "أَصْفَرُ",
+            "de": "Gelb"
+          },
+          {
+            "ar": "أَزْرَقُ",
+            "de": "Blau"
+          }
+        ],
+        "correct": 1,
+        "evidence": 4
+      },
+      {
+        "prompt": {
+          "ar": "إِلَى أَيْنَ تَمْشِي؟",
+          "de": "Wohin geht sie?"
+        },
+        "options": [
+          {
+            "ar": "إِلَى الْمَكْتَبَةِ",
+            "de": "Zur Bibliothek"
+          },
+          {
+            "ar": "إِلَى الْمَطْعَمِ",
+            "de": "Zum Restaurant"
+          },
+          {
+            "ar": "إِلَى الْمَلْعَبِ",
+            "de": "Zum Spielplatz"
+          }
+        ],
+        "correct": 0,
+        "evidence": 5
+      }
+    ]
+  },
+  {
+    "id": "doctor-visit",
+    "level": "A1",
+    "title": {
+      "ar": "عِنْدَ الطَّبِيبَةِ",
+      "de": "Bei der Ärztin"
+    },
+    "art": 4,
+    "lines": [
+      {
+        "ar": "يَشْعُرُ نَادِرٌ بِأَلَمٍ فِي أُذُنِهِ.",
+        "de": "Nader hat Ohrenschmerzen."
+      },
+      {
+        "ar": "يَذْهَبُ مَعَ أُمِّهِ إِلَى الطَّبِيبَةِ.",
+        "de": "Er geht mit seiner Mutter zur Ärztin."
+      },
+      {
+        "ar": "يَجْلِسَانِ فِي غُرْفَةِ الِانْتِظَارِ.",
+        "de": "Die beiden sitzen im Wartezimmer."
+      },
+      {
+        "ar": "تَفْحَصُ الطَّبِيبَةُ أُذُنَ نَادِرٍ.",
+        "de": "Die Ärztin untersucht Naders Ohr."
+      },
+      {
+        "ar": "تَقُولُ لَهُ: اِسْتَرِحْ فِي الْبَيْتِ.",
+        "de": "Sie sagt zu ihm: Ruhe dich zu Hause aus."
+      },
+      {
+        "ar": "يَرْجِعُ نَادِرٌ مَعَ أُمِّهِ.",
+        "de": "Nader kehrt mit seiner Mutter zurück."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "أُذُنٌ",
+        "de": "Ohr"
+      },
+      {
+        "ar": "أَلَمٌ",
+        "de": "Schmerz"
+      },
+      {
+        "ar": "طَبِيبَةٌ",
+        "de": "Ärztin"
+      },
+      {
+        "ar": "اِنْتِظَارٌ",
+        "de": "Warten"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أَيْنَ الْأَلَمُ؟",
+          "de": "Wo hat er Schmerzen?"
+        },
+        "options": [
+          {
+            "ar": "فِي أُذُنِهِ",
+            "de": "Im Ohr"
+          },
+          {
+            "ar": "فِي يَدِهِ",
+            "de": "In der Hand"
+          },
+          {
+            "ar": "فِي قَدَمِهِ",
+            "de": "Im Fuß"
+          }
+        ],
+        "correct": 0,
+        "evidence": 0
+      },
+      {
+        "prompt": {
+          "ar": "مَعَ مَنْ يَذْهَبُ؟",
+          "de": "Mit wem geht er?"
+        },
+        "options": [
+          {
+            "ar": "مَعَ صَدِيقِهِ",
+            "de": "Mit seinem Freund"
+          },
+          {
+            "ar": "مَعَ مُعَلِّمَتِهِ",
+            "de": "Mit seiner Lehrerin"
+          },
+          {
+            "ar": "مَعَ أُمِّهِ",
+            "de": "Mit seiner Mutter"
+          }
+        ],
+        "correct": 2,
+        "evidence": 1
+      },
+      {
+        "prompt": {
+          "ar": "أَيْنَ يَنْتَظِرَانِ؟",
+          "de": "Wo warten die beiden?"
+        },
+        "options": [
+          {
+            "ar": "فِي الْحَافِلَةِ",
+            "de": "Im Bus"
+          },
+          {
+            "ar": "فِي غُرْفَةِ الِانْتِظَارِ",
+            "de": "Im Wartezimmer"
+          },
+          {
+            "ar": "فِي الْمَطْبَخِ",
+            "de": "In der Küche"
+          }
+        ],
+        "correct": 1,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا تَطْلُبُ الطَّبِيبَةُ؟",
+          "de": "Wozu rät die Ärztin?"
+        },
+        "options": [
+          {
+            "ar": "الرَّاحَةَ فِي الْبَيْتِ",
+            "de": "Zum Ausruhen zu Hause"
+          },
+          {
+            "ar": "اللَّعِبَ فِي الشَّارِعِ",
+            "de": "Zum Spielen auf der Straße"
+          },
+          {
+            "ar": "السَّفَرَ الْيَوْمَ",
+            "de": "Heute zu verreisen"
+          }
+        ],
+        "correct": 0,
+        "evidence": 4
+      }
+    ]
+  },
+  {
+    "id": "playground-friends",
+    "level": "A1",
+    "title": {
+      "ar": "كُرَةٌ وَأَصْدِقَاءُ",
+      "de": "Ein Ball und Freunde"
+    },
+    "art": 5,
+    "lines": [
+      {
+        "ar": "يَذْهَبُ عَلِيٌّ إِلَى الْمَلْعَبِ.",
+        "de": "Ali geht zum Spielplatz."
+      },
+      {
+        "ar": "مَعَهُ كُرَةٌ حَمْرَاءُ.",
+        "de": "Er hat einen roten Ball dabei."
+      },
+      {
+        "ar": "يُقَابِلُ صَدِيقَيْهِ حَسَنًا وَمَازِنًا.",
+        "de": "Er trifft seine Freunde Hasan und Mazen."
+      },
+      {
+        "ar": "يَلْعَبُ الْأَصْدِقَاءُ الثَّلَاثَةُ مَعًا.",
+        "de": "Die drei Freunde spielen zusammen."
+      },
+      {
+        "ar": "بَعْدَ اللَّعِبِ يَشْرَبُونَ الْمَاءَ.",
+        "de": "Nach dem Spielen trinken sie Wasser."
+      },
+      {
+        "ar": "يَعُودُ عَلِيٌّ إِلَى الْبَيْتِ سَعِيدًا.",
+        "de": "Ali kehrt glücklich nach Hause zurück."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "مَلْعَبٌ",
+        "de": "Spielplatz"
+      },
+      {
+        "ar": "كُرَةٌ",
+        "de": "Ball"
+      },
+      {
+        "ar": "أَصْدِقَاءُ",
+        "de": "Freunde"
+      },
+      {
+        "ar": "سَعِيدٌ",
+        "de": "glücklich"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "مَا لَوْنُ الْكُرَةِ؟",
+          "de": "Welche Farbe hat der Ball?"
+        },
+        "options": [
+          {
+            "ar": "أَحْمَرُ",
+            "de": "Rot"
+          },
+          {
+            "ar": "أَسْوَدُ",
+            "de": "Schwarz"
+          },
+          {
+            "ar": "أَصْفَرُ",
+            "de": "Gelb"
+          }
+        ],
+        "correct": 0,
+        "evidence": 1
+      },
+      {
+        "prompt": {
+          "ar": "مَنْ صَدِيقَا عَلِيٍّ؟",
+          "de": "Wie heißen Alis Freunde?"
+        },
+        "options": [
+          {
+            "ar": "عُمَرُ وَنَادِرٌ",
+            "de": "Omar und Nader"
+          },
+          {
+            "ar": "سَامِرٌ وَخَالِدٌ",
+            "de": "Samir und Khaled"
+          },
+          {
+            "ar": "حَسَنٌ وَمَازِنٌ",
+            "de": "Hasan und Mazen"
+          }
+        ],
+        "correct": 2,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "كَمْ صَدِيقًا يَلْعَبُ؟",
+          "de": "Wie viele Freunde spielen?"
+        },
+        "options": [
+          {
+            "ar": "أَرْبَعَةٌ",
+            "de": "Vier"
+          },
+          {
+            "ar": "ثَلَاثَةٌ",
+            "de": "Drei"
+          },
+          {
+            "ar": "اِثْنَانِ",
+            "de": "Zwei"
+          }
+        ],
+        "correct": 1,
+        "evidence": 3
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا يَشْرَبُونَ بَعْدَ اللَّعِبِ؟",
+          "de": "Was trinken sie danach?"
+        },
+        "options": [
+          {
+            "ar": "الْمَاءَ",
+            "de": "Wasser"
+          },
+          {
+            "ar": "الْقَهْوَةَ",
+            "de": "Kaffee"
+          },
+          {
+            "ar": "الْحَلِيبَ",
+            "de": "Milch"
+          }
+        ],
+        "correct": 0,
+        "evidence": 4
+      }
+    ]
+  },
+  {
+    "id": "grandmother-visit",
+    "level": "A1",
+    "title": {
+      "ar": "زِيَارَةُ جَدَّتِي",
+      "de": "Ein Besuch bei meiner Großmutter"
+    },
+    "art": 0,
+    "lines": [
+      {
+        "ar": "الْيَوْمَ الْجُمُعَةُ.",
+        "de": "Heute ist Freitag."
+      },
+      {
+        "ar": "أَزُورُ جَدَّتِي مَعَ أُسْرَتِي.",
+        "de": "Ich besuche meine Großmutter mit meiner Familie."
+      },
+      {
+        "ar": "تَسْكُنُ جَدَّتِي قُرْبَ السُّوقِ.",
+        "de": "Meine Großmutter wohnt nahe am Markt."
+      },
+      {
+        "ar": "نَحْمِلُ لَهَا زُهُورًا.",
+        "de": "Wir bringen ihr Blumen mit."
+      },
+      {
+        "ar": "تَحْكِي لَنَا قِصَّةً قَصِيرَةً.",
+        "de": "Sie erzählt uns eine kurze Geschichte."
+      },
+      {
+        "ar": "نُسَاعِدُهَا فِي تَرْتِيبِ الْغُرْفَةِ.",
+        "de": "Wir helfen ihr, das Zimmer aufzuräumen."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "جَدَّةٌ",
+        "de": "Großmutter"
+      },
+      {
+        "ar": "زِيَارَةٌ",
+        "de": "Besuch"
+      },
+      {
+        "ar": "زُهُورٌ",
+        "de": "Blumen"
+      },
+      {
+        "ar": "قِصَّةٌ",
+        "de": "Geschichte"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "مَا الْيَوْمُ؟",
+          "de": "Welcher Wochentag ist heute?"
+        },
+        "options": [
+          {
+            "ar": "الْجُمُعَةُ",
+            "de": "Freitag"
+          },
+          {
+            "ar": "الِاثْنَيْنِ",
+            "de": "Montag"
+          },
+          {
+            "ar": "السَّبْتُ",
+            "de": "Samstag"
+          }
+        ],
+        "correct": 0,
+        "evidence": 0
+      },
+      {
+        "prompt": {
+          "ar": "أَيْنَ تَسْكُنُ الْجَدَّةُ؟",
+          "de": "Wo wohnt die Großmutter?"
+        },
+        "options": [
+          {
+            "ar": "قُرْبَ الْبَحْرِ",
+            "de": "Nahe am Meer"
+          },
+          {
+            "ar": "فِي الْمَدْرَسَةِ",
+            "de": "In der Schule"
+          },
+          {
+            "ar": "قُرْبَ السُّوقِ",
+            "de": "Nahe am Markt"
+          }
+        ],
+        "correct": 2,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا نَحْمِلُ لَهَا؟",
+          "de": "Was bringen wir ihr mit?"
+        },
+        "options": [
+          {
+            "ar": "حَقَائِبَ",
+            "de": "Taschen"
+          },
+          {
+            "ar": "زُهُورًا",
+            "de": "Blumen"
+          },
+          {
+            "ar": "أَحْذِيَةً",
+            "de": "Schuhe"
+          }
+        ],
+        "correct": 1,
+        "evidence": 3
+      },
+      {
+        "prompt": {
+          "ar": "كَيْفَ نُسَاعِدُهَا؟",
+          "de": "Wie helfen wir ihr?"
+        },
+        "options": [
+          {
+            "ar": "نُرَتِّبُ الْغُرْفَةَ",
+            "de": "Wir räumen das Zimmer auf"
+          },
+          {
+            "ar": "نَغْسِلُ السَّيَّارَةَ",
+            "de": "Wir waschen das Auto"
+          },
+          {
+            "ar": "نَزْرَعُ شَجَرَةً",
+            "de": "Wir pflanzen einen Baum"
+          }
+        ],
+        "correct": 0,
+        "evidence": 5
+      }
+    ]
+  },
+  {
+    "id": "bakery-morning",
+    "level": "A1",
+    "title": {
+      "ar": "خُبْزٌ سَاخِنٌ",
+      "de": "Warmes Brot"
+    },
+    "art": 1,
+    "lines": [
+      {
+        "ar": "تَخْرُجُ مَرْيَمُ صَبَاحًا.",
+        "de": "Maryam geht morgens hinaus."
+      },
+      {
+        "ar": "تَذْهَبُ إِلَى الْمَخْبَزِ.",
+        "de": "Sie geht zur Bäckerei."
+      },
+      {
+        "ar": "تَشُمُّ رَائِحَةَ الْخُبْزِ السَّاخِنِ.",
+        "de": "Sie riecht das warme Brot."
+      },
+      {
+        "ar": "تَشْتَرِي ثَلَاثَةَ أَرْغِفَةٍ.",
+        "de": "Sie kauft drei Fladenbrote."
+      },
+      {
+        "ar": "تَدْفَعُ ثَلَاثَةَ يُورُوهَاتٍ.",
+        "de": "Sie bezahlt drei Euro."
+      },
+      {
+        "ar": "تَحْمِلُ الْخُبْزَ إِلَى الْبَيْتِ.",
+        "de": "Sie bringt das Brot nach Hause."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "مَخْبَزٌ",
+        "de": "Bäckerei"
+      },
+      {
+        "ar": "رَغِيفٌ",
+        "de": "Brotlaib / Fladenbrot"
+      },
+      {
+        "ar": "رَائِحَةٌ",
+        "de": "Duft"
+      },
+      {
+        "ar": "سَاخِنٌ",
+        "de": "warm / heiß"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "مَتَى تَخْرُجُ مَرْيَمُ؟",
+          "de": "Wann geht Maryam hinaus?"
+        },
+        "options": [
+          {
+            "ar": "صَبَاحًا",
+            "de": "Morgens"
+          },
+          {
+            "ar": "لَيْلًا",
+            "de": "Nachts"
+          },
+          {
+            "ar": "مَسَاءً",
+            "de": "Abends"
+          }
+        ],
+        "correct": 0,
+        "evidence": 0
+      },
+      {
+        "prompt": {
+          "ar": "إِلَى أَيْنَ تَذْهَبُ؟",
+          "de": "Wohin geht sie?"
+        },
+        "options": [
+          {
+            "ar": "إِلَى الْمَطَارِ",
+            "de": "Zum Flughafen"
+          },
+          {
+            "ar": "إِلَى الْبَنْكِ",
+            "de": "Zur Bank"
+          },
+          {
+            "ar": "إِلَى الْمَخْبَزِ",
+            "de": "Zur Bäckerei"
+          }
+        ],
+        "correct": 2,
+        "evidence": 1
+      },
+      {
+        "prompt": {
+          "ar": "كَمْ رَغِيفًا تَشْتَرِي؟",
+          "de": "Wie viele Brote kauft sie?"
+        },
+        "options": [
+          {
+            "ar": "خَمْسَةَ أَرْغِفَةٍ",
+            "de": "Fünf"
+          },
+          {
+            "ar": "ثَلَاثَةَ أَرْغِفَةٍ",
+            "de": "Drei"
+          },
+          {
+            "ar": "رَغِيفًا وَاحِدًا",
+            "de": "Eines"
+          }
+        ],
+        "correct": 1,
+        "evidence": 3
+      },
+      {
+        "prompt": {
+          "ar": "كَمْ تَدْفَعُ؟",
+          "de": "Wie viel bezahlt sie?"
+        },
+        "options": [
+          {
+            "ar": "ثَلَاثَةَ يُورُوهَاتٍ",
+            "de": "Drei Euro"
+          },
+          {
+            "ar": "يُورُو وَاحِدًا",
+            "de": "Einen Euro"
+          },
+          {
+            "ar": "عَشَرَةَ يُورُوهَاتٍ",
+            "de": "Zehn Euro"
+          }
+        ],
+        "correct": 0,
+        "evidence": 4
+      }
+    ]
+  },
+  {
+    "id": "lost-pencil",
+    "level": "A1",
+    "title": {
+      "ar": "أَيْنَ قَلَمِي؟",
+      "de": "Wo ist mein Stift?"
+    },
+    "art": 2,
+    "lines": [
+      {
+        "ar": "تَفْتَحُ رِيمٌ حَقِيبَتَهَا فِي الصَّفِّ.",
+        "de": "Rim öffnet ihre Tasche im Unterricht."
+      },
+      {
+        "ar": "تَجِدُ الْكِتَابَ وَالدَّفْتَرَ.",
+        "de": "Sie findet das Buch und das Heft."
+      },
+      {
+        "ar": "لَا تَجِدُ قَلَمَهَا.",
+        "de": "Sie findet ihren Stift nicht."
+      },
+      {
+        "ar": "تَنْظُرُ تَحْتَ الطَّاوِلَةِ.",
+        "de": "Sie schaut unter den Tisch."
+      },
+      {
+        "ar": "تَرَى الْقَلَمَ قُرْبَ الْكُرْسِيِّ.",
+        "de": "Sie sieht den Stift neben dem Stuhl."
+      },
+      {
+        "ar": "تَأْخُذُهُ وَتَكْتُبُ اسْمَهَا.",
+        "de": "Sie nimmt ihn und schreibt ihren Namen."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "حَقِيبَةٌ",
+        "de": "Tasche"
+      },
+      {
+        "ar": "دَفْتَرٌ",
+        "de": "Heft"
+      },
+      {
+        "ar": "قَلَمٌ",
+        "de": "Stift"
+      },
+      {
+        "ar": "طَاوِلَةٌ",
+        "de": "Tisch"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أَيْنَ تَفْتَحُ رِيمٌ حَقِيبَتَهَا؟",
+          "de": "Wo öffnet Rim ihre Tasche?"
+        },
+        "options": [
+          {
+            "ar": "فِي الصَّفِّ",
+            "de": "Im Unterricht"
+          },
+          {
+            "ar": "فِي السُّوقِ",
+            "de": "Auf dem Markt"
+          },
+          {
+            "ar": "فِي الْقِطَارِ",
+            "de": "Im Zug"
+          }
+        ],
+        "correct": 0,
+        "evidence": 0
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا تَجِدُ فِي الْحَقِيبَةِ؟",
+          "de": "Was findet sie in der Tasche?"
+        },
+        "options": [
+          {
+            "ar": "كُرَةً وَقُبَّعَةً",
+            "de": "Ball und Mütze"
+          },
+          {
+            "ar": "خُبْزًا وَجُبْنًا",
+            "de": "Brot und Käse"
+          },
+          {
+            "ar": "الْكِتَابَ وَالدَّفْتَرَ",
+            "de": "Buch und Heft"
+          }
+        ],
+        "correct": 2,
+        "evidence": 1
+      },
+      {
+        "prompt": {
+          "ar": "أَيْنَ الْقَلَمُ؟",
+          "de": "Wo liegt der Stift?"
+        },
+        "options": [
+          {
+            "ar": "فَوْقَ النَّافِذَةِ",
+            "de": "Über dem Fenster"
+          },
+          {
+            "ar": "قُرْبَ الْكُرْسِيِّ",
+            "de": "Neben dem Stuhl"
+          },
+          {
+            "ar": "فِي الْخِزَانَةِ",
+            "de": "Im Schrank"
+          }
+        ],
+        "correct": 1,
+        "evidence": 4
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا تَكْتُبُ؟",
+          "de": "Was schreibt sie?"
+        },
+        "options": [
+          {
+            "ar": "اسْمَهَا",
+            "de": "Ihren Namen"
+          },
+          {
+            "ar": "رِسَالَةً",
+            "de": "Einen Brief"
+          },
+          {
+            "ar": "قِصَّةً",
+            "de": "Eine Geschichte"
+          }
+        ],
+        "correct": 0,
+        "evidence": 5
+      }
+    ]
+  },
+  {
+    "id": "appointment-change",
+    "level": "A2",
+    "title": {
+      "ar": "مَوْعِدٌ جَدِيدٌ",
+      "de": "Ein neuer Termin"
+    },
+    "art": 3,
+    "lines": [
+      {
+        "ar": "كَانَ لِسَلْمَى مَوْعِدٌ عِنْدَ طَبِيبَةِ الْأَسْنَانِ يَوْمَ الثُّلَاثَاءِ.",
+        "de": "Salma hatte am Dienstag einen Zahnarzttermin."
+      },
+      {
+        "ar": "لَكِنَّهَا لَمْ تَسْتَطِعِ الذَّهَابَ بِسَبَبِ الْعَمَلِ.",
+        "de": "Sie konnte wegen der Arbeit aber nicht hingehen."
+      },
+      {
+        "ar": "اتَّصَلَتْ بِالْعِيَادَةِ وَطَلَبَتْ تَغْيِيرَ الْمَوْعِدِ.",
+        "de": "Sie rief in der Praxis an und bat um eine Terminänderung."
+      },
+      {
+        "ar": "اقْتَرَحَتِ الْمُوَظَّفَةُ صَبَاحَ الْخَمِيسِ.",
+        "de": "Die Mitarbeiterin schlug Donnerstagmorgen vor."
+      },
+      {
+        "ar": "وَافَقَتْ سَلْمَى لِأَنَّهَا لَا تَعْمَلُ فِي ذَلِكَ الصَّبَاحِ.",
+        "de": "Salma war einverstanden, weil sie an diesem Morgen nicht arbeitet."
+      },
+      {
+        "ar": "كَتَبَتِ الْمَوْعِدَ الْجَدِيدَ فِي هَاتِفِهَا كَيْ لَا تَنْسَاهُ.",
+        "de": "Sie trug den neuen Termin ins Handy ein, damit sie ihn nicht vergisst."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "مَوْعِدٌ",
+        "de": "Termin"
+      },
+      {
+        "ar": "عِيَادَةٌ",
+        "de": "Praxis"
+      },
+      {
+        "ar": "تَغْيِيرٌ",
+        "de": "Änderung"
+      },
+      {
+        "ar": "وَافَقَتْ",
+        "de": "sie stimmte zu"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "لِمَاذَا غَيَّرَتْ سَلْمَى الْمَوْعِدَ؟",
+          "de": "Warum änderte Salma den Termin?"
+        },
+        "options": [
+          {
+            "ar": "بِسَبَبِ الْعَمَلِ",
+            "de": "Wegen der Arbeit"
+          },
+          {
+            "ar": "لِأَنَّ الْعِيَادَةَ أُغْلِقَتْ",
+            "de": "Weil die Praxis geschlossen wurde"
+          },
+          {
+            "ar": "لِأَنَّهَا سَافَرَتْ",
+            "de": "Weil sie verreist war"
+          }
+        ],
+        "correct": 0,
+        "evidence": 1
+      },
+      {
+        "prompt": {
+          "ar": "كَيْفَ تَوَاصَلَتْ مَعَ الْعِيَادَةِ؟",
+          "de": "Wie kontaktierte sie die Praxis?"
+        },
+        "options": [
+          {
+            "ar": "بِرِسَالَةٍ وَرَقِيَّةٍ",
+            "de": "Per Brief"
+          },
+          {
+            "ar": "بِزِيَارَةٍ",
+            "de": "Durch einen Besuch"
+          },
+          {
+            "ar": "بِالْهَاتِفِ",
+            "de": "Telefonisch"
+          }
+        ],
+        "correct": 2,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "مَتَى الْمَوْعِدُ الْجَدِيدُ؟",
+          "de": "Wann ist der neue Termin?"
+        },
+        "options": [
+          {
+            "ar": "صَبَاحَ السَّبْتِ",
+            "de": "Samstagmorgen"
+          },
+          {
+            "ar": "صَبَاحَ الْخَمِيسِ",
+            "de": "Donnerstagmorgen"
+          },
+          {
+            "ar": "مَسَاءَ الثُّلَاثَاءِ",
+            "de": "Dienstagabend"
+          }
+        ],
+        "correct": 1,
+        "evidence": 3
+      },
+      {
+        "prompt": {
+          "ar": "لِمَاذَا كَتَبَتِ الْمَوْعِدَ؟",
+          "de": "Warum trug sie den Termin ein?"
+        },
+        "options": [
+          {
+            "ar": "كَيْ لَا تَنْسَاهُ",
+            "de": "Damit sie ihn nicht vergisst"
+          },
+          {
+            "ar": "لِتُلْغِيَهُ",
+            "de": "Um ihn abzusagen"
+          },
+          {
+            "ar": "لِتُغَيِّرَ الطَّبِيبَةَ",
+            "de": "Um die Ärztin zu wechseln"
+          }
+        ],
+        "correct": 0,
+        "evidence": 5
+      }
+    ]
+  },
+  {
+    "id": "train-trip",
+    "level": "A2",
+    "title": {
+      "ar": "رِحْلَةٌ بِالْقِطَارِ",
+      "de": "Eine Zugfahrt"
+    },
+    "art": 4,
+    "lines": [
+      {
+        "ar": "أَرَادَ عُمَرُ زِيَارَةَ صَدِيقِهِ فِي مَدِينَةٍ قَرِيبَةٍ.",
+        "de": "Omar wollte seinen Freund in einer nahen Stadt besuchen."
+      },
+      {
+        "ar": "اشْتَرَى تَذْكِرَةَ الْقِطَارِ عَبْرَ الْإِنْتَرْنِتِ.",
+        "de": "Er kaufte die Zugfahrkarte im Internet."
+      },
+      {
+        "ar": "وَصَلَ إِلَى الْمَحَطَّةِ قَبْلَ الْمَوْعِدِ بِعِشْرِينَ دَقِيقَةً.",
+        "de": "Er kam zwanzig Minuten vor der Abfahrt am Bahnhof an."
+      },
+      {
+        "ar": "قَرَأَ عَلَى اللَّوْحَةِ أَنَّ الْقِطَارَ مُتَأَخِّرٌ.",
+        "de": "Auf der Anzeigetafel las er, dass der Zug Verspätung hat."
+      },
+      {
+        "ar": "أَرْسَلَ إِلَى صَدِيقِهِ رِسَالَةً لِيُخْبِرَهُ بِالتَّأْخِيرِ.",
+        "de": "Er schickte seinem Freund eine Nachricht über die Verspätung."
+      },
+      {
+        "ar": "عِنْدَمَا وَصَلَ الْقِطَارُ، رَكِبَ وَجَلَسَ قُرْبَ النَّافِذَةِ.",
+        "de": "Als der Zug kam, stieg er ein und setzte sich ans Fenster."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "تَذْكِرَةٌ",
+        "de": "Fahrkarte"
+      },
+      {
+        "ar": "مَحَطَّةٌ",
+        "de": "Bahnhof"
+      },
+      {
+        "ar": "مُتَأَخِّرٌ",
+        "de": "verspätet"
+      },
+      {
+        "ar": "لَوْحَةٌ",
+        "de": "Anzeigetafel"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "مَا هَدَفُ الرِّحْلَةِ؟",
+          "de": "Was war das Ziel der Reise?"
+        },
+        "options": [
+          {
+            "ar": "زِيَارَةُ صَدِيقٍ",
+            "de": "Ein Freundesbesuch"
+          },
+          {
+            "ar": "الْبَحْثُ عَنْ عَمَلٍ",
+            "de": "Arbeitssuche"
+          },
+          {
+            "ar": "شِرَاءُ سَيَّارَةٍ",
+            "de": "Ein Autokauf"
+          }
+        ],
+        "correct": 0,
+        "evidence": 0
+      },
+      {
+        "prompt": {
+          "ar": "أَيْنَ اشْتَرَى التَّذْكِرَةَ؟",
+          "de": "Wo kaufte er die Fahrkarte?"
+        },
+        "options": [
+          {
+            "ar": "دَاخِلَ الْقِطَارِ",
+            "de": "Im Zug"
+          },
+          {
+            "ar": "مِنْ صَدِيقِهِ",
+            "de": "Von seinem Freund"
+          },
+          {
+            "ar": "عَبْرَ الْإِنْتَرْنِتِ",
+            "de": "Im Internet"
+          }
+        ],
+        "correct": 2,
+        "evidence": 1
+      },
+      {
+        "prompt": {
+          "ar": "كَيْفَ عَرَفَ أَنَّ الْقِطَارَ مُتَأَخِّرٌ؟",
+          "de": "Wie erfuhr er von der Verspätung?"
+        },
+        "options": [
+          {
+            "ar": "سَمِعَ الطَّبِيبَةَ",
+            "de": "Er hörte die Ärztin"
+          },
+          {
+            "ar": "قَرَأَ اللَّوْحَةَ",
+            "de": "Er las die Anzeigetafel"
+          },
+          {
+            "ar": "اتَّصَلَ بِصَدِيقِهِ",
+            "de": "Er rief seinen Freund an"
+          }
+        ],
+        "correct": 1,
+        "evidence": 3
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا فَعَلَ بَعْدَ قِرَاءَةِ اللَّوْحَةِ؟",
+          "de": "Was tat er nach dem Lesen der Anzeige?"
+        },
+        "options": [
+          {
+            "ar": "أَرْسَلَ رِسَالَةً",
+            "de": "Er schickte eine Nachricht"
+          },
+          {
+            "ar": "عَادَ إِلَى الْبَيْتِ",
+            "de": "Er ging nach Hause"
+          },
+          {
+            "ar": "أَلْغَى الرِّحْلَةَ",
+            "de": "Er sagte die Reise ab"
+          }
+        ],
+        "correct": 0,
+        "evidence": 4
+      }
+    ]
+  },
+  {
+    "id": "found-wallet",
+    "level": "A2",
+    "title": {
+      "ar": "مِحْفَظَةٌ عَلَى الْمَقْعَدِ",
+      "de": "Eine Geldbörse auf der Bank"
+    },
+    "art": 5,
+    "lines": [
+      {
+        "ar": "وَجَدَتْ لَيْلَى مِحْفَظَةً عَلَى مَقْعَدٍ فِي الْحَدِيقَةِ.",
+        "de": "Layla fand eine Geldbörse auf einer Parkbank."
+      },
+      {
+        "ar": "نَظَرَتْ حَوْلَهَا، لَكِنَّهَا لَمْ تَجِدْ صَاحِبَ الْمِحْفَظَةِ.",
+        "de": "Sie sah sich um, fand aber den Besitzer nicht."
+      },
+      {
+        "ar": "لَمْ تَأْخُذِ النُّقُودَ، بَلْ حَمَلَتِ الْمِحْفَظَةَ إِلَى مَرْكَزِ الشُّرْطَةِ.",
+        "de": "Sie nahm das Geld nicht, sondern brachte die Geldbörse zur Polizei."
+      },
+      {
+        "ar": "أَخْبَرَتِ الشُّرْطِيَّ بِالْمَكَانِ الَّذِي وَجَدَتْهَا فِيهِ.",
+        "de": "Sie sagte dem Polizisten, wo sie sie gefunden hatte."
+      },
+      {
+        "ar": "وَصَلَ صَاحِبُهَا إِلَى الْمَرْكَزِ وَهُوَ يَبْحَثُ عَنْهَا.",
+        "de": "Der Besitzer kam auf der Suche nach ihr zur Wache."
+      },
+      {
+        "ar": "شَكَرَ لَيْلَى عَلَى أَمَانَتِهَا.",
+        "de": "Er dankte Layla für ihre Ehrlichkeit."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "مِحْفَظَةٌ",
+        "de": "Geldbörse"
+      },
+      {
+        "ar": "مَقْعَدٌ",
+        "de": "Sitzbank"
+      },
+      {
+        "ar": "أَمَانَةٌ",
+        "de": "Ehrlichkeit"
+      },
+      {
+        "ar": "صَاحِبٌ",
+        "de": "Besitzer"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أَيْنَ وَجَدَتِ الْمِحْفَظَةَ؟",
+          "de": "Wo fand sie die Geldbörse?"
+        },
+        "options": [
+          {
+            "ar": "عَلَى مَقْعَدٍ فِي الْحَدِيقَةِ",
+            "de": "Auf einer Parkbank"
+          },
+          {
+            "ar": "فِي الْمَخْبَزِ",
+            "de": "In der Bäckerei"
+          },
+          {
+            "ar": "فِي السَّيَّارَةِ",
+            "de": "Im Auto"
+          }
+        ],
+        "correct": 0,
+        "evidence": 0
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا فَعَلَتْ بِالنُّقُودِ؟",
+          "de": "Was machte sie mit dem Geld?"
+        },
+        "options": [
+          {
+            "ar": "اشْتَرَتْ بِهَا كِتَابًا",
+            "de": "Sie kaufte damit ein Buch"
+          },
+          {
+            "ar": "أَعْطَتْهَا لِأُخْتِهَا",
+            "de": "Sie gab es ihrer Schwester"
+          },
+          {
+            "ar": "لَمْ تَأْخُذْهَا",
+            "de": "Sie nahm es nicht"
+          }
+        ],
+        "correct": 2,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "إِلَى أَيْنَ حَمَلَتِ الْمِحْفَظَةَ؟",
+          "de": "Wohin brachte sie die Geldbörse?"
+        },
+        "options": [
+          {
+            "ar": "إِلَى الْبَيْتِ",
+            "de": "Nach Hause"
+          },
+          {
+            "ar": "إِلَى مَرْكَزِ الشُّرْطَةِ",
+            "de": "Zur Polizei"
+          },
+          {
+            "ar": "إِلَى الْمَدْرَسَةِ",
+            "de": "Zur Schule"
+          }
+        ],
+        "correct": 1,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "مَا الصِّفَةُ الَّتِي أَظْهَرَهَا تَصَرُّفُهَا؟",
+          "de": "Welche Eigenschaft zeigte ihr Verhalten?"
+        },
+        "options": [
+          {
+            "ar": "الْأَمَانَةُ",
+            "de": "Ehrlichkeit"
+          },
+          {
+            "ar": "الْكَسَلُ",
+            "de": "Faulheit"
+          },
+          {
+            "ar": "الْغَضَبُ",
+            "de": "Wut"
+          }
+        ],
+        "correct": 0,
+        "evidence": 5
+      }
+    ]
+  },
+  {
+    "id": "olive-planting",
+    "level": "A2",
+    "title": {
+      "ar": "شَتْلَةُ زَيْتُونٍ",
+      "de": "Ein junger Olivenbaum"
+    },
+    "art": 0,
+    "lines": [
+      {
+        "ar": "اتَّفَقَ أَصْدِقَاءُ الْحَيِّ عَلَى زِرَاعَةِ شَتْلَةِ زَيْتُونٍ.",
+        "de": "Die Freunde aus dem Viertel beschlossen, einen jungen Olivenbaum zu pflanzen."
+      },
+      {
+        "ar": "اخْتَارُوا مَكَانًا تَصِلُ إِلَيْهِ أَشِعَّةُ الشَّمْسِ.",
+        "de": "Sie wählten einen sonnigen Platz."
+      },
+      {
+        "ar": "حَفَرَ حَسَنٌ الْحُفْرَةَ، وَوَضَعَتْ هِنْدٌ الشَّتْلَةَ بِرِفْقٍ.",
+        "de": "Hasan grub das Loch und Hind setzte das Bäumchen vorsichtig hinein."
+      },
+      {
+        "ar": "أَحَاطُوهَا بِالتُّرَابِ، ثُمَّ سَقَوْهَا.",
+        "de": "Sie füllten Erde darum und gossen es anschließend."
+      },
+      {
+        "ar": "قَسَّمُوا أَيَّامَ الرَّيِّ بَيْنَهُمْ حَتَّى لَا تَجِفَّ.",
+        "de": "Sie teilten die Gießtage unter sich auf, damit es nicht austrocknet."
+      },
+      {
+        "ar": "قَالَتْ هِنْدٌ: سَنَرَى هَذِهِ الشَّتْلَةَ تَكْبُرُ مَعَنَا.",
+        "de": "Hind sagte: Wir werden sehen, wie dieses Bäumchen mit uns wächst."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "شَتْلَةٌ",
+        "de": "Setzling"
+      },
+      {
+        "ar": "تُرَابٌ",
+        "de": "Erde"
+      },
+      {
+        "ar": "رَيٌّ",
+        "de": "Bewässerung"
+      },
+      {
+        "ar": "بِرِفْقٍ",
+        "de": "vorsichtig"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "مَا الَّذِي زَرَعُوهُ؟",
+          "de": "Was pflanzten sie?"
+        },
+        "options": [
+          {
+            "ar": "شَتْلَةَ زَيْتُونٍ",
+            "de": "Einen jungen Olivenbaum"
+          },
+          {
+            "ar": "شَجَرَةَ تُفَّاحٍ كَبِيرَةً",
+            "de": "Einen großen Apfelbaum"
+          },
+          {
+            "ar": "وُرُودًا حَمْرَاءَ",
+            "de": "Rote Rosen"
+          }
+        ],
+        "correct": 0,
+        "evidence": 0
+      },
+      {
+        "prompt": {
+          "ar": "كَيْفَ اخْتَارُوا الْمَكَانَ؟",
+          "de": "Wie wählten sie den Platz?"
+        },
+        "options": [
+          {
+            "ar": "اخْتَارُوا غُرْفَةً مُظْلِمَةً",
+            "de": "Sie wählten ein dunkles Zimmer"
+          },
+          {
+            "ar": "اخْتَارُوا وَسَطَ الطَّرِيقِ",
+            "de": "Sie wählten die Straßenmitte"
+          },
+          {
+            "ar": "اخْتَارُوا مَكَانًا مُشْمِسًا",
+            "de": "Sie wählten einen sonnigen Platz"
+          }
+        ],
+        "correct": 2,
+        "evidence": 1
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا فَعَلُوا بَعْدَ وَضْعِ التُّرَابِ؟",
+          "de": "Was machten sie nach dem Einfüllen der Erde?"
+        },
+        "options": [
+          {
+            "ar": "نَقَلُوهَا إِلَى الْبَيْتِ",
+            "de": "Sie brachten ihn ins Haus"
+          },
+          {
+            "ar": "سَقَوْا الشَّتْلَةَ",
+            "de": "Sie gossen den Setzling"
+          },
+          {
+            "ar": "قَطَعُوا الشَّتْلَةَ",
+            "de": "Sie fällten den Setzling"
+          }
+        ],
+        "correct": 1,
+        "evidence": 3
+      },
+      {
+        "prompt": {
+          "ar": "لِمَاذَا قَسَّمُوا أَيَّامَ الرَّيِّ؟",
+          "de": "Warum teilten sie die Gießtage auf?"
+        },
+        "options": [
+          {
+            "ar": "حَتَّى لَا تَجِفَّ الشَّتْلَةُ",
+            "de": "Damit der Setzling nicht austrocknet"
+          },
+          {
+            "ar": "لِبَيْعِ التُّرَابِ",
+            "de": "Um Erde zu verkaufen"
+          },
+          {
+            "ar": "لِتَغْيِيرِ الْحَدِيقَةِ",
+            "de": "Um den Garten zu wechseln"
+          }
+        ],
+        "correct": 0,
+        "evidence": 4
+      }
+    ]
+  },
+  {
+    "id": "class-project",
+    "level": "A2",
+    "title": {
+      "ar": "مُلْصَقٌ عَنِ الْمَاءِ",
+      "de": "Ein Plakat über Wasser"
+    },
+    "art": 1,
+    "lines": [
+      {
+        "ar": "طَلَبَتِ الْمُعَلِّمَةُ مِنَ الطُّلَّابِ إِعْدَادَ مُلْصَقٍ عَنِ الْمَاءِ.",
+        "de": "Die Lehrerin bat die Schüler, ein Plakat über Wasser zu gestalten."
+      },
+      {
+        "ar": "بَحَثَتْ رِيمٌ عَنْ مَعْلُومَاتٍ فِي الْمَكْتَبَةِ.",
+        "de": "Rim suchte in der Bibliothek nach Informationen."
+      },
+      {
+        "ar": "رَسَمَ سَامِرٌ صُنْبُورًا وَقَطَرَاتِ مَاءٍ.",
+        "de": "Samir zeichnete einen Wasserhahn und Wassertropfen."
+      },
+      {
+        "ar": "كَتَبَ مَازِنٌ جُمَلًا قَصِيرَةً عَنْ تَوْفِيرِ الْمَاءِ.",
+        "de": "Mazen schrieb kurze Sätze über das Wassersparen."
+      },
+      {
+        "ar": "جَمَعَ الطُّلَّابُ أَعْمَالَهُمْ فِي مُلْصَقٍ وَاحِدٍ.",
+        "de": "Die Schüler vereinten ihre Arbeiten auf einem Plakat."
+      },
+      {
+        "ar": "عَرَضُوهُ أَمَامَ الصَّفِّ، وَشَرَحَ كُلُّ وَاحِدٍ جُزْءَهُ.",
+        "de": "Sie stellten es vor der Klasse vor und jeder erklärte seinen Teil."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "مُلْصَقٌ",
+        "de": "Plakat"
+      },
+      {
+        "ar": "صُنْبُورٌ",
+        "de": "Wasserhahn"
+      },
+      {
+        "ar": "تَوْفِيرٌ",
+        "de": "Einsparen"
+      },
+      {
+        "ar": "جُزْءٌ",
+        "de": "Teil"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "مَا مَوْضُوعُ الْمُلْصَقِ؟",
+          "de": "Worum geht es auf dem Plakat?"
+        },
+        "options": [
+          {
+            "ar": "الْمَاءُ",
+            "de": "Um Wasser"
+          },
+          {
+            "ar": "السَّفَرُ",
+            "de": "Um Reisen"
+          },
+          {
+            "ar": "الرِّيَاضَةُ",
+            "de": "Um Sport"
+          }
+        ],
+        "correct": 0,
+        "evidence": 0
+      },
+      {
+        "prompt": {
+          "ar": "مَنْ بَحَثَ عَنِ الْمَعْلُومَاتِ؟",
+          "de": "Wer suchte Informationen?"
+        },
+        "options": [
+          {
+            "ar": "سَامِرٌ",
+            "de": "Samir"
+          },
+          {
+            "ar": "مَازِنٌ",
+            "de": "Mazen"
+          },
+          {
+            "ar": "رِيمٌ",
+            "de": "Rim"
+          }
+        ],
+        "correct": 2,
+        "evidence": 1
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا كَتَبَ مَازِنٌ؟",
+          "de": "Was schrieb Mazen?"
+        },
+        "options": [
+          {
+            "ar": "رِسَالَةً إِلَى جَدِّهِ",
+            "de": "Einen Brief an seinen Großvater"
+          },
+          {
+            "ar": "جُمَلًا عَنْ تَوْفِيرِ الْمَاءِ",
+            "de": "Sätze über das Wassersparen"
+          },
+          {
+            "ar": "قِصَّةً عَنِ الْقِطَارِ",
+            "de": "Eine Geschichte über einen Zug"
+          }
+        ],
+        "correct": 1,
+        "evidence": 3
+      },
+      {
+        "prompt": {
+          "ar": "مَا آخِرُ خُطْوَةٍ فِي النَّصِّ؟",
+          "de": "Was ist der letzte Schritt im Text?"
+        },
+        "options": [
+          {
+            "ar": "عَرْضُ الْمُلْصَقِ وَشَرْحُهُ",
+            "de": "Das Plakat vorstellen und erklären"
+          },
+          {
+            "ar": "الْبَحْثُ فِي الْمَكْتَبَةِ",
+            "de": "In der Bibliothek suchen"
+          },
+          {
+            "ar": "رَسْمُ الصُّنْبُورِ",
+            "de": "Den Wasserhahn zeichnen"
+          }
+        ],
+        "correct": 0,
+        "evidence": 5
+      }
+    ]
+  },
+  {
+    "id": "new-neighbour",
+    "level": "A2",
+    "title": {
+      "ar": "جَارَةٌ جَدِيدَةٌ",
+      "de": "Eine neue Nachbarin"
+    },
+    "art": 2,
+    "lines": [
+      {
+        "ar": "انْتَقَلَتْ أُسْرَةُ نُورٍ إِلَى شَقَّةٍ جَدِيدَةٍ.",
+        "de": "Nurs Familie zog in eine neue Wohnung."
+      },
+      {
+        "ar": "لَمْ تَعْرِفْ نُورٌ أَحَدًا فِي الْبِنَايَةِ.",
+        "de": "Nur kannte niemanden im Haus."
+      },
+      {
+        "ar": "زَارَتْهَا جَارَتُهَا لَيْلَى وَحَمَلَتْ لَهَا خُبْزًا.",
+        "de": "Ihre Nachbarin Layla besuchte sie und brachte ihr Brot."
+      },
+      {
+        "ar": "سَأَلَتْ نُورٌ عَنْ أَقْرَبِ مَتْجَرٍ.",
+        "de": "Nur fragte nach dem nächsten Geschäft."
+      },
+      {
+        "ar": "شَرَحَتْ لَهَا لَيْلَى الطَّرِيقَ، ثُمَّ رَافَقَتْهَا إِلَيْهِ.",
+        "de": "Layla erklärte ihr den Weg und begleitete sie dann dorthin."
+      },
+      {
+        "ar": "شَعَرَتْ نُورٌ بِالرَّاحَةِ لِأَنَّهَا تَعَرَّفَتْ إِلَى جَارَةٍ لَطِيفَةٍ.",
+        "de": "Nur fühlte sich wohl, weil sie eine nette Nachbarin kennengelernt hatte."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "اِنْتَقَلَتْ",
+        "de": "sie zog um"
+      },
+      {
+        "ar": "بِنَايَةٌ",
+        "de": "Wohnhaus"
+      },
+      {
+        "ar": "رَافَقَتْ",
+        "de": "sie begleitete"
+      },
+      {
+        "ar": "رَاحَةٌ",
+        "de": "Wohlgefühl"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "مَنْ زَارَ نُورًا؟",
+          "de": "Wer besuchte Nur?"
+        },
+        "options": [
+          {
+            "ar": "جَارَتُهَا لَيْلَى",
+            "de": "Ihre Nachbarin Layla"
+          },
+          {
+            "ar": "مُعَلِّمَتُهَا",
+            "de": "Ihre Lehrerin"
+          },
+          {
+            "ar": "طَبِيبَتُهَا",
+            "de": "Ihre Ärztin"
+          }
+        ],
+        "correct": 0,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا حَمَلَتْ لَيْلَى؟",
+          "de": "Was brachte Layla mit?"
+        },
+        "options": [
+          {
+            "ar": "مَلَابِسَ",
+            "de": "Kleidung"
+          },
+          {
+            "ar": "حَقِيبَةً",
+            "de": "Eine Tasche"
+          },
+          {
+            "ar": "خُبْزًا",
+            "de": "Brot"
+          }
+        ],
+        "correct": 2,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "عَمَّ سَأَلَتْ نُورٌ؟",
+          "de": "Wonach fragte Nur?"
+        },
+        "options": [
+          {
+            "ar": "عَنْ سِعْرِ الشَّقَّةِ",
+            "de": "Nach dem Wohnungspreis"
+          },
+          {
+            "ar": "عَنْ أَقْرَبِ مَتْجَرٍ",
+            "de": "Nach dem nächsten Geschäft"
+          },
+          {
+            "ar": "عَنْ مَوْعِدِ الْقِطَارِ",
+            "de": "Nach der Zugabfahrt"
+          }
+        ],
+        "correct": 1,
+        "evidence": 3
+      },
+      {
+        "prompt": {
+          "ar": "لِمَاذَا شَعَرَتْ بِالرَّاحَةِ؟",
+          "de": "Warum fühlte sie sich wohl?"
+        },
+        "options": [
+          {
+            "ar": "لِأَنَّهَا تَعَرَّفَتْ إِلَى جَارَةٍ لَطِيفَةٍ",
+            "de": "Weil sie eine nette Nachbarin kennengelernt hatte"
+          },
+          {
+            "ar": "لِأَنَّهَا عَادَتْ إِلَى شَقَّتِهَا الْقَدِيمَةِ",
+            "de": "Weil sie in die alte Wohnung zurückkehrte"
+          },
+          {
+            "ar": "لِأَنَّ الْمَتْجَرَ أُغْلِقَ",
+            "de": "Weil das Geschäft geschlossen wurde"
+          }
+        ],
+        "correct": 0,
+        "evidence": 5
+      }
+    ]
+  },
+  {
+    "id": "water-repair",
+    "level": "A2",
+    "title": {
+      "ar": "صُنْبُورٌ لَا يُغْلَقُ",
+      "de": "Ein undichter Wasserhahn"
+    },
+    "art": 3,
+    "lines": [
+      {
+        "ar": "لَاحَظَ خَالِدٌ أَنَّ صُنْبُورَ الْمَطْبَخِ يُسَرِّبُ الْمَاءَ.",
+        "de": "Khaled bemerkte, dass der Küchenwasserhahn tropft."
+      },
+      {
+        "ar": "حَاوَلَ إِغْلَاقَهُ بِرِفْقٍ، لَكِنَّ الْمَاءَ اسْتَمَرَّ.",
+        "de": "Er versuchte ihn vorsichtig zuzudrehen, doch das Wasser lief weiter."
+      },
+      {
+        "ar": "أَغْلَقَ مَحْبِسَ الْمَاءِ الْخَاصَّ بِالْمَطْبَخِ.",
+        "de": "Er schloss das Absperrventil für die Küche."
+      },
+      {
+        "ar": "اتَّصَلَ بِفَنِّيٍّ وَوَصَفَ لَهُ الْمُشْكِلَةَ.",
+        "de": "Er rief einen Handwerker an und beschrieb das Problem."
+      },
+      {
+        "ar": "جَاءَ الْفَنِّيُّ فِي الْمَسَاءِ وَأَصْلَحَ الصُّنْبُورَ.",
+        "de": "Der Handwerker kam am Abend und reparierte den Wasserhahn."
+      },
+      {
+        "ar": "فَتَحَ خَالِدٌ الْمَحْبِسَ وَتَأَكَّدَ أَنَّ التَّسَرُّبَ تَوَقَّفَ.",
+        "de": "Khaled öffnete das Ventil und prüfte, ob das Tropfen aufgehört hatte."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "يُسَرِّبُ",
+        "de": "es lässt Wasser austreten"
+      },
+      {
+        "ar": "مَحْبِسٌ",
+        "de": "Absperrventil"
+      },
+      {
+        "ar": "فَنِّيٌّ",
+        "de": "Handwerker"
+      },
+      {
+        "ar": "أَصْلَحَ",
+        "de": "er reparierte"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "مَا الْمُشْكِلَةُ؟",
+          "de": "Was war das Problem?"
+        },
+        "options": [
+          {
+            "ar": "تَسَرُّبُ الْمَاءِ مِنَ الصُّنْبُورِ",
+            "de": "Ein tropfender Wasserhahn"
+          },
+          {
+            "ar": "انْقِطَاعُ الْكَهْرَبَاءِ",
+            "de": "Ein Stromausfall"
+          },
+          {
+            "ar": "ضَيَاعُ الْمِفْتَاحِ",
+            "de": "Ein verlorener Schlüssel"
+          }
+        ],
+        "correct": 0,
+        "evidence": 0
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا أَغْلَقَ قَبْلَ الِاتِّصَالِ؟",
+          "de": "Was schloss er vor dem Anruf?"
+        },
+        "options": [
+          {
+            "ar": "بَابَ الْحَدِيقَةِ",
+            "de": "Die Gartentür"
+          },
+          {
+            "ar": "نَافِذَةَ الْغُرْفَةِ",
+            "de": "Das Zimmerfenster"
+          },
+          {
+            "ar": "مَحْبِسَ الْمَاءِ",
+            "de": "Das Absperrventil"
+          }
+        ],
+        "correct": 2,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "مَتَى جَاءَ الْفَنِّيُّ؟",
+          "de": "Wann kam der Handwerker?"
+        },
+        "options": [
+          {
+            "ar": "فِي الْيَوْمِ التَّالِي",
+            "de": "Am nächsten Tag"
+          },
+          {
+            "ar": "فِي الْمَسَاءِ",
+            "de": "Am Abend"
+          },
+          {
+            "ar": "فِي الصَّبَاحِ",
+            "de": "Am Morgen"
+          }
+        ],
+        "correct": 1,
+        "evidence": 4
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا فَعَلَ خَالِدٌ فِي النِّهَايَةِ؟",
+          "de": "Was machte Khaled am Ende?"
+        },
+        "options": [
+          {
+            "ar": "تَأَكَّدَ مِنْ تَوَقُّفِ التَّسَرُّبِ",
+            "de": "Er prüfte, ob das Tropfen aufgehört hatte"
+          },
+          {
+            "ar": "اشْتَرَى بَيْتًا",
+            "de": "Er kaufte ein Haus"
+          },
+          {
+            "ar": "تَرَكَ الْمَاءَ يَجْرِي",
+            "de": "Er ließ das Wasser laufen"
+          }
+        ],
+        "correct": 0,
+        "evidence": 5
+      }
+    ]
+  },
+  {
+    "id": "library-message",
+    "level": "A2",
+    "title": {
+      "ar": "رِسَالَةٌ مِنَ الْمَكْتَبَةِ",
+      "de": "Eine Nachricht aus der Bibliothek"
+    },
+    "art": 4,
+    "lines": [
+      {
+        "ar": "اسْتَعَارَتْ هِنْدٌ كِتَابًا مِنَ الْمَكْتَبَةِ لِمُدَّةِ أُسْبُوعَيْنِ.",
+        "de": "Hind lieh ein Buch für zwei Wochen aus der Bibliothek aus."
+      },
+      {
+        "ar": "بَعْدَ أُسْبُوعٍ وَصَلَتْهَا رِسَالَةٌ تَقُولُ إِنَّ مَوْعِدَ الْإِعَادَةِ قَرِيبٌ.",
+        "de": "Nach einer Woche erhielt sie eine Nachricht, dass der Rückgabetermin näher rückt."
+      },
+      {
+        "ar": "لَمْ تَكُنْ قَدْ أَنْهَتِ الْقِرَاءَةَ بَعْدُ.",
+        "de": "Sie hatte das Buch noch nicht zu Ende gelesen."
+      },
+      {
+        "ar": "دَخَلَتْ إِلَى حِسَابِهَا فِي مَوْقِعِ الْمَكْتَبَةِ.",
+        "de": "Sie meldete sich auf der Bibliothekswebsite in ihrem Konto an."
+      },
+      {
+        "ar": "طَلَبَتْ تَمْدِيدَ الْإِعَارَةِ، فَوَافَقَ الْمَوْقِعُ.",
+        "de": "Sie beantragte eine Verlängerung, die auf der Website bestätigt wurde."
+      },
+      {
+        "ar": "كَتَبَتِ التَّارِيخَ الْجَدِيدَ، وَقَرَّرَتْ أَنْ تَقْرَأَ كُلَّ مَسَاءٍ.",
+        "de": "Sie notierte das neue Datum und beschloss, jeden Abend zu lesen."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "اسْتَعَارَتْ",
+        "de": "sie lieh aus"
+      },
+      {
+        "ar": "إِعَادَةٌ",
+        "de": "Rückgabe"
+      },
+      {
+        "ar": "تَمْدِيدٌ",
+        "de": "Verlängerung"
+      },
+      {
+        "ar": "حِسَابٌ",
+        "de": "Benutzerkonto"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "مَا مُدَّةُ الْإِعَارَةِ الْأُولَى؟",
+          "de": "Wie lang war die ursprüngliche Ausleihfrist?"
+        },
+        "options": [
+          {
+            "ar": "أُسْبُوعَانِ",
+            "de": "Zwei Wochen"
+          },
+          {
+            "ar": "يَوْمٌ وَاحِدٌ",
+            "de": "Ein Tag"
+          },
+          {
+            "ar": "شَهْرَانِ",
+            "de": "Zwei Monate"
+          }
+        ],
+        "correct": 0,
+        "evidence": 0
+      },
+      {
+        "prompt": {
+          "ar": "لِمَاذَا طَلَبَتِ التَّمْدِيدَ؟",
+          "de": "Warum bat sie um Verlängerung?"
+        },
+        "options": [
+          {
+            "ar": "لِأَنَّهَا فَقَدَتِ الْكِتَابَ",
+            "de": "Weil sie das Buch verloren hatte"
+          },
+          {
+            "ar": "لِأَنَّ الْمَكْتَبَةَ أُغْلِقَتْ",
+            "de": "Weil die Bibliothek geschlossen wurde"
+          },
+          {
+            "ar": "لِأَنَّهَا لَمْ تُنْهِ الْقِرَاءَةَ",
+            "de": "Weil sie noch nicht fertig gelesen hatte"
+          }
+        ],
+        "correct": 2,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "كَيْفَ طَلَبَتِ التَّمْدِيدَ؟",
+          "de": "Wie beantragte sie die Verlängerung?"
+        },
+        "options": [
+          {
+            "ar": "بِزِيَارَةِ الْمَدْرَسَةِ",
+            "de": "Durch einen Schulbesuch"
+          },
+          {
+            "ar": "عَبْرَ مَوْقِعِ الْمَكْتَبَةِ",
+            "de": "Auf der Bibliothekswebsite"
+          },
+          {
+            "ar": "بِرِسَالَةٍ وَرَقِيَّةٍ",
+            "de": "Per Brief"
+          }
+        ],
+        "correct": 1,
+        "evidence": 4
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا قَرَّرَتْ فِي النِّهَايَةِ؟",
+          "de": "Was beschloss sie am Ende?"
+        },
+        "options": [
+          {
+            "ar": "الْقِرَاءَةَ كُلَّ مَسَاءٍ",
+            "de": "Jeden Abend zu lesen"
+          },
+          {
+            "ar": "تَرْكَ الْقِرَاءَةِ",
+            "de": "Nicht mehr zu lesen"
+          },
+          {
+            "ar": "شِرَاءَ هَاتِفٍ",
+            "de": "Ein Handy zu kaufen"
+          }
+        ],
+        "correct": 0,
+        "evidence": 5
+      }
+    ]
+  },
+  {
+    "id": "choosing-bike",
+    "level": "A2",
+    "title": {
+      "ar": "دَرَّاجَةٌ مُنَاسِبَةٌ",
+      "de": "Ein passendes Fahrrad"
+    },
+    "art": 5,
+    "lines": [
+      {
+        "ar": "أَرَادَ مَازِنٌ شِرَاءَ دَرَّاجَةٍ لِلذَّهَابِ إِلَى الْعَمَلِ.",
+        "de": "Mazen wollte ein Fahrrad für den Arbeitsweg kaufen."
+      },
+      {
+        "ar": "وَجَدَ دَرَّاجَتَيْنِ فِي الْمَتْجَرِ: وَاحِدَةً جَدِيدَةً وَأُخْرَى مُسْتَعْمَلَةً.",
+        "de": "Im Geschäft fand er ein neues und ein gebrauchtes Fahrrad."
+      },
+      {
+        "ar": "كَانَتِ الْجَدِيدَةُ أَغْلَى، لَكِنَّ الْمُسْتَعْمَلَةَ أَخَفُّ وَزْنًا.",
+        "de": "Das neue war teurer, das gebrauchte jedoch leichter."
+      },
+      {
+        "ar": "فَحَصَ الْمِكْبَحَيْنِ وَالْمَصَابِيحَ قَبْلَ أَنْ يُقَرِّرَ.",
+        "de": "Er prüfte die Bremsen und die Lampen, bevor er sich entschied."
+      },
+      {
+        "ar": "اخْتَارَ الْمُسْتَعْمَلَةَ لِأَنَّهَا سَلِيمَةٌ وَسِعْرَهَا مُنَاسِبٌ.",
+        "de": "Er wählte das gebrauchte, weil es in gutem Zustand war und der Preis passte."
+      },
+      {
+        "ar": "فِي الْيَوْمِ التَّالِي رَكِبَهَا إِلَى الْعَمَلِ وَهُوَ مَسْرُورٌ.",
+        "de": "Am nächsten Tag fuhr er damit glücklich zur Arbeit."
+      }
+    ],
+    "vocabulary": [
+      {
+        "ar": "مُسْتَعْمَلَةٌ",
+        "de": "gebraucht"
+      },
+      {
+        "ar": "أَخَفُّ",
+        "de": "leichter"
+      },
+      {
+        "ar": "مِكْبَحٌ",
+        "de": "Bremse"
+      },
+      {
+        "ar": "مُنَاسِبٌ",
+        "de": "passend"
+      }
+    ],
+    "questions": [
+      {
+        "prompt": {
+          "ar": "لِمَاذَا يُرِيدُ دَرَّاجَةً؟",
+          "de": "Wofür möchte er ein Fahrrad?"
+        },
+        "options": [
+          {
+            "ar": "لِلذَّهَابِ إِلَى الْعَمَلِ",
+            "de": "Für den Arbeitsweg"
+          },
+          {
+            "ar": "لِلسَّفَرِ بَيْنَ الدُّوَلِ",
+            "de": "Für internationale Reisen"
+          },
+          {
+            "ar": "لِيُهْدِيَهَا لِجَدِّهِ",
+            "de": "Als Geschenk für seinen Großvater"
+          }
+        ],
+        "correct": 0,
+        "evidence": 0
+      },
+      {
+        "prompt": {
+          "ar": "أَيُّهُمَا أَخَفُّ؟",
+          "de": "Welches Fahrrad ist leichter?"
+        },
+        "options": [
+          {
+            "ar": "الْجَدِيدَةُ",
+            "de": "Das neue"
+          },
+          {
+            "ar": "لَهُمَا الْوَزْنُ نَفْسُهُ",
+            "de": "Beide wiegen gleich viel"
+          },
+          {
+            "ar": "الْمُسْتَعْمَلَةُ",
+            "de": "Das gebrauchte"
+          }
+        ],
+        "correct": 2,
+        "evidence": 2
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا فَحَصَ قَبْلَ الْقَرَارِ؟",
+          "de": "Was prüfte er vor der Entscheidung?"
+        },
+        "options": [
+          {
+            "ar": "النَّافِذَةَ وَالْبَابَ",
+            "de": "Fenster und Tür"
+          },
+          {
+            "ar": "الْمِكْبَحَيْنِ وَالْمَصَابِيحَ",
+            "de": "Bremsen und Lampen"
+          },
+          {
+            "ar": "الْحَقِيبَةَ وَالْقُبَّعَةَ",
+            "de": "Tasche und Mütze"
+          }
+        ],
+        "correct": 1,
+        "evidence": 3
+      },
+      {
+        "prompt": {
+          "ar": "مَا سَبَبُ اخْتِيَارِهِ الْمُسْتَعْمَلَةَ؟",
+          "de": "Warum wählte er das gebrauchte Fahrrad?"
+        },
+        "options": [
+          {
+            "ar": "سَلَامَتُهَا وَسِعْرُهَا الْمُنَاسِبُ",
+            "de": "Guter Zustand und passender Preis"
+          },
+          {
+            "ar": "لَوْنُهَا فَقَطْ",
+            "de": "Nur die Farbe"
+          },
+          {
+            "ar": "لِأَنَّهَا أَغْلَى",
+            "de": "Weil es teurer war"
+          }
+        ],
+        "correct": 0,
+        "evidence": 4
+      }
+    ]
+  }
+]

@@ -1,0 +1,778 @@
+[
+  {
+    "id": "sequence-conjunctions",
+    "glyph": "جُمْلَةٌ",
+    "stage": "build",
+    "category": "syntax",
+    "prerequisites": [
+      "sentence-types",
+      "basic-verbs"
+    ],
+    "title": {
+      "ar": "الربط بالواو والفاء وثم",
+      "de": "Mit wa, fa und ṯumma verbinden"
+    },
+    "summary": {
+      "ar": "نَرْبِطُ الْكَلِمَاتِ وَالْجُمَلَ، وَنُرَتِّبُ الْأَحْدَاثَ بِأَدَوَاتٍ وَاضِحَةٍ.",
+      "de": "Wörter und Sätze verbinden und Ereignisse zeitlich ordnen."
+    },
+    "intro": {
+      "ar": "نَرْبِطُ الْكَلِمَاتِ وَالْجُمَلَ، وَنُرَتِّبُ الْأَحْدَاثَ بِأَدَوَاتٍ وَاضِحَةٍ.",
+      "de": "Wörter und Sätze verbinden und Ereignisse zeitlich ordnen."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "الْوَاوُ لِلْجَمْعِ",
+          "de": "Wa verbindet"
+        },
+        "body": {
+          "ar": "تَجْمَعُ الْوَاوُ بَيْنَ كَلِمَتَيْنِ أَوْ جُمْلَتَيْنِ. لَا تَدُلُّ وَحْدَهَا عَلَى أَنَّ الْأَوَّلَ حَدَثَ قَبْلَ الثَّانِي.",
+          "de": "Wa verbindet Wörter oder Sätze. Allein legt es keine zeitliche Reihenfolge fest."
+        },
+        "examples": [
+          {
+            "ar": "اشْتَرَيْتُ خُبْزًا وَجُبْنًا.",
+            "de": "Ich kaufte Brot und Käse."
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "الْفَاءُ وَثُمَّ لِلتَّرْتِيبِ",
+          "de": "Reihenfolge mit fa und ṯumma"
+        },
+        "body": {
+          "ar": "تَدُلُّ الْفَاءُ عَلَى التَّرْتِيبِ وَالتَّعْقِيبِ، وَتَدُلُّ «ثُمَّ» عَلَى التَّرْتِيبِ مَعَ مُهْلَةٍ. نَسْتَعْمِلُهُمَا لِتَوْضِيحِ خُطُوَاتِ الْعَمَلِ.",
+          "de": "Fa bezeichnet eine unmittelbare Folge, ṯumma eine Folge mit zeitlichem Abstand."
+        },
+        "examples": [
+          {
+            "ar": "فَتَحْتُ الْبَابَ فَدَخَلْتُ.",
+            "de": "Ich öffnete die Tür und ging sogleich hinein."
+          },
+          {
+            "ar": "تَنَاوَلْتُ الْفَطُورَ، ثُمَّ ذَهَبْتُ إِلَى الْعَمَلِ.",
+            "de": "Ich frühstückte und ging später zur Arbeit."
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "نَرْبِطُ الْكَلِمَاتِ وَالْجُمَلَ، وَنُرَتِّبُ الْأَحْدَاثَ بِأَدَوَاتٍ وَاضِحَةٍ.",
+      "de": "Wörter und Sätze verbinden und Ereignisse zeitlich ordnen."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أَيُّ أَدَاةٍ تَجْمَعُ دُونَ تَحْدِيدِ التَّرْتِيبِ؟",
+          "de": "Welche Verbindung legt keine Reihenfolge fest?"
+        },
+        "options": [
+          "وَ",
+          "ثُمَّ",
+          "فَ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "الْوَاوُ لِلْجَمْعِ.",
+          "de": "Wa verbindet ohne festgelegte Reihenfolge."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أَيُّ أَدَاةٍ تَدُلُّ عَلَى التَّرْتِيبِ مَعَ مُهْلَةٍ؟",
+          "de": "Welche Verbindung drückt eine spätere Folge aus?"
+        },
+        "options": [
+          "وَ",
+          "مَنْ",
+          "ثُمَّ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "ثُمَّ لِلتَّرْتِيبِ مَعَ التَّرَاخِي.",
+          "de": "Ṯumma bezeichnet eine Folge mit zeitlichem Abstand."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أَيُّ أَدَاةٍ تَدُلُّ عَلَى التَّعْقِيبِ؟",
+          "de": "Welche Verbindung drückt unmittelbare Folge aus?"
+        },
+        "options": [
+          "فِي",
+          "فَ",
+          "أَيْنَ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "الْفَاءُ لِلتَّرْتِيبِ وَالتَّعْقِيبِ.",
+          "de": "Fa bezeichnet unmittelbare Folge."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أُكْمِلُ لِلْجَمْعِ: أُحِبُّ التُّفَّاحَ ___ الْمَوْزَ.",
+          "de": "Ergänze die Aufzählung."
+        },
+        "options": [
+          "وَ",
+          "إِلَى",
+          "عَنْ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "نَجْمَعُ بَيْنَ نَوْعَيْنِ مِنَ الْفَاكِهَةِ.",
+          "de": "Hier werden zwei Obstsorten verbunden."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "مَاذَا حَدَثَ أَوَّلًا: «غَسَلْتُ يَدَيَّ، ثُمَّ أَكَلْتُ»؟",
+          "de": "Was geschah zuerst?"
+        },
+        "options": [
+          "الْأَكْلُ",
+          "النَّوْمُ",
+          "غَسْلُ الْيَدَيْنِ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الْغَسْلُ جَاءَ قَبْلَ ثُمَّ.",
+          "de": "Das Händewaschen steht vor ṯumma."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "هَلْ «جَاءَ عَلِيٌّ وَعُمَرُ» تُحَدِّدُ مَنْ جَاءَ أَوَّلًا؟",
+          "de": "Legt der Satz mit wa fest, wer zuerst kam?"
+        },
+        "options": [
+          "عُمَرُ دَائِمًا",
+          "لَا",
+          "عَلِيٌّ دَائِمًا"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "الْوَاوُ وَحْدَهَا لَا تُحَدِّدُ التَّرْتِيبَ.",
+          "de": "Wa allein legt die Reihenfolge nicht fest."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "مَا الْكَلِمَةُ الثَّانِيَةُ فِي الْعَطْفِ «خُبْزًا وَجُبْنًا»؟",
+          "de": "Was ist das zweite verbundene Nomen?"
+        },
+        "options": [
+          "جُبْنًا",
+          "خُبْزًا",
+          "الْوَاوُ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "جُبْنًا مَعْطُوفٌ عَلَى خُبْزًا.",
+          "de": "Ǧubnan ist das zweite verbundene Nomen."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أُكْمِلُ بِأَدَاةِ تَرْتِيبٍ: قَرَأْتُ سَاعَةً، ___ نِمْتُ.",
+          "de": "Ergänze eine Verbindung der zeitlichen Folge."
+        },
+        "options": [
+          "فِي",
+          "مِنْ",
+          "ثُمَّ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "ثُمَّ تَرْبِطُ الْحَدَثَيْنِ بِالتَّرْتِيبِ.",
+          "de": "Ṯumma ordnet die beiden Ereignisse."
+        }
+      }
+    ]
+  },
+  {
+    "id": "reason-result",
+    "glyph": "جُمْلَةٌ",
+    "stage": "build",
+    "category": "syntax",
+    "prerequisites": [
+      "sentence-types",
+      "basic-verbs"
+    ],
+    "title": {
+      "ar": "السبب والنتيجة والتعبير عن الرأي",
+      "de": "Grund, Folge und Meinung"
+    },
+    "summary": {
+      "ar": "نُبَيِّنُ السَّبَبَ بِـ«لِأَنَّ»، وَالنَّتِيجَةَ بِـ«لِذَلِكَ»، وَنُقَدِّمُ الرَّأْيَ بِعِبَارَةٍ مُنَاسِبَةٍ.",
+      "de": "Gründe mit li-anna, Folgen mit li-ḏālika und eigene Meinungen ausdrücken."
+    },
+    "intro": {
+      "ar": "نُبَيِّنُ السَّبَبَ بِـ«لِأَنَّ»، وَالنَّتِيجَةَ بِـ«لِذَلِكَ»، وَنُقَدِّمُ الرَّأْيَ بِعِبَارَةٍ مُنَاسِبَةٍ.",
+      "de": "Gründe mit li-anna, Folgen mit li-ḏālika und eigene Meinungen ausdrücken."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "السَّبَبُ وَالنَّتِيجَةُ",
+          "de": "Grund und Folge"
+        },
+        "body": {
+          "ar": "يَأْتِي السَّبَبُ بَعْدَ «لِأَنَّ». وَتُقَدِّمُ «لِذَلِكَ» النَّتِيجَةَ. نَرْبِطُ مَعْنَيَيْنِ يَتَّصِلُ أَحَدُهُمَا بِالْآخَرِ. إِذَا جَاءَ اسْمٌ ظَاهِرٌ بَعْدَ «لِأَنَّ» كَانَ مَنْصُوبًا: لِأَنَّ الْجَوَّ بَارِدٌ.",
+          "de": "Li-anna leitet den Grund ein, li-ḏālika die Folge. Ein direkt auf li-anna folgendes ausdrückliches Nomen steht im Akkusativ."
+        },
+        "examples": [
+          {
+            "ar": "لَبِسْتُ الْمِعْطَفَ لِأَنَّ الْجَوَّ بَارِدٌ.",
+            "de": "Ich zog den Mantel an, weil es kalt ist."
+          },
+          {
+            "ar": "الْجَوُّ بَارِدٌ؛ لِذَلِكَ لَبِسْتُ الْمِعْطَفَ.",
+            "de": "Es ist kalt; deshalb zog ich den Mantel an."
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "رَأْيِي وَدَلِيلِي",
+          "de": "Meinung und Begründung"
+        },
+        "body": {
+          "ar": "نَقُولُ «فِي رَأْيِي» أَوْ «أَرَى أَنَّ» لِلتَّعْبِيرِ عَنِ الرَّأْيِ، ثُمَّ نَذْكُرُ سَبَبًا. الرَّأْيُ قَدْ يَخْتَلِفُ بَيْنَ النَّاسِ.",
+          "de": "Fī raʾyī und arā anna kennzeichnen eine Meinung. Anschließend kann man sie begründen. Meinungen können unterschiedlich sein."
+        },
+        "examples": [
+          {
+            "ar": "فِي رَأْيِي الْمَشْيُ مُفِيدٌ لِأَنَّهُ يُقَوِّي الْجِسْمَ.",
+            "de": "Meiner Meinung nach ist Gehen nützlich, weil es den Körper stärkt."
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "نُبَيِّنُ السَّبَبَ بِـ«لِأَنَّ»، وَالنَّتِيجَةَ بِـ«لِذَلِكَ»، وَنُقَدِّمُ الرَّأْيَ بِعِبَارَةٍ مُنَاسِبَةٍ.",
+      "de": "Gründe mit li-anna, Folgen mit li-ḏālika und eigene Meinungen ausdrücken."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أَيُّ أَدَاةٍ تُقَدِّمُ السَّبَبَ؟",
+          "de": "Was leitet den Grund ein?"
+        },
+        "options": [
+          "لِأَنَّ",
+          "لِذَلِكَ",
+          "أَيْنَ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "لِأَنَّ تُبَيِّنُ لِمَاذَا حَدَثَ الْفِعْلُ.",
+          "de": "Li-anna erklärt, warum etwas geschieht."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أَيُّ أَدَاةٍ تُقَدِّمُ النَّتِيجَةَ؟",
+          "de": "Was leitet die Folge ein?"
+        },
+        "options": [
+          "مَنْ",
+          "عَنْ",
+          "لِذَلِكَ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "لِذَلِكَ تُقَدِّمُ النَّتِيجَةَ.",
+          "de": "Li-ḏālika leitet die Folge ein."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أُكْمِلُ: أَحْمِلُ مِظَلَّةً ___ الْمَطَرَ يَنْزِلُ.",
+          "de": "Ergänze den Grund."
+        },
+        "options": [
+          "إِلَى",
+          "لِأَنَّ",
+          "فَوْقَ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "نُبَيِّنُ سَبَبَ حَمْلِ الْمِظَلَّةِ.",
+          "de": "Der Regen begründet das Mitnehmen des Schirms."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أُكْمِلُ: أَنَا مَرِيضٌ؛ ___ أَسْتَرِيحُ.",
+          "de": "Ergänze die Folge."
+        },
+        "options": [
+          "لِذَلِكَ",
+          "بَيْنَ",
+          "مَا"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "الرَّاحَةُ نَتِيجَةُ الْمَرَضِ هُنَا.",
+          "de": "Das Ausruhen ist hier eine Folge der Krankheit."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "مَا السَّبَبُ فِي «بَقِيتُ لِأَنَّنِي مُتْعَبٌ»؟",
+          "de": "Was ist der Grund?"
+        },
+        "options": [
+          "الْبَقَاءُ",
+          "السَّفَرُ",
+          "التَّعَبُ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "التَّعَبُ بَعْدَ لِأَنَّ.",
+          "de": "Die Müdigkeit folgt auf li-anna."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أَيُّ عِبَارَةٍ تُقَدِّمُ رَأْيًا؟",
+          "de": "Welche Formulierung kennzeichnet eine Meinung?"
+        },
+        "options": [
+          "فِي الْبَيْتِ",
+          "فِي رَأْيِي",
+          "فِي السَّاعَةِ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "فِي رَأْيِي تُعْلِنُ الرَّأْيَ الشَّخْصِيَّ.",
+          "de": "Fī raʾyī kennzeichnet die persönliche Meinung."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أَيُّ ضَبْطٍ صَحِيحٌ؟",
+          "de": "Welche Vokalisierung ist richtig?"
+        },
+        "options": [
+          "لِأَنَّ الْجَوَّ بَارِدٌ",
+          "لِأَنَّ الْجَوُّ بَارِدٌ",
+          "لِأَنَّ الْجَوِّ بَارِدٌ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "الْجَوَّ اسْمُ أَنَّ مَنْصُوبٌ.",
+          "de": "Al-ǧawwa steht als Nomen von anna im Akkusativ."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "مَا الْجَوَابُ الْمُنَاسِبُ لِـ«لِمَاذَا تَقْرَأُ؟»؟",
+          "de": "Welche Antwort passt zu „Warum liest du?“?"
+        },
+        "options": [
+          "فِي الْمَكْتَبَةِ",
+          "عِنْدَ الْمَسَاءِ",
+          "لِأَنَّ الْقِرَاءَةَ مُفِيدَةٌ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "السُّؤَالُ يَطْلُبُ سَبَبًا لَا مَكَانًا أَوْ زَمَانًا.",
+          "de": "Gefragt ist der Grund, nicht Ort oder Zeit."
+        }
+      }
+    ]
+  },
+  {
+    "id": "comparison-basic",
+    "glyph": "جُمْلَةٌ",
+    "stage": "build",
+    "category": "syntax",
+    "prerequisites": [
+      "sentence-types",
+      "basic-verbs"
+    ],
+    "title": {
+      "ar": "المقارنة: أفعل من",
+      "de": "Vergleiche mit afʿal min"
+    },
+    "summary": {
+      "ar": "نُقَارِنُ بَيْنَ شَيْئَيْنِ بِـ«أَفْعَلُ مِنْ» فِي أَمْثِلَةٍ شَائِعَةٍ.",
+      "de": "Mit häufigen Formen von afʿal min zwei Dinge vergleichen."
+    },
+    "intro": {
+      "ar": "نُقَارِنُ بَيْنَ شَيْئَيْنِ بِـ«أَفْعَلُ مِنْ» فِي أَمْثِلَةٍ شَائِعَةٍ.",
+      "de": "Mit häufigen Formen von afʿal min zwei Dinge vergleichen."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "أَكْبَرُ مِنْ وَأَصْغَرُ مِنْ",
+          "de": "Größer und kleiner als"
+        },
+        "body": {
+          "ar": "نَسْتَعْمِلُ اسْمَ التَّفْضِيلِ، مِثْلَ «أَكْبَرُ» وَ«أَصْغَرُ» وَ«أَقْرَبُ» وَ«أَسْهَلُ»، ثُمَّ «مِنْ». يَكُونُ الِاسْمُ بَعْدَ «مِنْ» مَجْرُورًا.",
+          "de": "Häufige Vergleichsformen sind akbar, aṣġar, aqrab und ashal. Das Nomen nach min steht im Genitiv."
+        },
+        "examples": [
+          {
+            "ar": "هَذَا الْبَيْتُ أَكْبَرُ مِنْ ذَلِكَ الْبَيْتِ.",
+            "de": "Dieses Haus ist größer als jenes."
+          },
+          {
+            "ar": "الْمَكْتَبَةُ أَقْرَبُ مِنَ الْمَحَطَّةِ.",
+            "de": "Die Bibliothek ist näher als der Bahnhof."
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "نَقْرَأُ الْمَقَارَنَةَ بِدِقَّةٍ",
+          "de": "Vergleiche genau lesen"
+        },
+        "body": {
+          "ar": "فِي «هِنْدٌ أَطْوَلُ مِنْ رِيمٍ» نَفْهَمُ أَنَّ رِيمًا أَقْصَرُ مِنْ هِنْدٍ. نُرَاعِي مَعْنَى الصِّفَةِ وَجِهَةَ الْمُقَارَنَةِ.",
+          "de": "Wenn Hind größer als Rim ist, ist Rim kleiner als Hind. Achte auf die Richtung des Vergleichs."
+        },
+        "examples": [
+          {
+            "ar": "هَذَا التَّمْرِينُ أَسْهَلُ مِنَ التَّمْرِينِ السَّابِقِ.",
+            "de": "Diese Übung ist leichter als die vorige."
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "نُقَارِنُ بَيْنَ شَيْئَيْنِ بِـ«أَفْعَلُ مِنْ» فِي أَمْثِلَةٍ شَائِعَةٍ.",
+      "de": "Mit häufigen Formen von afʿal min zwei Dinge vergleichen."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أُكْمِلُ: الْحَافِلَةُ أَكْبَرُ ___ السَّيَّارَةِ.",
+          "de": "Ergänze den Vergleich."
+        },
+        "options": [
+          "مِنَ",
+          "إِلَى",
+          "عَنْ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "نَسْتَعْمِلُ مِنْ بَعْدَ أَكْبَرُ.",
+          "de": "Nach akbar steht hier min."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "مَا عَكْسُ «أَكْبَرُ»؟",
+          "de": "Was ist das Gegenteil von größer?"
+        },
+        "options": [
+          "أَجْمَلُ",
+          "أَسْرَعُ",
+          "أَصْغَرُ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "أَصْغَرُ عَكْسُ أَكْبَرُ.",
+          "de": "Aṣġar bedeutet kleiner."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "مَا مَعْنَى «أَقْرَبُ»؟",
+          "de": "Was bedeutet aqrab?"
+        },
+        "options": [
+          "نَحْوَ وَقْتٍ أَطْوَلَ",
+          "نَحْوَ مَسَافَةٍ أَقَلَّ",
+          "نَحْوَ ثَمَنٍ أَعْلَى"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "أَقْرَبُ يَدُلُّ هُنَا عَلَى مَسَافَةٍ أَقَلَّ.",
+          "de": "Aqrab bezeichnet hier eine geringere Entfernung."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أَيُّ ضَبْطٍ صَحِيحٌ؟",
+          "de": "Welche Vokalisierung ist richtig?"
+        },
+        "options": [
+          "أَكْبَرُ مِنَ الْبَيْتِ",
+          "أَكْبَرُ مِنَ الْبَيْتُ",
+          "أَكْبَرُ مِنَ الْبَيْتَ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "الْبَيْتِ مَجْرُورٌ بِمِنْ.",
+          "de": "Al-bayti steht nach min im Genitiv."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "هِنْدٌ أَطْوَلُ مِنْ رِيمٍ. مَنْ أَقْصَرُ؟",
+          "de": "Hind ist größer als Rim. Wer ist kleiner?"
+        },
+        "options": [
+          "هِنْدٌ",
+          "هُمَا مُتَسَاوِيَتَانِ",
+          "رِيمٌ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "رِيمٌ هِيَ الْأَقْصَرُ فِي الْمُقَارَنَةِ.",
+          "de": "Rim ist in diesem Vergleich kleiner."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أَيُّ تَعْبِيرٍ يَعْنِي سُهُولَةً أَكْثَرَ؟",
+          "de": "Was bedeutet leichter?"
+        },
+        "options": [
+          "أَبْعَدُ",
+          "أَسْهَلُ",
+          "أَثْقَلُ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "أَسْهَلُ تَدُلُّ عَلَى زِيَادَةِ السُّهُولَةِ.",
+          "de": "Ashal bedeutet leichter im Sinn von einfacher."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أَيُّ جُمْلَةٍ تُقَارِنُ فِي السُّرْعَةِ؟",
+          "de": "Welcher Satz vergleicht die Geschwindigkeit?"
+        },
+        "options": [
+          "الْقِطَارُ أَسْرَعُ مِنَ الدَّرَّاجَةِ.",
+          "الْكِتَابُ عَلَى الطَّاوِلَةِ.",
+          "الْجَوُّ بَارِدٌ."
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "أَسْرَعُ مِنْ تَعْبِيرُ مُقَارَنَةٍ.",
+          "de": "Asraʿ min vergleicht die Geschwindigkeit."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "مَا مَعْنَى «أَغْلَى مِنْ»؟",
+          "de": "Was bedeutet aġlā min?"
+        },
+        "options": [
+          "حَجْمُهُ أَصْغَرُ",
+          "لَوْنُهُ أَفْتَحُ",
+          "سِعْرُهُ أَعْلَى"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الْغَلَاءُ يَتَعَلَّقُ بِالسِّعْرِ هُنَا.",
+          "de": "Gemeint ist ein höherer Preis."
+        }
+      }
+    ]
+  },
+  {
+    "id": "past-future-context",
+    "glyph": "جُمْلَةٌ",
+    "stage": "build",
+    "category": "syntax",
+    "prerequisites": [
+      "sentence-types",
+      "basic-verbs"
+    ],
+    "title": {
+      "ar": "الماضي والمستقبل في السياق",
+      "de": "Vergangenheit und Zukunft im Kontext"
+    },
+    "summary": {
+      "ar": "نَسْرُدُ مَا حَدَثَ بِالْمَاضِي، وَنُعَبِّرُ عَنْ خُطَّةٍ بِالسِّينِ أَوْ سَوْفَ مَعَ الْمُضَارِعِ.",
+      "de": "Vergangenes im Perfekt erzählen und Pläne mit sa- oder sawfa und Präsens ausdrücken."
+    },
+    "intro": {
+      "ar": "نَسْرُدُ مَا حَدَثَ بِالْمَاضِي، وَنُعَبِّرُ عَنْ خُطَّةٍ بِالسِّينِ أَوْ سَوْفَ مَعَ الْمُضَارِعِ.",
+      "de": "Vergangenes im Perfekt erzählen und Pläne mit sa- oder sawfa und Präsens ausdrücken."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "حَدَثَ فِي الْمَاضِي",
+          "de": "Vergangenes erzählen"
+        },
+        "body": {
+          "ar": "يَدُلُّ الْفِعْلُ الْمَاضِي عَلَى حَدَثٍ سَبَقَ وَقْتَ الْكَلَامِ. تُسَاعِدُنَا كَلِمَاتٌ مِثْلُ «أَمْسِ» وَ«الْأُسْبُوعَ الْمَاضِيَ» عَلَى فَهْمِ الزَّمَنِ.",
+          "de": "Das Perfekt erzählt ein Ereignis vor dem Sprechzeitpunkt. Wörter wie gestern und letzte Woche geben zusätzlichen Kontext."
+        },
+        "examples": [
+          {
+            "ar": "زُرْتُ جَدَّتِي أَمْسِ.",
+            "de": "Ich besuchte gestern meine Großmutter."
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "خُطَّةٌ لِلْمُسْتَقْبَلِ",
+          "de": "Einen Plan ausdrücken"
+        },
+        "body": {
+          "ar": "تَدْخُلُ السِّينُ أَوْ «سَوْفَ» عَلَى الْمُضَارِعِ لِلدَّلَالَةِ عَلَى الْمُسْتَقْبَلِ. تَلْتَصِقُ السِّينُ بِالْفِعْلِ، وَتُكْتَبُ سَوْفَ كَلِمَةً مُسْتَقِلَّةً. يَبْقَى الْمُضَارِعُ مَرْفُوعًا إِذَا لَمْ يَدْخُلْ عَلَيْهِ نَاصِبٌ أَوْ جَازِمٌ.",
+          "de": "Sa- und sawfa stehen vor dem Präsens und verweisen auf die Zukunft. Sa- wird angeschrieben, sawfa getrennt. Sie allein verändern den Indikativ nicht."
+        },
+        "examples": [
+          {
+            "ar": "سَأَزُورُ جَدَّتِي غَدًا.",
+            "de": "Ich werde morgen meine Großmutter besuchen."
+          },
+          {
+            "ar": "سَوْفَ نَكْتُبُ رِسَالَةً.",
+            "de": "Wir werden einen Brief schreiben."
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "نَسْرُدُ مَا حَدَثَ بِالْمَاضِي، وَنُعَبِّرُ عَنْ خُطَّةٍ بِالسِّينِ أَوْ سَوْفَ مَعَ الْمُضَارِعِ.",
+      "de": "Vergangenes im Perfekt erzählen und Pläne mit sa- oder sawfa und Präsens ausdrücken."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أَيُّ فِعْلٍ يَدُلُّ عَلَى الْمَاضِي؟",
+          "de": "Welche Form steht im Perfekt?"
+        },
+        "options": [
+          "كَتَبْتُ",
+          "سَأَكْتُبُ",
+          "سَوْفَ أَكْتُبُ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "كَتَبْتُ تَدُلُّ عَلَى حَدَثٍ مَاضٍ.",
+          "de": "Katabtu bezeichnet ein vergangenes Ereignis."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أَيُّ كَلِمَةٍ تَدُلُّ عَلَى الْمُسْتَقْبَلِ؟",
+          "de": "Welches Wort verweist auf die Zukunft?"
+        },
+        "options": [
+          "أَمْسِ",
+          "الْبَارِحَةَ",
+          "غَدًا"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "غَدًا هُوَ الْيَوْمُ التَّالِي.",
+          "de": "Ġadan bedeutet morgen."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أَيُّ تَرْكِيبٍ صَحِيحٌ؟",
+          "de": "Welche Verbindung ist richtig?"
+        },
+        "options": [
+          "سَأَقْرَأَ",
+          "سَأَقْرَأُ",
+          "سَقَرَأْتُ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "تَدْخُلُ السِّينُ عَلَى الْمُضَارِعِ الْمَرْفُوعِ.",
+          "de": "Sa- steht hier vor dem Präsens im Indikativ."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "كَيْفَ نَكْتُبُ سَوْفَ؟",
+          "de": "Wie schreibt man sawfa?"
+        },
+        "options": [
+          "كَلِمَةً مُسْتَقِلَّةً",
+          "جُزْءًا مِنَ الْمَاضِي",
+          "مُتَّصِلَةً بِآخِرِ الْفِعْلِ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "سَوْفَ تَسْبِقُ الْمُضَارِعَ كَكَلِمَةٍ.",
+          "de": "Sawfa ist ein eigenes Wort vor dem Präsens."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أُكْمِلُ: أَمْسِ ___ رِسَالَةً.",
+          "de": "Ergänze einen vergangenen Vorgang."
+        },
+        "options": [
+          "سَأَكْتُبُ",
+          "سَوْفَ أَكْتُبُ",
+          "كَتَبْتُ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "أَمْسِ تُنَاسِبُ الْمَاضِيَ هُنَا.",
+          "de": "Gestern passt hier zum Perfekt."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أُكْمِلُ لِلتَّخْطِيطِ: غَدًا ___ إِلَى الْمَكْتَبَةِ.",
+          "de": "Ergänze den Plan."
+        },
+        "options": [
+          "ذَهَبَتْ",
+          "سَأَذْهَبُ",
+          "ذَهَبْتُ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "السِّينُ وَغَدًا تُوَضِّحَانِ الْخُطَّةَ.",
+          "de": "Sa- und morgen kennzeichnen den Plan."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أَيُّ صِيغَةٍ تُنَاسِبُ «نَحْنُ»؟",
+          "de": "Welche Zukunftsform passt zu wir?"
+        },
+        "options": [
+          "سَوْفَ نَقْرَأُ",
+          "سَوْفَ يَقْرَأُ",
+          "سَوْفَ تَقْرَأِينَ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "نُونُ نَقْرَأُ لِلْمُتَكَلِّمِينَ.",
+          "de": "Na- kennzeichnet hier wir."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "مَا زَمَنُ «زُرْتُ» فِي «زُرْتُهُ ثُمَّ رَجَعْتُ»؟",
+          "de": "Welche Zeitform hat zurtu?"
+        },
+        "options": [
+          "الْمُسْتَقْبَلُ",
+          "الْأَمْرُ",
+          "الْمَاضِي"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الْفِعْلَانِ يَسْرُدَانِ حَدَثَيْنِ مَاضِيَيْنِ.",
+          "de": "Beide Verben erzählen vergangene Ereignisse."
+        }
+      }
+    ]
+  }
+]

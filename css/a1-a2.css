@@ -1,0 +1,6 @@
+.unit-grammar-context{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:18px;margin-block-end:20px;background:#edf2df;border:1px solid #b3c599;border-radius:16px;scroll-margin-top:80px}
+.unit-grammar-context strong{flex-basis:100%;font-size:22px}
+.unit-grammar-context a{display:inline-flex;min-height:44px;align-items:center;text-decoration:none}
+.olive-app .unit-grammar-context a[aria-current="page"]{background:#214f3b!important;color:#fff!important;border-color:#214f3b!important}
+#lesson-title{scroll-margin-top:90px}
+@media(max-width:480px){.unit-grammar-context{padding:12px;gap:8px}.unit-grammar-context a{flex:1 1 42%;justify-content:center;text-align:center}}

@@ -35,9 +35,9 @@ DEFINITIONS=[
   'description':'الحروف وأشكالها، الحركات، الكتابة، الأصوات المتشابهة، الهجاء ومدرّب القراءة.','descriptionDe':'Alphabet, Schreibformen, Vokale, Schreiben, ähnliche Laute, Lautübungen und Lesetrainer.',
   'routes':[['letters.html','الحروف وتدريباتها','Alphabet und Übungen'],['reading.html','القراءة والهجاء','Lesen und Buchstabieren'],['reading-trainer.html','مدرّب القراءة','Lesetrainer'],['reading-exercises.html','تدريبات على القراءة','Lesewerkstatt'],['progress.html','تقدّمي','Mein Lernstand']],
   'levels':[],'statFields':['readingTrainerV1','phonicsV1','readingExercisesV1'],'practiceKeys':['jisrPracticeV1:sounds']},
- {'id':'a1-a2','ar':'حروف – العربية للمبتدئين A1 وA2','de':'Huroof – Arabisch A1 und A2','archive':'Huroof-A1-A2.zip',
+ {'id':'a1-a2','ar':'حروف – المستوى الأول والمستوى الثاني','de':'Huroof – Arabisch · Stufe 1 und Stufe 2','archive':'Huroof-A1-A2.zip',
   'description':'مفردات المستويين، القواعد الأساسية، الجمل، القصص والمهارات ضمن وحدات مترابطة.','descriptionDe':'Wortschatz, Grundlagen, Sätze, Geschichten und Fertigkeiten in zusammenhängenden Einheiten.',
-  'routes':[['vocabulary.html','المفردات A1 وA2','Wortschatz A1 und A2'],['skills.html','المهارات والوحدات','Fertigkeiten und Einheiten'],['sentences.html','تكوين الجمل','Sätze bilden'],['stories.html','قصص قصيرة','Kurzgeschichten'],['grammar.html','القواعد والإملاء','Grammatik und Rechtschreibung'],['verbs.html','تصريف الأفعال الشائعة','Häufige Verben'],['review.html','مراجعة المفردات','Wörter wiederholen'],['stats.html','تقدّمي','Mein Lernstand']],
+  'routes':[['vocabulary.html','مفردات المستوى الأول والثاني','Wortschatz der ersten und zweiten Stufe'],['sentences.html','تكوين جمل','Sätze bilden'],['stories.html','قصص قصيرة','Kurzgeschichten'],['skills.html','المهارات والوحدات','Fertigkeiten und Einheiten'],['grammar.html','القواعد والإملاء','Grammatik und Rechtschreibung'],['review.html','مراجعة المفردات','Wörter wiederholen'],['stats.html','تقدّمي','Mein Lernstand']],
   'levels':['A1','A2'],'statFields':['skillsV1'],'practiceKeys':['jisrPracticeV1:sentences','jisrPracticeV1:stories']},
  {'id':'b1-b2','ar':'حروف – تطوير العربية B1 وB2','de':'Huroof – Arabisch B1 und B2','archive':'Huroof-B1-B2.zip',
   'description':'مفردات B1 وB2، ودروس القواعد والتصريف المتقدّم المتاحة في التطبيق.','descriptionDe':'Wortschatz B1 und B2 sowie die vorhandenen weiterführenden Grammatik- und Verbübungen.',
@@ -120,6 +120,7 @@ for definition in DEFINITIONS:
  else:pages+=VOCAB_PAGES+BOOKS
  pages=list(dict.fromkeys(pages));d['pages']=[n+'.html' for n in pages]
  ids=list(basic_ids if ident=='a1-a2' else advanced_ids if ident=='b1-b2' else [])
+ if ident=='a1-a2':ids+=['present-inflection','imperative-construction']
  d.update(grammarIds=ids,basicLessons=basic_ids,advancedLessons=advanced_ids,owners=owners,editions=all_details,suite=True)
  d['routes']=[{'href':href,'ar':ar,'de':de,'description':'افتح الدروس والتدريبات وتابع من حيث توقفت.','descriptionDe':'Lektionen und Übungen öffnen und weiterlernen.'} for href,ar,de in d['routes']]
  scoped={k:v for k,v in catalog.items() if k not in ['bookVocabulary','bookVocabulary2']}
@@ -136,13 +137,17 @@ for definition in DEFINITIONS:
  for l in lessons:l['prerequisites']=[i for i in l.get('prerequisites',[]) if i in ids]
  stages=[{**s,'ids':[i for i in s['ids'] if i in ids]} for s in data['grammar']['stages'] if any(i in ids for i in s['ids'])]
  if ident=='a1-a2':
-  for filename in ['a1-a2-interrogatives.json','a1-a2-time-place.json']:
-   extra=json.loads((ROOT/'data'/filename).read_text());lessons.append(extra);ids.append(extra['id'])
+  extra_lessons=[json.loads((ROOT/'data'/filename).read_text()) for filename in ['a1-a2-interrogatives.json','a1-a2-time-place.json']]+json.loads((ROOT/'data/a1-a2-unit-grammar.json').read_text())
+  for extra in extra_lessons:
+   lessons.append(extra);ids.append(extra['id'])
    for stage in stages:
     if stage['id']==extra['stage']:stage['ids'].append(extra['id'])
+  d['unitGrammarLinks']=json.loads((ROOT/'data/a1-a2-unit-links.json').read_text())
+  lessons.sort(key=lambda lesson:[i for stage in stages for i in stage['ids']].index(lesson['id']))
  grammar={**data['grammar'],'lessons':lessons,'stages':stages,'basicVerbs':data['grammar']['basicVerbs'] if ident=='a1-a2' else []}
- verbs=data['verbs'][:30] if ident=='a1-a2' else data['verbs'][30:] if ident=='b1-b2' else []
+ verbs=data['verbs']+json.loads((ROOT/'data/a1-a2-extra-verbs.json').read_text()) if ident=='a1-a2' else data['verbs'][30:] if ident=='b1-b2' else []
  practice={**data['practice'],'sentences':data['practice']['sentences'] if ident=='a1-a2' else [],'stories':data['practice']['stories'] if ident=='a1-a2' else [],'sounds':data['practice']['sounds'] if ident=='start' else []}
+ if ident=='a1-a2':practice['stories']=sorted(practice['stories']+json.loads((ROOT/'data/a1-a2-story-additions.json').read_text()),key=lambda story:story['level'])
  practice['audio']=audio_subset(practice['audio'],[practice['sentences'],practice['stories'],practice['sounds']])
  counts={'vocabularyLists':len(scoped['lists']),'vocabularyWords':sum(len(l['words']) for l in scoped['lists']),'bookVocabularyLists':len(all_lists)-len(scoped['lists']),'bookVocabularyWords':sum(len(l['words']) for l in all_lists)-sum(len(l['words']) for l in scoped['lists']),'grammarLessons':len(lessons),'grammarQuestions':sum(len(l['questions']) for l in lessons),'verbs':len(verbs),'skillsUnits':12 if ident=='a1-a2' else 0,'stories':len(practice['stories']),'sentences':len(practice['sentences']),'letters':28 if ident=='start' else 0,'readingWords':150 if ident=='start' else 0,'books':4 if ident=='books' else 0}
  counts['readingActivities']=64 if ident=='start' else 0
@@ -155,6 +160,12 @@ for definition in DEFINITIONS:
  overrides['js/app.js']=(ROOT/'js/app.js').read_text()+'''\n(()=>{const E=window.HuroofEdition;if(E?.initialList.length&&!window.JisrStorage.local.getItem('vocabList'))window.VocabApp.saveVocabList(E.initialList,E.initialSource)})();'''
  source=(ROOT/'js/verb-data.js').read_text();start=source.index('  const verbs = ');end=source.index('  const pronouns = ')
  overrides['js/verb-data.js']=source[:start]+'  const verbs = '+dump(verbs)+';\n'+source[end:]
+ if ident=='a1-a2':
+  overrides['js/verb-data.js']=overrides['js/verb-data.js'].replace("    let form = conjugate(verb, 'present', person);", "    if (verb.moods?.[mood]) return verb.moods[mood][person.index];\n    let form = conjugate(verb, 'present', person);")
+  source=(ROOT/'js/pages/verbs.js').read_text().replace('const structureDe = {','const structureDe = {"ثلاثي مجرد":"dreiradikaliges Grundverb",')
+  families={k:{'ar':ar,'de':de} for k,ar,de in [('sound','صحيح سالم','Regelmäßig'),('hamzated','صحيح مهموز','Mit Hamza'),('doubled','صحيح مضاعف','Geminiert'),('example','معتل مثال','Anfangsschwach'),('hollow','معتل أجوف','Mittelschwach'),('defective','معتل ناقص','Endschwach')]}
+  source=re.sub(r'    const kinds = \{.*?    const shuffle', '    const kinds = '+dump(families)+';\n    const shuffle',source,count=1,flags=re.S).replace('item.kind === kind','item.family === kind')
+  overrides['js/pages/verbs.js']=source
  sound_function=(ROOT/'js/practice-data.js').read_text().split('  function soundQuestions(')[1].split('  const variants = ')[0]
  overrides['js/practice-data.js']='(()=>{const data='+dump(practice)+';function soundQuestions('+sound_function+'\ndata.soundQuestions=soundQuestions;window.ArabicPracticeData=data})();'
  for filename,variable in [('vocab-audio-data.js','ArabicVocabularyAudio'),('book-vocabulary-audio.js','ArabicBookVocabularyAudio')]:
@@ -162,10 +173,11 @@ for definition in DEFINITIONS:
   audio=json.loads(subprocess.check_output(['node','-e',capture],cwd=ROOT,text=True));audio['audio']=audio_subset(audio['audio'],all_lists)
   overrides['js/'+filename]='window.'+variable+'='+dump(audio)+';'
  design=(ROOT/'js/design.js').read_text();nav=[['index.html','home','Übersicht','نظرة عامة']]+[[r['href'],'book',r['de'],r['ar']] for r in d['routes']]
- if ident!='start':nav.insert(-1,['test.html','check','Vokabeltests','اختبارات المفردات'])
+ if ident not in ['start','a1-a2']:nav.insert(-1,['test.html','check','Vokabeltests','اختبارات المفردات'])
  nav.append(['apps.html','home','Weitere Apps','التطبيقات الأخرى'])
  design=re.sub(r'    const nav =.*?    const activeHref =.*?;\n','    const nav = '+dump(nav)+'.concat(window.OliveAccess?.isAdmin() ? [["admin.html","admin","Verwaltung","لوحة الإدارة"]] : []).map(([href,_,de,ar])=>[href,iconForPage(href),de,ar]);\n    const activeHref = page;\n',design,count=1,flags=re.S)
  overrides['js/design.js']=design
+ if ident=='a1-a2':overrides['js/design.js']=design.replace('const activeHref = page;', 'const activeHref = page === "verbs.html" ? "grammar.html" : page;')
  route_source=(ROOT/'js/learning-path.js').read_text();first=route_source.index('  const stages = ');last=route_source.index('  const groups = ')
  overrides['js/learning-path.js']=route_source[:first]+'  const stages = '+dump([{'id':r['href'].split('.')[0],**r} for r in d['routes']])+';\n'+route_source[last:]
  if ident=='books':
@@ -186,10 +198,17 @@ for definition in DEFINITIONS:
   source=re.sub(r'<script\b[^>]*src=["\']([^"\']+)["\'][^>]*>\s*</script>',lambda m:'' if m[1].split('?')[0] in removed else m[0],source)
   if name in ['index','apps','progress']:source=re.sub(r'<p[^>]*class="teacher-exams-context".*?</p>','',source,flags=re.S)
   if ident!='a1-a2':source=re.sub(r'<section class="home-panel"><h2 data-ar="استعمل مفرداتك.*?</section>','',source,flags=re.S)
+  if ident=='a1-a2':
+   if name in ['sentences','stories']:source=re.sub(r'<nav\b[^>]*class="practice-links".*?</nav>','',source,flags=re.S)
+   if name=='vocabulary':source=source.replace('A1 ← B2','المستوى الأول ← المستوى الثاني').replace('A1 → B2','Stufe 1 → Stufe 2').replace('من A1 إلى B2','في المستوى الأول والمستوى الثاني').replace('von A1 bis B2','in Stufe 1 und Stufe 2')
+   if name=='stories':source=source.replace('ست قصص مصوّرة للحياة اليومية.','٢٤ قصة للحياة اليومية: ١٢ قصة لكل مستوى.').replace('Sechs illustrierte Alltagsgeschichten.','24 Alltagsgeschichten: 12 pro Stufe.')
+   if name=='verbs':source=source.replace('٥١ فعلاً','١٥١ فعلاً').replace('51 Verben','151 Verben')
   source=source.replace('</title>',' · '+d['ar']+'</title>')
   if a.hosting:source=source.replace('<html ','<html data-olive-hosted="true" ',1)
   source=source.replace('</head>','<link rel="stylesheet" href="css/editions.css"><script src="js/edition-ui.js" defer></script></head>')
-  if ident=='a1-a2':source=source.replace('</head>','<script src="js/pages/a1-back-navigation.js" defer></script></head>')
+  if ident=='a1-a2':
+   source=source.replace('</head>','<link rel="stylesheet" href="css/a1-a2.css"><script src="js/pages/a1-back-navigation.js" defer></script><script src="js/pages/a1-presentation.js" defer></script></head>')
+   if name=='grammar':source=source.replace('</head>','<script src="js/pages/a1-unit-grammar.js" defer></script></head>')
   source=source.replace('<head>','<head><script src="js/edition-config.js"></script><script src="js/edition.js"></script>',1)
   return source
  included={}

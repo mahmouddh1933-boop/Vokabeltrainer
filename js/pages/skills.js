@@ -505,7 +505,9 @@
           button(t("إيقاف الصوت", "Audio stoppen"), stop),
           link(
             t("شرح القاعدة كاملًا", "Zur Grammatiklektion"),
-            unit.grammar.href,
+            window.HuroofEdition?.unitGrammarLinks?.[unit.id]?.length
+              ? "grammar.html?unit=" + unit.id + "#" + window.HuroofEdition.unitGrammarLinks[unit.id][0]
+              : unit.grammar.href,
           ),
         );
         content.append(grammar);
