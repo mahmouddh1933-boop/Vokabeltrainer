@@ -2,7 +2,7 @@
   "hosting": {
     "public": "firebase-public",
     "predeploy": [
-      "python3 tools/build-hosting.py"
+      "python3 tools/build-suite.py --directory firebase-public --hosting"
     ],
     "ignore": [
       "firebase.json",
@@ -11,7 +11,7 @@
     ],
     "headers": [
       {
-        "source": "/pwa-worker.js",
+        "source": "**/pwa-worker.js",
         "headers": [
           {
             "key": "Cache-Control",
@@ -20,7 +20,7 @@
         ]
       },
       {
-        "source": "/manifest.webmanifest",
+        "source": "**/manifest.webmanifest",
         "headers": [
           {
             "key": "Cache-Control",
@@ -33,7 +33,7 @@
         ]
       },
       {
-        "source": "/js/cloud-sync*.js",
+        "source": "**/js/cloud-sync*.js",
         "headers": [
           {
             "key": "Cache-Control",
@@ -71,6 +71,168 @@
             "value": "strict-origin-when-cross-origin"
           }
         ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/letters.html",
+        "destination": "/start/letters.html",
+        "type": 302
+      },
+      {
+        "source": "/huruf.html",
+        "destination": "/start/huruf.html",
+        "type": 302
+      },
+      {
+        "source": "/letter-tests.html",
+        "destination": "/start/letter-tests.html",
+        "type": 302
+      },
+      {
+        "source": "/sounds.html",
+        "destination": "/start/sounds.html",
+        "type": 302
+      },
+      {
+        "source": "/reading.html",
+        "destination": "/start/reading.html",
+        "type": 302
+      },
+      {
+        "source": "/reading-trainer.html",
+        "destination": "/start/reading-trainer.html",
+        "type": 302
+      },
+      {
+        "source": "/vocabulary.html",
+        "destination": "/a1-a2/vocabulary.html",
+        "type": 302
+      },
+      {
+        "source": "/lernseite.html",
+        "destination": "/a1-a2/lernseite.html",
+        "type": 302
+      },
+      {
+        "source": "/test.html",
+        "destination": "/a1-a2/test.html",
+        "type": 302
+      },
+      {
+        "source": "/test1.html",
+        "destination": "/a1-a2/test1.html",
+        "type": 302
+      },
+      {
+        "source": "/test2.html",
+        "destination": "/a1-a2/test2.html",
+        "type": 302
+      },
+      {
+        "source": "/test3.html",
+        "destination": "/a1-a2/test3.html",
+        "type": 302
+      },
+      {
+        "source": "/test4.html",
+        "destination": "/a1-a2/test4.html",
+        "type": 302
+      },
+      {
+        "source": "/test5.html",
+        "destination": "/a1-a2/test5.html",
+        "type": 302
+      },
+      {
+        "source": "/test6.html",
+        "destination": "/a1-a2/test6.html",
+        "type": 302
+      },
+      {
+        "source": "/ergebnis.html",
+        "destination": "/a1-a2/ergebnis.html",
+        "type": 302
+      },
+      {
+        "source": "/review.html",
+        "destination": "/a1-a2/review.html",
+        "type": 302
+      },
+      {
+        "source": "/stats.html",
+        "destination": "/a1-a2/stats.html",
+        "type": 302
+      },
+      {
+        "source": "/grammar.html",
+        "destination": "/a1-a2/grammar.html",
+        "type": 302
+      },
+      {
+        "source": "/verbs.html",
+        "destination": "/a1-a2/verbs.html",
+        "type": 302
+      },
+      {
+        "source": "/skills.html",
+        "destination": "/a1-a2/skills.html",
+        "type": 302
+      },
+      {
+        "source": "/sentences.html",
+        "destination": "/a1-a2/sentences.html",
+        "type": 302
+      },
+      {
+        "source": "/stories.html",
+        "destination": "/a1-a2/stories.html",
+        "type": 302
+      },
+      {
+        "source": "/books.html",
+        "destination": "/books/books.html",
+        "type": 302
+      },
+      {
+        "source": "/book-level-two.html",
+        "destination": "/books/book-level-two.html",
+        "type": 302
+      },
+      {
+        "source": "/youth-book-two-part-one.html",
+        "destination": "/books/youth-book-two-part-one.html",
+        "type": 302
+      },
+      {
+        "source": "/youth-training-two.html",
+        "destination": "/books/youth-training-two.html",
+        "type": 302
+      },
+      {
+        "source": "/arabic-youth.html",
+        "destination": "/books/arabic-youth.html",
+        "type": 302
+      },
+      {
+        "source": "/exams.html",
+        "destination": "/books/exams.html",
+        "type": 302
+      },
+      {
+        "source": "/placement.html",
+        "destination": "/books/placement.html",
+        "type": 302
+      },
+      {
+        "source": "/admin.html",
+        "destination": "/books/admin.html",
+        "type": 302
+      },
+      {
+        "source": "/login.html",
+        "destination": "/books/login.html",
+        "type": 302
       }
     ]
   },

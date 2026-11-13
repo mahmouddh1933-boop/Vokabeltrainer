@@ -1,5 +1,16 @@
 # حروف من الزيتون · Arabisch lernen
 
+## Vier eigenständige Lern-Apps · أربعة تطبيقات تعليمية
+
+Die Hauptanwendung ist jetzt in vier vollständige Ausgaben aufgeteilt. Quellen und bisherige Lernstände bleiben erhalten. Die vier Apps nutzen beim gemeinsamen Hosting dasselbe Firebase-Konto und speichern ihren Lernfortschritt getrennt.
+
+- [البداية والقراءة · Alphabet und Lesen](downloads/Huroof-Start.zip)
+- [العربية للمبتدئين A1/A2](downloads/Huroof-A1-A2.zip)
+- [تطوير العربية B1/B2](downloads/Huroof-B1-B2.zip)
+- [الكتب والاختبارات · Bücher, Buchwortschatz und Prüfungen](downloads/Huroof-Books.zip)
+
+[Kleines Paket für die gemeinsame Firebase-Einrichtung](downloads/Huroof-Suite-Setup.zip) · [التقسيم وطريقة الإعداد بالعربية](suite/README-AR.md). Die Firebase-Vorbereitung baut mit `python3 tools/build-suite.py --directory firebase-public --hosting` die neue Auswahlseite und vier App-Pfade. Zum Erstellen der portablen ZIPs: `python3 tools/build-suite.py --directory /tmp/huroof-suite --archives`. Die Hinweise und Downloads zur bisherigen Gesamtausgabe stehen weiterhin unten.
+
 Ein deutsch-arabischer Vokabeltrainer mit einem neuen responsiven Design: Lern-Dashboard, A1–B2-Lernpfad, Lernkarten, Alphabet, sechs Testarten, einen interaktiven Kurs zur Verbkonjugation, Fehlerwiederholung und persönlicher Fortschritt. Die Oberfläche unterstützt Deutsch und Arabisch einschließlich Rechts-nach-links-Darstellung.
 
 Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](downloads/Huroof-Werbung-DE.mp4), [العربية](downloads/Huroof-Werbung-AR.mp4) oder [beide Filme mit Begleitmaterial als ZIP](downloads/Huroof-Werbevideos-DE-AR.zip). [Inhalt und bearbeitbare Quellen](media/promo/README.md).

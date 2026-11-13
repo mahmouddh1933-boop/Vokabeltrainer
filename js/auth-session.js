@@ -24,14 +24,16 @@
   function nextPage(value) {
     try {
       const url = new URL(value || "index.html", location.href);
+      const base = new URL(".", location.href);
       if (
         url.origin === location.origin &&
-        /^\/[a-z0-9-]+\.html$/.test(url.pathname) &&
+        url.pathname.startsWith(base.pathname) &&
+        /^[a-z0-9-]+\.html$/.test(url.pathname.slice(base.pathname.length)) &&
         !url.pathname.endsWith("/login.html")
       )
         return url.pathname + url.search + url.hash;
     } catch (_) {}
-    return "/index.html";
+    return new URL("index.html", location.href).pathname;
   }
   function goToLogin() {
     const target = new URL("login.html", location.href);
@@ -218,7 +220,8 @@
     storage.deferReady();
     for (const script of scripts) {
       try {
-        await loadScript(script.dataset.authSrc);
+        if (window.HuroofEdition?.runScript) await window.HuroofEdition.runScript(script);
+        else await loadScript(script.dataset.authSrc);
       } catch (error) {
         // Spreadsheet import is optional; cached learning content remains usable.
         if (

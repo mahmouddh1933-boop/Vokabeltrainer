@@ -91,8 +91,9 @@
     );
   }
   function firebaseTransport(userId) {
-    const head = database.doc("users/" + userId + "/sync/state");
-    const records = database.collection("users/" + userId + "/learning");
+    const base = "users/" + userId + (window.HuroofEdition ? "/apps/" + window.HuroofEdition.id : "");
+    const head = database.doc(base + "/sync/state");
+    const records = database.collection(base + "/learning");
     const timestamp = () =>
       window.firebase.firestore.FieldValue.serverTimestamp();
     function readHead(snapshot) {

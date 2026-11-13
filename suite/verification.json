@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "date": "2026-11-13",
+  "sourceBeforeSplit": "e0c21e5e49dafca498b340b9fbb1ea438e0b2161",
+  "editions": [
+    {
+      "id": "start",
+      "vocabularyLists": 0,
+      "vocabularyWords": 0,
+      "bookVocabularyLists": 0,
+      "bookVocabularyWords": 0,
+      "grammarLessons": 0,
+      "grammarQuestions": 0,
+      "verbs": 0,
+      "skillsUnits": 0,
+      "stories": 0,
+      "sentences": 0,
+      "letters": 28,
+      "readingWords": 150,
+      "books": 0,
+      "files": 831,
+      "bytes": 30305190
+    },
+    {
+      "id": "a1-a2",
+      "vocabularyLists": 60,
+      "vocabularyWords": 1200,
+      "bookVocabularyLists": 0,
+      "bookVocabularyWords": 0,
+      "grammarLessons": 17,
+      "grammarQuestions": 204,
+      "verbs": 30,
+      "skillsUnits": 12,
+      "stories": 6,
+      "sentences": 120,
+      "letters": 0,
+      "readingWords": 0,
+      "books": 0,
+      "files": 1709,
+      "bytes": 28847434
+    },
+    {
+      "id": "b1-b2",
+      "vocabularyLists": 60,
+      "vocabularyWords": 1200,
+      "bookVocabularyLists": 0,
+      "bookVocabularyWords": 0,
+      "grammarLessons": 20,
+      "grammarQuestions": 260,
+      "verbs": 21,
+      "skillsUnits": 0,
+      "stories": 0,
+      "sentences": 0,
+      "letters": 0,
+      "readingWords": 0,
+      "books": 0,
+      "files": 1505,
+      "bytes": 23661930
+    },
+    {
+      "id": "books",
+      "vocabularyLists": 0,
+      "vocabularyWords": 0,
+      "bookVocabularyLists": 50,
+      "bookVocabularyWords": 984,
+      "grammarLessons": 0,
+      "grammarQuestions": 0,
+      "verbs": 0,
+      "skillsUnits": 0,
+      "stories": 0,
+      "sentences": 0,
+      "letters": 0,
+      "readingWords": 0,
+      "books": 4,
+      "files": 1992,
+      "bytes": 59086936
+    }
+  ],
+  "checks": {
+    "nodeStorageAndCloudSync": "20 passed",
+    "browserSmoke": "All four editions, all learning pages, DE/AR, 320/390/768/1280 px, flashcards, vocabulary grading, grammar, verbs, placement, legacy imports and app isolation passed",
+    "packages": "All four ZIP CRC checks, PWA asset SHA256 checks, exact vocabulary/catalog boundary checks, inline JS/CSS packaging and assembly-kit configuration passed",
+    "authBootstrap": "Eight browser checks passed using stubbed Firebase: four signed-out redirects to own login and four signed-in app starts"
+  },
+  "limitations": [
+    "No live Firebase data or deployment accessed.",
+    "Official Firestore rule tests supplied but not executed: emulator download blocked with HTTP 403.",
+    "Browser file:// navigation blocked by administrator policy; interactive checks used a local HTTP server. ZIP scripts/styles are embedded and archive integrity was separately checked.",
+    "Advanced app contains existing B1/B2 vocabulary and available advanced grammar/verbs; no full B1/B2 integrated units were present in the source."
+  ],
+  "downloads": [
+    {
+      "file": "Huroof-Start.zip",
+      "bytes": 22508275,
+      "sha256": "c0e22ec29819f8ddfb4fc603ea324bd707a290e52f52d03363c4d01376cd6264"
+    },
+    {
+      "file": "Huroof-A1-A2.zip",
+      "bytes": 20577280,
+      "sha256": "fc9fa186145a317a8787414f8d821872f7d692d3551f7d7c623078bdaa914f49"
+    },
+    {
+      "file": "Huroof-B1-B2.zip",
+      "bytes": 16644937,
+      "sha256": "b5d07c5e6f820d32bb867185db23fef05dc0dbcb60865aec5aa0ddd4575a46c3"
+    },
+    {
+      "file": "Huroof-Books.zip",
+      "bytes": 47597188,
+      "sha256": "ae2b58b7f8db9d3f16c3ef5235218bad0132642f450e9315acf26ec231c911dc"
+    },
+    {
+      "file": "Huroof-Suite-Setup.zip",
+      "bytes": 9396,
+      "sha256": "28846cbb16c078b3a24c876d31b64ff0aed4847bb555bdb7433829e5c9d8a777"
+    }
+  ]
+}

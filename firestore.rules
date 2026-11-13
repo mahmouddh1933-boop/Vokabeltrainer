@@ -100,6 +100,32 @@ service cloud.firestore {
         && request.resource.data.updatedAt == request.time;
       allow delete: if false;
     }
+    function suiteApp(appId) {
+      return appId in ['start', 'a1-a2', 'b1-b2', 'books'];
+    }
+    match /users/{uid}/apps/{appId}/learning/{key} {
+      allow read: if owner(uid) && suiteApp(appId);
+      allow create, update: if owner(uid) && suiteApp(appId) && known(key)
+        && request.resource.data.keys().hasOnly(['schema', 'revision', 'value', 'applied', 'updatedAt'])
+        && request.resource.data.schema == 1
+        && request.resource.data.revision is int
+        && request.resource.data.revision == (resource == null ? 1 : resource.data.revision + 1)
+        && (request.resource.data.value == null || (request.resource.data.value is string && request.resource.data.value.size() <= 600000))
+        && request.resource.data.applied is map && request.resource.data.applied.size() <= 1024
+        && request.resource.data.updatedAt == request.time;
+      allow delete: if false;
+    }
+    match /users/{uid}/apps/{appId}/sync/state {
+      allow read: if owner(uid) && suiteApp(appId);
+      allow create, update: if owner(uid) && suiteApp(appId)
+        && request.resource.data.keys().hasOnly(['schema', 'version', 'records', 'updatedAt'])
+        && request.resource.data.schema == 1
+        && request.resource.data.version is int
+        && request.resource.data.version == (resource == null ? 1 : resource.data.version + 1)
+        && request.resource.data.records is map && request.resource.data.records.size() <= 20
+        && request.resource.data.updatedAt == request.time;
+      allow delete: if false;
+    }
     match /{document=**} { allow read, write: if false; }
   }
 }

@@ -32,10 +32,17 @@
       "lettersLanguage",
       "oliveLearnerThemeV1",
     ]);
-    const storageKey = (key) =>
-      scope && !sharedKeys.has(key)
+    const storageKey = (key) => {
+      const accountKey = scope && !sharedKeys.has(key)
         ? "oliveAccountV1:" + encodeURIComponent(scope) + ":" + key
         : key;
+      return windowSafeEdition() && !sharedKeys.has(key)
+        ? "huroofSuiteV1:" + windowSafeEdition() + ":" + accountKey
+        : accountKey;
+    };
+    function windowSafeEdition() {
+      return typeof window !== "undefined" ? window.HuroofEdition?.id : null;
+    }
     return {
       setScope(value) {
         scope = typeof value === "string" ? value : "";
@@ -55,9 +62,9 @@
         } catch (_) {
           persistent = false;
         }
-        const prefix = scope
-          ? "oliveAccountV1:" + encodeURIComponent(scope) + ":"
-          : "";
+        // Enumeration must use the same app/account namespace as reads and
+        // writes, including when recovering a pending cloud-sync outbox.
+        const prefix = storageKey("");
         return Array.from(found)
           .filter((key) => typeof key === "string" && key.startsWith(prefix))
           .map((key) => key.slice(prefix.length));
