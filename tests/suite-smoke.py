@@ -3,9 +3,11 @@
 Serve tools/build-suite.py output first. Uses no live Firebase accounts.
 """
 import argparse,json,re
+import unicodedata
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 p=argparse.ArgumentParser();p.add_argument('--directory',type=Path,default=Path('/tmp/huroof-four-apps'));p.add_argument('--base-url',default='http://127.0.0.1:8090');a=p.parse_args();base=a.base_url.rstrip('/')
+def display_form(word):return unicodedata.normalize('NFC',word.replace('\u064bا','ا\u064b'))
 with sync_playwright() as pw:
  b=pw.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox','--autoplay-policy=no-user-gesture-required'])
  ctx=b.new_context(viewport={'width':1280,'height':960});ctx.add_init_script("localStorage.setItem('oliveLearnerThemeV1','neutral');localStorage.setItem('vocabInterfaceLanguage','ar');")
@@ -50,10 +52,10 @@ with sync_playwright() as pw:
    vocab=pg.evaluate('VocabApp.getCurrentVocabList()')
    open_app(ident,'test2')
    for q in pg.locator('.question').all():
-    word=q.locator('.arabic-text').inner_text();answer=next(de for ar,de in vocab if ar==word)
+    word=q.locator('.arabic-text').inner_text();answer=next(de for ar,de in vocab if display_form(ar)==display_form(word))
     for radio in q.locator('input[type=radio]').all():
      if radio.input_value()==answer:radio.check();break
-   pg.locator('#submit-test').click();pg.wait_for_url('**/ergebnis.html');assert pg.evaluate('VocabApp.getStats().totalTests')==1
+   pg.locator('#submit-test').click();pg.wait_for_url('**/ergebnis.html');assert pg.evaluate('VocabApp.getStats().totalTests')==1;assert pg.evaluate('VocabApp.getStats().wrongAnswers')==0
   if ident in ['a1-a2','b1-b2']:
    open_app(ident,'grammar');assert pg.locator('#grammar-lesson-select option').count()==(17 if ident=='a1-a2' else 20)
    pg.locator('#grammar-answers button').first.click();assert pg.locator('#grammar-feedback').inner_text().strip()

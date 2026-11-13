@@ -1,13 +1,14 @@
 """Capture twelve real learning screens per edition as small local WebP previews.
 Serve a suite build before running; no real accounts are used or photographed.
 """
-import argparse,json,io
+import argparse,json,io,unicodedata
 from pathlib import Path
 from PIL import Image
 from playwright.sync_api import sync_playwright
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser();p.add_argument('--directory',type=Path,default=Path('/tmp/huroof-four-apps'));p.add_argument('--base-url',default='http://127.0.0.1:8090');p.add_argument('--app',choices=['start','a1-a2','b1-b2','books']);p.add_argument('--frame',type=int);a=p.parse_args()
 base=a.base_url.rstrip('/')
+def display_form(word):return unicodedata.normalize('NFC',word.replace('\u064bا','ا\u064b'))
 with sync_playwright() as pw:
  browser=pw.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
  context=browser.new_context(viewport={'width':1200,'height':900},device_scale_factor=1,service_workers='block')
@@ -18,7 +19,7 @@ with sync_playwright() as pw:
   page.goto(base+'/'+ident+'/test2.html');page.wait_for_selector('.question')
   words=page.evaluate('VocabApp.getCurrentVocabList()')
   for i,question in enumerate(page.locator('.question').all()):
-   ar=question.locator('.arabic-text').inner_text();correct=next(de for word,de in words if word==ar)
+   ar=question.locator('.arabic-text').inner_text();correct=next(de for word,de in words if display_form(word)==display_form(ar))
    for radio in question.locator('input[type=radio]').all():
     if (radio.input_value()!=correct if i==0 else radio.input_value()==correct):radio.check();break
   page.locator('#submit-test').click();page.wait_for_url('**/ergebnis.html')
