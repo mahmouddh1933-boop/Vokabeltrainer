@@ -77,6 +77,7 @@
     },
   ];
   const groups = {
+    "reading-exercises.html": "reading",
     "reading-trainer.html": "reading",
     "huruf.html": "letters",
     "letter-tests.html": "letters",

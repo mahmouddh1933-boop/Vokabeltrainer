@@ -28,8 +28,8 @@ def write(base,name,data):
 DEFINITIONS=[
  {'id':'start','ar':'حروف – البداية والقراءة','de':'Huroof – Lesen lernen','archive':'Huroof-Start.zip',
   'description':'الحروف وأشكالها، الحركات، الكتابة، الأصوات المتشابهة، الهجاء ومدرّب القراءة.','descriptionDe':'Alphabet, Schreibformen, Vokale, Schreiben, ähnliche Laute, Lautübungen und Lesetrainer.',
-  'routes':[['letters.html','الحروف وتدريباتها','Alphabet und Übungen'],['reading.html','القراءة والهجاء','Lesen und Buchstabieren'],['reading-trainer.html','مدرّب القراءة','Lesetrainer'],['progress.html','تقدّمي','Mein Lernstand']],
-  'levels':[],'statFields':['readingTrainerV1','phonicsV1'],'practiceKeys':['jisrPracticeV1:sounds']},
+  'routes':[['letters.html','الحروف وتدريباتها','Alphabet und Übungen'],['reading.html','القراءة والهجاء','Lesen und Buchstabieren'],['reading-trainer.html','مدرّب القراءة','Lesetrainer'],['reading-exercises.html','تدريبات على القراءة','Lesewerkstatt'],['progress.html','تقدّمي','Mein Lernstand']],
+  'levels':[],'statFields':['readingTrainerV1','phonicsV1','readingExercisesV1'],'practiceKeys':['jisrPracticeV1:sounds']},
  {'id':'a1-a2','ar':'حروف – العربية للمبتدئين A1 وA2','de':'Huroof – Arabisch A1 und A2','archive':'Huroof-A1-A2.zip',
   'description':'مفردات المستويين، القواعد الأساسية، الجمل، القصص والمهارات ضمن وحدات مترابطة.','descriptionDe':'Wortschatz, Grundlagen, Sätze, Geschichten und Fertigkeiten in zusammenhängenden Einheiten.',
   'routes':[['vocabulary.html','المفردات A1 وA2','Wortschatz A1 und A2'],['skills.html','المهارات والوحدات','Fertigkeiten und Einheiten'],['sentences.html','تكوين الجمل','Sätze bilden'],['stories.html','قصص قصيرة','Kurzgeschichten'],['grammar.html','القواعد والإملاء','Grammatik und Rechtschreibung'],['verbs.html','تصريف الأفعال الشائعة','Häufige Verben'],['review.html','مراجعة المفردات','Wörter wiederholen'],['stats.html','تقدّمي','Mein Lernstand']],
@@ -49,10 +49,17 @@ catalog=json.loads((ROOT/'data/vocab_catalog.json').read_text())
 basic_ids=[x['id'] for x in data['grammar']['lessons'] if x['stage'] in ['start','build']]
 advanced_ids=[x['id'] for x in data['grammar']['lessons'] if x['id'] not in basic_ids]
 VOCAB_PAGES=['vocabulary','lernseite','test','test1','test2','test3','test4','test5','test6','ergebnis','review','stats']
-FOUNDATION=['letters','huruf','letter-tests','sounds','reading','reading-trainer']
+FOUNDATION=['letters','huruf','letter-tests','sounds','reading','reading-trainer','reading-exercises']
 BOOKS=['books','book-level-two','youth-book-two-part-one','youth-training-two','arabic-youth','exams','placement']
 owners={**{n+'.html':'start' for n in FOUNDATION},**{n+'.html':'books' for n in BOOKS},**{n+'.html':'a1-a2' for n in ['skills','sentences','stories',*VOCAB_PAGES,'grammar','verbs']}}
-all_details=[{k:d[k] for k in ['id','ar','de','archive','description','descriptionDe']} for d in DEFINITIONS]
+PREVIEWS={
+ 'start':[['huruf.html','تعرّف إلى الحرف، ثم اكتشف أشكاله وكلماته.','Lerne Buchstaben, ihre Formen und Beispielwörter kennen.'],['letter-tests.html','حوّل ما تعلّمته إلى تحدٍّ ممتع.','Festige dein Wissen mit kleinen Herausforderungen.'],['reading.html','كوّن الكلمة خطوة بخطوة من أصواتها.','Verbinde Laute Schritt für Schritt zu Wörtern.'],['reading-trainer.html','اقرأ كلمات نافعة بخط كبير وواضح.','Lies nützliche Wörter in großer, klarer Schrift.'],['reading-exercises.html#colors/colors-2','اقرأ التعليمات ولوّن العلم بنفسك.','Lies die Anweisungen und male die Flagge selbst aus.'],['reading-exercises.html#stories/stories-1','رتّب حكاية عربية واكتشف معناها.','Ordne eine arabische Geschichte und entdecke ihren Sinn.']],
+ 'a1-a2':[['vocabulary.html','ابدأ بمفردات حياتك اليومية.','Beginne mit Wörtern für deinen Alltag.'],['lernseite.html','تعلّم الكلمة واقلب البطاقة لتعرف معناها.','Lerne Wörter mit beidseitigen Lernkarten.'],['skills.html','تدرّب على المهارات ضمن وحدات مترابطة.','Übe deine Fertigkeiten in zusammenhängenden Einheiten.'],['sentences.html','اصنع جملًا تستطيع استعمالها.','Bilde Sätze, die du selbst verwenden kannst.'],['stories.html','كل قصة قصيرة خطوة نحو قراءة أفضل.','Jede Kurzgeschichte stärkt dein Lesen.'],['grammar.html','افهم القاعدة، ثم جرّبها بنفسك.','Verstehe die Regel und wende sie selbst an.']],
+ 'b1-b2':[['vocabulary.html','وسّع كلماتك للتعبير بدقّة أكبر.','Erweitere deinen Wortschatz für präziseren Ausdruck.'],['lernseite.html','راجع المفردات واجعلها جزءًا من لغتك.','Mache neue Wörter zu einem Teil deiner Sprache.'],['grammar.html','اكتشف تراكيب أكثر عمقًا.','Entdecke weiterführende Strukturen.'],['verbs.html','تدرّب على صيغ الأفعال وتغيّرها.','Übe verschiedene Verbformen.'],['test2.html','اختبر فهمك بخيارات واضحة.','Prüfe dein Verständnis mit klaren Auswahlaufgaben.'],['test.html','نوّع التدريب وثبّت ما تعلّمته.','Übe abwechslungsreich und festige dein Wissen.']],
+ 'books':[['books.html','أربعة كتب تفتح لك أبواب القراءة.','Vier Bücher eröffnen dir neue Lesewelten.'],['book-level-two.html','تعلّم من نصوص وتمارين متدرجة.','Lerne mit aufbauenden Texten und Aufgaben.'],['youth-book-two-part-one.html','رافق كل وحدة بممارسة وفهم.','Vertiefe jede Einheit durch aktive Übungen.'],['vocabulary.html','اجمع مفردات الكتب وراجعها بالبطاقات.','Lerne den Buchwortschatz mit Karten.'],['exams.html','تدرّب على اختبارات الأستاذ محمود بركات.','Übe mit Prüfungen von Mahmoud Barakat.'],['placement.html','اكتشف نقطة البداية المناسبة لك.','Finde einen passenden Einstieg.']]
+}
+for d in DEFINITIONS:d['previews']=[dict(zip(['page','ar','de'],r)) for r in PREVIEWS[d['id']]]
+all_details=[{k:d[k] for k in ['id','ar','de','description','descriptionDe','previews']} for d in DEFINITIONS]
 def strings(v):
  if isinstance(v,str):yield v
  elif isinstance(v,list):
@@ -95,6 +102,7 @@ for definition in DEFINITIONS:
  practice={**data['practice'],'sentences':data['practice']['sentences'] if ident=='a1-a2' else [],'stories':data['practice']['stories'] if ident=='a1-a2' else [],'sounds':data['practice']['sounds'] if ident=='start' else []}
  practice['audio']=audio_subset(practice['audio'],[practice['sentences'],practice['stories'],practice['sounds']])
  counts={'vocabularyLists':len(scoped['lists']),'vocabularyWords':sum(len(l['words']) for l in scoped['lists']),'bookVocabularyLists':len(all_lists)-len(scoped['lists']),'bookVocabularyWords':sum(len(l['words']) for l in all_lists)-sum(len(l['words']) for l in scoped['lists']),'grammarLessons':len(lessons),'grammarQuestions':sum(len(l['questions']) for l in lessons),'verbs':len(verbs),'skillsUnits':12 if ident=='a1-a2' else 0,'stories':len(practice['stories']),'sentences':len(practice['sentences']),'letters':28 if ident=='start' else 0,'readingWords':150 if ident=='start' else 0,'books':4 if ident=='books' else 0}
+ counts['readingActivities']=64 if ident=='start' else 0
  d['counts']=counts;d['summary']=d['description'];d['summaryDe']=d['descriptionDe']
  overrides={
   'data/vocab_catalog.json':dump(scoped),'data/vocab_catalog_fallback.js':'window.VOCAB_CATALOG_META='+dump({'lists':len(all_lists)})+';window.VOCAB_CATALOG_FALLBACK='+dump(scoped)+';',
@@ -124,7 +132,7 @@ for definition in DEFINITIONS:
  def get(name):return overrides[name] if name in overrides else (ROOT/name).read_text()
  def html_body(kind):
   if kind=='index':body='<p class="edition-intro" id="edition-summary"></p><div class="edition-grid" id="edition-routes"></div><section class="edition-migration"><h2 data-ar="تقدّمك في النسخة السابقة" data-de="Dein bisheriger Lernstand">تقدّمك في النسخة السابقة</h2><p data-ar="استورد الإنجازات المناسبة لهذا التطبيق دون تغيير سجلك القديم. الإحصاءات العامة المختلطة تبقى في النسخة السابقة." data-de="Passende Lernstände übernehmen; bisherige Daten und frühere Gesamtstatistiken bleiben erhalten.">استورد الإنجازات المناسبة لهذا التطبيق دون تغيير سجلك القديم.</p><button class="practice-button" id="edition-import" data-ar="استيراد تقدّمي السابق" data-de="Bisherigen Lernstand übernehmen">استيراد تقدّمي السابق</button><p id="edition-import-status" role="status"></p></section>'
-  elif kind=='apps':body='<p data-ar="كل تطبيق مستقل بمحتواه وتقدّمه. اختر التطبيق المناسب لك." data-de="Jede App hat eigene Inhalte und Lernstände. Wähle deinen Einstieg.">كل تطبيق مستقل بمحتواه وتقدّمه.</p><div class="edition-grid" id="edition-directory"></div>'
+  elif kind=='apps':body='<p data-ar="تعرّف بالصور إلى رحلات التعلّم الأخرى. اضغط أي صورة لتكبيرها." data-de="Entdecke weitere Lernwege in Bildern. Tippe ein Bild an, um es zu vergrößern.">تعرّف بالصور إلى رحلات التعلّم الأخرى. اضغط أي صورة لتكبيرها.</p><div id="edition-directory"></div>'
   else:body='<div class="home-panel" id="edition-progress"></div><a class="practice-button" href="reading-trainer.html" data-ar="تابع مدرّب القراءة" data-de="Mit dem Lesetrainer weiterlernen">تابع مدرّب القراءة</a>'
   return '<main class="container edition-page"><header class="edition-heading"><img src="images/brand/olive-symbol.svg" alt=""><div><span class="edition-badge" data-ar="تطبيق مستقل · حروف من الزيتون" data-de="Eigenständige App · Huroof">تطبيق مستقل · حروف من الزيتون</span><h1 data-ar="'+d['ar']+'" data-de="'+d['de']+'">'+d['ar']+'</h1></div></header>'+body+'</main><footer class="teacher-credit">إعداد الأستاذ محمود بركات</footer>'
  def page_source(name):
@@ -141,7 +149,7 @@ for definition in DEFINITIONS:
   source=source.replace('<head>','<head><script src="js/edition-config.js"></script><script src="js/edition.js"></script>',1)
   return source
  included={}
- refs=re.compile(r'''(?:["'(=\s])((?:js|css|data|images|fonts|audio)/[\w./-]+\.(?:js|css|json|svg|png|jpg|jpeg|webp|woff2?|ttf|mp3))''',re.UNICODE)
+ refs=re.compile(r'''(?:["'(=\s])((?:js|css|data|images|fonts|audio)/[\w./-]+\.(?:json|js|css|svg|png|jpg|jpeg|webp|woff2?|ttf|mp3))(?!\w)''',re.UNICODE)
  def include(name):
   name=name.split('?')[0]
   if name in included:return
@@ -175,7 +183,7 @@ for definition in DEFINITIONS:
  # Runtime-created paths and the on-demand authentication/synchronisation SDK.
  include('data/vocab_catalog.json')
  for name in ['js/cloud-sync-core.js','js/cloud-sync.js','js/vendor/firebase/firebase-app-compat.js','js/vendor/firebase/firebase-auth-compat.js','js/vendor/firebase/firebase-firestore-compat.js']:include(name)
- for group in ['images/pwa','images/brand']+(['images/book-two','images/youth','images/youth-two','images/exams'] if ident=='books' else []):
+ for group in ['images/pwa','images/brand']+['images/editions/'+item['id'] for item in DEFINITIONS if item['id']!=ident]+(['images/book-two','images/youth','images/youth-two','images/exams'] if ident=='books' else []):
   for path in (ROOT/group).rglob('*'):
    if path.is_file() and path.suffix.lower() in ['.svg','.png','.jpg','.webp']:include(path.relative_to(ROOT).as_posix())
  for name,payload in included.items():write(base,name,payload)
@@ -229,6 +237,8 @@ if a.archives:
  with ZipFile(ROOT/'downloads/Huroof-Suite-Setup.zip','w',ZIP_DEFLATED) as z:
   z.writestr('Huroof-Four-Apps/index.html',hub);z.writestr('Huroof-Four-Apps/firebase.json',json.dumps(config,indent=2)+'\n')
   z.writestr('Huroof-Four-Apps/manifest.webmanifest',dump(gallery_manifest));z.writestr('Huroof-Four-Apps/pwa-worker.js',retire)
-  for name in ['.firebaserc','firestore.rules','firestore.indexes.json','suite/README-AR.md']:z.write(ROOT/name,'Huroof-Four-Apps/'+Path(name).name)
+  for name in ['.firebaserc','firestore.rules','firestore.indexes.json']:z.write(ROOT/name,'Huroof-Four-Apps/'+Path(name).name)
+  z.writestr('Huroof-Four-Apps/README-AR.md',(ROOT/'suite/README-AR.md').read_text().replace('(../docs/','(docs/'))
+  z.write(ROOT/'docs/READING-EXERCISES.md','Huroof-Four-Apps/docs/READING-EXERCISES.md')
   z.writestr('Huroof-Four-Apps/edition-build.json',dump({'schema':1,'editions':summaries}))
  print('ARCHIVES ready: four apps and Huroof-Suite-Setup.zip',flush=True)

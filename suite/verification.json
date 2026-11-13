@@ -18,8 +18,9 @@
       "letters": 28,
       "readingWords": 150,
       "books": 0,
-      "files": 831,
-      "bytes": 30305190
+      "readingActivities": 64,
+      "files": 910,
+      "bytes": 31612143
     },
     {
       "id": "a1-a2",
@@ -36,8 +37,9 @@
       "letters": 0,
       "readingWords": 0,
       "books": 0,
-      "files": 1709,
-      "bytes": 28847434
+      "readingActivities": 0,
+      "files": 1727,
+      "bytes": 29499097
     },
     {
       "id": "b1-b2",
@@ -54,8 +56,9 @@
       "letters": 0,
       "readingWords": 0,
       "books": 0,
-      "files": 1505,
-      "bytes": 23661930
+      "readingActivities": 0,
+      "files": 1523,
+      "bytes": 24330233
     },
     {
       "id": "books",
@@ -72,15 +75,19 @@
       "letters": 0,
       "readingWords": 0,
       "books": 4,
-      "files": 1992,
-      "bytes": 59086936
+      "readingActivities": 0,
+      "files": 2010,
+      "bytes": 59776072
     }
   ],
   "checks": {
-    "nodeStorageAndCloudSync": "20 passed",
+    "nodeStorageAndCloudSync": "22 passed, including workshop content and six requested flags",
     "browserSmoke": "All four editions, all learning pages, DE/AR, 320/390/768/1280 px, flashcards, vocabulary grading, grammar, verbs, placement, legacy imports and app isolation passed",
     "packages": "All four ZIP CRC checks, PWA asset SHA256 checks, exact vocabulary/catalog boundary checks, inline JS/CSS packaging and assembly-kit configuration passed",
-    "authBootstrap": "Eight browser checks passed using stubbed Firebase: four signed-out redirects to own login and four signed-in app starts"
+    "authBootstrap": "Eight browser checks passed using stubbed Firebase: four signed-out redirects to own login and four signed-in app starts",
+    "readingWorkshop": "All 64 tasks solved through the browser; wrong-answer feedback, 8 colour activities with keyboard painting, 8 story orders, 8 self-reviewed drawing activities, real pointer drawing, saved sentence and drawing reload, 64 print worksheets, DE/AR and 320/390/768/1280 px layouts passed; story-card child bounds checked.",
+    "appGalleries": "All four galleries passed: three other apps, six local images per app, 18 total images, no ZIP anchors, image decode, zoom dialog and keyboard close, both languages and responsive widths.",
+    "printRendering": "The 8 colouring activities were rendered as an 8-page A4 PDF in Chromium. pdfinfo validated the file; first page visually checked using pdftoppm. Print images use eager loading."
   },
   "limitations": [
     "No live Firebase data or deployment accessed.",
@@ -91,28 +98,53 @@
   "downloads": [
     {
       "file": "Huroof-Start.zip",
-      "bytes": 22508275,
-      "sha256": "c0e22ec29819f8ddfb4fc603ea324bd707a290e52f52d03363c4d01376cd6264"
+      "bytes": 23235897,
+      "sha256": "d4a56995fdf668e853177ce12107693e2bad66d8e6d23091e3e8ef0e23ae26ee"
     },
     {
       "file": "Huroof-A1-A2.zip",
-      "bytes": 20577280,
-      "sha256": "fc9fa186145a317a8787414f8d821872f7d692d3551f7d7c623078bdaa914f49"
+      "bytes": 21102355,
+      "sha256": "9ea4d8d593f3b8f1bbe24d3d620b96836b288b7c81df3d784647260f8438eaf8"
     },
     {
       "file": "Huroof-B1-B2.zip",
-      "bytes": 16644937,
-      "sha256": "b5d07c5e6f820d32bb867185db23fef05dc0dbcb60865aec5aa0ddd4575a46c3"
+      "bytes": 17204427,
+      "sha256": "f2863261cf8ad6962650e4d4bd919295ef403ffed12703810261c27f31a36096"
     },
     {
       "file": "Huroof-Books.zip",
-      "bytes": 47597188,
-      "sha256": "ae2b58b7f8db9d3f16c3ef5235218bad0132642f450e9315acf26ec231c911dc"
+      "bytes": 48148695,
+      "sha256": "3e9db1851e563eef8284c127371722d5097fb94b1252986acf3f46ec957e3346"
     },
     {
       "file": "Huroof-Suite-Setup.zip",
-      "bytes": 9396,
-      "sha256": "28846cbb16c078b3a24c876d31b64ff0aed4847bb555bdb7433829e5c9d8a777"
+      "bytes": 13633,
+      "sha256": "ebe9447ca3f8f80080f0235cc9067e6a15f78b5c5975075cd926819c001eb09c"
     }
-  ]
+  ],
+  "sourceBeforeReadingWorkshop": "2e0ae1fd68faed6bb13f26ef7c70ae4be4e77b7b",
+  "readingWorkshop": {
+    "reviewedPdfPages": 53,
+    "chapters": 8,
+    "activities": 64,
+    "closedChoiceQuestions": 160,
+    "storyOrderingPositions": 24,
+    "coloringActivities": 8,
+    "drawingActivities": 8,
+    "originalSvgFiles": 56,
+    "flags": [
+      "Palestine",
+      "Syria: green/white/black, 3 red five-point stars",
+      "Jordan: black/white/green, red triangle, white seven-point star",
+      "Germany",
+      "Netherlands",
+      "Ukraine"
+    ]
+  },
+  "gallery": {
+    "realScreenshots": 24,
+    "screenshotsPerOtherApp": 6,
+    "screenshotsDisplayedPerEdition": 18,
+    "totalImageBytes": 671400
+  }
 }

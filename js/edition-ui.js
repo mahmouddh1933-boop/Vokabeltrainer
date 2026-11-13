@@ -38,11 +38,25 @@
     function directory(){
       const host=document.getElementById('edition-directory');if(!host)return;
       host.replaceChildren();
-      for(const item of E.editions){
-        const box=el('article',null,'home-panel');box.append(el('h2',de()?item.de:item.ar),el('p',de()?item.descriptionDe:item.description));
-        const link=el('a',E.suite?t('افتح التطبيق','App öffnen'):t('تحميل هذا التطبيق ZIP','App als ZIP herunterladen'),'practice-button');
-        link.href=E.suite?'../'+item.id+'/index.html':'https://raw.githubusercontent.com/mahmouddh1933-boop/Vokabeltrainer/main/downloads/'+item.archive;
-        box.append(link);host.append(box);
+      document.getElementById('edition-image-dialog')?.remove();
+      const dialog=el('dialog',null,'edition-image-dialog');dialog.id='edition-image-dialog';
+      const close=el('button',t('إغلاق الصورة','Bild schließen'),'practice-button');close.type='button';close.addEventListener('click',()=>dialog.close());
+      const large=el('img'),caption=el('p');dialog.append(close,large,caption);document.body.append(dialog);
+      dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
+      const jump=el('nav',null,'edition-gallery-nav');jump.setAttribute('aria-label',t('معارض التطبيقات','App-Galerien'));
+      for(const item of E.editions.filter(item=>item.id!==E.id)){const link=el('a',de()?item.de:item.ar,'practice-button');link.href='#preview-'+item.id;jump.append(link);}host.append(jump);
+      for(const item of E.editions.filter(item=>item.id!==E.id)){
+        const box=el('section',null,'edition-showcase');box.id='preview-'+item.id;
+        box.append(el('h2',de()?item.de:item.ar),el('p',de()?item.descriptionDe:item.description));
+        const grid=el('div',null,'edition-preview-grid');
+        for(const [index,frame] of item.previews.entries()){
+          const figure=el('figure'),button=el('button',null,'edition-preview-button'),img=el('img');button.type='button';
+          img.src='images/editions/'+item.id+'/'+(index+1)+'.webp';img.alt=de()?frame.de:frame.ar;img.loading='lazy';img.width=1000;img.height=750;
+          button.setAttribute('aria-label',t('تكبير الصورة: ','Bild vergrößern: ')+img.alt);
+          button.addEventListener('click',()=>{large.src=img.src;large.alt=img.alt;caption.textContent=img.alt;dialog.showModal();});button.append(img);
+          figure.append(button,el('figcaption',de()?frame.de:frame.ar));grid.append(figure);
+        }
+        box.append(grid,el('p',t('كل خطوة صغيرة تفتح لك بابًا جديدًا في العربية.','Jeder kleine Schritt öffnet dir neue Möglichkeiten auf Arabisch.'),'edition-encouragement'));host.append(box);
       }
     }
     function home(){
@@ -55,11 +69,12 @@
     }
     function progress(){
       const n=document.getElementById('edition-progress');if(!n)return;
-      const stats=A.getStats(),r=stats.readingTrainerV1||{},p=stats.phonicsV1||{};
+      const stats=A.getStats(),r=stats.readingTrainerV1||{},p=stats.phonicsV1||{},work=stats.readingExercisesV1||{};
       n.replaceChildren(el('p',t(`كلمات علّمتها كمقروءة: ${(r.read||[]).length} من ١٥٠.`,`Selbst als gelesen markiert: ${(r.read||[]).length} von 150 Wörtern.`)),
         el('p',t(`كلمات استمعت إليها: ${(r.heard||[]).length}.`,`Angehörte Wörter: ${(r.heard||[]).length}.`)),
         el('p',t('يُحفظ تقدّم مدرّب القراءة والهجاء تلقائيًّا في هذا التطبيق.','Lesetrainer und Lautübungen speichern ihren Lernstand in dieser App.')));
       if(Object.keys(p).length)n.append(el('p',t('لديك تدريبات محفوظة في القراءة والهجاء.','Du hast gespeicherte Lese- und Lautübungen.')));
+      if(Object.keys(work).length)n.append(el('p',t(`نشاطات عملت عليها في تدريبات القراءة: ${Object.keys(work).length}.`,`Bearbeitete Aufgaben in der Lesewerkstatt: ${Object.keys(work).length}.`)));
     }
     async function importLegacy(){
       const button=document.getElementById('edition-import'),status=document.getElementById('edition-import-status');button.disabled=true;

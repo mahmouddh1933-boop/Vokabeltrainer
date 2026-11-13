@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#194e40" />
+    <title>حروف من الزيتون · تدريبات على القراءة</title>
+    <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
+    <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
+    <link rel="stylesheet" href="css/modern.css?v=12f689bc07a2" />
+    <link rel="stylesheet" href="css/reading-exercises.css" />
+    <script src="js/storage.js?v=234b995827cd" defer></script>
+    <script src="js/firebase-config.js?v=8c7993a85b2c" defer></script>
+    <script src="js/access-client.js?v=6d7404b1ce0e" defer></script>
+    <script src="js/auth-session.js?v=328a881b2d5c" defer></script>
+    <script src="js/app.js?v=d6573afe97b4" defer></script>
+    <script src="js/reading-exercises-data.js" defer></script>
+    <script src="data/vocab_catalog_labels.js?v=ea6b5a2120d2" defer></script>
+    <script src="js/interface-languages.js?v=d233aae47963" defer></script>
+    <script src="js/learning-path.js?v=d1c2f9b5f022" defer></script>
+    <script src="js/design.js?v=54c2ca0d33c6" defer></script>
+    <script src="js/practice-core.js?v=81b88bc2a7c0" defer></script>
+    <script src="js/pages/reading-exercises.js" defer></script>
+    <meta name="application-name" content="حروف من الزيتون" />
+    <link
+      rel="icon"
+      href="images/brand/olive-symbol.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/olive-theme.css?v=2a69ab7dd182" />
+    <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
+    <link rel="stylesheet" href="css/auth.css?v=193e81c25a14" />
+    <link rel="stylesheet" href="css/learning-route.css?v=e9bb6804b86d" />
+  <link rel="manifest" href="manifest.webmanifest" /><link rel="apple-touch-icon" href="images/pwa/apple-touch-icon.png" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="default" /><link rel="stylesheet" href="css/pwa.css?v=021f9b88f80e" /><script src="js/pwa.js?v=6abccd6e9e0d" defer></script></head>
+  <body>
+    <main class="container rx-page">
+      <p id="lesson-loading" role="status">جارٍ تحميل التدريبات…</p>
+      <header class="rx-hero">
+        <img src="images/brand/olive-symbol.svg" alt="" width="84" height="84" />
+        <div><p class="eyebrow" data-ar="اقرأ · اكتشف · لوّن · احكِ" data-de="Lesen · Entdecken · Ausmalen · Erzählen">اقرأ · اكتشف · لوّن · احكِ</p>
+        <h1 data-ar="تدريبات على القراءة" data-de="Lesewerkstatt">تدريبات على القراءة</h1>
+        <p id="rx-subtitle"></p></div>
+      </header>
+      <p id="rx-total-progress" role="status"></p>
+      <progress id="rx-total-bar" class="rx-progress" value="0" max="64" aria-label="الأنشطة المكتملة / Abgeschlossene Aufgaben"></progress>
+      <div class="rx-actions"><button type="button" id="rx-back" class="rx-button" hidden>العودة</button><a class="rx-button" href="reading.html" data-ar="العودة إلى القراءة والهجاء" data-de="Zurück zu Lautübungen">العودة إلى القراءة والهجاء</a><button type="button" id="rx-print" class="rx-button">طباعة</button></div>
+      <p id="rx-breadcrumb"></p>
+      <div id="rx-content"></div>
+      <p id="rx-audio-status" role="status" aria-live="polite"></p>
+    </main>
+    <div id="rx-print-content" aria-hidden="true"></div>
+    <footer class="teacher-credit" id="teacher-credit">
+      إعداد الأستاذ محمود بركات
+    </footer>
+  </body>
+</html>

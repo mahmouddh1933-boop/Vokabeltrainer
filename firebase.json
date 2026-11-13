@@ -75,6 +75,11 @@
     ],
     "redirects": [
       {
+        "source": "/reading-exercises.html",
+        "destination": "/start/reading-exercises.html",
+        "type": 302
+      },
+      {
         "source": "/letters.html",
         "destination": "/start/letters.html",
         "type": 302

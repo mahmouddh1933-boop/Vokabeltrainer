@@ -19,6 +19,10 @@ Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](download
 
 ## Neue Fertigkeiten und A1/A2-Einheiten
 
+[تدريبات على القراءة · Lesewerkstatt](reading-exercises.html): 64 neue arabische Aktivitäten in acht Kapiteln mit 160 geschlossenen Fragen, 56 eigenen SVG-Illustrationen, Bildgeschichten, Rätseln, gezieltem Zählen, Ausmalen und Zeichnen nach Text. Enthalten sind die Flaggen Palästinas, Syriens (grün–weiß–schwarz, drei rote Sterne), Jordaniens (weißer siebenzackiger Stern), Deutschlands, der Niederlande und der Ukraine. Zeichnungen werden anhand einer Prüfliste selbst oder mit einer Lehrkraft beurteilt. Im ersten Teil der vier Apps enthalten. [Inhalt und vollständige Sichtung des Vorlagenbuchs](docs/READING-EXERCISES.md).
+
+Die Seite „Weitere Apps / التطبيقات الأخرى“ zeigt jetzt jeweils sechs echte Bildschirmaufnahmen der drei anderen Apps mit motivierenden Bildunterschriften und Bildvergrößerung. ZIP-Downloadlinks wurden aus dieser Seite entfernt.
+
 [مفردات الكتاب 1 / Buchwortschatz 1](vocabulary.html#book-vocabulary-panel): die bisherigen 340 vokalisierten Karten aus 53 Fotos in 17 Listen mit je 20 Wörtern. Karten, Listen-IDs, Reihenfolge und Lernstände bleiben erhalten; lediglich der Sammlungsname wurde geändert. [Quellenübersicht Buch 1](docs/BOOK-VOCABULARY.md).
 
 [مفردات الكتاب 2 / Buchwortschatz 2](vocabulary.html#book-vocabulary-2-panel): 644 geprüfte Karten aus allen 46 neuen Fotos (24 + 22), mit Vokalzeichen, deutscher Übersetzung und lokal mitgeliefertem synthetischem Audio. 32 Listen enthalten je 20 Wörter; die letzte enthält die übrigen vier. Wiederholte Flexions- und Besitzformen werden innerhalb des Buchs zusammengeführt. Gemeinsame Wörter können in beiden Büchern vorkommen; Listen und Testergebnisse bleiben unabhängig. Beide Bücher stehen oberhalb der unveränderten 120 CEFR-Listen und verwenden Lernkarten, sechs Tests und Wiederholung. [Quellenübersicht Buch 2 und reproduzierbarer Aufbau](docs/BOOK-VOCABULARY-2.md).
