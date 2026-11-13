@@ -41,15 +41,14 @@
     bank.forEach((s) => {
       const b = button("", () => select(s.id), "story-library-card");
       const art = el("span", undefined, "story-art story-thumb");
-      art.style.backgroundPosition = `${(s.art % 3) * 50}% ${Math.floor(s.art / 3) * 100}%`;
+      paintStory(art, s);
       art.setAttribute("aria-hidden", "true");
       b.append(art, el("small", s.level), el("strong", P.bilingual(s.title)));
       b.setAttribute("aria-pressed", String(s.id === story.id));
       $("story-library").append(b);
     });
     $("story-title").textContent = P.bilingual(story.title);
-    $("story-art").style.backgroundPosition =
-      `${(story.art % 3) * 50}% ${Math.floor(story.art / 3) * 100}%`;
+    paintStory($("story-art"), story);
     $("story-art").setAttribute("aria-label", P.bilingual(story.title));
     $("story-badge").textContent =
       `${story.level} · ${t("٦ جمل · ٤ أسئلة", "6 Sätze · 4 Fragen")}`;
@@ -159,6 +158,10 @@
     $("story-counter").textContent =
       `${bank.indexOf(story) + 1} / ${bank.length}`;
     persist();
+  }
+  function paintStory(node, story) {
+    node.style.backgroundImage = story.illustration ? `url("${story.illustration}")` : "";
+    node.style.backgroundPosition = `${(story.art % 3) * 50}% ${Math.floor(story.art / 3) * 100}%`;
   }
   $("story-level").onchange = (event) => {
     state.level = event.target.value;

@@ -16,13 +16,13 @@ with sync_playwright() as pw:
     page.on('response',lambda r:missing.append(r.url) if r.status==404 else None)
     def go(name):
         page.goto(URL+name);page.wait_for_function('!!window.VocabApp&&!!document.querySelector(".edition-brand")')
-    def labels_clean():page.wait_for_function('!(/\\bA[12]\\b/.test(document.body.innerText))')
+    def labels_clean():page.wait_for_function('/A1/.test(document.querySelector(".edition-brand").innerText)&&/A2/.test(document.querySelector(".edition-brand").innerText)')
     go('index.html');labels_clean()
-    assert page.locator('#app-sidebar nav a').all_inner_texts()==['نظرة عامة','مفردات المستوى الأول والثاني','تكوين جمل','قصص قصيرة','المهارات والوحدات','القواعد والإملاء','مراجعة المفردات','تقدّمي','التطبيقات الأخرى']
+    assert page.locator('#app-sidebar nav a').all_inner_texts()==['نظرة عامة','مفردات A1 وA2','تكوين جمل','قصص قصيرة','المهارات والوحدات','القواعد والإملاء','مراجعة المفردات','تقدّمي','التطبيقات الأخرى']
     assert page.locator('#app-sidebar a[href="verbs.html"],#app-sidebar a[href="test.html"]').count()==0
     go('sentences.html');page.wait_for_selector('#sentence-feedback');labels_clean()
     assert page.locator('.practice-links').count()==0
-    assert page.locator('#sentence-level option[value="A1"]').inner_text()=='المستوى الأول'
+    assert page.locator('#sentence-level option[value="A1"]').inner_text()=='A1'
     page.screenshot(path='/tmp/huroof-levels-sentences.png')
     go('stories.html');page.wait_for_selector('.story-library-card');labels_clean()
     stories=page.evaluate('ArabicPracticeData.stories')
@@ -35,6 +35,10 @@ with sync_playwright() as pw:
             page.locator('.story-library-card').nth(index).click()
             expect(page.locator('#story-title')).to_have_text(story['title']['ar'])
             assert page.locator('.story-line').count()==6
+            if story.get('illustration'):
+                art=page.locator('#story-art')
+                assert story['illustration'] in art.evaluate('e=>getComputedStyle(e).backgroundImage')
+                assert art.evaluate('e=>getComputedStyle(e).backgroundPosition')==f"{(story['art']%3)*50}% {(story['art']//3)*100}%"
             for i,q in enumerate(story['questions']):
                 page.locator('#story-options').get_by_role('button',name=q['options'][q['correct']]['ar'],exact=True).click()
                 assert 'أحسنت' in page.locator('#story-feedback').inner_text()
@@ -63,10 +67,10 @@ with sync_playwright() as pw:
     go('grammar.html');page.wait_for_selector('#grammar-lesson')
     assert page.locator('a[href="verbs.html"]').count()>=1
     go('verbs.html');page.wait_for_selector('#conjugation-body tr')
-    assert page.locator('#verb-select option').count()==151
+    assert page.locator('#verb-select option').count()==251
     assert page.locator('#verb-select optgroup').count()==6
     assert page.locator('#app-sidebar a[href="grammar.html"]').get_attribute('aria-current')=='page'
-    # Exercise all 151 real selection change handlers and rendered past tables.
+    # Exercise all 251 real selection change handlers and rendered past tables.
     page.evaluate('''() => {
       const D=VerbLessonData, select=document.getElementById('verb-select');
       for (const v of D.verbs) {
@@ -89,21 +93,28 @@ with sync_playwright() as pw:
     for mode in ['past','present','past-lam','future','prohibition']:
         page.locator('#verb-negative-mode').select_option(mode)
         assert page.locator('#verb-negative-body tr').count()==(5 if mode=='prohibition' else 14)
-    print('PASS 151 verb selections, six family filters, four form lengths, three tenses and five negation modes',flush=True)
-    for name,selector in [('vocabulary.html','#learning-path'),('sentences.html','#sentence-level'),('stories.html','#story-title'),('verbs.html','#verb-select'),('skills.html','#skills-sections'),('grammar.html?unit=a1-01#pronouns','.unit-grammar-context')]:
+    print('PASS 251 verb selections, six family filters, four form lengths, three tenses and five negation modes',flush=True)
+    for name,selector in [('vocabulary.html','#learning-path'),('sentences.html','#sentence-level'),('stories.html','#story-title'),('verbs.html','#verb-select'),('skills.html','#skills-sections'),('grammar.html','#grammar-stages'),('grammar.html?unit=a1-01#pronouns','.unit-grammar-context')]:
         go(name);page.wait_for_selector(selector)
         for lang in ['ar','de']:
             page.locator('#app-language-select').select_option(lang);labels_clean()
             for width in [320,390,768,1440]:
                 page.set_viewport_size({'width':width,'height':900})
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),(name,lang,width)
+                if name=='grammar.html':
+                    assert page.locator('.placement-context a').evaluate('e=>getComputedStyle(e).display')=='inline-flex'
+                    assert page.locator('.placement-context a').bounding_box()['height']>=48
+                    for sel in ['.grammar-path-panel','#grammar-stages button']:
+                        assert page.locator(sel).evaluate_all('nodes=>nodes.every(e=>{const r=e.getBoundingClientRect();return r.left>=-1&&r.right<=innerWidth+1})'),(lang,width,sel)
         assert 'undefined' not in page.locator('main').inner_text(),name
     # Capture the first-unit pair at a real mobile viewport, with the menu closed.
     page.set_viewport_size({'width':390,'height':844});page.locator('#app-language-select').select_option('ar')
     if page.locator('body').evaluate('e=>e.classList.contains("nav-open")'):page.locator('.menu-toggle').click()
     page.wait_for_function('''()=>{const r=document.querySelector('.app-sidebar').getBoundingClientRect();return r.left>=innerWidth||r.right<=0}''')
     page.locator('.unit-grammar-context').scroll_into_view_if_needed();page.screenshot(path='/tmp/huroof-unit-rules-mobile.png')
+    assert page.locator('.unit-grammar-tab[aria-current="page"]').count()==1
+    for a in page.locator('.unit-grammar-context a').all(): assert a.bounding_box()['height']>=48
     assert not errors,errors
     assert not missing,missing
-    print('PASS exact sidebar, removed strip, display-only level renaming, responsive AR/DE layouts and no missing assets',flush=True)
+    print('PASS exact sidebar, removed strip, A1/A2 level labels, responsive AR/DE layouts and no missing assets',flush=True)
     ctx.close();b.close()

@@ -17,8 +17,8 @@
       ["review", "المراجعة", "Wiederholung"],
     ];
     const sections = [
-      ["A1", "وحدات المستوى الأول", "Einheiten der ersten Stufe · A1"],
-      ["A2", "وحدات المستوى الثاني", "Einheiten der zweiten Stufe · A2"],
+      ["A1", "وحدات A1", "A1-Einheiten"],
+      ["A2", "وحدات A2", "A2-Einheiten"],
     ];
     let filter = "A1",
       unit = null,

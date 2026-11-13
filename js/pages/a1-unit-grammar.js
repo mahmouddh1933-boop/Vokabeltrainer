@@ -20,19 +20,31 @@
       const title = document.createElement("strong");
       title.textContent = de() ? "Grammatik dieser Einheit" : "قواعد هذه الوحدة";
       nav.append(title);
-      for (const id of ids) {
+      const help = document.createElement("p");
+      help.className = "unit-grammar-help";
+      help.textContent = de() ? "Wähle die Regel, die du üben möchtest." : "اختر القاعدة التي تريد مراجعتها.";
+      const choices = document.createElement("div");
+      choices.className = "unit-grammar-choices";
+      nav.append(help, choices);
+      for (const [index, id] of ids.entries()) {
         const lesson = lessons.find(l => l.id === id);
         if (!lesson) continue;
         const a = document.createElement("a");
-        a.className = "practice-button";
+        a.className = "unit-grammar-tab";
         a.href = "#" + id;
-        a.textContent = lesson.title[de() ? "de" : "ar"];
+        const step = document.createElement("span");
+        step.className = "unit-grammar-step";
+        step.textContent = (index + 1).toLocaleString(de() ? "de" : "ar");
+        step.setAttribute("aria-hidden", "true");
+        const label = document.createElement("span");
+        label.textContent = lesson.title[de() ? "de" : "ar"];
+        a.append(step, label);
         if (location.hash === a.hash) a.setAttribute("aria-current", "page");
         a.addEventListener("click", () => requestAnimationFrame(scroll));
-        nav.append(a);
+        choices.append(a);
       }
       const back = document.createElement("a");
-      back.className = "practice-button";
+      back.className = "unit-grammar-back";
       back.href = "skills.html#" + unit + "/reading";
       back.textContent = de() ? "Zurück zur Einheit" : "رجوع إلى الوحدة";
       nav.append(back);

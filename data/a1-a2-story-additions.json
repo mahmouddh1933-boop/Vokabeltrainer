@@ -140,7 +140,12 @@
         "correct": 0,
         "evidence": 5
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-1.webp",
+    "illustrationAlt": {
+      "ar": "قِطَّةٌ فِي الْبَيْتِ",
+      "de": "Eine Katze im Haus"
+    }
   },
   {
     "id": "small-garden",
@@ -283,7 +288,12 @@
         "correct": 0,
         "evidence": 4
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-1.webp",
+    "illustrationAlt": {
+      "ar": "حَدِيقَتُنَا الصَّغِيرَةُ",
+      "de": "Unser kleiner Garten"
+    }
   },
   {
     "id": "blue-shirt",
@@ -426,7 +436,12 @@
         "correct": 0,
         "evidence": 5
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-1.webp",
+    "illustrationAlt": {
+      "ar": "قَمِيصُ عُمَرَ",
+      "de": "Omars Hemd"
+    }
   },
   {
     "id": "rainy-morning",
@@ -569,7 +584,12 @@
         "correct": 0,
         "evidence": 5
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-1.webp",
+    "illustrationAlt": {
+      "ar": "مَطَرٌ فِي الصَّبَاحِ",
+      "de": "Regen am Morgen"
+    }
   },
   {
     "id": "doctor-visit",
@@ -712,7 +732,12 @@
         "correct": 0,
         "evidence": 4
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-1.webp",
+    "illustrationAlt": {
+      "ar": "عِنْدَ الطَّبِيبَةِ",
+      "de": "Bei der Ärztin"
+    }
   },
   {
     "id": "playground-friends",
@@ -855,7 +880,12 @@
         "correct": 0,
         "evidence": 4
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-1.webp",
+    "illustrationAlt": {
+      "ar": "كُرَةٌ وَأَصْدِقَاءُ",
+      "de": "Ein Ball und Freunde"
+    }
   },
   {
     "id": "grandmother-visit",
@@ -998,7 +1028,12 @@
         "correct": 0,
         "evidence": 5
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-2.webp",
+    "illustrationAlt": {
+      "ar": "زِيَارَةُ جَدَّتِي",
+      "de": "Ein Besuch bei meiner Großmutter"
+    }
   },
   {
     "id": "bakery-morning",
@@ -1141,7 +1176,12 @@
         "correct": 0,
         "evidence": 4
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-2.webp",
+    "illustrationAlt": {
+      "ar": "خُبْزٌ سَاخِنٌ",
+      "de": "Warmes Brot"
+    }
   },
   {
     "id": "lost-pencil",
@@ -1284,7 +1324,12 @@
         "correct": 0,
         "evidence": 5
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-2.webp",
+    "illustrationAlt": {
+      "ar": "أَيْنَ قَلَمِي؟",
+      "de": "Wo ist mein Stift?"
+    }
   },
   {
     "id": "appointment-change",
@@ -1427,7 +1472,12 @@
         "correct": 0,
         "evidence": 5
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-2.webp",
+    "illustrationAlt": {
+      "ar": "مَوْعِدٌ جَدِيدٌ",
+      "de": "Ein neuer Termin"
+    }
   },
   {
     "id": "train-trip",
@@ -1570,7 +1620,12 @@
         "correct": 0,
         "evidence": 4
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-2.webp",
+    "illustrationAlt": {
+      "ar": "رِحْلَةٌ بِالْقِطَارِ",
+      "de": "Eine Zugfahrt"
+    }
   },
   {
     "id": "found-wallet",
@@ -1713,7 +1768,12 @@
         "correct": 0,
         "evidence": 5
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-2.webp",
+    "illustrationAlt": {
+      "ar": "مِحْفَظَةٌ عَلَى الْمَقْعَدِ",
+      "de": "Eine Geldbörse auf der Bank"
+    }
   },
   {
     "id": "olive-planting",
@@ -1856,7 +1916,12 @@
         "correct": 0,
         "evidence": 4
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-3.webp",
+    "illustrationAlt": {
+      "ar": "شَتْلَةُ زَيْتُونٍ",
+      "de": "Ein junger Olivenbaum"
+    }
   },
   {
     "id": "class-project",
@@ -1999,7 +2064,12 @@
         "correct": 0,
         "evidence": 5
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-3.webp",
+    "illustrationAlt": {
+      "ar": "مُلْصَقٌ عَنِ الْمَاءِ",
+      "de": "Ein Plakat über Wasser"
+    }
   },
   {
     "id": "new-neighbour",
@@ -2142,7 +2212,12 @@
         "correct": 0,
         "evidence": 5
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-3.webp",
+    "illustrationAlt": {
+      "ar": "جَارَةٌ جَدِيدَةٌ",
+      "de": "Eine neue Nachbarin"
+    }
   },
   {
     "id": "water-repair",
@@ -2285,7 +2360,12 @@
         "correct": 0,
         "evidence": 5
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-3.webp",
+    "illustrationAlt": {
+      "ar": "صُنْبُورٌ لَا يُغْلَقُ",
+      "de": "Ein undichter Wasserhahn"
+    }
   },
   {
     "id": "library-message",
@@ -2428,7 +2508,12 @@
         "correct": 0,
         "evidence": 5
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-3.webp",
+    "illustrationAlt": {
+      "ar": "رِسَالَةٌ مِنَ الْمَكْتَبَةِ",
+      "de": "Eine Nachricht aus der Bibliothek"
+    }
   },
   {
     "id": "choosing-bike",
@@ -2571,6 +2656,11 @@
         "correct": 0,
         "evidence": 4
       }
-    ]
+    ],
+    "illustration": "images/stories/new-scenes-3.webp",
+    "illustrationAlt": {
+      "ar": "دَرَّاجَةٌ مُنَاسِبَةٌ",
+      "de": "Ein passendes Fahrrad"
+    }
   }
 ]

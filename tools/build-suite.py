@@ -35,9 +35,9 @@ DEFINITIONS=[
   'description':'الحروف وأشكالها، الحركات، الكتابة، الأصوات المتشابهة، الهجاء ومدرّب القراءة.','descriptionDe':'Alphabet, Schreibformen, Vokale, Schreiben, ähnliche Laute, Lautübungen und Lesetrainer.',
   'routes':[['letters.html','الحروف وتدريباتها','Alphabet und Übungen'],['reading.html','القراءة والهجاء','Lesen und Buchstabieren'],['reading-trainer.html','مدرّب القراءة','Lesetrainer'],['reading-exercises.html','تدريبات على القراءة','Lesewerkstatt'],['progress.html','تقدّمي','Mein Lernstand']],
   'levels':[],'statFields':['readingTrainerV1','phonicsV1','readingExercisesV1'],'practiceKeys':['jisrPracticeV1:sounds']},
- {'id':'a1-a2','ar':'حروف – المستوى الأول والمستوى الثاني','de':'Huroof – Arabisch · Stufe 1 und Stufe 2','archive':'Huroof-A1-A2.zip',
+ {'id':'a1-a2','ar':'حروف – العربية A1 وA2','de':'Huroof – Arabisch A1 und A2','archive':'Huroof-A1-A2.zip',
   'description':'مفردات المستويين، القواعد الأساسية، الجمل، القصص والمهارات ضمن وحدات مترابطة.','descriptionDe':'Wortschatz, Grundlagen, Sätze, Geschichten und Fertigkeiten in zusammenhängenden Einheiten.',
-  'routes':[['vocabulary.html','مفردات المستوى الأول والثاني','Wortschatz der ersten und zweiten Stufe'],['sentences.html','تكوين جمل','Sätze bilden'],['stories.html','قصص قصيرة','Kurzgeschichten'],['skills.html','المهارات والوحدات','Fertigkeiten und Einheiten'],['grammar.html','القواعد والإملاء','Grammatik und Rechtschreibung'],['review.html','مراجعة المفردات','Wörter wiederholen'],['stats.html','تقدّمي','Mein Lernstand']],
+  'routes':[['vocabulary.html','مفردات A1 وA2','Wortschatz A1 und A2'],['sentences.html','تكوين جمل','Sätze bilden'],['stories.html','قصص قصيرة','Kurzgeschichten'],['skills.html','المهارات والوحدات','Fertigkeiten und Einheiten'],['grammar.html','القواعد والإملاء','Grammatik und Rechtschreibung'],['review.html','مراجعة المفردات','Wörter wiederholen'],['stats.html','تقدّمي','Mein Lernstand']],
   'levels':['A1','A2'],'statFields':['skillsV1'],'practiceKeys':['jisrPracticeV1:sentences','jisrPracticeV1:stories']},
  {'id':'b1-b2','ar':'حروف – تطوير العربية B1 وB2','de':'Huroof – Arabisch B1 und B2','archive':'Huroof-B1-B2.zip',
   'description':'مفردات B1 وB2، ودروس القواعد والتصريف المتقدّم المتاحة في التطبيق.','descriptionDe':'Wortschatz B1 und B2 sowie die vorhandenen weiterführenden Grammatik- und Verbübungen.',
@@ -200,14 +200,14 @@ for definition in DEFINITIONS:
   if ident!='a1-a2':source=re.sub(r'<section class="home-panel"><h2 data-ar="استعمل مفرداتك.*?</section>','',source,flags=re.S)
   if ident=='a1-a2':
    if name in ['sentences','stories']:source=re.sub(r'<nav\b[^>]*class="practice-links".*?</nav>','',source,flags=re.S)
-   if name=='vocabulary':source=source.replace('A1 ← B2','المستوى الأول ← المستوى الثاني').replace('A1 → B2','Stufe 1 → Stufe 2').replace('من A1 إلى B2','في المستوى الأول والمستوى الثاني').replace('von A1 bis B2','in Stufe 1 und Stufe 2')
+   if name=='vocabulary':source=source.replace('A1 ← B2','A1 ← A2').replace('A1 → B2','A1 → A2').replace('من A1 إلى B2','في A1 وA2').replace('von A1 bis B2','für A1 und A2')
    if name=='stories':source=source.replace('ست قصص مصوّرة للحياة اليومية.','٢٤ قصة للحياة اليومية: ١٢ قصة لكل مستوى.').replace('Sechs illustrierte Alltagsgeschichten.','24 Alltagsgeschichten: 12 pro Stufe.')
-   if name=='verbs':source=source.replace('٥١ فعلاً','١٥١ فعلاً').replace('51 Verben','151 Verben')
+   if name in ['verbs','grammar']:source=source.replace('٥١ فعلًا','٢٥١ فعلًا').replace('٥١ فعلاً','٢٥١ فعلاً').replace('51 Verben','251 Verben')
   source=source.replace('</title>',' · '+d['ar']+'</title>')
   if a.hosting:source=source.replace('<html ','<html data-olive-hosted="true" ',1)
   source=source.replace('</head>','<link rel="stylesheet" href="css/editions.css"><script src="js/edition-ui.js" defer></script></head>')
   if ident=='a1-a2':
-   source=source.replace('</head>','<link rel="stylesheet" href="css/a1-a2.css"><script src="js/pages/a1-back-navigation.js" defer></script><script src="js/pages/a1-presentation.js" defer></script></head>')
+   source=source.replace('</head>','<link rel="stylesheet" href="css/a1-a2.css"><script src="js/pages/a1-back-navigation.js" defer></script></head>')
    if name=='grammar':source=source.replace('</head>','<script src="js/pages/a1-unit-grammar.js" defer></script></head>')
   source=source.replace('<head>','<head><script src="js/edition-config.js"></script><script src="js/edition.js"></script>',1)
   return source

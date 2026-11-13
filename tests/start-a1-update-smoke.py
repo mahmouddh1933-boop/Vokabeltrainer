@@ -77,7 +77,7 @@ with sync_playwright() as pw:
     a1=BASE+'/a1-a2/'
     page.goto(a1+'skills.html');page.wait_for_selector('.skills-card')
     expect(page.locator('#skills-sections a')).to_have_count(2)
-    assert page.locator('#skills-sections a').all_text_contents()==['وحدات المستوى الأول','وحدات المستوى الثاني']
+    assert page.locator('#skills-sections a').all_text_contents()==['وحدات A1','وحدات A2']
     assert page.locator('.skills-card').count()==6
     page.locator('#skills-sections a[href="#A2"]').click()
     expect(page.locator('.skills-card small').first).to_have_text(re.compile('^A2'))
