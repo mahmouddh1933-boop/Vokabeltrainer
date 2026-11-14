@@ -51,6 +51,14 @@
         text-align: left;
         font-size: 17px;
       }
+      * { box-sizing: border-box; }
+      body { padding: 20px 16px; }
+      main { width: min(100%, 580px); margin: 0; padding: clamp(22px, 5vw, 36px); box-shadow: 0 12px 44px #203e370c; }
+      img { width: 84px; height: 84px; border-radius: 20px; }
+      h1 { font-size: clamp(26px, 6vw, 36px); line-height: 1.6; }
+      a { min-height: 48px; max-width: 100%; margin: 8px 0; }
+      a:focus-visible { outline: 3px solid #b78c38; outline-offset: 3px; }
+      @media(max-width: 400px) { a { display: block; text-align: center; } }
     </style>
   </head>
   <body>

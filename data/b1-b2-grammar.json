@@ -1,0 +1,544 @@
+{
+  "passive": {
+    "id": "passive-voice",
+    "glyph": "كُتِبَ",
+    "category": "syntax",
+    "stage": "advance",
+    "prerequisites": [
+      "past-construction",
+      "present-inflection"
+    ],
+    "title": {
+      "ar": "المبني للمجهول ونائب الفاعل",
+      "de": "Passiv und Ersatzsubjekt"
+    },
+    "summary": {
+      "ar": "نحوّل الماضي والمضارع ونميّز نائب الفاعل من الفاعل واسم المفعول.",
+      "de": "Perfekt und Präsens ins Passiv setzen; Ersatzsubjekt und Partizip unterscheiden."
+    },
+    "intro": {
+      "ar": "نركز على الحدث والمتأثر به، مع صيغ الصحيح والمضعّف والأجوف والناقص.",
+      "de": "Vorgang und Betroffenen ausdrücken, auch bei geminierten und schwachen Verben."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "المعنى ونائب الفاعل",
+          "de": "Bedeutung und Ersatzsubjekt"
+        },
+        "body": {
+          "ar": "نستعمل المبني للمجهول حين نهتم بالحدث أو لا نعرف الفاعل أو لا نريد ذكره. نحذف الفاعل، ونرفع المفعول به بعد أن يصير نائب فاعل. لا نضيف فاعلًا بعد الفعل المبني للمجهول.",
+          "de": "Das Passiv stellt den Vorgang in den Vordergrund. Der Handelnde entfällt; das direkte Objekt wird zum Ersatzsubjekt im Nominativ."
+        },
+        "examples": [
+          {
+            "ar": "كَتَبَ الطَّالِبُ الرِّسَالَةَ ← كُتِبَتِ الرِّسَالَةُ.",
+            "de": "Der Schüler schrieb den Brief → Der Brief wurde geschrieben.",
+            "focus": "الرِّسَالَةُ"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "الماضي والمضارع الصحيحان",
+          "de": "Regelmäßiges Perfekt und Präsens"
+        },
+        "body": {
+          "ar": "في الماضي نضم الأول ونكسر ما قبل الآخر: كَتَبَ ← كُتِبَ. وفي المضارع نضم حرف المضارعة ونفتح ما قبل الآخر: يَكْتُبُ ← يُكْتَبُ. تبقى علامات الإعراب حسب العامل: لم يُكتَبْ.",
+          "de": "Im Perfekt: erster Vokal u, vorletzter i. Im Präsens: Präfix u, vorletzter Vokal a. Der Modus bleibt vom Satz abhängig."
+        },
+        "examples": [
+          {
+            "ar": "فُتِحَ الْبَابُ. يُفْتَحُ الْبَابُ. لَمْ يُفْتَحْ.",
+            "de": "Die Tür wurde geöffnet / wird geöffnet / wurde nicht geöffnet.",
+            "focus": "يُفْتَحُ"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "المزيد والمضعّف",
+          "de": "Erweiterte und geminierte Verben"
+        },
+        "body": {
+          "ar": "نراعي بنية المزيد: عَلَّمَ ← عُلِّمَ، أَرْسَلَ ← أُرْسِلَ، اِسْتَخْدَمَ ← اُسْتُخْدِمَ. وفي المضعّف: مَدَّ ← مُدَّ، يَمُدُّ ← يُمَدُّ. لا نطبق الوزن على الحروف المكتوبة وحدها دون فهم البنية.",
+          "de": "Die Stammbildung bleibt erkennbar: ʿallama → ʿullima, arsala → ursila. Bei Verdopplung bleibt die Schadda erhalten."
+        },
+        "examples": [
+          {
+            "ar": "عُلِّمَ الطِّفْلُ الْقِرَاءَةَ. اُسْتُخْدِمَ الْحَاسُوبُ.",
+            "de": "Dem Kind wurde Lesen beigebracht. Der Computer wurde benutzt.",
+            "focus": "عُلِّمَ"
+          },
+          {
+            "ar": "مُدَّ الْحَبْلُ، وَيُمَدُّ الْآنَ.",
+            "de": "Das Seil wurde / wird gespannt.",
+            "focus": "مُدَّ"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "الأجوف والناقص",
+          "de": "Mittel- und endschwache Verben"
+        },
+        "body": {
+          "ar": "في الأجوف نقول: قال ← قِيلَ، باع ← بِيعَ، يقول ← يُقَالُ، يبيع ← يُبَاعُ. وفي الناقص: دعا ← دُعِيَ، رمى ← رُمِيَ، يدعو ← يُدْعَى، يرمي ← يُرْمَى. هذه صور فيها إعلال، وليست تطبيقًا حرفيًا لوزن الصحيح.",
+          "de": "Schwache Wurzeln haben Lautwandel: qāla → qīla / yuqālu; daʿā → duʿiya / yudʿā."
+        },
+        "examples": [
+          {
+            "ar": "قِيلَ الْحَقُّ. بِيعَ الْكِتَابُ. دُعِيَ الْجَارُ.",
+            "de": "Die Wahrheit wurde gesagt. Das Buch wurde verkauft. Der Nachbar wurde eingeladen.",
+            "focus": "قِيلَ"
+          },
+          {
+            "ar": "يُدْعَى الطَّالِبُ إِلَى الْحِوَارِ.",
+            "de": "Der Schüler wird zum Gespräch eingeladen.",
+            "focus": "يُدْعَى"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "التأنيث والعدد والفرق عن اسم المفعول",
+          "de": "Genus, Zahl und Abgrenzung zum Partizip"
+        },
+        "body": {
+          "ar": "مع نائب فاعل مؤنث نقول كُتِبَتْ رسالةٌ. وإذا تقدم الفعل على جمع ظاهر جاء مفردًا: كُتِبَتِ الرسائلُ. أما الرسائلُ كُتِبَتْ فمبتدأ وخبر جملة. كُتِبَ فعل له زمن، ومكتوب اسم مفعول. ولا يبنى فعل الأمر للمجهول.",
+          "de": "Vor einem nachgestellten Pluralsubjekt bleibt das Verb im Singular. Kutiba ist ein Verb mit Zeitbezug, maktūb ein Partizip. Ein Passivimperativ wird hier nicht gebildet."
+        },
+        "examples": [
+          {
+            "ar": "كُتِبَتِ الرَّسَائِلُ. الرِّسَالَةُ مَكْتُوبَةٌ.",
+            "de": "Die Briefe wurden geschrieben. Der Brief ist geschrieben.",
+            "focus": "مَكْتُوبَةٌ"
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "نغيّر صيغة الفعل ونحذف الفاعل ونرفع نائب الفاعل؛ وننتبه إلى الإعلال.",
+      "de": "Verbform ändern, Handelnden weglassen, Ersatzsubjekt in den Nominativ setzen; Lautwandel beachten."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "ما نائب الفاعل في «فُتِحَ الْبَابُ»؟",
+          "de": "Was ist das Ersatzsubjekt?"
+        },
+        "options": [
+          "البابُ",
+          "فاعل مستتر",
+          "فُتحَ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "الباب نائب فاعل مرفوع.",
+          "de": "Al-bābu ist Ersatzsubjekt im Nominativ."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "حوّل «كَتَبَ» إلى المجهول.",
+          "de": "Bilde das Passiv von kataba."
+        },
+        "options": [
+          "كَاتَبَ",
+          "كُتِبَ",
+          "كَتَّبَ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "نضم الأول ونكسر ما قبل الآخر.",
+          "de": "Erster Vokal u, vorletzter i."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "حوّل «يَكْتُبُ» إلى المجهول.",
+          "de": "Bilde das Passiv von yaktubu."
+        },
+        "options": [
+          "يُكْتِبُ",
+          "يَكْتَبُ",
+          "يُكْتَبُ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "نضم حرف المضارعة ونفتح ما قبل الآخر.",
+          "de": "Präfix u, vorletzter Vokal a."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أكمل: كُتِبَتِ ___.",
+          "de": "Ergänze mit dem Ersatzsubjekt."
+        },
+        "options": [
+          "الرِّسَالَةُ",
+          "الرِّسَالَةَ",
+          "الرِّسَالَةِ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "نائب الفاعل مرفوع.",
+          "de": "Das Ersatzsubjekt steht im Nominativ."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما مجهول «أَرْسَلَ»؟",
+          "de": "Passiv von arsala?"
+        },
+        "options": [
+          "أَرْسِلْ",
+          "أُرْسِلَ",
+          "أَرْسَلَ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "أُرسل فعل ماض مبني للمجهول، وأَرسل للمعلوم.",
+          "de": "Ursila ist Passiv, arsala Aktiv."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر مجهول «يَمُدُّ».",
+          "de": "Passiv von yamuddu?"
+        },
+        "options": [
+          "يُمِدُّ",
+          "يَمَدُّ",
+          "يُمَدُّ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "ضم حرف المضارعة وفتح ما قبل الآخر مع الإدغام.",
+          "de": "Präfix u und a vor dem geminierten Ende."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر مجهول «قَالَ».",
+          "de": "Passiv von qāla?"
+        },
+        "options": [
+          "قِيلَ",
+          "قُولَ",
+          "قَالَ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "قِيلَ فيها إعلال الأجوف.",
+          "de": "Qīla ist die mittelschwache Passivform."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر مجهول «يَبِيعُ».",
+          "de": "Passiv von yabīʿu?"
+        },
+        "options": [
+          "يُبِيعُ",
+          "يُبَاعُ",
+          "يَبَاعُ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "يُباع مضارع مبني للمجهول.",
+          "de": "Yubāʿu ist Präsens Passiv."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر مجهول «دَعَا».",
+          "de": "Passiv von daʿā?"
+        },
+        "options": [
+          "دَاعٍ",
+          "دُوعَ",
+          "دُعِيَ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "دُعِيَ ماض ناقص مبني للمجهول.",
+          "de": "Duʿiya ist endschwaches Perfekt Passiv."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أكمل: لم ___ البابُ.",
+          "de": "Ergänze nach lam."
+        },
+        "options": [
+          "يُفْتَحْ",
+          "يُفْتَحُ",
+          "يُفْتِحْ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "لم تجزم المضارع، ويظل مبنيًا للمجهول.",
+          "de": "Lam verlangt Jussiv; das Verb bleibt Passiv."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي كلمة اسم مفعول وليست فعلًا مبنيًا للمجهول؟",
+          "de": "Was ist ein Partizip statt eines Passivverbs?"
+        },
+        "options": [
+          "كُتِبَ",
+          "مَكْتُوبٌ",
+          "يُكْتَبُ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "مكتوب اسم مشتق بلا زمن صرفي.",
+          "de": "Maktūb ist ein abgeleitetes Nomen ohne Verbtempus."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر الجملة الصحيحة.",
+          "de": "Wähle den korrekten Satz."
+        },
+        "options": [
+          "كُتِبُوا الرسائلُ",
+          "كُتِبَتِ الرسائلَ",
+          "كُتِبَتِ الرسائلُ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الفعل المتقدم مفرد ونائب الفاعل مرفوع.",
+          "de": "Das vorangestellte Verb bleibt Singular; Ersatzsubjekt im Nominativ."
+        }
+      }
+    ]
+  },
+  "activeSections": [
+    {
+      "title": {
+        "ar": "اسم الفاعل من المضعّف",
+        "de": "Aktives Partizip bei Gemination"
+      },
+      "body": {
+        "ar": "نصوغ اسم الفاعل من الثلاثي المضعّف على فاعل مع الإدغام: مَدَّ ← مَادٌّ، رَدَّ ← رَادٌّ، عَدَّ ← عَادٌّ. الشدة تمثل الحرفين الأصليين ولا نحذف أحدهما.",
+        "de": "Das Muster fāʿil bleibt erhalten, die beiden gleichen Wurzelkonsonanten verschmelzen: madda → mādd."
+      },
+      "examples": [
+        {
+          "ar": "هُوَ مَادٌّ يَدَهُ لِلْمُسَاعَدَةِ.",
+          "de": "Er streckt seine Hand zur Hilfe aus.",
+          "focus": "مَادٌّ"
+        },
+        {
+          "ar": "هَذَا رَادٌّ عَلَى السُّؤَالِ.",
+          "de": "Dieser antwortet auf die Frage.",
+          "focus": "رَادٌّ"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ar": "اسم الفاعل من الأجوف",
+        "de": "Aktives Partizip bei mittlerem Schwachlaut"
+      },
+      "body": {
+        "ar": "إذا أعلّت عين الماضي الأجوف قلبت همزة في اسم الفاعل: قال ← قائل، باع ← بائع، نام ← نائم. أما ما صحت عينه في الماضي مثل عَوِرَ فله عَاوِرٌ؛ فلا نعمّم القلب على كل واو وياء وسط الكلمة.",
+        "de": "Bei einem im Perfekt veränderten mittleren Schwachlaut steht im Partizip Hamza: qāla → qāʾil, bāʿa → bāʾiʿ. Unveränderte Stämme wie ʿawira → ʿāwir sind abzugrenzen."
+      },
+      "examples": [
+        {
+          "ar": "الْبَائِعُ صَادِقٌ. الطِّفْلُ نَائِمٌ.",
+          "de": "Der Verkäufer ist ehrlich. Das Kind schläft.",
+          "focus": "الْبَائِعُ"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ar": "اسم الفاعل من الناقص وإعرابه",
+        "de": "Endschwaches Partizip und Kasus"
+      },
+      "body": {
+        "ar": "دعا ← داعٍ، رمى ← رامٍ، قضى ← قاضٍ. هذا اسم منقوص: تحذف ياؤه إذا كان نكرة مرفوعًا أو مجرورًا، وتثبت في النصب ومع أل والإضافة: جاء قاضٍ، مررت بقاضٍ، رأيت قاضيًا، جاء القاضي، هذا قاضي المدينة. وفي المؤنث: داعية، رامية.",
+        "de": "Daʿā → dāʿin, ramā → rāmin, qaḍā → qāḍin. Unbestimmt entfällt das y im Nominativ und Genitiv; es bleibt im Akkusativ, mit Artikel und in der Genitivverbindung."
+      },
+      "examples": [
+        {
+          "ar": "جَاءَ قَاضٍ. مَرَرْتُ بِقَاضٍ. رَأَيْتُ قَاضِيًا.",
+          "de": "Ein Richter kam. Ich ging an einem Richter vorbei. Ich sah einen Richter.",
+          "focus": "قَاضِيًا"
+        },
+        {
+          "ar": "جَاءَ الْقَاضِي. هَذَا قَاضِي الْمَدِينَةِ.",
+          "de": "Der Richter kam. Dies ist der Richter der Stadt.",
+          "focus": "قَاضِي"
+        }
+      ]
+    }
+  ],
+  "activeQuestions": [
+    {
+      "prompt": {
+        "ar": "ما اسم الفاعل من مدّ؟",
+        "de": "Wähle die korrekte aktive Partizipform."
+      },
+      "options": [
+        "مَمْدُودٌ",
+        "مَادٌّ",
+        "مُدَّ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "مادّ على فاعل مع الإدغام.",
+        "de": "Beachte Gemination, Hamza bei mittlerem Schwachlaut und den Kasus endschwacher Partizipien."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "ما اسم الفاعل من ردّ؟",
+        "de": "Wähle die korrekte aktive Partizipform."
+      },
+      "options": [
+        "رَادٌّ",
+        "رَدٌّ",
+        "مَرْدُودٌ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "ردّ فعل مضعّف واسم فاعله رادّ.",
+        "de": "Beachte Gemination, Hamza bei mittlerem Schwachlaut und den Kasus endschwacher Partizipien."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "ما اسم الفاعل من قال؟",
+        "de": "Wähle die korrekte aktive Partizipform."
+      },
+      "options": [
+        "قَاوِلٌ",
+        "مَقُولٌ",
+        "قَائِلٌ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "عين الأجوف المعتلة تقلب همزة.",
+        "de": "Beachte Gemination, Hamza bei mittlerem Schwachlaut und den Kasus endschwacher Partizipien."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "ما اسم الفاعل من باع؟",
+        "de": "Wähle die korrekte aktive Partizipform."
+      },
+      "options": [
+        "بَائِعٌ",
+        "بَايِعٌ",
+        "مَبِيعٌ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "بائع فيها همزة بدل حرف العلة.",
+        "de": "Beachte Gemination, Hamza bei mittlerem Schwachlaut und den Kasus endschwacher Partizipien."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "ما اسم الفاعل من نام؟",
+        "de": "Wähle die korrekte aktive Partizipform."
+      },
+      "options": [
+        "مَنَامٌ",
+        "نَائِمٌ",
+        "نَوْمٌ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "نام فعل أجوف واسم فاعله نائم.",
+        "de": "Beachte Gemination, Hamza bei mittlerem Schwachlaut und den Kasus endschwacher Partizipien."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أكمل: جاء ___ إلى المحكمة.",
+        "de": "Wähle die korrekte aktive Partizipform."
+      },
+      "options": [
+        "قاضيًا",
+        "قاضيٍ",
+        "قاضٍ"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "المنقوص النكرة المرفوع تحذف ياؤه.",
+        "de": "Beachte Gemination, Hamza bei mittlerem Schwachlaut und den Kasus endschwacher Partizipien."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أكمل: رأيت ___.",
+        "de": "Wähle die korrekte aktive Partizipform."
+      },
+      "options": [
+        "قَاضِيًا",
+        "قَاضٍ",
+        "قَاضِيٌ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "تثبت ياء المنقوص النكرة في النصب.",
+        "de": "Beachte Gemination, Hamza bei mittlerem Schwachlaut und den Kasus endschwacher Partizipien."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أكمل: مررت ___.",
+        "de": "Wähle die korrekte aktive Partizipform."
+      },
+      "options": [
+        "بقاضيًا",
+        "بقاضٍ",
+        "بقاضٌ"
+      ],
+      "correct": 1,
+      "explanation": {
+        "ar": "تحذف الياء في النكرة المجرورة.",
+        "de": "Beachte Gemination, Hamza bei mittlerem Schwachlaut und den Kasus endschwacher Partizipien."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "أكمل: هذا ___ المدينة.",
+        "de": "Wähle die korrekte aktive Partizipform."
+      },
+      "options": [
+        "قاضٍ",
+        "قاضيًا",
+        "قاضي"
+      ],
+      "correct": 2,
+      "explanation": {
+        "ar": "تثبت ياء المنقوص عند الإضافة.",
+        "de": "Beachte Gemination, Hamza bei mittlerem Schwachlaut und den Kasus endschwacher Partizipien."
+      }
+    },
+    {
+      "prompt": {
+        "ar": "ما اسم الفاعل من دعا؟",
+        "de": "Wähle die korrekte aktive Partizipform."
+      },
+      "options": [
+        "دَاعٍ",
+        "مَدْعُوٌّ",
+        "دُعَاءٌ"
+      ],
+      "correct": 0,
+      "explanation": {
+        "ar": "داعٍ منقوص، ومدعوّ اسم مفعول.",
+        "de": "Beachte Gemination, Hamza bei mittlerem Schwachlaut und den Kasus endschwacher Partizipien."
+      }
+    }
+  ]
+}

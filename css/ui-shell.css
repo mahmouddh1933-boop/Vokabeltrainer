@@ -1,0 +1,47 @@
+/* Shared page chrome: generous Arabic line metrics, clear hierarchy and touch targets. */
+:root{--shell-sidebar:264px;--shell-edge:clamp(16px,3vw,40px)}
+html{scrollbar-gutter:stable}
+body.olive-app{padding-inline:var(--shell-sidebar) 0;padding-block:0}
+body.olive-app .app-sidebar{width:var(--shell-sidebar);padding:24px 18px 18px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#789a82 transparent;background:linear-gradient(160deg,#153f35,#10372f);gap:0}
+body.olive-app .app-sidebar .brand{display:flex;flex-direction:column;align-items:center;gap:14px;margin:0 0 24px;padding:0 0 22px;border-bottom:1px solid #ffffff24;text-align:center;flex-shrink:0;min-width:0}
+body.olive-app .app-sidebar .brand-mark{display:block;width:84px;height:84px;flex:0 0 84px;border-radius:20px;overflow:hidden;background:#fff9e9;box-shadow:0 6px 20px #0002}
+body.olive-app .app-sidebar .brand-mark img{display:block;width:100%;height:100%;object-fit:contain}
+body.olive-app .app-sidebar .brand-type{display:flex;flex-direction:column;gap:7px;width:100%;min-width:0;letter-spacing:0;line-height:1.6;text-align:center}
+body.olive-app .app-sidebar .brand-type .brand-name{display:block;font-size:23px;font-weight:750;line-height:1.6;letter-spacing:0;color:#fff;margin:0;white-space:nowrap}
+body.olive-app .app-sidebar .brand-type .brand-tagline{display:block;font-size:12px;font-weight:400;line-height:1.8;color:#c4d7c9;margin:0;letter-spacing:0}
+body.olive-app .app-sidebar .brand-tagline>span{display:inline;font:inherit}
+body.olive-app .app-sidebar .brand-type .edition-brand{display:block!important;align-self:center;max-width:100%;margin:5px 0 0;padding:7px 12px;background:#ffffff0c;border:1px solid #ffffff26;border-radius:10px;font-size:13px!important;font-weight:600;line-height:1.8!important;color:#edf3cf!important;text-wrap:balance;overflow-wrap:normal;letter-spacing:0}
+body.olive-app .sidebar-label{margin:0 12px 10px;font-size:11px;letter-spacing:.04em;color:#b0c8b9}
+body.olive-app .app-sidebar nav{gap:6px}
+body.olive-app .app-sidebar .nav-link{min-height:48px;gap:12px;padding:11px 13px;font-size:14px;line-height:1.65;border-radius:12px;color:#d4e2d9}
+body.olive-app .app-sidebar .nav-link>span{min-width:0;text-wrap:pretty}
+body.olive-app .app-sidebar .nav-link svg{width:20px;height:20px;flex-shrink:0}
+body.olive-app .app-sidebar .nav-link:hover{background:#ffffff12;color:#fff}
+body.olive-app .app-sidebar .nav-link.is-active{background:#e0ebbc;color:#183e30;box-shadow:inset 0 0 0 1px #edf3d2;font-weight:750}
+body.olive-app .nav-link.is-active::before{display:none}
+body.olive-app .sidebar-bottom{padding-top:20px}.olive-app .sidebar-credit{font-size:12px;line-height:1.8;text-align:center;color:#c4d7c9}
+body.olive-app .app-topbar{min-height:76px;height:auto;padding:14px var(--shell-edge);gap:14px;align-items:center}
+body.olive-app .topbar-left{min-width:0;gap:12px;font-size:13px;line-height:1.6}
+body.olive-app .topbar-left>span:last-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+body.olive-app .breadcrumb-brand{flex-shrink:0;font-size:14px}
+body.olive-app .topbar-right{gap:12px;flex-shrink:0}
+body.olive-app .app-language-bar select{width:112px;max-width:100%;min-height:44px;font-size:13px;padding:8px 12px;border:1px solid #c8d2bf;border-radius:12px;background:#fffdf5}
+body.olive-app .learning-indicator{font-size:12px;color:#54684f}
+body.olive-app .container:not(.home-container){border-radius:24px;box-shadow:0 6px 28px #203e3706}
+body.olive-app .page-heading{gap:18px;align-items:flex-start;margin-block-end:24px}
+body.olive-app .page-heading>div{min-width:0}
+body.olive-app .page-heading h1{line-height:1.55;text-wrap:balance;overflow-wrap:normal}
+body.olive-app .page-heading p{line-height:1.9;color:#52624e}
+body.olive-app .practice-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;max-width:100%;padding:10px 17px;border:1px solid #9ab087;border-radius:12px;background:#e7eed9;color:#244b36;text-decoration:none;font:inherit;line-height:1.7;white-space:normal;text-align:center;cursor:pointer}
+body.olive-app .practice-button:hover{background:#d9e6c5}
+body.olive-app :is(button,a,input,select,textarea):focus-visible{outline:3px solid #b78c38;outline-offset:3px}
+body.olive-app :is(input:not([type=radio]):not([type=checkbox]):not([type=range]):not([type=hidden]),select,textarea){max-width:100%;font-size:max(16px,1em)}
+body.olive-app :is(button,select,input[type=search],input[type=text],input[type=email],input[type=password]){min-height:44px}
+body.olive-app .edition-grid .route-card{border:1px solid #d2dcc5;border-radius:20px;background:#fffdf5;transition:border-color .16s,box-shadow .16s}
+body.olive-app .edition-grid .route-card:hover{border-color:#7e9b65;box-shadow:0 8px 24px #203e3710}
+body.olive-app .edition-grid .route-card h2{font-size:1.3rem;line-height:1.65}
+@media(max-width:1200px) and (min-width:961px){:root{--shell-sidebar:248px}.olive-app .learning-indicator{display:none}body.olive-app .app-sidebar{padding-inline:14px}}
+@media(max-width:960px){body.olive-app{padding:0}body.olive-app .app-sidebar{width:min(296px,calc(100vw - 48px));padding:22px 18px 18px}body.olive-app .app-topbar{min-height:72px;padding:10px 16px}body.olive-app .menu-toggle{display:grid;width:44px;min-height:44px;padding:10px;border:1px solid #cbd5c0;border-radius:12px;background:#fffdf5;flex-shrink:0}body.olive-app .menu-toggle svg{width:22px;height:22px}body.olive-app .learning-indicator{display:none}body.olive-app .breadcrumb-brand,body.olive-app .breadcrumb-separator{display:none}body.olive-app .app-sidebar .brand-mark{width:76px;height:76px;flex-basis:76px}body.olive-app .nav-backdrop{backdrop-filter:blur(3px)}}
+@media(max-width:540px){body.olive-app .app-topbar{gap:8px;padding-inline:12px}body.olive-app .topbar-left{gap:9px;font-size:12px;flex:1}body.olive-app .topbar-right{gap:8px}.olive-app .topbar-avatar{display:none}body.olive-app .app-language-bar select{width:96px;font-size:13px;padding-inline:8px}body.olive-app .olive-theme-toggle{min-height:44px;width:44px;padding:10px}body.olive-app .container:not(.home-container){border-radius:18px}body.olive-app .page-heading{margin-block-end:18px}body.olive-app .page-heading h1{font-size:clamp(24px,6.5vw,32px)}body.olive-app .edition-grid .route-card{padding:20px;min-height:140px}}
+@media(prefers-reduced-motion:reduce){body.olive-app .app-sidebar,body.olive-app .edition-grid .route-card{transition:none}html{scroll-behavior:auto}}
+@media print{body.olive-app{padding:0}body.olive-app .app-sidebar,body.olive-app .app-topbar{display:none!important}body.olive-app .container{box-shadow:none!important}}

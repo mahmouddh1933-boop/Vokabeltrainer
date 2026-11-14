@@ -161,7 +161,9 @@
       finally{button.disabled=false;}
     }
     const button=document.getElementById('edition-import');if(button)button.addEventListener('click',importLegacy);
-    const subtitle=el('span',null,'edition-brand');subtitle.dataset.ar=E.ar;subtitle.dataset.de=E.de;subtitle.textContent=de()?E.de:E.ar;
+    const subtitle=el('span',null,'edition-brand');
+    const compact=value=>value.replace(/^حروف\s*[–—-]\s*|^Huroof\s*[–—-]\s*/u,'').replace(/([AB]1)\s*(?:و|und)\s*([AB]2)/g,'\u2066$1–$2\u2069');
+    subtitle.dataset.ar=compact(E.ar);subtitle.dataset.de=compact(E.de);subtitle.textContent=de()?subtitle.dataset.de:subtitle.dataset.ar;subtitle.dir='auto';
     document.querySelector('.app-sidebar .brand-type')?.append(subtitle);
     function render(){home();directory();progress();correctLinks();}
     render();window.addEventListener('app-language-change',render);

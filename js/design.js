@@ -69,7 +69,7 @@
     const sidebar = document.createElement("aside");
     sidebar.className = "app-sidebar";
     sidebar.id = "app-sidebar";
-    sidebar.innerHTML = `<a href="index.html" class="brand" aria-label="حروف من الزيتون"><span class="brand-mark"><img src="images/brand/olive-symbol.svg" alt="" /></span><span class="brand-type" lang="ar" dir="rtl">حروف من الزيتون<span>${label("Mit festen Wurzeln wachsen", "نتعلّم وننمو، بجذور راسخة")}</span></span></a>
+    sidebar.innerHTML = `<a href="index.html" class="brand" aria-label="حروف من الزيتون"><span class="brand-mark"><img src="images/brand/olive-symbol.svg" alt="" /></span><span class="brand-type" lang="ar" dir="rtl"><span class="brand-name">حروف من الزيتون</span><span class="brand-tagline">${label("Mit festen Wurzeln wachsen", "نتعلّم وننمو، بجذور راسخة")}</span></span></a>
       <div class="sidebar-label">${label("DEIN LERNRAUM", "مساحة التعلّم")}</div>
       <nav aria-label="${document.documentElement.lang === "de" ? "Hauptnavigation" : "القائمة الرئيسية"}">${nav.map(([href, name, de, ar]) => `<a href="${href}" class="nav-link ${href === activeHref ? "is-active" : ""}" ${href === activeHref ? 'aria-current="page"' : ""}>${icon(name)}${label(de, ar)}${href === "index.html#ready-lists-panel" ? `<span class="nav-badge">${window.VOCAB_CATALOG_META?.lists || 120}</span>` : ""}</a>`).join("")}</nav>
       <div class="sidebar-bottom"><p class="sidebar-credit" lang="ar" dir="rtl">إعداد الأستاذ محمود بركات</p></div>`;

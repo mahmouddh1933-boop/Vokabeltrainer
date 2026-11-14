@@ -40,9 +40,9 @@ DEFINITIONS=[
   'routes':[['vocabulary.html','مفردات A1 وA2','Wortschatz A1 und A2'],['sentences.html','تكوين جمل','Sätze bilden'],['stories.html','قصص قصيرة','Kurzgeschichten'],['skills.html','المهارات والوحدات','Fertigkeiten und Einheiten'],['grammar.html','القواعد والإملاء','Grammatik und Rechtschreibung'],['review.html','مراجعة المفردات','Wörter wiederholen'],['stats.html','تقدّمي','Mein Lernstand']],
   'levels':['A1','A2'],'statFields':['skillsV1'],'practiceKeys':['jisrPracticeV1:sentences','jisrPracticeV1:stories']},
  {'id':'b1-b2','ar':'حروف – تطوير العربية B1 وB2','de':'Huroof – Arabisch B1 und B2','archive':'Huroof-B1-B2.zip',
-  'description':'مفردات B1 وB2، ودروس القواعد والتصريف المتقدّم المتاحة في التطبيق.','descriptionDe':'Wortschatz B1 und B2 sowie die vorhandenen weiterführenden Grammatik- und Verbübungen.',
-  'routes':[['vocabulary.html','المفردات B1 وB2','Wortschatz B1 und B2'],['grammar.html','القواعد والإملاء المتقدّم','Weiterführende Grammatik'],['verbs.html','تصريف الأفعال المتقدّم','Weiterführende Verbformen'],['review.html','مراجعة المفردات','Wörter wiederholen'],['stats.html','تقدّمي','Mein Lernstand']],
-  'levels':['B1','B2'],'statFields':[],'practiceKeys':[]},
+  'description':'٤٠ وحدة B1 وB2 بمهاراتها الست، و٢٥١ فعلًا، وقواعد متقدمة مع المبني للمجهول والمشتقات.','descriptionDe':'40 Einheiten B1/B2 mit sechs Lernbereichen, 251 Verben und vertiefter Grammatik einschließlich Passiv und Partizipien.',
+  'routes':[['texts.html','النصوص والوحدات B1 وB2','Texte und Einheiten B1 und B2'],['vocabulary.html','المفردات B1 وB2','Wortschatz B1 und B2'],['grammar.html','القواعد والإملاء المتقدّم','Weiterführende Grammatik'],['verbs.html','تصريف الأفعال · ٢٥١ فعلًا','Verbformen · 251 Verben'],['review.html','مراجعة المفردات','Wörter wiederholen'],['stats.html','تقدّمي','Mein Lernstand']],
+  'levels':['B1','B2'],'statFields':['advancedUnitsV1'],'practiceKeys':[]},
  {'id':'books','ar':'حروف – الكتب والاختبارات','de':'Huroof – Bücher und Prüfungen','archive':'Huroof-Books.zip',
   'description':'الكتب الأربعة، مفردات الكتابين ببطاقاتها واختباراتها، واختبارات الأستاذ محمود بركات وتحديد المستوى.','descriptionDe':'Vier Bücher, beide Buchwortschätze mit Lernkarten und Tests, Lehrerprüfungen und Einstufungschecks.',
   'routes':[['books.html','الكتب الأربعة','Vier Bücher'],['vocabulary.html','مفردات الكتب','Buchwortschatz'],['exams.html','اختبارات الأستاذ محمود بركات','Lehrerprüfungen'],['placement.html','تحديد المستوى','Einstufung'],['review.html','مراجعة مفردات الكتب','Buchwörter wiederholen'],['stats.html','تقدّمي','Mein Lernstand']],
@@ -56,7 +56,7 @@ advanced_ids=[x['id'] for x in data['grammar']['lessons'] if x['id'] not in basi
 VOCAB_PAGES=['vocabulary','lernseite','test','test1','test2','test3','test4','test5','test6','ergebnis','review','stats']
 FOUNDATION=['letters','huruf','letter-tests','sounds','reading','reading-trainer','reading-exercises']
 BOOKS=['books','book-level-two','youth-book-two-part-one','youth-training-two','arabic-youth','exams','placement']
-owners={**{n+'.html':'start' for n in FOUNDATION},**{n+'.html':'books' for n in BOOKS},**{n+'.html':'a1-a2' for n in ['skills','sentences','stories',*VOCAB_PAGES,'grammar','verbs']}}
+owners={'texts.html':'b1-b2',**{n+'.html':'start' for n in FOUNDATION},**{n+'.html':'books' for n in BOOKS},**{n+'.html':'a1-a2' for n in ['skills','sentences','stories',*VOCAB_PAGES,'grammar','verbs']}}
 PREVIEWS={
  'start':[['huruf.html','تعرّف إلى الحرف، ثم اكتشف أشكاله وكلماته.','Lerne Buchstaben, ihre Formen und Beispielwörter kennen.'],['letter-tests.html','حوّل ما تعلّمته إلى تحدٍّ ممتع.','Festige dein Wissen mit kleinen Herausforderungen.'],['reading.html','كوّن الكلمة خطوة بخطوة من أصواتها.','Verbinde Laute Schritt für Schritt zu Wörtern.'],['reading-trainer.html','اقرأ كلمات نافعة بخط كبير وواضح.','Lies nützliche Wörter in großer, klarer Schrift.'],['reading-exercises.html#colors/colors-2','اقرأ التعليمات ولوّن العلم بنفسك.','Lies die Anweisungen und male die Flagge selbst aus.'],['reading-exercises.html#stories/stories-1','رتّب حكاية عربية واكتشف معناها.','Ordne eine arabische Geschichte und entdecke ihren Sinn.']],
  'a1-a2':[['vocabulary.html','ابدأ بمفردات حياتك اليومية.','Beginne mit Wörtern für deinen Alltag.'],['lernseite.html','تعلّم الكلمة واقلب البطاقة لتعرف معناها.','Lerne Wörter mit beidseitigen Lernkarten.'],['skills.html','تدرّب على المهارات ضمن وحدات مترابطة.','Übe deine Fertigkeiten in zusammenhängenden Einheiten.'],['sentences.html','اصنع جملًا تستطيع استعمالها.','Bilde Sätze, die du selbst verwenden kannst.'],['stories.html','كل قصة قصيرة خطوة نحو قراءة أفضل.','Jede Kurzgeschichte stärkt dein Lesen.'],['grammar.html','افهم القاعدة، ثم جرّبها بنفسك.','Verstehe die Regel und wende sie selbst an.']],
@@ -116,7 +116,7 @@ for definition in DEFINITIONS:
  pages=['index','apps','login','admin','offline']
  if ident=='start':pages+=FOUNDATION+['progress']
  elif ident=='a1-a2':pages+=VOCAB_PAGES+['skills','sentences','stories','grammar','verbs']
- elif ident=='b1-b2':pages+=VOCAB_PAGES+['grammar','verbs']
+ elif ident=='b1-b2':pages+=VOCAB_PAGES+['grammar','verbs','texts']
  else:pages+=VOCAB_PAGES+BOOKS
  pages=list(dict.fromkeys(pages));d['pages']=[n+'.html' for n in pages]
  ids=list(basic_ids if ident=='a1-a2' else advanced_ids if ident=='b1-b2' else [])
@@ -144,13 +144,20 @@ for definition in DEFINITIONS:
     if stage['id']==extra['stage']:stage['ids'].append(extra['id'])
   d['unitGrammarLinks']=json.loads((ROOT/'data/a1-a2-unit-links.json').read_text())
   lessons.sort(key=lambda lesson:[i for stage in stages for i in stage['ids']].index(lesson['id']))
+ if ident=='b1-b2':
+  additions=json.loads((ROOT/'data/b1-b2-grammar.json').read_text())
+  passive=additions['passive'];lessons.append(passive);ids.append(passive['id'])
+  next(stage for stage in stages if stage['id']=='advance')['ids'].append(passive['id'])
+  active=next(lesson for lesson in lessons if lesson['id']=='active-participle')
+  active['sections']+=additions['activeSections'];active['questions']+=additions['activeQuestions']
  grammar={**data['grammar'],'lessons':lessons,'stages':stages,'basicVerbs':data['grammar']['basicVerbs'] if ident=='a1-a2' else []}
- verbs=data['verbs']+json.loads((ROOT/'data/a1-a2-extra-verbs.json').read_text()) if ident=='a1-a2' else data['verbs'][30:] if ident=='b1-b2' else []
+ verbs=data['verbs']+json.loads((ROOT/'data/a1-a2-extra-verbs.json').read_text()) if ident in ['a1-a2','b1-b2'] else []
  practice={**data['practice'],'sentences':data['practice']['sentences'] if ident=='a1-a2' else [],'stories':data['practice']['stories'] if ident=='a1-a2' else [],'sounds':data['practice']['sounds'] if ident=='start' else []}
  if ident=='a1-a2':practice['stories']=sorted(practice['stories']+json.loads((ROOT/'data/a1-a2-story-additions.json').read_text()),key=lambda story:story['level'])
  practice['audio']=audio_subset(practice['audio'],[practice['sentences'],practice['stories'],practice['sounds']])
  counts={'vocabularyLists':len(scoped['lists']),'vocabularyWords':sum(len(l['words']) for l in scoped['lists']),'bookVocabularyLists':len(all_lists)-len(scoped['lists']),'bookVocabularyWords':sum(len(l['words']) for l in all_lists)-sum(len(l['words']) for l in scoped['lists']),'grammarLessons':len(lessons),'grammarQuestions':sum(len(l['questions']) for l in lessons),'verbs':len(verbs),'skillsUnits':12 if ident=='a1-a2' else 0,'stories':len(practice['stories']),'sentences':len(practice['sentences']),'letters':28 if ident=='start' else 0,'readingWords':150 if ident=='start' else 0,'books':4 if ident=='books' else 0}
  counts['readingActivities']=64 if ident=='start' else 0
+ counts['advancedUnits']=40 if ident=='b1-b2' else 0
  d['counts']=counts;d['summary']=d['description'];d['summaryDe']=d['descriptionDe']
  overrides={
   'data/vocab_catalog.json':dump(scoped),'data/vocab_catalog_fallback.js':'window.VOCAB_CATALOG_META='+dump({'lists':len(all_lists)})+';window.VOCAB_CATALOG_FALLBACK='+dump(scoped)+';',
@@ -160,7 +167,7 @@ for definition in DEFINITIONS:
  overrides['js/app.js']=(ROOT/'js/app.js').read_text()+'''\n(()=>{const E=window.HuroofEdition;if(E?.initialList.length&&!window.JisrStorage.local.getItem('vocabList'))window.VocabApp.saveVocabList(E.initialList,E.initialSource)})();'''
  source=(ROOT/'js/verb-data.js').read_text();start=source.index('  const verbs = ');end=source.index('  const pronouns = ')
  overrides['js/verb-data.js']=source[:start]+'  const verbs = '+dump(verbs)+';\n'+source[end:]
- if ident=='a1-a2':
+ if ident in ['a1-a2','b1-b2']:
   overrides['js/verb-data.js']=overrides['js/verb-data.js'].replace("    let form = conjugate(verb, 'present', person);", "    if (verb.moods?.[mood]) return verb.moods[mood][person.index];\n    let form = conjugate(verb, 'present', person);")
   source=(ROOT/'js/pages/verbs.js').read_text().replace('const structureDe = {','const structureDe = {"ثلاثي مجرد":"dreiradikaliges Grundverb",')
   families={k:{'ar':ar,'de':de} for k,ar,de in [('sound','صحيح سالم','Regelmäßig'),('hamzated','صحيح مهموز','Mit Hamza'),('doubled','صحيح مضاعف','Geminiert'),('example','معتل مثال','Anfangsschwach'),('hollow','معتل أجوف','Mittelschwach'),('defective','معتل ناقص','Endschwach')]}
@@ -173,7 +180,7 @@ for definition in DEFINITIONS:
   audio=json.loads(subprocess.check_output(['node','-e',capture],cwd=ROOT,text=True));audio['audio']=audio_subset(audio['audio'],all_lists)
   overrides['js/'+filename]='window.'+variable+'='+dump(audio)+';'
  design=(ROOT/'js/design.js').read_text();nav=[['index.html','home','Übersicht','نظرة عامة']]+[[r['href'],'book',r['de'],r['ar']] for r in d['routes']]
- if ident not in ['start','a1-a2']:nav.insert(-1,['test.html','check','Vokabeltests','اختبارات المفردات'])
+ if ident=='books':nav.insert(-1,['test.html','check','Vokabeltests','اختبارات المفردات'])
  nav.append(['apps.html','home','Weitere Apps','التطبيقات الأخرى'])
  design=re.sub(r'    const nav =.*?    const activeHref =.*?;\n','    const nav = '+dump(nav)+'.concat(window.OliveAccess?.isAdmin() ? [["admin.html","admin","Verwaltung","لوحة الإدارة"]] : []).map(([href,_,de,ar])=>[href,iconForPage(href),de,ar]);\n    const activeHref = page;\n',design,count=1,flags=re.S)
  overrides['js/design.js']=design
@@ -204,7 +211,7 @@ for definition in DEFINITIONS:
    if name in ['sentences','stories']:source=re.sub(r'<nav\b[^>]*class="practice-links".*?</nav>','',source,flags=re.S)
    if name=='vocabulary':source=source.replace('A1 ← B2','A1 ← A2').replace('A1 → B2','A1 → A2').replace('من A1 إلى B2','في A1 وA2').replace('von A1 bis B2','für A1 und A2')
    if name=='stories':source=source.replace('ست قصص مصوّرة للحياة اليومية.','٢٤ قصة للحياة اليومية: ١٢ قصة لكل مستوى.').replace('Sechs illustrierte Alltagsgeschichten.','24 Alltagsgeschichten: 12 pro Stufe.')
-   if name in ['verbs','grammar']:source=source.replace('٥١ فعلًا','٢٥١ فعلًا').replace('٥١ فعلاً','٢٥١ فعلاً').replace('51 Verben','251 Verben')
+  if ident in ['a1-a2','b1-b2'] and name in ['verbs','grammar']:source=source.replace('٥١ فعلًا','٢٥١ فعلًا').replace('٥١ فعلاً','٢٥١ فعلاً').replace('51 Verben','251 Verben')
   source=source.replace('</title>',' · '+d['ar']+'</title>')
   if a.hosting:source=source.replace('<html ','<html data-olive-hosted="true" ',1)
   source=source.replace('</head>','<link rel="stylesheet" href="css/editions.css"><script src="js/edition-ui.js" defer></script></head>')
@@ -249,6 +256,8 @@ for definition in DEFINITIONS:
  include('data/vocab_catalog.json')
  if ident=='a1-a2':
   for path in (ROOT/'audio/skills').glob('*.mp3'):include(path.relative_to(ROOT).as_posix())
+ if ident=='b1-b2':
+  for path in (ROOT/'audio/b1-b2').glob('*.mp3'):include(path.relative_to(ROOT).as_posix())
  for name in ['js/cloud-sync-core.js','js/cloud-sync.js','js/vendor/firebase/firebase-app-compat.js','js/vendor/firebase/firebase-auth-compat.js','js/vendor/firebase/firebase-firestore-compat.js']:include(name)
  for group in ['images/pwa','images/brand']+['images/editions/'+item['id'] for item in DEFINITIONS if item['id']!=ident]+(['images/book-two','images/youth','images/youth-two','images/exams'] if ident=='books' else []):
   for path in (ROOT/group).rglob('*'):
