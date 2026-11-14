@@ -1,4 +1,4 @@
-"""Build explicit paradigms from editorially specified stems, only for A1–A2."""
+"""Build explicit paradigms from editorially specified stems, shared by all conjugation pages."""
 import json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -244,11 +244,67 @@ for form,r,de,meaning in [
  ('VIII','ن ظ ر','warten','الِانْتِظَارُ'),('VIII','ف ق د','vermissen','الِافْتِقَادُ'),
  ('X','ح س ن','gutheißen','الِاسْتِحْسَانُ'),('X','س ل م','sich ergeben','الِاسْتِسْلَامُ')]:
  derived_verb(form,r,de)['meaning']['ar']=meaning
+# Forty-nine additional, explicitly specified verbs (stable IDs added-201..249).
+for row in """رَقَد|رْقُد|اُرْقُد|schlafen / ruhen|ر ق د|الرُّقَادُ
+نَهَض|نْهَض|اِنْهَض|aufstehen|ن ه ض|النُّهُوضُ
+هَمَس|هْمِس|اِهْمِس|flüstern|ه م س|الْهَمْسُ
+لَمَس|لْمِس|اِلْمِس|berühren|ل م س|اللَّمْسُ
+لَمَح|لْمَح|اِلْمَح|kurz erblicken|ل م ح|اللَّمْحُ
+فَحَص|فْحَص|اِفْحَص|untersuchen|ف ح ص|الْفَحْصُ
+حَفَر|حْفِر|اِحْفِر|graben|ح ف ر|الْحَفْرُ
+دَفَن|دْفِن|اِدْفِن|begraben|د ف ن|الدَّفْنُ
+غَرَس|غْرِس|اِغْرِس|einpflanzen|غ ر س|الْغَرْسُ
+حَرَث|حْرُث|اُحْرُث|pflügen|ح ر ث|الْحَرْثُ
+حَصَد|حْصُد|اُحْصُد|ernten|ح ص د|الْحَصَادُ
+عَجَن|عْجِن|اِعْجِن|kneten|ع ج ن|الْعَجْنُ
+قَشَر|قْشِر|اِقْشِر|schälen|ق ش ر|الْقَشْرُ
+نَفَخ|نْفُخ|اُنْفُخ|blasen|ن ف خ|النَّفْخُ
+نَحَت|نْحِت|اِنْحِت|schnitzen|ن ح ت|النَّحْتُ
+صَنَع|صْنَع|اِصْنَع|herstellen|ص ن ع|الصُّنْعُ
+شَرَح|شْرَح|اِشْرَح|erläutern|ش ر ح|الشَّرْحُ
+طَبَع|طْبَع|اِطْبَع|drucken|ط ب ع|الطَّبْعُ
+عَبَر|عْبُر|اُعْبُر|überqueren|ع ب ر|الْعُبُورُ
+لَمَع|لْمَع|اِلْمَع|glänzen|ل م ع|اللَّمَعَانُ""".splitlines():
+ past,present,command,de,root,meaning=row.split('|')
+ regular(past,present,command,de,root)['meaning']['ar']=meaning
+for past,present,command,de,root,meaning in [
+ ('أَسِف','أْسَف','اِئْسَف','bedauern','أ س ف','الْأَسَفُ'),
+ ('أَلِف','أْلَف','اِئْلَف','sich gewöhnen an','أ ل ف','الْأُلْفَةُ'),
+ ('نَشَأ','نْشَأ','اِنْشَأ','aufwachsen / entstehen','ن ش أ','النَّشْأَةُ')]:
+ v=regular(past,present,command,de,root,kind='hamzated',pattern='فَعِلَ' if 'ِ' in past else 'فَعَلَ');v['meaning']['ar']=meaning
+ if past.endswith('أ'):v['forms']['past'][12]=past[:-1]+'ؤُوا'
+for a,b,vowel,de,meaning in [
+ ('ح','د','ُ','begrenzen','الْحَدُّ'),('ص','د','ُ','abwehren','الصَّدُّ'),
+ ('ج','ر','ُ','schleppen / ziehen','الْجَرُّ'),('ل','ف','ُ','einwickeln','اللَّفُّ')]:
+ doubled(a,b,vowel,de);verbs[-1]['meaning']['ar']=meaning
+for past,present,command,de,root,meaning in [
+ ('وَعَظ','عِظ','عِظ','ermahnen','و ع ظ','الْوَعْظُ'),
+ ('وَسَم','سِم','سِم','kennzeichnen','و س م','الْوَسْمُ'),
+ ('وَشَم','شِم','شِم','tätowieren','و ش م','الْوَشْمُ')]:
+ regular(past,present,command,de,root,kind='weak',family='example')['meaning']['ar']=meaning
+for past,short,present,juss,command,de,root,meaning in [
+ ('غَاب','غِب','غِيب','غِب','غِب','abwesend sein','غ ي ب','الْغِيَابُ'),
+ ('شَاع','شِع','شِيع','شِع','شِع','sich verbreiten','ش ي ع','الشُّيُوعُ'),
+ ('ذَاب','ذُب','ذُوب','ذُب','ذُب','schmelzen','ذ و ب','الذَّوَبَانُ')]:
+ hollow(past,short,present,juss,command,de,root);verbs[-1]['meaning']['ar']=meaning
+for past,connected,present,command,de,root,meaning in [
+ ('سَمَا','سَمَوْ','سْم','اُسْم','emporsteigen','س م و','السُّمُوُّ'),
+ ('نَمَا','نَمَوْ','نْم','اُنْم','wachsen','ن م و','النُّمُوُّ')]:
+ defective(past,connected,present,command,'u',de,root);verbs[-1]['meaning']['ar']=meaning
+for form,root,de,meaning in [
+ ('II','ط ب ق','anwenden','التَّطْبِيقُ'),('II','ع ب ر','ausdrücken','التَّعْبِيرُ'),
+ ('II','ب س ط','vereinfachen','التَّبْسِيطُ'),('II','ط ه ر','reinigen / desinfizieren','التَّطْهِيرُ'),('II','ر ش ح','nominieren','التَّرْشِيحُ'),
+ ('III','ن ف س','konkurrieren','الْمُنَافَسَةُ'),('III','ص ل ح','sich versöhnen mit','الْمُصَالَحَةُ'),('III','ب ر ك','segnen','الْمُبَارَكَةُ'),
+ ('IV','ن ف ق','ausgeben','الْإِنْفَاقُ'),('IV','ش ر ف','beaufsichtigen','الْإِشْرَافُ'),('IV','ت ق ن','beherrschen / sorgfältig ausführen','الْإِتْقَانُ'),
+ ('V','ح م ل','ertragen / Verantwortung tragen','التَّحَمُّلُ'),('V','ع ر ف','kennenlernen','التَّعَرُّفُ'),('VI','س م ح','nachsichtig sein','التَّسَامُحُ')]:
+ derived_verb(form,root,de)['meaning']['ar']=meaning
+
 # Refresh irregular examples after their explicit paradigms have been assigned.
 for v in verbs[100:]:
  for tense in v['forms']:
   v['example'][tense][0]=('هُوَ ' if tense!='imperative' else '')+v['forms'][tense][0 if tense=='imperative' else 8]+'.'
-assert len(verbs)==200,len(verbs)
-assert len({v['forms']['past'][8] for v in verbs})==200
+assert len(verbs)==249,len(verbs)
+assert len({v['forms']['past'][8] for v in verbs})==249
 (ROOT/'data/a1-a2-extra-verbs.json').write_text(json.dumps(verbs,ensure_ascii=False,indent=2)+'\n')
-print('Built 200 additional verbs with complete paradigms and moods.')
+(ROOT/'js/verb-additions.js').write_text('window.VerbAdditions='+json.dumps(verbs,ensure_ascii=False,separators=(',',':'))+';\n')
+print('Built 249 additional verbs: 300 total, including 49 new entries.')

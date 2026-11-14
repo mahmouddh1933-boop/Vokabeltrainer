@@ -9,10 +9,10 @@ const practice=getData('js/practice-data.js').ArabicPracticeData;
 const grammar=getData('js/grammar-data.js').ArabicGrammarData;
 const links=require('../data/a1-a2-unit-links.json');
 const get=ar=>verbs.verbs.find(v=>verbs.conjugate(v,'past',verbs.pronouns[8])===ar);
-test('All 51 original verbs plus 200 distinct additions have complete paradigms and six valid families',()=>{
- assert.equal(verbs.verbs.length,251);
- assert.equal(new Set(verbs.verbs.map(v=>v.id)).size,251);
- assert.equal(new Set(verbs.verbs.map(v=>verbs.conjugate(v,'past',verbs.pronouns[8]).normalize('NFC'))).size,251);
+test('All 51 original verbs plus 249 distinct additions have complete paradigms and six valid families',()=>{
+ assert.equal(verbs.verbs.length,300);
+ assert.equal(new Set(verbs.verbs.map(v=>v.id)).size,300);
+ assert.equal(new Set(verbs.verbs.map(v=>verbs.conjugate(v,'past',verbs.pronouns[8]).normalize('NFC'))).size,300);
  for(const old of original.verbs)assert.deepEqual(verbs.verbs.find(v=>v.id===old.id),old);
  for(const v of verbs.verbs){
   assert.ok(['sound','hamzated','doubled','example','hollow','defective'].includes(v.family));

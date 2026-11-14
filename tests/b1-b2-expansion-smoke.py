@@ -40,7 +40,7 @@ with sync_playwright() as pw:
   for width in [320,768,1440]:
    page.set_viewport_size({'width':width,'height':960});assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
  page.goto(base+'grammar.html#passive-voice');page.wait_for_function('document.querySelector("#grammar-lesson-select").value==="passive-voice"');assert 'للمجهول' in page.locator('#grammar-lesson-select option:checked').inner_text()
- page.goto(base+'verbs.html');page.wait_for_selector('#verb-select option',state='attached');assert page.locator('#verb-select option').count()==251
+ page.goto(base+'verbs.html');page.wait_for_selector('#verb-select option',state='attached');assert page.locator('#verb-select option').count()==300
  assert not errors,errors;assert not missing,missing
- print('PASS 40 units, 240 sections, persisted isolation, AR/DE, mobile, passive lesson, 251 verbs; no missing assets or JS errors')
+ print('PASS 40 units, 240 sections, persisted isolation, AR/DE, mobile, passive lesson, 300 verbs; no missing assets or JS errors')
  b.close()

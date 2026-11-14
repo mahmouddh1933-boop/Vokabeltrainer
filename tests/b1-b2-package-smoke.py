@@ -40,9 +40,9 @@ with tempfile.TemporaryDirectory(prefix='huroof-advanced-zip-') as tmp:
       page.locator('#advanced-audio').evaluate('(a)=>a.play()');page.wait_for_function('document.querySelector("#advanced-audio").currentTime>.05')
      if section=='writing':
       page.locator('#advanced-essay').fill(level+' كتابة في النسخة المحمولة');page.reload();page.wait_for_selector('#advanced-essay');assert page.locator('#advanced-essay').input_value().startswith(level)
-   page.goto(base+'verbs.html');page.wait_for_selector('#verb-select option',state='attached');assert page.locator('#verb-select option').count()==251
+   page.goto(base+'verbs.html');page.wait_for_selector('#verb-select option',state='attached');assert page.locator('#verb-select option').count()==300
    page.goto(base+'grammar.html#passive-voice');page.wait_for_function('document.querySelector("#grammar-lesson-select").value==="passive-voice"')
    assert not errors,errors
    browser.close()
  finally:server.shutdown();server.server_close()
- print('PASS portable ZIP: all PWA hashes, inline assets, both levels/six sections, local audio, retained drafts, passive grammar and 251 verbs')
+ print('PASS portable ZIP: all PWA hashes, inline assets, both levels/six sections, local audio, retained drafts, passive grammar and 300 verbs')

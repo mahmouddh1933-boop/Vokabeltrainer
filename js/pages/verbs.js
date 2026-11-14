@@ -20,10 +20,12 @@
       imperative: { ar: "الأمر", de: "Imperativ" },
     };
     const kinds = {
-      sound: { ar: "أفعال صحيحة سالمة", de: "Regelmäßige Verben" },
-      hamzated: { ar: "أفعال مهموزة", de: "Verben mit Hamza" },
-      doubled: { ar: "أفعال صحيحة مضاعفة", de: "Geminierte Verben" },
-      weak: { ar: "أفعال معتلة", de: "Schwache Verben" },
+      sound: { ar: "صحيح سالم", de: "Regelmäßig" },
+      hamzated: { ar: "صحيح مهموز", de: "Mit Hamza" },
+      doubled: { ar: "صحيح مضاعف", de: "Geminiert" },
+      example: { ar: "معتل مثال", de: "Anfangsschwach" },
+      hollow: { ar: "معتل أجوف", de: "Mittelschwach" },
+      defective: { ar: "معتل ناقص", de: "Endschwach" },
     };
     const shuffle = window.VocabApp.shuffle;
     const normalize = (value) =>
@@ -215,7 +217,9 @@
       const select = $("verb-select");
       select.replaceChildren();
       Object.entries(kinds).forEach(([kind, label]) => {
-        const items = matches.filter((item) => item.kind === kind);
+        const alphabet = new Intl.Collator("ar", { sensitivity: "base" });
+        const items = matches.filter((item) => item.family === kind).sort((a, b) =>
+          alphabet.compare(normalize(conjugate(a, "past", pronouns[8])), normalize(conjugate(b, "past", pronouns[8]))));
         if (!items.length) return;
         const group = document.createElement("optgroup");
         group.label = label[language()];

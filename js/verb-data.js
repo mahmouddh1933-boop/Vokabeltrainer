@@ -1322,6 +1322,9 @@
       ? (verb.id === 'stand' ? 'example' : ['say','sleep'].includes(verb.id) ? 'hollow' : 'defective')
       : verb.kind;
   });
+  const additions = typeof module !== "undefined" && module.exports
+    ? require("../data/a1-a2-extra-verbs.json") : window.VerbAdditions;
+  verbs.push(...additions);
   const pronouns = [
     {
       ar: "أَنَا",
@@ -1493,6 +1496,7 @@
   }
   // Person-sensitive mood changes: the feminine-plural Nūn is never removed.
   function inflectedPresent(verb, person, mood) {
+    if (verb.moods?.[mood]) return verb.moods[mood][person.index];
     let form = conjugate(verb, 'present', person);
     if ([7,13].includes(person.index)) return form;
     if ([3,4,5,6,10,11,12].includes(person.index))

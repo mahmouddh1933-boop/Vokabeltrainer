@@ -17,13 +17,19 @@ Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](download
 
 [Ausführliche App-Tour auf Deutsch](downloads/Huroof-Rundgang-DE.mp4): rund 17 Minuten mit 25 Kapiteln, echten Bedienbeispielen und eingeblendeten Untertiteln. [Begleitmaterial für Website und YouTube](downloads/Huroof-Rundgang-DE-Begleitmaterial.zip) · [Inhalt und Quellen](media/tutorial-de/README.md).
 
+## تصريف الأفعال والخط الموحد · 300 Verben und einheitliche Schrift
+
+Die Konjugation enthält jetzt **300 verschiedene Verben**: die bisherigen 251 plus 49 neue Verben. Die Auswahl ist nach regelmäßig, mit Hamza, geminiert, anfangsschwach, mittelschwach und endschwach gruppiert; innerhalb jeder Gruppe stehen die arabischen Grundformen alphabetisch, unabhängig von der Oberflächensprache. Such- und Typfilter bleiben kombinierbar. Die zusätzlichen Paradigmen werden mit `python3 tools/build-a1-a2-verbs.py` aus ausdrücklich festgelegten Stämmen erzeugt.
+
+Alle vier Apps, die Anmeldung, Offline-Seiten und die gemeinsame Auswahlseite verwenden lokal eingebundenes **Noto Sans Arabic**, denselben Font wie bisher A1/A2. Die gemeinsame Definition liegt in `css/typography.css`; die Schriftdatei und ihre Lizenz sind in jedem Download enthalten. `node --test tests/verbs-300.test.js` prüft neue unregelmäßige Formen; `python3 tests/verb-order-smoke.py` prüft Sortierung, Filter und Darstellung der Quellseite sowie beider Konjugationsausgaben.
+
 ## Gemeinsame Oberfläche
 
 Alle Lernseiten verwenden `css/ui-shell.css`: ein gut lesbarer Markenbereich mit großem Logo, getrenntem App-Namen und eindeutiger Stufenanzeige; eine scrollbar erreichbare Navigation; größere Bedienelemente, sichtbare Tastaturfokusse und mobile Menüs. Anmeldung und Offline-Seite nutzen dieselbe visuelle Hierarchie. `python3 tests/ui-shell-smoke.py --base-url http://127.0.0.1:8093` prüft die Seiten aller vier gebauten Ausgaben in Deutsch und Arabisch bei 320, 390 und 1440 Pixeln (292 Ansichten).
 
 ## تطوير B1/B2 · Texte und Einheiten
 
-Die Ausgabe **Huroof-B1-B2** enthält 40 Einheiten (20 B1, 20 B2) mit Lesen, Wortschatz, Grammatik, lokalem Hörbericht, Gespräch und Schreiben. Die Lesetexte umfassen 200–350 Wörter in B1 und 350–600 in B2; Antworten und Entwürfe werden gespeichert. Hinzu kommen dieselben 251 Verben wie in A1/A2, das Passiv und aktive Partizipien geminierter und schwacher Verben. Der seitliche Link zu Vokabeltests entfällt. Das neue Logo ist eingebunden. [المحتوى، البناء والفحوص · Inhalt und Prüfungen](docs/B1-B2-UNITS.md).
+Die Ausgabe **Huroof-B1-B2** enthält 40 Einheiten (20 B1, 20 B2) mit Lesen, Wortschatz, Grammatik, lokalem Hörbericht, Gespräch und Schreiben. Die Lesetexte umfassen 200–350 Wörter in B1 und 350–600 in B2; Antworten und Entwürfe werden gespeichert. Hinzu kommen dieselben 300 Verben wie in A1/A2, das Passiv und aktive Partizipien geminierter und schwacher Verben. Der seitliche Link zu Vokabeltests entfällt. Das neue Logo ist eingebunden. [المحتوى، البناء والفحوص · Inhalt und Prüfungen](docs/B1-B2-UNITS.md).
 
 ## Neue Fertigkeiten und A1/A2-Einheiten
 

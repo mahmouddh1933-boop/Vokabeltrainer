@@ -12,14 +12,14 @@ with sync_playwright() as pw:
   for name in manifest['pages']:
    page.set_viewport_size({'width':1440,'height':1000});page.goto(f'{base}/{app}/{name}',wait_until='domcontentloaded')
    if name in ['login.html','offline.html']:
-    page.wait_for_selector('main');page.set_viewport_size({'width':320,'height':844});assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),(app,name);count+=1;continue
-   page.wait_for_selector('.brand-name',state='attached')
+    page.wait_for_selector('main');page.evaluate('document.fonts.ready');assert page.locator('main').evaluate('(n)=>getComputedStyle(n).fontFamily.includes("Noto Sans Arabic")');page.set_viewport_size({'width':320,'height':844});assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),(app,name);count+=1;continue
+   page.wait_for_selector('.brand-name',state='attached');page.evaluate('document.fonts.ready')
    # Skip the private admin application state; its shared navigation is still audited.
    for lang,width in [('ar',1440),('de',1440),('de',390),('ar',320)]:
     page.set_viewport_size({'width':width,'height':900});page.locator('#app-language-select').select_option(lang)
     if width<=960:
      page.locator('.menu-toggle').click();page.wait_for_function('document.body.classList.contains("nav-open")')
-    info=page.evaluate('''()=>{const brand=document.querySelector('.brand-name'),side=document.querySelector('.app-sidebar'),r=brand.getBoundingClientRect(),s=side.getBoundingClientRect(),nameStyle=getComputedStyle(brand),nav=[...side.querySelectorAll('.nav-link')];return {overflow:document.documentElement.scrollWidth>innerWidth,nameClipped:brand.scrollWidth>brand.clientWidth+1,nameWrap:r.height>parseFloat(nameStyle.lineHeight)*1.2,brandOutside:r.left<s.left||r.right>s.right,smallLinks:nav.some(n=>n.getBoundingClientRect().height<44),unreachable:side.scrollHeight>side.clientHeight&&getComputedStyle(side).overflowY!=='auto'}}''')
+    info=page.evaluate('''()=>{const brand=document.querySelector('.brand-name'),side=document.querySelector('.app-sidebar'),r=brand.getBoundingClientRect(),s=side.getBoundingClientRect(),nameStyle=getComputedStyle(brand),nav=[...side.querySelectorAll('.nav-link')];return {overflow:document.documentElement.scrollWidth>innerWidth,nameClipped:brand.scrollWidth>brand.clientWidth+1,nameWrap:r.height>parseFloat(nameStyle.lineHeight)*1.2,brandOutside:r.left<s.left||r.right>s.right,wrongFont:!getComputedStyle(brand).fontFamily.includes('Noto Sans Arabic')||!document.fonts.check('20px "Noto Sans Arabic"'),smallLinks:nav.some(n=>n.getBoundingClientRect().height<44),unreachable:side.scrollHeight>side.clientHeight&&getComputedStyle(side).overflowY!=='auto'}}''')
     if any(info.values()):issues.append(dict(app=app,page=name,lang=lang,width=width,**info))
     if width<=960:
      page.keyboard.press('Escape');assert page.locator('.menu-toggle').get_attribute('aria-expanded')=='false';assert page.locator('.menu-toggle').evaluate('(e)=>e===document.activeElement')

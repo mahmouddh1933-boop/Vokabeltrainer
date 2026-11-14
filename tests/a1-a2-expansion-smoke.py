@@ -15,8 +15,8 @@ with sync_playwright() as pw:
     page.on('pageerror',lambda e:errors.append(str(e)))
     page.on('response',lambda r:missing.append(r.url) if r.status==404 else None)
     def go(name):
-        page.goto(URL+name);page.wait_for_function('!!window.VocabApp&&!!document.querySelector(".edition-brand")')
-    def labels_clean():page.wait_for_function('/A1/.test(document.querySelector(".edition-brand").innerText)&&/A2/.test(document.querySelector(".edition-brand").innerText)')
+        page.goto(URL+name);page.wait_for_function('!!window.VocabApp&&!!document.querySelector(".brand-name")')
+    def labels_clean():page.wait_for_function('HuroofEdition.id==="a1-a2"&&HuroofEdition.levels.join(",")==="A1,A2"')
     go('index.html');labels_clean()
     assert page.locator('#app-sidebar nav a').all_inner_texts()==['نظرة عامة','مفردات A1 وA2','تكوين جمل','قصص قصيرة','المهارات والوحدات','القواعد والإملاء','مراجعة المفردات','تقدّمي','التطبيقات الأخرى']
     assert page.locator('#app-sidebar a[href="verbs.html"],#app-sidebar a[href="test.html"]').count()==0
@@ -67,10 +67,10 @@ with sync_playwright() as pw:
     go('grammar.html');page.wait_for_selector('#grammar-lesson')
     assert page.locator('a[href="verbs.html"]').count()>=1
     go('verbs.html');page.wait_for_selector('#conjugation-body tr')
-    assert page.locator('#verb-select option').count()==251
+    assert page.locator('#verb-select option').count()==300
     assert page.locator('#verb-select optgroup').count()==6
     assert page.locator('#app-sidebar a[href="grammar.html"]').get_attribute('aria-current')=='page'
-    # Exercise all 251 real selection change handlers and rendered past tables.
+    # Exercise all 300 real selection change handlers and rendered past tables.
     page.evaluate('''() => {
       const D=VerbLessonData, select=document.getElementById('verb-select');
       for (const v of D.verbs) {
@@ -93,7 +93,7 @@ with sync_playwright() as pw:
     for mode in ['past','present','past-lam','future','prohibition']:
         page.locator('#verb-negative-mode').select_option(mode)
         assert page.locator('#verb-negative-body tr').count()==(5 if mode=='prohibition' else 14)
-    print('PASS 251 verb selections, six family filters, four form lengths, three tenses and five negation modes',flush=True)
+    print('PASS 300 verb selections, six family filters, four form lengths, three tenses and five negation modes',flush=True)
     for name,selector in [('vocabulary.html','#learning-path'),('sentences.html','#sentence-level'),('stories.html','#story-title'),('verbs.html','#verb-select'),('skills.html','#skills-sections'),('grammar.html','#grammar-stages'),('grammar.html?unit=a1-01#pronouns','.unit-grammar-context')]:
         go(name);page.wait_for_selector(selector)
         for lang in ['ar','de']:

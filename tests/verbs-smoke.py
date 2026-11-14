@@ -11,8 +11,8 @@ with sync_playwright() as p:
     errors=[]
     page.on('pageerror',lambda e:errors.append(str(e)))
     assert page.goto(base+'/verbs.html').status==200
-    assert page.locator('#verb-select option').count()==51
-    assert page.locator('#verb-select optgroup').count()==4
+    assert page.locator('#verb-select option').count()==300
+    assert page.locator('#verb-select optgroup').count()==6
     assert page.locator('#conjugation-body tr').count()==14
     assert page.locator('#conjugation-body tr').first.locator('.verb-form').text_content()=='كَتَبْتُ'
     assert page.locator('.app-sidebar a[aria-current="page"]').get_attribute('href')=='grammar.html'
@@ -108,7 +108,7 @@ with sync_playwright() as p:
     # Changing tense while the results are empty must not restore a stale quiz.
     page.locator('[data-tense="past"]').click()
     page.locator('#verb-clear-search').click()
-    assert page.locator('#verb-select option').count()==51
+    assert page.locator('#verb-select option').count()==300
     assert page.locator('#conjugation-body tr').count()==14
     assert page.locator('#verb-content').is_visible()
     assert correct_option() in page.locator('#verb-answers button').all_text_contents()
@@ -136,5 +136,5 @@ with sync_playwright() as p:
     page.goto(base+'/index.html')
     page.goto(base+'/grammar.html');page.locator('#verbs-entry-title').locator('..').locator('a[href="verbs.html"]').click();page.wait_for_url('**/verbs.html')
     assert not errors,errors
-    print('PASS: 51 verbs / 153 tables, imperative-only addressees, Arabic/German search, empty-result recovery, quiz feedback, DE/AR state preservation and responsive layouts; no JavaScript errors')
+    print('PASS: 300 verbs / 900 tables, imperative-only addressees, Arabic/German search, empty-result recovery, quiz feedback, DE/AR state preservation and responsive layouts; no JavaScript errors')
     browser.close()
