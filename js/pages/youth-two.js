@@ -881,6 +881,7 @@
     return card;
   }
   function renderTasks() {
+    window.SmartActivities?.disposeWithin($("yt-tasks"));
     $("yt-tasks").replaceChildren();
     const tasks = activity().tasks.filter(
       (q) =>
@@ -889,7 +890,23 @@
           map("answers")[q.id] &&
           !D.isCorrect(q, map("answers")[q.id].value)),
     );
-    tasks.forEach((q) => $("yt-tasks").append(taskCard(q)));
+    window.SmartActivities?.disposeWithin($("yt-tasks"));
+    const spec = window.SmartActivityCatalog?.workbooks[storageKey]?.[activity().id];
+    if (spec && tasks.length) {
+      const ids = new Set(tasks.map(q => q.id)), byId = new Map(tasks.map(q => [q.id,q]));
+      window.SmartActivities.mount($("yt-tasks"), {
+        ...spec, id: activity().id,
+        items: spec.items.filter(item => ids.has(item.id)),
+        language: window.AppLanguage?.get() || 'ar',
+        values: Object.fromEntries(tasks.map(q => [q.id, map("answers")[q.id]?.value ?? map("drafts")[q.id] ?? ''])),
+        checked: Object.fromEntries(tasks.map(q => [q.id, !!map("answers")[q.id]])),
+        isCorrect: (id,value) => D.isCorrect(byId.get(id),value),
+        correction: id => t('الصحيح: ','Lösung: ') + byId.get(id).answer + ' · ' + (byId.get(id).explanation || ''),
+        onChange: (id,value) => { map("drafts")[id] = value; persist(); },
+        onCheck: values => { for (const q of tasks) map("answers")[q.id] = {value:values[q.id]}; persist(); stats(); },
+        onRetry: ids => { for (const id of ids) { delete map("answers")[id]; delete map("drafts")[id]; } persist(); stats(); }
+      });
+    } else tasks.forEach((q) => $("yt-tasks").append(taskCard(q)));
     $("yt-review-empty").hidden = !$("yt-review").checked || !!tasks.length;
   }
   function renderActivity() {

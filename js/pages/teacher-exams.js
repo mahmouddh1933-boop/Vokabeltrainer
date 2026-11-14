@@ -60,6 +60,7 @@
     }
     function catalog() {
       const host = $("exam-catalog");
+      window.SmartActivities?.disposeWithin(host);
       host.replaceChildren();
       for (const source of D.originals) {
         const exam = D.exams.find(
@@ -340,6 +341,7 @@
       $("exam-submit").hidden = finished;
       $("exam-key").hidden = !finished;
       const host = $("exam-questions");
+      window.SmartActivities?.disposeWithin(host);
       host.replaceChildren();
       let index = 0;
       const nav = $("exam-section-nav");
@@ -357,7 +359,19 @@
           passage.dir = "rtl";
           panel.append(passage);
         }
-        for (const q of section.tasks) panel.append(renderTask(q, index++));
+        const spec=window.SmartActivityCatalog?.exams[e.id]?.[i];
+        if(spec && window.SmartActivities){
+          const byId=new Map(section.tasks.map(q=>[q.id,q]));
+          window.SmartActivities.mount(panel,{
+            ...spec,id:e.id+'-'+i,language:window.AppLanguage?.get()||'ar',assessment:true,locked:finished,
+            values: Object.fromEntries(section.tasks.map(q=>[q.id,attempt.answers[q.id]??''])),
+            checked: Object.fromEntries(section.tasks.map(q=>[q.id,finished])),
+            isCorrect:(id,value)=>C.correct(byId.get(id),value),
+            correction:id=>t('الصحيح: ','Lösung: ')+byId.get(id).answer+' · '+(byId.get(id).explanation||''),
+            onChange:(id,value)=>{if(value)attempt.answers[id]=value;else delete attempt.answers[id];save();}
+          });
+          index+=section.tasks.length;
+        }else for (const q of section.tasks) panel.append(renderTask(q, index++));
         host.append(panel);
       });
       const result = $("exam-result");

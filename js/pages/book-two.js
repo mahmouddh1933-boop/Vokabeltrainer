@@ -19,6 +19,8 @@
   const bank = () => D.questions(lesson());
   const answers = () =>
     state.answers[lesson().id] || (state.answers[lesson().id] = {});
+  if (!state.smartDrafts || typeof state.smartDrafts !== "object") state.smartDrafts = {};
+  const smartDrafts = () => state.smartDrafts[lesson().id] || (state.smartDrafts[lesson().id] = {});
   const persist = () => {
     state.index = index;
     P.save("book-two", state);
@@ -303,6 +305,7 @@
     return card;
   }
   function renderPractice() {
+    window.SmartActivities?.disposeWithin($("book-exercises"));
     $("book-exercises").replaceChildren();
     const groups = [
       ["picture", "اختر الكلمة المناسبة للصورة", "Wähle das passende Bildwort"],
@@ -337,8 +340,23 @@
         undefined,
         "book-task-grid book-task-grid-" + kind,
       );
-      for (const q of bank().filter((q) => q.kind === kind))
-        grid.append(questionCard(q));
+      const questions = bank().filter(q => q.kind === kind);
+      if (kind === "classify" && window.SmartActivities) {
+        const byId = new Map(questions.map(q => [q.id,q]));
+        window.SmartActivities.mount(grid, {
+          id: lesson().id, kind: 'classify', language: window.AppLanguage?.get() || 'ar',
+          items: questions.map(q => ({id:q.id,label:q.word})),
+          targets: [lesson().char,lesson().contrast].map(value => ({value,label:value})),
+          values: Object.fromEntries(questions.map(q => [q.id,answers()[q.id]?.value ?? smartDrafts()[q.id] ?? ''])),
+          checked: Object.fromEntries(questions.map(q => [q.id,!!answers()[q.id]])),
+          isCorrect: (id,value) => D.isCorrectAnswer(byId.get(id),value),
+          correction: id => t('الحرف الأول: ','Anfangsbuchstabe: ')+byId.get(id).answer,
+          onChange: (id,value) => {smartDrafts()[id]=value;persist();},
+          onCheck: values => {for(const q of questions)answers()[q.id]={value:values[q.id],correct:D.isCorrectAnswer(q,values[q.id])};persist();stats();},
+          onRetry: ids => {for(const id of ids){delete answers()[id];delete smartDrafts()[id];}persist();stats();}
+        });
+        grid.classList.add('book-smart-classification');
+      } else for (const q of questions) grid.append(questionCard(q));
       section.append(grid);
       $("book-exercises").append(section);
     }
@@ -600,6 +618,7 @@
   };
   $("book-reset").onclick = () => {
     state.answers[lesson().id] = {};
+    state.smartDrafts[lesson().id] = {};
     persist();
     renderPractice();
     stats();

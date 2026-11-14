@@ -124,10 +124,16 @@ with sync_playwright() as p:
     # Traverse the complete unfiltered catalog; every displayed answer is submitted through the UI.
     for index,activity in enumerate(activities):
         pick(activity)
-        assert page.locator('#yt-tasks > .yt-task[data-kind][data-task]').count() == len(activity['tasks'])
+        smart=page.locator('.smart-activity').count()>0
+        if smart:assert page.locator('.smart-summary tbody tr').count()==len(activity['tasks'])
+        else:assert page.locator('#yt-tasks > .yt-task[data-kind][data-task]').count() == len(activity['tasks'])
         fixed=[q for q in activity['tasks'] if q['kind']!='open']
         opens=[q for q in activity['tasks'] if q['kind']=='open']
-        for task in activity['tasks']:
+        if smart:
+            page.locator('.smart-activity').evaluate('''(root,tasks)=>{for(const q of tasks){const n=[...root.querySelectorAll('[data-smart-item]')].find(n=>n.dataset.smartItem===q.id);if(n.disabled)continue;n.click();[...root.querySelectorAll('button[data-smart-target]')].find(n=>n.dataset.smartTarget===q.answer).click();}const check=root.querySelector('.smart-check');if(!check.disabled)check.click();}''',fixed)
+            assert page.locator('.smart-summary tbody tr.is-correct').count()==len(fixed)
+            fixed_done+=len(fixed);tested_kinds.update(q['kind'] for q in fixed)
+        for task in ([] if smart else activity['tasks']):
             tested_kinds.add(task['kind'])
             if task['kind']=='open':
                 card=page.locator('#yt-q-'+task['id'])

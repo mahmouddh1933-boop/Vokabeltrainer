@@ -22,7 +22,7 @@ with sync_playwright() as p:
     assert page.goto(base+'/book-level-two.html').status==200
     page.locator('#app-language-select').select_option('ar')
     assert page.locator('#lesson-loading').count()==0
-    assert page.locator('.app-sidebar a[aria-current="page"]').get_attribute('href')=='book-level-two.html'
+    assert page.locator('.app-sidebar a[aria-current="page"]').get_attribute('href')=='books.html'
     lessons=page.evaluate('ArabicBookData.lessons')
     assert len(lessons)==28
     def play(selector,text):
@@ -31,6 +31,9 @@ with sync_playwright() as p:
         actual=page.evaluate('__calls.at(-1)')
         assert actual['gesture'] and actual['src'].endswith(expected),(actual,expected)
     def answer(q,wrong=False):
+        if q['kind']=='classify':
+            page.locator('.smart-activity').evaluate('''(root,q)=>{root.querySelector(`[data-smart-item="${q.id}"]`).click();[...root.querySelectorAll('button[data-smart-target]')].find(n=>n.dataset.smartTarget===q.answer).click();const check=root.querySelector('.smart-check');if(!check.disabled)check.click();}''',q)
+            return
         card=page.locator('#book-q-'+q['id'])
         if q['kind']=='grammar':
             card.locator('input').fill('لا يشرب القهوة' if wrong else q['answer'])
@@ -43,7 +46,7 @@ with sync_playwright() as p:
     for index,lesson in enumerate(lessons):
         assert page.locator('#book-letter').inner_text()==lesson['char']
         assert page.locator('#book-position').inner_text()==f'{index+1} / 28'
-        assert page.locator('#book-exercises .book-task').count()==18
+        assert page.locator('#book-exercises .book-task,#book-exercises .smart-summary tbody tr').count()==18
         page.locator('[data-book-tab="learn"]').tap()
         assert page.locator('#book-vocabulary .book-word-card').count()==3
         page.wait_for_function('Array.from(document.querySelectorAll("#book-vocabulary img")).every(n=>n.complete && n.naturalWidth>0)')

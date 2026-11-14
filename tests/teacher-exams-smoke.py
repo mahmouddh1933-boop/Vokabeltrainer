@@ -20,7 +20,7 @@ with sync_playwright() as p:
     page.set_viewport_size({'width':width,'height':900});page.wait_for_timeout(80)
     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),(language,width)
   page.set_viewport_size({'width':390,'height':900});page.locator('#app-language-select').select_option('ar')
- page.goto(base+'/index.html');page.locator('#teacher-exams-entry').click();expect(page.locator('.exam-card')).to_have_count(10);assert page.locator('.app-sidebar nav a').count()==10;layout()
+ page.goto(base+'/exams.html');expect(page.locator('.exam-card')).to_have_count(10);assert page.locator('.app-sidebar nav a').count()==10;layout()
  data=page.evaluate('TeacherExamData');
  assert page.locator('#exam-catalog a[href$=".pdf"]').count()==0
  assert page.locator('[data-start-exam^="paper-"]').count()==10
@@ -28,7 +28,7 @@ with sync_playwright() as p:
  page.evaluate("VocabApp.setJSON('learningStats',{totalTests:4,placementV1:{attempts:{sentinel:{}}},learningRouteV1:{lastStage:'reading'},phonicsV1:{prior:true}})")
  for i,e in enumerate(data['exams']):
   page.locator(f'[data-start-exam="{e["id"]}"]').click();tasks=[q for s in e['sections'] for q in s['tasks']]
-  assert page.locator('.exam-task').count()==len(tasks);assert page.locator('.exam-feedback').count()==0;assert not page.locator('#exam-key').is_visible()
+  assert page.locator('.exam-task,.smart-summary tbody tr').count()==len(tasks);assert page.locator('.exam-feedback').count()==0;assert not page.locator('#exam-key').is_visible()
   if i in [0,4,8]:layout()
   if e['id']=='model-05':
    for q in [q for q in tasks if q['kind']=='dictation']:
@@ -36,7 +36,7 @@ with sync_playwright() as p:
    q=next(q for q in tasks if q['kind']=='dictation');page.locator(f'[data-question="{q["id"]}"]').get_by_role('button',name='تعذّر الصوت / إعادة إدراجه',exact=True).click();assert page.locator(f'#answer-{q["id"]}').is_disabled()
   page.evaluate("""tasks=>{
    for(const q of tasks){const field=document.querySelector(`[data-question="${q.id}"]`);
-    if(q.kind==='choice'){[...field.querySelectorAll('input')].find(n=>n.value===q.answer).click();}
+    if(q.kind==='choice'){if(field)[...field.querySelectorAll('input')].find(n=>n.value===q.answer).click();else{const item=document.querySelector(`[data-smart-item="${q.id}"]`),root=item.closest('.smart-activity');item.click();[...root.querySelectorAll('button[data-smart-target]')].find(n=>n.dataset.smartTarget===q.answer).click();}}
     else if(q.kind==='order'){q.tokens.forEach((_,i)=>field.querySelector(`[data-token="${i}"]`).click());}
     else {const input=field.querySelector('textarea,input');if(!input.disabled){input.value=q.kind==='manual'?'هذا جواب شخصي للتجربة':q.answer;input.dispatchEvent(new Event('input',{bubbles:true}));}}
    }
@@ -49,7 +49,7 @@ with sync_playwright() as p:
   for index,q in enumerate(tasks):
    if q['kind']=='dictation':assert q['answer'] not in page.locator('#exam-print .exam-print-task').nth(index).inner_text()
   page.emulate_media(media='print');assert page.locator('#exam-print').is_visible();assert not page.locator('#main-content').is_visible();page.emulate_media(media='screen');page.evaluate("dispatchEvent(new Event('afterprint'))")
-  page.locator('#exam-submit').click();expect(page.locator('#exam-result')).to_be_visible();assert '١٠٠' in page.locator('#exam-result').inner_text() or '100' in page.locator('#exam-result').inner_text();assert page.locator('.exam-feedback').count()==len(tasks)
+  page.locator('#exam-submit').click();expect(page.locator('#exam-result')).to_be_visible();assert '١٠٠' in page.locator('#exam-result').inner_text() or '100' in page.locator('#exam-result').inner_text();assert page.locator('.exam-feedback,.smart-summary tbody tr').count()==len(tasks)
   if e['id']=='model-05':assert '1 مستبعدة' in page.locator('#exam-result').inner_text()
   for input in page.locator('#exam-questions input,#exam-questions textarea').all():assert input.is_disabled()
   page.locator('#exam-key').click();assert 'دليل الإجابات' in page.locator('#exam-print').inner_text();page.evaluate("dispatchEvent(new Event('afterprint'))")

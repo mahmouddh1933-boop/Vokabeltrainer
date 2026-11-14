@@ -17,6 +17,10 @@ Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](download
 
 [Ausführliche App-Tour auf Deutsch](downloads/Huroof-Rundgang-DE.mp4): rund 17 Minuten mit 25 Kapiteln, echten Bedienbeispielen und eingeblendeten Untertiteln. [Begleitmaterial für Website und YouTube](downloads/Huroof-Rundgang-DE-Begleitmaterial.zip) · [Inhalt und Quellen](media/tutorial-de/README.md).
 
+## أنشطة السحب والتوصيل · Interaktive Zuordnung
+
+In **Bücher → Buch 3** bieten „أصنف الكلمات: اسم وفعل وحرف“ und „أصل الكلمة بضدها“ jetzt verschiebbare Wortkarten bzw. farbige Verbindungslinien mit Maus und Touch. Tabellen zeigen die eigenen Zuordnungen; Fehler lassen sich wiederholen, während richtige Antworten erhalten bleiben. Vergleichbare Übungen in Buch 1, Buch 2 und den Prüfungen verwenden dieselbe Bedienung: insgesamt 69 Aufgabenblöcke. In Prüfungen erscheint die Korrektur erst nach Abgabe. [الأماكن والتفاصيل والفحوص](docs/SMART-ACTIVITIES.md).
+
 ## تصريف الأفعال والخط الموحد · 300 Verben und einheitliche Schrift
 
 Die Konjugation enthält jetzt **300 verschiedene Verben**: die bisherigen 251 plus 49 neue Verben. Die Auswahl ist nach regelmäßig, mit Hamza, geminiert, anfangsschwach, mittelschwach und endschwach gruppiert; innerhalb jeder Gruppe stehen die arabischen Grundformen alphabetisch, unabhängig von der Oberflächensprache. Such- und Typfilter bleiben kombinierbar. Die zusätzlichen Paradigmen werden mit `python3 tools/build-a1-a2-verbs.py` aus ausdrücklich festgelegten Stämmen erzeugt.
