@@ -11,9 +11,10 @@
     const records=()=>A.getStats().advancedUnitsV1||{};
     const record=id=>records()[id]||{};
     function patch(id,changes){A.setJSON('learningStats',{...A.getStats(),advancedUnitsV1:{...records(),[id]:{...record(id),...changes,updatedAt:Date.now()}}});}
-    function moduleRecord(){return record(current.id).modules?.[section]||{};}
+    function moduleRecord(){const m=record(current.id).modules?.[section]||{};return section==='listening'&&m.questionsVersion!==current.listening.quizVersion?{}:m;}
+    function moduleDone(id,key){const m=record(id).modules?.[key];const u=units.find(u=>u.id===id);return !!m?.done&&(key!=='listening'||m.questionsVersion===u.listening.quizVersion);}
     function saveModule(changes){const prior=record(current.id);patch(current.id,{modules:{...prior.modules,[section]:{...moduleRecord(),...changes}}});}
-    function updateProgress(){const n=document.getElementById('advanced-progress');if(n){const ratio=el('bdi',modules.filter(([key])=>record(current.id).modules?.[key]?.done).length+' / 6');ratio.dir='ltr';n.replaceChildren(el('span',t('أقسام أنجزتها: ','Erledigte Abschnitte: ')),ratio);}}
+    function updateProgress(){const n=document.getElementById('advanced-progress');if(n){const ratio=el('bdi',modules.filter(([key])=>moduleDone(current.id,key)).length+' / 6');ratio.dir='ltr';n.replaceChildren(el('span',t('أقسام أنجزتها: ','Erledigte Abschnitte: ')),ratio);}}
     function stop(){speechRun++;A.stopSpeech();if(audio){audio.pause();try{audio.currentTime=0;}catch(_){}}}
     function speechControls(text){
       const controls=el('div',undefined,'advanced-speech-controls');
@@ -36,7 +37,7 @@
     }
     function quiz(questions){
       const form=el('form',undefined,'advanced-quiz'),unitId=current.id,moduleId=section;
-      const saved=moduleRecord();
+      const saved=moduleRecord(),questionsVersion=section==='listening'?current.listening.quizVersion:undefined;
       questions.forEach((q,i)=>{
         const group=el('fieldset');group.append(el('legend',`${i+1}. ${q.q}`));
         q.opts.forEach((option,j)=>{const label=el('label'),input=el('input');input.type='radio';input.name='question-'+i;input.value=j;input.required=true;input.checked=saved.answers?.[i]===j;label.append(input,el('span',option));group.append(label);});form.append(group);
@@ -45,7 +46,7 @@
       const result=el('div',undefined,'advanced-feedback');result.setAttribute('aria-live','polite');
       function feedback(answers){const score=questions.filter((q,i)=>answers[i]===q.a).length;const total=el('strong',`${score} / ${questions.length}`);total.dir='ltr';result.replaceChildren(total);questions.forEach((q,i)=>{const group=form.querySelectorAll('fieldset')[i];for(const [j,label] of [...group.querySelectorAll('label')].entries()){label.classList.toggle('is-correct',j===q.a);label.classList.toggle('is-wrong',j===answers[i]&&j!==q.a);}result.append(el('p',`${i+1}. ${answers[i]===q.a?'✓':'✗'} ${q.opts[q.a]}`));});return score;}
       if(saved.answers?.length===questions.length)feedback(saved.answers);
-      form.addEventListener('submit',event=>{event.preventDefault();const answers=questions.map((_,i)=>Number(new FormData(form).get('question-'+i)));const score=feedback(answers);const prior=record(unitId);patch(unitId,{modules:{...prior.modules,[moduleId]:{...prior.modules?.[moduleId],answers,score,total:questions.length,done:score===questions.length}}});updateProgress();});
+      form.addEventListener('submit',event=>{event.preventDefault();const answers=questions.map((_,i)=>Number(new FormData(form).get('question-'+i)));const score=feedback(answers);const prior=record(unitId);patch(unitId,{modules:{...prior.modules,[moduleId]:{...prior.modules?.[moduleId],answers,score,questionsVersion,total:questions.length,done:score===questions.length}}});updateProgress();});
       form.append(submit,result);return form;
     }
     function draft(key,label,placeholder){const box=el('label',label,'advanced-draft-label'),area=el('textarea');area.id='advanced-'+key;area.dir='auto';area.placeholder=placeholder;area.value=record(current.id)[key]||'';const count=el('span',undefined,'advanced-muted'),status=el('span',undefined,'advanced-muted');status.setAttribute('aria-live','polite');const unitId=current.id;
@@ -59,7 +60,7 @@
       const searchLabel=el('label',t('ابحث بعنوان الوحدة','Einheit nach Titel suchen')),search=el('input');search.type='search';search.id='advanced-search';searchLabel.append(search);host.append(searchLabel);
       const grid=el('div',undefined,'advanced-unit-grid');host.append(grid);
       const normalize=s=>s.normalize('NFD').replace(/\p{M}/gu,'').replace(/[أإآ]/g,'ا').toLowerCase();
-      function cards(){grid.replaceChildren();for(const u of units.filter(u=>u.level===filter&&normalize(u.title).includes(normalize(search.value)))){const card=el('article',undefined,'advanced-unit-card');card.append(el('span',u.level,'advanced-muted'),el('h2',u.title),el('p',u.value),el('p',`${u.wordCount} `+t('كلمة في نص القراءة','Wörter im Lesetext')));const completed=modules.filter(([key])=>record(u.id).modules?.[key]?.done).length;card.append(el('p',t('أقسام منجزة: ','Erledigte Abschnitte: ')+completed+' / 6'),link(t('افتح الوحدة','Einheit öffnen'),'#'+u.id+'/reading'));grid.append(card);}if(!grid.childElementCount)grid.append(el('p',t('لا توجد وحدة مطابقة.','Keine passende Einheit.')));}
+      function cards(){grid.replaceChildren();for(const u of units.filter(u=>u.level===filter&&normalize(u.title).includes(normalize(search.value)))){const card=el('article',undefined,'advanced-unit-card');card.append(el('span',u.level,'advanced-muted'),el('h2',u.title),el('p',u.value),el('p',`${u.wordCount} `+t('كلمة في نص القراءة','Wörter im Lesetext')));const completed=modules.filter(([key])=>moduleDone(u.id,key)).length;card.append(el('p',t('أقسام منجزة: ','Erledigte Abschnitte: ')+completed+' / 6'),link(t('افتح الوحدة','Einheit öffnen'),'#'+u.id+'/reading'));grid.append(card);}if(!grid.childElementCount)grid.append(el('p',t('لا توجد وحدة مطابقة.','Keine passende Einheit.')));}
       search.addEventListener('input',cards);cards();
     }
     function unitView(){
