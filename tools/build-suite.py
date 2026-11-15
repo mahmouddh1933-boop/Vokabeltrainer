@@ -41,7 +41,7 @@ DEFINITIONS=[
   'levels':['A1','A2'],'statFields':['skillsV1'],'practiceKeys':['jisrPracticeV1:sentences','jisrPracticeV1:stories']},
  {'id':'b1-b2','ar':'حروف – تطوير العربية B1 وB2','de':'Huroof – Arabisch B1 und B2','archive':'Huroof-B1-B2.zip',
   'description':'٤٠ وحدة B1 وB2 بمهاراتها الست، و٣٠٠ فعلًا، وقواعد متقدمة مع المبني للمجهول والمشتقات.','descriptionDe':'40 Einheiten B1/B2 mit sechs Lernbereichen, 300 Verben und vertiefter Grammatik einschließlich Passiv und Partizipien.',
-  'routes':[['texts.html','النصوص والوحدات B1 وB2','Texte und Einheiten B1 und B2'],['vocabulary.html','المفردات B1 وB2','Wortschatz B1 und B2'],['grammar.html','القواعد والإملاء المتقدّم','Weiterführende Grammatik'],['verbs.html','تصريف الأفعال · ٣٠٠ فعلًا','Verbformen · 300 Verben'],['review.html','مراجعة المفردات','Wörter wiederholen'],['stats.html','تقدّمي','Mein Lernstand']],
+  'routes':[['texts.html','النصوص والوحدات B1 وB2','Texte und Einheiten B1 und B2'],['vocabulary.html','المفردات B1 وB2','Wortschatz B1 und B2'],['grammar.html','القواعد والإملاء المتقدّم','Weiterführende Grammatik'],['verbs.html','تصريف الأفعال ٣٠٠ فعلًا','Verbformen 300 Verben'],['review.html','مراجعة المفردات','Wörter wiederholen'],['stats.html','تقدّمي','Mein Lernstand']],
   'levels':['B1','B2'],'statFields':['advancedUnitsV1'],'practiceKeys':[]},
  {'id':'books','ar':'حروف – الكتب والاختبارات','de':'Huroof – Bücher und Prüfungen','archive':'Huroof-Books.zip',
   'description':'الكتب الأربعة، مفردات الكتابين ببطاقاتها واختباراتها، واختبارات الأستاذ محمود بركات وتحديد المستوى.','descriptionDe':'Vier Bücher, beide Buchwortschätze mit Lernkarten und Tests, Lehrerprüfungen und Einstufungschecks.',

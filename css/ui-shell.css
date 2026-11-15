@@ -1,4 +1,17 @@
 /* Shared page chrome: generous Arabic line metrics, clear hierarchy and touch targets. */
+/* Keep page controls and Arabic headings in separate, padded rows. */
+body.olive-app .container.grammar-page{padding:clamp(18px,3vw,32px)}
+body.olive-app .page-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:24px;row-gap:16px;width:100%;text-align:start}
+body.olive-app .page-heading>.welcome-symbol{align-self:start;margin:0}
+body.olive-app .page-back-nav{display:flex;flex-wrap:wrap;gap:12px;margin-block:0 28px}
+body.olive-app .placement-context{margin-block:20px 28px}
+body.olive-app .grammar-path-panel{padding:clamp(18px,3vw,28px)}
+body.olive-app .grammar-path-panel>p{margin-block:16px 24px;line-height:2}
+body.olive-app #advanced-content>.practice-button{margin-block:0 24px}
+body.olive-app #advanced-content>h2{margin-block:0 18px;line-height:1.9}
+body.olive-app :is(.advanced-module,.advanced-unit-card)>:is(h2,h3,h4){line-height:1.9;margin-block:0 18px}
+body.olive-app :is(.advanced-module,.advanced-unit-card)>p{line-height:2;margin-block:16px}
+body.olive-app .advanced-module>.practice-button:last-child{margin-block-start:24px}
 :root{--shell-sidebar:264px;--shell-edge:clamp(16px,3vw,40px)}
 html{scrollbar-gutter:stable}
 body.olive-app{padding-inline:var(--shell-sidebar) 0;padding-block:0}

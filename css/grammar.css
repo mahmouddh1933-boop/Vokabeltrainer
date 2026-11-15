@@ -697,3 +697,6 @@ body .container.grammar-page {
 .grammar-path-method{font-size:.9rem}.grammar-path-method summary{cursor:pointer;font-weight:700}
 @media(max-width:700px){.grammar-stages{grid-template-columns:repeat(2,minmax(0,1fr))}.grammar-stages button{padding:.7rem}.grammar-path-panel{padding:1rem}.grammar-path-panel .section-heading{flex-wrap:wrap}#grammar-resume{max-width:100%;white-space:normal}}
 .grammar-page #grammar-lesson{scroll-margin-top:100px}
+
+/* Highlight the inflection-bearing grapheme without breaking Arabic joining. */
+.grammar-example p mark{display:inline;padding:0;margin:0;font:inherit;border-radius:3px;background:#ffe3a3;color:#75410c}

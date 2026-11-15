@@ -79,7 +79,8 @@ with tempfile.TemporaryDirectory(prefix='huroof-package-check-') as tmp:
      assert parse_qs(urlparse(page.url).query)['next']==['/'+ident+'/index.html']
      assert page.evaluate('typeof window.VocabApp')=='undefined'
     else:
-     page.wait_for_selector('.edition-brand')
+     page.wait_for_selector('.brand-name')
+     page.wait_for_function('window.VocabApp && window.JisrStorage.local.scope === "test-student"')
      assert page.evaluate('JisrStorage.local.scope')=='test-student'
      assert not page.locator('html').get_attribute('class') or 'auth-pending' not in page.locator('html').get_attribute('class')
     print('AUTH BOOTSTRAP OK',ident,'signed in' if signed_in else 'signed out',flush=True)

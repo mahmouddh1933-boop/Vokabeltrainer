@@ -24,7 +24,7 @@
       });
       const submit=el('button',t('تحقق من الإجابات','Antworten prüfen'),'practice-button');submit.type='submit';
       const result=el('div',undefined,'advanced-feedback');result.setAttribute('aria-live','polite');
-      function feedback(answers){const score=questions.filter((q,i)=>answers[i]===q.a).length;const total=el('strong',`${score} / ${questions.length}`);total.dir='ltr';result.replaceChildren(total);questions.forEach((q,i)=>result.append(el('p',`${i+1}. ${answers[i]===q.a?'✓':'✗'} ${q.opts[q.a]}`)));return score;}
+      function feedback(answers){const score=questions.filter((q,i)=>answers[i]===q.a).length;const total=el('strong',`${score} / ${questions.length}`);total.dir='ltr';result.replaceChildren(total);questions.forEach((q,i)=>{const group=form.querySelectorAll('fieldset')[i];for(const [j,label] of [...group.querySelectorAll('label')].entries()){label.classList.toggle('is-correct',j===q.a);label.classList.toggle('is-wrong',j===answers[i]&&j!==q.a);}result.append(el('p',`${i+1}. ${answers[i]===q.a?'✓':'✗'} ${q.opts[q.a]}`));});return score;}
       if(saved.answers?.length===questions.length)feedback(saved.answers);
       form.addEventListener('submit',event=>{event.preventDefault();const answers=questions.map((_,i)=>Number(new FormData(form).get('question-'+i)));const score=feedback(answers);const prior=record(unitId);patch(unitId,{modules:{...prior.modules,[moduleId]:{...prior.modules?.[moduleId],answers,score,total:questions.length,done:score===questions.length}}});updateProgress();});
       form.append(submit,result);return form;

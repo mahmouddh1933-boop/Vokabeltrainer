@@ -112,11 +112,24 @@
       $("grammar-index").hidden = !filtered.length;
     }
     function exampleHTML(example) {
-      const index = example.focus ? example.ar.indexOf(example.focus) : -1;
-      const word =
-        index < 0
-          ? escape(example.ar)
-          : `${escape(example.ar.slice(0, index))}<mark>${escape(example.focus)}</mark>${escape(example.ar.slice(index + example.focus.length))}`;
+      const targets = example.highlights || (example.focus ? [{word: example.focus, part: example.focus}] : []);
+      const ranges = targets.map(({word, part}) => {
+        let start = example.ar.indexOf(word);
+        if (example.highlights) {
+          while (start >= 0 && (/\p{L}|\p{M}/u.test(example.ar[start - 1] || "") || /\p{L}|\p{M}/u.test(example.ar[start + word.length] || ""))) {
+            start = example.ar.indexOf(word, start + word.length);
+          }
+        }
+        const offset = word.lastIndexOf(part);
+        return start >= 0 && offset >= 0 ? {start: start + offset, end: start + offset + part.length} : null;
+      }).filter(Boolean).sort((a, b) => a.start - b.start);
+      let word = "", cursor = 0;
+      for (const range of ranges) {
+        if (range.start < cursor) continue;
+        word += escape(example.ar.slice(cursor, range.start)) + `<mark>${escape(example.ar.slice(range.start, range.end))}</mark>`;
+        cursor = range.end;
+      }
+      word += escape(example.ar.slice(cursor));
       return `<figure class="grammar-example"><p lang="ar">${word}</p><figcaption lang="de">${escape(example.de)}</figcaption>${example.note ? `<p class="grammar-example-note">${escape(localized(example.note))}</p>` : ""}</figure>`;
     }
     function tableHTML(table) {

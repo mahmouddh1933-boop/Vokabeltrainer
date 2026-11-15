@@ -556,3 +556,27 @@ body.olive-app .container.home-container {
     display: none !important;
   }
 }
+
+/* Grading must remain unmistakable beside ordinary olive action buttons. */
+@media screen {
+  body.olive-app :is(button,label,.exam-option):is(.is-correct,.correct,.exam-correct,.rx-correct) {
+    background: #1d633e !important;
+    border-color: #12482b !important;
+    color: #fff !important;
+    opacity: 1 !important;
+    box-shadow: inset 0 0 0 2px #12482b;
+  }
+  body.olive-app :is(button,label,.exam-option):is(.is-wrong,.wrong,.exam-incorrect,.rx-wrong) {
+    background: #963b36 !important;
+    border-color: #702722 !important;
+    color: #fff !important;
+    opacity: 1 !important;
+    box-shadow: inset 0 0 0 2px #702722;
+  }
+  body.olive-app button:is(.is-correct,.correct)::after {content:" ✓";font-family:Arial,sans-serif;font-weight:700;margin-inline-start:.5em}
+  body.olive-app button:is(.is-wrong,.wrong)::after {content:" ✗";font-family:Arial,sans-serif;font-weight:700;margin-inline-start:.5em}
+  body.olive-app :is(.grammar-feedback,.verb-feedback,.practice-feedback,.yt-feedback,.youth-task-feedback,.focused-feedback).is-correct {background:#e1f0e7;color:#174c30;border:1px solid #4c8966}
+  body.olive-app :is(.grammar-feedback,.verb-feedback,.practice-feedback,.yt-feedback,.youth-task-feedback,.focused-feedback).is-wrong {background:#f9e9e5;color:#762d28;border:1px solid #b16a60}
+  body.olive-app :is(.grammar-feedback,.verb-feedback).is-correct strong {color:#174c30}
+  body.olive-app :is(.grammar-feedback,.verb-feedback).is-wrong strong {color:#762d28}
+}
