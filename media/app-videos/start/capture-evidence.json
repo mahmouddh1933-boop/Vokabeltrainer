@@ -1,0 +1,71 @@
+{
+  "app": "start",
+  "sourceCommit": "f7ba50b30d68aeab9b2a2cd8cedcb3bede6cbb53",
+  "screenshots": [
+    {
+      "scene": "welcome",
+      "image": "images/editions/start/15.webp",
+      "sha256": "a0994b465530ff33f0c3f2eb99f3ce7d030dff157f02f95234a89905eb25e8b8"
+    },
+    {
+      "scene": "letters",
+      "image": "images/editions/start/1.webp",
+      "sha256": "26203099e9026292e7861dfdfb32531d2affe8ec246740d6f3f6fd3164000b7e"
+    },
+    {
+      "scene": "writing",
+      "image": "images/editions/start/8.webp",
+      "sha256": "fa7f3cd2cb5ff1022eb9804e149a3f6ffb4fc6e7259c950555cb518b636efb40"
+    },
+    {
+      "scene": "practice",
+      "image": "images/editions/start/13.webp",
+      "sha256": "9527293f44ae02c51a5b3af75d4c8ea8dac68b3372a58d4bba7e1e9602a4061a"
+    },
+    {
+      "scene": "practice",
+      "image": "images/editions/start/2.webp",
+      "sha256": "3ccbd1fb77eb5bee8154b32cba9c553c876fbd0e21e51de590250bd1d85f4a6c"
+    },
+    {
+      "scene": "practice",
+      "image": "images/editions/start/9.webp",
+      "sha256": "3e98ea5a42a42d2b32fef9793636b9ce169729e8da347ee784ec2c3602a77a99"
+    },
+    {
+      "scene": "reading",
+      "image": "images/editions/start/3.webp",
+      "sha256": "57bd2fec2eda7bdf718cedb6d872780bfd0b8e2d752ee6e830204ceef57041cd"
+    },
+    {
+      "scene": "reading",
+      "image": "images/editions/start/7.webp",
+      "sha256": "ac2939c175862f78a1b54890a3c10ad17b03b0bf161dae83401b4e8fcabeb91d"
+    },
+    {
+      "scene": "reading",
+      "image": "images/editions/start/14.webp",
+      "sha256": "528826cd35185176dc1cb5fa74ad8fa9d65bffdce7bdd59e5ef0828a5a074c0c"
+    },
+    {
+      "scene": "apply",
+      "image": "images/editions/start/5.webp",
+      "sha256": "645ff4ba94c278aa923ae2820b64659d38f863d875ae003a591c2f282b541f60"
+    },
+    {
+      "scene": "apply",
+      "image": "images/editions/start/6.webp",
+      "sha256": "a243341aafde705f0b76467529eb11baa962aa913a58d1060dedce5d9ecf41df"
+    },
+    {
+      "scene": "apply",
+      "image": "images/editions/start/12.webp",
+      "sha256": "40641e59ef6788ceec038820d54e9a86a78f32176f53dee25ab440332cc74971"
+    },
+    {
+      "scene": "finish",
+      "image": "images/editions/start/16.webp",
+      "sha256": "6a1c62ec57a01dfb039add026b9b5155a9b5806332a7331a4821c7c9421cd8f1"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "app": "a1-a2",
+  "sourceCommit": "f7ba50b30d68aeab9b2a2cd8cedcb3bede6cbb53",
+  "screenshots": [
+    {
+      "scene": "welcome",
+      "image": "images/editions/a1-a2/1.webp",
+      "sha256": "e6098e612c79a90c0ab3ac9852626869a166c81cc30c326c3cf4d8d5d7f5f647"
+    },
+    {
+      "scene": "words",
+      "image": "images/editions/a1-a2/2.webp",
+      "sha256": "ce1d55851342405df0250cfbc6bb9ac2ed7d84afb43a2aea70f1c5b01033721f"
+    },
+    {
+      "scene": "words",
+      "image": "images/editions/a1-a2/1.webp",
+      "sha256": "e6098e612c79a90c0ab3ac9852626869a166c81cc30c326c3cf4d8d5d7f5f647"
+    },
+    {
+      "scene": "tests",
+      "image": "images/editions/a1-a2/9.webp",
+      "sha256": "7009b2d01fd88f8aa354c121eb9b7489f1ac5aca08ed86188cc72a0c89c22129"
+    },
+    {
+      "scene": "tests",
+      "image": "images/editions/a1-a2/10.webp",
+      "sha256": "81560ca3d08716c6b75a64b5c8415ca50dd399054440fc1c0a7766ea164a41b8"
+    },
+    {
+      "scene": "sentences",
+      "image": "images/editions/a1-a2/4.webp",
+      "sha256": "248c44a1d4b4cf2340c74f1bbaf86e12aef8f40375b17b2d50ad6f8281f52fe5"
+    },
+    {
+      "scene": "skills",
+      "image": "images/editions/a1-a2/3.webp",
+      "sha256": "dd83828aae9fd1feb4f8835d8630e04bc3271dcf35a42a1fa12cb50f4035071b"
+    },
+    {
+      "scene": "skills",
+      "image": "images/editions/a1-a2/8.webp",
+      "sha256": "20e1ef0333e846580364fe3829bc686cd5f59d00296ad34382ca5f6e7b4f778c"
+    },
+    {
+      "scene": "grammar",
+      "image": "images/editions/a1-a2/13.webp",
+      "sha256": "72fe7dfcf68002e053d962d9a4711884c35273f4379b69b384117536d20390fe"
+    },
+    {
+      "scene": "grammar",
+      "image": "images/editions/a1-a2/15.webp",
+      "sha256": "1cd20c48ce260a38694b448cbb226f9a4f4fe12bd089328108a901eb456202ff"
+    },
+    {
+      "scene": "verbs",
+      "image": "images/editions/a1-a2/7.webp",
+      "sha256": "eeaeb593c31b3d31fef50dbe63a47038c7b5e63fb16f204e486ea91f9c128b6b"
+    },
+    {
+      "scene": "stories",
+      "image": "images/editions/a1-a2/5.webp",
+      "sha256": "9ffbfca54b1a88b6c164530d263a070cf310eb1bc9980f01dfa2cc695941a7c1"
+    },
+    {
+      "scene": "finish",
+      "image": "images/editions/a1-a2/11.webp",
+      "sha256": "95a53c35b7d0ead9f980ea70666d053019232aebece7cf4942744321eb860c6a"
+    },
+    {
+      "scene": "finish",
+      "image": "images/editions/a1-a2/12.webp",
+      "sha256": "3e60a327e39dbb21d741d8249f3a1401aa90d04dbe353b02b45642f4abec2c50"
+    }
+  ]
+}

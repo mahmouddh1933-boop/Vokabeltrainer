@@ -1,0 +1,17 @@
+{
+  "file": "downloads/Huroof-Start-Video-AR.mp4",
+  "sha256": "243e88b0daa4ad9e5910b9ca095def664f7b42d2c2c678b9af697c0da52f2b5c",
+  "bytes": 5220593,
+  "duration": 65.223,
+  "screenshots": 13,
+  "codec": "H.264 / AAC",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "fps": 25,
+  "decodedAllFrames": true,
+  "checkedSubtitleCues": 8,
+  "sourceScreenshotHashesVerified": true,
+  "companionZipVerified": true
+}
