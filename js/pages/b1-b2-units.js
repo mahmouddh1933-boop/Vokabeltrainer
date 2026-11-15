@@ -4,7 +4,7 @@
     const units=window.HuroofAdvancedUnits.units, A=window.VocabApp, host=document.getElementById('advanced-content');
     const de=()=>window.AppLanguage?.get()==='de', t=(ar,german)=>de()?german:ar;
     const modules=[['reading','القراءة','Lesen'],['vocabulary','المفردات','Wortschatz'],['grammar','القواعد','Grammatik'],['listening','الاستماع','Hören'],['speaking','المحادثة','Sprechen'],['writing','الكتابة','Schreiben']];
-    let current=null, section='reading', filter='B1', audio=null;
+    let current=null, section='reading', filter='B1', audio=null, speechRun=0;
     function el(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
     function button(text,fn){const n=el('button',text,'practice-button');n.type='button';n.addEventListener('click',fn);return n;}
     function link(text,href){const n=el('a',text,'practice-button');n.href=href;return n;}
@@ -14,7 +14,26 @@
     function moduleRecord(){return record(current.id).modules?.[section]||{};}
     function saveModule(changes){const prior=record(current.id);patch(current.id,{modules:{...prior.modules,[section]:{...moduleRecord(),...changes}}});}
     function updateProgress(){const n=document.getElementById('advanced-progress');if(n){const ratio=el('bdi',modules.filter(([key])=>record(current.id).modules?.[key]?.done).length+' / 6');ratio.dir='ltr';n.replaceChildren(el('span',t('أقسام أنجزتها: ','Erledigte Abschnitte: ')),ratio);}}
-    function stop(){if(audio){audio.pause();audio.removeAttribute('src');audio.load();audio=null;}}
+    function stop(){speechRun++;A.stopSpeech();if(audio){audio.pause();try{audio.currentTime=0;}catch(_){}}}
+    function speechControls(text){
+      const controls=el('div',undefined,'advanced-speech-controls');
+      const status=el('p');status.id='advanced-speech-status';status.setAttribute('role','status');
+      const cancel=button(t('إيقاف الصوت','Vorlesen stoppen'),()=>{stop();status.textContent=t('تم إيقاف القراءة.','Vorlesen gestoppt.');});cancel.id='advanced-speech-stop';
+      const play=button(t('استمع إلى النص','Text anhören'),()=>{
+        stop();const run=speechRun;
+        // Use the same speech adapter and phrase boundaries as the skills app.
+        const chunks=text.match(/[^.!؟،؛\n]+[.!؟،؛]?/gu)||[text];
+        const queue=chunks.flatMap(chunk=>{const parts=[];let part='';for(const word of chunk.trim().split(/\s+/)){if(part&&(part+' '+word).length>160){parts.push(part);part='';}part+=(part?' ':'')+word;}if(part)parts.push(part);return parts;});
+        function next(){
+          if(run!==speechRun)return;
+          const phrase=queue.shift();
+          if(!phrase){status.textContent=t('اكتمل الاستماع إلى النص.','Text vollständig vorgelesen.');return;}
+          A.speakArabic(phrase,(message)=>{if(run===speechRun)status.textContent=message;},success=>{if(run!==speechRun)return;if(success)next();});
+        }
+        next();
+      });play.id='advanced-speech-play';
+      controls.append(play,cancel,status);return controls;
+    }
     function quiz(questions){
       const form=el('form',undefined,'advanced-quiz'),unitId=current.id,moduleId=section;
       const saved=moduleRecord();
@@ -51,7 +70,7 @@
       const body=el('section',undefined,'advanced-module');body.id='advanced-module';body.append(el('h3',t(...modules.find(m=>m[0]===section).slice(1))));host.append(body);
       if(section==='reading'){
         body.append(el('p',current.wordCount+' '+t('كلمة · اقرأ ثم أجب عن أسئلة الفهم.','Wörter · Lies den Text und beantworte die Fragen.')));
-        const article=el('article',current.reading,'advanced-reading');article.lang='ar';article.dir='rtl';body.append(article,quiz(current.readingQuiz));
+        const article=el('article',current.reading,'advanced-reading');article.lang='ar';article.dir='rtl';body.append(speechControls(current.reading),article,quiz(current.readingQuiz));
       }else if(section==='vocabulary'){
         const grid=el('div',undefined,'advanced-unit-grid');for(const word of current.vocabulary){const card=el('article',undefined,'advanced-word');card.append(el('h4',word.ar),el('p',word.de),el('p',word.example),el('p',word.example_de,'advanced-muted'));grid.append(card);}body.append(grid,quiz(current.vocabularyQuiz));
       }else if(section==='grammar'){
@@ -59,11 +78,11 @@
         const id=current.grammar.lesson;if(window.HuroofEdition?.grammarIds.includes(id))body.append(link(t('افتح شرح القاعدة وتدريباتها','Grammatiklektion und Übungen öffnen'),'grammar.html#'+id));
         body.append(quiz(current.grammar.quiz));
       }else if(section==='listening'){
-        body.append(el('p',t('استمع إلى التقرير ثم أجب. التسجيل صوت عربي آلي مُرفق، ويمكن تغيير السرعة من المشغّل.','Höre den Bericht und beantworte die Fragen. Lokale synthetische arabische Aufnahme; Tempo über den Player ändern.')));
-        audio=el('audio');audio.id='advanced-audio';audio.controls=true;audio.preload='metadata';audio.src=current.listening.audio;
+        body.append(el('p',t('استمع إلى التقرير ثم أجب. زر الاستماع يستخدم نطق العربية المتاح على جهازك، مع بديل عبر الإنترنت عند تعذر تشغيله.','Höre den Bericht und beantworte die Fragen. Verwendet die arabische Gerätestimme mit Online-Ersatz bei Ausfall.')),speechControls(current.listening.script));
+        audio=el('audio');audio.id='advanced-audio';audio.controls=true;audio.preload='metadata';audio.src=current.listening.audio;audio.addEventListener('play',()=>{speechRun++;A.stopSpeech();});
         const status=el('p');status.setAttribute('aria-live','polite');audio.addEventListener('error',()=>{status.textContent=t('تعذر تحميل التسجيل. تحقق من اكتمال مجلد الصوت.','Aufnahme konnte nicht geladen werden. Prüfe den Audioordner.');});
         const speed=el('select');speed.setAttribute('aria-label',t('سرعة التسجيل','Wiedergabetempo'));for(const x of [.75,1,1.25]){const option=new Option(x+'×',x);option.selected=x===1;speed.append(option);}speed.addEventListener('change',()=>audio.playbackRate=Number(speed.value));
-        const transcript=el('details');transcript.append(el('summary',t('أظهر نص التقرير','Transkript anzeigen')),el('p',current.listening.script,'advanced-reading'));body.append(audio,speed,status,transcript,quiz(current.listening.quiz));
+        const transcript=el('details');transcript.append(el('summary',t('أظهر نص التقرير','Transkript anzeigen')),el('p',current.listening.script,'advanced-reading'));const local=el('details');local.append(el('summary',t('تسجيل محلي بديل بدون إنترنت','Alternative lokale Aufnahme ohne Internet')),audio,speed,status);body.append(local,transcript,quiz(current.listening.quiz));
       }else if(section==='speaking'){
         const list=el('ol');for(const text of current.speaking)list.append(el('li',text));body.append(list,el('p',t('ناقش الأسئلة مع زميل، وعلّل رأيك وقدّم مثالًا. لا يسجّل التطبيق صوتك ولا يصحح النطق آليًا.','Besprich die Fragen, begründe deine Meinung und nenne ein Beispiel. Keine Tonaufnahme oder automatische Aussprachebewertung.')),draft('speakingNotes',t('ملاحظات للمحادثة','Gesprächsnotizen'),t('سجّل أفكارك هنا…','Notiere deine Gedanken…')));
       }else if(section==='writing'){
@@ -76,7 +95,7 @@
       const index=modules.findIndex(m=>m[0]===section),next=index<5?'#'+current.id+'/'+modules[index+1][0]:'#'+current.level;
       body.append(link(index<5?t('القسم التالي','Nächster Abschnitt'):t('العودة للوحدات','Zurück zur Übersicht'),next));
     }
-    function render(){stop();const parts=location.hash.slice(1).split('/');current=units.find(u=>u.id===parts[0])||null;if(current){filter=current.level;section=modules.some(m=>m[0]===parts[1])?parts[1]:'reading';}else if(['B1','B2'].includes(parts[0]))filter=parts[0];host.replaceChildren();if(current)unitView();else overview();}
+    function render(){stop();audio=null;const parts=location.hash.slice(1).split('/');current=units.find(u=>u.id===parts[0])||null;if(current){filter=current.level;section=modules.some(m=>m[0]===parts[1])?parts[1]:'reading';}else if(['B1','B2'].includes(parts[0]))filter=parts[0];host.replaceChildren();if(current)unitView();else overview();}
     window.addEventListener('hashchange',render);window.addEventListener('app-language-change',render);window.addEventListener('pagehide',stop);render();
   });
 })();
