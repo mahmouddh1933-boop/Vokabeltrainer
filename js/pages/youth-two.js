@@ -44,10 +44,46 @@
   const searchKey = (value) =>
     D.normalize(value).replace(/[أإآ]/g, "ا").replace(/ى/g, "ي").toLowerCase();
   const source = (a) => D.sources.find((s) => s.photo === a.source);
-  const activity = () =>
-    D.activities.find((a) => a.id === state.active) || D.activities[0];
-  const map = (key) =>
-    state[key][activity().id] || (state[key][activity().id] = {});
+  if (!state.exerciseSelections || typeof state.exerciseSelections !== "object" || Array.isArray(state.exerciseSelections)) state.exerciseSelections = {};
+  const baseActivity = () => D.activities.find(a => a.id === state.active) || D.activities[0];
+  const selectedExercise = (a = baseActivity()) => a.exercises?.find(e => e.id === state.exerciseSelections[a.id]);
+  const answerScope = (a = baseActivity(), exercise = selectedExercise(a)) => exercise ? a.id + '::' + exercise.id : a.id;
+  const activity = () => {
+    const a=baseActivity(), exercise=selectedExercise(a);
+    return exercise ? {...a, tasks:exercise.tasks, title:a.title+' — '+t(exercise.title,'Übung '+(a.exercises.indexOf(exercise)+1)), exerciseId:exercise.id} : a;
+  };
+  const map = key => state[key][answerScope()] || (state[key][answerScope()] = {});
+  const taskSets = D.activities.flatMap(a => [
+    {scope:a.id,tasks:a.tasks},
+    ...(a.exercises||[]).map(e=>({scope:answerScope(a,e),tasks:e.tasks}))
+  ]);
+  const exerciseHost = D.activities.some(a=>a.exercises?.length) ? el('section',undefined,'yt-extra-picker') : null;
+  if(exerciseHost){exerciseHost.id='yt-extra-picker';document.querySelector('.yt-activity-heading').after(exerciseHost);}
+  function exerciseHash(){const a=baseActivity(),ex=selectedExercise(a);return '#'+a.id+(ex?'/'+ex.id:'');}
+  function chooseExercise(id){
+    const a=baseActivity();if(id!=='original'&&!a.exercises?.some(e=>e.id===id))return;
+    P.stop();state.exerciseSelections[a.id]=id;$('yt-review').checked=false;persist();
+    try{history.replaceState(null,'',exerciseHash());}catch(_){}
+    renderActivity();$('yt-title').focus({preventScroll:true});$('yt-tasks').scrollIntoView({block:'start'});
+  }
+  function renderExercisePicker(){
+    if(!exerciseHost)return;
+    const a=baseActivity(),current=selectedExercise(a);exerciseHost.hidden=!a.exercises?.length;exerciseHost.replaceChildren();if(exerciseHost.hidden)return;
+    exerciseHost.append(el('h3',t('اختر تمرينًا · ٥ تمارين، في كل تمرين ٦ أسئلة','Übung wählen · 5 Übungen mit je 6 Fragen')));
+    const original=button(t('النشاط الأصلي','Ursprüngliche Aufgabe'),()=>chooseExercise('original'),'practice-button yt-original-exercise');
+    original.dataset.exerciseChoice='original';original.setAttribute('aria-pressed',String(!current));exerciseHost.append(original);
+    const grid=el('div',undefined,'yt-exercise-grid');
+    for(const [index,exercise]of a.exercises.entries()){
+      const records=state.answers[answerScope(a,exercise)]||{};
+      const done=exercise.tasks.filter(q=>records[q.id]),correct=done.filter(q=>D.isCorrect(q,records[q.id].value));
+      const b=button('',()=>chooseExercise(exercise.id),'yt-exercise-card');b.dataset.exerciseChoice=exercise.id;b.setAttribute('aria-pressed',String(current?.id===exercise.id));
+      const count=el('span'),fraction=el('bdi',`${done.length} / 6`);fraction.dir='ltr';count.append(fraction,el('span',t(` أُجيبت · ${correct.length} صحيحة`,` beantwortet · ${correct.length} richtig`)));
+      b.append(el('strong',t(exercise.title,'Übung '+(index+1))),count);
+      if(correct.length===6)b.append(el('small',t('✓ مكتمل','✓ Abgeschlossen')));
+      grid.append(b);
+    }
+    exerciseHost.append(grid,el('p',t('يُحفظ تقدّم كل تمرين مستقلًا. إعادة هذا التمرين لا تمسّ بقية التمارين أو النشاط الأصلي.','Jede Übung speichert ihren eigenen Fortschritt. Das Zurücksetzen lässt die anderen Übungen und die ursprüngliche Aufgabe unverändert.'),'yt-note'));
+  }
   if (D.units) {
     if (!D.units.some((u) => u.number === state.unit))
       state.unit = activity().unit;
@@ -151,17 +187,19 @@
     $("yt-progress").hidden = !tasks.length;
     let allDone = 0,
       allReviewed = 0;
-    for (const item of D.activities)
+    for (const item of taskSets)
       for (const q of item.tasks) {
         if (q.kind === "open") {
-          if (state.reviewed[item.id]?.[q.id]) allReviewed++;
-        } else if (state.answers[item.id]?.[q.id]) allDone++;
+          if (state.reviewed[item.scope]?.[q.id]) allReviewed++;
+        } else if (state.answers[item.scope]?.[q.id]) allDone++;
       }
     renderUnits();
-    const total = D.activities.reduce((n, item) => n + item.tasks.length, 0);
+    renderExercisePicker();
+    const total = taskSets.reduce((n, item) => n + item.tasks.length, 0);
+    const extraCount = taskSets.length - D.activities.length;
     $("yt-total").textContent = t(
-      `${D.units ? D.units.length + " وحدات · " : ""}${D.sources.length} صورة · ${D.activities.length} نشاطًا · ${total} سؤالًا ومهمة · أنجزت ${allDone} إجابة مصحّحة وراجعت ${allReviewed} مهمة مفتوحة`,
-      `${D.sources.length} Vorlagen · ${D.activities.length} Aufgabenblöcke · ${total} Teilaufgaben · ${allDone} beantwortet und ${allReviewed} selbst geprüft`,
+      `${D.units ? D.units.length + " وحدات · " : ""}${D.sources.length} صورة · ${D.activities.length} نشاطًا${extraCount ? " · " + extraCount + " تمرينًا إضافيًا" : ""} · ${total} سؤالًا ومهمة · أنجزت ${allDone} إجابة مصحّحة وراجعت ${allReviewed} مهمة مفتوحة`,
+      `${D.sources.length} Vorlagen · ${D.activities.length} Aufgabenblöcke${extraCount ? " · " + extraCount + " Zusatzübungen" : ""} · ${total} Teilaufgaben · ${allDone} beantwortet und ${allReviewed} selbst geprüft`,
     );
   }
   function renderSources() {
@@ -891,7 +929,11 @@
           !D.isCorrect(q, map("answers")[q.id].value)),
     );
     window.SmartActivities?.disposeWithin($("yt-tasks"));
-    const spec = window.SmartActivityCatalog?.workbooks[storageKey]?.[activity().id];
+    let spec = window.SmartActivityCatalog?.workbooks[storageKey]?.[activity().id];
+    if(activity().exerciseId && spec?.kind==='classify'){
+      const questions=activity().tasks;
+      spec={kind:'classify',items:questions.map(q=>({id:q.id,label:q.label||q.prompt})),targets:spec.targets};
+    }
     if (spec && tasks.length) {
       const ids = new Set(tasks.map(q => q.id)), byId = new Map(tasks.map(q => [q.id,q]));
       window.SmartActivities.mount($("yt-tasks"), {
@@ -908,6 +950,13 @@
       });
     } else tasks.forEach((q) => $("yt-tasks").append(taskCard(q)));
     $("yt-review-empty").hidden = !$("yt-review").checked || !!tasks.length;
+    const base=baseActivity(),ex=selectedExercise(base);
+    if(ex){
+      const index=base.exercises.indexOf(ex),nav=el('nav',undefined,'yt-extra-navigation');nav.setAttribute('aria-label',t('التنقل بين تمارين النشاط','Zwischen den Übungen wechseln'));
+      const previous=button(t('التمرين السابق','Vorherige Übung'),()=>chooseExercise(base.exercises[index-1].id),'practice-button');previous.dataset.extraPrevious='';previous.disabled=index===0;
+      const next=button(t('التمرين التالي','Nächste Übung'),()=>chooseExercise(base.exercises[index+1].id),'practice-button');next.dataset.extraNext='';next.disabled=index===base.exercises.length-1;
+      nav.append(previous,el('span',`${index+1} / 5`),next);$('yt-tasks').append(nav);
+    }
   }
   function renderActivity() {
     const a = activity(),
@@ -915,6 +964,8 @@
       position = visible.findIndex((x) => x.id === a.id);
     $("yt-title").textContent = a.title;
     $("yt-directions").textContent = a.instructions;
+    const resetLabel=a.exerciseId?t('مسح إجابات هذا التمرين فقط','Nur diese Übung zurücksetzen'):t('مسح إجابات هذا النشاط','Diese Aufgabe zurücksetzen');
+    $('yt-reset').textContent=resetLabel;$('yt-reset').dataset.ar=a.exerciseId?'مسح إجابات هذا التمرين فقط':'مسح إجابات هذا النشاط';$('yt-reset').dataset.de=a.exerciseId?'Nur diese Übung zurücksetzen':'Diese Aufgabe zurücksetzen';
     $("yt-meta").textContent =
       categoryName(D.units ? a.section : a.category) +
       (a.sourcePage ? t(" · ص ", " · S. ") + a.sourcePage : "") +
@@ -1007,7 +1058,7 @@
     if (!visible.some((a) => a.id === state.active) && visible.length) {
       state.active = visible[0].id;
       try {
-        history.replaceState(null, "", "#" + state.active);
+        history.replaceState(null, "", exerciseHash());
       } catch (_) {}
     }
     persist();
@@ -1030,7 +1081,7 @@
     state.active = id;
     persist();
     try {
-      history.replaceState(null, "", "#" + id);
+      history.replaceState(null, "", exerciseHash());
     } catch (_) {}
     renderCatalog();
     renderActivity();
@@ -1040,7 +1091,9 @@
     }
   }
   function fromHash() {
-    const id = location.hash.slice(1);
+    const [id,exerciseId] = location.hash.slice(1).split('/');
+    const linkedActivity=D.activities.find(a=>a.id===id);
+    if(exerciseId && linkedActivity?.exercises?.some(e=>e.id===exerciseId))state.exerciseSelections[id]=exerciseId;
     if (D.units?.some((u) => u.id === id)) {
       state.unit = D.units.find((u) => u.id === id).number;
       state.active = D.activities.find((a) => a.unit === state.unit).id;
@@ -1098,7 +1151,7 @@
   });
   $("yt-review").addEventListener("change", renderTasks);
   $("yt-reset").addEventListener("click", () => {
-    state.answers[activity().id] = {};
+    state.answers[answerScope()] = {};
     for (const q of activity().tasks)
       if (q.kind !== "open") delete map("drafts")[q.id];
     persist();

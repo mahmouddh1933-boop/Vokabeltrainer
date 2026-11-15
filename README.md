@@ -17,6 +17,10 @@ Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](download
 
 [Ausführliche App-Tour auf Deutsch](downloads/Huroof-Rundgang-DE.mp4): rund 17 Minuten mit 25 Kapiteln, echten Bedienbeispielen und eingeblendeten Untertiteln. [Begleitmaterial für Website und YouTube](downloads/Huroof-Rundgang-DE-Begleitmaterial.zip) · [Inhalt und Quellen](media/tutorial-de/README.md).
 
+## كتاب ٣: تمارين إضافية · Fünf Übungssets je Thema
+
+Zwölf bestehende Grammatikaktivitäten in Buch 3 bieten jeweils **fünf neue Übungen mit je sechs Fragen**: insgesamt 60 Übungen und 360 zusätzliche Fragen. Die fünf Karten erscheinen innerhalb der jeweiligen Aktivität; ursprüngliche Aufgaben und Lernstände bleiben über „النشاط الأصلي“ erreichbar. Jede Übung speichert ihren eigenen Fortschritt, lässt sich einzeln zurücksetzen und als leeres Blatt mit sechs Fragen drucken. [الأماكن والأسئلة والبناء والفحص](docs/YOUTH-TWO-EXTRA-EXERCISES.md).
+
 ## أنشطة السحب والتوصيل · Interaktive Zuordnung
 
 In **Bücher → Buch 3** bieten „أصنف الكلمات: اسم وفعل وحرف“ und „أصل الكلمة بضدها“ jetzt verschiebbare Wortkarten bzw. farbige Verbindungslinien mit Maus und Touch. Tabellen zeigen die eigenen Zuordnungen; Fehler lassen sich wiederholen, während richtige Antworten erhalten bleiben. Vergleichbare Übungen in Buch 1, Buch 2 und den Prüfungen verwenden dieselbe Bedienung: insgesamt 69 Aufgabenblöcke. In Prüfungen erscheint die Korrektur erst nach Abgabe. [الأماكن والتفاصيل والفحوص](docs/SMART-ACTIVITIES.md).
