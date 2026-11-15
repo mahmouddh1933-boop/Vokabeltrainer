@@ -703,3 +703,8 @@ body .container.grammar-page {
 .grammar-example .grammar-mark-operator,.grammar-example .grammar-mark-previous-vowel{background:#dce5bd;color:#334820}
 .grammar-example .grammar-mark-subject,.grammar-example .grammar-mark-number,.grammar-example .grammar-mark-hamza{background:#ffe3a3;color:#75410c}
 .grammar-example .grammar-mark-predicate,.grammar-example .grammar-mark-hamza-vowel{background:#eed5bd;color:#713c22}
+/* Consistent warm semantic colors in both examples and rule text. */
+.lesson-body mark{display:inline;padding:0;margin:0;font:inherit;border-radius:3px;background:#ffe3a3;color:#75410c}
+:is(.grammar-example,.lesson-body) :is(.grammar-mark-noun,.grammar-mark-masculine,.grammar-mark-moon-letter,.grammar-mark-suffix,.grammar-mark-nominative,.grammar-mark-maqsurah){background:#dce5bd;color:#334820}
+:is(.grammar-example,.lesson-body) :is(.grammar-mark-verb,.grammar-mark-feminine,.grammar-mark-accusative,.grammar-mark-straight-alif,.grammar-mark-ta){background:#eed5bd;color:#713c22}
+:is(.grammar-example,.lesson-body) :is(.grammar-mark-particle,.grammar-mark-genitive){background:#ffe3a3;color:#75410c}

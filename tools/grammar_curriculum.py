@@ -27,6 +27,8 @@ def load_curriculum(grammar):
     bank['interrogative-nouns']['title']=bi('أسماء الاستفهام وتكوين الأسئلة','Fragewörter und Fragen bilden')
     bank['subject-object']['title']=bi('الجملة الفعلية والفاعل والمفعول به','Verbalsatz, Subjekt und Objekt')
     bank['number']['title']=bi('المفرد والمثنى والجمع وجموع التكسير الشائعة','Singular, Dual und häufige Pluralformen')
+    from grammar_a1_highlights import apply_a1_highlights
+    apply_a1_highlights(bank)
     plan=json.loads((ROOT/'data/grammar/curriculum-plan.json').read_text())
     lessons=[];stages=[]
     for stage in plan['stages']:

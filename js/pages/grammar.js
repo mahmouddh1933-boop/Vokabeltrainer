@@ -118,6 +118,15 @@
       $("grammar-lesson").hidden = !filtered.length;
       $("grammar-index").hidden = !filtered.length;
     }
+    function annotatedHTML(value, ranges = []) {
+      let html = "", cursor = 0;
+      for (const range of [...ranges].sort((a,b)=>a.start-b.start)) {
+        if (range.start < cursor) continue;
+        html += escape(value.slice(cursor, range.start)) + `<mark class="grammar-mark-${escape(range.role || "sign")}">${escape(value.slice(range.start, range.end))}</mark>`;
+        cursor = range.end;
+      }
+      return html + escape(value.slice(cursor));
+    }
     function exampleHTML(example) {
       const targets = example.highlights || (example.focus ? [{word: example.focus, part: example.focus}] : []);
       const ranges = (example.annotations || targets.map(({word, part}) => {
@@ -130,13 +139,7 @@
         const offset = word.lastIndexOf(part);
         return start >= 0 && offset >= 0 ? {start: start + offset, end: start + offset + part.length} : null;
       }).filter(Boolean)).sort((a, b) => a.start - b.start);
-      let word = "", cursor = 0;
-      for (const range of ranges) {
-        if (range.start < cursor) continue;
-        word += escape(example.ar.slice(cursor, range.start)) + `<mark class="grammar-mark-${escape(range.role || "sign")}">${escape(example.ar.slice(range.start, range.end))}</mark>`;
-        cursor = range.end;
-      }
-      word += escape(example.ar.slice(cursor));
+      const word = annotatedHTML(example.ar, ranges);
       return `<figure class="grammar-example"><p lang="ar">${word}</p><figcaption lang="de">${escape(example.de)}</figcaption>${example.note ? `<p class="grammar-example-note">${escape(localized(example.note))}</p>` : ""}</figure>`;
     }
     function tableHTML(table) {
@@ -155,7 +158,7 @@
       $("lesson-sections").innerHTML = current.sections
         .map(
           (section, index) =>
-            `<section class="lesson-section" aria-labelledby="lesson-section-${index}"><div class="lesson-section-heading"><span>0${index + 1}</span><h3 id="lesson-section-${index}">${escape(localized(section.title))}</h3></div><p class="lesson-body">${escape(localized(section.body))}</p>${section.letters ? `<div class="grammar-letter-set" aria-label="${escape(localized(section.title))}">${section.letters.map((letter) => `<span lang="ar">${letter}</span>`).join("")}</div>` : ""}${section.table ? tableHTML(section.table) : ""}${section.examples ? `<div class="grammar-examples">${section.examples.map(exampleHTML).join("")}</div>` : ""}</section>`,
+            `<section class="lesson-section" aria-labelledby="lesson-section-${index}"><div class="lesson-section-heading"><span>0${index + 1}</span><h3 id="lesson-section-${index}">${escape(localized(section.title))}</h3></div><p class="lesson-body">${annotatedHTML(localized(section.body), section.bodyAnnotations?.[language()] || [])}</p>${section.letters ? `<div class="grammar-letter-set" aria-label="${escape(localized(section.title))}">${section.letters.map((letter) => `<span lang="ar">${letter}</span>`).join("")}</div>` : ""}${section.table ? tableHTML(section.table) : ""}${section.examples ? `<div class="grammar-examples">${section.examples.map(exampleHTML).join("")}</div>` : ""}</section>`,
         )
         .join("");
       $("lesson-takeaway").textContent = localized(current.takeaway);
