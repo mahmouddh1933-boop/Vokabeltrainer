@@ -1,0 +1,670 @@
+{
+  "description": "Real screenshots captured by tools/capture-edition-previews.py from local builds of all four current apps; no real accounts.",
+  "viewport": {
+    "width": 1200,
+    "height": 900
+  },
+  "output": {
+    "width": 1000,
+    "height": 750,
+    "format": "WebP"
+  },
+  "frames": [
+    {
+      "app": "start",
+      "frame": 1,
+      "page": "huruf.html",
+      "ar": "تعرّف إلى الحرف، ثم اكتشف أشكاله وكلماته.",
+      "de": "Lerne Buchstaben, ihre Formen und Beispielwörter kennen.",
+      "image": "images/editions/start/1.webp",
+      "sha256": "26203099e9026292e7861dfdfb32531d2affe8ec246740d6f3f6fd3164000b7e"
+    },
+    {
+      "app": "start",
+      "frame": 2,
+      "page": "letter-tests.html",
+      "ar": "حوّل ما تعلّمته إلى تحدٍّ ممتع.",
+      "de": "Festige dein Wissen mit kleinen Herausforderungen.",
+      "image": "images/editions/start/2.webp",
+      "sha256": "3ccbd1fb77eb5bee8154b32cba9c553c876fbd0e21e51de590250bd1d85f4a6c"
+    },
+    {
+      "app": "start",
+      "frame": 3,
+      "page": "reading.html",
+      "ar": "كوّن الكلمة خطوة بخطوة من أصواتها.",
+      "de": "Verbinde Laute Schritt für Schritt zu Wörtern.",
+      "image": "images/editions/start/3.webp",
+      "sha256": "57bd2fec2eda7bdf718cedb6d872780bfd0b8e2d752ee6e830204ceef57041cd"
+    },
+    {
+      "app": "start",
+      "frame": 4,
+      "page": "reading-trainer.html",
+      "ar": "اقرأ كلمات نافعة بخط كبير وواضح.",
+      "de": "Lies nützliche Wörter in großer, klarer Schrift.",
+      "image": "images/editions/start/4.webp",
+      "sha256": "7a53cb5b12eb712123549110161edea1f0fd52dc2dcbcaba5019734ea2663e69"
+    },
+    {
+      "app": "start",
+      "frame": 5,
+      "page": "reading-exercises.html#colors/colors-2",
+      "ar": "اقرأ التعليمات ولوّن العلم بنفسك.",
+      "de": "Lies die Anweisungen und male die Flagge selbst aus.",
+      "image": "images/editions/start/5.webp",
+      "sha256": "645ff4ba94c278aa923ae2820b64659d38f863d875ae003a591c2f282b541f60"
+    },
+    {
+      "app": "start",
+      "frame": 6,
+      "page": "reading-exercises.html#stories/stories-1",
+      "ar": "رتّب حكاية عربية واكتشف معناها.",
+      "de": "Ordne eine arabische Geschichte und entdecke ihren Sinn.",
+      "image": "images/editions/start/6.webp",
+      "sha256": "a243341aafde705f0b76467529eb11baa962aa913a58d1060dedce5d9ecf41df"
+    },
+    {
+      "app": "start",
+      "frame": 7,
+      "page": "reading.html",
+      "ar": "حلّل الكلمة إلى أصوات، ثم اجمعها بثقة.",
+      "de": "Zerlege Wörter in Laute und setze sie sicher zusammen.",
+      "focus": "#phonics-display",
+      "action": "",
+      "image": "images/editions/start/7.webp",
+      "sha256": "ac2939c175862f78a1b54890a3c10ad17b03b0bf161dae83401b4e8fcabeb91d"
+    },
+    {
+      "app": "start",
+      "frame": 8,
+      "page": "huruf.html",
+      "ar": "اكتب الحرف على اللوحة، ودرّب يدك خطوة بخطوة.",
+      "de": "Schreibe den Buchstaben auf der Zeichenfläche und übe Schritt für Schritt.",
+      "focus": "#writing-canvas",
+      "action": "letters-writing",
+      "image": "images/editions/start/8.webp",
+      "sha256": "fa7f3cd2cb5ff1022eb9804e149a3f6ffb4fc6e7259c950555cb518b636efb40"
+    },
+    {
+      "app": "start",
+      "frame": 9,
+      "page": "sounds.html",
+      "ar": "ميّز الأصوات المتشابهة، وامنح نطقك بداية أوضح.",
+      "de": "Unterscheide ähnliche Laute und schaffe eine klare Aussprache.",
+      "focus": "#sound-question",
+      "action": "",
+      "image": "images/editions/start/9.webp",
+      "sha256": "3e98ea5a42a42d2b32fef9793636b9ce169729e8da347ee784ec2c3602a77a99"
+    },
+    {
+      "app": "start",
+      "frame": 10,
+      "page": "reading-exercises.html#pictures/pictures-3",
+      "ar": "اقرأ الصورة وابحث عن الدليل قبل اختيار الإجابة.",
+      "de": "Lies das Bild und finde Belege für deine Antwort.",
+      "focus": ".rx-activity",
+      "action": "",
+      "image": "images/editions/start/10.webp",
+      "sha256": "404334b8c818bed22b8471fd9b97ff467ea8565b20f15c1be2a0107ed20dd272"
+    },
+    {
+      "app": "start",
+      "frame": 11,
+      "page": "reading-exercises.html#meaning/meaning-1",
+      "ar": "أكمل الجملة وافهم معنى الكلمة في سياقها.",
+      "de": "Ergänze den Satz und verstehe das Wort im Zusammenhang.",
+      "focus": ".rx-questions",
+      "action": "",
+      "image": "images/editions/start/11.webp",
+      "sha256": "ea592a21f7541e1fbb3c097ff49da60506bd3a8e8ec0d2db3ef5c0e87ca20e59"
+    },
+    {
+      "app": "start",
+      "frame": 12,
+      "page": "reading-exercises.html#draw/draw-1",
+      "ar": "حوّل ما تقرؤه إلى رسم جميل من إبداعك.",
+      "de": "Verwandle das Gelesene in deine eigene Zeichnung.",
+      "focus": ".rx-canvas",
+      "action": "draw-example",
+      "image": "images/editions/start/12.webp",
+      "sha256": "40641e59ef6788ceec038820d54e9a86a78f32176f53dee25ab440332cc74971"
+    },
+    {
+      "app": "start",
+      "frame": 13,
+      "page": "huruf.html",
+      "ar": "جرّب أشكال الحرف، وتعلّم من كل إجابة.",
+      "de": "Übe Buchstabenformen und lerne aus jeder Antwort.",
+      "focus": "#letter-focused-practice",
+      "action": "focused-answer",
+      "image": "images/editions/start/13.webp",
+      "sha256": "9527293f44ae02c51a5b3af75d4c8ea8dac68b3372a58d4bba7e1e9602a4061a"
+    },
+    {
+      "app": "start",
+      "frame": 14,
+      "page": "reading-trainer.html",
+      "ar": "من كلمة واضحة إلى جملة تفهمها بنفسك.",
+      "de": "Vom klaren Wort zum Satz, den du selbst verstehst.",
+      "focus": "#rt-sentences",
+      "action": "self-read",
+      "image": "images/editions/start/14.webp",
+      "sha256": "528826cd35185176dc1cb5fa74ad8fa9d65bffdce7bdd59e5ef0828a5a074c0c"
+    },
+    {
+      "app": "start",
+      "frame": 15,
+      "page": "letters.html",
+      "ar": "اختر خطوتك التالية، فكل حرف يفتح بابًا.",
+      "de": "Wähle deinen nächsten Schritt: Jeder Buchstabe öffnet eine Tür.",
+      "focus": ".route-grid",
+      "action": "",
+      "image": "images/editions/start/15.webp",
+      "sha256": "a0994b465530ff33f0c3f2eb99f3ce7d030dff157f02f95234a89905eb25e8b8"
+    },
+    {
+      "app": "start",
+      "frame": 16,
+      "page": "progress.html",
+      "ar": "كل كلمة تقرؤها خطوة تستحق أن تفتخر بها.",
+      "de": "Jedes gelesene Wort ist ein Schritt, auf den du stolz sein kannst.",
+      "focus": "#edition-progress",
+      "action": "",
+      "image": "images/editions/start/16.webp",
+      "sha256": "6a1c62ec57a01dfb039add026b9b5155a9b5806332a7331a4821c7c9421cd8f1"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 1,
+      "page": "vocabulary.html",
+      "ar": "ابدأ بمفردات حياتك اليومية.",
+      "de": "Beginne mit Wörtern für deinen Alltag.",
+      "image": "images/editions/a1-a2/1.webp",
+      "sha256": "e6098e612c79a90c0ab3ac9852626869a166c81cc30c326c3cf4d8d5d7f5f647"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 2,
+      "page": "lernseite.html",
+      "ar": "تعلّم الكلمة واقلب البطاقة لتعرف معناها.",
+      "de": "Lerne Wörter mit beidseitigen Lernkarten.",
+      "image": "images/editions/a1-a2/2.webp",
+      "sha256": "ce1d55851342405df0250cfbc6bb9ac2ed7d84afb43a2aea70f1c5b01033721f"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 3,
+      "page": "skills.html",
+      "ar": "تدرّب على المهارات ضمن وحدات مترابطة.",
+      "de": "Übe deine Fertigkeiten in zusammenhängenden Einheiten.",
+      "image": "images/editions/a1-a2/3.webp",
+      "sha256": "dd83828aae9fd1feb4f8835d8630e04bc3271dcf35a42a1fa12cb50f4035071b"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 4,
+      "page": "sentences.html",
+      "ar": "اصنع جملًا تستطيع استعمالها.",
+      "de": "Bilde Sätze, die du selbst verwenden kannst.",
+      "image": "images/editions/a1-a2/4.webp",
+      "sha256": "248c44a1d4b4cf2340c74f1bbaf86e12aef8f40375b17b2d50ad6f8281f52fe5"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 5,
+      "page": "stories.html",
+      "ar": "كل قصة قصيرة خطوة نحو قراءة أفضل.",
+      "de": "Jede Kurzgeschichte stärkt dein Lesen.",
+      "image": "images/editions/a1-a2/5.webp",
+      "sha256": "9ffbfca54b1a88b6c164530d263a070cf310eb1bc9980f01dfa2cc695941a7c1"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 6,
+      "page": "grammar.html",
+      "ar": "افهم القاعدة، ثم جرّبها بنفسك.",
+      "de": "Verstehe die Regel und wende sie selbst an.",
+      "image": "images/editions/a1-a2/6.webp",
+      "sha256": "8f0786152fb4277e6e7debd66541875a41b95d917be1f30889b0905b6d7fb261"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 7,
+      "page": "verbs.html",
+      "ar": "اكتشف الماضي والمضارع والأمر، ودرّب نفسك على التصريف.",
+      "de": "Entdecke Vergangenheit, Gegenwart und Imperativ und übe Verbformen.",
+      "focus": "#conjugation-body",
+      "action": "imperative",
+      "image": "images/editions/a1-a2/7.webp",
+      "sha256": "eeaeb593c31b3d31fef50dbe63a47038c7b5e63fb16f204e486ea91f9c128b6b"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 8,
+      "page": "skills.html",
+      "ar": "انتقل من كلماتك إلى الاستماع والمحادثة والكتابة في وحدات مترابطة.",
+      "de": "Verbinde deinen Wortschatz mit Hören, Sprechen und Schreiben.",
+      "focus": "",
+      "action": "skills-unit",
+      "image": "images/editions/a1-a2/8.webp",
+      "sha256": "20e1ef0333e846580364fe3829bc686cd5f59d00296ad34382ca5f6e7b4f778c"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 9,
+      "page": "test.html",
+      "ar": "اختر من ستة أنواع لاختبارات المفردات، ونوّع طريقتك في التعلّم.",
+      "de": "Wähle aus sechs Vokabeltestarten und lerne abwechslungsreich.",
+      "focus": "",
+      "action": "",
+      "image": "images/editions/a1-a2/9.webp",
+      "sha256": "7009b2d01fd88f8aa354c121eb9b7489f1ac5aca08ed86188cc72a0c89c22129"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 10,
+      "page": "ergebnis.html",
+      "ar": "افرح بما أتقنته، واكتشف ما يستحق مراجعة جديدة.",
+      "de": "Freue dich über Erfolge und entdecke, was du noch üben kannst.",
+      "focus": "",
+      "action": "sample-test",
+      "image": "images/editions/a1-a2/10.webp",
+      "sha256": "81560ca3d08716c6b75a64b5c8415ca50dd399054440fc1c0a7766ea164a41b8"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 11,
+      "page": "review.html",
+      "ar": "خطؤك فرصة: ارجع إلى الكلمة وثبّتها بهدوء.",
+      "de": "Fehler sind Chancen: Wiederhole das Wort in Ruhe.",
+      "focus": "",
+      "action": "",
+      "image": "images/editions/a1-a2/11.webp",
+      "sha256": "95a53c35b7d0ead9f980ea70666d053019232aebece7cf4942744321eb860c6a"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 12,
+      "page": "stats.html",
+      "ar": "تابع اختباراتك ونتائجك، وشاهد خطواتك الصغيرة تتراكم.",
+      "de": "Verfolge deine Tests und Ergebnisse und sieh deine kleinen Schritte wachsen.",
+      "focus": "",
+      "action": "",
+      "image": "images/editions/a1-a2/12.webp",
+      "sha256": "3e60a327e39dbb21d741d8249f3a1401aa90d04dbe353b02b45642f4abec2c50"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 13,
+      "page": "grammar.html#pronouns",
+      "ar": "أنا وأنت ونحن: عبّر عن نفسك بجملة واضحة.",
+      "de": "Ich, du und wir: Drücke dich mit klaren Sätzen aus.",
+      "focus": "#lesson-section-1",
+      "action": "",
+      "image": "images/editions/a1-a2/13.webp",
+      "sha256": "72fe7dfcf68002e053d962d9a4711884c35273f4379b69b384117536d20390fe"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 14,
+      "page": "grammar.html#prepositions",
+      "ar": "حروف صغيرة تساعدك على وصف عالمك.",
+      "de": "Kleine Präpositionen helfen dir, deine Welt zu beschreiben.",
+      "focus": "#lesson-sections",
+      "action": "",
+      "image": "images/editions/a1-a2/14.webp",
+      "sha256": "0fa771a14d399712ccfc1dcbc0705f89b992cd1eef5a2ae252851fcdc231c9c9"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 15,
+      "page": "grammar.html#possession-basics",
+      "ar": "ميّز الحروف بالألوان، وافهم كيف تتصل الكلمات.",
+      "de": "Erkenne Buchstaben durch Farben und verstehe ihre Verbindungen.",
+      "focus": ".lesson-section:nth-child(2)",
+      "action": "",
+      "image": "images/editions/a1-a2/15.webp",
+      "sha256": "1cd20c48ce260a38694b448cbb226f9a4f4fe12bd089328108a901eb456202ff"
+    },
+    {
+      "app": "a1-a2",
+      "frame": 16,
+      "page": "grammar.html#case-basics",
+      "ar": "افهم دور الكلمة، فتزداد جملتك وضوحًا.",
+      "de": "Verstehe die Satzfunktion und formuliere klarer.",
+      "focus": "#lesson-sections",
+      "action": "",
+      "image": "images/editions/a1-a2/16.webp",
+      "sha256": "f1760b11c5f96cf80d32cc88f8f86052b8cb4befa521693f60b59184c797bff4"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 1,
+      "page": "vocabulary.html",
+      "ar": "وسّع كلماتك للتعبير بدقّة أكبر.",
+      "de": "Erweitere deinen Wortschatz für präziseren Ausdruck.",
+      "image": "images/editions/b1-b2/1.webp",
+      "sha256": "80cf2072db8043db293035ef592ebc96725c7dfcb95cfc87cf920df32f9ad571"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 2,
+      "page": "lernseite.html",
+      "ar": "راجع المفردات واجعلها جزءًا من لغتك.",
+      "de": "Mache neue Wörter zu einem Teil deiner Sprache.",
+      "image": "images/editions/b1-b2/2.webp",
+      "sha256": "e6cbcbc94f7d9b6d8b78009c49ed76eeffcc2b9427d22a5e6931a420e2d0d671"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 3,
+      "page": "grammar.html",
+      "ar": "اكتشف تراكيب أكثر عمقًا.",
+      "de": "Entdecke weiterführende Strukturen.",
+      "image": "images/editions/b1-b2/3.webp",
+      "sha256": "f76c4de538fdcaed638737329568a6d0931e9fc6dcc5d0c6a6725f966ceaa611"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 4,
+      "page": "verbs.html",
+      "ar": "تدرّب على صيغ الأفعال وتغيّرها.",
+      "de": "Übe verschiedene Verbformen.",
+      "image": "images/editions/b1-b2/4.webp",
+      "sha256": "af84b4aeb53b075d7c651b4cc8a5489b046b53d9171bb420453efad7b1d86e34"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 5,
+      "page": "test2.html",
+      "ar": "اختبر فهمك بخيارات واضحة.",
+      "de": "Prüfe dein Verständnis mit klaren Auswahlaufgaben.",
+      "image": "images/editions/b1-b2/5.webp",
+      "sha256": "9867084918676347f87da9ab80235b37696f3c0d6bc40d69970499926678daff"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 6,
+      "page": "test.html",
+      "ar": "نوّع التدريب وثبّت ما تعلّمته.",
+      "de": "Übe abwechslungsreich und festige dein Wissen.",
+      "image": "images/editions/b1-b2/6.webp",
+      "sha256": "264955b66626d1b7e88957a67e838acaf9edeb957c53390b6486ec030ec99cbf"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 7,
+      "page": "grammar.html",
+      "ar": "طبّق القاعدة في سؤال واضح، وتعلّم من التصحيح.",
+      "de": "Wende die Regel an und lerne aus der Rückmeldung.",
+      "focus": "#grammar-answers",
+      "action": "",
+      "image": "images/editions/b1-b2/7.webp",
+      "sha256": "a5377299735fc709b15f5125495dcf5d3ca9b6cc24d03ebceb93cbb3ba6c5bf2"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 8,
+      "page": "verbs.html",
+      "ar": "قارن صيغ الأمر مع بقية الأزمنة، ووسّع قدرتك على التعبير.",
+      "de": "Vergleiche den Imperativ mit anderen Zeitformen und erweitere deinen Ausdruck.",
+      "focus": "#conjugation-body",
+      "action": "imperative",
+      "image": "images/editions/b1-b2/8.webp",
+      "sha256": "b5c7344432854e163a57727d8dc10e033b78d6c3cda56b519f181e35a79337a2"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 9,
+      "page": "test3.html",
+      "ar": "اختبر تذكّر الكلمة العربية، واجعل المفردات جاهزة للاستعمال.",
+      "de": "Prüfe deine Erinnerung an das arabische Wort und mache es einsatzbereit.",
+      "focus": ".question",
+      "action": "",
+      "image": "images/editions/b1-b2/9.webp",
+      "sha256": "dd43d57d9d15fb887010f9a1d76e35f4d84be44507984dd1663f6d63592f05a5"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 10,
+      "page": "ergebnis.html",
+      "ar": "اجعل نتيجة الاختبار نقطة انطلاق لتقدّم جديد.",
+      "de": "Nutze dein Testergebnis als Ausgangspunkt für neue Fortschritte.",
+      "focus": "",
+      "action": "sample-test",
+      "image": "images/editions/b1-b2/10.webp",
+      "sha256": "ecb4a4844b9385e112aa046d1788ba4f5880ec17fad79f02a77780bc4c2b4462"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 11,
+      "page": "review.html",
+      "ar": "راجع الكلمات الصعبة بدل تركها تتراكم.",
+      "de": "Wiederhole schwierige Wörter, bevor sie sich ansammeln.",
+      "focus": "",
+      "action": "",
+      "image": "images/editions/b1-b2/11.webp",
+      "sha256": "faf057af096f6431eca29377d8dc9cbb14479a72d30f3809528008e100056724"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 12,
+      "page": "stats.html",
+      "ar": "راقب تقدّمك، وواصل الممارسة بخطة أوضح.",
+      "de": "Verfolge deinen Lernstand und übe mit einem klareren Plan weiter.",
+      "focus": "",
+      "action": "",
+      "image": "images/editions/b1-b2/12.webp",
+      "sha256": "0b9b09fc50cf98458cb3a932c105cb1ba76f81c9ade36cf5c623f2fd59636d26"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 13,
+      "page": "texts.html#B11/reading",
+      "ar": "اقرأ بفهم، واربط الأفكار، وتقدّم بثقة.",
+      "de": "Lies mit Verständnis, verbinde Ideen und gehe sicher weiter.",
+      "focus": ".advanced-module",
+      "action": "",
+      "image": "images/editions/b1-b2/13.webp",
+      "sha256": "ef79c4cdb287ca263e5020a1ccd52bfea99fd34b83013ad3fa1af9fbba4ad087"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 14,
+      "page": "texts.html#B21/listening",
+      "ar": "استمع إلى التقرير، ثم اختبر فهمك بأسئلته.",
+      "de": "Höre den Bericht und prüfe dein Verständnis mit passenden Fragen.",
+      "focus": ".advanced-module",
+      "action": "",
+      "image": "images/editions/b1-b2/14.webp",
+      "sha256": "b8f7dcf88a81c8411291b2766d76e090ef065c26f2d263569bb31a399c6ce9c3"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 15,
+      "page": "grammar.html#exception",
+      "ar": "اكتشف دقة المعنى في أساليب الاستثناء.",
+      "de": "Entdecke präzise Bedeutungen durch Ausnahmeformen.",
+      "focus": "#lesson-sections",
+      "action": "",
+      "image": "images/editions/b1-b2/15.webp",
+      "sha256": "f2d3a047f312c2d137ca001348a2539ea69db96c4b4cf95701a01576abe94399"
+    },
+    {
+      "app": "b1-b2",
+      "frame": 16,
+      "page": "grammar.html#advanced-connectors",
+      "ar": "اربط أفكارك لتصبح العربية أداة تعبير أدق.",
+      "de": "Verbinde deine Gedanken für einen präziseren arabischen Ausdruck.",
+      "focus": "#lesson-sections",
+      "action": "",
+      "image": "images/editions/b1-b2/16.webp",
+      "sha256": "96fd80c11346c9780c676192d48b5f95da14231c5b2687fd4e48563a2f679f74"
+    },
+    {
+      "app": "books",
+      "frame": 1,
+      "page": "books.html",
+      "ar": "أربعة كتب تفتح لك أبواب القراءة.",
+      "de": "Vier Bücher eröffnen dir neue Lesewelten.",
+      "image": "images/editions/books/1.webp",
+      "sha256": "800b90282aadb447867032ccf1955c17e23796dd64d43ed726a3ea3b8af8244d"
+    },
+    {
+      "app": "books",
+      "frame": 2,
+      "page": "book-level-two.html",
+      "ar": "تعلّم من نصوص وتمارين متدرجة.",
+      "de": "Lerne mit aufbauenden Texten und Aufgaben.",
+      "image": "images/editions/books/2.webp",
+      "sha256": "3e844eb565d8ab50e791baca9798172179a70ab2a341d0dcafd44aa6b2692187"
+    },
+    {
+      "app": "books",
+      "frame": 3,
+      "page": "youth-book-two-part-one.html",
+      "ar": "رافق كل وحدة بممارسة وفهم.",
+      "de": "Vertiefe jede Einheit durch aktive Übungen.",
+      "image": "images/editions/books/3.webp",
+      "sha256": "93445c952172914fc896b35d6c7e208ec53b4ec9138d8a986482a43faf377291"
+    },
+    {
+      "app": "books",
+      "frame": 4,
+      "page": "vocabulary.html",
+      "ar": "اجمع مفردات الكتب وراجعها بالبطاقات.",
+      "de": "Lerne den Buchwortschatz mit Karten.",
+      "image": "images/editions/books/4.webp",
+      "sha256": "2b6758403b85b3b7612ecbd1803074461376f8ad4a63c8fa802a87d7efcd1c6d"
+    },
+    {
+      "app": "books",
+      "frame": 5,
+      "page": "exams.html",
+      "ar": "تدرّب على اختبارات الأستاذ محمود بركات.",
+      "de": "Übe mit Prüfungen von Mahmoud Barakat.",
+      "image": "images/editions/books/5.webp",
+      "sha256": "56c788ade43a2f6e03155adfd2ff22b904c1c1b30adc33fc727644a6562f34e5"
+    },
+    {
+      "app": "books",
+      "frame": 6,
+      "page": "placement.html",
+      "ar": "اكتشف نقطة البداية المناسبة لك.",
+      "de": "Finde einen passenden Einstieg.",
+      "image": "images/editions/books/6.webp",
+      "sha256": "32befd0f468294460283d390e7bcfa5621b955735cc8837149e63f43a00cfae0"
+    },
+    {
+      "app": "books",
+      "frame": 7,
+      "page": "youth-training-two.html",
+      "ar": "تدرّب مع كتاب ٣ على أنشطة عربية متنوعة.",
+      "de": "Übe abwechslungsreiche arabische Aufgaben mit Buch 3.",
+      "focus": "",
+      "action": "",
+      "image": "images/editions/books/7.webp",
+      "sha256": "533776e7b011c2deaee7df7fdcdcfbeef2c285a9f8be29ae4983673f5e05b8d0"
+    },
+    {
+      "app": "books",
+      "frame": 8,
+      "page": "arabic-youth.html",
+      "ar": "رافق كتاب ٤ في القراءة والفهم والتراكيب.",
+      "de": "Entdecke Lesen, Verstehen und Strukturen in Buch 4.",
+      "focus": "",
+      "action": "",
+      "image": "images/editions/books/8.webp",
+      "sha256": "c79cc905f8ab6ff2148630fbdf89685f90c55616ac689441d6782c90d08fdd16"
+    },
+    {
+      "app": "books",
+      "frame": 9,
+      "page": "lernseite.html",
+      "ar": "مفردات الكتاب ٢ بين يديك: اقلب البطاقة واكتشف المعنى.",
+      "de": "Lerne den Wortschatz von Buch 2 mit beidseitigen Karten.",
+      "focus": "#flashcard",
+      "action": "book2-cards",
+      "image": "images/editions/books/9.webp",
+      "sha256": "ceeea990aad6e629a9c8e4fb2dac62de89372da7885e5c57469f03eb5a054775"
+    },
+    {
+      "app": "books",
+      "frame": 10,
+      "page": "test.html",
+      "ar": "حوّل مفردات الكتب إلى ممارسة بستة أنواع من الاختبارات.",
+      "de": "Festige den Buchwortschatz mit sechs Testarten.",
+      "focus": "",
+      "action": "",
+      "image": "images/editions/books/10.webp",
+      "sha256": "27937ddff14faba5a8803920ecedd52b20364c45308e727164893122ecd25e31"
+    },
+    {
+      "app": "books",
+      "frame": 11,
+      "page": "exams.html",
+      "ar": "حلّ امتحان الأستاذ مباشرة، وطبّق ما تعلمته.",
+      "de": "Bearbeite die Lehrerprüfung direkt und wende dein Wissen an.",
+      "focus": "",
+      "action": "teacher-exam",
+      "image": "images/editions/books/11.webp",
+      "sha256": "210e8359a5877439b62a6f39e0f98eadcd5b5ba3ffcfa4eb8533b9de0e37e9d2"
+    },
+    {
+      "app": "books",
+      "frame": 12,
+      "page": "placement.html",
+      "ar": "جرّب سؤال تحديد مستوى، واكتشف نقطة انطلاقتك.",
+      "de": "Probiere eine Einstufungsfrage und entdecke deinen Einstieg.",
+      "focus": "",
+      "action": "placement-test",
+      "image": "images/editions/books/12.webp",
+      "sha256": "66eb210bb43e36f2bf506f344b65d90877278d2e59550e8317ce2f512f2dae08"
+    },
+    {
+      "app": "books",
+      "frame": 13,
+      "page": "book-level-two.html",
+      "ar": "طبّق ما قرأته في أنشطة تصنيف وربط ممتعة.",
+      "de": "Wende Gelesenes mit abwechslungsreichen Zuordnungen an.",
+      "focus": "#book-exercises",
+      "action": "book-practice",
+      "image": "images/editions/books/13.webp",
+      "sha256": "d6afbad84b334f5977791de592efaa0d534ddc87720e5336b6b47e1767fd95d5"
+    },
+    {
+      "app": "books",
+      "frame": 14,
+      "page": "book-level-two.html",
+      "ar": "اكتب الحرف بنفسك، واجعل التدرّب عادة جميلة.",
+      "de": "Schreibe selbst und mache das Üben zu einer schönen Gewohnheit.",
+      "focus": "#book-canvas",
+      "action": "book-writing",
+      "image": "images/editions/books/14.webp",
+      "sha256": "90755d109700f73901b14e44fa455d1da8b4068da9be29745e2239ec9af14529"
+    },
+    {
+      "app": "books",
+      "frame": 15,
+      "page": "youth-training-two.html#c-p24-b2/exercise-4",
+      "ar": "صنّف الأفكار وصِل بينها، فالفهم ينمو بالممارسة.",
+      "de": "Ordne Gedanken und verbinde sie: Verständnis wächst durch Übung.",
+      "focus": ".smart-board",
+      "action": "",
+      "image": "images/editions/books/15.webp",
+      "sha256": "141a80bfdaace957a07974990bca07f85adac1f2ebe510e89cabf58ae480f01c"
+    },
+    {
+      "app": "books",
+      "frame": 16,
+      "page": "youth-training-two.html#b-p16-b1/exercise-4",
+      "ar": "جولات تدريب متنوعة تثبّت ما تعلّمته من الكتاب.",
+      "de": "Verschiedene Übungsrunden festigen dein Wissen aus dem Buch.",
+      "focus": "#yt-tasks",
+      "action": "",
+      "image": "images/editions/books/16.webp",
+      "sha256": "49b858fecdba09b7086e64cadc1ad814596463b3f33b540d63a57c7205e6f75f"
+    }
+  ]
+}

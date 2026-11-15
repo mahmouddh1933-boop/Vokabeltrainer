@@ -1,4 +1,4 @@
-"""Capture twelve real learning screens per edition as small local WebP previews.
+"""Capture sixteen real learning screens per edition as small local WebP previews.
 Serve a suite build before running; no real accounts are used or photographed.
 """
 import argparse,json,io,unicodedata
@@ -11,7 +11,7 @@ base=a.base_url.rstrip('/')
 def display_form(word):return unicodedata.normalize('NFC',word.replace('\u064bا','ا\u064b'))
 with sync_playwright() as pw:
  browser=pw.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
- context=browser.new_context(viewport={'width':1200,'height':900},device_scale_factor=1,service_workers='block')
+ context=browser.new_context(viewport={'width':1200,'height':900},device_scale_factor=1,service_workers='block',reduced_motion='reduce')
  context.add_init_script("localStorage.setItem('oliveLearnerThemeV1','neutral');localStorage.setItem('vocabInterfaceLanguage','ar');")
  context.route('**/*',lambda r:r.continue_() if r.request.url.startswith(base+'/') else r.abort())
  page=context.new_page();errors=[];page.on('pageerror',lambda error:errors.append(str(error)))
@@ -29,10 +29,18 @@ with sync_playwright() as pw:
   target=ROOT/'images/editions'/ident;target.mkdir(parents=True,exist_ok=True)
   for i,frame in enumerate(definition['previews'],1):
    if a.frame and i!=a.frame:continue
-   page.goto(base+'/'+ident+'/'+frame['page']);page.wait_for_selector('.edition-brand');page.evaluate('document.fonts.ready');page.wait_for_timeout(200)
+   page.goto(base+'/'+ident+'/'+frame['page']);page.wait_for_selector('.brand-name');page.evaluate('document.fonts.ready');page.wait_for_timeout(200)
    action=frame.get('action')
    if action=='sample-test':sample_test(ident)
    elif action=='imperative':page.locator('[data-tense=imperative]').click()
+   elif action=='focused-answer':
+    page.locator('#focused-options button').first.click()
+   elif action=='self-read':
+    if page.locator('#rt-self-read').get_attribute('aria-pressed')!='true':page.locator('#rt-self-read').click()
+   elif action=='book-practice':page.locator('[data-book-tab="practice"]').click()
+   elif action=='book-writing':
+    page.locator('[data-book-tab="write"]').click()
+    if page.locator('#book-guide').get_attribute('aria-pressed')!='true':page.locator('#book-guide').click()
    elif action=='letters-writing':page.locator('#letter-next').click()
    elif action=='book2-cards':
     page.goto(base+'/'+ident+'/vocabulary.html');page.wait_for_selector('#book-vocabulary-2-lists .ready-list-button');page.locator('#book-vocabulary-2-lists .ready-list-button').first.click();page.wait_for_url('**/lernseite.html');page.locator('#flashcard').click()

@@ -95,9 +95,31 @@ EXTRA_PREVIEWS={
   ['exams.html','حلّ امتحان الأستاذ مباشرة، وطبّق ما تعلمته.','Bearbeite die Lehrerprüfung direkt und wende dein Wissen an.','','teacher-exam'],
   ['placement.html','جرّب سؤال تحديد مستوى، واكتشف نقطة انطلاقتك.','Probiere eine Einstufungsfrage und entdecke deinen Einstieg.','','placement-test']]
 }
+MORE_PREVIEWS={
+ 'start':[
+  ['huruf.html','جرّب أشكال الحرف، وتعلّم من كل إجابة.','Übe Buchstabenformen und lerne aus jeder Antwort.','#letter-focused-practice','focused-answer'],
+  ['reading-trainer.html','من كلمة واضحة إلى جملة تفهمها بنفسك.','Vom klaren Wort zum Satz, den du selbst verstehst.','#rt-sentences','self-read'],
+  ['letters.html','اختر خطوتك التالية، فكل حرف يفتح بابًا.','Wähle deinen nächsten Schritt: Jeder Buchstabe öffnet eine Tür.','.route-grid',''],
+  ['progress.html','كل كلمة تقرؤها خطوة تستحق أن تفتخر بها.','Jedes gelesene Wort ist ein Schritt, auf den du stolz sein kannst.','#edition-progress','']],
+ 'a1-a2':[
+  ['grammar.html#pronouns','أنا وأنت ونحن: عبّر عن نفسك بجملة واضحة.','Ich, du und wir: Drücke dich mit klaren Sätzen aus.','#lesson-section-1',''],
+  ['grammar.html#prepositions','حروف صغيرة تساعدك على وصف عالمك.','Kleine Präpositionen helfen dir, deine Welt zu beschreiben.','#lesson-sections',''],
+  ['grammar.html#possession-basics','ميّز الحروف بالألوان، وافهم كيف تتصل الكلمات.','Erkenne Buchstaben durch Farben und verstehe ihre Verbindungen.','.lesson-section:nth-child(2)',''],
+  ['grammar.html#case-basics','افهم دور الكلمة، فتزداد جملتك وضوحًا.','Verstehe die Satzfunktion und formuliere klarer.','#lesson-sections','']],
+ 'b1-b2':[
+  ['texts.html#B11/reading','اقرأ بفهم، واربط الأفكار، وتقدّم بثقة.','Lies mit Verständnis, verbinde Ideen und gehe sicher weiter.','.advanced-module',''],
+  ['texts.html#B21/listening','استمع إلى التقرير، ثم اختبر فهمك بأسئلته.','Höre den Bericht und prüfe dein Verständnis mit passenden Fragen.','.advanced-module',''],
+  ['grammar.html#exception','اكتشف دقة المعنى في أساليب الاستثناء.','Entdecke präzise Bedeutungen durch Ausnahmeformen.','#lesson-sections',''],
+  ['grammar.html#advanced-connectors','اربط أفكارك لتصبح العربية أداة تعبير أدق.','Verbinde deine Gedanken für einen präziseren arabischen Ausdruck.','#lesson-sections','']],
+ 'books':[
+  ['book-level-two.html','طبّق ما قرأته في أنشطة تصنيف وربط ممتعة.','Wende Gelesenes mit abwechslungsreichen Zuordnungen an.','#book-exercises','book-practice'],
+  ['book-level-two.html','اكتب الحرف بنفسك، واجعل التدرّب عادة جميلة.','Schreibe selbst und mache das Üben zu einer schönen Gewohnheit.','#book-canvas','book-writing'],
+  ['youth-training-two.html#c-p24-b2/exercise-4','صنّف الأفكار وصِل بينها، فالفهم ينمو بالممارسة.','Ordne Gedanken und verbinde sie: Verständnis wächst durch Übung.','.smart-board',''],
+  ['youth-training-two.html#b-p16-b1/exercise-4','جولات تدريب متنوعة تثبّت ما تعلّمته من الكتاب.','Verschiedene Übungsrunden festigen dein Wissen aus dem Buch.','#yt-tasks','']]
+}
 for d in DEFINITIONS:
- d['previews']=[dict(zip(['page','ar','de','focus','action'],r)) for r in PREVIEWS[d['id']]+EXTRA_PREVIEWS[d['id']]]
- assert len(d['previews'])==12
+ d['previews']=[dict(zip(['page','ar','de','focus','action'],r)) for r in PREVIEWS[d['id']]+EXTRA_PREVIEWS[d['id']]+MORE_PREVIEWS[d['id']]]
+ assert len(d['previews'])==16
 all_details=[{k:d[k] for k in ['id','ar','de','description','descriptionDe','previews']} for d in DEFINITIONS]
 def strings(v):
  if isinstance(v,str):yield v

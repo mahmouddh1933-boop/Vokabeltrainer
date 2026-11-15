@@ -28,6 +28,12 @@ with tempfile.TemporaryDirectory(prefix='huroof-package-check-') as tmp:
   base=folder/ident
   config=json.loads((base/'edition-manifest.json').read_text())
   assert config['id']==ident and not config['suite']
+  assert len(config['previews'])==16
+  expected_previews={f'images/editions/{other}/{i}.webp' for other in APPS if other!=ident for i in range(1,17)}
+  actual_previews={p.relative_to(base).as_posix() for p in (base/'images/editions').rglob('*.webp')}
+  assert actual_previews==expected_previews,(ident,'gallery screenshot coverage')
+  assert len({hashlib.sha256((base/name).read_bytes()).hexdigest() for name in expected_previews})==48
+  for name in expected_previews:assert (base/name).read_bytes()==(ROOT/name).read_bytes(),(ident,name)
   assert (base/'README-APP.txt').is_file()
   for name in config['pages']:
    if name=='offline.html':continue
