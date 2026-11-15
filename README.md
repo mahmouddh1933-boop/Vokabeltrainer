@@ -17,6 +17,8 @@ Die Hauptanwendung ist jetzt in vier vollständige Ausgaben aufgeteilt. Quellen 
 
 **Eigene Firebase-Projekte pro App:** [Start](downloads/Huroof-Start-Firebase-Independent.zip) · [A1/A2](downloads/Huroof-A1-A2-Firebase-Independent.zip) · [B1/B2](downloads/Huroof-B1-B2-Firebase-Independent.zip) · [Bücher](downloads/Huroof-Books-Firebase-Independent.zip). Jede vorbereitete Hosting-/Firestore-Hülle wird mit der öffentlichen Web-Konfiguration ihres eigenen Projekts eingerichtet; Konten und Lernstände bleiben projektweise getrennt. [خطوات الإعداد على Windows بالعربية](docs/INDEPENDENT-FIREBASE-AR.md).
 
+Bereits mit den bereitgestellten öffentlichen Firebase-Web-Einstellungen vorbereitet: [Start → huroof-start-e3250](downloads/Huroof-Start-Firebase-Ready.zip) · [A1/A2 → huroof-a1-a2](downloads/Huroof-A1-A2-Firebase-Ready.zip). Diese Pakete wählen beim Veröffentlichen automatisch ihr eigenes Projekt; vorab Email/Password und die Standard-Firestore-Datenbank in jedem Projekt aktivieren.
+
 Ein deutsch-arabischer Vokabeltrainer mit einem neuen responsiven Design: Lern-Dashboard, A1–B2-Lernpfad, Lernkarten, Alphabet, sechs Testarten, einen interaktiven Kurs zur Verbkonjugation, Fehlerwiederholung und persönlicher Fortschritt. Die Oberfläche unterstützt Deutsch und Arabisch einschließlich Rechts-nach-links-Darstellung.
 
 Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](downloads/Huroof-Werbung-DE.mp4), [العربية](downloads/Huroof-Werbung-AR.mp4) oder [beide Filme mit Begleitmaterial als ZIP](downloads/Huroof-Werbevideos-DE-AR.zip). [Inhalt und bearbeitbare Quellen](media/promo/README.md).

@@ -2,6 +2,21 @@
 
 هذه طريقة إضافية للنشر: كل تطبيق له مشروع وقاعدة Firestore وحسابات Authentication ولوحة إدارة مستقلة. ملفات المشروع السابق وحساباته وتقدّمه تبقى كما هي. لا تنتقل الحسابات أو إنجازات الطلاب تلقائيًا بين المشاريع.
 
+## الحزمتان المضبوطتان على المشروعين الجديدين
+
+- [الحروف — huroof-start-e3250](../downloads/Huroof-Start-Firebase-Ready.zip)
+- [A1/A2 — huroof-a1-a2](../downloads/Huroof-A1-A2-Firebase-Ready.zip)
+
+تحتوي هاتان الحزمتان إعدادات Web التي زوّد بها المستخدم، ولا تحتاجان تعديل الإعدادات. في كل مشروع تأكد من تفعيل Authentication → Email/Password ووجود قاعدة Cloud Firestore Standard بمعرّف `(default)` في وضع Production. فك الحزمة وافتح المجلد الذي يحتوي `firebase.json`، ثم نفّذ من PowerShell:
+
+```powershell
+node deploy-firebase.cjs
+```
+
+يتحقق السكربت من تطابق المشروع وينشر القواعد ثم الموقع إلى ذلك المشروع فقط. إذا طلب تسجيل الدخول استخدم `npx.cmd firebase-tools login`. تعليمات تفعيل حساب المدير موجودة في الخطوة 7 أدناه وفي README-AR.md داخل كل حزمة. هذه الحزم جاهزة للنشر؛ تجهيزها لا يعني أن النشر أو كتابة بيانات حقيقية على Firestore قد تمت.
+
+## حزم الإعداد العامة
+
 حمّل الحزمة المطابقة للتطبيق:
 
 - [البداية والحروف](../downloads/Huroof-Start-Firebase-Independent.zip)
