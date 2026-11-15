@@ -1,0 +1,28 @@
+{
+  "file": "downloads/Huroof-Start-Walkthrough-AR.mp4",
+  "sha256": "f86339d5f55fcbb3531ed3ea122b2bcb33af21a301d4ca4b3572e6177153ac47",
+  "bytes": 8986723,
+  "duration": 199.72,
+  "type": "live browser operation",
+  "sourceApp": "f7ba50b",
+  "promotionalImagesUsed": false,
+  "sections": 11,
+  "actualInteractions": 39,
+  "capturedLocalAudioEvents": [
+    {
+      "time": 28.020433288998902,
+      "path": "start/audio/letters/02-name-waqf.mp3"
+    },
+    {
+      "time": 92.18856601000152,
+      "path": "start/audio/practice/020.mp3"
+    }
+  ],
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "codec": "H.264 / AAC",
+  "decodedEveryFrame": true,
+  "errors": []
+}

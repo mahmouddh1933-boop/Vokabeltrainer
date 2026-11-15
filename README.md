@@ -19,7 +19,7 @@ Ein deutsch-arabischer Vokabeltrainer mit einem neuen responsiven Design: Lern-D
 
 Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](downloads/Huroof-Werbung-DE.mp4), [العربية](downloads/Huroof-Werbung-AR.mp4) oder [beide Filme mit Begleitmaterial als ZIP](downloads/Huroof-Werbevideos-DE-AR.zip). [Inhalt und bearbeitbare Quellen](media/promo/README.md).
 
-Neue eigenständige App-Videos mit aktuellen echten Screenshots und arabischer Sprecherstimme: [Start / الحروف والقراءة](downloads/Huroof-Start-Video-AR.mp4) · [Arabisch A1/A2](downloads/Huroof-A1-A2-Video-AR.mp4). [Inhalt und reproduzierbare Quellen](media/app-videos/README.md).
+Neue praktische App-Anleitungen: durchgehende echte Browserbedienung, Abschnitt für Abschnitt, jeweils unter sechs Minuten, mit arabischen Erklärungen und Kommentar: [Start / الحروف والقراءة](downloads/Huroof-Start-Walkthrough-AR.mp4) · [Arabisch A1/A2](downloads/Huroof-A1-A2-Walkthrough-AR.mp4). [Inhalt und reproduzierbare Quellen](media/app-walkthroughs/README.md).
 
 [Ausführliche App-Tour auf Deutsch](downloads/Huroof-Rundgang-DE.mp4): rund 17 Minuten mit 25 Kapiteln, echten Bedienbeispielen und eingeblendeten Untertiteln. [Begleitmaterial für Website und YouTube](downloads/Huroof-Rundgang-DE-Begleitmaterial.zip) · [Inhalt und Quellen](media/tutorial-de/README.md).
 

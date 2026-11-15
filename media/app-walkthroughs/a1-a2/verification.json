@@ -1,0 +1,32 @@
+{
+  "file": "downloads/Huroof-A1-A2-Walkthrough-AR.mp4",
+  "sha256": "2b3cb067657a73b523a7a9673d7704501f2b577acf04afb41d2382d600a81623",
+  "bytes": 14457196,
+  "duration": 273.0,
+  "type": "live browser operation",
+  "sourceApp": "f7ba50b",
+  "promotionalImagesUsed": false,
+  "sections": 15,
+  "actualInteractions": 51,
+  "capturedLocalAudioEvents": [
+    {
+      "time": 35.627351385999646,
+      "path": "a1-a2/audio/vocabulary/d19f27e0fd12cd53.mp3"
+    },
+    {
+      "time": 108.95549795900297,
+      "path": "a1-a2/audio/vocabulary/3effd34bcebe746a.mp3"
+    },
+    {
+      "time": 162.83248153099703,
+      "path": "a1-a2/audio/practice/037.mp3"
+    }
+  ],
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "codec": "H.264 / AAC",
+  "decodedEveryFrame": true,
+  "errors": []
+}

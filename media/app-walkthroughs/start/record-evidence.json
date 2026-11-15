@@ -1,0 +1,657 @@
+{
+  "app": "start",
+  "type": "continuous live browser operation",
+  "duration": 199.7081771029989,
+  "expectedDuration": 198.71099999999998,
+  "errors": [],
+  "events": [
+    {
+      "hint": "اختر القسم الذي تريد تعلّمه من القائمة الجانبية.",
+      "op": "nav",
+      "args": [
+        "index.html"
+      ],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 14.448,
+        "end": 19.405,
+        "text": "عَلَى الْحَاسُوبِ، اِخْتَرِ الْفَقْرَةَ مِنَ الْقَائِمَةِ الْجَانِبِيَّةِ."
+      },
+      "duration": 5.757000000000001,
+      "section": "ابدأ من القائمة",
+      "start": 8.33300146041438e-06,
+      "actionEnd": 0.8448027740014368,
+      "url": "http://127.0.0.1:8093/start/index.html"
+    },
+    {
+      "hint": "تعرّف إلى أقسام التطبيق وخطوتك التالية.",
+      "op": "focus",
+      "args": [
+        ".edition-grid"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "ابدأ من القائمة",
+      "start": 5.757843045998015,
+      "actionEnd": 5.9043309449989465,
+      "url": "http://127.0.0.1:8093/start/index.html"
+    },
+    {
+      "hint": "افتح بطاقات الحروف من القائمة.",
+      "op": "nav",
+      "args": [
+        "huruf.html"
+      ],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 47.871,
+        "end": 50.68,
+        "text": "مِنَ الْقَائِمَةِ، اِضْغَطِ الْحُرُوفَ."
+      },
+      "duration": 3.6089999999999973,
+      "section": "الحروف: النطق والأشكال",
+      "start": 10.340034355998796,
+      "actionEnd": 10.84156513799826,
+      "url": "http://127.0.0.1:8093/start/huruf.html"
+    },
+    {
+      "hint": "انتقل بين الحروف بالسابق والتالي.",
+      "op": "click",
+      "args": [
+        "#letter-next"
+      ],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 50.83,
+        "end": 55.3,
+        "text": "تَنَقَّلْ بَيْنَ الْبِطَاقَاتِ بِزِرَّيِ السَّابِقِ وَالتَّالِي."
+      },
+      "duration": 5.269999999999999,
+      "section": "الحروف: النطق والأشكال",
+      "start": 13.951333491000696,
+      "actionEnd": 14.767243616995984,
+      "url": "http://127.0.0.1:8093/start/huruf.html"
+    },
+    {
+      "hint": "اضغط البطاقة لترى أشكال الحرف في الكلمة.",
+      "op": "click",
+      "args": [
+        "#letter-card"
+      ],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 55.45,
+        "end": 62.799,
+        "text": "اِضْغَطِ الْبِطَاقَةَ لِرُؤْيَةِ أَشْكَالِ الْحَرْفِ، وَاسْتَخْدِمْ زِرَّ الِاسْتِمَاعِ لِسَمَاعِ النُّطْقِ."
+      },
+      "duration": 8.148999999999997,
+      "section": "الحروف: النطق والأشكال",
+      "start": 19.224545668002975,
+      "actionEnd": 20.073616884998046,
+      "url": "http://127.0.0.1:8093/start/huruf.html"
+    },
+    {
+      "hint": "جرّب زر الاستماع إلى نطق الحرف.",
+      "op": "click",
+      "args": [
+        "#letter-speak"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "الحروف: النطق والأشكال",
+      "start": 27.375327836001816,
+      "actionEnd": 28.192811806002283,
+      "url": "http://127.0.0.1:8093/start/huruf.html"
+    },
+    {
+      "hint": "انزل إلى لوحة الكتابة في الصفحة نفسها.",
+      "op": "focus",
+      "args": [
+        "#writing-canvas"
+      ],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 63.949,
+        "end": 68.384,
+        "text": "فِي الصَّفْحَةِ نَفْسِهَا، اِنْزِلْ إِلَى لَوْحَةِ الْكِتَابَةِ."
+      },
+      "duration": 5.235000000000002,
+      "section": "الكتابة بيدك",
+      "start": 31.9791139020017,
+      "actionEnd": 32.12208358399948,
+      "url": "http://127.0.0.1:8093/start/huruf.html"
+    },
+    {
+      "hint": "تتبّع الحرف على اللوحة بإصبعك أو بالفأرة.",
+      "op": "draw",
+      "args": [],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 68.534,
+        "end": 72.145,
+        "text": "تَتَبَّعِ الدَّلِيلَ بِإِصْبَعِكَ أَوْ بِالْفَأْرَةِ."
+      },
+      "duration": 4.41099999999999,
+      "section": "الكتابة بيدك",
+      "start": 37.236158861996955,
+      "actionEnd": 38.83125716399809,
+      "url": "http://127.0.0.1:8093/start/huruf.html"
+    },
+    {
+      "hint": "امسح اللوحة وأعد التدريب متى أردت.",
+      "op": "click",
+      "args": [
+        "#clear-canvas"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "الكتابة بيدك",
+      "start": 41.665906000001996,
+      "actionEnd": 42.50820210800157,
+      "url": "http://127.0.0.1:8093/start/huruf.html"
+    },
+    {
+      "hint": "جرّب أشكال الحرف والحرف الناقص ثم اقرأ التصحيح.",
+      "op": "focus",
+      "args": [
+        "#letter-focused-practice"
+      ],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 72.295,
+        "end": 79.702,
+        "text": "وَأَسْفَلَ اللَّوْحَةِ، جَرِّبْ تَمَارِينَ أَشْكَالِ الْحَرْفِ وَالْحَرْفِ النَّاقِصِ وَتَحْدِيدِهِ."
+      },
+      "duration": 8.206999999999997,
+      "section": "تدريبات أشكال الحروف",
+      "start": 46.252882786000555,
+      "actionEnd": 46.412341381997976,
+      "url": "http://127.0.0.1:8093/start/huruf.html"
+    },
+    {
+      "hint": "اختر إجابة لتظهر لك التغذية الراجعة.",
+      "op": "click",
+      "args": [
+        "#focused-options button"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "تدريبات أشكال الحروف",
+      "start": 54.47849490599765,
+      "actionEnd": 55.35914867300016,
+      "url": "http://127.0.0.1:8093/start/huruf.html"
+    },
+    {
+      "hint": "انتقل إلى سؤال جديد لمواصلة التدريب.",
+      "op": "click",
+      "args": [
+        "#focused-next"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "تدريبات أشكال الحروف",
+      "start": 59.01196587100276,
+      "actionEnd": 59.834094024998194,
+      "url": "http://127.0.0.1:8093/start/huruf.html"
+    },
+    {
+      "hint": "افتح تدريبات الحروف لرؤية أنواع الاختبارات.",
+      "op": "nav",
+      "args": [
+        "letter-tests.html"
+      ],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 80.852,
+        "end": 86.913,
+        "text": "لِفَتْحِ الِاخْتِبَارَاتِ الْخَاصَّةِ بِالْحُرُوفِ، اِضْغَطْ تَدْرِيبَاتِ الْحُرُوفِ."
+      },
+      "duration": 6.860999999999993,
+      "section": "اختبارات الحروف",
+      "start": 63.59606487699784,
+      "actionEnd": 63.92054707599891,
+      "url": "http://127.0.0.1:8093/start/letter-tests.html"
+    },
+    {
+      "hint": "اختر نوع التدريب ثم أجب عن السؤال.",
+      "op": "click",
+      "args": [
+        "#training-modes button"
+      ],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 89.268,
+        "end": 94.539,
+        "text": "اِخْتَرْ نَوْعًا، وَأَجِبْ، ثُمَّ اسْتَخْدِمْ زِرَّ السُّؤَالِ التَّالِي."
+      },
+      "duration": 6.071000000000001,
+      "section": "اختبارات الحروف",
+      "start": 70.45860864200222,
+      "actionEnd": 71.27384293599607,
+      "url": "http://127.0.0.1:8093/start/letter-tests.html#names"
+    },
+    {
+      "hint": "اقرأ اسم الحرف واختر الحرف الصحيح.",
+      "op": "click",
+      "args": [
+        "#training-options button"
+      ],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 95.689,
+        "end": 100.762,
+        "text": "فِي الْحَرْفِ وَاسْمِهِ، اِقْرَأِ الِاسْمَ وَاخْتَرِ الْحَرْفَ الصَّحِيحَ."
+      },
+      "duration": 5.873000000000007,
+      "section": "اختبارات الحروف",
+      "start": 76.53332170700014,
+      "actionEnd": 77.3545757489992,
+      "url": "http://127.0.0.1:8093/start/letter-tests.html#names"
+    },
+    {
+      "hint": "اضغط التالي لتجربة سؤال آخر.",
+      "op": "click",
+      "args": [
+        "#training-next"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "اختبارات الحروف",
+      "start": 82.41088618199865,
+      "actionEnd": 83.21809412600123,
+      "url": "http://127.0.0.1:8093/start/letter-tests.html#names"
+    },
+    {
+      "hint": "افتح قسم الأصوات المتشابهة.",
+      "op": "nav",
+      "args": [
+        "sounds.html"
+      ],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 124.666,
+        "end": 128.50900000000001,
+        "text": "اِفْتَحِ الْأَصْوَاتَ الْمُتَشَابِهَةَ مِنَ الْقَائِمَةِ."
+      },
+      "duration": 4.643000000000018,
+      "section": "تمييز الأصوات المتشابهة",
+      "start": 86.97373637899727,
+      "actionEnd": 87.2793715509979,
+      "url": "http://127.0.0.1:8093/start/sounds.html"
+    },
+    {
+      "hint": "اضغط الاستماع ثم اختر ما سمعته.",
+      "op": "click",
+      "args": [
+        "#sound-listen"
+      ],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 128.659,
+        "end": 132.421,
+        "text": "اِسْتَمِعْ جَيِّدًا، ثُمَّ اِخْتَرْ مَا سَمِعْتَهُ."
+      },
+      "duration": 4.562,
+      "section": "تمييز الأصوات المتشابهة",
+      "start": 91.62090780300059,
+      "actionEnd": 92.43637363299786,
+      "url": "http://127.0.0.1:8093/start/sounds.html"
+    },
+    {
+      "hint": "اختر إجابة واقرأ الفرق بين الصوتين.",
+      "op": "click",
+      "args": [
+        "#sound-options button"
+      ],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 132.571,
+        "end": 139.56,
+        "text": "يَسَاعِدُكَ هَذَا التَّدْرِيبُ عَلَى تَمْيِيزِ الْفُرُوقِ بَيْنَ الْأَصْوَاتِ الْمُتَقَارِبَةِ."
+      },
+      "duration": 7.789000000000004,
+      "section": "تمييز الأصوات المتشابهة",
+      "start": 96.18383573299798,
+      "actionEnd": 97.00375102600083,
+      "url": "http://127.0.0.1:8093/start/sounds.html"
+    },
+    {
+      "hint": "انتقل إلى السؤال التالي.",
+      "op": "click",
+      "args": [
+        "#sound-next"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "تمييز الأصوات المتشابهة",
+      "start": 103.97329459199682,
+      "actionEnd": 104.7832750000016,
+      "url": "http://127.0.0.1:8093/start/sounds.html"
+    },
+    {
+      "hint": "افتح القراءة والهجاء: تقطيع ودمج وحرف ناقص وعائلات كلمات.",
+      "op": "nav",
+      "args": [
+        "reading.html"
+      ],
+      "voice": {
+        "source": "Huroof-Werbung-AR.mp4",
+        "start": 44.616,
+        "end": 54.486,
+        "text": "حلّل الكلمات إلى وحداتها الصوتية، وادمج الحروف، وأكمل الكلمات، واكتشف الأنماط المشتركة في عائلاتها."
+      },
+      "duration": 10.669999999999998,
+      "section": "القراءة والهجاء",
+      "start": 108.55915482799901,
+      "actionEnd": 109.53352856400306,
+      "url": "http://127.0.0.1:8093/start/reading.html"
+    },
+    {
+      "hint": "في التقطيع، اختر تقسيم الكلمة إلى مقاطع صوتية.",
+      "op": "click",
+      "args": [
+        "#phonics-options button"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "القراءة والهجاء",
+      "start": 119.23543979499664,
+      "actionEnd": 120.0320487200006,
+      "url": "http://127.0.0.1:8093/start/reading.html"
+    },
+    {
+      "hint": "بدّل إلى دمج الحروف لتكوين كلمة.",
+      "op": "click",
+      "args": [
+        "[data-mode=blend]"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "القراءة والهجاء",
+      "start": 123.74004066199996,
+      "actionEnd": 124.50555753299705,
+      "url": "http://127.0.0.1:8093/start/reading.html"
+    },
+    {
+      "hint": "اعرض المساعدة ثم تحقق من إجابتك.",
+      "op": "click",
+      "args": [
+        "#phonics-help"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "القراءة والهجاء",
+      "start": 128.24346238999715,
+      "actionEnd": 129.00397610099753,
+      "url": "http://127.0.0.1:8093/start/reading.html"
+    },
+    {
+      "hint": "جرّب عائلات الكلمات ولاحظ النمط المشترك.",
+      "op": "click",
+      "args": [
+        "[data-mode=family]"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "القراءة والهجاء",
+      "start": 132.7476826409984,
+      "actionEnd": 133.5068000350002,
+      "url": "http://127.0.0.1:8093/start/reading.html"
+    },
+    {
+      "hint": "افتح مدرّب القراءة واختر كلمة من المستوى.",
+      "op": "nav",
+      "args": [
+        "reading-trainer.html"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "مدرّب القراءة",
+      "start": 137.31078090999654,
+      "actionEnd": 138.15983947199857,
+      "url": "http://127.0.0.1:8093/start/reading-trainer.html"
+    },
+    {
+      "hint": "انتقل إلى الكلمة التالية ولاحظ معناها.",
+      "op": "click",
+      "args": [
+        "#rt-next"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "مدرّب القراءة",
+      "start": 141.81265111800167,
+      "actionEnd": 142.70049547999952,
+      "url": "http://127.0.0.1:8093/start/reading-trainer.html"
+    },
+    {
+      "hint": "استمع إلى التدرّج كاملًا ثم أوقف التشغيل.",
+      "op": "trainer-audio",
+      "args": [],
+      "voice": null,
+      "duration": 4.5,
+      "section": "مدرّب القراءة",
+      "start": 146.31438405499648,
+      "actionEnd": 149.21837611799856,
+      "url": "http://127.0.0.1:8093/start/reading-trainer.html"
+    },
+    {
+      "hint": "بدّل إلى القراءة بنفسك لإخفاء المساعدة الصوتية.",
+      "op": "click",
+      "args": [
+        "#rt-self-read"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "مدرّب القراءة",
+      "start": 150.81949406200147,
+      "actionEnd": 151.58817164599895,
+      "url": "http://127.0.0.1:8093/start/reading-trainer.html"
+    },
+    {
+      "hint": "انزل إلى الجمل لتقرأ الكلمة في سياقها.",
+      "op": "focus",
+      "args": [
+        "#rt-sentences"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "مدرّب القراءة",
+      "start": 155.32486173899815,
+      "actionEnd": 155.47077148500102,
+      "url": "http://127.0.0.1:8093/start/reading-trainer.html"
+    },
+    {
+      "hint": "افتح تدريبات القراءة واختر نشاطًا.",
+      "op": "nav",
+      "args": [
+        "reading-exercises.html"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "تدريبات القراءة: افهم وطبّق",
+      "start": 159.8876671370017,
+      "actionEnd": 160.70512778199918,
+      "url": "http://127.0.0.1:8093/start/reading-exercises.html"
+    },
+    {
+      "hint": "مثال: اقرأ التعليمات ولوّن أجزاء العلم.",
+      "op": "nav",
+      "args": [
+        "reading-exercises.html#colors/colors-2"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "تدريبات القراءة: افهم وطبّق",
+      "start": 164.3890842289984,
+      "actionEnd": 164.66307947799942,
+      "url": "http://127.0.0.1:8093/start/reading-exercises.html#colors/colors-2"
+    },
+    {
+      "hint": "اختر اللون ثم اضغط الجزء المطلوب.",
+      "op": "color",
+      "args": [
+        "green",
+        "top"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "تدريبات القراءة: افهم وطبّق",
+      "start": 168.8913761290023,
+      "actionEnd": 170.4410794389987,
+      "url": "http://127.0.0.1:8093/start/reading-exercises.html#colors/colors-2"
+    },
+    {
+      "hint": "أكمل الجزء الثاني والثالث بحسب التعليمات.",
+      "op": "color",
+      "args": [
+        "white",
+        "middle"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "تدريبات القراءة: افهم وطبّق",
+      "start": 173.39260864300013,
+      "actionEnd": 174.87480076799693,
+      "url": "http://127.0.0.1:8093/start/reading-exercises.html#colors/colors-2"
+    },
+    {
+      "hint": "استخدم الأسود للشريط الأخير.",
+      "op": "color",
+      "args": [
+        "black",
+        "bottom"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "تدريبات القراءة: افهم وطبّق",
+      "start": 177.8942804499966,
+      "actionEnd": 179.4022253840012,
+      "url": "http://127.0.0.1:8093/start/reading-exercises.html#colors/colors-2"
+    },
+    {
+      "hint": "افتح تقدّمي لمتابعة التدريب الذي أجريته.",
+      "op": "nav",
+      "args": [
+        "progress.html"
+      ],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 43.017,
+        "end": 46.721,
+        "text": "هَذِهِ مُتَابَعَةٌ شَخْصِيَّةٌ لِتَعَلُّمِكَ."
+      },
+      "duration": 4.503999999999993,
+      "section": "التقدّم والإعدادات",
+      "start": 182.4507030399982,
+      "actionEnd": 183.28785364399664,
+      "url": "http://127.0.0.1:8093/start/progress.html"
+    },
+    {
+      "hint": "يمكنك تبديل لغة الواجهة إلى الألمانية.",
+      "op": "language",
+      "args": [
+        "de"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "التقدّم والإعدادات",
+      "start": 186.95625265000126,
+      "actionEnd": 187.113283339997,
+      "url": "http://127.0.0.1:8093/start/progress.html"
+    },
+    {
+      "hint": "أعد الواجهة إلى العربية.",
+      "op": "language",
+      "args": [
+        "ar"
+      ],
+      "voice": null,
+      "duration": 4.5,
+      "section": "التقدّم والإعدادات",
+      "start": 191.46223858500161,
+      "actionEnd": 191.60236256600183,
+      "url": "http://127.0.0.1:8093/start/progress.html"
+    },
+    {
+      "hint": "ابدأ بخطوة صغيرة، وكرّر ما تعلّمته بانتظام.",
+      "op": "hold",
+      "args": [],
+      "voice": {
+        "source": "Huroof-Demo-Anleitung-AR.mp4",
+        "start": 407.512,
+        "end": 410.055,
+        "text": "اِبْدَأْ بِخُطْوَةٍ صَغِيرَةٍ."
+      },
+      "duration": 3.6,
+      "section": "خطوتك التالية",
+      "start": 196.03178625000146,
+      "actionEnd": 196.154679528001,
+      "url": "http://127.0.0.1:8093/start/progress.html"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "ابدأ من القائمة",
+      "start": 5.1480019465088844e-06
+    },
+    {
+      "title": "الحروف: النطق والأشكال",
+      "start": 10.340031961997738
+    },
+    {
+      "title": "الكتابة بيدك",
+      "start": 31.9791113579995
+    },
+    {
+      "title": "تدريبات أشكال الحروف",
+      "start": 46.25288048200309
+    },
+    {
+      "title": "اختبارات الحروف",
+      "start": 63.59606252399681
+    },
+    {
+      "title": "تمييز الأصوات المتشابهة",
+      "start": 86.97373326399975
+    },
+    {
+      "title": "القراءة والهجاء",
+      "start": 108.55915248399833
+    },
+    {
+      "title": "مدرّب القراءة",
+      "start": 137.31077850599831
+    },
+    {
+      "title": "تدريبات القراءة: افهم وطبّق",
+      "start": 159.88766474300064
+    },
+    {
+      "title": "التقدّم والإعدادات",
+      "start": 182.45070056700206
+    },
+    {
+      "title": "خطوتك التالية",
+      "start": 196.03178413600108
+    }
+  ],
+  "appAudio": [
+    {
+      "url": "http://127.0.0.1:8093/start/audio/letters/02-name-waqf.mp3",
+      "rate": 1,
+      "time": 28.020433288998902
+    },
+    {
+      "url": "http://127.0.0.1:8093/start/audio/practice/020.mp3",
+      "rate": 1,
+      "time": 92.18856601000152
+    },
+    {
+      "url": "blob:http://127.0.0.1:8093/f9df24fe-254e-42cf-a769-874714b2da03",
+      "rate": 1,
+      "time": 147.00141836499824
+    }
+  ],
+  "promotionalImagesUsed": false
+}
