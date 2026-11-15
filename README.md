@@ -15,6 +15,8 @@ Die Hauptanwendung ist jetzt in vier vollständige Ausgaben aufgeteilt. Quellen 
 
 [Kleines Paket für die gemeinsame Firebase-Einrichtung](downloads/Huroof-Suite-Setup.zip) · [التقسيم وطريقة الإعداد بالعربية](suite/README-AR.md). Die Firebase-Vorbereitung baut mit `python3 tools/build-suite.py --directory firebase-public --hosting` die neue Auswahlseite und vier App-Pfade. Zum Erstellen der portablen ZIPs: `python3 tools/build-suite.py --directory /tmp/huroof-suite --archives`. Die Hinweise und Downloads zur bisherigen Gesamtausgabe stehen weiterhin unten.
 
+**Eigene Firebase-Projekte pro App:** [Start](downloads/Huroof-Start-Firebase-Independent.zip) · [A1/A2](downloads/Huroof-A1-A2-Firebase-Independent.zip) · [B1/B2](downloads/Huroof-B1-B2-Firebase-Independent.zip) · [Bücher](downloads/Huroof-Books-Firebase-Independent.zip). Jede vorbereitete Hosting-/Firestore-Hülle wird mit der öffentlichen Web-Konfiguration ihres eigenen Projekts eingerichtet; Konten und Lernstände bleiben projektweise getrennt. [خطوات الإعداد على Windows بالعربية](docs/INDEPENDENT-FIREBASE-AR.md).
+
 Ein deutsch-arabischer Vokabeltrainer mit einem neuen responsiven Design: Lern-Dashboard, A1–B2-Lernpfad, Lernkarten, Alphabet, sechs Testarten, einen interaktiven Kurs zur Verbkonjugation, Fehlerwiederholung und persönlicher Fortschritt. Die Oberfläche unterstützt Deutsch und Arabisch einschließlich Rechts-nach-links-Darstellung.
 
 Werbevideos im Querformat mit Sprecherstimme und Untertiteln: [Deutsch](downloads/Huroof-Werbung-DE.mp4), [العربية](downloads/Huroof-Werbung-AR.mp4) oder [beide Filme mit Begleitmaterial als ZIP](downloads/Huroof-Werbevideos-DE-AR.zip). [Inhalt und bearbeitbare Quellen](media/promo/README.md).
