@@ -14,9 +14,14 @@
     function session() {
       if (!sessions.has(current.id)) {
         const saved = pathState().lessons?.[current.id] || {};
-        const answers = Array.isArray(saved.answers) ? saved.answers.slice(0, current.questions.length).map((a, i) =>
+        const compatible = (saved.version || 0) === (current.contentVersion || 0);
+        const previousVersions = { ...saved.previousVersions };
+        if (!compatible && Array.isArray(saved.answers) && saved.answers.length)
+          previousVersions[String(saved.version || 0)] = { index: saved.index || 0, answers: saved.answers };
+
+        const answers = compatible && Array.isArray(saved.answers) ? saved.answers.slice(0, current.questions.length).map((a, i) =>
           Number.isInteger(a) && a >= 0 && a < current.questions[i].options.length ? a : undefined) : [];
-        sessions.set(current.id, { index: Number.isInteger(saved.index) && saved.index >= 0 && saved.index < current.questions.length ? saved.index : 0, answers });
+        sessions.set(current.id, { previousVersions, version: current.contentVersion || 0, index: compatible && Number.isInteger(saved.index) && saved.index >= 0 && saved.index < current.questions.length ? saved.index : 0, answers });
       }
       return sessions.get(current.id);
     }
@@ -28,7 +33,9 @@
       }});
     }
     function mastered(lesson) {
-      const answers = (sessions.get(lesson.id) || pathState().lessons?.[lesson.id] || {}).answers || [];
+      const saved = sessions.get(lesson.id) || pathState().lessons?.[lesson.id] || {};
+      if ((saved.version || 0) !== (lesson.contentVersion || 0)) return false;
+      const answers = saved.answers || [];
       return lesson.questions.every((q, i) => Number.isInteger(answers[i])) &&
         lesson.questions.filter((q, i) => q.correct === answers[i]).length / lesson.questions.length >= .8;
     }
@@ -43,7 +50,7 @@
       $("grammar-stages").innerHTML = stages.map(s => {
         const bank = lessons.filter(l => l.stage === s.id);
         const done = bank.filter(mastered).length;
-        return `<button type="button" data-grammar-stage="${s.id}" aria-pressed="${stageValue === s.id}"><strong>${escape(localized(s.title))}</strong><span>${escape(localized(s.description))}</span><small>${done} / ${bank.length} ${text("دروس متقنة", "Lektionen beherrscht")}</small><progress value="${done}" max="${bank.length}"></progress></button>`;
+        return `<button type="button" data-grammar-stage="${s.id}" aria-pressed="${stageValue === s.id}"><strong>${escape(localized(s.title))}</strong><span>${escape(localized(s.description))}</span><small><bdi dir="ltr">${done} / ${bank.length}</bdi> ${text("دروس متقنة", "Lektionen beherrscht")}</small><progress value="${done}" max="${bank.length}"></progress></button>`;
       }).join("");
       $("grammar-stages").querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
         $("grammar-stage").value = b.dataset.grammarStage;
@@ -158,7 +165,7 @@
         ? `<span>${text("قبل هذا الدرس راجع: ", "Vorher wiederholen: ")}</span>` + current.prerequisites.map(id => lessons.find(l => l.id === id)).filter(Boolean).map(l => `<a href="#${l.id}">${escape(localized(l.title))}</a>`).join(" · ") : "";
       const position = lessons.indexOf(current);
       $("grammar-lesson-route").innerHTML = [position > 0 ? `<a href="#${lessons[position-1].id}">${text("الدرس السابق: ", "Vorherige Lektion: ")}${escape(localized(lessons[position-1].title))}</a>` : "", position < lessons.length-1 ? `<a href="#${lessons[position+1].id}">${text("الدرس التالي: ", "Nächste Lektion: ")}${escape(localized(lessons[position+1].title))}</a>` : ""].join("");
-      $("lesson-verb-link").hidden = !["pronouns", "basic-verbs"].includes(
+      $("lesson-verb-link").hidden = !["pronouns", "basic-verbs", "future-usage", "negation-tenses", "requests-prohibitions", "verb-families", "augmented-patterns"].includes(
         current.id,
       );
       renderPractice();
@@ -301,7 +308,11 @@
         if (event.target.closest("a")) $("grammar-lesson").scrollIntoView({ block: "start" });
       });
     function selectTopic() {
-      const slug = location.hash.slice(1);
+      let slug = location.hash.slice(1);
+      const route = window.HuroofEdition?.grammarRoutes?.[slug];
+      if (route) {location.replace(route);return;}
+      const alias = window.HuroofEdition?.grammarAliases?.[slug];
+      if (alias) {slug = alias;try {history.replaceState(null,"", "#"+alias);} catch (_) {}}
       current = lessons.find((lesson) => lesson.id === slug) || resumeTarget();
       if (!matches().includes(current)) resetFilters();
       renderLesson();

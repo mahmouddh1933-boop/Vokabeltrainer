@@ -1,0 +1,4137 @@
+[
+  {
+    "id": "definiteness",
+    "glyph": "الـ",
+    "category": "syntax",
+    "title": {
+      "ar": "التعريف والتنكير واللام الشمسية والقمرية",
+      "de": "Bestimmtheit und Sonnen-/Mondbuchstaben"
+    },
+    "summary": {
+      "ar": "نقول كتابٌ لشيء غير معيّن، والكتابُ لشيء معروف. لا يجتمع التنوين مع أل. قد يكون الاسم معرفة بغير أل، مثل اسم الشخص.",
+      "de": "Kitābun ist unbestimmt, al-kitābu bestimmt. Artikel und Tanwīn stehen nicht zusammen. Auch Personennamen sind bestimmt."
+    },
+    "intro": {
+      "ar": "نقول كتابٌ لشيء غير معيّن، والكتابُ لشيء معروف. لا يجتمع التنوين مع أل. قد يكون الاسم معرفة بغير أل، مثل اسم الشخص.",
+      "de": "Kitābun ist unbestimmt, al-kitābu bestimmt. Artikel und Tanwīn stehen nicht zusammen. Auch Personennamen sind bestimmt."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "نكرة ومعرفة",
+          "de": "Unbestimmt und bestimmt"
+        },
+        "body": {
+          "ar": "نقول كتابٌ لشيء غير معيّن، والكتابُ لشيء معروف. لا يجتمع التنوين مع أل. قد يكون الاسم معرفة بغير أل، مثل اسم الشخص.",
+          "de": "Kitābun ist unbestimmt, al-kitābu bestimmt. Artikel und Tanwīn stehen nicht zusammen. Auch Personennamen sind bestimmt."
+        },
+        "examples": [
+          {
+            "ar": "هَذَا كِتَابٌ. الْكِتَابُ جَدِيدٌ.",
+            "de": "Das ist ein Buch. Das Buch ist neu.",
+            "annotations": [
+              {
+                "start": 6,
+                "end": 13,
+                "role": "sign"
+              },
+              {
+                "start": 15,
+                "end": 25,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "اللام القمرية: نكتبها وننطقها",
+          "de": "Mondbuchstaben: Das Lām wird gesprochen"
+        },
+        "body": {
+          "ar": "نُنطق اللام الساكنة بوضوح قبل الحرف القمري، ولا نضع شدة على الحرف التالي بسبب «الـ».",
+          "de": "Vor einem Mondbuchstaben wird das Lām mit Sukūn deutlich gesprochen. Der Artikel verursacht keine Schadda auf dem nächsten Buchstaben."
+        },
+        "letters": [
+          "أ",
+          "ب",
+          "ج",
+          "ح",
+          "خ",
+          "ع",
+          "غ",
+          "ف",
+          "ق",
+          "ك",
+          "م",
+          "ه",
+          "و",
+          "ي"
+        ],
+        "examples": [
+          {
+            "ar": "الْقَمَرُ",
+            "de": "der Mond",
+            "focus": "لْ",
+            "note": null
+          },
+          {
+            "ar": "الْكِتَابُ",
+            "de": "das Buch",
+            "focus": "لْ",
+            "note": null
+          },
+          {
+            "ar": "الْبَيْتُ",
+            "de": "das Haus",
+            "focus": "لْ",
+            "note": null
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "اللام الشمسية: نكتبها ولا ننطقها",
+          "de": "Sonnenbuchstaben: Das Lām wird angeglichen"
+        },
+        "body": {
+          "ar": "تُدغم اللام في الحرف الشمسي بعدها، فيُشدَّد ذلك الحرف. تبقى اللام مكتوبة، لكننا لا ننطقها صوتاً مستقلاً.",
+          "de": "Das Lām wird dem folgenden Sonnenbuchstaben angeglichen. Dieser erhält eine Schadda und wird doppelt gesprochen; das geschriebene Lām hat keinen eigenen Laut."
+        },
+        "letters": [
+          "ت",
+          "ث",
+          "د",
+          "ذ",
+          "ر",
+          "ز",
+          "س",
+          "ش",
+          "ص",
+          "ض",
+          "ط",
+          "ظ",
+          "ل",
+          "ن"
+        ],
+        "examples": [
+          {
+            "ar": "الشَّمْسُ",
+            "de": "die Sonne",
+            "focus": "شَّ",
+            "note": null
+          },
+          {
+            "ar": "الطَّالِبُ",
+            "de": "der Schüler",
+            "focus": "طَّ",
+            "note": null
+          },
+          {
+            "ar": "النَّجْمُ",
+            "de": "der Stern",
+            "focus": "نَّ",
+            "note": null
+          },
+          {
+            "ar": "اللَّيْلُ",
+            "de": "die Nacht",
+            "focus": "لَّ",
+            "note": null
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "مع القمرية تُنطق اللام: القمر. ومع الشمسية تُدغم اللام ويُشدّد الحرف التالي: الشمس. نكتب اللام في الحالتين.",
+      "de": "Vor Mondbuchstaben hört man l; vor Sonnenbuchstaben wird es assimiliert. Geschrieben wird ل in beiden Fällen."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "اختر الاسم المعرفة بأل.",
+          "de": "Wähle das Nomen mit bestimmtem Artikel."
+        },
+        "options": [
+          "الْبَيْتُ",
+          "بَيْتٌ",
+          "بُيُوتٌ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "أل جعلت البيت معيّنًا.",
+          "de": "Der Artikel macht das Haus bestimmt."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر الصيغة الصحيحة.",
+          "de": "Wähle die richtige Form."
+        },
+        "options": [
+          "الْكِتَابٌ",
+          "الْكِتَابًا",
+          "كِتَابٌ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "لا نجمع أل والتنوين.",
+          "de": "Artikel und Tanwīn sind unvereinbar."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "كيف ننطق اللام في الشمس؟",
+          "de": "Wie klingt das l in aš-šams?"
+        },
+        "options": [
+          "تُنطق مستقلة",
+          "تُدغم في الشين",
+          "تُحذف كتابة"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "الشين حرف شمسي.",
+          "de": "Šīn ist ein Sonnenbuchstabe."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي اسم معرفة دون أل؟",
+          "de": "Welcher Name ist ohne Artikel bestimmt?"
+        },
+        "options": [
+          "سَارَةُ",
+          "قَلَمٌ",
+          "مَدِينَةٌ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "اسم الشخص علم، وهو معرفة.",
+          "de": "Ein Personenname ist bestimmt."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "nominal-basics",
+    "glyph": "أ ب",
+    "category": "syntax",
+    "title": {
+      "ar": "الجملة الاسمية والمبتدأ والخبر",
+      "de": "Nominalsatz: Subjekt und Prädikat"
+    },
+    "summary": {
+      "ar": "تبدأ الجملة الاسمية غالبًا باسم. المبتدأ ما نتحدث عنه، والخبر يتمم المعنى. في الحاضر لا نحتاج فعل يكون بينهما.",
+      "de": "Im Nominalsatz nennt das Subjekt das Thema, das Prädikat die Aussage. Im Präsens steht kein sein dazwischen."
+    },
+    "intro": {
+      "ar": "تبدأ الجملة الاسمية غالبًا باسم. المبتدأ ما نتحدث عنه، والخبر يتمم المعنى. في الحاضر لا نحتاج فعل يكون بينهما.",
+      "de": "Im Nominalsatz nennt das Subjekt das Thema, das Prädikat die Aussage. Im Präsens steht kein sein dazwischen."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "من نتحدث عنه؟ وما المعلومة؟",
+          "de": "Thema und Aussage"
+        },
+        "body": {
+          "ar": "تبدأ الجملة الاسمية غالبًا باسم. المبتدأ ما نتحدث عنه، والخبر يتمم المعنى. في الحاضر لا نحتاج فعل يكون بينهما.",
+          "de": "Im Nominalsatz nennt das Subjekt das Thema, das Prädikat die Aussage. Im Präsens steht kein sein dazwischen."
+        },
+        "examples": [
+          {
+            "ar": "الطَّالِبُ مُجْتَهِدٌ.",
+            "de": "Der Schüler ist fleißig.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 10,
+                "role": "subject"
+              },
+              {
+                "start": 11,
+                "end": 21,
+                "role": "predicate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "المطابقة والخبر عن المكان",
+          "de": "Übereinstimmung und Ortsangabe"
+        },
+        "body": {
+          "ar": "يوافق الخبر الوصفي المبتدأ في الجنس والعدد المناسبين: البنت مجتهدة. وقد يكون الخبر عن المكان، مثل في البيت.",
+          "de": "Ein adjektivisches Prädikat stimmt passend in Genus und Numerus überein. Auch eine Ortsgruppe kann Prädikat sein."
+        },
+        "examples": [
+          {
+            "ar": "الْبِنْتُ مُجْتَهِدَةٌ. أُمِّي فِي الْبَيْتِ.",
+            "de": "Das Mädchen ist fleißig. Meine Mutter ist zu Hause.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 9,
+                "role": "subject"
+              },
+              {
+                "start": 10,
+                "end": 22,
+                "role": "predicate"
+              },
+              {
+                "start": 24,
+                "end": 30,
+                "role": "subject"
+              },
+              {
+                "start": 31,
+                "end": 44,
+                "role": "predicate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "يوافق الخبر الوصفي المبتدأ في الجنس والعدد المناسبين: البنت مجتهدة. وقد يكون الخبر عن المكان، مثل في البيت.",
+      "de": "Ein adjektivisches Prädikat stimmt passend in Genus und Numerus überein. Auch eine Ortsgruppe kann Prädikat sein."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "ما المبتدأ في الطالب مجتهد؟",
+          "de": "Was ist das Subjekt in diesem Nominalsatz?"
+        },
+        "options": [
+          "مجتهد",
+          "كلمة محذوفة",
+          "الطالب"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الطالب هو من نتحدث عنه.",
+          "de": "Der Schüler ist das Thema."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أكمل: البنت ___.",
+          "de": "Ergänze: Das Mädchen ist …"
+        },
+        "options": [
+          "لَطِيفًا",
+          "لَطِيفَةٌ",
+          "لَطِيفٌ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "الخبر الوصفي يوافق البنت في التأنيث.",
+          "de": "Das Adjektiv steht feminin."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي جملة اسمية تامة؟",
+          "de": "Welcher Nominalsatz ist vollständig?"
+        },
+        "options": [
+          "الْبَيْتُ كَبِيرٌ.",
+          "البيتُ.",
+          "كبيرٌ في."
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "المبتدأ والخبر أعطيا معنى تامًا.",
+          "de": "Subjekt und Prädikat ergeben eine vollständige Aussage."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما الخبر في أمي في البيت؟",
+          "de": "Was ist das Prädikat in Meine Mutter ist zu Hause?"
+        },
+        "options": [
+          "أمي",
+          "البيت وحده",
+          "في البيت"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "شبه الجملة في البيت يخبر عن مكان الأم.",
+          "de": "Die ganze Präpositionalgruppe nennt den Ort."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "simple-negation",
+    "glyph": "لَا",
+    "category": "syntax",
+    "title": {
+      "ar": "النفي البسيط",
+      "de": "Einfache Verneinung"
+    },
+    "summary": {
+      "ar": "تسبق لا الفعل المضارع لنفي فعل أو عادة: لا أشرب القهوة. لا النافية هنا تخبر عن الواقع، وليست أمرًا للمخاطب.",
+      "de": "Lā vor dem Präsens verneint eine Handlung oder Gewohnheit. Hier wird eine Aussage verneint, kein Verbot erteilt."
+    },
+    "intro": {
+      "ar": "تسبق لا الفعل المضارع لنفي فعل أو عادة: لا أشرب القهوة. لا النافية هنا تخبر عن الواقع، وليست أمرًا للمخاطب.",
+      "de": "Lā vor dem Präsens verneint eine Handlung oder Gewohnheit. Hier wird eine Aussage verneint, kein Verbot erteilt."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "نفي الفعل والعادة بلا",
+          "de": "Handlungen mit lā verneinen"
+        },
+        "body": {
+          "ar": "تسبق لا الفعل المضارع لنفي فعل أو عادة: لا أشرب القهوة. لا النافية هنا تخبر عن الواقع، وليست أمرًا للمخاطب.",
+          "de": "Lā vor dem Präsens verneint eine Handlung oder Gewohnheit. Hier wird eine Aussage verneint, kein Verbot erteilt."
+        },
+        "examples": [
+          {
+            "ar": "أَنَا لَا أَشْرَبُ الْقَهْوَةَ.",
+            "de": "Ich trinke keinen Kaffee.",
+            "annotations": [
+              {
+                "start": 6,
+                "end": 9,
+                "role": "operator"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "نفي الوصف بليس",
+          "de": "Eigenschaften mit laisa verneinen"
+        },
+        "body": {
+          "ar": "نستخدم ليس لنفي الجملة الاسمية. نقول لستُ طبيبًا عن المتكلم، وليست طبيبةً عن المؤنث. تتعلم الصيغ هنا في جمل قصيرة، والجداول في فقرة الأفعال.",
+          "de": "Laisa verneint Nominalsätze. Lَstu ṭabīban bedeutet Ich bin kein Arzt. Die Formen werden hier nur im Satz verwendet."
+        },
+        "examples": [
+          {
+            "ar": "لَسْتُ طَبِيبًا. هِيَ لَيْسَتْ طَبِيبَةً.",
+            "de": "Ich bin kein Arzt. Sie ist keine Ärztin.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 6,
+                "role": "operator"
+              },
+              {
+                "start": 22,
+                "end": 30,
+                "role": "operator"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "نستخدم ليس لنفي الجملة الاسمية. نقول لستُ طبيبًا عن المتكلم، وليست طبيبةً عن المؤنث. تتعلم الصيغ هنا في جمل قصيرة، والجداول في فقرة الأفعال.",
+      "de": "Laisa verneint Nominalsätze. Lَstu ṭabīban bedeutet Ich bin kein Arzt. Die Formen werden hier nur im Satz verwendet."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أكمل: أنا ___ أشرب القهوة.",
+          "de": "Ergänze die einfache Verneinung."
+        },
+        "options": [
+          "أين",
+          "لا",
+          "هل"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "لا تنفي شرب القهوة.",
+          "de": "Lā verneint das Trinken."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "كيف تقول إنك لست طبيبًا؟",
+          "de": "Wie sagst du Ich bin kein Arzt?"
+        },
+        "options": [
+          "لَسْتُ طَبِيبًا.",
+          "هَلْ أَنَا طَبِيبٌ؟",
+          "أَنَا طَبِيبٌ."
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "لست تستعمل لنفي الوصف عن المتكلم.",
+          "de": "Lastu verneint die Aussage über mich."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر نفي الجملة هي طبيبة.",
+          "de": "Verneine Sie ist Ärztin."
+        },
+        "options": [
+          "هِيَ لَا طَبِيبَةٌ.",
+          "هِيَ طَبِيبَةٌ.",
+          "هِيَ لَيْسَتْ طَبِيبَةً."
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "ليست تناسب المؤنث في هذا المثال.",
+          "de": "Laisat passt zum femininen Subjekt."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما معنى لا أحب الضجيج؟",
+          "de": "Was bedeutet Lā uḥibbu aḍ-ḍaǧīǧ?"
+        },
+        "options": [
+          "أسأل عن مكان الضجيج.",
+          "أنا لا أفضّل الضجيج.",
+          "أطلب منك إحداث الضجيج."
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "هذه جملة خبرية منفية، لا سؤال ولا أمر.",
+          "de": "Es ist eine verneinte Aussage."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "possession-basics",
+    "glyph": "ـي",
+    "category": "syntax",
+    "title": {
+      "ar": "الملكية والضمائر المتصلة",
+      "de": "Besitz und angehängte Pronomen"
+    },
+    "summary": {
+      "ar": "نصل ضمير الملكية بالاسم: كتابي للمتكلم، وكتابك للمخاطب، وكتابه للغائب. لا نضع أل على الاسم المضاف إلى ضمير.",
+      "de": "Besitzsuffixe hängen direkt am Nomen. Ein Nomen mit Possessivsuffix erhält keinen Artikel."
+    },
+    "intro": {
+      "ar": "نصل ضمير الملكية بالاسم: كتابي للمتكلم، وكتابك للمخاطب، وكتابه للغائب. لا نضع أل على الاسم المضاف إلى ضمير.",
+      "de": "Besitzsuffixe hängen direkt am Nomen. Ein Nomen mit Possessivsuffix erhält keinen Artikel."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "كتابي وكتابك",
+          "de": "Mein Buch und dein Buch"
+        },
+        "body": {
+          "ar": "نصل ضمير الملكية بالاسم: كتابي للمتكلم، وكتابك للمخاطب، وكتابه للغائب. لا نضع أل على الاسم المضاف إلى ضمير.",
+          "de": "Besitzsuffixe hängen direkt am Nomen. Ein Nomen mit Possessivsuffix erhält keinen Artikel."
+        },
+        "examples": [
+          {
+            "ar": "كِتَابِي · كِتَابُكَ · كِتَابُهُ",
+            "de": "Mein Buch · dein Buch · sein Buch",
+            "annotations": [
+              {
+                "start": 6,
+                "end": 8,
+                "role": "sign"
+              },
+              {
+                "start": 18,
+                "end": 20,
+                "role": "sign"
+              },
+              {
+                "start": 30,
+                "end": 32,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "تغيّر التاء عند الاتصال",
+          "de": "Tā vor dem Suffix"
+        },
+        "body": {
+          "ar": "تتحول التاء المربوطة إلى تاء مبسوطة قبل الضمير: مدرسة ← مدرستي. نميّز بين هو وكتابه: الأول ضمير مستقل، والثاني ضمير ملكية متصل.",
+          "de": "Vor einem Suffix wird ة zu ت. Ein selbständiges Pronomen ist von einem angehängten Besitzsuffix zu unterscheiden."
+        },
+        "examples": [
+          {
+            "ar": "مَدْرَسَةٌ ← مَدْرَسَتِي",
+            "de": "Eine Schule → meine Schule",
+            "annotations": [
+              {
+                "start": 21,
+                "end": 24,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "تتحول التاء المربوطة إلى تاء مبسوطة قبل الضمير: مدرسة ← مدرستي. نميّز بين هو وكتابه: الأول ضمير مستقل، والثاني ضمير ملكية متصل.",
+      "de": "Vor einem Suffix wird ة zu ت. Ein selbständiges Pronomen ist von einem angehängten Besitzsuffix zu unterscheiden."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "كيف تقول البيت الذي أملكه؟",
+          "de": "Wie sagst du mein Haus?"
+        },
+        "options": [
+          "بَيْتِي",
+          "الْبَيْتِي",
+          "بَيْتٌي"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "ياء المتكلم تتصل بالاسم دون أل أو تنوين.",
+          "de": "Das Suffix steht ohne Artikel oder Tanwīn."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما دلالة الهاء في كتابه؟",
+          "de": "Was bedeutet das h-Suffix in kitābuhu?"
+        },
+        "options": [
+          "جمع الكتب",
+          "السؤال عن كتاب",
+          "الملكية للغائب"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الهاء تعني أن الكتاب له.",
+          "de": "Das Buch gehört ihm."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أضف ياء المتكلم إلى مدرسة.",
+          "de": "Bilde meine Schule."
+        },
+        "options": [
+          "مَدْرَسَهِي",
+          "مَدْرَسَتِي",
+          "مَدْرَسَةِي"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "تظهر التاء المبسوطة قبل الضمير.",
+          "de": "Vor dem Suffix wird ت geschrieben."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي ضمير مستقل؟",
+          "de": "Welches Pronomen steht selbständig?"
+        },
+        "options": [
+          "هُوَ",
+          "ـهُ في كتابه",
+          "ـي في بيتي"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "هو كلمة مستقلة.",
+          "de": "Huwa steht als eigenes Wort."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "future-usage",
+    "glyph": "سَـ",
+    "category": "syntax",
+    "title": {
+      "ar": "المستقبل بالسين وسوف",
+      "de": "Zukunft mit sa- und saufa"
+    },
+    "summary": {
+      "ar": "نضع السين متصلة بالفعل المضارع، وسوف كلمة مستقلة قبله. كلاهما يدل على المستقبل، ولا نضيفهما إلى الماضي.",
+      "de": "Sa- hängt am Präsens; saufa steht als eigenes Wort davor. Beide drücken Zukunft aus."
+    },
+    "intro": {
+      "ar": "نضع السين متصلة بالفعل المضارع، وسوف كلمة مستقلة قبله. كلاهما يدل على المستقبل، ولا نضيفهما إلى الماضي.",
+      "de": "Sa- hängt am Präsens; saufa steht als eigenes Wort davor. Beide drücken Zukunft aus."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "حرفان لمعنى المستقبل",
+          "de": "Zwei Zukunftsmarker"
+        },
+        "body": {
+          "ar": "نضع السين متصلة بالفعل المضارع، وسوف كلمة مستقلة قبله. كلاهما يدل على المستقبل، ولا نضيفهما إلى الماضي.",
+          "de": "Sa- hängt am Präsens; saufa steht als eigenes Wort davor. Beide drücken Zukunft aus."
+        },
+        "examples": [
+          {
+            "ar": "سَأَزُورُ جَدِّي. سَوْفَ أَزُورُ جَدِّي.",
+            "de": "Ich werde meinen Großvater besuchen.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 2,
+                "role": "operator"
+              },
+              {
+                "start": 18,
+                "end": 24,
+                "role": "operator"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "السياق الزمني",
+          "de": "Zeitlicher Kontext"
+        },
+        "body": {
+          "ar": "توضح كلمات غدًا والأسبوع القادم زمن الحدث. لا نجزم من السين وسوف وحدهما بموعد دقيق أو قرب ثابت.",
+          "de": "Morgen oder nächste Woche präzisieren den Zeitpunkt. Sa- und saufa allein legen keinen festen zeitlichen Abstand fest."
+        },
+        "examples": [
+          {
+            "ar": "سَنُسَافِرُ غَدًا.",
+            "de": "Wir werden morgen verreisen.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 2,
+                "role": "operator"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "توضح كلمات غدًا والأسبوع القادم زمن الحدث. لا نجزم من السين وسوف وحدهما بموعد دقيق أو قرب ثابت.",
+      "de": "Morgen oder nächste Woche präzisieren den Zeitpunkt. Sa- und saufa allein legen keinen festen zeitlichen Abstand fest."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "اختر جملة مستقبل صحيحة.",
+          "de": "Wähle den korrekten Zukunftssatz."
+        },
+        "options": [
+          "سَقَرَأْتُ أَمْسِ.",
+          "سَوْفَ قَرَأَ أَمْسِ.",
+          "سَأَقْرَأُ غَدًا."
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "السين دخلت على المضارع.",
+          "de": "Sa- steht vor dem Präsens."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "كيف تكتب سوف مع الفعل؟",
+          "de": "Wie schreibt man saufa mit dem Verb?"
+        },
+        "options": [
+          "أَكْتُبُسَوْفَ",
+          "سَوْفَ أَكْتُبُ",
+          "سَوْفَأَكْتُبُ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "سوف كلمة مستقلة قبل الفعل.",
+          "de": "Saufa wird getrennt vorangestellt."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما وظيفة غدًا في سنسافر غدًا؟",
+          "de": "Was ergänzt morgen in diesem Satz?"
+        },
+        "options": [
+          "تحديد وقت السفر",
+          "نفي السفر",
+          "تحديد المسافر وحده"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "غدًا توضح متى يقع السفر.",
+          "de": "Morgen präzisiert den Zeitpunkt."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي عبارة صحيحة عن السين وسوف؟",
+          "de": "Welche Aussage stimmt?"
+        },
+        "options": [
+          "السين للماضي دائمًا.",
+          "سوف تدخل على الاسم وحده.",
+          "كلاهما يدل على المستقبل دون موعد ثابت بذاته."
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الموعد الدقيق يتضح من السياق.",
+          "de": "Der genaue Zeitpunkt folgt aus dem Kontext."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "negation-tenses",
+    "glyph": "لَنْ",
+    "category": "syntax",
+    "title": {
+      "ar": "النفي في الأزمنة المختلفة",
+      "de": "Verneinung nach Zeitbezug"
+    },
+    "summary": {
+      "ar": "نستعمل لا مع المضارع لنفي العادة، وما مع الماضي لنفي وقوعه. ولم تدخل على المضارع المجزوم لتعطي نفيًا للماضي.",
+      "de": "Lā verneint Gewohnheiten; mā vor dem Perfekt verneint Vergangenes. Lam plus Jussiv hat ebenfalls Vergangenheitsbezug."
+    },
+    "intro": {
+      "ar": "نستعمل لا مع المضارع لنفي العادة، وما مع الماضي لنفي وقوعه. ولم تدخل على المضارع المجزوم لتعطي نفيًا للماضي.",
+      "de": "Lā verneint Gewohnheiten; mā vor dem Perfekt verneint Vergangenes. Lam plus Jussiv hat ebenfalls Vergangenheitsbezug."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "الحاضر والماضي",
+          "de": "Gegenwart und Vergangenheit"
+        },
+        "body": {
+          "ar": "نستعمل لا مع المضارع لنفي العادة، وما مع الماضي لنفي وقوعه. ولم تدخل على المضارع المجزوم لتعطي نفيًا للماضي.",
+          "de": "Lā verneint Gewohnheiten; mā vor dem Perfekt verneint Vergangenes. Lam plus Jussiv hat ebenfalls Vergangenheitsbezug."
+        },
+        "examples": [
+          {
+            "ar": "لَا أَكْتُبُ الآنَ. مَا كَتَبْتُ أَمْسِ. لَمْ أَكْتُبْ أَمْسِ.",
+            "de": "Ich schreibe jetzt nicht. Ich schrieb gestern nicht.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 3,
+                "role": "operator"
+              },
+              {
+                "start": 20,
+                "end": 23,
+                "role": "operator"
+              },
+              {
+                "start": 41,
+                "end": 45,
+                "role": "operator"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "المستقبل والوصف",
+          "de": "Zukunft und Eigenschaften"
+        },
+        "body": {
+          "ar": "لن مع المضارع المنصوب تنفي المستقبل: لن أسافر. وليس تنفي وصفًا في جملة اسمية. لا نجمع لن وسوف في تركيب واحد هنا.",
+          "de": "Lan plus Subjunktiv verneint Zukünftiges; laisa verneint eine Eigenschaft. Lan und saufa werden hier nicht kombiniert."
+        },
+        "examples": [
+          {
+            "ar": "لَنْ أُسَافِرَ غَدًا. لَيْسَ الْجَوُّ حَارًّا.",
+            "de": "Ich werde morgen nicht verreisen. Es ist nicht heiß.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 4,
+                "role": "operator"
+              },
+              {
+                "start": 22,
+                "end": 28,
+                "role": "operator"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "لن مع المضارع المنصوب تنفي المستقبل: لن أسافر. وليس تنفي وصفًا في جملة اسمية. لا نجمع لن وسوف في تركيب واحد هنا.",
+      "de": "Lan plus Subjunktiv verneint Zukünftiges; laisa verneint eine Eigenschaft. Lan und saufa werden hier nicht kombiniert."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "اختر نفي السفر غدًا.",
+          "de": "Verneine die Reise morgen."
+        },
+        "options": [
+          "مَا سَافَرْتُ غَدًا.",
+          "لَنْ أُسَافِرَ غَدًا.",
+          "لَمْ سَأُسَافِرُ غَدًا."
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "لن تناسب نفي المستقبل.",
+          "de": "Lan verneint Zukunft."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما زمن النفي في لم أكتب أمس؟",
+          "de": "Auf welche Zeit bezieht sich lam aktub gestern?"
+        },
+        "options": [
+          "الماضي",
+          "المستقبل وحده",
+          "لا زمن لها"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "لم مع المضارع المجزوم تنفي الماضي.",
+          "de": "Lam verneint eine vergangene Handlung."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر نفي العادة: أنا ___ أدخن.",
+          "de": "Verneine eine Gewohnheit."
+        },
+        "options": [
+          "لن سوف",
+          "هل",
+          "لا"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "لا تناسب نفي العادة.",
+          "de": "Lā passt zur Gewohnheit."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي تركيب ينفي وصف الجو؟",
+          "de": "Welche Form verneint eine Eigenschaft des Wetters?"
+        },
+        "options": [
+          "لَنْ الْجَوُّ بَارِدٌ.",
+          "لَيْسَ الْجَوُّ بَارِدًا.",
+          "لَمْ الْجَوُّ بَارِدٌ."
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "ليس تدخل على الجملة الاسمية.",
+          "de": "Laisa verneint den Nominalsatz."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "attached-objects",
+    "glyph": "ـهُ",
+    "category": "syntax",
+    "title": {
+      "ar": "الضمائر المتصلة بالأفعال وحروف الجر",
+      "de": "Objekt- und Präpositionalsuffixe"
+    },
+    "summary": {
+      "ar": "قد يتصل الضمير بالفعل ليقوم مقام المفعول به: رأيته تعني رأيت ذلك الشخص. لا نخلط الهاء المفعول بها بواو الجماعة الفاعل.",
+      "de": "Ein Objektsuffix ersetzt das Objekt. Das h in raʾaituhu ist Objekt, die Pluralendung wāw kann dagegen Subjekt sein."
+    },
+    "intro": {
+      "ar": "قد يتصل الضمير بالفعل ليقوم مقام المفعول به: رأيته تعني رأيت ذلك الشخص. لا نخلط الهاء المفعول بها بواو الجماعة الفاعل.",
+      "de": "Ein Objektsuffix ersetzt das Objekt. Das h in raʾaituhu ist Objekt, die Pluralendung wāw kann dagegen Subjekt sein."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "ضمير المفعول",
+          "de": "Objektsuffixe"
+        },
+        "body": {
+          "ar": "قد يتصل الضمير بالفعل ليقوم مقام المفعول به: رأيته تعني رأيت ذلك الشخص. لا نخلط الهاء المفعول بها بواو الجماعة الفاعل.",
+          "de": "Ein Objektsuffix ersetzt das Objekt. Das h in raʾaituhu ist Objekt, die Pluralendung wāw kann dagegen Subjekt sein."
+        },
+        "examples": [
+          {
+            "ar": "رَأَيْتُهُ. سَاعَدَنِي أَخِي.",
+            "de": "Ich sah ihn. Mein Bruder half mir.",
+            "annotations": [
+              {
+                "start": 8,
+                "end": 10,
+                "role": "sign"
+              },
+              {
+                "start": 19,
+                "end": 22,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "مع حرف الجر",
+          "de": "Nach Präpositionen"
+        },
+        "body": {
+          "ar": "نقول له وبها ومنهم. الضمير بعد حرف الجر في محل جر، بخلاف الضمير المفعول به بعد الفعل. إلى تصبح إليه مع هاء الغائب.",
+          "de": "Nach einer Präposition steht das Suffix im Genitivplatz. Ilā wird mit h zu ilaihi."
+        },
+        "examples": [
+          {
+            "ar": "تَحَدَّثْتُ مَعَهُ. أَرْسَلْتُ إِلَيْهِ رِسَالَةً.",
+            "de": "Ich sprach mit ihm. Ich schickte ihm einen Brief.",
+            "annotations": [
+              {
+                "start": 16,
+                "end": 18,
+                "role": "sign"
+              },
+              {
+                "start": 37,
+                "end": 39,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "نقول له وبها ومنهم. الضمير بعد حرف الجر في محل جر، بخلاف الضمير المفعول به بعد الفعل. إلى تصبح إليه مع هاء الغائب.",
+      "de": "Nach einer Präposition steht das Suffix im Genitivplatz. Ilā wird mit h zu ilaihi."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "ما وظيفة الهاء في رأيته؟",
+          "de": "Welche Funktion hat h in raʾaituhu?"
+        },
+        "options": [
+          "مفعول به",
+          "حرف جر",
+          "مبتدأ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "الهاء تدل على الشخص الذي رأيته.",
+          "de": "Das Suffix bezeichnet die gesehene Person."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر الصيغة الصحيحة مع إلى وهاء الغائب.",
+          "de": "Verbinde ilā mit dem Pronomen er."
+        },
+        "options": [
+          "إِلَاهُ",
+          "إِلَىهُ",
+          "إِلَيْهِ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "يتغير الرسم إلى إليه.",
+          "de": "Die Form lautet ilaihi."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما محل الضمير في بهم؟",
+          "de": "Welchen Kasusplatz hat das Suffix in bihim?"
+        },
+        "options": [
+          "رفع مبتدأ",
+          "جر بحرف الجر",
+          "نصب مفعول به"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "الباء حرف جر والضمير بعدها في محل جر.",
+          "de": "Nach bi steht es im Genitivplatz."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "في ساعدني أخي، من تلقى المساعدة؟",
+          "de": "Wer erhält in sāʿadanī aḫī Hilfe?"
+        },
+        "options": [
+          "المتكلم",
+          "الأخ وحده",
+          "شخصان غائبان"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "ني تدل على المفعول به المتكلم.",
+          "de": "-nī bezeichnet mich als Objekt."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "requests-prohibitions",
+    "glyph": "لَا",
+    "category": "syntax",
+    "title": {
+      "ar": "الأمر والنهي من حيث الاستعمال",
+      "de": "Aufforderungen und Verbote im Gebrauch"
+    },
+    "summary": {
+      "ar": "نستعمل الأمر لطلب الفعل، ونلطّف الطلب بعبارات مثل من فضلك. هذه فقرة استعمال، أما جداول بناء الصيغ وتصريفها ففي فقرة الأفعال المستقلة.",
+      "de": "Der Imperativ fordert zu einer Handlung auf; bitte mildert den Ton. Konjugationstabellen bleiben im eigenen Verbbereich."
+    },
+    "intro": {
+      "ar": "نستعمل الأمر لطلب الفعل، ونلطّف الطلب بعبارات مثل من فضلك. هذه فقرة استعمال، أما جداول بناء الصيغ وتصريفها ففي فقرة الأفعال المستقلة.",
+      "de": "Der Imperativ fordert zu einer Handlung auf; bitte mildert den Ton. Konjugationstabellen bleiben im eigenen Verbbereich."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "طلب الفعل بأدب",
+          "de": "Höflich auffordern"
+        },
+        "body": {
+          "ar": "نستعمل الأمر لطلب الفعل، ونلطّف الطلب بعبارات مثل من فضلك. هذه فقرة استعمال، أما جداول بناء الصيغ وتصريفها ففي فقرة الأفعال المستقلة.",
+          "de": "Der Imperativ fordert zu einer Handlung auf; bitte mildert den Ton. Konjugationstabellen bleiben im eigenen Verbbereich."
+        },
+        "examples": [
+          {
+            "ar": "اِفْتَحْ الْبَابَ مِنْ فَضْلِكَ.",
+            "de": "Öffne bitte die Tür.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 8,
+                "role": "operator"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "لا الناهية ولا النافية",
+          "de": "Verbot und Aussage unterscheiden"
+        },
+        "body": {
+          "ar": "نستعمل لا الناهية مع المضارع المجزوم لطلب ترك الفعل: لا تهملْ. أما أنا لا أهملُ فهي إخبار عن عادة، وليست نهيًا.",
+          "de": "Verbietendes lā plus Jussiv verlangt Unterlassen. Ich vernachlässige nicht ist dagegen eine Aussage über mich."
+        },
+        "examples": [
+          {
+            "ar": "لَا تُهْمِلْ وَاجِبَكَ. أَنَا لَا أُهْمِلُ وَاجِبِي.",
+            "de": "Vernachlässige deine Pflicht nicht. Ich vernachlässige meine Pflicht nicht.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 12,
+                "role": "operator"
+              },
+              {
+                "start": 30,
+                "end": 42,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "نستعمل لا الناهية مع المضارع المجزوم لطلب ترك الفعل: لا تهملْ. أما أنا لا أهملُ فهي إخبار عن عادة، وليست نهيًا.",
+      "de": "Verbietendes lā plus Jussiv verlangt Unterlassen. Ich vernachlässige nicht ist dagegen eine Aussage über mich."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أي جملة طلب مهذب؟",
+          "de": "Welche Aufforderung ist höflich?"
+        },
+        "options": [
+          "أَنَا أَجْلِسُ.",
+          "هَلْ جَلَسَ؟",
+          "اِجْلِسْ مِنْ فَضْلِكَ."
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "من فضلك تلطف الأمر.",
+          "de": "Bitte mildert die Aufforderung."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر النهي عن الإهمال.",
+          "de": "Wähle das Verbot."
+        },
+        "options": [
+          "لَنْ أُهْمِلَ.",
+          "لَا تُهْمِلْ.",
+          "أَنَا لَا أُهْمِلُ."
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "لا تهملْ طلب لترك الإهمال.",
+          "de": "Hier wird zum Unterlassen aufgefordert."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما الفرق بين لا أكتب ولا تكتبْ؟",
+          "de": "Was unterscheidet beide Sätze?"
+        },
+        "options": [
+          "الأولى قد تنفي فعل المتكلم والثانية تنهى المخاطب.",
+          "كلاهما ماضٍ.",
+          "الأولى أمر والثانية اسم."
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "نراعي المقام والضمير وصيغة الفعل.",
+          "de": "Kontext, Person und Modus entscheiden."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما نوع لا في لا تكتبْ على الجدار؟",
+          "de": "Welche Funktion hat lā in Schreibe nicht an die Wand?"
+        },
+        "options": [
+          "ناهية تطلب ترك الفعل",
+          "نافية لعادة المتكلم",
+          "حرف جر"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "المتكلم يطلب من المخاطب الامتناع عن الكتابة على الجدار.",
+          "de": "Der Sprecher fordert den Angesprochenen zum Unterlassen auf."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "basic-numerals",
+    "glyph": "١ ٢",
+    "category": "syntax",
+    "title": {
+      "ar": "العدد والمعدود الأساسي",
+      "de": "Grundlagen der Zahlen und Zählwörter"
+    },
+    "summary": {
+      "ar": "يوافق واحد واثنان المعدود في التذكير والتأنيث، ويأتيان غالبًا بعده: كتاب واحد، سيارتان اثنتان.",
+      "de": "Eins und zwei stimmen im Genus überein und folgen häufig dem Nomen."
+    },
+    "intro": {
+      "ar": "يوافق واحد واثنان المعدود في التذكير والتأنيث، ويأتيان غالبًا بعده: كتاب واحد، سيارتان اثنتان.",
+      "de": "Eins und zwei stimmen im Genus überein und folgen häufig dem Nomen."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "واحد واثنان",
+          "de": "Eins und zwei"
+        },
+        "body": {
+          "ar": "يوافق واحد واثنان المعدود في التذكير والتأنيث، ويأتيان غالبًا بعده: كتاب واحد، سيارتان اثنتان.",
+          "de": "Eins und zwei stimmen im Genus überein und folgen häufig dem Nomen."
+        },
+        "examples": [
+          {
+            "ar": "كِتَابٌ وَاحِدٌ · سَيَّارَتَانِ اثْنَتَانِ",
+            "de": "Ein Buch · zwei Autos",
+            "annotations": [
+              {
+                "start": 8,
+                "end": 15,
+                "role": "number"
+              },
+              {
+                "start": 32,
+                "end": 42,
+                "role": "number"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "ثلاثة إلى عشرة",
+          "de": "Drei bis zehn"
+        },
+        "body": {
+          "ar": "تخالف الأعداد من ثلاثة إلى عشرة جنس مفرد المعدود. ويكون المعدود جمعًا مجرورًا: ثلاثة كتب، وثلاث سيارات.",
+          "de": "Drei bis zehn haben das entgegengesetzte Genus zum Singular des Zählworts. Das Nomen steht im Genitiv Plural."
+        },
+        "examples": [
+          {
+            "ar": "ثَلَاثَةُ كُتُبٍ · ثَلَاثُ سَيَّارَاتٍ",
+            "de": "Drei Bücher · drei Autos",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 9,
+                "role": "number"
+              },
+              {
+                "start": 19,
+                "end": 26,
+                "role": "number"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "تخالف الأعداد من ثلاثة إلى عشرة جنس مفرد المعدود. ويكون المعدود جمعًا مجرورًا: ثلاثة كتب، وثلاث سيارات.",
+      "de": "Drei bis zehn haben das entgegengesetzte Genus zum Singular des Zählworts. Das Nomen steht im Genitiv Plural."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أكمل: بنت ___.",
+          "de": "Ergänze ein Mädchen."
+        },
+        "options": [
+          "اثْنَانِ",
+          "وَاحِدَةٌ",
+          "وَاحِدٌ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "واحدة توافق بنت في التأنيث.",
+          "de": "Wāḥida steht feminin."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر ثلاثة كتب.",
+          "de": "Wähle drei Bücher."
+        },
+        "options": [
+          "ثَلَاثَةُ كُتُبٍ",
+          "ثَلَاثُ كُتُبٍ",
+          "ثَلَاثَةُ كِتَابٍ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "مفرد كتب مذكر، فالعدد ثلاثة، والمعدود جمع مجرور.",
+          "de": "Kitāb ist maskulin; deshalb ṯalāṯatu plus Genitiv Plural."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر ثلاث سيارات.",
+          "de": "Wähle drei Autos."
+        },
+        "options": [
+          "ثَلَاثَةُ سَيَّارَاتٍ",
+          "ثَلَاثُ سَيَّارَةٌ",
+          "ثَلَاثُ سَيَّارَاتٍ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "سيارة مؤنثة، فنستعمل ثلاث.",
+          "de": "Das feminine Zählwort verlangt ṯalāṯ."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما صورة المعدود بعد خمسة في خمس طالبات؟",
+          "de": "Welche Form hat das Nomen nach fünf?"
+        },
+        "options": [
+          "مثنى منصوب",
+          "جمع مجرور",
+          "مفرد مرفوع دائمًا"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "من ثلاثة إلى عشرة المعدود جمع مجرور.",
+          "de": "Nach drei bis zehn steht Genitiv Plural."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "sentence-analysis",
+    "glyph": "نحو",
+    "category": "syntax",
+    "title": {
+      "ar": "إعراب الجملة الاسمية والفعلية",
+      "de": "Nominal- und Verbalsätze analysieren"
+    },
+    "summary": {
+      "ar": "في الجملة الاسمية نحدد المبتدأ والخبر قبل اختيار العلامة. الطالبُ مبتدأ مرفوع، ومجتهدٌ خبر مرفوع. ليست كل كلمة بعد الاسم نعتًا.",
+      "de": "Bestimme zuerst Subjekt und Prädikat, dann den Kasus. Ein Wort nach einem Nomen ist nicht automatisch Attribut."
+    },
+    "intro": {
+      "ar": "في الجملة الاسمية نحدد المبتدأ والخبر قبل اختيار العلامة. الطالبُ مبتدأ مرفوع، ومجتهدٌ خبر مرفوع. ليست كل كلمة بعد الاسم نعتًا.",
+      "de": "Bestimme zuerst Subjekt und Prädikat, dann den Kasus. Ein Wort nach einem Nomen ist nicht automatisch Attribut."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "المبتدأ والخبر",
+          "de": "Subjekt und Prädikat"
+        },
+        "body": {
+          "ar": "في الجملة الاسمية نحدد المبتدأ والخبر قبل اختيار العلامة. الطالبُ مبتدأ مرفوع، ومجتهدٌ خبر مرفوع. ليست كل كلمة بعد الاسم نعتًا.",
+          "de": "Bestimme zuerst Subjekt und Prädikat, dann den Kasus. Ein Wort nach einem Nomen ist nicht automatisch Attribut."
+        },
+        "examples": [
+          {
+            "ar": "الطَّالِبُ مُجْتَهِدٌ.",
+            "de": "Der Schüler ist fleißig.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 10,
+                "role": "subject"
+              },
+              {
+                "start": 11,
+                "end": 21,
+                "role": "predicate"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "الفعل والفاعل والمفعول",
+          "de": "Verb, Subjekt und Objekt"
+        },
+        "body": {
+          "ar": "نسأل من فعل؟ لتحديد الفاعل المرفوع، وماذا وقع عليه الفعل؟ لتحديد المفعول المنصوب. ترتيب الكلمات وحده لا يكفي: راجع المعنى والعلامة.",
+          "de": "Wer handelt? bestimmt das Subjekt; wen oder was betrifft es? das Objekt. Wortstellung allein reicht nicht aus."
+        },
+        "examples": [
+          {
+            "ar": "قَرَأَ الطَّالِبُ الْكِتَابَ.",
+            "de": "Der Schüler las das Buch.",
+            "annotations": [
+              {
+                "start": 7,
+                "end": 17,
+                "role": "subject"
+              },
+              {
+                "start": 18,
+                "end": 28,
+                "role": "predicate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "نسأل من فعل؟ لتحديد الفاعل المرفوع، وماذا وقع عليه الفعل؟ لتحديد المفعول المنصوب. ترتيب الكلمات وحده لا يكفي: راجع المعنى والعلامة.",
+      "de": "Wer handelt? bestimmt das Subjekt; wen oder was betrifft es? das Objekt. Wortstellung allein reicht nicht aus."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "ما إعراب مجتهدٌ في الطالبُ مجتهدٌ؟",
+          "de": "Analysiere muǧtahidun."
+        },
+        "options": [
+          "خبر مرفوع",
+          "نعت مجرور",
+          "مفعول به"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "مجتهد يتمم معنى المبتدأ الطالب.",
+          "de": "Es bildet die Aussage zum Subjekt."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما الفاعل في قرأ الطالبُ الكتابَ؟",
+          "de": "Wer ist das Subjekt?"
+        },
+        "options": [
+          "الكتابَ",
+          "قرأ",
+          "الطالبُ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الطالب هو من قام بالقراءة.",
+          "de": "Der Schüler führt die Handlung aus."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما المفعول به في شرحَ المعلمُ الدرسَ؟",
+          "de": "Was ist das Objekt?"
+        },
+        "options": [
+          "شرحَ",
+          "الدرسَ",
+          "المعلمُ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "وقع الشرح على الدرس.",
+          "de": "Erklärt wird die Lektion."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي تحليل صحيح في البيتُ واسعٌ؟",
+          "de": "Welche Analyse stimmt?"
+        },
+        "options": [
+          "مبتدأ وخبر مرفوعان",
+          "فاعل ومفعول به",
+          "مضاف ومضاف إليه"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "واسع خبر عن البيت، ولا فعل في الجملة.",
+          "de": "Es ist ein Nominalsatz ohne Verb."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "inflection-signs",
+    "glyph": "ُ َ ِ",
+    "category": "syntax",
+    "title": {
+      "ar": "علامات الإعراب الأصلية والفرعية",
+      "de": "Grund- und Ersatzzeichen der Flexion"
+    },
+    "summary": {
+      "ar": "الأصل الضمة للرفع، والفتحة للنصب، والكسرة للجر، والسكون للجزم. الجر من أحوال الأسماء، والجزم من أحوال المضارع المعرب.",
+      "de": "Grundzeichen sind ḍamma, fatḥa, kasra und sukūn. Genitiv gehört zu Nomen, Jussiv zu flektierbaren Präsensverben."
+    },
+    "intro": {
+      "ar": "الأصل الضمة للرفع، والفتحة للنصب، والكسرة للجر، والسكون للجزم. الجر من أحوال الأسماء، والجزم من أحوال المضارع المعرب.",
+      "de": "Grundzeichen sind ḍamma, fatḥa, kasra und sukūn. Genitiv gehört zu Nomen, Jussiv zu flektierbaren Präsensverben."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "العلامات الأصلية",
+          "de": "Grundzeichen"
+        },
+        "body": {
+          "ar": "الأصل الضمة للرفع، والفتحة للنصب، والكسرة للجر، والسكون للجزم. الجر من أحوال الأسماء، والجزم من أحوال المضارع المعرب.",
+          "de": "Grundzeichen sind ḍamma, fatḥa, kasra und sukūn. Genitiv gehört zu Nomen, Jussiv zu flektierbaren Präsensverben."
+        },
+        "examples": [
+          {
+            "ar": "جَاءَ طَالِبٌ. رَأَيْتُ طَالِبًا. مَرَرْتُ بِطَالِبٍ. لَمْ يَكْتُبْ.",
+            "de": "Ein Schüler kam. Ich sah einen Schüler. Ich ging an einem vorbei. Er schrieb nicht.",
+            "annotations": [
+              {
+                "start": 11,
+                "end": 13,
+                "role": "sign"
+              },
+              {
+                "start": 29,
+                "end": 31,
+                "role": "sign"
+              },
+              {
+                "start": 50,
+                "end": 52,
+                "role": "sign"
+              },
+              {
+                "start": 65,
+                "end": 67,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "علامات تنوب عن الأصل",
+          "de": "Ersatzzeichen"
+        },
+        "body": {
+          "ar": "يرفع المثنى بالألف وينصب ويجر بالياء، وجمع المذكر السالم بالواو رفعًا والياء نصبًا وجرًا. جمع المؤنث السالم ينصب بالكسرة، ولكل باب شروطه.",
+          "de": "Dual: alif im Nominativ, yā im Akkusativ/Genitiv. Maskuliner Plural: wāw bzw. yā. Der feminine regelmäßige Plural hat kasra im Akkusativ."
+        },
+        "examples": [
+          {
+            "ar": "جَاءَ الْمُعَلِّمَانِ. رَأَيْتُ الْمُعَلِّمَيْنِ. رَأَيْتُ الطَّالِبَاتِ.",
+            "de": "Die beiden Lehrer kamen. Ich sah sie. Ich sah die Schülerinnen.",
+            "annotations": [
+              {
+                "start": 18,
+                "end": 19,
+                "role": "sign"
+              },
+              {
+                "start": 44,
+                "end": 46,
+                "role": "sign"
+              },
+              {
+                "start": 70,
+                "end": 72,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "يرفع المثنى بالألف وينصب ويجر بالياء، وجمع المذكر السالم بالواو رفعًا والياء نصبًا وجرًا. جمع المؤنث السالم ينصب بالكسرة، ولكل باب شروطه.",
+      "de": "Dual: alif im Nominativ, yā im Akkusativ/Genitiv. Maskuliner Plural: wāw bzw. yā. Der feminine regelmäßige Plural hat kasra im Akkusativ."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "ما علامة جر الاسم المفرد المصروف عادة؟",
+          "de": "Welches Grundzeichen hat der Genitiv eines flektierten Singulars?"
+        },
+        "options": [
+          "السكون",
+          "الألف",
+          "الكسرة"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الكسرة أصل الجر في هذا الباب.",
+          "de": "Kasra ist hier das Grundzeichen."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما علامة رفع المعلمان؟",
+          "de": "Woran erkennst du den Nominativ des Duals?"
+        },
+        "options": [
+          "حذف النون",
+          "الألف",
+          "الواو"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "المثنى يرفع بالألف.",
+          "de": "Der Dual hat alif im Nominativ."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر نصب جمع المؤنث السالم.",
+          "de": "Wähle den Akkusativ des femininen regelmäßigen Plurals."
+        },
+        "options": [
+          "رَأَيْتُ الطَّالِبَاتِ.",
+          "رَأَيْتُ الطَّالِبَاتَ.",
+          "رَأَيْتُ الطَّالِبَاتُ."
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "ينصب جمع المؤنث السالم بالكسرة نيابة عن الفتحة.",
+          "de": "Kasra ersetzt hier fatḥa."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي باب يقبل الجزم؟",
+          "de": "Welche Wortart kann im Jussiv stehen?"
+        },
+        "options": [
+          "الاسم المجرور",
+          "حرف الجر",
+          "المضارع المعرب"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الجزم من أحوال المضارع المعرب.",
+          "de": "Jussiv ist ein Modus des flektierbaren Präsens."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "verb-families",
+    "glyph": "ع ل ل",
+    "category": "syntax",
+    "title": {
+      "ar": "الأفعال الصحيحة والمعتلة الأساسية",
+      "de": "Starke und schwache Verbstämme"
+    },
+    "summary": {
+      "ar": "الفعل الصحيح تخلو حروفه الأصلية من حروف العلة، ومنه السالم والمهموز والمضعّف. لا تجعل حرف المضارعة الزائد جزءًا من الجذر. هذا تصنيف، لا جدول تصريف.",
+      "de": "Starke Wurzeln enthalten keinen schwachen Radikal. Hamzierte und geminierte Wurzeln gehören dazu. Präsenspräfixe zählen nicht zur Wurzel."
+    },
+    "intro": {
+      "ar": "الفعل الصحيح تخلو حروفه الأصلية من حروف العلة، ومنه السالم والمهموز والمضعّف. لا تجعل حرف المضارعة الزائد جزءًا من الجذر. هذا تصنيف، لا جدول تصريف.",
+      "de": "Starke Wurzeln enthalten keinen schwachen Radikal. Hamzierte und geminierte Wurzeln gehören dazu. Präsenspräfixe zählen nicht zur Wurzel."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "الحروف الأصلية",
+          "de": "Wurzelbuchstaben"
+        },
+        "body": {
+          "ar": "الفعل الصحيح تخلو حروفه الأصلية من حروف العلة، ومنه السالم والمهموز والمضعّف. لا تجعل حرف المضارعة الزائد جزءًا من الجذر. هذا تصنيف، لا جدول تصريف.",
+          "de": "Starke Wurzeln enthalten keinen schwachen Radikal. Hamzierte und geminierte Wurzeln gehören dazu. Präsenspräfixe zählen nicht zur Wurzel."
+        },
+        "examples": [
+          {
+            "ar": "كَتَبَ صحيح سالم · أَخَذَ مهموز · مَدَّ مضعّف",
+            "de": "Stark: kataba; hamziert: aḫaḏa; geminiert: madda",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 6,
+                "role": "sign"
+              },
+              {
+                "start": 19,
+                "end": 25,
+                "role": "sign"
+              },
+              {
+                "start": 34,
+                "end": 39,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "موضع حرف العلة",
+          "de": "Position des schwachen Radikals"
+        },
+        "body": {
+          "ar": "المثال أوله حرف علة كوقف، والأجوف وسطه حرف علة كقال، والناقص آخره حرف علة كسعى. لا تخلط الفعل الناقص الصرفي بالناقص النحوي كان وأخواتها. الجداول في قسم الأفعال.",
+          "de": "Schwach am Anfang: Beispiel waqafa; in der Mitte: qāla; am Ende: saʿā. Morphologisch schwacher Endradikal und syntaktisches Hilfsverb sind verschiedene Begriffe."
+        },
+        "examples": [
+          {
+            "ar": "وَقَفَ · قَالَ · سَعَى",
+            "de": "Anfangs-, mittel- und endschwacher Stamm",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 2,
+                "role": "sign"
+              },
+              {
+                "start": 11,
+                "end": 12,
+                "role": "sign"
+              },
+              {
+                "start": 21,
+                "end": 22,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "المثال أوله حرف علة كوقف، والأجوف وسطه حرف علة كقال، والناقص آخره حرف علة كسعى. لا تخلط الفعل الناقص الصرفي بالناقص النحوي كان وأخواتها. الجداول في قسم الأفعال.",
+      "de": "Schwach am Anfang: Beispiel waqafa; in der Mitte: qāla; am Ende: saʿā. Morphologisch schwacher Endradikal und syntaktisches Hilfsverb sind verschiedene Begriffe."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "ما نوع قال من حيث موضع حرف العلة؟",
+          "de": "Wie ist qāla klassifiziert?"
+        },
+        "options": [
+          "سالم",
+          "أجوف",
+          "مثال"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "حرف العلة في وسطه.",
+          "de": "Der schwache Radikal steht in der Mitte."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "هل أخذ معتل لمجرد وجود الهمزة؟",
+          "de": "Macht Hamza aḫaḏa zu einem schwachen Verb?"
+        },
+        "options": [
+          "لا، هو صحيح مهموز.",
+          "نعم، هو ناقص.",
+          "نعم، هو مثال."
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "الهمزة ليست حرف علة في هذا التصنيف.",
+          "de": "Hamza zählt hier nicht zu den schwachen Radikalen."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما نوع سعى صرفيًا؟",
+          "de": "Wie ist saʿā morphologisch klassifiziert?"
+        },
+        "options": [
+          "أجوف",
+          "مضعّف",
+          "ناقص"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "حرف العلة في آخره.",
+          "de": "Der letzte Radikal ist schwach."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما الذي نبحث عنه لتصنيف الفعل؟",
+          "de": "Worauf beruht die Einteilung?"
+        },
+        "options": [
+          "حرف المضارعة وحده",
+          "حروفه الأصلية",
+          "لون الحروف"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "التصنيف يعتمد على الجذر.",
+          "de": "Entscheidend sind die Wurzelbuchstaben."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "simple-conditionals",
+    "glyph": "إِنْ",
+    "category": "syntax",
+    "title": {
+      "ar": "الجمل الشرطية البسيطة",
+      "de": "Einfache Bedingungssätze"
+    },
+    "summary": {
+      "ar": "تربط جملة الشرط بين أمرين. في إن تدرسْ تنجحْ، الدراسة شرط والنجاح جواب. إن تجزم فعلين مضارعين في هذا النموذج.",
+      "de": "Ein Bedingungssatz verknüpft Voraussetzung und Folge. In in tadrus tanǧaḥ stehen beide Präsensverben im Jussiv."
+    },
+    "intro": {
+      "ar": "تربط جملة الشرط بين أمرين. في إن تدرسْ تنجحْ، الدراسة شرط والنجاح جواب. إن تجزم فعلين مضارعين في هذا النموذج.",
+      "de": "Ein Bedingungssatz verknüpft Voraussetzung und Folge. In in tadrus tanǧaḥ stehen beide Präsensverben im Jussiv."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "شرط وجواب",
+          "de": "Bedingung und Folge"
+        },
+        "body": {
+          "ar": "تربط جملة الشرط بين أمرين. في إن تدرسْ تنجحْ، الدراسة شرط والنجاح جواب. إن تجزم فعلين مضارعين في هذا النموذج.",
+          "de": "Ein Bedingungssatz verknüpft Voraussetzung und Folge. In in tadrus tanǧaḥ stehen beide Präsensverben im Jussiv."
+        },
+        "examples": [
+          {
+            "ar": "إِنْ تَدْرُسْ تَنْجَحْ.",
+            "de": "Wenn du lernst, hast du Erfolg.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 4,
+                "role": "operator"
+              },
+              {
+                "start": 11,
+                "end": 13,
+                "role": "sign"
+              },
+              {
+                "start": 20,
+                "end": 22,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "إذا للموقف المتوقع",
+          "de": "Iḏā für erwartete Situationen"
+        },
+        "body": {
+          "ar": "تستعمل إذا كثيرًا لما يتوقع وقوعه. قد يأتي بعدها الماضي بلفظه ومعناه مستقبل: إذا وصلتَ فاتصلْ بي. لا نجزم بعدها لمجرد وجودها.",
+          "de": "Iḏā leitet oft Erwartetes ein. Eine Perfektform kann dabei Zukunft meinen. Iḏā allein löst keinen Jussiv aus."
+        },
+        "examples": [
+          {
+            "ar": "إِذَا وَصَلْتَ فَاتَّصِلْ بِي.",
+            "de": "Wenn du angekommen bist, ruf mich an.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 5,
+                "role": "operator"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "تستعمل إذا كثيرًا لما يتوقع وقوعه. قد يأتي بعدها الماضي بلفظه ومعناه مستقبل: إذا وصلتَ فاتصلْ بي. لا نجزم بعدها لمجرد وجودها.",
+      "de": "Iḏā leitet oft Erwartetes ein. Eine Perfektform kann dabei Zukunft meinen. Iḏā allein löst keinen Jussiv aus."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "ما الشرط في إن تدرسْ تنجحْ؟",
+          "de": "Was ist die Voraussetzung?"
+        },
+        "options": [
+          "الدراسة",
+          "النجاح",
+          "حرف الجر"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "النجاح مترتب على الدراسة.",
+          "de": "Das Lernen ist die Voraussetzung."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر إن مع فعلين صحيحين مجزومين.",
+          "de": "Wähle die passende Form nach in."
+        },
+        "options": [
+          "إِنْ تَجْتَهِدُ تَنْجَحُ.",
+          "إِنْ تَجْتَهِدَ تَنْجَحَ.",
+          "إِنْ تَجْتَهِدْ تَنْجَحْ."
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "إن تجزم فعل الشرط وجوابه هنا.",
+          "de": "Beide Verben stehen hier im Jussiv."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "هل إذا تجزم الفعل دائمًا؟",
+          "de": "Löst iḏā immer Jussiv aus?"
+        },
+        "options": [
+          "تجر الاسم دائمًا.",
+          "لا، ليست أداة جزم.",
+          "نعم دائمًا."
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "نفرق بين أداة شرط وأداة جزم.",
+          "de": "Nicht jede Bedingungspartikel regiert Jussiv."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما الزمن المقصود في إذا وصلتَ فاتصل بي؟",
+          "de": "Welcher Zeitbezug ist gemeint?"
+        },
+        "options": [
+          "وصول متوقع في المستقبل",
+          "حدث قديم انتهى بالضرورة",
+          "لا علاقة للوصول بالاتصال"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "صيغة الماضي بعد إذا قد تدل على المستقبل.",
+          "de": "Die Perfektform hat hier Zukunftsbezug."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "emphasis",
+    "glyph": "كُلّ",
+    "category": "syntax",
+    "title": {
+      "ar": "التوكيد",
+      "de": "Bekräftigung"
+    },
+    "summary": {
+      "ar": "يكون بتكرار اللفظ لتقريره: جاء جاء المعلم، أو العلم العلم. نميّز التكرار المقصود من تكرار عارض في الكلام.",
+      "de": "Wörtliche Wiederholung kann eine Aussage bekräftigen. Nicht jede zufällige Wiederholung ist grammatische Bekräftigung."
+    },
+    "intro": {
+      "ar": "يكون بتكرار اللفظ لتقريره: جاء جاء المعلم، أو العلم العلم. نميّز التكرار المقصود من تكرار عارض في الكلام.",
+      "de": "Wörtliche Wiederholung kann eine Aussage bekräftigen. Nicht jede zufällige Wiederholung ist grammatische Bekräftigung."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "التوكيد اللفظي",
+          "de": "Wörtliche Wiederholung"
+        },
+        "body": {
+          "ar": "يكون بتكرار اللفظ لتقريره: جاء جاء المعلم، أو العلم العلم. نميّز التكرار المقصود من تكرار عارض في الكلام.",
+          "de": "Wörtliche Wiederholung kann eine Aussage bekräftigen. Nicht jede zufällige Wiederholung ist grammatische Bekräftigung."
+        },
+        "examples": [
+          {
+            "ar": "نَعَمْ، نَعَمْ، فَهِمْتُ.",
+            "de": "Ja, ja, ich habe verstanden.",
+            "annotations": [
+              {
+                "start": 8,
+                "end": 14,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "التوكيد المعنوي",
+          "de": "Sinngemäße Bekräftigung"
+        },
+        "body": {
+          "ar": "من ألفاظه نفس وعين وكل وجميع. يتبع المؤكد في إعرابه ويرتبط غالبًا بضمير يعود عليه. كلهم بعد الطلاب توكيد؛ أما كل الطلاب فالكل في موقعه الأصلي وليس تابعًا مؤكدًا.",
+          "de": "Nafs, ʿain, kull und ǧamīʿ können bekräftigen. Sie folgen dem Bezugswort im Kasus und tragen meist ein rückverweisendes Suffix."
+        },
+        "examples": [
+          {
+            "ar": "حَضَرَ الطُّلَّابُ كُلُّهُمْ. رَأَيْتُ الْمُدِيرَ نَفْسَهُ.",
+            "de": "Alle Schüler waren da. Ich sah den Direktor selbst.",
+            "annotations": [
+              {
+                "start": 19,
+                "end": 28,
+                "role": "sign"
+              },
+              {
+                "start": 50,
+                "end": 58,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "من ألفاظه نفس وعين وكل وجميع. يتبع المؤكد في إعرابه ويرتبط غالبًا بضمير يعود عليه. كلهم بعد الطلاب توكيد؛ أما كل الطلاب فالكل في موقعه الأصلي وليس تابعًا مؤكدًا.",
+      "de": "Nafs, ʿain, kull und ǧamīʿ können bekräftigen. Sie folgen dem Bezugswort im Kasus und tragen meist ein rückverweisendes Suffix."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "ما إعراب كلهم في حضر الطلابُ كلُّهم؟",
+          "de": "Welche Funktion hat kulluhum?"
+        },
+        "options": [
+          "مفعول به",
+          "خبر إن",
+          "توكيد معنوي مرفوع"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "تبع الطلاب في الرفع وأكد شمولهم.",
+          "de": "Es bekräftigt alle Schüler und steht im Nominativ."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر التوكيد اللفظي.",
+          "de": "Wähle wörtliche Bekräftigung."
+        },
+        "options": [
+          "قابلت المدير نفسه.",
+          "نَعَمْ، نَعَمْ.",
+          "حضر الطلاب جميعهم."
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "تكررت الكلمة نفسها.",
+          "de": "Dasselbe Wort wird wiederholt."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أكمل: رأيتُ المديرَ ___.",
+          "de": "Ergänze Ich sah den Direktor selbst."
+        },
+        "options": [
+          "نَفْسَهُ",
+          "نَفْسُهُ",
+          "نَفْسِهِ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "التوكيد يتبع المدير المنصوب.",
+          "de": "Die Bekräftigung folgt dem Akkusativ."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما وظيفة الهاء في نفسه؟",
+          "de": "Worauf verweist das Suffix in nafsahu?"
+        },
+        "options": [
+          "تدل على جمع المؤنث",
+          "هي حرف جر",
+          "تعود على المؤكد"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "يربط الضمير التوكيد بالمؤكد.",
+          "de": "Es verbindet die Bekräftigung mit ihrem Bezugswort."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "exception",
+    "glyph": "إِلَّا",
+    "category": "syntax",
+    "title": {
+      "ar": "الاستثناء",
+      "de": "Ausnahme mit illā"
+    },
+    "summary": {
+      "ar": "يذكر المستثنى منه، ولا نفي: حضر الطلاب إلا خالدًا. المستثنى بإلا في هذا النمط منصوب. لا نعمّم حكمه على كل تركيب فيه إلا.",
+      "de": "Bei vollständigem bejahtem Satz steht die Ausnahme nach illā im Akkusativ. Diese Regel gilt nicht pauschal für alle illā-Sätze."
+    },
+    "intro": {
+      "ar": "يذكر المستثنى منه، ولا نفي: حضر الطلاب إلا خالدًا. المستثنى بإلا في هذا النمط منصوب. لا نعمّم حكمه على كل تركيب فيه إلا.",
+      "de": "Bei vollständigem bejahtem Satz steht die Ausnahme nach illā im Akkusativ. Diese Regel gilt nicht pauschal für alle illā-Sätze."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "تام مثبت",
+          "de": "Vollständig und bejaht"
+        },
+        "body": {
+          "ar": "يذكر المستثنى منه، ولا نفي: حضر الطلاب إلا خالدًا. المستثنى بإلا في هذا النمط منصوب. لا نعمّم حكمه على كل تركيب فيه إلا.",
+          "de": "Bei vollständigem bejahtem Satz steht die Ausnahme nach illā im Akkusativ. Diese Regel gilt nicht pauschal für alle illā-Sätze."
+        },
+        "examples": [
+          {
+            "ar": "حَضَرَ الطُّلَّابُ إِلَّا خَالِدًا.",
+            "de": "Alle Schüler außer Khalid kamen.",
+            "annotations": [
+              {
+                "start": 19,
+                "end": 25,
+                "role": "operator"
+              },
+              {
+                "start": 26,
+                "end": 34,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "منفي ومفرغ",
+          "de": "Verneint und ohne Bezugsmenge"
+        },
+        "body": {
+          "ar": "في التام المنفي يجوز النصب أو الإتباع بدلًا: ما حضر الطلاب إلا خالدًا أو خالدٌ. وفي المفرغ لا يذكر المستثنى منه، فيعرب ما بعد إلا حسب موقعه: ما حضر إلا خالدٌ.",
+          "de": "Vollständig verneint sind Akkusativ oder Apposition möglich. Fehlt die Bezugsmenge, erhält das Wort seine normale Satzfunktion."
+        },
+        "examples": [
+          {
+            "ar": "مَا حَضَرَ إِلَّا خَالِدٌ. مَا رَأَيْتُ إِلَّا خَالِدًا.",
+            "de": "Nur Khalid kam. Ich sah nur Khalid.",
+            "annotations": [
+              {
+                "start": 11,
+                "end": 17,
+                "role": "operator"
+              },
+              {
+                "start": 18,
+                "end": 25,
+                "role": "subject"
+              },
+              {
+                "start": 40,
+                "end": 46,
+                "role": "operator"
+              },
+              {
+                "start": 47,
+                "end": 55,
+                "role": "predicate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "في التام المنفي يجوز النصب أو الإتباع بدلًا: ما حضر الطلاب إلا خالدًا أو خالدٌ. وفي المفرغ لا يذكر المستثنى منه، فيعرب ما بعد إلا حسب موقعه: ما حضر إلا خالدٌ.",
+      "de": "Vollständig verneint sind Akkusativ oder Apposition möglich. Fehlt die Bezugsmenge, erhält das Wort seine normale Satzfunktion."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أكمل التام المثبت: حضر الطلاب إلا ___.",
+          "de": "Ergänze den vollständigen bejahten Satz."
+        },
+        "options": [
+          "خَالِدٍ",
+          "خَالِدًا",
+          "خَالِدٌ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "المستثنى هنا منصوب.",
+          "de": "Die Ausnahme steht hier im Akkusativ."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما إعراب خالد في ما حضر إلا خالدٌ؟",
+          "de": "Analysiere Khalid in Nur Khalid kam."
+        },
+        "options": [
+          "فاعل مرفوع",
+          "مستثنى منصوب وجوبًا",
+          "مضاف إليه"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "الاستثناء مفرغ، وخالد فاعل حضر.",
+          "de": "Ohne Bezugsmenge ist Khalid reguläres Subjekt."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي حكم صحيح في التام المنفي؟",
+          "de": "Was ist bei vollständiger verneinter Ausnahme möglich?"
+        },
+        "options": [
+          "يجب الجر دائمًا.",
+          "تحذف إلا وجوبًا.",
+          "يجوز النصب والإتباع بدلًا."
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "مثل ما حضر الطلاب إلا خالدًا أو خالدٌ.",
+          "de": "Akkusativ oder Apposition sind möglich."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما موقع خالدًا في ما رأيت إلا خالدًا؟",
+          "de": "Welche Funktion hat Khalid hier?"
+        },
+        "options": [
+          "خبر مرفوع",
+          "مفعول به منصوب",
+          "فاعل مرفوع"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "الفعل رأيت يحتاج مفعولًا، وهذا استثناء مفرغ.",
+          "de": "Es ist das reguläre Objekt von raʾaitu."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "advanced-conditionals",
+    "glyph": "مَنْ",
+    "category": "syntax",
+    "title": {
+      "ar": "أدوات الشرط الجازمة وغير الجازمة",
+      "de": "Jussivische und andere Bedingungsgefüge"
+    },
+    "summary": {
+      "ar": "من أدوات الشرط الجازمة إن ومن ومهما. نحلل فعل الشرط وجوابه، ونراعي علامة كل فعل؛ فالجزم قد يكون حذف حرف العلة أو النون، لا السكون وحده.",
+      "de": "In, man und mahmā können zwei Verben im Jussiv verbinden. Das Zeichen hängt vom Verbtyp ab."
+    },
+    "intro": {
+      "ar": "من أدوات الشرط الجازمة إن ومن ومهما. نحلل فعل الشرط وجوابه، ونراعي علامة كل فعل؛ فالجزم قد يكون حذف حرف العلة أو النون، لا السكون وحده.",
+      "de": "In, man und mahmā können zwei Verben im Jussiv verbinden. Das Zeichen hängt vom Verbtyp ab."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "إن ومن ومهما",
+          "de": "In, man und mahmā"
+        },
+        "body": {
+          "ar": "من أدوات الشرط الجازمة إن ومن ومهما. نحلل فعل الشرط وجوابه، ونراعي علامة كل فعل؛ فالجزم قد يكون حذف حرف العلة أو النون، لا السكون وحده.",
+          "de": "In, man und mahmā können zwei Verben im Jussiv verbinden. Das Zeichen hängt vom Verbtyp ab."
+        },
+        "examples": [
+          {
+            "ar": "مَنْ يَجْتَهِدْ يَنْجَحْ.",
+            "de": "Wer sich anstrengt, hat Erfolg.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 4,
+                "role": "operator"
+              },
+              {
+                "start": 13,
+                "end": 15,
+                "role": "sign"
+              },
+              {
+                "start": 22,
+                "end": 24,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "لو ولولا واقتران الجواب بالفاء",
+          "de": "Lau, laulā und Antwort mit fa-"
+        },
+        "body": {
+          "ar": "لو تستعمل في سياق الامتناع أو الفرض المخالف للواقع، ولولا تدل غالبًا على امتناع الجواب لوجود ما بعدها. يحتاج الجواب الاسمي أو الطلبي إلى الفاء مع أدوات الجزم: إن تجتهد فأنت ناجح.",
+          "de": "Lau kann Irreales ausdrücken, laulā eine verhinderte Folge wegen etwas Vorhandenem. Eine nominale oder auffordernde Antwort wird mit fa- angeschlossen."
+        },
+        "examples": [
+          {
+            "ar": "لَوْ دَرَسْتَ لَنَجَحْتَ. إِنْ تَجْتَهِدْ فَأَنْتَ نَاجِحٌ.",
+            "de": "Hättest du gelernt, wärst du erfolgreich. Wenn du dich anstrengst, bist du erfolgreich.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 4,
+                "role": "operator"
+              },
+              {
+                "start": 26,
+                "end": 30,
+                "role": "operator"
+              },
+              {
+                "start": 42,
+                "end": 44,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "لولا والجواب الطلبي",
+          "de": "Laulā und auffordernde Antwort"
+        },
+        "body": {
+          "ar": "في لولا المطرُ لجفّت الأرضُ امتنع الجفاف لوجود المطر، والمطر مبتدأ خبره العام محذوف. وإذا كان جواب الشرط طلبًا ربطناه بالفاء: إن تصلْ فاتصلْ بي.",
+          "de": "Ohne den Regen wäre der Boden ausgetrocknet: Der vorhandene Regen verhindert die Folge. Nach laulā ist hier das allgemeine Prädikat ausgelassen. Eine auffordernde Antwort nach in wird mit fa- angebunden."
+        },
+        "examples": [
+          {
+            "ar": "لَوْلَا الْمَطَرُ لَجَفَّتِ الْأَرْضُ.",
+            "de": "Ohne den Regen wäre der Boden ausgetrocknet.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 7,
+                "role": "operator"
+              }
+            ]
+          },
+          {
+            "ar": "إِنْ تَصِلْ فَاتَّصِلْ بِي.",
+            "de": "Wenn du ankommst, ruf mich an.",
+            "annotations": [
+              {
+                "start": 12,
+                "end": 14,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "لو تستعمل في سياق الامتناع أو الفرض المخالف للواقع، ولولا تدل غالبًا على امتناع الجواب لوجود ما بعدها. يحتاج الجواب الاسمي أو الطلبي إلى الفاء مع أدوات الجزم: إن تجتهد فأنت ناجح.",
+      "de": "Lau kann Irreales ausdrücken, laulā eine verhinderte Folge wegen etwas Vorhandenem. Eine nominale oder auffordernde Antwort wird mit fa- angeschlossen."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أي أداة شرط جازمة؟",
+          "de": "Welche Partikel regiert Jussiv?"
+        },
+        "options": [
+          "مَهْمَا",
+          "لَوْ",
+          "لَوْلَا"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "مهما من أدوات الشرط الجازمة.",
+          "de": "Mahmā ist jussivisch."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "لماذا دخلت الفاء في إن تجتهد فأنت ناجح؟",
+          "de": "Warum steht fa- vor anta nāǧiḥ?"
+        },
+        "options": [
+          "لأن إن حرف جر",
+          "لأن الجواب فعل ماض دائمًا",
+          "لأن الجواب جملة اسمية"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الجواب الاسمي يحتاج رابطة الفاء في هذا السياق.",
+          "de": "Eine nominale Antwort wird mit fa- angebunden."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي أداة تناسب فرضًا مخالفًا للواقع؟",
+          "de": "Welche Partikel passt zu einer irrealen Bedingung?"
+        },
+        "options": [
+          "لن",
+          "لو",
+          "إلى"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "لو درست لنجحت مثال على الفرض المخالف.",
+          "de": "Lau darasta la-naǧaḥta beschreibt eine irreale Bedingung."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "هل علامة الجزم السكون دائمًا؟",
+          "de": "Ist Sukūn immer das Jussivzeichen?"
+        },
+        "options": [
+          "لا، قد تحذف النون أو حرف العلة.",
+          "نعم في كل الأفعال.",
+          "الكسرة دائمًا."
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "العلامة تعتمد على صورة الفعل.",
+          "de": "Das Zeichen hängt von der Verbklasse ab."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما الذي منع جفاف الأرض في لولا المطر لجفت الأرض؟",
+          "de": "Was verhindert hier das Austrocknen?"
+        },
+        "options": [
+          "وجود المطر",
+          "غياب المطر",
+          "امتناع الهواء"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "لولا تدل هنا على امتناع الجواب لوجود المطر.",
+          "de": "Der vorhandene Regen verhindert die Folge."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "لماذا رُبط فاتصل بي بالفاء في إن تصل فاتصل بي؟",
+          "de": "Warum steht fa- vor der Aufforderung?"
+        },
+        "options": [
+          "لأن الجواب طلبي",
+          "لأن إذا تجزم فعلين",
+          "لأن الفاء ضمير متصل"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "جواب الشرط الطلبي يحتاج إلى فاء الرابطة في هذا السياق.",
+          "de": "Die auffordernde Antwort wird hier durch fa- angeschlossen."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "diptotes",
+    "glyph": "أَحْمَد",
+    "category": "syntax",
+    "title": {
+      "ar": "الممنوع من الصرف",
+      "de": "Diptota"
+    },
+    "summary": {
+      "ar": "الممنوع من الصرف لا ينوّن، ويجر بالفتحة بدل الكسرة ما لم يُعرّف بأل أو يضف. مثال: مررت بأحمدَ. لا يعني منع الصرف أنه لا يرفع أو لا ينصب.",
+      "de": "Diptota haben kein Tanwīn und gewöhnlich fatḥa im Genitiv. Mit Artikel oder als Erstglied einer Genitivverbindung erhalten sie kasra."
+    },
+    "intro": {
+      "ar": "الممنوع من الصرف لا ينوّن، ويجر بالفتحة بدل الكسرة ما لم يُعرّف بأل أو يضف. مثال: مررت بأحمدَ. لا يعني منع الصرف أنه لا يرفع أو لا ينصب.",
+      "de": "Diptota haben kein Tanwīn und gewöhnlich fatḥa im Genitiv. Mit Artikel oder als Erstglied einer Genitivverbindung erhalten sie kasra."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "منع التنوين والكسرة في الأصل",
+          "de": "Kein Tanwīn, besondere Genitivform"
+        },
+        "body": {
+          "ar": "الممنوع من الصرف لا ينوّن، ويجر بالفتحة بدل الكسرة ما لم يُعرّف بأل أو يضف. مثال: مررت بأحمدَ. لا يعني منع الصرف أنه لا يرفع أو لا ينصب.",
+          "de": "Diptota haben kein Tanwīn und gewöhnlich fatḥa im Genitiv. Mit Artikel oder als Erstglied einer Genitivverbindung erhalten sie kasra."
+        },
+        "examples": [
+          {
+            "ar": "مَرَرْتُ بِأَحْمَدَ.",
+            "de": "Ich ging an Ahmad vorbei.",
+            "annotations": [
+              {
+                "start": 17,
+                "end": 19,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "أمثلة وشروط العودة إلى الكسرة",
+          "de": "Beispiele und Rückkehr zur Kasra"
+        },
+        "body": {
+          "ar": "أحمد ممنوع للعلمية ووزن الفعل، وعثمان للعلمية وزيادة الألف والنون، وأحمر للوصفية ووزن أفعل، ومساجد لصيغة منتهى الجموع. نقول في مساجدَ، وفي المساجدِ، وفي مساجدِ المدينةِ: أل والإضافة تعيدان الكسرة في الجر.",
+          "de": "Aḥmad: Eigenname auf Verbmuster; ʿUṯmān: Eigenname mit zusätzlichem ān; aḥmar: Adjektiv auf afʿal; masāǧid: besonderes Pluralmuster. Artikel oder Genitivverbindung erlauben kasra im Genitiv."
+        },
+        "examples": [
+          {
+            "ar": "فِي مَسَاجِدَ · فِي الْمَسَاجِدِ · فِي مَسَاجِدِ الْمَدِينَةِ",
+            "de": "In Moscheen · in den Moscheen · in den Moscheen der Stadt",
+            "annotations": [
+              {
+                "start": 11,
+                "end": 13,
+                "role": "sign"
+              },
+              {
+                "start": 30,
+                "end": 32,
+                "role": "sign"
+              },
+              {
+                "start": 46,
+                "end": 48,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "منه بعض الأعلام كأحمد وعثمان، وصفات كأحمر، وصيغ منتهى الجموع مثل مساجد. نقول في مساجدَ، وفي المساجدِ، وفي مساجدِ المدينةِ. لا تحكم من المعنى وحده؛ راع الصيغة والسبب.",
+      "de": "Beispiele sind bestimmte Namen, aḥmar und Pluralmuster wie masāǧid. Artikel und Genitivverbindung verändern die Genitivendung."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "اختر جر أحمد في مررت بـ ___.",
+          "de": "Wähle die Genitivform von Ahmad."
+        },
+        "options": [
+          "أَحْمَدٍ",
+          "أَحْمَدٌ",
+          "أَحْمَدَ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "أحمد ممنوع من الصرف مجرد من أل والإضافة.",
+          "de": "Ohne Artikel oder Ergänzung hat es fatḥa."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي صيغة صحيحة مع أل؟",
+          "de": "Welche Form mit Artikel stimmt?"
+        },
+        "options": [
+          "فِي الْمَسَاجِدُ",
+          "فِي الْمَسَاجِدِ",
+          "فِي الْمَسَاجِدَ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "وجود أل يعيد الكسرة في الجر.",
+          "de": "Der Artikel erlaubt wieder kasra im Genitiv."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "هل الممنوع من الصرف يقبل التنوين؟",
+          "de": "Hat ein Diptoton Tanwīn?"
+        },
+        "options": [
+          "لا",
+          "نعم دائمًا",
+          "في حالة الرفع فقط"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "من خصائصه منع التنوين.",
+          "de": "Es hat kein Tanwīn."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما سبب الكسرة في مساجدِ المدينة؟",
+          "de": "Warum kasra in masāǧidi l-madīna?"
+        },
+        "options": [
+          "لأن في حرف نصب",
+          "لأن المدينة فعل",
+          "لأن مساجد مضاف"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الإضافة تعيد الكسرة إلى الممنوع من الصرف المجرور.",
+          "de": "Als Erstglied der Genitivverbindung hat es kasra."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "verbal-nouns",
+    "glyph": "حَدَث",
+    "category": "syntax",
+    "title": {
+      "ar": "المصدر والمشتقات المتقدمة",
+      "de": "Verbalnomen und weiterführende Ableitungen"
+    },
+    "summary": {
+      "ar": "يدل المصدر على الحدث دون زمن. كتابة مصدر كتب، وتعليم مصدر علّم. مصدر الثلاثي كثير منه سماعي، فلا نفرض وزنًا واحدًا عليه. جداول الأفعال منفصلة عن هذا الدرس.",
+      "de": "Ein Verbalnomen bezeichnet das Geschehen ohne Zeit. Grundstammformen sind oft lexikalisch zu lernen, nicht auf ein einziges Muster reduzierbar."
+    },
+    "intro": {
+      "ar": "يدل المصدر على الحدث دون زمن. كتابة مصدر كتب، وتعليم مصدر علّم. مصدر الثلاثي كثير منه سماعي، فلا نفرض وزنًا واحدًا عليه. جداول الأفعال منفصلة عن هذا الدرس.",
+      "de": "Ein Verbalnomen bezeichnet das Geschehen ohne Zeit. Grundstammformen sind oft lexikalisch zu lernen, nicht auf ein einziges Muster reduzierbar."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "المصدر والحدث",
+          "de": "Verbalnomen bezeichnet ein Geschehen"
+        },
+        "body": {
+          "ar": "يدل المصدر على الحدث دون زمن. كتابة مصدر كتب، وتعليم مصدر علّم. مصدر الثلاثي كثير منه سماعي، فلا نفرض وزنًا واحدًا عليه. جداول الأفعال منفصلة عن هذا الدرس.",
+          "de": "Ein Verbalnomen bezeichnet das Geschehen ohne Zeit. Grundstammformen sind oft lexikalisch zu lernen, nicht auf ein einziges Muster reduzierbar."
+        },
+        "examples": [
+          {
+            "ar": "أُحِبُّ الْقِرَاءَةَ. يُفِيدُنِي التَّعَلُّمُ.",
+            "de": "Ich liebe das Lesen. Lernen nützt mir.",
+            "annotations": [
+              {
+                "start": 8,
+                "end": 20,
+                "role": "sign"
+              },
+              {
+                "start": 33,
+                "end": 45,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "التمييز بين المشتقات",
+          "de": "Ableitungen unterscheiden"
+        },
+        "body": {
+          "ar": "نميز اسم الحدث من اسم من يقوم به ومن يقع عليه ومن الأداة. تعليم حدث، ومعلم فاعل، ومعلوم اسم مفعول، ومفتاح آلة. لا يكفي تشابه الجذر لتحديد الوظيفة النحوية.",
+          "de": "Unterscheide Geschehen, Handelnden, Betroffenen und Werkzeug. Wortbildung und Satzfunktion sind verschiedene Ebenen."
+        },
+        "examples": [
+          {
+            "ar": "تَعْلِيمٌ · مُعَلِّمٌ · مَعْلُومٌ · مِفْتَاحٌ",
+            "de": "Unterrichten · Lehrer · bekannt · Schlüssel",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 9,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "المصدر الصريح والمؤول",
+          "de": "Ausdrückliches und umschriebenes Verbalnomen"
+        },
+        "body": {
+          "ar": "المصدر الصريح كلمة مثل نجاح وقراءة. وقد يؤول تركيب أن والفعل بمصدر: أن تنجح تعادل نجاحك. يتغير محله بحسب موقعه؛ ففي يسرني أن تنجح هو فاعل، وفي أحب أن أقرأ هو مفعول به.",
+          "de": "Ein ausdrückliches Verbalnomen ist etwa naǧāḥ. An plus Verb lässt sich als Verbalnomen auffassen. Sein Kasusplatz hängt von der Satzfunktion ab: Subjekt nach yasurrunī, Objekt nach uḥibbu."
+        },
+        "examples": [
+          {
+            "ar": "يَسُرُّنِي أَنْ تَنْجَحَ.",
+            "de": "Dass du Erfolg hast, freut mich.",
+            "annotations": [
+              {
+                "start": 11,
+                "end": 24,
+                "role": "subject"
+              }
+            ]
+          },
+          {
+            "ar": "أُحِبُّ أَنْ أَقْرَأَ.",
+            "de": "Ich lese gern.",
+            "annotations": [
+              {
+                "start": 8,
+                "end": 21,
+                "role": "predicate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "نميز اسم الحدث من اسم من يقوم به ومن يقع عليه ومن الأداة. تعليم حدث، ومعلم فاعل، ومعلوم اسم مفعول، ومفتاح آلة. لا يكفي تشابه الجذر لتحديد الوظيفة النحوية.",
+      "de": "Unterscheide Geschehen, Handelnden, Betroffenen und Werkzeug. Wortbildung und Satzfunktion sind verschiedene Ebenen."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أي كلمة مصدر؟",
+          "de": "Welches Wort ist ein Verbalnomen?"
+        },
+        "options": [
+          "مَكْتُوبٌ",
+          "كِتَابَةٌ",
+          "كَاتِبٌ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "كتابة تدل على الحدث دون زمن.",
+          "de": "Kitāba bezeichnet das Schreiben."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "هل لكل مصدر ثلاثي وزن واحد؟",
+          "de": "Haben alle dreiradikaligen Verbalnomen ein einheitliches Muster?"
+        },
+        "options": [
+          "لا، كثير منها سماعي.",
+          "نعم، فاعل دائمًا.",
+          "نعم، مفعول دائمًا."
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "نتعلم المصدر مع معناه واستعماله.",
+          "de": "Viele Formen müssen lexikalisch gelernt werden."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما الفرق بين تعليم ومعلم؟",
+          "de": "Was unterscheidet taʿlīm und muʿallim?"
+        },
+        "options": [
+          "كلاهما زمن ماض.",
+          "الأول آلة والثاني حرف.",
+          "الأول حدث والثاني من يقوم بالتعليم."
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "تعليم مصدر ومعلم اسم فاعل.",
+          "de": "Geschehen und Handelnder werden unterschieden."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي عبارة صحيحة عن المصدر؟",
+          "de": "Welche Aussage über das Verbalnomen stimmt?"
+        },
+        "options": [
+          "هو حرف جر.",
+          "لا يدل بذاته على زمن.",
+          "هو فعل مستقبل دائمًا."
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "الزمن يستفاد من السياق لا من المصدر وحده.",
+          "de": "Zeit entsteht durch den Kontext."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما محل المصدر المؤول في يسرني أن تنجح؟",
+          "de": "Welche Funktion hat an tanǧaḥa nach yasurrunī?"
+        },
+        "options": [
+          "فاعل في محل رفع",
+          "مفعول به في محل نصب",
+          "مضاف إليه في محل جر"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "المعنى يسرني نجاحُك؛ المصدر المؤول فاعل.",
+          "de": "Dein Erfolg freut mich: Die Umschreibung bildet das Subjekt."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما الفرق بين قراءة وأن أقرأ؟",
+          "de": "Was unterscheidet qirāʾa und an aqraʾa?"
+        },
+        "options": [
+          "الأول مصدر صريح والثاني مصدر مؤول",
+          "كلاهما فعل ماض",
+          "الأول حرف جر والثاني ظرف"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "قراءة لفظ مصدر، وأن والفعل يؤولان بمصدر بحسب السياق.",
+          "de": "Qirāʾa ist ein Verbalnomen; an plus Verb wird als solches interpretiert."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "time-place-nouns",
+    "glyph": "مَفْعَل",
+    "category": "syntax",
+    "title": {
+      "ar": "اسم الزمان والمكان",
+      "de": "Zeit- und Ortsnomen"
+    },
+    "summary": {
+      "ar": "يدل اسم الزمان على وقت الحدث، واسم المكان على موضعه. قد تتطابق الصيغة ويحدد السياق المعنى: موعد اللقاء زمان، وموضع الجلوس مكان.",
+      "de": "Zeitnomen bezeichnen den Zeitpunkt, Ortsnomen den Ort des Geschehens. Gleiche Muster werden durch den Kontext unterschieden."
+    },
+    "intro": {
+      "ar": "يدل اسم الزمان على وقت الحدث، واسم المكان على موضعه. قد تتطابق الصيغة ويحدد السياق المعنى: موعد اللقاء زمان، وموضع الجلوس مكان.",
+      "de": "Zeitnomen bezeichnen den Zeitpunkt, Ortsnomen den Ort des Geschehens. Gleiche Muster werden durch den Kontext unterschieden."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "الدلالة والسياق",
+          "de": "Bedeutung und Kontext"
+        },
+        "body": {
+          "ar": "يدل اسم الزمان على وقت الحدث، واسم المكان على موضعه. قد تتطابق الصيغة ويحدد السياق المعنى: موعد اللقاء زمان، وموضع الجلوس مكان.",
+          "de": "Zeitnomen bezeichnen den Zeitpunkt, Ortsnomen den Ort des Geschehens. Gleiche Muster werden durch den Kontext unterschieden."
+        },
+        "examples": [
+          {
+            "ar": "مَوْعِدُ اللِّقَاءِ صَبَاحًا. هَذَا مَجْلِسٌ وَاسِعٌ.",
+            "de": "Das Treffen ist morgens. Dies ist ein geräumiger Sitzungsort.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 8,
+                "role": "sign"
+              },
+              {
+                "start": 36,
+                "end": 44,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "الصياغة والتمييز",
+          "de": "Bildung und Abgrenzung"
+        },
+        "body": {
+          "ar": "من الثلاثي يأتي مَفْعِل إذا كان المضارع مكسور العين، مثل مَجْلِس، وفي المثال الواوي المحذوف الفاء في مضارعه مثل مَوْعِد. ويأتي مَفْعَل في صور أخرى مثل مَكْتَب. وللباب ألفاظ سماعية تُراجع في المعجم. ومن غير الثلاثي نستعمل ميمًا مضمومة مع فتح ما قبل الآخر، مثل مُلتقَى. يحدد السياق الزمان أو المكان؛ ولا يلزم أن يكون الاسم منصوبًا على الظرفية.",
+          "de": "Beim Grundstamm steht mafʿil etwa bei i im Präsensstamm (maǧlis) sowie bei bestimmten anfangsschwachen Wurzeln (mauʿid); andere Fälle zeigen mafʿal (maktab). Lexikalische Ausnahmen werden nachgeschlagen. Erweiterte Stämme zeigen mu- und a vor dem letzten Radikal, etwa multaqā. Der Kontext bestimmt Zeit oder Ort, nicht automatisch den Kasus."
+        },
+        "examples": [
+          {
+            "ar": "الْمَكْتَبُ مَكَانٌ لِلْعَمَلِ. هَذَا مُلْتَقَى الْأَصْدِقَاءِ.",
+            "de": "Das Büro ist ein Arbeitsort. Dies ist der Treffpunkt der Freunde.",
+            "annotations": [
+              {
+                "start": 12,
+                "end": 19,
+                "role": "sign"
+              },
+              {
+                "start": 38,
+                "end": 47,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "من الثلاثي تأتي صيغ مثل مَفْعَل ومَفْعِل بحسب الفعل، ومن غير الثلاثي تأتي صيغة تشبه اسم المفعول، ويحدد السياق المقصود. اسم المكان ليس هو الظرف المنصوب بالضرورة: المعنى الصرفي غير الموقع الإعرابي.",
+      "de": "Dreiradikalige Formen zeigen etwa mafʿal und mafʿil. Weitere Stämme können dem Passivpartizip gleichen. Wortbildung bestimmt nicht automatisch die adverbiale Satzfunktion."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "ما دلالة موعد في موعد اللقاء صباحًا؟",
+          "de": "Was bedeutet mauʿid in diesem Kontext?"
+        },
+        "options": [
+          "زمان اللقاء",
+          "آلة اللقاء",
+          "الشخص الذي يلتقي"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "صباحًا يبين أن المقصود وقت اللقاء.",
+          "de": "Morgens zeigt den zeitlichen Bezug."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "هل كل اسم مكان منصوب على الظرفية؟",
+          "de": "Ist jedes Ortsnomen ein Akkusativadverbial?"
+        },
+        "options": [
+          "نعم دائمًا.",
+          "لا يقبل الإعراب.",
+          "لا، إعرابه بحسب موقعه."
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "قد يأتي مبتدأ أو خبرًا أو مجرورًا.",
+          "de": "Es kann viele Satzfunktionen übernehmen."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي كلمة تدل على مكان الجلوس في السياق؟",
+          "de": "Welches Wort bezeichnet hier einen Sitzungsort?"
+        },
+        "options": [
+          "جُلُوسٌ",
+          "مَجْلِسٌ",
+          "جَالِسٌ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "مجلس اسم مكان، وجالس فاعل وجلوس مصدر.",
+          "de": "Maǧlis ist ein Ortsnomen."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما الذي يميّز معنى صيغة تحتمل زمانًا ومكانًا؟",
+          "de": "Was klärt eine mehrdeutige Form?"
+        },
+        "options": [
+          "السياق",
+          "لون الكلمة وحده",
+          "عدد الحروف فقط"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "نربط الصيغة بمعناها في الجملة.",
+          "de": "Der Satzkontext entscheidet."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "augmented-patterns",
+    "glyph": "فَعَّلَ",
+    "category": "syntax",
+    "title": {
+      "ar": "الأفعال المزيدة والأوزان الصرفية",
+      "de": "Erweiterte Stämme und Wortbildung"
+    },
+    "summary": {
+      "ar": "نميز الحروف الأصلية من الزيادة: علّم على فعّل، وتعلّم على تفعّل، واستخرج على استفعل. الشدة تمثل تضعيف حرف. هذا درس دلالة وبنية؛ جداول التصريف في فقرتها المستقلة.",
+      "de": "Unterscheide Wurzel und Erweiterung: ʿallama, taʿallama, istaḫraǧa. Šadda bedeutet Verdopplung. Konjugation bleibt im eigenen Bereich."
+    },
+    "intro": {
+      "ar": "نميز الحروف الأصلية من الزيادة: علّم على فعّل، وتعلّم على تفعّل، واستخرج على استفعل. الشدة تمثل تضعيف حرف. هذا درس دلالة وبنية؛ جداول التصريف في فقرتها المستقلة.",
+      "de": "Unterscheide Wurzel und Erweiterung: ʿallama, taʿallama, istaḫraǧa. Šadda bedeutet Verdopplung. Konjugation bleibt im eigenen Bereich."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "الجذر والوزن",
+          "de": "Wurzel und Muster"
+        },
+        "body": {
+          "ar": "نميز الحروف الأصلية من الزيادة: علّم على فعّل، وتعلّم على تفعّل، واستخرج على استفعل. الشدة تمثل تضعيف حرف. هذا درس دلالة وبنية؛ جداول التصريف في فقرتها المستقلة.",
+          "de": "Unterscheide Wurzel und Erweiterung: ʿallama, taʿallama, istaḫraǧa. Šadda bedeutet Verdopplung. Konjugation bleibt im eigenen Bereich."
+        },
+        "examples": [
+          {
+            "ar": "عَلَّمَ ← فَعَّلَ · تَعَلَّمَ ← تَفَعَّلَ",
+            "de": "Unterrichten und lernen: gleiche Wurzel, andere Muster",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 7,
+                "role": "sign"
+              },
+              {
+                "start": 20,
+                "end": 29,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "دلالة محتملة لا قاعدة آلية",
+          "de": "Bedeutungstendenzen statt Automatismus"
+        },
+        "body": {
+          "ar": "قد تدل الزيادة على التعدية أو المشاركة أو الطلب، لكن ليس لكل وزن معنى واحد ثابت في كل كلمة. استغفر طلب المغفرة، وشارك فيه معنى المشاركة؛ نراجع المعجم والسياق.",
+          "de": "Erweiterungen können Kausativität, Gegenseitigkeit oder Bitte ausdrücken. Ein Muster hat aber nicht in jedem Wort genau dieselbe Bedeutung."
+        },
+        "examples": [
+          {
+            "ar": "اِسْتَغْفَرَ رَبَّهُ. شَارَكَ زَمِيلَهُ فِي الْعَمَلِ.",
+            "de": "Er bat um Vergebung. Er beteiligte sich mit seinem Kollegen an der Arbeit.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 12,
+                "role": "sign"
+              },
+              {
+                "start": 22,
+                "end": 29,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "قد تدل الزيادة على التعدية أو المشاركة أو الطلب، لكن ليس لكل وزن معنى واحد ثابت في كل كلمة. استغفر طلب المغفرة، وشارك فيه معنى المشاركة؛ نراجع المعجم والسياق.",
+      "de": "Erweiterungen können Kausativität, Gegenseitigkeit oder Bitte ausdrücken. Ein Muster hat aber nicht in jedem Wort genau dieselbe Bedeutung."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "ما وزن تعلّم؟",
+          "de": "Welches Muster hat taʿallama?"
+        },
+        "options": [
+          "فاعل",
+          "استفعل",
+          "تفعّل"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "تاء الزيادة والتضعيف من ملامح تفعّل.",
+          "de": "Präfix t und Verdopplung kennzeichnen tafaʿʿala."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما الجذر المشترك لعلّم وتعلّم؟",
+          "de": "Welche Wurzel teilen beide Wörter?"
+        },
+        "options": [
+          "ع م ل",
+          "ع ل م",
+          "ت ع ل"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "الزيادة لا تغير الحروف الأصلية هنا.",
+          "de": "Die Erweiterung ändert die Wurzel nicht."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "هل يدل كل فعل على استفعل على الطلب دائمًا؟",
+          "de": "Bedeutet istafʿala immer eine Bitte?"
+        },
+        "options": [
+          "لا، يراجع المعنى والسياق.",
+          "نعم دون استثناء.",
+          "كل فعل بهذا الوزن اسم آلة."
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "الأوزان تعطي ميولًا دلالية لا تفسيرًا آليًا لكل كلمة.",
+          "de": "Muster geben Tendenzen, keine ausnahmslose Bedeutung."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما الحروف الأصلية في استخرج؟",
+          "de": "Welche Wurzel steckt in istaḫraǧa?"
+        },
+        "options": [
+          "خ ر ج",
+          "س ت خ",
+          "ا س ت"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "الألف والسين والتاء زوائد على الجذر خ ر ج.",
+          "de": "Alif, s und t sind Erweiterungen der Wurzel ḫ r ǧ."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "inversion",
+    "glyph": "أ ب",
+    "category": "syntax",
+    "title": {
+      "ar": "التقديم والتأخير",
+      "de": "Voranstellung und Nachstellung"
+    },
+    "summary": {
+      "ar": "قد يتقدم الخبر شبه الجملة: في البيت ضيفٌ. في البيت خبر مقدم، وضيف مبتدأ مؤخر مرفوع. يتيح ذلك تقديم المكان للمخاطب.",
+      "de": "Eine Ortsgruppe kann vor dem Subjekt stehen. In fī l-baiti ḍaifun ist die Ortsgruppe vorangestelltes Prädikat."
+    },
+    "intro": {
+      "ar": "قد يتقدم الخبر شبه الجملة: في البيت ضيفٌ. في البيت خبر مقدم، وضيف مبتدأ مؤخر مرفوع. يتيح ذلك تقديم المكان للمخاطب.",
+      "de": "Eine Ortsgruppe kann vor dem Subjekt stehen. In fī l-baiti ḍaifun ist die Ortsgruppe vorangestelltes Prädikat."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "تقديم الخبر",
+          "de": "Prädikat vor dem Subjekt"
+        },
+        "body": {
+          "ar": "قد يتقدم الخبر شبه الجملة: في البيت ضيفٌ. في البيت خبر مقدم، وضيف مبتدأ مؤخر مرفوع. يتيح ذلك تقديم المكان للمخاطب.",
+          "de": "Eine Ortsgruppe kann vor dem Subjekt stehen. In fī l-baiti ḍaifun ist die Ortsgruppe vorangestelltes Prädikat."
+        },
+        "examples": [
+          {
+            "ar": "فِي الْبَيْتِ ضَيْفٌ.",
+            "de": "Im Haus ist ein Gast.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 13,
+                "role": "predicate"
+              },
+              {
+                "start": 14,
+                "end": 20,
+                "role": "subject"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "تقديم المفعول",
+          "de": "Objekt voranstellen"
+        },
+        "body": {
+          "ar": "قد يقدم المفعول للاهتمام أو الحصر بحسب السياق: إياك نعبد. لا تجعل الكلمة الأولى فاعلًا تلقائيًا؛ الضمير والعلامة والسياق تحدد الوظيفة.",
+          "de": "Ein Objekt kann zur Hervorhebung oder Einschränkung vorangestellt werden. Das erste Wort ist nicht automatisch Subjekt."
+        },
+        "examples": [
+          {
+            "ar": "إِيَّاكَ نَعْبُدُ. قَرَأَ الْكِتَابَ الطَّالِبُ.",
+            "de": "Dir dienen wir. Der Schüler las das Buch.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 8,
+                "role": "predicate"
+              },
+              {
+                "start": 37,
+                "end": 47,
+                "role": "subject"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "قد يقدم المفعول للاهتمام أو الحصر بحسب السياق: إياك نعبد. لا تجعل الكلمة الأولى فاعلًا تلقائيًا؛ الضمير والعلامة والسياق تحدد الوظيفة.",
+      "de": "Ein Objekt kann zur Hervorhebung oder Einschränkung vorangestellt werden. Das erste Wort ist nicht automatisch Subjekt."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "ما إعراب ضيفٌ في في البيت ضيفٌ؟",
+          "de": "Analysiere ḍaifun."
+        },
+        "options": [
+          "مضاف إليه",
+          "مبتدأ مؤخر مرفوع",
+          "مفعول به"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "شبه الجملة خبر مقدم، وضيف مبتدأ مؤخر.",
+          "de": "Die Ortsgruppe ist Prädikat, der Gast Subjekt."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "هل أول كلمة في الجملة فاعل دائمًا؟",
+          "de": "Ist das erste Wort stets das Subjekt des Verbs?"
+        },
+        "options": [
+          "لا، تحدد الوظيفة من التركيب والمعنى.",
+          "نعم في كل الجمل.",
+          "فقط إذا كانت حرف جر."
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "التقديم لا يلغي علامات الإعراب.",
+          "de": "Voranstellung hebt die Kasusfunktionen nicht auf."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما وظيفة إياك في إياك نعبد؟",
+          "de": "Welche Funktion hat iyyāka?"
+        },
+        "options": [
+          "فاعل",
+          "حرف جر",
+          "مفعول به مقدم"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "ضمير النصب المنفصل تقدم على فعله.",
+          "de": "Das Objektpronomen steht vor seinem Verb."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "من الفاعل في قرأَ الكتابَ الطالبُ؟",
+          "de": "Wer handelt in qaraʾa l-kitāba ṭ-ṭālibu?"
+        },
+        "options": [
+          "قرأ",
+          "الطالبُ",
+          "الكتابَ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "الطالب مرفوع وهو القارئ ولو تأخر.",
+          "de": "Der Nominativ bezeichnet hier den Leser."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "emphasis-restriction-exclamation",
+    "glyph": "إِنَّمَا",
+    "category": "syntax",
+    "title": {
+      "ar": "أساليب التوكيد والقصر والتعجب",
+      "de": "Bekräftigung, Einschränkung und Ausruf"
+    },
+    "summary": {
+      "ar": "إن واللام قد تؤكدان الحكم: إن العلم لنافع. والقصر يحصر الحكم، مثل ما حضر إلا خالد، أو إنما النجاح بالاجتهاد. نميز أسلوب القصر من مجرد زيادة التأكيد.",
+      "de": "Inna und la- können bekräftigen. Illā nach Verneinung und innamā können eine Aussage einschränken. Einschränkung ist mehr als bloße Bekräftigung."
+    },
+    "intro": {
+      "ar": "إن واللام قد تؤكدان الحكم: إن العلم لنافع. والقصر يحصر الحكم، مثل ما حضر إلا خالد، أو إنما النجاح بالاجتهاد. نميز أسلوب القصر من مجرد زيادة التأكيد.",
+      "de": "Inna und la- können bekräftigen. Illā nach Verneinung und innamā können eine Aussage einschränken. Einschränkung ist mehr als bloße Bekräftigung."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "توكيد المعنى وقصره",
+          "de": "Bekräftigen und einschränken"
+        },
+        "body": {
+          "ar": "إن واللام قد تؤكدان الحكم: إن العلم لنافع. والقصر يحصر الحكم، مثل ما حضر إلا خالد، أو إنما النجاح بالاجتهاد. نميز أسلوب القصر من مجرد زيادة التأكيد.",
+          "de": "Inna und la- können bekräftigen. Illā nach Verneinung und innamā können eine Aussage einschränken. Einschränkung ist mehr als bloße Bekräftigung."
+        },
+        "examples": [
+          {
+            "ar": "إِنَّ الْعِلْمَ لَنَافِعٌ. مَا حَضَرَ إِلَّا خَالِدٌ.",
+            "de": "Wissen ist gewiss nützlich. Nur Khalid kam.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 5,
+                "role": "operator"
+              },
+              {
+                "start": 16,
+                "end": 18,
+                "role": "sign"
+              },
+              {
+                "start": 38,
+                "end": 44,
+                "role": "operator"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "التعجب القياسي",
+          "de": "Regelmäßiger Ausruf"
+        },
+        "body": {
+          "ar": "من صيغ التعجب ما أفعلَه: ما أجملَ الصدقَ! ما تعجبية وليست نافية. المفعول به في هذه الصيغة منصوب. عند عدم استيفاء الفعل شروط الصوغ نستعين بأشد ونحوها ومصدر مناسب.",
+          "de": "Eine Ausrufform lautet mā afʿalahu. Mā ist hier keine Verneinung. Bei ungeeigneter direkter Bildung wird ein Hilfsausdruck mit Verbalnomen benutzt."
+        },
+        "examples": [
+          {
+            "ar": "مَا أَجْمَلَ الصِّدْقَ! مَا أَشَدَّ احْمِرَارَ الْوَرْدِ!",
+            "de": "Wie schön ist Ehrlichkeit! Wie intensiv ist das Rot der Rosen!",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 12,
+                "role": "operator"
+              },
+              {
+                "start": 13,
+                "end": 22,
+                "role": "predicate"
+              },
+              {
+                "start": 36,
+                "end": 46,
+                "role": "predicate"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "من صيغ التعجب ما أفعلَه: ما أجملَ الصدقَ! ما تعجبية وليست نافية. المفعول به في هذه الصيغة منصوب. عند عدم استيفاء الفعل شروط الصوغ نستعين بأشد ونحوها ومصدر مناسب.",
+      "de": "Eine Ausrufform lautet mā afʿalahu. Mā ist hier keine Verneinung. Bei ungeeigneter direkter Bildung wird ein Hilfsausdruck mit Verbalnomen benutzt."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أي جملة تفيد القصر؟",
+          "de": "Welcher Satz schränkt ein?"
+        },
+        "options": [
+          "مَا حَضَرَ إِلَّا خَالِدٌ.",
+          "حَضَرَ خَالِدٌ وَسَارَةُ.",
+          "هَلْ حَضَرَ خَالِدٌ؟"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "النفي والاستثناء حصرا الحضور في خالد.",
+          "de": "Verneinung und Ausnahme beschränken die Aussage."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما نوع ما في ما أجمل الصدق!؟",
+          "de": "Welche Funktion hat mā in diesem Ausruf?"
+        },
+        "options": [
+          "نافية",
+          "شرطية جازمة",
+          "تعجبية"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الأسلوب للتعجب لا لنفي الجمال.",
+          "de": "Der Satz drückt Bewunderung aus."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر صيغة التعجب الصحيحة.",
+          "de": "Wähle die korrekte Ausrufform."
+        },
+        "options": [
+          "مَا أَجْمَلِ الصِّدْقِ!",
+          "مَا أَجْمَلَ الصِّدْقَ!",
+          "مَا أَجْمَلُ الصِّدْقُ!"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "نراعي صيغة ما أفعلَه ونصب المتعجب منه.",
+          "de": "Die Formel verlangt diese Verb- und Akkusativform."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ماذا تضيف اللام في إن العلم لنافع؟",
+          "de": "Was leistet la- in inna l-ʿilma la-nāfiʿun?"
+        },
+        "options": [
+          "توكيد الحكم",
+          "نفي النفع",
+          "جر العلم"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "اللام هنا للتوكيد وليست لام الجر.",
+          "de": "Es ist eine Bekräftigung, keine Präposition."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "advanced-connectors",
+    "glyph": "لَكِنْ",
+    "category": "syntax",
+    "title": {
+      "ar": "الروابط النصية المتقدمة",
+      "de": "Weiterführende Textverknüpfungen"
+    },
+    "summary": {
+      "ar": "نستعمل مع أن للتنازل، في حين للمقابلة أو التزامن بحسب السياق، ومن جهة أخرى لإضافة زاوية مختلفة. اختر الرابط وفق علاقة الأفكار لا وفق طول الجملة.",
+      "de": "Maʿa anna räumt ein; fī ḥīni kann Gegensatz oder Gleichzeitigkeit ausdrücken; min ǧihatin uḫrā eröffnet eine weitere Perspektive."
+    },
+    "intro": {
+      "ar": "نستعمل مع أن للتنازل، في حين للمقابلة أو التزامن بحسب السياق، ومن جهة أخرى لإضافة زاوية مختلفة. اختر الرابط وفق علاقة الأفكار لا وفق طول الجملة.",
+      "de": "Maʿa anna räumt ein; fī ḥīni kann Gegensatz oder Gleichzeitigkeit ausdrücken; min ǧihatin uḫrā eröffnet eine weitere Perspektive."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "المقابلة والتنازل",
+          "de": "Gegensatz und Einräumung"
+        },
+        "body": {
+          "ar": "نستعمل مع أن للتنازل، في حين للمقابلة أو التزامن بحسب السياق، ومن جهة أخرى لإضافة زاوية مختلفة. اختر الرابط وفق علاقة الأفكار لا وفق طول الجملة.",
+          "de": "Maʿa anna räumt ein; fī ḥīni kann Gegensatz oder Gleichzeitigkeit ausdrücken; min ǧihatin uḫrā eröffnet eine weitere Perspektive."
+        },
+        "examples": [
+          {
+            "ar": "مَعَ أَنَّ الطَّرِيقَ طَوِيلٌ، فَقَدْ وَصَلْنَا فِي الْوَقْتِ.",
+            "de": "Obwohl der Weg lang ist, kamen wir rechtzeitig an.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 10,
+                "role": "operator"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "الاستنتاج والتعليل",
+          "de": "Folgern und begründen"
+        },
+        "body": {
+          "ar": "بناء على ذلك وتبعًا لذلك تربطان نتيجة بما سبق، إذ قد يقدم تعليلًا في السياق، وعلاوة على ذلك تضيف حجة. حافظ على مرجع واضح للضمير وعلى علاقة منطقية بين الفقرات.",
+          "de": "Daraus folgt knüpft ein Ergebnis an Vorheriges; iḏ kann im Kontext begründen; darüber hinaus ergänzt ein Argument. Pronomen brauchen eindeutige Bezüge."
+        },
+        "examples": [
+          {
+            "ar": "الدَّلِيلُ وَاضِحٌ؛ بِنَاءً عَلَى ذَلِكَ نَقْبَلُ النَّتِيجَةَ.",
+            "de": "Der Beleg ist klar; daher akzeptieren wir das Ergebnis.",
+            "annotations": [
+              {
+                "start": 20,
+                "end": 40,
+                "role": "operator"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "بناء على ذلك وتبعًا لذلك تربطان نتيجة بما سبق، إذ قد يقدم تعليلًا في السياق، وعلاوة على ذلك تضيف حجة. حافظ على مرجع واضح للضمير وعلى علاقة منطقية بين الفقرات.",
+      "de": "Daraus folgt knüpft ein Ergebnis an Vorheriges; iḏ kann im Kontext begründen; darüber hinaus ergänzt ein Argument. Pronomen brauchen eindeutige Bezüge."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "اختر رابطًا مناسبًا للتنازل: ___ المطرَ شديدٌ، خرجنا.",
+          "de": "Wähle einen einräumenden Anschluss."
+        },
+        "options": [
+          "بناء على ذلك",
+          "علاوة على ذلك",
+          "مع أن"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "مع أن تقدم أمرًا لم يمنع وقوع النتيجة.",
+          "de": "Obwohl nennt einen Umstand, der das Ergebnis nicht verhindert."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي رابط يقدم استنتاجًا من دليل سابق؟",
+          "de": "Welcher Anschluss leitet eine Folgerung ein?"
+        },
+        "options": [
+          "من جهة أخرى",
+          "بناء على ذلك",
+          "في حين"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "ذلك يعود إلى المعطى السابق الذي بنيت عليه النتيجة.",
+          "de": "Daraus bezieht sich auf die vorherige Grundlage."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما وظيفة علاوة على ذلك غالبًا؟",
+          "de": "Was leistet Darüber hinaus meistens?"
+        },
+        "options": [
+          "إضافة حجة أو معلومة",
+          "نفي الحجة السابقة بالضرورة",
+          "تحديد زمن الماضي وحده"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "الرابط للإضافة لا للمقابلة في الأصل.",
+          "de": "Es fügt ein Argument hinzu."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما الذي يحدد اختيار الرابط النصي؟",
+          "de": "Wovon hängt die Wahl des Konnektors ab?"
+        },
+        "options": [
+          "طول الكلمة وحده",
+          "عدد الفقرات فقط",
+          "العلاقة المنطقية بين الأفكار"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "نحدد هل نضيف أم نعلل أم نستنتج أم نقابل.",
+          "de": "Addition, Begründung, Folgerung und Gegensatz müssen unterschieden werden."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "detached-pronouns",
+    "glyph": "أَنَا",
+    "category": "syntax",
+    "title": {
+      "ar": "الضمائر المنفصلة",
+      "de": "Selbständige Personalpronomen"
+    },
+    "summary": {
+      "ar": "أنا للمتكلم المفرد، ونحن للمتكلمين. أنتَ للمخاطب المذكر وأنتِ للمؤنث، وهو للغائب وهي للغائبة. الضمير المنفصل كلمة مستقلة.",
+      "de": "Anā und naḥnu bezeichnen Sprecher; anta/anti angesprochene Personen; huwa/hiya Dritte. Diese Pronomen stehen selbständig."
+    },
+    "intro": {
+      "ar": "أنا للمتكلم المفرد، ونحن للمتكلمين. أنتَ للمخاطب المذكر وأنتِ للمؤنث، وهو للغائب وهي للغائبة. الضمير المنفصل كلمة مستقلة.",
+      "de": "Anā und naḥnu bezeichnen Sprecher; anta/anti angesprochene Personen; huwa/hiya Dritte. Diese Pronomen stehen selbständig."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "المتكلم والمخاطب والغائب",
+          "de": "Sprecher, Angesprochener und Dritter"
+        },
+        "body": {
+          "ar": "أنا للمتكلم المفرد، ونحن للمتكلمين. أنتَ للمخاطب المذكر وأنتِ للمؤنث، وهو للغائب وهي للغائبة. الضمير المنفصل كلمة مستقلة.",
+          "de": "Anā und naḥnu bezeichnen Sprecher; anta/anti angesprochene Personen; huwa/hiya Dritte. Diese Pronomen stehen selbständig."
+        },
+        "examples": [
+          {
+            "ar": "أَنَا طَالِبٌ. أَنْتِ طَالِبَةٌ. هُوَ مُعَلِّمٌ.",
+            "de": "Ich bin Schüler. Du bist Schülerin. Er ist Lehrer.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 5,
+                "role": "subject"
+              },
+              {
+                "start": 15,
+                "end": 21,
+                "role": "subject"
+              },
+              {
+                "start": 33,
+                "end": 37,
+                "role": "subject"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "المثنى والجمع",
+          "de": "Zwei Personen und Mehrzahl"
+        },
+        "body": {
+          "ar": "أنتما للمخاطبين الاثنين، وهما للغائبين الاثنين. أنتم وأنتن للمخاطبين، وهم وهن للغائبين، مع التمييز بين المذكر والمؤنث. لا نكتب الضمير المنفصل ملتصقًا بالاسم.",
+          "de": "Antumā und humā bezeichnen zwei Personen. Pluralformen unterscheiden angesprochene und dritte Personen sowie Genus."
+        },
+        "examples": [
+          {
+            "ar": "نَحْنُ أَصْدِقَاءُ. هُنَّ طَالِبَاتٌ.",
+            "de": "Wir sind Freunde. Sie sind Schülerinnen.",
+            "annotations": [
+              {
+                "start": 0,
+                "end": 6,
+                "role": "subject"
+              },
+              {
+                "start": 20,
+                "end": 25,
+                "role": "subject"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "أنتما للمخاطبين الاثنين، وهما للغائبين الاثنين. أنتم وأنتن للمخاطبين، وهم وهن للغائبين، مع التمييز بين المذكر والمؤنث. لا نكتب الضمير المنفصل ملتصقًا بالاسم.",
+      "de": "Antumā und humā bezeichnen zwei Personen. Pluralformen unterscheiden angesprochene und dritte Personen sowie Genus."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "اختر ضمير المتكلم المفرد.",
+          "de": "Wähle das Pronomen für ich."
+        },
+        "options": [
+          "هُمْ",
+          "أَنَا",
+          "هُوَ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "أنا يدل على المتكلم الواحد.",
+          "de": "Anā bezeichnet einen Sprecher."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أكمل: ___ طالبةٌ. عند مخاطبة فتاة.",
+          "de": "Sprich ein Mädchen direkt an."
+        },
+        "options": [
+          "أَنْتِ",
+          "أَنْتَ",
+          "هُوَ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "أنتِ للمخاطبة المؤنثة.",
+          "de": "Anti spricht eine weibliche Person an."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي ضمير يعود على امرأتين غائبتين؟",
+          "de": "Welches Pronomen bezeichnet zwei abwesende Frauen?"
+        },
+        "options": [
+          "هُنَّ",
+          "أَنْتُمَا",
+          "هُمَا"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "هما للاثنين أو الاثنتين الغائبين.",
+          "de": "Humā ist Dual für Dritte."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر ضمير الغائبات الجمع.",
+          "de": "Wähle sie für mehrere Frauen."
+        },
+        "options": [
+          "نَحْنُ",
+          "هُنَّ",
+          "هُمْ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "هن لجمع الإناث الغائبات.",
+          "de": "Hunna ist feminin Plural in der dritten Person."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "adjective-basic",
+    "glyph": "نَعْت",
+    "category": "syntax",
+    "title": {
+      "ar": "النعت الأساسي",
+      "de": "Grundlagen des Attributs"
+    },
+    "summary": {
+      "ar": "يصف النعت اسمًا قبله ويتبعه في التذكير والتأنيث والتعريف والتنكير، وفي الإعراب حيث يظهر. نقول بنت لطيفة، والبنت اللطيفة.",
+      "de": "Das Attribut beschreibt das vorausgehende Nomen und stimmt in Genus, Bestimmtheit und Kasus überein."
+    },
+    "intro": {
+      "ar": "يصف النعت اسمًا قبله ويتبعه في التذكير والتأنيث والتعريف والتنكير، وفي الإعراب حيث يظهر. نقول بنت لطيفة، والبنت اللطيفة.",
+      "de": "Das Attribut beschreibt das vorausgehende Nomen und stimmt in Genus, Bestimmtheit und Kasus überein."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "الاسم ووصفه",
+          "de": "Nomen und Beschreibung"
+        },
+        "body": {
+          "ar": "يصف النعت اسمًا قبله ويتبعه في التذكير والتأنيث والتعريف والتنكير، وفي الإعراب حيث يظهر. نقول بنت لطيفة، والبنت اللطيفة.",
+          "de": "Das Attribut beschreibt das vorausgehende Nomen und stimmt in Genus, Bestimmtheit und Kasus überein."
+        },
+        "examples": [
+          {
+            "ar": "بِنْتٌ لَطِيفَةٌ · الْبِنْتُ اللَّطِيفَةُ",
+            "de": "Ein nettes Mädchen · das nette Mädchen",
+            "annotations": [
+              {
+                "start": 7,
+                "end": 16,
+                "role": "sign"
+              },
+              {
+                "start": 29,
+                "end": 41,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "الوصف والخبر",
+          "de": "Attribut oder Prädikat"
+        },
+        "body": {
+          "ar": "البيت الكبير تركيب وصفي يحتاج سياقًا ليصير جملة، أما البيت كبير فجملة خبرية تامة. جمع غير العاقل يوصف غالبًا بالمفرد المؤنث: كتب جديدة.",
+          "de": "Das große Haus ist eine Nominalgruppe; Das Haus ist groß ist ein Satz. Nichtmenschliche Plurale erhalten häufig ein feminines Singularattribut."
+        },
+        "examples": [
+          {
+            "ar": "الْبَيْتُ كَبِيرٌ. كُتُبٌ جَدِيدَةٌ.",
+            "de": "Das Haus ist groß. Neue Bücher.",
+            "annotations": [
+              {
+                "start": 10,
+                "end": 17,
+                "role": "predicate"
+              },
+              {
+                "start": 26,
+                "end": 35,
+                "role": "sign"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "البيت الكبير تركيب وصفي يحتاج سياقًا ليصير جملة، أما البيت كبير فجملة خبرية تامة. جمع غير العاقل يوصف غالبًا بالمفرد المؤنث: كتب جديدة.",
+      "de": "Das große Haus ist eine Nominalgruppe; Das Haus ist groß ist ein Satz. Nichtmenschliche Plurale erhalten häufig ein feminines Singularattribut."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "أكمل: بنتٌ ___.",
+          "de": "Ergänze ein nettes Mädchen."
+        },
+        "options": [
+          "لَطِيفَةٌ",
+          "لَطِيفٌ",
+          "اللَّطِيفَةُ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "النعت يوافق بنت في التأنيث والتنكير.",
+          "de": "Das Attribut ist feminin und unbestimmt."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر وصف البيت المعرفة.",
+          "de": "Wähle das Attribut zum bestimmten Haus."
+        },
+        "options": [
+          "الْبَيْتُ كَبِيرٌ",
+          "بَيْتٌ الْكَبِيرُ",
+          "الْبَيْتُ الْكَبِيرُ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "أل في الاسم والصفة من المطابقة.",
+          "de": "Beide Wörter tragen den Artikel."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أي مثال جملة تامة لا مجرد وصف اسم؟",
+          "de": "Was ist ein vollständiger Satz?"
+        },
+        "options": [
+          "بنت لطيفة",
+          "الْبَيْتُ كَبِيرٌ.",
+          "البيت الكبير"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "كبير خبر عن البيت في هذه الجملة.",
+          "de": "Kabīrun ist hier das Prädikat."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أكمل: كتبٌ ___.",
+          "de": "Ergänze neue Bücher."
+        },
+        "options": [
+          "جَدِيدَةٌ",
+          "جَدِيدُونَ",
+          "الْجَدِيدَةُ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "جمع غير العاقل يوصف غالبًا بالمفرد المؤنث.",
+          "de": "Nichtmenschliche Plurale nehmen oft ein feminines Singularattribut."
+        }
+      }
+    ],
+    "contentVersion": 1
+  },
+  {
+    "id": "prepositions",
+    "glyph": "في",
+    "title": {
+      "ar": "حروف الجرّ",
+      "de": "Präpositionen"
+    },
+    "summary": {
+      "ar": "المعنى والاسم المجرور وعلاماته.",
+      "de": "Bedeutung und Genitiv richtig verbinden."
+    },
+    "intro": {
+      "ar": "من حروف الجرّ الشائعة: من، إلى، عن، على، في، الباء، الكاف، اللام. تدخل على الاسم فتجرّه، وقد تتصل بضمير مثل به ولها.",
+      "de": "Häufige Präpositionen sind min, ilā, ʿan, ʿalā, fī, bi-, ka- und li-. Sie verlangen ein Nomen oder Pronomen im Genitiv."
+    },
+    "sections": [
+      {
+        "title": {
+          "ar": "معانٍ في السياق",
+          "de": "Bedeutung im Kontext"
+        },
+        "body": {
+          "ar": "من للابتداء وإلى للانتهاء وفي للظرفية وعلى للاستعلاء في أمثلة مألوفة. وقد يختلف معنى الحرف باختلاف السياق.",
+          "de": "Typisch sind min für Ausgang, ilā für Ziel, fī für Inneres und ʿalā für Oberfläche. Die genaue Bedeutung hängt vom Kontext ab."
+        },
+        "examples": [
+          {
+            "ar": "خَرَجْتُ مِنَ الْبَيْتِ إِلَى الْمَدْرَسَةِ.",
+            "de": "Ich ging vom Haus zur Schule.",
+            "focus": "إِلَى"
+          },
+          {
+            "ar": "الْكِتَابُ عَلَى الطَّاوِلَةِ.",
+            "de": "Das Buch liegt auf dem Tisch.",
+            "focus": "عَلَى"
+          }
+        ]
+      },
+      {
+        "title": {
+          "ar": "الحروف المتصلة وما بعدها",
+          "de": "Angehängte Präpositionen und das folgende Nomen"
+        },
+        "body": {
+          "ar": "تتصل الباء واللام والكاف كتابة بالاسم: بالقلم، للطالب، كالقمر. يأتي الاسم بعد حرف الجر مجرورًا، ونسمع الكسرة في أمثلة المفرد البسيطة. نتعلم العلامات الأخرى لاحقًا.",
+          "de": "Bi-, li- und ka- werden an das Nomen geschrieben. Das Nomen steht im Genitiv; in einfachen Singularbeispielen hört man kasra. Weitere Zeichen folgen später."
+        },
+        "examples": [
+          {
+            "ar": "كَتَبْتُ بِالْقَلَمِ. هَذَا الْكِتَابُ لِلطَّالِبِ.",
+            "de": "Ich schrieb mit dem Stift. Dieses Buch gehört dem Schüler.",
+            "highlights": [
+              {
+                "word": "بِالْقَلَمِ",
+                "part": "بِ"
+              },
+              {
+                "word": "لِلطَّالِبِ",
+                "part": "لِ"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "takeaway": {
+      "ar": "حدّد معنى الحرف في الجملة، ثم اختر علامة الجرّ المناسبة للاسم.",
+      "de": "Bestimme zuerst die Bedeutung der Präposition, dann das richtige Genitivzeichen."
+    },
+    "questions": [
+      {
+        "prompt": {
+          "ar": "اختر حرف الجرّ الذي يدلّ هنا على وجهة السفر: سافرتُ ___ القاهرة.",
+          "de": "Wähle die Präposition für das Reiseziel."
+        },
+        "options": [
+          "إِلَى",
+          "مِنْ",
+          "عَنْ",
+          "فِي"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "إلى تدلّ هنا على انتهاء الغاية.",
+          "de": "Ilā bezeichnet hier das Ziel."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر حرف الجرّ الذي يبيّن مكان الانطلاق: خرجتُ ___ البيت.",
+          "de": "Wähle für den Ausgangsort."
+        },
+        "options": [
+          "إِلَى",
+          "عَنْ",
+          "لِـ",
+          "مِنَ"
+        ],
+        "correct": 3,
+        "explanation": {
+          "ar": "من تدلّ على ابتداء الغاية المكانية.",
+          "de": "Min bezeichnet den räumlichen Ausgangspunkt."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أكمل بمعنى داخل: الكتاب ___ الحقيبة.",
+          "de": "Ergänze im Sinn von „innerhalb“."
+        },
+        "options": [
+          "مِنْ",
+          "إِلَى",
+          "فِي",
+          "عَلَى"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "في للظرفية هنا.",
+          "de": "Fī bezeichnet hier das Innere."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أكمل بمعنى فوق: الكتاب ___ الطاولة.",
+          "de": "Ergänze im Sinn von „auf der Oberfläche“."
+        },
+        "options": [
+          "إِلَى",
+          "عَلَى",
+          "مِنْ",
+          "عَنْ"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "على للاستعلاء في هذا المثال.",
+          "de": "ʿAlā bezeichnet hier die Oberfläche."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أكمل بحرف الاستعانة: كتبتُ ___ القلم.",
+          "de": "Wähle die Präposition für das verwendete Werkzeug."
+        },
+        "options": [
+          "بِـ",
+          "إِلَى",
+          "عَنْ",
+          "مِنْ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "الباء تدلّ هنا على الاستعانة بالقلم.",
+          "de": "Bi- bezeichnet hier das Hilfsmittel."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أكمل بحرف الملكية: هذا كتاب ___ سارة.",
+          "de": "Wähle die Präposition für den Besitz."
+        },
+        "options": [
+          "إِلَى",
+          "عَلَى",
+          "مِنْ",
+          "لِـ"
+        ],
+        "correct": 3,
+        "explanation": {
+          "ar": "اللام تدلّ هنا على الملكية.",
+          "de": "Li- bezeichnet hier Besitz."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "اختر حرف التشبيه: وجهه ___ القمر.",
+          "de": "Wähle die Vergleichspräposition."
+        },
+        "options": [
+          "إِلَى",
+          "عَنْ",
+          "كَـ",
+          "مِنْ"
+        ],
+        "correct": 2,
+        "explanation": {
+          "ar": "الكاف للتشبيه.",
+          "de": "Ka- bedeutet hier „wie“."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "أكمل بمعنى الاستفسار بشأنه: سألتُ ___ الصديق.",
+          "de": "Ergänze im Sinn von „nach dem Freund fragen“."
+        },
+        "options": [
+          "كَـ",
+          "عَنِ",
+          "فِي",
+          "عَلَى"
+        ],
+        "correct": 1,
+        "explanation": {
+          "ar": "عن تدلّ هنا على موضوع السؤال.",
+          "de": "ʿAn bezeichnet hier das Thema der Nachfrage."
+        }
+      },
+      {
+        "prompt": {
+          "ar": "ما إعراب «المدرسةِ» في «في المدرسةِ»؟",
+          "de": "Welchen Kasus hat al-madrasa nach fī?"
+        },
+        "options": [
+          {
+            "ar": "اسم مجرور بالكسرة",
+            "de": "Genitiv mit Kasra"
+          },
+          {
+            "ar": "فاعل مرفوع",
+            "de": "Subjekt im Nominativ"
+          },
+          {
+            "ar": "مفعول منصوب",
+            "de": "Objekt im Akkusativ"
+          },
+          {
+            "ar": "فعل مضارع",
+            "de": "Präsensverb"
+          }
+        ],
+        "correct": 0,
+        "explanation": {
+          "ar": "حرف الجرّ يجرّ الاسم بعده.",
+          "de": "Die Präposition verlangt den Genitiv."
+        }
+      }
+    ],
+    "category": "syntax",
+    "stage": "build",
+    "prerequisites": [
+      "case-basics"
+    ],
+    "contentVersion": 2
+  }
+]

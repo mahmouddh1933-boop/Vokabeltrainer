@@ -1,0 +1,152 @@
+{
+  "stages": [
+    {
+      "id": "A1",
+      "owner": "a1-a2",
+      "title": {
+        "ar": "A1 — المبتدئ — الأساسيات",
+        "de": "A1 — Anfänger: Grundlagen"
+      },
+      "description": {
+        "ar": "تكوين جمل قصيرة والتعريف بالنفس والسؤال والإجابة ووصف الأشياء والأشخاص.",
+        "de": "Kurze Sätze bilden, sich vorstellen, fragen, antworten und beschreiben."
+      },
+      "ids": [
+        "word-classes",
+        "gender",
+        "definiteness",
+        "pronouns",
+        "demonstratives",
+        "nominal-basics",
+        "interrogative-nouns",
+        "simple-negation",
+        "prepositions",
+        "possession-basics",
+        "adjectival-attribute",
+        "sequence-conjunctions"
+      ]
+    },
+    {
+      "id": "A2",
+      "owner": "a1-a2",
+      "title": {
+        "ar": "A2 — الأساسي المتقدم — توسيع الجمل",
+        "de": "A2 — Grundstufe: Sätze erweitern"
+      },
+      "description": {
+        "ar": "وصف اليوم والحديث عن الماضي والمستقبل والمقارنة وتكوين جمل أطول.",
+        "de": "Den Alltag beschreiben, über Vergangenheit und Zukunft sprechen und vergleichen."
+      },
+      "ids": [
+        "future-usage",
+        "negation-tenses",
+        "number",
+        "idafa",
+        "attached-objects",
+        "subject-object",
+        "relative-pronouns",
+        "time-place-adverbials",
+        "requests-prohibitions",
+        "comparison-basic",
+        "basic-numerals",
+        "reason-result",
+        "case-basics"
+      ]
+    },
+    {
+      "id": "B1",
+      "owner": "b1-b2",
+      "title": {
+        "ar": "B1 — المتوسط — التحليل والتعبير",
+        "de": "B1 — Mittelstufe: Analyse und Ausdruck"
+      },
+      "description": {
+        "ar": "سرد الأحداث وشرح الأسباب وإبداء الرأي وفهم بناء الجمل وإعرابها.",
+        "de": "Ereignisse erzählen, begründen, Stellung nehmen und Satzbau analysieren."
+      },
+      "ids": [
+        "sentence-analysis",
+        "inflection-signs",
+        "past-construction",
+        "imperative-construction",
+        "present-inflection",
+        "five-verbs",
+        "defective-verbs",
+        "inna-particles",
+        "five-nouns",
+        "numerals",
+        "active-participle",
+        "passive-participle",
+        "circumstantial",
+        "purpose-object",
+        "verb-families",
+        "simple-conditionals"
+      ]
+    },
+    {
+      "id": "B2",
+      "owner": "b1-b2",
+      "title": {
+        "ar": "B2 — فوق المتوسط — التراكيب المتقدمة",
+        "de": "B2 — Obere Mittelstufe: komplexe Strukturen"
+      },
+      "description": {
+        "ar": "فهم النصوص المعقدة وربط الأفكار واستعمال القواعد للتعبير الدقيق والتحليل.",
+        "de": "Komplexere Texte verstehen, Ideen verbinden und präzise formulieren."
+      },
+      "ids": [
+        "passive-voice",
+        "tamyiz",
+        "absolute-object",
+        "apposition",
+        "emphasis",
+        "exception",
+        "advanced-conditionals",
+        "diptotes",
+        "verbal-nouns",
+        "intensive-participle",
+        "instrument-noun",
+        "time-place-nouns",
+        "augmented-patterns",
+        "inversion",
+        "emphasis-restriction-exclamation",
+        "advanced-connectors"
+      ]
+    },
+    {
+      "id": "spelling-a",
+      "owner": "a1-a2",
+      "title": {
+        "ar": "ملحق الإملاء: التاء والألف والهمزة الأولى",
+        "de": "Anhang: Rechtschreibung der Endungen und Anfangshamza"
+      },
+      "description": {
+        "ar": "مراجعة إملائية مستقلة عن ترتيب المسار النحوي.",
+        "de": "Eigener Rechtschreibanhang außerhalb der Grammatikreihenfolge."
+      },
+      "ids": [
+        "ta-endings",
+        "alif-endings",
+        "hamza-initial"
+      ]
+    },
+    {
+      "id": "spelling-b",
+      "owner": "b1-b2",
+      "title": {
+        "ar": "ملحق الإملاء: الهمزة المتوسطة والمتطرفة",
+        "de": "Anhang: mittlere und abschließende Hamza"
+      },
+      "description": {
+        "ar": "مراجعة إملائية مستقلة عن ترتيب المسار النحوي.",
+        "de": "Eigener Rechtschreibanhang außerhalb der Grammatikreihenfolge."
+      },
+      "ids": [
+        "hamza-medial",
+        "hamza-final",
+        "hamza-exceptions"
+      ]
+    }
+  ],
+  "verbParadigms": "verbs.html"
+}

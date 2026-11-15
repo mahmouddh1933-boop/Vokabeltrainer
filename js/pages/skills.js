@@ -510,6 +510,8 @@
               : unit.grammar.href,
           ),
         );
+        if (["a1-02", "a2-04", "a2-06"].includes(unit.id))
+          grammar.append(link(t("صيغ الأفعال وتدريبات التصريف", "Verbformen und Konjugation üben"), "verbs.html"));
         content.append(grammar);
       } else if (module === "listening") {
         const b = block(

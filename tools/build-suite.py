@@ -50,8 +50,10 @@ DEFINITIONS=[
 ]
 extract=r'''const g=require('./js/grammar-data.js'),v=require('./js/verb-data.js'),p=require('./js/practice-data.js');console.log(JSON.stringify({grammar:g,verbs:v.verbs,practice:{...p,sounds:p.sounds}}));'''
 data=json.loads(subprocess.check_output(['node','-e',extract],cwd=ROOT,text=True))
+from grammar_curriculum import load_curriculum
+data['grammar']=load_curriculum(data['grammar'])
 catalog=json.loads((ROOT/'data/vocab_catalog.json').read_text())
-basic_ids=[x['id'] for x in data['grammar']['lessons'] if x['stage'] in ['start','build']]
+basic_ids=[x['id'] for x in data['grammar']['lessons'] if x['owner']=='a1-a2']
 advanced_ids=[x['id'] for x in data['grammar']['lessons'] if x['id'] not in basic_ids]
 VOCAB_PAGES=['vocabulary','lernseite','test','test1','test2','test3','test4','test5','test6','ergebnis','review','stats']
 FOUNDATION=['letters','huruf','letter-tests','sounds','reading','reading-trainer','reading-exercises']
@@ -120,7 +122,6 @@ for definition in DEFINITIONS:
  else:pages+=VOCAB_PAGES+BOOKS
  pages=list(dict.fromkeys(pages));d['pages']=[n+'.html' for n in pages]
  ids=list(basic_ids if ident=='a1-a2' else advanced_ids if ident=='b1-b2' else [])
- if ident=='a1-a2':ids+=['present-inflection','imperative-construction']
  d.update(grammarIds=ids,basicLessons=basic_ids,advancedLessons=advanced_ids,owners=owners,editions=all_details,suite=True)
  d['routes']=[{'href':href,'ar':ar,'de':de,'description':'افتح الدروس والتدريبات وتابع من حيث توقفت.','descriptionDe':'Lektionen und Übungen öffnen und weiterlernen.'} for href,ar,de in d['routes']]
  scoped={k:v for k,v in catalog.items() if k not in ['bookVocabulary','bookVocabulary2']}
@@ -136,20 +137,9 @@ for definition in DEFINITIONS:
  lessons=[json.loads(json.dumps(l)) for l in data['grammar']['lessons'] if l['id'] in ids]
  for l in lessons:l['prerequisites']=[i for i in l.get('prerequisites',[]) if i in ids]
  stages=[{**s,'ids':[i for i in s['ids'] if i in ids]} for s in data['grammar']['stages'] if any(i in ids for i in s['ids'])]
- if ident=='a1-a2':
-  extra_lessons=[json.loads((ROOT/'data'/filename).read_text()) for filename in ['a1-a2-interrogatives.json','a1-a2-time-place.json']]+json.loads((ROOT/'data/a1-a2-unit-grammar.json').read_text())
-  for extra in extra_lessons:
-   lessons.append(extra);ids.append(extra['id'])
-   for stage in stages:
-    if stage['id']==extra['stage']:stage['ids'].append(extra['id'])
-  d['unitGrammarLinks']=json.loads((ROOT/'data/a1-a2-unit-links.json').read_text())
-  lessons.sort(key=lambda lesson:[i for stage in stages for i in stage['ids']].index(lesson['id']))
- if ident=='b1-b2':
-  additions=json.loads((ROOT/'data/b1-b2-grammar.json').read_text())
-  passive=additions['passive'];lessons.append(passive);ids.append(passive['id'])
-  next(stage for stage in stages if stage['id']=='advance')['ids'].append(passive['id'])
-  active=next(lesson for lesson in lessons if lesson['id']=='active-participle')
-  active['sections']+=additions['activeSections'];active['questions']+=additions['activeQuestions']
+ if ident=='a1-a2':d['unitGrammarLinks']=json.loads((ROOT/'data/a1-a2-unit-links.json').read_text())
+ d['grammarRoutes']={'basic-verbs':'verbs.html'}
+ d['grammarAliases']={'sentence-types':'nominal-basics','sun-moon':'definiteness','past-future-context':'future-usage'}
  grammar={**data['grammar'],'lessons':lessons,'stages':stages,'basicVerbs':data['grammar']['basicVerbs'] if ident=='a1-a2' else []}
  verbs=data['verbs'] if ident in ['a1-a2','b1-b2'] else []
  practice={**data['practice'],'sentences':data['practice']['sentences'] if ident=='a1-a2' else [],'stories':data['practice']['stories'] if ident=='a1-a2' else [],'sounds':data['practice']['sounds'] if ident=='start' else []}

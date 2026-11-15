@@ -21,6 +21,8 @@
         let u;try{u=new URL(node.getAttribute('href'),location.href);}catch(_){continue;}
         if(u.origin!==location.origin)continue;
         const name=u.pathname.split('/').pop();if(!name?.endsWith('.html'))continue;
+        const route=name==='grammar.html'&&E.grammarRoutes?.[u.hash.slice(1)];if(route){node.href=E.pages.includes(route)?route:E.suite?'../a1-a2/'+route:'apps.html?app=a1-a2';continue;}
+        const alias=name==='grammar.html'&&E.grammarAliases?.[u.hash.slice(1)];if(alias){u.hash=alias;node.href=u.href;}
         const other=owner(u),specific=(name==='grammar.html'&&u.hash&&!E.grammarIds.includes(u.hash.slice(1)))||
           (name==='vocabulary.html'&&u.searchParams.has('level')&&!E.levels.includes(u.searchParams.get('level')));
         if(E.pages.includes(name)&&!specific)continue;
@@ -28,6 +30,10 @@
         else node.href='apps.html?app='+encodeURIComponent(other);
       }
     }
+    const route=page==='grammar.html'&&E.grammarRoutes?.[location.hash.slice(1)];
+    if(route){location.replace(route);return;}
+    const alias=E.grammarAliases?.[location.hash.slice(1)];
+    if(page==='grammar.html'&&alias){try{history.replaceState(null,'','#'+alias);}catch(_){}}
     // Old grammar bookmarks may point at a lesson now owned by the other app.
     if(page==='grammar.html'&&location.hash&&!E.grammarIds.includes(location.hash.slice(1))){
       const target=owner(new URL(location.href));

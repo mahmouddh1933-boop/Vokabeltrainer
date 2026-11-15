@@ -1,5 +1,9 @@
 # حروف من الزيتون · Arabisch lernen
 
+## خطة القواعد A1–B2
+
+قُسّم مسار القواعد إلى A1 ثم A2 داخل التطبيق الأول، وB1 ثم B2 داخل الثاني، وفق [الخطة الكاملة](docs/GRAMMAR-CURRICULUM.md): 57 درسًا أساسيًا و6 دروس إملاء في ملحقين. تصريف الأفعال يبقى في فقرته المستقلة، مع تلوين الأمثلة بحسب موضع القاعدة.
+
 ## Vier eigenständige Lern-Apps · أربعة تطبيقات تعليمية
 
 Die Hauptanwendung ist jetzt in vier vollständige Ausgaben aufgeteilt. Quellen und bisherige Lernstände bleiben erhalten. Die vier Apps nutzen beim gemeinsamen Hosting dasselbe Firebase-Konto und speichern ihren Lernfortschritt getrennt.

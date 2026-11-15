@@ -4,7 +4,6 @@
     "interrogative-nouns"
   ],
   "a1-02": [
-    "basic-verbs",
     "sequence-conjunctions"
   ],
   "a1-03": [
@@ -22,7 +21,7 @@
     "sequence-conjunctions"
   ],
   "a2-01": [
-    "present-inflection"
+    "negation-tenses"
   ],
   "a2-02": [
     "reason-result"
@@ -31,13 +30,13 @@
     "reason-result"
   ],
   "a2-04": [
-    "imperative-construction",
+    "requests-prohibitions",
     "sequence-conjunctions"
   ],
   "a2-05": [
     "comparison-basic"
   ],
   "a2-06": [
-    "past-future-context"
+    "future-usage"
   ]
 }

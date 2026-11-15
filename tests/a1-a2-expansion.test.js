@@ -70,6 +70,8 @@ test('Each level has twelve different stories, 6 translated lines and 4 evidence
 test('Every unit links to specific, locally shipped lessons with an accurate first-unit pair',()=>{
  assert.deepEqual(links['a1-01'],['pronouns','interrogative-nouns']);
  assert.equal(Object.keys(links).length,12);
+ assert.equal(grammar.lessons.find(l=>l.id==='future-usage').stage,'A2');
+ assert.ok(grammar.lessons.find(l=>l.id==='future-usage').questions.length>=4);
  for(const ids of Object.values(links))for(const id of ids)assert.ok(grammar.lessons.some(l=>l.id===id),id);
- for(const id of ['sequence-conjunctions','reason-result','comparison-basic','past-future-context'])assert.equal(grammar.lessons.find(l=>l.id===id).questions.length,8);
+ for(const id of ['sequence-conjunctions','reason-result','comparison-basic'])assert.equal(grammar.lessons.find(l=>l.id===id).questions.length,8);
 });
