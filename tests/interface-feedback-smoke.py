@@ -29,7 +29,7 @@ with sync_playwright() as pw:
         right = page.locator('.grammar-answer.is-correct').evaluate('(n)=>({bg:getComputedStyle(n).backgroundColor,color:getComputedStyle(n).color,opacity:getComputedStyle(n).opacity})')
         wrong = page.locator('.grammar-answer.is-wrong').evaluate('(n)=>getComputedStyle(n).backgroundColor')
         neutral = page.locator('.grammar-answer:not(.is-correct):not(.is-wrong)').first.evaluate('(n)=>getComputedStyle(n).backgroundColor')
-        assert right == dict(bg='rgb(29, 99, 62)', color='rgb(255, 255, 255)', opacity='1'), right
+        assert right == dict(bg='rgb(76, 96, 44)', color='rgb(255, 255, 255)', opacity='1'), right
         assert len({right['bg'], wrong, neutral}) == 3
     for width in [320, 390, 768, 1440]:
         page.set_viewport_size(dict(width=width, height=1000))

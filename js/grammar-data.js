@@ -672,6 +672,72 @@
       : window.GrammarPathData;
   lessons.push(...path.lessons);
   path.arrange(lessons);
+
+  // Semantic example annotations are shared by source, portable and hosted editions.
+  const plain = s => s.normalize('NFD').replace(/\p{M}/gu, '');
+  const endings = {
+    'اِفْتَحِ':'حِ', 'اِسْعَ':'عَ', 'اُدْعُ':'عُ', 'اِرْمِ':'مِ',
+    'اُكْتُبَا':'بَ', 'اُكْتُبُوا':'بُ', 'اُكْتُبِي':'بِ',
+    'اُكْتُبَنَّ':'بَ', 'اُكْتُبَنْ':'بَ', 'اُكْتُبْ':'بْ', 'اُكْتُبْنَ':'بْ',
+    'لِيَكْتُبْ':'بْ','تَكْتُبْ':'بْ',
+    'يَكْتُبُ':'بُ','يَدْعُو':'و','يَرْمِي':'ي','يَسْعَى':'ى',
+    'يَكْتُبُونَ':'نَ','يَدْعُوَ':'وَ','يَرْمِيَ':'يَ','تَكْتُبِي':'بِ',
+    'أَدْرُسُ':'سُ','لِأَنْجَحَ':'حَ','لِيَكْذِبَ':'بَ','تُهْمِلْ':'لْ',
+    'فَتَنْدَمَ':'مَ','تَنْهَ':'هَ','وَتَأْتِيَ':'يَ',
+    'يَكْتُبْ':'بْ','يَدْعُ':'عُ','يَرْمِ':'مِ','يَسْعَ':'عَ',
+    'تَدْرُسْ':'سْ','تَنْجَحْ':'حْ','يَكْتُبْنَ':'بْ','تُهْمِلَنَّ':'لَ',
+    'يَكْتُبَانِ':'نِ','تَكْتُبِينَ':'نَ','يَكْتُبُوا':'بُ'
+  };
+  const numbers = new Set(['واحد','واحدة','اثنتان','ثلاثة','ثلاث','أحد','إحدى','عشر','عشرة','وعشرون','مئة','ألف','اثنا','اثني'].map(plain));
+  for (const lesson of lessons) for (const section of lesson.sections) for (const example of section.examples || []) {
+    const annotations = [];
+    const add = (start,end,role='sign') => annotations.push({start,end,role});
+    const tokens = [...example.ar.matchAll(/[\p{L}\p{M}]+/gu)];
+    if (['imperative-construction','present-inflection','five-verbs'].includes(lesson.id)) {
+      for (const token of tokens) {
+        const part = endings[token[0]];
+        if (part) {const i = token[0].lastIndexOf(part);add(token.index+i,token.index+i+part.length);}
+      }
+      if (/حذف/.test(section.title.ar)) example.note = {
+        ar:'الحرف المحذوف لا يظهر في الكلمة؛ التلوين يبيّن الحرف السابق لموضع الحذف وحركته، لا الضمير المتصل. قارن الصيغة بأصلها قبل الحذف.',
+        de:'Der weggefallene Buchstabe ist unsichtbar. Markiert wird der Stamm vor der Wegfallstelle, nicht das angehängte Pronomen.'};
+    } else if (lesson.id === 'numerals') {
+      for (const token of tokens) if (numbers.has(plain(token[0]))) add(token.index,token.index+token[0].length,'number');
+    } else if (['defective-verbs','inna-particles'].includes(lesson.id)) {
+      // Explicit roles also cover a pronominal subject and a clausal predicate.
+      const roles = {
+        'كَانَ الطَّالِبُ مُجْتَهِدًا.':[['كَانَ','operator'],['الطَّالِبُ','subject'],['مُجْتَهِدًا','predicate']],
+        'صَارَ الْمَاءُ بَارِدًا.':[['صَارَ','operator'],['الْمَاءُ','subject'],['بَارِدًا','predicate']],
+        'مَا زَالَ الطَّالِبُ مُجْتَهِدًا.':[['مَا زَالَ','operator'],['الطَّالِبُ','subject'],['مُجْتَهِدًا','predicate']],
+        'سَأَبْقَى مَا دُمْتَ هُنَا.':[['مَا دُمْ','operator'],['تَ','subject'],['هُنَا','predicate']],
+        'كَانَ الطَّالِبُ يَقْرَأُ.':[['كَانَ','operator'],['الطَّالِبُ','subject'],['يَقْرَأُ','predicate']],
+        'إِنَّ الطَّالِبَ مُجْتَهِدٌ.':[['إِنَّ','operator'],['الطَّالِبَ','subject'],['مُجْتَهِدٌ','predicate']],
+        'لَيْتَ السَّلَامَ دَائِمٌ.':[['لَيْتَ','operator'],['السَّلَامَ','subject'],['دَائِمٌ','predicate']],
+        'كَأَنَّ الْقَمَرَ مِصْبَاحٌ.':[['كَأَنَّ','operator'],['الْقَمَرَ','subject'],['مِصْبَاحٌ','predicate']],
+        'إِنَّ الطَّالِبَ يَدْرُسُ.':[['إِنَّ','operator'],['الطَّالِبَ','subject'],['يَدْرُسُ','predicate']],
+        'إِنَّمَا الطَّالِبُ مُجْتَهِدٌ.':[['إِنَّمَا','operator'],['الطَّالِبُ','subject'],['مُجْتَهِدٌ','predicate']]
+      };
+      for (const [text,role] of roles[example.ar] || []) {const i=example.ar.indexOf(text);if(i>=0)add(i,i+text.length,role);}
+      example.note={ar:'الزيتي: الناسخ؛ الذهبي: الاسم؛ البني: الخبر. مع «إنما» الكافّة يبقى ما بعدها مبتدأً وخبرًا.',de:'Oliv: Operator; Gold: Subjekt; Braun: Prädikat. Nach innamā bleiben Subjekt und Prädikat unverändert.'};
+    } else if (lesson.id === 'hamza-medial') {
+      const afterLong = /بعد حروف المد/.test(section.title.ar);
+      for (const token of tokens) {
+        const letters=[...token[0].matchAll(/\p{L}\p{M}*/gu)];
+        for(let i=1;i<letters.length-1;i++) {
+          const g=letters[i], prev=letters[i-1];if(!/[ءأإؤئ]/.test(g[0][0]))continue;
+          const start=token.index+g.index;
+          if(afterLong) add(token.index+prev.index,start+g[0].length,'sign');
+          else {
+            add(start,start+1,'hamza');
+            if(prev[0].length>1)add(token.index+prev.index+1,token.index+prev.index+prev[0].length,'previous-vowel');
+            if(g[0].length>1)add(start+1,start+g[0].length,'hamza-vowel');
+          }
+        }
+      }
+      example.note={ar:afterLong?'التلوين يجمع حرف المدّ أو الياء الساكنة والهمزة التي تليه.':'الذهبي: الهمزة؛ الزيتي: حركة الحرف السابق؛ البني: حركة الهمزة.',de:afterLong?'Markiert sind der vorausgehende Vokalbuchstabe und Hamza.':'Gold: Hamza; Oliv: vorheriger Vokal; Braun: Hamzavokal.'};
+    }
+    if (annotations.length) example.annotations=annotations;
+  }
   const api = { lessons, sunLetters, moonLetters, basicVerbs, stages: path.stages };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else window.ArabicGrammarData = api;

@@ -700,3 +700,6 @@ body .container.grammar-page {
 
 /* Highlight the inflection-bearing grapheme without breaking Arabic joining. */
 .grammar-example p mark{display:inline;padding:0;margin:0;font:inherit;border-radius:3px;background:#ffe3a3;color:#75410c}
+.grammar-example .grammar-mark-operator,.grammar-example .grammar-mark-previous-vowel{background:#dce5bd;color:#334820}
+.grammar-example .grammar-mark-subject,.grammar-example .grammar-mark-number,.grammar-example .grammar-mark-hamza{background:#ffe3a3;color:#75410c}
+.grammar-example .grammar-mark-predicate,.grammar-example .grammar-mark-hamza-vowel{background:#eed5bd;color:#713c22}
