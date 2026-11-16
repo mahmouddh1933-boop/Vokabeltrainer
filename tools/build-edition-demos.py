@@ -24,7 +24,8 @@ def add_to_head(text,extra):
   end=None
   def handle_endtag(self,tag):
    if tag=='head' and self.end is None:
-    line,column=self.getpos();self.end=sum(len(x) for x in text.splitlines(keepends=True)[:line-1])+column
+    # HTMLParser counts LF only; splitlines also splits Unicode separators in inline JS.
+    line,column=self.getpos();self.end=sum(len(x)+1 for x in text.split('\n')[:line-1])+column
  parser=LocateHead(convert_charrefs=False);parser.feed(text)
  if parser.end is None:raise ValueError('No real closing head tag found')
  return text[:parser.end]+extra+text[parser.end:]

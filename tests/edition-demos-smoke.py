@@ -37,6 +37,9 @@ with tempfile.TemporaryDirectory(prefix='huroof-two-demos-test-') as tmp:
     page.goto(f'https://demos.example.test/{app}/{name}.html')
     if name=='offline':return
     page.wait_for_selector('.demo-notice');page.wait_for_function('window.VocabApp && window.AppLanguage')
+    # Inline data contains Unicode line separators: these must not shift the head insertion.
+    assert not page.evaluate('Array.from(document.body.childNodes).some(n=>n.nodeType===3 && n.textContent.trim())'), (app,name,'Unexpected text outside page elements')
+    assert '.grammar-path-panel' not in page.locator('body').inner_text(), (app,name,'CSS rendered as text')
     if page.locator('[data-learner-choice=neutral]').is_visible():page.locator('[data-learner-choice=neutral]').click()
     counts=page.evaluate('''() => {
       const paths=['ArabicLetterData.letters','ArabicReadingTrainer.words','ArabicReadingExercises.activities','ArabicSkillsData.units','ArabicGrammarData.lessons','VerbLessonData.verbs','ArabicPracticeData.sentences','ArabicPracticeData.stories','ArabicPracticeData.sounds'];
