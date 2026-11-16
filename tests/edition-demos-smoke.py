@@ -1,4 +1,4 @@
-"""Verify both full previews work without auth, external services or production storage."""
+"""Verify both limited previews work without auth, external services or production storage."""
 import hashlib,json,mimetypes,re,tempfile
 from pathlib import Path
 from urllib.parse import urlparse
@@ -38,6 +38,11 @@ with tempfile.TemporaryDirectory(prefix='huroof-two-demos-test-') as tmp:
     if name=='offline':return
     page.wait_for_selector('.demo-notice');page.wait_for_function('window.VocabApp && window.AppLanguage')
     if page.locator('[data-learner-choice=neutral]').is_visible():page.locator('[data-learner-choice=neutral]').click()
+    counts=page.evaluate('''() => {
+      const paths=['ArabicLetterData.letters','ArabicReadingTrainer.words','ArabicReadingExercises.activities','ArabicSkillsData.units','ArabicGrammarData.lessons','VerbLessonData.verbs','ArabicPracticeData.sentences','ArabicPracticeData.stories','ArabicPracticeData.sounds'];
+      return paths.flatMap(path=>{const [name,key]=path.split('.');const rows=window[name]?.[key];return rows?.length?[[path,rows.length]]:[]});
+    }''')
+    assert all(count==3 for _,count in counts),counts
     assert page.evaluate('typeof firebase')=='undefined'
     assert page.evaluate('typeof OliveFirebaseConfig')=='undefined'
     assert page.locator('#olive-account, #auth-blocker').count()==0
@@ -59,17 +64,17 @@ with tempfile.TemporaryDirectory(prefix='huroof-two-demos-test-') as tmp:
      assert page.evaluate('localStorage.getItem("huroofSuiteV1:'+app+':learningStats")')=='PRODUCTION-UNTOUCHED'
      assert page.evaluate('localStorage.getItem("huroofDemoV1:'+app+':demo-marker")')==app
     if app=='start':
-     open_page(app,'huruf');assert page.evaluate('ArabicLetterData.letters.length')==28
+     open_page(app,'huruf');assert page.evaluate('ArabicLetterData.letters.length')==3
      page.locator('#letter-next').click();page.locator('#letter-card').click();assert 'flipped' in page.locator('#letter-card').get_attribute('class')
      page.locator('#letter-speak').click();page.wait_for_function('__plays>0')
      page.locator('#focused-options button').first.click();assert page.locator('#focused-feedback').inner_text()
      open_page(app,'reading-trainer');assert page.locator('#rt-word-select option').count()>0;page.locator('#rt-next').click()
     else:
-     open_page(app,'vocabulary');catalog=page.evaluate('VocabApp.loadCatalog()');assert len(catalog['lists'])==60
+     open_page(app,'vocabulary');catalog=page.evaluate('VocabApp.loadCatalog()');assert len(catalog['lists'])==3
      page.locator('.ready-list-button').first.click();page.wait_for_url('**/lernseite.html');page.locator('#flashcard').click();assert 'flipped' in page.locator('#flashcard').get_attribute('class')
      open_page(app,'test2');page.locator('.question input[type=radio]').first.check();page.locator('#submit-test').click();page.wait_for_url('**/ergebnis.html')
      if mode!='storage-denied':assert page.evaluate('VocabApp.getStats().totalTests')==1
-     open_page(app,'grammar');assert page.evaluate('ArabicGrammarData.lessons.length')==28;page.locator('#grammar-answers button').first.click();assert page.locator('#grammar-feedback').inner_text()
+     open_page(app,'grammar');assert page.evaluate('ArabicGrammarData.lessons.length')==3;page.locator('#grammar-answers button').first.click();assert page.locator('#grammar-feedback').inner_text()
      open_page(app,'skills');page.locator('.skills-card a').first.click();page.wait_for_selector('#skills-unit-score')
     open_page(app,'index');page.once('dialog',lambda d:d.accept());page.locator('#demo-reset').click();page.wait_for_url('**/index.html');page.wait_for_selector('.demo-notice')
     assert page.evaluate('JisrStorage.local.getItem("demo-marker")') is None

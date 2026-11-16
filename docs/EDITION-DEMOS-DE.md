@@ -3,7 +3,7 @@
 - [Huroof Start Demo herunterladen](../downloads/Huroof-Start-Demo.zip)
 - [Huroof A1/A2 Demo herunterladen](../downloads/Huroof-A1-A2-Demo.zip)
 
-Die Demos sind vollständige interaktive Vorschauen der aktuellen Lernbereiche. Start enthält die 28 Buchstaben, Schreib- und Lautübungen, Lesen, Lesetrainer und Leseaktivitäten. A1/A2 enthält den aktuellen Wortschatz, die sechs Testarten, Sätze, Geschichten, Einheiten, Grammatik und den eigenen Bereich für Verbformen. Die vorhandenen arabischen und deutschen Oberflächen und lokalen Aufnahmen bleiben erhalten.
+Die Demos enthalten die aktuellen Änderungen, begrenzt auf **drei Lektionen beziehungsweise Beispiele je Lernbereich**. Start bietet drei Buchstaben mit Schreib- und Testübungen, drei Lautgruppen, je drei Übungen der Lesearten, drei Lesetrainer-Wörter und drei Leseaktivitäten. A1/A2 bietet drei Wortschatzlisten (mit allen sechs Testarten), drei Sätze, drei Geschichten, drei Einheiten, drei Grammatiklektionen und drei Verben. Die übrigen Lerninhalte sind in diesen Demos nicht auswählbar. Deutsch/Arabisch und die lokalen Aufnahmen bleiben erhalten.
 
 Es gibt keine Anmeldung, Schülerverwaltung oder Cloud-Synchronisierung. Die Firebase-Konfiguration und SDK-Dateien sind entfernt. Jede Demo speichert ihre Lernstände unter einem eigenen Namensraum `huroofDemoV1:<app>` auf dem Gerät. „Demo neu starten“ löscht nur die Lernstände dieser Demo; Produktionsdaten bleiben erhalten. Auf derselben Domain können Sprache und Gestaltung gemeinsam genutzt werden. Wenn der Browser lokalen Speicher verweigert, zeigt die Demo das an: Lernstände bleiben dann nur bis zum Seitenwechsel verfügbar.
 
