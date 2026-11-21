@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#123f37" />
+    <meta
+      name="description"
+      content="حروف من الزيتون: تعلّم العربية، من الحروف إلى المفردات والقواعد، بجذور راسخة ورسومات هادئة."
+    />
+    <title>حروف من الزيتون · جسر الحروف</title>
+    <link rel="stylesheet" href="styles.css?v=e40cf0c3ba98" />
+    <link rel="stylesheet" href="css/interface-languages.css?v=a7d6756fe928" />
+    <link rel="stylesheet" href="css/modern.css?v=12f689bc07a2" />
+    <link rel="stylesheet" href="css/practice.css?v=73cb20114e45" />
+
+    <script src="js/storage.js?v=234b995827cd" defer></script>
+    <script src="js/firebase-config.js?v=8c7993a85b2c" defer></script>
+    <script src="js/access-client.js?v=6d7404b1ce0e" defer></script>
+    <script src="js/auth-session.js?v=328a881b2d5c" defer></script>
+    <script src="js/app.js?v=d6573afe97b4" defer></script>
+    <script src="data/vocab_catalog_fallback.js?v=d6519eaca875" defer></script>
+
+    <script src="data/vocab_catalog_labels.js?v=ea6b5a2120d2" defer></script>
+    <script src="js/interface-languages.js?v=d233aae47963" defer></script>
+    <script src="js/letter-examples.js?v=13e985f53de1" defer></script>
+    <script src="js/practice-core.js?v=81b88bc2a7c0" defer></script>
+    <script src="js/learning-path.js?v=d1c2f9b5f022" defer></script>
+    <script src="js/design.js?v=3a6e4121f108" defer></script>
+    <meta name="application-name" content="حروف من الزيتون" />
+    <link
+      rel="icon"
+      href="images/brand/olive-symbol.svg"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/olive-theme.css?v=fd2a5c9d6115" />
+    <script src="js/olive-theme.js?v=fc9e3f392a4e" defer></script>
+    <link rel="stylesheet" href="css/auth.css?v=14c6fd8481bd" />
+    <link rel="stylesheet" href="css/learning-route.css?v=e9bb6804b86d" />
+    <link rel="stylesheet" href="css/letter-games.css?v=6986b786a497" />
+    <script src="js/pages/letter-games.js?v=36a229d34ba3" defer></script>
+  <link rel="manifest" href="manifest.webmanifest" /><link rel="apple-touch-icon" href="images/pwa/apple-touch-icon.png" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-status-bar-style" content="default" /><link rel="stylesheet" href="css/pwa.css?v=021f9b88f80e" /><script src="js/pwa.js?v=6abccd6e9e0d" defer></script><link rel="stylesheet" href="css/ui-shell.css?v=898203bac03a" /><link rel="stylesheet" href="css/typography.css?v=5f255659bdfe" /></head>
+  <body>
+    <main class="container practice-page letter-bridge-page" id="main-content">
+      <header class="page-heading">
+        <div>
+          <a href="letters.html" data-ar="العودة إلى الحروف وتدريباتها" data-de="Zurück zum Alphabet">العودة إلى الحروف وتدريباتها</a>
+          <h1 data-ar="جسر الحروف" data-de="Buchstabenbrücke">جسر الحروف</h1>
+          <p data-ar="اختر كلمة وضع حروفها على الجسر من اليمين إلى اليسار. راقب أين تتصل وأين تنفصل." data-de="Wähle ein Wort und setze seine Buchstaben von rechts nach links auf die Brücke. Beobachte, wo sie sich verbinden.">اختر كلمة وضع حروفها على الجسر من اليمين إلى اليسار. راقب أين تتصل وأين تنفصل.</p>
+        </div>
+      </header>
+      <section class="practice-panel letter-bridge" id="letter-bridge">
+        <div id="bridge-levels" class="letter-bridge-row" role="group" aria-label="مستوى الكلمات / Schwierigkeitsstufe">
+          <button class="practice-button" type="button" data-level="0" data-ar="كلمات قصيرة" data-de="Kurze Wörter">كلمات قصيرة</button>
+          <button class="practice-button" type="button" data-level="1" data-ar="أربعة حروف" data-de="Vier Buchstaben">أربعة حروف</button>
+          <button class="practice-button" type="button" data-level="2" data-ar="خمسة حروف فأكثر" data-de="Fünf Buchstaben und mehr">خمسة حروف فأكثر</button>
+        </div>
+        <div class="letter-bridge-picker">
+          <label for="bridge-words" data-ar="اختر كلمة" data-de="Wort auswählen">اختر كلمة</label>
+          <select id="bridge-words" lang="ar" dir="rtl"></select>
+        </div>
+        <div class="letter-bridge-deck" lang="ar" dir="rtl">
+          <output id="bridge-word" class="letter-bridge-script" aria-live="polite"></output>
+        </div>
+        <div id="bridge-connections" class="letter-bridge-connections" lang="ar" dir="rtl"></div>
+        <div id="bridge-letters" class="letter-bridge-row" lang="ar" dir="rtl" role="group" aria-label="حروف للتركيب / Buchstaben zum Zusammensetzen"></div>
+        <p id="bridge-feedback" class="letter-bridge-feedback" role="status"></p>
+        <div class="letter-bridge-row">
+          <button id="bridge-undo" class="practice-button" type="button" data-ar="تراجع" data-de="Rückgängig">تراجع</button>
+          <button id="bridge-reset" class="practice-button" type="button" data-ar="ابدأ من جديد" data-de="Neu beginnen">ابدأ من جديد</button>
+          <button id="bridge-next" class="practice-button primary-action" type="button" data-ar="الكلمة التالية" data-de="Nächstes Wort">الكلمة التالية</button>
+        </div>
+        <p id="practice-audio-status" hidden></p>
+      </section>
+    </main>
+    <footer id="teacher-credit" class="teacher-credit">إعداد الأستاذ محمود بركات</footer>
+  </body>
+</html>

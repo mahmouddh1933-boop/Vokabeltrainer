@@ -56,7 +56,7 @@ catalog=json.loads((ROOT/'data/vocab_catalog.json').read_text())
 basic_ids=[x['id'] for x in data['grammar']['lessons'] if x['owner']=='a1-a2']
 advanced_ids=[x['id'] for x in data['grammar']['lessons'] if x['id'] not in basic_ids]
 VOCAB_PAGES=['vocabulary','lernseite','test','test1','test2','test3','test4','test5','test6','ergebnis','review','stats']
-FOUNDATION=['letters','huruf','letter-tests','sounds','reading','reading-trainer','reading-exercises']
+FOUNDATION=['letters','huruf','letter-tests','sounds','reading','reading-trainer','reading-exercises','letter-games']
 BOOKS=['books','book-level-two','youth-book-two-part-one','youth-training-two','arabic-youth','exams','placement']
 owners={'texts.html':'b1-b2',**{n+'.html':'start' for n in FOUNDATION},**{n+'.html':'books' for n in BOOKS},**{n+'.html':'a1-a2' for n in ['skills','sentences','stories',*VOCAB_PAGES,'grammar','verbs']}}
 PREVIEWS={
